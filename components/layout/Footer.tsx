@@ -36,7 +36,7 @@ export function Footer() {
             </div>
             <p className="text-sm leading-relaxed max-w-[38ch] text-cream/50">
               Bufete de abogados especializado en Derecho Público, fundado
-              por el Dr. Óscar González Camacho, co-redactor del Código
+              por el Dr. Óscar Eduardo González Camacho, co-redactor del Código
               Procesal Contencioso Administrativo.
             </p>
             <div className="flex items-center gap-3 mt-6">

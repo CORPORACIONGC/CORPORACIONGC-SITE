@@ -4,7 +4,7 @@ export const FIRM = {
   name: "Corporación GC",
   title: "Corporación GC | Abogados Especialistas en Derecho Público · Costa Rica",
   description:
-    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Corte Suprema y co-redactor del Código Procesal Contencioso Administrativo. Más de 38 años de experiencia en Derecho Público.",
+    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Corte Suprema y co-redactor del Código Procesal Contencioso Administrativo. Más de 38 años de experiencia en Derecho Público.",
   url: "https://corporaciongc.com",
   locale: "es_CR",
 } as const;
@@ -37,11 +37,11 @@ export const FIRM_CREDENTIALS = [
 ] as const;
 
 export const OSCAR_PROFILE = {
-  name: "Dr. Óscar González Camacho",
+  name: "Dr. Óscar Eduardo González Camacho",
   role: "Fundador y Director",
   photo: "/images/oscar-gonzalez.png",
   heroDescription: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del Código Procesal Contencioso Administrativo. Uno de los litigantes de mayor calado en la jurisdicción contencioso-administrativa costarricense.",
-  heroBio: "Doctor en Derecho por la Universidad de Alcalá de Henares con la calificación Sobresaliente Cum Laude. Con más de 38 años de trayectoria ininterrumpida en el Derecho Público, el Dr. González Camacho forjó la jurisdicción contenciosa moderna desde la judicatura y hoy la domina desde el litigio. Desde 2015 dirige Corporación GC como uno de los abogados litigantes de mayor calado en la materia administrativa del país.",
+  heroBio: "Doctor en Derecho por la Universidad de Alcalá de Henares con la calificación Sobresaliente Cum Laude. Con más de 38 años de trayectoria ininterrumpida en el Derecho Público, el Dr. Eduardo González Camacho forjó la jurisdicción contenciosa moderna desde la judicatura y hoy la domina desde el litigio. Desde 2015 dirige Corporación GC como uno de los abogados litigantes de mayor calado en la materia administrativa del país.",
   education: [
     { degree: "Doctor en Derecho", institution: "Universidad de Alcalá de Henares, España", period: "1995 – 1998", distinction: "Sobresaliente Cum Laude" },
     { degree: "Especialista en Derecho Constitucional y Ciencia Política", institution: "Centro de Estudios Políticos y Constitucionales, España", period: "1995 – 1998" },
@@ -71,7 +71,7 @@ export const OSCAR_PROFILE = {
 } as const;
 
 export const TEAM = [
-  { slug: "oscar-gonzalez", name: "Dr. Óscar González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
+  { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
   { slug: "khevin-sanchez", name: "Lic. Khevin Sánchez Zamora", role: "Abogado Asociado", photo: "/images/foto-perfil.jpeg", shortBio: "Más de 7 años de experiencia en litigio. 3er mejor promedio en el Examen de Excelencia del Colegio de Abogados, 2025. Egresado UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
   { slug: "katherine-gonzalez", name: "Licda. Katherine González", role: "Abogada Asociada", photo: null, shortBio: "Master en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública. Miembro del Colegio de Abogados desde 2019.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial"], languages: ["Español", "Inglés", "Italiano", "Francés"], featured: false },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: null, shortBio: "Licenciada en Derecho con mención en Derechos Humanos, UCR. Maestranda en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Derechos Humanos", "Derecho Público"], languages: ["Español", "Inglés", "Francés"], featured: false },
@@ -101,14 +101,14 @@ export const ESTEBAN_PROFILE = {
   role: "Abogado Asociado",
   photo: "/images/esteban-perez.jpg",
   heroDescription: "Abogado litigante y Notario Público, especializado en Derecho Administrativo, Contencioso Administrativo, Contratación Pública y Derecho Constitucional.",
-  heroBio: "Más de 9 años de experiencia en litigio de alta complejidad contra el Estado. Colaboración directa con el Dr. Óscar González Camacho, co-redactor del Código Procesal Contencioso Administrativo.",
+  heroBio: "Más de 9 años de experiencia en litigio de alta complejidad contra el Estado. Colaboración directa con el Dr. Óscar Eduardo González Camacho, co-redactor del Código Procesal Contencioso Administrativo.",
   education: [
     { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica", status: "Egresado — Tesis en desarrollo" },
     { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica" },
     { degree: "Especialidad en Derecho Notarial y Registral", institution: "Universidad Fidélitas" },
   ],
   career: [
-    { role: "Abogado Asociado", org: "Corporación GC", period: "2023 – Presente", description: "Ejercicio profesional en litigio contencioso-administrativo, procesos constitucionales y procedimientos administrativos. Participación en audiencias orales, redacción de demandas, recursos de casación, asuntos de contratación pública y materia urbanística. Colaboración directa con el Dr. Óscar González Camacho.", highlight: true },
+    { role: "Abogado Asociado", org: "Corporación GC", period: "2023 – Presente", description: "Ejercicio profesional en litigio contencioso-administrativo, procesos constitucionales y procedimientos administrativos. Participación en audiencias orales, redacción de demandas, recursos de casación, asuntos de contratación pública y materia urbanística. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
     { role: "Asistente Jurídico", org: "Corporación GC", period: "2018 – 2023", description: "Apoyo en derecho público, procedimientos administrativos y litigio contencioso-administrativo. Elaboración de escritos procesales, investigaciones jurídicas y análisis de expedientes.", highlight: false },
     { role: "Asistente Jurídico", org: "Sala Constitucional — Corte Suprema de Justicia", period: "2017 – 2018", description: "Apoyo directo a letradas en la redacción y revisión de proyectos de sentencia.", highlight: false },
   ],
@@ -153,7 +153,7 @@ export const PRACTICE_AREAS = [
 ] as const;
 
 export const EXPERIENCE = [
-  { role: "Abogado Asociado", org: "Corporación GC", period: "Nov. 2025 - Presente", description: "Litigio y asesoría jurídica en Derecho Administrativo, Contencioso Administrativo y Derecho Constitucional. Colaboración directa con el Dr. Óscar González Camacho en casos de alta complejidad ante el TCA, Sala Constitucional, Sala Primera y diversas instancias administrativas.", highlight: true },
+  { role: "Abogado Asociado", org: "Corporación GC", period: "Nov. 2025 - Presente", description: "Litigio y asesoría jurídica en Derecho Administrativo, Contencioso Administrativo y Derecho Constitucional. Colaboración directa con el Dr. Óscar Eduardo González Camacho en casos de alta complejidad ante el TCA, Sala Constitucional, Sala Primera y diversas instancias administrativas.", highlight: true },
   { role: "Paralegal Senior", org: "Corporación GC", period: "2021 - 2025", description: "Investigación jurídica exhaustiva, redacción de demandas, recursos de casación, amparos, acciones de inconstitucionalidad y medidas cautelares. Preparación integral de audiencias orales y elaboración de guías de interrogatorio.", highlight: false },
   { role: "Paralegal Junior", org: "Corporación GC", period: "2019 - 2021", description: "Asistencia en investigación de normativa, jurisprudencia y doctrina aplicable. Apoyo en la gestión de expedientes y redacción de escritos procesales bajo supervisión directa.", highlight: false },
   { role: "Representante Estudiantil", org: "Facultad de Derecho, UCR", period: "Ago. 2020 - Ago. 2022", description: "Representante ante Asamblea Plebiscitaria y Asamblea de Facultad. Participación en decisiones institucionales y propuesta de mejoras curriculares.", highlight: false },

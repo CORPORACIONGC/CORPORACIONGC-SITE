@@ -47,7 +47,7 @@ export function OscarAbout() {
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
                 Con más de 38 años de trayectoria ininterrumpida en el Derecho
-                Público, el Dr. González Camacho fue Magistrado de la Sala
+                Público, el Dr. Eduardo González Camacho fue Magistrado de la Sala
                 Primera de la Corte Suprema de Justicia durante 12 años y
                 co-redactor del Código Procesal Contencioso Administrativo
                 (Ley N.° 8508), pieza fundamental de la jurisdicción

@@ -50,10 +50,16 @@ export function EstebanHero() {
           <AnimatedEntry delay={0.5}>
             <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
               Más de 9 años de experiencia en litigio de alta complejidad
-              contra el Estado. Colaboración directa con el Dr. Óscar González
+              contra el Estado. Colaboración directa con el Dr. Óscar Eduardo González
               Camacho, co-redactor del Código Procesal Contencioso
               Administrativo.
             </p>
+          </AnimatedEntry>
+
+          <AnimatedEntry delay={0.6}>
+            <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
+              Carnet CAACR 34399
+            </div>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.65}>

@@ -32,7 +32,7 @@ export function FirmAbout() {
             </AnimatedEntry>
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Corporaci&#243;n GC nace de la visi&#243;n del Dr. &#211;scar Gonz&#225;lez Camacho, quien desde la judicatura contribuy&#243; a edificar la jurisdicci&#243;n contencioso-administrativa costarricense. Tras 12 a&#241;os como Magistrado de la Corte Suprema y co-redactar el C&#243;digo Procesal que rige la materia, su conocimiento &#237;ntimo del sistema se traduce en una ventaja estrat&#233;gica que ning&#250;n otro bufete puede replicar.
+                Corporaci&#243;n GC nace de la visi&#243;n del Dr. &#211;scar Eduardo Gonz&#225;lez Camacho, quien desde la judicatura contribuy&#243; a edificar la jurisdicci&#243;n contencioso-administrativa costarricense. Tras 12 a&#241;os como Magistrado de la Corte Suprema y co-redactar el C&#243;digo Procesal que rige la materia, su conocimiento &#237;ntimo del sistema se traduce en una ventaja estrat&#233;gica que ning&#250;n otro bufete puede replicar.
               </p>
             </AnimatedEntry>
             <AnimatedEntry delay={0.3}>
@@ -53,11 +53,11 @@ export function FirmAbout() {
               <div className="p-6 md:p-8 rounded-2xl border border-cream/[0.08] bg-cream/[0.03]">
                 <div className="flex items-center gap-4 mb-6 pb-6 border-b border-cream/[0.08]">
                   <div className="w-14 h-14 rounded-xl overflow-hidden border border-cream/[0.08] shrink-0">
-                    <Image src="/images/oscar-gonzalez.png" alt="Dr. &#211;scar Gonz&#225;lez Camacho" width={112} height={112} className="w-full h-full object-cover" />
+                    <Image src="/images/oscar-gonzalez.png" alt="Dr. &#211;scar Eduardo Gonz&#225;lez Camacho" width={112} height={112} className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-1">Nuestro Fundador</div>
-                    <h3 className="text-base font-semibold text-cream/90 tracking-tight">Dr. &#211;scar Gonz&#225;lez Camacho</h3>
+                    <h3 className="text-base font-semibold text-cream/90 tracking-tight">Dr. &#211;scar Eduardo Gonz&#225;lez Camacho</h3>
                   </div>
                 </div>
                 <StaggerContainer className="space-y-4" stagger={0.08}>

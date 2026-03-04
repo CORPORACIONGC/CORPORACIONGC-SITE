@@ -29,7 +29,7 @@ export function OscarHero() {
 
           <AnimatedEntry delay={0.2}>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none text-cream">
-              Dr. Óscar
+              Dr. Óscar Eduardo
               <br />
               González{" "}
               <span className="text-gold">Camacho</span>
@@ -56,6 +56,12 @@ export function OscarHero() {
             </p>
           </AnimatedEntry>
 
+          <AnimatedEntry delay={0.6}>
+            <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
+              Carnet CAACR 3191
+            </div>
+          </AnimatedEntry>
+
           <AnimatedEntry delay={0.65}>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <MagneticButton href="#contacto" variant="primary">
@@ -78,7 +84,7 @@ export function OscarHero() {
             <div className="relative w-[80%] md:w-[85%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/oscar-gonzalez.png"
-                alt="Dr. Óscar González Camacho"
+                alt="Dr. Óscar Eduardo González Camacho"
                 width={768}
                 height={1024}
                 priority

@@ -47,7 +47,7 @@ export function About() {
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
                 Como Abogado Asociado de Corporación GC, trabajo en
-                colaboración directa y constante con el Dr. Óscar González
+                colaboración directa y constante con el Dr. Óscar Eduardo González
                 Camacho — co-redactor del Código Procesal Contencioso
                 Administrativo — en la gestión y estrategia de casos de alta
                 complejidad técnica.

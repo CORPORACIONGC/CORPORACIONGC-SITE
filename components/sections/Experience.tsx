@@ -106,7 +106,7 @@ export function Experience() {
                   hoja de ruta para su adopción segura en Costa Rica.
                 </p>
                 <div className="mt-2 text-[10px] text-cream/35">
-                  Director: Dr. Óscar González Camacho — UCR, 2025
+                  Director: Dr. Óscar Eduardo González Camacho — UCR, 2025
                 </div>
               </div>
             </StaggerItem>

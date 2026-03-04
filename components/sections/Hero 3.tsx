@@ -49,7 +49,7 @@ export function Hero() {
           <AnimatedEntry delay={0.5}>
             <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
               Más de 7 años de experiencia en litigio de alta complejidad.
-              Colaboración directa con el Dr. Óscar González Camacho,
+              Colaboración directa con el Dr. Óscar Eduardo González Camacho,
               co-redactor del Código Procesal Contencioso Administrativo.
             </p>
           </AnimatedEntry>

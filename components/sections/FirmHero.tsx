@@ -35,7 +35,7 @@ export function FirmHero() {
 
           <AnimatedEntry delay={0.35}>
             <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/40 font-medium">
-              Fundado por el Dr. &#211;scar Gonz&#225;lez Camacho
+              Fundado por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
             </p>
           </AnimatedEntry>
 
@@ -54,7 +54,7 @@ export function FirmHero() {
           <AnimatedEntry delay={0.55}>
             <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
               M&#225;s de 38 a&#241;os de trayectoria del Dr. &#211;scar
-              Gonz&#225;lez Camacho, Doctor en Derecho Sobresaliente Cum
+              Eduardo Gonz&#225;lez Camacho, Doctor en Derecho Sobresaliente Cum
               Laude, respaldan a un equipo de abogados formado bajo su
               direcci&#243;n y especializado exclusivamente en Derecho
               P&#250;blico.
@@ -108,7 +108,7 @@ export function FirmHero() {
                     FUNDADOR Y DIRECTOR
                   </div>
                   <div className="text-[9px] text-cream/40">
-                    Dr. &#211;scar Gonz&#225;lez Camacho
+                    Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
                   </div>
                 </div>
               </div>

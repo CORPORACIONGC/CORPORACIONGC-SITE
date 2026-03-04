@@ -47,7 +47,7 @@ export function EstebanAbout() {
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
                 Con más de 9 años de experiencia en litigio de alta complejidad
                 contra el Estado, ejerzo como Abogado Asociado de Corporación GC
-                en colaboración directa con el Dr. Óscar González Camacho —
+                en colaboración directa con el Dr. Óscar Eduardo González Camacho —
                 co-redactor del Código Procesal Contencioso Administrativo — en
                 la gestión y estrategia de casos de relevancia jurídica.
               </p>
