@@ -10,10 +10,22 @@ import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Publications } from "@/components/sections/Publications";
 import { Contact } from "@/components/sections/Contact";
-import { getAllArticles } from "@/lib/articles";
+import { OscarHero } from "@/components/sections/OscarHero";
+import { OscarAbout } from "@/components/sections/OscarAbout";
+import { OscarExperience } from "@/components/sections/OscarExperience";
+import { OscarContact } from "@/components/sections/OscarContact";
+import { EstebanHero } from "@/components/sections/EstebanHero";
+import { EstebanAbout } from "@/components/sections/EstebanAbout";
+import { EstebanExperience } from "@/components/sections/EstebanExperience";
+import { EstebanContact } from "@/components/sections/EstebanContact";
+import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
   FIRM,
+  OSCAR_CREDENTIALS,
+  OSCAR_NAV_LINKS,
+  ESTEBAN_PROFILE,
+  ESTEBAN_NAV_LINKS,
 } from "@/lib/constants";
 
 // Generate static params for all team members
@@ -53,19 +65,18 @@ export default async function AttorneyProfile({
   const member = TEAM.find((m) => m.slug === slug);
   if (!member) return notFound();
 
-  // Khevin gets his full personal page
-  if (member.slug === "khevin-sanchez") {
-    return <KhevinProfile />;
-  }
+  if (member.slug === "khevin-sanchez") return <KhevinProfile />;
+  if (member.slug === "oscar-gonzalez") return <OscarProfile />;
+  if (member.slug === "esteban-perez") return <EstebanProfile />;
 
   // Other attorneys get a basic profile
   return <BasicProfile member={member} />;
 }
 
-// ─── Khevin's Full Profile (reuses existing components) ───
+// ─── Khevin's Full Profile ───
 
 function KhevinProfile() {
-  const articles = getAllArticles().map((a) => ({
+  const articles = getArticlesByAuthor("Sánchez").map((a) => ({
     slug: a.slug,
     title: a.title,
     excerpt: a.excerpt,
@@ -84,7 +95,6 @@ function KhevinProfile() {
 
   return (
     <>
-      {/* Back to firm link */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
@@ -112,6 +122,88 @@ function KhevinProfile() {
   );
 }
 
+// ─── Oscar's Full Profile ───
+
+function OscarProfile() {
+  const articles = getArticlesByAuthor("González").map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    date: a.date,
+    type: a.type,
+    tags: [...a.tags],
+  }));
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
+          <Link
+            href="/"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+          >
+            <span>&larr;</span>
+            <span>Volver a Corporación GC</span>
+          </Link>
+        </div>
+      </div>
+      <div className="pt-8">
+        <Navbar navLinks={OSCAR_NAV_LINKS} topOffset />
+        <main>
+          <OscarHero />
+          <Credentials credentials={OSCAR_CREDENTIALS} />
+          <OscarAbout />
+          <OscarExperience />
+          <Publications articles={articles} />
+          <OscarContact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+// ─── Esteban's Full Profile ───
+
+function EstebanProfile() {
+  const articles = getArticlesByAuthor("Pérez").map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    date: a.date,
+    type: a.type,
+    tags: [...a.tags],
+  }));
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
+          <Link
+            href="/"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+          >
+            <span>&larr;</span>
+            <span>Volver a Corporación GC</span>
+          </Link>
+        </div>
+      </div>
+      <div className="pt-8">
+        <Navbar navLinks={ESTEBAN_NAV_LINKS} topOffset />
+        <main>
+          <EstebanHero />
+          <Credentials credentials={ESTEBAN_PROFILE.credentials} />
+          <EstebanAbout />
+          <EstebanExperience />
+          <Publications articles={articles} />
+          <EstebanContact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
 // ─── Basic Profile for other attorneys ───
 
 function BasicProfile({
@@ -132,7 +224,6 @@ function BasicProfile({
 
   return (
     <>
-      {/* Back to firm link */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link

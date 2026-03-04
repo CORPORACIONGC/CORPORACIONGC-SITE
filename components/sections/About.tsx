@@ -27,7 +27,8 @@ export function About() {
           <div>
             <AnimatedEntry>
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
+                <span className="font-display text-lg text-cream/15 font-semibold">01</span>
+                <div className="h-px w-6 bg-cream/10" />
                 <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
                   Perfil profesional
                 </span>
@@ -39,7 +40,7 @@ export function About() {
                 Litigio de alto nivel
                 <br />
                 con{" "}
-                <span className="text-gold">precisión jurídica</span>
+                <span className="text-burgundy-light">precisión jurídica</span>
               </h2>
             </AnimatedEntry>
 

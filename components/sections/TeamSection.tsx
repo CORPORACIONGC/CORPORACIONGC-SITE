@@ -41,29 +41,34 @@ export function TeamSection() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <AnimatedEntry>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-gold" />
-            <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-              Nuestro equipo
-            </span>
-          </div>
-        </AnimatedEntry>
+        {/* Header */}
+        <div className="mb-14">
+          <AnimatedEntry>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-2 h-2 rounded-full bg-burgundy animate-breathe" />
+              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
+                Nuestro equipo
+              </span>
+            </div>
+          </AnimatedEntry>
 
-        <AnimatedEntry delay={0.1}>
-          <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-4">
-            Abogados{" "}
-            <span className="text-gold">especializados</span>
-          </h2>
-        </AnimatedEntry>
+          <AnimatedEntry delay={0.1}>
+            <h2 className="font-display text-3xl md:text-5xl tracking-tight leading-[1.05] text-cream mb-4">
+              Abogados{" "}
+              <span className="text-burgundy-light">especializados</span>
+            </h2>
+          </AnimatedEntry>
 
-        <AnimatedEntry delay={0.2}>
-          <p className="text-sm text-cream/55 leading-relaxed max-w-[55ch] mb-12">
-            Un equipo multidisciplinario de profesionales en Derecho Público,
-            formados en las mejores universidades del país y con experiencia
-            comprobada en litigio de alto nivel.
-          </p>
-        </AnimatedEntry>
+          <AnimatedEntry delay={0.2}>
+            <p className="text-sm text-cream/55 leading-relaxed max-w-[55ch]">
+              Un equipo formado bajo la direcci&#243;n del Dr. &#211;scar
+              Gonz&#225;lez Camacho, con experiencia comprobada en litigio
+              ante el Tribunal Contencioso Administrativo, la Sala Primera
+              y la Sala Constitucional. Cada abogado se especializa en
+              Derecho P&#250;blico.
+            </p>
+          </AnimatedEntry>
+        </div>
 
         {/* Featured members — balanced 2-col */}
         <StaggerContainer
@@ -74,7 +79,7 @@ export function TeamSection() {
             <StaggerItem key={member.slug}>
               <Link
                 href={`/abogados/${member.slug}`}
-                className="group block p-6 md:p-8 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-gold/20 active:-translate-y-[1px] active:scale-[0.98] transition-all duration-400 h-full"
+                className="group block p-6 md:p-8 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 active:-translate-y-[1px] active:scale-[0.98] transition-all duration-400 h-full"
               >
                 <div className="flex items-start gap-5 mb-5">
                   {/* Photo with GC badge overlay */}
@@ -99,7 +104,7 @@ export function TeamSection() {
                   </div>
 
                   <div className="min-w-0">
-                    <h3 className="text-base font-semibold text-cream/90 tracking-tight group-hover:text-gold transition-colors duration-300">
+                    <h3 className="text-base font-semibold text-cream/90 tracking-tight group-hover:text-cream transition-colors duration-300">
                       {member.name}
                     </h3>
                     <div className="text-[10px] tracking-wider uppercase text-gold/70 font-medium mt-1">
@@ -123,7 +128,7 @@ export function TeamSection() {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-1.5 text-[10px] tracking-wider uppercase text-cream/40 group-hover:text-gold transition-colors duration-300">
+                <div className="flex items-center gap-1.5 text-[10px] tracking-wider uppercase text-cream/40 group-hover:text-cream transition-colors duration-300">
                   Ver perfil completo
                   <ArrowRight size={10} weight="bold" />
                 </div>
@@ -141,16 +146,28 @@ export function TeamSection() {
             <StaggerItem key={member.slug}>
               <Link
                 href={`/abogados/${member.slug}`}
-                className="group block p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-gold/20 active:-translate-y-[1px] active:scale-[0.98] transition-all duration-400"
+                className="group block p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 active:-translate-y-[1px] active:scale-[0.98] transition-all duration-400"
               >
                 <div className="flex items-start gap-3.5 mb-3">
-                  <div className="w-11 h-11 rounded-lg bg-burgundy/15 flex items-center justify-center shrink-0 border border-cream/[0.08]">
-                    <span className="font-display text-sm font-semibold text-gold/80">
-                      {getInitials(member.name)}
-                    </span>
-                  </div>
+                  {member.photo ? (
+                    <div className="w-11 h-11 rounded-lg overflow-hidden shrink-0 border border-cream/[0.08]">
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        width={88}
+                        height={88}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-11 h-11 rounded-lg bg-burgundy/15 flex items-center justify-center shrink-0 border border-cream/[0.08]">
+                      <span className="font-display text-sm font-semibold text-gold/80">
+                        {getInitials(member.name)}
+                      </span>
+                    </div>
+                  )}
                   <div className="min-w-0">
-                    <h3 className="text-sm font-semibold text-cream/90 tracking-tight group-hover:text-gold transition-colors duration-300">
+                    <h3 className="text-sm font-semibold text-cream/90 tracking-tight group-hover:text-cream transition-colors duration-300">
                       {member.name}
                     </h3>
                     <div className="text-[10px] tracking-wider uppercase text-gold/70 font-medium mt-0.5">

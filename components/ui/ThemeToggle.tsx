@@ -10,14 +10,9 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
 
   useEffect(() => {
     setMounted(true);
-    const stored = localStorage.getItem("theme");
-    if (stored === "light") {
-      setDark(false);
-      document.documentElement.classList.remove("dark");
-    } else {
-      setDark(true);
-      document.documentElement.classList.add("dark");
-    }
+    // Sync state with what the inline script already applied
+    const isDark = document.documentElement.classList.contains("dark");
+    setDark(isDark);
   }, []);
 
   const toggle = () => {
@@ -37,7 +32,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
   return (
     <button
       onClick={toggle}
-      className={`p-2 rounded-lg border border-cream/10 hover:border-gold/40 text-cream/50 hover:text-gold transition-all duration-300 ${className}`}
+      className={`p-2 rounded-lg border border-cream/10 hover:border-cream/25 text-cream/50 hover:text-cream transition-all duration-300 ${className}`}
       aria-label={dark ? "Cambiar a modo diurno" : "Cambiar a modo nocturno"}
     >
       <AnimatePresence mode="wait" initial={false}>

@@ -22,57 +22,68 @@ export function FirmHero() {
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold" />
               <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                Nuestro Director
+                Abogados &middot; Derecho P&#250;blico
               </span>
             </div>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.25}>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none text-cream">
-              Dr. Óscar
-              <br />
-              González Camacho
+            <h1 className="font-body text-4xl md:text-6xl lg:text-7xl tracking-[0.08em] uppercase leading-none text-cream font-medium">
+              Corporaci&#243;n GC
             </h1>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.35}>
-            <div className="mt-6 flex items-center gap-3">
+            <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/40 font-medium">
+              Fundado por el Dr. &#211;scar Gonz&#225;lez Camacho
+            </p>
+          </AnimatedEntry>
+
+          <AnimatedEntry delay={0.45}>
+            <div className="mt-8 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">
-                {OSCAR_PROFILE.heroDescription}
+                Litigio contencioso-administrativo de referencia en Costa Rica.
+                Fundado y dirigido por un ex-Magistrado de la Corte Suprema
+                de Justicia y co-redactor del C&#243;digo Procesal que rige
+                la materia.
               </p>
             </div>
           </AnimatedEntry>
 
-          <AnimatedEntry delay={0.5}>
+          <AnimatedEntry delay={0.55}>
             <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
-              {OSCAR_PROFILE.heroBio}
+              M&#225;s de 38 a&#241;os de trayectoria del Dr. &#211;scar
+              Gonz&#225;lez Camacho, Doctor en Derecho Sobresaliente Cum
+              Laude, respaldan a un equipo de abogados formado bajo su
+              direcci&#243;n y especializado exclusivamente en Derecho
+              P&#250;blico.
             </p>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.65}>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <MagneticButton href="#contacto" variant="primary">
-                Contactar
+                Agendar consulta
               </MagneticButton>
-              <MagneticButton href="#equipo" variant="outline">
-                Nuestro equipo
+              <MagneticButton href="#la-firma" variant="outline">
+                Conocer la firma
               </MagneticButton>
             </div>
           </AnimatedEntry>
         </div>
 
-        {/* Right — Photo */}
+        {/* Right — Founder Photo */}
         <AnimatedEntry delay={0.3} direction="right" className="relative">
-          <div className="relative md:h-[75vh] max-h-[700px] flex items-end justify-center">
-            {/* Background shape */}
-            <div className="absolute bottom-0 right-0 w-[85%] h-[90%] bg-burgundy/[0.1] rounded-[2rem]" />
+          <div className="relative md:h-[70vh] max-h-[650px] flex items-center justify-center">
+            {/* Background shape — offset for visual depth */}
+            <div className="absolute top-[5%] right-[2%] w-[78%] h-[88%] bg-burgundy/[0.08] rounded-[2.5rem]" />
 
             {/* Photo */}
-            <div className="relative w-[80%] md:w-[85%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+            <div className="relative w-[75%] md:w-[80%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src={OSCAR_PROFILE.photo}
-                alt={OSCAR_PROFILE.name}
+                alt={`${OSCAR_PROFILE.name} \u2014 Fundador y Director de Corporaci\u00f3n GC`}
                 width={768}
                 height={1024}
                 priority
@@ -82,12 +93,12 @@ export function FirmHero() {
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface/90 to-transparent" />
             </div>
 
-            {/* Floating badge */}
-            <div className="absolute bottom-6 left-0 bg-surface/95 backdrop-blur-md rounded-xl px-4 py-3 shadow-lg border border-cream/[0.06]">
+            {/* Floating founder badge */}
+            <div className="absolute bottom-[8%] left-0 bg-surface/95 backdrop-blur-md rounded-xl px-5 py-3.5 shadow-lg border border-cream/[0.06] animate-float">
               <div className="flex items-center gap-3">
                 <Image
                   src="/images/logo-gc.png"
-                  alt="Corporación GC"
+                  alt="Corporaci&#243;n GC"
                   width={40}
                   height={40}
                   className="h-9 w-auto opacity-70 dark:opacity-100 dark:brightness-0 dark:invert"
@@ -97,11 +108,12 @@ export function FirmHero() {
                     FUNDADOR Y DIRECTOR
                   </div>
                   <div className="text-[9px] text-cream/40">
-                    Corporación GC
+                    Dr. &#211;scar Gonz&#225;lez Camacho
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </AnimatedEntry>
       </div>

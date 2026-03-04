@@ -93,7 +93,7 @@ export function Hero() {
             </div>
 
             {/* Floating badge — Corporacion GC */}
-            <div className="absolute bottom-6 left-0 bg-surface/95 backdrop-blur-md rounded-xl px-4 py-3 shadow-lg border border-cream/[0.06]">
+            <div className="absolute bottom-6 left-0 bg-surface/95 backdrop-blur-md rounded-xl px-4 py-3 shadow-lg border border-cream/[0.06] animate-float">
               <div className="flex items-center gap-3">
                 <Image
                   src="/images/logo-gc.png"

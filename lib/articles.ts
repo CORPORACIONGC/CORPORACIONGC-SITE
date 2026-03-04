@@ -67,6 +67,12 @@ export function getArticleBySlug(slug: string): Article | null {
   };
 }
 
+export function getArticlesByAuthor(authorSubstring: string): ArticleMeta[] {
+  return getAllArticles().filter(
+    (a) => a.author && a.author.toLowerCase().includes(authorSubstring.toLowerCase())
+  );
+}
+
 export function formatDate(dateStr: string): string {
   try {
     const d = new Date(dateStr);

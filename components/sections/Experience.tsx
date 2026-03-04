@@ -15,7 +15,7 @@ export function Experience() {
           <div>
             <AnimatedEntry>
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
+                <div className="w-2 h-2 rounded-full bg-burgundy animate-breathe" />
                 <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
                   Trayectoria
                 </span>
@@ -26,7 +26,7 @@ export function Experience() {
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
                 Experiencia
                 <br />
-                <span className="text-gold">comprobada</span>
+                <span className="text-burgundy-light">comprobada</span>
               </h2>
             </AnimatedEntry>
 
@@ -47,7 +47,7 @@ export function Experience() {
               {EXPERIENCE.map((exp, i) => (
                 <StaggerItem key={i}>
                   <div
-                    className={`relative pl-10 py-5 rounded-xl transition-colors duration-300 ${
+                    className={`relative pl-10 pr-5 py-5 rounded-xl transition-colors duration-300 ${
                       exp.highlight
                         ? "bg-gold/[0.06] border border-gold/[0.15]"
                         : ""

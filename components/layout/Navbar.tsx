@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -36,7 +36,7 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
           topOffset ? "top-8" : "top-0"
         } ${
           scrolled
-            ? "bg-surface backdrop-blur-xl shadow-[0_1px_0_rgba(196,162,101,0.08)]"
+            ? "bg-surface/80 backdrop-blur-xl shadow-[0_1px_0_rgba(196,162,101,0.08)] border-b border-white/[0.06] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
             : "bg-transparent"
         }`}
       >
@@ -67,7 +67,7 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-xs tracking-[0.12em] uppercase text-cream/60 hover:text-gold transition-colors duration-300"
+                  className="text-xs tracking-[0.12em] uppercase text-cream/60 hover:text-cream transition-colors duration-300"
                 >
                   {link.label}
                 </Link>
@@ -75,7 +75,14 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-xs tracking-[0.12em] uppercase text-cream/60 hover:text-gold transition-colors duration-300"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const id = link.href.replace("#", "");
+                    const el = document.getElementById(id);
+                    if (el) el.scrollIntoView({ behavior: "smooth" });
+                    window.history.replaceState(null, "", link.href);
+                  }}
+                  className="text-xs tracking-[0.12em] uppercase text-cream/60 hover:text-cream transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -129,7 +136,17 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
                 <motion.a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => {
+                    setMobileOpen(false);
+                    if (link.href.startsWith("#")) {
+                      e.preventDefault();
+                      const id = link.href.replace("#", "");
+                      setTimeout(() => {
+                        const el = document.getElementById(id);
+                        if (el) el.scrollIntoView({ behavior: "smooth" });
+                      }, 400);
+                    }
+                  }}
                   initial={{ opacity: 0, x: 24 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 + i * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}

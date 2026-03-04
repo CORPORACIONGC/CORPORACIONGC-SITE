@@ -42,14 +42,14 @@ export function Footer() {
             <div className="flex items-center gap-3 mt-6">
               <a
                 href={`mailto:${FIRM_CONTACT.email}`}
-                className="p-2 rounded-lg border border-cream/12 hover:border-gold/40 hover:text-gold transition-all duration-300"
+                className="p-2 rounded-lg border border-cream/12 hover:border-cream/25 hover:text-cream transition-all duration-300"
                 aria-label="Email"
               >
                 <Envelope size={18} weight="regular" />
               </a>
               <a
                 href={`tel:${FIRM_CONTACT.phoneRaw}`}
-                className="p-2 rounded-lg border border-cream/12 hover:border-gold/40 hover:text-gold transition-all duration-300"
+                className="p-2 rounded-lg border border-cream/12 hover:border-cream/25 hover:text-cream transition-all duration-300"
                 aria-label="Teléfono"
               >
                 <Phone size={18} weight="regular" />
@@ -68,7 +68,7 @@ export function Footer() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-sm text-cream/55 hover:text-gold transition-colors duration-300"
+                    className="text-sm text-cream/55 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -76,7 +76,7 @@ export function Footer() {
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-sm text-cream/55 hover:text-gold transition-colors duration-300"
+                    className="text-sm text-cream/55 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </a>

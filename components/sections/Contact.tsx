@@ -55,7 +55,8 @@ export function Contact() {
           <div>
             <AnimatedEntry>
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
+                <span className="font-display text-lg text-gold/40 font-semibold">03</span>
+                <div className="h-px w-6 bg-cream/10" />
                 <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
                   Contacto
                 </span>
@@ -66,7 +67,7 @@ export function Contact() {
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
                 Hablemos sobre
                 <br />
-                <span className="text-gold">su caso</span>
+                <span className="text-burgundy-light">su caso</span>
               </h2>
             </AnimatedEntry>
 
@@ -89,9 +90,9 @@ export function Contact() {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-gold/20 transition-all duration-400"
+                    className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
                   >
-                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-gold group-hover:bg-gold/[0.08] transition-all duration-300">
+                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
                       <item.icon size={20} weight="duotone" />
                     </div>
                     <div>
