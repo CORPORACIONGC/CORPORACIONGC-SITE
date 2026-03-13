@@ -76,7 +76,7 @@ export const TEAM = [
   { slug: "katherine-gonzalez", name: "Licda. Katherine González", role: "Abogada Asociada", photo: null, shortBio: "Master en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública. Miembro del Colegio de Abogados desde 2019.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial"], languages: ["Español", "Inglés", "Italiano", "Francés"], featured: false },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: null, shortBio: "Licenciada en Derecho con mención en Derechos Humanos, UCR. Maestranda en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Derechos Humanos", "Derecho Público"], languages: ["Español", "Inglés", "Francés"], featured: false },
   { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
-  { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: null, shortBio: "Licenciado en Derecho con Excelencia Académica, UCR. Estudios en Filosofía. Especialidad en Derecho Notarial y Registral.", areas: ["Derecho Ambiental", "Derecho Civil", "Derecho Notarial y Registral"], languages: ["Español", "Inglés", "Alemán"], featured: false },
+  { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Derecho Público", "Derecho Constitucional", "Contencioso Administrativo", "Derecho Tributario", "Derecho Notarial y Registral"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
 
 export const FIRM_PRACTICE_AREAS = [
@@ -221,6 +221,70 @@ export const ESTEBAN_PRACTICE_AREAS = [
 ] as const;
 
 export const ESTEBAN_NAV_LINKS = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Perfil", href: "#perfil" },
+  { label: "Trayectoria", href: "#trayectoria" },
+  { label: "Artículos", href: "/articulos" },
+  { label: "Contacto", href: "#contacto" },
+] as const;
+
+// ─── Perfil Individual: José Carlos Solano ───
+
+export const JOSE_CARLOS_PROFILE = {
+  name: "Lic. José Carlos Solano Salas",
+  role: "Abogado Asociado",
+  photo: "/images/jose-carlos-solano.jpeg",
+  heroDescription: "Abogado y Notario Público, especializado en Derecho Público, Derecho Constitucional, Litigio Contencioso-Administrativo, Derecho Tributario y Derecho Notarial y Registral.",
+  heroBio: "Licenciado en Derecho con énfasis en Derecho Tributario por la Universidad de Costa Rica, graduado con honores. Especialista en Derecho Notarial y Registral. Más de 8 años de experiencia en Corporación GC en litigio judicial y administrativo de alta complejidad. Aceptado en la Maestría en Teoría del Derecho de la Johann Wolfgang Goethe-Universität Frankfurt am Main, Alemania.",
+  education: [
+    { degree: "Maestría en Teoría del Derecho", institution: "Goethe-Universität Frankfurt am Main, Alemania", status: "Aceptado — Inicio octubre 2026" },
+    { degree: "Especialista en Derecho Notarial y Registral", institution: "Universidad La Salle de Costa Rica", distinction: "Con honores" },
+    { degree: "Licenciado en Derecho (énfasis en Derecho Tributario)", institution: "Universidad de Costa Rica", distinction: "Con honores — Promedio superior a 9/10" },
+    { degree: "Estudios parciales en Filosofía", institution: "Universidad de Costa Rica" },
+  ],
+  career: [
+    { role: "Abogado Asociado", org: "Corporación GC", period: "Jul. 2022 – Presente", description: "Litigio judicial contencioso-administrativo, procesos ordinarios civiles, procedimientos administrativos, acciones de inconstitucionalidad y recursos de amparo. Elaboración de dictámenes jurídicos especializados para administraciones públicas y sujetos privados. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
+    { role: "Asistente Legal", org: "Corporación GC", period: "Mar. 2018 – Jul. 2022", description: "Apoyo en litigio contencioso-administrativo, procedimientos ante la Contraloría General de la República, procedimientos sancionatorios, procesos de Hacienda relacionados con Zona Marítimo Terrestre, e impugnación de actos administrativos.", highlight: false },
+    { role: "Asistente Legal", org: "BSA Consultores", period: "Jul. 2017 – Feb. 2018", description: "Redacción y preparación de escritos judiciales y presentaciones ante tribunales. Apoyo en asesoría municipal. Investigación jurídica en Derecho Público y Administrativo.", highlight: false },
+  ],
+  practiceAreas: [
+    { title: "Derecho Público", description: "Asesoría y defensa integral en el ámbito del Derecho Público costarricense.", icon: "Scales" as const },
+    { title: "Derecho Constitucional", description: "Acciones de inconstitucionalidad, recursos de amparo y habeas corpus ante la Sala Constitucional.", icon: "ShieldCheck" as const },
+    { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
+    { title: "Derecho Tributario", description: "Planificación fiscal, defensa en procedimientos tributarios y consultoría impositiva.", icon: "Bank" as const },
+    { title: "Derecho Municipal", description: "Asesoría jurídica a gobiernos locales y litigio en materia municipal.", icon: "Buildings" as const },
+    { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const },
+  ],
+  research: {
+    title: "El control jurisdiccional de los actos de gobierno",
+    description: "Trabajo Final de Graduación para la Licenciatura en Derecho (UCR) que analiza el concepto del Acto de Gobierno como especie del acto administrativo, su evolución histórica desde la jurisprudencia del Consejo de Estado francés, y la viabilidad de su control jurisdiccional a la luz de los principios garantistas del Derecho Público contemporáneo.",
+    tags: ["Acto de Gobierno", "Derecho Administrativo", "Control Jurisdiccional", "Trabajo Final de Graduación"],
+  },
+  credentials: [
+    { metric: "8+", label: "Años de experiencia en litigio", detail: "Desde marzo de 2018" },
+    { metric: "UCR", label: "Egresado con honores", detail: "Promedio superior a 9/10" },
+    { metric: "Frankfurt", label: "Maestría en Teoría del Derecho", detail: "Goethe-Universität · 2026" },
+  ],
+  languages: ["Español", "Inglés", "Alemán"],
+} as const;
+
+export const JOSE_CARLOS_CONTACT = {
+  email: "jsolano@corporaciongc.com",
+  phone: "+506 8317-9564",
+  phoneRaw: "50683179564",
+  location: "OFIDENT, Barrio Dent, San José, Costa Rica",
+} as const;
+
+export const JOSE_CARLOS_PRACTICE_AREAS = [
+  { title: "Derecho Público", description: "Asesoría y defensa integral en el ámbito del Derecho Público costarricense.", icon: "Scales" as const },
+  { title: "Derecho Constitucional", description: "Acciones de inconstitucionalidad, recursos de amparo y habeas corpus ante la Sala Constitucional.", icon: "ShieldCheck" as const },
+  { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
+  { title: "Derecho Tributario", description: "Planificación fiscal, defensa en procedimientos tributarios y consultoría impositiva.", icon: "Bank" as const },
+  { title: "Derecho Municipal", description: "Asesoría jurídica a gobiernos locales y litigio en materia municipal.", icon: "Buildings" as const },
+  { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const },
+] as const;
+
+export const JOSE_CARLOS_NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Perfil", href: "#perfil" },
   { label: "Trayectoria", href: "#trayectoria" },

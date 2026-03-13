@@ -16,6 +16,8 @@ import {
   CalendarBlank,
   Tag,
   User,
+  BookOpen,
+  ArrowSquareOut,
 } from "@phosphor-icons/react/dist/ssr";
 
 export async function generateStaticParams() {
@@ -159,9 +161,46 @@ export default async function ArticlePage({
               </p>
             )}
 
+            {/* Source reference for journal articles */}
+            {article.sourceReference && (
+              <div className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.03] mb-10">
+                <BookOpen size={16} weight="regular" className="text-gold/60 shrink-0 mt-0.5" />
+                <div className="text-xs text-cream/50 leading-relaxed">
+                  <span className="text-cream/60 font-medium">Publicado en: </span>
+                  {article.sourceReference}
+                  {article.sourceUrl && (
+                    <>
+                      {" "}
+                      <a
+                        href={article.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-gold hover:text-gold/80 transition-colors duration-300"
+                      >
+                        Acceder a la revista
+                        <ArrowSquareOut size={11} weight="bold" />
+                      </a>
+                    </>
+                  )}
+                </div>
+              </div>
+            )}
+
             <div className="h-px bg-cream/[0.06] mb-10" />
 
             {/* Content */}
+            {isPdf && article.content.trim() && (
+              <div className="prose-article mb-10">
+                <MDXRemote
+                  source={article.content}
+                  options={{
+                    mdxOptions: {
+                      remarkPlugins: [remarkGfm],
+                    },
+                  }}
+                />
+              </div>
+            )}
             {isPdf ? (
               <PDFViewer pdfFile={article.pdfFile!} />
             ) : (

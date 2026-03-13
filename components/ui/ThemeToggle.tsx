@@ -32,7 +32,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
   return (
     <button
       onClick={toggle}
-      className={`p-2 rounded-lg border border-cream/10 hover:border-cream/25 text-cream/50 hover:text-cream transition-all duration-300 ${className}`}
+      className={`p-2 text-cream/40 hover:text-cream/80 transition-colors duration-300 ${className}`}
       aria-label={dark ? "Cambiar a modo diurno" : "Cambiar a modo nocturno"}
     >
       <AnimatePresence mode="wait" initial={false}>

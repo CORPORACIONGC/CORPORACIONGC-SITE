@@ -18,6 +18,10 @@ import { EstebanHero } from "@/components/sections/EstebanHero";
 import { EstebanAbout } from "@/components/sections/EstebanAbout";
 import { EstebanExperience } from "@/components/sections/EstebanExperience";
 import { EstebanContact } from "@/components/sections/EstebanContact";
+import { JoseCarlosHero } from "@/components/sections/JoseCarlosHero";
+import { JoseCarlosAbout } from "@/components/sections/JoseCarlosAbout";
+import { JoseCarlosExperience } from "@/components/sections/JoseCarlosExperience";
+import { JoseCarlosContact } from "@/components/sections/JoseCarlosContact";
 import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
@@ -26,6 +30,8 @@ import {
   OSCAR_NAV_LINKS,
   ESTEBAN_PROFILE,
   ESTEBAN_NAV_LINKS,
+  JOSE_CARLOS_PROFILE,
+  JOSE_CARLOS_NAV_LINKS,
 } from "@/lib/constants";
 
 // Generate static params for all team members
@@ -68,6 +74,7 @@ export default async function AttorneyProfile({
   if (member.slug === "khevin-sanchez") return <KhevinProfile />;
   if (member.slug === "oscar-gonzalez") return <OscarProfile />;
   if (member.slug === "esteban-perez") return <EstebanProfile />;
+  if (member.slug === "jose-carlos-solano") return <JoseCarlosProfile />;
 
   // Other attorneys get a basic profile
   return <BasicProfile member={member} />;
@@ -204,6 +211,47 @@ function EstebanProfile() {
   );
 }
 
+// ─── José Carlos's Full Profile ───
+
+function JoseCarlosProfile() {
+  const articles = getArticlesByAuthor("Solano").map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    date: a.date,
+    type: a.type,
+    tags: [...a.tags],
+  }));
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
+          <Link
+            href="/"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+          >
+            <span>&larr;</span>
+            <span>Volver a Corporación GC</span>
+          </Link>
+        </div>
+      </div>
+      <div className="pt-8">
+        <Navbar navLinks={JOSE_CARLOS_NAV_LINKS} topOffset />
+        <main>
+          <JoseCarlosHero />
+          <Credentials credentials={JOSE_CARLOS_PROFILE.credentials} />
+          <JoseCarlosAbout />
+          <JoseCarlosExperience />
+          <Publications articles={articles} />
+          <JoseCarlosContact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
 // ─── Basic Profile for other attorneys ───
 
 function BasicProfile({
@@ -221,6 +269,18 @@ function BasicProfile({
       .join("")
       .toUpperCase();
   }
+
+  // Extract first surname for author search
+  const nameWords = member.name.replace(/^(Dr\.|Lic\.|Licda\.)\s+/i, "").split(" ").filter((w) => w.length > 0);
+  const authorKey = nameWords.length >= 3 ? nameWords[nameWords.length - 2] : nameWords[nameWords.length - 1];
+  const articles = getArticlesByAuthor(authorKey).map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    date: a.date,
+    type: a.type,
+    tags: [...a.tags],
+  }));
 
   return (
     <>
@@ -303,6 +363,7 @@ function BasicProfile({
               </div>
             </div>
           </section>
+          {articles.length > 0 && <Publications articles={articles} />}
         </main>
         <Footer />
       </div>

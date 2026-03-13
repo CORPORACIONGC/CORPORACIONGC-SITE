@@ -75,7 +75,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
         </div>
       </div>
 
-      {/* Desktop iframe viewer */}
+      {/* Desktop PDF viewer — uses <object> for native browser rendering with text selection */}
       <div className="hidden md:block rounded-xl overflow-hidden border border-cream/[0.08] bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
         {!loaded && (
           <div className="w-full h-[80vh] min-h-[600px] flex flex-col items-center justify-center gap-3 bg-cream/[0.03]">
@@ -89,12 +89,19 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
             </span>
           </div>
         )}
-        <iframe
-          src={pdfUrl}
+        <object
+          data={`${pdfUrl}#view=Fit`}
+          type="application/pdf"
           onLoad={() => setLoaded(true)}
           className={`w-full h-[80vh] min-h-[600px] ${loaded ? "block" : "hidden"}`}
-          title="Visor de PDF"
-        />
+        >
+          <iframe
+            src={`${pdfUrl}#view=Fit`}
+            onLoad={() => setLoaded(true)}
+            className="w-full h-[80vh] min-h-[600px]"
+            title="Visor de PDF"
+          />
+        </object>
       </div>
     </div>
   );

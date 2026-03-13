@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,41 +8,122 @@ import { List, X } from "@phosphor-icons/react";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { FIRM_NAV_LINKS } from "@/lib/constants";
 
-export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLinks?: readonly { label: string; href: string }[]; topOffset?: boolean }) {
+export function Navbar({
+  navLinks = FIRM_NAV_LINKS,
+  topOffset = false,
+}: {
+  navLinks?: readonly { label: string; href: string }[];
+  topOffset?: boolean;
+}) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
+  const navRef = useRef<HTMLElement>(null);
+  const linksRef = useRef<HTMLDivElement>(null);
+  const linkEls = useRef<(HTMLElement | null)[]>([]);
+  const [pill, setPill] = useState({ x: 0, w: 0, show: false });
+
+  /* ── Scroll state ── */
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  /* ── Body lock for mobile menu ── */
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
 
+  /* ── Mouse glare tracking (only when glass active) ── */
+  const onMouseMove = useCallback(
+    (e: React.MouseEvent<HTMLElement>) => {
+      const el = navRef.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      el.style.setProperty(
+        "--glare-x",
+        `${((e.clientX - r.left) / r.width) * 100}%`
+      );
+      el.style.setProperty(
+        "--glare-y",
+        `${((e.clientY - r.top) / r.height) * 100}%`
+      );
+    },
+    []
+  );
+
+  /* ── Active section detection via IntersectionObserver ── */
+  useEffect(() => {
+    const anchors = navLinks
+      .map((l, i) =>
+        l.href.startsWith("#") ? { id: l.href.slice(1), idx: i } : null
+      )
+      .filter(Boolean) as { id: string; idx: number }[];
+
+    if (anchors.length === 0) return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const match = anchors.find((a) => a.id === entry.target.id);
+            if (match) setActiveIndex(match.idx);
+          }
+        }
+      },
+      { rootMargin: "-20% 0px -60% 0px" }
+    );
+
+    anchors.forEach(({ id }) => {
+      const section = document.getElementById(id);
+      if (section) io.observe(section);
+    });
+
+    return () => io.disconnect();
+  }, [navLinks]);
+
+  /* ── Sliding pill measurement ── */
+  useEffect(() => {
+    const measure = () => {
+      const el = linkEls.current[activeIndex];
+      if (!el) {
+        setPill((p) => ({ ...p, show: false }));
+        return;
+      }
+      setPill({
+        x: el.offsetLeft - 10,
+        w: el.offsetWidth + 20,
+        show: true,
+      });
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [activeIndex]);
+
   return (
     <>
       <nav
-        className={`fixed left-0 right-0 z-40 transition-all duration-500 ${
+        ref={navRef}
+        onMouseMove={onMouseMove}
+        className={`fixed left-0 right-0 z-40 navbar-glass transition-all duration-700 ${
           topOffset ? "top-8" : "top-0"
-        } ${
-          scrolled
-            ? "bg-surface/80 backdrop-blur-xl shadow-[0_1px_0_rgba(196,162,101,0.08)] border-b border-white/[0.06] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]"
-            : "bg-transparent"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20">
+        {/* Subtle edge line */}
+        <div className="absolute inset-0 pointer-events-none z-[3]">
+          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-cream/[0.06] to-transparent" />
+        </div>
+
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20 relative z-10">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group nav-tactile">
             <Image
               src="/images/logo-gc.png"
               alt="Corporación GC"
@@ -61,13 +142,23 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
           </Link>
 
           {/* Desktop links + toggle */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) =>
+          <div
+            ref={linksRef}
+            className="hidden md:flex items-center gap-8 relative"
+          >
+            {navLinks.map((link, i) =>
               link.href.startsWith("/") ? (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-xs tracking-[0.12em] uppercase text-cream/60 hover:text-cream transition-colors duration-300"
+                  ref={(el: HTMLAnchorElement | null) => {
+                    linkEls.current[i] = el;
+                  }}
+                  className={`nav-link-item text-[11px] tracking-[0.14em] uppercase transition-colors duration-300 ${
+                    activeIndex === i
+                      ? "text-cream font-medium"
+                      : "text-cream/45 hover:text-cream/75"
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -75,19 +166,28 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
                 <a
                   key={link.href}
                   href={link.href}
+                  ref={(el) => {
+                    linkEls.current[i] = el;
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
+                    setActiveIndex(i);
                     const id = link.href.replace("#", "");
                     const el = document.getElementById(id);
                     if (el) el.scrollIntoView({ behavior: "smooth" });
                     window.history.replaceState(null, "", link.href);
                   }}
-                  className="text-xs tracking-[0.12em] uppercase text-cream/60 hover:text-cream transition-colors duration-300"
+                  className={`nav-link-item text-[11px] tracking-[0.14em] uppercase transition-colors duration-300 ${
+                    activeIndex === i
+                      ? "text-cream font-medium"
+                      : "text-cream/45 hover:text-cream/75"
+                  }`}
                 >
                   {link.label}
                 </a>
               )
             )}
+
             <ThemeToggle />
           </div>
 
@@ -96,10 +196,14 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
             <ThemeToggle />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-cream/70 hover:text-gold transition-colors"
+              className="p-2 text-cream/70 hover:text-gold transition-colors nav-tactile"
               aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
             >
-              {mobileOpen ? <X size={22} weight="light" /> : <List size={22} weight="light" />}
+              {mobileOpen ? (
+                <X size={22} weight="light" />
+              ) : (
+                <List size={22} weight="light" />
+              )}
             </button>
           </div>
         </div>
@@ -125,7 +229,7 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
               />
               <button
                 onClick={() => setMobileOpen(false)}
-                className="p-2 text-cream/70"
+                className="p-2 text-cream/70 nav-tactile"
                 aria-label="Cerrar menú"
               >
                 <X size={22} weight="light" />
@@ -149,8 +253,12 @@ export function Navbar({ navLinks = FIRM_NAV_LINKS, topOffset = false }: { navLi
                   }}
                   initial={{ opacity: 0, x: 24 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 + i * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                  className="font-display text-2xl font-light tracking-wide text-cream py-3 border-b border-cream/5 w-full"
+                  transition={{
+                    delay: 0.1 + i * 0.06,
+                    duration: 0.4,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
+                  className="font-display text-2xl font-light tracking-wide text-cream py-3 border-b border-cream/5 w-full nav-tactile"
                 >
                   {link.label}
                 </motion.a>
