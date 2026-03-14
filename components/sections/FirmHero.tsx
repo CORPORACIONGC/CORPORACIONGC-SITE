@@ -22,7 +22,7 @@ export function FirmHero() {
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold" />
               <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                Abogados &middot; Derecho P&#250;blico
+                Ex-Magistrado &middot; Co-redactor del CPCA
               </span>
             </div>
           </AnimatedEntry>
@@ -35,7 +35,7 @@ export function FirmHero() {
 
           <AnimatedEntry delay={0.35}>
             <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/40 font-medium">
-              Fundado por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
+              Fundado y dirigido por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
             </p>
           </AnimatedEntry>
 
@@ -43,21 +43,23 @@ export function FirmHero() {
             <div className="mt-8 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">
-                Litigio contencioso-administrativo de referencia en Costa Rica.
-                Fundado y dirigido por un ex-Magistrado de la Corte Suprema
-                de Justicia y co-redactor del C&#243;digo Procesal que rige
-                la materia.
+                Co-redactor del C&#243;digo Procesal Contencioso
+                Administrativo. Magistrado de la Sala Primera de la Corte
+                Suprema durante doce a&#241;os. Coordinador de la
+                Jurisdicci&#243;n Contencioso-Administrativa por nueve
+                a&#241;os. Once a&#241;os litigando ante los tribunales que
+                ayud&#243; a construir.
               </p>
             </div>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.55}>
             <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
-              M&#225;s de 38 a&#241;os de trayectoria del Dr. &#211;scar
-              Eduardo Gonz&#225;lez Camacho, Doctor en Derecho Sobresaliente Cum
-              Laude, respaldan a un equipo de abogados formado bajo su
-              direcci&#243;n y especializado exclusivamente en Derecho
-              P&#250;blico.
+              El Dr. Gonz&#225;lez Camacho dirige y trabaja personalmente
+              en cada caso junto a un equipo de seis abogados formados
+              exclusivamente en Derecho P&#250;blico bajo su
+              supervisi&#243;n directa. Conocimiento de autor y un equipo
+              entrenado para ejecutarlo.
             </p>
           </AnimatedEntry>
 

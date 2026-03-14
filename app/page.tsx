@@ -92,7 +92,7 @@ const jsonLdOrganization = {
     name: "Dr. \u00d3scar Gonz\u00e1lez Camacho",
     jobTitle: "Fundador y Director",
     description:
-      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002\u20132014). Co-redactor del C\u00f3digo Procesal Contencioso Administrativo (Ley N.\u00b0 8508). Doctor en Derecho por la Universidad de Alcal\u00e1 de Henares, Sobresaliente Cum Laude.",
+      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002\u20132014). Co-redactor del C\u00f3digo Procesal Contencioso Administrativo (Ley N.\u00b0 8508). Coordinador de la Jurisdicci\u00f3n Contencioso-Administrativa por nueve a\u00f1os. Doctor en Derecho por la Universidad de Alcal\u00e1 de Henares, Sobresaliente Cum Laude.",
     alumniOf: [
       {
         "@type": "CollegeOrUniversity",

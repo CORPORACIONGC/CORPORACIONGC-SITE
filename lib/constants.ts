@@ -4,7 +4,7 @@ export const FIRM = {
   name: "Corporación GC",
   title: "Corporación GC | Abogados Especialistas en Derecho Público · Costa Rica",
   description:
-    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Corte Suprema y co-redactor del Código Procesal Contencioso Administrativo. Más de 38 años de experiencia en Derecho Público.",
+    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado y dirigido por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Corte Suprema, co-redactor del CPCA y coordinador de la Jurisdicción Contencioso-Administrativa. Seis abogados especializados exclusivamente en Derecho Público.",
   url: "https://corporaciongc.com",
   locale: "es_CR",
 } as const;
@@ -31,9 +31,9 @@ export const FIRM_NAV_LINKS = [
 ] as const;
 
 export const FIRM_CREDENTIALS = [
-  { metric: "38+", label: "Años de trayectoria jurídica", detail: "Desde 1986" },
-  { metric: "12", label: "Años como Magistrado de la Corte Suprema", detail: "Sala Primera, 2002 – 2014" },
-  { metric: "CPCA", label: "Co-redactor del Código Procesal", detail: "Contencioso Administrativo" },
+  { metric: "12", label: "Años como Magistrado de la Corte Suprema", detail: "Sala Primera · 2002 – 2014" },
+  { metric: "6", label: "Abogados especializados en Derecho Público", detail: "Formados bajo la dirección del fundador" },
+  { metric: "CPCA", label: "Co-redactado por nuestro Director", detail: "Ley N.° 8508" },
 ] as const;
 
 export const OSCAR_PROFILE = {

@@ -54,18 +54,20 @@ export function TeamSection() {
 
           <AnimatedEntry delay={0.1}>
             <h2 className="font-display text-3xl md:text-5xl tracking-tight leading-[1.05] text-cream mb-4">
-              Abogados{" "}
-              <span className="text-burgundy-light">especializados</span>
+              El equipo detr&#225;s{" "}
+              <span className="text-burgundy-light">de cada caso</span>
             </h2>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.2}>
             <p className="text-sm text-cream/55 leading-relaxed max-w-[55ch]">
-              Un equipo formado bajo la direcci&#243;n del Dr. &#211;scar
-              Gonz&#225;lez Camacho, con experiencia comprobada en litigio
-              ante el Tribunal Contencioso Administrativo, la Sala Primera
-              y la Sala Constitucional. Cada abogado se especializa en
-              Derecho P&#250;blico.
+              El Dr. Gonz&#225;lez Camacho form&#243; a cada abogado de
+              esta firma &mdash; todos desde sus primeros a&#241;os de
+              carrera &mdash; con la disciplina y el rigor que veintiocho
+              a&#241;os de judicatura le exigieron. Hoy trabaja con ellos
+              directamente en cada caso. Eso se traduce en un est&#225;ndar
+              que no depende de qui&#233;n lleve el caso &mdash; porque
+              todos lo llevan con &#233;l.
             </p>
           </AnimatedEntry>
         </div>

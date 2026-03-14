@@ -27,17 +27,17 @@ export function FirmAbout() {
             </AnimatedEntry>
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tight leading-[1.05] text-cream">
-                Derecho P&#250;blico<br />con <span className="text-burgundy-light">autoridad</span>
+                Donde el Derecho P&#250;blico se litiga<br />con <span className="text-burgundy-light">conocimiento de autor</span>
               </h2>
             </AnimatedEntry>
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Corporaci&#243;n GC nace de la visi&#243;n del Dr. &#211;scar Eduardo Gonz&#225;lez Camacho, quien desde la judicatura contribuy&#243; a edificar la jurisdicci&#243;n contencioso-administrativa costarricense. Tras 12 a&#241;os como Magistrado de la Corte Suprema y co-redactar el C&#243;digo Procesal que rige la materia, su conocimiento &#237;ntimo del sistema se traduce en una ventaja estrat&#233;gica que ning&#250;n otro bufete puede replicar.
+                El Dr. &#211;scar Eduardo Gonz&#225;lez Camacho recorri&#243; cada eslab&#243;n de la jurisdicci&#243;n contencioso-administrativa costarricense. Juzg&#243; en primera instancia. Resolvi&#243; apelaciones como Juez Superior del Tribunal. Defini&#243; jurisprudencia como Magistrado de la Sala Primera durante doce a&#241;os. Coordin&#243; la jurisdicci&#243;n por nueve a&#241;os. Co-redact&#243; el C&#243;digo Procesal que la rige. Y desde 2015, litiga ante los mismos tribunales con un conocimiento del sistema que ning&#250;n manual puede ofrecer.
               </p>
             </AnimatedEntry>
             <AnimatedEntry delay={0.3}>
               <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Bajo su direcci&#243;n, un equipo de abogados formados exclusivamente en Derecho P&#250;blico defiende sus intereses ante el Tribunal Contencioso Administrativo, la Sala Primera, la Sala Constitucional y diversas instancias de la Administraci&#243;n P&#250;blica con la profundidad t&#233;cnica que solo la especializaci&#243;n y la formaci&#243;n directa permiten.
+                Corporaci&#243;n GC es la firma que fund&#243; para trasladar esa comprensi&#243;n al servicio del cliente. Bajo su direcci&#243;n, seis abogados formados exclusivamente en Derecho P&#250;blico defienden sus intereses ante el Tribunal Contencioso Administrativo, la Sala Primera, la Sala Constitucional y las diversas instancias de la Administraci&#243;n P&#250;blica, con la profundidad t&#233;cnica que solo la especializaci&#243;n y la formaci&#243;n directa permiten.
               </p>
             </AnimatedEntry>
             <AnimatedEntry delay={0.4}>
