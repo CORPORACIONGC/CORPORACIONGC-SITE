@@ -84,9 +84,6 @@ export function About() {
                   </div>
                 </div>
                 <div className="mt-3 text-[10px] text-cream/40">
-                  Tesis: Implementación de IA en la administración de justicia costarricense
-                </div>
-                <div className="mt-2 text-[10px] text-cream/40">
                   3er mejor promedio — II Convocatoria, Examen de Excelencia
                   Académica del Colegio de Abogados y Abogadas de Costa Rica, 2025
                 </div>

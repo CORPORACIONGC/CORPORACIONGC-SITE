@@ -96,7 +96,8 @@ export function Experience() {
                   Investigación destacada
                 </div>
                 <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
-                  Implementación de sistemas de IA en la administración de
+                  Hacia la implementación de sistemas automatizados de decisión
+                  basados en inteligencia artificial en la administración de
                   justicia costarricense
                 </h3>
                 <p className="mt-2 text-xs text-cream/50 leading-relaxed max-w-[55ch]">

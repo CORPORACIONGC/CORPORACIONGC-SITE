@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { ArrowDown } from "@phosphor-icons/react";
@@ -48,15 +47,6 @@ export function EstebanHero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.5}>
-            <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
-              Más de 9 años de experiencia en litigio de alta complejidad
-              contra el Estado. Colaboración directa con el Dr. Óscar Eduardo González
-              Camacho, co-redactor del Código Procesal Contencioso
-              Administrativo.
-            </p>
-          </AnimatedEntry>
-
-          <AnimatedEntry delay={0.6}>
             <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
               Carnet CAACR 34399
             </div>
@@ -77,52 +67,21 @@ export function EstebanHero() {
         {/* Right — Photo */}
         <AnimatedEntry delay={0.3} direction="right" className="relative">
           <div className="relative md:h-[75vh] max-h-[700px] flex items-end justify-center">
-            {/* Background shape */}
-            <div className="absolute bottom-0 right-0 w-[85%] h-[90%] bg-burgundy/[0.1] rounded-[2rem]" />
-
-            {/* Photo */}
-            <div className="relative w-[80%] md:w-[85%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+            <div className="relative w-[80%] md:w-[85%] aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/esteban-perez.jpg"
                 alt="Lic. Esteban Pérez Herrera"
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-auto object-cover"
+                className="w-full h-[110%] object-cover object-top"
               />
-              {/* Bottom fade */}
-              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface/90 to-transparent" />
-            </div>
-
-            {/* Floating badge — Corporacion GC */}
-            <div className="absolute bottom-6 left-0 bg-surface/95 backdrop-blur-md rounded-xl px-4 py-3 shadow-lg border border-cream/[0.06] animate-float">
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/images/logo-gc.png"
-                  alt="Corporación GC"
-                  width={40}
-                  height={40}
-                  className="h-9 w-auto opacity-70 dark:opacity-100 dark:brightness-0 dark:invert"
-                />
-                <div>
-                  <div className="text-[10px] tracking-[0.12em] text-cream/70 font-medium">
-                    ABOGADO ASOCIADO
-                  </div>
-                  <div className="text-[9px] text-cream/40">
-                    Corporación GC
-                  </div>
-                </div>
-              </div>
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface to-transparent" />
             </div>
           </div>
         </AnimatedEntry>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-cream/30">
-        <span className="text-[9px] tracking-[0.3em] uppercase">Scroll</span>
-        <ArrowDown size={14} weight="light" className="animate-bounce" />
-      </div>
     </section>
   );
 }

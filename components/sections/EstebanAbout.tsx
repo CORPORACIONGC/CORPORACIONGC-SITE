@@ -37,29 +37,29 @@ export function EstebanAbout() {
 
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Litigio con enfoque
+                Litigio contra el Estado
                 <br />
-                <span className="text-burgundy-light">especializado</span>
+                <span className="text-burgundy-light">con rigor técnico</span>
               </h2>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Con más de 9 años de experiencia en litigio de alta complejidad
-                contra el Estado, ejerzo como Abogado Asociado de Corporación GC
-                en colaboración directa con el Dr. Óscar Eduardo González Camacho —
-                co-redactor del Código Procesal Contencioso Administrativo — en
-                la gestión y estrategia de casos de relevancia jurídica.
+                Mi experiencia abarca desde la investigación jurídica exhaustiva
+                y redacción de escritos procesales, hasta la participación integral
+                en audiencias orales ante las más altas instancias judiciales del
+                país. Inicié mi carrera en la Sala Constitucional de la Corte
+                Suprema de Justicia, donde colaboré directamente en la redacción
+                y revisión de proyectos de sentencia.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
               <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Mi práctica se concentra en Derecho Administrativo, Contencioso
-                Administrativo, Derecho Constitucional, Contratación Pública y
-                Derecho Urbanístico, abarcando desde procedimientos
-                administrativos hasta litigio ante las más altas instancias
-                judiciales del país.
+                Actualmente me desempeño en litigio contencioso-administrativo,
+                procesos constitucionales, contratación pública y Derecho
+                Urbanístico. Soy además Notario Público con especialidad en
+                Derecho Notarial y Registral.
               </p>
             </AnimatedEntry>
 

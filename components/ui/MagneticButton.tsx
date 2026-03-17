@@ -43,7 +43,7 @@ export function MagneticButton({
 
   const variants = {
     primary:
-      "bg-burgundy text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-burgundy-light active:scale-[0.98]",
+      "bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98]",
     secondary:
       "bg-charcoal text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-dark-bg active:scale-[0.98]",
     outline:

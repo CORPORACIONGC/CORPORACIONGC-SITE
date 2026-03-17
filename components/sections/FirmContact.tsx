@@ -65,13 +65,9 @@ export function FirmContact() {
           {/* Left — Info */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-4 mb-6">
-                <span className="font-display text-2xl font-light text-gold/40">03</span>
-                <div className="h-px flex-1 max-w-8 bg-cream/[0.12]" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Contacto
-                </span>
-              </div>
+              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
+                Contacto
+              </span>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -83,7 +79,7 @@ export function FirmContact() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/55 leading-relaxed max-w-[50ch]">
+              <p className="mt-5 text-sm text-cream/70 leading-relaxed max-w-[50ch]">
                 Ofrecemos asesoría y representación jurídica de primer nivel en
                 todas las ramas del Derecho Público. Cuéntenos su situación y
                 buscaremos juntos la mejor estrategia legal.
@@ -108,13 +104,13 @@ export function FirmContact() {
                   <StaggerItem key={i}>
                     <Wrapper
                       {...wrapperProps}
-                      className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 active:scale-[0.98] transition-all duration-400"
+                      className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
                     >
                       <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
                         <item.icon size={20} weight="duotone" />
                       </div>
                       <div>
-                        <div className="text-[10px] tracking-wider uppercase text-cream/40">
+                        <div className="text-[10px] tracking-wider uppercase text-cream/55">
                           {item.label}
                         </div>
                         <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">
@@ -135,7 +131,7 @@ export function FirmContact() {
                 <h3 className="font-display text-xl font-semibold text-cream tracking-tight mb-2">
                   Solicite una consulta
                 </h3>
-                <p className="text-xs text-cream/45 leading-relaxed mb-8">
+                <p className="text-xs text-cream/60 leading-relaxed mb-8">
                   Complete el formulario y le contactaremos a la brevedad para
                   coordinar una reunión.
                 </p>
@@ -159,9 +155,9 @@ export function FirmContact() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2.5 text-sm text-cream/50 hover:text-gold transition-colors duration-300"
+              className="group inline-flex items-center gap-2.5 text-sm text-cream/65 hover:text-gold transition-colors duration-300"
             >
-              <WhatsappLogo size={18} weight="fill" className="text-cream/40 group-hover:text-gold transition-colors duration-300" />
+              <WhatsappLogo size={18} weight="fill" className="text-cream/55 group-hover:text-gold transition-colors duration-300" />
               <span>
                 ¿Prefiere WhatsApp? Escríbanos directamente
               </span>

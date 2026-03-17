@@ -22,6 +22,10 @@ import { JoseCarlosHero } from "@/components/sections/JoseCarlosHero";
 import { JoseCarlosAbout } from "@/components/sections/JoseCarlosAbout";
 import { JoseCarlosExperience } from "@/components/sections/JoseCarlosExperience";
 import { JoseCarlosContact } from "@/components/sections/JoseCarlosContact";
+import { KatherineHero } from "@/components/sections/KatherineHero";
+import { KatherineAbout } from "@/components/sections/KatherineAbout";
+import { KatherineExperience } from "@/components/sections/KatherineExperience";
+import { KatherineContact } from "@/components/sections/KatherineContact";
 import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
@@ -32,6 +36,8 @@ import {
   ESTEBAN_NAV_LINKS,
   JOSE_CARLOS_PROFILE,
   JOSE_CARLOS_NAV_LINKS,
+  KATHERINE_PROFILE,
+  KATHERINE_NAV_LINKS,
 } from "@/lib/constants";
 
 // Generate static params for all team members
@@ -75,6 +81,7 @@ export default async function AttorneyProfile({
   if (member.slug === "oscar-gonzalez") return <OscarProfile />;
   if (member.slug === "esteban-perez") return <EstebanProfile />;
   if (member.slug === "jose-carlos-solano") return <JoseCarlosProfile />;
+  if (member.slug === "katherine-gonzalez") return <KatherineProfile />;
 
   // Other attorneys get a basic profile
   return <BasicProfile member={member} />;
@@ -245,6 +252,47 @@ function JoseCarlosProfile() {
           <JoseCarlosExperience />
           <Publications articles={articles} />
           <JoseCarlosContact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+// ─── Katherine's Full Profile ───
+
+function KatherineProfile() {
+  const articles = getArticlesByAuthor("González Coto").map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    date: a.date,
+    type: a.type,
+    tags: [...a.tags],
+  }));
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
+          <Link
+            href="/"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+          >
+            <span>&larr;</span>
+            <span>Volver a Corporación GC</span>
+          </Link>
+        </div>
+      </div>
+      <div className="pt-8">
+        <Navbar navLinks={KATHERINE_NAV_LINKS} topOffset />
+        <main>
+          <KatherineHero />
+          <Credentials credentials={KATHERINE_PROFILE.credentials} />
+          <KatherineAbout />
+          <KatherineExperience />
+          <Publications articles={articles} />
+          <KatherineContact />
         </main>
         <Footer />
       </div>

@@ -135,7 +135,7 @@ export function Navbar({
               <div className="text-[13px] font-semibold tracking-[0.22em] text-cream leading-none">
                 CORPORACIÓN GC
               </div>
-              <div className="text-[9px] tracking-[0.3em] text-cream/40 mt-1 font-light">
+              <div className="text-[9px] tracking-[0.3em] text-cream/55 mt-1 font-light">
                 ABOGADOS
               </div>
             </div>
@@ -157,7 +157,7 @@ export function Navbar({
                   className={`nav-link-item text-[11px] tracking-[0.14em] uppercase transition-colors duration-300 ${
                     activeIndex === i
                       ? "text-cream font-medium"
-                      : "text-cream/45 hover:text-cream/75"
+                      : "text-cream/55 hover:text-cream/80"
                   }`}
                 >
                   {link.label}
@@ -180,7 +180,7 @@ export function Navbar({
                   className={`nav-link-item text-[11px] tracking-[0.14em] uppercase transition-colors duration-300 ${
                     activeIndex === i
                       ? "text-cream font-medium"
-                      : "text-cream/45 hover:text-cream/75"
+                      : "text-cream/55 hover:text-cream/80"
                   }`}
                 >
                   {link.label}

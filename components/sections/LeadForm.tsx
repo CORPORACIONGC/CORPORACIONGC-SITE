@@ -153,7 +153,7 @@ export function LeadForm() {
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-burgundy text-white text-sm font-medium tracking-wide hover:bg-burgundy-light active:-translate-y-[1px] active:scale-[0.98] transition-all duration-300 disabled:opacity-60 disabled:pointer-events-none"
+        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm font-medium tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.97] transition-all duration-300 disabled:opacity-60 disabled:pointer-events-none"
       >
         {state === "submitting" ? (
           <>

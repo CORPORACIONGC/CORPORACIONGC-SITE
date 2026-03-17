@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { ArrowDown } from "@phosphor-icons/react";
+
 import { OSCAR_PROFILE } from "@/lib/constants";
 
 export function FirmHero() {
@@ -21,8 +21,8 @@ export function FirmHero() {
           <AnimatedEntry delay={0.15}>
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                Ex-Magistrado &middot; Co-redactor del CPCA
+              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
+                Bufete de Abogados en Derecho P&#250;blico
               </span>
             </div>
           </AnimatedEntry>
@@ -34,15 +34,39 @@ export function FirmHero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.35}>
-            <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/40 font-medium">
+            <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/55 font-medium">
               Fundado y dirigido por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
             </p>
           </AnimatedEntry>
 
+          {/* Mobile-only: compact founder photo strip */}
+          <AnimatedEntry delay={0.4} className="md:hidden">
+            <div className="mt-6 flex items-center gap-4">
+              <div className="w-16 h-16 rounded-xl overflow-hidden border border-cream/[0.08] shrink-0">
+                <Image
+                  src={OSCAR_PROFILE.photo}
+                  alt={OSCAR_PROFILE.name}
+                  width={128}
+                  height={128}
+                  priority
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <div className="text-sm font-semibold text-cream/90 tracking-tight">
+                  Dr. Óscar E. González Camacho
+                </div>
+                <div className="text-[10px] tracking-[0.12em] text-gold/70 font-medium mt-0.5">
+                  FUNDADOR Y DIRECTOR
+                </div>
+              </div>
+            </div>
+          </AnimatedEntry>
+
           <AnimatedEntry delay={0.45}>
-            <div className="mt-8 flex items-center gap-3">
+            <div className="mt-6 md:mt-8 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
-              <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">
+              <p className="text-base md:text-lg text-cream/80 leading-relaxed max-w-[50ch]">
                 Co-redactor del C&#243;digo Procesal Contencioso
                 Administrativo. Magistrado de la Sala Primera de la Corte
                 Suprema durante doce a&#241;os. Coordinador de la
@@ -54,9 +78,9 @@ export function FirmHero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.55}>
-            <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
+            <p className="mt-4 text-sm text-cream/65 leading-relaxed max-w-[55ch]">
               El Dr. Gonz&#225;lez Camacho dirige y trabaja personalmente
-              en cada caso junto a un equipo de seis abogados formados
+              en cada caso junto a un equipo de cinco abogados formados
               exclusivamente en Derecho P&#250;blico bajo su
               supervisi&#243;n directa. Conocimiento de autor y un equipo
               entrenado para ejecutarlo.
@@ -75,8 +99,8 @@ export function FirmHero() {
           </AnimatedEntry>
         </div>
 
-        {/* Right — Founder Photo */}
-        <AnimatedEntry delay={0.3} direction="right" className="relative">
+        {/* Right — Founder Photo (desktop only, mobile has inline strip above) */}
+        <AnimatedEntry delay={0.3} direction="right" className="relative hidden md:block">
           <div className="relative md:h-[70vh] max-h-[650px] flex items-center justify-center">
             {/* Background shape — offset for visual depth */}
             <div className="absolute top-[5%] right-[2%] w-[78%] h-[88%] bg-burgundy/[0.08] rounded-[2.5rem]" />
@@ -95,8 +119,8 @@ export function FirmHero() {
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface/90 to-transparent" />
             </div>
 
-            {/* Floating founder badge */}
-            <div className="absolute bottom-[8%] left-0 bg-surface/95 backdrop-blur-md rounded-xl px-5 py-3.5 shadow-lg border border-cream/[0.06] animate-float">
+            {/* Founder badge */}
+            <div className="absolute bottom-[8%] left-0 bg-surface/95 backdrop-blur-md rounded-xl px-5 py-3.5 shadow-lg border border-cream/[0.06]">
               <div className="flex items-center gap-3">
                 <Image
                   src="/images/logo-gc.png"
@@ -105,13 +129,8 @@ export function FirmHero() {
                   height={40}
                   className="h-9 w-auto opacity-70 dark:opacity-100 dark:brightness-0 dark:invert"
                 />
-                <div>
-                  <div className="text-[10px] tracking-[0.12em] text-cream/70 font-medium">
-                    FUNDADOR Y DIRECTOR
-                  </div>
-                  <div className="text-[9px] text-cream/40">
-                    Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
-                  </div>
+                <div className="text-[10px] tracking-[0.12em] text-cream/70 font-medium">
+                  FUNDADOR Y DIRECTOR
                 </div>
               </div>
             </div>
@@ -120,11 +139,8 @@ export function FirmHero() {
         </AnimatedEntry>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-cream/30">
-        <span className="text-[9px] tracking-[0.3em] uppercase">Scroll</span>
-        <ArrowDown size={14} weight="light" className="animate-bounce" />
-      </div>
+
+
     </section>
   );
 }

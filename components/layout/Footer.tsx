@@ -29,12 +29,12 @@ export function Footer() {
                 <div className="text-[13px] font-semibold tracking-[0.22em] text-cream leading-none">
                   CORPORACIÓN GC
                 </div>
-                <div className="text-[9px] tracking-[0.3em] text-cream/40 mt-1 font-light">
+                <div className="text-[9px] tracking-[0.3em] text-cream/55 mt-1 font-light">
                   ABOGADOS · DERECHO PÚBLICO
                 </div>
               </div>
             </div>
-            <p className="text-sm leading-relaxed max-w-[38ch] text-cream/50">
+            <p className="text-sm leading-relaxed max-w-[38ch] text-cream/65">
               Bufete de abogados especializado en Derecho Público, fundado
               por el Dr. Óscar Eduardo González Camacho, co-redactor del Código
               Procesal Contencioso Administrativo.
@@ -59,7 +59,7 @@ export function Footer() {
 
           {/* Nav */}
           <div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-cream/40 mb-5">
+            <div className="text-[10px] tracking-[0.25em] uppercase text-cream/55 mb-5">
               Navegación
             </div>
             <div className="flex flex-col gap-3">
@@ -68,7 +68,7 @@ export function Footer() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-sm text-cream/55 hover:text-cream transition-colors duration-300"
+                    className="text-sm text-cream/65 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -76,7 +76,7 @@ export function Footer() {
                   <a
                     key={link.href}
                     href={link.href}
-                    className="text-sm text-cream/55 hover:text-cream transition-colors duration-300"
+                    className="text-sm text-cream/65 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -87,24 +87,24 @@ export function Footer() {
 
           {/* Contact info */}
           <div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-cream/40 mb-5">
+            <div className="text-[10px] tracking-[0.25em] uppercase text-cream/55 mb-5">
               Contacto
             </div>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
                 <MapPin size={14} weight="duotone" className="text-gold mt-0.5 shrink-0" />
-                <span className="text-sm text-cream/50">{FIRM_CONTACT.location}</span>
+                <span className="text-sm text-cream/65">{FIRM_CONTACT.location}</span>
               </div>
               <div className="flex items-start gap-2">
                 <Phone size={14} weight="duotone" className="text-gold mt-0.5 shrink-0" />
-                <span className="text-sm text-cream/50">{FIRM_CONTACT.phone}</span>
+                <span className="text-sm text-cream/65">{FIRM_CONTACT.phone}</span>
               </div>
               <div className="flex items-start gap-2">
                 <Envelope size={14} weight="duotone" className="text-gold mt-0.5 shrink-0" />
-                <span className="text-sm text-cream/50">{FIRM_CONTACT.email}</span>
+                <span className="text-sm text-cream/65">{FIRM_CONTACT.email}</span>
               </div>
             </div>
-            <div className="mt-4 text-xs text-cream/35">
+            <div className="mt-4 text-xs text-cream/55">
               {FIRM_CONTACT.hours}
             </div>
           </div>
@@ -112,7 +112,7 @@ export function Footer() {
 
         {/* Colegio affiliation */}
         <div className="mt-12 pt-6 border-t border-cream/[0.06]">
-          <p className="text-[11px] text-cream/35 leading-relaxed max-w-[70ch]">
+          <p className="text-[11px] text-cream/55 leading-relaxed max-w-[70ch]">
             Todos los abogados de Corporación GC son miembros activos del
             Colegio de Abogados y Abogadas de Costa Rica. La información
             contenida en este sitio no constituye asesoría legal.
@@ -121,12 +121,9 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="mt-6 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="text-xs text-cream/35">
+          <div className="text-xs text-cream/55">
             © {new Date().getFullYear()} Corporación GC. Todos los
             derechos reservados.
-          </div>
-          <div className="text-xs text-cream/30">
-            {FIRM_CONTACT.location}
           </div>
         </div>
       </div>

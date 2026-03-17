@@ -31,9 +31,9 @@ export const FIRM_NAV_LINKS = [
 ] as const;
 
 export const FIRM_CREDENTIALS = [
-  { metric: "12", label: "Años como Magistrado de la Corte Suprema", detail: "Sala Primera · 2002 – 2014" },
-  { metric: "6", label: "Abogados especializados en Derecho Público", detail: "Formados bajo la dirección del fundador" },
+  { metric: "5", label: "Abogados especializados en Derecho Público", detail: "Formados bajo la dirección del fundador" },
   { metric: "CPCA", label: "Co-redactado por nuestro Director", detail: "Ley N.° 8508" },
+  { metric: "11", label: "Años litigando en lo Contencioso Administrativo", detail: "Desde 2015" },
 ] as const;
 
 export const OSCAR_PROFILE = {
@@ -72,8 +72,8 @@ export const OSCAR_PROFILE = {
 
 export const TEAM = [
   { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
-  { slug: "khevin-sanchez", name: "Lic. Khevin Sánchez Zamora", role: "Abogado Asociado", photo: "/images/foto-perfil.jpeg", shortBio: "Más de 7 años de experiencia en litigio. 3er mejor promedio en el Examen de Excelencia del Colegio de Abogados, 2025. Egresado UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
-  { slug: "katherine-gonzalez", name: "Licda. Katherine González", role: "Abogada Asociada", photo: null, shortBio: "Master en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública. Miembro del Colegio de Abogados desde 2019.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial"], languages: ["Español", "Inglés", "Italiano", "Francés"], featured: false },
+  { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/foto-perfil.jpeg", shortBio: "Más de 7 años de experiencia en litigio. 3er mejor promedio en el Examen de Excelencia del Colegio de Abogados, 2025. Egresado UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
+  { slug: "katherine-gonzalez", name: "Licda. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: null, shortBio: "Licenciada en Derecho con mención en Derechos Humanos, UCR. Maestranda en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Derechos Humanos", "Derecho Público"], languages: ["Español", "Inglés", "Francés"], featured: false },
   { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
   { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Derecho Público", "Derecho Constitucional", "Contencioso Administrativo", "Derecho Tributario", "Derecho Notarial y Registral"], languages: ["Español", "Inglés", "Alemán"], featured: true },
@@ -134,7 +134,7 @@ export const ESTEBAN_PROFILE = {
 
 // ─── Perfil Individual: Khevin Sánchez ───
 
-export const SITE = { name: "Lic. Khevin Sánchez Zamora", title: "Lic. Khevin Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Abogado Asociado en Corporación GC. Más de 7 años de experiencia en Derecho Administrativo, Contencioso Administrativo y Derecho Constitucional. Carnet 37920.", url: "https://corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
+export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Abogado Asociado en Corporación GC. Más de 7 años de experiencia en Derecho Administrativo, Contencioso Administrativo y Derecho Constitucional. Carnet 37920.", url: "https://corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
 
 export const CONTACT = { email: "ksanchez@corporaciongc.com", phone: "+506 8451-4002", phoneRaw: "50684514002", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Cartago, Costa Rica" } as const;
 
@@ -285,6 +285,72 @@ export const JOSE_CARLOS_PRACTICE_AREAS = [
 ] as const;
 
 export const JOSE_CARLOS_NAV_LINKS = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Perfil", href: "#perfil" },
+  { label: "Trayectoria", href: "#trayectoria" },
+  { label: "Artículos", href: "/articulos" },
+  { label: "Contacto", href: "#contacto" },
+] as const;
+
+// ─── Katherine González — Landing Page Constants ───
+
+export const KATHERINE_PROFILE = {
+  name: "Licda. Katherine González Coto",
+  role: "Abogada Asociada",
+  photo: "/images/katherine-gonzalez.png",
+  heroDescription: "Abogada y Notaria Pública especializada en Derecho Administrativo, Derecho Público y Derecho Expropiatorio.",
+  heroBio: "Máster en Derecho Público por la Universidad de Costa Rica. Investigadora en responsabilidad patrimonial de la Administración y procedimiento expropiatorio costarricense.",
+  education: [
+    { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", period: "2020 – 2024" },
+    { degree: "Licenciatura en Derecho", institution: "Universidad Escuela Libre de Derecho", period: "2015 – 2019" },
+    { degree: "Notariado Público", institution: "Universidad Escuela Libre de Derecho", period: "2017 – 2020" },
+    { degree: "Bachillerato en Derecho", institution: "Universidad Escuela Libre de Derecho", period: "2013 – 2016" },
+  ],
+  career: [
+    { role: "Abogada Asociada", org: "Corporación GC", period: "2019 – Presente", description: "Ejercicio profesional en litigio contencioso-administrativo, procedimientos administrativos y asesoría en Derecho Público. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
+    { role: "Asistente Legal", org: "Corporación GC", period: "Ene. 2016 – Mar. 2019", description: "Apoyo en investigación jurídica, redacción de escritos procesales y gestión de expedientes en materia de Derecho Público.", highlight: false },
+    { role: "Asistente Académica", org: "Universidad de Costa Rica / Universidad Escuela Libre de Derecho", period: "2014 – Presente", description: "Asistencia en docencia e investigación académica en materias de Derecho Público.", highlight: false },
+    { role: "Asistente de Mercadeo y Vida Estudiantil", org: "Universidad Escuela Libre de Derecho", period: "2013 – 2017", description: "Apoyo al Departamento de Mercadeo y Vida Estudiantil en actividades de extensión y comunicación institucional.", highlight: false },
+  ],
+  research: [
+    {
+      title: "El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración",
+      description: "Trabajo Final de Investigación Aplicada para optar por el grado de Maestría Profesional en Derecho Público (UCR, 2024). Analiza la responsabilidad patrimonial del Estado por daño moral indirecto a familiares y la sociedad.",
+      tags: ["Responsabilidad Patrimonial", "Daño Moral", "Derecho Administrativo", "Maestría UCR"],
+      pdf: "/pdfs/tesis-katherine-gonzalez-maestria.pdf",
+      slug: "tesis-dano-moral-indirecto",
+    },
+    {
+      title: "Transformación y perspectivas del procedimiento expropiatorio en Costa Rica",
+      description: "Tesis de grado para optar por el título de Licenciatura en Derecho (UELD, 2019). Estudio integral del procedimiento expropiatorio en sede administrativa y judicial.",
+      tags: ["Derecho Expropiatorio", "Procedimiento Administrativo", "Licenciatura UELD"],
+      pdf: "/pdfs/tesis-katherine-gonzalez-licenciatura.pdf",
+      slug: "tesis-procedimiento-expropiatorio-cr",
+    },
+  ],
+  credentials: [
+    { metric: "UCR", label: "Máster en Derecho Público", detail: "Universidad de Costa Rica · 2024" },
+    { metric: "UELD", label: "Notaria Pública", detail: "Universidad Escuela Libre de Derecho" },
+    { metric: "4", label: "Idiomas", detail: "Español · Inglés · Francés · Italiano" },
+  ],
+  languages: ["Español", "Inglés", "Francés", "Italiano"],
+} as const;
+
+export const KATHERINE_CONTACT = {
+  email: "kgonzalez@corporaciongc.com",
+  phone: "+506 8317-9564",
+  phoneRaw: "50683179564",
+  location: "OFIDENT, Barrio Dent, San José, Costa Rica",
+} as const;
+
+export const KATHERINE_PRACTICE_AREAS = [
+  { title: "Derecho Administrativo", description: "Defensa y asesoría en procedimientos ante la Administración Pública, recursos ordinarios y extraordinarios.", icon: "Scales" as const },
+  { title: "Derecho Público", description: "Asesoría integral en materias de Derecho Público, incluyendo responsabilidad patrimonial del Estado.", icon: "ShieldCheck" as const },
+  { title: "Derecho Notarial", description: "Asesoría notarial, autenticaciones, protocolizaciones y constitución de sociedades.", icon: "FileText" as const },
+  { title: "Derecho Expropiatorio", description: "Asesoría y litigio en procedimientos expropiatorios, avalúos y determinación del justo precio.", icon: "Buildings" as const },
+] as const;
+
+export const KATHERINE_NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Perfil", href: "#perfil" },
   { label: "Trayectoria", href: "#trayectoria" },
