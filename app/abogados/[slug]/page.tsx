@@ -139,7 +139,7 @@ function KhevinProfile() {
 // ─── Oscar's Full Profile ───
 
 function OscarProfile() {
-  const articles = getArticlesByAuthor("González").map((a) => ({
+  const articles = getArticlesByAuthor("González Camacho").map((a) => ({
     slug: a.slug,
     title: a.title,
     excerpt: a.excerpt,
