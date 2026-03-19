@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import {
   Scales,
   Gavel,
   ShieldCheck,
   FileText,
   Crosshair,
+  ArrowUpRight,
 } from "@phosphor-icons/react";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { OSCAR_PROFILE, OSCAR_PRACTICE_AREAS } from "@/lib/constants";
@@ -155,23 +157,40 @@ export function OscarAbout() {
                   Publicaciones y obras
                 </div>
                 <div className="space-y-3">
-                  {OSCAR_PROFILE.publications.map((pub, i) => (
-                    <div key={i} className="flex items-baseline gap-2">
-                      <div
-                        className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${
-                          pub.type === "law" ? "bg-gold" : "bg-burgundy-light"
-                        }`}
-                      />
-                      <div>
-                        <span className="text-sm text-cream/75 font-medium">
+                  {OSCAR_PROFILE.publications.map((pub, i) => {
+                    const hasSlug = "slug" in pub && pub.slug;
+                    const content = (
+                      <>
+                        <span className={`text-sm font-medium ${hasSlug ? "text-cream/75 group-hover/pub:text-gold transition-colors duration-300" : "text-cream/75"}`}>
                           {pub.title}
+                          {hasSlug && (
+                            <ArrowUpRight size={12} weight="bold" className="inline ml-1 opacity-0 group-hover/pub:opacity-100 transition-opacity duration-300" />
+                          )}
                         </span>
                         <p className="text-xs text-cream/45 leading-relaxed mt-0.5">
                           {pub.detail}
                         </p>
+                      </>
+                    );
+                    return (
+                      <div key={i} className="flex items-baseline gap-2">
+                        <div
+                          className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${
+                            pub.type === "law" ? "bg-gold" : "bg-burgundy-light"
+                          }`}
+                        />
+                        <div className="group/pub">
+                          {hasSlug ? (
+                            <Link href={`/articulos/${pub.slug}`}>
+                              {content}
+                            </Link>
+                          ) : (
+                            content
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </AnimatedEntry>

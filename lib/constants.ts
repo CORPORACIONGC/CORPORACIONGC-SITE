@@ -62,9 +62,9 @@ export const OSCAR_PROFILE = {
   ],
   publications: [
     { type: "law" as const, title: "Co-redactor del Código Procesal Contencioso Administrativo", detail: "Ley N.° 8508, 28 de abril de 2006. Pieza fundamental de la jurisdicción contenciosa moderna." },
-    { type: "book" as const, title: "Justicia Administrativa (Tomos I, II y III)", detail: "Editorial Investigaciones Jurídicas, 2002. Obra de referencia sobre el control judicial pleno de la Administración Pública, la inactividad administrativa y las medidas cautelares positivas." },
-    { type: "book" as const, title: "El Nuevo Proceso Contencioso Administrativo", detail: "Editorial Jurídica Continental / Escuela Judicial, 2006. Obra colectiva sobre la implementación del CPCA." },
-    { type: "book" as const, title: "Consideraciones Prácticas en torno al Proceso Ejecutivo", detail: "Escuela Judicial, 1995." },
+    { type: "book" as const, title: "La Justicia Administrativa frente a la Inactividad Material de la Administración Pública", detail: "Tesis Doctoral — Universidad de Alcalá, 1998. Publicada como Justicia Administrativa (Tomos I, II y III), Editorial Investigaciones Jurídicas, 2002.", slug: "libro-justicia-administrativa" },
+    { type: "book" as const, title: "El Nuevo Proceso Contencioso Administrativo", detail: "Editorial Jurídica Continental / Escuela Judicial, 2006. Obra colectiva sobre la implementación del CPCA.", slug: "libro-nuevo-proceso-contencioso" },
+    { type: "book" as const, title: "Consideraciones Prácticas en torno al Proceso Ejecutivo", detail: "Escuela Judicial, 1995. Tratado sobre el proceso ejecutivo en materia civil de hacienda.", slug: "libro-proceso-ejecutivo" },
   ],
   conferences: "Conferencista internacional en Colombia, Bolivia, Ecuador, Argentina, Alemania, Portugal, España y Estados Unidos.",
   languages: ["Español", "Francés"],
