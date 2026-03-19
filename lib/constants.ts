@@ -55,10 +55,11 @@ export const OSCAR_PROFILE = {
     { role: "Juez de Primera Instancia", org: "Juzgado Contencioso Administrativo", period: "1986 – 1992", description: "Inicio de la carrera judicial en materia contencioso-administrativa. Funcionario del Juzgado Primero Contencioso Administrativo desde 1984.", highlight: false },
   ],
   teaching: [
-    "Profesor de Doctorado y Maestría en Derecho Público — Universidad de Costa Rica",
-    "Profesor de Derecho Constitucional y Administrativo — UCR",
-    "Profesor de Doctorado y Licenciatura — Escuela Libre de Derecho",
-    "Instructor — Escuela Judicial del Poder Judicial",
+    { role: "Catedrático por Mérito", institution: "Universidad Escuela Libre de Derecho", detail: "Máxima distinción académica otorgada por trayectoria docente" },
+    { role: "Profesor Asociado", institution: "Universidad de Costa Rica", detail: "N.° 1 en Centroamérica — QS Latin America University Ranking" },
+    { role: "Coordinador de la Maestría en Derecho Público", institution: "Universidad de Costa Rica", detail: "Profesor del posgrado desde 2000" },
+    { role: "Profesor de Doctorado, Maestría y Licenciatura", institution: "UCR y Escuela Libre de Derecho", detail: "Derecho Público, Constitucional y Administrativo" },
+    { role: "Instructor", institution: "Escuela Judicial del Poder Judicial", detail: "Formación de jueces y operadores jurídicos" },
   ],
   publications: [
     { type: "law" as const, title: "Co-redactor del Código Procesal Contencioso Administrativo", detail: "Ley N.° 8508, 28 de abril de 2006. Pieza fundamental de la jurisdicción contenciosa moderna." },
@@ -74,7 +75,7 @@ export const TEAM = [
   { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
   { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/foto-perfil.jpeg", shortBio: "Más de 7 años de experiencia en litigio. 3er mejor promedio en el Examen de Excelencia del Colegio de Abogados, 2025. Egresado UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
   { slug: "katherine-gonzalez", name: "Licda. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
-  { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: null, shortBio: "Licenciada en Derecho con mención en Derechos Humanos, UCR. Maestranda en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Derechos Humanos", "Derecho Público"], languages: ["Español", "Inglés", "Francés"], featured: false },
+  { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
   { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
   { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Derecho Público", "Derecho Constitucional", "Contencioso Administrativo", "Derecho Tributario", "Derecho Notarial y Registral"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
@@ -351,6 +352,75 @@ export const KATHERINE_PRACTICE_AREAS = [
 ] as const;
 
 export const KATHERINE_NAV_LINKS = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Perfil", href: "#perfil" },
+  { label: "Trayectoria", href: "#trayectoria" },
+  { label: "Artículos", href: "/articulos" },
+  { label: "Contacto", href: "#contacto" },
+] as const;
+
+// ─── Mariana Montero — Landing Page Constants ───
+
+export const MARIANA_PROFILE = {
+  name: "Licda. Mariana Montero Acuña",
+  role: "Abogada Asociada",
+  photo: "/images/mariana-montero.png",
+  heroDescription: "Abogada especializada en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado. Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción.",
+  heroBio: "Egresada de la Maestría Profesional en Derecho Público de la Universidad de Costa Rica con Diploma de Excelencia Académica (mejor promedio del posgrado). Su práctica se concentra en el litigio contencioso-administrativo por daños derivados de la actividad sanitaria pública y privada.",
+  education: [
+    { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", period: "Egresada — Tesis en proceso", distinction: "Diploma de Excelencia Académica · Mejor promedio del posgrado" },
+    { degree: "Licenciatura en Derecho — Mención en Derechos Humanos", institution: "Universidad de Costa Rica", period: "2019 – 2022", distinction: "Aprobada con distinción" },
+    { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica", period: "2015 – 2019" },
+  ],
+  career: [
+    { role: "Abogada Asociada", org: "Corporación GC · Derecho Público", period: "2019 – Presente", description: "Ejercicio profesional en litigio contencioso-administrativo, procedimientos administrativos y asesoría en Derecho Público. Especialización en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
+    { role: "Asistente Jurídica en Derecho Público", org: "Corporación GC", period: "Ago. 2018 – 2019", description: "Asistencia en litigio en sede Contencioso Administrativa y Constitucional. Redacción de escritos y manejo de expedientes.", highlight: false },
+    { role: "Asistente Meritoria en Derecho Público", org: "Procuraduría General de la República", period: "Mar. 2017 – Jun. 2018", description: "Redacción de escritos y manejo de expedientes en sede contencioso-administrativa.", highlight: false },
+    { role: "Consultora — Violencia Patrimonial", org: "Asociación Gerontológica Costarricense (AGECO)", period: "Ene. 2021 – Dic. 2021", description: "Consultoría jurídica especializada en violencia patrimonial contra personas adultas mayores.", highlight: false },
+  ],
+  practiceAreas: [
+    { title: "Malpraxis Médica e Iatrogenia", description: "Litigio especializado en responsabilidad médica e iatrogenia. Procesos contencioso-administrativos por daños derivados de la actividad sanitaria pública y privada.", icon: "FirstAid" as const },
+    { title: "Derecho a la Salud", description: "Asesoría y litigio en la protección del derecho fundamental a la salud frente a la Administración Pública y prestadores de servicios sanitarios.", icon: "ShieldCheck" as const },
+    { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado y entes públicos.", icon: "Gavel" as const },
+    { title: "Responsabilidad Patrimonial del Estado", description: "Asesoría y litigio en responsabilidad patrimonial derivada de la actividad administrativa, con énfasis en daños en el ámbito sanitario.", icon: "Scales" as const },
+  ],
+  research: [
+    {
+      title: "La iatrogenia en la responsabilidad administrativa: una aproximación a los verdaderos criterios de aplicación en el ordenamiento jurídico costarricense",
+      description: "Tesis de Licenciatura (UCR, 2022) aprobada con distinción. Determina si la iatrogenia puede categorizarse como conducta lícita y normal con resultado anormal, descartándola como eximente de responsabilidad para la Administración Pública.",
+      tags: ["Iatrogenia", "Responsabilidad Administrativa", "Malpraxis Médica", "Derecho a la Salud"],
+      pdf: "/pdfs/tesis-mariana-montero-iatrogenia.pdf",
+      slug: "tesis-iatrogenia-responsabilidad-administrativa",
+    },
+  ],
+  mediaAppearances: [
+    { type: "tv", title: "Programa Buen Día", description: "Panelista y experta invitada en múltiples segmentos sobre malpraxis médica, iatrogenia y derecho a la salud." },
+    { type: "conference", title: "I Jornada Jurídica Internacional Juvenil", description: "Ponente — CIIJUS, Chiapas, México · Mayo 2020" },
+    { type: "conference", title: "Competencia Internacional de Arbitraje XI Edición", description: "Oradora — Universidad del Rosario, Bogotá, Colombia · 2018" },
+  ],
+  credentials: [
+    { metric: "UCR", label: "Mejor promedio del posgrado", detail: "Diploma de Excelencia Académica · 2024" },
+    { metric: "7+", label: "Años en Corporación GC", detail: "Desde agosto de 2018" },
+    { metric: "3", label: "Idiomas", detail: "Español · Inglés · Francés" },
+  ],
+  languages: ["Español", "Inglés", "Francés"],
+} as const;
+
+export const MARIANA_CONTACT = {
+  email: "mmontero@corporaciongc.com",
+  phone: "+506 7201-7710",
+  phoneRaw: "50672017710",
+  location: "OFIDENT, Barrio Dent, San José, Costa Rica",
+} as const;
+
+export const MARIANA_PRACTICE_AREAS = [
+  { title: "Malpraxis Médica e Iatrogenia", description: "Litigio especializado en responsabilidad médica e iatrogenia. Procesos contencioso-administrativos por daños derivados de la actividad sanitaria.", icon: "FirstAid" as const },
+  { title: "Derecho a la Salud", description: "Protección del derecho fundamental a la salud frente a la Administración Pública y prestadores de servicios sanitarios.", icon: "ShieldCheck" as const },
+  { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
+  { title: "Responsabilidad Patrimonial", description: "Responsabilidad patrimonial derivada de la actividad administrativa, con énfasis en daños sanitarios.", icon: "Scales" as const },
+] as const;
+
+export const MARIANA_NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Perfil", href: "#perfil" },
   { label: "Trayectoria", href: "#trayectoria" },

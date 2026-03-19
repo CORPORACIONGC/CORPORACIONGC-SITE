@@ -22,7 +22,7 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-8">
           <div>
             <AnimatedEntry>
               <div className="flex items-center gap-3 mb-6">
@@ -42,8 +42,8 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
 
             <AnimatedEntry delay={0.2}>
               <p className="mt-4 text-sm text-white/55 leading-relaxed max-w-[50ch]">
-                Publicaciones acad&eacute;micas especializadas en Derecho P&uacute;blico.
-                Investigaci&oacute;n jur&iacute;dica de fondo, no res&uacute;menes comerciales.
+                Investigaci&oacute;n original en Derecho P&uacute;blico que aporta al
+                debate jur&iacute;dico, no lo resume.
               </p>
             </AnimatedEntry>
           </div>
@@ -60,16 +60,14 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
 
         {hasArticles ? (
           <StaggerContainer
-            className="grid grid-cols-1 md:grid-cols-[1.4fr_0.6fr] gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
             stagger={0.08}
           >
-            {articles.slice(0, 3).map((article, i) => (
+            {articles.slice(0, 4).map((article) => (
               <StaggerItem key={article.slug}>
                 <Link
                   href={`/articulos/${article.slug}`}
-                  className={`group block p-6 rounded-xl border border-white/[0.08] bg-white/[0.04] hover:border-gold/25 transition-all duration-400 ${
-                    i === 0 ? "md:row-span-2" : ""
-                  }`}
+                  className="group block h-full p-6 rounded-xl border border-white/[0.08] bg-white/[0.04] hover:border-gold/25 transition-all duration-400"
                 >
                   <div className="flex items-center gap-2 mb-4">
                     <div
@@ -96,11 +94,7 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
                     </span>
                   </div>
 
-                  <h3
-                    className={`font-display font-semibold tracking-tight text-white group-hover:text-gold transition-colors duration-300 ${
-                      i === 0 ? "text-xl md:text-2xl" : "text-base"
-                    }`}
-                  >
+                  <h3 className="font-display text-lg font-semibold tracking-tight text-white group-hover:text-gold transition-colors duration-300">
                     {article.title}
                   </h3>
 

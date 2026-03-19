@@ -49,9 +49,8 @@ export default function ArticulosPage() {
               <span className="text-burgundy">análisis jurídico</span>
             </h1>
             <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
-              Publicaciones académicas especializadas en Derecho Administrativo,
-              Contencioso Administrativo y Derecho Público. Investigación
-              jurídica de fondo, no resúmenes comerciales.
+              Investigación original en Derecho Público que aporta al
+              debate jurídico, no lo resume.
             </p>
           </div>
         </div>

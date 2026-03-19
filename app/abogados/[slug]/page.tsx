@@ -26,6 +26,10 @@ import { KatherineHero } from "@/components/sections/KatherineHero";
 import { KatherineAbout } from "@/components/sections/KatherineAbout";
 import { KatherineExperience } from "@/components/sections/KatherineExperience";
 import { KatherineContact } from "@/components/sections/KatherineContact";
+import { MarianaHero } from "@/components/sections/MarianaHero";
+import { MarianaAbout } from "@/components/sections/MarianaAbout";
+import { MarianaExperience } from "@/components/sections/MarianaExperience";
+import { MarianaContact } from "@/components/sections/MarianaContact";
 import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
@@ -38,6 +42,8 @@ import {
   JOSE_CARLOS_NAV_LINKS,
   KATHERINE_PROFILE,
   KATHERINE_NAV_LINKS,
+  MARIANA_PROFILE,
+  MARIANA_NAV_LINKS,
 } from "@/lib/constants";
 
 // Generate static params for all team members
@@ -82,6 +88,7 @@ export default async function AttorneyProfile({
   if (member.slug === "esteban-perez") return <EstebanProfile />;
   if (member.slug === "jose-carlos-solano") return <JoseCarlosProfile />;
   if (member.slug === "katherine-gonzalez") return <KatherineProfile />;
+  if (member.slug === "mariana-montero") return <MarianaProfile />;
 
   // Other attorneys get a basic profile
   return <BasicProfile member={member} />;
@@ -293,6 +300,47 @@ function KatherineProfile() {
           <KatherineExperience />
           <Publications articles={articles} />
           <KatherineContact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+// ─── Mariana's Full Profile ───
+
+function MarianaProfile() {
+  const articles = getArticlesByAuthor("Montero").map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    date: a.date,
+    type: a.type,
+    tags: [...a.tags],
+  }));
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
+          <Link
+            href="/"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+          >
+            <span>&larr;</span>
+            <span>Volver a Corporación GC</span>
+          </Link>
+        </div>
+      </div>
+      <div className="pt-8">
+        <Navbar navLinks={MARIANA_NAV_LINKS} topOffset />
+        <main>
+          <MarianaHero />
+          <Credentials credentials={MARIANA_PROFILE.credentials} />
+          <MarianaAbout />
+          <MarianaExperience />
+          <Publications articles={articles} />
+          <MarianaContact />
         </main>
         <Footer />
       </div>

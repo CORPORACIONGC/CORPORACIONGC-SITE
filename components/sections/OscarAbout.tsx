@@ -137,13 +137,19 @@ export function OscarAbout() {
                 <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
                   Docencia
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-3">
                   {OSCAR_PROFILE.teaching.map((item, i) => (
                     <div key={i} className="flex items-baseline gap-2">
-                      <div className="w-1 h-1 rounded-full bg-burgundy-light mt-1.5 shrink-0" />
-                      <span className="text-sm text-cream/75">
-                        {item}
-                      </span>
+                      <div className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${i === 0 ? "bg-gold" : "bg-burgundy-light"}`} />
+                      <div>
+                        <span className="text-sm text-cream/75 font-medium">
+                          {item.role}
+                        </span>
+                        <span className="text-sm text-cream/50"> — {item.institution}</span>
+                        <p className="text-xs text-cream/45 leading-relaxed mt-0.5">
+                          {item.detail}
+                        </p>
+                      </div>
                     </div>
                   ))}
                 </div>
