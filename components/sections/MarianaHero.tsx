@@ -45,6 +45,12 @@ export function MarianaHero() {
             </div>
           </AnimatedEntry>
 
+          <AnimatedEntry delay={0.5}>
+            <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
+              Carnet CAACR 33716
+            </div>
+          </AnimatedEntry>
+
           <AnimatedEntry delay={0.65}>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <MagneticButton href="#contacto" variant="primary">
