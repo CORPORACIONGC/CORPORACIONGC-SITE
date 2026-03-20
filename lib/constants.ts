@@ -47,6 +47,9 @@ export const CLIENT_LOGOS = [
   { name: "Taboga", src: "/images/clients/taboga-white.png", scale: 1.55 },
   { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos-white.png", scale: 1.2 },
   { name: "ELEINMSA", src: "/images/clients/eleinmsa-white.png", scale: 1.3 },
+  { name: "Gas Z", src: "/images/clients/gasz-white.png", scale: 1.3 },
+  { name: "Grupo Orosí", src: "/images/clients/grupo-orosi-white.png", scale: 1.3 },
+  { name: "Mercasa", src: "/images/clients/mercasa-white.png", scale: 1.3 },
 ] as const;
 
 export const OSCAR_PROFILE = {
