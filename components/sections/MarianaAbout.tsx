@@ -71,7 +71,7 @@ export function MarianaAbout() {
                       <div className={`w-1 h-1 rounded-full ${i === 0 ? "bg-gold" : "bg-burgundy-light"} mt-1.5 shrink-0`} />
                       <span className="text-sm text-cream/75">
                         {edu.degree} — {edu.institution}
-                        {edu.distinction && (
+                        {"distinction" in edu && edu.distinction && (
                           <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70">
                             {edu.distinction}
                           </span>

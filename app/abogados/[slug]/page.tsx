@@ -353,7 +353,7 @@ function MarianaProfile() {
 function BasicProfile({
   member,
 }: {
-  member: (typeof TEAM)[number];
+  member: { slug: string; name: string; role: string; photo: string | null; shortBio: string; areas: readonly string[]; languages: readonly string[]; featured: boolean };
 }) {
   function getInitials(name: string) {
     return name
