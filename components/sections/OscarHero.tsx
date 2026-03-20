@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { ArrowDown } from "@phosphor-icons/react";
 
 export function OscarHero() {
   return (
@@ -36,6 +34,26 @@ export function OscarHero() {
             </h1>
           </AnimatedEntry>
 
+          {/* Mobile-only: editorial photo strip */}
+          <AnimatedEntry delay={0.3} className="md:hidden">
+            <div className="mt-6 w-full overflow-hidden relative">
+              <Image
+                src="/images/oscar-gonzalez.png"
+                alt="Dr. Óscar Eduardo González Camacho"
+                width={768}
+                height={1024}
+                priority
+                className="w-full h-auto"
+              />
+              {/* Burgundy tint overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-burgundy-dark/30 via-transparent to-burgundy-dark/10 mix-blend-multiply pointer-events-none" />
+              {/* Bottom fade into surface */}
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
+              {/* Thin gold accent line — bottom */}
+              <div className="absolute inset-x-[15%] bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+            </div>
+          </AnimatedEntry>
+
           <AnimatedEntry delay={0.35}>
             <div className="mt-6 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
@@ -49,15 +67,7 @@ export function OscarHero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.5}>
-            <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
-              Doctor en Derecho por la Universidad de Alcalá de Henares con la
-              calificación Sobresaliente Cum Laude. Con más de 38 años de
-              trayectoria ininterrumpida en el Derecho Público.
-            </p>
-          </AnimatedEntry>
-
-          <AnimatedEntry delay={0.6}>
-            <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
+            <div className="mt-4 text-[11px] text-cream/35 tracking-wide">
               Carnet CAACR 3191
             </div>
           </AnimatedEntry>
@@ -74,45 +84,27 @@ export function OscarHero() {
           </AnimatedEntry>
         </div>
 
-        {/* Right — Photo */}
-        <AnimatedEntry delay={0.3} direction="right" className="relative">
-          <div className="relative md:h-[75vh] max-h-[700px] flex items-end justify-center">
-            {/* Background shape */}
-            <div className="absolute bottom-0 right-0 w-[85%] h-[90%] bg-burgundy/[0.1] rounded-[2rem]" />
-
-            {/* Photo */}
-            <div className="relative w-[80%] md:w-[85%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+        {/* Right — Photo (editorial treatment matching firm homepage) */}
+        <AnimatedEntry delay={0.3} direction="right" className="relative hidden md:block">
+          <div className="relative md:h-[82vh] max-h-[780px]">
+            <div className="relative w-full h-full overflow-hidden">
               <Image
                 src="/images/oscar-gonzalez.png"
                 alt="Dr. Óscar Eduardo González Camacho"
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover object-top"
               />
-              {/* Bottom fade */}
-              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface/90 to-transparent" />
-            </div>
 
-            {/* Floating badge — Corporacion GC */}
-            <div className="absolute bottom-6 left-0 bg-surface/95 backdrop-blur-md rounded-xl px-4 py-3 shadow-lg border border-cream/[0.06] animate-float">
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/images/logo-gc.png"
-                  alt="Corporación GC"
-                  width={40}
-                  height={40}
-                  className="h-9 w-auto opacity-70 dark:opacity-100 dark:brightness-0 dark:invert"
-                />
-                <div>
-                  <div className="text-[10px] tracking-[0.12em] text-cream/70 font-medium">
-                    FUNDADOR Y DIRECTOR
-                  </div>
-                  <div className="text-[9px] text-cream/40">
-                    Corporación GC
-                  </div>
-                </div>
-              </div>
+              {/* Subtle burgundy tint overlay for editorial tone */}
+              <div className="absolute inset-0 bg-gradient-to-t from-burgundy-dark/40 via-transparent to-burgundy-dark/10 mix-blend-multiply pointer-events-none" />
+
+              {/* Bottom fade into surface */}
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
+
+              {/* Thin gold accent line — left edge */}
+              <div className="absolute top-[10%] bottom-[10%] left-0 w-px bg-gradient-to-b from-transparent via-gold/50 to-transparent" />
             </div>
           </div>
         </AnimatedEntry>

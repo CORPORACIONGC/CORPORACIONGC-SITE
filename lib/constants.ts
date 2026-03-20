@@ -37,19 +37,19 @@ export const FIRM_CREDENTIALS = [
 ] as const;
 
 export const CLIENT_LOGOS = [
-  { name: "SUTEL", src: "/images/clients/sutel-white.png", scale: 1.4 },
-  { name: "INS", src: "/images/clients/ins-white.png", scale: 1.35 },
-  { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 1.9 },
-  { name: "CFIA", src: "/images/clients/cfia-white.png", scale: 1.4 },
-  { name: "Colegio de Abogados", src: "/images/clients/cab-white.png", scale: 1.35 },
-  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.3 },
-  { name: "El Viejo", src: "/images/clients/el-viejo-white.png", scale: 1.1 },
-  { name: "Taboga", src: "/images/clients/taboga-white.png", scale: 1.55 },
-  { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos-white.png", scale: 1.2 },
-  { name: "ELEINMSA", src: "/images/clients/eleinmsa-white.png", scale: 1.3 },
-  { name: "Gas Z", src: "/images/clients/gasz-white.png", scale: 1.3 },
-  { name: "Grupo Orosí", src: "/images/clients/grupo-orosi-white.png", scale: 1.3 },
-  { name: "Mercasa", src: "/images/clients/mercasa-white.png", scale: 1.3 },
+  { name: "SUTEL", src: "/images/clients/sutel-white.png", scale: 1.7, offsetY: 0 },
+  { name: "INS", src: "/images/clients/ins-white.png", scale: 1.15, offsetY: 0 },
+  { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 1.9, offsetY: 3 },
+  { name: "CFIA", src: "/images/clients/cfia-white.png", scale: 1.55, offsetY: 0 },
+  { name: "Colegio de Abogados", src: "/images/clients/cab-white.png", scale: 1.35, offsetY: 0 },
+  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.3, offsetY: 0 },
+  { name: "El Viejo", src: "/images/clients/el-viejo-white.png", scale: 1.1, offsetY: 0 },
+  { name: "Taboga", src: "/images/clients/taboga-white.png", scale: 1.55, offsetY: 0 },
+  { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos-white.png", scale: 1.2, offsetY: 0 },
+  { name: "ELEINMSA", src: "/images/clients/eleinmsa-white.png", scale: 1.3, offsetY: 0 },
+  { name: "Gas Z", src: "/images/clients/gasz-white.png", scale: 1.3, offsetY: 0 },
+  { name: "Grupo Orosí", src: "/images/clients/grupo-orosi-white.png", scale: 1.3, offsetY: 6 },
+  { name: "Mercasa", src: "/images/clients/mercasa-white.png", scale: 1.3, offsetY: 0 },
 ] as const;
 
 export const OSCAR_PROFILE = {
@@ -181,6 +181,27 @@ export const EXPERIENCE = [
 export const EDUCATION = [
   { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica", status: "completed" },
   { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica", status: "in_progress" },
+] as const;
+
+export const CONFERENCES = [
+  {
+    title: "Global Summit Legal Hackers — Bogotá 2025",
+    role: "Panelista",
+    panel: "IA en el Derecho: Más allá de la Eficiencia, la Urgencia de un Marco Ético",
+    organizers: "Legal Hackers Bogotá",
+    location: "Universidad Javeriana, Bogotá, Colombia",
+    date: "23 de octubre de 2025",
+    copanelists: ["Ángela Villate — VillateLab", "Jimena Mora — Microsoft", "Nicolás Castañeda — Keralty"],
+  },
+  {
+    title: "Global Summit Legal Hackers — Costa Rica 2024",
+    role: "Panelista",
+    panel: "¿Cómo llevar el cumplimiento ético de inteligencia artificial a la práctica y la automatización? Perspectiva de riesgos y ciencia de datos",
+    organizers: "Colegio de Abogados y Abogadas de Costa Rica, Babaluum, Legal Hackers Costa Rica",
+    location: "Colegio de Abogados, San José, Costa Rica",
+    date: "6 de diciembre de 2024",
+    copanelists: ["Katherine Romero C.", "Raúl Trejos"],
+  },
 ] as const;
 
 export const NAV_LINKS = [

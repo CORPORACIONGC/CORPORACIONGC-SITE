@@ -39,27 +39,23 @@ export function FirmHero() {
             </p>
           </AnimatedEntry>
 
-          {/* Mobile-only: compact founder photo strip */}
+          {/* Mobile-only: full editorial photo */}
           <AnimatedEntry delay={0.4} className="md:hidden">
-            <div className="mt-6 flex items-center gap-4">
-              <div className="w-16 h-16 rounded-xl overflow-hidden border border-cream/[0.08] shrink-0">
-                <Image
-                  src={OSCAR_PROFILE.photo}
-                  alt={OSCAR_PROFILE.name}
-                  width={128}
-                  height={128}
-                  priority
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-cream/90 tracking-tight">
-                  Dr. Óscar E. González Camacho
-                </div>
-                <div className="text-[10px] tracking-[0.12em] text-gold/70 font-medium mt-0.5">
-                  FUNDADOR Y DIRECTOR
-                </div>
-              </div>
+            <div className="mt-6 w-full overflow-hidden relative">
+              <Image
+                src={OSCAR_PROFILE.photo}
+                alt={`${OSCAR_PROFILE.name} \u2014 Fundador y Director de Corporaci\u00f3n GC`}
+                width={768}
+                height={1024}
+                priority
+                className="w-full h-auto"
+              />
+              {/* Burgundy tint overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-burgundy-dark/30 via-transparent to-burgundy-dark/10 mix-blend-multiply pointer-events-none" />
+              {/* Bottom fade into surface */}
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
+              {/* Thin gold accent line — bottom */}
+              <div className="absolute inset-x-[15%] bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
             </div>
           </AnimatedEntry>
 

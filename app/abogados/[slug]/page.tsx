@@ -34,7 +34,6 @@ import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
   FIRM,
-  OSCAR_CREDENTIALS,
   OSCAR_NAV_LINKS,
   ESTEBAN_PROFILE,
   ESTEBAN_NAV_LINKS,
@@ -157,7 +156,7 @@ function OscarProfile() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-burgundy-dark via-[#3A0B1F] to-burgundy-dark">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
@@ -172,7 +171,6 @@ function OscarProfile() {
         <Navbar navLinks={OSCAR_NAV_LINKS} topOffset />
         <main>
           <OscarHero />
-          <Credentials credentials={OSCAR_CREDENTIALS} />
           <OscarAbout />
           <OscarExperience />
           <Publications articles={articles} />

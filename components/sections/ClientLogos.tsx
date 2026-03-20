@@ -7,7 +7,7 @@ import { CLIENT_LOGOS } from "@/lib/constants";
 function LogoItem({ logo }: { logo: (typeof CLIENT_LOGOS)[number] }) {
   return (
     <div
-      className="shrink-0 opacity-60 hover:opacity-90 transition-opacity duration-500"
+      className="shrink-0 flex items-center justify-center opacity-60 hover:opacity-90 transition-opacity duration-500 h-12 md:h-16"
       title={logo.name}
     >
       <Image
@@ -15,8 +15,8 @@ function LogoItem({ logo }: { logo: (typeof CLIENT_LOGOS)[number] }) {
         alt={logo.name}
         width={180}
         height={60}
-        className="h-12 md:h-16 w-auto object-contain mix-blend-screen"
-        style={{ transform: `scale(${logo.scale})` }}
+        className="h-full w-auto object-contain mix-blend-screen"
+        style={{ transform: `scale(${logo.scale}) translateY(${logo.offsetY}px)` }}
       />
     </div>
   );
