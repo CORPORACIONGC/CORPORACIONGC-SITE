@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FirmHero } from "@/components/sections/FirmHero";
 import { Credentials } from "@/components/sections/Credentials";
+import { ClientLogos } from "@/components/sections/ClientLogos";
 import { FirmAbout } from "@/components/sections/FirmAbout";
 import { TeamSection } from "@/components/sections/TeamSection";
 import { FirmPracticeAreas } from "@/components/sections/FirmPracticeAreas";
@@ -231,6 +232,7 @@ export default function Home() {
       <main>
         <FirmHero />
         <Credentials credentials={FIRM_CREDENTIALS} />
+        <ClientLogos />
         <FirmAbout />
         <TeamSection />
         <FirmPracticeAreas />

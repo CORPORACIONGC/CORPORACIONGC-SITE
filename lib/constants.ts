@@ -36,6 +36,20 @@ export const FIRM_CREDENTIALS = [
   { metric: "11", label: "Años litigando en lo Contencioso Administrativo", detail: "Desde 2015" },
 ] as const;
 
+export const CLIENT_LOGOS = [
+  { name: "SUTEL", src: "/images/clients/sutel.png", scale: 1 },
+  { name: "INS", src: "/images/clients/ins.png", scale: 1 },
+  { name: "Banco Mundial", src: "/images/clients/world-bank.png", scale: 1.8 },
+  { name: "CFIA", src: "/images/clients/cfia.png", scale: 1 },
+  { name: "Colegio de Abogados", src: "/images/clients/cab.png", scale: 1.35 },
+  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos.png", scale: 1.15 },
+  { name: "El Viejo", src: "/images/clients/el-viejo.png", scale: 1.1 },
+  { name: "Taboga", src: "/images/clients/taboga.png", scale: 1.55 },
+  { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos.webp", scale: 1.4 },
+  { name: "ELEINMSA", src: "/images/clients/eleinmsa.png", scale: 1.3 },
+  { name: "FENAGUITUR", src: "/images/clients/fenaguitur.png", scale: 1.55 },
+] as const;
+
 export const OSCAR_PROFILE = {
   name: "Dr. Óscar Eduardo González Camacho",
   role: "Fundador y Director",
