@@ -2,15 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, GraduationCap, Gavel, Scales, BookOpenText } from "@phosphor-icons/react";
+import { ArrowRight } from "@phosphor-icons/react";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
-
-const FOUNDER_HIGHLIGHTS = [
-  { icon: GraduationCap, text: "Doctor en Derecho por la Universidad de Alcal\u00e1 de Henares, Sobresaliente Cum Laude" },
-  { icon: Gavel, text: "Magistrado de la Sala Primera de la Corte Suprema de Justicia durante 12 a\u00f1os (2002\u20132014)" },
-  { icon: Scales, text: "Co-redactor del C\u00f3digo Procesal Contencioso Administrativo (Ley N.\u00b0 8508)" },
-  { icon: BookOpenText, text: "Autor de Justicia Administrativa (3 tomos). Profesor de Doctorado y Maestr\u00eda en Derecho P\u00fablico, UCR" },
-] as const;
 
 export function FirmAbout() {
   return (
@@ -47,60 +40,38 @@ export function FirmAbout() {
 
       </div>
 
-      {/* Founder — horizontal strip, not a card */}
+      {/* Founder — centered, concise */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 mt-20">
         <AnimatedEntry delay={0.2}>
-          <div className="border-t border-cream/[0.08] pt-12">
-            <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-10 lg:gap-16">
-              {/* Photo + identity — left column */}
-              <div className="flex items-start gap-5">
-                <div className="w-20 h-20 rounded-xl overflow-hidden border border-cream/[0.08] shrink-0">
-                  <Image src="/images/oscar-gonzalez.png" alt="Dr. &#211;scar Eduardo Gonz&#225;lez Camacho" width={160} height={160} className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <div className="text-[10px] tracking-[0.2em] uppercase text-cream/55 mb-1">Nuestro Fundador</div>
-                  <h3 className="text-lg font-semibold text-cream/90 tracking-tight">Dr. &#211;scar Eduardo Gonz&#225;lez Camacho</h3>
-                  <div className="mt-3 flex items-baseline gap-5">
-                    <div>
-                      <span className="font-display text-2xl font-semibold text-cream tracking-tight">12</span>
-                      <span className="text-[10px] text-cream/55 ml-1.5">años como Magistrado</span>
-                    </div>
-                    <div className="w-px h-4 bg-cream/[0.12]" />
-                    <div>
-                      <span className="font-display text-2xl font-semibold text-cream tracking-tight">9</span>
-                      <span className="text-[10px] text-cream/55 ml-1.5">coordinando la jurisdicción</span>
-                    </div>
-                    <div className="w-px h-4 bg-cream/[0.12]" />
-                    <div>
-                      <span className="font-display text-2xl font-semibold text-cream tracking-tight">11</span>
-                      <span className="text-[10px] text-cream/55 ml-1.5">años litigando</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="border-t border-cream/[0.08] pt-12 flex flex-col items-center text-center">
+            <div className="w-20 h-20 rounded-xl overflow-hidden border border-cream/[0.08] mb-4">
+              <Image src="/images/oscar-gonzalez.png" alt="Dr. Óscar Eduardo González Camacho" width={160} height={160} className="w-full h-full object-cover" />
+            </div>
+            <div className="text-[10px] tracking-[0.2em] uppercase text-cream/55 mb-1">Nuestro Fundador</div>
+            <h3 className="text-lg font-semibold text-cream/90 tracking-tight">Dr. Óscar Eduardo González Camacho</h3>
 
-              {/* Highlights — right column, flat list not cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {FOUNDER_HIGHLIGHTS.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="mt-0.5 p-2 rounded-lg bg-burgundy/[0.12] text-burgundy-light shrink-0">
-                      <item.icon size={16} weight="duotone" />
-                    </div>
-                    <p className="text-sm text-cream/75 leading-relaxed">{item.text}</p>
-                  </div>
-                ))}
+            {/* KPIs — academic credentials */}
+            <div className="mt-6 flex flex-wrap items-start justify-center gap-6 md:gap-10">
+              <div className="max-w-[18ch] text-center">
+                <div className="text-[11px] font-medium text-cream/80 leading-snug">Doctor en Derecho</div>
+                <div className="text-[10px] text-cream/45 mt-0.5">U. de Alcalá de Henares · Sobresaliente Cum Laude</div>
+              </div>
+              <div className="w-px h-8 bg-cream/[0.1] hidden md:block" />
+              <div className="max-w-[18ch] text-center">
+                <div className="text-[11px] font-medium text-cream/80 leading-snug">Profesor Asociado</div>
+                <div className="text-[10px] text-cream/45 mt-0.5">Universidad de Costa Rica</div>
+              </div>
+              <div className="w-px h-8 bg-cream/[0.1] hidden md:block" />
+              <div className="max-w-[20ch] text-center">
+                <div className="text-[11px] font-medium text-cream/80 leading-snug">Coordinador de la Maestría en Derecho Público</div>
+                <div className="text-[10px] text-cream/45 mt-0.5">Universidad de Costa Rica</div>
               </div>
             </div>
 
-            <div className="mt-8 flex items-center justify-between">
-              <p className="text-[11px] text-cream/55 leading-relaxed max-w-[60ch]">
-                Conferencista internacional en Colombia, Bolivia, Ecuador, Argentina, Alemania, Portugal, Espa&#241;a y Estados Unidos.
-              </p>
-              <Link href="/abogados/oscar-gonzalez" className="group flex items-center gap-2 text-xs text-cream/55 hover:text-gold transition-colors duration-300 shrink-0">
-                <span>Ver trayectoria completa</span>
-                <ArrowRight size={12} weight="bold" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-              </Link>
-            </div>
+            <Link href="/abogados/oscar-gonzalez" className="group mt-8 flex items-center gap-2 text-xs text-cream/55 hover:text-gold transition-colors duration-300">
+              <span>Ver trayectoria completa</span>
+              <ArrowRight size={12} weight="bold" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+            </Link>
           </div>
         </AnimatedEntry>
       </div>

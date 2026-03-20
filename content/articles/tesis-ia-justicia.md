@@ -5,7 +5,7 @@ excerpt: "Trabajo Final de Graduación que analiza la integración de inteligenc
 tags: ["Inteligencia Artificial", "Justicia Digital", "EU AI Act", "Trabajo Final de Graduación"]
 type: "pdf"
 pdfFile: "tesis-khevin-sanchez-zamora.pdf"
-author: "Lic. Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Sánchez Zamora"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 ---
@@ -14,7 +14,7 @@ Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad d
 
 **Director:** Dr. Óscar Eduardo González Camacho
 
-**Referencia:** Sánchez Zamora, Khevin Alberto. *Hacia la implementación de sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia costarricense: un análisis desde el marco normativo de la Unión Europea*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, San José, Costa Rica, 2025.
+**Referencia:** Sánchez Zamora, Khevin. *Hacia la implementación de sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia costarricense: un análisis desde el marco normativo de la Unión Europea*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, San José, Costa Rica, 2025.
 
 ---
 

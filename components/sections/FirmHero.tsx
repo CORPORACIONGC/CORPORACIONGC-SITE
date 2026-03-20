@@ -15,7 +15,7 @@ export function FirmHero() {
       {/* Subtle burgundy gradient accent — dark mode only */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-burgundy/[0.08] to-transparent pointer-events-none hidden dark:block" />
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-8 md:gap-12 items-center">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-8 md:gap-6 items-center">
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.15}>
@@ -99,48 +99,33 @@ export function FirmHero() {
           </AnimatedEntry>
         </div>
 
-        {/* Right — Founder Photo (desktop only, mobile has inline strip above) */}
+        {/* Right — Founder Photo (desktop only, monumental editorial treatment) */}
         <AnimatedEntry delay={0.3} direction="right" className="relative hidden md:block">
-          <div className="relative md:h-[70vh] max-h-[650px] flex items-center justify-center">
-            {/* Background shape — offset for visual depth */}
-            <div className="absolute top-[5%] right-[2%] w-[78%] h-[88%] bg-burgundy/[0.08] rounded-[2.5rem]" />
-
-            {/* Photo */}
-            <div className="relative w-[75%] md:w-[80%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+          <div className="relative md:h-[82vh] max-h-[780px]">
+            {/* Photo — full column, no rounded corners, editorial crop */}
+            <div className="relative w-full h-full overflow-hidden">
               <Image
                 src={OSCAR_PROFILE.photo}
                 alt={`${OSCAR_PROFILE.name} \u2014 Fundador y Director de Corporaci\u00f3n GC`}
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover object-top"
               />
-              {/* Bottom fade */}
-              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface/90 to-transparent" />
-            </div>
 
-            {/* Founder badge */}
-            <div className="absolute bottom-[8%] left-0 bg-surface/95 backdrop-blur-md rounded-xl px-5 py-3.5 shadow-lg border border-cream/[0.06]">
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/images/logo-gc.png"
-                  alt="Corporaci&#243;n GC"
-                  width={40}
-                  height={40}
-                  className="h-9 w-auto opacity-70 dark:opacity-100 dark:brightness-0 dark:invert"
-                />
-                <div className="text-[10px] tracking-[0.12em] text-cream/70 font-medium">
-                  FUNDADOR Y DIRECTOR
-                </div>
-              </div>
+              {/* Subtle burgundy tint overlay for editorial tone */}
+              <div className="absolute inset-0 bg-gradient-to-t from-burgundy-dark/40 via-transparent to-burgundy-dark/10 mix-blend-multiply pointer-events-none" />
+
+              {/* Bottom fade into surface */}
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
+
+              {/* Thin gold accent line — left edge */}
+              <div className="absolute top-[10%] bottom-[10%] left-0 w-px bg-gradient-to-b from-transparent via-gold/50 to-transparent" />
             </div>
 
           </div>
         </AnimatedEntry>
       </div>
-
-
-
     </section>
   );
 }

@@ -47,7 +47,7 @@ export function MagneticButton({
     secondary:
       "bg-charcoal text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-dark-bg active:scale-[0.98]",
     outline:
-      "border border-gold/30 text-gold px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-gold/5 active:scale-[0.98]",
+      "border-2 border-gold/60 text-gold px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-gold hover:bg-gold/[0.06] active:scale-[0.98]",
   };
 
   const isInternal = href && (href.startsWith("/") || href.startsWith("#"));

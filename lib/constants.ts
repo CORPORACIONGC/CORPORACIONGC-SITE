@@ -37,16 +37,16 @@ export const FIRM_CREDENTIALS = [
 ] as const;
 
 export const CLIENT_LOGOS = [
-  { name: "SUTEL", src: "/images/clients/sutel.png", scale: 1 },
-  { name: "INS", src: "/images/clients/ins.png", scale: 1 },
-  { name: "Banco Mundial", src: "/images/clients/world-bank.png", scale: 1.8 },
-  { name: "CFIA", src: "/images/clients/cfia.png", scale: 1 },
-  { name: "Colegio de Abogados", src: "/images/clients/cab.png", scale: 1.35 },
-  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos.png", scale: 1.15 },
-  { name: "El Viejo", src: "/images/clients/el-viejo.png", scale: 1.1 },
-  { name: "Taboga", src: "/images/clients/taboga.png", scale: 1.55 },
-  { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos.webp", scale: 1.4 },
-  { name: "ELEINMSA", src: "/images/clients/eleinmsa.png", scale: 1.3 },
+  { name: "SUTEL", src: "/images/clients/sutel-white.png", scale: 1.4 },
+  { name: "INS", src: "/images/clients/ins-white.png", scale: 1.35 },
+  { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 1.9 },
+  { name: "CFIA", src: "/images/clients/cfia-white.png", scale: 1.4 },
+  { name: "Colegio de Abogados", src: "/images/clients/cab-white.png", scale: 1.35 },
+  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.3 },
+  { name: "El Viejo", src: "/images/clients/el-viejo-white.png", scale: 1.1 },
+  { name: "Taboga", src: "/images/clients/taboga-white.png", scale: 1.55 },
+  { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos-white.png", scale: 1.2 },
+  { name: "ELEINMSA", src: "/images/clients/eleinmsa-white.png", scale: 1.3 },
 ] as const;
 
 export const OSCAR_PROFILE = {
@@ -86,7 +86,7 @@ export const OSCAR_PROFILE = {
 
 export const TEAM = [
   { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
-  { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/foto-perfil.png", shortBio: "Más de 7 años de experiencia en litigio. 3er mejor promedio en el Examen de Excelencia del Colegio de Abogados, 2025. Egresado UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
+  { slug: "khevin-sanchez", name: "Lic. Khevin Sánchez Zamora", role: "Abogado Asociado", photo: "/images/foto-perfil.png", shortBio: "Más de 7 años de experiencia en litigio. 3er mejor promedio en el Examen de Excelencia del Colegio de Abogados, 2025. Egresado UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
   { slug: "katherine-gonzalez", name: "Licda. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
   { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
@@ -148,7 +148,7 @@ export const ESTEBAN_PROFILE = {
 
 // ─── Perfil Individual: Khevin Sánchez ───
 
-export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Abogado Asociado en Corporación GC. Más de 7 años de experiencia en Derecho Administrativo, Contencioso Administrativo y Derecho Constitucional. Carnet 37920.", url: "https://corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
+export const SITE = { name: "Lic. Khevin Sánchez Zamora", title: "Lic. Khevin Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Abogado Asociado en Corporación GC. Más de 7 años de experiencia en Derecho Administrativo, Contencioso Administrativo y Derecho Constitucional. Carnet 37920.", url: "https://corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
 
 export const CONTACT = { email: "ksanchez@corporaciongc.com", phone: "+506 8451-4002", phoneRaw: "50684514002", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Cartago, Costa Rica" } as const;
 

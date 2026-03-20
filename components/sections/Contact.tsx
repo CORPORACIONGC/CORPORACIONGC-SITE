@@ -29,7 +29,7 @@ const contactItems = [
   {
     icon: LinkedinLogo,
     label: "LinkedIn",
-    value: "Khevin Alberto Sánchez",
+    value: "Khevin Sánchez Zamora",
     href: CONTACT.linkedin,
   },
   {

@@ -231,7 +231,6 @@ export default function Home() {
       <Navbar />
       <main>
         <FirmHero />
-        <Credentials credentials={FIRM_CREDENTIALS} />
         <ClientLogos />
         <FirmAbout />
         <TeamSection />

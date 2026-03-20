@@ -5,14 +5,14 @@ excerpt: "Análisis integral de la personalidad jurídica instrumental en Costa 
 tags: ["Derecho Administrativo", "Personalidad Jurídica Instrumental", "Desconcentración Administrativa", "Jurisprudencia Constitucional", "Administración Pública"]
 type: "pdf"
 pdfFile: "personalidad-juridica-instrumental-el-foro.pdf"
-author: "Lic. Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Sánchez Zamora"
 institution: "Corporación GC"
 publicationType: "articulo"
 sourceReference: "Revista El Foro, No. 32, ISSN 2215-6771, Colegio de Abogados y Abogadas de Costa Rica, pp. 7–22."
 sourceUrl: "https://www.abogados.or.cr/revistaelforo/#1"
 ---
 
-**Referencia:** Sánchez Zamora, Khevin Alberto. «La personalidad jurídica instrumental como técnica de organización administrativa: límites constitucionales y tendencias regresivas en Costa Rica». *Revista El Foro*, No. 32, Colegio de Abogados y Abogadas de Costa Rica, ISSN 2215-6771, pp. 7–22.
+**Referencia:** Sánchez Zamora, Khevin. «La personalidad jurídica instrumental como técnica de organización administrativa: límites constitucionales y tendencias regresivas en Costa Rica». *Revista El Foro*, No. 32, Colegio de Abogados y Abogadas de Costa Rica, ISSN 2215-6771, pp. 7–22.
 
 **Acceso a la revista completa:** [Revista El Foro — Colegio de Abogados y Abogadas de Costa Rica](https://www.abogados.or.cr/revistaelforo/#1)
 
