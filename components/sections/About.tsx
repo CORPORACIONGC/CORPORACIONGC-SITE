@@ -46,20 +46,25 @@ export function About() {
 
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Como Abogado Asociado de Corporación GC, trabajo en
-                colaboración directa y constante con el Dr. Óscar Eduardo González
-                Camacho — co-redactor del Código Procesal Contencioso
-                Administrativo — en la gestión y estrategia de casos de alta
-                complejidad técnica.
+                Litigo contra el Estado en sectores regulados de alto impacto:
+                telecomunicaciones, mercado de valores, salud pública,
+                contratación administrativa y turismo. Demandas de nulidad y de
+                responsabilidad patrimonial, medidas cautelares y audiencias
+                orales ante el Tribunal Contencioso Administrativo; recursos de
+                casación ante Sala Primera; acciones de inconstitucionalidad
+                ante Sala Constitucional. En sede administrativa, recursos de
+                revocatoria y apelación, procedimientos sancionatorios e
+                informes jurídicos a colegios profesionales.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
               <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Mi experiencia abarca desde la investigación jurídica exhaustiva
-                y redacción de escritos procesales, hasta la preparación
-                integral de audiencias orales ante las más altas instancias
-                judiciales del país.
+                Formado durante siete años bajo la dirección del Dr. Óscar
+                Eduardo González Camacho — co-redactor del Código Procesal
+                Contencioso Administrativo —, aplico técnicas de vanguardia en
+                inteligencia artificial como infraestructura técnica del
+                ejercicio profesional.
               </p>
             </AnimatedEntry>
 
