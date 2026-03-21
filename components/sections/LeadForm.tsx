@@ -8,6 +8,7 @@ import {
   WarningCircle,
 } from "@phosphor-icons/react";
 import { FIRM_CONTACT } from "@/lib/constants";
+import { sendContactEmail } from "@/app/actions/send-email";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -17,37 +18,25 @@ export function LeadForm() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [honeypot, setHoneypot] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setState("submitting");
+    setErrorMsg("");
 
     try {
-      const res = await fetch(
-        `https://formsubmit.co/ajax/${FIRM_CONTACT.email}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            phone,
-            message,
-            _subject: "Nueva consulta jurídica — Corporación GC",
-            _template: "table",
-          }),
-        }
-      );
+      const result = await sendContactEmail({ name, email, phone, message, honeypot });
 
-      if (res.ok) {
+      if (result.success) {
         setState("success");
       } else {
+        setErrorMsg(result.error || "No se pudo enviar el mensaje.");
         setState("error");
       }
     } catch {
+      setErrorMsg("No se pudo enviar el mensaje.");
       setState("error");
     }
   };
@@ -70,6 +59,18 @@ export function LeadForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Honeypot — invisible para humanos, los bots lo llenan */}
+      <div className="absolute opacity-0 pointer-events-none" style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
+        <input
+          type="text"
+          name="company_url"
+          tabIndex={-1}
+          autoComplete="off"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+        />
+      </div>
+
       {/* Name */}
       <div>
         <label className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
@@ -138,7 +139,7 @@ export function LeadForm() {
         <div className="flex items-center gap-2 p-3 rounded-lg bg-burgundy/[0.08] border border-burgundy/20">
           <WarningCircle size={16} className="text-burgundy-light shrink-0" />
           <p className="text-xs text-cream/60">
-            No se pudo enviar. Intente de nuevo o escríbanos a{" "}
+            {errorMsg} Intente de nuevo o escríbanos a{" "}
             <a
               href={`mailto:${FIRM_CONTACT.email}`}
               className="text-gold underline"

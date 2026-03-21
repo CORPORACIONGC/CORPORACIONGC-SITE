@@ -23,47 +23,9 @@ export const metadata: Metadata = {
     default: FIRM.title,
     template: `%s | ${FIRM.name}`,
   },
-  description: FIRM.description,
-  keywords: [
-    "abogados Costa Rica",
-    "Derecho P\u00fablico",
-    "litigio contencioso-administrativo",
-    "Derecho Administrativo",
-    "Derecho Constitucional",
-    "Contrataci\u00f3n P\u00fablica",
-    "bufete abogados San Jos\u00e9",
-    "Corporaci\u00f3n GC",
-    "\u00d3scar Gonz\u00e1lez Camacho",
-    "Sala Primera",
-    "Tribunal Contencioso Administrativo",
-    "Sala Constitucional",
-    "recurso de amparo",
-    "acci\u00f3n de inconstitucionalidad",
-  ],
-  authors: [{ name: "Corporaci\u00f3n GC" }],
-  creator: "Corporaci\u00f3n GC",
-  publisher: "Corporaci\u00f3n GC",
-  openGraph: {
-    title: FIRM.title,
-    description: FIRM.description,
-    url: FIRM.url,
-    siteName: FIRM.name,
-    locale: FIRM.locale,
-    type: "website",
-    images: [
-      {
-        url: "/images/logo-gc.png",
-        width: 512,
-        height: 512,
-        alt: "Corporaci\u00f3n GC \u2014 Abogados Especialistas en Derecho P\u00fablico",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: FIRM.title,
-    description: FIRM.description,
-  },
+  authors: [{ name: "Corporación GC" }],
+  creator: "Corporación GC",
+  publisher: "Corporación GC",
   icons: {
     icon: "/favicon.svg",
     apple: "/images/logo-gc.png",
@@ -71,13 +33,8 @@ export const metadata: Metadata = {
   other: {
     "theme-color": "#6B1D3A",
     "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-title": "Corporaci\u00f3n GC",
+    "apple-mobile-web-app-title": "Corporación GC",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  verification: {},
 };
 
 export default function RootLayout({

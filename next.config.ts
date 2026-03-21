@@ -1,5 +1,20 @@
 import type { NextConfig } from "next";
 
+const isDev = process.env.NODE_ENV === "development";
+
+const csp = [
+  "default-src 'self'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://maps.google.com https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com",
+  "font-src 'self'",
+  "frame-src https://maps.google.com https://www.google.com",
+  `connect-src 'self'${isDev ? " ws://localhost:* http://localhost:*" : ""}`,
+  "object-src 'self'",
+  "base-uri 'self'",
+  "form-action 'self'",
+].join("; ");
+
 const nextConfig: NextConfig = {
   async headers() {
     return [
@@ -17,6 +32,10 @@ const nextConfig: NextConfig = {
           {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
+          },
+          {
+            key: "Content-Security-Policy",
+            value: csp,
           },
         ],
       },
