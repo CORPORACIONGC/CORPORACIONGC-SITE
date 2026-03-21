@@ -52,13 +52,7 @@ export function About() {
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
                 Litigo contra el Estado en sectores regulados de alto impacto:
                 telecomunicaciones, mercado de valores, salud pública,
-                contratación administrativa y turismo. Demandas de nulidad y de
-                responsabilidad patrimonial, medidas cautelares y audiencias
-                orales ante el Tribunal Contencioso Administrativo; recursos de
-                casación ante Sala Primera; acciones de inconstitucionalidad
-                ante Sala Constitucional. En sede administrativa, recursos de
-                revocatoria y apelación, procedimientos sancionatorios e
-                informes jurídicos a colegios profesionales.
+                contratación administrativa y turismo.
               </p>
             </AnimatedEntry>
 
