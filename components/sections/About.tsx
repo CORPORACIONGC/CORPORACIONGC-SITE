@@ -37,10 +37,10 @@ export function About() {
 
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Medidas cautelares, litigio
+                Litigio contencioso e inteligencia
                 <br />
-                contencioso e{" "}
-                <span className="text-burgundy-light">inteligencia artificial</span>
+                artificial{" "}
+                <span className="text-burgundy-light">al servicio del derecho</span>
               </h2>
             </AnimatedEntry>
 
