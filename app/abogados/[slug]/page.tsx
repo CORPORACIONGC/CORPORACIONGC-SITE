@@ -130,7 +130,6 @@ function KhevinProfile() {
         <Navbar navLinks={profileNavLinks} topOffset />
         <main>
           <Hero />
-          <Credentials />
           <About />
           <Experience />
           <Publications articles={articles} />
