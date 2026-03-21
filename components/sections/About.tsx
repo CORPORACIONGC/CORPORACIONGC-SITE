@@ -83,6 +83,7 @@ export function About() {
                     <span className="text-sm text-cream/75">
                       Bachillerato en Historia — Universidad de Costa Rica
                       <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">En curso</span>
+                      <span className="block mt-0.5 text-[10px] text-cream/40">Formación complementaria aplicada al litigio de casos con componente histórico-registral</span>
                     </span>
                   </div>
                 </div>
