@@ -4,8 +4,10 @@ import {
   Scales,
   Gavel,
   ShieldCheck,
+  Shield,
   FileText,
-  Crosshair,
+  Stamp,
+  Brain,
 } from "@phosphor-icons/react";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
@@ -14,8 +16,10 @@ const iconMap: Record<string, React.ElementType> = {
   Scales,
   Gavel,
   ShieldCheck,
+  Shield,
   FileText,
-  Strategy: Crosshair,
+  Stamp,
+  Brain,
 };
 
 export function About() {

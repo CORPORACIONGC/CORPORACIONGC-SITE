@@ -162,11 +162,13 @@ export const CREDENTIALS = [
 ] as const;
 
 export const PRACTICE_AREAS = [
-  { title: "Derecho Administrativo", description: "Defensa y asesoría en procedimientos ante la Administración Pública, recursos ordinarios y extraordinarios.", icon: "Scales" as const },
-  { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
-  { title: "Derecho Constitucional", description: "Recursos de amparo, acciones de inconstitucionalidad y habeas corpus ante la Sala Constitucional.", icon: "ShieldCheck" as const },
-  { title: "Contratación Pública", description: "Asesoría y litigio en materia de licitaciones, concursos públicos y contratos administrativos.", icon: "FileText" as const },
-  { title: "Litigio Estratégico", description: "Gestión integral de casos de alta complejidad técnica y relevancia jurídica.", icon: "Strategy" as const },
+  { title: "Medidas cautelares", description: "Provisionalísimas, ante causam y definitivas en sede contencioso-administrativa. Suspensión de decretos ejecutivos, actos administrativos y procedimientos de licitación.", icon: "Shield" as const },
+  { title: "Litigio contencioso-administrativo", description: "Demandas de nulidad y de responsabilidad patrimonial ante el Tribunal Contencioso Administrativo. Audiencias orales y gestión integral del proceso contencioso.", icon: "Gavel" as const },
+  { title: "Casación ante Sala Primera", description: "Recursos de casación por vicios procesales, violación directa e indirecta de ley y errores de hecho y de derecho en la valoración probatoria.", icon: "Scales" as const },
+  { title: "Contratación pública y regulación sectorial", description: "Objeciones a carteles, impugnación de adjudicaciones y litigio en telecomunicaciones, mercado de valores, salud pública y turismo.", icon: "FileText" as const },
+  { title: "Procedimientos administrativos", description: "Recursos de revocatoria y apelación ante la Administración Pública. Procedimientos sancionatorios. Informes jurídicos a colegios profesionales.", icon: "Stamp" as const },
+  { title: "Derecho Constitucional", description: "Acciones de inconstitucionalidad y recursos de amparo ante la Sala Constitucional.", icon: "ShieldCheck" as const },
+  { title: "Inteligencia artificial aplicada al derecho", description: "Integración de técnicas de vanguardia en IA al ejercicio profesional del litigio. Investigación y publicación en la intersección entre derecho público y tecnología.", icon: "Brain" as const },
 ] as const;
 
 export const EXPERIENCE = [
