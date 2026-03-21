@@ -1,6 +1,6 @@
 "use client";
 
-import { EXPERIENCE, CONFERENCES } from "@/lib/constants";
+import { EXPERIENCE } from "@/lib/constants";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 
 export function Experience() {
@@ -89,81 +89,6 @@ export function Experience() {
               ))}
             </div>
 
-            {/* Thesis highlight */}
-            <StaggerItem>
-              <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
-                  Investigación destacada
-                </div>
-                <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
-                  Hacia la implementación de sistemas automatizados de decisión
-                  basados en inteligencia artificial en la administración de
-                  justicia costarricense
-                </h3>
-                <p className="mt-2 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
-                  Trabajo Final de Graduación que analiza la integración de
-                  inteligencia artificial en el ámbito judicial desde el marco
-                  normativo de la Unión Europea (EU AI Act), proponiendo una
-                  hoja de ruta para su adopción segura en Costa Rica.
-                </p>
-                <div className="mt-2 text-[10px] text-cream/35">
-                  Director: Dr. Óscar Eduardo González Camacho — UCR, 2025
-                </div>
-              </div>
-            </StaggerItem>
-
-            {/* Conferences & panels */}
-            <StaggerItem>
-              <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-4">
-                  Conferencias y paneles
-                </div>
-                <div className="space-y-6">
-                  {CONFERENCES.map((conf, i) => (
-                    <div
-                      key={i}
-                      className="p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-300"
-                    >
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="px-2 py-0.5 rounded-md bg-burgundy/[0.2] text-burgundy-light text-[10px] tracking-wide font-medium uppercase">
-                          {conf.role}
-                        </span>
-                        <span className="text-[10px] text-cream/35 tracking-wide">
-                          {conf.date}
-                        </span>
-                      </div>
-                      <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                        {conf.title}
-                      </h3>
-                      <p className="mt-1.5 text-xs text-gold/80 font-medium leading-relaxed max-w-[55ch]">
-                        {conf.panel}
-                      </p>
-                      <div className="mt-2 text-[10px] text-cream/40">
-                        {conf.location}
-                      </div>
-                      <div className="mt-3">
-                        <span className="text-[10px] tracking-[0.15em] uppercase text-cream/35 font-medium">
-                          Copanelistas:
-                        </span>
-                        <div className="mt-1.5 flex flex-wrap gap-1.5">
-                          {conf.copanelists.map((person, j) => (
-                            <span
-                              key={j}
-                              className="px-2 py-0.5 rounded-md bg-cream/[0.05] text-cream/50 text-[10px] tracking-wide"
-                            >
-                              {person}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="mt-2 text-[10px] text-cream/30">
-                        Organiza: {conf.organizers}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </StaggerItem>
           </StaggerContainer>
         </div>
       </div>
