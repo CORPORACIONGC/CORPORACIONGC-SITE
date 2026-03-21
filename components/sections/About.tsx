@@ -72,7 +72,7 @@ export function About() {
                   <div className="flex items-baseline gap-2">
                     <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
-                      Licenciatura en Derecho — Universidad de Costa Rica
+                      Licenciatura en Derecho con mención en Derecho Tributario — Universidad de Costa Rica
                     </span>
                   </div>
                   <div className="flex items-baseline gap-2">
