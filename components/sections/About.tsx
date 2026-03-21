@@ -8,7 +8,7 @@ import {
   Crosshair,
 } from "@phosphor-icons/react";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { PRACTICE_AREAS } from "@/lib/constants";
+import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
 
 const iconMap: Record<string, React.ElementType> = {
   Scales,
@@ -37,10 +37,10 @@ export function About() {
 
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Litigio de alto nivel
+                Medidas cautelares, litigio
                 <br />
-                con{" "}
-                <span className="text-burgundy-light">precisión jurídica</span>
+                contencioso e{" "}
+                <span className="text-burgundy-light">inteligencia artificial</span>
               </h2>
             </AnimatedEntry>
 
@@ -86,6 +86,64 @@ export function About() {
                 <div className="mt-3 text-[10px] text-cream/40">
                   3er mejor promedio — II Convocatoria, Examen de Excelencia
                   Académica del Colegio de Abogados y Abogadas de Costa Rica, 2025
+                </div>
+              </div>
+            </AnimatedEntry>
+
+            {/* Investigación & IA */}
+            <AnimatedEntry delay={0.5}>
+              <div className="mt-6 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                  Investigación en IA y Derecho
+                </div>
+                <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
+                  Hacia la implementación de sistemas automatizados de decisión
+                  basados en inteligencia artificial en la administración de
+                  justicia costarricense
+                </h3>
+                <p className="mt-2 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                  Trabajo Final de Graduación que analiza la integración de
+                  inteligencia artificial en el ámbito judicial desde el marco
+                  normativo de la Unión Europea (EU AI Act), proponiendo una
+                  hoja de ruta para su adopción segura en Costa Rica.
+                </p>
+                <div className="mt-2 text-[10px] text-cream/35">
+                  Director: Dr. Óscar Eduardo González Camacho — UCR, 2025
+                </div>
+              </div>
+            </AnimatedEntry>
+
+            {/* Conferencias */}
+            <AnimatedEntry delay={0.6}>
+              <div className="mt-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                  Conferencias y paneles internacionales
+                </div>
+                <div className="space-y-4">
+                  {CONFERENCES.map((conf, i) => (
+                    <div key={i}>
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="px-2 py-0.5 rounded-md bg-burgundy/[0.2] text-burgundy-light text-[9px] tracking-wide font-medium uppercase">
+                          {conf.role}
+                        </span>
+                        <span className="text-[10px] text-cream/35 tracking-wide">
+                          {conf.date}
+                        </span>
+                      </div>
+                      <h4 className="text-sm font-semibold text-cream/90 tracking-tight">
+                        {conf.title}
+                      </h4>
+                      <p className="mt-1 text-xs text-gold/80 font-medium leading-relaxed max-w-[55ch]">
+                        {conf.panel}
+                      </p>
+                      <div className="mt-1 text-[10px] text-cream/40">
+                        {conf.location}
+                      </div>
+                      {i < CONFERENCES.length - 1 && (
+                        <div className="mt-4 h-px bg-cream/[0.06]" />
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
             </AnimatedEntry>
