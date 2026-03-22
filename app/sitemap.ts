@@ -6,6 +6,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://corporaciongc.com";
   const articles = getAllArticles();
 
+  // Fecha del artículo más reciente — refleja la última actualización real del sitio
+  const mostRecentArticleDate =
+    articles.length > 0
+      ? new Date(
+          articles.reduce((latest, a) =>
+            new Date(a.date) > new Date(latest.date) ? a : latest
+          ).date
+        )
+      : new Date("2026-03-21");
+
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/articulos/${article.slug}`,
     lastModified: new Date(article.date),
@@ -13,9 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Fecha real de última actualización de perfiles (no new Date())
+  const teamLastUpdated = new Date("2026-03-21");
+
   const teamUrls = TEAM.map((member) => ({
     url: `${baseUrl}/abogados/${member.slug}`,
-    lastModified: new Date(),
+    lastModified: teamLastUpdated,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -23,13 +36,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: mostRecentArticleDate,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/articulos`,
-      lastModified: new Date(),
+      lastModified: mostRecentArticleDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
