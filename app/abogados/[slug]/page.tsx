@@ -13,6 +13,7 @@ import { Contact } from "@/components/sections/Contact";
 import { OscarHero } from "@/components/sections/OscarHero";
 import { OscarAbout } from "@/components/sections/OscarAbout";
 import { OscarExperience } from "@/components/sections/OscarExperience";
+import { OscarConferencias } from "@/components/sections/OscarConferencias";
 import { OscarContact } from "@/components/sections/OscarContact";
 import { EstebanHero } from "@/components/sections/EstebanHero";
 import { EstebanAbout } from "@/components/sections/EstebanAbout";
@@ -214,6 +215,7 @@ function OscarProfile() {
           <OscarAbout />
           <OscarExperience />
           <Publications articles={articles} />
+          <OscarConferencias />
           <OscarContact />
         </main>
         <Footer />

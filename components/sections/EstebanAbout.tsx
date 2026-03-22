@@ -23,74 +23,53 @@ export function EstebanAbout() {
     <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — Bio */}
+          {/* Left — CTA */}
           <div>
             <AnimatedEntry>
               <div className="flex items-center gap-3 mb-6">
                 <span className="font-display text-lg text-cream/15 font-semibold">01</span>
                 <div className="h-px w-6 bg-cream/10" />
                 <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Perfil profesional
+                  Nuestro enfoque
                 </span>
               </div>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Litigio contra el Estado
+                Litigio en derecho p&#250;blico.
                 <br />
-                <span className="text-burgundy-light">con rigor técnico</span>
+                <span className="text-burgundy-light">Estrategia y acompa&#241;amiento real.</span>
               </h2>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Mi experiencia abarca desde la investigación jurídica exhaustiva
-                y redacción de escritos procesales, hasta la participación integral
-                en audiencias orales ante las más altas instancias judiciales del
-                país. Inicié mi carrera en la Sala Constitucional de la Corte
-                Suprema de Justicia, donde colaboré directamente en la redacción
-                y revisión de proyectos de sentencia.
+              <p className="mt-8 text-base text-cream/65 leading-[1.85] max-w-[58ch]">
+                Enfrentarse al Estado es un asunto serio. Los procedimientos
+                tienen reglas propias y plazos estrictos, donde cada decisi&#243;n
+                procesal requiere preparaci&#243;n. No es un litigio que permita
+                improvisar.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Actualmente me desempeño en litigio contencioso-administrativo,
-                procesos constitucionales, contratación pública y Derecho
-                Urbanístico. Soy además Notario Público con especialidad en
-                Derecho Notarial y Registral.
+              <p className="mt-5 text-base text-cream/65 leading-[1.85] max-w-[58ch]">
+                Por eso cada asunto se trabaja con una estrategia dise&#241;ada
+                desde cero seg&#250;n cada caso, con investigaci&#243;n jur&#237;dica
+                a fondo, escritos preparados con precisi&#243;n y comunicaci&#243;n
+                clara para que usted entienda qu&#233; est&#225; pasando en cada
+                etapa.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.4}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
-                  Formación académica
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
-                    <span className="text-sm text-cream/75">
-                      Maestría en Derecho Público — Universidad de Costa Rica
-                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">
-                        Egresado — Tesis en desarrollo
-                      </span>
-                    </span>
-                  </div>
-                  <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
-                    <span className="text-sm text-cream/75">
-                      Licenciatura en Derecho — Universidad de Costa Rica
-                    </span>
-                  </div>
-                  <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-burgundy-light mt-1.5 shrink-0" />
-                    <span className="text-sm text-cream/75">
-                      Especialidad en Derecho Notarial y Registral — Universidad Fidélitas
-                    </span>
-                  </div>
-                </div>
+              <div className="mt-10">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm tracking-wide font-medium hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-burgundy/20"
+                >
+                  Coordinar una consulta
+                </a>
               </div>
             </AnimatedEntry>
           </div>
