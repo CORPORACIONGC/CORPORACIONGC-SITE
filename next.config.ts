@@ -8,7 +8,7 @@ const csp = [
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https://maps.google.com https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com",
   "font-src 'self'",
-  "frame-src https://maps.google.com https://www.google.com",
+  "frame-src https://maps.google.com https://www.google.com https://www.youtube.com https://youtube.com",
   `connect-src 'self'${isDev ? " ws://localhost:* http://localhost:*" : ""}`,
   "object-src 'self'",
   "base-uri 'self'",
