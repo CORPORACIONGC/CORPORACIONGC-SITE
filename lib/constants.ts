@@ -25,7 +25,7 @@ export const FIRM_NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "La Firma", href: "#la-firma" },
   { label: "Equipo", href: "#equipo" },
-  { label: "Áreas", href: "#areas" },
+  { label: "Áreas", href: "/areas" },
   { label: "Artículos", href: "/articulos" },
   { label: "Contacto", href: "#contacto" },
 ] as const;
@@ -109,6 +109,84 @@ export const FIRM_PRACTICE_AREAS = [
   { title: "Derecho Laboral", description: "Asesoría y litigio en relaciones laborales públicas y privadas, despidos y prestaciones.", icon: "UsersThree" as const },
   { title: "Derecho Ambiental", description: "Consultoría y litigio en materia de regulación ambiental, permisos y estudios de impacto.", icon: "Leaf" as const },
   { title: "Derecho Civil", description: "Contratos, obligaciones, responsabilidad civil y resolución de conflictos patrimoniales.", icon: "Handshake" as const },
+] as const;
+
+// ─── Páginas de Áreas de Práctica ───
+
+export const PRACTICE_AREA_PAGES = [
+  {
+    slug: "litigio-contencioso-administrativo",
+    title: "Litigio Contencioso Administrativo",
+    subtitle: "Demandas contra el Estado y entes públicos ante el Tribunal Contencioso Administrativo",
+    description: "Corporación GC litiga ante el Tribunal Contencioso Administrativo demandas de nulidad, plena jurisdicción y responsabilidad patrimonial del Estado. Fundamentación en el CPCA (Ley N.° 8508).",
+    icon: "Gavel" as const,
+    priority: "primary" as const,
+  },
+  {
+    slug: "medidas-cautelares",
+    title: "Medidas Cautelares",
+    subtitle: "Protección jurisdiccional urgente: provisionalísimas, ante causam y definitivas",
+    description: "Especialistas en tutela cautelar contencioso-administrativa: medidas provisionalísimas de urgencia extrema, cautelares ante causam y definitivas conforme a los artículos 19 a 30 del CPCA.",
+    icon: "ShieldCheck" as const,
+    priority: "primary" as const,
+  },
+  {
+    slug: "casacion-sala-primera",
+    title: "Recursos de Casación ante Sala Primera",
+    subtitle: "Impugnación de sentencias del Tribunal Contencioso Administrativo ante la Corte Suprema de Justicia",
+    description: "Interposición y sustanciación de recursos de casación contencioso-administrativa ante la Sala Primera de la Corte Suprema de Justicia conforme a los artículos 134 a 148 del CPCA.",
+    icon: "Scales" as const,
+    priority: "primary" as const,
+  },
+  {
+    slug: "asesoria-regulatoria",
+    title: "Asesoría Regulatoria",
+    subtitle: "Redacción de reglamentos, decretos ejecutivos y normativa administrativa para entes y órganos públicos",
+    description: "Corporación GC asesora a entes y órganos de la Administración Pública en la redacción de reglamentos, decretos ejecutivos y normativa de alcance general, conforme a la potestad reglamentaria del artículo 140.3 de la Constitución Política y los artículos 6 y 121 a 129 de la LGAP.",
+    icon: "BookOpen" as const,
+    priority: "primary" as const,
+  },
+  {
+    slug: "informes-juridicos-dictamenes",
+    title: "Informes Jurídicos y Dictámenes",
+    subtitle: "Opiniones técnicas sobre la legalidad de actuaciones administrativas para instituciones públicas",
+    description: "Corporación GC emite informes jurídicos y dictámenes especializados para entes y órganos de la Administración Pública sobre la legalidad de sus actuaciones, contratos, procedimientos y proyectos normativos, conforme al marco de la LGAP y la jurisprudencia contencioso-administrativa.",
+    icon: "FileText" as const,
+    priority: "primary" as const,
+  },
+  {
+    slug: "derecho-administrativo",
+    title: "Derecho Administrativo",
+    homepageTitle: "Procedimientos Administrativos",
+    subtitle: "Procedimientos administrativos, recursos de revocatoria y apelación ante la Administración Pública",
+    description: "Representación en procedimientos administrativos ordinarios y sancionatorios, interposición de recursos de revocatoria con apelación en subsidio y agotamiento de vía administrativa conforme a la LGAP (Ley N.° 6227).",
+    icon: "Briefcase" as const,
+    priority: "primary" as const,
+  },
+  {
+    slug: "derecho-constitucional",
+    title: "Derecho Constitucional",
+    subtitle: "Recursos de amparo, acciones de inconstitucionalidad y habeas corpus ante la Sala Constitucional",
+    description: "Litigio constitucional ante la Sala IV: recursos de amparo para proteger derechos fundamentales, acciones de inconstitucionalidad y habeas corpus conforme a la Ley de la Jurisdicción Constitucional (Ley N.° 7135).",
+    icon: "Bank" as const,
+    priority: "secondary" as const,
+  },
+  {
+    slug: "contratacion-publica",
+    title: "Contratación Pública",
+    subtitle: "Objeciones al cartel, impugnación de adjudicaciones y litigio en licitaciones",
+    description: "Asesoría y litigio en todas las fases de la contratación administrativa: objeciones al cartel, recursos contra adjudicaciones y demandas ante el TCA conforme a la Ley General de Contratación Pública (Ley N.° 9986).",
+    icon: "Handshake" as const,
+    priority: "secondary" as const,
+  },
+  {
+    slug: "derecho-notarial",
+    title: "Derecho Notarial y Registral",
+    subtitle: "Escrituras públicas, protocolizaciones, constitución de sociedades, trámites registrales y fe pública",
+    description: "Servicios notariales completos: otorgamiento de escrituras públicas, protocolización de actas, constitución de sociedades, compraventas, hipotecas, fideicomisos, certificaciones notariales y gestión registral conforme al Código Notarial (Ley N.° 7764).",
+    icon: "Stamp" as const,
+    priority: "secondary" as const,
+  },
 ] as const;
 
 // ─── Perfil Individual: Esteban Pérez ───

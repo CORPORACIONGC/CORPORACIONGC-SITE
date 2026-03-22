@@ -17,13 +17,46 @@ export const metadata = {
   title: "Publicaciones Académicas | Corporación GC",
   description:
     "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
+  alternates: {
+    canonical: "https://corporaciongc.com/articulos",
+  },
 };
 
 export default function ArticulosPage() {
   const articles = getAllArticles();
 
+  const jsonLdCollection = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Publicaciones Académicas | Corporación GC",
+    description:
+      "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
+    url: "https://corporaciongc.com/articulos",
+    isPartOf: { "@id": "https://corporaciongc.com/#website" },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: articles.map((a, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://corporaciongc.com/articulos/${a.slug}`,
+        name: a.title,
+      })),
+    },
+  };
+
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://corporaciongc.com" },
+      { "@type": "ListItem", position: 2, name: "Publicaciones", item: "https://corporaciongc.com/articulos" },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdCollection) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
         {/* Header */}
@@ -48,10 +81,31 @@ export default function ArticulosPage() {
               Artículos y{" "}
               <span className="text-burgundy">análisis jurídico</span>
             </h1>
-            <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[55ch]">
+            <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[65ch]">
               Investigación original en Derecho Público que aporta al
               debate jurídico, no lo resume.
             </p>
+            <div className="mt-8 text-sm text-cream/55 leading-relaxed max-w-[65ch] space-y-4">
+              <p>
+                Corporación GC es un bufete de abogados costarricense dedicado
+                exclusivamente al Derecho Público. Desde su fundación en 2015,
+                nuestro equipo ha mantenido un compromiso con la producción
+                académica rigurosa: tesis de licenciatura, artículos en revistas
+                jurídicas indexadas y libros que han contribuido a la doctrina
+                del Derecho Administrativo y Contencioso Administrativo en
+                Costa Rica.
+              </p>
+              <p>
+                Esta sección reúne las publicaciones de los abogados de la
+                firma, incluyendo investigaciones sobre inteligencia artificial
+                aplicada a la justicia, control jurisdiccional de actos de
+                gobierno, discrecionalidad administrativa en materia
+                urbanística, responsabilidad patrimonial del Estado por
+                iatrogenia y procedimiento expropiatorio, entre otros temas.
+                Cada publicación refleja el enfoque de la firma: litigar desde
+                el conocimiento profundo de la materia.
+              </p>
+            </div>
           </div>
         </div>
 

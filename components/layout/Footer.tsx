@@ -125,6 +125,12 @@ export function Footer() {
             © {new Date().getFullYear()} Corporación GC. Todos los
             derechos reservados.
           </div>
+          <Link
+            href="/politica-de-privacidad"
+            className="text-xs text-cream/40 hover:text-cream transition-colors duration-300"
+          >
+            Política de Privacidad
+          </Link>
         </div>
       </div>
     </footer>

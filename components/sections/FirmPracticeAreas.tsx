@@ -1,17 +1,15 @@
 "use client";
 
-import { Scales, Gavel, ShieldCheck, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake } from "@phosphor-icons/react";
+import Link from "next/link";
+import { Scales, Gavel, ShieldCheck, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen } from "@phosphor-icons/react";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { FIRM_PRACTICE_AREAS } from "@/lib/constants";
+import { PRACTICE_AREA_PAGES } from "@/lib/constants";
 
-const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake };
-
-/* First 4 are the core Public Law areas */
-const PRIMARY_COUNT = 4;
+const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, BookOpen };
 
 export function FirmPracticeAreas() {
-  const primary = FIRM_PRACTICE_AREAS.slice(0, PRIMARY_COUNT);
-  const secondary = FIRM_PRACTICE_AREAS.slice(PRIMARY_COUNT);
+  const primary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "primary");
+  const secondary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "secondary");
 
   return (
     <section id="areas" className="relative bg-surface py-24 md:py-32">
@@ -31,46 +29,65 @@ export function FirmPracticeAreas() {
             </AnimatedEntry>
             <AnimatedEntry delay={0.2}>
               <p className="mt-4 text-sm text-cream/70 leading-relaxed max-w-[55ch]">
-                Cuatro &#225;reas donde nuestra especializaci&#243;n marca la diferencia, con cobertura complementaria en todas las ramas que cada caso exige.
+Litigamos, asesoramos y redactamos normativa en las materias que definen el Derecho P&uacute;blico costarricense.
               </p>
             </AnimatedEntry>
           </div>
+          <AnimatedEntry delay={0.25}>
+            <Link
+              href="/areas"
+              className="text-xs text-cream/40 hover:text-gold transition-colors duration-300 flex items-center gap-1.5 shrink-0"
+            >
+              Ver todas las &aacute;reas
+              <ArrowRight size={12} weight="bold" />
+            </Link>
+          </AnimatedEntry>
         </div>
 
-        {/* Primary areas — large, prominent treatment */}
+        {/* Primary areas — clickable cards linking to /areas/[slug] */}
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-5" stagger={0.06}>
           {primary.map((area, i) => {
             const Icon = iconMap[area.icon];
             return (
               <StaggerItem key={i}>
-                <div className="group p-6 md:p-8 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] hover:bg-burgundy/[0.08] transition-all duration-400 h-full">
+                <Link
+                  href={`/areas/${area.slug}`}
+                  className="group block p-6 md:p-8 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] hover:bg-burgundy/[0.08] transition-all duration-400 h-full"
+                >
                   <div className="flex items-start gap-5">
                     <div className="p-3 rounded-xl bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300 shrink-0">
                       {Icon && <Icon size={24} weight="duotone" />}
                     </div>
-                    <div>
-                      <h3 className="text-base md:text-lg font-semibold text-cream tracking-tight">{area.title}</h3>
-                      <p className="mt-2 text-sm text-cream/75 leading-relaxed">{area.description}</p>
+                    <div className="flex-1">
+                      <div className="flex items-start justify-between gap-3">
+                        <h3 className="text-base md:text-lg font-semibold text-cream tracking-tight group-hover:text-gold transition-colors duration-300">{(area as any).homepageTitle ?? area.title}</h3>
+                        <ArrowRight size={16} weight="bold" className="text-cream/15 group-hover:text-gold transition-colors duration-300 shrink-0 mt-1" />
+                      </div>
+                      <p className="mt-2 text-sm text-cream/75 leading-relaxed">{area.subtitle}</p>
                     </div>
                   </div>
-                </div>
+                </Link>
               </StaggerItem>
             );
           })}
         </StaggerContainer>
 
-        {/* Secondary areas — compact inline list */}
+        {/* Secondary areas — compact inline list, also clickable */}
         <AnimatedEntry delay={0.4}>
           <div className="mt-12 pt-8 border-t border-cream/[0.08]">
             <div className="text-[10px] tracking-[0.2em] uppercase text-cream/50 mb-5">Cobertura complementaria</div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-3">
               {secondary.map((area, i) => {
                 const Icon = iconMap[area.icon];
                 return (
-                  <div key={i} className="flex items-center gap-2.5 py-1.5">
-                    {Icon && <Icon size={16} weight="duotone" className="text-cream/50 shrink-0" />}
-                    <span className="text-sm text-cream/70">{area.title}</span>
-                  </div>
+                  <Link
+                    key={i}
+                    href={`/areas/${area.slug}`}
+                    className="flex items-center gap-2.5 py-1.5 group"
+                  >
+                    {Icon && <Icon size={16} weight="duotone" className="text-cream/50 group-hover:text-burgundy-light shrink-0 transition-colors duration-300" />}
+                    <span className="text-sm text-cream/70 group-hover:text-gold transition-colors duration-300">{area.title}</span>
+                  </Link>
                 );
               })}
             </div>

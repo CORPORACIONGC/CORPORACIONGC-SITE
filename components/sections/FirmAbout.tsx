@@ -34,6 +34,9 @@ export function FirmAbout() {
             <p className="text-base md:text-lg text-cream/80 leading-[1.8]">
               Y desde 2015, litiga ante los mismos tribunales con un conocimiento del sistema que ning&#250;n manual puede ofrecer. Corporaci&#243;n GC es la firma que fund&#243; para trasladar esa comprensi&#243;n al servicio del cliente. Bajo su direcci&#243;n, cinco abogados formados exclusivamente en Derecho P&#250;blico defienden sus intereses con la profundidad t&#233;cnica que solo la especializaci&#243;n y la formaci&#243;n directa permiten.
             </p>
+            <p className="text-sm text-cream/60 leading-relaxed mt-8 border-l-2 border-burgundy/30 pl-5">
+              Corporaci&#243;n GC es un bufete de abogados costarricense especializado exclusivamente en Derecho P&#250;blico, con sede en Barrio Dent, San Jos&#233;. Fundado en 2015 por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho &#8212;ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002&#8211;2014) y co-redactor del C&#243;digo Procesal Contencioso Administrativo (Ley N.&#176; 8508)&#8212;, la firma litiga demandas contencioso-administrativas, medidas cautelares provisionalísimas, recursos de casaci&#243;n ante Sala Primera, acciones de inconstitucionalidad y asesora a instituciones p&#250;blicas en materia regulatoria. Entre sus clientes se encuentran SUTEL, el INS, el Banco Mundial, el CFIA y el Colegio de Abogados y Abogadas de Costa Rica.
+            </p>
           </div>
         </AnimatedEntry>
       </div>

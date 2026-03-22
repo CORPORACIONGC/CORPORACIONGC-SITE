@@ -62,6 +62,9 @@ export async function generateMetadata({
   return {
     title: `${member.name} | ${member.role} · Corporación GC`,
     description: member.shortBio,
+    alternates: {
+      canonical: `${FIRM.url}/abogados/${member.slug}`,
+    },
     openGraph: {
       title: `${member.name} | ${member.role} · Corporación GC`,
       description: member.shortBio,
@@ -82,15 +85,53 @@ export default async function AttorneyProfile({
   const member = TEAM.find((m) => m.slug === slug);
   if (!member) return notFound();
 
-  if (member.slug === "khevin-sanchez") return <KhevinProfile />;
-  if (member.slug === "oscar-gonzalez") return <OscarProfile />;
-  if (member.slug === "esteban-perez") return <EstebanProfile />;
-  if (member.slug === "jose-carlos-solano") return <JoseCarlosProfile />;
-  if (member.slug === "katherine-gonzalez") return <KatherineProfile />;
-  if (member.slug === "mariana-montero") return <MarianaProfile />;
+  /* JSON-LD Person schema for all attorney pages */
+  const jsonLdPerson = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${FIRM.url}/abogados/${member.slug}#person`,
+    name: member.name,
+    jobTitle: member.role,
+    url: `${FIRM.url}/abogados/${member.slug}`,
+    image: `${FIRM.url}${member.photo}`,
+    description: member.shortBio,
+    worksFor: {
+      "@id": `${FIRM.url}/#organization`,
+    },
+    knowsAbout: [...member.areas],
+    knowsLanguage: member.languages?.map((l: string) => l) ?? ["Español"],
+    memberOf: {
+      "@type": "Organization",
+      name: "Colegio de Abogados y Abogadas de Costa Rica",
+    },
+  };
+
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: FIRM.url },
+      { "@type": "ListItem", position: 2, name: "Equipo", item: `${FIRM.url}/#equipo` },
+      { "@type": "ListItem", position: 3, name: member.name, item: `${FIRM.url}/abogados/${member.slug}` },
+    ],
+  };
+
+  const schemaScripts = (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
+    </>
+  );
+
+  if (member.slug === "khevin-sanchez") return <>{schemaScripts}<KhevinProfile /></>;
+  if (member.slug === "oscar-gonzalez") return <>{schemaScripts}<OscarProfile /></>;
+  if (member.slug === "esteban-perez") return <>{schemaScripts}<EstebanProfile /></>;
+  if (member.slug === "jose-carlos-solano") return <>{schemaScripts}<JoseCarlosProfile /></>;
+  if (member.slug === "katherine-gonzalez") return <>{schemaScripts}<KatherineProfile /></>;
+  if (member.slug === "mariana-montero") return <>{schemaScripts}<MarianaProfile /></>;
 
   // Other attorneys get a basic profile
-  return <BasicProfile member={member} />;
+  return <>{schemaScripts}<BasicProfile member={member} /></>;
 }
 
 // ─── Khevin's Full Profile ───

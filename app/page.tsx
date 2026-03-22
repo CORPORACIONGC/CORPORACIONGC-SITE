@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo-gc.png",
-        width: 512,
-        height: 512,
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
         alt: "Corporación GC — Abogados Especialistas en Derecho Público en Costa Rica",
       },
     ],
@@ -196,7 +196,27 @@ const jsonLdOrganization = {
       },
     ],
   },
+  hasMap: "https://maps.google.com/?q=Ofident,+Barrio+Dent,+Montes+de+Oca,+San+Jos%C3%A9,+Costa+Rica",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+506 8317-9564",
+    contactType: "customer service",
+    availableLanguage: ["es"],
+    areaServed: "CR",
+  },
   sameAs: [],
+  makesOffer: [
+    "Litigio Contencioso Administrativo",
+    "Medidas Cautelares",
+    "Recursos de Casación ante Sala Primera",
+    "Asesoría Regulatoria",
+    "Informes Jurídicos y Dictámenes",
+    "Derecho Constitucional",
+    "Contratación Pública",
+    "Derecho Administrativo",
+    "Derecho Notarial y Registral",
+  ],
+  keywords: "abogados Costa Rica, Derecho Público, litigio contencioso administrativo, medidas cautelares, casación Sala Primera, abogados San José, bufete derecho público Costa Rica, CPCA",
 };
 
 const jsonLdWebSite = {

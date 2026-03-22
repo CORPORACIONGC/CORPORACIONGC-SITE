@@ -2,12 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import Image from "next/image";
 import {
   getAllArticles,
   getArticleBySlug,
   formatDate,
   publicationTypeLabel,
 } from "@/lib/articles";
+import { TEAM } from "@/lib/constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PDFViewer } from "@/components/article/PDFViewer";
@@ -36,6 +38,17 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Corporación GC`,
     description: article.excerpt,
+    alternates: {
+      canonical: `https://corporaciongc.com/articulos/${slug}`,
+    },
+    openGraph: {
+      title: `${article.title} | Corporación GC`,
+      description: article.excerpt,
+      url: `https://corporaciongc.com/articulos/${slug}`,
+      siteName: "Corporación GC",
+      locale: "es_CR",
+      type: "article",
+    },
   };
 }
 
@@ -50,6 +63,13 @@ export default async function ArticlePage({
 
   const isPdf = article.type === "pdf" && article.pdfFile;
 
+  /* Find matching team member for author bio */
+  const authorMember = article.author
+    ? TEAM.find((m) =>
+        article.author!.toLowerCase().includes(m.name.replace(/^(Dr\.\s|Lic\.\s|Licda\.\s)/, "").split(" ")[0].toLowerCase())
+      )
+    : null;
+
   /* JSON-LD for academic SEO */
   const jsonLd = {
     "@context": "https://schema.org",
@@ -57,11 +77,24 @@ export default async function ArticlePage({
     headline: article.title,
     description: article.excerpt,
     datePublished: article.date,
+    dateModified: article.date,
+    url: `https://corporaciongc.com/articulos/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://corporaciongc.com/articulos/${slug}`,
+    },
+    image: {
+      "@type": "ImageObject",
+      url: `https://corporaciongc.com/articulos/${slug}/opengraph-image`,
+      width: 1200,
+      height: 630,
+    },
     ...(article.author
       ? {
           author: {
             "@type": "Person",
             name: article.author,
+            ...(authorMember ? { url: `https://corporaciongc.com/abogados/${authorMember.slug}` } : {}),
             ...(article.institution
               ? {
                   affiliation: {
@@ -77,8 +110,25 @@ export default async function ArticlePage({
       "@type": "Organization",
       name: "Corporación GC",
       url: "https://corporaciongc.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://corporaciongc.com/images/logo-gc.png",
+        width: 492,
+        height: 466,
+      },
     },
+    inLanguage: "es",
     keywords: article.tags.join(", "),
+  };
+
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://corporaciongc.com" },
+      { "@type": "ListItem", position: 2, name: "Publicaciones", item: "https://corporaciongc.com/articulos" },
+      { "@type": "ListItem", position: 3, name: article.title, item: `https://corporaciongc.com/articulos/${slug}` },
+    ],
   };
 
   return (
@@ -86,6 +136,10 @@ export default async function ArticlePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
       />
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
@@ -216,8 +270,49 @@ export default async function ArticlePage({
               </div>
             )}
 
+            {/* About the Author */}
+            {authorMember && (
+              <div className="mt-16 pt-8 border-t border-cream/[0.06]">
+                <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-5">
+                  Sobre el autor
+                </div>
+                <div className="flex items-start gap-5">
+                  <Link href={`/abogados/${authorMember.slug}`} className="shrink-0">
+                    <Image
+                      src={authorMember.photo}
+                      alt={authorMember.name}
+                      width={72}
+                      height={72}
+                      className="rounded-full object-cover object-top w-[72px] h-[72px] border border-cream/10"
+                    />
+                  </Link>
+                  <div>
+                    <Link
+                      href={`/abogados/${authorMember.slug}`}
+                      className="text-sm font-medium text-cream hover:text-gold transition-colors duration-300"
+                    >
+                      {authorMember.name}
+                    </Link>
+                    <p className="text-xs text-cream/40 mt-0.5">
+                      {authorMember.role} · Corporación GC
+                    </p>
+                    <p className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
+                      {authorMember.shortBio}
+                    </p>
+                    <Link
+                      href={`/abogados/${authorMember.slug}`}
+                      className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-gold transition-colors duration-300 mt-3"
+                    >
+                      Ver perfil completo
+                      <ArrowSquareOut size={11} weight="bold" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Bottom nav */}
-            <div className="mt-16 pt-8 border-t border-cream/[0.06]">
+            <div className="mt-10 pt-8 border-t border-cream/[0.06]">
               <Link
                 href="/articulos"
                 className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300"
