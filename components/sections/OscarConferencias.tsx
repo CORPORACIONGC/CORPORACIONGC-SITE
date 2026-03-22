@@ -45,6 +45,30 @@ const VIDEOS: Video[] = [
       "Seminario del Dr. Óscar Eduardo González Camacho sobre medidas cautelares en la jurisdicción contencioso-administrativa, organizado por el Colegio de Abogados y Abogadas de Costa Rica.",
   },
   {
+    id: "704meiyKlOY",
+    title: "Aporte sustancial del Código Procesal Contencioso Administrativo",
+    event: "Seminario sobre el aporte del CPCA",
+    organizer: "Colegio de Abogados y Abogadas de Costa Rica",
+    description:
+      "Seminario del Dr. Óscar Eduardo González Camacho sobre el aporte sustancial del Código Procesal Contencioso Administrativo al ordenamiento jurídico costarricense, organizado por el Colegio de Abogados y Abogadas de Costa Rica.",
+  },
+  {
+    id: "nREXX_oROBY",
+    title: "El Contencioso Administrativo",
+    event: "Conferencia sobre el Contencioso Administrativo",
+    organizer: "Universidad Escuela Libre de Derecho",
+    description:
+      "Conferencia del Dr. Óscar Eduardo González Camacho sobre la jurisdicción contencioso-administrativa costarricense, organizada por la Universidad Escuela Libre de Derecho.",
+  },
+  {
+    id: "0ZKzZrXZiKY",
+    title: "Mesa Redonda: El Nuevo Régimen del Servicio Público",
+    event: "Mesa Redonda — Derecho Administrativo",
+    organizer: "Instituto de Investigaciones Jurídicas, UCR",
+    description:
+      "Participación del Dr. Óscar Eduardo González Camacho en la mesa redonda sobre el nuevo régimen del servicio público, organizada por el Instituto de Investigaciones Jurídicas de la Universidad de Costa Rica.",
+  },
+  {
     id: "uyj9G96ib4s",
     title: "Congreso de Derecho Ambiental 2013",
     event: "Congreso de Derecho Ambiental",
