@@ -253,9 +253,11 @@ html {
   --glare-y: 50%;
 
   /* Apple-style frosted glass — matte */
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(40px) saturate(150%);
+  /* -webkit- targets Safari (keep original values that look perfect there) */
   -webkit-backdrop-filter: blur(40px) saturate(150%);
+  /* Standard prop targets Chrome/Firefox (stronger to match Safari's native rendering) */
+  backdrop-filter: blur(50px) saturate(190%);
+  background: rgba(255, 255, 255, 0.78);
 
   /* Minimal edge — almost invisible */
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
