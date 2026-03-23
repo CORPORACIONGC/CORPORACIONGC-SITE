@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados exclusivamente al Derecho Público.",
   alternates: {
-    canonical: "https://corporaciongc.com/sobre-nosotros",
+    canonical: "https://www.corporaciongc.com/sobre-nosotros",
   },
   openGraph: {
     title: "Sobre Nosotros | Corporación GC",
     description:
       "Bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, dedicado exclusivamente al Derecho Público.",
-    url: "https://corporaciongc.com/sobre-nosotros",
+    url: "https://www.corporaciongc.com/sobre-nosotros",
     siteName: "Corporación GC",
     locale: "es_CR",
     type: "website",
@@ -212,7 +212,7 @@ export default function SobreNosotros() {
                   <li><strong className="text-cream/80">Teléfono:</strong> <a href="tel:+50683179564" className="text-gold hover:underline">+506 8317-9564</a></li>
                   <li><strong className="text-cream/80">Email:</strong> <a href="mailto:info@corporaciongc.com" className="text-gold hover:underline">info@corporaciongc.com</a></li>
                   <li><strong className="text-cream/80">Horario:</strong> Lunes a Viernes, 9:00 am – 6:00 pm</li>
-                  <li><strong className="text-cream/80">Sitio web:</strong> <a href="https://corporaciongc.com" className="text-gold hover:underline">corporaciongc.com</a></li>
+                  <li><strong className="text-cream/80">Sitio web:</strong> <a href="https://www.corporaciongc.com" className="text-gold hover:underline">corporaciongc.com</a></li>
                 </ul>
               </section>
             </article>

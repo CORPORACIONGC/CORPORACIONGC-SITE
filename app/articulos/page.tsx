@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
   alternates: {
-    canonical: "https://corporaciongc.com/articulos",
+    canonical: "https://www.corporaciongc.com/articulos",
   },
 };
 
@@ -31,14 +31,14 @@ export default function ArticulosPage() {
     name: "Publicaciones Académicas | Corporación GC",
     description:
       "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
-    url: "https://corporaciongc.com/articulos",
-    isPartOf: { "@id": "https://corporaciongc.com/#website" },
+    url: "https://www.corporaciongc.com/articulos",
+    isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
     mainEntity: {
       "@type": "ItemList",
       itemListElement: articles.map((a, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://corporaciongc.com/articulos/${a.slug}`,
+        url: `https://www.corporaciongc.com/articulos/${a.slug}`,
         name: a.title,
       })),
     },
@@ -48,8 +48,8 @@ export default function ArticulosPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://corporaciongc.com" },
-      { "@type": "ListItem", position: 2, name: "Publicaciones", item: "https://corporaciongc.com/articulos" },
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.corporaciongc.com" },
+      { "@type": "ListItem", position: 2, name: "Publicaciones", item: "https://www.corporaciongc.com/articulos" },
     ],
   };
 

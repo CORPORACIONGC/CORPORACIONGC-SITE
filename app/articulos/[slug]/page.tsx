@@ -39,12 +39,12 @@ export async function generateMetadata({
     title: `${article.title} | Corporación GC`,
     description: article.excerpt,
     alternates: {
-      canonical: `https://corporaciongc.com/articulos/${slug}`,
+      canonical: `https://www.corporaciongc.com/articulos/${slug}`,
     },
     openGraph: {
       title: `${article.title} | Corporación GC`,
       description: article.excerpt,
-      url: `https://corporaciongc.com/articulos/${slug}`,
+      url: `https://www.corporaciongc.com/articulos/${slug}`,
       siteName: "Corporación GC",
       locale: "es_CR",
       type: "article",
@@ -78,14 +78,14 @@ export default async function ArticlePage({
     description: article.excerpt,
     datePublished: article.date,
     dateModified: article.date,
-    url: `https://corporaciongc.com/articulos/${slug}`,
+    url: `https://www.corporaciongc.com/articulos/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://corporaciongc.com/articulos/${slug}`,
+      "@id": `https://www.corporaciongc.com/articulos/${slug}`,
     },
     image: {
       "@type": "ImageObject",
-      url: `https://corporaciongc.com/articulos/${slug}/opengraph-image`,
+      url: `https://www.corporaciongc.com/articulos/${slug}/opengraph-image`,
       width: 1200,
       height: 630,
     },
@@ -94,7 +94,7 @@ export default async function ArticlePage({
           author: {
             "@type": "Person",
             name: article.author,
-            ...(authorMember ? { url: `https://corporaciongc.com/abogados/${authorMember.slug}` } : {}),
+            ...(authorMember ? { url: `https://www.corporaciongc.com/abogados/${authorMember.slug}` } : {}),
             ...(article.institution
               ? {
                   affiliation: {
@@ -109,10 +109,10 @@ export default async function ArticlePage({
     publisher: {
       "@type": "Organization",
       name: "Corporación GC",
-      url: "https://corporaciongc.com",
+      url: "https://www.corporaciongc.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://corporaciongc.com/images/logo-gc.png",
+        url: "https://www.corporaciongc.com/images/logo-gc.png",
         width: 492,
         height: 466,
       },
@@ -125,9 +125,9 @@ export default async function ArticlePage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://corporaciongc.com" },
-      { "@type": "ListItem", position: 2, name: "Publicaciones", item: "https://corporaciongc.com/articulos" },
-      { "@type": "ListItem", position: 3, name: article.title, item: `https://corporaciongc.com/articulos/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.corporaciongc.com" },
+      { "@type": "ListItem", position: 2, name: "Publicaciones", item: "https://www.corporaciongc.com/articulos" },
+      { "@type": "ListItem", position: 3, name: article.title, item: `https://www.corporaciongc.com/articulos/${slug}` },
     ],
   };
 

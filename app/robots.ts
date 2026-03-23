@@ -21,6 +21,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Meta-ExternalAgent", disallow: "/" },
       { userAgent: "Google-Extended", disallow: "/" },
     ],
-    sitemap: "https://corporaciongc.com/sitemap.xml",
+    sitemap: "https://www.corporaciongc.com/sitemap.xml",
   };
 }

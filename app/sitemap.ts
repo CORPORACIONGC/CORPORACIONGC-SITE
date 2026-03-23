@@ -3,7 +3,7 @@ import { getAllArticles } from "@/lib/articles";
 import { TEAM, PRACTICE_AREA_PAGES } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://corporaciongc.com";
+  const baseUrl = "https://www.corporaciongc.com";
   const articles = getAllArticles();
 
   // Fecha del artículo más reciente — refleja la última actualización real del sitio

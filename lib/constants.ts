@@ -5,7 +5,7 @@ export const FIRM = {
   title: "Corporación GC | Abogados Especialistas en Derecho Público · Costa Rica",
   description:
     "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado y dirigido por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Corte Suprema, co-redactor del CPCA y coordinador de la Jurisdicción Contencioso-Administrativa. Seis abogados especializados exclusivamente en Derecho Público.",
-  url: "https://corporaciongc.com",
+  url: "https://www.corporaciongc.com",
   locale: "es_CR",
 } as const;
 
@@ -229,7 +229,7 @@ export const ESTEBAN_PROFILE = {
 
 // ─── Perfil Individual: Khevin Sánchez ───
 
-export const SITE = { name: "Lic. Khevin Sánchez Zamora", title: "Lic. Khevin Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Especialista en medidas cautelares y litigio contra el Estado en materia contencioso-administrativa. Investigador en inteligencia artificial aplicada a la justicia. Licenciado con mención en Derecho Tributario por la UCR.", url: "https://corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
+export const SITE = { name: "Lic. Khevin Sánchez Zamora", title: "Lic. Khevin Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Especialista en medidas cautelares y litigio contra el Estado en materia contencioso-administrativa. Investigador en inteligencia artificial aplicada a la justicia. Licenciado con mención en Derecho Tributario por la UCR.", url: "https://www.corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
 
 export const CONTACT = { email: "ksanchez@corporaciongc.com", phone: "+506 8451-4002", phoneRaw: "50684514002", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Cartago, Costa Rica" } as const;
 

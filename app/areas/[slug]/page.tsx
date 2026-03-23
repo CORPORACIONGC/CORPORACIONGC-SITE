@@ -1102,9 +1102,9 @@ export default async function AreaDetailPage({
     "@type": "Service",
     name: area.title,
     description: area.description,
-    url: `https://corporaciongc.com/areas/${area.slug}`,
+    url: `https://www.corporaciongc.com/areas/${area.slug}`,
     provider: {
-      "@id": "https://corporaciongc.com/#organization",
+      "@id": "https://www.corporaciongc.com/#organization",
     },
     areaServed: {
       "@type": "Country",
@@ -1121,19 +1121,19 @@ export default async function AreaDetailPage({
         "@type": "ListItem",
         position: 1,
         name: "Inicio",
-        item: "https://corporaciongc.com",
+        item: "https://www.corporaciongc.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Áreas de Práctica",
-        item: "https://corporaciongc.com/areas",
+        item: "https://www.corporaciongc.com/areas",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: area.title,
-        item: `https://corporaciongc.com/areas/${area.slug}`,
+        item: `https://www.corporaciongc.com/areas/${area.slug}`,
       },
     ],
   };

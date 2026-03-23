@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const INDEXNOW_KEY = "9bfd4199e0da6032800261f5b858adeb";
-const HOST = "corporaciongc.com";
+const HOST = "www.corporaciongc.com";
 
 export async function POST(req: NextRequest) {
   try {

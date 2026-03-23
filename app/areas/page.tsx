@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   description:
     "Áreas de práctica de Corporación GC: litigio contencioso administrativo, medidas cautelares, casación ante Sala Primera, Derecho Constitucional, Contratación Pública y Derecho Administrativo.",
   alternates: {
-    canonical: "https://corporaciongc.com/areas",
+    canonical: "https://www.corporaciongc.com/areas",
   },
   openGraph: {
     title: "Áreas de Práctica | Corporación GC",
     description:
       "Áreas de práctica de Corporación GC: litigio contencioso administrativo, medidas cautelares, casación ante Sala Primera, Derecho Constitucional, Contratación Pública y Derecho Administrativo.",
-    url: "https://corporaciongc.com/areas",
+    url: "https://www.corporaciongc.com/areas",
     siteName: "Corporación GC",
     locale: "es_CR",
     type: "website",

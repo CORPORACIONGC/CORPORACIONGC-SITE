@@ -75,13 +75,13 @@ export const metadata: Metadata = {
 const jsonLdOrganization = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "@id": "https://corporaciongc.com/#organization",
+  "@id": "https://www.corporaciongc.com/#organization",
   name: "Corporaci\u00f3n GC",
   alternateName: "Corporaci\u00f3n Gonz\u00e1lez Camacho",
   description: FIRM.description,
-  url: "https://corporaciongc.com",
-  logo: "https://corporaciongc.com/images/logo-gc.png",
-  image: "https://corporaciongc.com/images/logo-gc.png",
+  url: "https://www.corporaciongc.com",
+  logo: "https://www.corporaciongc.com/images/logo-gc.png",
+  image: "https://www.corporaciongc.com/images/logo-gc.png",
   telephone: "+506 8317-9564",
   email: "info@corporaciongc.com",
   priceRange: "$$",
@@ -105,7 +105,7 @@ const jsonLdOrganization = {
   },
   founder: {
     "@type": "Person",
-    "@id": "https://corporaciongc.com/abogados/oscar-gonzalez#person",
+    "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
     name: "Dr. \u00d3scar Gonz\u00e1lez Camacho",
     jobTitle: "Fundador y Director",
     description:
@@ -126,7 +126,7 @@ const jsonLdOrganization = {
       "Derecho Constitucional",
       "Derecho P\u00fablico",
     ],
-    worksFor: { "@id": "https://corporaciongc.com/#organization" },
+    worksFor: { "@id": "https://www.corporaciongc.com/#organization" },
   },
   foundingDate: "2015",
   numberOfEmployees: {
@@ -222,10 +222,10 @@ const jsonLdOrganization = {
 const jsonLdWebSite = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://corporaciongc.com/#website",
+  "@id": "https://www.corporaciongc.com/#website",
   name: "Corporaci\u00f3n GC \u2014 Abogados Especialistas en Derecho P\u00fablico",
-  url: "https://corporaciongc.com",
-  publisher: { "@id": "https://corporaciongc.com/#organization" },
+  url: "https://www.corporaciongc.com",
+  publisher: { "@id": "https://www.corporaciongc.com/#organization" },
   inLanguage: "es-CR",
 };
 
@@ -237,7 +237,7 @@ const jsonLdBreadcrumb = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://corporaciongc.com",
+      item: "https://www.corporaciongc.com",
     },
   ],
 };
