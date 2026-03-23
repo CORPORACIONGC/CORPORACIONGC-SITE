@@ -27,7 +27,10 @@ export const metadata: Metadata = {
   creator: "Corporación GC",
   publisher: "Corporación GC",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
     apple: "/images/logo-gc.png",
   },
   other: {
