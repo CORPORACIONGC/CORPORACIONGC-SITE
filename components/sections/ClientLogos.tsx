@@ -40,8 +40,8 @@ export function ClientLogos() {
       <AnimatedEntry delay={0.1}>
         <div className="relative pb-8 md:pb-10">
           {/* Fade edges matching burgundy bg */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-[#3A0B1F] to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-[#3A0B1F] to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-32 md:w-48 bg-gradient-to-r from-[#3A0B1F] via-[#3A0B1F]/80 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 md:w-48 bg-gradient-to-l from-[#3A0B1F] via-[#3A0B1F]/80 to-transparent z-10 pointer-events-none" />
 
           <div className="animate-marquee flex items-center gap-20 md:gap-28 w-max">
             {[...CLIENT_LOGOS, ...CLIENT_LOGOS].map((logo, i) => (
