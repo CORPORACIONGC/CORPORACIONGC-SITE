@@ -72,8 +72,8 @@ export function Hero() {
           <div className="relative md:h-[75vh] max-h-[700px] flex items-end justify-center">
             <div className="relative w-[80%] md:w-[85%] aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
-                src="/images/foto-perfil.png"
-                alt="Lic. Khevin Sánchez Zamora"
+                src="/images/oscar-gonzalez-oficina.png"
+                alt="Dr. Óscar Eduardo González Camacho — Fundador de Corporación GC"
                 width={768}
                 height={1024}
                 priority

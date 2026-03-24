@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 
@@ -30,54 +29,21 @@ export function FirmAbout() {
         <div className="mt-14 space-y-16">
           {/* Text block */}
           <AnimatedEntry delay={0.2}>
-            <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-20 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
               <div className="space-y-6">
                 <p className="text-base md:text-lg text-cream/80 leading-[1.8]">
                   El Dr. &#211;scar Eduardo Gonz&#225;lez Camacho recorri&#243; cada eslab&#243;n de la jurisdicci&#243;n contencioso-administrativa costarricense. Juzg&#243; en primera instancia. Resolvi&#243; apelaciones como Juez Superior del Tribunal. Defini&#243; jurisprudencia como Magistrado de la Sala Primera durante doce a&#241;os. Coordin&#243; la jurisdicci&#243;n por nueve a&#241;os. Co-redact&#243; el C&#243;digo Procesal que la rige.
-                </p>
-                <p className="text-base md:text-lg text-cream/80 leading-[1.8]">
-                  Y desde 2015, litiga ante los mismos tribunales con un conocimiento del sistema que ning&#250;n manual puede ofrecer. Corporaci&#243;n GC es la firma que fund&#243; para trasladar esa comprensi&#243;n al servicio del cliente. Bajo su direcci&#243;n, cinco abogados formados exclusivamente en Derecho P&#250;blico defienden sus intereses con la profundidad t&#233;cnica que solo la especializaci&#243;n y la formaci&#243;n directa permiten.
                 </p>
                 {/* Bloque definicional para IA — visualmente oculto, semánticamente presente en el DOM */}
                 <p className="sr-only">
                   Corporación GC es un bufete de abogados costarricense especializado exclusivamente en Derecho Público, con sede en Barrio Dent, San José. Fundado en 2015 por el Dr. Óscar Eduardo González Camacho —ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508)—, la firma litiga demandas contencioso-administrativas, medidas cautelares provisionalísimas, recursos de casación ante Sala Primera, acciones de inconstitucionalidad y asesora a instituciones públicas en materia regulatoria. Entre sus clientes se encuentran SUTEL, el INS, el Banco Mundial, el CFIA y el Colegio de Abogados y Abogadas de Costa Rica.
                 </p>
               </div>
-
-              {/* Photo */}
-              <AnimatedEntry delay={0.35}>
-                <div className="relative">
-                  {/* Mobile: landscape full width */}
-                  <div className="relative aspect-[3/2] rounded-xl overflow-hidden lg:hidden">
-                    <Image
-                      src="/images/oscar-gonzalez-oficina.png"
-                      alt="Dr. Oscar Eduardo Gonzalez Camacho — Fundador de Corporacion GC"
-                      fill
-                      sizes="100vw"
-                      unoptimized
-                      className="object-cover object-[50%_30%]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-surface/40 via-transparent to-transparent" />
-                    <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/[0.05]" />
-                  </div>
-                  {/* Desktop: portrait crop */}
-                  <div className="relative aspect-[3/4] rounded-xl overflow-hidden hidden lg:block">
-                    <Image
-                      src="/images/oscar-gonzalez-oficina.png"
-                      alt="Dr. Oscar Eduardo Gonzalez Camacho — Fundador de Corporacion GC"
-                      fill
-                      sizes="38vw"
-                      unoptimized
-                      className="object-cover object-[55%_35%]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-surface/30 via-transparent to-transparent" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-surface/50 via-transparent to-transparent" />
-                    <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/[0.05]" />
-                  </div>
-                  {/* Subtle gold accent */}
-                  <div className="absolute -bottom-2 left-8 right-8 h-px bg-gradient-to-r from-transparent via-gold/25 to-transparent" />
-                </div>
-              </AnimatedEntry>
+              <div className="space-y-6">
+                <p className="text-base md:text-lg text-cream/80 leading-[1.8]">
+                  Y desde 2015, litiga ante los mismos tribunales con un conocimiento del sistema que ning&#250;n manual puede ofrecer. Corporaci&#243;n GC es la firma que fund&#243; para trasladar esa comprensi&#243;n al servicio del cliente. Bajo su direcci&#243;n, cinco abogados formados exclusivamente en Derecho P&#250;blico defienden sus intereses con la profundidad t&#233;cnica que solo la especializaci&#243;n y la formaci&#243;n directa permiten.
+                </p>
+              </div>
             </div>
           </AnimatedEntry>
         </div>
