@@ -38,7 +38,7 @@ export function ClientLogos() {
       </div>
 
       <AnimatedEntry delay={0.1}>
-        <div className="relative pb-8 md:pb-10">
+        <div className="relative pb-8 md:pb-10 overflow-hidden">
           {/* Fade edges matching burgundy bg */}
           <div className="absolute left-0 top-0 bottom-0 w-32 md:w-48 bg-gradient-to-r from-[#3A0B1F] via-[#3A0B1F]/80 to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-32 md:w-48 bg-gradient-to-l from-[#3A0B1F] via-[#3A0B1F]/80 to-transparent z-10 pointer-events-none" />
