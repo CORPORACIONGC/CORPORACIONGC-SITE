@@ -83,7 +83,7 @@ export default function SobreNosotros() {
                   coordinó la Jurisdicción Contencioso-Administrativa por nueve años.
                   Participó en la redacción del Código Procesal Contencioso Administrativo
                   (CPCA, Ley N.° 8508), la ley que rige toda la jurisdicción contenciosa
-                  en Costa Rica. Es Catedrático por Mérito de la Universidad Escuela Libre
+                  en Costa Rica. Es Catedrático Universitario de la Universidad Escuela Libre
                   de Derecho y Profesor de Doctorado, Maestría y Licenciatura en la
                   Universidad de Costa Rica.
                 </p>

@@ -73,7 +73,7 @@ export const OSCAR_PROFILE = {
     { role: "Juez de Primera Instancia", org: "Juzgado Contencioso Administrativo", period: "1986 – 1992", description: "Inicio de la carrera judicial en materia contencioso-administrativa. Funcionario del Juzgado Primero Contencioso Administrativo desde 1984.", highlight: false },
   ],
   teaching: [
-    { role: "Catedrático por Mérito", institution: "Universidad Escuela Libre de Derecho", detail: "Máxima distinción académica otorgada por trayectoria docente" },
+    { role: "Catedrático Universitario", institution: "Universidad Escuela Libre de Derecho", detail: "Máxima distinción académica otorgada por trayectoria docente" },
     { role: "Profesor Asociado", institution: "Universidad de Costa Rica", detail: "N.° 1 en Centroamérica — QS Latin America University Ranking" },
     { role: "Coordinador de la Maestría en Derecho Público", institution: "Universidad de Costa Rica", detail: "Profesor del posgrado desde 2000" },
     { role: "Profesor de Doctorado, Maestría y Licenciatura", institution: "UCR y Escuela Libre de Derecho", detail: "Derecho Público, Constitucional y Administrativo" },
