@@ -63,12 +63,13 @@ export default async function ArticlePage({
 
   const isPdf = article.type === "pdf" && article.pdfFile;
 
-  /* Find matching team member for author bio */
-  const authorMember = article.author
-    ? TEAM.find((m) =>
-        article.author!.toLowerCase().includes(m.name.replace(/^(Dr\.\s|Lic\.\s|Licda\.\s)/, "").split(" ")[0].toLowerCase())
+  /* Find matching team members for author bio (supports multiple coauthors) */
+  const authorMembers = article.author
+    ? TEAM.filter((m) =>
+        article.author!.toLowerCase().includes(m.name.replace(/^(Dr\.\s|Lic\.\s|Licda\.\s|MSc\.\s)/, "").split(" ")[0].toLowerCase())
       )
-    : null;
+    : [];
+  const authorMember = authorMembers[0] ?? null;
 
   /* JSON-LD for academic SEO */
   const jsonLd = {
@@ -270,43 +271,47 @@ export default async function ArticlePage({
               </div>
             )}
 
-            {/* About the Author */}
-            {authorMember && (
+            {/* About the Author(s) */}
+            {authorMembers.length > 0 && (
               <div className="mt-16 pt-8 border-t border-cream/[0.06]">
                 <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-5">
-                  Sobre el autor
+                  {authorMembers.length > 1 ? "Sobre los autores" : "Sobre el autor"}
                 </div>
-                <div className="flex items-start gap-5">
-                  <Link href={`/abogados/${authorMember.slug}`} className="shrink-0">
-                    <Image
-                      src={authorMember.photo}
-                      alt={authorMember.name}
-                      width={72}
-                      height={72}
-                      className="rounded-full object-cover object-top w-[72px] h-[72px] border border-cream/10"
-                    />
-                  </Link>
-                  <div>
-                    <Link
-                      href={`/abogados/${authorMember.slug}`}
-                      className="text-sm font-medium text-cream hover:text-gold transition-colors duration-300"
-                    >
-                      {authorMember.name}
-                    </Link>
-                    <p className="text-xs text-cream/40 mt-0.5">
-                      {authorMember.role} · Corporación GC
-                    </p>
-                    <p className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
-                      {authorMember.shortBio}
-                    </p>
-                    <Link
-                      href={`/abogados/${authorMember.slug}`}
-                      className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-gold transition-colors duration-300 mt-3"
-                    >
-                      Ver perfil completo
-                      <ArrowSquareOut size={11} weight="bold" />
-                    </Link>
-                  </div>
+                <div className="space-y-6">
+                  {authorMembers.map((member) => (
+                    <div key={member.slug} className="flex items-start gap-5">
+                      <Link href={`/abogados/${member.slug}`} className="shrink-0">
+                        <Image
+                          src={member.photo}
+                          alt={member.name}
+                          width={72}
+                          height={72}
+                          className="rounded-full object-cover object-top w-[72px] h-[72px] border border-cream/10"
+                        />
+                      </Link>
+                      <div>
+                        <Link
+                          href={`/abogados/${member.slug}`}
+                          className="text-sm font-medium text-cream hover:text-gold transition-colors duration-300"
+                        >
+                          {member.name}
+                        </Link>
+                        <p className="text-xs text-cream/40 mt-0.5">
+                          {member.role} · Corporación GC
+                        </p>
+                        <p className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
+                          {member.shortBio}
+                        </p>
+                        <Link
+                          href={`/abogados/${member.slug}`}
+                          className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-gold transition-colors duration-300 mt-3"
+                        >
+                          Ver perfil completo
+                          <ArrowSquareOut size={11} weight="bold" />
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
