@@ -67,7 +67,7 @@ export function FirmHero() {
                 Administrativo. Magistrado de la Sala Primera de la Corte
                 Suprema durante doce años. Coordinador de la
                 Jurisdicción Contencioso-Administrativa por nueve
-                años. Catedrático Universitario en la Universidad Escuela Libre de Derecho. Once años litigando ante los tribunales que
+                años. Once años litigando ante los tribunales que
                 ayudó a construir.
               </p>
             </div>
