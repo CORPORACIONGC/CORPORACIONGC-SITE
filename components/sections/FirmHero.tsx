@@ -63,12 +63,12 @@ export function FirmHero() {
             <div className="mt-6 md:mt-8 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/80 leading-relaxed max-w-[50ch]">
-                Co-redactor del C&#243;digo Procesal Contencioso
+                Co-redactor del Código Procesal Contencioso
                 Administrativo. Magistrado de la Sala Primera de la Corte
-                Suprema durante doce a&#241;os. Coordinador de la
-                Jurisdicci&#243;n Contencioso-Administrativa por nueve
-                a&#241;os. Once a&#241;os litigando ante los tribunales que
-                ayud&#243; a construir.
+                Suprema durante doce años. Coordinador de la
+                Jurisdicción Contencioso-Administrativa por nueve
+                años. Catedrático Universitario en la Universidad Escuela Libre de Derecho. Once años litigando ante los tribunales que
+                ayudó a construir.
               </p>
             </div>
           </AnimatedEntry>
