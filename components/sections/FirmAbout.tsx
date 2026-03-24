@@ -91,10 +91,10 @@ export function FirmAbout() {
               <div className="w-px h-8 bg-cream/[0.08] hidden md:block" />
               <div className="max-w-[26ch]">
                 <div className="text-sm font-medium text-cream/70 leading-snug">
-                  Coordinador de la Maestr&#237;a en Derecho P&#250;blico
+                  Catedrático Universitario
                 </div>
                 <div className="text-[11px] text-cream/40 mt-0.5">
-                  Universidad de Costa Rica (UCR)
+                  Universidad Escuela Libre de Derecho
                 </div>
               </div>
             </div>
