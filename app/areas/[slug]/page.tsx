@@ -752,7 +752,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Tipos de procedimientos de contratación" fundamento="Ley 9986, arts. 38 a 56">
+      <Instrumento titulo="Tipos de procedimientos de contratación" fundamento="Ley 9986, arts. 36 a 56">
         <p>
           La Ley N.° 9986 establece distintos procedimientos según la complejidad y cuantía de
           la contratación. La licitación pública es el procedimiento ordinario para contrataciones
@@ -860,16 +860,19 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Silencio administrativo" fundamento="LGAP, art. 330">
+      <Instrumento titulo="Silencio administrativo" fundamento="LGAP, arts. 261 y 330">
         <p>
           El silencio administrativo opera cuando la Administración no resuelve un recurso o
-          petición dentro del plazo legalmente establecido. El artículo 330 de la LGAP establece
-          que, transcurrido el plazo sin resolución expresa, se entiende que el recurso ha sido
-          rechazado (silencio negativo), lo cual habilita al administrado para acudir a la
-          siguiente instancia administrativa o, en su caso, a la vía jurisdiccional. El silencio
-          administrativo negativo no es una sanción a la Administración sino una garantía para
-          el administrado de que la falta de respuesta no le impida continuar con la defensa de
-          sus derechos.
+          petición dentro del plazo legalmente establecido. La LGAP distingue dos modalidades:
+          el silencio negativo, que opera como regla general conforme al artículo 261, según el
+          cual transcurrido el plazo de dos meses sin resolución expresa se entiende denegada la
+          gestión, habilitando al administrado para acudir a la siguiente instancia administrativa
+          o a la vía jurisdiccional; y el silencio positivo, regulado en el artículo 330, que
+          opera cuando se trate de solicitudes de permisos, licencias y autorizaciones, así como
+          de aprobaciones en ejercicio de funciones de fiscalización y tutela, caso en el cual
+          transcurrido un mes sin resolución expresa se entiende aprobada la gestión. El silencio
+          positivo constituye una garantía para el administrado frente a la inactividad de la
+          Administración en materia autorizatoria.
         </p>
       </Instrumento>
     </>
@@ -1388,9 +1391,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Tribunal de Servicio Civil" fundamento="Ley 1581, arts. 83-90">
+      <Instrumento titulo="Tribunal de Servicio Civil" fundamento="Ley 1581, arts. 7-14">
         <p>
-          Los artículos 83 a 90 del Estatuto de Servicio Civil regulan el Tribunal de Servicio
+          Los artículos 7 a 14 del Estatuto de Servicio Civil regulan el Tribunal de Servicio
           Civil, órgano especializado competente para conocer en alzada de los reclamos de los
           servidores públicos cubiertos por el régimen de Servicio Civil contra las decisiones
           de despido dictadas por la Administración. El Tribunal tiene la potestad de confirmar,
@@ -1410,11 +1413,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Suspensión provisional durante investigación" fundamento="LGAP, art. 309; Ley 1581, art. 68">
+      <Instrumento titulo="Suspensión provisional durante investigación" fundamento="LGAP, art. 309; Ley 1581, art. 67">
         <p>
           La Administración puede disponer la suspensión provisional del servidor público durante
           la tramitación del procedimiento disciplinario, como medida cautelar y no como sanción.
-          El artículo 68 del Estatuto de Servicio Civil contempla la suspensión provisional con
+          El artículo 67 del Estatuto de Servicio Civil contempla la suspensión provisional con
           goce de salario, mientras que la LGAP permite la adopción de medidas cautelares en el
           marco del procedimiento ordinario. Esta suspensión debe ser proporcionada, debidamente
           motivada y temporal, y no implica pronunciamiento alguno sobre la culpabilidad del
@@ -1591,10 +1594,13 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           licencia municipal respectiva. El artículo 69 dispone que la
           municipalidad, mediante acuerdo del Concejo, fijará las condiciones y
           requisitos para el otorgamiento de las licencias. El artículo 70 prevé
-          las causales de denegación de la licencia, y el artículo 74 regula la
+          las causales de denegación de la licencia, y el artículo 74 regula las
+          tasas y precios que las municipalidades cobran por los servicios que
+          prestan, los cuales se fijarán tomando en consideración el costo
+          efectivo más un diez por ciento de utilidad para su desarrollo. La
           suspensión y cancelación de la patente por incumplimiento de las
-          obligaciones tributarias o de las condiciones bajo las cuales fue
-          otorgada. La patente municipal constituye un tributo cuyo hecho
+          obligaciones tributarias se regula en el artículo 81 bis del Código
+          Municipal. La patente municipal constituye un tributo cuyo hecho
           generador es el ejercicio de la actividad lucrativa autorizada.
         </p>
       </Instrumento>
@@ -1688,7 +1694,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
-      <Instrumento titulo="Principios del régimen demanial" fundamento="Código Civil, arts. 261-262; LGAP, art. 262">
+      <Instrumento titulo="Principios del régimen demanial" fundamento="Código Civil, arts. 261-262">
         <p>
           Los bienes de dominio público están sujetos a un régimen de protección
           reforzada que los distingue de los bienes patrimoniales de la
@@ -1813,9 +1819,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
-      <Instrumento titulo="Definición y delimitación de la ZMT" fundamento="Ley 6043, arts. 1 a 8">
+      <Instrumento titulo="Definición y delimitación de la ZMT" fundamento="Ley 6043, arts. 1 a 9">
         <p>
-          Los artículos 1 a 8 de la Ley 6043 definen la zona marítimo terrestre
+          Los artículos 1 a 9 de la Ley 6043 definen la zona marítimo terrestre
           como la franja de doscientos metros de ancho a lo largo de los
           litorales de la República, medida horizontalmente a partir de la línea
           de la pleamar ordinaria. El artículo 9 establece la división en zona
@@ -2170,11 +2176,13 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
           El comercio internacional en Costa Rica se rige por un marco normativo
-          que incluye la Ley del Régimen de Comercio Exterior (Ley N.° 7638 del
-          13 de noviembre de 1996), la Ley de Defensa Efectiva del Consumidor y
-          Promoción de la Competencia (Ley N.° 7472 del 20 de diciembre de 1994)
-          y la Ley de Medidas de Salvaguardia contra el Incremento de las
-          Importaciones (Ley N.° 7473 del 20 de diciembre de 1994), además de los
+          que incluye la Ley de Creación del Ministerio de Comercio Exterior y de la
+          Promotora del Comercio Exterior de Costa Rica (Ley N.° 7638 del
+          30 de octubre de 1996), la Ley de Promoción de la Competencia y Defensa Efectiva del
+          Consumidor (Ley N.° 7472 del 20 de diciembre de 1994)
+          y la Ley de Ejecución de los Acuerdos de la Ronda Uruguay de
+          Negociaciones Comerciales Multilaterales (Ley N.° 7473 del 20 de
+          diciembre de 1994), además de los
           tratados multilaterales de la Organización Mundial del Comercio (OMC) y
           los tratados de libre comercio (TLC) suscritos por el país.
         </p>
@@ -2480,11 +2488,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       </p>
     </Instrumento>
 
-    <Instrumento titulo="Guarda, crianza y régimen de visitas" fundamento="Código de Familia, arts. 113 a 140">
+    <Instrumento titulo="Guarda, crianza y régimen de visitas" fundamento="Código de Familia, arts. 140 a 159">
       <p>
-        Los artículos 113 a 140 del Código de Familia regulan la patria potestad, la guarda,
+        Los artículos 140 a 159 del Código de Familia regulan la patria potestad, la guarda,
         la crianza y la educación de los hijos menores de edad. La patria potestad corresponde
-        a ambos progenitores conjuntamente (art. 113), y su ejercicio comprende la custodia
+        a ambos progenitores conjuntamente (art. 140), y su ejercicio comprende la custodia
         del menor, su representación legal y la administración de sus bienes. Cuando los
         padres se separan, el juez determina a cuál de ellos corresponde la guarda atendiendo
         al interés superior del niño (art. 2 del Código de la Niñez y la Adolescencia).
@@ -2493,7 +2501,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         El régimen de visitas garantiza el derecho del progenitor no custodio a mantener
         contacto regular con sus hijos (art. 143). El juez fija los días, horarios y
         condiciones de las visitas. El incumplimiento del régimen puede dar lugar a medidas
-        de apremio. Asimismo, el artículo 140 establece que la patria potestad puede
+        de apremio. Asimismo, el artículo 158 establece que la patria potestad puede
         suspenderse o extinguirse por las causales previstas en la ley.
       </p>
     </Instrumento>
@@ -2516,15 +2524,14 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       </p>
     </Instrumento>
 
-    <Instrumento titulo="Régimen patrimonial y liquidación de bienes gananciales" fundamento="Código de Familia, arts. 90 a 105">
+    <Instrumento titulo="Régimen patrimonial y liquidación de bienes gananciales" fundamento="Código de Familia, arts. 37 a 52">
       <p>
         El régimen patrimonial del matrimonio costarricense es el de participación diferida en
-        las ganancias (arts. 90 a 105 del Código de Familia). Durante el matrimonio, cada
-        cónyuge administra y dispone libremente de sus propios bienes. Al disolverse el
-        vínculo, se liquidan los bienes gananciales: cada cónyuge tiene derecho a participar
+        las ganancias (arts. 37 a 52 del Código de Familia). Durante el matrimonio, cada
+        cónyuge administra y dispone libremente de sus propios bienes (art. 40). Al disolverse
+        el vínculo, se liquidan los bienes gananciales: cada cónyuge tiene derecho a participar
         en el cincuenta por ciento del valor neto de los bienes adquiridos durante el
-        matrimonio por el otro cónyuge (art. 41 constitucional concordado con art. 90 del
-        Código de Familia).
+        matrimonio por el otro cónyuge (art. 41 del Código de Familia).
       </p>
       <p>
         La liquidación puede realizarse por acuerdo de partes o mediante proceso judicial. El
@@ -2566,7 +2573,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         resolución de conflictos individuales y colectivos de trabajo, y la protección de los
         derechos laborales fundamentales. En Costa Rica, el Código de Trabajo (Ley N.° 2 del
         27 de agosto de 1943), reformado sustancialmente por la Ley de Reforma Procesal Laboral
-        (Ley N.° 9343 del 25 de enero de 2016), constituye el cuerpo normativo central. La
+        (Ley N.° 9343 del 14 de diciembre de 2015), constituye el cuerpo normativo central. La
         Ley 9343 instauró un proceso oral, concentrado y por audiencias que modernizó la
         jurisdicción laboral.
       </p>
