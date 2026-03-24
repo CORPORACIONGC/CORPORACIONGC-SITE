@@ -10,7 +10,7 @@ const TEAM_DATA: Record<string, { name: string; role: string; areas: string }> =
   "katherine-gonzalez": { name: "MSc. Katherine González Coto", role: "Abogada Asociada", areas: "Responsabilidad Patrimonial · Derecho Expropiatorio · Contencioso Administrativo" },
   "mariana-montero": { name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", areas: "Malpraxis Médica · Iatrogenia · Responsabilidad Patrimonial" },
   "esteban-perez": { name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", areas: "Derecho Urbanístico · Contencioso Administrativo · Contratación Pública" },
-  "jose-carlos-solano": { name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", areas: "Derecho Constitucional · Contencioso Administrativo · Derecho Tributario" },
+  "jose-carlos-solano": { name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", areas: "Contencioso Administrativo · Zona Marítimo Terrestre · Acciones de Inconstitucionalidad" },
 };
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {

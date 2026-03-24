@@ -95,7 +95,7 @@ export const TEAM = [
   { slug: "katherine-gonzalez", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
   { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
-  { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Derecho Público", "Derecho Constitucional", "Contencioso Administrativo", "Derecho Tributario", "Derecho Notarial y Registral"], languages: ["Español", "Inglés", "Alemán"], featured: true },
+  { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Contencioso Administrativo", "Acciones de Inconstitucionalidad", "Zona Marítimo Terrestre", "Procedimientos CGR", "Transporte y Concesiones"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
 
 export const FIRM_PRACTICE_AREAS = [
@@ -461,8 +461,8 @@ export const JOSE_CARLOS_PROFILE = {
   name: "Lic. José Carlos Solano Salas",
   role: "Abogado Asociado",
   photo: "/images/jose-carlos-solano.jpeg",
-  heroDescription: "Abogado y Notario Público, especializado en Derecho Público, Derecho Constitucional, Litigio Contencioso-Administrativo, Derecho Tributario y Derecho Notarial y Registral.",
-  heroBio: "Licenciado en Derecho con énfasis en Derecho Tributario por la Universidad de Costa Rica, graduado con honores. Especialista en Derecho Notarial y Registral. Más de 8 años de experiencia en Corporación GC en litigio judicial y administrativo de alta complejidad. Aceptado en la Maestría en Teoría del Derecho de la Johann Wolfgang Goethe-Universität Frankfurt am Main, Alemania.",
+  heroDescription: "Abogado y Notario Público, especializado en Derecho Público, Derecho Constitucional, Litigio Contencioso-Administrativo y Derecho Notarial y Registral.",
+  heroBio: "Licenciado en Derecho con mención en Derecho Tributario por la Universidad de Costa Rica, graduado con honores. Especialista en Derecho Notarial y Registral. Más de 8 años de experiencia en Corporación GC en litigio judicial y administrativo de alta complejidad. Aceptado en la Maestría en Teoría del Derecho de la Johann Wolfgang Goethe-Universität Frankfurt am Main, Alemania.",
   education: [
     { degree: "Maestría en Teoría del Derecho", institution: "Goethe-Universität Frankfurt am Main, Alemania", status: "Aceptado — Inicio octubre 2026" },
     { degree: "Especialista en Derecho Notarial y Registral", institution: "Universidad La Salle de Costa Rica", distinction: "Con honores" },
@@ -475,11 +475,11 @@ export const JOSE_CARLOS_PROFILE = {
     { role: "Asistente Legal", org: "BSA Consultores", period: "Jul. 2017 – Feb. 2018", description: "Redacción y preparación de escritos judiciales y presentaciones ante tribunales. Apoyo en asesoría municipal. Investigación jurídica en Derecho Público y Administrativo.", highlight: false },
   ],
   practiceAreas: [
-    { title: "Derecho Público", description: "Asesoría y defensa integral en el ámbito del Derecho Público costarricense.", icon: "Scales" as const },
-    { title: "Derecho Constitucional", description: "Acciones de inconstitucionalidad, recursos de amparo y habeas corpus ante la Sala Constitucional.", icon: "ShieldCheck" as const },
     { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
-    { title: "Derecho Tributario", description: "Planificación fiscal, defensa en procedimientos tributarios y consultoría impositiva.", icon: "Bank" as const },
-    { title: "Derecho Municipal", description: "Asesoría jurídica a gobiernos locales y litigio en materia municipal.", icon: "Buildings" as const },
+    { title: "Acciones de Inconstitucionalidad", description: "Planteamiento y defensa de acciones ante la Sala Constitucional para la impugnación de normas contrarias a la Constitución.", icon: "ShieldCheck" as const },
+    { title: "Zona Marítimo Terrestre", description: "Asesoría y litigio en concesiones, permisos de uso y regulación de la zona pública y restringida del litoral.", icon: "Scales" as const },
+    { title: "Procedimientos Disciplinarios CGR", description: "Defensa en procedimientos administrativos sancionatorios ante la Contraloría General de la República.", icon: "Bank" as const },
+    { title: "Transporte Público y Concesiones", description: "Asesoría en régimen concesional de servicios públicos, transporte y permisos de operación.", icon: "Buildings" as const },
     { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const },
   ],
   research: {
@@ -503,11 +503,11 @@ export const JOSE_CARLOS_CONTACT = {
 } as const;
 
 export const JOSE_CARLOS_PRACTICE_AREAS = [
-  { title: "Derecho Público", description: "Asesoría y defensa integral en el ámbito del Derecho Público costarricense.", icon: "Scales" as const },
-  { title: "Derecho Constitucional", description: "Acciones de inconstitucionalidad, recursos de amparo y habeas corpus ante la Sala Constitucional.", icon: "ShieldCheck" as const },
   { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
-  { title: "Derecho Tributario", description: "Planificación fiscal, defensa en procedimientos tributarios y consultoría impositiva.", icon: "Bank" as const },
-  { title: "Derecho Municipal", description: "Asesoría jurídica a gobiernos locales y litigio en materia municipal.", icon: "Buildings" as const },
+  { title: "Acciones de Inconstitucionalidad", description: "Planteamiento y defensa de acciones ante la Sala Constitucional para la impugnación de normas contrarias a la Constitución.", icon: "ShieldCheck" as const },
+  { title: "Zona Marítimo Terrestre", description: "Asesoría y litigio en concesiones, permisos de uso y regulación de la zona pública y restringida del litoral.", icon: "Scales" as const },
+  { title: "Procedimientos Disciplinarios CGR", description: "Defensa en procedimientos administrativos sancionatorios ante la Contraloría General de la República.", icon: "Bank" as const },
+  { title: "Transporte Público y Concesiones", description: "Asesoría en régimen concesional de servicios públicos, transporte y permisos de operación.", icon: "Buildings" as const },
   { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const },
 ] as const;
 
