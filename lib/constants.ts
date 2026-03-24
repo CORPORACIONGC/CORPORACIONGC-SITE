@@ -42,7 +42,7 @@ export const CLIENT_LOGOS = [
   { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 2.15, offsetY: 3 },
   { name: "CFIA", src: "/images/clients/cfia-white.png", scale: 1.55, offsetY: 0 },
   { name: "Colegio de Abogados", src: "/images/clients/cab-white.png", scale: 1.35, offsetY: 0 },
-  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.3, offsetY: 0 },
+  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.5, offsetY: 0 },
   { name: "El Viejo", src: "/images/clients/el-viejo-white.png", scale: 1.1, offsetY: 0 },
   { name: "Taboga", src: "/images/clients/taboga-white.png", scale: 1.55, offsetY: 0 },
   { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos-white.png", scale: 1.2, offsetY: 0 },
