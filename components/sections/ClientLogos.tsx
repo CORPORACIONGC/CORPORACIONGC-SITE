@@ -24,7 +24,9 @@ function LogoItem({ logo }: { logo: (typeof CLIENT_LOGOS)[number] }) {
 
 export function ClientLogos() {
   return (
-    <section className="relative bg-gradient-to-b from-[#421025] via-[#3A0B1F] to-[#280D16] overflow-hidden">
+    <section className="relative bg-[#3A0B1F] overflow-hidden">
+      {/* Elegant subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#280D16] pointer-events-none" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 md:pt-10">
         <AnimatedEntry>
           <div className="flex items-center justify-center gap-3 mb-6">
