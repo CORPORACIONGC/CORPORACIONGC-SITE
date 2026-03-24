@@ -37,9 +37,9 @@ export const FIRM_CREDENTIALS = [
 ] as const;
 
 export const CLIENT_LOGOS = [
-  { name: "SUTEL", src: "/images/clients/sutel-white.png", scale: 1.7, offsetY: 0 },
-  { name: "INS", src: "/images/clients/ins-white.png", scale: 1.15, offsetY: 0 },
-  { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 1.9, offsetY: 3 },
+  { name: "SUTEL", src: "/images/clients/sutel-white.png", scale: 1.95, offsetY: -4 },
+  { name: "INS", src: "/images/clients/ins-white.png", scale: 1.55, offsetY: 0 },
+  { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 2.15, offsetY: 3 },
   { name: "CFIA", src: "/images/clients/cfia-white.png", scale: 1.55, offsetY: 0 },
   { name: "Colegio de Abogados", src: "/images/clients/cab-white.png", scale: 1.35, offsetY: 0 },
   { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.3, offsetY: 0 },
