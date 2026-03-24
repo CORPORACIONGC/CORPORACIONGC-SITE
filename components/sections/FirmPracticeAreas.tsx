@@ -45,26 +45,23 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
           </AnimatedEntry>
         </div>
 
-        {/* Primary areas — clickable cards linking to /areas/[slug] */}
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-5" stagger={0.06}>
-          {primary.map((area, i) => {
+        {/* All practice areas — unified grid of 3 columns */}
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" stagger={0.04}>
+          {[...primary, ...specialized].map((area, i) => {
             const Icon = iconMap[area.icon];
             return (
               <StaggerItem key={i}>
                 <Link
                   href={`/areas/${area.slug}`}
-                  className="group block p-6 md:p-8 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] hover:bg-burgundy/[0.08] transition-all duration-400 h-full"
+                  className="group block p-5 md:p-6 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] hover:bg-burgundy/[0.08] transition-all duration-400 h-full"
                 >
-                  <div className="flex items-start gap-5">
-                    <div className="p-3 rounded-xl bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300 shrink-0">
-                      {Icon && <Icon size={24} weight="duotone" />}
+                  <div className="flex items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300 shrink-0">
+                      {Icon && <Icon size={22} weight="duotone" />}
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-start justify-between gap-3">
-                        <h3 className="text-base md:text-lg font-semibold text-cream tracking-tight group-hover:text-gold transition-colors duration-300">{(area as any).homepageTitle ?? area.title}</h3>
-                        <ArrowRight size={16} weight="bold" className="text-cream/15 group-hover:text-gold transition-colors duration-300 shrink-0 mt-1" />
-                      </div>
-                      <p className="mt-2 text-sm text-cream/75 leading-relaxed">{area.subtitle}</p>
+                      <h3 className="text-sm md:text-base font-semibold text-cream tracking-tight group-hover:text-gold transition-colors duration-300">{(area as any).homepageTitle ?? area.title}</h3>
+                      <p className="mt-1.5 text-xs text-cream/60 leading-relaxed line-clamp-2">{area.subtitle}</p>
                     </div>
                   </div>
                 </Link>
@@ -72,28 +69,6 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
             );
           })}
         </StaggerContainer>
-
-        {/* Specialized areas */}
-        <AnimatedEntry delay={0.4}>
-          <div className="mt-12 pt-8 border-t border-cream/[0.08]">
-            <div className="text-[10px] tracking-[0.2em] uppercase text-cream/50 mb-5">&Aacute;reas especializadas</div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
-              {specialized.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <Link
-                    key={i}
-                    href={`/areas/${area.slug}`}
-                    className="flex items-center gap-2.5 py-1.5 group"
-                  >
-                    {Icon && <Icon size={16} weight="duotone" className="text-cream/50 group-hover:text-burgundy-light shrink-0 transition-colors duration-300" />}
-                    <span className="text-sm text-cream/70 group-hover:text-gold transition-colors duration-300">{area.title}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </AnimatedEntry>
 
         {/* Complementary areas */}
         <AnimatedEntry delay={0.5}>

@@ -167,7 +167,7 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "asesoria-regulatoria",
-    title: "Asesoría Regulatoria",
+    title: "Normativa y Reglamentos",
     subtitle: "Redacción de reglamentos, decretos ejecutivos y normativa administrativa para entes y órganos públicos",
     description: "Corporación GC asesora a entes y órganos de la Administración Pública en la redacción de reglamentos, decretos ejecutivos y normativa de alcance general, conforme a la potestad reglamentaria del artículo 140.3 de la Constitución Política y los artículos 6 y 121 a 129 de la LGAP.",
     icon: "BookOpen" as const,
@@ -175,7 +175,7 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "informes-juridicos-dictamenes",
-    title: "Informes Jurídicos y Dictámenes",
+    title: "Dictámenes de Legalidad Administrativa",
     subtitle: "Opiniones técnicas sobre la legalidad de actuaciones administrativas para instituciones públicas",
     description: "Corporación GC emite informes jurídicos y dictámenes especializados para entes y órganos de la Administración Pública sobre la legalidad de sus actuaciones, contratos, procedimientos y proyectos normativos, conforme al marco de la LGAP y la jurisprudencia contencioso-administrativa.",
     icon: "FileText" as const,
@@ -183,8 +183,8 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "derecho-administrativo",
-    title: "Procedimientos Administrativos",
-    homepageTitle: "Procedimientos Administrativos",
+    title: "Vía Administrativa y Recursos",
+    homepageTitle: "Vía Administrativa y Recursos",
     subtitle: "Procedimientos ordinarios, recursos de revocatoria y apelación ante la Administración Pública",
     description: "Representación en procedimientos administrativos ordinarios, interposición de recursos de revocatoria con apelación en subsidio y agotamiento de vía administrativa conforme a la LGAP (Ley N.° 6227, arts. 308 a 352).",
     icon: "Briefcase" as const,
@@ -192,7 +192,7 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "procedimientos-sancionatorios",
-    title: "Procedimientos Administrativos Sancionatorios",
+    title: "Defensa en Procedimientos Sancionatorios",
     subtitle: "Defensa en procedimientos disciplinarios y sancionatorios ante la Administración Pública",
     description: "Defensa del administrado en procedimientos sancionatorios de la Administración Pública: garantías del debido proceso, audiencia oral, acceso al expediente y recursos administrativos conforme a los artículos 308 a 319 de la LGAP y los artículos 39 y 41 de la Constitución Política.",
     icon: "Warning" as const,
@@ -200,7 +200,7 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "empleo-publico",
-    title: "Empleo Público y Régimen Disciplinario",
+    title: "Empleo Público y Servicio Civil",
     subtitle: "Defensa de servidores públicos en procedimientos disciplinarios, sanciones y despidos",
     description: "Defensa de servidores públicos en procedimientos disciplinarios: amonestaciones, suspensiones y despidos conforme al Estatuto de Servicio Civil (Ley N.° 1581), la Ley Marco de Empleo Público (Ley N.° 10159) y el procedimiento ordinario de la LGAP (arts. 308 a 319).",
     icon: "IdentificationBadge" as const,
@@ -209,7 +209,7 @@ export const PRACTICE_AREA_PAGES = [
   // ─── Áreas Especializadas ───
   {
     slug: "servicio-publico",
-    title: "Regulación de Servicios Públicos",
+    title: "Regulación Tarifaria y Servicios Regulados",
     subtitle: "Fijación tarifaria, concesiones y litigio ante ARESEP y SUTEL",
     description: "Representación en procedimientos de fijación tarifaria, impugnación de resoluciones de ARESEP y SUTEL, defensa de concesiones de servicios públicos y litigio en materia regulatoria conforme a la Ley N.° 7593.",
     icon: "Lightning" as const,
@@ -225,7 +225,7 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "dominio-publico",
-    title: "Dominio Público y Bienes Demaniales",
+    title: "Dominio Público y Concesiones Demaniales",
     subtitle: "Concesiones de uso, permisos sobre bienes del Estado y litigio demanial",
     description: "Solicitud y defensa de concesiones sobre bienes de dominio público, impugnación de revocatorias y caducidades, defensa frente a desalojos administrativos y protección de derechos derivados de permisos de uso.",
     icon: "MapPin" as const,
