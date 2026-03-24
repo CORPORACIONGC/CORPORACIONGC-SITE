@@ -74,10 +74,11 @@ export function Hero() {
               <Image
                 src="/images/oscar-gonzalez-solo.png"
                 alt="Dr. Óscar Eduardo González Camacho — Fundador de Corporación GC"
-                width={768}
-                height={1024}
+                fill
+                sizes="(max-width: 768px) 80vw, 42vw"
                 priority
-                className="w-full h-[110%] object-cover object-top"
+                unoptimized
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface to-transparent" />
             </div>
