@@ -20,11 +20,11 @@ export function Credentials({
         <AnimatedEntry>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             {items.map((cred, i) => (
-              <div key={i} className="flex items-baseline gap-3 md:gap-4">
-                <span className="font-display text-3xl md:text-4xl font-semibold text-white tracking-tight leading-none">
+              <div key={i} className="flex items-center gap-3 md:gap-4">
+                <span className="font-display text-3xl md:text-4xl font-semibold text-white tracking-tight leading-none shrink-0">
                   {cred.metric}
                 </span>
-                <div>
+                <div className="min-w-0">
                   <div className="text-xs tracking-wide text-white/80 font-medium">
                     {cred.label}
                   </div>
@@ -33,7 +33,7 @@ export function Credentials({
                   </div>
                 </div>
                 {i < items.length - 1 && (
-                  <div className="hidden md:block w-px h-10 bg-white/15 ml-auto" />
+                  <div className="hidden md:block w-px h-10 bg-white/15 ml-auto shrink-0" />
                 )}
               </div>
             ))}
