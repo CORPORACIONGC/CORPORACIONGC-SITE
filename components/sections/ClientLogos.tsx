@@ -43,7 +43,7 @@ export function ClientLogos() {
           <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-[#3A0B1F] to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-[#3A0B1F] to-transparent z-10 pointer-events-none" />
 
-          <div className="animate-marquee flex items-center gap-16 md:gap-24 w-max">
+          <div className="animate-marquee flex items-center gap-20 md:gap-28 w-max">
             {[...CLIENT_LOGOS, ...CLIENT_LOGOS].map((logo, i) => (
               <LogoItem key={`${logo.name}-${i}`} logo={logo} />
             ))}

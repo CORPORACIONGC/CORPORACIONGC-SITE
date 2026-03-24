@@ -51,7 +51,7 @@ export const CLIENT_LOGOS = [
   { name: "Grupo Orosí", src: "/images/clients/grupo-orosi-white.png", scale: 1.3, offsetY: 6 },
   { name: "Mercasa", src: "/images/clients/mercasa-white.png", scale: 1.3, offsetY: 0 },
   { name: "UNA", src: "/images/clients/una-white.png", scale: 1.3, offsetY: 0 },
-  { name: "ICE", src: "/images/clients/ice-white.png", scale: 1.4, offsetY: 0 },
+  { name: "ICE", src: "/images/clients/ice-white.png", scale: 1.4, offsetY: -3 },
 ] as const;
 
 export const OSCAR_PROFILE = {
