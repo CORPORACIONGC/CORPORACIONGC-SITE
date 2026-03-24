@@ -97,6 +97,15 @@ export function FirmAbout() {
                   Universidad Escuela Libre de Derecho
                 </div>
               </div>
+              <div className="w-px h-8 bg-cream/[0.08] hidden md:block" />
+              <div className="max-w-[26ch]">
+                <div className="text-sm font-medium text-cream/70 leading-snug">
+                  Coordinador de la Maestría en Derecho Público
+                </div>
+                <div className="text-[11px] text-cream/40 mt-0.5">
+                  Universidad de Costa Rica (UCR)
+                </div>
+              </div>
             </div>
 
             <Link
