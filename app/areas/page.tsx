@@ -8,6 +8,7 @@ import {
   ArrowRight,
   Gavel,
   ShieldCheck,
+  Shield,
   Scales,
   FileText,
   Stamp,
@@ -15,19 +16,31 @@ import {
   Briefcase,
   Bank,
   Handshake,
+  Warning,
+  IdentificationBadge,
+  Lightning,
+  Buildings,
+  MapPin,
+  Waves,
+  HouseSimple,
+  CurrencyCircleDollar,
+  Globe,
+  UsersThree,
+  Heart,
+  Wrench,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
   title: "Áreas de Práctica | Corporación GC",
   description:
-    "Áreas de práctica de Corporación GC: litigio contencioso administrativo, medidas cautelares, casación ante Sala Primera, Derecho Constitucional, Contratación Pública y Derecho Administrativo.",
+    "22 áreas de práctica en Derecho Público: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, acciones de inconstitucionalidad, contratación pública, procedimientos sancionatorios y más.",
   alternates: {
     canonical: "https://www.corporaciongc.com/areas",
   },
   openGraph: {
     title: "Áreas de Práctica | Corporación GC",
     description:
-      "Áreas de práctica de Corporación GC: litigio contencioso administrativo, medidas cautelares, casación ante Sala Primera, Derecho Constitucional, Contratación Pública y Derecho Administrativo.",
+      "22 áreas de práctica en Derecho Público: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, acciones de inconstitucionalidad, contratación pública y más.",
     url: "https://www.corporaciongc.com/areas",
     siteName: "Corporación GC",
     locale: "es_CR",
@@ -36,20 +49,34 @@ export const metadata: Metadata = {
 };
 
 const iconMap = {
-  Gavel: Gavel,
-  ShieldCheck: ShieldCheck,
-  Scales: Scales,
-  FileText: FileText,
-  Stamp: Stamp,
-  BookOpen: BookOpen,
-  Briefcase: Briefcase,
-  Bank: Bank,
-  Handshake: Handshake,
+  Gavel,
+  ShieldCheck,
+  Shield,
+  Scales,
+  FileText,
+  Stamp,
+  BookOpen,
+  Briefcase,
+  Bank,
+  Handshake,
+  Warning,
+  IdentificationBadge,
+  Lightning,
+  Buildings,
+  MapPin,
+  Waves,
+  HouseSimple,
+  CurrencyCircleDollar,
+  Globe,
+  UsersThree,
+  Heart,
+  Wrench,
 } as const;
 
 export default function AreasPage() {
   const primary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "primary");
-  const secondary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "secondary");
+  const specialized = PRACTICE_AREA_PAGES.filter((a) => a.priority === "specialized");
+  const complementary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "complementary");
 
   return (
     <>
@@ -130,13 +157,13 @@ export default function AreasPage() {
               </div>
             </div>
 
-            {/* Secondary Areas */}
+            {/* Specialized Areas */}
             <div className="mt-12">
               <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-6">
-                Áreas Complementarias
+                Áreas Especializadas
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {secondary.map((area) => {
+                {specialized.map((area) => {
                   const Icon = iconMap[area.icon as keyof typeof iconMap] || Scales;
                   return (
                     <Link
@@ -155,6 +182,39 @@ export default function AreasPage() {
                         </h2>
                       </div>
                       <p className="text-xs text-cream/45 leading-relaxed">
+                        {area.subtitle}
+                      </p>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Complementary Areas */}
+            <div className="mt-12">
+              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-6">
+                Cobertura Complementaria
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {complementary.map((area) => {
+                  const Icon = iconMap[area.icon as keyof typeof iconMap] || Scales;
+                  return (
+                    <Link
+                      key={area.slug}
+                      href={`/areas/${area.slug}`}
+                      className="group block p-5 rounded-xl border border-cream/[0.06] bg-cream/[0.02] hover:border-burgundy/20 transition-all duration-400"
+                    >
+                      <div className="flex items-center gap-3 mb-2">
+                        <Icon
+                          size={16}
+                          weight="duotone"
+                          className="text-cream/40 group-hover:text-burgundy shrink-0 transition-colors duration-300"
+                        />
+                        <h2 className="font-display text-sm text-cream/70 group-hover:text-gold transition-colors duration-300">
+                          {area.title}
+                        </h2>
+                      </div>
+                      <p className="text-xs text-cream/35 leading-relaxed">
                         {area.subtitle}
                       </p>
                     </Link>

@@ -1,15 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Scales, Gavel, ShieldCheck, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen } from "@phosphor-icons/react";
+import { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench } from "@phosphor-icons/react";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREA_PAGES } from "@/lib/constants";
 
-const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, BookOpen };
+const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench };
 
 export function FirmPracticeAreas() {
   const primary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "primary");
-  const secondary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "secondary");
+  const specialized = PRACTICE_AREA_PAGES.filter((a) => a.priority === "specialized");
+  const complementary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "complementary");
 
   return (
     <section id="areas" className="relative bg-surface py-24 md:py-32">
@@ -72,12 +73,12 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
           })}
         </StaggerContainer>
 
-        {/* Secondary areas — compact inline list, also clickable */}
+        {/* Specialized areas */}
         <AnimatedEntry delay={0.4}>
           <div className="mt-12 pt-8 border-t border-cream/[0.08]">
-            <div className="text-[10px] tracking-[0.2em] uppercase text-cream/50 mb-5">Cobertura complementaria</div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-3">
-              {secondary.map((area, i) => {
+            <div className="text-[10px] tracking-[0.2em] uppercase text-cream/50 mb-5">&Aacute;reas especializadas</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
+              {specialized.map((area, i) => {
                 const Icon = iconMap[area.icon];
                 return (
                   <Link
@@ -87,6 +88,28 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
                   >
                     {Icon && <Icon size={16} weight="duotone" className="text-cream/50 group-hover:text-burgundy-light shrink-0 transition-colors duration-300" />}
                     <span className="text-sm text-cream/70 group-hover:text-gold transition-colors duration-300">{area.title}</span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </AnimatedEntry>
+
+        {/* Complementary areas */}
+        <AnimatedEntry delay={0.5}>
+          <div className="mt-8 pt-6 border-t border-cream/[0.05]">
+            <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-4">Cobertura complementaria</div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-2">
+              {complementary.map((area, i) => {
+                const Icon = iconMap[area.icon];
+                return (
+                  <Link
+                    key={i}
+                    href={`/areas/${area.slug}`}
+                    className="flex items-center gap-2 py-1 group"
+                  >
+                    {Icon && <Icon size={14} weight="duotone" className="text-cream/35 group-hover:text-burgundy-light shrink-0 transition-colors duration-300" />}
+                    <span className="text-xs text-cream/50 group-hover:text-gold transition-colors duration-300">{area.title}</span>
                   </Link>
                 );
               })}
