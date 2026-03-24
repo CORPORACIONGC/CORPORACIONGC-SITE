@@ -72,13 +72,12 @@ export function Hero() {
           <div className="relative md:h-[75vh] max-h-[700px] flex items-end justify-center">
             <div className="relative w-[80%] md:w-[85%] aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
-                src="/images/oscar-gonzalez-solo.png"
-                alt="Dr. Óscar Eduardo González Camacho — Fundador de Corporación GC"
-                fill
-                sizes="(max-width: 768px) 80vw, 42vw"
+                src="/images/foto-perfil.png"
+                alt="Lic. Khevin Sánchez Zamora — Abogado Asociado de Corporación GC"
+                width={768}
+                height={1024}
                 priority
-                unoptimized
-                className="w-full h-full object-cover object-top"
+                className="w-full h-[110%] object-cover object-top"
               />
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface to-transparent" />
             </div>
