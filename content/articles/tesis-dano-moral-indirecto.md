@@ -5,7 +5,7 @@ excerpt: "Trabajo Final de Investigación Aplicada que examina el régimen jurí
 tags: ["Responsabilidad Patrimonial", "Daño Moral Indirecto", "Derecho Administrativo", "Derecho Público"]
 type: "pdf"
 pdfFile: "tesis-katherine-gonzalez-maestria.pdf"
-author: "Licda. Katherine González Coto"
+author: "MSc. Katherine González Coto"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 ---

@@ -27,7 +27,7 @@ export function KatherineHero() {
 
           <AnimatedEntry delay={0.2}>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none text-cream">
-              Licda. Katherine
+              MSc. Katherine
               <br />
               González{" "}
               <span className="text-gold">Coto</span>
@@ -70,7 +70,7 @@ export function KatherineHero() {
             <div className="relative w-[80%] md:w-[85%] aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/katherine-gonzalez.png"
-                alt="Licda. Katherine González Coto"
+                alt="MSc. Katherine González Coto"
                 width={768}
                 height={1024}
                 priority

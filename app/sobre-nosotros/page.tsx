@@ -162,7 +162,7 @@ export default function SobreNosotros() {
                   </li>
                   <li>
                     <Link href="/abogados/katherine-gonzalez" className="text-cream/80 hover:text-gold transition-colors font-medium">
-                      Licda. Katherine González Coto
+                      MSc. Katherine González Coto
                     </Link>
                     <span className="text-cream/50"> — Abogada Asociada. Especialista en responsabilidad patrimonial y Derecho Expropiatorio. Carnet CAACR 30256.</span>
                   </li>

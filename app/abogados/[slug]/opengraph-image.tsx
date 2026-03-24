@@ -7,7 +7,7 @@ export const contentType = "image/png";
 const TEAM_DATA: Record<string, { name: string; role: string; areas: string }> = {
   "oscar-gonzalez": { name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", areas: "Derecho Administrativo · Contencioso Administrativo · Derecho Constitucional" },
   "khevin-sanchez": { name: "Lic. Khevin Sánchez Zamora", role: "Abogado Asociado", areas: "Medidas Cautelares · Contencioso Administrativo · Contratación Pública" },
-  "katherine-gonzalez": { name: "Licda. Katherine González Coto", role: "Abogada Asociada", areas: "Responsabilidad Patrimonial · Derecho Expropiatorio · Contencioso Administrativo" },
+  "katherine-gonzalez": { name: "MSc. Katherine González Coto", role: "Abogada Asociada", areas: "Responsabilidad Patrimonial · Derecho Expropiatorio · Contencioso Administrativo" },
   "mariana-montero": { name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", areas: "Malpraxis Médica · Iatrogenia · Responsabilidad Patrimonial" },
   "esteban-perez": { name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", areas: "Derecho Urbanístico · Contencioso Administrativo · Contratación Pública" },
   "jose-carlos-solano": { name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", areas: "Derecho Constitucional · Contencioso Administrativo · Derecho Tributario" },

@@ -5,7 +5,7 @@ excerpt: "Tesis de grado que analiza el recorrido completo del procedimiento exp
 tags: ["Derecho Expropiatorio", "Procedimiento Administrativo", "Ley de Expropiaciones", "Derecho Público"]
 type: "pdf"
 pdfFile: "tesis-katherine-gonzalez-licenciatura.pdf"
-author: "Licda. Katherine González Coto"
+author: "MSc. Katherine González Coto"
 institution: "Universidad Escuela Libre de Derecho"
 publicationType: "tesis"
 ---
