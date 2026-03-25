@@ -472,7 +472,7 @@ export const JOSE_CARLOS_PROFILE = {
   career: [
     { role: "Abogado Asociado", org: "Corporación GC", period: "Jul. 2022 – Presente", description: "Litigio judicial contencioso-administrativo, procesos ordinarios civiles, procedimientos administrativos, acciones de inconstitucionalidad y recursos de amparo. Elaboración de dictámenes jurídicos especializados para administraciones públicas y sujetos privados. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
     { role: "Asistente Legal", org: "Corporación GC", period: "Mar. 2018 – Jul. 2022", description: "Apoyo en litigio contencioso-administrativo, procedimientos ante la Contraloría General de la República, procedimientos sancionatorios, procesos de Hacienda relacionados con Zona Marítimo Terrestre, e impugnación de actos administrativos.", highlight: false },
-    { role: "Asistente Legal", org: "BSA Consultores", period: "Jul. 2017 – Feb. 2018", description: "Redacción y preparación de escritos judiciales y presentaciones ante tribunales. Apoyo en asesoría municipal. Investigación jurídica en Derecho Público y Administrativo.", highlight: false },
+    { role: "Asistente Jurídico", org: "BSA Consultores", period: "Ago. 2017 – Ene. 2018", description: "Redacción y preparación de escritos judiciales y presentaciones ante tribunales. Apoyo en asesoría municipal. Investigación jurídica en Derecho Público y Administrativo.", highlight: false },
   ],
   practiceAreas: [
     { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
@@ -488,7 +488,7 @@ export const JOSE_CARLOS_PROFILE = {
     tags: ["Acto de Gobierno", "Derecho Administrativo", "Control Jurisdiccional", "Trabajo Final de Graduación"],
   },
   credentials: [
-    { metric: "8+", label: "Años de experiencia en litigio", detail: "Desde marzo de 2018" },
+    { metric: "8+", label: "Años de experiencia en litigio", detail: "Desde agosto de 2017" },
     { metric: "UCR", label: "Egresado con honores", detail: "Promedio superior a 9/10" },
     { metric: "Frankfurt", label: "Maestría en Teoría del Derecho", detail: "Goethe-Universität · 2026" },
   ],
@@ -497,8 +497,8 @@ export const JOSE_CARLOS_PROFILE = {
 
 export const JOSE_CARLOS_CONTACT = {
   email: "jsolano@corporaciongc.com",
-  phone: "+506 8317-9564",
-  phoneRaw: "50683179564",
+  phone: "+506 8202-6959",
+  phoneRaw: "50682026959",
   location: "OFIDENT, Barrio Dent, San José, Costa Rica",
 } as const;
 
