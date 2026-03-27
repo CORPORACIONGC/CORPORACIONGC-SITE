@@ -107,7 +107,7 @@ export function FirmHero() {
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-full object-cover object-[65%_15%]"
+                className="w-full h-full object-cover object-[50%_20%]"
               />
 
               {/* Subtle burgundy tint overlay for editorial tone */}

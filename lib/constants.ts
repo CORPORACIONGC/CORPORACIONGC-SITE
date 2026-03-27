@@ -60,7 +60,7 @@ export const CLIENT_LOGOS = [
 export const OSCAR_PROFILE = {
   name: "Dr. Óscar Eduardo González Camacho",
   role: "Fundador y Director",
-  photo: "/images/oscar-gonzalez-solo.png",
+  photo: "/images/oscar-gonzalez-oficina.png",
   heroDescription: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del Código Procesal Contencioso Administrativo. Uno de los litigantes de mayor calado en la jurisdicción contencioso-administrativa costarricense.",
   heroBio: "Doctor en Derecho por la Universidad de Alcalá de Henares con la calificación Sobresaliente Cum Laude. Con más de 38 años de trayectoria ininterrumpida en el Derecho Público, el Dr. Eduardo González Camacho forjó la jurisdicción contenciosa moderna desde la judicatura y hoy la domina desde el litigio. Desde 2015 dirige Corporación GC como uno de los abogados litigantes de mayor calado en la materia administrativa del país.",
   education: [

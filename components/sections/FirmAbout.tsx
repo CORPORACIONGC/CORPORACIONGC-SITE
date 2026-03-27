@@ -58,7 +58,7 @@ export function FirmAbout() {
               {/* Photo */}
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-2xl shadow-black/30">
                 <Image
-                  src="/images/oscar-gonzalez-oficina.png"
+                  src="/images/oscar-gonzalez-solo.png"
                   alt="Dr. Óscar Eduardo González Camacho"
                   fill
                   className="object-cover object-[50%_25%]"
