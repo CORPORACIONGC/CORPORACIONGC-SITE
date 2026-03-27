@@ -94,7 +94,7 @@ export function OscarHero() {
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-[45%_15%]"
               />
 
               {/* Subtle burgundy tint overlay for editorial tone */}
