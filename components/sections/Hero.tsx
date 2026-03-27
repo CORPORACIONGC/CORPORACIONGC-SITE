@@ -40,7 +40,7 @@ export function Hero() {
             <div className="mt-6 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[55ch]">
-                Especialista en medidas cautelares y litigio contra el Estado
+                Amplia experiencia en medidas cautelares y litigio contra el Estado
                 en materia contencioso-administrativa. Investigador en
                 inteligencia artificial aplicada a la justicia. Licenciado
                 con mención en Derecho Tributario por la UCR, 3er mejor

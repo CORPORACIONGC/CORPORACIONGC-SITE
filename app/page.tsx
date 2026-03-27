@@ -260,7 +260,7 @@ const jsonLdSiteNavigation = {
       "@type": "SiteNavigationElement",
       position: 4,
       name: "Lic. Khevin Sánchez Zamora",
-      description: "Abogado Asociado — Especialista en medidas cautelares y litigio contencioso-administrativo",
+      description: "Abogado Asociado — Amplia experiencia en medidas cautelares y litigio contencioso-administrativo",
       url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
     },
     {

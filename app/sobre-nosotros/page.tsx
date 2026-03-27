@@ -158,7 +158,7 @@ export default function SobreNosotros() {
                     <Link href="/abogados/khevin-sanchez" className="text-cream/80 hover:text-gold transition-colors font-medium">
                       Lic. Khevin Sánchez Zamora
                     </Link>
-                    <span className="text-cream/50"> — Abogado Asociado. Especialista en medidas cautelares y litigio contencioso-administrativo. Investigador en IA aplicada a la justicia. Carnet CAACR 37920.</span>
+                    <span className="text-cream/50"> — Abogado Asociado. Amplia experiencia en medidas cautelares y litigio contencioso-administrativo. Investigador en IA aplicada a la justicia. Carnet CAACR 37920.</span>
                   </li>
                   <li>
                     <Link href="/abogados/katherine-gonzalez" className="text-cream/80 hover:text-gold transition-colors font-medium">
