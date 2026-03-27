@@ -38,7 +38,7 @@ export function OscarHero() {
           <AnimatedEntry delay={0.3} className="md:hidden">
             <div className="mt-6 w-full overflow-hidden relative">
               <Image
-                src="/images/oscar-gonzalez.png"
+                src="/images/oscar-gonzalez-solo.png"
                 alt="Dr. Óscar Eduardo González Camacho"
                 width={768}
                 height={1024}
@@ -89,7 +89,7 @@ export function OscarHero() {
           <div className="relative md:h-[82vh] max-h-[780px]">
             <div className="relative w-full h-full overflow-hidden">
               <Image
-                src="/images/oscar-gonzalez.png"
+                src="/images/oscar-gonzalez-solo.png"
                 alt="Dr. Óscar Eduardo González Camacho"
                 width={768}
                 height={1024}
