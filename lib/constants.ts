@@ -2,9 +2,9 @@
 
 export const FIRM = {
   name: "Corporación GC",
-  title: "Corporación GC | Abogados Especialistas en Derecho Público · Costa Rica",
+  title: "Abogados Derecho Administrativo y Contencioso Administrativo · Costa Rica | Corporación GC",
   description:
-    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado y dirigido por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Corte Suprema, co-redactor del CPCA y coordinador de la Jurisdicción Contencioso-Administrativa. Seis abogados especializados exclusivamente en Derecho Público.",
+    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA. Especialistas en Derecho Público.",
   url: "https://www.corporaciongc.com",
   locale: "es_CR",
 } as const;

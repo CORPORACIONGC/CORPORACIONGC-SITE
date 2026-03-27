@@ -30,6 +30,7 @@ export function FirmHero() {
           <AnimatedEntry delay={0.25}>
             <h1 className="font-body text-4xl md:text-6xl lg:text-7xl tracking-[0.08em] uppercase leading-none text-cream font-medium">
               Corporaci&#243;n GC
+              <span className="sr-only"> — Abogados Especialistas en Derecho Administrativo y Contencioso Administrativo en Costa Rica</span>
             </h1>
           </AnimatedEntry>
 

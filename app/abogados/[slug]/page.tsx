@@ -61,14 +61,14 @@ export async function generateMetadata({
   if (!member) return {};
 
   return {
-    title: `${member.name} | ${member.role} · Corporación GC`,
-    description: member.shortBio,
+    title: `${member.name} | ${member.role} · Abogado Derecho Público Costa Rica`,
+    description: `${member.shortBio} Corporación GC — Abogados en Derecho Administrativo y Contencioso Administrativo, Costa Rica.`,
     alternates: {
       canonical: `${FIRM.url}/abogados/${member.slug}`,
     },
     openGraph: {
       title: `${member.name} | ${member.role} · Corporación GC`,
-      description: member.shortBio,
+      description: `${member.shortBio} Corporación GC.`,
       url: `${FIRM.url}/abogados/${member.slug}`,
       siteName: FIRM.name,
       locale: FIRM.locale,

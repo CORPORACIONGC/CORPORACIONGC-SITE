@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     canonical: FIRM.url,
   },
   openGraph: {
-    title: "Corporación GC | Abogados Especialistas en Derecho Público",
+    title: "Abogados Derecho Administrativo y Contencioso Administrativo · Costa Rica | Corporación GC",
     description: FIRM.description,
     url: FIRM.url,
     siteName: FIRM.name,
@@ -204,19 +204,9 @@ const jsonLdOrganization = {
     availableLanguage: ["es"],
     areaServed: "CR",
   },
-  sameAs: [],
-  makesOffer: [
-    "Litigio Contencioso Administrativo",
-    "Medidas Cautelares",
-    "Recursos de Casación ante Sala Primera",
-    "Asesoría Regulatoria",
-    "Informes Jurídicos y Dictámenes",
-    "Derecho Constitucional",
-    "Contratación Pública",
-    "Derecho Administrativo",
-    "Derecho Notarial y Registral",
+  sameAs: [
+    "https://www.linkedin.com/company/corporacion-gc",
   ],
-  keywords: "abogados Costa Rica, Derecho Público, litigio contencioso administrativo, medidas cautelares, casación Sala Primera, abogados San José, bufete derecho público Costa Rica, CPCA",
 };
 
 const jsonLdWebSite = {
@@ -227,6 +217,88 @@ const jsonLdWebSite = {
   url: "https://www.corporaciongc.com",
   publisher: { "@id": "https://www.corporaciongc.com/#organization" },
   inLanguage: "es-CR",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.google.com/search?q=site%3Acorporaciongc.com+{search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+/* ── SEO: SiteNavigationElement (sitelinks hint) ── */
+
+const jsonLdSiteNavigation = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "https://www.corporaciongc.com/#site-navigation",
+  name: "Navegación principal",
+  itemListElement: [
+    {
+      "@type": "SiteNavigationElement",
+      position: 1,
+      name: "Áreas de Práctica",
+      description: "22 áreas de práctica en Derecho Público y Administrativo",
+      url: "https://www.corporaciongc.com/areas",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 2,
+      name: "Dr. Óscar Eduardo González Camacho",
+      description: "Fundador y Director — Ex-Magistrado, co-redactor del CPCA",
+      url: "https://www.corporaciongc.com/abogados/oscar-gonzalez",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 3,
+      name: "MSc. Katherine González Coto",
+      description: "Abogada Asociada — Maestría en Derecho Público, UCR",
+      url: "https://www.corporaciongc.com/abogados/katherine-gonzalez",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 4,
+      name: "Lic. Khevin Sánchez Zamora",
+      description: "Abogado Asociado — Especialista en medidas cautelares y litigio contencioso-administrativo",
+      url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 5,
+      name: "Licda. Mariana Montero Acuña",
+      description: "Abogada Asociada — Especialista en malpraxis médica e iatrogenia",
+      url: "https://www.corporaciongc.com/abogados/mariana-montero",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 6,
+      name: "Lic. Esteban Pérez Herrera",
+      description: "Abogado Asociado — Más de 9 años de litigio contencioso-administrativo",
+      url: "https://www.corporaciongc.com/abogados/esteban-perez",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 7,
+      name: "Lic. José Carlos Solano Salas",
+      description: "Abogado Asociado — Especialista en Derecho Constitucional y Tributario",
+      url: "https://www.corporaciongc.com/abogados/jose-carlos-solano",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 8,
+      name: "Publicaciones Académicas",
+      description: "Artículos, tesis y publicaciones en Derecho Público",
+      url: "https://www.corporaciongc.com/articulos",
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 9,
+      name: "Sobre Nosotros",
+      description: "Bufete fundado en 2015 por el Dr. González Camacho",
+      url: "https://www.corporaciongc.com/sobre-nosotros",
+    },
+  ],
 };
 
 const jsonLdBreadcrumb = {
@@ -261,6 +333,7 @@ export default function Home() {
             jsonLdOrganization,
             jsonLdWebSite,
             jsonLdBreadcrumb,
+            jsonLdSiteNavigation,
           ]),
         }}
       />

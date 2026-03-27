@@ -31,16 +31,16 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "Áreas de Práctica | Corporación GC",
+  title: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
   description:
-    "22 áreas de práctica en Derecho Público: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, acciones de inconstitucionalidad, contratación pública, procedimientos sancionatorios y más.",
+    "22 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
   alternates: {
     canonical: "https://www.corporaciongc.com/areas",
   },
   openGraph: {
-    title: "Áreas de Práctica | Corporación GC",
+    title: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
     description:
-      "22 áreas de práctica en Derecho Público: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, acciones de inconstitucionalidad, contratación pública y más.",
+      "22 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
     url: "https://www.corporaciongc.com/areas",
     siteName: "Corporación GC",
     locale: "es_CR",

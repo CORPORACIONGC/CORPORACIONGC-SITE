@@ -25,14 +25,14 @@ export async function generateMetadata({
   const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
   if (!area) return {};
   return {
-    title: `${area.title} | Corporación GC`,
-    description: area.description,
+    title: `${area.title} en Costa Rica | Abogados · Corporación GC`,
+    description: `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`,
     alternates: {
       canonical: `${FIRM.url}/areas/${area.slug}`,
     },
     openGraph: {
-      title: `${area.title} | Corporación GC`,
-      description: area.description,
+      title: `${area.title} en Costa Rica | Corporación GC`,
+      description: `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`,
       url: `${FIRM.url}/areas/${area.slug}`,
       siteName: FIRM.name,
       locale: FIRM.locale,
