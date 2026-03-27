@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
@@ -49,16 +50,30 @@ export function FirmAbout() {
         </div>
       </div>
 
-      {/* Founder — typographic authority bar, no photo */}
+      {/* Founder — with photo */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 mt-20">
         <AnimatedEntry delay={0.3}>
           <div className="border-t border-cream/[0.08] pt-10">
-            <div className="text-[10px] tracking-[0.25em] uppercase text-gold/60 mb-3">
-              Nuestro Fundador
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              {/* Photo */}
+              <div className="relative w-full md:w-[300px] shrink-0 aspect-[4/3] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/oscar-gonzalez-oficina.png"
+                  alt="Dr. Óscar Eduardo González Camacho"
+                  fill
+                  className="object-cover object-[50%_25%]"
+                />
+              </div>
+              {/* Text */}
+              <div>
+                <div className="text-[10px] tracking-[0.25em] uppercase text-gold/60 mb-3">
+                  Nuestro Fundador
+                </div>
+                <h3 className="font-display text-2xl md:text-3xl text-cream/90 tracking-tight">
+                  Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
+                </h3>
+              </div>
             </div>
-            <h3 className="font-display text-2xl md:text-3xl text-cream/90 tracking-tight">
-              Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
-            </h3>
 
             {/* Credential strip */}
             <div className="mt-6 flex flex-wrap items-start gap-6 md:gap-10">
