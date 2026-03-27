@@ -53,87 +53,85 @@ export function FirmAbout() {
       {/* Founder — with photo */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 mt-20">
         <AnimatedEntry delay={0.3}>
-          <div className="border-t border-cream/[0.08] pt-10">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+          <div className="border-t border-cream/[0.08] pt-12">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-center">
               {/* Photo */}
-              <div className="relative w-full md:w-[300px] shrink-0 aspect-[4/3] rounded-lg overflow-hidden">
+              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-2xl shadow-black/30">
                 <Image
                   src="/images/oscar-gonzalez-oficina.png"
                   alt="Dr. Óscar Eduardo González Camacho"
                   fill
                   className="object-cover object-[50%_25%]"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
               </div>
-              {/* Text */}
+
+              {/* Content */}
               <div>
                 <div className="text-[10px] tracking-[0.25em] uppercase text-gold/60 mb-3">
                   Nuestro Fundador
                 </div>
-                <h3 className="font-display text-2xl md:text-3xl text-cream/90 tracking-tight">
+                <h3 className="font-display text-3xl md:text-4xl text-cream/90 tracking-tight mb-8">
                   Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
                 </h3>
+
+                {/* Credentials grid */}
+                <div className="grid grid-cols-2 gap-x-8 gap-y-5">
+                  <div>
+                    <div className="text-sm font-medium text-cream/70 leading-snug">
+                      Ex-Magistrado · Sala Primera
+                    </div>
+                    <div className="text-[11px] text-cream/40 mt-0.5">
+                      Corte Suprema de Justicia · 12 a&#241;os
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-cream/70 leading-snug">
+                      Co-redactor del CPCA
+                    </div>
+                    <div className="text-[11px] text-cream/40 mt-0.5">
+                      Ley N.° 8508 · Jurisdicci&#243;n contenciosa moderna
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-cream/70 leading-snug">
+                      Doctor en Derecho
+                    </div>
+                    <div className="text-[11px] text-cream/40 mt-0.5">
+                      U. de Alcal&#225; de Henares · Sobresaliente Cum Laude
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-cream/70 leading-snug">
+                      Catedrático Universitario
+                    </div>
+                    <div className="text-[11px] text-cream/40 mt-0.5">
+                      Universidad Escuela Libre de Derecho
+                    </div>
+                  </div>
+                  <div className="col-span-2">
+                    <div className="text-sm font-medium text-cream/70 leading-snug">
+                      Coordinador de la Maestría en Derecho Público
+                    </div>
+                    <div className="text-[11px] text-cream/40 mt-0.5">
+                      Universidad de Costa Rica (UCR)
+                    </div>
+                  </div>
+                </div>
+
+                <Link
+                  href="/abogados/oscar-gonzalez"
+                  className="group mt-10 inline-flex items-center gap-3 bg-gradient-to-b from-gold via-[#B8944F] to-[#A07D3A] rounded-lg px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-gold/20 hover:shadow-gold/30 hover:brightness-110 active:scale-[0.98] transition-all duration-300"
+                >
+                  <span>Ver trayectoria completa del fundador</span>
+                  <ArrowRight
+                    size={16}
+                    weight="bold"
+                    className="group-hover:translate-x-1 transition-transform duration-300"
+                  />
+                </Link>
               </div>
             </div>
-
-            {/* Credential strip */}
-            <div className="mt-6 flex flex-wrap items-start gap-6 md:gap-10">
-              <div className="max-w-[22ch]">
-                <div className="text-sm font-medium text-cream/70 leading-snug">
-                  Ex-Magistrado · Sala Primera
-                </div>
-                <div className="text-[11px] text-cream/40 mt-0.5">
-                  Corte Suprema de Justicia · 12 a&#241;os
-                </div>
-              </div>
-              <div className="w-px h-8 bg-cream/[0.08] hidden md:block" />
-              <div className="max-w-[22ch]">
-                <div className="text-sm font-medium text-cream/70 leading-snug">
-                  Co-redactor del CPCA
-                </div>
-                <div className="text-[11px] text-cream/40 mt-0.5">
-                  Ley N.° 8508 · Jurisdicci&#243;n contenciosa moderna
-                </div>
-              </div>
-              <div className="w-px h-8 bg-cream/[0.08] hidden md:block" />
-              <div className="max-w-[22ch]">
-                <div className="text-sm font-medium text-cream/70 leading-snug">
-                  Doctor en Derecho
-                </div>
-                <div className="text-[11px] text-cream/40 mt-0.5">
-                  U. de Alcal&#225; de Henares · Sobresaliente Cum Laude
-                </div>
-              </div>
-              <div className="w-px h-8 bg-cream/[0.08] hidden md:block" />
-              <div className="max-w-[26ch]">
-                <div className="text-sm font-medium text-cream/70 leading-snug">
-                  Catedrático Universitario
-                </div>
-                <div className="text-[11px] text-cream/40 mt-0.5">
-                  Universidad Escuela Libre de Derecho
-                </div>
-              </div>
-              <div className="w-px h-8 bg-cream/[0.08] hidden md:block" />
-              <div className="max-w-[26ch]">
-                <div className="text-sm font-medium text-cream/70 leading-snug">
-                  Coordinador de la Maestría en Derecho Público
-                </div>
-                <div className="text-[11px] text-cream/40 mt-0.5">
-                  Universidad de Costa Rica (UCR)
-                </div>
-              </div>
-            </div>
-
-            <Link
-              href="/abogados/oscar-gonzalez"
-              className="group mt-10 inline-flex items-center gap-3 bg-gradient-to-b from-gold via-[#B8944F] to-[#A07D3A] rounded-lg px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-gold/20 hover:shadow-gold/30 hover:brightness-110 active:scale-[0.98] transition-all duration-300"
-            >
-              <span>Ver trayectoria completa del fundador</span>
-              <ArrowRight
-                size={16}
-                weight="bold"
-                className="group-hover:translate-x-1 transition-transform duration-300"
-              />
-            </Link>
           </div>
         </AnimatedEntry>
       </div>
