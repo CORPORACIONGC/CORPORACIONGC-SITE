@@ -14,6 +14,7 @@ import { OscarHero } from "@/components/sections/OscarHero";
 import { OscarAbout } from "@/components/sections/OscarAbout";
 import { OscarExperience } from "@/components/sections/OscarExperience";
 import { OscarConferencias } from "@/components/sections/OscarConferencias";
+import { OscarEventoDestacado } from "@/components/sections/OscarEventoDestacado";
 import { OscarContact } from "@/components/sections/OscarContact";
 import { EstebanHero } from "@/components/sections/EstebanHero";
 import { EstebanAbout } from "@/components/sections/EstebanAbout";
@@ -125,7 +126,51 @@ export default async function AttorneyProfile({
   );
 
   if (member.slug === "khevin-sanchez") return <>{schemaScripts}<KhevinProfile /></>;
-  if (member.slug === "oscar-gonzalez") return <>{schemaScripts}<OscarProfile /></>;
+  if (member.slug === "oscar-gonzalez") {
+    const jsonLdEvent = {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "CPCA 20 Años: Balance, transformaciones y desafíos de la justicia administrativa",
+      startDate: "2026-03-25",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      eventStatus: "https://schema.org/EventScheduled",
+      location: {
+        "@type": "Place",
+        name: "Colegio de Abogados y Abogadas de Costa Rica",
+        address: { "@type": "PostalAddress", addressCountry: "CR" },
+      },
+      organizer: [
+        { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica" },
+        { "@type": "Organization", name: "Tirant Editorial" },
+        { "@type": "Organization", name: "Universidad Escuela Libre de Derecho" },
+      ],
+      performer: {
+        "@type": "Person",
+        name: "Dr. Óscar Eduardo González Camacho",
+        "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
+      },
+      description: "Evento conmemorativo de los 20 años del Código Procesal Contencioso Administrativo de Costa Rica. Mesa II: El futuro del proceso contencioso administrativo — Innovación y desafíos regionales. Capítulo presentado: «El por qué y para qué del contencioso administrativo» (Editorial Tirant lo Blanch, 2026).",
+      workPerformed: {
+        "@type": "ScholarlyArticle",
+        name: "El por qué y para qué del contencioso administrativo",
+        url: `${FIRM.url}/articulos/por-que-y-para-que-contencioso-administrativo`,
+        isPartOf: {
+          "@type": "Book",
+          name: "CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa",
+          isbn: "9791370214753",
+          publisher: { "@type": "Organization", name: "Editorial Tirant lo Blanch" },
+          url: "https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753",
+        },
+      },
+    };
+    return (
+      <>
+        {schemaScripts}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdEvent) }} />
+        <OscarProfile />
+      </>
+    );
+  }
   if (member.slug === "esteban-perez") return <>{schemaScripts}<EstebanProfile /></>;
   if (member.slug === "jose-carlos-solano") return <>{schemaScripts}<JoseCarlosProfile /></>;
   if (member.slug === "katherine-gonzalez") return <>{schemaScripts}<KatherineProfile /></>;
@@ -215,6 +260,7 @@ function OscarProfile() {
           <OscarAbout />
           <OscarExperience />
           <Publications articles={articles} />
+          <OscarEventoDestacado />
           <OscarConferencias />
           <OscarContact />
         </main>

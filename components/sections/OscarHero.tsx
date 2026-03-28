@@ -13,7 +13,7 @@ export function OscarHero() {
       {/* Subtle burgundy gradient accent — dark mode only */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-burgundy/[0.08] to-transparent pointer-events-none hidden dark:block" />
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-8 md:gap-12 items-center">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-8 md:gap-6 items-center">
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
@@ -94,7 +94,7 @@ export function OscarHero() {
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-full object-cover object-[65%_15%]"
+                className="w-full h-full object-cover object-[50%_20%]"
               />
 
               {/* Subtle burgundy tint overlay for editorial tone */}

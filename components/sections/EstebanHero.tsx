@@ -14,7 +14,7 @@ export function EstebanHero() {
       {/* Subtle burgundy gradient accent — dark mode only */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-burgundy/[0.08] to-transparent pointer-events-none hidden dark:block" />
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-8 md:gap-12 items-center">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
@@ -66,15 +66,15 @@ export function EstebanHero() {
 
         {/* Right — Photo */}
         <AnimatedEntry delay={0.3} direction="right" className="relative">
-          <div className="relative md:h-[75vh] max-h-[700px] flex items-end justify-center">
-            <div className="relative w-[80%] md:w-[85%] aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+          <div className="relative md:h-[75vh] max-h-[700px] flex items-center justify-center">
+            <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/esteban-perez.jpg"
                 alt="Lic. Esteban Pérez Herrera"
                 width={768}
                 height={1024}
                 priority
-                className="w-full h-[110%] object-cover object-top"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface to-transparent" />
             </div>

@@ -1,16 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import {
   ArrowSquareOut,
   DownloadSimple,
   FilePdf,
-  CircleNotch,
 } from "@phosphor-icons/react";
 
 export function PDFViewer({ pdfFile }: { pdfFile: string }) {
   const pdfUrl = `/pdfs/${pdfFile}`;
-  const [loaded, setLoaded] = useState(false);
 
   return (
     <div className="space-y-4">
@@ -75,33 +72,13 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
         </div>
       </div>
 
-      {/* Desktop PDF viewer — uses <object> for native browser rendering with text selection */}
+      {/* Desktop PDF viewer — uses iframe for reliable browser rendering */}
       <div className="hidden md:block rounded-xl overflow-hidden border border-cream/[0.08] bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
-        {!loaded && (
-          <div className="w-full h-[80vh] min-h-[600px] flex flex-col items-center justify-center gap-3 bg-cream/[0.03]">
-            <CircleNotch
-              size={28}
-              weight="regular"
-              className="animate-spin text-cream/25"
-            />
-            <span className="text-xs text-cream/35">
-              Cargando documento...
-            </span>
-          </div>
-        )}
-        <object
-          data={`${pdfUrl}#view=Fit`}
-          type="application/pdf"
-          onLoad={() => setLoaded(true)}
-          className={`w-full h-[80vh] min-h-[600px] ${loaded ? "block" : "hidden"}`}
-        >
-          <iframe
-            src={`${pdfUrl}#view=Fit`}
-            onLoad={() => setLoaded(true)}
-            className="w-full h-[80vh] min-h-[600px]"
-            title="Visor de PDF"
-          />
-        </object>
+        <iframe
+          src={`${pdfUrl}#view=Fit`}
+          className="w-full h-[80vh] min-h-[600px]"
+          title="Visor de PDF"
+        />
       </div>
     </div>
   );

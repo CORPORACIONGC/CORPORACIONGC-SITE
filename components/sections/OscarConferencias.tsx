@@ -1,7 +1,8 @@
 "use client";
 
+import { useState, useCallback } from "react";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
-import { VideoCamera } from "@phosphor-icons/react";
+import { VideoCamera, Play } from "@phosphor-icons/react";
 
 type Video = {
   id: string;
@@ -78,6 +79,55 @@ const VIDEOS: Video[] = [
   },
 ];
 
+/* ── Lite YouTube embed — shows thumbnail, loads iframe on click ── */
+function LiteYouTube({ id, title }: { id: string; title: string }) {
+  const [active, setActive] = useState(false);
+
+  const activate = useCallback(() => setActive(true), []);
+
+  if (active) {
+    return (
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          className="absolute inset-0 w-full h-full"
+          src={`https://www.youtube.com/embed/${id}?autoplay=1`}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </div>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={activate}
+      aria-label={`Reproducir: ${title}`}
+      className="relative w-full cursor-pointer group bg-neutral-900"
+      style={{ paddingBottom: "56.25%" }}
+    >
+      {/* YouTube thumbnail */}
+      <img
+        src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+        alt={title}
+        loading="lazy"
+        referrerPolicy="no-referrer"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors duration-300" />
+      {/* Play button */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-14 h-14 rounded-full bg-white/95 group-hover:scale-110 transition-all duration-300 flex items-center justify-center shadow-xl">
+          <Play size={22} weight="fill" className="text-neutral-900 ml-0.5" />
+        </div>
+      </div>
+    </button>
+  );
+}
+
 export function OscarConferencias() {
   return (
     <section className="relative bg-surface py-24 md:py-32">
@@ -103,18 +153,8 @@ export function OscarConferencias() {
           {VIDEOS.map((video) => (
             <AnimatedEntry key={video.id} delay={0.2}>
               <div className="rounded-xl border border-cream/[0.06] bg-cream/[0.02] overflow-hidden">
-                {/* Video embed — responsive 16:9 */}
-                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={`https://www.youtube.com/embed/${video.id}`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                    loading="lazy"
-                  />
-                </div>
+                {/* Lite YouTube — thumbnail until click */}
+                <LiteYouTube id={video.id} title={video.title} />
                 {/* Info */}
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">

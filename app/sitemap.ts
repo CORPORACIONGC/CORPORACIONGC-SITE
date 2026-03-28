@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             new Date(a.date) > new Date(latest.date) ? a : latest
           ).date
         )
-      : new Date("2026-03-21");
+      : new Date("2026-03-28");
 
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/articulos/${article.slug}`,
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Fecha real de última actualización de perfiles (no new Date())
-  const teamLastUpdated = new Date("2026-03-21");
+  const teamLastUpdated = new Date("2026-03-28");
 
   const teamUrls = TEAM.map((member) => ({
     url: `${baseUrl}/abogados/${member.slug}`,
@@ -48,25 +48,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/sobre-nosotros`,
-      lastModified: new Date("2026-03-21"),
+      lastModified: new Date("2026-03-28"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/politica-de-privacidad`,
-      lastModified: new Date("2026-03-21"),
+      lastModified: new Date("2026-03-28"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${baseUrl}/areas`,
-      lastModified: new Date("2026-03-21"),
+      lastModified: new Date("2026-03-28"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     ...PRACTICE_AREA_PAGES.map((area) => ({
       url: `${baseUrl}/areas/${area.slug}`,
-      lastModified: new Date("2026-03-21"),
+      lastModified: new Date("2026-03-28"),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

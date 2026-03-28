@@ -232,7 +232,7 @@ export default async function ArticlePage({
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-gold hover:text-gold/80 transition-colors duration-300"
                       >
-                        Acceder a la revista
+                        {article.publicationType === "libro" ? "Acceder al libro" : "Acceder a la revista"}
                         <ArrowSquareOut size={11} weight="bold" />
                       </a>
                     </>
