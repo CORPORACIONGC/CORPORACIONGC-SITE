@@ -131,9 +131,9 @@ export default async function AttorneyProfile({
       "@context": "https://schema.org",
       "@type": "Event",
       name: "Global Summit Legal Hackers 2025",
-      startDate: "2025-10-22",
+      startDate: "2025-10-23",
       endDate: "2025-10-23",
-      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       eventStatus: "https://schema.org/EventScheduled",
       location: {
         "@type": "Place",
@@ -149,7 +149,7 @@ export default async function AttorneyProfile({
         name: "Lic. Khevin Sánchez Zamora",
         "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
       },
-      description: "Primera edición suramericana del Global Summit Legal Hackers. Panel: Inteligencia Artificial — la Urgencia de un Marco Ético. Encuentro internacional con líderes en legaltech, legal design, IA aplicada al Derecho y gobernanza de datos de más de 130 ciudades.",
+      description: "Primera edición suramericana del Global Summit Legal Hackers. Panel: IA en el Derecho — Más allá de la Eficiencia, la Urgencia de un Marco Ético. Panelistas: Khevin Sánchez, Ángela Villate (VillateLab), Jimena Mora (Microsoft), Nicolás Castañeda (Keralty).",
     };
     return (
       <>

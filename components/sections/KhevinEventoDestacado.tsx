@@ -46,11 +46,11 @@ export function KhevinEventoDestacado() {
               {/* Event info */}
               <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center">
                 <span className="text-[10px] tracking-[0.25em] uppercase text-cream/40 font-medium mb-5">
-                  22 &ndash; 23 de octubre, 2025
+                  23 de octubre, 2025
                 </span>
 
                 <h3 className="font-display text-xl md:text-[1.65rem] tracking-tight text-cream leading-snug mb-5">
-                  Global Summit Legal Hackers 2025: Innovaci&oacute;n, tecnolog&iacute;a y el futuro del Derecho
+                  Global Summit Legal Hackers 2025: Bogot&aacute;
                 </h3>
 
                 <div className="space-y-2.5 mb-8">
@@ -58,7 +58,7 @@ export function KhevinEventoDestacado() {
                     <Microphone size={14} weight="duotone" className="text-cream/30 shrink-0 mt-0.5" />
                     <p className="text-[13px] text-cream/55 leading-relaxed">
                       <span className="text-cream/70 font-medium">Panel</span>{" "}
-                      &mdash; Inteligencia Artificial: la Urgencia de un Marco &Eacute;tico
+                      &mdash; IA en el Derecho: M&aacute;s all&aacute; de la Eficiencia, la Urgencia de un Marco &Eacute;tico
                     </p>
                   </div>
 
@@ -77,11 +77,11 @@ export function KhevinEventoDestacado() {
                   </div>
                 </div>
 
-                {/* Topic highlight */}
+                {/* Panelists */}
                 <div className="mb-8 pl-4 relative">
                   <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-gold/50 via-gold/20 to-transparent" />
-                  <p className="text-[13px] text-cream/65 leading-relaxed italic">
-                    &Eacute;tica de la IA aplicada al Derecho, gobernanza de datos y automatizaci&oacute;n de procesos legales
+                  <p className="text-[13px] text-cream/65 leading-relaxed">
+                    Panelistas: Khevin S&aacute;nchez &middot; &Aacute;ngela Villate (VillateLab) &middot; Jimena Mora (Microsoft) &middot; Nicol&aacute;s Casta&ntilde;eda (Keralty)
                   </p>
                   <p className="text-[11px] text-cream/35 mt-2 leading-relaxed">
                     Encuentro internacional con l&iacute;deres en legaltech de m&aacute;s de 130 ciudades

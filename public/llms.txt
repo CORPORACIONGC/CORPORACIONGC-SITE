@@ -57,9 +57,10 @@ El equipo de Corporación GC ha publicado tesis, artículos en revistas indexada
 
 ### Global Summit Legal Hackers 2025
 
-- Fecha: 22–23 de octubre de 2025
+- Fecha: 23 de octubre de 2025 (jornada presencial)
 - Lugar: Universidad Javeriana, Bogotá, Colombia
-- Participación: Lic. Khevin Sánchez Zamora — Panelista en "Inteligencia Artificial: la Urgencia de un Marco Ético"
+- Participación: Lic. Khevin Sánchez Zamora — Panelista en "IA en el Derecho: Más allá de la Eficiencia, la Urgencia de un Marco Ético"
+- Panelistas: Khevin Sánchez (Costa Rica), Ángela Villate – VillateLab (Colombia), Jimena Mora – Microsoft (México), Nicolás Castañeda – Keralty (Colombia)
 - Descripción: Primera edición suramericana del Global Summit Legal Hackers, encuentro internacional con líderes en legaltech, legal design, IA aplicada al Derecho y gobernanza de datos de más de 130 ciudades.
 - Organizadores: Legal Hackers Bogotá, Universidad Javeriana
 - Sitio web: https://www.globalsummitlh2025.com
