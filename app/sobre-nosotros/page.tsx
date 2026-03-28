@@ -193,13 +193,17 @@ export default function SobreNosotros() {
                 </h2>
                 <p>
                   Entre los clientes de Corporación GC se encuentran instituciones
-                  públicas, empresas privadas y personas físicas. Instituciones
-                  que han confiado en la firma incluyen: la Superintendencia de
-                  Telecomunicaciones (SUTEL), el Instituto Nacional de Seguros (INS),
-                  el Banco Mundial, el Colegio Federado de Ingenieros y de Arquitectos
-                  (CFIA), el Colegio de Abogados y Abogadas de Costa Rica, el Colegio
-                  de Médicos y Cirujanos de Costa Rica, y la Municipalidad de San Carlos,
-                  entre otros.
+                  públicas, empresas privadas, colegios profesionales y personas físicas.
+                  Instituciones y organizaciones que han confiado en la firma incluyen:
+                  la Superintendencia de Telecomunicaciones (SUTEL), el Instituto Nacional
+                  de Seguros (INS), el Banco Mundial, el Instituto Costarricense de
+                  Electricidad (ICE), la Universidad Nacional (UNA), el Colegio Federado
+                  de Ingenieros y de Arquitectos (CFIA), el Colegio de Abogados y Abogadas
+                  de Costa Rica, el Colegio de Médicos y Cirujanos de Costa Rica, el Colegio
+                  de Terapeutas de Costa Rica, y la Municipalidad de San Carlos. En el sector
+                  privado, la firma ha representado a empresas como Ingenio El Viejo, Ingenio
+                  Taboga, ELEINMSA, Gas Zeta (Gas Z), Grupo Orosí, Mercasa, Taxis Unidos
+                  Aeropuerto y Coocafé, entre otros.
                 </p>
               </section>
 
