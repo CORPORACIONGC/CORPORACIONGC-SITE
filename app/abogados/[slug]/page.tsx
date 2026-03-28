@@ -15,6 +15,7 @@ import { OscarAbout } from "@/components/sections/OscarAbout";
 import { OscarExperience } from "@/components/sections/OscarExperience";
 import { OscarConferencias } from "@/components/sections/OscarConferencias";
 import { OscarEventoDestacado } from "@/components/sections/OscarEventoDestacado";
+import { KhevinEventoDestacado } from "@/components/sections/KhevinEventoDestacado";
 import { OscarContact } from "@/components/sections/OscarContact";
 import { EstebanHero } from "@/components/sections/EstebanHero";
 import { EstebanAbout } from "@/components/sections/EstebanAbout";
@@ -125,7 +126,39 @@ export default async function AttorneyProfile({
     </>
   );
 
-  if (member.slug === "khevin-sanchez") return <>{schemaScripts}<KhevinProfile /></>;
+  if (member.slug === "khevin-sanchez") {
+    const jsonLdEvent = {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Global Summit Legal Hackers 2025",
+      startDate: "2025-10-22",
+      endDate: "2025-10-23",
+      eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+      eventStatus: "https://schema.org/EventScheduled",
+      location: {
+        "@type": "Place",
+        name: "Universidad Javeriana",
+        address: { "@type": "PostalAddress", addressLocality: "Bogotá", addressCountry: "CO" },
+      },
+      organizer: [
+        { "@type": "Organization", name: "Legal Hackers Bogotá" },
+        { "@type": "Organization", name: "Universidad Javeriana" },
+      ],
+      performer: {
+        "@type": "Person",
+        name: "Lic. Khevin Sánchez Zamora",
+        "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
+      },
+      description: "Primera edición suramericana del Global Summit Legal Hackers. Panel: Inteligencia Artificial — la Urgencia de un Marco Ético. Encuentro internacional con líderes en legaltech, legal design, IA aplicada al Derecho y gobernanza de datos de más de 130 ciudades.",
+    };
+    return (
+      <>
+        {schemaScripts}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdEvent) }} />
+        <KhevinProfile />
+      </>
+    );
+  }
   if (member.slug === "oscar-gonzalez") {
     const jsonLdEvent = {
       "@context": "https://schema.org",
@@ -220,6 +253,7 @@ function KhevinProfile() {
           <About />
           <Experience />
           <Publications articles={articles} />
+          <KhevinEventoDestacado />
           <Contact />
         </main>
         <Footer />
