@@ -1,5 +1,5 @@
 ---
-title: "Cómo demandar al Estado en Costa Rica: guía del co-redactor del CPCA"
+title: "Cómo demandar al Estado en Costa Rica"
 date: "2026-03-28"
 excerpt: "Si una institución pública le denegó un permiso, le impuso una sanción injusta o le causó un perjuicio, usted tiene derecho a demandar. En Costa Rica, el mecanismo para hacerlo es la demanda contencioso-administrativa. Esta guía le explica qué necesita saber antes de iniciar ese camino."
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Demanda contra el Estado", "Derecho Administrativo"]
