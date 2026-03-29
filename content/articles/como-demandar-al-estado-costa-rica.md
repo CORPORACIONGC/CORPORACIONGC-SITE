@@ -97,15 +97,9 @@ Un plazo mal calculado, un recurso mal planteado o una cautelar no solicitada a 
 
 ## ¿Qué hacer si cree que tiene un caso?
 
-Si usted enfrenta una situación donde una institución pública ha afectado sus derechos — ya sea por una decisión injusta, una omisión, un cobro ilegal o un daño patrimonial —, el primer paso es obtener una evaluación jurídica especializada que determine:
+El peor error es dejar pasar el tiempo. Los plazos corren, los actos se consolidan y las pruebas se pierden. Si una institución pública le causó un perjuicio o está por causarlo, actúe antes de que la situación se vuelva irreversible.
 
-- Si la conducta de la Administración es impugnable.
-- Cuál es la vía más adecuada (contencioso-administrativo, recurso de amparo, o ambas).
-- Si los plazos están vigentes — y si aplican los efectos continuados.
-- Qué pretensiones pueden formularse.
-- Si conviene solicitar medidas cautelares de protección urgente.
-
-Corporación GC ofrece asesoría especializada en esta materia. Puede [contactarnos](/contacto) para coordinar una consulta inicial.
+Corporación GC puede evaluar su caso y determinar la mejor ruta de acción. [Contáctenos](/contacto) para coordinar una consulta.
 
 ---
 
