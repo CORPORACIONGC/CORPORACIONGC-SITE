@@ -27,9 +27,7 @@ La jurisdicción contencioso-administrativa tiene un alcance amplio. El artícul
 - **Entes públicos** (universidades estatales, ARESEP, SUTEL, CGR)
 - **Empresas públicas** (RECOPE, INS, Correos de Costa Rica)
 
-Además, el artículo 2, inciso e) del CPCA amplía la jurisdicción a *"las conductas o relaciones regidas por el Derecho público, aunque provengan de personas privadas o sean estas sus partes."* Esto significa que si una persona o empresa privada actúa bajo potestades de Derecho público — por ejemplo, un concesionario de servicio público o un colegio profesional ejerciendo sus potestades disciplinarias —, esa conducta también puede ser impugnada ante el Tribunal Contencioso Administrativo.
-
-El principio de universalidad del control, consagrado en el artículo 49 de la Constitución Política y desarrollado por el CPCA, garantiza que toda conducta sujeta al Derecho Administrativo —ya sea un acto formal, una omisión, una actuación material o una vía de hecho— puede ser sometida al escrutinio judicial, sin importar si quien actúa es un ente público o un sujeto privado.
+La jurisdicción no se limita a entes públicos. El CPCA también cubre conductas regidas por el Derecho público aunque provengan de personas privadas. El principio de universalidad del control, consagrado en el artículo 49 de la Constitución Política, garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial.
 
 ---
 
@@ -37,15 +35,9 @@ El principio de universalidad del control, consagrado en el artículo 49 de la C
 
 El CPCA superó el sistema anterior, que era predominantemente anulatorio (solo permitía pedir que se eliminara el acto ilegal). Hoy, las pretensiones que puede formular un demandante son amplias y están diseñadas para dar una tutela judicial completa.
 
-El artículo 10 del CPCA establece que el demandante puede solicitar:
+El artículo 10 del CPCA establece un catálogo amplio de pretensiones que van mucho más allá de la simple anulación del acto. El demandante puede solicitar que se declare la ilegalidad de la conducta, que se anule el acto, que se le reconozcan o restablezcan sus derechos, que se condene a la Administración a una prestación específica, y que se le indemnicen los daños y perjuicios causados. El alcance concreto de las pretensiones depende de cada caso y de la estrategia procesal que se defina con el abogado.
 
-1. **La declaración de disconformidad** de la conducta administrativa con el ordenamiento jurídico.
-2. **La anulación total o parcial** del acto administrativo, la disposición general o la actuación material.
-3. **El reconocimiento o restablecimiento** de una situación jurídica individualizada — por ejemplo, que le devuelvan el permiso que le quitaron, que lo reinstalen en un cargo, o que le otorguen la adjudicación que le negaron.
-4. **La condena a la Administración a realizar una conducta determinada** — una orden de hacer (otorgar un permiso), de no hacer (cesar una demolición) o de dar (pagar una indemnización).
-5. **La condena al pago de daños y perjuicios**, incluyendo daño patrimonial, daño moral y lucro cesante.
-
-Esta amplitud de pretensiones es uno de los avances más significativos del CPCA. No se trata solo de eliminar un acto ilegal — se trata de reparar integralmente la situación del ciudadano afectado.
+Esta amplitud es uno de los avances más significativos del CPCA. No se trata solo de eliminar un acto ilegal — se trata de reparar integralmente la situación del ciudadano afectado.
 
 ---
 
@@ -97,9 +89,9 @@ Es importante tener expectativas realistas sobre la duración del proceso. Un ca
 
 ## ¿Necesito un abogado?
 
-Sí. A diferencia del recurso de amparo (que puede presentarse sin abogado), la demanda contencioso-administrativa requiere patrocinio letrado obligatorio. Y no cualquier abogado: el CPCA es un código técnico con reglas procesales específicas que difieren sustancialmente del proceso civil o penal. La técnica casacional para apelar ante la Sala Primera exige un conocimiento especializado que solo la práctica continua en esta jurisdicción puede proporcionar.
+Sí. A diferencia del recurso de amparo (que puede presentarse sin abogado), la demanda contencioso-administrativa requiere patrocinio letrado obligatorio. Y no cualquier abogado: el CPCA es un código técnico con reglas procesales propias que difieren sustancialmente del proceso civil o penal. Un abogado que no litigue regularmente en esta jurisdicción puede cometer errores que cuesten el caso.
 
-Un error procesal — un plazo mal calculado, un recurso mal planteado, una cautelar no solicitada a tiempo — puede costar el caso. La elección del abogado es probablemente la decisión más importante que tomará en el proceso.
+Un plazo mal calculado, un recurso mal planteado o una cautelar no solicitada a tiempo pueden ser irreversibles. La elección del abogado es probablemente la decisión más importante que tomará en el proceso.
 
 ---
 
