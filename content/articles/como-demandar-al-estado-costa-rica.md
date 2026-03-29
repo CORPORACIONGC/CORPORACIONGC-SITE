@@ -37,7 +37,7 @@ El CPCA superó el sistema anterior, que era predominantemente anulatorio (solo 
 
 El artículo 10 del CPCA establece un catálogo amplio de pretensiones que van mucho más allá de la simple anulación del acto. El demandante puede solicitar que se declare la ilegalidad de la conducta, que se anule el acto, que se le reconozcan o restablezcan sus derechos, que se condene a la Administración a una prestación específica, y que se le indemnicen los daños y perjuicios causados. El alcance concreto de las pretensiones depende de cada caso y de la estrategia procesal que se defina con el abogado.
 
-Esta amplitud es uno de los avances más significativos del CPCA. No se trata solo de eliminar un acto ilegal — se trata de reparar integralmente la situación del ciudadano afectado.
+Esta amplitud es uno de los avances más significativos del CPCA. El proceso contencioso ya no se limita a eliminar el acto ilegal — permite la reparación integral de la situación del ciudadano afectado.
 
 ---
 
