@@ -78,13 +78,9 @@ El cómputo del plazo depende del tipo de conducta que se impugna:
 
 ### Los efectos continuados: un plazo que muchos creen vencido y no lo está
 
-Cuando una conducta administrativa produce **efectos continuados** — es decir, sus consecuencias persisten en el tiempo —, el plazo de un año no comienza a correr hasta que esos efectos cesan. Esto tiene implicaciones prácticas muy relevantes:
-
-Si una municipalidad le denegó una patente y usted lleva meses sin poder operar su negocio, los efectos de esa denegación son continuados — subsisten mientras la patente no le sea otorgada. Si una institución le impuso una restricción que sigue vigente, los efectos no han cesado. En estos casos, el plazo de caducidad no ha empezado a correr o se renueva constantemente mientras la situación se mantenga.
+Cuando una conducta administrativa produce **efectos continuados** — es decir, sus consecuencias persisten en el tiempo —, el plazo de un año no comienza a correr hasta que esos efectos cesan. Mientras la conducta siga produciendo efectos, el plazo de caducidad no ha empezado a correr.
 
 Muchas personas asumen que "ya se les pasó el plazo" sin consultar a un abogado especialista. Un análisis riguroso de la naturaleza de la conducta y de sus efectos puede revelar que la vía jurisdiccional sigue abierta.
-
-Adicionalmente, los actos administrativos que adolecen de **nulidad absoluta** — es decir, vicios de legalidad graves que afectan elementos esenciales del acto — pueden ser impugnados para efectos de su anulación e inaplicabilidad futura sin sujeción al plazo de un año.
 
 ---
 
