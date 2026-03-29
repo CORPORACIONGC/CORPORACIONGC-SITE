@@ -1,7 +1,5 @@
-"use client";
-
 import Link from "next/link";
-import { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench } from "@phosphor-icons/react";
+import { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREA_PAGES } from "@/lib/constants";
 

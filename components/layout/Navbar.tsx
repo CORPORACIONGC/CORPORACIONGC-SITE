@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
 import { List, X } from "@phosphor-icons/react";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { FIRM_NAV_LINKS } from "@/lib/constants";
@@ -209,69 +208,64 @@ export function Navbar({
         </div>
       </nav>
 
-      {/* Mobile panel */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-50 bg-surface"
+      {/* Mobile panel — CSS transitions instead of Framer Motion */}
+      <div
+        className="fixed inset-0 z-50 bg-surface transition-all duration-350 ease-[cubic-bezier(0.16,1,0.3,1)]"
+        style={{
+          opacity: mobileOpen ? 1 : 0,
+          transform: mobileOpen ? "translateX(0)" : "translateX(100%)",
+          pointerEvents: mobileOpen ? "auto" : "none",
+        }}
+      >
+        <div className="flex items-center justify-between px-6 h-16">
+          <Image
+            src="/images/logo-gc.png"
+            alt="Corporación GC"
+            width={36}
+            height={36}
+            className="h-8 w-auto dark:brightness-0 dark:invert"
+          />
+          <button
+            onClick={() => setMobileOpen(false)}
+            className="p-2 text-cream/70 nav-tactile"
+            aria-label="Cerrar menú"
           >
-            <div className="flex items-center justify-between px-6 h-16">
-              <Image
-                src="/images/logo-gc.png"
-                alt="Corporación GC"
-                width={36}
-                height={36}
-                className="h-8 w-auto dark:brightness-0 dark:invert"
-              />
-              <button
-                onClick={() => setMobileOpen(false)}
-                className="p-2 text-cream/70 nav-tactile"
-                aria-label="Cerrar menú"
-              >
-                <X size={22} weight="light" />
-              </button>
-            </div>
-            <div className="flex flex-col items-start gap-1 px-6 pt-8">
-              {navLinks.map((link, i) => (
-                <motion.a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => {
-                    setMobileOpen(false);
-                    if (link.href.startsWith("#")) {
-                      e.preventDefault();
-                      const id = link.href.replace("#", "");
-                      setTimeout(() => {
-                        const el = document.getElementById(id);
-                        if (el) el.scrollIntoView({ behavior: "smooth" });
-                      }, 400);
-                    }
-                  }}
-                  initial={{ opacity: 0, x: 24 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{
-                    delay: 0.1 + i * 0.06,
-                    duration: 0.4,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className="font-display text-2xl font-light tracking-wide text-cream py-3 border-b border-cream/5 w-full nav-tactile"
-                >
-                  {link.label}
-                </motion.a>
-              ))}
-            </div>
-            <div className="absolute bottom-12 left-6 right-6">
-              <div className="text-xs tracking-[0.2em] text-cream/30 uppercase">
-                Corporación GC
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <X size={22} weight="light" />
+          </button>
+        </div>
+        <div className="flex flex-col items-start gap-1 px-6 pt-8">
+          {navLinks.map((link, i) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={(e) => {
+                setMobileOpen(false);
+                if (link.href.startsWith("#")) {
+                  e.preventDefault();
+                  const id = link.href.replace("#", "");
+                  setTimeout(() => {
+                    const el = document.getElementById(id);
+                    if (el) el.scrollIntoView({ behavior: "smooth" });
+                  }, 400);
+                }
+              }}
+              className="font-display text-2xl font-light tracking-wide text-cream py-3 border-b border-cream/5 w-full nav-tactile transition-all duration-400"
+              style={{
+                opacity: mobileOpen ? 1 : 0,
+                transform: mobileOpen ? "translateX(0)" : "translateX(24px)",
+                transitionDelay: mobileOpen ? `${0.1 + i * 0.06}s` : "0s",
+              }}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+        <div className="absolute bottom-12 left-6 right-6">
+          <div className="text-xs tracking-[0.2em] text-cream/30 uppercase">
+            Corporación GC
+          </div>
+        </div>
+      </div>
     </>
   );
 }

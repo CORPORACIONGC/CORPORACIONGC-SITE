@@ -1,11 +1,10 @@
-"use client";
 
 import {
   Scales,
   ShieldCheck,
   FileText,
   Buildings,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { KATHERINE_PRACTICE_AREAS, KATHERINE_PROFILE } from "@/lib/constants";
 

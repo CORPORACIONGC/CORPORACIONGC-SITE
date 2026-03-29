@@ -16,6 +16,16 @@ const csp = [
 ].join("; ");
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "corporaciongc.com" }],
+        destination: "https://www.corporaciongc.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

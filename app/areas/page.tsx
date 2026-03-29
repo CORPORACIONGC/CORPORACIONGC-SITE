@@ -48,6 +48,55 @@ export const metadata: Metadata = {
   },
 };
 
+/* ── SEO: Structured Data (JSON-LD) ── */
+
+const jsonLdCollectionPage = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://www.corporaciongc.com/areas#webpage",
+  name: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
+  description:
+    "22 áreas de práctica legal especializadas en Derecho Público costarricense: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más.",
+  url: "https://www.corporaciongc.com/areas",
+  isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
+  about: { "@id": "https://www.corporaciongc.com/#organization" },
+  provider: { "@id": "https://www.corporaciongc.com/#organization" },
+  inLanguage: "es-CR",
+  dateModified: "2026-03-28",
+  mainEntity: {
+    "@type": "ItemList",
+    name: "Áreas de Práctica — Corporación GC",
+    numberOfItems: PRACTICE_AREA_PAGES.length,
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    itemListElement: PRACTICE_AREA_PAGES.map((area, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: area.title,
+      description: area.subtitle,
+      url: `https://www.corporaciongc.com/areas/${area.slug}`,
+    })),
+  },
+};
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Inicio",
+      item: "https://www.corporaciongc.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Áreas de Práctica",
+      item: "https://www.corporaciongc.com/areas",
+    },
+  ],
+};
+
 const iconMap = {
   Gavel,
   ShieldCheck,
@@ -80,6 +129,12 @@ export default function AreasPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([jsonLdCollectionPage, jsonLdBreadcrumb]),
+        }}
+      />
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">

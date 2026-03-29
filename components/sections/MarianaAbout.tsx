@@ -1,11 +1,10 @@
-"use client";
 
 import {
   Scales,
   ShieldCheck,
   Gavel,
   FirstAid,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MARIANA_PRACTICE_AREAS, MARIANA_PROFILE } from "@/lib/constants";
 

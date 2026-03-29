@@ -1,9 +1,8 @@
-"use client";
 
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { ArrowDown } from "@phosphor-icons/react";
+import { ArrowDown } from "@phosphor-icons/react/dist/ssr";
 
 export function EstebanHero() {
   return (

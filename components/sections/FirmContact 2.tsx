@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import {
@@ -8,7 +7,7 @@ import {
   MapPin,
   Clock,
   ArrowRight,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import {
   AnimatedEntry,
   StaggerContainer,

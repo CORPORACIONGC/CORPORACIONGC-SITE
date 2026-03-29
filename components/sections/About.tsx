@@ -1,4 +1,3 @@
-"use client";
 
 import {
   Scales,
@@ -8,7 +7,7 @@ import {
   FileText,
   Stamp,
   Brain,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
 

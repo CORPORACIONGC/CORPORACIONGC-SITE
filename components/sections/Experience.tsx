@@ -1,4 +1,3 @@
-"use client";
 
 import { EXPERIENCE } from "@/lib/constants";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";

@@ -1,9 +1,8 @@
-"use client";
 
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { MapPin, Microphone, GlobeHemisphereWest } from "@phosphor-icons/react";
+import { MapPin, Microphone, GlobeHemisphereWest } from "@phosphor-icons/react/dist/ssr";
 
 export function KhevinEventoDestacado() {
   return (
@@ -77,14 +76,14 @@ export function KhevinEventoDestacado() {
                   </div>
                 </div>
 
-                {/* Panelists */}
+                {/* Panel context */}
                 <div className="mb-8 pl-4 relative">
                   <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-gold/50 via-gold/20 to-transparent" />
-                  <p className="text-[13px] text-cream/65 leading-relaxed">
-                    Panelistas: Khevin S&aacute;nchez &middot; &Aacute;ngela Villate (VillateLab) &middot; Jimena Mora (Microsoft) &middot; Nicol&aacute;s Casta&ntilde;eda (Keralty)
+                  <p className="text-[13px] text-cream/65 leading-relaxed italic">
+                    &Eacute;tica, gobernanza de datos e inteligencia artificial aplicada al ejercicio del Derecho en Latinoam&eacute;rica
                   </p>
                   <p className="text-[11px] text-cream/35 mt-2 leading-relaxed">
-                    Encuentro internacional con l&iacute;deres en legaltech de m&aacute;s de 130 ciudades
+                    Junto a representantes de Microsoft, VillateLab y Keralty &mdash; primera edici&oacute;n suramericana del summit global
                   </p>
                 </div>
 

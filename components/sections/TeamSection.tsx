@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { TEAM } from "@/lib/constants";
 

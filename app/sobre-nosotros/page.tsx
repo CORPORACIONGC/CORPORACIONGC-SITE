@@ -2,8 +2,159 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { FIRM_NAV_LINKS } from "@/lib/constants";
+import { FIRM, FIRM_NAV_LINKS } from "@/lib/constants";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+
+/* ── SEO: Structured Data (JSON-LD) ── */
+
+const jsonLdAboutPage = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://www.corporaciongc.com/sobre-nosotros#webpage",
+  name: "Sobre Nosotros — Corporación GC",
+  description:
+    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados exclusivamente al Derecho Público.",
+  url: "https://www.corporaciongc.com/sobre-nosotros",
+  isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
+  about: { "@id": "https://www.corporaciongc.com/#organization" },
+  mainEntity: { "@id": "https://www.corporaciongc.com/#organization" },
+  inLanguage: "es-CR",
+  datePublished: "2025-01-01",
+  dateModified: "2026-03-28",
+  publisher: { "@id": "https://www.corporaciongc.com/#organization" },
+  significantLink: [
+    "https://www.corporaciongc.com/abogados/oscar-gonzalez",
+    "https://www.corporaciongc.com/areas",
+    "https://www.corporaciongc.com/articulos",
+  ],
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["article section:first-of-type", "article section:nth-of-type(2)"],
+  },
+  mainContentOfPage: {
+    "@type": "WebPageElement",
+    cssSelector: "article",
+  },
+};
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Inicio",
+      item: "https://www.corporaciongc.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Sobre Nosotros",
+      item: "https://www.corporaciongc.com/sobre-nosotros",
+    },
+  ],
+};
+
+const jsonLdOrganization = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://www.corporaciongc.com/#organization",
+  name: "Corporación GC",
+  alternateName: "Corporación González Camacho",
+  description: FIRM.description,
+  url: "https://www.corporaciongc.com",
+  logo: "https://www.corporaciongc.com/images/logo-gc.png",
+  telephone: "+506 8317-9564",
+  email: "info@corporaciongc.com",
+  foundingDate: "2015",
+  areaServed: { "@type": "Country", name: "Costa Rica" },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "OFIDENT, Barrio Dent",
+    addressLocality: "Montes de Oca",
+    addressRegion: "San José",
+    postalCode: "11501",
+    addressCountry: "CR",
+  },
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 6 },
+  founder: {
+    "@type": "Person",
+    "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
+    name: "Dr. Óscar Eduardo González Camacho",
+    jobTitle: "Fundador y Director",
+    honorificPrefix: "Dr.",
+    description:
+      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014). Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508). Doctor en Derecho por la Universidad de Alcalá de Henares, Sobresaliente Cum Laude.",
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá de Henares" },
+      { "@type": "CollegeOrUniversity", name: "Universidad de Costa Rica" },
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: "Doctor en Derecho",
+        recognizedBy: { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá de Henares" },
+      },
+    ],
+    memberOf: {
+      "@type": "Organization",
+      name: "Colegio de Abogados y Abogadas de Costa Rica",
+      identifier: "3191",
+    },
+    worksFor: { "@id": "https://www.corporaciongc.com/#organization" },
+  },
+  employee: [
+    {
+      "@type": "Person",
+      name: "Lic. Khevin Sánchez Zamora",
+      jobTitle: "Abogado Asociado",
+      url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
+      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "37920" },
+    },
+    {
+      "@type": "Person",
+      name: "MSc. Katherine González Coto",
+      jobTitle: "Abogada Asociada",
+      url: "https://www.corporaciongc.com/abogados/katherine-gonzalez",
+      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "30256" },
+    },
+    {
+      "@type": "Person",
+      name: "Licda. Mariana Montero Acuña",
+      jobTitle: "Abogada Asociada",
+      url: "https://www.corporaciongc.com/abogados/mariana-montero",
+      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "33716" },
+    },
+    {
+      "@type": "Person",
+      name: "Lic. Esteban Pérez Herrera",
+      jobTitle: "Abogado Asociado y Notario Público",
+      url: "https://www.corporaciongc.com/abogados/esteban-perez",
+      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34399" },
+    },
+    {
+      "@type": "Person",
+      name: "Lic. José Carlos Solano Salas",
+      jobTitle: "Abogado Asociado",
+      url: "https://www.corporaciongc.com/abogados/jose-carlos-solano",
+      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34724" },
+    },
+  ],
+  knowsAbout: [
+    "Derecho Administrativo",
+    "Contencioso Administrativo",
+    "Derecho Constitucional",
+    "Contratación Pública",
+    "Derecho Público",
+  ],
+  sameAs: [
+    "https://www.linkedin.com/company/corporacion-gc",
+    "https://www.abogados.or.cr/consultaagremiados/",
+    "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=57436",
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Sobre Nosotros | Corporación GC",
@@ -26,6 +177,12 @@ export const metadata: Metadata = {
 export default function SobreNosotros() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([jsonLdAboutPage, jsonLdBreadcrumb, jsonLdOrganization]),
+        }}
+      />
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">

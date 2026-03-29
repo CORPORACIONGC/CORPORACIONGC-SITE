@@ -1,9 +1,7 @@
-"use client";
-
 import Link from "next/link";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { ArrowRight, FilePdf, Article } from "@phosphor-icons/react";
+import { ArrowRight, FilePdf, Article } from "@phosphor-icons/react/dist/ssr";
 
 type ArticlePreview = {
   slug: string;

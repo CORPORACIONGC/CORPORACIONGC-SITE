@@ -88,8 +88,75 @@ export default async function AttorneyProfile({
   const member = TEAM.find((m) => m.slug === slug);
   if (!member) return notFound();
 
-  /* JSON-LD Person schema for all attorney pages */
-  const jsonLdPerson = {
+  /* ── Per-attorney enrichment data ── */
+  const enrichmentMap: Record<string, {
+    honorificPrefix?: string;
+    carnet: string;
+    education: { degree: string; institution: string; distinction?: string }[];
+    sameAs?: string[];
+  }> = {
+    "oscar-gonzalez": {
+      honorificPrefix: "Dr.",
+      carnet: "3191",
+      education: [
+        { degree: "Doctor en Derecho", institution: "Universidad de Alcalá de Henares, España", distinction: "Sobresaliente Cum Laude" },
+        { degree: "Especialista en Derecho Público", institution: "Universidad de Costa Rica", distinction: "Graduación de Honor" },
+        { degree: "Licenciado en Derecho y Notario Público", institution: "Universidad de Costa Rica" },
+      ],
+      sameAs: [
+        "https://www.linkedin.com/in/%C3%B3scar-eduardo-gonz%C3%A1lez-camacho-0b65a2187/",
+        "https://derecho.ucr.ac.cr/docentes/gonzalez-camacho-oscar",
+        "https://www.abogados.or.cr/consultaagremiados/",
+      ],
+    },
+    "khevin-sanchez": {
+      carnet: "37920",
+      education: [
+        { degree: "Licenciado en Derecho (énfasis en Derecho Tributario)", institution: "Universidad de Costa Rica" },
+        { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica" },
+      ],
+      sameAs: [
+        "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/",
+      ],
+    },
+    "katherine-gonzalez": {
+      carnet: "30256",
+      education: [
+        { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica" },
+        { degree: "Licenciatura en Derecho", institution: "Universidad Escuela Libre de Derecho" },
+        { degree: "Notariado Público", institution: "Universidad Escuela Libre de Derecho" },
+      ],
+    },
+    "mariana-montero": {
+      carnet: "33716",
+      education: [
+        { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", distinction: "Diploma de Excelencia Académica — Mejor promedio del posgrado" },
+        { degree: "Licenciatura en Derecho — Mención en Derechos Humanos", institution: "Universidad de Costa Rica", distinction: "Aprobada con distinción" },
+        { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica" },
+      ],
+    },
+    "esteban-perez": {
+      carnet: "34399",
+      education: [
+        { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica" },
+        { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica" },
+        { degree: "Especialidad en Derecho Notarial y Registral", institution: "Universidad Fidélitas" },
+      ],
+    },
+    "jose-carlos-solano": {
+      carnet: "34724",
+      education: [
+        { degree: "Especialista en Derecho Notarial y Registral", institution: "Universidad La Salle de Costa Rica", distinction: "Con honores" },
+        { degree: "Licenciado en Derecho (énfasis en Derecho Tributario)", institution: "Universidad de Costa Rica", distinction: "Con honores — Promedio superior a 9/10" },
+        { degree: "Estudios parciales en Filosofía", institution: "Universidad de Costa Rica" },
+      ],
+    },
+  };
+
+  const enrichment = enrichmentMap[member.slug] ?? { carnet: "", education: [] };
+
+  /* ── JSON-LD: Person (enriched) ── */
+  const jsonLdPerson: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${FIRM.url}/abogados/${member.slug}#person`,
@@ -98,17 +165,56 @@ export default async function AttorneyProfile({
     url: `${FIRM.url}/abogados/${member.slug}`,
     image: `${FIRM.url}${member.photo}`,
     description: member.shortBio,
-    worksFor: {
-      "@id": `${FIRM.url}/#organization`,
-    },
+    worksFor: { "@id": `${FIRM.url}/#organization` },
     knowsAbout: [...member.areas],
     knowsLanguage: member.languages?.map((l: string) => l) ?? ["Español"],
     memberOf: {
       "@type": "Organization",
       name: "Colegio de Abogados y Abogadas de Costa Rica",
+      ...(enrichment.carnet ? { identifier: enrichment.carnet } : {}),
+    },
+    alumniOf: enrichment.education.map((ed) => ({
+      "@type": "CollegeOrUniversity",
+      name: ed.institution,
+    })),
+    hasCredential: enrichment.education
+      .filter((ed) => ed.distinction || ed.degree.startsWith("Doctor") || ed.degree.startsWith("Maestría") || ed.degree.startsWith("Licenci"))
+      .map((ed) => ({
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: ed.degree,
+        recognizedBy: { "@type": "CollegeOrUniversity", name: ed.institution },
+        ...(ed.distinction ? { description: ed.distinction } : {}),
+      })),
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Abogado",
+      occupationLocation: { "@type": "Country", name: "Costa Rica" },
     },
   };
 
+  if (enrichment.honorificPrefix) {
+    jsonLdPerson.honorificPrefix = enrichment.honorificPrefix;
+  }
+  if (enrichment.sameAs && enrichment.sameAs.length > 0) {
+    jsonLdPerson.sameAs = enrichment.sameAs;
+  }
+
+  /* ── JSON-LD: ProfilePage ── */
+  const jsonLdProfilePage = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${FIRM.url}/abogados/${member.slug}#profilepage`,
+    name: `${member.name} | ${member.role}`,
+    url: `${FIRM.url}/abogados/${member.slug}`,
+    mainEntity: { "@id": `${FIRM.url}/abogados/${member.slug}#person` },
+    isPartOf: { "@id": `${FIRM.url}/#website` },
+    dateCreated: "2025-01-01",
+    dateModified: "2026-03-28",
+    inLanguage: "es-CR",
+  };
+
+  /* ── JSON-LD: BreadcrumbList ── */
   const jsonLdBreadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -120,10 +226,12 @@ export default async function AttorneyProfile({
   };
 
   const schemaScripts = (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify([jsonLdPerson, jsonLdProfilePage, jsonLdBreadcrumb]),
+      }}
+    />
   );
 
   if (member.slug === "khevin-sanchez") {
@@ -134,7 +242,7 @@ export default async function AttorneyProfile({
       startDate: "2025-10-23",
       endDate: "2025-10-23",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      eventStatus: "https://schema.org/EventScheduled",
+      eventStatus: "https://schema.org/EventCompleted",
       location: {
         "@type": "Place",
         name: "Universidad Javeriana",

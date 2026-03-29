@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import {
@@ -6,7 +5,7 @@ import {
   Phone,
   WhatsappLogo,
   MapPin,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { KATHERINE_CONTACT } from "@/lib/constants";

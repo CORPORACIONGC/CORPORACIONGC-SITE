@@ -1,4 +1,3 @@
-"use client";
 
 import Link from "next/link";
 import {
@@ -8,7 +7,7 @@ import {
   FileText,
   Crosshair,
   ArrowUpRight,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { OSCAR_PROFILE, OSCAR_PRACTICE_AREAS } from "@/lib/constants";
 

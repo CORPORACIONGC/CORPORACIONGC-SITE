@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import {
@@ -8,7 +7,7 @@ import {
   LinkedinLogo,
   InstagramLogo,
   MapPin,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { CONTACT } from "@/lib/constants";

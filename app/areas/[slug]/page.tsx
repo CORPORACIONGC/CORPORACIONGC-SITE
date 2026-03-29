@@ -187,6 +187,91 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           conocimiento efectivo de este.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre el litigio contencioso-administrativo
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se demanda al Estado en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Para demandar al Estado o a cualquier ente público en Costa Rica se debe interponer
+              una demanda contencioso-administrativa ante el Tribunal Contencioso Administrativo,
+              conforme al Código Procesal Contencioso Administrativo (CPCA, Ley N.° 8508). La
+              demanda debe identificar la conducta administrativa impugnada —ya sea un acto
+              administrativo, una omisión o una actuación material—, exponer los hechos y
+              fundamentos de derecho, y formular pretensiones concretas. Pueden demandarse la
+              anulación del acto, el reconocimiento de derechos, la condena al pago de daños y
+              perjuicios, y la orden de realizar o cesar una conducta. No siempre se requiere
+              agotar la vía administrativa antes de demandar. El plazo general de caducidad es
+              de un año desde la notificación del acto o desde que se tuvo conocimiento de la
+              conducta lesiva (art. 39 CPCA). Corporación GC asesora en cada etapa de este proceso.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuánto tiempo tengo para presentar una demanda contencioso-administrativa?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El plazo general para interponer una demanda contencioso-administrativa en Costa Rica
+              es de un año, contado desde la notificación del acto administrativo o desde que el
+              afectado tuvo conocimiento efectivo de la conducta impugnada, según el artículo 39
+              del CPCA. En materia de responsabilidad patrimonial del Estado, el plazo también es
+              de un año desde que se produjo el daño o desde que el perjudicado lo conoció. Es
+              importante no confundir este plazo con el de los recursos administrativos previos, que
+              tienen plazos más cortos. El vencimiento del plazo produce la caducidad del derecho a
+              demandar, por lo que se recomienda actuar con prontitud. Existen excepciones: cuando
+              la lesión es continuada o se trata de vías de hecho, los plazos pueden computarse de
+              forma distinta. Es fundamental contar con asesoría legal especializada para evaluar
+              la viabilidad temporal de la demanda antes de que el plazo transcurra.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué puede obtener un ciudadano en un proceso contencioso-administrativo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El proceso contencioso-administrativo en Costa Rica permite obtener resultados amplios
+              según el artículo 122 del CPCA. En un proceso de plena jurisdicción, el Tribunal puede:
+              declarar la disconformidad de la conducta administrativa con el ordenamiento jurídico,
+              anular total o parcialmente actos administrativos, reconocer o restablecer situaciones
+              jurídicas individualizadas, condenar a la Administración al pago de daños y perjuicios
+              (incluyendo daño moral), y ordenar a la Administración realizar una acción específica o
+              cesar una conducta. En un proceso de pura anulación, el efecto se limita a eliminar el
+              acto del ordenamiento jurídico. También pueden solicitarse medidas cautelares para
+              proteger los derechos del demandante durante el proceso. El CPCA superó el sistema
+              anterior, que era predominantemente anulatorio, para establecer una jurisdicción con
+              poderes plenos de tutela de los derechos de los administrados frente al poder público.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Es necesario agotar la vía administrativa antes de demandar?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              No siempre. El CPCA flexibilizó sustancialmente el requisito de agotamiento de la vía
+              administrativa. Aunque en muchos casos sigue siendo necesario interponer los recursos
+              administrativos correspondientes (revocatoria, apelación) antes de acudir al Tribunal,
+              existen importantes excepciones. El agotamiento no se exige cuando se impugnan vías de
+              hecho, omisiones de la Administración o actuaciones materiales. Tampoco se requiere cuando
+              opera el silencio administrativo positivo o cuando la propia ley dispensa expresamente
+              el agotamiento. En materia de contratación pública, las reglas específicas de la Ley N.°
+              9986 determinan cuándo se entiende agotada la vía. La determinación de si el agotamiento
+              es necesario en cada caso concreto requiere un análisis jurídico especializado, pues un
+              error en este punto puede resultar en la inadmisibilidad de la demanda. Corporación GC
+              evalúa esta cuestión como parte del análisis estratégico previo a cualquier litigio.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -304,6 +389,72 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           y a la condición de las partes.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre medidas cautelares
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es una medida cautelar provisionalísima en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La medida cautelar provisionalísima es el instrumento de protección más urgente del
+              proceso contencioso-administrativo costarricense, regulado en el artículo 21 del CPCA
+              (Ley N.° 8508). Permite al juez dictar una orden de protección de forma inmediata y sin
+              audiencia previa a la parte contraria (inaudita parte) cuando existe una situación de
+              urgencia extrema que no admite la demora del trámite ordinario. Lo excepcional de este
+              instrumento es que puede solicitarse incluso antes de presentar la demanda, cuando la
+              amenaza de daño es tan inminente que cualquier dilación haría irreparable el perjuicio.
+              Una vez dictada, el juez convoca a las partes a una audiencia oral dentro de las 48 horas
+              siguientes para decidir si la mantiene, modifica o revoca. Si no se interpone la demanda
+              en el plazo que fije el tribunal, la medida queda sin efecto automáticamente.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuáles son los requisitos para obtener una medida cautelar contra el Estado?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Para obtener una medida cautelar en la jurisdicción contencioso-administrativa
+              costarricense se deben acreditar dos presupuestos fundamentales establecidos en el
+              artículo 20 del CPCA. Primero, el periculum in mora: demostrar que existe un peligro
+              cierto de que la demora del proceso principal cause un perjuicio grave o irreparable,
+              o que haga ineficaz la eventual sentencia favorable. Segundo, el fumus boni iuris:
+              evidenciar que la pretensión de fondo tiene una apariencia razonable de fundamento
+              jurídico, sin que el juez deba pronunciarse sobre el mérito del caso. Además, el juez
+              realiza una ponderación de intereses: la medida no debe causar al interés público un
+              perjuicio evidentemente desproporcionado respecto del beneficio para el solicitante. El
+              CPCA superó el paradigma anterior donde el interés público prevalecía automáticamente,
+              estableciendo un sistema de balance proporcional entre los derechos del administrado y
+              el interés general.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Se puede pedir una medida cautelar antes de presentar la demanda?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí. El CPCA permite solicitar medidas cautelares ante causam, es decir, antes de
+              interponer la demanda contencioso-administrativa. Esta posibilidad es especialmente
+              útil cuando la urgencia de la situación no permite esperar a la preparación completa
+              de la demanda. El solicitante debe acreditar los mismos presupuestos de toda medida
+              cautelar (peligro en la demora y apariencia de buen derecho) y el juez, al concederla,
+              fijará un plazo para la interposición de la demanda principal. Si la demanda no se
+              presenta dentro de ese plazo, la medida se levanta automáticamente y el solicitante
+              responde por los daños y perjuicios que haya causado. En casos de urgencia extrema,
+              puede solicitarse directamente una medida provisionalísima ante causam (art. 21 CPCA),
+              que se dicta sin audiencia previa en cuestión de horas. Corporación GC tiene amplia
+              experiencia en la obtención de este tipo de medidas de tutela urgente.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -426,6 +577,72 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Primera para su conocimiento y resolución.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre el recurso de casación ante Sala Primera
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuáles son los motivos para interponer un recurso de casación contencioso-administrativo en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El artículo 137 del CPCA establece tres categorías de motivos para interponer casación
+              ante la Sala Primera de la Corte Suprema de Justicia. Primero, motivos procesales
+              (art. 137.a): violación del debido proceso, indefensión, incongruencia de la sentencia,
+              resoluciones ultra petita, extra petita o citra petita, y falta de fundamentación.
+              Segundo, motivos de fondo (art. 137.b): violación directa de normas sustantivas por
+              aplicación indebida, falta de aplicación o interpretación errónea, y violación indirecta
+              derivada de errores en la apreciación de hechos o prueba. Tercero, errores probatorios
+              (art. 137.c y d): error de hecho o de derecho en la valoración de la prueba y preterición
+              de prueba decisiva. Cada motivo exige una técnica casacional rigurosa: identificar la
+              norma infringida, explicar la infracción y demostrar su incidencia en la parte dispositiva
+              de la sentencia. Los defectos técnicos conducen a la inadmisibilidad del recurso.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuál es el plazo para presentar casación contra una sentencia del Tribunal Contencioso Administrativo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Conforme al artículo 135 del CPCA, el recurso de casación debe interponerse dentro de los
+              quince días hábiles siguientes a la notificación de la sentencia impugnada. El recurso se
+              presenta ante el propio Tribunal Contencioso Administrativo que dictó la sentencia, el cual
+              verifica los requisitos de admisibilidad formales antes de elevarlo a la Sala Primera de la
+              Corte Suprema de Justicia para su conocimiento y resolución. El artículo 136 del CPCA
+              establece que están legitimados para recurrir las partes del proceso que resulten
+              perjudicadas por la sentencia. Son recurribles en casación las sentencias y los autos con
+              carácter de sentencia dictados en procesos de conocimiento (art. 134). El vencimiento del
+              plazo produce la inadmisibilidad del recurso por extemporaneidad, por lo que es fundamental
+              actuar con inmediatez. Corporación GC evalúa la viabilidad técnica del recurso desde la
+              notificación misma de la sentencia para garantizar una interposición oportuna y fundada.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es la preterición de prueba y cómo se alega en casación?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La preterición de prueba es un motivo autónomo de casación contemplado en el artículo
+              137, inciso d) del CPCA. Consiste en que el Tribunal Contencioso Administrativo omite
+              considerar un elemento probatorio que fue debidamente aportado al proceso y que resulta
+              decisivo para la resolución del caso. No se trata de una discrepancia con la valoración
+              del juez, sino de la ausencia total de análisis de una prueba que, de haber sido
+              considerada, habría modificado el sentido del fallo. Para que prospere el recurso por
+              este motivo, el recurrente debe demostrar ante la Sala Primera tres elementos: que la
+              prueba consta en el expediente, que el Tribunal no la analizó en la sentencia, y que su
+              consideración habría sido determinante para alcanzar una conclusión distinta en la parte
+              dispositiva. El artículo 137, inciso c) del CPCA también permite alegar el error de hecho
+              o de derecho en la valoración probatoria como motivo complementario de casación.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -555,6 +772,75 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           ese escrutinio.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre asesoría regulatoria
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Quién puede emitir reglamentos en Costa Rica y cuáles son sus límites?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La potestad reglamentaria en Costa Rica corresponde al Poder Ejecutivo conforme al
+              artículo 140, inciso 3 de la Constitución Política, que faculta al Presidente y al
+              Ministro del ramo a reglamentar las leyes. Los entes descentralizados —municipalidades,
+              instituciones autónomas, universidades públicas— pueden dictar reglamentos autónomos de
+              organización y servicio conforme a los artículos 103 y 104 de la LGAP, sin necesidad de
+              ley habilitante previa. El artículo 6 de la LGAP establece la jerarquía normativa: el
+              reglamento no puede contradecir, exceder ni restringir el alcance de la ley que
+              desarrolla. Un reglamento que regule materia reservada al legislador o que exceda la ley
+              es susceptible de anulación por la Sala Constitucional (art. 73, Ley 7135) o por la
+              jurisdicción contencioso-administrativa (art. 10, CPCA). La consulta pública previa,
+              regulada en la Ley 8220 y el Decreto 37045-MP-MEIC, es obligatoria en muchos casos y
+              su omisión puede acarrear la nulidad del instrumento normativo aprobado.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué diferencia hay entre un reglamento ejecutivo y un reglamento autónomo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El reglamento ejecutivo es la norma que dicta el Poder Ejecutivo para desarrollar y
+              facilitar la aplicación de una ley específica, con fundamento en el artículo 140, inciso
+              3 de la Constitución Política. Su contenido está subordinado y vinculado a la ley que
+              reglamenta; no puede crear obligaciones nuevas ni restringir derechos que la ley no haya
+              previsto. El reglamento autónomo, regulado en los artículos 103 y 104 de la LGAP, es el
+              instrumento mediante el cual un ente u órgano público regula su organización interna y la
+              prestación de sus servicios sin necesidad de una ley previa habilitante. A diferencia del
+              ejecutivo, el autónomo no desarrolla una ley específica sino que regula materias propias
+              de la organización administrativa. Sin embargo, ambos tipos de reglamento están sometidos
+              a la jerarquía normativa del artículo 6 de la LGAP: no pueden contravenir la ley ni
+              afectar derechos fundamentales. Ambos son impugnables ante la jurisdicción
+              contencioso-administrativa si contravienen el ordenamiento jurídico.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Se puede impugnar un decreto ejecutivo o un reglamento en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí. Toda normativa de alcance general dictada por la Administración Pública está sujeta a
+              control jurisdiccional por dos vías. Primero, el artículo 10 del CPCA permite impugnar
+              ante el Tribunal Contencioso Administrativo los reglamentos, decretos y disposiciones
+              generales que se consideren contrarios al ordenamiento jurídico infraconstitucional; esta
+              vía permite obtener la anulación del instrumento y la indemnización de los daños causados.
+              Segundo, el artículo 73 de la Ley de la Jurisdicción Constitucional (Ley 7135) habilita
+              la acción de inconstitucionalidad ante la Sala Constitucional contra normas reglamentarias
+              que vulneren la Constitución; la declaratoria tiene efectos erga omnes y elimina la norma
+              del ordenamiento. Los vicios más frecuentes incluyen la invasión de la reserva de ley, la
+              desproporción, la falta de consulta pública obligatoria (Ley 8220, art. 12) y la ausencia
+              de motivación. Corporación GC asesora tanto en la redacción preventiva de normativa como en
+              su impugnación cuando resulte contraria a derecho.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -688,6 +974,75 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           evaluarían la legalidad de la actuación consultada.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre informes jurídicos y dictámenes
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué elementos debe verificar un dictamen de legalidad de un acto administrativo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Un dictamen de legalidad debe analizar la cadena completa de validez del acto
+              administrativo conforme a la LGAP. Los artículos 128 a 133 establecen los elementos
+              esenciales: competencia del órgano emisor (art. 129), legitimación del sujeto (art. 130),
+              contenido lícito y determinado (art. 132), motivo o causa justificante (art. 133),
+              procedimiento debido y forma prescrita (art. 134). El informe verifica además que la
+              motivación sea suficiente y que la decisión respete los principios de proporcionalidad y
+              razonabilidad. Los artículos 158 a 174 de la LGAP regulan las consecuencias de los vicios:
+              la nulidad absoluta cuando falta un elemento esencial, y la nulidad relativa cuando el
+              vicio es subsanable. Un dictamen previo permite identificar estos defectos antes de que el
+              acto sea impugnado en sede administrativa o ante el Tribunal Contencioso Administrativo,
+              reduciendo significativamente la exposición de la institución al litigio y a condenas
+              patrimoniales derivadas de actos viciados.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿En qué se diferencia un informe jurídico externo de un dictamen de la Procuraduría General?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Procuraduría General de la República (PGR), conforme al artículo 2 de su Ley Orgánica
+              (Ley N.° 6815), es el órgano superior consultivo de la Administración Pública. Sus
+              dictámenes son vinculantes para la Administración consultante —salvo que el jerarca
+              decida apartarse mediante acto debidamente motivado— y constituyen jurisprudencia
+              administrativa. Sin embargo, los tiempos de respuesta de la PGR pueden no ajustarse a la
+              urgencia institucional. Los informes jurídicos de Corporación GC cumplen una función
+              distinta: son opiniones técnicas externas, no vinculantes, que la institución utiliza
+              como insumo para fundamentar sus decisiones. Su valor reside en la especialización en
+              Derecho Público y en la perspectiva que aporta un equipo con experiencia en la judicatura
+              y en el litigio contencioso-administrativo. Esta visión permite anticipar cómo los
+              tribunales evaluarían la legalidad de la actuación consultada, complementando el criterio
+              interno de las asesorías jurídicas institucionales con análisis de riesgo actualizados.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuándo necesita una institución pública un informe sobre riesgo de responsabilidad patrimonial?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 190 a 204 de la LGAP establecen que la Administración Pública responde por
+              todos los daños causados por su funcionamiento, sea este legítimo o ilegítimo, normal o
+              anormal. Esta responsabilidad objetiva implica que incluso una actuación conforme a derecho
+              puede generar obligación de indemnizar si produce un sacrificio especial que el administrado
+              no tiene el deber de soportar. Un informe de riesgo jurídico es necesario cuando la
+              institución enfrenta decisiones de alto impacto: adjudicaciones de contratos significativos,
+              revocatorias de permisos o concesiones, imposición de sanciones graves o cambios normativos
+              que afecten derechos adquiridos. El informe evalúa las contingencias patrimoniales: la
+              probabilidad de impugnación exitosa, el monto estimado de una eventual condena y las
+              alternativas para mitigar la exposición. El principio de legalidad del artículo 11 de la
+              LGAP exige que cada actuación tenga respaldo normativo, y el análisis preventivo permite
+              tomar decisiones informadas antes de que se materialice el riesgo.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
   "contratacion-publica": (
@@ -763,6 +1118,74 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           ofertas y adjudicación.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre contratación pública
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se impugna una adjudicación de licitación pública en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley General de Contratación Pública (Ley N.° 9986) establece dos vías para impugnar
+              el acto de adjudicación. El recurso de apelación, regulado en el artículo 93, se
+              interpone ante la Contraloría General de la República dentro de los diez días hábiles
+              siguientes a la comunicación del acto de adjudicación. Su interposición suspende
+              automáticamente los efectos de la adjudicación y la Administración no puede suscribir el
+              contrato hasta que la Contraloría resuelva. La Contraloría puede confirmar, modificar o
+              revocar la adjudicación, o declarar desierto el concurso. Para procedimientos de menor
+              cuantía que no alcanzan el monto mínimo para apelar ante la Contraloría, el artículo 92
+              de la Ley 9986 establece el recurso de revocatoria ante la propia entidad contratante,
+              que es resuelto por el jerarca institucional. Agotada la vía administrativa, procede la
+              demanda contencioso-administrativa ante el TCA conforme al artículo 10 del CPCA.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es el recurso de objeción al cartel y cuándo se presenta?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El recurso de objeción al cartel permite impugnar las condiciones y especificaciones del
+              pliego de condiciones de un procedimiento de contratación antes de que se reciban las
+              ofertas. El artículo 90 de la Ley N.° 9986 establece que cualquier potencial oferente que
+              considere que el cartel contiene disposiciones contrarias al ordenamiento jurídico,
+              discriminatorias, desproporcionadas o que restrinjan indebidamente la participación puede
+              interponer este recurso ante la Contraloría General de la República. La objeción debe
+              presentarse dentro del primer tercio del plazo para recibir ofertas. Su interposición no
+              suspende automáticamente el procedimiento de contratación, salvo que la Contraloría
+              expresamente así lo disponga. La resolución de la Contraloría es vinculante para la entidad
+              contratante y puede ordenar la modificación del cartel o la eliminación de las cláusulas
+              objetadas. Este recurso es estratégicamente importante porque permite corregir vicios del
+              pliego antes de la adjudicación, evitando litigios posteriores más costosos y prolongados.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué tipos de procedimientos de contratación pública existen en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley N.° 9986 establece distintos procedimientos según la complejidad y cuantía de la
+              contratación, regulados en los artículos 36 a 56. La licitación pública es el procedimiento
+              ordinario para contrataciones de mayor cuantía, conforme al principio constitucional del
+              artículo 182 de la Constitución Política. La licitación abreviada se utiliza para montos
+              intermedios con requisitos simplificados y plazos más breves. La contratación directa
+              procede en supuestos taxativos establecidos por la ley: único proveedor, urgencia
+              calificada, escasa cuantía, entre otros expresamente previstos. Cada procedimiento tiene
+              reglas específicas sobre plazos de recepción de ofertas, publicidad, evaluación y
+              adjudicación. En todos los casos, los oferentes y terceros con interés legítimo disponen
+              de los recursos de objeción al cartel (art. 90) y apelación o revocatoria contra la
+              adjudicación (arts. 92 y 93) para cuestionar las decisiones administrativas en cada fase
+              del proceso de contratación.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -875,6 +1298,74 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Administración en materia autorizatoria.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho administrativo
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué recursos puedo interponer contra un acto administrativo en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La LGAP establece dos recursos administrativos ordinarios contra los actos de la
+              Administración Pública. El recurso de revocatoria, regulado en los artículos 342 a 345,
+              se interpone ante el mismo órgano que dictó el acto dentro de los tres días hábiles
+              siguientes a su notificación; el órgano tiene ocho días para resolverlo y puede confirmar,
+              modificar o revocar total o parcialmente el acto impugnado. El recurso de apelación,
+              regulado en el artículo 343, se interpone conjuntamente con la revocatoria y en forma
+              subsidiaria ante el superior jerárquico, para el caso de que la revocatoria sea rechazada.
+              La interposición conjunta de revocatoria con apelación en subsidio es la fórmula estándar
+              para agotar la vía administrativa, requisito previo para acceder a la jurisdicción
+              contencioso-administrativa conforme al artículo 31 del CPCA. Agotada la vía administrativa,
+              el administrado puede acudir al Tribunal Contencioso Administrativo para impugnar
+              judicialmente el acto conforme al artículo 10 del CPCA.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es el procedimiento administrativo ordinario y cuándo es obligatorio?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El procedimiento administrativo ordinario, regulado en los artículos 308 a 319 de la LGAP,
+              es el cauce formal que la Administración Pública debe seguir para emitir actos que afecten
+              derechos subjetivos o intereses legítimos de los administrados. El artículo 308 establece
+              que este procedimiento es obligatorio cuando el acto pueda causar perjuicio grave al
+              administrado, cuando se trate de un procedimiento sancionatorio, o cuando así lo exija una
+              ley especial. Sus fases incluyen: inicio mediante auto de apertura, instrucción probatoria,
+              audiencia oral y privada, alegatos y resolución final. El procedimiento garantiza el
+              derecho de defensa, el acceso al expediente, la posibilidad de ofrecer prueba y el derecho
+              a ser oído antes del acto final. La omisión del procedimiento ordinario cuando es obligatorio
+              constituye un vicio de nulidad absoluta conforme al artículo 223 de la LGAP, que puede ser
+              declarada incluso de oficio por la propia Administración o por los tribunales.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué ocurre si la Administración no responde un recurso dentro del plazo legal?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Cuando la Administración no resuelve un recurso o petición dentro del plazo legalmente
+              establecido, opera el silencio administrativo. La LGAP distingue dos modalidades. El
+              silencio negativo, regulado en el artículo 261, opera como regla general: transcurridos
+              dos meses sin resolución expresa, se entiende denegada la gestión, habilitando al
+              administrado para acudir a la siguiente instancia administrativa o a la vía jurisdiccional
+              contencioso-administrativa. El silencio positivo, regulado en el artículo 330, opera en
+              materia de permisos, licencias, autorizaciones y aprobaciones en ejercicio de funciones de
+              fiscalización y tutela: transcurrido un mes sin resolución expresa, se entiende aprobada
+              la gestión. El silencio positivo constituye una garantía frente a la inactividad
+              administrativa en materia autorizatoria. Es fundamental identificar correctamente cuál
+              modalidad aplica en cada caso, pues los efectos son opuestos. Corporación GC asesora en
+              la determinación del régimen aplicable y en las acciones procedentes ante la inactividad.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1010,6 +1501,75 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           seguridad jurídica de las transacciones.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho notarial
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué requisitos debe cumplir una escritura pública en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 99 a 117 del Código Notarial (Ley N.° 7764) regulan los requisitos formales
+              de la escritura pública. Debe contener un encabezamiento con el número de escritura, la
+              hora, fecha y lugar del otorgamiento; la comparecencia con la identificación plena de los
+              otorgantes, su capacidad legal y la libre manifestación de su voluntad; la exposición de
+              los antecedentes del acto; las estipulaciones que contienen las cláusulas del negocio
+              jurídico; y la autorización del notario con su firma y sello. El notario da fe de la
+              identidad de los comparecientes y de que el acto se otorgó conforme a derecho. Las
+              escrituras públicas son el medio obligatorio para formalizar actos que requieren inscripción
+              registral: compraventas de inmuebles, constitución de hipotecas, donaciones de inmuebles,
+              constitución de sociedades y poderes generales. Una escritura defectuosa puede ser
+              calificada negativamente por el Registro Nacional y rechazada su inscripción, conforme
+              a la Ley de creación del Registro Nacional (Ley N.° 5695).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué trámites notariales se necesitan para comprar un inmueble en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La compraventa de bienes inmuebles debe formalizarse en escritura pública conforme al
+              artículo 99 del Código Notarial y a los artículos 1049 a 1082 del Código Civil. El notario
+              realiza un estudio registral para verificar la titularidad del bien en el Registro Público,
+              la ausencia de gravámenes, anotaciones o limitaciones que impidan la transmisión. Verifica
+              la identidad y capacidad de las partes y el cumplimiento de los requisitos fiscales:
+              impuesto de traspaso y timbres correspondientes. La labor notarial incluye la redacción
+              completa de la escritura de compraventa, la verificación de estudios registrales, el
+              cálculo y pago de impuestos y timbres, la presentación del documento ante el Registro
+              Nacional conforme a la Ley N.° 5695 y el seguimiento hasta su inscripción definitiva.
+              Cuando la operación involucra financiamiento bancario, el notario coordina además la
+              constitución de la hipoteca (arts. 409 a 457 del Código Civil) y la inscripción del
+              gravamen. Una gestión registral diligente evita demoras que afecten la seguridad jurídica.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es la protocolización de documentos y cuándo se necesita?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La protocolización es el acto notarial mediante el cual se incorpora al protocolo del
+              notario un documento que originalmente no fue otorgado como escritura pública. Los artículos
+              118 a 122 del Código Notarial regulan este acto y establecen sus requisitos formales. Se
+              protocolizan, entre otros: actas de asambleas de sociedades, acuerdos de juntas directivas,
+              documentos extranjeros previamente apostillados, resoluciones judiciales y actas de órganos
+              colegiados de la Administración Pública. La protocolización confiere al documento la misma
+              fuerza probatoria que una escritura pública original y permite su inscripción registral
+              cuando la ley así lo exige. Es indispensable para la constitución de sociedades (arts. 5 a
+              17 del Código de Comercio), la modificación de estatutos sociales, la inscripción de
+              poderes y la formalización de actos que requieren publicidad registral conforme a la Ley
+              N.° 5695 del Registro Nacional. El notario verifica la autenticidad del documento y su
+              conformidad con el ordenamiento jurídico antes de incorporarlo a su protocolo.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1123,6 +1683,92 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           sufridos como consecuencia de la violación de sus derechos fundamentales.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre el recurso de amparo
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es un recurso de amparo en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El recurso de amparo es la garantía constitucional que permite a toda persona obtener
+              la protección inmediata de sus derechos fundamentales cuando estos son amenazados o
+              vulnerados por un órgano público o, en ciertos casos, por sujetos privados. Está
+              regulado en los artículos 29 a 56 de la Ley de la Jurisdicción Constitucional (Ley N.°
+              7135) y se tramita ante la Sala Constitucional de la Corte Suprema de Justicia. El
+              procedimiento es sumario, informal y de tramitación preferente: no requiere patrocinio
+              letrado obligatorio, no exige formalidades especiales y puede presentarse por escrito o
+              incluso verbalmente. El amparo protege todos los derechos consagrados en la Constitución
+              Política y en los instrumentos internacionales de derechos humanos vigentes en Costa Rica.
+              Es el mecanismo de tutela de derechos fundamentales más utilizado en el sistema jurídico
+              costarricense, con miles de recursos resueltos anualmente por la Sala Constitucional.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Quién puede presentar un recurso de amparo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Cualquier persona puede interponer un recurso de amparo en Costa Rica, incluso en favor
+              de un tercero y sin necesidad de poder especial ni de demostrar un interés directo. El
+              artículo 33 de la Ley N.° 7135 consagra una legitimación universal: personas físicas,
+              personas jurídicas, organizaciones de la sociedad civil, defensores de derechos humanos
+              o cualquier ciudadano pueden actuar en defensa del orden constitucional. Esta amplitud
+              refleja la naturaleza del amparo como instrumento de tutela objetiva de los derechos
+              fundamentales. El recurso procede contra cualquier disposición, acuerdo, resolución,
+              acción, omisión o actuación material de servidores y órganos públicos que viole o amenace
+              derechos fundamentales (art. 29). También procede contra sujetos de derecho privado cuando
+              estos actúen en ejercicio de funciones públicas o se encuentren en posición de poder frente
+              al recurrente (art. 30). No se exige el agotamiento previo de la vía administrativa.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuál es el plazo para presentar un recurso de amparo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El plazo para interponer un recurso de amparo depende de la naturaleza de la lesión.
+              Conforme al artículo 35 de la Ley N.° 7135, cuando la violación al derecho fundamental
+              es continuada —es decir, subsiste en el tiempo—, el recurso puede presentarse en
+              cualquier momento mientras dure la lesión, sin plazo de caducidad alguno. Si se trata de
+              una actuación consumada (que ya ocurrió y cesó), el recurso debe plantearse dentro de los
+              dos meses siguientes a la fecha en que el perjudicado tuvo noticia fehaciente de la
+              actuación u omisión lesiva. Es importante distinguir entre ambos supuestos, pues muchas
+              violaciones que parecen consumadas son en realidad continuadas (por ejemplo, la denegación
+              de un permiso que sigue surtiendo efectos). La Sala Constitucional puede adoptar medidas
+              cautelares desde el momento mismo de la interposición, incluyendo la suspensión del acto
+              impugnado, sin necesidad de rendir garantía (arts. 43-44).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué se obtiene si se gana un recurso de amparo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La sentencia que declara con lugar un recurso de amparo produce efectos amplios y
+              restitutorios. Según el artículo 49 de la Ley N.° 7135, la Sala Constitucional debe
+              indicar el derecho lesionado, identificar la conducta que lo lesiona, ordenar la
+              restitución al agraviado en el pleno goce de su derecho, y condenar en abstracto al
+              pago de daños, perjuicios y costas. Los efectos de la sentencia son declarativos y
+              retroactivos a la fecha de interposición del recurso (art. 51), aunque la Sala puede
+              dimensionar los efectos temporales según las circunstancias del caso. La condena
+              económica se liquida posteriormente en la vía contencioso-administrativa mediante el
+              proceso de ejecución (art. 56), lo que conecta la tutela constitucional con la
+              jurisdicción contencioso-administrativa. Corporación GC asesora tanto en la fase
+              constitucional como en la posterior ejecución y cuantificación de daños ante el
+              Tribunal Contencioso Administrativo.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1219,6 +1865,75 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           la Sala Constitucional son vinculantes erga omnes, salvo para sí misma.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre acciones de inconstitucionalidad
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Quién puede interponer una acción de inconstitucionalidad en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La legitimación para interponer una acción de inconstitucionalidad depende de la modalidad
+              utilizada. La legitimación incidental, regulada en el párrafo primero del artículo 75 de
+              la Ley N.° 7135, permite que cualquier persona que sea parte en un proceso judicial o
+              procedimiento administrativo pendiente interponga la acción cuando considere que la norma
+              que se le aplica es contraria a la Constitución. Se exige demostrar la existencia del
+              asunto previo y que la norma impugnada resulte aplicable y relevante para la decisión del
+              caso. La legitimación directa, contemplada en el párrafo segundo del artículo 75, permite
+              que cualquier persona accione sin necesidad de un proceso previo cuando la acción se
+              fundamente en la defensa de intereses difusos o que atañen a la colectividad en su
+              conjunto: medio ambiente, patrimonio público, competencia económica o derechos de los
+              consumidores. Esta modalidad amplía significativamente el acceso a la justicia
+              constitucional al no requerir un asunto pendiente para cuestionar la validez de una norma.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Contra qué normas procede la acción de inconstitucionalidad?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El artículo 73 de la Ley N.° 7135 establece que la acción de inconstitucionalidad procede
+              contra las leyes y demás disposiciones generales que infrinjan por acción u omisión alguna
+              norma o principio constitucional. Esto incluye leyes formales aprobadas por la Asamblea
+              Legislativa, decretos ejecutivos dictados por el Poder Ejecutivo conforme al artículo 140
+              de la Constitución, reglamentos autónomos de entes descentralizados, reglamentos ejecutivos
+              y cualquier disposición de alcance general emanada de un órgano público. También procede
+              contra la aprobación legislativa de convenios o tratados internacionales y contra las
+              acciones u omisiones del poder público que vulneren derechos constitucionales. La acción
+              se presenta ante la Sala Constitucional de la Corte Suprema de Justicia, que una vez
+              admitida confiere audiencia a la Procuraduría General de la República por quince días
+              hábiles (art. 79) y al órgano emisor de la norma impugnada para que ejerzan su derecho
+              de defensa antes del pronunciamiento de fondo.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué efectos tiene la sentencia que declara inconstitucional una ley en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 82 a 87 de la Ley N.° 7135 regulan los efectos de la sentencia estimatoria.
+              La declaratoria de inconstitucionalidad tiene efectos erga omnes, es decir, generales y
+              obligatorios para todos. La sentencia produce la anulación de la norma impugnada con
+              efectos declarativos y retroactivos a la fecha de vigencia de la norma, eliminándola del
+              ordenamiento jurídico. Sin embargo, la Sala Constitucional puede disponer un
+              dimensionamiento temporal diferente de los efectos en resguardo de la seguridad jurídica
+              o de derechos adquiridos de buena fe. La sentencia estimatoria vincula a todos los poderes
+              del Estado, los órganos públicos y los particulares. Las resoluciones de la Sala
+              Constitucional son vinculantes erga omnes, salvo para sí misma, lo que le permite
+              evolucionar su jurisprudencia. Este control concentrado de constitucionalidad convierte a
+              la Sala en el garante último de la supremacía constitucional frente a las normas del
+              ordenamiento infraconstitucional costarricense.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1323,6 +2038,76 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           perjuicios causados por sanciones ilegítimas.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre procedimientos sancionatorios
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué derechos tiene una persona sometida a un procedimiento sancionatorio administrativo?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 39 y 41 de la Constitución Política consagran las garantías fundamentales
+              del debido proceso aplicables a todo procedimiento sancionatorio. Estas incluyen: la
+              notificación del inicio del procedimiento y de los cargos formulados, el acceso irrestricto
+              al expediente administrativo, el derecho de audiencia previa a la imposición de cualquier
+              sanción, el derecho a la defensa técnica mediante abogado, el principio de tipicidad
+              (solo pueden sancionarse conductas previamente descritas en la norma), el principio de
+              culpabilidad, la presunción de inocencia y la prohibición de doble sanción por los mismos
+              hechos (non bis in idem). Cuando el acto final pueda causar perjuicio grave o suprimir
+              derechos, la LGAP exige el procedimiento ordinario de los artículos 308 a 319 con
+              comparecencia oral y privada. El artículo 309 garantiza que un órgano director imparcial
+              instruya el expediente. La violación de cualquiera de estas garantías constituye un vicio
+              de nulidad absoluta impugnable ante la jurisdicción contencioso-administrativa.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuál es la diferencia entre el procedimiento ordinario y el sumario en materia sancionatoria?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La LGAP establece dos tipos de procedimiento administrativo para la imposición de
+              sanciones. El procedimiento ordinario, regulado en los artículos 308 a 319, es obligatorio
+              cuando el acto final pueda causar perjuicio grave al administrado al suprimir o limitar
+              sus derechos subjetivos. Garantiza la comparecencia oral y privada ante un órgano director
+              (art. 309), el derecho a ofrecer prueba de descargo, formular alegatos y ejercer defensa
+              técnica. El procedimiento sumario, regulado en los artículos 320 a 326, se aplica cuando
+              el acto final no pueda causar perjuicio grave ni suprimir derechos subjetivos; se
+              caracteriza por plazos más breves y tramitación simplificada, aunque debe respetar
+              igualmente las garantías esenciales del debido proceso. La distinción es fundamental porque
+              la aplicación indebida de un procedimiento sumario cuando correspondía el ordinario
+              constituye un vicio de nulidad absoluta del acto sancionatorio resultante (art. 223 LGAP),
+              que puede ser declarada incluso de oficio. Corporación GC verifica la correcta elección
+              del procedimiento como primera línea de defensa en casos sancionatorios.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se impugna una sanción administrativa en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las sanciones administrativas pueden impugnarse en dos instancias sucesivas. En vía
+              administrativa, los artículos 342 a 352 de la LGAP regulan los recursos procedentes: el
+              recurso de revocatoria se interpone ante el mismo órgano que dictó la sanción dentro de
+              tres días hábiles, y el recurso de apelación se presenta subsidiariamente ante el superior
+              jerárquico. Ambos recursos permiten la revisión integral del acto, tanto en sus aspectos
+              de legalidad como de oportunidad. El agotamiento de estos recursos constituye, como regla
+              general, un presupuesto procesal para acceder a la jurisdicción contencioso-administrativa
+              conforme al artículo 31 del CPCA. Una vez agotada la vía administrativa, el sancionado
+              puede demandar ante el Tribunal Contencioso Administrativo conforme a los artículos 1 y 2
+              del CPCA, solicitando la anulación del acto sancionatorio, la restitución de derechos y la
+              indemnización de daños y perjuicios. Durante el proceso jurisdiccional pueden solicitarse
+              medidas cautelares (arts. 19-30 CPCA) para suspender los efectos de la sanción impugnada.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1424,6 +2209,76 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           servidor investigado.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre empleo público
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué procedimiento debe seguirse para despedir a un servidor público en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Para despedir a un servidor público cubierto por el régimen de Servicio Civil, la
+              Administración debe tramitar obligatoriamente el procedimiento administrativo ordinario
+              regulado en los artículos 308 a 319 de la LGAP. Este procedimiento garantiza al servidor
+              investigado el derecho a conocer los cargos formulados, acceder al expediente
+              administrativo, ofrecer prueba de descargo, participar en la comparecencia oral y privada,
+              y contar con asistencia letrada. El artículo 309 exige que un órgano director imparcial
+              instruya el procedimiento. El régimen disciplinario del Estatuto de Servicio Civil
+              (Ley N.° 1581, arts. 59-82) establece las causales y tipos de sanción: amonestación
+              verbal, amonestación escrita, suspensión sin goce de salario y despido. La Ley Marco de
+              Empleo Público (Ley N.° 10159) introduce además un régimen disciplinario propio con
+              tipificación de faltas leves, graves y gravísimas. La omisión del procedimiento o la
+              violación de cualquiera de sus garantías esenciales constituye nulidad absoluta impugnable.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se impugna un despido en el sector público costarricense?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El servidor público despedido cuenta con varias vías de impugnación. En primera instancia,
+              puede acudir al Tribunal de Servicio Civil, regulado en los artículos 7 a 14 del Estatuto
+              de Servicio Civil (Ley N.° 1581), que es el órgano especializado competente para conocer
+              en alzada de los reclamos contra decisiones de despido. El Tribunal puede confirmar,
+              revocar o modificar la decisión impugnada, y su resolución agota la vía administrativa.
+              Posteriormente, agotada la vía administrativa, el servidor puede demandar ante la
+              jurisdicción contencioso-administrativa conforme a los artículos 1 y 2 del CPCA,
+              solicitando la anulación del acto de despido, el reconocimiento de salarios dejados de
+              percibir, la reinstalación en el cargo y la indemnización de daños y perjuicios causados.
+              Durante la tramitación del procedimiento disciplinario, la Administración puede disponer la
+              suspensión provisional del servidor con goce de salario (art. 67 del Estatuto), como medida
+              cautelar que no constituye sanción ni implica pronunciamiento sobre culpabilidad.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué cambió la Ley Marco de Empleo Público para los servidores del Estado?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley N.° 10159, Ley Marco de Empleo Público, estableció un régimen unificado aplicable
+              a la generalidad de las instituciones del Estado, buscando armonizar las distintas
+              normativas sectoriales que regulaban el empleo público de manera fragmentaria. La ley
+              regula las condiciones de ingreso al servicio público, la clasificación de puestos, el
+              sistema de remuneraciones basado en salario global, la evaluación del desempeño como
+              requisito para la permanencia, la movilidad laboral entre instituciones y un régimen
+              disciplinario propio con tipificación de faltas leves, graves y gravísimas. El régimen
+              disciplinario de la Ley Marco establece sanciones específicas y un procedimiento
+              sancionatorio que debe respetar las garantías del debido proceso consagradas en los
+              artículos 39 y 41 de la Constitución Política y desarrolladas en los artículos 308 a 319
+              de la LGAP. La ley coexiste con el Estatuto de Servicio Civil (Ley N.° 1581) y su
+              articulación requiere un análisis especializado para determinar cuál normativa prevalece
+              en cada caso concreto según la institución y el tipo de servidor involucrado.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
   "servicio-publico": (
@@ -1546,6 +2401,75 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           respetado los criterios establecidos en la Ley 7593.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre regulación de servicios públicos
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se fijan las tarifas de los servicios públicos en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las tarifas de los servicios públicos son fijadas por la Autoridad Reguladora de los
+              Servicios Públicos (ARESEP) conforme a la Ley N.° 7593. El artículo 30 establece que
+              para fijar tarifas la ARESEP debe considerar criterios de equidad social, sostenibilidad
+              ambiental, conservación de energía y eficiencia económica. El artículo 31 dispone que las
+              tarifas deben contemplar únicamente los costos necesarios para prestar el servicio,
+              incluyendo una retribución competitiva que permita su adecuada expansión. El procedimiento
+              de fijación tarifaria puede ser iniciado por el prestador del servicio o de oficio por la
+              ARESEP (art. 32), y las solicitudes deben acompañarse de estudios técnicos y financieros
+              justificativos. Antes de dictar la resolución tarifaria, el artículo 36 exige la
+              celebración de una audiencia pública en la que usuarios, prestadores y cualquier interesado
+              pueden presentar oposiciones técnicas y jurídicas que la Autoridad debe considerar y
+              resolver motivadamente. La omisión de la audiencia genera nulidad del acto tarifario.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué recursos existen contra una resolución tarifaria de ARESEP?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El artículo 53 de la Ley 7593 establece los recursos administrativos procedentes contra
+              las resoluciones de la ARESEP. El recurso de revocatoria se interpone ante el mismo órgano
+              que dictó la resolución para que reconsidere su decisión. El recurso de apelación se
+              interpone subsidiariamente ante la Junta Directiva de la ARESEP como superior jerárquico.
+              Ambos recursos deben presentarse dentro de los cinco días hábiles siguientes a la
+              notificación de la resolución impugnada. Su interposición constituye requisito previo para
+              acudir a la vía contencioso-administrativa conforme a la regla de agotamiento de la vía
+              administrativa. Agotados los recursos, el administrado puede demandar ante el Tribunal
+              Contencioso Administrativo conforme al artículo 1 del CPCA, que puede revisar tanto la
+              legalidad formal del procedimiento regulatorio como la razonabilidad técnica de las
+              resoluciones tarifarias. El TCA verifica que se hayan respetado los criterios de equidad
+              social, eficiencia y sostenibilidad establecidos en los artículos 30 a 32 de la Ley 7593.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué sanciones puede imponer ARESEP a los prestadores de servicios públicos?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 38 a 41 de la Ley 7593 regulan el régimen sancionatorio aplicable a los
+              prestadores de servicios públicos. El artículo 38 tipifica las infracciones, que incluyen
+              la prestación del servicio sin autorización, el incumplimiento de las normas de calidad y
+              la obstrucción de la labor fiscalizadora de la ARESEP. El artículo 39 establece las
+              sanciones aplicables, que van desde multas hasta la revocatoria de la concesión o el
+              permiso de operación. La revocatoria de la concesión, regulada en los artículos 40 y 41,
+              procede ante incumplimientos graves y reiterados del prestador y constituye la sanción más
+              severa del régimen. Contra estas sanciones proceden los recursos administrativos previstos
+              en el artículo 53 de la Ley: revocatoria y apelación dentro de cinco días hábiles.
+              Agotada la vía administrativa, las resoluciones sancionatorias son impugnables ante la
+              jurisdicción contencioso-administrativa conforme al CPCA, donde puede solicitarse la
+              anulación de la sanción, la restitución de derechos y la indemnización de daños causados.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1670,6 +2594,77 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           resuelve el proceso contra la municipalidad.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre materia municipal
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se impugna una decisión de la municipalidad en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 142 a 161 del Código Municipal (Ley N.° 7794) regulan los recursos
+              administrativos contra los actos municipales. El recurso de revocatoria se interpone ante
+              el Alcalde Municipal contra los actos que este haya dictado, y el recurso de apelación se
+              presenta subsidiariamente ante el Concejo Municipal como órgano superior. Contra los
+              acuerdos del propio Concejo cabe revocatoria ante el mismo cuerpo colegiado. Estos
+              recursos deben interponerse dentro de los cinco días hábiles siguientes a la notificación
+              del acto y constituyen el mecanismo de agotamiento de la vía administrativa previo a la
+              impugnación jurisdiccional. Agotada la vía administrativa conforme al artículo 31 del
+              CPCA, el administrado puede demandar ante el Tribunal Contencioso Administrativo conforme
+              a los artículos 1 y 10 del CPCA, solicitando la anulación del acto municipal, el
+              reconocimiento de situaciones jurídicas individualizadas y la condena al pago de daños y
+              perjuicios. También pueden solicitarse medidas cautelares para proteger derechos durante
+              el proceso (arts. 19-30 CPCA).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué requisitos exige una municipalidad para otorgar una patente comercial?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 68 a 74 del Código Municipal regulan el régimen de licencias municipales.
+              El artículo 68 establece que para ejercer cualquier actividad lucrativa en el cantón se
+              requiere contar con la licencia municipal respectiva (patente comercial). El artículo 69
+              dispone que la municipalidad, mediante acuerdo del Concejo, fija las condiciones y
+              requisitos para su otorgamiento, que generalmente incluyen: uso de suelo conforme al plan
+              regulador, permiso sanitario, póliza de riesgos del trabajo, estar al día con las
+              obligaciones tributarias municipales y cumplir los requisitos específicos según la actividad.
+              El artículo 70 prevé las causales de denegación de la licencia. La patente municipal
+              constituye un tributo cuyo hecho generador es el ejercicio de la actividad lucrativa
+              autorizada (art. 74). El artículo 81 bis regula la suspensión y cancelación de la patente
+              por incumplimiento de obligaciones tributarias. La denegación injustificada puede
+              impugnarse mediante los recursos de los artículos 142 a 161 del Código Municipal.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué alcance tiene la autonomía municipal frente al Gobierno Central?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La autonomía municipal tiene rango constitucional. El artículo 170 de la Constitución
+              Política establece que las corporaciones municipales son autónomas, y el artículo 4 del
+              Código Municipal (Ley N.° 7794) desarrolla esta autonomía señalando que la municipalidad
+              posee autonomía política, administrativa y financiera. Esta autonomía comprende potestades
+              significativas: dictar reglamentos autónomos de organización y servicio, crear tributos
+              locales conforme a la ley (arts. 68-74), administrar y prestar servicios públicos
+              municipales, y ejercer competencias en materia de planificación urbana y control de
+              construcciones. Los artículos 168 a 175 de la Constitución delimitan el marco
+              constitucional de esta autonomía. Sin embargo, la autonomía no es absoluta: las
+              municipalidades están sujetas al principio de legalidad (art. 11 LGAP), sus actos son
+              fiscalizables por la Contraloría General de la República en materia presupuestaria
+              (art. 184 de la Constitución), y sus resoluciones son impugnables ante la jurisdicción
+              contencioso-administrativa conforme al CPCA.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1792,6 +2787,76 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           el lucro cesante demostrados.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre dominio público
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué son los bienes de dominio público y qué protección especial tienen?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los bienes de dominio público son aquellos que por ley están destinados de un modo
+              permanente a cualquier servicio de utilidad general, conforme al artículo 261 del Código
+              Civil. Están sujetos a un régimen de protección reforzada basado en tres principios
+              fundamentales: inalienabilidad (no pueden venderse ni enajenarse), imprescriptibilidad (no
+              pueden adquirirse por prescripción o usucapión) e inembargabilidad (no pueden ser objeto
+              de embargo). El artículo 262 del Código Civil consagra expresamente los dos primeros
+              principios. La jurisprudencia constitucional ha reiterado que estos principios constituyen
+              el núcleo esencial del régimen demanial y se aplican a todos los bienes de dominio público
+              con independencia de su naturaleza: playas, ríos, carreteras, plazas, edificios públicos,
+              entre otros. Los particulares pueden acceder al uso de estos bienes mediante concesiones
+              (arts. 154-160 LGAP) o permisos de uso precarios (art. 154 LGAP, art. 62 del Código
+              Municipal), pero nunca adquirir su propiedad.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué diferencia hay entre una concesión y un permiso de uso sobre bienes del Estado?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La concesión de uso, regulada en los artículos 154 a 160 de la LGAP, otorga al particular
+              un derecho subjetivo de utilizar un bien de dominio público de manera exclusiva durante un
+              plazo determinado. El concesionario adquiere un derecho cuya estabilidad depende del
+              cumplimiento de las obligaciones del acto concesional y de la subsistencia del interés
+              público. Si la Administración revoca la concesión por razones de interés público y no por
+              incumplimiento, el concesionario tiene derecho a indemnización integral conforme a los
+              artículos 190 a 194 de la LGAP y al artículo 45 de la Constitución. El permiso de uso, en
+              cambio, es un acto administrativo unilateral que autoriza el uso temporal y precario del
+              bien (art. 154 LGAP, art. 62 del Código Municipal). No genera un derecho subjetivo sino
+              una situación de tolerancia administrativa revocable en cualquier momento por razones de
+              interés público, sin que proceda indemnización alguna. Esta distinción es fundamental para
+              determinar los derechos del particular frente a la Administración.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Puede la Administración desalojar a quien ocupa un bien de dominio público sin autorización?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí. La Administración titular del dominio público está facultada para ordenar y ejecutar
+              el desalojo de quienes ocupen bienes demaniales sin título legítimo. El artículo 8 del
+              Código Municipal (Ley N.° 7794) otorga a las municipalidades la potestad de recuperar
+              administrativamente los bienes de dominio público que se encuentren en posesión indebida
+              de particulares. En materia de zona marítimo terrestre, el artículo 13 de la Ley 6043
+              dispone que las autoridades deben impedir las ocupaciones ilegales, y el artículo 57
+              establece sanciones que incluyen la demolición de obras a costa del infractor. El desalojo
+              administrativo debe respetar el debido proceso conforme a los artículos 308 a 319 de la
+              LGAP, garantizando la notificación, el derecho de audiencia y la posibilidad de recurrir.
+              Las resoluciones que ordenen desalojos son impugnables ante la jurisdicción
+              contencioso-administrativa conforme al artículo 10 del CPCA. Los ocupantes no pueden
+              alegar derechos posesorios sobre bienes demaniales dada su imprescriptibilidad
+              constitucional (art. 262 del Código Civil).
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -1917,6 +2982,77 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           artículos 1 y 10 del CPCA.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre zona marítimo terrestre
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es la zona marítimo terrestre y qué restricciones tiene?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La zona marítimo terrestre (ZMT) es una franja de doscientos metros de ancho a lo largo
+              de los litorales atlántico y pacífico de Costa Rica, medida horizontalmente a partir de
+              la línea de la pleamar ordinaria, conforme a los artículos 1 a 9 de la Ley N.° 6043. Se
+              divide en dos franjas: la zona pública (los primeros cincuenta metros desde la pleamar),
+              que es de libre tránsito y no puede ser objeto de concesión ni ocupación bajo ningún
+              título (art. 9), y la zona restringida (los ciento cincuenta metros restantes), que puede
+              darse en concesión a particulares conforme al procedimiento legal. Los bienes situados en
+              la ZMT son inalienables e imprescriptibles, es decir, no pueden venderse ni adquirirse
+              por prescripción. Los artículos 6 a 8 establecen regulaciones adicionales para islas,
+              manglares, esteros y terrenos adyacentes a desembocaduras de ríos. Las construcciones u
+              ocupaciones sin autorización son sancionadas con demolición a costa del infractor (art. 57)
+              y las autoridades municipales deben ordenar la paralización inmediata de obras no
+              autorizadas (art. 60).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se obtiene una concesión en la zona restringida de la ZMT?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las concesiones en la zona restringida están reguladas en los artículos 38 a 56 de la Ley
+              6043. El artículo 39 establece que las concesiones se otorgan por acuerdo del Concejo
+              Municipal, previo cumplimiento de los requisitos legales y con la aprobación del Instituto
+              Costarricense de Turismo (ICT) o del Instituto de Desarrollo Rural (INDER), según
+              corresponda conforme a los artículos 18 a 26. El requisito previo indispensable es la
+              existencia de un plan regulador costero aprobado para la zona (art. 38), cuya elaboración
+              corresponde a la municipalidad con la aprobación del ICT o INDER. Los plazos de concesión
+              no pueden exceder de veinte años, prorrogables por períodos iguales (art. 48). El artículo
+              42 establece prioridades para el otorgamiento, favoreciendo a ocupantes censados y a
+              quienes desarrollen actividades turísticas o productivas. El concesionario queda obligado
+              al pago del canon fijado por la municipalidad y al cumplimiento de las condiciones del
+              acto concesional. El incumplimiento grave puede resultar en la caducidad de la concesión.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué consecuencias tiene construir sin permiso en la zona marítimo terrestre?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 57 a 65 de la Ley 6043 establecen un régimen sancionatorio severo para las
+              construcciones y ocupaciones ilegales en la ZMT. El artículo 57 dispone que quien
+              construya, realice obras o se instale sin la debida autorización será sancionado con la
+              demolición de las obras a su costa, sin perjuicio de las sanciones penales que correspondan.
+              El artículo 60 obliga a las autoridades municipales a ordenar la paralización inmediata de
+              las obras no autorizadas y a denunciar los hechos ante el Ministerio Público. La
+              municipalidad, como custodia de la ZMT conforme al artículo 27, tiene la potestad y el
+              deber de impedir las ocupaciones ilegales y de iniciar los procedimientos sancionatorios
+              correspondientes. Las resoluciones que ordenen la demolición o el desalojo son impugnables
+              ante la jurisdicción contencioso-administrativa conforme a los artículos 1 y 10 del CPCA.
+              El infractor no puede alegar derechos posesorios ni adquirir propiedad sobre bienes
+              demaniales dada su imprescriptibilidad constitucional. Corporación GC asesora tanto en la
+              defensa como en la impugnación de estas resoluciones.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -2042,6 +3178,79 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           indemnización por los daños sufridos.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho urbanístico
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es un plan regulador cantonal y cómo afecta mi propiedad?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El plan regulador cantonal es el instrumento técnico-jurídico que define la política de
+              desarrollo urbano del cantón, regulado en los artículos 23 a 38 de la Ley de Planificación
+              Urbana (Ley N.° 4240). El artículo 23 establece que el plan regulador define el desarrollo
+              urbano del cantón mediante la zonificación del uso del suelo: residencial, comercial,
+              industrial, agrícola o de protección ambiental. Los artículos 24 a 28 detallan sus
+              componentes: reglamento de zonificación, reglamento de fraccionamiento, reglamento de mapa
+              oficial, reglamento de construcciones y reglamento de renovación urbana. El plan establece
+              para cada zona los usos permitidos, la cobertura máxima del lote, la altura máxima de las
+              edificaciones, los retiros mínimos y la densidad de población. Su aprobación corresponde al
+              Concejo Municipal previo dictamen del INVU. Las restricciones urbanísticas constituyen
+              limitaciones de interés social al derecho de propiedad cuya constitucionalidad ha sido
+              reconocida por la Sala Constitucional, siempre que sean razonables y proporcionadas
+              conforme al artículo 45 de la Constitución Política.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué hago si la municipalidad me deniega un permiso de construcción?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Si la municipalidad deniega un permiso de construcción o impone condiciones que se estiman
+              ilegales o desproporcionadas, el solicitante puede impugnar la resolución mediante los
+              recursos administrativos previstos en los artículos 142 a 161 del Código Municipal (Ley
+              N.° 7794): recurso de revocatoria ante el Alcalde y recurso de apelación subsidiario ante
+              el Concejo Municipal, dentro de cinco días hábiles. La denegación debe ser motivada,
+              indicando las normas urbanísticas o constructivas incumplidas conforme a los artículos 65
+              a 76 de la Ley 4240 y los artículos 74 a 87 de la Ley de Construcciones (Ley N.° 833).
+              Agotada la vía administrativa, procede la demanda contencioso-administrativa conforme a los
+              artículos 1 y 10 del CPCA, mediante la cual el Tribunal puede anular la denegación ilegal,
+              ordenar el otorgamiento del permiso y condenar a la municipalidad al pago de daños y
+              perjuicios causados por la demora o denegación injustificada. Si la Administración no
+              resuelve dentro del plazo legal, puede operar el silencio administrativo positivo conforme
+              al artículo 330 de la LGAP en materia autorizatoria.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Se puede demandar a la municipalidad por restricciones urbanísticas excesivas?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí. Las restricciones urbanísticas que limitan el derecho de propiedad más allá de lo
+              razonable pueden ser impugnadas por el propietario afectado. El artículo 45 de la
+              Constitución Política garantiza la inviolabilidad de la propiedad, admitiendo limitaciones
+              de interés social únicamente cuando sean proporcionales y no vacíen de contenido el
+              derecho. El artículo 37 de la Ley 4240 establece que el plan regulador puede imponer
+              restricciones al uso de la propiedad, pero estas deben ser razonables y compensadas cuando
+              constituyan una privación singular que exceda las cargas normales de la propiedad. El
+              artículo 10 del CPCA permite al propietario demandar ante el Tribunal Contencioso
+              Administrativo la anulación de las restricciones ilegales y la indemnización por los daños
+              sufridos. Cuando la restricción equivale a una expropiación de hecho, el propietario puede
+              invocar el artículo 45 constitucional para exigir indemnización previa y justa. La Sala
+              Constitucional ha establecido que las limitaciones urbanísticas deben respetar un balance
+              entre el interés público y los derechos del propietario conforme al principio de
+              proporcionalidad.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -2168,6 +3377,79 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           presupuesto.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre materia presupuestaria
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué papel tiene la Contraloría General en el control del presupuesto público?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Contraloría General de la República es el órgano constitucional encargado de la
+              fiscalización superior de la Hacienda Pública. El artículo 183 de la Constitución
+              Política la establece como institución auxiliar de la Asamblea Legislativa en la vigilancia
+              de la Hacienda Pública. El artículo 184 le atribuye funciones fundamentales: fiscalizar la
+              ejecución y liquidación de los presupuestos ordinarios y extraordinarios, examinar y
+              aprobar los presupuestos de las municipalidades e instituciones autónomas, y enviar
+              anualmente a la Asamblea una memoria sobre el movimiento de fondos públicos. La Ley
+              Orgánica de la Contraloría (Ley N.° 7428), en sus artículos 1 a 12, desarrolla su
+              organización, competencias y procedimientos, otorgándole independencia funcional y
+              administrativa. El artículo 75 de la Ley 8131 establece que los presupuestos de entes
+              descentralizados deben ser aprobados por la Contraloría, que puede improbar total o
+              parcialmente un presupuesto cuando contenga partidas que contravengan disposiciones legales
+              (art. 77). Sus resoluciones son impugnables conforme a los artículos 67 a 72 de la Ley 7428.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se impugna una resolución de la Contraloría General de la República?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las resoluciones de la Contraloría son impugnables mediante los mecanismos que establece
+              su Ley Orgánica (Ley N.° 7428). Los artículos 67 a 72 regulan los recursos procedentes:
+              el recurso de revocatoria se interpone ante el Despacho Contralor que dictó la resolución
+              y el recurso de apelación se presenta ante la División correspondiente. Agotada la vía
+              administrativa, las resoluciones de la Contraloría pueden impugnarse ante la jurisdicción
+              contencioso-administrativa conforme a los artículos 1 y 10 del CPCA. El Tribunal
+              Contencioso Administrativo puede revisar la legalidad de los actos del órgano contralor,
+              incluyendo las resoluciones de aprobación o improbación presupuestaria y las disposiciones
+              emitidas en ejercicio de sus funciones fiscalizadoras. Esta vía jurisdiccional permite
+              solicitar la anulación de resoluciones que el administrado considere contrarias al
+              ordenamiento jurídico, así como la indemnización de daños y perjuicios causados. La
+              impugnación requiere un análisis especializado del marco presupuestario constitucional
+              (arts. 176-187) y de la Ley 8131.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es un procedimiento de responsabilidad fiscal y qué consecuencias tiene?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los procedimientos de responsabilidad fiscal permiten determinar la responsabilidad
+              patrimonial de funcionarios y exfuncionarios públicos por el manejo irregular de fondos
+              públicos. Los artículos 68 a 73 de la Ley N.° 7428 facultan a la Contraloría General
+              para instruir procedimientos administrativos tendientes a determinar responsabilidad
+              disciplinaria y patrimonial de quienes administren fondos públicos. Los artículos 107 a
+              114 de la Ley 8131 regulan el régimen de responsabilidad en la administración financiera,
+              estableciendo que los funcionarios responden personal y pecuniariamente por los daños que
+              causen a la Hacienda Pública por dolo, culpa grave o incumplimiento de sus deberes. Las
+              consecuencias incluyen la obligación de resarcir el daño patrimonial causado al erario
+              público, sanciones disciplinarias y la inhabilitación para el ejercicio de cargos públicos
+              en casos graves. Las resoluciones que impongan responsabilidad fiscal son impugnables en
+              vía administrativa y, posteriormente, ante la jurisdicción contencioso-administrativa
+              conforme al CPCA. Corporación GC defiende a funcionarios investigados en estos
+              procedimientos.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -2300,6 +3582,76 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           jurisdicción contencioso-administrativa.
         </p>
       </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre comercio internacional
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es una investigación antidumping y cómo se inicia en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las investigaciones antidumping tienen por objeto determinar si las importaciones de un
+              producto se realizan a precios inferiores a su valor normal en el país de origen (dumping)
+              y si dicha práctica causa daño importante a la producción nacional. La Ley N.° 7638
+              atribuye al Ministerio de Comercio Exterior (COMEX) la competencia para conducir estas
+              investigaciones conforme al Acuerdo relativo a la Aplicación del Artículo VI del GATT de
+              1994 (Acuerdo Antidumping de la OMC). Los artículos 1 a 15 del Acuerdo establecen los
+              requisitos de inicio, los métodos de determinación del dumping y del daño, las medidas
+              provisionales y los derechos definitivos aplicables. La solicitud puede ser presentada por
+              la rama de producción nacional afectada, que debe acreditar que representa al menos el
+              veinticinco por ciento de la producción total del producto similar, o iniciarse de oficio
+              por la autoridad investigadora. Si se determina la existencia de dumping y daño, COMEX
+              puede imponer derechos antidumping que neutralicen el margen de dumping calculado.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué son las medidas de salvaguardia y cuándo se aplican?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las medidas de salvaguardia son instrumentos de defensa comercial que permiten restringir
+              temporalmente las importaciones de un producto cuando estas se incrementan en cantidades
+              tales que causan o amenazan causar un daño grave a la producción nacional. La Ley de
+              Ejecución de los Acuerdos de la Ronda Uruguay (Ley N.° 7473) regula el procedimiento en
+              Costa Rica, conforme al Acuerdo sobre Salvaguardias de la OMC. Los artículos 1 a 18 de la
+              Ley 7473 establecen los requisitos de inicio de la investigación, los criterios para
+              determinar el daño grave, las medidas provisionales de urgencia y las medidas definitivas
+              que pueden consistir en elevación de aranceles o imposición de contingentes cuantitativos
+              por un período máximo de cuatro años, prorrogable en circunstancias excepcionales. A
+              diferencia de las medidas antidumping, las salvaguardias no requieren demostrar una
+              práctica desleal sino un incremento súbito de importaciones que cause daño a la industria
+              nacional. Las resoluciones que impongan estas medidas son impugnables ante la jurisdicción
+              contencioso-administrativa y ante los mecanismos de solución de controversias de la OMC.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se resuelven las disputas comerciales internacionales en que participa Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Las controversias comerciales internacionales se canalizan a través de mecanismos
+              institucionales establecidos en los acuerdos multilaterales y bilaterales. El Entendimiento
+              relativo a las Normas y Procedimientos por los que se rige la Solución de Diferencias de
+              la OMC establece un sistema vinculante de paneles y apelación para resolver disputas entre
+              Estados miembros sobre la interpretación y aplicación de los acuerdos comerciales. En el
+              ámbito regional, el Capítulo 20 del DR-CAFTA establece un mecanismo de consultas y paneles
+              arbitrales para resolver controversias sobre la aplicación del tratado. La Ley N.° 7472
+              (Ley de Promoción de la Competencia) regula internamente las prácticas monopolísticas: los
+              artículos 11 a 28 prohíben las prácticas absolutas (fijación de precios, repartición de
+              mercados, art. 11) y las relativas (abuso de posición dominante, art. 12). La Comisión
+              para Promover la Competencia (COPROCOM) investiga y sanciona estas conductas. Sus
+              resoluciones son impugnables ante la jurisdicción contencioso-administrativa del CPCA.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   ),
 
@@ -2428,6 +3780,76 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         pública inscribible en el Registro Nacional.
       </p>
     </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho civil
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo funciona una demanda por responsabilidad civil en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La responsabilidad civil en Costa Rica se fundamenta en el Código Civil. La responsabilidad
+              contractual surge del incumplimiento de una obligación pactada (arts. 1022 y ss.), mientras
+              que la extracontractual o aquiliana nace de un hecho ilícito que causa daño sin vínculo
+              obligacional previo. El artículo 1045 del Código Civil establece que todo aquel que por
+              dolo, falta, negligencia o imprudencia causa un daño a otro está obligado a repararlo junto
+              con los perjuicios. El artículo 1048 extiende la responsabilidad al propietario de un
+              edificio por los daños que cause su ruina. La demanda se tramita como proceso ordinario
+              civil conforme a los artículos 35 a 51 de la Ley 9342 (Código Procesal Civil), bajo los
+              principios de oralidad, inmediación y concentración. El demandante debe acreditar cuatro
+              elementos: el hecho generador, el daño efectivamente sufrido, el nexo causal entre ambos
+              y el factor de atribución (dolo o culpa). En materia contractual, el incumplimiento se
+              presume imputable al deudor salvo prueba de caso fortuito o fuerza mayor.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué es el proceso monitorio y cómo sirve para cobrar deudas judicialmente?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El proceso monitorio es el instrumento procesal diseñado para el cobro de obligaciones
+              dinerarias líquidas, exigibles y de plazo vencido, regulado en los artículos 100 a 107
+              de la Ley 9342 (Código Procesal Civil). El acreedor presenta la demanda acompañada del
+              título que constituya prueba del crédito: letras de cambio, pagarés, facturas, contratos
+              de préstamo o certificaciones contables. El tribunal dicta una resolución intimatoria que
+              ordena al deudor el pago o la formulación de oposición fundamentada dentro de quince días.
+              Si el deudor no se opone, la resolución intimatoria adquiere firmeza y carácter de título
+              ejecutivo, permitiendo el embargo y remate de bienes del deudor para satisfacer la
+              obligación. Si formula oposición, el proceso se reconvierte en ordinario o sumario según
+              la cuantía, conforme a los artículos 35 y 108 de la Ley 9342. El monitorio es
+              especialmente eficaz para la recuperación de créditos documentados y constituye la vía
+              más expedita del sistema procesal civil costarricense para el cobro judicial de deudas.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se tramita un proceso sucesorio en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El proceso sucesorio regula la transmisión del patrimonio de una persona fallecida a sus
+              herederos y legatarios. El Código Civil (arts. 520 a 635) distingue entre sucesión
+              testamentaria, cuando existe testamento válido, y sucesión legítima o intestada, cuando
+              no lo hay. Los artículos 114 a 129 de la Ley 9342 regulan el procedimiento: apertura del
+              proceso ante el Juzgado Civil competente, declaratoria de herederos conforme al testamento
+              o al orden de sucesión legal, inventario y avalúo de los bienes del causante, rendición de
+              cuentas por el albacea o administrador, y partición de los bienes entre los herederos. La
+              partición puede ser voluntaria, cuando los herederos acuerdan la distribución, o judicial,
+              cuando existe desacuerdo. En ambos casos, el proceso concluye con la adjudicación formal de
+              los bienes mediante escritura pública inscribible en el Registro Nacional conforme a la Ley
+              N.° 5695. Los conflictos entre herederos sobre la validez del testamento, la calidad de
+              heredero o la valoración de bienes se resuelven dentro del mismo proceso sucesorio o
+              mediante procesos incidentales según la naturaleza de la controversia.
+            </p>
+          </div>
+        </div>
+      </section>
   </>
 ),
 
@@ -2560,6 +3982,76 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         fortalece significativamente la posición procesal de la víctima.
       </p>
     </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho de familia
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuáles son las causales de divorcio en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El Código de Familia regula la disolución del vínculo matrimonial en los artículos 48 a
+              65. Existen dos vías principales. El divorcio por mutuo consentimiento (art. 48.7) procede
+              cuando ambos cónyuges acuerdan la separación y presentan un convenio que regula la guarda
+              de los hijos, el régimen de visitas, la pensión alimentaria y la liquidación del patrimonio
+              conyugal; el juez homologa el convenio siempre que no vulnere los derechos de los menores.
+              El divorcio contencioso procede por las causales taxativas del artículo 48: adulterio,
+              atentado contra la vida del cónyuge o los hijos, sevicia, separación judicial por más de
+              un año y ausencia legalmente declarada. El artículo 58 establece que la sentencia de
+              divorcio disuelve el vínculo matrimonial y habilita la liquidación del régimen patrimonial
+              conforme a los artículos 37 a 52 del Código de Familia. El proceso se ventila ante los
+              Juzgados de Familia. En la liquidación, cada cónyuge tiene derecho al cincuenta por ciento
+              del valor neto de los bienes gananciales adquiridos durante el matrimonio (art. 41).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se fija una pensión alimentaria y qué pasa si no se paga?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley de Pensiones Alimentarias (Ley N.° 7654) regula la obligación alimentaria como un
+              deber recíproco entre cónyuges, ascendientes y descendientes. El artículo 1 define los
+              alimentos como las prestaciones para satisfacer necesidades de sustento, habitación,
+              vestido, asistencia médica, educación y recreación. El artículo 27 establece que el monto
+              se fija considerando las necesidades del beneficiario, las posibilidades económicas del
+              obligado y el nivel de vida acostumbrado. El proceso se tramita ante los Juzgados de
+              Pensiones Alimentarias con un procedimiento expedito, y el artículo 17 permite la fijación
+              de una pensión provisional desde la interposición de la demanda. El incumplimiento de la
+              obligación alimentaria tiene consecuencias severas: el artículo 24 de la Ley 7654 faculta
+              al juez a decretar el apremio corporal del deudor, que constituye una medida coercitiva de
+              arresto hasta por seis meses. Esta medida puede reiterarse mientras subsista el
+              incumplimiento. Corporación GC asesora tanto a beneficiarios como a obligados alimentarios
+              en la determinación justa del monto y en los procedimientos de modificación.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se determina la guarda de los hijos menores cuando los padres se separan?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Los artículos 140 a 159 del Código de Familia regulan la patria potestad, la guarda, la
+              crianza y la educación de los hijos menores. La patria potestad corresponde a ambos
+              progenitores conjuntamente (art. 140) y comprende la custodia del menor, su representación
+              legal y la administración de sus bienes. Cuando los padres se separan, el juez determina
+              a cuál corresponde la guarda atendiendo al interés superior del niño, principio rector
+              consagrado en el artículo 2 del Código de la Niñez y la Adolescencia. El progenitor no
+              custodio conserva el derecho a un régimen de visitas que garantice el contacto regular con
+              sus hijos (art. 143), cuyas condiciones, días y horarios fija el juez. El incumplimiento
+              del régimen puede dar lugar a medidas de apremio. El artículo 158 establece que la patria
+              potestad puede suspenderse o extinguirse por causales como abandono, maltrato o conducta
+              que ponga en peligro la salud, seguridad o moralidad del menor. El proceso se ventila ante
+              los Juzgados de Familia y las medidas de protección pueden solicitarse de forma urgente.
+            </p>
+          </div>
+        </div>
+      </section>
   </>
 ),
 
@@ -2696,6 +4188,78 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         del asunto para la jurisprudencia laboral.
       </p>
     </Instrumento>
+
+      {/* ── Preguntas Frecuentes ── */}
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho laboral
+        </h2>
+
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué derechos tiene un trabajador despedido sin justa causa en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El despido sin justa causa genera el derecho del trabajador al pago de varias prestaciones
+              conforme al Código de Trabajo. El preaviso (art. 28) corresponde según la antigüedad del
+              trabajador; el auxilio de cesantía (art. 29) se calcula con base en el promedio salarial
+              de los últimos seis meses y puede alcanzar hasta veinte días por año trabajado; las
+              vacaciones proporcionales (art. 153) y el aguinaldo proporcional (art. 87 bis) se calculan
+              sobre el tiempo laborado sin disfrutar. El artículo 82 enumera las causas justas de
+              despido; si el empleador no logra acreditar la causal invocada en juicio, el despido se
+              reputa injustificado y procede la condena al pago íntegro de prestaciones. La demanda de
+              cobro se tramita ante los Juzgados de Trabajo mediante el proceso ordinario laboral oral
+              (arts. 422-457). El artículo 35 establece un plazo de prescripción de un año desde la
+              fecha del despido para reclamar preaviso, cesantía y demás prestaciones derivadas de la
+              terminación de la relación laboral. Actuar con prontitud es fundamental para preservar los
+              derechos.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo funciona el proceso laboral oral en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley N.° 9343 de Reforma Procesal Laboral transformó el proceso laboral de un sistema
+              escrito a uno oral, concentrado y por audiencias. Los artículos 422 a 457 del Código de
+              Trabajo reformado regulan el proceso ordinario. Los principios rectores son oralidad,
+              inmediación, concentración, celeridad y búsqueda de la verdad real (art. 422). La demanda
+              se presenta por escrito (art. 424) y el tribunal convoca a una audiencia preliminar
+              (art. 434) para intentar la conciliación, sanear el proceso, fijar los hechos
+              controvertidos y admitir la prueba. La audiencia de juicio (art. 444) es el momento
+              central: se evacúa la prueba testimonial, pericial y documental, y las partes formulan
+              alegatos orales. La sentencia se dicta oralmente al concluir la audiencia o dentro de los
+              cinco días siguientes (art. 451). Contra la sentencia procede el recurso de apelación ante
+              los Tribunales de Apelación de Trabajo (art. 476) dentro de tres días hábiles, y el
+              recurso de casación ante la Sala Segunda de la Corte Suprema de Justicia (arts. 483-492)
+              por vicios procesales o de fondo.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué protección existe contra la discriminación laboral en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley N.° 9343 de Reforma Procesal Laboral incorporó un procedimiento especial de tutela
+              contra actos discriminatorios en el ámbito laboral, regulado en los artículos 404 a 410
+              del Código de Trabajo reformado. El artículo 404 prohíbe toda discriminación por razones
+              de edad, etnia, sexo, religión, orientación sexual, estado civil, opinión política,
+              ascendencia nacional, origen social, filiación, discapacidad, afiliación sindical,
+              situación económica o cualquier forma análoga. El proceso de tutela se tramita con carácter
+              preferente ante los Juzgados de Trabajo y el artículo 408 establece una inversión de la
+              carga probatoria: corresponde al empleador demostrar que la medida cuestionada obedece a
+              motivos razonables y objetivos, no discriminatorios. La sentencia puede ordenar la cesación
+              de la conducta discriminatoria, la reinstalación del trabajador afectado, el pago de daños
+              y perjuicios y la indemnización por daño moral. Adicionalmente, los artículos 363 a 383
+              regulan el fuero sindical, que protege a los dirigentes sindicales contra represalias y
+              exige autorización judicial previa para su despido (art. 367).
+            </p>
+          </div>
+        </div>
+      </section>
   </>
 ),
 

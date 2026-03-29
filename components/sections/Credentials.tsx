@@ -1,5 +1,3 @@
-"use client";
-
 import { CREDENTIALS } from "@/lib/constants";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 

@@ -147,7 +147,9 @@ const jsonLdOrganization = {
     "Propiedad Intelectual",
     "Derecho Civil",
   ],
-  knowsLanguage: ["es", "en", "fr", "de", "it"],
+  /* knowsLanguage omitido intencionalmente a nivel de Organization:
+     los idiomas de atención se declaran en contactPoint.availableLanguage
+     para evitar que Google infiera páginas multilingües inexistentes. */
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -201,11 +203,13 @@ const jsonLdOrganization = {
     "@type": "ContactPoint",
     telephone: "+506 8317-9564",
     contactType: "customer service",
-    availableLanguage: ["es"],
+    availableLanguage: ["es", "en", "fr", "de", "it"],
     areaServed: "CR",
   },
   sameAs: [
     "https://www.linkedin.com/company/corporacion-gc",
+    "https://www.abogados.or.cr/consultaagremiados/",
+    "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=57436",
   ],
 };
 

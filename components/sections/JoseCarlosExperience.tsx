@@ -1,4 +1,3 @@
-"use client";
 
 import { JOSE_CARLOS_PROFILE } from "@/lib/constants";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";

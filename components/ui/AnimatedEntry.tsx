@@ -1,7 +1,12 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState, Children, cloneElement, isValidElement } from "react";
+
+/**
+ * CSS-based replacement for Framer Motion AnimatedEntry.
+ * Uses IntersectionObserver + CSS transitions (zero external dependencies).
+ * Spring-like cubic-bezier: cubic-bezier(0.34, 1.56, 0.64, 1)
+ */
 
 export function AnimatedEntry({
   children,
@@ -15,45 +20,51 @@ export function AnimatedEntry({
   direction?: "up" | "down" | "left" | "right";
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "-60px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   const offsets = {
-    up: { y: 32, x: 0 },
-    down: { y: -32, x: 0 },
-    left: { x: 32, y: 0 },
-    right: { x: -32, y: 0 },
+    up: "translateY(32px)",
+    down: "translateY(-32px)",
+    left: "translateX(32px)",
+    right: "translateX(-32px)",
   };
 
   return (
-    <motion.div
+    <div
       ref={ref}
       className={className}
-      initial={{
-        opacity: 0,
-        x: offsets[direction].x,
-        y: offsets[direction].y,
-      }}
-      animate={
-        isInView
-          ? { opacity: 1, x: 0, y: 0 }
-          : {
-              opacity: 0,
-              x: offsets[direction].x,
-              y: offsets[direction].y,
-            }
-      }
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 20,
-        delay,
+      style={{
+        opacity: isInView ? 1 : 0,
+        transform: isInView ? "translate(0, 0)" : offsets[direction],
+        transition: `opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}s`,
+        willChange: isInView ? "auto" : "opacity, transform",
       }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
+/**
+ * CSS-based StaggerContainer — observes visibility, then applies
+ * staggered delays to each StaggerItem child via CSS custom property.
+ */
 export function StaggerContainer({
   children,
   className = "",
@@ -64,44 +75,67 @@ export function StaggerContainer({
   stagger?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-40px" });
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "-40px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  // Inject stagger delay and visibility state into each StaggerItem child
+  const enhancedChildren = Children.map(children, (child, index) => {
+    if (isValidElement<{ _staggerDelay?: number; _isVisible?: boolean }>(child)) {
+      return cloneElement(child, {
+        _staggerDelay: index * stagger,
+        _isVisible: isInView,
+      });
+    }
+    return child;
+  });
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={{
-        hidden: {},
-        visible: { transition: { staggerChildren: stagger } },
-      }}
-    >
-      {children}
-    </motion.div>
+    <div ref={ref} className={className}>
+      {enhancedChildren}
+    </div>
   );
 }
 
+/**
+ * CSS-based StaggerItem — receives delay and visibility from parent StaggerContainer.
+ */
 export function StaggerItem({
   children,
   className = "",
+  _staggerDelay = 0,
+  _isVisible = false,
 }: {
   children: React.ReactNode;
   className?: string;
+  _staggerDelay?: number;
+  _isVisible?: boolean;
 }) {
   return (
-    <motion.div
+    <div
       className={className}
-      variants={{
-        hidden: { opacity: 0, y: 24 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: { type: "spring", stiffness: 100, damping: 20 },
-        },
+      style={{
+        opacity: _isVisible ? 1 : 0,
+        transform: _isVisible ? "translateY(0)" : "translateY(24px)",
+        transition: `opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${_staggerDelay}s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${_staggerDelay}s`,
+        willChange: _isVisible ? "auto" : "opacity, transform",
       }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

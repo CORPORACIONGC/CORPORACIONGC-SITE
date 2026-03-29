@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Sun, Moon } from "@phosphor-icons/react";
-import { motion, AnimatePresence } from "framer-motion";
 
 export function ThemeToggle({ className = "" }: { className?: string }) {
   const [dark, setDark] = useState(true);
@@ -10,7 +9,6 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
 
   useEffect(() => {
     setMounted(true);
-    // Sync state with what the inline script already applied
     const isDark = document.documentElement.classList.contains("dark");
     setDark(isDark);
   }, []);
@@ -35,31 +33,12 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
       className={`p-2 text-cream/40 hover:text-cream/80 transition-colors duration-300 ${className}`}
       aria-label={dark ? "Cambiar a modo diurno" : "Cambiar a modo nocturno"}
     >
-      <AnimatePresence mode="wait" initial={false}>
-        {dark ? (
-          <motion.span
-            key="sun"
-            initial={{ rotate: -90, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
-            exit={{ rotate: 90, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="block"
-          >
-            <Sun size={16} weight="duotone" />
-          </motion.span>
-        ) : (
-          <motion.span
-            key="moon"
-            initial={{ rotate: 90, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
-            exit={{ rotate: -90, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="block"
-          >
-            <Moon size={16} weight="duotone" />
-          </motion.span>
-        )}
-      </AnimatePresence>
+      <span
+        key={dark ? "sun" : "moon"}
+        className="block animate-theme-icon"
+      >
+        {dark ? <Sun size={16} weight="duotone" /> : <Moon size={16} weight="duotone" />}
+      </span>
     </button>
   );
 }

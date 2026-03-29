@@ -1,4 +1,3 @@
-"use client";
 
 import {
   Scales,
@@ -7,7 +6,7 @@ import {
   Bank,
   Buildings,
   Stamp,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { JOSE_CARLOS_PRACTICE_AREAS } from "@/lib/constants";
 

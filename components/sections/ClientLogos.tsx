@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { CLIENT_LOGOS } from "@/lib/constants";
