@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     canonical: FIRM.url,
   },
   openGraph: {
-    title: "Abogados Derecho Administrativo y Contencioso Administrativo · Costa Rica | Corporación GC",
+    title: "Corporación GC · Abogados en Derecho Público | Costa Rica",
     description: FIRM.description,
     url: FIRM.url,
     siteName: FIRM.name,
