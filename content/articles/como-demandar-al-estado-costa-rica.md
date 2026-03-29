@@ -51,7 +51,7 @@ Esta fue una de las reformas más importantes del CPCA. Antes de 2008, el agotam
 
 **¿Cuándo sí es obligatorio?** El propio artículo 31 contempla excepciones derivadas de los artículos 173 y 182 de la Constitución Política. En la práctica, la excepción más clara es la **contratación pública**, donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Las demás excepciones requieren un análisis caso por caso que debe realizar un abogado especialista.
 
-En la gran mayoría de los casos — sanciones administrativas, denegación de permisos, responsabilidad patrimonial, vías de hecho, omisiones — **el administrado puede acudir directamente al Tribunal.**
+En la gran mayoría de los casos — sanciones administrativas, responsabilidad patrimonial, vías de hecho, omisiones — **el administrado puede acudir directamente al Tribunal.**
 
 ---
 
