@@ -64,8 +64,6 @@ Esta fue una de las reformas más importantes del CPCA. Antes de 2008, el agotam
 
 En todos los demás casos — sanciones administrativas, denegación de permisos, responsabilidad patrimonial, vías de hecho, omisiones — **el administrado puede ir directamente al Tribunal sin necesidad de agotar recurso alguno.**
 
-Cuando se acude directamente a la vía jurisdiccional, el CPCA contempla un mecanismo inteligente: el juez tramitador concede un plazo de ocho días hábiles al jerarca de la institución demandada para que confirme, modifique, anule o revoque la conducta impugnada. Si la Administración no actúa en ese plazo, el proceso continúa. Este mecanismo protege el derecho de defensa de la Administración sin sacrificar el acceso a la justicia del ciudadano.
-
 ---
 
 ## ¿Cuál es el plazo para demandar?
