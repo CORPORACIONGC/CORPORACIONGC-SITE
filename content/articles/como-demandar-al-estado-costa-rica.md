@@ -67,11 +67,7 @@ En la gran mayoría de los casos — sanciones administrativas, denegación de p
 
 El artículo 39 del CPCA establece un plazo de caducidad de **un año**. Si se le pasa este plazo, pierde el derecho a demandar — no hay prórroga ni excepción general.
 
-El cómputo del plazo depende del tipo de conducta que se impugna:
-
-- **Actos administrativos notificados:** Un año desde el día siguiente a la notificación.
-- **Disposiciones de alcance general publicadas:** Un año desde el día siguiente a la última publicación.
-- **Actuaciones materiales:** Un año desde el día siguiente a la **cesación de sus efectos**. Esta distinción es fundamental y a menudo pasada por alto.
+El cómputo del plazo depende del tipo de conducta que se impugna. Como regla general, el año se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales, se cuenta desde el día siguiente a la **cesación de sus efectos** — una distinción fundamental y a menudo pasada por alto. La ley contempla reglas específicas según la naturaleza de la conducta impugnada, por lo que el cálculo del plazo debe evaluarse caso por caso con asesoría especializada.
 
 ### Los efectos continuados: un plazo que muchos creen vencido y no lo está
 
