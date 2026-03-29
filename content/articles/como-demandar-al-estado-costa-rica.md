@@ -49,7 +49,7 @@ El artículo 31 del CPCA establece con claridad: *"El agotamiento de la vía adm
 
 Esta fue una de las reformas más importantes del CPCA. Antes de 2008, el agotamiento era un requisito obligatorio — si usted no interponía los recursos administrativos, la demanda era inadmisible. El CPCA eliminó esa barrera para facilitar el acceso a la justicia.
 
-**¿Cuándo sí es obligatorio?** El propio artículo 31 establece las excepciones, referidas a los artículos 173 y 182 de la Constitución Política. En la práctica, los dos casos más relevantes son la **materia municipal** — donde deben interponerse los recursos ante el Alcalde y el Concejo Municipal — y la **contratación pública**, donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Un abogado especialista debe evaluar si aplican estas u otras excepciones según el caso concreto.
+**¿Cuándo sí es obligatorio?** El propio artículo 31 contempla excepciones derivadas de los artículos 173 y 182 de la Constitución Política. En la práctica, la excepción más clara es la **contratación pública**, donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Las demás excepciones requieren un análisis caso por caso que debe realizar un abogado especialista.
 
 En la gran mayoría de los casos — sanciones administrativas, denegación de permisos, responsabilidad patrimonial, vías de hecho, omisiones — **el administrado puede acudir directamente al Tribunal.**
 
