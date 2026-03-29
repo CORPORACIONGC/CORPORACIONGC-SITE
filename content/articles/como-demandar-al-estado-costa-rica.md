@@ -19,16 +19,17 @@ Esta guía está respaldada por la experiencia de Corporación GC, cuyo director
 
 ## ¿A quiénes se puede demandar?
 
-La jurisdicción contencioso-administrativa tiene un alcance amplio. El artículo 1 del CPCA establece que esta jurisdicción tutela las situaciones jurídicas de toda persona frente a las conductas de la Administración Pública. En la práctica, esto significa que usted puede demandar a:
+La jurisdicción contencioso-administrativa tiene un alcance amplio. El artículo 1 del CPCA establece que esta jurisdicción tutela las situaciones jurídicas de toda persona frente a las conductas de la Administración Pública sujetas al Derecho Administrativo. Esto incluye demandas contra:
 
 - **El Estado** (Gobierno Central, ministerios)
 - **Instituciones autónomas** (CCSS, ICE, INVU, AyA, IMAS)
 - **Municipalidades** (cualquiera de los 82 cantones)
 - **Entes públicos** (universidades estatales, ARESEP, SUTEL, CGR)
 - **Empresas públicas** (RECOPE, INS, Correos de Costa Rica)
-- **Sujetos privados que ejerzan función administrativa** (concesionarios de servicios públicos, colegios profesionales en el ejercicio de sus potestades disciplinarias)
 
-No existe en Costa Rica un ente público que esté exento del control jurisdiccional. El principio de universalidad del control, consagrado en el artículo 49 de la Constitución Política y desarrollado por el CPCA, garantiza que toda conducta de la Administración —ya sea un acto formal, una omisión, una actuación material o una vía de hecho— puede ser sometida al escrutinio judicial.
+Además, el artículo 2, inciso e) del CPCA amplía la jurisdicción a *"las conductas o relaciones regidas por el Derecho público, aunque provengan de personas privadas o sean estas sus partes."* Esto significa que si una persona o empresa privada actúa bajo potestades de Derecho público — por ejemplo, un concesionario de servicio público o un colegio profesional ejerciendo sus potestades disciplinarias —, esa conducta también puede ser impugnada ante el Tribunal Contencioso Administrativo.
+
+El principio de universalidad del control, consagrado en el artículo 49 de la Constitución Política y desarrollado por el CPCA, garantiza que toda conducta sujeta al Derecho Administrativo —ya sea un acto formal, una omisión, una actuación material o una vía de hecho— puede ser sometida al escrutinio judicial, sin importar si quien actúa es un ente público o un sujeto privado.
 
 ---
 
