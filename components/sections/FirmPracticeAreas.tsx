@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench } from "@phosphor-icons/react/dist/ssr";
+import { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench, Certificate, Robot, ShieldWarning, Recycle, Factory, Wallet, Flag, WifiHigh, SolarPanel } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREA_PAGES } from "@/lib/constants";
 
-const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench };
+const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench, Certificate, Robot, ShieldWarning, Recycle, Factory, Wallet, Flag, WifiHigh, SolarPanel };
 
 export function FirmPracticeAreas() {
   const primary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "primary");

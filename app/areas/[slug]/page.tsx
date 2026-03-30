@@ -4264,6 +4264,957 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 ),
 
 
+  /* ═══════════════════════════════════════════════════════════════
+     ÁREAS EMERGENTES Y REGULATORIAS
+     ═══════════════════════════════════════════════════════════════ */
+
+  "compliance-publico-anticorrupcion": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          El compliance público anticorrupción es el conjunto de políticas, procedimientos y controles
+          internos que una empresa implementa para prevenir y detectar actos de corrupción en su
+          relación con la Administración Pública. En Costa Rica, la convergencia de la Ley de
+          Responsabilidad Penal de Personas Jurídicas (Ley N.° 9699), la Ley General de Contratación
+          Pública (Ley N.° 9986) y la Ley contra la Corrupción y el Enriquecimiento Ilícito (Ley N.° 8422)
+          ha transformado el compliance de una opción voluntaria a un imperativo empresarial con
+          consecuencias jurídicas concretas.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Corporación GC diseña programas de compliance que resisten escrutinio judicial, porque
+          nuestro equipo conoce exactamente qué evalúan los tribunales al determinar la efectividad
+          de un programa de cumplimiento.
+        </p>
+      </section>
+
+      <Instrumento titulo="Programas de compliance bajo Ley 9699" fundamento="Ley N.° 9699, art. 8">
+        <p>
+          La Ley de Responsabilidad Penal de Personas Jurídicas (Ley N.° 9699) establece que las
+          empresas pueden ser penalmente responsables por delitos cometidos en su nombre o beneficio
+          por sus representantes, directores o empleados. El artículo 8 establece que la existencia
+          de un programa de compliance efectivo previo a la comisión del delito constituye una
+          circunstancia atenuante que permite la reducción de hasta el 40% de las multas, las cuales
+          pueden alcanzar hasta 10,000 salarios base (~₡4,500 millones).
+        </p>
+        <p>
+          Corporación GC estructura programas que cumplen los requisitos judicialmente exigibles:
+          código de conducta, canal de denuncias, debida diligencia de contrapartes, capacitación
+          documentada, auditoría periódica y órgano de cumplimiento independiente.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Compliance en contratación pública" fundamento="Ley N.° 9986; SICOP">
+        <p>
+          La Ley General de Contratación Pública (Ley N.° 9986, vigente desde diciembre 2022)
+          establece un régimen de prohibiciones, inhabilidades y sanciones para los contratistas
+          del Estado. Con más de 48,000 proveedores registrados en SICOP (plataforma digital
+          unificada de compras públicas), el cumplimiento de las obligaciones de la Ley N.° 9986
+          es condición necesaria para participar en el mercado de contratación estatal.
+        </p>
+        <p>
+          Asesoramos en la preparación de ofertas conformes al marco normativo, la implementación
+          de controles internos contra prácticas colusorias y la defensa ante inhabilitaciones o
+          sanciones de la CGR derivadas de irregularidades en procedimientos de contratación.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Defensa ante CGR y Ministerio Público" fundamento="Ley N.° 7428; Ley N.° 8422">
+        <p>
+          La Contraloría General de la República (CGR), conforme a la Ley Orgánica de la CGR
+          (Ley N.° 7428), ejerce fiscalización sobre el uso de fondos públicos e investiga
+          irregularidades en la contratación administrativa. Cuando las investigaciones derivan
+          en responsabilidad penal, el caso se traslada al Ministerio Público conforme a la
+          Ley N.° 8422 (Anticorrupción).
+        </p>
+        <p>
+          Corporación GC representa a empresas y directivos investigados tanto en la fase
+          administrativa ante CGR (procedimientos de responsabilidad conforme al art. 68 y
+          siguientes de la Ley N.° 7428) como en la fase penal ante el Ministerio Público,
+          garantizando el respeto de las garantías del debido proceso.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Cumplimiento OCDE y prevención de lavado" fundamento="Convención Anticohecho OCDE; Ley N.° 8204">
+        <p>
+          Con la adhesión de Costa Rica a la OCDE en 2021, el país se comprometió a cumplir la
+          Convención Anticohecho de la OCDE (ratificada en 2017) y a fortalecer los mecanismos
+          de prevención de lavado de capitales conforme a la Ley N.° 8204. Las empresas que
+          contratan con el Estado deben implementar debida diligencia reforzada respecto de sus
+          socios, subcontratistas y cadena de suministro.
+        </p>
+        <p>
+          Diseñamos políticas de debida diligencia de contrapartes (KYC corporativo), matrices
+          de riesgo anticorrupción adaptadas al sector de actividad, y protocolos de reporte
+          conforme a los estándares OCDE y las recomendaciones del GAFI/GAFILAT.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre compliance público
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Mi empresa necesita un programa de compliance para contratar con el Estado?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Aunque la Ley N.° 9986 no impone un programa de compliance como requisito formal
+              de elegibilidad, la Ley N.° 9699 de Responsabilidad Penal de Personas Jurídicas
+              convierte al compliance en un escudo jurídico esencial: permite reducir hasta un 40%
+              las multas penales corporativas. Tras el Caso Cochinilla (₡78,000 millones en fondos
+              malversados, 80+ sospechosos), toda empresa que participe en contratación pública
+              enfrenta un riesgo reputacional y penal significativo sin un programa de cumplimiento
+              documentado.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué beneficio concreto tiene el programa de compliance ante los tribunales?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El artículo 8 de la Ley N.° 9699 establece que un programa de compliance efectivo,
+              preexistente a la comisión del delito, constituye una circunstancia atenuante que
+              permite al juez reducir la sanción hasta en un 40%. Para que el programa sea
+              considerado efectivo, debe ser integral, documentado, implementado efectivamente y
+              sometido a auditoría periódica. Corporación GC diseña programas que cumplen estos
+              requisitos porque conocemos los criterios judiciales de evaluación.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "gobierno-digital-inteligencia-artificial-datos": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          La transformación digital del Estado costarricense y la implementación de inteligencia
+          artificial en la administración pública plantean desafíos jurídicos sin precedentes en
+          materia de legalidad, debido proceso y protección de datos personales. La Estrategia
+          Nacional de Inteligencia Artificial 2024-2027 (ENIA), lanzada en octubre 2024 como la
+          primera de su tipo en Centroamérica, junto con tres proyectos de ley de IA en trámite
+          legislativo, configuran un marco regulatorio emergente que requiere asesoría jurídica
+          especializada.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Corporación GC es la única firma en Costa Rica que combina experiencia profunda en
+          derecho administrativo constitucional con especialización en gobernanza de IA,
+          transparencia algorítmica y cumplimiento de protección de datos en el sector público.
+        </p>
+      </section>
+
+      <Instrumento titulo="Protección de datos personales ante PRODHAB" fundamento="Ley N.° 8968; Decreto N.° 37554-JP">
+        <p>
+          La Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales
+          (Ley N.° 8968, 2011) y su Reglamento (Decreto N.° 37554-JP) establecen las obligaciones
+          de las instituciones públicas y empresas privadas que tratan datos personales. La PRODHAB
+          (Agencia de Protección de Datos de los Habitantes) es la autoridad de enforcement con
+          potestad sancionatoria.
+        </p>
+        <p>
+          Asesoramos en el registro de bases de datos ante PRODHAB, la implementación de protocolos
+          de consentimiento informado, la gestión de derechos ARCO (acceso, rectificación, cancelación
+          y oposición), y la defensa en procedimientos sancionatorios por incumplimiento. También
+          asesoramos sobre el Proyecto N.° 23.097 que busca alinear la Ley N.° 8968 con el estándar
+          RGPD europeo.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Gobernanza de IA en la administración pública" fundamento="ENIA 2024-2027; Exps. 23.771, 23.919, 24.484">
+        <p>
+          La ENIA contempla la implementación de IA en más de 78 instituciones públicas, con más
+          de 400 aplicaciones proyectadas por programa de capacitación. Tres proyectos de ley
+          regulan distintos aspectos: el Expediente N.° 23.771 (regulación general de IA), el
+          Expediente N.° 23.919 (promoción responsable de IA con la Comisión Interinstitucional
+          CIDIA), y el Expediente N.° 24.484 (enfoque basado en riesgo similar al EU AI Act).
+        </p>
+        <p>
+          Asesoramos a instituciones públicas en el diseño de marcos de gobernanza algorítmica
+          que cumplan con los principios de legalidad (art. 11 CP), debido proceso (art. 39 CP),
+          motivación del acto administrativo (art. 136 LGAP) y rendición de cuentas (art. 11 LGAP),
+          asegurando que las decisiones administrativas automatizadas sean impugnables y
+          transparentes.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Impugnación de decisiones algorítmicas" fundamento="Arts. 11, 39 y 41 CP; CPCA">
+        <p>
+          Cuando una decisión administrativa automatizada vulnera derechos fundamentales — ya sea
+          por sesgo algorítmico, opacidad en el proceso decisorio o ausencia de motivación — el
+          afectado tiene derecho a impugnarla. El artículo 39 de la Constitución Política garantiza
+          el debido proceso, y el artículo 136 de la LGAP exige la motivación de los actos
+          administrativos, lo cual incluye la explicabilidad de las decisiones algorítmicas.
+        </p>
+        <p>
+          Litigamos impugnaciones constitucionales (recursos de amparo ante Sala IV) y
+          contencioso-administrativas (demandas ante el TCA conforme al CPCA) contra decisiones
+          algorítmicas que carezcan de transparencia, que discriminen o que vulneren el derecho
+          a la tutela judicial efectiva.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Gobierno digital y Ley 9943" fundamento="Ley N.° 9943">
+        <p>
+          La Ley de la Agencia Nacional de Gobierno Digital (Ley N.° 9943, 2021) establece el
+          marco institucional para la transformación digital del Estado. La Agencia coordina la
+          implementación de servicios digitales, interoperabilidad de datos entre instituciones
+          y estándares de ciberseguridad pública. La presión de la OCDE para modernizar PRODHAB
+          y fortalecer la protección de datos acentúa la urgencia de cumplimiento.
+        </p>
+        <p>
+          Asesoramos a empresas de BPO, servicios compartidos, fintechs y healthtechs que
+          procesan datos públicos en el cumplimiento de las obligaciones derivadas de la
+          Ley N.° 9943 y la Ley N.° 8968, y representamos ante PRODHAB en investigaciones
+          por tratamiento indebido de datos.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre IA y protección de datos
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Puede una institución pública tomar decisiones automatizadas con IA?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí, pero debe cumplir con los principios constitucionales de legalidad (art. 11 CP),
+              debido proceso (art. 39 CP) y motivación del acto administrativo (art. 136 LGAP).
+              Esto implica que la decisión algorítmica debe ser explicable, impugnable y no
+              discriminatoria. La ENIA 2024-2027 promueve la implementación de IA en instituciones
+              públicas, pero el marco constitucional vigente exige que toda decisión administrativa
+              que afecte derechos tenga fundamento jurídico identificable y sea susceptible de
+              control jurisdiccional.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué sanciones impone PRODHAB por incumplimiento?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La PRODHAB puede imponer sanciones que incluyen apercibimiento, suspensión de
+              operaciones de tratamiento de datos y multas conforme a la Ley N.° 8968. Los
+              procedimientos sancionatorios de PRODHAB son procedimientos administrativos
+              sujetos a las garantías de la LGAP y susceptibles de impugnación ante el TCA.
+              Corporación GC defiende a empresas e instituciones en estos procedimientos.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "defensa-regulatoria-sectorial": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          Los reguladores sectoriales costarricenses — COPROCOM, SUTEL, SUGEF, ARESEP y Ministerio
+          de Salud — ejercen potestades sancionatorias con consecuencias económicas severas para las
+          empresas reguladas. Las multas pueden alcanzar el 10% del volumen de negocios (COPROCOM)
+          o la inhabilitación por hasta 10 años. Sin embargo, estos procedimientos sancionatorios
+          son procedimientos administrativos sujetos a garantías constitucionales que la Sala
+          Constitucional ha extendido mutatis mutandis desde el proceso penal.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Corporación GC ofrece una defensa cross-regulatoria integrada: conocemos las
+          particularidades de cada regulador y litigamos ante todos ellos con la misma profundidad
+          en derecho administrativo.
+        </p>
+      </section>
+
+      <Instrumento titulo="Defensa ante COPROCOM (competencia)" fundamento="Ley N.° 7472 (LFAC)">
+        <p>
+          La Comisión para Promover la Competencia (COPROCOM) investiga y sanciona prácticas
+          monopolísticas, acuerdos entre competidores (cárteles), abusos de posición dominante
+          y concentraciones económicas conforme a la Ley de Promoción de la Competencia y Defensa
+          Efectiva del Consumidor (Ley N.° 7472). Las sanciones incluyen multas del 0.1% al 10%
+          del volumen de negocios e inhabilitación para contratar con el Estado de hasta 10 años.
+        </p>
+        <p>
+          Representamos a empresas investigadas en todas las fases: respuesta a requerimientos
+          de información, audiencias orales, presentación de compromisos, solicitud de acogimiento
+          al Programa de Clemencia (lanzado en 2024), e impugnación de resoluciones sancionatorias
+          ante el TCA. COPROCOM ha sancionado a más de 215 agentes económicos con multas
+          acumuladas superiores a ₡8,275 millones.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Defensa ante SUTEL (telecomunicaciones)" fundamento="Ley N.° 8642">
+        <p>
+          La Superintendencia de Telecomunicaciones (SUTEL) regula y sanciona a los operadores
+          de telecomunicaciones conforme a la Ley General de Telecomunicaciones (Ley N.° 8642).
+          Tras la subasta 5G de enero 2025, los 7 concesionarios adjudicatarios enfrentan
+          obligaciones de cobertura, inversión y calidad de servicio cuyo incumplimiento puede
+          generar procedimientos sancionatorios.
+        </p>
+        <p>
+          Defendemos a operadores en procedimientos de SUTEL por incumplimiento de condiciones
+          de concesión, disputas de interconexión, infracciones de calidad de servicio y controversias
+          sobre compartición de infraestructura, garantizando las garantías del procedimiento
+          administrativo ordinario (arts. 308-319 LGAP).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Defensa ante SUGEF (financiero)" fundamento="Ley N.° 7558, arts. 115-117">
+        <p>
+          La Superintendencia General de Entidades Financieras (SUGEF) supervisa y sanciona a las
+          entidades del sistema financiero conforme a la Ley Orgánica del Banco Central (Ley N.° 7558,
+          arts. 115 y 117), los Acuerdos SUGEF y la normativa de CONASSIF. Las sanciones incluyen
+          multas, intervención y liquidación de entidades.
+        </p>
+        <p>
+          Representamos a bancos, cooperativas, financieras y fintechs en procedimientos
+          sancionatorios de SUGEF, impugnación de resoluciones de CONASSIF, y litigio
+          contencioso-administrativo contra medidas de intervención conforme al CPCA.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Defensa ante ARESEP (servicios públicos)" fundamento="Ley N.° 7593">
+        <p>
+          La Autoridad Reguladora de los Servicios Públicos (ARESEP) regula las tarifas y la calidad
+          de los servicios públicos de electricidad, agua, transporte y combustibles conforme a la
+          Ley N.° 7593. ARESEP puede imponer sanciones por incumplimiento de estándares de calidad,
+          cobro indebido y negativa de prestación del servicio.
+        </p>
+        <p>
+          Defendemos a prestadores de servicios públicos en procedimientos sancionatorios de ARESEP,
+          impugnamos fijaciones tarifarias que no respeten el principio de servicio al costo, y
+          litigamos ante el TCA resoluciones que afecten la viabilidad económica de las concesiones.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Impugnación constitucional de sanciones" fundamento="Arts. 39, 41 CP; Ley N.° 7135">
+        <p>
+          La Sala Constitucional ha establecido reiteradamente que las garantías del debido proceso
+          penal se extienden mutatis mutandis a los procedimientos administrativos sancionatorios:
+          presunción de inocencia, derecho de defensa, principio de tipicidad, proporcionalidad de
+          la sanción y prohibición de doble sanción (non bis in idem). Cuando un regulador
+          sectorial vulnera estas garantías, procede el recurso de amparo ante la Sala IV
+          (Ley N.° 7135, arts. 29-56).
+        </p>
+        <p>
+          Corporación GC combina la defensa administrativa ante el regulador con la impugnación
+          constitucional ante Sala IV y el litigio contencioso-administrativo ante el TCA,
+          ofreciendo una estrategia de defensa integral en las tres jurisdicciones.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre defensa regulatoria
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué sanciones puede imponer COPROCOM a mi empresa?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              COPROCOM puede imponer multas del 0.1% al 10% del volumen de negocios del infractor
+              conforme a la Ley N.° 7472, inhabilitación para contratar con el Estado por hasta
+              10 años, y órdenes de cesación de la conducta anticompetitiva. En casos de cárteles
+              (acuerdos entre competidores), las sanciones se ubican en el rango máximo. Sin embargo,
+              el Programa de Clemencia (lanzado en 2024) permite a las empresas que revelen un
+              cártel obtener reducción total o parcial de la multa. Corporación GC asesora en la
+              evaluación estratégica de acogimiento a clemencia y en la defensa ante investigaciones.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "regulacion-ambiental-mercados-carbono": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          El derecho ambiental administrativo costarricense se sustenta en el artículo 50 de la
+          Constitución Política, que reconoce el derecho a un ambiente sano y ecológicamente
+          equilibrado, la Ley Orgánica del Ambiente (Ley N.° 7554) y la Ley Forestal
+          (Ley N.° 7575). La Sala Constitucional ha intensificado su activismo ambiental,
+          y la evaluación de impacto ambiental ante SETENA se ha convertido en un procedimiento
+          administrativo de alta complejidad.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Paralelamente, el Plan Nacional de Descarbonización 2019-2050 y los mercados de carbono
+          administrados por FONAFIFO abren oportunidades para empresas que buscan estructurar
+          créditos de carbono y cumplir con el Mecanismo de Ajuste en Frontera por Carbono (CBAM)
+          de la Unión Europea.
+        </p>
+      </section>
+
+      <Instrumento titulo="Evaluación de impacto ambiental ante SETENA" fundamento="Ley N.° 7554, arts. 17-18; Decreto 31849-MINAE-S-MOPT-MAG-MEIC">
+        <p>
+          La Secretaría Técnica Nacional Ambiental (SETENA) evalúa el impacto ambiental de
+          actividades, obras y proyectos conforme a los artículos 17 y 18 de la Ley N.° 7554
+          y el Reglamento General sobre los Procedimientos de Evaluación de Impacto Ambiental
+          (Decreto 31849). Todo proyecto que pueda alterar o destruir elementos del ambiente
+          requiere viabilidad ambiental de SETENA antes de obtener permisos de construcción.
+        </p>
+        <p>
+          Representamos a desarrolladores inmobiliarios, empresas agroindustriales e inversionistas
+          en el trámite de viabilidad ambiental, la impugnación de resoluciones denegatorias de
+          SETENA en vía administrativa y contencioso-administrativa, y la defensa ante denuncias
+          ambientales presentadas por terceros o por el propio MINAE.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Litigio ambiental constitucional" fundamento="Art. 50 CP; Ley N.° 7135">
+        <p>
+          La Sala Constitucional ha desarrollado una jurisprudencia robusta en materia ambiental
+          con base en el artículo 50 constitucional y los principios precautorio, preventivo y
+          de no regresión. Los recursos de amparo ambientales constituyen una herramienta
+          frecuente tanto para la defensa del ambiente como para la impugnación de restricciones
+          desproporcionadas a la actividad económica justificadas en motivos ambientales.
+        </p>
+        <p>
+          Litigamos ante la Sala IV tanto la defensa de empresas afectadas por resoluciones
+          ambientales desproporcionadas como la impugnación de omisiones regulatorias de SETENA
+          y MINAE que retrasen indebidamente el otorgamiento de viabilidades ambientales.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Mercados de carbono y Programa PSA" fundamento="Ley N.° 7575; FONAFIFO; NDC 2020">
+        <p>
+          Costa Rica administra el Programa de Pago por Servicios Ambientales (PSA) a través
+          de FONAFIFO conforme a la Ley Forestal (Ley N.° 7575). Las Unidades Costarricenses
+          de Compensación (UCC) permiten a empresas compensar sus emisiones de carbono
+          (1 crédito = 1 tCO2e, ~$320/hectárea). En 2022, FONAFIFO firmó 953 contratos PSA
+          cubriendo 51,546 hectáreas.
+        </p>
+        <p>
+          Asesoramos en la negociación y estructuración de contratos PSA con FONAFIFO, la
+          participación en proyectos REDD+, el cumplimiento de la NDC actualizada 2020
+          (meta: 9.11 millones tCO2e para 2030), y la adaptación al Mecanismo de Ajuste en
+          Frontera por Carbono (CBAM) de la UE para empresas exportadoras costarricenses.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Defensa ante MINAE y SINAC" fundamento="Ley N.° 7554; Ley N.° 7575; Ley N.° 7317">
+        <p>
+          El Ministerio de Ambiente y Energía (MINAE) y el Sistema Nacional de Áreas de
+          Conservación (SINAC) ejercen potestades de fiscalización y sanción en materia de
+          recursos naturales, áreas protegidas, vida silvestre y recursos forestales. Los
+          procedimientos sancionatorios ambientales se rigen por la LGAP y las garantías
+          constitucionales del debido proceso.
+        </p>
+        <p>
+          Representamos a empresas en procedimientos administrativos de MINAE y SINAC por
+          presuntas infracciones ambientales, impugnamos resoluciones que restrinjan
+          indebidamente derechos de propiedad o de explotación, y litigamos ante el TCA
+          la nulidad de actos administrativos ambientales desproporcionados.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre regulación ambiental
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué hago si SETENA deniega la viabilidad ambiental de mi proyecto?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La resolución denegatoria de SETENA es un acto administrativo impugnable.
+              Puede interponerse un recurso de revocatoria con apelación en subsidio en vía
+              administrativa, y si se confirma la denegatoria, una demanda contencioso-administrativa
+              ante el TCA conforme al CPCA (Ley N.° 8508). Si la denegatoria vulnera derechos
+              fundamentales (propiedad, libertad de empresa), también procede un recurso de amparo
+              ante la Sala IV. Corporación GC evalúa la estrategia más efectiva según las
+              circunstancias de cada caso.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "alianzas-publico-privadas-infraestructura": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          Las Alianzas Público-Privadas (APP) representan el mecanismo mediante el cual el Estado
+          costarricense canaliza inversión privada hacia infraestructura pública: carreteras,
+          puertos, aeropuertos, transporte público y servicios esenciales. Con una brecha de
+          inversión en infraestructura del 1.1% del PIB actual versus el 3.7% necesario, y un
+          pipeline activo que incluye proyectos por más de USD $1,200 millones, la demanda de
+          asesoría jurídica especializada en APP es creciente.
+        </p>
+      </section>
+
+      <Instrumento titulo="Concesión de obras públicas" fundamento="Ley N.° 7762; Ley N.° 8643; Ley N.° 9701">
+        <p>
+          La Ley General de Concesión de Obras Públicas con Servicios Públicos (Ley N.° 7762,
+          1998), reformada por la Ley N.° 8643 (2008) y la Ley N.° 9701 (2019, que creó el
+          fondo de preinversión de ~$6M/año por 10 años), constituye el marco normativo central
+          de las APP en Costa Rica. La Comisión Nacional de Concesiones (CNC) actúa como ente
+          coordinador.
+        </p>
+        <p>
+          Asesoramos a empresas concesionarias y consorcios en la preparación de ofertas,
+          la negociación de contratos de concesión, el cumplimiento de obligaciones contractuales,
+          y la gestión de modificaciones y renegociaciones conforme al equilibrio económico-financiero
+          del contrato.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Disputas y arbitraje en concesiones" fundamento="Ley N.° 7762, art. 61 y ss.">
+        <p>
+          Los contratos de concesión de obras públicas incluyen cláusulas de resolución de disputas
+          que contemplan el arbitraje conforme al artículo 61 y siguientes de la Ley N.° 7762.
+          Las controversias más frecuentes involucran el equilibrio económico-financiero, el
+          cumplimiento de cronogramas, sobrecostos, caso fortuito o fuerza mayor, y la terminación
+          anticipada del contrato.
+        </p>
+        <p>
+          Representamos a concesionarios y al Estado en paneles arbitrales, y litigamos ante el
+          TCA la impugnación de actos administrativos del MOPT y la CNC que afecten los términos
+          de la concesión. Nuestro director tiene experiencia directa con el marco del derecho
+          de la contratación administrativa y los procedimientos ante CGR.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Objeciones ante CGR en adjudicaciones" fundamento="Ley N.° 9986; Ley N.° 7428">
+        <p>
+          Los procedimientos de adjudicación de concesiones y contratos de infraestructura pública
+          están sujetos a la fiscalización de la Contraloría General de la República conforme a
+          la Ley N.° 7428 y la Ley N.° 9986. Los participantes pueden interponer objeciones y
+          recursos contra las decisiones de adjudicación.
+        </p>
+        <p>
+          Asesoramos en la formulación de objeciones técnicas y jurídicas ante la CGR, la defensa
+          de adjudicaciones impugnadas por competidores, y el litigio contencioso-administrativo
+          derivado de resoluciones de CGR sobre contratos de infraestructura.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Nueva Ley de APP (Expediente 21.420)" fundamento="Expediente N.° 21.420">
+        <p>
+          El Expediente N.° 21.420 de nueva Ley Nacional de APP se encuentra en trámite legislativo
+          y busca modernizar el marco jurídico de las alianzas público-privadas, incorporando
+          estándares internacionales del PPP Project Preparation Facility (PPF) lanzado en
+          diciembre 2023 con apoyo del BID, FMI, BEI y PNUD.
+        </p>
+        <p>
+          Corporación GC asesora a empresas e inversionistas sobre las implicaciones del nuevo
+          marco normativo en preparación, la estructuración de proyectos conforme a los estándares
+          del PPF, y la participación en el pipeline activo de proyectos de infraestructura.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre APP e infraestructura
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se resuelven las disputas en un contrato de concesión?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley N.° 7762 establece el arbitraje como mecanismo preferente de resolución de
+              disputas en contratos de concesión (art. 61 y siguientes). Las controversias técnicas,
+              financieras y jurídicas derivadas del contrato se someten a un panel arbitral conforme
+              a las reglas pactadas. Adicionalmente, los actos administrativos del MOPT o la CNC
+              que afecten el contrato pueden impugnarse ante el TCA conforme al CPCA.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "regulacion-fintech-criptoactivos": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          Costa Rica experimenta un crecimiento acelerado del ecosistema fintech: 61 empresas
+          operando en la región de Centroamérica y el Caribe, la expansión de SINPE Móvil como
+          infraestructura de pagos, y la inminente aprobación del Proyecto de Ley N.° 22.837 de
+          Registro de VASP que obligará a todas las empresas de criptoactivos a registrarse ante
+          la SUGEF. Los procedimientos de enforcement de SUGEF y CONASSIF son procedimientos
+          administrativos — territorio natural de Corporación GC.
+        </p>
+      </section>
+
+      <Instrumento titulo="Registro VASP ante SUGEF" fundamento="Proyecto N.° 22.837; Ley N.° 7558, art. 15 Bis">
+        <p>
+          El Proyecto de Ley N.° 22.837 (Registro de VASP), aprobado en primer debate, establecerá
+          el registro obligatorio ante SUGEF para proveedores de servicios de activos virtuales,
+          con debida diligencia reforzada y multas de 2 a 100 salarios base por incumplimiento.
+          Actualmente, la SUGEF supervisa estas actividades bajo la Ley N.° 7558 (art. 15 Bis).
+        </p>
+        <p>
+          Asesoramos a fintechs, exchanges, custodios de cripto y plataformas de tokenización
+          en la preparación para el registro VASP obligatorio: diagnóstico de readiness, diseño
+          de estructura corporativa conforme a requisitos regulatorios, implementación de
+          controles AML/CFT, y representación ante SUGEF durante el proceso de registro.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Cumplimiento AML/CFT" fundamento="Ley N.° 8204; Acuerdos SUGEF 13-19">
+        <p>
+          La Ley sobre Estupefacientes, Sustancias Psicotrópicas, Drogas de Uso no Autorizado,
+          Actividades Conexas, Legitimación de Capitales y Financiamiento al Terrorismo
+          (Ley N.° 8204) y los Acuerdos SUGEF 13-19 establecen las obligaciones de prevención
+          de legitimación de capitales aplicables a todas las entidades supervisadas, incluyendo
+          fintechs y proveedores de servicios de criptoactivos.
+        </p>
+        <p>
+          Diseñamos programas de cumplimiento AML/CFT adaptados a empresas fintech: políticas
+          de conocimiento del cliente (KYC), monitoreo de transacciones, reporte de operaciones
+          sospechosas, y capacitación del personal conforme a los estándares GAFI/GAFILAT y
+          la normativa SUGEF vigente.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Defensa en procedimientos sancionatorios de SUGEF" fundamento="Ley N.° 7558, arts. 115-117; LGAP">
+        <p>
+          Los procedimientos sancionatorios de SUGEF contra entidades financieras y fintechs
+          son procedimientos administrativos sujetos a las garantías de la LGAP y los artículos
+          39 y 41 de la Constitución Política. Las sanciones incluyen multas, intervención,
+          suspensión de operaciones y liquidación forzosa.
+        </p>
+        <p>
+          Representamos a fintechs y entidades financieras en procedimientos sancionatorios
+          de SUGEF, garantizando el respeto del debido proceso, e impugnamos resoluciones
+          sancionatorias ante el TCA conforme al CPCA cuando existan vicios de legalidad,
+          proporcionalidad o motivación.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Estructuración regulatoria y límites de plataformas" fundamento="Opinión PGR C-196-2024; Ley N.° 7558">
+        <p>
+          La Opinión de la Procuraduría General de la República C-196-2024 definió los límites
+          regulatorios de las plataformas fintech en Costa Rica, delimitando las actividades
+          que requieren autorización de SUGEF de las que operan en un marco no regulado.
+          La implementación de los estándares CARF de la OCDE para intercambio fiscal automático
+          de criptoactivos está proyectada para 2028.
+        </p>
+        <p>
+          Asesoramos en la estructuración regulatoria de plataformas fintech — determinando
+          si la actividad requiere autorización, registro o puede operar bajo régimen general —,
+          y en el cumplimiento anticipado de los estándares CARF para evitar sanciones futuras.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre regulación fintech
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Mi empresa de criptoactivos necesita registrarse ante SUGEF?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Con la aprobación inminente del Proyecto N.° 22.837, todas las empresas que ofrezcan
+              servicios de activos virtuales (exchanges, custodios, wallets, plataformas de
+              tokenización) deberán registrarse obligatoriamente ante SUGEF. El incumplimiento
+              generará multas de 2 a 100 salarios base. Recomendamos iniciar la preparación
+              antes de la aprobación definitiva para cumplir con los requisitos desde el día uno
+              de vigencia.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "derecho-electoral-financiamiento-politico": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          El derecho electoral costarricense está regulado por el Código Electoral (Ley N.° 8765),
+          la nueva Ley de Fortalecimiento del Financiamiento Político (Ley N.° 10755, septiembre
+          2025) y la jurisdicción exclusiva del Tribunal Supremo de Elecciones (TSE) como tribunal
+          independiente con rango constitucional (arts. 99-104 CP). Con 20 partidos nacionales
+          que participaron en las elecciones de febrero 2026 y las próximas elecciones municipales
+          en febrero 2028, la demanda de asesoría electoral es creciente.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Corporación GC es la primera firma en Costa Rica con práctica dedicada al derecho
+          electoral desde la perspectiva del derecho público constitucional.
+        </p>
+      </section>
+
+      <Instrumento titulo="Cumplimiento de financiamiento político" fundamento="Ley N.° 10755; Código Electoral, Ley N.° 8765">
+        <p>
+          La nueva Ley de Fortalecimiento del Financiamiento Político (Ley N.° 10755, septiembre
+          2025) refuerza las obligaciones de transparencia, rendición de cuentas y control del
+          financiamiento de los partidos políticos. El artículo 96 constitucional establece la
+          contribución estatal para partidos que superen el 4% de los votos (0.19% del PIB).
+        </p>
+        <p>
+          Asesoramos a partidos políticos en el cumplimiento de las nuevas obligaciones de la
+          Ley N.° 10755: registro de donaciones, control de gastos, límites de contribución,
+          informes financieros periódicos ante el TSE, y diseño de estructuras internas de
+          cumplimiento electoral.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Liquidación de deuda política" fundamento="Código Electoral, arts. 96-102; Ley N.° 10755">
+        <p>
+          La liquidación de deuda política es el proceso mediante el cual los partidos que
+          alcanzaron el umbral electoral (4% de los votos) reclaman la contribución estatal para
+          reembolsar los gastos autorizados de campaña. Este proceso requiere documentación
+          exhaustiva y cumplimiento de plazos estrictos ante el TSE.
+        </p>
+        <p>
+          Representamos a partidos políticos en el proceso completo de liquidación: preparación
+          de la documentación contable, presentación de la liquidación ante el TSE, respuesta a
+          observaciones y objeciones del Departamento de Financiamiento de Partidos Políticos,
+          y defensa en procedimientos derivados de irregularidades detectadas.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Disputas electorales ante el TSE" fundamento="Código Electoral, Ley N.° 8765; arts. 99-104 CP">
+        <p>
+          El TSE tiene jurisdicción exclusiva e independiente en materia electoral conforme a los
+          artículos 99 a 104 de la Constitución Política. Sus resoluciones en materia electoral
+          no son revisables por ningún otro tribunal, salvo la acción de inconstitucionalidad
+          ante la Sala IV en casos de vulneración de derechos fundamentales.
+        </p>
+        <p>
+          Representamos a partidos, candidatos y organizaciones en disputas electorales:
+          impugnación de resultados, recursos contra resoluciones del TSE, cancelación de
+          credenciales, y controversias sobre inscripción de candidaturas y alianzas.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Asesoría a candidatos municipales" fundamento="Código Municipal, Ley N.° 7794; Código Electoral">
+        <p>
+          Las próximas elecciones municipales (febrero 2028) generan demanda de asesoría
+          integral para candidatos a alcaldías, concejos municipales y concejos de distrito.
+          El marco normativo combina el Código Electoral (Ley N.° 8765) con el Código Municipal
+          (Ley N.° 7794) y la legislación de financiamiento político.
+        </p>
+        <p>
+          Asesoramos a candidatos municipales en cumplimiento electoral, financiamiento de
+          campaña, obligaciones de transparencia, inscripción de candidaturas y defensa
+          ante impugnaciones.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre derecho electoral
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Puede mi partido político obtener la contribución estatal?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí, conforme al artículo 96 constitucional, los partidos que superen el 4% de los
+              votos válidos emitidos tienen derecho a la contribución estatal (0.19% del PIB).
+              La liquidación debe presentarse ante el TSE con documentación contable completa de
+              los gastos de campaña autorizados conforme al Código Electoral y la Ley N.° 10755.
+              Corporación GC asesora en todo el proceso de liquidación.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+  "telecomunicaciones-espectro-5g": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          El sector de telecomunicaciones costarricense atraviesa una transformación histórica
+          con la subasta 5G de enero 2025 (bandas 700, 2300, 3500, 26 y 28 GHz), que adjudicó
+          espectro a 7 operadores con $310M en inversión comprometida y obligación de desplegar
+          3,373 torres en 134 distritos. SUTEL y MICITT regulan este sector conforme a la Ley
+          General de Telecomunicaciones (Ley N.° 8642), con ARESEP como regulador tarifario.
+        </p>
+      </section>
+
+      <Instrumento titulo="Concesiones de espectro y obligaciones 5G" fundamento="Ley N.° 8642; Concesiones SUTEL 2025">
+        <p>
+          La Ley General de Telecomunicaciones (Ley N.° 8642) establece el régimen de concesiones
+          de frecuencias del espectro radioeléctrico. SUTEL otorga y administra las concesiones
+          conforme a los principios de uso eficiente, no discriminación y promoción de la
+          competencia. Tras la subasta 5G, los 7 concesionarios (Claro, Liberty, Coopealfaroruiz,
+          Coopeguanacaste, Coopelesca, Coopesantos, Ring Centrales) deben cumplir obligaciones
+          de cobertura, inversión y calidad de servicio.
+        </p>
+        <p>
+          Asesoramos a concesionarios en el cumplimiento de las condiciones de la concesión,
+          negociación de extensiones de espectro, renegociación de condiciones ante SUTEL, y
+          defensa en procedimientos por incumplimiento de obligaciones de despliegue.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Permisos municipales para torres" fundamento="Art. 170 CP; Ley N.° 8642; Código Municipal">
+        <p>
+          El despliegue de infraestructura de telecomunicaciones (torres, antenas, fibra óptica)
+          requiere permisos municipales que intersectan la autonomía municipal (art. 170 CP) con
+          la regulación sectorial de SUTEL (Ley N.° 8642). El 90% del valor del espectro se paga
+          vía despliegue de infraestructura, lo que hace del permiso municipal un elemento crítico.
+        </p>
+        <p>
+          Representamos a operadores y empresas de torres en la obtención de permisos municipales,
+          la impugnación de denegatorias o restricciones desproporcionadas al despliegue de
+          infraestructura, y la resolución de conflictos entre la regulación sectorial y la
+          normativa urbanística local.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Compartición de infraestructura e interconexión" fundamento="Ley N.° 8642, arts. 58-64">
+        <p>
+          La Ley N.° 8642 regula la compartición de infraestructura (arts. 58-60) y la
+          interconexión de redes (arts. 61-64) entre operadores de telecomunicaciones. SUTEL
+          tiene potestad para ordenar la compartición cuando sea técnicamente factible y
+          resolver controversias de interconexión.
+        </p>
+        <p>
+          Asesoramos en la negociación de acuerdos de compartición de infraestructura y de
+          interconexión, representamos ante SUTEL en procedimientos de resolución de controversias,
+          e impugnamos resoluciones de SUTEL que impongan condiciones de acceso desproporcionadas.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Operadores satelitales y nuevas tecnologías" fundamento="Ley N.° 8642; UIT">
+        <p>
+          La concesión de Starlink (julio 2023) y el interés de otros operadores satelitales
+          (OneWeb) abren un nuevo frente regulatorio en telecomunicaciones. La regulación de
+          internet satelital se rige por la Ley N.° 8642 y los acuerdos internacionales del
+          Reglamento de Radiocomunicaciones de la UIT, con SUTEL como autoridad de asignación
+          de frecuencias.
+        </p>
+        <p>
+          Asesoramos a operadores satelitales en trámites de concesión ante SUTEL, cumplimiento
+          de obligaciones regulatorias, y resolución de disputas de espectro con operadores
+          terrestres. También asesoramos sobre la regulación emergente de internet de las cosas
+          (IoT) y comunicaciones máquina a máquina (M2M).
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre telecomunicaciones
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué pasa si un concesionario 5G no cumple con las obligaciones de despliegue?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              SUTEL puede iniciar un procedimiento sancionatorio por incumplimiento de condiciones
+              de concesión conforme a la Ley N.° 8642. Las sanciones pueden incluir multas,
+              reducción del plazo de concesión o revocatoria en casos graves. El procedimiento
+              sancionatorio es un procedimiento administrativo sujeto a las garantías de la LGAP
+              y susceptible de impugnación ante el TCA. Corporación GC defiende a concesionarios
+              en estos procedimientos.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+
+  "energia-renovable-transicion-energetica": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          Costa Rica genera más del 98% de su electricidad con fuentes renovables, pero el marco
+          regulatorio de generación privada, comercialización de energía y transición energética
+          plantea desafíos jurídicos complejos. Con $539 millones en proyectos renovables ICE
+          2025-2026, el Plan Nacional de Energía 2025-2035 y el Plan Nacional de Descarbonización
+          2050, la regulación de energía renovable intersecta el derecho administrativo, el derecho
+          ambiental y la contratación pública.
+        </p>
+      </section>
+
+      <Instrumento titulo="Generación privada de energía" fundamento="Ley N.° 7200; Ley N.° 7508">
+        <p>
+          La Ley de Generación Autónoma o Paralela (Ley N.° 7200) y su reforma (Ley N.° 7508)
+          regulan la generación privada de electricidad en Costa Rica, estableciendo límites de
+          capacidad para generadores autónomos y paralelos, y las condiciones bajo las cuales
+          pueden vender energía al ICE. El ICE actúa como rector del sistema eléctrico nacional
+          y comprador principal de energía.
+        </p>
+        <p>
+          Asesoramos a desarrolladores de proyectos solares, eólicos, hidroeléctricos y de
+          biomasa en la obtención de permisos de generación conforme a los límites de la
+          Ley N.° 7200, la negociación de contratos de compra de energía (PPA) con ICE y
+          distribuidoras, y la defensa ante denegatorias o restricciones de ARESEP.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Regulación tarifaria ante ARESEP" fundamento="Ley N.° 7593">
+        <p>
+          La Autoridad Reguladora de los Servicios Públicos (ARESEP) fija las tarifas del servicio
+          de electricidad conforme al principio de servicio al costo establecido en la Ley N.° 7593.
+          Las fijaciones tarifarias afectan directamente la viabilidad económica de los proyectos
+          de generación renovable y la rentabilidad de los contratos PPA.
+        </p>
+        <p>
+          Impugnamos fijaciones tarifarias que no respeten el principio de servicio al costo o
+          que impongan cargas desproporcionadas a los generadores privados, mediante recursos
+          administrativos ante ARESEP y demandas contencioso-administrativas ante el TCA.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Permisos ambientales para proyectos renovables" fundamento="Ley N.° 7554; SETENA">
+        <p>
+          Los proyectos de generación renovable requieren viabilidad ambiental de SETENA conforme
+          a la Ley N.° 7554 y el Reglamento de Evaluación de Impacto Ambiental. Proyectos
+          hidroeléctricos, eólicos y solares de mediana y gran escala están sujetos a evaluación
+          de impacto ambiental que puede incluir estudios de impacto ambiental (EsIA) completos.
+        </p>
+        <p>
+          Representamos a desarrolladores en el trámite de viabilidad ambiental ante SETENA,
+          la defensa ante oposiciones de comunidades o grupos ambientalistas, y la impugnación
+          de denegatorias o condicionamientos desproporcionados a la viabilidad ambiental.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Mercado Eléctrico Regional (MER) y SIEPAC" fundamento="Tratado Marco del MER; SIEPAC">
+        <p>
+          El Sistema de Interconexión Eléctrica de los Países de América Central (SIEPAC) y el
+          Mercado Eléctrico Regional (MER) permiten la comercialización transfronteriza de
+          energía. En 2024 se comercializaron más de 3,700 GWh con un valor de ~US$350M y más
+          de 300 agentes participantes. La Empresa Propietaria de la Red (EPR), con sede en
+          San José, opera la infraestructura regional.
+        </p>
+        <p>
+          Asesoramos a generadores y comercializadores en la participación en el MER, el
+          cumplimiento del Tratado Marco y sus protocolos, la resolución de disputas
+          transfronterizas, y la regulación emergente del hidrógeno verde y almacenamiento
+          en baterías.
+        </p>
+      </Instrumento>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
+          Preguntas frecuentes sobre energía renovable
+        </h2>
+        <div className="space-y-10">
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Puedo generar y vender energía renovable como empresa privada en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí, conforme a la Ley N.° 7200 de Generación Autónoma o Paralela, empresas privadas
+              pueden generar electricidad con fuentes renovables y vender excedentes al ICE bajo
+              contratos de compra de energía (PPA). Existen límites de capacidad establecidos por
+              la ley que deben respetarse. La obtención del permiso de generación requiere
+              cumplimiento ante ARESEP, SETENA y el ICE. Corporación GC asesora en todo el proceso
+              regulatorio.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  ),
+
+
 };
 
 export default async function AreaDetailPage({

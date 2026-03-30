@@ -28,19 +28,29 @@ import {
   UsersThree,
   Heart,
   Wrench,
+  Robot,
+  Flag,
+  WifiHigh,
+  SolarPanel,
+  Leaf,
+  Certificate,
+  ShieldWarning,
+  Recycle,
+  Factory,
+  Wallet,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
   title: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
   description:
-    "22 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
+    "31 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
   alternates: {
     canonical: "https://www.corporaciongc.com/areas",
   },
   openGraph: {
     title: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
     description:
-      "22 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
+      "31 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
     url: "https://www.corporaciongc.com/areas",
     siteName: "Corporación GC",
     locale: "es_CR",
@@ -56,7 +66,7 @@ const jsonLdCollectionPage = {
   "@id": "https://www.corporaciongc.com/areas#webpage",
   name: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
   description:
-    "22 áreas de práctica legal especializadas en Derecho Público costarricense: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más.",
+    "31 áreas de práctica legal especializadas en Derecho Público costarricense: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más.",
   url: "https://www.corporaciongc.com/areas",
   isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
   about: { "@id": "https://www.corporaciongc.com/#organization" },
@@ -120,6 +130,16 @@ const iconMap = {
   UsersThree,
   Heart,
   Wrench,
+  Robot,
+  Flag,
+  WifiHigh,
+  SolarPanel,
+  Leaf,
+  Certificate,
+  ShieldWarning,
+  Recycle,
+  Factory,
+  Wallet,
 } as const;
 
 export default function AreasPage() {
