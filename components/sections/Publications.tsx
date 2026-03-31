@@ -38,12 +38,6 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
               </h2>
             </AnimatedEntry>
 
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-4 text-sm text-white/55 leading-relaxed max-w-[50ch]">
-                Investigaci&oacute;n original en Derecho P&uacute;blico que aporta al
-                debate jur&iacute;dico, no lo resume.
-              </p>
-            </AnimatedEntry>
           </div>
 
           {hasArticles && (
