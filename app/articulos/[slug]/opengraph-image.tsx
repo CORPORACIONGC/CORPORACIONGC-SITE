@@ -16,6 +16,12 @@ const ARTICLES: Record<string, { title: string; author: string; type: string }> 
   "libro-justicia-administrativa": { title: "La Justicia Administrativa frente a la Inactividad Material de la Administración Pública", author: "Dr. Óscar Eduardo González Camacho", type: "Libro" },
   "libro-nuevo-proceso-contencioso": { title: "El Nuevo Proceso Contencioso Administrativo", author: "Dr. Óscar Eduardo González Camacho", type: "Libro" },
   "libro-proceso-ejecutivo": { title: "Consideraciones Prácticas en torno al Proceso Ejecutivo", author: "Dr. Óscar Eduardo González Camacho", type: "Libro" },
+  "expropiacion-costa-rica-derechos": { title: "Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuáles son mis derechos?", author: "Lic. Esteban Pérez Herrera", type: "Guía práctica" },
+  "como-demandar-al-estado-costa-rica": { title: "¿Cómo demandar al Estado en Costa Rica?", author: "Corporación GC", type: "Guía práctica" },
+  "abogados-derecho-administrativo-costa-rica": { title: "Abogados en Derecho Administrativo en Costa Rica", author: "Corporación GC", type: "Guía práctica" },
+  "abogados-derecho-contencioso-administrativo-costa-rica": { title: "Abogados en Derecho Contencioso Administrativo en Costa Rica", author: "Corporación GC", type: "Guía práctica" },
+  "medidas-cautelares-contra-el-estado-costa-rica": { title: "Medidas cautelares contra el Estado en Costa Rica", author: "Corporación GC", type: "Guía práctica" },
+  "por-que-y-para-que-contencioso-administrativo": { title: "¿Por qué y para qué el contencioso administrativo?", author: "Corporación GC", type: "Guía práctica" },
 };
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
