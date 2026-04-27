@@ -1577,196 +1577,111 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El recurso de amparo es la garantía constitucional que permite a toda persona
-          obtener la protección inmediata de sus derechos fundamentales cuando estos son
-          amenazados o vulnerados por órganos públicos o sujetos de derecho privado. La
-          Ley de la Jurisdicción Constitucional (Ley N.° 7135) regula este proceso en
-          sus artículos 29 a 56, estableciendo un procedimiento sumario, informal y de
-          tramitación preferente ante la Sala Constitucional de la Corte Suprema de Justicia.
+          El recurso de amparo es la garantía constitucional que protege los derechos
+          fundamentales frente a la autoridad pública o sujetos privados en posición de
+          poder. Se tramita ante la Sala Constitucional bajo un procedimiento sumario y
+          preferente, regulado en la Ley de la Jurisdicción Constitucional (Ley N.° 7135).
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC cuenta con amplia experiencia en la interposición de recursos de
-          amparo para la defensa de derechos fundamentales de personas físicas y jurídicas
-          frente a actuaciones u omisiones de la Administración Pública. A continuación se
-          describen los instrumentos que integran este mecanismo de tutela constitucional.
+          Corporación GC representa a personas físicas y jurídicas en la interposición y
+          litigio de recursos de amparo, así como en la posterior ejecución e
+          indemnización en vía contencioso-administrativa.{" "}
+          <Link
+            href="/articulos/recurso-amparo-costa-rica"
+            className="text-burgundy hover:text-gold transition-colors duration-300 underline-offset-4 hover:underline"
+          >
+            Lea nuestra guía completa sobre el recurso de amparo en Costa Rica
+          </Link>{" "}
+          para conocer plazos, requisitos y trámite con detalle.
         </p>
       </section>
 
       <Instrumento titulo="Amparo contra órganos y servidores públicos" fundamento="Ley 7135, art. 29">
         <p>
-          El artículo 29 de la Ley de la Jurisdicción Constitucional establece que el recurso
-          de amparo procede contra toda disposición, acuerdo o resolución, así como contra toda
-          acción, omisión o simple actuación material no fundada en un acto administrativo eficaz,
-          de los servidores y órganos públicos que haya violado, viole o amenace violar cualquiera
-          de los derechos fundamentales consagrados en la Constitución Política y en los instrumentos
-          internacionales de derechos humanos vigentes en Costa Rica.
-        </p>
-        <p>
-          Esta modalidad abarca cualquier conducta del poder público —acciones positivas, omisiones
-          o amenazas— que afecte derechos fundamentales, sin que se exija al recurrente el
-          agotamiento previo de la vía administrativa.
+          Procede contra toda acción, omisión o vía de hecho de la Administración Pública
+          que vulnere o amenace derechos fundamentales: denegación de servicios, listas de
+          espera prolongadas en la CCSS, sanciones sin debido proceso, silencio de la
+          autoridad, traslados arbitrarios y ejecuciones materiales sin acto firme.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Amparo contra sujetos de derecho privado" fundamento="Ley 7135, art. 30">
+      <Instrumento titulo="Amparo contra sujetos de derecho privado" fundamento="Ley 7135, art. 57">
         <p>
-          El artículo 30 de la Ley N.° 7135 extiende la protección del amparo a los casos en
-          que la violación de derechos fundamentales proviene de sujetos de derecho privado,
-          siempre que estos actúen o deban actuar en ejercicio de funciones o potestades públicas,
-          o se encuentren en una posición de poder frente al recurrente de la cual se derive la
-          posibilidad de lesionar sus derechos fundamentales.
-        </p>
-        <p>
-          Este instrumento resulta especialmente relevante frente a entidades privadas que
-          prestan servicios públicos, concesionarios, empresas en posición de dominio o
-          cualquier sujeto particular que, por su posición fáctica o jurídica, pueda afectar
-          derechos fundamentales de terceros.
+          Procede contra hospitales privados, universidades, colegios privados,
+          asociaciones, colegios profesionales y demás sujetos privados que actúen en
+          posición de poder frente al recurrente, cuando el régimen ordinario sea
+          insuficiente o tardío para garantizar el derecho.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Legitimación para interponer el amparo" fundamento="Ley 7135, art. 33">
+      <Instrumento titulo="Medidas cautelares y suspensión del acto" fundamento="Ley 7135, arts. 41 y 43">
         <p>
-          El artículo 33 de la Ley N.° 7135 consagra una legitimación amplísima: cualquier persona
-          puede interponer el recurso de amparo, incluso en favor de un tercero, sin necesidad de
-          poder especial ni de demostrar un interés directo. Esta legitimación universal refleja
-          la naturaleza del amparo como instrumento de tutela objetiva de los derechos fundamentales
-          y permite que organizaciones, defensores de derechos humanos o cualquier ciudadano actúen
-          en defensa del orden constitucional.
+          La Sala Constitucional puede ordenar la suspensión del acto impugnado desde la
+          presentación del recurso, sin garantía y sin audiencia previa, cuando su
+          ejecución pueda causar daños graves o irreparables. Esta es la herramienta más
+          efectiva para detener un perjuicio en cuestión de días.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Plazo para la interposición del amparo" fundamento="Ley 7135, art. 35">
+      <Instrumento titulo="Ejecución e indemnización en vía contenciosa" fundamento="Ley 7135, art. 56; CPCA">
         <p>
-          Conforme al artículo 35 de la Ley N.° 7135, el recurso de amparo puede interponerse en
-          cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción del
-          derecho fundamental. No existe un plazo de caducidad cuando la lesión es continuada. Si
-          se trata de una actuación consumada, el recurso deberá plantearse dentro de los dos meses
-          siguientes a la fecha en que el perjudicado tuvo noticia fehaciente de la actuación u
-          omisión lesiva.
+          La sentencia estimatoria condena en abstracto al pago de daños, perjuicios y
+          costas. La cuantificación se realiza posteriormente ante el Tribunal Contencioso
+          Administrativo mediante proceso de ejecución. Acompañamos al cliente en ambas
+          fases: la constitucional ante la Sala y la posterior liquidación contenciosa.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Medidas cautelares en el amparo" fundamento="Ley 7135, arts. 43-44">
-        <p>
-          Los artículos 43 y 44 de la Ley N.° 7135 facultan a la Sala Constitucional para adoptar
-          medidas cautelares desde el momento mismo de la interposición del recurso de amparo. Estas
-          medidas pueden consistir en la suspensión de la ejecución del acto o conducta impugnada,
-          así como en cualquier otra disposición de conservación o seguridad que el Tribunal estime
-          necesaria para evitar que la lesión al derecho fundamental se torne irreparable.
-        </p>
-        <p>
-          La adopción de medidas cautelares no requiere rendición de garantía y se dicta inaudita
-          altera parte, sin perjuicio de la posibilidad de la autoridad recurrida de solicitar su
-          revocación o modificación.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Sentencia y efectos restitutorios" fundamento="Ley 7135, arts. 49, 51">
-        <p>
-          El artículo 49 de la Ley N.° 7135 establece que la sentencia que declare con lugar el
-          recurso de amparo deberá indicar el derecho lesionado, la conducta que lo lesiona,
-          la orden de restitución al agraviado en el pleno goce de su derecho y la condena en
-          abstracto al pago de daños, perjuicios y costas. El artículo 51 dispone que la
-          sentencia tiene efectos declarativos y retroactivos a la fecha de la interposición
-          del recurso, sin perjuicio de que la Sala pueda dimensionar sus efectos temporales
-          según las circunstancias del caso.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Ejecución e indemnización en vía contencioso-administrativa" fundamento="Ley 7135, art. 56">
-        <p>
-          El artículo 56 de la Ley N.° 7135 establece que la condena en abstracto al pago de
-          daños, perjuicios y costas dictada en la sentencia de amparo se liquidará en la vía
-          contencioso-administrativa mediante el proceso de ejecución correspondiente. Esta
-          disposición conecta la tutela constitucional con la jurisdicción contencioso-administrativa,
-          de modo que el amparado puede obtener la cuantificación y cobro efectivo de los daños
-          sufridos como consecuencia de la violación de sus derechos fundamentales.
-        </p>
-      </Instrumento>
-
-      {/* ── Preguntas Frecuentes ── */}
+      {/* ── Preguntas frecuentes ── */}
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre el recurso de amparo
+          Preguntas frecuentes
         </h2>
 
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es un recurso de amparo en Costa Rica?
+              ¿Necesito un abogado para presentar un recurso de amparo?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El recurso de amparo es la garantía constitucional que permite a toda persona obtener
-              la protección inmediata de sus derechos fundamentales cuando estos son amenazados o
-              vulnerados por un órgano público o, en ciertos casos, por sujetos privados. Está
-              regulado en los artículos 29 a 56 de la Ley de la Jurisdicción Constitucional (Ley N.°
-              7135) y se tramita ante la Sala Constitucional de la Corte Suprema de Justicia. El
-              procedimiento es sumario, informal y de tramitación preferente: no requiere patrocinio
-              letrado obligatorio, no exige formalidades especiales y puede presentarse por escrito o
-              incluso verbalmente. El amparo protege todos los derechos consagrados en la Constitución
-              Política y en los instrumentos internacionales de derechos humanos vigentes en Costa Rica.
-              Es el mecanismo de tutela de derechos fundamentales más utilizado en el sistema jurídico
-              costarricense, con miles de recursos resueltos anualmente por la Sala Constitucional.
+              Legalmente no: el amparo puede presentarlo cualquier persona sin patrocinio
+              letrado. En la práctica, contar con asesoría especializada es determinante
+              cuando el caso involucra prueba compleja, condena en abstracto a daños y
+              perjuicios, riesgo de cosa juzgada constitucional o estrategia procesal
+              entrelazada con un proceso administrativo o contencioso. Un escrito mal
+              articulado puede llevar al rechazo de plano y precluir la posibilidad de
+              discutir el asunto en otra sede.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Quién puede presentar un recurso de amparo?
+              ¿Qué hace Corporación GC en un caso de amparo?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Cualquier persona puede interponer un recurso de amparo en Costa Rica, incluso en favor
-              de un tercero y sin necesidad de poder especial ni de demostrar un interés directo. El
-              artículo 33 de la Ley N.° 7135 consagra una legitimación universal: personas físicas,
-              personas jurídicas, organizaciones de la sociedad civil, defensores de derechos humanos
-              o cualquier ciudadano pueden actuar en defensa del orden constitucional. Esta amplitud
-              refleja la naturaleza del amparo como instrumento de tutela objetiva de los derechos
-              fundamentales. El recurso procede contra cualquier disposición, acuerdo, resolución,
-              acción, omisión o actuación material de servidores y órganos públicos que viole o amenace
-              derechos fundamentales (art. 29). También procede contra sujetos de derecho privado cuando
-              estos actúen en ejercicio de funciones públicas o se encuentren en posición de poder frente
-              al recurrente (art. 30). No se exige el agotamiento previo de la vía administrativa.
+              Evaluamos la viabilidad del recurso, identificamos el derecho fundamental
+              afectado, redactamos el escrito con cita de jurisprudencia constitucional,
+              solicitamos medidas cautelares cuando proceda, atendemos la audiencia de
+              prueba e informe de la autoridad recurrida y, en caso de sentencia
+              favorable, ejecutamos la condena en abstracto ante el Tribunal Contencioso
+              Administrativo para cuantificar daños y perjuicios.
             </p>
           </div>
+        </div>
 
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuál es el plazo para presentar un recurso de amparo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El plazo para interponer un recurso de amparo depende de la naturaleza de la lesión.
-              Conforme al artículo 35 de la Ley N.° 7135, cuando la violación al derecho fundamental
-              es continuada —es decir, subsiste en el tiempo—, el recurso puede presentarse en
-              cualquier momento mientras dure la lesión, sin plazo de caducidad alguno. Si se trata de
-              una actuación consumada (que ya ocurrió y cesó), el recurso debe plantearse dentro de los
-              dos meses siguientes a la fecha en que el perjudicado tuvo noticia fehaciente de la
-              actuación u omisión lesiva. Es importante distinguir entre ambos supuestos, pues muchas
-              violaciones que parecen consumadas son en realidad continuadas (por ejemplo, la denegación
-              de un permiso que sigue surtiendo efectos). La Sala Constitucional puede adoptar medidas
-              cautelares desde el momento mismo de la interposición, incluyendo la suspensión del acto
-              impugnado, sin necesidad de rendir garantía (arts. 43-44).
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué se obtiene si se gana un recurso de amparo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La sentencia que declara con lugar un recurso de amparo produce efectos amplios y
-              restitutorios. Según el artículo 49 de la Ley N.° 7135, la Sala Constitucional debe
-              indicar el derecho lesionado, identificar la conducta que lo lesiona, ordenar la
-              restitución al agraviado en el pleno goce de su derecho, y condenar en abstracto al
-              pago de daños, perjuicios y costas. Los efectos de la sentencia son declarativos y
-              retroactivos a la fecha de interposición del recurso (art. 51), aunque la Sala puede
-              dimensionar los efectos temporales según las circunstancias del caso. La condena
-              económica se liquida posteriormente en la vía contencioso-administrativa mediante el
-              proceso de ejecución (art. 56), lo que conecta la tutela constitucional con la
-              jurisdicción contencioso-administrativa. Corporación GC asesora tanto en la fase
-              constitucional como en la posterior ejecución y cuantificación de daños ante el
-              Tribunal Contencioso Administrativo.
-            </p>
-          </div>
+        <div className="mt-12 p-6 rounded-lg border border-cream/[0.08] bg-cream/[0.02]">
+          <p className="text-sm text-cream/70 leading-relaxed mb-4">
+            ¿Le notificaron una resolución, sanción o denegación que considera
+            inconstitucional? Los plazos del amparo corren rápido y su correcto
+            planteamiento puede determinar el resultado.
+          </p>
+          <Link
+            href="/contacto"
+            className="inline-flex items-center gap-1.5 text-sm text-burgundy hover:text-gold transition-colors duration-300 font-medium"
+          >
+            Agende una consulta
+            <ArrowLeft size={14} weight="regular" className="rotate-180" />
+          </Link>
         </div>
       </section>
     </>
