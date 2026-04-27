@@ -42,9 +42,9 @@ En la práctica, esto cubre tres grandes categorías:
 
 ### Amparo contra sujetos de derecho privado
 
-Una particularidad costarricense es que el amparo no se limita al sector público. El **artículo 57 de la Ley de la Jurisdicción Constitucional** —desarrollado en el capítulo del amparo contra sujetos de derecho privado— habilita la presentación cuando estos actúan o están en una posición de poder frente al recurrente, o cuando el régimen ordinario resulte insuficiente o tardío para garantizar los derechos.
+Una particularidad costarricense es que el amparo no se limita al sector público. El **artículo 57 de la Ley de la Jurisdicción Constitucional** habilita su presentación contra acciones u omisiones de sujetos de derecho privado cuando estos actúen o deban actuar en ejercicio de funciones o potestades públicas, se encuentren en una posición de poder frente al recurrente, o cuando el régimen ordinario resulte insuficiente o tardío para garantizar el derecho fundamental afectado.
 
-Casos típicos: hospitales privados, universidades, condominios, asociaciones, colegios profesionales y empleadores cuando vulneran derechos fundamentales y no existe una vía ordinaria igualmente efectiva.
+Casos típicos: hospitales privados, universidades, colegios privados, asociaciones y colegios profesionales cuando vulneran derechos fundamentales y no existe una vía ordinaria igualmente efectiva.
 
 ### ¿Cuándo NO procede el recurso de amparo?
 
@@ -61,20 +61,25 @@ Estos cuatro motivos son la causa más frecuente de **rechazo de plano** —es d
 
 ## ¿Qué derechos fundamentales protege el amparo?
 
-El amparo protege la totalidad de los derechos consagrados en la Constitución Política (artículos 20 a 74) y en los instrumentos internacionales sobre derechos humanos vigentes en Costa Rica, entre ellos la Convención Americana sobre Derechos Humanos. Los derechos invocados con mayor frecuencia ante la Sala Constitucional incluyen:
+El amparo protege los derechos fundamentales consagrados en la Constitución Política y en los instrumentos internacionales sobre derechos humanos vigentes en Costa Rica, entre ellos la Convención Americana sobre Derechos Humanos. Los derechos invocados con mayor frecuencia ante la Sala Constitucional incluyen:
 
 - **Salud y vida** (acceso a medicamentos, cirugías, tratamientos en la CCSS, listas de espera).
-- **Educación** (matrículas, becas, sanciones disciplinarias, exámenes).
-- **Trabajo** (despidos sin debido proceso en sector público, traslados arbitrarios).
-- **Debido proceso y defensa** en procedimientos administrativos.
+- **Educación** (matrículas, becas, sanciones disciplinarias en centros educativos públicos y privados).
+- **Debido proceso y derecho de defensa** en procedimientos administrativos.
 - **Petición y pronta respuesta** (artículo 27 constitucional, frente al silencio de la Administración).
 - **Igualdad y no discriminación.**
-- **Libertad de tránsito y permanencia.**
 - **Protección de datos personales y autodeterminación informativa.**
 - **Medio ambiente sano y ecológicamente equilibrado.**
-- **Vivienda digna y derechos del adulto mayor.**
+- **Acceso a la información pública** (artículo 30 constitucional).
+- **Derechos de personas con discapacidad y de adultos mayores.**
 
-Si su caso involucra **libertad personal o física** —detención, restricción de movimiento, exilio, prohibición de salir del país—, la vía no es el amparo sino el **hábeas corpus**, regulado en los artículos 15 a 28 de la misma ley.
+### Cuando la vía no es el amparo
+
+Si su caso involucra **libertad personal, integridad física o libertad de tránsito** —detención sin orden, restricción de movimiento, prohibición de salir del país, condiciones de privación de libertad—, la vía no es el amparo sino el **hábeas corpus**, regulado en los artículos 15 a 28 de la Ley de la Jurisdicción Constitucional.
+
+En materia de **empleo público** (despidos, sanciones disciplinarias, traslados de funcionarios), la Sala Constitucional declinó su competencia tras la sentencia 2017-017948 de 8 de noviembre de 2017, criterio reiterado en posteriores resoluciones. Con la reforma procesal laboral (Ley N.° 9343 de 25 de enero de 2016, vigente desde julio de 2017), estos asuntos se conocen en la **jurisdicción laboral**, salvo que exista un componente directo y autónomo de vulneración a un derecho fundamental no reparable por la vía ordinaria.
+
+Para impugnar la legalidad ordinaria de un acto administrativo —sin componente de derecho fundamental—, la vía es la **demanda contencioso-administrativa** ante el Tribunal Contencioso Administrativo, no el amparo.
 
 ---
 
@@ -84,12 +89,14 @@ El **artículo 35 de la Ley de la Jurisdicción Constitucional** establece que e
 
 Esta regla es la que más confusión genera, y conviene tenerla clara:
 
-| Situación | Cuándo empieza a correr el plazo de 2 meses |
+| Tipo de conducta impugnada | Cómputo de los dos meses |
 |---|---|
-| Acto único de efectos instantáneos | Desde la notificación o el día en que tuvo conocimiento del acto |
-| Acto de efectos continuados (la lesión se prolonga) | El plazo no corre mientras la lesión subsista |
-| Omisión administrativa | Mientras la inacción se mantenga, el amparo es procedente |
+| Acto de efectos instantáneos (ya consumado) | Desde la notificación o conocimiento indubitable del acto |
+| Acto de efectos continuados (la lesión persiste) | El plazo no corre mientras subsista la lesión |
+| Omisión administrativa (silencio o inacción) | Mientras la omisión persista, el amparo es procedente |
 | Vía de hecho que cesó | Desde la fecha en que cesó el comportamiento lesivo |
+
+*Fundamento: artículo 35 de la Ley de la Jurisdicción Constitucional.*
 
 En otras palabras: **muchas personas creen que se les venció el plazo cuando en realidad el acto lesivo continúa surtiendo efectos.** Si está pensando en interponer un amparo y ya pasaron varios meses, no asuma que la vía está cerrada; un análisis técnico puede mostrar que los efectos siguen vigentes y, por tanto, el plazo aún no ha empezado a correr.
 
@@ -129,25 +136,25 @@ Si presenta el escrito de forma presencial, **lleve dos copias**: una queda en e
 
 ## ¿Qué ocurre después de presentar el amparo?
 
-Una vez recibido el escrito, el trámite ordinario sigue estas etapas:
+Una vez recibido el escrito, el trámite sigue estas etapas:
 
-1. **Estudio de admisibilidad.** Un magistrado instructor revisa si el amparo cumple los requisitos formales y si no incurre en una causal de rechazo de plano (artículo 9). Esto se decide en pocos días.
+1. **Estudio de admisibilidad.** El magistrado instructor designado revisa si la gestión es manifiestamente improcedente o infundada y, en tal caso, somete a la Sala el rechazo de plano conforme al artículo 9 de la Ley de la Jurisdicción Constitucional. Si el recurso supera ese filtro, se da curso al trámite.
 
-2. **Audiencia a la autoridad recurrida.** Si el amparo es admitido, la Sala da audiencia a la autoridad para que rinda informe sobre los hechos. La autoridad debe contestar bajo juramento; las afirmaciones que haga se tienen como ciertas y, si no son veraces, dan lugar a responsabilidad.
+2. **Suspensión de los actos impugnados.** Conforme al artículo 41 de la Ley de la Jurisdicción Constitucional, la sola interposición del amparo suspende —de pleno derecho— la aplicación al recurrente de los actos concretos impugnados. La Sala puede, a petición de la Administración o de oficio, mantener la ejecución cuando la suspensión cause o amenace causar daños mayores al interés público que los que la ejecución causaría al agraviado, dictando las cautelas que correspondan.
 
-3. **Suspensión cautelar.** El artículo 41 permite que la Sala suspenda el acto impugnado mientras se resuelve el fondo, cuando su ejecución pueda causar perjuicios graves o irreparables. Esta es una de las herramientas más poderosas del amparo: detiene el daño en cuestión de días.
+3. **Informe de la autoridad recurrida.** El artículo 43 ordena pedir informe al servidor o titular del órgano señalado como autor del agravio. La autoridad debe contestar bajo juramento; sus afirmaciones se tienen como ciertas y su falsedad genera responsabilidad.
 
-4. **Prueba.** Si la situación lo amerita, la Sala puede ordenar la evacuación de prueba.
+4. **Diligencias para mejor proveer.** El artículo 47 faculta a la Sala para ordenar, antes de dictar sentencia, cualquier otra diligencia que considere necesaria.
 
-5. **Sentencia.** La Sala resuelve por escrito, con efectos vinculantes y de cumplimiento inmediato. Si declara con lugar el amparo, ordena a la autoridad actuar de determinada manera y, en caso de desobediencia, abre la vía para el delito de desobediencia a la autoridad.
+5. **Sentencia.** La Sala resuelve por escrito, con efectos vinculantes y de cumplimiento inmediato. La sentencia que acoge el recurso ordena la restitución del agraviado en el goce de su derecho y condena en abstracto al pago de daños, perjuicios y costas (artículo 51).
 
-6. **Ejecución.** La sentencia es de cumplimiento inmediato. En caso de incumplimiento, la propia Sala puede ordenar medidas y, eventualmente, derivar el caso a la jurisdicción penal.
+6. **Ejecución.** El cumplimiento de la sentencia corresponde a la propia Sala (artículo 56). El incumplimiento doloso de las órdenes dictadas configura el delito de desobediencia previsto en el artículo 71, sancionado con prisión de tres meses a dos años o de veinte a sesenta días multa. La cuantificación de los daños se realiza después en la jurisdicción contencioso-administrativa.
 
 ---
 
 ## Errores comunes que llevan al rechazo de plano
 
-Más de la mitad de los amparos que presenta la ciudadanía son **rechazados de plano** sin ser tramitados. Estos son los errores más frecuentes que conviene evitar:
+Una proporción significativa de los amparos presentados por la ciudadanía es **rechazada de plano** —sin tramitar— por incurrir en alguno de los supuestos del artículo 9 de la Ley de la Jurisdicción Constitucional o por configurar alguna causal de improcedencia del artículo 30. Estos son los errores más frecuentes que conviene evitar:
 
 **Confundir el amparo con la acción de inconstitucionalidad.** Si su queja es contra una ley, no contra un acto de aplicación, la vía es la acción de inconstitucionalidad, no el amparo.
 
@@ -179,24 +186,24 @@ La pregunta no es solo "¿puedo presentarlo solo?" sino "¿qué riesgo asumo al 
 
 ## Diferencia entre amparo y otros recursos
 
-Una de las decisiones más importantes es elegir la vía adecuada. Esta comparación, basada en los textos legales aplicables, ayuda a ubicar cuándo procede cada uno:
+Una de las decisiones más importantes es elegir la vía adecuada. La siguiente comparación, basada en los textos legales aplicables, ayuda a ubicar cuándo procede cada uno.
 
-#### Vías constitucionales (Sala Constitucional)
+#### Vías constitucionales — competencia de la Sala Constitucional
 
-| Recurso | Sirve para | Plazo | ¿Necesita abogado? |
-|---|---|---|---|
-| **Amparo** | Proteger derechos fundamentales frente a acto, omisión o vía de hecho | 2 meses desde cese de efectos | No |
-| **Hábeas corpus** | Proteger libertad personal e integridad física | Sin plazo | No |
-| **Acción de inconstitucionalidad** | Anular leyes o normas contrarias a la Constitución | Sin plazo (con asunto previo) | Sí |
+| Recurso | Procedencia | Plazo | Patrocinio letrado | Fundamento |
+|---|---|---|---|---|
+| **Amparo** | Vulneración de derechos fundamentales por acto, omisión o vía de hecho | Dos meses desde el cese de los efectos; no corre mientras subsista la lesión | No requerido | Constitución, art. 48; LJC, arts. 29-72 |
+| **Hábeas corpus** | Restricción a la libertad e integridad personales o a la libertad de tránsito | No sujeto a plazo | No requerido | Constitución, art. 48; LJC, arts. 15-28 |
+| **Acción de inconstitucionalidad** | Norma contraria a la Constitución o a instrumentos internacionales de derechos humanos | No sujeta a plazo (requiere asunto previo, salvo intereses difusos) | Requerido | LJC, arts. 73-95 |
 
-#### Vías administrativas y contenciosas
+#### Vías administrativas y contencioso-administrativas
 
-| Recurso | Sirve para | Plazo | ¿Necesita abogado? |
-|---|---|---|---|
-| **Revocatoria y apelación** | Impugnar un acto administrativo en sede de la Administración | 5 días desde notificación | No |
-| **Demanda contencioso-administrativa** | Demandar al Estado por conducta ilegal y exigir reparación | 1 año desde notificación o cese de efectos | Sí |
+| Recurso | Procedencia | Plazo | Patrocinio letrado | Fundamento |
+|---|---|---|---|---|
+| **Revocatoria y apelación en subsidio** | Impugnar un acto administrativo final en sede de la propia Administración | Tres días hábiles desde la notificación (24 horas para actos de mero trámite) | No requerido | LGAP, arts. 342-352 |
+| **Demanda contencioso-administrativa** | Impugnar conducta de la Administración (acto, omisión, vía de hecho) y exigir reparación | Un año desde la notificación o desde el cese de los efectos | Requerido | CPCA, arts. 39-40 |
 
-**Fundamento legal:** Constitución Política art. 48; Ley de la Jurisdicción Constitucional (LJC); Ley General de la Administración Pública (LGAP) arts. 342-345; Código Procesal Contencioso Administrativo (CPCA) art. 39.
+LJC: Ley de la Jurisdicción Constitucional (Ley N.° 7135). LGAP: Ley General de la Administración Pública (Ley N.° 6227). CPCA: Código Procesal Contencioso Administrativo (Ley N.° 8508).
 
 Si su situación admite varias vías —por ejemplo, una sanción administrativa que también vulnera el debido proceso—, la elección estratégica entre amparo y contencioso (o ambos en paralelo) puede determinar la velocidad y el alcance de la reparación.
 
