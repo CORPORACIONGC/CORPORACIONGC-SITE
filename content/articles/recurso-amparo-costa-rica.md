@@ -1,5 +1,5 @@
 ---
-title: "Recurso de Amparo en Costa Rica: guía completa 2026 (plazos, requisitos y trámite)"
+title: "Recurso de Amparo en Costa Rica: requisitos, plazos y trámite"
 date: "2026-04-26"
 excerpt: "El recurso de amparo es la herramienta constitucional más rápida para proteger sus derechos fundamentales frente a la autoridad pública o privada. Esta guía explica, con base en la Ley de la Jurisdicción Constitucional, qué actos pueden impugnarse, cuál es el plazo de dos meses, dónde se presenta y los errores que llevan al rechazo de plano por la Sala Constitucional."
 tags: ["Guía práctica", "Recurso de Amparo", "Sala Constitucional", "Derechos Fundamentales", "Derecho Constitucional"]
