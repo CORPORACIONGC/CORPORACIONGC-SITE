@@ -24,6 +24,13 @@ const nextConfig: NextConfig = {
         destination: "https://www.corporaciongc.com/:path*",
         permanent: true,
       },
+      // URL corrupta detectada en auditoría SEO: Y29udHJhdG es base64 truncado
+      // de "contratacion". Consolida cualquier visita a la URL canónica.
+      {
+        source: "/areas/Y29udHJhdG",
+        destination: "/areas/contratacion-publica",
+        permanent: true,
+      },
     ];
   },
   async headers() {
