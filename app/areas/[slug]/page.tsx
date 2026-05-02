@@ -293,11 +293,6 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           una de las innovaciones más significativas del código, pues superaron la limitación del
           sistema anterior que solo permitía la suspensión del acto administrativo.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC cuenta con una práctica especializada en tutela cautelar, con particular
-          énfasis en las medidas provisionalísimas que requieren actuación inmediata ante
-          situaciones de urgencia extrema.
-        </p>
       </section>
 
       <Instrumento titulo="Medida cautelar provisionalísima" fundamento="CPCA, art. 21">
@@ -398,71 +393,6 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre medidas cautelares
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es una medida cautelar provisionalísima en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La medida cautelar provisionalísima es el instrumento de protección más urgente del
-              proceso contencioso-administrativo costarricense, regulado en el artículo 21 del CPCA
-              (Ley N.° 8508). Permite al juez dictar una orden de protección de forma inmediata y sin
-              audiencia previa a la parte contraria (inaudita parte) cuando existe una situación de
-              urgencia extrema que no admite la demora del trámite ordinario. Lo excepcional de este
-              instrumento es que puede solicitarse incluso antes de presentar la demanda, cuando la
-              amenaza de daño es tan inminente que cualquier dilación haría irreparable el perjuicio.
-              Una vez dictada, el juez convoca a las partes a una audiencia oral dentro de las 48 horas
-              siguientes para decidir si la mantiene, modifica o revoca. Si no se interpone la demanda
-              en el plazo que fije el tribunal, la medida queda sin efecto automáticamente.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuáles son los requisitos para obtener una medida cautelar contra el Estado?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Para obtener una medida cautelar en la jurisdicción contencioso-administrativa
-              costarricense se deben acreditar dos presupuestos fundamentales establecidos en el
-              artículo 20 del CPCA. Primero, el periculum in mora: demostrar que existe un peligro
-              cierto de que la demora del proceso principal cause un perjuicio grave o irreparable,
-              o que haga ineficaz la eventual sentencia favorable. Segundo, el fumus boni iuris:
-              evidenciar que la pretensión de fondo tiene una apariencia razonable de fundamento
-              jurídico, sin que el juez deba pronunciarse sobre el mérito del caso. Además, el juez
-              realiza una ponderación de intereses: la medida no debe causar al interés público un
-              perjuicio evidentemente desproporcionado respecto del beneficio para el solicitante. El
-              CPCA superó el paradigma anterior donde el interés público prevalecía automáticamente,
-              estableciendo un sistema de balance proporcional entre los derechos del administrado y
-              el interés general.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Se puede pedir una medida cautelar antes de presentar la demanda?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Sí. El CPCA permite solicitar medidas cautelares ante causam, es decir, antes de
-              interponer la demanda contencioso-administrativa. Esta posibilidad es especialmente
-              útil cuando la urgencia de la situación no permite esperar a la preparación completa
-              de la demanda. El solicitante debe acreditar los mismos presupuestos de toda medida
-              cautelar (peligro en la demora y apariencia de buen derecho) y el juez, al concederla,
-              fijará un plazo para la interposición de la demanda principal. Si la demanda no se
-              presenta dentro de ese plazo, la medida se levanta automáticamente y el solicitante
-              responde por los daños y perjuicios que haya causado. En casos de urgencia extrema,
-              puede solicitarse directamente una medida provisionalísima ante causam (art. 21 CPCA),
-              que se dicta sin audiencia previa en cuestión de horas. Corporación GC tiene amplia
-              experiencia en la obtención de este tipo de medidas de tutela urgente.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   ),
 
@@ -5328,18 +5258,6 @@ export default async function AreaDetailPage({
                       </div>
                     ))}
                   </div>
-                </section>
-
-                {/* Pricing note */}
-                <section className="mt-14 p-6 rounded-xl border border-gold/15 bg-gold/[0.03]">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-[10px] tracking-[0.25em] uppercase text-gold/80 font-medium">
-                      Honorarios
-                    </span>
-                  </div>
-                  <p className="text-sm text-cream/70 leading-relaxed max-w-[65ch]">
-                    {commercial.pricingNote}
-                  </p>
                 </section>
 
                 {/* Commercial FAQ */}

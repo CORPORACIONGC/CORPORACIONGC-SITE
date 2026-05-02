@@ -3,7 +3,6 @@ export type CommercialLanding = {
   hookSubtext: string;
   triggerScenarios: string[];
   services: { title: string; description: string }[];
-  pricingNote: string;
   whatsappMessage: string;
   commercialFaq: { question: string; answer: string }[];
   relatedArticleSlug?: string;
@@ -56,8 +55,6 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "Cuando la cautelar se solicita ante causam, coordinamos su otorgamiento con la presentación oportuna de la demanda dentro del plazo fijado por el tribunal.",
       },
     ],
-    pricingNote:
-      "Los honorarios se acuerdan caso por caso según complejidad, urgencia y cuantía afectada. Trabajamos con honorarios fijos, por etapas o con éxito condicionado, según la naturaleza del asunto. La consulta inicial es sin costo y permite definir el esquema más adecuado.",
     whatsappMessage:
       "Hola, necesito asesoría urgente sobre una medida cautelar contra el Estado. Me gustaría coordinar una consulta.",
     commercialFaq: [
@@ -65,11 +62,6 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
         question: "¿Cuánto tarda en resolverse una medida cautelar?",
         answer:
           "Las medidas provisionalísimas (art. 21 CPCA) pueden dictarse en cuestión de horas, sin audiencia previa a la parte contraria. Las cautelares ordinarias requieren audiencia oral, generalmente dentro de los días siguientes a la solicitud. La rapidez efectiva depende de la urgencia demostrada y del Tribunal de turno.",
-      },
-      {
-        question: "¿Cuánto cuesta solicitar una medida cautelar?",
-        answer:
-          "Los honorarios se establecen caso por caso según la complejidad técnica, la urgencia y la cuantía afectada. Recibimos casos con honorarios fijos, por etapas procesales o con éxito condicionado. La consulta inicial es sin costo y nos permite definir el esquema más adecuado al caso concreto.",
       },
       {
         question: "¿Necesito tener la demanda lista para solicitar la medida?",
