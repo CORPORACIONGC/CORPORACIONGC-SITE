@@ -25,7 +25,7 @@ export async function generateMetadata({
   const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
   if (!area) return {};
   return {
-    title: `${area.title} en Costa Rica | Abogados · Corporación GC`,
+    title: `${area.title} en Costa Rica | Abogados`,
     description: `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`,
     alternates: {
       canonical: `${FIRM.url}/areas/${area.slug}`,

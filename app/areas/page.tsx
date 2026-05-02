@@ -41,7 +41,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
-  title: "Áreas de Práctica en Derecho Público y Administrativo | Corporación GC",
+  title: "Áreas de Práctica en Derecho Público y Administrativo",
   description:
     "31 áreas: litigio contencioso-administrativo, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública y más. Abogados en Costa Rica.",
   alternates: {

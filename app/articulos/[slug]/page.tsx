@@ -36,7 +36,7 @@ export async function generateMetadata({
   const article = getArticleBySlug(slug);
   if (!article) return {};
   return {
-    title: `${article.title} | Corporación GC`,
+    title: article.title,
     description: article.excerpt,
     alternates: {
       canonical: `https://www.corporaciongc.com/articulos/${slug}`,

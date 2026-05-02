@@ -6,7 +6,7 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { FIRM } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | Corporación GC",
+  title: "Política de Privacidad",
   description:
     "Política de privacidad y protección de datos personales de Corporación GC, bufete de abogados especializado en Derecho Público en Costa Rica.",
   alternates: {

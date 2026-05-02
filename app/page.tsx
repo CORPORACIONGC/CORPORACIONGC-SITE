@@ -15,7 +15,7 @@ import { FIRM, FIRM_CREDENTIALS } from "@/lib/constants";
 /* ── SEO: Page-level metadata ── */
 
 export const metadata: Metadata = {
-  title: FIRM.title,
+  title: { absolute: FIRM.title },
   description: FIRM.description,
   keywords: [
     "abogados Costa Rica",

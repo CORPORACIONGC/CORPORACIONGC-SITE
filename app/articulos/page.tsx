@@ -14,7 +14,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata = {
-  title: "Publicaciones Académicas | Corporación GC",
+  title: "Publicaciones Académicas",
   description:
     "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
   alternates: {
