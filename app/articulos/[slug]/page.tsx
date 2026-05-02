@@ -35,15 +35,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) return {};
+  const metaTitle = article.seoTitle ?? article.title;
+  const metaDescription = article.seoDescription ?? article.excerpt;
   return {
-    title: article.title,
-    description: article.excerpt,
+    title: metaTitle,
+    description: metaDescription,
     alternates: {
       canonical: `https://www.corporaciongc.com/articulos/${slug}`,
     },
     openGraph: {
-      title: `${article.title} | Corporación GC`,
-      description: article.excerpt,
+      title: `${metaTitle} | Corporación GC`,
+      description: metaDescription,
       url: `https://www.corporaciongc.com/articulos/${slug}`,
       siteName: "Corporación GC",
       locale: "es_CR",

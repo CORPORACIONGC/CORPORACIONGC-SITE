@@ -17,6 +17,8 @@ export type ArticleMeta = {
   publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley";
   sourceReference?: string;
   sourceUrl?: string;
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 export type Article = ArticleMeta & {
@@ -37,6 +39,8 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     publicationType: data.publicationType as ArticleMeta["publicationType"],
     sourceReference: data.sourceReference as string | undefined,
     sourceUrl: data.sourceUrl as string | undefined,
+    seoTitle: data.seoTitle as string | undefined,
+    seoDescription: data.seoDescription as string | undefined,
   };
 }
 

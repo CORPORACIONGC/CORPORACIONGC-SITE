@@ -7,6 +7,8 @@ type: "article"
 author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
+seoTitle: "Cómo Presentar un Recurso de Amparo · Costa Rica"
+seoDescription: "Aprenda cuánto dura, qué requisitos tiene y cómo se tramita un recurso de amparo en Costa Rica. Sala IV, plazos legales y modelo de redacción."
 ---
 
 Cuando una autoridad pública —o incluso un sujeto privado en posición de poder— actúa o deja de actuar de forma que vulnera un derecho fundamental, la Constitución Política le ofrece una vía rápida y especial para defenderse: el **recurso de amparo**. No es una demanda ordinaria, no requiere abogado para presentarse y se resuelve mediante un trámite preferente y sumario ante la Sala Constitucional de la Corte Suprema de Justicia.

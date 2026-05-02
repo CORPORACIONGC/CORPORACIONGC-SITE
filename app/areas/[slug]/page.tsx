@@ -24,15 +24,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
   if (!area) return {};
+  const metaTitle = area.seoTitle ?? `${area.title} en Costa Rica | Abogados`;
+  const metaDescription = area.seoDescription ?? `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`;
   return {
-    title: `${area.title} en Costa Rica | Abogados`,
-    description: `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`,
+    title: metaTitle,
+    description: metaDescription,
     alternates: {
       canonical: `${FIRM.url}/areas/${area.slug}`,
     },
     openGraph: {
-      title: `${area.title} en Costa Rica | Corporación GC`,
-      description: `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`,
+      title: `${metaTitle} | Corporación GC`,
+      description: metaDescription,
       url: `${FIRM.url}/areas/${area.slug}`,
       siteName: FIRM.name,
       locale: FIRM.locale,

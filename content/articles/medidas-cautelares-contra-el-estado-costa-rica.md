@@ -7,6 +7,8 @@ type: "article"
 author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
+seoTitle: "Medidas Cautelares ante el TCA · CPCA · Costa Rica"
+seoDescription: "Análisis técnico de las medidas cautelares contra el Estado costarricense: provisionalísimas, ante causam, fumus boni iuris y periculum in mora. CPCA arts. 19-30."
 ---
 
 Un proceso contencioso-administrativo puede tomar años en resolverse. Mientras tanto, el acto administrativo que usted impugna sigue produciendo efectos: la sanción se ejecuta, la obra avanza, la concesión se pierde, el cobro se materializa. Si usted espera a la sentencia para obtener protección, es posible que cuando llegue ya no haya nada que proteger.

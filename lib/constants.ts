@@ -127,6 +127,8 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC litiga ante el Tribunal Contencioso Administrativo demandas de nulidad, plena jurisdicción y responsabilidad patrimonial del Estado. Fundamentación en el CPCA (Ley N.° 8508).",
     icon: "Gavel" as const,
     priority: "primary" as const,
+    seoTitle: "Demandar al Estado en Costa Rica · Bufete Especializado",
+    seoDescription: "Bufete líder en demandas contencioso-administrativas en Costa Rica. Dirigido por el co-redactor del CPCA, ex-Magistrado de la Sala Primera. Casación, expropiaciones.",
   },
   {
     slug: "medidas-cautelares",
@@ -135,6 +137,8 @@ export const PRACTICE_AREA_PAGES = [
     description: "Especialistas en tutela cautelar contencioso-administrativa: medidas provisionalísimas de urgencia extrema, cautelares ante causam y definitivas conforme a los artículos 19 a 30 del CPCA.",
     icon: "ShieldCheck" as const,
     priority: "primary" as const,
+    seoTitle: "Medidas Cautelares Contra el Estado · Costa Rica",
+    seoDescription: "¿Necesita suspender un acto administrativo urgente? Medidas cautelares provisionalísimas y ante causam ante el TCA. CPCA arts. 19-30. Asesoría inmediata.",
   },
   {
     slug: "casacion-sala-primera",
@@ -241,6 +245,8 @@ export const PRACTICE_AREA_PAGES = [
     description: "Trámite y defensa de concesiones en zona restringida, impugnación de revocatorias y caducidades, litigio contra ocupaciones ilegales y recursos contra planes reguladores costeros conforme a la Ley N.° 6043.",
     icon: "Waves" as const,
     priority: "specialized" as const,
+    seoTitle: "Zona Marítimo Terrestre Costa Rica · Ley 6043",
+    seoDescription: "¿Recibió notificación de demolición o expira su concesión ZMT? Abogados especializados en Ley 6043. Asesoría en Quepos, Tamarindo, Sámara y todo Costa Rica.",
   },
   {
     slug: "derecho-urbanistico",
