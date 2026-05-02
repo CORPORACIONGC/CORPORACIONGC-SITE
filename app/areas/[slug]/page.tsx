@@ -3,13 +3,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { PRACTICE_AREA_PAGES, FIRM } from "@/lib/constants";
+import { MagneticButton } from "@/components/ui/MagneticButton";
+import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT } from "@/lib/constants";
+import { AREA_COMMERCIAL } from "@/lib/area-commercial";
 import {
   ArrowLeft,
+  ArrowRight,
   Scales,
   Gavel,
   ShieldCheck,
   BookOpen,
+  WhatsappLogo,
+  Warning,
+  CheckCircle,
 } from "@phosphor-icons/react/dist/ssr";
 
 export function generateStaticParams() {
@@ -5146,6 +5152,11 @@ export default async function AreaDetailPage({
   const content = AREA_CONTENT[slug];
   if (!content) notFound();
 
+  const commercial = AREA_COMMERCIAL[slug];
+  const whatsappUrl = commercial
+    ? `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(commercial.whatsappMessage)}`
+    : null;
+
   /* JSON-LD Service schema */
   const jsonLd = {
     "@context": "https://schema.org",
@@ -5162,6 +5173,20 @@ export default async function AreaDetailPage({
     },
     serviceType: "Legal Service",
   };
+
+  const jsonLdFaq = commercial && commercial.commercialFaq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `https://www.corporaciongc.com/areas/${area.slug}#faq`,
+    mainEntity: commercial.commercialFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  } : null;
 
   const jsonLdBreadcrumb = {
     "@context": "https://schema.org",
@@ -5198,6 +5223,12 @@ export default async function AreaDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
       />
+      {jsonLdFaq && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+        />
+      )}
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
@@ -5230,9 +5261,152 @@ export default async function AreaDetailPage({
               {area.subtitle}
             </p>
 
+            {/* ─── COMMERCIAL LANDING (above the fold) ─── */}
+            {commercial && whatsappUrl && (
+              <>
+                {/* Hook + WhatsApp CTA */}
+                <div className="mt-12 p-7 md:p-9 rounded-2xl border border-burgundy/25 bg-gradient-to-b from-burgundy/[0.07] to-burgundy/[0.02]">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Warning size={16} weight="duotone" className="text-burgundy-light" />
+                    <span className="text-[10px] tracking-[0.25em] uppercase text-burgundy-light font-medium">
+                      Consulta Urgente
+                    </span>
+                  </div>
+                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight leading-tight mb-3 max-w-[40ch]">
+                    {commercial.hookHeadline}
+                  </h2>
+                  <p className="text-sm text-cream/65 leading-relaxed max-w-[60ch] mb-6">
+                    {commercial.hookSubtext}
+                  </p>
+                  <MagneticButton
+                    href={whatsappUrl}
+                    variant="primary"
+                    contactTarget={`area-${slug}`}
+                  >
+                    <WhatsappLogo size={18} weight="fill" />
+                    Escribir por WhatsApp
+                  </MagneticButton>
+                </div>
+
+                {/* Trigger scenarios */}
+                <section className="mt-14">
+                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
+                    ¿Cuándo aplica una medida cautelar?
+                  </h2>
+                  <p className="text-xs text-cream/45 mb-6 max-w-[60ch]">
+                    Si su situación corresponde a alguno de estos escenarios, el tiempo es crítico.
+                  </p>
+                  <ul className="space-y-3">
+                    {commercial.triggerScenarios.map((scenario, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.02]"
+                      >
+                        <CheckCircle size={18} weight="duotone" className="text-gold mt-0.5 shrink-0" />
+                        <span className="text-sm text-cream/75 leading-relaxed">{scenario}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+
+                {/* What we do */}
+                <section className="mt-14">
+                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
+                    Qué hace Corporación GC en estos casos
+                  </h2>
+                  <p className="text-xs text-cream/45 mb-6 max-w-[60ch]">
+                    Acompañamos el caso desde el análisis técnico hasta la audiencia oral y la defensa frente a recursos.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {commercial.services.map((service, i) => (
+                      <div
+                        key={i}
+                        className="p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02]"
+                      >
+                        <h3 className="text-sm font-semibold text-cream mb-2">{service.title}</h3>
+                        <p className="text-xs text-cream/55 leading-relaxed">{service.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                {/* Pricing note */}
+                <section className="mt-14 p-6 rounded-xl border border-gold/15 bg-gold/[0.03]">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-[10px] tracking-[0.25em] uppercase text-gold/80 font-medium">
+                      Honorarios
+                    </span>
+                  </div>
+                  <p className="text-sm text-cream/70 leading-relaxed max-w-[65ch]">
+                    {commercial.pricingNote}
+                  </p>
+                </section>
+
+                {/* Commercial FAQ */}
+                <section className="mt-14">
+                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-8">
+                    Preguntas prácticas
+                  </h2>
+                  <div className="space-y-6">
+                    {commercial.commercialFaq.map((item, i) => (
+                      <div key={i} className="pb-6 border-b border-cream/[0.06] last:border-b-0">
+                        <h3 className="text-sm font-semibold text-cream mb-2">{item.question}</h3>
+                        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+                          {item.answer}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                {/* Secondary WhatsApp CTA */}
+                <div className="mt-14 p-7 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] text-center">
+                  <p className="text-sm text-cream/70 mb-4 max-w-[50ch] mx-auto">
+                    ¿Su situación es urgente? Escríbanos por WhatsApp para coordinar una evaluación inmediata.
+                  </p>
+                  <MagneticButton
+                    href={whatsappUrl}
+                    variant="primary"
+                    contactTarget={`area-${slug}-secondary`}
+                  >
+                    <WhatsappLogo size={18} weight="fill" />
+                    Coordinar consulta
+                  </MagneticButton>
+                </div>
+
+                {/* Related article */}
+                {commercial.relatedArticleSlug && (
+                  <Link
+                    href={`/articulos/${commercial.relatedArticleSlug}`}
+                    className="group mt-10 flex items-center justify-between gap-4 p-5 rounded-xl border border-cream/[0.10] hover:border-gold/30 transition-all duration-300"
+                  >
+                    <div>
+                      <div className="text-[10px] tracking-[0.25em] uppercase text-cream/40 font-medium mb-1">
+                        Profundizar
+                      </div>
+                      <div className="text-sm text-cream/80 group-hover:text-gold transition-colors duration-300">
+                        {commercial.relatedArticleLabel ?? "Artículo relacionado"}
+                      </div>
+                    </div>
+                    <ArrowRight size={16} weight="bold" className="text-cream/40 group-hover:text-gold group-hover:translate-x-1 transition-all duration-300 shrink-0" />
+                  </Link>
+                )}
+
+                {/* Divider before legal depth content */}
+                <div className="mt-16 pt-10 border-t border-cream/[0.08]">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="h-px w-8 bg-cream/20" />
+                    <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
+                      Análisis Jurídico Detallado
+                    </span>
+                  </div>
+                </div>
+              </>
+            )}
+
             <div className="h-px bg-cream/[0.06] mt-10 mb-2" />
 
-            {/* Content */}
+            {/* Content (legal depth) */}
             {content}
 
             {/* CTA */}
