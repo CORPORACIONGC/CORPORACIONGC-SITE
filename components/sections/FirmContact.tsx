@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/AnimatedEntry";
 import { LeadForm } from "@/components/sections/LeadForm";
 import { GoogleMap } from "@/components/sections/GoogleMap";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { FIRM_CONTACT } from "@/lib/constants";
 
 const contactItems = [
@@ -86,36 +87,37 @@ export function FirmContact() {
 
             <StaggerContainer className="mt-10 space-y-4" stagger={0.06}>
               {contactItems.map((item, i) => {
-                const Wrapper = item.href ? "a" : "div";
-                const wrapperProps = item.href
-                  ? {
-                      href: item.href,
-                      target: item.href.startsWith("http")
-                        ? ("_blank" as const)
-                        : undefined,
-                      rel: item.href.startsWith("http")
-                        ? "noopener noreferrer"
-                        : undefined,
-                    }
-                  : {};
+                const cardClassName = "group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400";
+                const inner = (
+                  <>
+                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
+                      <item.icon size={20} weight="duotone" />
+                    </div>
+                    <div>
+                      <div className="text-[10px] tracking-wider uppercase text-cream/55">
+                        {item.label}
+                      </div>
+                      <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">
+                        {item.value}
+                      </div>
+                    </div>
+                  </>
+                );
                 return (
                   <StaggerItem key={i}>
-                    <Wrapper
-                      {...wrapperProps}
-                      className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
-                    >
-                      <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
-                        <item.icon size={20} weight="duotone" />
-                      </div>
-                      <div>
-                        <div className="text-[10px] tracking-wider uppercase text-cream/55">
-                          {item.label}
-                        </div>
-                        <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">
-                          {item.value}
-                        </div>
-                      </div>
-                    </Wrapper>
+                    {item.href ? (
+                      <TrackedContactLink
+                        href={item.href}
+                        contactTarget="firm"
+                        target={item.href.startsWith("http") ? "_blank" : undefined}
+                        rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        className={cardClassName}
+                      >
+                        {inner}
+                      </TrackedContactLink>
+                    ) : (
+                      <div className={cardClassName}>{inner}</div>
+                    )}
                   </StaggerItem>
                 );
               })}
@@ -149,8 +151,9 @@ export function FirmContact() {
         <AnimatedEntry delay={0.3}>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-cream/[0.08]">
             {/* WhatsApp secondary CTA */}
-            <a
+            <TrackedContactLink
               href={whatsappUrl}
+              contactTarget="firm"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 text-sm text-cream/65 hover:text-gold transition-colors duration-300"
@@ -160,7 +163,7 @@ export function FirmContact() {
                 ¿Prefiere WhatsApp? Escríbanos directamente
               </span>
               <ArrowRight size={12} weight="bold" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-            </a>
+            </TrackedContactLink>
 
           </div>
         </AnimatedEntry>

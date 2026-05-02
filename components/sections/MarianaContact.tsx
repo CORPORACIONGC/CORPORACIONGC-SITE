@@ -8,6 +8,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { MARIANA_CONTACT } from "@/lib/constants";
 
 const contactItems = [
@@ -63,8 +64,9 @@ export function MarianaContact() {
             <StaggerContainer className="mt-10 space-y-4" stagger={0.06}>
               {contactItems.map((item, i) => (
                 <StaggerItem key={i}>
-                  <a
+                  <TrackedContactLink
                     href={item.href}
+                    contactTarget="mariana"
                     className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
                   >
                     <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
@@ -78,7 +80,7 @@ export function MarianaContact() {
                         {item.value}
                       </div>
                     </div>
-                  </a>
+                  </TrackedContactLink>
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -107,6 +109,7 @@ export function MarianaContact() {
                   href={`https://wa.me/${MARIANA_CONTACT.phoneRaw}?text=Hola%20Licda.%20Montero%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica.`}
                   variant="primary"
                   className="w-full justify-center"
+                  contactTarget="mariana"
                 >
                   <WhatsappLogo size={18} weight="fill" />
                   Enviar mensaje

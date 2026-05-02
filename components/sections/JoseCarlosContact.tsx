@@ -8,6 +8,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { JOSE_CARLOS_CONTACT } from "@/lib/constants";
 
 const contactItems = [
@@ -68,8 +69,9 @@ export function JoseCarlosContact() {
             <StaggerContainer className="mt-10 space-y-4" stagger={0.06}>
               {contactItems.map((item, i) => (
                 <StaggerItem key={i}>
-                  <a
+                  <TrackedContactLink
                     href={item.href}
+                    contactTarget="jose-carlos"
                     target={item.href.startsWith("http") ? "_blank" : undefined}
                     rel={
                       item.href.startsWith("http")
@@ -89,7 +91,7 @@ export function JoseCarlosContact() {
                         {item.value}
                       </div>
                     </div>
-                  </a>
+                  </TrackedContactLink>
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -118,6 +120,7 @@ export function JoseCarlosContact() {
                   href={`https://wa.me/${JOSE_CARLOS_CONTACT.phoneRaw}?text=Hola%20Lic.%20Solano%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica.`}
                   variant="primary"
                   className="w-full justify-center"
+                  contactTarget="jose-carlos"
                 >
                   <WhatsappLogo size={18} weight="fill" />
                   Enviar mensaje

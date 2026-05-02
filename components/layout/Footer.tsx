@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FIRM_CONTACT, FIRM_NAV_LINKS } from "@/lib/constants";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import {
   Envelope,
   Phone,
@@ -40,20 +41,22 @@ export function Footer() {
               Procesal Contencioso Administrativo.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <a
+              <TrackedContactLink
                 href={`mailto:${FIRM_CONTACT.email}`}
+                contactTarget="footer"
                 className="p-2 rounded-lg border border-cream/12 hover:border-cream/25 hover:text-cream transition-all duration-300"
                 aria-label="Email"
               >
                 <Envelope size={18} weight="regular" />
-              </a>
-              <a
+              </TrackedContactLink>
+              <TrackedContactLink
                 href={`tel:${FIRM_CONTACT.phoneRaw}`}
+                contactTarget="footer"
                 className="p-2 rounded-lg border border-cream/12 hover:border-cream/25 hover:text-cream transition-all duration-300"
                 aria-label="Teléfono"
               >
                 <Phone size={18} weight="regular" />
-              </a>
+              </TrackedContactLink>
             </div>
           </div>
 

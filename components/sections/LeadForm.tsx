@@ -9,6 +9,7 @@ import {
 } from "@phosphor-icons/react";
 import { FIRM_CONTACT } from "@/lib/constants";
 import { sendContactEmail } from "@/app/actions/send-email";
+import { trackFormSubmit } from "@/lib/analytics";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -30,6 +31,7 @@ export function LeadForm() {
       const result = await sendContactEmail({ name, email, phone, message, honeypot });
 
       if (result.success) {
+        trackFormSubmit("lead_form");
         setState("success");
       } else {
         setErrorMsg(result.error || "No se pudo enviar el mensaje.");

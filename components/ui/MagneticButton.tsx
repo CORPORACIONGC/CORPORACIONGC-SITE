@@ -2,6 +2,7 @@
 
 import { useRef, useCallback } from "react";
 import Link from "next/link";
+import { trackContactFromHref } from "@/lib/analytics";
 
 export function MagneticButton({
   children,
@@ -9,12 +10,14 @@ export function MagneticButton({
   className = "",
   variant = "primary",
   onClick,
+  contactTarget,
 }: {
   children: React.ReactNode;
   href?: string;
   className?: string;
   variant?: "primary" | "secondary" | "outline";
   onClick?: () => void;
+  contactTarget?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -33,6 +36,11 @@ export function MagneticButton({
       ref.current.style.transform = "translate(0, 0)";
     }
   }, []);
+
+  const handleClick = useCallback(() => {
+    if (href) trackContactFromHref(href, contactTarget);
+    onClick?.();
+  }, [href, contactTarget, onClick]);
 
   const baseStyles =
     "inline-flex items-center gap-2 font-medium transition-colors duration-300 cursor-pointer";
@@ -59,13 +67,13 @@ export function MagneticButton({
       style={{ transition: "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)" }}
     >
       {isInternal ? (
-        <Link href={href} onClick={onClick} className={combinedClassName}>
+        <Link href={href} onClick={handleClick} className={combinedClassName}>
           {children}
         </Link>
       ) : isExternal ? (
         <a
           href={href}
-          onClick={onClick}
+          onClick={handleClick}
           target="_blank"
           rel="noopener noreferrer"
           className={combinedClassName}
@@ -73,7 +81,7 @@ export function MagneticButton({
           {children}
         </a>
       ) : (
-        <button onClick={onClick} className={combinedClassName}>
+        <button onClick={handleClick} className={combinedClassName}>
           {children}
         </button>
       )}

@@ -10,6 +10,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { CONTACT } from "@/lib/constants";
 
 const contactItems = [
@@ -81,8 +82,9 @@ export function Contact() {
             <StaggerContainer className="mt-10 space-y-4" stagger={0.06}>
               {contactItems.map((item, i) => (
                 <StaggerItem key={i}>
-                  <a
+                  <TrackedContactLink
                     href={item.href}
+                    contactTarget="khevin"
                     target={item.href.startsWith("http") ? "_blank" : undefined}
                     rel={
                       item.href.startsWith("http")
@@ -102,7 +104,7 @@ export function Contact() {
                         {item.value}
                       </div>
                     </div>
-                  </a>
+                  </TrackedContactLink>
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -131,6 +133,7 @@ export function Contact() {
                   href={`https://wa.me/${CONTACT.phoneRaw}?text=Hola%20Lic.%20S%C3%A1nchez%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica.`}
                   variant="primary"
                   className="w-full justify-center"
+                  contactTarget="khevin"
                 >
                   <WhatsappLogo size={18} weight="fill" />
                   Enviar mensaje
