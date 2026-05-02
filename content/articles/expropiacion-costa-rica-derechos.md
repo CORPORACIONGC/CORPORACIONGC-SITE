@@ -7,6 +7,19 @@ type: "article"
 author: "Lic. Esteban Pérez Herrera"
 institution: "Corporación GC"
 publicationType: "guia"
+faq:
+  - question: "¿Cuánto tiempo tengo para responder a la notificación del avalúo?"
+    answer: "El artículo 25 de la Ley de Expropiaciones le concede un plazo de cinco días hábiles desde la notificación del avalúo para manifestar su conformidad o disconformidad. Si no responde dentro de ese plazo, la ley interpreta su silencio como aceptación del avalúo administrativo, y este queda firme."
+  - question: "¿Puedo quedarme en mi propiedad durante el proceso de expropiación?"
+    answer: "Depende de la etapa. Una vez que la administración deposita el monto del avalúo ante el Juzgado, el artículo 30 le concede quince días hábiles para desalojar. Cuando se trata de vivienda familiar, ese plazo se extiende a dos meses. Si no desaloja voluntariamente, el juez puede ordenar el desalojo con auxilio de la fuerza pública."
+  - question: "¿El Estado puede entrar a mi propiedad antes de pagar?"
+    answer: "No. La Administración solo puede entrar en posesión del bien una vez que haya depositado el monto del avalúo administrativo ante el Juzgado Contencioso-Administrativo y Civil de Hacienda. El artículo 28 establece ese depósito como requisito indispensable y previo a la entrada en posesión."
+  - question: "¿Qué pasa si el proyecto no se ejecuta después de la expropiación?"
+    answer: "La ley contempla el derecho de restitución en el artículo 16. Transcurridos diez años desde la inscripción del inmueble a nombre del Estado, el expropiador podrá devolver a los dueños originales o a sus causahabientes las propiedades no utilizadas para el fin declarado. El interesado debe cubrir el valor actual del bien y dispone de tres años adicionales para ejercer ese derecho."
+  - question: "¿Necesito un abogado desde el inicio o solo si rechazo el avalúo?"
+    answer: "Legalmente, la representación de un abogado especialista en expropiaciones es obligatoria una vez que el proceso se traslada a sede judicial. Contar con asesoría desde la primera notificación es la decisión más estratégica. El plazo de cinco días hábiles para oponerse al avalúo exige una evaluación técnica rápida."
+  - question: "¿Cuánto tiempo dura el proceso de expropiación en Costa Rica?"
+    answer: "La ley establece plazos específicos: un mes para el avalúo administrativo (artículo 21), cinco días para la respuesta del propietario (artículo 25), un mes para el dictamen pericial en sede judicial (artículo 35) y quince días para la sentencia (artículo 39). En la práctica, el proceso puede extenderse varios meses o años dependiendo de la complejidad y las apelaciones."
 ---
 
 Al recibir una notificación de declaratoria de interés público sobre su propiedad, es normal sentir incertidumbre y preocupación. Sin embargo, una expropiación en Costa Rica no significa que usted pierde el control de su situación, pues la ley le otorga derechos concretos que puede ejercer desde este momento. En esta guía se explica, paso a paso, qué significa esa notificación, cuáles son los derechos del expropiado en Costa Rica, qué plazos debe respetar y cómo proteger su patrimonio.

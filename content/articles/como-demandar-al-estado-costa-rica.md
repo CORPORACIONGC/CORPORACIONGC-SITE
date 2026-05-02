@@ -7,6 +7,19 @@ type: "article"
 author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
+faq:
+  - question: "¿A quiénes se puede demandar en la jurisdicción contencioso-administrativa?"
+    answer: "Permite demandar al Estado (Gobierno Central, ministerios), instituciones autónomas (CCSS, ICE, INVU, AyA, IMAS), municipalidades, entes públicos (universidades estatales, ARESEP, SUTEL, CGR) y empresas públicas (RECOPE, INS). El principio de universalidad del control garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial."
+  - question: "¿Qué se puede pedir en una demanda contencioso-administrativa?"
+    answer: "El artículo 10 del CPCA establece un catálogo amplio: declarar la ilegalidad de la conducta, anular el acto, reconocer o restablecer derechos, condenar a la Administración a una prestación específica e indemnizar daños y perjuicios. El proceso permite la reparación integral del ciudadano afectado, no solo la eliminación del acto ilegal."
+  - question: "¿Es necesario agotar la vía administrativa antes de demandar al Estado?"
+    answer: "En la mayoría de los casos no es obligatorio. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo: el administrado puede interponer recursos o acudir directamente al Tribunal Contencioso. Las excepciones principales son la contratación pública (Ley 9986) y los casos derivados de los artículos 173 y 182 de la Constitución."
+  - question: "¿Cuál es el plazo para demandar al Estado en Costa Rica?"
+    answer: "El artículo 39 del CPCA establece un plazo de caducidad de un año. Como regla general se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales se cuenta desde la cesación de sus efectos. Cuando la conducta produce efectos continuados, el plazo no comienza a correr hasta que esos efectos cesen."
+  - question: "¿Ante quién se presenta la demanda contencioso-administrativa?"
+    answer: "Ante el Tribunal Contencioso Administrativo, jurisdicción especializada del Poder Judicial. El proceso es oral y por audiencias: presentación, admisión y traslado, contestación, audiencia preliminar, audiencia complementaria (juicio oral), sentencia y eventual casación ante Sala Primera. Un caso puede durar entre dos y cinco años."
+  - question: "¿Necesito un abogado para demandar al Estado?"
+    answer: "Sí. A diferencia del recurso de amparo (que puede presentarse sin abogado), la demanda contencioso-administrativa requiere patrocinio letrado obligatorio. El CPCA es un código técnico con reglas procesales propias que difieren del proceso civil o penal. Un abogado sin experiencia en esta jurisdicción puede cometer errores irreversibles."
 ---
 
 Si una institución del Estado le denegó un permiso, le impuso una sanción que considera injusta, le revocó una concesión, no le respondió una solicitud o le causó un daño por su actuación u omisión, usted tiene derecho a demandar. No importa si se trata del Gobierno Central, una municipalidad, una institución autónoma o una empresa pública: en Costa Rica existe un mecanismo judicial diseñado para controlar las decisiones del poder público y proteger a los ciudadanos.

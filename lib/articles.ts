@@ -4,6 +4,11 @@ import matter from "gray-matter";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
+export type ArticleFAQ = {
+  question: string;
+  answer: string;
+};
+
 export type ArticleMeta = {
   slug: string;
   title: string;
@@ -19,6 +24,7 @@ export type ArticleMeta = {
   sourceUrl?: string;
   seoTitle?: string;
   seoDescription?: string;
+  faq?: ArticleFAQ[];
 };
 
 export type Article = ArticleMeta & {
@@ -41,6 +47,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     sourceUrl: data.sourceUrl as string | undefined,
     seoTitle: data.seoTitle as string | undefined,
     seoDescription: data.seoDescription as string | undefined,
+    faq: data.faq as ArticleFAQ[] | undefined,
   };
 }
 

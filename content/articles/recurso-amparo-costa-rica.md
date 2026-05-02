@@ -9,6 +9,23 @@ institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Cómo Presentar un Recurso de Amparo · Costa Rica"
 seoDescription: "Aprenda cuánto dura, qué requisitos tiene y cómo se tramita un recurso de amparo en Costa Rica. Sala IV, plazos legales y modelo de redacción."
+faq:
+  - question: "¿Cuánto tarda la Sala Constitucional en resolver un amparo?"
+    answer: "No existe plazo legal específico. En amparos sencillos sobre listas de espera, derecho de petición o sanciones evidentes, la sentencia suele dictarse en uno a tres meses. En casos con prueba, audiencia o múltiples partes, el trámite puede extenderse a seis u ocho meses. Casi siempre es más rápido que la vía contencioso-administrativa."
+  - question: "¿Qué pasa si la autoridad incumple la sentencia de amparo?"
+    answer: "El artículo 71 de la Ley de la Jurisdicción Constitucional califica como delito de desobediencia el incumplimiento doloso de las órdenes que la Sala dicta en sentencia. La pena es de tres meses a dos años de prisión, y además la Sala puede ordenar medidas adicionales para forzar el cumplimiento."
+  - question: "¿El amparo procede contra una resolución de la Caja Costarricense de Seguro Social?"
+    answer: "Sí, y es uno de los usos más frecuentes. Lista de espera para cirugías, negativa de medicamentos, falta de respuesta a gestiones del asegurado, traslados arbitrarios y denegación de tratamientos son materia habitual de amparo ante la Sala Constitucional, fundamentados en el derecho a la salud y a la vida."
+  - question: "¿Qué diferencia hay entre amparo y hábeas corpus?"
+    answer: "El amparo protege todos los derechos fundamentales excepto la libertad personal y la integridad física, que son materia exclusiva del hábeas corpus. Si está detenido sin orden judicial, si le restringen su libertad de movimiento o si teme por su integridad ante una autoridad, la vía es el hábeas corpus, no el amparo."
+  - question: "¿Puede presentarse un amparo contra una empresa privada?"
+    answer: "Sí, en los supuestos del régimen del amparo contra sujetos de derecho privado. Procede cuando el sujeto privado ejerce funciones públicas, está en posición de poder frente al recurrente o cuando el régimen ordinario es insuficiente o tardío. Hospitales privados, universidades y colegios privados son recurridos frecuentes."
+  - question: "¿La sentencia de amparo me da indemnización por los daños sufridos?"
+    answer: "La sentencia que declara con lugar el amparo condena en abstracto al pago de daños y perjuicios. La cuantificación concreta se hace después, en la vía de ejecución de sentencia ante la jurisdicción contencioso-administrativa. El amparo no le entrega un monto, pero le abre la puerta para reclamarlo en proceso aparte."
+  - question: "¿Puedo presentar un nuevo amparo si me rechazaron uno anterior?"
+    answer: "Sí, siempre que el nuevo amparo se base en hechos distintos, derechos diferentes o si la lesión continúa produciendo efectos nuevos. No puede replantear exactamente el mismo asunto que ya fue resuelto en el fondo, por la cosa juzgada constitucional."
+  - question: "¿Qué es la amenaza de violación de un derecho?"
+    answer: "El artículo 29 admite el amparo no solo contra violaciones consumadas, sino también contra amenazas inminentes: anuncio de un despido sin debido proceso, notificación de una orden de demolición sin acto firme, aviso de un cierre sin procedimiento previo. La amenaza debe ser cierta, próxima y verificable."
 ---
 
 Cuando una autoridad pública —o incluso un sujeto privado en posición de poder— actúa o deja de actuar de forma que vulnera un derecho fundamental, la Constitución Política le ofrece una vía rápida y especial para defenderse: el **recurso de amparo**. No es una demanda ordinaria, no requiere abogado para presentarse y se resuelve mediante un trámite preferente y sumario ante la Sala Constitucional de la Corte Suprema de Justicia.

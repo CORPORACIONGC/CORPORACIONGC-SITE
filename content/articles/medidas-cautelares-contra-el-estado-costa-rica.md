@@ -9,6 +9,15 @@ institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Medidas Cautelares ante el TCA · CPCA · Costa Rica"
 seoDescription: "Análisis técnico de las medidas cautelares contra el Estado costarricense: provisionalísimas, ante causam, fumus boni iuris y periculum in mora. CPCA arts. 19-30."
+faq:
+  - question: "¿Cuándo se puede solicitar una medida cautelar contra el Estado?"
+    answer: "El CPCA contempla tres momentos: antes de presentar la demanda (ante causam, cuando la urgencia no permite esperar), durante el proceso (en cualquier etapa mientras subsista la necesidad) y en fase de ejecución (para garantizar el cumplimiento efectivo de la sentencia). La posibilidad de actuar antes de la demanda es relevante en situaciones de daño inminente."
+  - question: "¿Qué es una medida cautelar provisionalísima?"
+    answer: "Es el instrumento de urgencia extrema dentro del sistema cautelar del CPCA. Se dicta de forma inmediata, sin audiencia previa a la parte contraria, para situaciones donde la demora del trámite ordinario haría inútil cualquier protección posterior. Requiere demostrar que la urgencia es real, el daño inminente y la pretensión con fundamento suficiente."
+  - question: "¿Qué presupuestos debe demostrar el solicitante de una medida cautelar?"
+    answer: "Debe acreditar dos cosas: que existe un riesgo real de que la demora del proceso cause un perjuicio grave o irreparable (periculum in mora), y que su pretensión tiene fundamento razonable (fumus boni iuris). El juez no resuelve el fondo en esta etapa, pero verifica la seriedad jurídica de lo planteado."
+  - question: "¿Qué medidas puede ordenar el juez contencioso-administrativo?"
+    answer: "El sistema cautelar del CPCA es abierto: el juez puede ordenar cualquier disposición adecuada, necesaria y proporcionada para proteger el objeto del proceso. Incluye medidas que conservan el estado de las cosas (impedir la ejecución de un acto) y medidas anticipativas que regulan provisionalmente la situación del administrado."
 ---
 
 Un proceso contencioso-administrativo puede tomar años en resolverse. Mientras tanto, el acto administrativo que usted impugna sigue produciendo efectos: la sanción se ejecuta, la obra avanza, la concesión se pierde, el cobro se materializa. Si usted espera a la sentencia para obtener protección, es posible que cuando llegue ya no haya nada que proteger.
