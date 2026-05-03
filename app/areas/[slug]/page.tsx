@@ -30,8 +30,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
   if (!area) return {};
-  const metaTitle = area.seoTitle ?? `${area.title} en Costa Rica | Abogados`;
-  const metaDescription = area.seoDescription ?? `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`;
+  const seoTitle = "seoTitle" in area ? area.seoTitle : undefined;
+  const seoDescription = "seoDescription" in area ? area.seoDescription : undefined;
+  const metaTitle = seoTitle ?? `${area.title} en Costa Rica | Abogados`;
+  const metaDescription = seoDescription ?? `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`;
   return {
     title: metaTitle,
     description: metaDescription,
