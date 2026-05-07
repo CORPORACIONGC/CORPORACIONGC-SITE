@@ -108,6 +108,7 @@ export const ATTORNEYS_OG = {
     name: "Dr. Óscar Eduardo González Camacho",
     initials: "OG",
     photo: "/images/oscar-gonzalez-solo.png",
+    photoFocus: "60% 50%",
     role: "Fundador y Director",
     seoTitle: "Dr. Óscar González Camacho · Fundador y Director",
     seoDescription:
@@ -125,6 +126,7 @@ export const ATTORNEYS_OG = {
     name: "Lic. Khevin Sánchez Zamora",
     initials: "KS",
     photo: "/images/foto-perfil.png",
+    photoFocus: "50% 5%",
     role: "Abogado Asociado",
     seoTitle: "Lic. Khevin Sánchez Zamora · Abogado Asociado",
     seoDescription:
@@ -142,6 +144,7 @@ export const ATTORNEYS_OG = {
     name: "MSc. Katherine González Coto",
     initials: "KG",
     photo: "/images/katherine-gonzalez.png",
+    photoFocus: "50% 8%",
     role: "Abogada Asociada",
     seoTitle: "MSc. Katherine González Coto · Abogada Asociada",
     seoDescription:
@@ -159,6 +162,7 @@ export const ATTORNEYS_OG = {
     name: "Licda. Mariana Montero Acuña",
     initials: "MM",
     photo: "/images/mariana-montero.png",
+    photoFocus: "50% 8%",
     role: "Abogada Asociada",
     seoTitle: "Licda. Mariana Montero · Abogada Asociada",
     seoDescription:
@@ -176,6 +180,7 @@ export const ATTORNEYS_OG = {
     name: "Lic. Esteban Pérez Herrera",
     initials: "EP",
     photo: "/images/esteban-perez.jpg",
+    photoFocus: "50% 0%",
     role: "Abogado Asociado",
     seoTitle: "Lic. Esteban Pérez Herrera · Abogado Asociado",
     seoDescription:
@@ -193,6 +198,7 @@ export const ATTORNEYS_OG = {
     name: "Lic. José Carlos Solano Salas",
     initials: "JS",
     photo: "/images/jose-carlos-solano.jpeg",
+    photoFocus: "50% 0%",
     role: "Abogado Asociado",
     seoTitle: "Lic. José Carlos Solano · Abogado Asociado",
     seoDescription:

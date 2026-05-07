@@ -182,6 +182,8 @@ export interface AttorneyOgInput {
   initials: string;
   /** Path under /public, e.g. "/images/oscar-gonzalez-solo.png". When set, replaces the initials tile. */
   photo?: string;
+  /** CSS object-position for the photo crop, e.g. "50% 8%". Lower Y favors showing the top (head). */
+  photoFocus?: string;
 }
 
 const photoCache = new Map<string, string>();
@@ -315,7 +317,7 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
                 width: 480,
                 height: 630,
                 objectFit: "cover",
-                objectPosition: "50% 25%",
+                objectPosition: input.photoFocus ?? "50% 8%",
               }}
             />
           ) : (

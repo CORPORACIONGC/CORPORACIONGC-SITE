@@ -38,5 +38,6 @@ export default async function Image({
     credential: a.credential,
     initials: a.initials,
     photo: a.photo,
+    photoFocus: a.photoFocus,
   });
 }
