@@ -11,7 +11,7 @@ faq:
   - question: "¿A quiénes se puede demandar en la jurisdicción contencioso-administrativa?"
     answer: "Permite demandar al Estado (Gobierno Central, ministerios), instituciones autónomas (CCSS, ICE, INVU, AyA, IMAS), municipalidades, entes públicos (universidades estatales, ARESEP, SUTEL, CGR) y empresas públicas (RECOPE, INS). El principio de universalidad del control garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial."
   - question: "¿Qué se puede pedir en una demanda contencioso-administrativa?"
-    answer: "El artículo 10 del CPCA establece un catálogo amplio: declarar la ilegalidad de la conducta, anular el acto, reconocer o restablecer derechos, condenar a la Administración a una prestación específica e indemnizar daños y perjuicios. El proceso permite la reparación integral del ciudadano afectado, no solo la eliminación del acto ilegal."
+    answer: "El artículo 42 del CPCA establece un catálogo amplio: declarar la disconformidad de la conducta administrativa con el ordenamiento jurídico, anular total o parcialmente el acto, reconocer o restablecer derechos, condenar a la Administración a una prestación específica (de hacer, no hacer o dar) e indemnizar daños y perjuicios. El proceso permite la reparación integral del ciudadano afectado, no solo la eliminación del acto ilegal."
   - question: "¿Es necesario agotar la vía administrativa antes de demandar al Estado?"
     answer: "En la mayoría de los casos no es obligatorio. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo: el administrado puede interponer recursos o acudir directamente al Tribunal Contencioso. Las excepciones principales son la contratación pública (Ley 9986) y los casos derivados de los artículos 173 y 182 de la Constitución."
   - question: "¿Cuál es el plazo para demandar al Estado en Costa Rica?"
@@ -48,7 +48,7 @@ La jurisdicción no se limita a entes públicos. El CPCA también cubre conducta
 
 El CPCA superó el sistema anterior, que era predominantemente anulatorio (solo permitía pedir que se eliminara el acto ilegal). Hoy, las pretensiones que puede formular un demandante son amplias y están diseñadas para dar una tutela judicial completa.
 
-El artículo 10 del CPCA establece un catálogo amplio de pretensiones que van mucho más allá de la simple anulación del acto. El demandante puede solicitar que se declare la ilegalidad de la conducta, que se anule el acto, que se le reconozcan o restablezcan sus derechos, que se condene a la Administración a una prestación específica, y que se le indemnicen los daños y perjuicios causados. El alcance concreto de las pretensiones depende de cada caso y de la estrategia procesal que se defina con el abogado.
+El artículo 42 del CPCA establece un catálogo amplio de pretensiones que van mucho más allá de la simple anulación del acto. El demandante puede solicitar que se declare la disconformidad de la conducta con el ordenamiento jurídico, que se anule total o parcialmente el acto, que se le reconozcan o restablezcan sus derechos, que se condene a la Administración a una prestación específica (de hacer, no hacer o dar), y que se le indemnicen los daños y perjuicios causados. El alcance concreto de las pretensiones depende de cada caso y de la estrategia procesal que se defina con el abogado.
 
 Esta amplitud es uno de los avances más significativos del CPCA. El proceso contencioso ya no se limita a eliminar el acto ilegal — permite la reparación integral de la situación del ciudadano afectado.
 
