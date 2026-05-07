@@ -562,6 +562,264 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
 }
 
 // =============================================================
+// VARIANTE D — Jurisprudencia (sentencia editorial con redactor)
+// =============================================================
+export interface JurisprudenceOgInput {
+  /** Badge editorial — ej. "Sentencia Fundacional" */
+  badge?: string;
+  /** Número oficial — ej. "Resolución N° 1016-F-2004" */
+  numero: string;
+  /** Fecha en formato corto — ej. "26 Nov 2004" */
+  fechaCorta: string;
+  /** Tribunal — se acorta automáticamente */
+  tribunal: string;
+  /** Título editorial */
+  title: string;
+  /** Pasaje icónico — se trunca a ~190 chars */
+  pullQuote: string;
+  /** Path de la foto del redactor en /public, ej. "/images/oscar-gonzalez-solo.png" */
+  redactorPhoto?: string;
+  /** Nombre del redactor — default Dr. Óscar */
+  redactorName?: string;
+  /** Línea de credencial — default ex-Magistrado */
+  redactorCredential?: string;
+  baseUrl?: string;
+}
+
+export async function renderJurisprudenceOg(input: JurisprudenceOgInput) {
+  const [fonts, logoSrc, photoSrc] = await Promise.all([
+    loadFonts(),
+    loadLogo(),
+    input.redactorPhoto
+      ? loadPhoto(input.redactorPhoto)
+      : loadPhoto("/images/oscar-gonzalez-solo.png"),
+  ]);
+
+  const titleLen = input.title.length;
+  const titleFontSize = titleLen > 80 ? 46 : titleLen > 55 ? 54 : 60;
+
+  const trimmedQuote =
+    input.pullQuote.length > 190
+      ? input.pullQuote.slice(0, 187).trimEnd() + "…"
+      : input.pullQuote;
+
+  const tribunalShort = input.tribunal
+    .replace(
+      "Sala Primera de la Corte Suprema de Justicia",
+      "Sala Primera CSJ"
+    )
+    .replace(
+      "Sala Constitucional de la Corte Suprema de Justicia",
+      "Sala Constitucional CSJ"
+    )
+    .replace("Tribunal Contencioso Administrativo", "T. Contencioso Adm.");
+
+  const eyebrow = input.badge
+    ? `Jurisprudencia · ${input.badge}`
+    : "Jurisprudencia Destacada";
+
+  const redactorName = input.redactorName ?? "Dr. Óscar Eduardo González Camacho";
+  const redactorCredential =
+    input.redactorCredential ?? "Ex-Magistrado · Sala Primera CSJ · 2002–2014";
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: 1200,
+          height: 630,
+          padding: 80,
+          display: "flex",
+          flexDirection: "column",
+          background: BG_ARTICLE,
+          color: C.charcoal,
+          fontFamily: "DM Sans",
+          position: "relative",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 4,
+            background: C.burgundy,
+          }}
+        />
+
+        {/* Eyebrow + wordmark */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginBottom: 26,
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+            <div style={{ width: 28, height: 1, background: C.burgundy }} />
+            <div
+              style={{
+                fontSize: 12,
+                letterSpacing: "0.28em",
+                textTransform: "uppercase",
+                color: C.burgundy,
+                fontWeight: 600,
+              }}
+            >
+              {eyebrow}
+            </div>
+          </div>
+          <div
+            style={{
+              fontSize: 12,
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "rgba(28,28,30,0.55)",
+              fontWeight: 600,
+            }}
+          >
+            Corporación GC
+          </div>
+        </div>
+
+        {/* Metadata row */}
+        <div
+          style={{
+            display: "flex",
+            fontSize: 13,
+            color: "rgba(28,28,30,0.62)",
+            fontWeight: 500,
+            marginBottom: 22,
+            letterSpacing: "0.02em",
+          }}
+        >
+          {input.numero} · {tribunalShort} · {input.fechaCorta}
+        </div>
+
+        {/* Title */}
+        <div
+          style={{
+            display: "flex",
+            fontFamily: "Cormorant Garamond",
+            fontWeight: 500,
+            fontSize: titleFontSize,
+            letterSpacing: "-0.02em",
+            lineHeight: 1.05,
+            color: C.charcoal,
+            marginBottom: 26,
+            maxWidth: 1020,
+          }}
+        >
+          {input.title}
+        </div>
+
+        {/* Pull quote */}
+        <div
+          style={{
+            display: "flex",
+            fontFamily: "Cormorant Garamond",
+            fontStyle: "italic",
+            fontWeight: 500,
+            fontSize: 22,
+            lineHeight: 1.4,
+            color: "rgba(28,28,30,0.72)",
+            maxWidth: 1000,
+            borderLeft: `2px solid ${C.burgundy}`,
+            paddingLeft: 22,
+            marginBottom: "auto",
+          }}
+        >
+          «{trimmedQuote}»
+        </div>
+
+        {/* Bottom: redactor */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 18,
+            borderTop: "1px solid rgba(28,28,30,0.10)",
+            paddingTop: 22,
+            marginTop: 32,
+          }}
+        >
+          {photoSrc ? (
+            <div
+              style={{
+                width: 56,
+                height: 56,
+                borderRadius: 28,
+                overflow: "hidden",
+                display: "flex",
+                border: `1px solid ${C.burgundy}`,
+              }}
+            >
+              <img
+                src={photoSrc}
+                alt=""
+                width={56}
+                height={56}
+                style={{
+                  width: 56,
+                  height: 56,
+                  objectFit: "cover",
+                  objectPosition: "50% 22%",
+                }}
+              />
+            </div>
+          ) : (
+            <div
+              style={{
+                width: 56,
+                height: 56,
+                borderRadius: 28,
+                background: C.burgundy,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontFamily: "Cormorant Garamond",
+                fontSize: 22,
+                fontWeight: 600,
+                color: C.white,
+              }}
+            >
+              ÓG
+            </div>
+          )}
+          <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
+            <div style={{ fontSize: 14, fontWeight: 600, color: C.charcoal }}>
+              Redactado por {redactorName}
+            </div>
+            <div
+              style={{
+                fontSize: 11,
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: "rgba(28,28,30,0.50)",
+                fontWeight: 500,
+                marginTop: 3,
+              }}
+            >
+              {redactorCredential}
+            </div>
+          </div>
+          <img
+            src={logoSrc}
+            alt=""
+            width={52}
+            height={52}
+            style={{ opacity: 0.85 }}
+          />
+        </div>
+      </div>
+    ),
+    { ...OG_SIZE, fonts }
+  );
+}
+
+// =============================================================
 // VARIANTE C — Article
 // =============================================================
 export interface ArticleOgInput {

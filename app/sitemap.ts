@@ -1,10 +1,20 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/articles";
+import { getAllSentencias } from "@/lib/jurisprudencia";
 import { TEAM, PRACTICE_AREA_PAGES } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.corporaciongc.com";
   const articles = getAllArticles();
+  const sentencias = getAllSentencias();
+
+  const sentenciasLastUpdated = new Date("2026-05-07");
+  const sentenciaUrls = sentencias.map((s) => ({
+    url: `${baseUrl}/jurisprudencia-destacada/${s.slug}`,
+    lastModified: sentenciasLastUpdated,
+    changeFrequency: "yearly" as const,
+    priority: 0.7,
+  }));
 
   // Fecha del artículo más reciente — refleja la última actualización real del sitio
   const mostRecentArticleDate =
@@ -70,6 +80,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
+    {
+      url: `${baseUrl}/jurisprudencia-destacada`,
+      lastModified: sentenciasLastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    ...sentenciaUrls,
     ...teamUrls,
     ...articleUrls,
   ];

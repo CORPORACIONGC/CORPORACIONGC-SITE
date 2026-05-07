@@ -15,11 +15,10 @@ import {
 } from "@/components/ui/AnimatedEntry";
 import { getAllSentencias } from "@/lib/jurisprudencia";
 import { FIRM } from "@/lib/constants";
+import { jurisprudenciaMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Jurisprudencia Destacada del Dr. Óscar González Camacho",
-  description:
-    "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho durante su tiempo como Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002-2014). Cada fallo con texto íntegro verificado y pasajes destacados.",
+  ...jurisprudenciaMetadata,
   alternates: {
     canonical: `${FIRM.url}/jurisprudencia-destacada`,
   },
@@ -35,8 +34,65 @@ const BADGE_STYLES: Record<string, string> = {
 export default function JurisprudenciaDestacadaIndexPage() {
   const sentencias = getAllSentencias();
 
+  const jsonLdCollection = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Jurisprudencia Destacada | Corporación GC",
+    description:
+      "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro y análisis editorial.",
+    url: `${FIRM.url}/jurisprudencia-destacada`,
+    isPartOf: { "@id": `${FIRM.url}/#website` },
+    about: {
+      "@type": "Person",
+      "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
+      name: "Dr. Óscar Eduardo González Camacho",
+      jobTitle:
+        "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia",
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: sentencias.map((s, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${FIRM.url}/jurisprudencia-destacada/${s.slug}`,
+        name: `${s.titulo} — ${s.numero}`,
+      })),
+    },
+  };
+
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Inicio",
+        item: FIRM.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Jurisprudencia Destacada",
+        item: `${FIRM.url}/jurisprudencia-destacada`,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdCollection),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdBreadcrumb),
+        }}
+      />
       <Navbar />
 
       <main className="bg-surface min-h-[100dvh]">

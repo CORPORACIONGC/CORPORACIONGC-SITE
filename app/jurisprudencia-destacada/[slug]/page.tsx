@@ -26,6 +26,7 @@ import {
   getSentenciaBySlug,
 } from "@/lib/jurisprudencia";
 import { FIRM } from "@/lib/constants";
+import { buildJurisprudenciaMetadata } from "@/lib/page-metadata";
 
 export function generateStaticParams() {
   return getAllSentencias().map((s) => ({ slug: s.slug }));
@@ -38,20 +39,18 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const s = getSentenciaBySlug(slug);
-  if (!s) return {};
+  const base = buildJurisprudenciaMetadata(s ?? null, slug);
+  if (!s) return base;
   return {
-    title: `${s.titulo} · ${s.numero}`,
-    description: s.metaDescription,
+    ...base,
     alternates: {
       canonical: `${FIRM.url}/jurisprudencia-destacada/${slug}`,
     },
     openGraph: {
-      title: `${s.titulo} | ${s.numero} | Corporación GC`,
-      description: s.metaDescription,
+      ...base.openGraph,
       url: `${FIRM.url}/jurisprudencia-destacada/${slug}`,
       siteName: FIRM.name,
       locale: FIRM.locale,
-      type: "article",
     },
   };
 }

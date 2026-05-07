@@ -72,6 +72,24 @@ export const articulosMetadata: Metadata = {
   },
 };
 
+export const jurisprudenciaMetadata: Metadata = {
+  title:
+    "Jurisprudencia Destacada · Sentencias del Dr. Óscar González Camacho",
+  description:
+    "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+  openGraph: {
+    title: "Jurisprudencia Destacada · Corporación GC, Costa Rica",
+    description:
+      "Selección editorial de fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+    url: "/jurisprudencia-destacada",
+  },
+  twitter: {
+    title: "Jurisprudencia Destacada · Corporación GC",
+    description:
+      "Selección editorial de fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+  },
+};
+
 export const privacidadMetadata: Metadata = {
   title: "Política de Privacidad · Corporación GC",
   description:
@@ -135,6 +153,76 @@ export async function generateAttorneyMetadata(
       type: "profile",
     },
     twitter: { title: a.twitterTitle, description: a.ogDescription },
+  };
+}
+
+/**
+ * Para sentencias destacadas: pasar el objeto `sentencia` ya cargado.
+ * Llamar desde generateMetadata del page.tsx así:
+ *   const sentencia = getSentenciaBySlug(slug);
+ *   return buildJurisprudenciaMetadata(sentencia, slug);
+ */
+const _MESES_ES_ISO: Record<string, string> = {
+  enero: "01", febrero: "02", marzo: "03", abril: "04",
+  mayo: "05", junio: "06", julio: "07", agosto: "08",
+  septiembre: "09", octubre: "10", noviembre: "11", diciembre: "12",
+};
+
+function spanishDateToISO(spanishDate: string): string | undefined {
+  const m = spanishDate
+    .toLowerCase()
+    .match(/(\d+)\s+de\s+([a-záéíóú]+)\s+de\s+(\d+)/);
+  if (!m) return undefined;
+  const day = m[1].padStart(2, "0");
+  const month = _MESES_ES_ISO[m[2]];
+  const year = m[3];
+  if (!month) return undefined;
+  return `${year}-${month}-${day}`;
+}
+
+export function buildJurisprudenciaMetadata(
+  sentencia:
+    | {
+        titulo: string;
+        numero: string;
+        metaDescription: string;
+        materia: string;
+        fecha: string;
+        fechaCorta: string;
+        tribunal: string;
+        redactor: string;
+      }
+    | null,
+  slug: string
+): Metadata {
+  if (!sentencia) return {};
+
+  const seoTitle = `${sentencia.titulo} · ${sentencia.numero}`;
+  const ogTitle = `${sentencia.titulo} | ${sentencia.numero} | Corporación GC`;
+  const publishedTime = spanishDateToISO(sentencia.fecha);
+
+  return {
+    title: seoTitle,
+    description: sentencia.metaDescription,
+    openGraph: {
+      title: ogTitle,
+      description: sentencia.metaDescription,
+      type: "article",
+      url: `/jurisprudencia-destacada/${slug}`,
+      ...(publishedTime ? { publishedTime } : {}),
+      authors: [sentencia.redactor],
+      section: "Jurisprudencia · Derecho Público",
+      tags: [
+        sentencia.materia,
+        sentencia.tribunal,
+        "Jurisprudencia Costa Rica",
+        "Sala Primera",
+      ],
+    },
+    twitter: {
+      title: seoTitle,
+      description: sentencia.metaDescription,
+    },
   };
 }
 
