@@ -11,7 +11,7 @@ seoTitle: "Medidas Cautelares ante el TCA · CPCA · Costa Rica"
 seoDescription: "Análisis técnico de las medidas cautelares contra el Estado costarricense: provisionalísimas, ante causam, fumus boni iuris y periculum in mora. CPCA arts. 19-30."
 faq:
   - question: "¿Cuándo se puede solicitar una medida cautelar contra el Estado?"
-    answer: "El CPCA contempla tres momentos: antes de presentar la demanda (ante causam, cuando la urgencia no permite esperar), durante el proceso (en cualquier etapa mientras subsista la necesidad) y en fase de ejecución (para garantizar el cumplimiento efectivo de la sentencia). La posibilidad de actuar antes de la demanda es relevante en situaciones de daño inminente."
+    answer: "El CPCA contempla solicitarlas en dos momentos principales: antes de presentar la demanda (ante causam, cuando la urgencia no permite esperar) y durante el proceso (en cualquier etapa mientras subsista la necesidad). La posibilidad de actuar antes de la demanda es relevante en situaciones de daño inminente, pues evita que el daño se consolide mientras se prepara el expediente completo."
   - question: "¿Qué es una medida cautelar provisionalísima?"
     answer: "Es el instrumento de urgencia extrema dentro del sistema cautelar del CPCA. Se dicta de forma inmediata, sin audiencia previa a la parte contraria, para situaciones donde la demora del trámite ordinario haría inútil cualquier protección posterior. Requiere demostrar que la urgencia es real, el daño inminente y la pretensión con fundamento suficiente."
   - question: "¿Qué presupuestos debe demostrar el solicitante de una medida cautelar?"
@@ -40,13 +40,11 @@ Este diseño convirtió la tutela cautelar costarricense en una de las más avan
 
 ## ¿Cuándo se puede solicitar una medida cautelar?
 
-El CPCA contempla la posibilidad de solicitar medidas cautelares en tres momentos distintos:
+El CPCA contempla la posibilidad de solicitar medidas cautelares en dos momentos principales:
 
-**Antes de presentar la demanda.** Cuando la urgencia no permite esperar a la preparación completa de la demanda, se puede solicitar protección cautelar de forma anticipada. Si el juez la otorga, fijará un plazo para interponer la demanda principal.
+**Antes de presentar la demanda.** Cuando la urgencia no permite esperar a la preparación completa de la demanda, se puede solicitar protección cautelar de forma anticipada (cautelar ante causam). Si el juez la otorga, fijará un plazo para interponer la demanda principal.
 
 **Durante el proceso.** Una vez presentada la demanda, la medida cautelar puede solicitarse en cualquier etapa del proceso mientras subsista la necesidad de protección.
-
-**En fase de ejecución.** Incluso después de la sentencia, pueden adoptarse medidas para garantizar su cumplimiento efectivo.
 
 La posibilidad de actuar antes de la demanda es particularmente relevante en situaciones donde el daño es inminente y la preparación del expediente completo tomaría un tiempo que el caso no permite.
 
