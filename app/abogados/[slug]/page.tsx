@@ -37,7 +37,6 @@ import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
   FIRM,
-  ATTORNEYS_OG,
   OSCAR_NAV_LINKS,
   ESTEBAN_PROFILE,
   ESTEBAN_NAV_LINKS,
@@ -48,6 +47,7 @@ import {
   MARIANA_PROFILE,
   MARIANA_NAV_LINKS,
 } from "@/lib/constants";
+import { generateAttorneyMetadata } from "@/lib/page-metadata";
 
 // Generate static params for all team members
 export function generateStaticParams() {
@@ -59,42 +59,12 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  const base = await generateAttorneyMetadata({ params });
   const { slug } = await params;
-  const member = TEAM.find((m) => m.slug === slug);
-  if (!member) return {};
-
-  const og = ATTORNEYS_OG[member.slug as keyof typeof ATTORNEYS_OG];
-
   return {
-    title: og?.seoTitle ?? `${member.name} · ${member.role}`,
-    description:
-      og?.seoDescription ??
-      `${member.shortBio} Corporación GC — Abogados en Derecho Público, Costa Rica.`,
+    ...base,
     alternates: {
-      canonical: `${FIRM.url}/abogados/${member.slug}`,
-    },
-    openGraph: {
-      title: og?.ogTitle ?? `${member.name} — ${member.role}, Corporación GC`,
-      description: og?.ogDescription ?? `${member.shortBio} Corporación GC.`,
-      url: `${FIRM.url}/abogados/${member.slug}`,
-      siteName: FIRM.name,
-      locale: FIRM.locale,
-      type: "profile",
-      images: [
-        {
-          url: `${FIRM.url}/abogados/${member.slug}/opengraph-image`,
-          width: 1200,
-          height: 630,
-          alt:
-            og?.ogImageAlt ??
-            `Retrato profesional de ${member.name}, ${member.role} en Corporación GC.`,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: og?.twitterTitle ?? `${member.name} · Corporación GC`,
-      description: og?.ogDescription ?? `${member.shortBio} Corporación GC.`,
+      canonical: `${FIRM.url}/abogados/${slug}`,
     },
   };
 }

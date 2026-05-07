@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-import { FIRM } from "@/lib/constants";
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
@@ -19,10 +20,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(FIRM.url),
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: FIRM.title,
-    template: `%s · Corporación GC`,
+    default: "Corporación GC · Abogados en Derecho Público | Costa Rica",
+    template: "%s · Corporación GC",
   },
   description:
     "Bufete líder en litigio contencioso-administrativo en Costa Rica. Dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA.",
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
   publisher: "Corporación GC",
   openGraph: {
     type: "website",
-    siteName: FIRM.name,
-    locale: FIRM.locale,
-    url: FIRM.url,
+    siteName: "Corporación GC",
+    locale: "es_CR",
+    url: BASE_URL,
   },
   twitter: {
     card: "summary_large_image",
@@ -47,10 +48,13 @@ export const metadata: Metadata = {
     apple: "/images/logo-gc.png",
   },
   other: {
-    "theme-color": "#6B1D3A",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-title": "Corporación GC",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#6B1D3A",
 };
 
 export default function RootLayout({

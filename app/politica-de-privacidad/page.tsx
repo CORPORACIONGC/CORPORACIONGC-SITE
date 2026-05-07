@@ -5,39 +5,12 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { FIRM } from "@/lib/constants";
 
+import { privacidadMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
-  title: "Política de Privacidad",
-  description:
-    "Política de privacidad de Corporación GC. Tratamiento de datos personales conforme a la Ley N.° 8968 y al Reglamento de PRODHAB. Costa Rica.",
+  ...privacidadMetadata,
   alternates: {
     canonical: `${FIRM.url}/politica-de-privacidad`,
-  },
-  robots: {
-    index: false,
-    follow: true,
-  },
-  openGraph: {
-    title: "Política de Privacidad — Corporación GC",
-    description:
-      "Cómo Corporación GC recopila, usa y protege los datos personales de sus visitantes y clientes conforme a la Ley de Protección de la Persona frente al Tratamiento de sus Datos.",
-    url: `${FIRM.url}/politica-de-privacidad`,
-    siteName: FIRM.name,
-    locale: FIRM.locale,
-    type: "website",
-    images: [
-      {
-        url: `${FIRM.url}/politica-de-privacidad/opengraph-image`,
-        width: 1200,
-        height: 630,
-        alt: "Política de privacidad de Corporación GC, bufete costarricense de Derecho Público.",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Política de Privacidad · Corporación GC",
-    description:
-      "Cómo Corporación GC recopila, usa y protege los datos personales de sus visitantes y clientes conforme a la Ley de Protección de la Persona frente al Tratamiento de sus Datos.",
   },
 };
 

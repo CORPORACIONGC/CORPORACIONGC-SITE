@@ -1,3 +1,11 @@
+// lib/og-templates.tsx
+// Helpers compartidos para imágenes Open Graph (next/og, runtime nodejs).
+// Tema único: blanco puro + burgundy. Sin crema, sin dorado.
+// Cuatro renderers: home (hero), default (áreas/legal/sobre), attorney, article.
+//
+// Runtime nodejs: lee fuentes, logo y fotos del filesystem (carpeta /public)
+// y los embeede como data URL para que Satori los pueda renderizar.
+
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -5,32 +13,36 @@ import { join } from "node:path";
 export const OG_SIZE = { width: 1200, height: 630 } as const;
 export const OG_CONTENT_TYPE = "image/png";
 
-const COLORS = {
+const C = {
   burgundy: "#6B1D3A",
   burgundyLight: "#8B2252",
   burgundyDark: "#4A0E27",
-  burgundyDeepest: "#1A0A10",
-  gold: "#C4A265",
-  goldLight: "#D4B87A",
-  cream: "#F7F3EE",
+  white: "#FFFFFF",
+  charcoal: "#1C1C1E",
 } as const;
 
+// Surface: blanco puro con un leve viñeteado burdeos en las esquinas
+const BG_DEFAULT = `radial-gradient(ellipse 80% 70% at 100% 0%, rgba(107,29,58,0.06) 0%, transparent 55%), radial-gradient(ellipse 70% 60% at 0% 100%, rgba(107,29,58,0.04) 0%, transparent 55%), linear-gradient(180deg, ${C.white} 0%, ${C.white} 100%)`;
+const BG_ARTICLE = `radial-gradient(ellipse 80% 70% at 100% 100%, rgba(107,29,58,0.05) 0%, transparent 60%), linear-gradient(180deg, ${C.white} 0%, ${C.white} 100%)`;
+
+// ---------- Cache compartido (un proceso, una lectura) ----------
 type FontEntry = {
   name: string;
   data: Buffer;
-  weight: 400 | 500 | 600;
+  weight: 300 | 400 | 500 | 600;
   style: "normal";
 };
 
-// Module-scope cache so we read fonts/logo from disk only once per process
 let cachedFonts: FontEntry[] | null = null;
 let cachedLogo: string | null = null;
+const photoCache = new Map<string, string>();
 
 async function loadFonts(): Promise<FontEntry[]> {
   if (cachedFonts) return cachedFonts;
   const fontsDir = join(process.cwd(), "public/fonts");
-  const [dmRegular, dmMedium, dmSemiBold, cormorantMedium, cormorantSemiBold] =
+  const [dmLight, dmRegular, dmMedium, dmSemiBold, cormorantMedium, cormorantSemiBold] =
     await Promise.all([
+      readFile(join(fontsDir, "DMSans-Light.ttf")),
       readFile(join(fontsDir, "DMSans-Regular.ttf")),
       readFile(join(fontsDir, "DMSans-Medium.ttf")),
       readFile(join(fontsDir, "DMSans-SemiBold.ttf")),
@@ -38,6 +50,7 @@ async function loadFonts(): Promise<FontEntry[]> {
       readFile(join(fontsDir, "CormorantGaramond-SemiBold.ttf")),
     ]);
   cachedFonts = [
+    { name: "DM Sans", data: dmLight, weight: 300, style: "normal" },
     { name: "DM Sans", data: dmRegular, weight: 400, style: "normal" },
     { name: "DM Sans", data: dmMedium, weight: 500, style: "normal" },
     { name: "DM Sans", data: dmSemiBold, weight: 600, style: "normal" },
@@ -49,144 +62,10 @@ async function loadFonts(): Promise<FontEntry[]> {
 
 async function loadLogo(): Promise<string> {
   if (cachedLogo) return cachedLogo;
-  const data = await readFile(join(process.cwd(), "public/logo-cream.png"));
+  const data = await readFile(join(process.cwd(), "public/logo-burgundy.png"));
   cachedLogo = `data:image/png;base64,${data.toString("base64")}`;
   return cachedLogo;
 }
-
-/* ─────────────── VARIANT A — Default ─────────────── */
-
-export interface DefaultOgInput {
-  eyebrow: string;
-  title: string;
-  emphasis?: string;
-  body: string;
-  url: string;
-}
-
-export async function renderDefaultOg(input: DefaultOgInput) {
-  const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
-  const rawParts = input.title.split("{{em}}");
-  // Satori trims whitespace at flex-item boundaries — replace edges with NBSP
-  const titleBefore = rawParts[0].replace(/\s+$/, " ");
-  const titleAfter = (rawParts[1] ?? "").replace(/^\s+/, " ");
-
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: 1200,
-          height: 630,
-          display: "flex",
-          flexDirection: "column",
-          padding: "80px",
-          background: `linear-gradient(135deg, ${COLORS.burgundyDeepest} 0%, #2D1020 40%, ${COLORS.burgundyDark} 100%)`,
-          color: COLORS.cream,
-          fontFamily: "DM Sans",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            height: 4,
-            background: `linear-gradient(90deg, ${COLORS.gold} 0%, ${COLORS.burgundy} 50%, ${COLORS.gold} 100%)`,
-          }}
-        />
-        <img
-          src={logoSrc}
-          alt=""
-          width={88}
-          height={88}
-          style={{ position: "absolute", top: 80, right: 80, opacity: 0.95 }}
-        />
-        <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 36 }}>
-          <div style={{ width: 32, height: 1, background: COLORS.gold }} />
-          <div
-            style={{
-              fontSize: 14,
-              letterSpacing: "0.25em",
-              textTransform: "uppercase",
-              color: "rgba(247,243,238,0.55)",
-              fontWeight: 500,
-            }}
-          >
-            {input.eyebrow}
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            fontFamily: "Cormorant Garamond",
-            fontWeight: 500,
-            fontSize: 76,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.05,
-            color: COLORS.cream,
-            marginBottom: 28,
-            maxWidth: 920,
-          }}
-        >
-          {titleBefore && <span>{titleBefore}</span>}
-          {input.emphasis && (
-            <span style={{ color: COLORS.gold }}>{input.emphasis}</span>
-          )}
-          {titleAfter && <span>{titleAfter}</span>}
-        </div>
-        <div
-          style={{
-            fontSize: 19,
-            lineHeight: 1.55,
-            color: "rgba(247,243,238,0.55)",
-            maxWidth: 880,
-            fontWeight: 400,
-          }}
-        >
-          {input.body}
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            left: 80,
-            right: 80,
-            bottom: 56,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            borderTop: "1px solid rgba(247,243,238,0.10)",
-            paddingTop: 24,
-            fontSize: 14,
-            letterSpacing: "0.18em",
-            textTransform: "uppercase",
-          }}
-        >
-          <div style={{ color: "rgba(247,243,238,0.45)", fontWeight: 500 }}>{input.url}</div>
-          <div style={{ color: "rgba(247,243,238,0.30)" }}>San José · Costa Rica</div>
-        </div>
-      </div>
-    ),
-    { ...OG_SIZE, fonts }
-  );
-}
-
-/* ─────────────── VARIANT B — Attorney ─────────────── */
-
-export interface AttorneyOgInput {
-  role: string;
-  name: string;
-  credential: string;
-  initials: string;
-  /** Path under /public, e.g. "/images/oscar-gonzalez-solo.png". When set, replaces the initials tile. */
-  photo?: string;
-  /** CSS object-position for the photo crop, e.g. "50% 8%". Lower Y favors showing the top (head). */
-  photoFocus?: string;
-}
-
-const photoCache = new Map<string, string>();
 
 async function loadPhoto(publicPath: string): Promise<string | null> {
   if (photoCache.has(publicPath)) return photoCache.get(publicPath)!;
@@ -203,6 +82,293 @@ async function loadPhoto(publicPath: string): Promise<string | null> {
   }
 }
 
+// ---------- Helper para preservar espacios alrededor de la emphasis ----------
+const NBSP = " ";
+function splitWithNbsp(text: string, marker = "{{em}}"): [string, string] {
+  const parts = text.split(marker);
+  return [
+    parts[0].replace(/\s+$/, NBSP),
+    (parts[1] ?? "").replace(/^\s+/, NBSP),
+  ];
+}
+
+// =============================================================
+// VARIANTE A1 — HOME (hero centrado con wordmark + tagline)
+// =============================================================
+export interface HomeOgInput {
+  /** Tagline. Use `{{em}}` para envolver la frase enfatizada. */
+  tagline: string;
+  emphasis?: string;
+  url: string;
+  baseUrl?: string;
+}
+
+export async function renderHomeOg(input: HomeOgInput) {
+  const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
+  // Si hay emphasis, usamos split. Si no, una sola pieza.
+  const [taglineBefore, taglineAfter] = input.emphasis
+    ? splitWithNbsp(input.tagline)
+    : [input.tagline, ""];
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: 1200,
+          height: 630,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          padding: "80px 96px",
+          background: BG_DEFAULT,
+          color: C.charcoal,
+          fontFamily: "DM Sans",
+          position: "relative",
+        }}
+      >
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: C.burgundy }} />
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 56, maxWidth: 1000 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
+            <img src={logoSrc} alt="" width={96} height={96} />
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              <div
+                style={{
+                  fontFamily: "DM Sans",
+                  fontWeight: 600,
+                  fontSize: 56,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  lineHeight: 1,
+                  color: C.charcoal,
+                }}
+              >
+                Corporación GC
+              </div>
+              <div
+                style={{
+                  fontFamily: "DM Sans",
+                  fontWeight: 300,
+                  fontSize: 16,
+                  letterSpacing: "0.32em",
+                  textTransform: "uppercase",
+                  lineHeight: 1,
+                  color: "rgba(28,28,30,0.55)",
+                  paddingLeft: 2,
+                }}
+              >
+                Abogados
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              fontSize: 24,
+              lineHeight: 1.55,
+              color: "rgba(28,28,30,0.72)",
+              fontWeight: 400,
+              maxWidth: 880,
+              borderLeft: `2px solid ${C.burgundy}`,
+              paddingLeft: 22,
+              display: "flex",
+            }}
+          >
+            {input.emphasis ? (
+              <div style={{ display: "flex", flexWrap: "wrap" }}>
+                <span>{taglineBefore}</span>
+                <span style={{ color: C.burgundy, fontWeight: 600 }}>{input.emphasis}</span>
+                <span>{taglineAfter}</span>
+              </div>
+            ) : (
+              <span>{input.tagline}</span>
+            )}
+          </div>
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            left: 96,
+            right: 96,
+            bottom: 56,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            borderTop: "1px solid rgba(28,28,30,0.10)",
+            paddingTop: 24,
+            fontSize: 14,
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+          }}
+        >
+          <div style={{ color: "rgba(28,28,30,0.55)", fontWeight: 500 }}>{input.url}</div>
+          <div style={{ color: "rgba(28,28,30,0.40)" }}>San José · Costa Rica</div>
+        </div>
+      </div>
+    ),
+    { ...OG_SIZE, fonts }
+  );
+}
+
+// =============================================================
+// VARIANTE A2 — Default (áreas, legal, sobre-nosotros)
+// =============================================================
+export interface DefaultOgInput {
+  eyebrow: string;
+  /** Título. Use `{{em}}` como marcador para insertar `emphasis`. */
+  title: string;
+  emphasis?: string;
+  body: string;
+  url: string;
+  baseUrl?: string;
+}
+
+export async function renderDefaultOg(input: DefaultOgInput) {
+  const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
+  const [titleBefore, titleAfter] = splitWithNbsp(input.title);
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: 1200,
+          height: 630,
+          display: "flex",
+          flexDirection: "column",
+          padding: "80px",
+          background: BG_DEFAULT,
+          color: C.charcoal,
+          fontFamily: "DM Sans",
+          position: "relative",
+        }}
+      >
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: C.burgundy }} />
+
+        {/* Corner mark */}
+        <div
+          style={{
+            position: "absolute",
+            top: 72,
+            right: 80,
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", gap: 4, alignItems: "flex-end" }}>
+            <div
+              style={{
+                fontFamily: "DM Sans",
+                fontWeight: 600,
+                fontSize: 13,
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                lineHeight: 1,
+                color: C.charcoal,
+              }}
+            >
+              Corporación GC
+            </div>
+            <div
+              style={{
+                fontFamily: "DM Sans",
+                fontWeight: 300,
+                fontSize: 9,
+                letterSpacing: "0.30em",
+                textTransform: "uppercase",
+                lineHeight: 1,
+                color: "rgba(28,28,30,0.55)",
+              }}
+            >
+              Abogados
+            </div>
+          </div>
+          <img src={logoSrc} alt="" width={56} height={56} />
+        </div>
+
+        <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 36 }}>
+          <div style={{ width: 32, height: 1, background: C.burgundy }} />
+          <div
+            style={{
+              fontSize: 14,
+              letterSpacing: "0.25em",
+              textTransform: "uppercase",
+              color: "rgba(28,28,30,0.55)",
+              fontWeight: 500,
+            }}
+          >
+            {input.eyebrow}
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            fontFamily: "Cormorant Garamond",
+            fontWeight: 500,
+            fontSize: 76,
+            letterSpacing: "-0.02em",
+            lineHeight: 1.05,
+            color: C.charcoal,
+            marginBottom: 28,
+            maxWidth: 920,
+          }}
+        >
+          <span>{titleBefore}</span>
+          {input.emphasis ? <span style={{ color: C.burgundy }}>{input.emphasis}</span> : null}
+          <span>{titleAfter}</span>
+        </div>
+        <div
+          style={{
+            fontSize: 19,
+            lineHeight: 1.55,
+            color: "rgba(28,28,30,0.62)",
+            maxWidth: 880,
+            fontWeight: 400,
+            display: "flex",
+          }}
+        >
+          {input.body}
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            left: 80,
+            right: 80,
+            bottom: 56,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            borderTop: "1px solid rgba(28,28,30,0.10)",
+            paddingTop: 24,
+            fontSize: 14,
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+          }}
+        >
+          <div style={{ color: "rgba(28,28,30,0.55)", fontWeight: 500 }}>{input.url}</div>
+          <div style={{ color: "rgba(28,28,30,0.40)" }}>San José · Costa Rica</div>
+        </div>
+      </div>
+    ),
+    { ...OG_SIZE, fonts }
+  );
+}
+
+// =============================================================
+// VARIANTE B — Attorney (foto editorial a sangre completa, fondo blanco)
+// =============================================================
+export interface AttorneyOgInput {
+  role: string;
+  name: string;
+  credential: string;
+  initials: string;
+  baseUrl?: string;
+  /** Path en /public, ej. "/images/oscar-gonzalez-solo.png". Si está, se usa la foto. */
+  photo?: string;
+  /** CSS object-position para el crop, ej. "50% 8%". Y bajo favorece la cabeza. */
+  photoFocus?: string;
+}
+
 export async function renderAttorneyOg(input: AttorneyOgInput) {
   const [fonts, logoSrc, photoSrc] = await Promise.all([
     loadFonts(),
@@ -217,11 +383,15 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
           width: 1200,
           height: 630,
           display: "flex",
-          background: `linear-gradient(135deg, ${COLORS.burgundyDeepest} 0%, #2D1020 35%, ${COLORS.burgundyDark} 100%)`,
-          color: COLORS.cream,
+          background: BG_DEFAULT,
+          color: C.charcoal,
           fontFamily: "DM Sans",
+          position: "relative",
         }}
       >
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: C.burgundy }} />
+
+        {/* Columna izquierda: copy */}
         <div
           style={{
             flex: 1,
@@ -232,13 +402,13 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 32 }}>
-            <div style={{ width: 32, height: 1, background: COLORS.gold }} />
+            <div style={{ width: 32, height: 1, background: C.burgundy }} />
             <div
               style={{
                 fontSize: 13,
                 letterSpacing: "0.25em",
                 textTransform: "uppercase",
-                color: "rgba(247,243,238,0.55)",
+                color: "rgba(28,28,30,0.55)",
                 fontWeight: 500,
               }}
             >
@@ -252,8 +422,10 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
               fontSize: 60,
               letterSpacing: "-0.02em",
               lineHeight: 1.05,
-              color: COLORS.cream,
+              color: C.charcoal,
               marginBottom: 24,
+              maxWidth: 600,
+              display: "flex",
             }}
           >
             {input.name}
@@ -263,9 +435,9 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
               display: "flex",
               fontSize: 17,
               lineHeight: 1.55,
-              color: "rgba(247,243,238,0.65)",
+              color: "rgba(28,28,30,0.70)",
               maxWidth: 480,
-              borderLeft: `2px solid ${COLORS.burgundyLight}`,
+              borderLeft: `2px solid ${C.burgundy}`,
               paddingLeft: 16,
               marginBottom: 36,
             }}
@@ -279,7 +451,7 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
                 fontSize: 13,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "rgba(247,243,238,0.45)",
+                color: "rgba(28,28,30,0.50)",
                 fontWeight: 600,
               }}
             >
@@ -287,24 +459,26 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
             </div>
           </div>
         </div>
+
+        {/* Columna derecha: foto editorial a sangre completa */}
         <div
           style={{
             width: 480,
             height: 630,
             display: "flex",
             position: "relative",
-            background: `linear-gradient(160deg, #3A0B1F 0%, ${COLORS.burgundy} 55%, ${COLORS.burgundyLight} 100%)`,
+            background: BG_DEFAULT,
           }}
         >
-          {/* Gold accent line at the left edge — separates portrait from copy */}
+          {/* Hilo burdeos vertical sutil como separador */}
           <div
             style={{
               position: "absolute",
               top: 0,
               bottom: 0,
               left: 0,
-              width: 2,
-              background: `linear-gradient(180deg, transparent 0%, ${COLORS.gold} 30%, ${COLORS.gold} 70%, transparent 100%)`,
+              width: 1,
+              background: `linear-gradient(180deg, transparent 0%, rgba(107,29,58,0.18) 30%, rgba(107,29,58,0.18) 70%, transparent 100%)`,
             }}
           />
           {photoSrc ? (
@@ -317,7 +491,7 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
                 width: 480,
                 height: 630,
                 objectFit: "cover",
-                objectPosition: input.photoFocus ?? "50% 8%",
+                objectPosition: input.photoFocus ?? "50% 10%",
               }}
             />
           ) : (
@@ -330,25 +504,14 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
                 justifyContent: "center",
                 fontFamily: "Cormorant Garamond",
                 fontWeight: 600,
-                fontSize: 120,
-                color: "rgba(196,162,101,0.55)",
+                fontSize: 140,
+                color: C.burgundy,
                 letterSpacing: "0.04em",
               }}
             >
               {input.initials}
             </div>
           )}
-          {/* Subtle bottom gradient overlay for depth and to sit nicely against the burgundy */}
-          <div
-            style={{
-              position: "absolute",
-              left: 0,
-              right: 0,
-              bottom: 0,
-              height: 180,
-              background: `linear-gradient(180deg, transparent 0%, rgba(26,10,16,0.55) 100%)`,
-            }}
-          />
         </div>
       </div>
     ),
@@ -356,24 +519,28 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
   );
 }
 
-/* ─────────────── VARIANT C — Article ─────────────── */
-
+// =============================================================
+// VARIANTE C — Article
+// =============================================================
 export interface ArticleOgInput {
   tag: string;
-  readingTime?: string;
+  readingTime: string;
   date: string;
   title: string;
   excerpt: string;
   authorName: string;
   authorInitials: string;
+  baseUrl?: string;
 }
 
 export async function renderArticleOg(input: ArticleOgInput) {
   const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
 
+  // Tamaño del título adaptativo según largo, para evitar overflow
   const titleLen = input.title.length;
   const titleFontSize = titleLen > 110 ? 38 : titleLen > 80 ? 46 : titleLen > 55 ? 54 : 60;
-  const trimmedExcerpt = input.excerpt.length > 200 ? input.excerpt.slice(0, 197).trimEnd() + "…" : input.excerpt;
+  const trimmedExcerpt =
+    input.excerpt.length > 220 ? input.excerpt.slice(0, 217).trimEnd() + "…" : input.excerpt;
 
   return new ImageResponse(
     (
@@ -384,22 +551,14 @@ export async function renderArticleOg(input: ArticleOgInput) {
           padding: 80,
           display: "flex",
           flexDirection: "column",
-          background: `linear-gradient(135deg, ${COLORS.burgundyDeepest} 0%, #25101C 50%, #3A0B1F 100%)`,
-          color: COLORS.cream,
+          background: BG_ARTICLE,
+          color: C.charcoal,
           fontFamily: "DM Sans",
           position: "relative",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            height: 4,
-            background: `linear-gradient(90deg, ${COLORS.gold} 0%, ${COLORS.burgundy} 50%, ${COLORS.gold} 100%)`,
-          }}
-        />
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: C.burgundy }} />
+
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 32 }}>
           <div
             style={{
@@ -408,37 +567,32 @@ export async function renderArticleOg(input: ArticleOgInput) {
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               fontWeight: 600,
-              color: COLORS.gold,
-              background: "rgba(196,162,101,0.14)",
-              border: "1px solid rgba(196,162,101,0.32)",
+              color: C.white,
+              background: C.burgundy,
               borderRadius: 6,
             }}
           >
             {input.tag}
           </div>
-          {input.readingTime && (
-            <>
-              <div style={{ color: "rgba(247,243,238,0.3)", fontSize: 11 }}>·</div>
-              <div
-                style={{
-                  fontSize: 12,
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "rgba(247,243,238,0.5)",
-                  fontWeight: 500,
-                }}
-              >
-                {input.readingTime}
-              </div>
-            </>
-          )}
-          <div style={{ color: "rgba(247,243,238,0.3)", fontSize: 11 }}>·</div>
+          <div style={{ color: "rgba(28,28,30,0.30)", fontSize: 11 }}>·</div>
           <div
             style={{
               fontSize: 12,
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              color: "rgba(247,243,238,0.5)",
+              color: "rgba(28,28,30,0.55)",
+              fontWeight: 500,
+            }}
+          >
+            {input.readingTime}
+          </div>
+          <div style={{ color: "rgba(28,28,30,0.30)", fontSize: 11 }}>·</div>
+          <div
+            style={{
+              fontSize: 12,
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              color: "rgba(28,28,30,0.55)",
               fontWeight: 500,
             }}
           >
@@ -453,7 +607,7 @@ export async function renderArticleOg(input: ArticleOgInput) {
             fontSize: titleFontSize,
             letterSpacing: "-0.02em",
             lineHeight: 1.1,
-            color: COLORS.cream,
+            color: C.charcoal,
             marginBottom: 20,
             maxWidth: 1000,
           }}
@@ -465,7 +619,7 @@ export async function renderArticleOg(input: ArticleOgInput) {
             display: "flex",
             fontSize: 17,
             lineHeight: 1.5,
-            color: "rgba(247,243,238,0.6)",
+            color: "rgba(28,28,30,0.65)",
             maxWidth: 960,
             fontWeight: 400,
             marginBottom: "auto",
@@ -478,7 +632,7 @@ export async function renderArticleOg(input: ArticleOgInput) {
             display: "flex",
             alignItems: "center",
             gap: 18,
-            borderTop: "1px solid rgba(247,243,238,0.10)",
+            borderTop: "1px solid rgba(28,28,30,0.10)",
             paddingTop: 24,
             marginTop: 40,
           }}
@@ -488,29 +642,26 @@ export async function renderArticleOg(input: ArticleOgInput) {
               width: 44,
               height: 44,
               borderRadius: 22,
-              background: `linear-gradient(135deg, ${COLORS.burgundyDark}, ${COLORS.burgundyLight})`,
-              border: "1px solid rgba(196,162,101,0.32)",
+              background: C.burgundy,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontFamily: "Cormorant Garamond",
               fontSize: 18,
               fontWeight: 600,
-              color: "rgba(196,162,101,0.85)",
+              color: C.white,
             }}
           >
             {input.authorInitials}
           </div>
           <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-            <div style={{ fontSize: 14, fontWeight: 600, color: COLORS.cream }}>
-              {input.authorName}
-            </div>
+            <div style={{ fontSize: 14, fontWeight: 600, color: C.charcoal }}>{input.authorName}</div>
             <div
               style={{
                 fontSize: 11,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "rgba(247,243,238,0.4)",
+                color: "rgba(28,28,30,0.50)",
                 fontWeight: 500,
               }}
             >

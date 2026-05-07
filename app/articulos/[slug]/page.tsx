@@ -21,6 +21,7 @@ import {
   BookOpen,
   ArrowSquareOut,
 } from "@phosphor-icons/react/dist/ssr";
+import { buildArticleMetadata } from "@/lib/page-metadata";
 
 export async function generateStaticParams() {
   const articles = getAllArticles();
@@ -34,43 +35,23 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
-  if (!article) return {};
-  const metaTitle = article.seoTitle ?? article.title;
-  const metaDescription = article.seoDescription ?? article.excerpt;
-  const ogImageAlt = article.author
-    ? `${article.title} — Publicación de ${article.author}, Corporación GC.`
-    : `${article.title} — Corporación GC.`;
+  const base = buildArticleMetadata(
+    article
+      ? {
+          title: article.title,
+          excerpt: article.excerpt,
+          author: article.author ?? "Corporación GC",
+          date: article.date,
+          seoTitle: article.seoTitle,
+          seoDescription: article.seoDescription,
+        }
+      : null,
+    slug
+  );
   return {
-    title: metaTitle,
-    description: metaDescription,
+    ...base,
     alternates: {
       canonical: `https://www.corporaciongc.com/articulos/${slug}`,
-    },
-    openGraph: {
-      title: `${metaTitle} · Corporación GC`,
-      description: metaDescription,
-      url: `https://www.corporaciongc.com/articulos/${slug}`,
-      siteName: "Corporación GC",
-      locale: "es_CR",
-      type: "article",
-      publishedTime: article.date,
-      modifiedTime: article.date,
-      authors: article.author ? [article.author] : undefined,
-      section: "Derecho Público",
-      tags: article.tags,
-      images: [
-        {
-          url: `https://www.corporaciongc.com/articulos/${slug}/opengraph-image`,
-          width: 1200,
-          height: 630,
-          alt: ogImageAlt,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: metaTitle,
-      description: metaDescription,
     },
   };
 }

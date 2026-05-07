@@ -1,41 +1,43 @@
-import { renderArticleOg, OG_SIZE, OG_CONTENT_TYPE } from "@/lib/og-templates";
-import {
-  getArticleBySlug,
-  publicationTypeLabel,
-} from "@/lib/articles";
+// app/articulos/[slug]/opengraph-image.tsx
+// Adaptado a `getArticleBySlug` y al shape Article del repo.
 
+import { renderArticleOg, OG_SIZE, OG_CONTENT_TYPE } from "@/lib/og-templates";
+import { authorInitials } from "@/lib/seo-constants";
+import { getArticleBySlug, publicationTypeLabel } from "@/lib/articles";
+
+// nodejs runtime: getArticleBySlug lee MDX desde el filesystem.
 export const runtime = "nodejs";
-export const alt = "Corporación GC — Publicación";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 
-function authorInitials(author?: string): string {
-  if (!author) return "GC";
-  const first = author.split(",")[0].trim();
-  const cleaned = first.replace(/^(Dr\.\s|Lic\.\s|Licda\.\s|MSc\.\s|Mtro\.\s)/, "");
-  const parts = cleaned.split(/\s+/).filter(Boolean);
-  const a = parts[0]?.[0] ?? "G";
-  const b = parts[1]?.[0] ?? parts[0]?.[1] ?? "C";
-  return (a + b).toUpperCase();
+const MESES = [
+  "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre",
+];
+
+function dateLabel(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso;
+  return `${MESES[d.getMonth()]} ${d.getFullYear()}`;
 }
 
-function formatMonthYear(dateStr: string): string {
-  if (!dateStr) return "";
-  try {
-    const d = new Date(dateStr);
-    const formatted = d.toLocaleDateString("es-CR", {
-      month: "long",
-      year: "numeric",
-    });
-    return formatted.charAt(0).toUpperCase() + formatted.slice(1);
-  } catch {
-    return dateStr;
-  }
-}
-
-function authorDisplay(author?: string): string {
-  if (!author) return "Corporación GC";
-  return author.split(",")[0].trim();
+export async function generateImageMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
+  return [
+    {
+      id: "default",
+      alt: article && article.author
+        ? `${article.title} — Publicación de ${article.author}, Corporación GC.`
+        : "Publicación de Corporación GC, Costa Rica.",
+      size: OG_SIZE,
+      contentType: OG_CONTENT_TYPE,
+    },
+  ];
 }
 
 export default async function Image({
@@ -45,22 +47,31 @@ export default async function Image({
 }) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com";
+
   if (!article) {
     return renderArticleOg({
       tag: "Publicación",
-      date: "",
-      title: "Publicación Académica",
-      excerpt: "Corporación GC — Doctrina jurídica costarricense en Derecho Público.",
+      readingTime: "—",
+      date: "—",
+      title: "Corporación GC",
+      excerpt: "Doctrina jurídica costarricense en Derecho Público.",
       authorName: "Corporación GC",
       authorInitials: "GC",
+      baseUrl,
     });
   }
+
+  const author = article.author ?? "Corporación GC";
+
   return renderArticleOg({
     tag: publicationTypeLabel(article.publicationType),
-    date: formatMonthYear(article.date),
+    readingTime: "Lectura especializada",
+    date: dateLabel(article.date),
     title: article.title,
     excerpt: article.seoDescription ?? article.excerpt,
-    authorName: authorDisplay(article.author),
-    authorInitials: authorInitials(article.author),
+    authorName: author.split(",")[0].trim(),
+    authorInitials: authorInitials(author.split(",")[0].trim()),
+    baseUrl,
   });
 }

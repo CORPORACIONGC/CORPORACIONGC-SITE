@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT } from "@/lib/constants";
 import { AREA_COMMERCIAL } from "@/lib/area-commercial";
+import { generateAreaMetadata } from "@/lib/page-metadata";
 import {
   ArrowLeft,
   ArrowRight,
@@ -27,40 +28,12 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  const base = await generateAreaMetadata({ params });
   const { slug } = await params;
-  const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
-  if (!area) return {};
-  const seoTitle = "seoTitle" in area ? area.seoTitle : undefined;
-  const seoDescription = "seoDescription" in area ? area.seoDescription : undefined;
-  const metaTitle = seoTitle ?? area.title;
-  const metaDescription = seoDescription ?? area.description;
-  const ogImageAlt = `${area.title} — Corporación GC, Costa Rica`;
   return {
-    title: metaTitle,
-    description: metaDescription,
+    ...base,
     alternates: {
-      canonical: `${FIRM.url}/areas/${area.slug}`,
-    },
-    openGraph: {
-      title: `${metaTitle} · Corporación GC`,
-      description: metaDescription,
-      url: `${FIRM.url}/areas/${area.slug}`,
-      siteName: FIRM.name,
-      locale: FIRM.locale,
-      type: "website",
-      images: [
-        {
-          url: `${FIRM.url}/areas/${area.slug}/opengraph-image`,
-          width: 1200,
-          height: 630,
-          alt: ogImageAlt,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: metaTitle,
-      description: metaDescription,
+      canonical: `${FIRM.url}/areas/${slug}`,
     },
   };
 }

@@ -157,35 +157,12 @@ const jsonLdOrganization = {
   ],
 };
 
+import { sobreNosotrosMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
-  title: "Sobre Nosotros",
-  description:
-    "Bufete fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados al Derecho Público.",
+  ...sobreNosotrosMetadata,
   alternates: {
     canonical: "https://www.corporaciongc.com/sobre-nosotros",
-  },
-  openGraph: {
-    title: "Quiénes somos · Corporación GC, Costa Rica",
-    description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y co-redactor del CPCA.",
-    url: "https://www.corporaciongc.com/sobre-nosotros",
-    siteName: "Corporación GC",
-    locale: "es_CR",
-    type: "website",
-    images: [
-      {
-        url: "/sobre-nosotros/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Equipo de Corporación GC, bufete costarricense especializado en Derecho Público fundado en 2015.",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Sobre Nosotros · Corporación GC",
-    description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y co-redactor del CPCA.",
   },
 };
 
