@@ -8,6 +8,7 @@ import { FirmAbout } from "@/components/sections/FirmAbout";
 import { TeamSection } from "@/components/sections/TeamSection";
 import { FirmPracticeAreas } from "@/components/sections/FirmPracticeAreas";
 import { Publications } from "@/components/sections/Publications";
+import { JurisprudenciaDestacada } from "@/components/sections/JurisprudenciaDestacada";
 import { FirmContact } from "@/components/sections/FirmContact";
 import { getAllArticles } from "@/lib/articles";
 import { FIRM, FIRM_CREDENTIALS } from "@/lib/constants";
@@ -327,6 +328,7 @@ export default function Home() {
         <FirmAbout />
         <TeamSection />
         <FirmPracticeAreas />
+        <JurisprudenciaDestacada variant="home" />
         <Publications articles={articles} />
         <FirmContact />
       </main>

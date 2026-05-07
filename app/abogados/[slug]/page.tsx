@@ -9,6 +9,7 @@ import { Credentials } from "@/components/sections/Credentials";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Publications } from "@/components/sections/Publications";
+import { JurisprudenciaDestacada } from "@/components/sections/JurisprudenciaDestacada";
 import { Contact } from "@/components/sections/Contact";
 import { OscarHero } from "@/components/sections/OscarHero";
 import { OscarAbout } from "@/components/sections/OscarAbout";
@@ -391,6 +392,7 @@ function OscarProfile() {
           <OscarHero />
           <OscarAbout />
           <OscarExperience />
+          <JurisprudenciaDestacada variant="profile" />
           <Publications articles={articles} />
           <OscarEventoDestacado />
           <OscarConferencias />
