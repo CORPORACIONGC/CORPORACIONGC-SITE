@@ -29,6 +29,7 @@ export default async function Image({
       name: member?.name ?? "Corporación GC",
       credential: member?.shortBio ?? "Bufete especialista en Derecho Público en Costa Rica.",
       initials,
+      photo: member?.photo,
     });
   }
   return renderAttorneyOg({
@@ -36,5 +37,6 @@ export default async function Image({
     name: a.name,
     credential: a.credential,
     initials: a.initials,
+    photo: a.photo,
   });
 }

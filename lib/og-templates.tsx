@@ -180,10 +180,33 @@ export interface AttorneyOgInput {
   name: string;
   credential: string;
   initials: string;
+  /** Path under /public, e.g. "/images/oscar-gonzalez-solo.png". When set, replaces the initials tile. */
+  photo?: string;
+}
+
+const photoCache = new Map<string, string>();
+
+async function loadPhoto(publicPath: string): Promise<string | null> {
+  if (photoCache.has(publicPath)) return photoCache.get(publicPath)!;
+  try {
+    const cleanPath = publicPath.replace(/^\//, "");
+    const data = await readFile(join(process.cwd(), "public", cleanPath));
+    const ext = (publicPath.split(".").pop() ?? "png").toLowerCase();
+    const mime = ext === "jpg" || ext === "jpeg" ? "image/jpeg" : "image/png";
+    const dataUrl = `data:${mime};base64,${data.toString("base64")}`;
+    photoCache.set(publicPath, dataUrl);
+    return dataUrl;
+  } catch {
+    return null;
+  }
 }
 
 export async function renderAttorneyOg(input: AttorneyOgInput) {
-  const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
+  const [fonts, logoSrc, photoSrc] = await Promise.all([
+    loadFonts(),
+    loadLogo(),
+    input.photo ? loadPhoto(input.photo) : Promise.resolve(null),
+  ]);
 
   return new ImageResponse(
     (
@@ -277,6 +300,7 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
               width: 280,
               height: 360,
               borderRadius: 24,
+              overflow: "hidden",
               background: `linear-gradient(160deg, ${COLORS.burgundyDark} 0%, ${COLORS.burgundy} 50%, ${COLORS.burgundyLight} 100%)`,
               border: "1px solid rgba(247,243,238,0.10)",
               display: "flex",
@@ -289,7 +313,17 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
               letterSpacing: "0.04em",
             }}
           >
-            {input.initials}
+            {photoSrc ? (
+              <img
+                src={photoSrc}
+                alt=""
+                width={280}
+                height={360}
+                style={{ width: 280, height: 360, objectFit: "cover" }}
+              />
+            ) : (
+              input.initials
+            )}
           </div>
         </div>
       </div>
