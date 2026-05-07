@@ -287,49 +287,66 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
         </div>
         <div
           style={{
-            width: 440,
+            width: 480,
+            height: 630,
             display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
+            position: "relative",
             background: `linear-gradient(160deg, #3A0B1F 0%, ${COLORS.burgundy} 55%, ${COLORS.burgundyLight} 100%)`,
-            borderLeft: "1px solid rgba(247,243,238,0.08)",
           }}
         >
+          {/* Gold accent line at the left edge — separates portrait from copy */}
           <div
             style={{
-              width: 340,
-              height: 470,
-              borderRadius: 24,
-              overflow: "hidden",
-              background: `linear-gradient(160deg, ${COLORS.burgundyDark} 0%, ${COLORS.burgundy} 50%, ${COLORS.burgundyLight} 100%)`,
-              border: "1px solid rgba(247,243,238,0.10)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontFamily: "Cormorant Garamond",
-              fontWeight: 600,
-              fontSize: 96,
-              color: "rgba(196,162,101,0.55)",
-              letterSpacing: "0.04em",
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              left: 0,
+              width: 2,
+              background: `linear-gradient(180deg, transparent 0%, ${COLORS.gold} 30%, ${COLORS.gold} 70%, transparent 100%)`,
             }}
-          >
-            {photoSrc ? (
-              <img
-                src={photoSrc}
-                alt=""
-                width={340}
-                height={470}
-                style={{
-                  width: 340,
-                  height: 470,
-                  objectFit: "cover",
-                  objectPosition: "50% 22%",
-                }}
-              />
-            ) : (
-              input.initials
-            )}
-          </div>
+          />
+          {photoSrc ? (
+            <img
+              src={photoSrc}
+              alt=""
+              width={480}
+              height={630}
+              style={{
+                width: 480,
+                height: 630,
+                objectFit: "cover",
+                objectPosition: "50% 25%",
+              }}
+            />
+          ) : (
+            <div
+              style={{
+                width: 480,
+                height: 630,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontFamily: "Cormorant Garamond",
+                fontWeight: 600,
+                fontSize: 120,
+                color: "rgba(196,162,101,0.55)",
+                letterSpacing: "0.04em",
+              }}
+            >
+              {input.initials}
+            </div>
+          )}
+          {/* Subtle bottom gradient overlay for depth and to sit nicely against the burgundy */}
+          <div
+            style={{
+              position: "absolute",
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: 180,
+              background: `linear-gradient(180deg, transparent 0%, rgba(26,10,16,0.55) 100%)`,
+            }}
+          />
         </div>
       </div>
     ),
