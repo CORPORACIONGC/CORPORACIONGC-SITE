@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -475,41 +476,60 @@ export default async function SentenciaDestacadaPage({
         <section className="relative py-12 md:py-20">
           <div className="max-w-[760px] mx-auto px-6 md:px-10">
             <AnimatedEntry>
-              <div className="rounded-2xl border border-gold/20 bg-gradient-to-br from-burgundy/[0.06] via-transparent to-gold/[0.04] p-8 md:p-10">
-                <div className="flex items-start gap-5">
-                  <div className="hidden md:flex h-14 w-14 rounded-full bg-gold/[0.12] items-center justify-center shrink-0">
-                    <Scales
-                      size={26}
-                      weight="duotone"
-                      className="text-gold/85"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-[10px] tracking-[0.3em] uppercase text-gold/80 font-medium mb-2">
-                      Redactado por
+              <div className="relative rounded-2xl border border-gold/20 bg-gradient-to-br from-burgundy/[0.06] via-transparent to-gold/[0.04] overflow-hidden">
+                {/* Top edge gleam */}
+                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+
+                <div className="p-8 md:p-10">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-7">
+                    {/* ── Photo ── */}
+                    <div className="shrink-0">
+                      <div className="relative h-24 w-24 sm:h-[110px] sm:w-[110px] rounded-full overflow-hidden ring-1 ring-gold/40">
+                        <Image
+                          src="/images/oscar-gonzalez-solo.png"
+                          alt="Dr. Óscar Eduardo González Camacho"
+                          fill
+                          sizes="(min-width: 640px) 110px, 96px"
+                          className="object-cover object-[50%_22%]"
+                        />
+                      </div>
                     </div>
-                    <h3 className="font-display text-2xl text-cream tracking-tight mb-2">
-                      Dr. Óscar Eduardo González Camacho
-                    </h3>
-                    <p className="text-sm text-cream/65 leading-relaxed mb-3 max-w-[55ch]">
-                      Magistrado de la Sala Primera de la Corte Suprema de
-                      Justicia (2002–2014). Co-redactor del Código Procesal
-                      Contencioso Administrativo (Ley N.° 8508). Doctor en
-                      Derecho por la Universidad de Alcalá de Henares.
-                    </p>
-                    <p className="text-xs italic text-cream/45 mb-5 max-w-[55ch]">
-                      Cita textual de redactoría:{" "}
-                      <span className="text-cream/65 not-italic">
-                        «{sentencia.redactorTextual}»
-                      </span>
-                    </p>
-                    <Link
-                      href="/abogados/oscar-gonzalez"
-                      className="inline-flex items-center gap-2 text-xs text-gold/85 hover:text-gold transition-colors duration-300"
-                    >
-                      Ver perfil completo
-                      <ArrowSquareOut size={11} weight="bold" />
-                    </Link>
+
+                    {/* ── Bio ── */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="h-px w-6 bg-gold/60" />
+                        <span className="text-[10px] tracking-[0.3em] uppercase text-gold/85 font-medium">
+                          Redactado por
+                        </span>
+                      </div>
+                      <h3 className="font-display text-2xl md:text-[28px] text-cream tracking-tight leading-tight mb-3">
+                        Dr. Óscar Eduardo González Camacho
+                      </h3>
+                      <p className="text-sm text-cream/70 leading-relaxed mb-3 max-w-[55ch]">
+                        Magistrado de la Sala Primera de la Corte Suprema de
+                        Justicia (2002–2014). Co-redactor del Código Procesal
+                        Contencioso Administrativo (Ley N.° 8508). Doctor en
+                        Derecho por la Universidad de Alcalá de Henares.
+                      </p>
+                      <p className="text-xs italic text-cream/55 mb-5 max-w-[55ch]">
+                        Cita textual de redactoría:{" "}
+                        <span className="text-cream/75 not-italic">
+                          «{sentencia.redactorTextual}»
+                        </span>
+                      </p>
+                      <Link
+                        href="/abogados/oscar-gonzalez"
+                        className="inline-flex items-center gap-2 text-xs font-medium text-gold/90 hover:text-gold transition-colors duration-300 group/link"
+                      >
+                        Ver perfil completo
+                        <ArrowSquareOut
+                          size={11}
+                          weight="bold"
+                          className="transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                        />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
