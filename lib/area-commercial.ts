@@ -164,4 +164,87 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+
+  "litigio-contencioso-administrativo": {
+    hookHeadline: "¿Necesita demandar al Estado o un ente público?",
+    hookSubtext:
+      "Corporación GC concentra su práctica en el contencioso-administrativo costarricense. El bufete fue fundado y es dirigido por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera de la Corte Suprema (2002-2014) y co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508). Junto a él, un equipo de cinco abogados formados en Derecho Público bajo su supervisión directa asume demandas de nulidad, plena jurisdicción, responsabilidad patrimonial y recursos de casación ante la Sala Primera.",
+    triggerScenarios: [
+      "Una entidad pública le impuso una sanción administrativa que considera ilegal",
+      "La Administración no le respondió o le rechazó una solicitud que afecta sus derechos",
+      "Sufrió un daño patrimonial causado por la actuación u omisión del Estado",
+      "Le revocaron una concesión, permiso o autorización sin debido proceso",
+      "Una resolución firme le perjudica y necesita anularla",
+      "Una entidad pública incumple un contrato administrativo o se niega a pagar",
+      "Tiene una sentencia favorable contra el Estado y necesita ejecutarla",
+    ],
+    services: [
+      {
+        title: "Análisis técnico del caso y vías procesales",
+        description:
+          "Evaluamos la viabilidad de la pretensión, las vías procesales aplicables (anulatoria, plena jurisdicción, responsabilidad patrimonial), los plazos del CPCA y la estrategia probatoria desde el inicio del expediente.",
+      },
+      {
+        title: "Redacción y presentación de la demanda",
+        description:
+          "Preparamos la demanda con la fundamentación de hechos, derecho y pretensiones conforme al artículo 42 del CPCA. Asumimos la representación ante el Tribunal Contencioso Administrativo en todas las etapas del proceso oral.",
+      },
+      {
+        title: "Audiencia preliminar y juicio oral",
+        description:
+          "Asumimos la representación en la audiencia preliminar (donde se fijan los hechos controvertidos y se admite la prueba) y en la audiencia complementaria del juicio oral, donde se evacúa la prueba y se presentan los alegatos.",
+      },
+      {
+        title: "Medidas cautelares durante el proceso",
+        description:
+          "Cuando el caso lo requiere, solicitamos medidas cautelares conforme a los artículos 19-30 del CPCA: suspensión de actos administrativos, medidas de hacer o no hacer, provisionalísimas en urgencia extrema.",
+      },
+      {
+        title: "Recurso de casación ante la Sala Primera",
+        description:
+          "Asumimos la impugnación de sentencias del TCA mediante recurso de casación regulado en los artículos 134 a 148 del CPCA. Combinamos la trayectoria del Dr. González (Magistrado de la Sala Primera durante doce años, 2002-2014) con la práctica regular del equipo en la jurisdicción casacional.",
+      },
+      {
+        title: "Ejecución de sentencias contra el Estado",
+        description:
+          "Llevamos los procesos de ejecución cuando la sentencia favorable no se cumple voluntariamente, incluida la cuantificación judicial de daños y perjuicios y la coerción administrativa correspondiente.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría sobre una posible demanda contra el Estado o un ente público en Costa Rica. Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Qué es el contencioso-administrativo y a quién puede demandarse?",
+        answer:
+          "Es la jurisdicción especializada del Poder Judicial cuyo objeto es tutelar las situaciones jurídicas de toda persona y garantizar la legalidad de cualquier conducta de la Administración Pública sujeta al Derecho administrativo (art. 1 CPCA, Ley N.° 8508). Permite demandar al Estado (Gobierno Central, ministerios), instituciones autónomas (CCSS, ICE, INVU, AyA, IMAS), municipalidades, entes públicos (universidades estatales, ARESEP, SUTEL, CGR) y empresas públicas. El principio de universalidad del control (art. 49 Constitución Política, reformado en 1963) garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial.",
+      },
+      {
+        question: "¿Cuál es el plazo para demandar al Estado?",
+        answer:
+          "El artículo 39 del CPCA establece un plazo máximo de un año para incoar el proceso. Como regla general se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales se cuenta desde la cesación de sus efectos. Cuando la conducta produce efectos continuados, el plazo no comienza a correr hasta que esos efectos cesen — distinción a menudo pasada por alto que puede mantener viva una causa que parecía perdida.",
+      },
+      {
+        question: "¿Es necesario agotar la vía administrativa antes de demandar?",
+        answer:
+          "En la mayoría de los casos no. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo, salvo lo dispuesto en los artículos 173 y 182 de la Constitución Política. Las excepciones principales en la práctica son la contratación pública (Ley N.° 9986) y los casos derivados de los artículos constitucionales mencionados, que requieren un análisis caso por caso.",
+      },
+      {
+        question: "¿Qué pretensiones puedo formular en la demanda?",
+        answer:
+          "El artículo 42 del CPCA establece un catálogo amplio: declarar la disconformidad de la conducta administrativa con el ordenamiento jurídico, anular total o parcialmente el acto, reconocer o restablecer derechos, condenar a la Administración a una prestación específica (de hacer, no hacer o dar) e indemnizar daños y perjuicios. El proceso permite la reparación integral, no solo la eliminación del acto ilegal.",
+      },
+      {
+        question: "¿Cuánto puede durar un proceso contencioso-administrativo?",
+        answer:
+          "Un caso ordinario puede durar entre dos y cinco años desde la presentación hasta la sentencia firme, dependiendo de la complejidad, el volumen de prueba y la carga del Tribunal. Las medidas cautelares del CPCA (arts. 19-30) permiten proteger los derechos del administrado durante todo el proceso, incluyendo provisionalísimas que se resuelven en horas en casos de urgencia extrema.",
+      },
+      {
+        question: "¿Procede recurso contra la sentencia del Tribunal Contencioso?",
+        answer:
+          "Sí. La sentencia admite recurso de casación ante la Sala Primera de la Corte Suprema de Justicia, regulado en los artículos 134 a 148 del CPCA. Es un recurso de técnica rigurosa: requiere identificar con precisión el motivo invocado (procesal o sustantivo, arts. 137-138), la norma infringida y la incidencia en la parte dispositiva. Los defectos de técnica casacional conducen a la inadmisibilidad del recurso.",
+      },
+    ],
+    relatedArticleSlug: "como-demandar-al-estado-costa-rica",
+    relatedArticleLabel: "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
+  },
 };
