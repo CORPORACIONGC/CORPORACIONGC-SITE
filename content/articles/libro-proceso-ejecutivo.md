@@ -8,6 +8,8 @@ pdfFile: "libro-proceso-ejecutivo.pdf"
 author: "Dr. Óscar Eduardo González Camacho"
 institution: "Escuela Judicial del Poder Judicial"
 publicationType: "libro"
+seoTitle: "Consideraciones sobre el Proceso Ejecutivo · CR"
+seoDescription: "Tratado del Dr. Óscar González Camacho sobre el proceso ejecutivo en materia civil de hacienda: títulos ejecutivos, presupuestos de liquidez, demanda y cobro judicial. 1995."
 ---
 
 Obra publicada por la Escuela Judicial del Poder Judicial de Costa Rica (1995).

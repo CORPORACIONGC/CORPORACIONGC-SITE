@@ -37,6 +37,9 @@ export async function generateMetadata({
   if (!article) return {};
   const metaTitle = article.seoTitle ?? article.title;
   const metaDescription = article.seoDescription ?? article.excerpt;
+  const ogImageAlt = article.author
+    ? `${article.title} — Publicación de ${article.author}, Corporación GC.`
+    : `${article.title} — Corporación GC.`;
   return {
     title: metaTitle,
     description: metaDescription,
@@ -44,12 +47,30 @@ export async function generateMetadata({
       canonical: `https://www.corporaciongc.com/articulos/${slug}`,
     },
     openGraph: {
-      title: `${metaTitle} | Corporación GC`,
+      title: `${metaTitle} · Corporación GC`,
       description: metaDescription,
       url: `https://www.corporaciongc.com/articulos/${slug}`,
       siteName: "Corporación GC",
       locale: "es_CR",
       type: "article",
+      publishedTime: article.date,
+      modifiedTime: article.date,
+      authors: article.author ? [article.author] : undefined,
+      section: "Derecho Público",
+      tags: article.tags,
+      images: [
+        {
+          url: `https://www.corporaciongc.com/articulos/${slug}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: ogImageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
     },
   };
 }

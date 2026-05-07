@@ -20,6 +20,29 @@ export const metadata = {
   alternates: {
     canonical: "https://www.corporaciongc.com/articulos",
   },
+  openGraph: {
+    title: "Publicaciones Académicas · Corporación GC, CR",
+    description:
+      "Artículos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público escritas por los abogados de Corporación GC. Doctrina jurídica costarricense.",
+    url: "https://www.corporaciongc.com/articulos",
+    siteName: "Corporación GC",
+    locale: "es_CR",
+    type: "website",
+    images: [
+      {
+        url: "/articulos/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Publicaciones académicas en Derecho Público de los abogados de Corporación GC, Costa Rica.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    title: "Publicaciones Académicas · Corporación GC",
+    description:
+      "Artículos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público escritas por los abogados de Corporación GC. Doctrina jurídica costarricense.",
+  },
 };
 
 export default function ArticulosPage() {

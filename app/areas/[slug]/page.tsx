@@ -32,8 +32,9 @@ export async function generateMetadata({
   if (!area) return {};
   const seoTitle = "seoTitle" in area ? area.seoTitle : undefined;
   const seoDescription = "seoDescription" in area ? area.seoDescription : undefined;
-  const metaTitle = seoTitle ?? `${area.title} en Costa Rica | Abogados`;
-  const metaDescription = seoDescription ?? `${area.description} Abogados especialistas en ${area.title} en Costa Rica.`;
+  const metaTitle = seoTitle ?? area.title;
+  const metaDescription = seoDescription ?? area.description;
+  const ogImageAlt = `${area.title} — Corporación GC, Costa Rica`;
   return {
     title: metaTitle,
     description: metaDescription,
@@ -41,12 +42,25 @@ export async function generateMetadata({
       canonical: `${FIRM.url}/areas/${area.slug}`,
     },
     openGraph: {
-      title: `${metaTitle} | Corporación GC`,
+      title: `${metaTitle} · Corporación GC`,
       description: metaDescription,
       url: `${FIRM.url}/areas/${area.slug}`,
       siteName: FIRM.name,
       locale: FIRM.locale,
       type: "website",
+      images: [
+        {
+          url: `${FIRM.url}/areas/${area.slug}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: ogImageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
     },
   };
 }

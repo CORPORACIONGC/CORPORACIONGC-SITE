@@ -37,8 +37,9 @@ export const metadata: Metadata = {
     canonical: FIRM.url,
   },
   openGraph: {
-    title: "Corporación GC · Abogados en Derecho Público | Costa Rica",
-    description: FIRM.description,
+    title: "Corporación GC · Abogados en Derecho Público en Costa Rica",
+    description:
+      "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
     url: FIRM.url,
     siteName: FIRM.name,
     locale: FIRM.locale,
@@ -48,14 +49,15 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Corporación GC — Abogados Especialistas en Derecho Público en Costa Rica",
+        alt: "Corporación GC — Bufete de abogados especialistas en Derecho Público en Costa Rica, fundado por el Dr. Óscar González Camacho.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Corporación GC | Derecho Público",
-    description: FIRM.description,
+    title: "Corporación GC | Abogados en Derecho Público — CR",
+    description:
+      "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
   },
   robots: {
     index: true,

@@ -8,6 +8,8 @@ pdfFile: "tesis-jose-carlos-solano-salas.pdf"
 author: "Lic. José Carlos Solano Salas"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
+seoTitle: "Control Jurisdiccional de los Actos de Gobierno · CR"
+seoDescription: "Tesis del Lic. José Carlos Solano sobre el Acto de Gobierno como especie del acto administrativo, su evolución histórica y el control jurisdiccional en el Derecho Público CR."
 ---
 
 Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad de Costa Rica.

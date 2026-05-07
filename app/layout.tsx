@@ -22,11 +22,23 @@ export const metadata: Metadata = {
   metadataBase: new URL(FIRM.url),
   title: {
     default: FIRM.title,
-    template: `%s | ${FIRM.name}`,
+    template: `%s · Corporación GC`,
   },
+  description:
+    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA.",
+  applicationName: "Corporación GC",
   authors: [{ name: "Corporación GC" }],
   creator: "Corporación GC",
   publisher: "Corporación GC",
+  openGraph: {
+    type: "website",
+    siteName: FIRM.name,
+    locale: FIRM.locale,
+    url: FIRM.url,
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

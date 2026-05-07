@@ -7,6 +7,8 @@ type: "article"
 author: "Lic. Esteban Pérez Herrera"
 institution: "Corporación GC"
 publicationType: "guia"
+seoTitle: "Me Notificaron una Expropiación: ¿Qué Hago? · CR"
+seoDescription: "Cinco días hábiles para oponerse al avalúo administrativo. Guía completa: declaratoria, indemnización y derechos del propietario bajo la Ley de Expropiaciones N.° 7495."
 faq:
   - question: "¿Cuánto tiempo tengo para responder a la notificación del avalúo?"
     answer: "El artículo 25 de la Ley de Expropiaciones le concede un plazo de cinco días hábiles desde la notificación del avalúo para manifestar su conformidad o disconformidad. Si no responde dentro de ese plazo, la ley interpreta su silencio como aceptación del avalúo administrativo, y este queda firme."

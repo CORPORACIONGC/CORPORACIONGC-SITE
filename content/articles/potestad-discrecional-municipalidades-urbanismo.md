@@ -8,6 +8,8 @@ pdfFile: "tesis-esteban-perez-herrera.pdf"
 author: "Lic. Esteban Pérez Herrera"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
+seoTitle: "Discrecionalidad Municipal en Urbanismo · CR"
+seoDescription: "Tesis del Lic. Esteban Pérez Herrera sobre los límites de la discrecionalidad municipal en regulación urbanística costarricense, planes reguladores y control judicial."
 ---
 
 Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad de Costa Rica.

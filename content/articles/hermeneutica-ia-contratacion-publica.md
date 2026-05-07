@@ -10,6 +10,8 @@ institution: "Universidad de Costa Rica"
 publicationType: "articulo"
 sourceReference: "Revista Estudiantil Hermenéutica, Edición XXVI (No. 26), Facultad de Derecho, Universidad de Costa Rica, junio 2025, pp. 75–144."
 sourceUrl: "https://drive.google.com/file/d/1iif6vJbNBQB3q6aK-HLA3-Tfd6WvslNo/view?usp=sharing"
+seoTitle: "IA en la Contratación Pública · Costa Rica"
+seoDescription: "Estudio jurídico sobre la implementación de inteligencia artificial en la contratación pública costarricense bajo la Ley N.° 9986. Hermenéutica UCR, edición XXVI, 2025."
 ---
 
 **Referencia:** Sánchez Zamora, Khevin y Montero Acuña, Mariana. «Administración Pública aumentada: bases normativas y técnicas para la implementación de inteligencia artificial en la contratación estatal costarricense». *Revista Estudiantil Hermenéutica*, Edición XXVI, No. 26, Facultad de Derecho, Universidad de Costa Rica, junio 2025, pp. 75–144.

@@ -8,6 +8,8 @@ pdfFile: "libro-justicia-administrativa.pdf"
 author: "Dr. Óscar Eduardo González Camacho"
 institution: "Universidad de Alcalá de Henares, España"
 publicationType: "libro"
+seoTitle: "Justicia Administrativa frente a la Inactividad · CR"
+seoDescription: "Tesis doctoral del Dr. Óscar González Camacho (Universidad de Alcalá, Cum Laude) sobre el control jurisdiccional de la inactividad material y la tutela judicial efectiva."
 ---
 
 Tesis Doctoral presentada por Óscar Eduardo González Camacho para la colación del Grado de Doctor en Derecho, bajo la dirección del Profesor Dr. D. Miguel Sánchez Morón, Universidad de Alcalá, Facultad de Derecho (1998). Calificación: Sobresaliente Cum Laude.

@@ -10,6 +10,8 @@ institution: "Corporación GC · Editorial Tirant lo Blanch"
 publicationType: "libro"
 sourceReference: "En: CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa (Dir. Alex Rojas Ortega). Editorial Tirant lo Blanch, Colección Monografías Maior, 1.ª ed., 2026, 376 págs. ISBN 9791370214753."
 sourceUrl: "https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753"
+seoTitle: "El Por Qué del Contencioso Administrativo · CPCA 20"
+seoDescription: "El Dr. Óscar González Camacho reflexiona sobre los fundamentos y la finalidad del contencioso-administrativo a 20 años del CPCA. Tirant lo Blanch, Monografías Maior, 2026."
 ---
 
 Capítulo publicado en la obra colectiva *CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa* (Editorial Tirant lo Blanch, 2026), dirigida por el Dr. Alex Rojas Ortega, que conmemora los veinte años de la aprobación del Código Procesal Contencioso Administrativo de Costa Rica. Presentado en el evento **CPCA 20 Años: Balance, transformaciones y desafíos de la justicia administrativa**, organizado por el Colegio de Abogados y Abogadas de Costa Rica, Tirant Editorial y la Universidad Escuela Libre de Derecho.

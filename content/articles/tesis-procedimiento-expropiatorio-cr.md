@@ -8,6 +8,8 @@ pdfFile: "tesis-katherine-gonzalez-licenciatura.pdf"
 author: "MSc. Katherine González Coto"
 institution: "Universidad Escuela Libre de Derecho"
 publicationType: "tesis"
+seoTitle: "Procedimiento Expropiatorio en Costa Rica · Tesis"
+seoDescription: "Tesis de licenciatura de Katherine González Coto sobre el procedimiento expropiatorio costarricense, con las reformas de las leyes N.° 9286 (2014) y N.° 9462 (2017) a la Ley N.° 7495."
 ---
 
 Tesis de grado para optar por el título de Licenciatura en Derecho, Universidad Escuela Libre de Derecho.

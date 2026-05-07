@@ -37,6 +37,7 @@ import { getArticlesByAuthor } from "@/lib/articles";
 import {
   TEAM,
   FIRM,
+  ATTORNEYS_OG,
   OSCAR_NAV_LINKS,
   ESTEBAN_PROFILE,
   ESTEBAN_NAV_LINKS,
@@ -62,19 +63,38 @@ export async function generateMetadata({
   const member = TEAM.find((m) => m.slug === slug);
   if (!member) return {};
 
+  const og = ATTORNEYS_OG[member.slug as keyof typeof ATTORNEYS_OG];
+
   return {
-    title: `${member.name} | ${member.role} · Abogado Derecho Público Costa Rica`,
-    description: `${member.shortBio} Corporación GC — Abogados en Derecho Administrativo y Contencioso Administrativo, Costa Rica.`,
+    title: og?.seoTitle ?? `${member.name} · ${member.role}`,
+    description:
+      og?.seoDescription ??
+      `${member.shortBio} Corporación GC — Abogados en Derecho Público, Costa Rica.`,
     alternates: {
       canonical: `${FIRM.url}/abogados/${member.slug}`,
     },
     openGraph: {
-      title: `${member.name} | ${member.role} · Corporación GC`,
-      description: `${member.shortBio} Corporación GC.`,
+      title: og?.ogTitle ?? `${member.name} — ${member.role}, Corporación GC`,
+      description: og?.ogDescription ?? `${member.shortBio} Corporación GC.`,
       url: `${FIRM.url}/abogados/${member.slug}`,
       siteName: FIRM.name,
       locale: FIRM.locale,
       type: "profile",
+      images: [
+        {
+          url: `${FIRM.url}/abogados/${member.slug}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt:
+            og?.ogImageAlt ??
+            `Retrato profesional de ${member.name}, ${member.role} en Corporación GC.`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: og?.twitterTitle ?? `${member.name} · Corporación GC`,
+      description: og?.ogDescription ?? `${member.shortBio} Corporación GC.`,
     },
   };
 }

@@ -19,7 +19,7 @@ export type ArticleMeta = {
   pdfFile?: string;
   author?: string;
   institution?: string;
-  publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley";
+  publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley" | "guia";
   sourceReference?: string;
   sourceUrl?: string;
   seoTitle?: string;
@@ -111,6 +111,7 @@ export function publicationTypeLabel(
     ponencia: "Ponencia",
     libro: "Libro",
     ley: "Ley",
+    guia: "Guía práctica",
   };
   return type ? labels[type] || type : "Artículo";
 }

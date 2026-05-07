@@ -8,6 +8,8 @@ pdfFile: "tesis-katherine-gonzalez-maestria.pdf"
 author: "MSc. Katherine González Coto"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
+seoTitle: "Daño Moral Indirecto y Responsabilidad Estatal · CR"
+seoDescription: "Tesis de maestría de Katherine González Coto sobre el reconocimiento del daño moral indirecto familiar y social como responsabilidad patrimonial del Estado costarricense. UCR."
 ---
 
 Trabajo Final de Investigación Aplicada para optar por el grado y título de Maestría Profesional en Derecho Público, Universidad de Costa Rica.

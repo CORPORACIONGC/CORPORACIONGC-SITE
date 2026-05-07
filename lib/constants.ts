@@ -101,6 +101,107 @@ export const TEAM = [
   { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Contencioso Administrativo", "Acciones de Inconstitucionalidad", "Zona Marítimo Terrestre", "Procedimientos CGR", "Transporte y Concesiones"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
 
+// ─── Datos OG por abogado (slug → tarjeta social) ───
+
+export const ATTORNEYS_OG = {
+  "oscar-gonzalez": {
+    name: "Dr. Óscar Eduardo González Camacho",
+    initials: "OG",
+    role: "Fundador y Director",
+    seoTitle: "Dr. Óscar González Camacho · Fundador y Director",
+    seoDescription:
+      "Ex-Magistrado de la Sala Primera, co-redactor del CPCA. Dr. en Derecho por la Universidad de Alcalá. 38+ años de trayectoria en Derecho Público en Costa Rica.",
+    ogTitle: "Dr. Óscar González Camacho — Fundador, Corporación GC",
+    ogDescription:
+      "Ex-Magistrado de la Corte Suprema (2002-2014), co-redactor del Código Procesal Contencioso Administrativo. Doctor en Derecho por Alcalá, Cum Laude. Litigante de mayor calado en lo contencioso CR.",
+    twitterTitle: "Dr. Óscar González Camacho · Corporación GC",
+    ogImageAlt:
+      "Retrato profesional del Dr. Óscar Eduardo González Camacho, Fundador y Director de Corporación GC.",
+    credential:
+      "Ex-Magistrado de la Sala Primera (2002–2014). Co-redactor del CPCA. Doctor en Derecho por la Universidad de Alcalá, Cum Laude.",
+  },
+  "khevin-sanchez": {
+    name: "Lic. Khevin Sánchez Zamora",
+    initials: "KS",
+    role: "Abogado Asociado",
+    seoTitle: "Lic. Khevin Sánchez Zamora · Abogado Asociado",
+    seoDescription:
+      "Abogado asociado de Corporación GC. Especialista en medidas cautelares y litigio contencioso. 3er mejor promedio del Examen de Excelencia, Colegio de Abogados 2025.",
+    ogTitle: "Lic. Khevin Sánchez Zamora — Corporación GC, CR",
+    ogDescription:
+      "Litigio contencioso-administrativo, medidas cautelares y Derecho Constitucional. Investigador en IA aplicada a la justicia. 3er mejor promedio del Examen de Excelencia del Colegio de Abogados 2025.",
+    twitterTitle: "Lic. Khevin Sánchez Zamora · Corporación GC",
+    ogImageAlt:
+      "Retrato profesional del Lic. Khevin Sánchez Zamora, Abogado Asociado en Corporación GC.",
+    credential:
+      "Especialista en medidas cautelares y litigio contencioso. 3.er mejor promedio del Examen de Excelencia, Colegio de Abogados 2025.",
+  },
+  "katherine-gonzalez": {
+    name: "MSc. Katherine González Coto",
+    initials: "KG",
+    role: "Abogada Asociada",
+    seoTitle: "MSc. Katherine González Coto · Abogada Asociada",
+    seoDescription:
+      "Abogada asociada de Corporación GC. Máster en Derecho Público (UCR), Notaria. Especialista en responsabilidad patrimonial del Estado y derecho expropiatorio.",
+    ogTitle: "MSc. Katherine González Coto — Corporación GC, CR",
+    ogDescription:
+      "Máster en Derecho Público por la UCR, Licenciada en Derecho y Notaria por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio. Cuatro idiomas.",
+    twitterTitle: "MSc. Katherine González Coto · Corporación GC",
+    ogImageAlt:
+      "Retrato profesional de la MSc. Katherine González Coto, Abogada Asociada en Corporación GC.",
+    credential:
+      "Máster en Derecho Público (UCR), Notaria. Especialista en responsabilidad patrimonial del Estado y derecho expropiatorio.",
+  },
+  "mariana-montero": {
+    name: "Licda. Mariana Montero Acuña",
+    initials: "MM",
+    role: "Abogada Asociada",
+    seoTitle: "Licda. Mariana Montero · Abogada Asociada",
+    seoDescription:
+      "Abogada asociada de Corporación GC. Licenciada en Derecho con mención en Derechos Humanos por la UCR. Especialista en malpraxis médica y responsabilidad del Estado.",
+    ogTitle: "Licda. Mariana Montero Acuña — Corporación GC, CR",
+    ogDescription:
+      "Licenciada en Derecho con mención en Derechos Humanos (UCR, con distinción). Egresada de la Maestría en Derecho Público. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial.",
+    twitterTitle: "Licda. Mariana Montero Acuña · Corporación GC",
+    ogImageAlt:
+      "Retrato profesional de la Licda. Mariana Montero Acuña, Abogada Asociada en Corporación GC.",
+    credential:
+      "Licenciada en Derecho con mención en Derechos Humanos (UCR). Especialista en malpraxis médica y responsabilidad del Estado.",
+  },
+  "esteban-perez": {
+    name: "Lic. Esteban Pérez Herrera",
+    initials: "EP",
+    role: "Abogado Asociado",
+    seoTitle: "Lic. Esteban Pérez Herrera · Abogado Asociado",
+    seoDescription:
+      "Abogado asociado de Corporación GC. Más de 9 años de experiencia en litigio contencioso-administrativo. Notario Público. Maestrando en Derecho Público (UCR).",
+    ogTitle: "Lic. Esteban Pérez Herrera — Corporación GC, CR",
+    ogDescription:
+      "Abogado litigante y Notario Público con 9+ años en litigio contencioso-administrativo, contratación pública y derecho constitucional. Maestrando en Derecho Público en la UCR. Corporación GC.",
+    twitterTitle: "Lic. Esteban Pérez Herrera · Corporación GC",
+    ogImageAlt:
+      "Retrato profesional del Lic. Esteban Pérez Herrera, Abogado Asociado en Corporación GC.",
+    credential:
+      "Más de 9 años en litigio contencioso-administrativo. Notario Público. Maestrando en Derecho Público (UCR).",
+  },
+  "jose-carlos-solano": {
+    name: "Lic. José Carlos Solano Salas",
+    initials: "JS",
+    role: "Abogado Asociado",
+    seoTitle: "Lic. José Carlos Solano · Abogado Asociado",
+    seoDescription:
+      "Abogado asociado de Corporación GC. Excelencia Académica UCR. Especialista en Derecho Notarial y Registral, ZMT y procedimientos ante la Contraloría (CGR).",
+    ogTitle: "Lic. José Carlos Solano Salas — Corporación GC",
+    ogDescription:
+      "Licenciado en Derecho con Excelencia Académica (UCR). Especialista en Derecho Notarial y Registral, Zona Marítimo Terrestre y procedimientos ante la CGR. Aceptado en la Goethe-Universität Frankfurt.",
+    twitterTitle: "Lic. José Carlos Solano Salas · Corporación GC",
+    ogImageAlt:
+      "Retrato profesional del Lic. José Carlos Solano Salas, Abogado Asociado en Corporación GC.",
+    credential:
+      "Excelencia Académica UCR. Especialista en Derecho Notarial y Registral, ZMT y procedimientos ante la CGR.",
+  },
+} as const;
+
 export const FIRM_PRACTICE_AREAS = [
   { title: "Derecho Administrativo", description: "Defensa y asesoría en procedimientos ante la Administración Pública, recursos ordinarios y extraordinarios.", icon: "Scales" as const },
   { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado y entes públicos.", icon: "Gavel" as const },
@@ -129,6 +230,8 @@ export const PRACTICE_AREA_PAGES = [
     priority: "primary" as const,
     seoTitle: "Demandar al Estado en Costa Rica · Bufete Especializado",
     seoDescription: "Bufete líder en demandas contencioso-administrativas en Costa Rica. Dirigido por el co-redactor del CPCA, ex-Magistrado de la Sala Primera. Casación, expropiaciones.",
+    ogShortTitle: "Demandas contra el {{em}}",
+    ogEmphasis: "Estado",
   },
   {
     slug: "medidas-cautelares",
@@ -139,6 +242,8 @@ export const PRACTICE_AREA_PAGES = [
     priority: "primary" as const,
     seoTitle: "Medidas Cautelares Contra el Estado · Costa Rica",
     seoDescription: "¿Necesita suspender un acto administrativo urgente? Medidas cautelares provisionalísimas y ante causam ante el TCA. CPCA arts. 19-30. Asesoría inmediata.",
+    ogShortTitle: "{{em}} contra el Estado",
+    ogEmphasis: "Medidas Cautelares",
   },
   {
     slug: "casacion-sala-primera",
@@ -147,6 +252,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Interposición y sustanciación de recursos de casación contencioso-administrativa ante la Sala Primera de la Corte Suprema de Justicia conforme a los artículos 134 a 148 del CPCA.",
     icon: "Scales" as const,
     priority: "primary" as const,
+    seoTitle: "Recurso de Casación ante Sala Primera · Costa Rica",
+    seoDescription: "¿Perdió en el TCA y necesita casación? Recurso ante la Sala Primera dirigido por el ex-Magistrado de la propia Sala y co-redactor del CPCA. Vicios de sentencia, técnica casacional, arts. 134-148.",
+    ogShortTitle: "Casación ante la {{em}}",
+    ogEmphasis: "Sala Primera",
   },
   {
     slug: "contratacion-publica",
@@ -155,6 +264,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Asesoría y litigio en todas las fases de la contratación administrativa: objeciones al cartel, recursos contra adjudicaciones y demandas ante el TCA conforme a la Ley General de Contratación Pública (Ley N.° 9986).",
     icon: "Handshake" as const,
     priority: "primary" as const,
+    seoTitle: "Contratación Pública · Licitaciones Costa Rica",
+    seoDescription: "Objeción al cartel, impugnación de adjudicaciones y litigio en licitaciones públicas conforme a la Ley N.° 9986. Bufete con experiencia ante CGR, SICOP y el TCA. Asesoría inmediata para contratistas.",
+    ogShortTitle: "{{em}} y licitaciones",
+    ogEmphasis: "Contratación pública",
   },
   {
     slug: "recursos-de-amparo",
@@ -163,6 +276,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Interposición de recursos de amparo ante la Sala IV contra actos u omisiones de autoridades públicas y sujetos privados en posición de poder que vulneren derechos fundamentales, conforme a la Ley de la Jurisdicción Constitucional (Ley N.° 7135, arts. 29 a 56).",
     icon: "Shield" as const,
     priority: "primary" as const,
+    seoTitle: "Recurso de Amparo · Sala IV, Costa Rica",
+    seoDescription: "Protección urgente de derechos fundamentales ante la Sala Constitucional. Amparo contra actos u omisiones de autoridades públicas y sujetos privados. Ley N.° 7135, arts. 29-56. Asesoría inmediata.",
+    ogShortTitle: "Recurso de {{em}}",
+    ogEmphasis: "Amparo",
   },
   {
     slug: "acciones-de-inconstitucionalidad",
@@ -171,6 +288,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Promoción de acciones de inconstitucionalidad ante la Sala Constitucional contra leyes, decretos ejecutivos, reglamentos y disposiciones de alcance general que infrinjan normas o principios constitucionales, conforme a la Ley N.° 7135 (arts. 73 a 95).",
     icon: "Bank" as const,
     priority: "primary" as const,
+    seoTitle: "Acción de Inconstitucionalidad · Sala IV, Costa Rica",
+    seoDescription: "Impugnación de leyes, decretos y reglamentos contrarios a la Constitución ante la Sala Constitucional. Bufete dirigido por especialista en Derecho Constitucional formado en España. Ley N.° 7135.",
+    ogShortTitle: "Acción de {{em}}",
+    ogEmphasis: "Inconstitucionalidad",
   },
   {
     slug: "asesoria-regulatoria",
@@ -179,6 +300,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora a entes y órganos de la Administración Pública en la redacción de reglamentos, decretos ejecutivos y normativa de alcance general, conforme a la potestad reglamentaria del artículo 140.3 de la Constitución Política y los artículos 6 y 121 a 129 de la LGAP.",
     icon: "BookOpen" as const,
     priority: "primary" as const,
+    seoTitle: "Redacción de Reglamentos y Decretos · Costa Rica",
+    seoDescription: "Asesoría experta a entes públicos en redacción de reglamentos, decretos ejecutivos y normativa de alcance general conforme al art. 140.3 de la Constitución y arts. 121-129 de la LGAP. Corporación GC.",
+    ogShortTitle: "Reglamentos y {{em}}",
+    ogEmphasis: "Decretos",
   },
   {
     slug: "informes-juridicos-dictamenes",
@@ -187,6 +312,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC emite informes jurídicos y dictámenes especializados para entes y órganos de la Administración Pública sobre la legalidad de sus actuaciones, contratos, procedimientos y proyectos normativos, conforme al marco de la LGAP y la jurisprudencia contencioso-administrativa.",
     icon: "FileText" as const,
     priority: "primary" as const,
+    seoTitle: "Dictámenes de Legalidad Administrativa · Costa Rica",
+    seoDescription: "Informes y dictámenes jurídicos para entes públicos sobre legalidad de actuaciones, contratos y procedimientos. Bufete dirigido por el co-redactor del CPCA, ex-Magistrado de la Sala Primera de la CSJ.",
+    ogShortTitle: "Dictámenes de {{em}}",
+    ogEmphasis: "Legalidad",
   },
   {
     slug: "derecho-administrativo",
@@ -196,6 +325,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Representación en procedimientos administrativos ordinarios, interposición de recursos de revocatoria con apelación en subsidio y agotamiento de vía administrativa conforme a la LGAP (Ley N.° 6227, arts. 308 a 352).",
     icon: "Briefcase" as const,
     priority: "primary" as const,
+    seoTitle: "Recurso de Revocatoria y Apelación · Costa Rica",
+    seoDescription: "Procedimientos administrativos ordinarios, recursos de revocatoria con apelación en subsidio y agotamiento de vía administrativa conforme a la LGAP (arts. 308-352). Defensa del administrado.",
+    ogShortTitle: "Recursos de Revocatoria y {{em}}",
+    ogEmphasis: "Apelación",
   },
   {
     slug: "procedimientos-sancionatorios",
@@ -204,6 +337,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Defensa del administrado en procedimientos sancionatorios de la Administración Pública: garantías del debido proceso, audiencia oral, acceso al expediente y recursos administrativos conforme a los artículos 308 a 319 de la LGAP y los artículos 39 y 41 de la Constitución Política.",
     icon: "Warning" as const,
     priority: "primary" as const,
+    seoTitle: "Defensa en Procedimientos Sancionatorios · CR",
+    seoDescription: "Defensa del administrado en procedimientos disciplinarios y sancionatorios de la Administración Pública. Garantías del debido proceso, audiencia oral y recursos. LGAP arts. 308-319. Asesoría urgente.",
+    ogShortTitle: "Defensa en {{em}}",
+    ogEmphasis: "Procedimientos Sancionatorios",
   },
   {
     slug: "empleo-publico",
@@ -212,6 +349,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Defensa de servidores públicos en procedimientos disciplinarios: amonestaciones, suspensiones y despidos conforme al Estatuto de Servicio Civil (Ley N.° 1581), la Ley Marco de Empleo Público (Ley N.° 10159) y el procedimiento ordinario de la LGAP (arts. 308 a 319).",
     icon: "IdentificationBadge" as const,
     priority: "primary" as const,
+    seoTitle: "Empleo Público · Defensa de Servidores | CR",
+    seoDescription: "Defensa de servidores públicos en procedimientos disciplinarios, suspensiones y despidos. Estatuto de Servicio Civil, Ley Marco de Empleo Público (Ley N.° 10159) y procedimiento ordinario LGAP.",
+    ogShortTitle: "Empleo Público y {{em}}",
+    ogEmphasis: "Servicio Civil",
   },
   // ─── Áreas Especializadas ───
   {
@@ -221,6 +362,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Representación en procedimientos de fijación tarifaria, impugnación de resoluciones de ARESEP y SUTEL, defensa de concesiones de servicios públicos y litigio en materia regulatoria conforme a la Ley N.° 7593.",
     icon: "Lightning" as const,
     priority: "specialized" as const,
+    seoTitle: "Litigio ante ARESEP y SUTEL · Costa Rica",
+    seoDescription: "Fijación tarifaria, impugnación de resoluciones de ARESEP y SUTEL, defensa de concesiones de servicios públicos y litigio regulatorio conforme a la Ley N.° 7593. Bufete con experiencia comprobada.",
+    ogShortTitle: "Litigio ante {{em}}",
+    ogEmphasis: "ARESEP y SUTEL",
   },
   {
     slug: "materia-municipal",
@@ -229,6 +374,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Impugnación de actos municipales, defensa en materia de patentes y tributos locales, recursos contra acuerdos del Concejo Municipal y litigio contencioso-administrativo contra gobiernos locales conforme al Código Municipal (Ley N.° 7794).",
     icon: "Buildings" as const,
     priority: "specialized" as const,
+    seoTitle: "Derecho Municipal · Litigio Municipalidades CR",
+    seoDescription: "Impugnación de actos municipales, patentes, tributos locales y acuerdos del Concejo. Litigio contencioso-administrativo contra gobiernos locales conforme al Código Municipal (Ley N.° 7794).",
+    ogShortTitle: "Litigio contra {{em}}",
+    ogEmphasis: "Municipalidades",
   },
   {
     slug: "dominio-publico",
@@ -237,6 +386,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Solicitud y defensa de concesiones sobre bienes de dominio público, impugnación de revocatorias y caducidades, defensa frente a desalojos administrativos y protección de derechos derivados de permisos de uso.",
     icon: "MapPin" as const,
     priority: "specialized" as const,
+    seoTitle: "Dominio Público y Concesiones · Costa Rica",
+    seoDescription: "Concesiones sobre bienes del Estado, defensa contra revocatorias, caducidades y desalojos administrativos. Protección de derechos derivados de permisos de uso sobre bienes demaniales en Costa Rica.",
+    ogShortTitle: "{{em}} y Concesiones Demaniales",
+    ogEmphasis: "Dominio Público",
   },
   {
     slug: "zona-maritimo-terrestre",
@@ -247,6 +400,8 @@ export const PRACTICE_AREA_PAGES = [
     priority: "specialized" as const,
     seoTitle: "Zona Marítimo Terrestre Costa Rica · Ley 6043",
     seoDescription: "¿Recibió notificación de demolición o expira su concesión ZMT? Abogados especializados en Ley 6043. Asesoría en Quepos, Tamarindo, Sámara y todo Costa Rica.",
+    ogShortTitle: "{{em}} y Concesiones Costeras",
+    ogEmphasis: "Zona Marítimo Terrestre",
   },
   {
     slug: "derecho-urbanistico",
@@ -255,6 +410,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Impugnación de denegatorias de permisos de construcción, recursos contra acuerdos de zonificación, litigio en materia de planes reguladores cantonales y defensa de propietarios frente a restricciones urbanísticas conforme a la Ley de Planificación Urbana (Ley N.° 4240).",
     icon: "HouseSimple" as const,
     priority: "specialized" as const,
+    seoTitle: "Permisos de Construcción y Urbanismo · CR",
+    seoDescription: "Impugnación de denegatorias de permisos de construcción, recursos contra zonificación y defensa frente a planes reguladores cantonales conforme a la Ley de Planificación Urbana (Ley N.° 4240).",
+    ogShortTitle: "Permisos de {{em}}",
+    ogEmphasis: "Construcción",
   },
   {
     slug: "materia-presupuestaria",
@@ -263,6 +422,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Impugnación de resoluciones de la Contraloría General de la República, defensa en procedimientos de responsabilidad fiscal, litigio sobre aprobación presupuestaria y asesoría en administración financiera conforme a la Ley N.° 8131 y la Ley N.° 7428.",
     icon: "CurrencyCircleDollar" as const,
     priority: "specialized" as const,
+    seoTitle: "Litigio contra la Contraloría · Costa Rica",
+    seoDescription: "Impugnación de resoluciones de la Contraloría General, defensa en responsabilidad fiscal y litigio sobre aprobación presupuestaria conforme a la Ley N.° 8131 y la Ley Orgánica de la CGR (N.° 7428).",
+    ogShortTitle: "Litigio contra la {{em}}",
+    ogEmphasis: "Contraloría",
   },
   {
     slug: "comercio-internacional",
@@ -271,6 +434,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Representación en investigaciones antidumping y de salvaguardias ante COMEX, defensa frente a derechos compensatorios, litigio ante mecanismos de solución de controversias de la OMC y TLCs, y asesoría en cumplimiento arancelario conforme a la Ley N.° 7638 y acuerdos multilaterales.",
     icon: "Globe" as const,
     priority: "specialized" as const,
+    seoTitle: "Antidumping y Comercio Internacional · CR",
+    seoDescription: "Investigaciones antidumping y de salvaguardias ante COMEX, defensa frente a derechos compensatorios y solución de controversias bajo TLCs y OMC. Cumplimiento arancelario conforme a la Ley N.° 7638.",
+    ogShortTitle: "Antidumping y {{em}}",
+    ogEmphasis: "Comercio Internacional",
   },
   // ─── Áreas Emergentes y Regulatorias ───
   {
@@ -280,6 +447,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC diseña e implementa programas de compliance anticorrupción para empresas que contratan con el Estado, conforme a la Ley General de Contratación Pública (Ley N.° 9986) y la Ley de Responsabilidad Penal de Personas Jurídicas (Ley N.° 9699). Asesoramos en la estructuración de programas que cumplan los requisitos del artículo 8 de la Ley N.° 9699 para obtener la reducción de hasta el 40% en multas, y defendemos empresas investigadas por la CGR o el Ministerio Público. Nuestros servicios incluyen diagnósticos de riesgo anticorrupción, diseño de manuales de compliance adaptados a SICOP, capacitación corporativa, debida diligencia de contrapartes conforme a la Ley N.° 8204 y la Convención Anticohecho de la OCDE (ratificada por Costa Rica en 2017), y representación legal ante investigaciones administrativas y penales derivadas de la Ley N.° 8422 (Anticorrupción).",
     icon: "Certificate" as const,
     priority: "specialized" as const,
+    seoTitle: "Compliance Anticorrupción · Costa Rica",
+    seoDescription: "Programas de compliance para contratistas del Estado y defensa ante CGR y Ministerio Público. Reducción de hasta 40% en multas conforme a la Ley N.° 9699. Diagnóstico de riesgo y debida diligencia.",
+    ogShortTitle: "Compliance {{em}}",
+    ogEmphasis: "Anticorrupción",
   },
   {
     slug: "gobierno-digital-inteligencia-artificial-datos",
@@ -288,6 +459,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora a instituciones públicas y empresas en el cumplimiento del marco regulatorio de protección de datos personales (Ley N.° 8968 y su Reglamento, Decreto N.° 37554-JP), gobierno digital (Ley N.° 9943 — Agencia Nacional de Gobierno Digital) y la Estrategia Nacional de Inteligencia Artificial 2024-2027 (ENIA). Brindamos asesoría regulatoria sobre los tres proyectos de ley de IA en trámite legislativo (Expedientes N.° 23.771, 23.919 y 24.484), diseñamos marcos de gobernanza algorítmica para decisiones administrativas automatizadas conforme a los principios de legalidad (art. 11 CP), debido proceso (art. 39 CP) y rendición de cuentas (art. 11 LGAP), y litigamos impugnaciones constitucionales contra decisiones algorítmicas que vulneren derechos fundamentales. Representamos ante PRODHAB en procedimientos sancionatorios por incumplimiento de protección de datos y asesoramos en la alineación con el Proyecto N.° 23.097 de reforma integral a la Ley N.° 8968 conforme al estándar RGPD europeo.",
     icon: "Robot" as const,
     priority: "specialized" as const,
+    seoTitle: "IA, Gobierno Digital y Protección de Datos · Costa Rica",
+    seoDescription: "Cumplimiento de PRODHAB (Ley N.° 8968), gobierno digital (Ley N.° 9943) y regulación de IA en la Administración. Gobernanza algorítmica, transparencia y defensa en sanciones. Corporación GC.",
+    ogShortTitle: "IA y Protección de {{em}}",
+    ogEmphasis: "Datos",
   },
   {
     slug: "defensa-regulatoria-sectorial",
@@ -296,6 +471,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC ofrece defensa especializada de empresas en procedimientos sancionatorios iniciados por reguladores sectoriales: COPROCOM en materia de competencia (Ley N.° 7472 — LFAC, con sanciones del 0.1% al 10% del volumen de negocios e inhabilitación de hasta 10 años), SUTEL en telecomunicaciones (Ley N.° 8642), SUGEF en supervisión financiera (Ley N.° 7558, arts. 115 y 117), ARESEP en servicios públicos (Ley N.° 7593) y Ministerio de Salud en regulación sanitaria. Garantizamos el respeto de las garantías constitucionales del debido proceso que la Sala Constitucional ha extendido mutatis mutandis a los procedimientos administrativos sancionatorios (arts. 39 y 41 CP). Nuestros servicios incluyen defensa en investigaciones de cárteles y prácticas monopolísticas, asesoría en el Programa de Clemencia de COPROCOM, impugnación constitucional de sanciones desproporcionadas, y litigio contencioso-administrativo ante el TCA contra resoluciones sancionatorias firmes conforme al CPCA (Ley N.° 8508).",
     icon: "ShieldWarning" as const,
     priority: "specialized" as const,
+    seoTitle: "Defensa ante COPROCOM, SUGEF y Reguladores · CR",
+    seoDescription: "Defensa de empresas en procedimientos sancionatorios de COPROCOM, SUTEL, SUGEF y ARESEP. Carteles, prácticas monopolísticas, Programa de Clemencia e impugnación de sanciones desproporcionadas.",
+    ogShortTitle: "Defensa ante {{em}}",
+    ogEmphasis: "Reguladores Sectoriales",
   },
   {
     slug: "regulacion-ambiental-mercados-carbono",
@@ -304,6 +483,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora y litiga en materia de derecho ambiental administrativo, con fundamento en el derecho constitucional a un ambiente sano (art. 50 CP), la Ley Orgánica del Ambiente (Ley N.° 7554), la Ley Forestal (Ley N.° 7575) y el Plan Nacional de Descarbonización 2019-2050. Representamos a empresas y desarrolladores inmobiliarios en procedimientos de evaluación de impacto ambiental ante SETENA, impugnamos resoluciones de MINAE y SINAC en vía administrativa y contencioso-administrativa, y litigamos ante la Sala Constitucional en materia de protección ambiental. En el ámbito de mercados de carbono, asesoramos en la estructuración de créditos de carbono bajo las Unidades Costarricenses de Compensación (UCC) administradas por FONAFIFO conforme al Programa de Pago por Servicios Ambientales (PSA), la negociación de contratos PSA, el cumplimiento del Mecanismo de Ajuste en Frontera por Carbono (CBAM) de la Unión Europea para empresas exportadoras, y la participación en proyectos REDD+ conforme a la NDC actualizada 2020 (meta: 9.11 millones tCO2e para 2030).",
     icon: "Recycle" as const,
     priority: "specialized" as const,
+    seoTitle: "Litigio Ambiental y Mercados de Carbono · CR",
+    seoDescription: "Defensa ante SETENA, MINAE y SINAC, evaluación de impacto ambiental y estructuración de créditos de carbono (UCC, FONAFIFO). Cumplimiento del CBAM europeo. Litigio ambiental ante TCA y Sala IV.",
+    ogShortTitle: "Litigio Ambiental y {{em}}",
+    ogEmphasis: "Mercados de Carbono",
   },
   {
     slug: "alianzas-publico-privadas-infraestructura",
@@ -312,6 +495,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora en la estructuración, negociación y resolución de disputas de proyectos de concesión e infraestructura pública bajo esquemas de Alianzas Público-Privadas (APP). Nuestro marco normativo de actuación comprende la Ley General de Concesión de Obras Públicas (Ley N.° 7762, reformada por la Ley N.° 8643 y la Ley N.° 9701 que creó el fondo de preinversión), y el Expediente N.° 21.420 de nueva Ley Nacional de APP en trámite legislativo. Representamos a empresas concesionarias y al Estado en arbitrajes de inversión derivados de contratos de concesión ante paneles arbitrales conforme al artículo 61 y siguientes de la Ley N.° 7762, asesoramos en la formulación de objeciones ante la CGR durante la fase de adjudicación, litigamos ante el TCA impugnaciones de actos administrativos de la Comisión Nacional de Concesiones (CNC) y el MOPT, y brindamos asesoría regulatoria en la preparación de ofertas y cumplimiento de obligaciones contractuales en proyectos de infraestructura vial, portuaria y de transporte público.",
     icon: "Factory" as const,
     priority: "specialized" as const,
+    seoTitle: "Concesiones de Obra Pública y APP · Costa Rica",
+    seoDescription: "Estructuración, negociación y arbitraje de concesiones e infraestructura pública bajo la Ley N.° 7762. Defensa ante CNC, MOPT y CGR. Litigio contencioso de actos administrativos en proyectos APP.",
+    ogShortTitle: "Concesiones de Obra Pública y {{em}}",
+    ogEmphasis: "APP",
   },
   {
     slug: "regulacion-fintech-criptoactivos",
@@ -320,6 +507,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora a fintechs, proveedores de servicios de activos virtuales (VASP), billeteras digitales, exchanges y plataformas de pago en el cumplimiento del marco regulatorio financiero costarricense. La SUGEF supervisa estas actividades bajo la Ley N.° 7558 (art. 15 Bis), complementada por la Ley N.° 8204 y los Acuerdos SUGEF 13-19 en materia de prevención de legitimación de capitales (AML/CFT). El Proyecto de Ley N.° 22.837 (Registro de VASP), aprobado en primer debate, establecerá registro obligatorio ante SUGEF con debida diligencia reforzada y multas de 2 a 100 salarios base. Nuestros servicios incluyen asesoría de preparación para el registro VASP obligatorio, estructuración regulatoria de plataformas fintech conforme a los límites definidos por la Opinión PGR C-196-2024, defensa en procedimientos sancionatorios de SUGEF y CONASSIF (que constituyen procedimientos administrativos conforme a la LGAP), impugnación constitucional de regulaciones desproporcionadas, y asesoría en cumplimiento de los estándares CARF de la OCDE para intercambio fiscal de criptoactivos (implementación proyectada para 2028).",
     icon: "Wallet" as const,
     priority: "specialized" as const,
+    seoTitle: "Regulación Fintech y Cripto · Costa Rica",
+    seoDescription: "Asesoría a fintechs, exchanges y VASPs ante SUGEF y CONASSIF. Registro VASP (Proyecto N.° 22.837), AML/CFT (Ley N.° 8204) y cumplimiento de estándares CARF/OCDE para criptoactivos.",
+    ogShortTitle: "Regulación {{em}}",
+    ogEmphasis: "Fintech y Cripto",
   },
   {
     slug: "derecho-electoral-financiamiento-politico",
@@ -328,6 +519,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC es la primera firma en Costa Rica con práctica dedicada a derecho electoral desde la perspectiva del derecho público. Asesoramos a partidos políticos, candidatos y organizaciones en cumplimiento electoral, financiamiento político y disputas ante el Tribunal Supremo de Elecciones (TSE) conforme al Código Electoral (Ley N.° 8765) y la nueva Ley de Fortalecimiento del Financiamiento Político (Ley N.° 10755, septiembre 2025). Nuestros servicios incluyen asesoría en cumplimiento de las obligaciones de transparencia y rendición de cuentas del financiamiento político conforme al artículo 96 constitucional (contribución estatal: 0.19% PIB para partidos que superen el 4%), asistencia en procesos de liquidación de deuda política, defensa en procedimientos sancionatorios del TSE por irregularidades en el financiamiento, representación en disputas electorales ante la jurisdicción exclusiva e independiente del TSE, y asesoría integral a candidatos a alcaldías para el ciclo electoral municipal 2028. La experiencia constitucional de nuestro fundador es directamente transferible a la comprensión de la jurisdicción TSE vs. Sala IV.",
     icon: "Flag" as const,
     priority: "specialized" as const,
+    seoTitle: "Derecho Electoral y Financiamiento Político · CR",
+    seoDescription: "Primera firma costarricense con práctica en derecho electoral desde el Derecho Público. Cumplimiento, liquidación de deuda política y disputas ante el TSE. Código Electoral y Ley N.° 10755 (2025).",
+    ogShortTitle: "Derecho {{em}}",
+    ogEmphasis: "Electoral",
   },
   {
     slug: "telecomunicaciones-espectro-5g",
@@ -336,6 +531,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora a operadores de telecomunicaciones, empresas de torres, operadores satelitales y concesionarios de espectro en el cumplimiento regulatorio y la resolución de disputas ante SUTEL y MICITT, conforme a la Ley General de Telecomunicaciones (Ley N.° 8642) y la regulación tarifaria de ARESEP (Ley N.° 7593). Tras la subasta 5G histórica de enero 2025 (bandas 700, 2300, 3500, 26 y 28 GHz con 7 concesionarios adjudicatarios y $310M en inversión comprometida), asesoramos a los concesionarios en el cumplimiento de obligaciones de cobertura y despliegue de infraestructura (3,373 torres en 134 distritos), navegación de permisos municipales para construcción de torres conforme a la autonomía municipal (art. 170 CP) y la Ley N.° 8642, negociación de compartición de infraestructura, y defensa en procedimientos administrativos de SUTEL por incumplimiento de condiciones de concesión. También representamos a operadores satelitales (Starlink, OneWeb) en trámites de concesión y asesoramos sobre extensiones de espectro y renegociación de condiciones conforme al Reglamento de Radiocomunicaciones de la UIT.",
     icon: "WifiHigh" as const,
     priority: "specialized" as const,
+    seoTitle: "Telecomunicaciones, Espectro y 5G · Costa Rica",
+    seoDescription: "Asesoría a concesionarios de espectro, operadores de torres y satelitales tras la subasta 5G de 2025. Cumplimiento ante SUTEL y MICITT, permisos municipales y compartición de infraestructura.",
+    ogShortTitle: "Telecomunicaciones, {{em}} y 5G",
+    ogEmphasis: "Espectro",
   },
   {
     slug: "energia-renovable-transicion-energetica",
@@ -344,6 +543,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC asesora a generadores privados, desarrolladores de proyectos solares y eólicos, y empresas de almacenamiento energético en el marco regulatorio de la generación y comercialización de energía renovable en Costa Rica. Nuestro fundamento normativo comprende la Ley de Generación Autónoma o Paralela (Ley N.° 7200), la Ley de Uso Racional de la Energía (Ley N.° 7447), el Plan Nacional de Energía 2025-2035 y el Plan Nacional de Descarbonización 2050, con ICE como rector del sistema eléctrico nacional. Asesoramos en la obtención de permisos de generación privada conforme a los límites de capacidad de la Ley N.° 7200, la negociación y estructuración de contratos de compra de energía (PPA) con ICE y distribuidoras, la regulación tarifaria ante ARESEP, la resolución de disputas con el ICE sobre despacho y acceso a la red de transmisión, y la defensa administrativa y contencioso-administrativa contra denegatorias de permisos ambientales de SETENA para proyectos renovables. También asesoramos sobre el marco emergente de hidrógeno verde, almacenamiento en baterías y la participación en el Mercado Eléctrico Regional (MER) vía SIEPAC conforme al Tratado Marco del Mercado Eléctrico de América Central.",
     icon: "SolarPanel" as const,
     priority: "specialized" as const,
+    seoTitle: "Energía Renovable y PPA con ICE · Costa Rica",
+    seoDescription: "Asesoría a generadores privados en permisos, contratos PPA con ICE, regulación tarifaria ante ARESEP y disputas de despacho. Hidrógeno verde, almacenamiento y Mercado Eléctrico Regional (SIEPAC).",
+    ogShortTitle: "Energía Renovable y {{em}}",
+    ogEmphasis: "Transición Energética",
   },
   // ─── Cobertura Complementaria ───
   {
@@ -353,6 +556,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Litigio civil entre particulares: responsabilidad contractual y extracontractual, procesos de cobro judicial, desahucio, reivindicatorios, sucesiones y nulidades conforme al Código Civil (Ley N.° 63) y al Código Procesal Civil (Ley N.° 9342).",
     icon: "UsersThree" as const,
     priority: "complementary" as const,
+    seoTitle: "Derecho Civil · Litigio Privado | Costa Rica",
+    seoDescription: "Responsabilidad civil contractual y extracontractual, cobro judicial, desahucio, reivindicatorios, sucesiones y nulidades conforme al Código Civil (N.° 63) y al Código Procesal Civil (Ley N.° 9342).",
+    ogShortTitle: "Derecho {{em}}",
+    ogEmphasis: "Civil",
   },
   {
     slug: "derecho-de-familia",
@@ -361,6 +568,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Procesos de divorcio, pensión alimentaria, guarda y crianza, filiación, liquidación de bienes gananciales y violencia doméstica conforme al Código de Familia (Ley N.° 5476), la Ley de Pensiones Alimentarias (Ley N.° 7654) y legislación conexa.",
     icon: "Heart" as const,
     priority: "complementary" as const,
+    seoTitle: "Derecho de Familia · Divorcio y Pensiones | CR",
+    seoDescription: "Divorcio, pensión alimentaria, guarda y crianza, filiación, liquidación de gananciales y violencia doméstica conforme al Código de Familia (Ley N.° 5476) y Ley de Pensiones Alimentarias (N.° 7654).",
+    ogShortTitle: "Derecho de {{em}}",
+    ogEmphasis: "Familia",
   },
   {
     slug: "derecho-laboral",
@@ -369,6 +580,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Demandas por despido injustificado, cobro de prestaciones laborales, procesos por riesgos del trabajo, discriminación laboral y litigio oral laboral conforme al Código de Trabajo reformado por la Ley N.° 9343 (Reforma Procesal Laboral).",
     icon: "Wrench" as const,
     priority: "complementary" as const,
+    seoTitle: "Derecho Laboral · Despido y Prestaciones | CR",
+    seoDescription: "Despido injustificado, cobro de prestaciones, riesgos del trabajo, discriminación y litigio oral laboral conforme al Código de Trabajo y la Reforma Procesal Laboral (Ley N.° 9343). Asesoría experta.",
+    ogShortTitle: "Derecho {{em}}",
+    ogEmphasis: "Laboral",
   },
   {
     slug: "derecho-notarial",
@@ -377,6 +592,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Servicios notariales completos: otorgamiento de escrituras públicas, protocolización de actas, constitución de sociedades, compraventas, hipotecas, fideicomisos, certificaciones notariales y gestión registral conforme al Código Notarial (Ley N.° 7764).",
     icon: "Stamp" as const,
     priority: "complementary" as const,
+    seoTitle: "Notario Público · Escrituras y Sociedades | CR",
+    seoDescription: "Servicios notariales completos: escrituras públicas, protocolizaciones, constitución de sociedades, compraventas, hipotecas, fideicomisos y gestión registral conforme al Código Notarial (N.° 7764).",
+    ogShortTitle: "Derecho Notarial y {{em}}",
+    ogEmphasis: "Registral",
   },
 ] as const;
 

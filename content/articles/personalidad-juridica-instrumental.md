@@ -10,6 +10,8 @@ institution: "Corporación GC"
 publicationType: "articulo"
 sourceReference: "Revista El Foro, No. 32, ISSN 2215-6771, Colegio de Abogados y Abogadas de Costa Rica, pp. 7–22."
 sourceUrl: "https://www.abogados.or.cr/revistaelforo/#1"
+seoTitle: "Personalidad Jurídica Instrumental · Costa Rica"
+seoDescription: "Análisis de la personalidad jurídica instrumental en Costa Rica: origen, jurisprudencia, uso en órganos desconcentrados y tendencias regresivas. Revista El Foro N.° 32, 2026."
 ---
 
 **Referencia:** Sánchez Zamora, Khevin. «La personalidad jurídica instrumental como técnica de organización administrativa: límites constitucionales y tendencias regresivas en Costa Rica». *Revista El Foro*, No. 32, Colegio de Abogados y Abogadas de Costa Rica, ISSN 2215-6771, pp. 7–22.

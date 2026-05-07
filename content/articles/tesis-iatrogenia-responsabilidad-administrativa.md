@@ -8,6 +8,8 @@ pdfFile: "tesis-mariana-montero-iatrogenia.pdf"
 author: "Licda. Mariana Montero Acuña"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
+seoTitle: "Iatrogenia y Responsabilidad Administrativa · CR"
+seoDescription: "Tesis de la Licda. Mariana Montero Acuña sobre la iatrogenia médica como responsabilidad patrimonial del Estado costarricense: criterios de imputación y malpraxis. UCR, 2022."
 ---
 
 **Referencia:** Montero Acuña, Mariana. *La iatrogenia en la responsabilidad administrativa: una aproximación a los verdaderos criterios de aplicación en el ordenamiento jurídico costarricense*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, mayo 2022. Aprobada con distinción.

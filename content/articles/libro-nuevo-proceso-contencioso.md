@@ -8,6 +8,8 @@ pdfFile: "libro-nuevo-proceso-contencioso.pdf"
 author: "Óscar Eduardo González Camacho y otros"
 institution: "Escuela Judicial · Poder Judicial de Costa Rica / Editorial Jurídica Continental"
 publicationType: "libro"
+seoTitle: "El Nuevo Proceso Contencioso Administrativo · CR"
+seoDescription: "Obra colectiva sobre la implementación del CPCA (Ley N.° 8508): bases constitucionales, tutela cautelar, sentencia, casación y ejecución. Escuela Judicial / Jurídica Continental, 2006."
 ---
 
 Obra publicada por la Escuela Judicial del Poder Judicial de Costa Rica y Editorial Jurídica Continental (2006).
