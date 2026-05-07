@@ -316,6 +316,11 @@ export interface AttorneySeo {
   photo?: string;
   /** CSS object-position para encuadrar la foto (ej. "50% 0%"). Y bajo favorece la cabeza. */
   photoFocus?: string;
+  /** Pre-procesa la foto antes de renderizar (extiende canvas arriba o recorta abajo). */
+  photoTransform?: {
+    extendTopRatio?: number;
+    cropBottomRatio?: number;
+  };
 }
 
 export const ATTORNEYS: Record<string, AttorneySeo> = {
@@ -354,6 +359,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
       "Especialista en medidas cautelares y litigio contencioso. 3.er mejor promedio del Examen de Excelencia, Colegio de Abogados 2025.",
     photo: "/images/foto-perfil.png",
     photoFocus: "50% 0%",
+    photoTransform: { cropBottomRatio: 0.25 },
   },
   "katherine-gonzalez": {
     name: "MSc. Katherine González Coto",
@@ -408,6 +414,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
       "Más de 9 años en litigio contencioso-administrativo. Notario Público. Maestrando en Derecho Público (UCR).",
     photo: "/images/esteban-perez.jpg",
     photoFocus: "50% 0%",
+    photoTransform: { extendTopRatio: 0.15 },
   },
   "jose-carlos-solano": {
     name: "Lic. José Carlos Solano Salas",
@@ -426,6 +433,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
       "Excelencia Académica UCR. Especialista en Derecho Notarial y Registral, ZMT y procedimientos ante la CGR.",
     photo: "/images/jose-carlos-solano.jpeg",
     photoFocus: "50% 0%",
+    photoTransform: { extendTopRatio: 0.15 },
   },
 };
 

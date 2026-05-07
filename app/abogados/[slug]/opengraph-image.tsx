@@ -40,6 +40,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
     initials: a.initials,
     photo: a.photo,
     photoFocus: a.photoFocus,
+    photoTransform: a.photoTransform,
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com",
   });
 }

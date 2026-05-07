@@ -9,6 +9,7 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
+import sharp from "sharp";
 
 export const OG_SIZE = { width: 1200, height: 630 } as const;
 export const OG_CONTENT_TYPE = "image/png";
@@ -67,15 +68,54 @@ async function loadLogo(): Promise<string> {
   return cachedLogo;
 }
 
-async function loadPhoto(publicPath: string): Promise<string | null> {
-  if (photoCache.has(publicPath)) return photoCache.get(publicPath)!;
+type PhotoTransform = {
+  /** Fracción del alto a agregar como padding blanco arriba (0.10 = 10%). */
+  extendTopRatio?: number;
+  /** Fracción del alto a recortar del fondo (0.20 = quita el 20% inferior). */
+  cropBottomRatio?: number;
+};
+
+async function loadPhoto(
+  publicPath: string,
+  transform?: PhotoTransform
+): Promise<string | null> {
+  const cacheKey =
+    transform && (transform.extendTopRatio || transform.cropBottomRatio)
+      ? `${publicPath}|t${transform.extendTopRatio ?? 0}|b${transform.cropBottomRatio ?? 0}`
+      : publicPath;
+  if (photoCache.has(cacheKey)) return photoCache.get(cacheKey)!;
   try {
     const cleanPath = publicPath.replace(/^\//, "");
-    const data = await readFile(join(process.cwd(), "public", cleanPath));
-    const ext = (publicPath.split(".").pop() ?? "png").toLowerCase();
-    const mime = ext === "jpg" || ext === "jpeg" ? "image/jpeg" : "image/png";
-    const dataUrl = `data:${mime};base64,${data.toString("base64")}`;
-    photoCache.set(publicPath, dataUrl);
+    const raw = await readFile(join(process.cwd(), "public", cleanPath));
+
+    let buffer: Buffer = raw;
+    let mime = "image/png";
+    if (transform && (transform.extendTopRatio || transform.cropBottomRatio)) {
+      const meta = await sharp(raw).metadata();
+      const w = meta.width ?? 1;
+      const h = meta.height ?? 1;
+      const cropBottomPx = Math.round(h * (transform.cropBottomRatio ?? 0));
+      const extractHeight = Math.max(1, h - cropBottomPx);
+      const extendTopPx = Math.round(extractHeight * (transform.extendTopRatio ?? 0));
+      buffer = await sharp(raw)
+        .extract({ left: 0, top: 0, width: w, height: extractHeight })
+        .extend({
+          top: extendTopPx,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          // Blanco puro: el fondo del OG es blanco, así que no se nota la unión.
+          background: { r: 255, g: 255, b: 255, alpha: 1 },
+        })
+        .png()
+        .toBuffer();
+      mime = "image/png";
+    } else {
+      const ext = (publicPath.split(".").pop() ?? "png").toLowerCase();
+      mime = ext === "jpg" || ext === "jpeg" ? "image/jpeg" : "image/png";
+    }
+    const dataUrl = `data:${mime};base64,${buffer.toString("base64")}`;
+    photoCache.set(cacheKey, dataUrl);
     return dataUrl;
   } catch {
     return null;
@@ -367,13 +407,15 @@ export interface AttorneyOgInput {
   photo?: string;
   /** CSS object-position para el crop, ej. "50% 8%". Y bajo favorece la cabeza. */
   photoFocus?: string;
+  /** Pre-procesado de la foto vía sharp (extender canvas o recortar). */
+  photoTransform?: PhotoTransform;
 }
 
 export async function renderAttorneyOg(input: AttorneyOgInput) {
   const [fonts, logoSrc, photoSrc] = await Promise.all([
     loadFonts(),
     loadLogo(),
-    input.photo ? loadPhoto(input.photo) : Promise.resolve(null),
+    input.photo ? loadPhoto(input.photo, input.photoTransform) : Promise.resolve(null),
   ]);
 
   return new ImageResponse(
