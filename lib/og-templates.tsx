@@ -297,8 +297,8 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
         >
           <div
             style={{
-              width: 280,
-              height: 360,
+              width: 340,
+              height: 470,
               borderRadius: 24,
               overflow: "hidden",
               background: `linear-gradient(160deg, ${COLORS.burgundyDark} 0%, ${COLORS.burgundy} 50%, ${COLORS.burgundyLight} 100%)`,
@@ -317,9 +317,14 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
               <img
                 src={photoSrc}
                 alt=""
-                width={280}
-                height={360}
-                style={{ width: 280, height: 360, objectFit: "cover" }}
+                width={340}
+                height={470}
+                style={{
+                  width: 340,
+                  height: 470,
+                  objectFit: "cover",
+                  objectPosition: "50% 22%",
+                }}
               />
             ) : (
               input.initials
