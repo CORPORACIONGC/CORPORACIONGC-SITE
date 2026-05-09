@@ -30,11 +30,13 @@ export default async function Image({ params }: { params: Promise<{ slug: string
     });
   }
 
+  /* Las 31 áreas en constants.ts garantizan ogShortTitle/ogEmphasis/
+     seoDescription vía `as const`. Los fallbacks con ?? son código muerto. */
   return renderDefaultOg({
     eyebrow: "Área de práctica",
-    title: area.ogShortTitle ?? `${area.title} {{em}}`,
+    title: area.ogShortTitle,
     emphasis: area.ogEmphasis,
-    body: area.seoDescription ?? area.description,
+    body: area.seoDescription,
     url: `corporaciongc.com/areas/${slug}`,
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com",
   });

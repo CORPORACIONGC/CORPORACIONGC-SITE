@@ -128,8 +128,10 @@ export async function generateAreaMetadata(
   const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
   if (!area) return {};
 
-  const title = area.seoTitle ?? area.title;
-  const description = area.seoDescription ?? area.description;
+  /* Las 31 áreas en constants.ts garantizan seoTitle/seoDescription
+     vía `as const`. El fallback con ?? sería código muerto. */
+  const title = area.seoTitle;
+  const description = area.seoDescription;
 
   return {
     title,
