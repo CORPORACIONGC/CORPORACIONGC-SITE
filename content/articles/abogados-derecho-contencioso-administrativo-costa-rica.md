@@ -7,8 +7,8 @@ type: "article"
 author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Abogados Contencioso-Administrativo · Costa Rica"
-seoDescription: "Demandar al Estado exige dominio del CPCA, experiencia ante el TCA y litigio oral. Guía sobre qué implica el contencioso-administrativo y qué buscar en un abogado."
+seoTitle: "Abogados de Derecho Contencioso-Administrativo · CR"
+seoDescription: "Litigio ante el Tribunal Contencioso Administrativo, casación ante Sala Primera y procedimientos ante la Administración Pública conforme al CPCA (Ley N.° 8508)."
 ---
 
 El Derecho Contencioso-Administrativo es la rama que permite a los ciudadanos y empresas llevar al Estado ante un tribunal cuando sus derechos han sido vulnerados por una actuación administrativa ilegal. En Costa Rica, esta jurisdicción está regulada por el Código Procesal Contencioso Administrativo (CPCA, Ley N.° 8508), vigente desde 2008. Si su caso requiere demandar a una institución pública — y obtener una reparación concreta —, esta es la vía judicial que lo hace posible.

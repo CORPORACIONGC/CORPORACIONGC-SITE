@@ -112,13 +112,20 @@ export const privacidadMetadata: Metadata = {
 // generateMetadata para rutas dinámicas
 // =============================================================
 
-import { PRACTICE_AREA_PAGES, ATTORNEYS } from "./seo-constants";
+import { ATTORNEYS } from "./seo-constants";
+/* PRACTICE_AREA_PAGES vive en constants.ts (array, fuente única de verdad
+   con las 31 áreas y sus seoTitle/seoDescription/ogShortTitle/ogEmphasis).
+   Antes leíamos de seo-constants.ts (un Record incompleto con solo 28
+   entradas) — eso causaba que /areas/zona-maritimo-terrestre,
+   /areas/litigio-contencioso-administrativo y /areas/medidas-cautelares
+   heredaran la metadata genérica de la home en lugar de su propia. */
+import { PRACTICE_AREA_PAGES } from "./constants";
 
 export async function generateAreaMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
   const { slug } = await params;
-  const area = PRACTICE_AREA_PAGES[slug];
+  const area = PRACTICE_AREA_PAGES.find((a) => a.slug === slug);
   if (!area) return {};
 
   const title = area.seoTitle ?? area.title;

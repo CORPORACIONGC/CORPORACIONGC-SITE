@@ -10,6 +10,7 @@ import {
   publicationTypeLabel,
 } from "@/lib/articles";
 import { TEAM } from "@/lib/constants";
+import { ATTORNEYS } from "@/lib/seo-constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PDFViewer } from "@/components/article/PDFViewer";
@@ -17,11 +18,16 @@ import {
   ArrowLeft,
   CalendarBlank,
   Tag,
-  User,
   BookOpen,
   ArrowSquareOut,
 } from "@phosphor-icons/react/dist/ssr";
 import { buildArticleMetadata } from "@/lib/page-metadata";
+
+/* Credencial mostrada bajo el byline cuando el "autor" es la firma misma
+   (artículos institucionales). Refleja la autoridad del director del bufete
+   sin alterar la voz editorial corporativa del artículo. */
+const ORG_AUTHOR_CREDENTIAL =
+  "Bufete dirigido por el Dr. Óscar Eduardo González Camacho · Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508) y ex-Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
 
 export async function generateStaticParams() {
   const articles = getAllArticles();
@@ -82,6 +88,16 @@ export default async function ArticlePage({
   const isOrgAuthor =
     article.author?.toLowerCase().startsWith("corporación gc") ||
     article.author?.toLowerCase().startsWith("corporacion gc");
+
+  /* Credencial visible bajo el byline. Para personas, viene de ATTORNEYS
+     (misma fuente que las imágenes OG). Para la firma, una credencial fija
+     que ancla la autoridad académica del director sin alterar la voz
+     editorial. Si no se encuentra credencial, fallback a institution. */
+  const authorCredential = isOrgAuthor
+    ? ORG_AUTHOR_CREDENTIAL
+    : (authorMember && ATTORNEYS[authorMember.slug]?.credential) ||
+      article.institution ||
+      null;
 
   /* JSON-LD for academic SEO */
   const jsonLd = {
@@ -232,19 +248,6 @@ export default async function ArticlePage({
               )}
             </div>
 
-            {/* Author + institution */}
-            {article.author && (
-              <div className="flex items-center gap-1.5 text-xs text-cream/45 mb-6">
-                <User size={13} weight="regular" className="shrink-0" />
-                <span>{article.author}</span>
-                {article.institution && (
-                  <span className="text-cream/30">
-                    · {article.institution}
-                  </span>
-                )}
-              </div>
-            )}
-
             {/* Title */}
             <h1 className="font-display text-2xl md:text-4xl font-semibold tracking-tighter leading-[1.1] text-cream mb-4">
               {article.title}
@@ -254,6 +257,26 @@ export default async function ArticlePage({
               <p className="text-base text-cream/50 leading-relaxed max-w-[60ch] mb-10">
                 {article.excerpt}
               </p>
+            )}
+
+            {/* Byline visible — autoridad académica del autor para E-E-A-T y
+                señal de confianza al lector. Para personas usa la credencial
+                de ATTORNEYS (misma fuente que las imágenes OG). Para la voz
+                institucional usa ORG_AUTHOR_CREDENTIAL. */}
+            {article.author && (
+              <div className="mb-10">
+                <div className="text-[10px] tracking-[0.3em] uppercase text-gold/60 font-medium mb-2">
+                  Por
+                </div>
+                <div className="text-base md:text-lg font-medium text-cream tracking-tight">
+                  {article.author}
+                </div>
+                {authorCredential && (
+                  <div className="mt-1.5 text-sm text-cream/55 leading-relaxed max-w-[60ch]">
+                    {authorCredential}
+                  </div>
+                )}
+              </div>
             )}
 
             {/* Source reference for journal articles */}

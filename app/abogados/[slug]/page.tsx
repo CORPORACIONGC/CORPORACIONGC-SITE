@@ -168,15 +168,49 @@ export default async function AttorneyProfile({
       "@type": "CollegeOrUniversity",
       name: ed.institution,
     })),
-    hasCredential: enrichment.education
-      .filter((ed) => ed.distinction || ed.degree.startsWith("Doctor") || ed.degree.startsWith("Maestría") || ed.degree.startsWith("Licenci"))
-      .map((ed) => ({
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "degree",
-        name: ed.degree,
-        recognizedBy: { "@type": "CollegeOrUniversity", name: ed.institution },
-        ...(ed.distinction ? { description: ed.distinction } : {}),
-      })),
+    /* Identifier público del abogado: el carnet ante el Colegio. Se expone
+       como PropertyValue (formato schema.org para IDs profesionales) para
+       que Google e IA lo lean como credencial verificable. */
+    ...(enrichment.carnet
+      ? {
+          identifier: {
+            "@type": "PropertyValue",
+            propertyID: "CAACR",
+            name: "Carnet del Colegio de Abogados y Abogadas de Costa Rica",
+            value: `CAACR ${enrichment.carnet}`,
+          },
+        }
+      : {}),
+    hasCredential: [
+      /* Bar Membership — autorización profesional emitida por el Colegio
+         de Abogados de Costa Rica, verificable en abogados.or.cr. Es la
+         credencial primaria que valida que la persona puede ejercer. */
+      ...(enrichment.carnet
+        ? [
+            {
+              "@type": "EducationalOccupationalCredential",
+              credentialCategory: "Bar Membership",
+              name: "Carnet del Colegio de Abogados y Abogadas de Costa Rica",
+              identifier: `CAACR ${enrichment.carnet}`,
+              recognizedBy: {
+                "@type": "Organization",
+                name: "Colegio de Abogados y Abogadas de Costa Rica",
+                url: "https://www.abogados.or.cr",
+              },
+            },
+          ]
+        : []),
+      /* Credenciales académicas (Doctorado, Maestría, Licenciatura). */
+      ...enrichment.education
+        .filter((ed) => ed.distinction || ed.degree.startsWith("Doctor") || ed.degree.startsWith("Maestría") || ed.degree.startsWith("Licenci"))
+        .map((ed) => ({
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "degree",
+          name: ed.degree,
+          recognizedBy: { "@type": "CollegeOrUniversity", name: ed.institution },
+          ...(ed.distinction ? { description: ed.distinction } : {}),
+        })),
+    ],
     hasOccupation: {
       "@type": "Occupation",
       name: "Abogado",
