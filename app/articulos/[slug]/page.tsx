@@ -75,6 +75,14 @@ export default async function ArticlePage({
     : [];
   const authorMember = authorMembers[0] ?? null;
 
+  /* Detecta si el "autor" del frontmatter es la firma misma (voz institucional)
+     en vez de una persona física. En ese caso, el schema correcto es Organization,
+     no Person — declarar "Corporación GC" como Person es un error de tipado que
+     impide que Google interprete bien la cadena de autoridad. */
+  const isOrgAuthor =
+    article.author?.toLowerCase().startsWith("corporación gc") ||
+    article.author?.toLowerCase().startsWith("corporacion gc");
+
   /* JSON-LD for academic SEO */
   const jsonLd = {
     "@context": "https://schema.org",
@@ -96,19 +104,27 @@ export default async function ArticlePage({
     },
     ...(article.author
       ? {
-          author: {
-            "@type": "Person",
-            name: article.author,
-            ...(authorMember ? { url: `https://www.corporaciongc.com/abogados/${authorMember.slug}` } : {}),
-            ...(article.institution
-              ? {
-                  affiliation: {
-                    "@type": "Organization",
-                    name: article.institution,
-                  },
-                }
-              : {}),
-          },
+          author: isOrgAuthor
+            ? {
+                "@type": "Organization",
+                "@id": "https://www.corporaciongc.com/#organization",
+                name: "Corporación GC",
+                url: "https://www.corporaciongc.com",
+                logo: "https://www.corporaciongc.com/images/logo-gc.png",
+              }
+            : {
+                "@type": "Person",
+                name: article.author,
+                ...(authorMember ? { url: `https://www.corporaciongc.com/abogados/${authorMember.slug}` } : {}),
+                ...(article.institution
+                  ? {
+                      affiliation: {
+                        "@type": "Organization",
+                        name: article.institution,
+                      },
+                    }
+                  : {}),
+              },
         }
       : {}),
     publisher: {
