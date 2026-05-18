@@ -74,11 +74,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    /* Prioridad estratificada por relevancia del área: las áreas core del
+       bufete (litigio, recursos extraordinarios, contratación) reciben señal
+       más alta para Google; complementarias bajan a 0.6. Ayuda al crawler a
+       jerarquizar el descubrimiento. */
     ...PRACTICE_AREA_PAGES.map((area) => ({
       url: `${baseUrl}/areas/${area.slug}`,
       lastModified: new Date("2026-03-28"),
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority:
+        area.priority === "primary"
+          ? 0.9
+          : area.priority === "specialized"
+            ? 0.7
+            : 0.6,
     })),
     {
       url: `${baseUrl}/jurisprudencia-destacada`,

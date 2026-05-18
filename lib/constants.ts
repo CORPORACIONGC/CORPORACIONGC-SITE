@@ -499,6 +499,71 @@ export const PRACTICE_AREA_PAGES = [
   },
 ] as const;
 
+/* Mapa de áreas afines para enlazado cruzado interno. Cada área enlaza a 4
+   áreas relacionadas para sacar a estas páginas del estado "orfanato" frente
+   a los crawlers, crear señales semánticas de cluster temático y mejorar la
+   navegación del usuario hacia materias adyacentes. Curado manualmente por
+   afinidad procesal (litigio, recursos), sustantiva (sector regulado) y
+   sectorial (mismo regulador o régimen). */
+export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
+  // ─── Núcleo litigioso ───
+  "litigio-contencioso-administrativo": ["medidas-cautelares", "casacion-sala-primera", "derecho-administrativo", "procedimientos-sancionatorios"],
+  "medidas-cautelares": ["litigio-contencioso-administrativo", "recursos-de-amparo", "acciones-de-inconstitucionalidad", "procedimientos-sancionatorios"],
+  "casacion-sala-primera": ["litigio-contencioso-administrativo", "medidas-cautelares", "derecho-administrativo", "informes-juridicos-dictamenes"],
+  "recursos-de-amparo": ["acciones-de-inconstitucionalidad", "medidas-cautelares", "litigio-contencioso-administrativo", "procedimientos-sancionatorios"],
+  "acciones-de-inconstitucionalidad": ["recursos-de-amparo", "litigio-contencioso-administrativo", "medidas-cautelares", "asesoria-regulatoria"],
+
+  // ─── Contratación y compliance ───
+  "contratacion-publica": ["compliance-publico-anticorrupcion", "alianzas-publico-privadas-infraestructura", "litigio-contencioso-administrativo", "materia-presupuestaria"],
+  "compliance-publico-anticorrupcion": ["contratacion-publica", "procedimientos-sancionatorios", "materia-presupuestaria", "defensa-regulatoria-sectorial"],
+  "asesoria-regulatoria": ["informes-juridicos-dictamenes", "derecho-administrativo", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo"],
+  "informes-juridicos-dictamenes": ["asesoria-regulatoria", "derecho-administrativo", "litigio-contencioso-administrativo", "casacion-sala-primera"],
+
+  // ─── Procedimiento administrativo y empleo ───
+  "derecho-administrativo": ["litigio-contencioso-administrativo", "procedimientos-sancionatorios", "empleo-publico", "recursos-de-amparo"],
+  "procedimientos-sancionatorios": ["derecho-administrativo", "empleo-publico", "defensa-regulatoria-sectorial", "litigio-contencioso-administrativo"],
+  "empleo-publico": ["procedimientos-sancionatorios", "derecho-administrativo", "litigio-contencioso-administrativo", "recursos-de-amparo"],
+
+  // ─── Especializadas ───
+  "servicio-publico": ["defensa-regulatoria-sectorial", "telecomunicaciones-espectro-5g", "energia-renovable-transicion-energetica", "litigio-contencioso-administrativo"],
+  "materia-municipal": ["derecho-urbanistico", "dominio-publico", "litigio-contencioso-administrativo", "materia-presupuestaria"],
+  "dominio-publico": ["zona-maritimo-terrestre", "materia-municipal", "derecho-urbanistico", "litigio-contencioso-administrativo"],
+  "zona-maritimo-terrestre": ["dominio-publico", "derecho-urbanistico", "materia-municipal", "regulacion-ambiental-mercados-carbono"],
+  "derecho-urbanistico": ["materia-municipal", "dominio-publico", "litigio-contencioso-administrativo", "zona-maritimo-terrestre"],
+  "materia-presupuestaria": ["contratacion-publica", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo", "informes-juridicos-dictamenes"],
+  "comercio-internacional": ["defensa-regulatoria-sectorial", "regulacion-fintech-criptoactivos", "asesoria-regulatoria", "litigio-contencioso-administrativo"],
+  "defensa-regulatoria-sectorial": ["procedimientos-sancionatorios", "servicio-publico", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo"],
+  "alianzas-publico-privadas-infraestructura": ["contratacion-publica", "materia-presupuestaria", "litigio-contencioso-administrativo", "asesoria-regulatoria"],
+
+  // ─── Emergentes y sectoriales ───
+  "gobierno-digital-inteligencia-artificial-datos": ["asesoria-regulatoria", "telecomunicaciones-espectro-5g", "defensa-regulatoria-sectorial", "compliance-publico-anticorrupcion"],
+  "regulacion-ambiental-mercados-carbono": ["energia-renovable-transicion-energetica", "derecho-urbanistico", "litigio-contencioso-administrativo", "recursos-de-amparo"],
+  "regulacion-fintech-criptoactivos": ["defensa-regulatoria-sectorial", "compliance-publico-anticorrupcion", "comercio-internacional", "asesoria-regulatoria"],
+  "derecho-electoral-financiamiento-politico": ["acciones-de-inconstitucionalidad", "compliance-publico-anticorrupcion", "informes-juridicos-dictamenes", "asesoria-regulatoria"],
+  "telecomunicaciones-espectro-5g": ["servicio-publico", "defensa-regulatoria-sectorial", "gobierno-digital-inteligencia-artificial-datos", "litigio-contencioso-administrativo"],
+  "energia-renovable-transicion-energetica": ["regulacion-ambiental-mercados-carbono", "servicio-publico", "alianzas-publico-privadas-infraestructura", "asesoria-regulatoria"],
+
+  // ─── Cobertura complementaria ───
+  "derecho-civil": ["derecho-de-familia", "derecho-notarial", "derecho-laboral", "litigio-contencioso-administrativo"],
+  "derecho-de-familia": ["derecho-civil", "derecho-notarial", "derecho-laboral", "recursos-de-amparo"],
+  "derecho-laboral": ["empleo-publico", "derecho-civil", "procedimientos-sancionatorios", "recursos-de-amparo"],
+  "derecho-notarial": ["derecho-civil", "derecho-urbanistico", "derecho-de-familia", "informes-juridicos-dictamenes"],
+};
+
+export type RelatedArea = {
+  slug: string;
+  title: string;
+  subtitle: string;
+};
+
+export function getRelatedAreas(slug: string): RelatedArea[] {
+  const slugs = AREA_RELATED_MAP[slug] ?? [];
+  return slugs
+    .map((s) => PRACTICE_AREA_PAGES.find((a) => a.slug === s))
+    .filter((a): a is (typeof PRACTICE_AREA_PAGES)[number] => Boolean(a))
+    .map((a) => ({ slug: a.slug, title: a.title, subtitle: a.subtitle }));
+}
+
 // ─── Perfil Individual: Esteban Pérez ───
 
 export const ESTEBAN_PROFILE = {

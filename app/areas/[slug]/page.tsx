@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT } from "@/lib/constants";
+import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT, getRelatedAreas } from "@/lib/constants";
 import { AREA_COMMERCIAL } from "@/lib/area-commercial";
 import { generateAreaMetadata } from "@/lib/page-metadata";
 import {
@@ -5076,6 +5076,8 @@ export default async function AreaDetailPage({
     ? `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(commercial.whatsappMessage)}`
     : null;
 
+  const relatedAreas = getRelatedAreas(slug);
+
   /* JSON-LD Service schema */
   const jsonLd = {
     "@context": "https://schema.org",
@@ -5332,6 +5334,59 @@ export default async function AreaDetailPage({
                 Contactar a Corporación GC
               </Link>
             </div>
+
+            {/* Áreas relacionadas — cross-linking interno para descubrimiento
+                de crawlers y navegación temática del usuario hacia materias
+                adyacentes (afinidad procesal, sustantiva o sectorial). */}
+            {relatedAreas.length > 0 && (
+              <nav
+                aria-label="Áreas relacionadas"
+                className="mt-16 pt-10 border-t border-cream/[0.08]"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-px w-8 bg-gold" />
+                  <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
+                    Áreas relacionadas
+                  </span>
+                </div>
+                <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-8 max-w-[50ch]">
+                  Materias afines a {area.title.toLowerCase()}
+                </h2>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {relatedAreas.map((r) => (
+                    <li key={r.slug}>
+                      <Link
+                        href={`/areas/${r.slug}`}
+                        className="group flex items-start justify-between gap-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02] hover:border-burgundy/25 hover:bg-cream/[0.04] transition-all duration-300"
+                      >
+                        <div className="min-w-0">
+                          <div className="text-sm font-semibold text-cream group-hover:text-gold transition-colors duration-300">
+                            {r.title}
+                          </div>
+                          <div className="mt-1 text-xs text-cream/50 leading-relaxed line-clamp-2">
+                            {r.subtitle}
+                          </div>
+                        </div>
+                        <ArrowRight
+                          size={14}
+                          weight="bold"
+                          className="mt-1 text-cream/30 group-hover:text-gold group-hover:translate-x-0.5 transition-all duration-300 shrink-0"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-6">
+                  <Link
+                    href="/areas"
+                    className="inline-flex items-center gap-1.5 text-xs text-cream/45 hover:text-gold transition-colors duration-300"
+                  >
+                    Ver todas las áreas de práctica
+                    <ArrowRight size={12} weight="bold" />
+                  </Link>
+                </div>
+              </nav>
+            )}
 
             {/* Bottom nav */}
             <div className="mt-10 pt-8 border-t border-cream/[0.06] flex items-center justify-between">
