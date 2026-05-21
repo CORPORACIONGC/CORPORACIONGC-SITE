@@ -28,7 +28,7 @@ Al recibir una notificación de declaratoria de interés público sobre su propi
 
 ## ¿Qué significa que le notifiquen una declaratoria de interés público?
 
-La **declaratoria de interés público** es el primer paso formal del **proceso de expropiación en Costa Rica**. Según el artículo 18 de la Ley de Expropiaciones (Ley 9286), para expropiar un bien es indispensable un acto motivado mediante el cual el bien se declare de interés público. Ese acto debe ser firmado por el ministro del ramo correspondiente (cuando se trata de un ministerio) o por el jerarca del ente expropiador cuando se trata de una entidad descentralizada (Universidades, Municipalidades, CCSS, ICE, INS y otros).
+La **declaratoria de interés público** es el primer paso formal del **proceso de expropiación en Costa Rica**. Según el artículo 18 de la Ley de Expropiaciones (Ley N.° 7495, reformada por las leyes N.° 9286 y N.° 9462), para expropiar un bien es indispensable un acto motivado mediante el cual el bien se declare de interés público. Ese acto debe ser firmado por el ministro del ramo correspondiente (cuando se trata de un ministerio) o por el jerarca del ente expropiador cuando se trata de una entidad descentralizada (Universidades, Municipalidades, CCSS, ICE, INS y otros).
 
 En la práctica, esto quiere decir que una institución del Estado ha determinado que necesita su propiedad para un fin público. Esa declaratoria debe notificarse al propietario y publicarse en el Diario Oficial, por lo que la institución no puede avanzar en silencio.
 

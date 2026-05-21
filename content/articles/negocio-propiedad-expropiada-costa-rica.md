@@ -1,14 +1,14 @@
 ---
 title: "Mi negocio está en una propiedad expropiada en Costa Rica: ¿qué puedo reclamar además del terreno?"
 date: "2026-05-17"
-excerpt: "Cuando hay un negocio activo sobre una propiedad expropiada, la indemnización no se limita al valor del terreno y las construcciones. La Ley N.° 9286 reconoce derechos comerciales, lucro cesante y daño al remanente — pero el plazo de oposición al avalúo administrativo exige actuar con rapidez y respaldo técnico."
+excerpt: "Cuando hay un negocio activo sobre una propiedad expropiada, la indemnización no se limita al valor del terreno y las construcciones. La Ley N.° 7495 reconoce derechos comerciales, lucro cesante y daño al remanente — pero el plazo de oposición al avalúo administrativo exige actuar con rapidez y respaldo técnico."
 tags: ["Guía práctica", "Expropiación", "Lucro Cesante", "Derecho Expropiatorio", "Derecho Público"]
 type: "article"
 author: "Lic. Esteban Pérez Herrera"
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Negocio en Propiedad Expropiada: Qué Reclamar · CR"
-seoDescription: "Si su negocio opera en una propiedad expropiada en Costa Rica, la Ley N.° 9286 reconoce derechos comerciales, lucro cesante y daño al remanente. Guía completa."
+seoDescription: "Si su negocio opera en una propiedad expropiada en Costa Rica, la Ley N.° 7495 reconoce derechos comerciales, lucro cesante y daño al remanente. Guía completa."
 ---
 
 Si usted opera un local comercial, una empresa o cualquier actividad productiva en la propiedad que el Estado pretende expropiar, aceptar el avalúo sin cuestionarlo puede significar dejar sobre la mesa la parte más valiosa de su indemnización. La ley le reconoce derechos que van mucho más allá del metro cuadrado, y en este artículo se explica exactamente cuáles son.
@@ -21,7 +21,7 @@ Cuando el Estado notifica una expropiación, la institución expropiadora encarg
 
 El problema es que un inmueble con un negocio activo no vale lo mismo que un terreno vacío. La diferencia no está en los metros cuadrados ni en el estado de la construcción: está en los ingresos que ese negocio genera, en las licencias que amparan su operación, en los clientes que lo conocen, en la inversión que el propietario o arrendatario hizo para ponerlo a funcionar.
 
-La **Ley de Expropiaciones de Costa Rica** reconoce esa diferencia. El artículo 22 de la Ley N.° 9286 establece que cuando se trata de inmuebles, la indemnización debe incluir, de forma independiente y detallada, todos los bienes y derechos susceptibles de valoración — no solo el terreno y las construcciones. El avalúo administrativo tiene la obligación de contemplarlos. En la práctica, con frecuencia no lo hace.
+La **Ley de Expropiaciones de Costa Rica** reconoce esa diferencia. El artículo 22 de la Ley N.° 7495 establece que cuando se trata de inmuebles, la indemnización debe incluir, de forma independiente y detallada, todos los bienes y derechos susceptibles de valoración — no solo el terreno y las construcciones. El avalúo administrativo tiene la obligación de contemplarlos. En la práctica, con frecuencia no lo hace.
 
 Y cuando no lo hace, el propietario o arrendatario que no cuestiona a tiempo asume esa pérdida en silencio. Los plazos para actuar son cortos y las consecuencias de la inacción son difíciles de revertir.
 
@@ -65,7 +65,7 @@ Un punto crítico que los precedentes del Tribunal de Apelaciones confirman con 
 
 ## Por qué la oposición al avalúo es la decisión más importante del proceso
 
-La Ley de Expropiaciones establece un mecanismo preciso para proteger al propietario o arrendatario que considera que el avalúo administrativo no refleja el valor real de lo que pierde, al establecer la posibilidad de oposición dentro de los ocho días hábiles siguientes a la notificación. Esa oposición abre la puerta al proceso judicial, donde un perito independiente nombrado por el juez revisa la valoración del Estado.
+La Ley de Expropiaciones establece un mecanismo preciso para proteger al propietario o arrendatario que considera que el avalúo administrativo no refleja el valor real de lo que pierde, al establecer la posibilidad de oposición dentro de los cinco días hábiles siguientes a la notificación. Esa oposición abre la puerta al proceso judicial, donde un perito independiente nombrado por el juez revisa la valoración del Estado.
 
 Ese perito judicial no trabaja para la administración ni para el expropiado, trabaja para el juez, y si se aparta del avalúo administrativo, la ley le exige explicar de forma detallada y técnica las razones por las que considera que el valor es distinto. Es en ese espacio —el proceso judicial con peritaje independiente— donde la indemnización puede ajustarse para reflejar no solo el terreno y las construcciones, sino todos los componentes que la ley reconoce: los derechos comerciales, el lucro cesante, el daño al remanente.
 
@@ -73,13 +73,13 @@ Pero ese mecanismo tiene una condición que los criterios del Tribunal de Apelac
 
 Lo anterior no significa que el avalúo del Estado siempre sea correcto; significa que cuestionarlo con éxito requiere hacerlo bien: con una estrategia clara sobre qué componentes reclamar, con la documentación necesaria para sustentarlos, y con un peritaje que cumpla los estándares metodológicos que la ley y la jurisprudencia exigen.
 
-Por eso, la decisión de oponerse al avalúo no es un trámite que pueda improvisarse en los ocho días hábiles que la ley concede, sino que requiere una evaluación técnica y jurídica. Si el avalúo omite componentes relevantes, si el negocio activo sobre el inmueble tiene derechos reclamables, o si hay daño al remanente que acreditar, es deseable identificar las omisiones del avalúo administrativo de manera temprana y construir desde el primer día la estrategia que el proceso judicial va a requerir.
+Por eso, la decisión de oponerse al avalúo no es un trámite que pueda improvisarse en los cinco días hábiles que la ley concede, sino que requiere una evaluación técnica y jurídica. Si el avalúo omite componentes relevantes, si el negocio activo sobre el inmueble tiene derechos reclamables, o si hay daño al remanente que acreditar, es deseable identificar las omisiones del avalúo administrativo de manera temprana y construir desde el primer día la estrategia que el proceso judicial va a requerir.
 
 ## El negocio es parte del patrimonio: protéjalo con la misma decisión
 
 Cuando hay una actividad comercial activa en la propiedad expropiada, la indemnización correcta no es el valor del terreno más el de las paredes. Es el valor integral de todo lo que usted construyó en ese espacio: su operación, sus permisos, sus clientes, su inversión.
 
-La ley le da las herramientas para reclamarlo, pero esas herramientas tienen un plazo de uso: **ocho días hábiles desde la notificación del avalúo** para activar la discusión judicial. Y como muestran los criterios del Tribunal de Apelaciones, incluso quienes parecen tener razón en el fondo pueden perder si el reclamo no está técnica y documentalmente bien construido desde el inicio.
+La ley le da las herramientas para reclamarlo, pero esas herramientas tienen un plazo de uso: **cinco días hábiles desde la notificación del avalúo** para activar la discusión judicial. Y como muestran los criterios del Tribunal de Apelaciones, incluso quienes parecen tener razón en el fondo pueden perder si el reclamo no está técnica y documentalmente bien construido desde el inicio.
 
 Si ya recibió la notificación o anticipa que su propiedad podría verse afectada por un proyecto de obra pública, este es el momento de buscar asesoría especializada.
 
