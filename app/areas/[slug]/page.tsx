@@ -1482,24 +1482,24 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Audiencia a la Procuraduría General de la República" fundamento="Ley 7135, art. 79">
+      <Instrumento titulo="Audiencia a la Procuraduría General de la República" fundamento="Ley 7135, art. 81">
         <p>
-          El artículo 79 de la Ley N.° 7135 dispone que, admitida la acción de
-          inconstitucionalidad, la Sala Constitucional conferirá audiencia a la Procuraduría
-          General de la República por un plazo de quince días hábiles. La Procuraduría actúa
-          como órgano consultivo y defensor de la constitucionalidad del ordenamiento jurídico,
-          emitiendo un dictamen técnico-jurídico sobre la conformidad o disconformidad de la
-          norma impugnada con el texto constitucional.
+          El artículo 81 de la Ley N.° 7135 dispone que, una vez que el Presidente de la Sala
+          tiene por cumplidos los requisitos, conferirá audiencia a la Procuraduría General de
+          la República y a la contraparte que figure en el asunto principal por un plazo de
+          quince días. La Procuraduría actúa como defensora de la constitucionalidad del
+          ordenamiento jurídico, emitiendo su criterio técnico-jurídico sobre la norma impugnada.
         </p>
         <p>
-          Adicionalmente, se confiere audiencia al órgano o ente que emitió la norma impugnada,
-          a fin de que ejerza su derecho de defensa dentro del mismo plazo.
+          Al mismo tiempo, la Sala ordena al tribunal u órgano que conoce del asunto principal
+          que no dicte la resolución final hasta que ella se pronuncie sobre la acción, y dispone
+          publicar un aviso en el Boletín Judicial por tres veces consecutivas.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Efectos de la sentencia de inconstitucionalidad" fundamento="Ley 7135, arts. 82-87">
+      <Instrumento titulo="Efectos de la sentencia de inconstitucionalidad" fundamento="Ley 7135, arts. 88-91">
         <p>
-          Los artículos 82 a 87 de la Ley N.° 7135 regulan los efectos de la sentencia que
+          Los artículos 88 a 91 de la Ley N.° 7135 regulan los efectos de la sentencia que
           declara la inconstitucionalidad de una norma. La declaratoria tiene efectos erga omnes
           —es decir, generales y obligatorios— y produce la anulación de la norma impugnada con
           efectos declarativos y retroactivos a la fecha de vigencia de la norma, salvo que la
@@ -1512,75 +1512,6 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           la Sala Constitucional son vinculantes erga omnes, salvo para sí misma.
         </p>
       </Instrumento>
-
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre acciones de inconstitucionalidad
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Quién puede interponer una acción de inconstitucionalidad en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La legitimación para interponer una acción de inconstitucionalidad depende de la modalidad
-              utilizada. La legitimación incidental, regulada en el párrafo primero del artículo 75 de
-              la Ley N.° 7135, permite que cualquier persona que sea parte en un proceso judicial o
-              procedimiento administrativo pendiente interponga la acción cuando considere que la norma
-              que se le aplica es contraria a la Constitución. Se exige demostrar la existencia del
-              asunto previo y que la norma impugnada resulte aplicable y relevante para la decisión del
-              caso. La legitimación directa, contemplada en el párrafo segundo del artículo 75, permite
-              que cualquier persona accione sin necesidad de un proceso previo cuando la acción se
-              fundamente en la defensa de intereses difusos o que atañen a la colectividad en su
-              conjunto: medio ambiente, patrimonio público, competencia económica o derechos de los
-              consumidores. Esta modalidad amplía significativamente el acceso a la justicia
-              constitucional al no requerir un asunto pendiente para cuestionar la validez de una norma.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Contra qué normas procede la acción de inconstitucionalidad?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El artículo 73 de la Ley N.° 7135 establece que la acción de inconstitucionalidad procede
-              contra las leyes y demás disposiciones generales que infrinjan por acción u omisión alguna
-              norma o principio constitucional. Esto incluye leyes formales aprobadas por la Asamblea
-              Legislativa, decretos ejecutivos dictados por el Poder Ejecutivo conforme al artículo 140
-              de la Constitución, reglamentos autónomos de entes descentralizados, reglamentos ejecutivos
-              y cualquier disposición de alcance general emanada de un órgano público. También procede
-              contra la aprobación legislativa de convenios o tratados internacionales y contra las
-              acciones u omisiones del poder público que vulneren derechos constitucionales. La acción
-              se presenta ante la Sala Constitucional de la Corte Suprema de Justicia, que una vez
-              admitida confiere audiencia a la Procuraduría General de la República por quince días
-              hábiles (art. 79) y al órgano emisor de la norma impugnada para que ejerzan su derecho
-              de defensa antes del pronunciamiento de fondo.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué efectos tiene la sentencia que declara inconstitucional una ley en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los artículos 82 a 87 de la Ley N.° 7135 regulan los efectos de la sentencia estimatoria.
-              La declaratoria de inconstitucionalidad tiene efectos erga omnes, es decir, generales y
-              obligatorios para todos. La sentencia produce la anulación de la norma impugnada con
-              efectos declarativos y retroactivos a la fecha de vigencia de la norma, eliminándola del
-              ordenamiento jurídico. Sin embargo, la Sala Constitucional puede disponer un
-              dimensionamiento temporal diferente de los efectos en resguardo de la seguridad jurídica
-              o de derechos adquiridos de buena fe. La sentencia estimatoria vincula a todos los poderes
-              del Estado, los órganos públicos y los particulares. Las resoluciones de la Sala
-              Constitucional son vinculantes erga omnes, salvo para sí misma, lo que le permite
-              evolucionar su jurisprudencia. Este control concentrado de constitucionalidad convierte a
-              la Sala en el garante último de la supremacía constitucional frente a las normas del
-              ordenamiento infraconstitucional costarricense.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   ),
 

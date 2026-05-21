@@ -575,4 +575,84 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea nuestra guía completa: Recurso de Amparo en Costa Rica (plazos, requisitos y trámite)",
   },
+
+  "acciones-de-inconstitucionalidad": {
+    hookHeadline: "¿Una ley o un reglamento inconstitucional le está causando un perjuicio?",
+    hookSubtext:
+      "La acción de inconstitucionalidad es el instrumento más poderoso del ordenamiento: la sentencia que la acoge elimina la norma del ordenamiento con efecto general para todos (art. 88). Pero no cualquiera puede plantearla en cualquier momento: por regla general se exige un asunto pendiente en el que se invoque la inconstitucionalidad como medio razonable de amparar su derecho (art. 75), el escrito debe ir autenticado por abogado y fundamentarse con cita concreta de las normas constitucionales infringidas (art. 78), y un planteamiento sin esas formalidades puede no recibir trámite (art. 80). La técnica define el resultado.",
+    scenariosTitle: "¿Cuándo procede una acción de inconstitucionalidad?",
+    triggerScenarios: [
+      "Una ley o un reglamento le aplica una norma que considera contraria a la Constitución",
+      "Un tributo o cobro se sustenta en una norma que estima inconstitucional",
+      "Tiene un proceso judicial o administrativo donde la norma aplicable es inconstitucional",
+      "Una disposición de alcance general afecta intereses difusos o colectivos (ambiente, patrimonio público)",
+      "La formación de una ley violó un trámite sustancial de la Constitución",
+      "Una reforma constitucional se aprobó con vicios de procedimiento",
+      "Una ley se opone a un tratado o convenio internacional (artículo 7 de la Constitución)",
+    ],
+    services: [
+      {
+        title: "Evaluación de procedencia y legitimación",
+        description:
+          "Determinamos si la norma es impugnable (art. 73) y por cuál vía corresponde: la incidental, que exige un asunto previo pendiente donde se invoque la inconstitucionalidad (art. 75, párr. 1), o la directa, sin asunto previo, para intereses difusos o colectivos (art. 75, párr. 2).",
+      },
+      {
+        title: "Acción a partir de un asunto pendiente",
+        description:
+          "Cuando usted tiene un proceso judicial, un amparo o un procedimiento de agotamiento de la vía administrativa, planteamos la inconstitucionalidad como medio razonable de amparar su derecho. El derecho caduca si el proceso base queda resuelto por sentencia firme (art. 77), por lo que el momento es crítico.",
+      },
+      {
+        title: "Defensa de intereses difusos y colectivos",
+        description:
+          "Para asuntos sin lesión individual y directa —ambiente, patrimonio público, derechos de la colectividad— planteamos la acción de forma directa, sin necesidad de un caso previo pendiente (art. 75, párr. 2).",
+      },
+      {
+        title: "Redacción técnica del escrito",
+        description:
+          "El escrito debe presentarse autenticado y exponer los fundamentos con cita concreta de las normas o principios constitucionales infringidos (art. 78). Lo redactamos con el rigor que evita la prevención de subsanación en tres días y la consecuente denegación del trámite (art. 80).",
+      },
+      {
+        title: "Trámite ante la Sala Constitucional",
+        description:
+          "Acompañamos todo el proceso: la audiencia de quince días a la Procuraduría General y a la contraparte del asunto principal (art. 81), la coadyuvancia de terceros interesados (art. 83) y la audiencia oral de conclusiones (art. 85). La Sala debe resolver en un máximo de un mes desde la vista (art. 86).",
+      },
+      {
+        title: "Efectos de la sentencia",
+        description:
+          "La sentencia estimatoria produce cosa juzgada y elimina la norma del ordenamiento, con efecto general para todos (art. 88). Su efecto es declarativo y retroactivo a la fecha de vigencia de la norma —sin perjuicio de los derechos adquiridos de buena fe—, y la Sala puede graduar y dimensionar ese efecto para proteger la seguridad jurídica (art. 91).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría para plantear una acción de inconstitucionalidad contra una norma que me perjudica.",
+    commercialFaq: [
+      {
+        question: "¿Quién puede plantear una acción de inconstitucionalidad?",
+        answer:
+          "Por la vía incidental, cualquier persona que sea parte en un asunto pendiente —judicial, de amparo, de hábeas corpus o de agotamiento de la vía administrativa— donde invoque la inconstitucionalidad como medio razonable de amparar su derecho (art. 75, párr. 1). Sin asunto previo pueden hacerlo quienes defienden intereses difusos o colectivos y, de forma directa, el Contralor General, el Procurador General, el Fiscal General y el Defensor de los Habitantes (art. 75, párrs. 2 y 3).",
+      },
+      {
+        question: "¿Necesito tener un juicio antes de plantearla?",
+        answer:
+          "Por regla general, sí: se exige un asunto pendiente de resolver donde la norma impugnada sea aplicable y se invoque su inconstitucionalidad como medio razonable de amparar el derecho lesionado (art. 75). La excepción son los asuntos sin lesión individual y directa o de intereses difusos y colectivos, que no requieren caso previo. Además, el derecho caduca si el proceso base queda resuelto por sentencia firme antes de plantearla (art. 77).",
+      },
+      {
+        question: "¿Contra qué normas procede?",
+        answer:
+          "Contra leyes y disposiciones generales —incluso de sujetos privados— que infrinjan la Constitución por acción u omisión; contra actos subjetivos de autoridades públicas que no quepan en amparo o hábeas corpus; contra vicios en la formación de las leyes o en las reformas constitucionales; y contra leyes que se opongan a un tratado internacional (art. 73). No procede contra los actos jurisdiccionales del Poder Judicial ni contra los actos del Tribunal Supremo de Elecciones en materia electoral (art. 74).",
+      },
+      {
+        question: "¿Qué requisitos tiene el escrito?",
+        answer:
+          "Debe presentarse autenticado por abogado y exponer los fundamentos con cita concreta de las normas o principios constitucionales infringidos (art. 78), acompañado de la certificación del asunto principal y las copias de ley (art. 79). Si faltan formalidades, el Presidente de la Sala previene subsanarlas en tres días y, de no cumplirse, deniega el trámite (art. 80). Por eso la calidad técnica del planteamiento es determinante.",
+      },
+      {
+        question: "Si la acción se acoge, ¿qué efecto tiene la sentencia?",
+        answer:
+          "La sentencia que declara la inconstitucionalidad produce cosa juzgada y elimina la norma del ordenamiento, con efecto general para todos (art. 88). Su efecto es declarativo y retroactivo a la fecha de vigencia de la norma, sin perjuicio de los derechos adquiridos de buena fe; la Sala puede graduar y dimensionar ese efecto retroactivo para evitar dislocaciones a la seguridad jurídica (art. 91). En materia penal o sancionatoria, la retroactividad opera siempre a favor del afectado (art. 92).",
+      },
+    ],
+    relatedArticleSlug: "recurso-amparo-costa-rica",
+    relatedArticleLabel:
+      "Lea también nuestra guía sobre el recurso de amparo en Costa Rica",
+  },
 };
