@@ -1362,9 +1362,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           preferente, regulado en la Ley de la Jurisdicción Constitucional (Ley N.° 7135).
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC representa a personas físicas y jurídicas en la interposición y
-          litigio de recursos de amparo, así como en la posterior ejecución e
-          indemnización en vía contencioso-administrativa.{" "}
+          Como abogados en recursos de amparo en Costa Rica, en Corporación GC representamos
+          a personas físicas y jurídicas en la interposición y litigio del amparo, así como
+          en la posterior ejecución e indemnización en vía contencioso-administrativa.{" "}
           <Link
             href="/articulos/recurso-amparo-costa-rica"
             className="text-burgundy hover:text-gold transition-colors duration-300 underline-offset-4 hover:underline"
