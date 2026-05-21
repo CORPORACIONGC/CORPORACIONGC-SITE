@@ -896,128 +896,74 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </section>
 
-      <Instrumento titulo="Recurso de objeción al cartel" fundamento="Ley 9986, art. 90">
+      <Instrumento titulo="Recurso de objeción al pliego de condiciones" fundamento="Ley 9986, arts. 95-96">
         <p>
-          El recurso de objeción al cartel permite impugnar las condiciones y especificaciones
-          del pliego de condiciones de un procedimiento de contratación antes de que se reciban
-          las ofertas. El artículo 90 de la Ley N.° 9986 establece que cualquier potencial
-          oferente que considere que el cartel contiene disposiciones contrarias al ordenamiento
-          jurídico, discriminatorias, desproporcionadas o que restrinjan indebidamente la
-          participación puede interponer este recurso ante la Contraloría General de la República.
+          El recurso de objeción permite impugnar el pliego de condiciones (cartel) de una
+          licitación antes de la apertura de ofertas. Conforme al artículo 95 de la Ley N.° 9986,
+          puede objetar todo potencial oferente o cualquier organización legalmente constituida
+          para velar por los intereses de la comunidad donde se ejecutará la contratación. El
+          órgano competente y el plazo dependen del tipo de procedimiento: en la licitación mayor
+          conoce la Contraloría General de la República y el recurso debe interponerse dentro de
+          los ocho días hábiles siguientes a la publicación del pliego; en la licitación menor
+          conoce la propia Administración y el plazo es de tres días hábiles.
         </p>
         <p>
-          La objeción debe presentarse dentro del primer tercio del plazo para recibir ofertas
-          y su interposición no suspende el procedimiento de contratación, salvo que la
-          Contraloría expresamente así lo disponga. La resolución de la Contraloría es vinculante
-          para la entidad contratante.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Recurso de apelación contra la adjudicación" fundamento="Ley 9986, art. 93">
-        <p>
-          El recurso de apelación contra el acto de adjudicación permite a cualquier oferente o
-          tercero con interés legítimo impugnar la decisión de la Administración de adjudicar un
-          contrato a un determinado oferente. El artículo 93 de la Ley N.° 9986 establece que
-          este recurso se interpone ante la Contraloría General de la República dentro de los
-          diez días hábiles siguientes a la comunicación del acto de adjudicación.
-        </p>
-        <p>
-          La interposición del recurso suspende automáticamente los efectos del acto de
-          adjudicación y la Administración no puede suscribir el contrato hasta que la Contraloría
-          resuelva. La Contraloría puede confirmar, modificar o revocar la adjudicación, o
-          declarar desierto el concurso.
+          De acuerdo con el artículo 96, la interposición oportuna del recurso suspende
+          automáticamente la etapa de recepción de ofertas y el acto de apertura. La resolución
+          que se pronuncia por el fondo da por agotada la vía administrativa y debe ser acatada
+          por la Administración en todos sus extremos; cuando ordena modificar el pliego, las
+          enmiendas deben comunicarse por los mismos medios de la invitación original.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Recurso de revocatoria contra la adjudicación" fundamento="Ley 9986, art. 92">
+      <Instrumento titulo="Recurso de apelación contra la adjudicación" fundamento="Ley 9986, arts. 97-98">
         <p>
-          El recurso de revocatoria es la vía para impugnar la adjudicación ante la propia
-          entidad que la dictó, cuando la cuantía del procedimiento no alcanza el monto mínimo
-          para acudir en apelación ante la Contraloría General de la República. El artículo 92
-          de la Ley N.° 9986 establece su procedimiento y plazos. Este recurso es resuelto por
-          el jerarca de la entidad contratante.
+          El recurso de apelación procede contra el acto de adjudicación —y contra el que declara
+          desierta o infructuosa— de una licitación mayor. Conforme al artículo 97 de la Ley
+          N.° 9986, quien haya participado en el procedimiento puede interponerlo ante la
+          Contraloría General de la República dentro de los ocho días hábiles siguientes a la
+          comunicación del acto final. La Contraloría lo tramita en una etapa de admisibilidad y
+          una de fondo, con audiencias a la Administración, al adjudicatario y a los participantes
+          con mejor posición en el sistema de evaluación sobre los que se formulen alegatos.
+        </p>
+        <p>
+          Según el artículo 98, la interposición del recurso suspende automáticamente todos los
+          efectos del acto final recurrido. La resolución que lo declara sin lugar confirma el
+          acto y agota la vía administrativa; la que lo declara con lugar anula el acto en el
+          tanto correspondiente y también agota la vía administrativa.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Tipos de procedimientos de contratación" fundamento="Ley 9986, arts. 36 a 56">
+      <Instrumento titulo="Recurso de revocatoria contra el acto final" fundamento="Ley 9986, art. 99">
         <p>
-          La Ley N.° 9986 establece distintos procedimientos según la complejidad y cuantía de
-          la contratación. La licitación pública es el procedimiento ordinario para contrataciones
-          de mayor cuantía. La licitación abreviada se utiliza para montos intermedios con
-          requisitos simplificados. La contratación directa procede en supuestos taxativos
-          establecidos por la ley —único proveedor, urgencia, escasa cuantía, entre otros—.
-          Cada procedimiento tiene reglas específicas sobre plazos, publicidad, recepción de
-          ofertas y adjudicación.
+          El recurso de revocatoria procede contra el acto final de la licitación menor y, de
+          igual manera, contra el de la subasta inversa electrónica y el de las nuevas
+          adjudicaciones en suministros, servicios y obra. Conforme al artículo 99 de la Ley
+          N.° 9986, debe interponerse dentro de los cinco días hábiles siguientes a la
+          comunicación del acto final y lo conoce el órgano que lo emitió; cuando ese órgano no
+          es el jerarca de la Administración, el recurrente puede solicitar que su gestión sea
+          resuelta por el jerarca. En todos los casos hay una única instancia y al recurso le
+          resultan aplicables, en lo pertinente, las reglas del recurso de apelación.
         </p>
       </Instrumento>
 
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre contratación pública
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se impugna una adjudicación de licitación pública en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Ley General de Contratación Pública (Ley N.° 9986) establece dos vías para impugnar
-              el acto de adjudicación. El recurso de apelación, regulado en el artículo 93, se
-              interpone ante la Contraloría General de la República dentro de los diez días hábiles
-              siguientes a la comunicación del acto de adjudicación. Su interposición suspende
-              automáticamente los efectos de la adjudicación y la Administración no puede suscribir el
-              contrato hasta que la Contraloría resuelva. La Contraloría puede confirmar, modificar o
-              revocar la adjudicación, o declarar desierto el concurso. Para procedimientos de menor
-              cuantía que no alcanzan el monto mínimo para apelar ante la Contraloría, el artículo 92
-              de la Ley 9986 establece el recurso de revocatoria ante la propia entidad contratante,
-              que es resuelto por el jerarca institucional. Agotada la vía administrativa, procede la
-              demanda contencioso-administrativa ante el TCA conforme al artículo 10 del CPCA.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es el recurso de objeción al cartel y cuándo se presenta?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El recurso de objeción al cartel permite impugnar las condiciones y especificaciones del
-              pliego de condiciones de un procedimiento de contratación antes de que se reciban las
-              ofertas. El artículo 90 de la Ley N.° 9986 establece que cualquier potencial oferente que
-              considere que el cartel contiene disposiciones contrarias al ordenamiento jurídico,
-              discriminatorias, desproporcionadas o que restrinjan indebidamente la participación puede
-              interponer este recurso ante la Contraloría General de la República. La objeción debe
-              presentarse dentro del primer tercio del plazo para recibir ofertas. Su interposición no
-              suspende automáticamente el procedimiento de contratación, salvo que la Contraloría
-              expresamente así lo disponga. La resolución de la Contraloría es vinculante para la entidad
-              contratante y puede ordenar la modificación del cartel o la eliminación de las cláusulas
-              objetadas. Este recurso es estratégicamente importante porque permite corregir vicios del
-              pliego antes de la adjudicación, evitando litigios posteriores más costosos y prolongados.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué tipos de procedimientos de contratación pública existen en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Ley N.° 9986 establece distintos procedimientos según la complejidad y cuantía de la
-              contratación, regulados en los artículos 36 a 56. La licitación pública es el procedimiento
-              ordinario para contrataciones de mayor cuantía, conforme al principio constitucional del
-              artículo 182 de la Constitución Política. La licitación abreviada se utiliza para montos
-              intermedios con requisitos simplificados y plazos más breves. La contratación directa
-              procede en supuestos taxativos establecidos por la ley: único proveedor, urgencia
-              calificada, escasa cuantía, entre otros expresamente previstos. Cada procedimiento tiene
-              reglas específicas sobre plazos de recepción de ofertas, publicidad, evaluación y
-              adjudicación. En todos los casos, los oferentes y terceros con interés legítimo disponen
-              de los recursos de objeción al cartel (art. 90) y apelación o revocatoria contra la
-              adjudicación (arts. 92 y 93) para cuestionar las decisiones administrativas en cada fase
-              del proceso de contratación.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Instrumento titulo="Tipos de procedimientos de contratación" fundamento="Ley 9986, arts. 36, 55-65">
+        <p>
+          La Ley N.° 9986 sustituyó la nomenclatura de la anterior Ley de Contratación
+          Administrativa. Los procedimientos ordinarios son ahora la licitación mayor (arts.
+          55-59), la licitación menor (arts. 60-61) y la licitación reducida (arts. 62-63); el
+          procedimiento aplicable se determina según el umbral del artículo 36, que depende del
+          monto estimado y del objeto —bienes, servicios u obra— y que la Contraloría General de
+          la República actualiza cada año. A mayor cuantía, mayor es el grado de control y
+          publicidad exigido al procedimiento.
+        </p>
+        <p>
+          Junto a los ordinarios, la ley regula procedimientos extraordinarios —el remate (art.
+          64) y la subasta inversa electrónica (art. 65)— y procedimientos especiales (arts.
+          66-70), como la contratación de urgencia y la de bienes inmuebles. Cada procedimiento
+          tiene reglas propias de plazos, publicidad, recepción de ofertas y régimen recursivo.
+        </p>
+      </Instrumento>
     </>
   ),
 

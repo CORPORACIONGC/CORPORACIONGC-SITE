@@ -414,4 +414,85 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
   },
+
+  "contratacion-publica": {
+    hookHeadline:
+      "¿Su empresa quedó fuera de una licitación o necesita impugnar una adjudicación?",
+    hookSubtext:
+      "En contratación pública los plazos son cortos, corren en días hábiles y la preclusión extingue el derecho a impugnar lo que no se recurrió a tiempo. Si el cartel contiene cláusulas que lo dejan fuera, o si la adjudicación se otorgó a una oferta que no debía ganar, la ley le da recursos para reaccionar —pero hay que actuar de inmediato. Interponer el recurso de objeción suspende la recepción de ofertas (art. 96) y el de apelación suspende automáticamente los efectos de la adjudicación (art. 98). Un recurso bien fundamentado, con la prueba técnica que la ley exige, es la diferencia entre que lo admitan o lo rechacen de plano.",
+    scenariosTitle: "¿Cuándo conviene impugnar en un procedimiento de contratación?",
+    triggerScenarios: [
+      "Su empresa presentó oferta y la adjudicación se otorgó a otro participante",
+      "El cartel o pliego de condiciones contiene cláusulas que restringen indebidamente su participación",
+      "Considera que la oferta ganadora no cumple los requisitos del pliego",
+      "Necesita impugnar una licitación mayor ante la Contraloría General de la República",
+      "Lo excluyeron del concurso por un defecto que era subsanable",
+      "Le declararon desierto o infructuoso un concurso en el que participó",
+      "Debe objetar un cartel antes de que venza el plazo para recibir ofertas",
+    ],
+    services: [
+      {
+        title: "Recurso de objeción al pliego de condiciones",
+        description:
+          "Impugnamos las cláusulas del cartel contrarias al ordenamiento, discriminatorias o que restringen la participación: ante la Contraloría General en licitación mayor (ocho días hábiles desde la publicación del pliego) o ante la Administración en licitación menor (tres días hábiles). Su interposición suspende la recepción de ofertas y el acto de apertura (arts. 95 y 96).",
+      },
+      {
+        title: "Apelación ante la Contraloría en licitación mayor",
+        description:
+          "Apelamos el acto de adjudicación —o la declaratoria de desierto o infructuoso— de una licitación mayor dentro de los ocho días hábiles siguientes a su comunicación. La interposición suspende automáticamente todos los efectos del acto final recurrido (arts. 97 y 98).",
+      },
+      {
+        title: "Revocatoria en licitación menor, reducida y subasta inversa",
+        description:
+          "Interponemos el recurso de revocatoria contra el acto final de la licitación menor, la subasta inversa electrónica y las nuevas adjudicaciones, dentro del plazo de cinco días hábiles, ante el órgano que dictó el acto y en única instancia (art. 99).",
+      },
+      {
+        title: "Fundamentación técnica del recurso",
+        description:
+          "Redactamos el recurso con la prueba idónea y los estudios técnicos que la ley exige, indicando la infracción sustancial del ordenamiento (art. 88), para evitar el rechazo de plano por inadmisibilidad o por improcedencia manifiesta (art. 87).",
+      },
+      {
+        title: "Control de plazos y preclusión",
+        description:
+          "Los plazos corren en días hábiles desde la notificación y la preclusión extingue la facultad de impugnar lo que ya se pudo recurrir (arts. 86 y 90). Vigilamos cada término para que no pierda el derecho a recurrir.",
+      },
+      {
+        title: "Continuidad hacia la vía contencioso-administrativa",
+        description:
+          "La resolución que decide por el fondo el recurso de objeción o de apelación agota la vía administrativa (arts. 96 y 98). A partir de ahí llevamos la impugnación —y, cuando procede, la medida cautelar— ante la jurisdicción contencioso-administrativa.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría para impugnar una licitación o una adjudicación en un procedimiento de contratación pública.",
+    commercialFaq: [
+      {
+        question: "¿Cómo impugno la adjudicación de una licitación?",
+        answer:
+          "Depende del tipo de procedimiento. Contra el acto de adjudicación de una licitación mayor procede el recurso de apelación ante la Contraloría General de la República, dentro de los ocho días hábiles siguientes a su comunicación (art. 97). Contra el acto final de una licitación menor, de una subasta inversa electrónica o de una nueva adjudicación procede el recurso de revocatoria ante la Administración, dentro de los cinco días hábiles (art. 99). En ambos casos la interposición suspende los efectos del acto recurrido.",
+      },
+      {
+        question: "¿Puedo impugnar el cartel antes de que se reciban las ofertas?",
+        answer:
+          "Sí, mediante el recurso de objeción al pliego de condiciones (arts. 95 y 96). En licitación mayor se interpone ante la Contraloría General dentro de los ocho días hábiles siguientes a la publicación del pliego; en licitación menor, ante la Administración dentro de los tres días hábiles. Interpuesto el recurso, se suspende automáticamente la etapa de recepción de ofertas y el acto de apertura, y la resolución de fondo agota la vía administrativa.",
+      },
+      {
+        question: "¿Qué tipos de procedimiento de contratación existen?",
+        answer:
+          "Los procedimientos ordinarios son la licitación mayor, la licitación menor y la licitación reducida, que se determinan según el umbral del artículo 36 —según el monto y el objeto: bienes, servicios u obra— (arts. 55 a 63). Además, la ley regula procedimientos extraordinarios —el remate (art. 64) y la subasta inversa electrónica (art. 65)— y procedimientos especiales (arts. 66 a 70).",
+      },
+      {
+        question: "¿Por qué rechazan un recurso “de plano”?",
+        answer:
+          "El artículo 87 ordena rechazar el recurso por inadmisible (incompetencia en razón de la materia, el tiempo, el tipo de procedimiento o la inobservancia de requisitos formales) o por improcedencia manifiesta (cuando el recurrente carece de legitimación o de mejor derecho, no fundamenta el recurso o gira sobre argumentos precluidos). Por eso el recurso debe presentarse debidamente fundamentado y con la prueba idónea (art. 88).",
+      },
+      {
+        question: "Después de la Contraloría, ¿puedo acudir a los tribunales?",
+        answer:
+          "Sí. La resolución que resuelve por el fondo el recurso de objeción o de apelación da por agotada la vía administrativa (arts. 96 y 98). A partir de ese momento procede la demanda ante la jurisdicción contencioso-administrativa, donde además puede solicitarse una medida cautelar para proteger su posición mientras se resuelve el caso.",
+      },
+    ],
+    relatedArticleSlug: "hermeneutica-ia-contratacion-publica",
+    relatedArticleLabel:
+      "Publicación de la firma sobre la Ley N.° 9986: inteligencia artificial en la contratación pública",
+  },
 };
