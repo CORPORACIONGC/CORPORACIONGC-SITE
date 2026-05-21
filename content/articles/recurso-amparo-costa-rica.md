@@ -207,24 +207,7 @@ La pregunta no es solo "¿puedo presentarlo solo?" sino "¿qué riesgo asumo al 
 
 Una de las decisiones más importantes es elegir la vía adecuada. La siguiente comparación, basada en los textos legales aplicables, ayuda a ubicar cuándo procede cada uno.
 
-#### Vías constitucionales — competencia de la Sala Constitucional
-
-| Recurso | Procedencia | Plazo | Patrocinio letrado | Fundamento |
-|---|---|---|---|---|
-| **Amparo** | Vulneración de derechos fundamentales por acto, omisión o vía de hecho | Dos meses desde el cese de los efectos; no corre mientras subsista la lesión | No requerido | Constitución, art. 48; LJC, arts. 29-72 |
-| **Hábeas corpus** | Restricción a la libertad e integridad personales o a la libertad de tránsito | No sujeto a plazo | No requerido | Constitución, art. 48; LJC, arts. 15-28 |
-| **Acción de inconstitucionalidad** | Norma contraria a la Constitución o a instrumentos internacionales de derechos humanos | No sujeta a plazo (requiere asunto previo, salvo intereses difusos) | Requerido | LJC, arts. 73-95 |
-
-#### Vías administrativas y contencioso-administrativas
-
-| Recurso | Procedencia | Plazo | Patrocinio letrado | Fundamento |
-|---|---|---|---|---|
-| **Revocatoria y apelación en subsidio** | Impugnar un acto administrativo final en sede de la propia Administración | Tres días hábiles desde la notificación (24 horas para actos de mero trámite) | No requerido | LGAP, arts. 342-352 |
-| **Demanda contencioso-administrativa** | Impugnar conducta de la Administración (acto, omisión, vía de hecho) y exigir reparación | Un año desde la notificación o desde el cese de los efectos | Requerido | CPCA, arts. 39-40 |
-
-LJC: Ley de la Jurisdicción Constitucional (Ley N.° 7135). LGAP: Ley General de la Administración Pública (Ley N.° 6227). CPCA: Código Procesal Contencioso Administrativo (Ley N.° 8508).
-
-Si su situación admite varias vías —por ejemplo, una sanción administrativa que también vulnera el debido proceso—, la elección estratégica entre amparo y contencioso (o ambos en paralelo) puede determinar la velocidad y el alcance de la reparación.
+<ComparativaViasAmparo />
 
 ---
 
