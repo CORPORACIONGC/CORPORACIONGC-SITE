@@ -7,7 +7,13 @@ import { trackContactFromHref } from "@/lib/analytics";
 /* Botón flotante de WhatsApp para los artículos. Aparece tras un pequeño
    scroll para no competir con el encabezado, y registra el clic como
    whatsapp_click (vía trackContactFromHref). */
-export function WhatsAppFloat({ href }: { href: string }) {
+export function WhatsAppFloat({
+  href,
+  contactTarget = "article-float",
+}: {
+  href: string;
+  contactTarget?: string;
+}) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -22,7 +28,7 @@ export function WhatsAppFloat({ href }: { href: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => trackContactFromHref(href, "article-float")}
+      onClick={() => trackContactFromHref(href, contactTarget)}
       aria-label="Escríbanos por WhatsApp"
       className={`fixed bottom-5 right-5 z-40 inline-flex items-center gap-2.5 rounded-full bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white shadow-lg shadow-black/30 p-4 md:py-3.5 md:px-5 hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] hover:scale-[1.04] active:scale-95 transition-all duration-300 ${
         visible

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { GlobalWhatsAppFloat } from "@/components/layout/GlobalWhatsAppFloat";
 import "./globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com";
@@ -73,6 +74,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <GlobalWhatsAppFloat />
         <GoogleAnalytics gaId="G-EL3CCTV95K" />
       </body>
     </html>
