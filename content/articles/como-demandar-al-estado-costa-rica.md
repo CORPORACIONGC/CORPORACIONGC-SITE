@@ -64,7 +64,7 @@ El artículo 31 del CPCA establece con claridad: *"El agotamiento de la vía adm
 
 Esta fue una de las reformas más importantes del CPCA. Antes de 2008, el agotamiento era un requisito obligatorio — si usted no interponía los recursos administrativos, la demanda era inadmisible. El CPCA eliminó esa barrera para facilitar el acceso a la justicia.
 
-**¿Cuándo sí es obligatorio?** El propio artículo 31 contempla excepciones derivadas de los artículos 173 y 182 de la Constitución Política. En la práctica, la excepción más clara es la **contratación pública**, donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Las demás excepciones requieren un análisis caso por caso que debe realizar un abogado especialista.
+**¿Cuándo sí es obligatorio?** El propio artículo 31 contempla excepciones derivadas de los artículos 173 y 182 de la Constitución Política. En la práctica, la excepción más clara es la [contratación pública](/areas/contratacion-publica), donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Las demás excepciones requieren un análisis caso por caso que debe realizar un abogado especialista.
 
 En la gran mayoría de los casos — sanciones administrativas, responsabilidad patrimonial, vías de hecho, omisiones — **el administrado puede acudir directamente al Tribunal.**
 
@@ -96,9 +96,9 @@ El proceso contencioso-administrativo en Costa Rica se tramita bajo un sistema *
 4. **Audiencia preliminar**, donde se fijan los hechos controvertidos y se admite la prueba.
 5. **Audiencia complementaria (juicio oral)**, donde se evacúa la prueba y las partes presentan sus alegatos.
 6. **Sentencia** del Tribunal.
-7. **Recurso de casación** ante la Sala Primera de la Corte Suprema de Justicia, si alguna parte impugna la sentencia.
+7. **[Recurso de casación](/areas/casacion-sala-primera)** ante la Sala Primera de la Corte Suprema de Justicia, si alguna parte impugna la sentencia.
 
-Es importante tener expectativas realistas sobre la duración del proceso. Un caso contencioso puede durar entre dos y cinco años dependiendo de la complejidad del asunto, el volumen de prueba y la carga del Tribunal. Sin embargo, el CPCA contempla **medidas cautelares** que permiten proteger los derechos del demandante mientras se espera la sentencia de fondo — incluyendo la posibilidad de solicitar medidas provisionalísimas de urgencia extrema que se resuelven en horas.
+Es importante tener expectativas realistas sobre la duración del proceso. Un caso contencioso puede durar entre dos y cinco años dependiendo de la complejidad del asunto, el volumen de prueba y la carga del Tribunal. Sin embargo, el CPCA contempla [medidas cautelares](/articulos/medidas-cautelares-contra-el-estado-costa-rica) que permiten proteger los derechos del demandante mientras se espera la sentencia de fondo — incluyendo la posibilidad de solicitar medidas provisionalísimas de urgencia extrema que se resuelven en horas.
 
 ---
 

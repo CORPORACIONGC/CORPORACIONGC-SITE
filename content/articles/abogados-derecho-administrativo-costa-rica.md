@@ -7,8 +7,8 @@ type: "article"
 author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Abogados de Derecho Administrativo y Público · CR"
-seoDescription: "Especialistas en Derecho Administrativo, Constitucional y Público bajo la LGAP (Ley N.° 6227) y el CPCA. Defensa del administrado ante la Administración Pública costarricense."
+seoTitle: "Abogados de Derecho Administrativo en Costa Rica"
+seoDescription: "Abogados especialistas en Derecho Administrativo y Público en Costa Rica: defensa del administrado ante la Administración bajo la LGAP (Ley 6227) y el CPCA."
 ---
 
 Si usted tiene un conflicto con una institución pública en Costa Rica — le denegaron un permiso, le impusieron una sanción, le revocaron un derecho, o el Estado le causó un daño patrimonial — necesita un abogado que conozca el Derecho Administrativo. No cualquier abogado. Esta materia tiene sus propias leyes, sus propios tribunales, sus propios plazos y su propia lógica. Un abogado generalista, por competente que sea en otras áreas, puede cometer errores que en esta jurisdicción no tienen marcha atrás.

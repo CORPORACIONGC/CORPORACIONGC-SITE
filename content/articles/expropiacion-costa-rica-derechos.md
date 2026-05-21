@@ -72,7 +72,7 @@ El concepto de **justo precio** en una expropiación va más allá del simple va
 
 **Daño al remanente en expropiaciones parciales.** Si el Estado expropia solo una parte de su propiedad y lo que queda resulta inadecuado para su uso o explotación racional, el artículo 17 le permite exigir la expropiación de la totalidad del inmueble.
 
-**Derechos comerciales y licencias.** El artículo 22 inciso e) indica que deben valorarse las licencias o derechos comerciales que procedan conforme a la ley, incluidos costos de producción, impuestos y seguros. Esto es especialmente relevante si su propiedad alberga un negocio activo.
+**Derechos comerciales y licencias.** El artículo 22 inciso e) indica que deben valorarse las licencias o derechos comerciales que procedan conforme a la ley, incluidos costos de producción, impuestos y seguros. Esto es especialmente relevante si su propiedad alberga un negocio activo: vea nuestra guía sobre [qué puede reclamar un negocio en una propiedad expropiada](/articulos/negocio-propiedad-expropiada-costa-rica), donde explicamos el lucro cesante y el daño al remanente.
 
 **Concesiones y permisos de explotación.** El inciso f) contempla la valoración de permisos y concesiones vigentes, incluyendo costos de producción y cargas sociales.
 

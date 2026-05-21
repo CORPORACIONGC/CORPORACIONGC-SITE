@@ -20,7 +20,7 @@ faq:
     answer: "El sistema cautelar del CPCA es abierto: el juez puede ordenar cualquier disposición adecuada, necesaria y proporcionada para proteger el objeto del proceso. Incluye medidas que conservan el estado de las cosas (impedir la ejecución de un acto) y medidas anticipativas que regulan provisionalmente la situación del administrado."
 ---
 
-Un proceso contencioso-administrativo puede tomar años en resolverse. Mientras tanto, el acto administrativo que usted impugna sigue produciendo efectos: la sanción se ejecuta, la obra avanza, la concesión se pierde, el cobro se materializa. Si usted espera a la sentencia para obtener protección, es posible que cuando llegue ya no haya nada que proteger.
+Un [proceso contencioso-administrativo](/articulos/como-demandar-al-estado-costa-rica) puede tomar años en resolverse. Mientras tanto, el acto administrativo que usted impugna sigue produciendo efectos: la sanción se ejecuta, la obra avanza, la concesión se pierde, el cobro se materializa. Si usted espera a la sentencia para obtener protección, es posible que cuando llegue ya no haya nada que proteger.
 
 Para eso existen las **medidas cautelares**: órdenes judiciales que protegen sus derechos de forma provisional mientras se resuelve el fondo del caso. Son órdenes provisionales — el instrumento que garantiza que la sentencia, cuando llegue, todavía tenga algo sobre qué operar.
 
@@ -102,7 +102,7 @@ Si una institución pública está por ejecutar un acto que le causará un daño
 
 El primer paso es buscar asesoría de un abogado con experiencia específica en medidas cautelares contencioso-administrativas. La solicitud debe prepararse con rigor técnico, prueba suficiente y una argumentación que el juez pueda resolver de forma inmediata.
 
-Corporación GC asesora y representa a personas y empresas en la obtención de medidas cautelares ante el Tribunal Contencioso Administrativo. Puede [contactarnos](/contacto) para una evaluación de su caso.
+Corporación GC asesora y representa a personas y empresas en la [obtención de medidas cautelares](/areas/medidas-cautelares) ante el Tribunal Contencioso Administrativo. Puede [contactarnos](/contacto) para una evaluación de su caso.
 
 ---
 
