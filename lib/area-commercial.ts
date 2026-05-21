@@ -495,4 +495,84 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Publicación de la firma sobre la Ley N.° 9986: inteligencia artificial en la contratación pública",
   },
+
+  "recursos-de-amparo": {
+    hookHeadline: "¿Le están vulnerando un derecho fundamental?",
+    hookSubtext:
+      "El amparo es la vía más rápida para frenar una violación de derechos fundamentales: no exige agotar recursos administrativos (art. 31), lo puede interponer cualquier persona (art. 33) y la Sala Constitucional lo tramita de forma privilegiada, con plazos perentorios (art. 39). Al admitirse, la aplicación del acto impugnado al recurrente queda suspendida de pleno derecho (art. 41). Pero el plazo es corto —dos meses desde que cesó la violación (art. 35)— y un recurso oscuro o mal planteado se rechaza de plano. La redacción técnica define el resultado.",
+    scenariosTitle: "¿Cuándo procede un recurso de amparo?",
+    triggerScenarios: [
+      "Una institución pública le niega o retrasa un servicio o trámite al que tiene derecho",
+      "La CCSS lo mantiene en una lista de espera que pone en riesgo su salud",
+      "Presentó una gestión y la Administración no le responde (derecho de petición)",
+      "Una autoridad lo perjudica con una actuación material sin acto firme ni debido proceso",
+      "Un hospital privado, colegio, universidad o colegio profesional le vulnera un derecho",
+      "Necesita frenar con urgencia una actuación que amenaza un derecho fundamental",
+      "Le notificaron una resolución que considera inconstitucional y el plazo corre",
+    ],
+    services: [
+      {
+        title: "Amparo contra órganos y servidores públicos",
+        description:
+          "Interponemos el amparo contra toda acción, omisión o actuación material de la Administración que viole, amenace o restrinja un derecho fundamental, incluso cuando se funde en normas erróneamente interpretadas o indebidamente aplicadas (art. 29).",
+      },
+      {
+        title: "Amparo por silencio o derecho de petición",
+        description:
+          "Cuando la Administración no resuelve su gestión y no hay plazo señalado, la violación al derecho de petición y pronta resolución se configura a los diez días hábiles (art. 32; art. 27 de la Constitución), y la Sala puede ordenarle responder.",
+      },
+      {
+        title: "Suspensión inmediata del acto y medidas cautelares",
+        description:
+          "Al admitirse el amparo, la aplicación al recurrente del acto concreto impugnado se suspende de pleno derecho, sin garantía ni audiencia previa (art. 41); además solicitamos las medidas de conservación o seguridad necesarias para evitar daños mientras se resuelve.",
+      },
+      {
+        title: "Amparo contra sujetos de derecho privado",
+        description:
+          "Procede también contra hospitales privados, universidades, colegios profesionales y demás sujetos en posición de poder, cuando los remedios jurisdiccionales comunes resulten claramente insuficientes o tardíos (art. 57).",
+      },
+      {
+        title: "Redacción técnica del recurso",
+        description:
+          "El amparo no exige autenticación ni formalidades especiales (art. 38), pero un recurso oscuro, fuera del plazo de dos meses (art. 35) o en un supuesto de improcedencia (art. 30) se rechaza. Definimos con precisión el derecho lesionado, el responsable y la prueba de cargo.",
+      },
+      {
+        title: "Indemnización y ejecución de la sentencia",
+        description:
+          "Toda sentencia que acoge el amparo condena en abstracto a la indemnización de daños y perjuicios y al pago de costas (art. 51). Gestionamos su cumplimiento —cuyo incumplimiento configura desobediencia (art. 53)— y la liquidación de la indemnización en la vía contencioso-administrativa (art. 56).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría para presentar un recurso de amparo por la violación de un derecho fundamental.",
+    commercialFaq: [
+      {
+        question: "¿Tengo que agotar trámites administrativos antes de presentar un amparo?",
+        answer:
+          "No. El artículo 31 de la Ley de la Jurisdicción Constitucional establece que no es necesaria la reposición ni ningún otro recurso administrativo para interponer el amparo; puede ejercerse directamente en cualquier momento. Si usted opta por usar los recursos administrativos, el plazo de prescripción se suspende mientras la Administración no resuelva expresamente.",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para presentar un recurso de amparo?",
+        answer:
+          "El amparo puede interponerse mientras subsista la violación y hasta dos meses después de que hayan cesado totalmente sus efectos (art. 35). Tratándose de derechos puramente patrimoniales, dentro de los dos meses siguientes a la fecha en que tuvo noticia fehaciente de la violación. Aun si el amparo prescribe, el acto puede impugnarse en otra vía (art. 36).",
+      },
+      {
+        question: "¿Quién puede presentar un amparo y qué necesito?",
+        answer:
+          "Cualquier persona puede interponerlo (art. 33). No requiere autenticación ni formalidades especiales (art. 38): basta expresar con claridad el hecho u omisión, el derecho violado o amenazado, el órgano o servidor responsable y la prueba de cargo. Aun así, una redacción técnica evita el rechazo de plano y fortalece el caso.",
+      },
+      {
+        question: "¿El amparo suspende el acto que me perjudica?",
+        answer:
+          "Sí. Al admitirse el recurso, la aplicación al recurrente del acto concreto impugnado se suspende de pleno derecho (art. 41). Solo en casos de excepcional gravedad la Sala puede autorizar su ejecución, con cautelas. Además, el Presidente o el magistrado instructor pueden dictar medidas de conservación o seguridad para prevenir daños mientras se resuelve.",
+      },
+      {
+        question: "Si gano el amparo, ¿me indemnizan?",
+        answer:
+          "Sí. Toda resolución que acoge el amparo condena en abstracto a la indemnización de los daños y perjuicios causados y al pago de las costas (art. 51), contra el Estado o la entidad de la que dependa el demandado. La liquidación de esa indemnización se tramita después en la vía contencioso-administrativa (art. 56).",
+      },
+    ],
+    relatedArticleSlug: "recurso-amparo-costa-rica",
+    relatedArticleLabel:
+      "Lea nuestra guía completa: Recurso de Amparo en Costa Rica (plazos, requisitos y trámite)",
+  },
 };

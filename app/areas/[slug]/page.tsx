@@ -1393,16 +1393,21 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Medidas cautelares y suspensión del acto" fundamento="Ley 7135, arts. 41 y 43">
+      <Instrumento titulo="Medidas cautelares y suspensión del acto" fundamento="Ley 7135, art. 41">
         <p>
-          La Sala Constitucional puede ordenar la suspensión del acto impugnado desde la
-          presentación del recurso, sin garantía y sin audiencia previa, cuando su
-          ejecución pueda causar daños graves o irreparables. Esta es la herramienta más
-          efectiva para detener un perjuicio en cuestión de días.
+          Al admitirse el amparo, la aplicación al recurrente del acto concreto impugnado
+          queda suspendida de pleno derecho, sin necesidad de garantía ni de audiencia
+          previa (art. 41). Solo en casos de excepcional gravedad la Sala puede autorizar
+          la ejecución —a solicitud de la Administración o de oficio— cuando la suspensión
+          amenace causar daños ciertos e inminentes al interés público, mayores que los que
+          la ejecución causaría al agraviado. Además, el Presidente o el magistrado instructor
+          pueden dictar cualquier medida de conservación o seguridad que prevenga daños
+          mientras se resuelve. Es la herramienta más efectiva para detener un perjuicio en
+          cuestión de días.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Ejecución e indemnización en vía contenciosa" fundamento="Ley 7135, art. 56; CPCA">
+      <Instrumento titulo="Ejecución e indemnización en vía contenciosa" fundamento="Ley 7135, arts. 51 y 56; CPCA">
         <p>
           La sentencia estimatoria condena en abstracto al pago de daños, perjuicios y
           costas. La cuantificación se realiza posteriormente ante el Tribunal Contencioso
@@ -1411,58 +1416,6 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      {/* ── Preguntas frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Necesito un abogado para presentar un recurso de amparo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Legalmente no: el amparo puede presentarlo cualquier persona sin patrocinio
-              letrado. En la práctica, contar con asesoría especializada es determinante
-              cuando el caso involucra prueba compleja, condena en abstracto a daños y
-              perjuicios, riesgo de cosa juzgada constitucional o estrategia procesal
-              entrelazada con un proceso administrativo o contencioso. Un escrito mal
-              articulado puede llevar al rechazo de plano y precluir la posibilidad de
-              discutir el asunto en otra sede.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué hace Corporación GC en un caso de amparo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Evaluamos la viabilidad del recurso, identificamos el derecho fundamental
-              afectado, redactamos el escrito con cita de jurisprudencia constitucional,
-              solicitamos medidas cautelares cuando proceda, atendemos la audiencia de
-              prueba e informe de la autoridad recurrida y, en caso de sentencia
-              favorable, ejecutamos la condena en abstracto ante el Tribunal Contencioso
-              Administrativo para cuantificar daños y perjuicios.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-12 p-6 rounded-lg border border-cream/[0.08] bg-cream/[0.02]">
-          <p className="text-sm text-cream/70 leading-relaxed mb-4">
-            ¿Le notificaron una resolución, sanción o denegación que considera
-            inconstitucional? Los plazos del amparo corren rápido y su correcto
-            planteamiento puede determinar el resultado.
-          </p>
-          <Link
-            href="/contacto"
-            className="inline-flex items-center gap-1.5 text-sm text-burgundy hover:text-gold transition-colors duration-300 font-medium"
-          >
-            Agende una consulta
-            <ArrowLeft size={14} weight="regular" className="rotate-180" />
-          </Link>
-        </div>
-      </section>
     </>
   ),
 
