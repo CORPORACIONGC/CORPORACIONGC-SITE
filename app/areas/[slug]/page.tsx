@@ -1748,113 +1748,50 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Órgano director del procedimiento" fundamento="LGAP, art. 309">
+      <Instrumento titulo="Órgano director del procedimiento" fundamento="LGAP, arts. 314, 319">
         <p>
-          El artículo 309 de la LGAP establece que el procedimiento administrativo ordinario será
-          instruido por un órgano director del procedimiento, que puede ser unipersonal o colegiado.
-          El órgano director es responsable de tramitar el expediente, citar a las partes, recibir
-          la prueba, celebrar la comparecencia oral y privada, y emitir la recomendación o informe
-          final al órgano decisor. La independencia funcional del órgano director respecto del
-          órgano que dictará el acto final constituye una garantía esencial de imparcialidad.
+          El artículo 314 de la LGAP dispone que el órgano que dirige el procedimiento es el
+          encargado de dirigir la comparecencia oral y que, cuando se trate de un órgano colegiado,
+          la comparecencia será dirigida por su Presidente o por el miembro designado al efecto. A
+          lo largo del procedimiento ordinario, este órgano director instruye el expediente: cita a
+          las partes a la comparecencia con quince días de anticipación (art. 311) y evacúa la
+          prueba ofrecida (art. 315). El acto final, en cambio, lo dicta el órgano competente dentro
+          de los quince días siguientes a la comparecencia (art. 319). La distinción entre el órgano
+          que instruye el procedimiento y el que dicta la decisión final constituye una garantía de
+          imparcialidad.
         </p>
       </Instrumento>
 
       <Instrumento titulo="Recursos contra el acto sancionatorio" fundamento="LGAP, arts. 342-352">
         <p>
-          Los artículos 342 a 352 de la LGAP regulan los recursos administrativos contra los
-          actos sancionatorios: el recurso de revocatoria —interpuesto ante el mismo órgano que
-          dictó el acto— y el recurso de apelación —interpuesto ante el superior jerárquico—.
-          Ambos recursos deben interponerse dentro de los plazos legales y permiten la revisión
-          integral del acto impugnado, tanto en sus aspectos de legalidad como de oportunidad.
+          Los artículos 342 a 352 de la LGAP regulan los recursos ordinarios contra el acto final
+          del procedimiento: la revocatoria y la apelación (art. 343), que proceden por motivos de
+          legalidad o de oportunidad (art. 342). Ambos se interponen ante el órgano director del
+          procedimiento dentro del plazo de tres días hábiles tratándose del acto final (arts. 346
+          y 349), y es potestativo del interesado usar uno solo o ambos recursos (art. 347). La
+          apelación la resuelve el superior jerárquico, que constituye la única instancia de alzada
+          y agota la vía administrativa (art. 350).
         </p>
         <p>
-          El agotamiento de la vía administrativa mediante la interposición de los recursos
-          correspondientes constituye, como regla general, un presupuesto procesal para acceder
-          a la jurisdicción contencioso-administrativa.
+          Conviene precisar que, conforme al artículo 31 del Código Procesal Contencioso-Administrativo,
+          el agotamiento de la vía administrativa es facultativo —salvo los supuestos de los
+          artículos 173 y 182 de la Constitución Política—, de modo que el administrado puede acudir
+          directamente a la jurisdicción contencioso-administrativa sin necesidad de interponer
+          previamente los recursos administrativos, o bien interponerlos si lo considera conveniente.
         </p>
       </Instrumento>
 
       <Instrumento titulo="Impugnación ante la jurisdicción contencioso-administrativa" fundamento="CPCA, arts. 1-2">
         <p>
-          Agotada la vía administrativa, el administrado puede impugnar el acto sancionatorio
-          definitivo ante el Tribunal Contencioso Administrativo conforme al Código Procesal
-          Contencioso Administrativo (CPCA). Los artículos 1 y 2 del CPCA atribuyen a esta
+          El administrado puede impugnar el acto sancionatorio definitivo ante el Tribunal
+          Contencioso Administrativo conforme al Código Procesal Contencioso Administrativo (CPCA).
+          Los artículos 1 y 2 del CPCA atribuyen a esta
           jurisdicción el conocimiento de las pretensiones contra las conductas de la
           Administración Pública, incluyendo la anulación de actos sancionatorios dictados
           con vicios de nulidad, la restitución de derechos y la indemnización de daños y
           perjuicios causados por sanciones ilegítimas.
         </p>
       </Instrumento>
-
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre procedimientos sancionatorios
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué derechos tiene una persona sometida a un procedimiento sancionatorio administrativo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los artículos 39 y 41 de la Constitución Política consagran las garantías fundamentales
-              del debido proceso aplicables a todo procedimiento sancionatorio. Estas incluyen: la
-              notificación del inicio del procedimiento y de los cargos formulados, el acceso irrestricto
-              al expediente administrativo, el derecho de audiencia previa a la imposición de cualquier
-              sanción, el derecho a la defensa técnica mediante abogado, el principio de tipicidad
-              (solo pueden sancionarse conductas previamente descritas en la norma), el principio de
-              culpabilidad, la presunción de inocencia y la prohibición de doble sanción por los mismos
-              hechos (non bis in idem). Cuando el acto final pueda causar perjuicio grave o suprimir
-              derechos, la LGAP exige el procedimiento ordinario de los artículos 308 a 319 con
-              comparecencia oral y privada. El artículo 309 garantiza que un órgano director imparcial
-              instruya el expediente. La violación de cualquiera de estas garantías constituye un vicio
-              de nulidad absoluta impugnable ante la jurisdicción contencioso-administrativa.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuál es la diferencia entre el procedimiento ordinario y el sumario en materia sancionatoria?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La LGAP establece dos tipos de procedimiento administrativo para la imposición de
-              sanciones. El procedimiento ordinario, regulado en los artículos 308 a 319, es obligatorio
-              cuando el acto final pueda causar perjuicio grave al administrado al suprimir o limitar
-              sus derechos subjetivos. Garantiza la comparecencia oral y privada ante un órgano director
-              (art. 309), el derecho a ofrecer prueba de descargo, formular alegatos y ejercer defensa
-              técnica. El procedimiento sumario, regulado en los artículos 320 a 326, se aplica cuando
-              el acto final no pueda causar perjuicio grave ni suprimir derechos subjetivos; se
-              caracteriza por plazos más breves y tramitación simplificada, aunque debe respetar
-              igualmente las garantías esenciales del debido proceso. La distinción es fundamental porque
-              la aplicación indebida de un procedimiento sumario cuando correspondía el ordinario
-              constituye un vicio de nulidad absoluta del acto sancionatorio resultante (art. 223 LGAP),
-              que puede ser declarada incluso de oficio. Corporación GC verifica la correcta elección
-              del procedimiento como primera línea de defensa en casos sancionatorios.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se impugna una sanción administrativa en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Las sanciones administrativas pueden impugnarse en dos instancias sucesivas. En vía
-              administrativa, los artículos 342 a 352 de la LGAP regulan los recursos procedentes: el
-              recurso de revocatoria se interpone ante el mismo órgano que dictó la sanción dentro de
-              tres días hábiles, y el recurso de apelación se presenta subsidiariamente ante el superior
-              jerárquico. Ambos recursos permiten la revisión integral del acto, tanto en sus aspectos
-              de legalidad como de oportunidad. El agotamiento de estos recursos constituye, como regla
-              general, un presupuesto procesal para acceder a la jurisdicción contencioso-administrativa
-              conforme al artículo 31 del CPCA. Una vez agotada la vía administrativa, el sancionado
-              puede demandar ante el Tribunal Contencioso Administrativo conforme a los artículos 1 y 2
-              del CPCA, solicitando la anulación del acto sancionatorio, la restitución de derechos y la
-              indemnización de daños y perjuicios. Durante el proceso jurisdiccional pueden solicitarse
-              medidas cautelares (arts. 19-30 CPCA) para suspender los efectos de la sanción impugnada.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   ),
 

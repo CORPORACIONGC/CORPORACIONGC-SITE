@@ -334,4 +334,84 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
   },
+
+  "procedimientos-sancionatorios": {
+    hookHeadline: "¿La Administración le abrió un procedimiento que puede terminar en sanción?",
+    hookSubtext:
+      "Su defensa empieza desde el primer día, no cuando llega la sanción. Cuando un acto puede causarle un perjuicio grave —imponerle una multa, suprimirle un derecho o, en lo disciplinario, suspenderlo o destituirlo— la Administración está obligada a seguir el procedimiento ordinario de la LGAP (arts. 308-319), cuyo eje es una comparecencia oral. Los errores de la Administración en esa tramitación pueden anular todo lo actuado por indefensión (art. 219). Una defensa técnica y oportuna define el resultado.",
+    scenariosTitle: "¿Cuándo necesita defensa en un procedimiento administrativo?",
+    triggerScenarios: [
+      "Le notificaron la apertura de un procedimiento administrativo en su contra",
+      "Enfrenta un procedimiento disciplinario que puede terminar en suspensión o destitución",
+      "Le citaron a una comparecencia oral y debe presentar su prueba y su defensa",
+      "Una entidad pública pretende imponerle una multa o una sanción",
+      "La Administración no le dio audiencia ni acceso al expediente",
+      "El órgano director le rechazó prueba o no respetó el plazo de citación",
+      "Le notificaron el acto final con una sanción y necesita impugnarlo",
+    ],
+    services: [
+      {
+        title: "Análisis del expediente y de la legalidad del procedimiento",
+        description:
+          "Revisamos si la Administración siguió el procedimiento ordinario obligatorio cuando el acto puede causar perjuicio grave o se trata de una sanción disciplinaria de gravedad (art. 308 LGAP), y si respetó las formalidades cuya omisión causa nulidad (art. 223).",
+      },
+      {
+        title: "Defensa en la comparecencia oral",
+        description:
+          "Asumimos la representación en la comparecencia oral y privada donde se admite y recibe toda la prueba (art. 309), ejerciendo los derechos de la parte: ofrecer prueba, repreguntar a testigos y peritos, y formular conclusiones (art. 317).",
+      },
+      {
+        title: "Ofrecimiento y control de la prueba",
+        description:
+          "Preparamos y presentamos la prueba en tiempo —antes o durante la comparecencia (art. 312)— y exigimos que el órgano director verifique la verdad real de los hechos que sirven de motivo al acto (art. 221).",
+      },
+      {
+        title: "Alegato de nulidades por indefensión",
+        description:
+          "Cuando la Administración omite la audiencia, el acceso al expediente o una formalidad sustancial, planteamos la nulidad de lo actuado: la omisión injustificada de esos trámites causa indefensión y nulidad (arts. 219 y 223).",
+      },
+      {
+        title: "Recursos contra el acto final",
+        description:
+          "Interponemos los recursos de revocatoria y apelación contra el acto final dentro del plazo de tres días hábiles (arts. 345 y 346) y agotamos la vía administrativa ante el órgano superior (art. 350).",
+      },
+      {
+        title: "Continuidad hacia la vía contencioso-administrativa",
+        description:
+          "Si la sanción se confirma en sede administrativa, llevamos la impugnación —y, cuando procede, la solicitud de medida cautelar para suspenderla— ante el Tribunal Contencioso Administrativo.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, me abrieron un procedimiento administrativo sancionatorio y necesito asesoría para mi defensa.",
+    commercialFaq: [
+      {
+        question: "¿Por qué me abrieron un procedimiento administrativo ordinario?",
+        answer:
+          "Porque la LGAP obliga a la Administración a seguir el procedimiento ordinario cuando el acto final puede causarle un perjuicio grave —imponerle obligaciones, suprimirle o denegarle derechos— o cuando hay contradicción de intereses (art. 308.1). Ese mismo procedimiento se aplica a los procedimientos disciplinarios que pueden terminar en suspensión, destitución o sanciones de similar gravedad (art. 308.2).",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para preparar mi defensa?",
+        answer:
+          "La citación a la comparecencia oral debe hacerse con quince días de anticipación (art. 311). Ese plazo es para que usted conozca el expediente y prepare su prueba, que debe presentarse antes o en la propia comparecencia (art. 312). Conviene usar ese tiempo con asesoría: la comparecencia es la oportunidad central de defensa.",
+      },
+      {
+        question: "¿Qué pasa si no asisto a la comparecencia?",
+        answer:
+          "Su ausencia injustificada no impide que la comparecencia se realice, pero tampoco vale como aceptación de los hechos, pretensiones ni pruebas de la Administración (art. 315). Aun así, no comparecer le hace perder la oportunidad de ofrecer prueba, repreguntar y alegar (art. 317), por lo que rara vez conviene.",
+      },
+      {
+        question: "¿Puedo anular el procedimiento si la Administración cometió errores?",
+        answer:
+          "Sí. Solo causa nulidad la omisión de formalidades sustanciales, es decir, aquellas cuya ausencia causa indefensión o habría cambiado la decisión final (art. 223). En particular, omitir injustificadamente la audiencia o la comparecencia causa indefensión y la nulidad de todo lo actuado después (art. 219.2).",
+      },
+      {
+        question: "¿Puedo impugnar la sanción una vez dictada?",
+        answer:
+          "Sí. Contra el acto final caben los recursos ordinarios de revocatoria y apelación, que deben interponerse dentro de los tres días hábiles siguientes a su notificación (arts. 343, 345 y 346). La apelación la resuelve el órgano superior, que agota la vía administrativa (art. 350) y abre la puerta a la jurisdicción contencioso-administrativa.",
+      },
+    ],
+    relatedArticleSlug: "como-demandar-al-estado-costa-rica",
+    relatedArticleLabel:
+      "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
+  },
 };
