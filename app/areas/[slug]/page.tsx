@@ -392,7 +392,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           El recurso de casación contencioso-administrativo es el medio de impugnación
           extraordinario que permite llevar ante la Sala Primera de la Corte Suprema de Justicia
           las sentencias dictadas por el Tribunal Contencioso Administrativo. Está regulado en
-          los artículos 134 a 148 del CPCA y constituye la última instancia jurisdiccional en la
+          los artículos 134 a 152 del CPCA y constituye la última instancia jurisdiccional en la
           vía ordinaria.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
@@ -421,155 +421,60 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Motivos de casación por razones procesales" fundamento="CPCA, art. 137.a">
+      <Instrumento titulo="Motivos de casación por razones procesales" fundamento="CPCA, art. 137">
         <p>
-          El artículo 137, inciso a) del CPCA contempla los vicios procesales que justifican la
-          casación. Estos incluyen la violación de normas del debido proceso, la indefensión de
-          alguna de las partes, la incongruencia de la sentencia (cuando el juez resuelve sobre
-          puntos no sometidos a su conocimiento o deja de resolver sobre pretensiones planteadas),
-          la sentencia ultra petita (que concede más de lo pedido), la sentencia extra petita
-          (que resuelve algo distinto de lo pedido) y la sentencia citra petita (que omite
-          pronunciarse sobre alguna pretensión).
+          El artículo 137 del CPCA enumera los vicios procesales que justifican la casación: la
+          falta de emplazamiento o su notificación defectuosa, la indefensión de la parte no
+          imputable a ella, la falta de determinación clara y precisa de los hechos acreditados,
+          la falta de motivación de la sentencia, la incompetencia alegada oportunamente, el
+          dictado de la sentencia por un número de jueces menor al exigido o por un juez ausente
+          en el juicio oral, y la inobservancia de las reglas de deliberación y de redacción del
+          fallo.
         </p>
         <p>
-          También procede la casación cuando se ha incurrido en violación de las normas sobre
-          formación de la sentencia, como la falta de fundamentación o la fundamentación
-          contradictoria.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Motivos de casación por razones de fondo" fundamento="CPCA, art. 137.b">
-        <p>
-          El artículo 137, inciso b) del CPCA permite la casación por violación de normas
-          sustantivas, ya sea por violación directa o por violación indirecta. La violación
-          directa ocurre cuando el juez aplica una norma que no corresponde, deja de aplicar la
-          norma correcta, o interpreta erróneamente la norma aplicable. La violación indirecta
-          se produce cuando el juez, como consecuencia de un error en la apreciación de los
-          hechos o de la prueba, llega a aplicar incorrectamente la norma sustantiva.
-        </p>
-        <p>
-          La distinción entre violación directa e indirecta es fundamental para la técnica
-          casacional, pues determina el tratamiento que la Sala Primera dará al recurso y los
-          alcances de su pronunciamiento respecto de los hechos del caso.
+          También proceden por esta vía la violación de normas cuya inobservancia se sanciona con
+          nulidad absoluta y la contradicción con la cosa juzgada. Estos motivos solo puede
+          alegarlos la parte perjudicada por el vicio, y exigen haber gestionado antes su
+          rectificación cuando ello era posible (art. 137, párrafo 2).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Error de hecho y de derecho en la valoración probatoria" fundamento="CPCA, art. 137.c">
+      <Instrumento titulo="Motivos de casación por razones de fondo" fundamento="CPCA, art. 138">
         <p>
-          El artículo 137, inciso c) del CPCA habilita la casación cuando el Tribunal ha
-          incurrido en error de hecho o de derecho en la valoración de la prueba. El error de
-          hecho se configura cuando el juez ignora, distorsiona o altera el contenido de un
-          elemento probatorio que consta en el expediente. El error de derecho se presenta cuando
-          el juez infringe las reglas de valoración probatoria establecidas por ley —sana crítica
-          racional, reglas de la lógica, la ciencia y la experiencia— al otorgar o negar
-          credibilidad a determinado medio de prueba.
+          El artículo 138 del CPCA permite la casación por violación de normas sustantivas del
+          ordenamiento jurídico en cuatro supuestos: cuando se atribuye a la prueba una indebida
+          valoración o se le pretiere; cuando se tienen por demostrados o indemostrados hechos en
+          contradicción con la prueba que consta en el proceso; cuando se aplica o interpreta
+          indebidamente una norma jurídica, o se deja de aplicar la que correspondía; y cuando la
+          sentencia viola las normas o los principios del Derecho constitucional, entre otros la
+          razonabilidad, la proporcionalidad, la seguridad jurídica y la igualdad.
         </p>
         <p>
-          Para que prospere el recurso por este motivo, el error debe ser determinante: debe
-          demostrar que, de no haber incurrido en él, el Tribunal habría alcanzado una conclusión
-          distinta en la parte dispositiva de la sentencia.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Preterición de prueba" fundamento="CPCA, art. 137.d">
-        <p>
-          La preterición de prueba consiste en que el Tribunal omite considerar un elemento
-          probatorio que fue debidamente aportado al proceso y que resulta decisivo para la
-          resolución del caso. El artículo 137, inciso d) del CPCA la contempla como motivo
-          autónomo de casación. No se trata de una mera discrepancia con la valoración del juez,
-          sino de la ausencia total de análisis de una prueba que, de haber sido considerada,
-          habría modificado el sentido del fallo.
+          Identificar con precisión el supuesto del artículo 138 es decisivo para la técnica
+          casacional, pues delimita el alcance del pronunciamiento que hará la Sala Primera o el
+          Tribunal de Casación sobre el fondo del asunto.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Casación por interés casacional" fundamento="CPCA, art. 134">
+      <Instrumento titulo="Plazo, interposición y competencia" fundamento="CPCA, arts. 139, 135 y 136">
         <p>
-          El CPCA introduce la figura del interés casacional como criterio de admisibilidad del
-          recurso. La Sala Primera puede admitir el recurso cuando el asunto revista especial
-          trascendencia para la unificación de la jurisprudencia, cuando exista contradicción
-          entre resoluciones del Tribunal Contencioso Administrativo, o cuando se trate de una
-          cuestión jurídica de importancia general que requiera pronunciamiento del máximo
-          tribunal. Este mecanismo permite que la Sala Primera cumpla su función de unificación
-          de la doctrina jurisprudencial.
+          El recurso debe interponerse dentro de los quince días hábiles siguientes al día hábil
+          posterior a la notificación de la resolución a todas las partes (art. 139, párrafo 1).
+          Se presenta directamente ante la Sala Primera de la Corte Suprema de Justicia o ante el
+          Tribunal de Casación de lo Contencioso-Administrativo, según el órgano del que emane la
+          conducta impugnada: la Sala Primera conoce los recursos contra el Poder Ejecutivo, los
+          ministerios, las instituciones descentralizadas, los reglamentos y la materia tributaria
+          (art. 135); el Tribunal de Casación, los de colegios profesionales, entes públicos no
+          estatales y las sanciones disciplinarias, multas y condenas en sede administrativa
+          (art. 136).
+        </p>
+        <p>
+          El recurso se rechaza de plano si la resolución no es casable, si se presenta fuera de
+          plazo o si carece de fundamentación (art. 140). Si adolece de defectos formales
+          subsanables, se previene su corrección dentro de tercero día (art. 141).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Plazo y legitimación" fundamento="CPCA, arts. 135 y 136">
-        <p>
-          El recurso de casación debe interponerse dentro de los quince días hábiles siguientes
-          a la notificación de la sentencia impugnada, conforme al artículo 135 del CPCA. Están
-          legitimados para recurrir las partes del proceso que resulten perjudicadas por la
-          sentencia. El recurso se presenta ante el propio Tribunal Contencioso Administrativo,
-          que verifica los requisitos de admisibilidad formales antes de elevarlo a la Sala
-          Primera para su conocimiento y resolución.
-        </p>
-      </Instrumento>
-
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre el recurso de casación ante Sala Primera
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuáles son los motivos para interponer un recurso de casación contencioso-administrativo en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El artículo 137 del CPCA establece tres categorías de motivos para interponer casación
-              ante la Sala Primera de la Corte Suprema de Justicia. Primero, motivos procesales
-              (art. 137.a): violación del debido proceso, indefensión, incongruencia de la sentencia,
-              resoluciones ultra petita, extra petita o citra petita, y falta de fundamentación.
-              Segundo, motivos de fondo (art. 137.b): violación directa de normas sustantivas por
-              aplicación indebida, falta de aplicación o interpretación errónea, y violación indirecta
-              derivada de errores en la apreciación de hechos o prueba. Tercero, errores probatorios
-              (art. 137.c y d): error de hecho o de derecho en la valoración de la prueba y preterición
-              de prueba decisiva. Cada motivo exige una técnica casacional rigurosa: identificar la
-              norma infringida, explicar la infracción y demostrar su incidencia en la parte dispositiva
-              de la sentencia. Los defectos técnicos conducen a la inadmisibilidad del recurso.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuál es el plazo para presentar casación contra una sentencia del Tribunal Contencioso Administrativo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Conforme al artículo 135 del CPCA, el recurso de casación debe interponerse dentro de los
-              quince días hábiles siguientes a la notificación de la sentencia impugnada. El recurso se
-              presenta ante el propio Tribunal Contencioso Administrativo que dictó la sentencia, el cual
-              verifica los requisitos de admisibilidad formales antes de elevarlo a la Sala Primera de la
-              Corte Suprema de Justicia para su conocimiento y resolución. El artículo 136 del CPCA
-              establece que están legitimados para recurrir las partes del proceso que resulten
-              perjudicadas por la sentencia. Son recurribles en casación las sentencias y los autos con
-              carácter de sentencia dictados en procesos de conocimiento (art. 134). El vencimiento del
-              plazo produce la inadmisibilidad del recurso por extemporaneidad, por lo que es fundamental
-              actuar con inmediatez. Corporación GC evalúa la viabilidad técnica del recurso desde la
-              notificación misma de la sentencia para garantizar una interposición oportuna y fundada.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es la preterición de prueba y cómo se alega en casación?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La preterición de prueba es un motivo autónomo de casación contemplado en el artículo
-              137, inciso d) del CPCA. Consiste en que el Tribunal Contencioso Administrativo omite
-              considerar un elemento probatorio que fue debidamente aportado al proceso y que resulta
-              decisivo para la resolución del caso. No se trata de una discrepancia con la valoración
-              del juez, sino de la ausencia total de análisis de una prueba que, de haber sido
-              considerada, habría modificado el sentido del fallo. Para que prospere el recurso por
-              este motivo, el recurrente debe demostrar ante la Sala Primera tres elementos: que la
-              prueba consta en el expediente, que el Tribunal no la analizó en la sentencia, y que su
-              consideración habría sido determinante para alcanzar una conclusión distinta en la parte
-              dispositiva. El artículo 137, inciso c) del CPCA también permite alegar el error de hecho
-              o de derecho en la valoración probatoria como motivo complementario de casación.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   ),
 
@@ -5212,7 +5117,7 @@ export default async function AreaDetailPage({
                 {/* Trigger scenarios */}
                 <section className="mt-14">
                   <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
-                    ¿Cuándo aplica una medida cautelar?
+                    {commercial.scenariosTitle}
                   </h2>
                   <p className="text-xs text-cream/45 mb-6 max-w-[60ch]">
                     Si su situación corresponde a alguno de estos escenarios, el tiempo es crítico.
@@ -5236,7 +5141,7 @@ export default async function AreaDetailPage({
                     Qué hace Corporación GC en estos casos
                   </h2>
                   <p className="text-xs text-cream/45 mb-6 max-w-[60ch]">
-                    Acompañamos el caso desde el análisis técnico hasta la audiencia oral y la defensa frente a recursos.
+                    Acompañamos su caso en cada etapa, con el rigor técnico que exige la materia.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {commercial.services.map((service, i) => (

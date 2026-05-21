@@ -1,6 +1,10 @@
 export type CommercialLanding = {
   hookHeadline: string;
   hookSubtext: string;
+  /** Título de la sección de escenarios. OBLIGATORIO: cada área debe usar el
+      suyo, ajustado a su materia. Así se evita cualquier título genérico
+      hardcodeado que quede mal en otra área (el build falla si falta). */
+  scenariosTitle: string;
   triggerScenarios: string[];
   services: { title: string; description: string }[];
   whatsappMessage: string;
@@ -14,6 +18,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     hookHeadline: "¿Necesita suspender un acto administrativo urgente?",
     hookSubtext:
       "Las medidas cautelares contencioso-administrativas pueden detener una sanción, ejecución o procedimiento en cuestión de horas. Acompañamos a personas y empresas que enfrentan amenazas administrativas inminentes contra su patrimonio, su actividad o sus derechos.",
+    scenariosTitle: "¿Cuándo aplica una medida cautelar?",
     triggerScenarios: [
       "El Estado le impuso una sanción que está por ejecutarse",
       "Una resolución municipal ordena demoler su construcción",
@@ -88,6 +93,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     hookHeadline: "¿Recibió notificación de demolición o vence su concesión?",
     hookSubtext:
       "La zona marítimo terrestre es patrimonio nacional inalienable e imprescriptible (art. 1, Ley N.° 6043), administrada por la municipalidad respectiva. Los plazos para defender una concesión, oponerse a una demolición o impugnar una resolución municipal son cortos. Acompañamos a concesionarios y propietarios costeros en Quepos, Tamarindo, Sámara, Limón y todo el litoral costarricense.",
+    scenariosTitle: "¿Cuándo necesita defender su concesión?",
     triggerScenarios: [
       "Recibió una notificación de demolición sobre su construcción costera",
       "Su concesión sobre la zona restringida está próxima a vencer o ya venció",
@@ -169,6 +175,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     hookHeadline: "¿Necesita demandar al Estado o un ente público?",
     hookSubtext:
       "Corporación GC concentra su práctica en el contencioso-administrativo costarricense. El bufete fue fundado y es dirigido por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera de la Corte Suprema (2002-2014) y co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508). Junto a él, un equipo de cinco abogados formados en Derecho Público bajo su supervisión directa asume demandas de nulidad, plena jurisdicción, responsabilidad patrimonial y recursos de casación ante la Sala Primera.",
+    scenariosTitle: "¿Cuándo demandar al Estado?",
     triggerScenarios: [
       "Una entidad pública le impuso una sanción administrativa que considera ilegal",
       "La Administración no le respondió o le rechazó una solicitud que afecta sus derechos",
@@ -246,5 +253,85 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     ],
     relatedArticleSlug: "como-demandar-al-estado-costa-rica",
     relatedArticleLabel: "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
+  },
+
+  "casacion-sala-primera": {
+    hookHeadline: "¿Una sentencia del Tribunal Contencioso le fue adversa y es contraria a derecho?",
+    hookSubtext:
+      "La casación no es una segunda instancia y no se parece a una apelación ni a una revocatoria, aunque muchos litigantes lo asumen así —y por eso fracasan—. Es un recurso extraordinario y formalista, de técnica propia: la gran mayoría de las casaciones se rechazan de plano (art. 140 CPCA), porque el recurso está diseñado para no admitir las que no cumplen una rigurosa exigencia técnico-argumentativa. Prepararla bien obliga a una subsunción fáctico-jurídica de todo el expediente y a un análisis crítico de la sentencia con métodos específicos. Nuestro director fue Magistrado de la Sala Primera de la Corte Suprema y co-redactor del CPCA: domina la técnica casacional como pocos en el país.",
+    scenariosTitle: "¿Cuándo procede recurrir en casación?",
+    triggerScenarios: [
+      "Perdió en el Tribunal Contencioso y considera que la sentencia es contraria a derecho",
+      "El Tribunal valoró indebidamente la prueba o ignoró prueba decisiva de su caso",
+      "La sentencia carece de motivación o no determina con claridad los hechos probados",
+      "El Tribunal aplicó o interpretó mal una norma, o dejó de aplicar la que correspondía",
+      "Le causaron indefensión o hubo defectos en el emplazamiento durante el proceso",
+      "La sentencia viola principios constitucionales como razonabilidad, proporcionalidad o igualdad",
+      "Resultó victorioso y la contraparte interpuso casación: necesita defender la sentencia",
+    ],
+    services: [
+      {
+        title: "Análisis de viabilidad y de competencia",
+        description:
+          "Determinamos si la resolución admite casación —solo proceden las sentencias y autos con carácter de sentencia con cosa juzgada material que sean contrarios al ordenamiento (art. 134 CPCA)— y ante quién corresponde: la Sala Primera (Poder Ejecutivo, ministerios, instituciones descentralizadas, reglamentos y materia tributaria; art. 135) o el Tribunal de Casación (colegios profesionales, entes públicos no estatales y sanciones disciplinarias; art. 136).",
+      },
+      {
+        title: "Subsunción fáctico-jurídica del expediente completo",
+        description:
+          "Revisamos la totalidad del expediente y confrontamos los hechos acreditados con la sentencia, para aislar el vicio exacto y su incidencia en la parte dispositiva. Este trabajo de fondo —no una simple inconformidad con el fallo— es lo que separa un recurso admisible de uno rechazado de plano.",
+      },
+      {
+        title: "Redacción con técnica casacional",
+        description:
+          "Formulamos los motivos de forma clara y precisa, distinguiendo entre violación de normas procesales (art. 137) y sustantivas (art. 138), con la fundamentación fáctica y jurídica que exige el art. 139. La precisión técnica es decisiva: el recurso se rechaza de plano si carece de fundamentación o si el Tribunal deduce su improcedencia (art. 140).",
+      },
+      {
+        title: "Interposición en plazo y trámite",
+        description:
+          "Interponemos el recurso dentro de los quince días hábiles siguientes a la notificación de la resolución a todas las partes (art. 139.1), atendemos cualquier prevención de subsanación (art. 141) y, cuando es útil, ampliamos los motivos en el plazo del art. 143.",
+      },
+      {
+        title: "Representación en la audiencia oral",
+        description:
+          "Asumimos la exposición de los motivos y la defensa del recurso en la audiencia oral de casación (art. 142), así como las conclusiones ante la Sala Primera o el Tribunal de Casación.",
+      },
+      {
+        title: "Defensa de la sentencia favorable",
+        description:
+          "Cuando es la contraparte quien recurre, defendemos la sentencia que le fue favorable y, si procede, gestionamos la ejecución provisional de lo que ya está firme (art. 146).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría sobre un recurso de casación contencioso-administrativo. Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿La casación es como apelar la sentencia?",
+        answer:
+          "No, y confundirlas es el error más frecuente. La revocatoria y la apelación son recursos ordinarios que permiten revisar ampliamente lo resuelto. La casación es un recurso extraordinario y formalista: no reabre el debate del caso, sino que examina si la sentencia violó normas procesales (art. 137) o sustantivas (art. 138). Exige una técnica argumentativa rigurosa y métodos específicos de análisis; plantearla como si fuera una apelación conduce al rechazo.",
+      },
+      {
+        question: "¿Por qué se rechazan tantas casaciones?",
+        answer:
+          "Porque el recurso está diseñado para filtrar. El artículo 140 del CPCA ordena rechazar de plano la casación cuando la resolución no es casable, cuando se presenta fuera de plazo, o cuando carece de fundamentación o el Tribunal deduce su improcedencia. La gran mayoría de los recursos mal planteados no supera ese filtro de admisibilidad. Por eso la preparación técnica —y no la mera inconformidad con el fallo— es lo que define el resultado.",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para presentar la casación?",
+        answer:
+          "Quince días hábiles, contados a partir del día hábil siguiente a la notificación de la resolución a todas las partes (art. 139.1 CPCA). Si hubo adición o aclaración, el plazo corre desde que se notifica lo resuelto sobre ella. Es un plazo fatal: una vez vencido, la sentencia queda firme.",
+      },
+      {
+        question: "¿Toda casación la resuelve la Sala Primera?",
+        answer:
+          "No. El CPCA reparte la competencia según el órgano que dictó la conducta impugnada: la Sala Primera conoce los recursos contra el Poder Ejecutivo, los ministerios, las instituciones descentralizadas (incluidas las municipales), los reglamentos y la materia tributaria (art. 135); el Tribunal de Casación de lo Contencioso-Administrativo conoce los de colegios profesionales, entes públicos no estatales, empresas públicas y las sanciones disciplinarias, multas y condenas en sede administrativa (art. 136).",
+      },
+      {
+        question: "¿Qué ocurre si la casación se acoge?",
+        answer:
+          "Depende del vicio. Si la sentencia se casa por una razón procesal, se anula y el proceso se reenvía al tribunal de juicio para que reponga los trámites y vuelva a fallar (art. 150.1). Si se casa por violación de normas sustantivas, la Sala Primera o el Tribunal de Casación resuelven directamente el fondo del asunto en la misma resolución (art. 150.2).",
+      },
+    ],
+    relatedArticleSlug: "como-demandar-al-estado-costa-rica",
+    relatedArticleLabel:
+      "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
   },
 };
