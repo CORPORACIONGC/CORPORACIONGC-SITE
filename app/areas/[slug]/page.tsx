@@ -75,6 +75,118 @@ function Instrumento({
 
 /* ─── Contenido de cada área ─── */
 const AREA_CONTENT: Record<string, React.ReactNode> = {
+  "expropiaciones": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          La expropiación forzosa es la privación de la propiedad o de derechos patrimoniales
+          legítimos por causa de interés público legalmente comprobado, mediante el pago previo
+          de una indemnización que represente el precio justo de lo expropiado (artículo 1 de la
+          Ley de Expropiaciones, Ley N.° 7495, reformada por las leyes N.° 9286 y N.° 9462). El
+          procedimiento combina una fase administrativa —declaratoria de interés público, avalúo
+          y oposición— y una fase judicial ante el Juzgado Contencioso-Administrativo y Civil de
+          Hacienda.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Como abogados especialistas en expropiaciones en Costa Rica, en Corporación GC
+          defendemos al propietario y al titular de derechos en todas las etapas: desde la
+          oposición al avalúo administrativo hasta la fijación del justo precio y la indemnización
+          en sede judicial. A continuación se describen los instrumentos que integran esta materia.
+        </p>
+      </section>
+
+      <Instrumento titulo="Declaratoria de interés público" fundamento="Ley 7495, arts. 18 y 20">
+        <p>
+          Para expropiar un bien es indispensable un acto motivado que lo declare de interés
+          público, firmado por el ministro del ramo o por el jerarca del ente expropiador, que
+          debe notificarse al interesado y publicarse en el diario oficial La Gaceta (art. 18).
+          Esa declaratoria se anota provisionalmente en el Registro Nacional; la anotación caduca
+          y se cancela de oficio si, dentro del año siguiente, no se presenta el mandamiento de
+          anotación definitiva expedido por el Juzgado Contencioso-Administrativo y Civil de
+          Hacienda (art. 20).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Avalúo administrativo y plazo de oposición" fundamento="Ley 7495, arts. 21 y 25">
+        <p>
+          La Administración debe solicitar a la dependencia especializada —o, en su defecto, a la
+          Dirección General de Tributación— el avalúo administrativo, que debe rendirse en un
+          plazo máximo de un mes (art. 21). El avalúo se notifica al propietario, quien cuenta con
+          cinco días hábiles para manifestar su conformidad o disconformidad con el precio. Si
+          guarda silencio, la ley tiene el avalúo por aceptado y queda firme, sin posibilidad de
+          oposición posterior en ninguna etapa del proceso (art. 25). Por eso este plazo es la
+          decisión más importante de todo el procedimiento.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Determinación del justo precio" fundamento="Ley 7495, art. 22">
+        <p>
+          El artículo 22 obliga a que el avalúo indique todos los datos necesarios para valorar el
+          bien y describa el método empleado. Tratándose de inmuebles, debe contemplar de forma
+          obligatoria: la descripción topográfica del terreno, el estado y uso de las
+          construcciones, los derechos de los inquilinos y arrendatarios (inciso d), las licencias
+          o derechos comerciales —incluidos costos de producción, impuestos y seguros— (inciso e),
+          los permisos y concesiones de explotación (inciso f), el precio de las propiedades
+          colindantes (inciso g), los gravámenes (inciso h) y cualesquiera otros elementos o
+          derechos susceptibles de valoración e indemnización (inciso i). Esta última cláusula,
+          leída junto con la jurisprudencia de la Sala Primera, sustenta el reconocimiento del
+          lucro cesante y del daño emergente.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Proceso especial de expropiación" fundamento="Ley 7495, arts. 27-30">
+        <p>
+          Ante la disconformidad oportuna del expropiado —u otros supuestos del artículo 27—, la
+          Administración dicta el acuerdo de expropiación e inicia el proceso especial ante el
+          Juzgado Contencioso-Administrativo y Civil de Hacienda, donde debe depositar el monto del
+          avalúo como requisito indispensable y previo a la entrada en posesión del bien (art. 28).
+          En ese proceso solo se discute la revisión del avalúo para fijar la indemnización
+          definitiva (art. 29). El juez nombra, de una lista rotativa de los colegios
+          profesionales, un perito idóneo e independiente que revisa la valoración; a partir de la
+          resolución inicial corren los plazos de desalojo: quince días hábiles, o dos meses cuando
+          se trata de vivienda familiar (art. 30).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Indemnización: intereses, indexación y sentencia" fundamento="Ley 7495, arts. 11, 23 y 39">
+        <p>
+          La Administración debe reconocer intereses de oficio, a la tasa legal vigente, desde la
+          desposesión del bien hasta el pago efectivo; cuando existe un depósito del avalúo, se
+          calculan sobre la diferencia con el justiprecio (art. 11). Si el propietario aceptó el
+          avalúo y transcurren más de seis meses sin pago, puede pedir que el valor se actualice
+          conforme a los índices de inflación del Banco Central de Costa Rica (art. 23). Tras el
+          reconocimiento judicial del inmueble y la valoración de la prueba según la sana crítica,
+          el juez dicta la resolución final dentro de los quince días hábiles siguientes; el monto
+          de la indemnización no puede exceder la suma mayor estimada en los avalúos (art. 39).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Expropiación parcial y derecho de restitución" fundamento="Ley 7495, arts. 17 y 16">
+        <p>
+          Cuando la expropiación es parcial y la parte que no se expropia resulta inadecuada para
+          su uso o explotación racional, el expropiado puede exigir la expropiación de la totalidad
+          del inmueble; en terrenos urbanos se consideran sobrantes inadecuados los que queden con
+          frente, fondo o superficie inferiores a lo autorizado para edificar (art. 17).
+        </p>
+        <p>
+          Además, transcurridos diez años desde la inscripción del inmueble a nombre del Estado, el
+          expropiado o sus causahabientes pueden solicitar la restitución de las propiedades o
+          partes sobrantes no utilizadas para el fin declarado, cubriendo su valor actual y dentro
+          de los tres años siguientes (art. 16).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Recurso de apelación" fundamento="Ley 7495, art. 41">
+        <p>
+          La parte disconforme con la resolución final puede apelar ante el Tribunal de Casación de
+          lo Contencioso-Administrativo y Civil de Hacienda dentro de los cinco días hábiles
+          siguientes a la notificación; presentada la apelación y vencido el plazo, el juzgado
+          eleva los autos de inmediato (art. 41).
+        </p>
+      </Instrumento>
+    </>
+  ),
+
   "litigio-contencioso-administrativo": (
     <>
       <section className="mb-12">

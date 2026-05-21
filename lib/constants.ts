@@ -497,6 +497,18 @@ export const PRACTICE_AREA_PAGES = [
     ogShortTitle: "Derecho Notarial y {{em}}",
     ogEmphasis: "Registral",
   },
+  {
+    slug: "expropiaciones",
+    title: "Expropiaciones",
+    subtitle: "Defensa del propietario frente a la expropiación forzosa: oposición al avalúo, justo precio e indemnización",
+    description: "Asesoría y litigio en expropiaciones forzosas: oposición al avalúo administrativo, determinación del justo precio, lucro cesante, daño al remanente, intereses e indemnización ante el Juzgado Contencioso-Administrativo y Civil de Hacienda, conforme a la Ley de Expropiaciones (Ley N.° 7495).",
+    icon: "MapPin" as const,
+    priority: "primary" as const,
+    seoTitle: "Abogado Especialista en Expropiaciones en Costa Rica",
+    seoDescription: "¿Le notificaron una expropiación? Abogados especialistas en expropiaciones en Costa Rica: oposición al avalúo, justo precio, lucro cesante e indemnización (Ley 7495).",
+    ogShortTitle: "Abogado especialista en {{em}}",
+    ogEmphasis: "Expropiaciones",
+  },
 ] as const;
 
 /* Mapa de áreas afines para enlazado cruzado interno. Cada área enlaza a 4
@@ -529,7 +541,8 @@ export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
   "materia-municipal": ["derecho-urbanistico", "dominio-publico", "litigio-contencioso-administrativo", "materia-presupuestaria"],
   "dominio-publico": ["zona-maritimo-terrestre", "materia-municipal", "derecho-urbanistico", "litigio-contencioso-administrativo"],
   "zona-maritimo-terrestre": ["dominio-publico", "derecho-urbanistico", "materia-municipal", "regulacion-ambiental-mercados-carbono"],
-  "derecho-urbanistico": ["materia-municipal", "dominio-publico", "litigio-contencioso-administrativo", "zona-maritimo-terrestre"],
+  "derecho-urbanistico": ["materia-municipal", "dominio-publico", "litigio-contencioso-administrativo", "expropiaciones"],
+  "expropiaciones": ["litigio-contencioso-administrativo", "dominio-publico", "derecho-urbanistico", "medidas-cautelares"],
   "materia-presupuestaria": ["contratacion-publica", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo", "informes-juridicos-dictamenes"],
   "comercio-internacional": ["defensa-regulatoria-sectorial", "regulacion-fintech-criptoactivos", "asesoria-regulatoria", "litigio-contencioso-administrativo"],
   "defensa-regulatoria-sectorial": ["procedimientos-sancionatorios", "servicio-publico", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo"],

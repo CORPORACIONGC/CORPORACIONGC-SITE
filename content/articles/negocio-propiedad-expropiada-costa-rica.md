@@ -81,7 +81,7 @@ Cuando hay una actividad comercial activa en la propiedad expropiada, la indemni
 
 La ley le da las herramientas para reclamarlo, pero esas herramientas tienen un plazo de uso: **cinco días hábiles desde la notificación del avalúo** para activar la discusión judicial. Y como muestran los criterios del Tribunal de Apelaciones, incluso quienes parecen tener razón en el fondo pueden perder si el reclamo no está técnica y documentalmente bien construido desde el inicio.
 
-Si ya recibió la notificación o anticipa que su propiedad podría verse afectada por un proyecto de obra pública, este es el momento de buscar asesoría especializada.
+Si ya recibió la notificación o anticipa que su propiedad podría verse afectada por un proyecto de obra pública, este es el momento de buscar [asesoría especializada en expropiaciones](/areas/expropiaciones).
 
 > 📌 Lea también: [Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuáles son mis derechos?](/articulos/expropiacion-costa-rica-derechos)
 

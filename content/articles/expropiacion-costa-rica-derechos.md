@@ -54,7 +54,7 @@ La **Ley de Expropiaciones de Costa Rica** le reconoce garantías concretas al c
 
 **Derecho a la indexación del valor pactado.** Si usted acepta el avalúo pero pasan más de seis meses sin que le paguen, el artículo 23 le permite solicitar que el valor se actualice conforme a los índices de inflación del Banco Central de Costa Rica.
 
-**Derecho a asesoría legal desde el inicio del proceso.** Nada en la ley le impide buscar acompañamiento profesional desde el momento de la notificación. De hecho, un abogado especialista en expropiación en Costa Rica puede ayudarle a evaluar si el avalúo es justo, a preparar su oposición dentro de los plazos legales y a proteger cada componente de su indemnización.
+**Derecho a asesoría legal desde el inicio del proceso.** Nada en la ley le impide buscar acompañamiento profesional desde el momento de la notificación. De hecho, un [abogado especialista en expropiación en Costa Rica](/areas/expropiaciones) puede ayudarle a evaluar si el avalúo es justo, a preparar su oposición dentro de los plazos legales y a proteger cada componente de su indemnización.
 
 ## ¿Está obligado a aceptar el avalúo administrativo del Estado?
 

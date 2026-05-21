@@ -41,17 +41,17 @@ export const sobreNosotrosMetadata: Metadata = {
 export const areasMetadata: Metadata = {
   title: "Áreas de Práctica · Derecho Público y Administrativo",
   description:
-    "31 áreas en Derecho Público: contencioso-administrativo, medidas cautelares, casación ante Sala Primera, amparo, contratación pública y más. Costa Rica.",
+    "32 áreas en Derecho Público: contencioso-administrativo, medidas cautelares, casación ante Sala Primera, amparo, contratación pública y más. Costa Rica.",
   openGraph: {
     title: "Áreas de Práctica · Corporación GC, Costa Rica",
     description:
-      "31 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
+      "32 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
     url: "/areas",
   },
   twitter: {
     title: "Áreas de Práctica · Corporación GC",
     description:
-      "31 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
+      "32 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
   },
 };
 

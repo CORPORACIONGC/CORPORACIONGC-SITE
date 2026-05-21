@@ -655,4 +655,84 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea también nuestra guía sobre el recurso de amparo en Costa Rica",
   },
+
+  "expropiaciones": {
+    hookHeadline: "¿Le notificaron una expropiación o una declaratoria de interés público?",
+    hookSubtext:
+      "El plazo es corto y decisivo: desde la notificación del avalúo administrativo usted tiene solo cinco días hábiles para manifestar su disconformidad, y su silencio se tiene como aceptación del precio (art. 25). El avalúo del Estado suele limitarse al terreno y las construcciones, pero la ley obliga a indemnizar el justo precio completo —derechos comerciales, lucro cesante, daño al remanente, intereses y más (art. 22)—. Oponerse a tiempo abre el proceso judicial donde un perito independiente revisa la valoración. Actuar con rapidez y respaldo técnico define cuánto recibe.",
+    scenariosTitle: "¿Cuándo necesita defender su expropiación?",
+    triggerScenarios: [
+      "Le notificaron una declaratoria de interés público sobre su propiedad",
+      "Le notificaron el avalúo administrativo y corre el plazo para responder",
+      "Considera que el monto ofrecido no refleja el valor real de su bien",
+      "Su propiedad alberga un negocio, licencias o una actividad productiva",
+      "El Estado expropia solo una parte y el remanente le queda inservible",
+      "Lo expropiaron y no le han pagado o no le reconocen intereses",
+      "El proyecto para el que lo expropiaron no se ejecutó (derecho de restitución)",
+    ],
+    services: [
+      {
+        title: "Oposición al avalúo administrativo",
+        description:
+          "Dentro de los cinco días hábiles siguientes a la notificación del avalúo, presentamos su disconformidad fundada. Si guarda silencio, la ley tiene el avalúo por aceptado y queda firme, sin posibilidad de oposición posterior (art. 25).",
+      },
+      {
+        title: "Determinación del justo precio",
+        description:
+          "El justo precio no es solo el terreno: el artículo 22 obliga a valorar las construcciones, los derechos de inquilinos y arrendatarios, las licencias y derechos comerciales, las concesiones y permisos de explotación, los gravámenes y cualquier otro elemento indemnizable.",
+      },
+      {
+        title: "Lucro cesante y daño al remanente",
+        description:
+          "Reclamamos el lucro cesante de un negocio activo, con base en la cláusula abierta del artículo 22 inciso i) y la jurisprudencia de la Sala Primera. Cuando la expropiación parcial deja el resto inservible, exigimos la expropiación de la totalidad del inmueble (art. 17).",
+      },
+      {
+        title: "Proceso especial ante el Juzgado Contencioso",
+        description:
+          "Llevamos el proceso especial de expropiación ante el Juzgado Contencioso-Administrativo y Civil de Hacienda, donde un perito independiente nombrado por el juez revisa el avalúo (art. 30) y se discute la indemnización definitiva (art. 29).",
+      },
+      {
+        title: "Intereses e indexación del valor",
+        description:
+          "Exigimos los intereses que la Administración debe reconocer de oficio, desde la desposesión del bien hasta el pago efectivo (art. 11); y si usted aceptó el avalúo y transcurren más de seis meses sin pago, la actualización del valor conforme a la inflación del Banco Central (art. 23).",
+      },
+      {
+        title: "Control de la posesión, el desalojo y la restitución",
+        description:
+          "Verificamos que la Administración no entre en posesión sin depositar antes el avalúo (art. 28), vigilamos los plazos de desalojo —quince días, o dos meses si es vivienda familiar (art. 30)— y gestionamos el derecho de restitución si el bien no se usa para el fin declarado (art. 16).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, me notificaron una expropiación y necesito asesoría para defender el justo precio de mi propiedad.",
+    commercialFaq: [
+      {
+        question: "¿Cuánto tiempo tengo para oponerme al avalúo?",
+        answer:
+          "Cinco días hábiles desde la notificación del avalúo administrativo (art. 25). Si no responde dentro de ese plazo, su silencio se tiene como aceptación del avalúo, que queda firme y ya no admite oposición en etapas posteriores. Por eso la evaluación técnica debe hacerse de inmediato.",
+      },
+      {
+        question: "¿Qué incluye el justo precio además del terreno?",
+        answer:
+          "El artículo 22 obliga a valorar, de forma independiente y detallada: las construcciones, los derechos de los inquilinos y arrendatarios, las licencias y derechos comerciales, las concesiones y permisos de explotación, los gravámenes y «cualesquiera otros elementos o derechos susceptibles de valoración e indemnización» (inciso i), base —junto con la jurisprudencia de la Sala Primera— del lucro cesante y el daño emergente.",
+      },
+      {
+        question: "¿El Estado puede entrar a mi propiedad antes de pagar?",
+        answer:
+          "No. La Administración debe depositar antes el monto del avalúo administrativo ante el Juzgado Contencioso-Administrativo y Civil de Hacienda, como requisito indispensable y previo a la entrada en posesión (art. 28). A partir de la resolución inicial, usted tiene quince días hábiles para desalojar, plazo que se extiende a dos meses cuando se trata de vivienda familiar (art. 30).",
+      },
+      {
+        question: "¿Qué pasa si expropian solo una parte de mi propiedad?",
+        answer:
+          "Si la parte que no se expropia resulta inadecuada para su uso o explotación racional, usted puede exigir que el Estado expropie la totalidad del inmueble (art. 17). En terrenos urbanos se consideran sobrantes inadecuados los que, a raíz de la expropiación, queden con frente, fondo o superficie inferiores a lo que exigen las normas para edificar.",
+      },
+      {
+        question: "¿Me reconocen intereses si se demora el pago?",
+        answer:
+          "Sí. La Administración debe reconocer intereses de oficio, a la tasa legal vigente, desde la desposesión del bien hasta el pago efectivo; cuando hay un depósito del avalúo, se calculan sobre la diferencia con el justiprecio (art. 11). Además, si usted aceptó el avalúo y pasan más de seis meses sin pago, puede pedir que el valor se actualice conforme a los índices de inflación del Banco Central (art. 23).",
+      },
+    ],
+    relatedArticleSlug: "expropiacion-costa-rica-derechos",
+    relatedArticleLabel:
+      "Lea nuestra guía: expropiación en Costa Rica (plazos, derechos y justo precio)",
+  },
 };
