@@ -889,10 +889,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           del proceso de contratación.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC asesora a entidades públicas y empresas privadas en todas las fases del
-          ciclo de contratación: desde la formulación de ofertas y la participación en
-          procedimientos de licitación hasta la impugnación de adjudicaciones y la defensa en
-          procedimientos de resolución contractual.
+          Como abogados especializados en contratación pública en Costa Rica, en Corporación GC
+          asesoramos a entidades públicas y empresas privadas en todas las fases del ciclo de
+          contratación: desde la formulación de ofertas y la participación en procedimientos de
+          licitación hasta la impugnación de adjudicaciones y la defensa en procedimientos de
+          resolución contractual.
         </p>
       </section>
 
@@ -1643,10 +1644,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           proceso y la defensa efectiva.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC asesora y representa a personas físicas y jurídicas sometidas a
-          procedimientos sancionatorios administrativos, garantizando el respeto de las garantías
-          constitucionales del debido proceso en todas las etapas del procedimiento. A continuación
-          se describen los instrumentos que integran esta materia.
+          Como abogados en procedimientos administrativos sancionatorios en Costa Rica, en
+          Corporación GC asesoramos y representamos a personas físicas y jurídicas sometidas a
+          estos procedimientos, garantizando el respeto de las garantías constitucionales del
+          debido proceso en todas las etapas. A continuación se describen los instrumentos que
+          integran esta materia.
         </p>
       </section>
 
@@ -4880,7 +4882,7 @@ export default async function AreaDetailPage({
       "@type": "Country",
       name: "Costa Rica",
     },
-    serviceType: "Legal Service",
+    serviceType: `Abogados especializados en ${area.title} en Costa Rica`,
   };
 
   const jsonLdFaq = commercial && commercial.commercialFaq.length > 0 ? {
