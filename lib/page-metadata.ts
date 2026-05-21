@@ -90,6 +90,25 @@ export const jurisprudenciaMetadata: Metadata = {
   },
 };
 
+export const contactoMetadata: Metadata = {
+  // El layout aplica la plantilla "%s · Corporación GC"; el título no debe
+  // repetir la marca para evitar "Contacto · Corporación GC · Corporación GC".
+  title: "Contacto",
+  description:
+    "Contacte a Corporación GC, bufete especialista en Derecho Público y litigio contencioso-administrativo en Costa Rica. Escríbanos por formulario, WhatsApp, correo o teléfono y le orientamos sin compromiso.",
+  openGraph: {
+    title: "Contacto · Corporación GC, Costa Rica",
+    description:
+      "Hablemos de su caso. Bufete dedicado al Derecho Público y al contencioso-administrativo en Costa Rica, dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA. Le orientamos sin compromiso.",
+    url: "/contacto",
+  },
+  twitter: {
+    title: "Contacto · Corporación GC",
+    description:
+      "Hablemos de su caso. Bufete especialista en Derecho Público y contencioso-administrativo en Costa Rica. Le orientamos sin compromiso.",
+  },
+};
+
 export const privacidadMetadata: Metadata = {
   title: "Política de Privacidad · Corporación GC",
   description:

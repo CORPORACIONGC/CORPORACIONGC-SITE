@@ -54,6 +54,7 @@ export function AnimatedEntry({
     <div
       ref={ref}
       className={className}
+      suppressHydrationWarning
       style={{
         opacity: isInView ? 1 : 0,
         transform: isInView ? "translate(0, 0)" : offsets[direction],
@@ -132,6 +133,7 @@ export function StaggerItem({
   return (
     <div
       className={className}
+      suppressHydrationWarning
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(24px)",

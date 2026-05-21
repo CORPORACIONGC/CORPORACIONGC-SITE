@@ -44,7 +44,7 @@ const contactItems = [
   },
 ];
 
-export function FirmContact() {
+export function FirmContact({ showHeading = true }: { showHeading?: boolean } = {}) {
   const whatsappUrl = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(FIRM_CONTACT.whatsappMessage)}`;
 
   return (
@@ -63,29 +63,33 @@ export function FirmContact() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
           {/* Left — Info */}
           <div>
-            <AnimatedEntry>
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
-                Contacto
-              </span>
-            </AnimatedEntry>
+            {showHeading && (
+              <>
+                <AnimatedEntry>
+                  <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
+                    Contacto
+                  </span>
+                </AnimatedEntry>
 
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Hablemos sobre
-                <br />
-                <span className="text-burgundy-light">su caso</span>
-              </h2>
-            </AnimatedEntry>
+                <AnimatedEntry delay={0.1}>
+                  <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
+                    Hablemos sobre
+                    <br />
+                    <span className="text-burgundy-light">su caso</span>
+                  </h2>
+                </AnimatedEntry>
 
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/70 leading-relaxed max-w-[50ch]">
-                Ofrecemos asesoría y representación jurídica de primer nivel en
-                todas las ramas del Derecho Público. Cuéntenos su situación y
-                buscaremos juntos la mejor estrategia legal.
-              </p>
-            </AnimatedEntry>
+                <AnimatedEntry delay={0.2}>
+                  <p className="mt-5 text-sm text-cream/70 leading-relaxed max-w-[50ch]">
+                    Ofrecemos asesoría y representación jurídica de primer nivel
+                    en todas las ramas del Derecho Público. Cuéntenos su
+                    situación y buscaremos juntos la mejor estrategia legal.
+                  </p>
+                </AnimatedEntry>
+              </>
+            )}
 
-            <StaggerContainer className="mt-10 space-y-4" stagger={0.06}>
+            <StaggerContainer className={`${showHeading ? "mt-10 " : ""}space-y-4`} stagger={0.06}>
               {contactItems.map((item, i) => {
                 const cardClassName = "group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400";
                 const inner = (

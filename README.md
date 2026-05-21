@@ -200,6 +200,19 @@ author: "Dr. Oscar Gonzalez Camacho"
 publicationType: "articulo"
 ```
 
+**Botones de contacto por WhatsApp (regla importante):**
+- **Boton flotante** de WhatsApp: aparece en TODOS los articulos.
+- **Bloque CTA "Atencion directa"** (con el boton "Escribir por WhatsApp"):
+  aparece SOLO en guias y articulos comerciales, es decir, los de contenido
+  propio en Markdown (`type: "article"`). Las piezas academicas
+  (`type: "pdf"`: tesis, libros, papers) no lo muestran, para no restarles
+  seriedad.
+- **Para futuras guias comerciales:** basta con publicarlas como `.md` con
+  `type: "article"`; el bloque CTA se añade automaticamente, no hay que
+  recordar nada. La logica vive en `app/articulos/[slug]/page.tsx`
+  (`showCommercialCta`). El mensaje de WhatsApp se arma solo con el tema del
+  articulo.
+
 ### `/sobre-nosotros` — Sobre el Bufete
 
 Pagina informativa con la historia, mision y equipo del bufete.

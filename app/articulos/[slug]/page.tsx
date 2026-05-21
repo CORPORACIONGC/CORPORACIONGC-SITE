@@ -9,17 +9,20 @@ import {
   formatDate,
   publicationTypeLabel,
 } from "@/lib/articles";
-import { TEAM } from "@/lib/constants";
+import { TEAM, FIRM_CONTACT } from "@/lib/constants";
 import { ATTORNEYS } from "@/lib/seo-constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PDFViewer } from "@/components/article/PDFViewer";
+import { WhatsAppFloat } from "@/components/article/WhatsAppFloat";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import {
   ArrowLeft,
   CalendarBlank,
   Tag,
   BookOpen,
   ArrowSquareOut,
+  WhatsappLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import { buildArticleMetadata } from "@/lib/page-metadata";
 
@@ -72,6 +75,23 @@ export default async function ArticlePage({
   if (!article) notFound();
 
   const isPdf = article.type === "pdf" && article.pdfFile;
+
+  /* Mensaje de WhatsApp con el tema del artículo, para que el contacto llegue
+     ya en contexto. Toma la parte del título antes de ":", "·" o "|". */
+  const articleTopic = article.title.split(/[:·|]/)[0].trim();
+  const whatsappArticleMessage = `Hola, leí su artículo "${articleTopic}" en el sitio y quisiera una consulta.`;
+  const whatsappUrl = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(whatsappArticleMessage)}`;
+
+  /* Contacto por WhatsApp en artículos:
+     - Botón flotante (WhatsAppFloat): en TODOS los artículos.
+     - Bloque CTA "Atención directa": SOLO en guías y artículos comerciales,
+       que son los de contenido propio (type: "article"). Las piezas
+       académicas (type: "pdf": tesis, libros, papers) no lo muestran para no
+       restarles seriedad.
+     Regla para el futuro: toda guía o artículo comercial se publica como
+     Markdown (type "article"), por lo que el bloque aparece automáticamente
+     al agregarla; no hay que recordar añadirlo. */
+  const showCommercialCta = !isPdf;
 
   /* Find matching team members for author bio (supports multiple coauthors) */
   const authorMembers = article.author
@@ -334,6 +354,42 @@ export default async function ArticlePage({
               </div>
             )}
 
+            {/* CTA de WhatsApp — solo en guías/artículos comerciales (ver
+                showCommercialCta). Vía rápida y directa, diferenciada del
+                formulario de contacto (que es la vía formal y detallada). */}
+            {showCommercialCta && (
+            <div className="mt-14 rounded-2xl border border-burgundy/20 bg-gradient-to-br from-burgundy/[0.08] via-cream/[0.02] to-transparent p-7 md:p-9">
+              <div className="flex items-start gap-5">
+                <div className="hidden sm:flex shrink-0 items-center justify-center w-12 h-12 rounded-xl bg-burgundy/[0.14] text-burgundy-light">
+                  <WhatsappLogo size={26} weight="fill" />
+                </div>
+                <div className="flex-1">
+                  <div className="text-[10px] tracking-[0.25em] uppercase text-gold/70 font-medium mb-2">
+                    Atención directa
+                  </div>
+                  <h2 className="font-display text-xl md:text-2xl font-semibold tracking-tight text-cream leading-snug">
+                    ¿Enfrenta un caso relacionado con este tema?
+                  </h2>
+                  <p className="mt-2.5 text-sm text-cream/60 leading-relaxed max-w-[54ch]">
+                    Escríbanos por WhatsApp para una respuesta rápida y directa.
+                    Converse con nuestro equipo y reciba una orientación inicial
+                    de su situación, sin compromiso.
+                  </p>
+                  <TrackedContactLink
+                    href={whatsappUrl}
+                    contactTarget="article-cta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm font-medium tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.97] transition-all duration-300"
+                  >
+                    <WhatsappLogo size={18} weight="fill" />
+                    Escribir por WhatsApp
+                  </TrackedContactLink>
+                </div>
+              </div>
+            </div>
+            )}
+
             {/* About the Author(s) */}
             {authorMembers.length > 0 && (
               <div className="mt-16 pt-8 border-t border-cream/[0.06]">
@@ -392,6 +448,7 @@ export default async function ArticlePage({
           </div>
         </div>
       </main>
+      <WhatsAppFloat href={whatsappUrl} />
       <Footer />
     </>
   );
