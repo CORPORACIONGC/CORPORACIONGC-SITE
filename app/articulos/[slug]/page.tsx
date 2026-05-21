@@ -17,6 +17,7 @@ import { PDFViewer } from "@/components/article/PDFViewer";
 import { WhatsAppFloat } from "@/components/article/WhatsAppFloat";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmparo";
+import { ReformaCpca } from "@/components/article/ReformaCpca";
 import {
   ArrowLeft,
   CalendarBlank,
@@ -332,7 +333,7 @@ export default async function ArticlePage({
               <div className="prose-article mb-10">
                 <MDXRemote
                   source={article.content}
-                  components={{ ComparativaViasAmparo }}
+                  components={{ ComparativaViasAmparo, ReformaCpca }}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],
@@ -347,7 +348,7 @@ export default async function ArticlePage({
               <div className="prose-article">
                 <MDXRemote
                   source={article.content}
-                  components={{ ComparativaViasAmparo }}
+                  components={{ ComparativaViasAmparo, ReformaCpca }}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],

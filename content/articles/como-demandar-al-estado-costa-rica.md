@@ -26,7 +26,7 @@ faq:
 
 Si una institución del Estado le denegó un permiso, le impuso una sanción que considera injusta, le revocó una concesión, no le respondió una solicitud o le causó un daño por su actuación u omisión, usted tiene derecho a demandar. No importa si se trata del Gobierno Central, una municipalidad, una institución autónoma o una empresa pública: en Costa Rica existe un mecanismo judicial diseñado para controlar las decisiones del poder público y proteger a los ciudadanos.
 
-Ese mecanismo es la **demanda contencioso-administrativa**, regulada por el Código Procesal Contencioso Administrativo (CPCA, Ley N.° 8508 del 28 de abril de 2006, vigente desde el 1° de enero de 2008). El CPCA transformó la justicia administrativa costarricense al establecer un sistema de tutela judicial plena, donde el juez tiene amplias facultades para anular actos ilegales, restituir derechos y condenar al Estado al pago de daños y perjuicios.
+Ese mecanismo es la **demanda contencioso-administrativa**, regulada por el [Código Procesal Contencioso Administrativo (CPCA)](/articulos/que-es-el-cpca-costa-rica), Ley N.° 8508 del 28 de abril de 2006, vigente desde el 1° de enero de 2008. El CPCA transformó la justicia administrativa costarricense al establecer un sistema de tutela judicial plena, donde el juez tiene amplias facultades para anular actos ilegales, restituir derechos y condenar al Estado al pago de daños y perjuicios.
 
 Esta guía está respaldada por la experiencia de Corporación GC, cuyo director —el Dr. Óscar Eduardo González Camacho— participó directamente en la redacción del CPCA durante su ejercicio como Magistrado de la Sala Primera de la Corte Suprema de Justicia.
 

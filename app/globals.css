@@ -497,3 +497,273 @@ html {
 @media (max-width: 640px) {
   .prose-article .gc-comparativa .gc-table-wrap { margin-inline: -24px; padding-inline: 24px; }
 }
+
+/* ============================================================
+   Tablas Markdown genéricas en artículos (sintaxis | ... |).
+   El sitio solo estilaba .gc-comparativa; estas reglas dan a las
+   tablas de Markdown el estilo de marca y, sobre todo, scroll
+   horizontal en móvil para que no se corten columnas.
+   Se usa el combinador hijo (.prose-article > table) para NO
+   afectar al componente .gc-comparativa (su tabla está anidada).
+   ============================================================ */
+.prose-article > table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 1.75rem 0;
+}
+.prose-article > table thead th {
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  padding: 14px 16px;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-cream) 18%, transparent);
+  white-space: nowrap;
+}
+.prose-article > table tbody td {
+  vertical-align: top;
+  padding: 14px 16px;
+  min-width: 11rem;
+  color: color-mix(in oklab, var(--color-cream) 78%, transparent);
+  border-bottom: 1px solid color-mix(in oklab, var(--color-cream) 8%, transparent);
+}
+.prose-article > table tbody tr:last-child td { border-bottom: 0; }
+.prose-article > table thead th:first-child,
+.prose-article > table tbody td:first-child {
+  min-width: 7rem;
+  color: var(--color-cream);
+  font-weight: 500;
+}
+
+/* ============================================================
+   Reforma 2008: comparación "Régimen anterior vs CPCA" (.gc-reforma).
+   Componente components/article/ReformaCpca.tsx. Los tokens del snippet
+   original que NO existen en este proyecto (--tracking-*, --text-*,
+   --radius-*) se convirtieron a valores literales. Prefijado con
+   .prose-article para ganar especificidad sobre los estilos del artículo.
+   ============================================================ */
+.prose-article .gc-reforma {
+  margin: 2rem 0;
+  padding: 0;
+  color: var(--color-cream);
+  font-family: var(--font-body);
+}
+.prose-article .gc-reforma .gc-eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  margin-bottom: 14px;
+}
+.prose-article .gc-reforma .gc-eyebrow::before {
+  content: ""; display: block;
+  width: 32px; height: 1px;
+  background: var(--color-gold);
+}
+.prose-article .gc-reforma h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--color-cream);
+  margin: 0 0 0.5rem;
+  max-width: none;
+}
+.prose-article .gc-reforma h2 em {
+  font-style: normal;
+  color: var(--color-burgundy-light);
+}
+.prose-article .gc-reforma .gc-lead {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: color-mix(in oklab, var(--color-cream) 75%, transparent);
+  max-width: 65ch;
+  margin: 0 0 32px;
+}
+.prose-article .gc-reforma .gc-cols {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 1.4fr 1.4fr;
+  gap: 0;
+  align-items: end;
+  padding: 0 0 18px;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-cream) 10%, transparent);
+}
+.prose-article .gc-reforma .gc-col-h {
+  padding: 0 24px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+}
+.prose-article .gc-reforma .gc-col-h:first-child { padding-left: 0; }
+.prose-article .gc-reforma .gc-col-h:last-child  { padding-right: 0; }
+.prose-article .gc-reforma .gc-col-h .gc-year {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.prose-article .gc-reforma .gc-col-h--new .gc-year { color: var(--color-burgundy-light); }
+.prose-article .gc-reforma .gc-col-h .gc-cite {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: color-mix(in oklab, var(--color-cream) 50%, transparent);
+  margin-top: 4px;
+}
+.prose-article .gc-reforma .gc-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 1.4fr 1.4fr;
+  gap: 0;
+  align-items: stretch;
+  border-bottom: 1px solid color-mix(in oklab, var(--color-cream) 6%, transparent);
+}
+.prose-article .gc-reforma .gc-row:last-of-type { border-bottom: 0; }
+.prose-article .gc-reforma .gc-cell {
+  padding: 26px 24px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: color-mix(in oklab, var(--color-cream) 75%, transparent);
+}
+.prose-article .gc-reforma .gc-cell:first-child { padding-left: 0; }
+.prose-article .gc-reforma .gc-cell:last-child  { padding-right: 0; }
+.prose-article .gc-reforma .gc-aspect {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-cream);
+  line-height: 1.2;
+  display: flex; align-items: center;
+}
+.prose-article .gc-reforma .gc-aspect-num {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  margin-right: 14px;
+  width: 18px;
+}
+.prose-article .gc-reforma .gc-old {
+  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+}
+.prose-article .gc-reforma .gc-new {
+  color: color-mix(in oklab, var(--color-cream) 90%, transparent);
+  position: relative;
+  background: color-mix(in oklab, var(--color-burgundy) 4%, transparent);
+}
+.prose-article .gc-reforma .gc-new::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 12%; bottom: 12%;
+  width: 2px;
+  background: var(--color-burgundy);
+  opacity: 0.85;
+}
+.prose-article .gc-reforma .gc-art {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--color-burgundy) 18%, transparent);
+  color: var(--color-burgundy-light);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+.prose-article .gc-reforma .gc-closing {
+  display: flex; gap: 16px;
+  margin-top: 2rem;
+  padding: 28px 28px 28px 24px;
+  border-radius: 16px;
+  border: 1px solid color-mix(in oklab, var(--color-burgundy) 28%, transparent);
+  background: color-mix(in oklab, var(--color-burgundy) 5%, transparent);
+}
+.prose-article .gc-reforma .gc-closing::before {
+  content: ""; flex: 0 0 3px;
+  background: var(--color-burgundy);
+  border-radius: 2px;
+}
+.prose-article .gc-reforma .gc-closing p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  color: color-mix(in oklab, var(--color-cream) 92%, transparent);
+  max-width: 62ch;
+}
+.prose-article .gc-reforma .gc-closing p em {
+  font-style: normal;
+  color: var(--color-burgundy-light);
+}
+@media (max-width: 720px) {
+  .prose-article .gc-reforma .gc-lead { font-size: 1rem; margin-bottom: 28px; }
+  .prose-article .gc-reforma .gc-cols { display: none; }
+  .prose-article .gc-reforma .gc-row {
+    display: block;
+    padding: 24px 0;
+    border-bottom: 1px solid color-mix(in oklab, var(--color-cream) 10%, transparent);
+  }
+  .prose-article .gc-reforma .gc-cell { padding: 0; }
+  .prose-article .gc-reforma .gc-aspect {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .prose-article .gc-reforma .gc-old,
+  .prose-article .gc-reforma .gc-new {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 14px;
+    padding: 12px 0 12px 14px;
+    background: transparent;
+    position: relative;
+    font-size: 14.5px;
+  }
+  .prose-article .gc-reforma .gc-old::before,
+  .prose-article .gc-reforma .gc-new::before {
+    content: attr(data-label);
+    position: static;
+    width: auto;
+    background: none;
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: color-mix(in oklab, var(--color-cream) 50%, transparent);
+    padding-top: 3px;
+  }
+  .prose-article .gc-reforma .gc-new {
+    border-left: 2px solid var(--color-burgundy);
+    background: color-mix(in oklab, var(--color-burgundy) 5%, transparent);
+    border-radius: 0 6px 6px 0;
+    margin-top: 8px;
+  }
+  .prose-article .gc-reforma .gc-new::before { color: var(--color-burgundy-light); }
+}
