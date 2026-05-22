@@ -735,4 +735,84 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea nuestra guía: expropiación en Costa Rica (plazos, derechos y justo precio)",
   },
+
+  "derecho-administrativo": {
+    hookHeadline: "¿Tiene un conflicto con una institución pública?",
+    hookSubtext:
+      "El Derecho Administrativo es el marco que rige cómo actúa la Administración Pública y cómo usted se defiende frente a ella. Todo acto administrativo debe ajustarse al ordenamiento: si le falta total o parcialmente alguno de sus elementos constitutivos, es nulo (arts. 166 y 167 de la LGAP). Usted puede impugnarlo con los recursos de revocatoria y apelación (arts. 342-352) y, como el agotamiento de la vía administrativa es facultativo (art. 31 del CPCA), también puede acudir directamente al contencioso. Un análisis técnico del acto y de los plazos define su estrategia.",
+    scenariosTitle: "¿Cuándo necesita un abogado en derecho administrativo?",
+    triggerScenarios: [
+      "Una institución pública le denegó un permiso, una licencia o una autorización",
+      "Le dictaron un acto administrativo que considera ilegal o lesivo de sus derechos",
+      "Enfrenta un procedimiento administrativo que puede afectar sus derechos subjetivos",
+      "La Administración no le responde una gestión o un recurso",
+      "Le impusieron una obligación o una carga sin el debido procedimiento",
+      "Necesita impugnar un acto con los recursos de revocatoria y apelación",
+      "Quiere demandar al Estado y evaluar si conviene agotar la vía administrativa",
+    ],
+    services: [
+      {
+        title: "Análisis de legalidad y vicios del acto",
+        description:
+          "Determinamos si el acto adolece de un vicio que lo invalida: hay nulidad absoluta cuando faltan totalmente uno o varios de sus elementos constitutivos (art. 166) y relativa cuando uno es imperfecto (art. 167). Un recurso bien fundado en un motivo de legalidad hace obligatoria la anulación del acto (art. 162).",
+      },
+      {
+        title: "Recursos administrativos: revocatoria y apelación",
+        description:
+          "Interponemos los recursos ordinarios contra el acto: la revocatoria ante el mismo órgano y la apelación ante el superior jerárquico, dentro de los tres días hábiles tratándose del acto final (art. 346), de forma potestativa —uno solo o ambos— (art. 347), conforme a los artículos 342 a 352 de la LGAP.",
+      },
+      {
+        title: "Defensa en el procedimiento administrativo ordinario",
+        description:
+          "Cuando el acto final pueda causarle un perjuicio grave, la Administración debe seguir el procedimiento ordinario con comparecencia oral y privada (arts. 308 y 309). Ejercemos su defensa y alegamos la nulidad cuando se omiten formalidades sustanciales que causan indefensión (art. 223).",
+      },
+      {
+        title: "Estrategia de agotamiento de la vía",
+        description:
+          "El agotamiento de la vía administrativa es facultativo (art. 31 del CPCA): definimos si conviene impugnar en sede administrativa o acudir directamente a la jurisdicción contencioso-administrativa, según la urgencia y la estrategia del caso.",
+      },
+      {
+        title: "Inactividad y silencio administrativo",
+        description:
+          "Cuando la Administración no resuelve, accionamos según corresponda: el silencio negativo habilita la vía siguiente (art. 261) y el silencio positivo aprueba su solicitud de permiso, licencia o autorización transcurrido un mes (arts. 330 y 331).",
+      },
+      {
+        title: "Continuidad hacia la jurisdicción contencioso-administrativa",
+        description:
+          "Si la vía administrativa no resuelve su situación, llevamos la impugnación —y, cuando procede, la solicitud de medida cautelar— ante el Tribunal Contencioso Administrativo conforme al CPCA.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un conflicto con una institución pública y necesito asesoría en derecho administrativo.",
+    commercialFaq: [
+      {
+        question: "¿Cuándo es nulo un acto administrativo?",
+        answer:
+          "Un acto es inválido cuando es sustancialmente disconforme con el ordenamiento jurídico (art. 158 de la LGAP). La nulidad es absoluta cuando faltan totalmente uno o varios de sus elementos constitutivos (art. 166) y relativa cuando uno de ellos es imperfecto (art. 167). En caso de duda sobre la gravedad del vicio, se está a la consecuencia más favorable a la conservación del acto (art. 168).",
+      },
+      {
+        question: "¿Qué recursos puedo interponer contra un acto administrativo?",
+        answer:
+          "Los recursos ordinarios son la revocatoria —ante el mismo órgano que dictó el acto— y la apelación —ante el superior jerárquico—, regulados en los artículos 342 a 352 de la LGAP. Contra el acto final se interponen dentro de los tres días hábiles siguientes a su comunicación (art. 346); es potestativo usar uno solo o ambos (art. 347). La alzada es de única instancia y agota la vía administrativa (art. 350).",
+      },
+      {
+        question: "¿Tengo que agotar la vía administrativa antes de demandar?",
+        answer:
+          "No, por regla general. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo, salvo en materia municipal y de contratación administrativa (artículos 173 y 182 de la Constitución). Usted puede interponer los recursos administrativos o acudir directamente a la jurisdicción contencioso-administrativa.",
+      },
+      {
+        question: "¿Qué pasa si la Administración no me responde?",
+        answer:
+          "Opera el silencio administrativo. El negativo (art. 261 de la LGAP): transcurrido el plazo de ley sin resolución expresa, se entiende rechazada la gestión y queda habilitada la vía siguiente. El positivo (arts. 330 y 331): en solicitudes de permisos, licencias y autorizaciones, transcurrido un mes sin respuesta se entiende aprobada, y la Administración ya no puede dictar un acto denegatorio.",
+      },
+      {
+        question: "¿Qué debe respetar la Administración antes de dictar un acto que me perjudica?",
+        answer:
+          "Cuando el acto final pueda causarle un perjuicio grave —o en procedimientos disciplinarios de gravedad—, la Administración debe seguir el procedimiento ordinario (art. 308) con comparecencia oral y privada (art. 309), acceso al expediente y derecho de defensa. La omisión de formalidades sustanciales que cause indefensión acarrea la nulidad de lo actuado (art. 223).",
+      },
+    ],
+    relatedArticleSlug: "como-demandar-al-estado-costa-rica",
+    relatedArticleLabel:
+      "Lea nuestra guía: ¿Cómo demandar al Estado en Costa Rica?",
+  },
 };

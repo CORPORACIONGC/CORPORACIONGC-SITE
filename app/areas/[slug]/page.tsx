@@ -1093,13 +1093,14 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           han sido afectados.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC representa a personas físicas, empresas y entes públicos en procedimientos
-          administrativos ante la Administración centralizada y descentralizada, y en la
-          preparación de la vía administrativa como antesala del proceso contencioso.
+          Como abogados en derecho administrativo en Costa Rica, en Corporación GC representamos a
+          personas físicas, empresas y entes públicos en procedimientos administrativos ante la
+          Administración centralizada y descentralizada, y en la preparación de la vía
+          administrativa como antesala del proceso contencioso.
         </p>
       </section>
 
-      <Instrumento titulo="Recurso de revocatoria" fundamento="LGAP, arts. 342 a 345">
+      <Instrumento titulo="Recurso de revocatoria" fundamento="LGAP, arts. 342-352">
         <p>
           El recurso de revocatoria es el medio de impugnación ordinario que se interpone ante el
           mismo órgano que dictó el acto administrativo para solicitar su revocación, modificación
@@ -1114,18 +1115,19 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Recurso de apelación en subsidio" fundamento="LGAP, art. 343">
+      <Instrumento titulo="Recurso de apelación en subsidio" fundamento="LGAP, arts. 343, 347 y 349">
         <p>
-          El recurso de apelación se interpone conjuntamente con la revocatoria y en forma
-          subsidiaria —es decir, para el caso de que la revocatoria sea rechazada—. El artículo
-          343 de la LGAP establece que la apelación se dirige al superior jerárquico del órgano
-          que dictó el acto. Si la revocatoria es declarada sin lugar, el órgano debe elevar el
-          expediente al superior para que resuelva la apelación.
+          El recurso de apelación es un recurso ordinario (art. 343) que puede interponerse de
+          forma conjunta con la revocatoria y en subsidio —para el caso de que la revocatoria sea
+          rechazada—; es potestativo del administrado usar uno solo o ambos recursos (art. 347).
+          Se interpone ante el órgano director del procedimiento, que emplaza a las partes y eleva
+          el expediente al superior jerárquico para que resuelva la alzada (art. 349).
         </p>
         <p>
-          La interposición conjunta de revocatoria con apelación en subsidio es la fórmula
-          estándar en el derecho administrativo costarricense para agotar la vía administrativa,
-          requisito previo para acceder a la jurisdicción contencioso-administrativa.
+          La interposición conjunta de revocatoria con apelación en subsidio es la fórmula estándar
+          para agotar la vía administrativa cuando el administrado opta por ella; conviene precisar
+          que ese agotamiento es facultativo (art. 31 del CPCA), de modo que también puede acudirse
+          directamente a la jurisdicción contencioso-administrativa.
         </p>
       </Instrumento>
 
@@ -1160,21 +1162,21 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 
       <Instrumento titulo="Agotamiento de la vía administrativa" fundamento="CPCA, art. 31">
         <p>
-          El artículo 31 del CPCA establece que, como regla general, para acudir a la jurisdicción
-          contencioso-administrativa es necesario haber agotado previamente la vía administrativa.
-          Esto significa que el administrado debe haber interpuesto los recursos administrativos
-          correspondientes (revocatoria con apelación en subsidio) contra el acto que pretende
-          impugnar judicialmente. La vía administrativa se considera agotada cuando se ha resuelto
-          el último recurso disponible o cuando ha operado el silencio administrativo negativo.
+          El artículo 31 del Código Procesal Contencioso-Administrativo establece que el agotamiento
+          de la vía administrativa es facultativo, salvo en los supuestos de los artículos 173 y 182
+          de la Constitución Política (materia municipal y contratación administrativa). Esto
+          significa que el administrado puede optar por interponer los recursos administrativos
+          —revocatoria y apelación— o acudir directamente a la jurisdicción contencioso-administrativa,
+          según le convenga.
         </p>
         <p>
-          Existen excepciones al agotamiento: no se exige cuando la conducta impugnada es una
-          actuación material (vía de hecho), una omisión, la inactividad de la Administración,
-          o en los demás casos expresamente previstos por el CPCA.
+          Cuando se opta por la vía administrativa, esta se agota con la resolución del recurso de
+          alzada —que constituye la única instancia jerárquica (art. 350 de la LGAP)— o cuando opera
+          el silencio negativo por no resolverse dentro del plazo de ley (art. 261 de la LGAP).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Silencio administrativo" fundamento="LGAP, arts. 261 y 330">
+      <Instrumento titulo="Silencio administrativo" fundamento="LGAP, arts. 261, 330 y 331">
         <p>
           El silencio administrativo opera cuando la Administración no resuelve un recurso o
           petición dentro del plazo legalmente establecido. La LGAP distingue dos modalidades:
@@ -1189,74 +1191,6 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Administración en materia autorizatoria.
         </p>
       </Instrumento>
-
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre derecho administrativo
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué recursos puedo interponer contra un acto administrativo en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La LGAP establece dos recursos administrativos ordinarios contra los actos de la
-              Administración Pública. El recurso de revocatoria, regulado en los artículos 342 a 345,
-              se interpone ante el mismo órgano que dictó el acto dentro de los tres días hábiles
-              siguientes a su notificación; el órgano tiene ocho días para resolverlo y puede confirmar,
-              modificar o revocar total o parcialmente el acto impugnado. El recurso de apelación,
-              regulado en el artículo 343, se interpone conjuntamente con la revocatoria y en forma
-              subsidiaria ante el superior jerárquico, para el caso de que la revocatoria sea rechazada.
-              La interposición conjunta de revocatoria con apelación en subsidio es la fórmula estándar
-              para agotar la vía administrativa, requisito previo para acceder a la jurisdicción
-              contencioso-administrativa conforme al artículo 31 del CPCA. Agotada la vía administrativa,
-              el administrado puede acudir al Tribunal Contencioso Administrativo para impugnar
-              judicialmente el acto conforme al artículo 10 del CPCA.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es el procedimiento administrativo ordinario y cuándo es obligatorio?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El procedimiento administrativo ordinario, regulado en los artículos 308 a 319 de la LGAP,
-              es el cauce formal que la Administración Pública debe seguir para emitir actos que afecten
-              derechos subjetivos o intereses legítimos de los administrados. El artículo 308 establece
-              que este procedimiento es obligatorio cuando el acto pueda causar perjuicio grave al
-              administrado, cuando se trate de un procedimiento sancionatorio, o cuando así lo exija una
-              ley especial. Sus fases incluyen: inicio mediante auto de apertura, instrucción probatoria,
-              audiencia oral y privada, alegatos y resolución final. El procedimiento garantiza el
-              derecho de defensa, el acceso al expediente, la posibilidad de ofrecer prueba y el derecho
-              a ser oído antes del acto final. La omisión del procedimiento ordinario cuando es obligatorio
-              constituye un vicio de nulidad absoluta conforme al artículo 223 de la LGAP, que puede ser
-              declarada incluso de oficio por la propia Administración o por los tribunales.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué ocurre si la Administración no responde un recurso dentro del plazo legal?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Cuando la Administración no resuelve un recurso o petición dentro del plazo legalmente
-              establecido, opera el silencio administrativo. La LGAP distingue dos modalidades. El
-              silencio negativo, regulado en el artículo 261, opera como regla general: transcurridos
-              dos meses sin resolución expresa, se entiende denegada la gestión, habilitando al
-              administrado para acudir a la siguiente instancia administrativa o a la vía jurisdiccional
-              contencioso-administrativa. El silencio positivo, regulado en el artículo 330, opera en
-              materia de permisos, licencias, autorizaciones y aprobaciones en ejercicio de funciones de
-              fiscalización y tutela: transcurrido un mes sin resolución expresa, se entiende aprobada
-              la gestión. El silencio positivo constituye una garantía frente a la inactividad
-              administrativa en materia autorizatoria. Es fundamental identificar correctamente cuál
-              modalidad aplica en cada caso, pues los efectos son opuestos. Corporación GC asesora en
-              la determinación del régimen aplicable y en las acciones procedentes ante la inactividad.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   ),
 
