@@ -886,4 +886,78 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "materia-municipal": {
+    hookHeadline: "¿La municipalidad le denegó una patente o le dictó un acto que lo perjudica?",
+    hookSubtext:
+      "Las municipalidades son autónomas, pero sus actos deben ajustarse a la ley. Si un acuerdo del Concejo o una decisión municipal lo afecta —una patente denegada, un cobro de tributos, una clausura, una valoración—, usted puede impugnarlo con los recursos de revocatoria y apelación del Código Municipal (arts. 162 a 171). En materia municipal el agotamiento de la vía administrativa es preceptivo (art. 31 del CPCA), de modo que cumplir bien esos recursos —y a tiempo, en cinco días— es decisivo antes de demandar.",
+    scenariosTitle: "¿Cuándo necesita un abogado en derecho municipal?",
+    triggerScenarios: [
+      "La municipalidad le denegó, suspendió o revocó una patente o licencia comercial",
+      "Recibió un cobro de tributos, tasas o multas municipales que considera improcedente",
+      "Un acuerdo del Concejo Municipal lesiona sus derechos o los de su empresa",
+      "Le notificaron una clausura o una orden de la municipalidad",
+      "Necesita impugnar un acto municipal y el plazo es de solo cinco días",
+      "Una decisión de la alcaldía o de un funcionario municipal le causa un perjuicio",
+      "Quiere demandar a la municipalidad ante la jurisdicción contencioso-administrativa",
+    ],
+    services: [
+      {
+        title: "Impugnación de patentes y licencias",
+        description:
+          "Atacamos la denegación, suspensión o revocación de patentes y licencias comerciales. Verificamos el silencio positivo a los treinta días (art. 89), que la denegación se ajuste a las causales del art. 90 y que la suspensión por falta de pago respete el debido proceso (art. 90 bis del Código Municipal).",
+      },
+      {
+        title: "Defensa frente a tributos y tasas municipales",
+        description:
+          "Revisamos la legalidad de los cobros, las tasas y las valoraciones municipales. Las tasas deben responder al costo del servicio más un diez por ciento (art. 83) y los tributos prescriben en cinco años (art. 82); cuestionamos los cobros improcedentes antes de que la certificación del contador se vuelva título ejecutivo.",
+      },
+      {
+        title: "Recursos contra acuerdos del Concejo",
+        description:
+          "Interponemos la revocatoria ante el Concejo y la apelación ante el Tribunal Contencioso-Administrativo dentro del quinto día (arts. 162 y 165). La apelación procede por ilegalidad y la revocatoria también por inoportunidad del acuerdo.",
+      },
+      {
+        title: "Recursos contra actos de la alcaldía y funcionarios",
+        description:
+          "Impugnamos las decisiones de la alcaldía y de los funcionarios municipales con los recursos de los artículos 170 y 171: apelación ante el Concejo o ante el Tribunal Contencioso-Administrativo, según el órgano, dentro del plazo de cinco días.",
+      },
+      {
+        title: "Agotamiento de la vía administrativa municipal",
+        description:
+          "En materia municipal el agotamiento es preceptivo (art. 31 del CPCA, supuesto del art. 173 de la Constitución). Cumplimos correctamente los recursos del Código Municipal —presupuesto indispensable de la demanda— para que el caso no se caiga por un defecto de admisibilidad.",
+      },
+      {
+        title: "Litigio contencioso contra la municipalidad",
+        description:
+          "Agotada la vía, demandamos a la municipalidad ante la jurisdicción contencioso-administrativa: pedimos la anulación del acto o acuerdo, el restablecimiento del derecho y la indemnización de los daños (art. 42 del CPCA), con medidas cautelares cuando hay urgencia (art. 19).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un conflicto con una municipalidad y necesito asesoría en derecho municipal.",
+    commercialFaq: [
+      {
+        question: "¿Cuánto tiempo tengo para impugnar un acto municipal?",
+        answer:
+          "Por regla general, cinco días para interponer la revocatoria y la apelación, tanto contra los acuerdos del Concejo (arts. 162 y 165 del Código Municipal) como contra los actos de la alcaldía y de los funcionarios municipales (arts. 170 y 171). Es un plazo muy corto, por lo que conviene actuar de inmediato: dejarlo pasar consolida el acto y cierra la vía.",
+      },
+      {
+        question: "¿A quién se le apela un acuerdo del Concejo Municipal?",
+        answer:
+          "La revocatoria la conoce el propio Concejo y la apelación la resuelve el Tribunal Contencioso-Administrativo, que actúa como jerarca impropio y debe resolver en el plazo máximo de un mes (art. 165 del Código Municipal y art. 31 del CPCA). La apelación procede solo por ilegalidad; la revocatoria también por inoportunidad del acuerdo.",
+      },
+      {
+        question: "¿Tengo que agotar la vía administrativa antes de demandar a la municipalidad?",
+        answer:
+          "Sí. La materia municipal es una de las excepciones en que el agotamiento de la vía administrativa es preceptivo (art. 31 del CPCA, supuesto del art. 173 de la Constitución). A diferencia de la regla general, aquí hay que cumplir los recursos del Código Municipal antes de acudir a la jurisdicción contencioso-administrativa; omitirlos puede hacer inadmisible la demanda.",
+      },
+      {
+        question: "¿Me pueden quitar la patente por no pagar?",
+        answer:
+          "La licencia comercial se suspende por falta de pago de dos o más trimestres, sean consecutivos o alternos, y en caso de reincidencia la municipalidad puede revocarla, previo debido proceso (art. 90 bis del Código Municipal). Si la suspensión o la revocación se dicta sin respetar el procedimiento o sin fundamento, es impugnable con los recursos del Código Municipal.",
+      },
+    ],
+    relatedArticleSlug: "potestad-discrecional-municipalidades-urbanismo",
+    relatedArticleLabel:
+      "Lea: La potestad discrecional de la administración municipal en materia urbanística",
+  },
 };

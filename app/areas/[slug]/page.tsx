@@ -2065,121 +2065,115 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El derecho municipal costarricense se sustenta en la autonomía que la
-          Constitución Política reconoce a las municipalidades en sus artículos
-          168 a 175 y que el Código Municipal (Ley N.° 7794 del 30 de abril de
-          1998) desarrolla. Las municipalidades son corporaciones de derecho
-          público dotadas de personalidad jurídica y patrimonio propio, con
-          potestad para administrar los intereses y servicios locales de cada
-          cantón. Esta autonomía comprende las potestades normativa, tributaria,
-          administrativa y de gobierno que el ordenamiento les confiere.
+          El derecho municipal se sustenta en la autonomía que la Constitución Política reconoce a
+          las municipalidades en sus artículos 168 a 175 y que desarrolla el Código Municipal
+          (Ley N.° 7794). La municipalidad es una persona jurídica estatal, con patrimonio propio y
+          autonomía política, administrativa y financiera (art. 4 del Código Municipal): administra
+          los intereses y servicios de su cantón, fija las tasas y los precios de sus servicios y
+          propone sus tributos a la Asamblea Legislativa.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          La práctica en derecho municipal abarca tanto la asesoría a
-          municipalidades y administrados en el ejercicio de las potestades
-          municipales, como la impugnación de los actos y resoluciones que de
-          ellas emanen, en vía administrativa y jurisdiccional.
+          Como abogados en derecho municipal en Costa Rica, en Corporación GC impugnamos los actos y
+          acuerdos municipales que lesionan a vecinos y empresas —patentes denegadas, cobros de
+          tributos, clausuras, acuerdos del Concejo— y asesoramos a las propias municipalidades. A
+          continuación se describen los instrumentos jurídicos que integran esta área de práctica.
         </p>
       </section>
 
       <Instrumento titulo="Autonomía municipal y competencias" fundamento="Constitución, arts. 168-175; Código Municipal, art. 4">
         <p>
-          El artículo 170 de la Constitución Política establece que las
-          corporaciones municipales son autónomas y que la ley determinará las
-          competencias que se les trasladarán del Poder Ejecutivo. El artículo 4
-          del Código Municipal desarrolla esta autonomía, señalando que la
-          municipalidad posee la autonomía política, administrativa y financiera
-          que le confiere la Constitución. Esta autonomía le permite dictar
-          reglamentos autónomos de organización y de servicio, crear tributos
-          locales conforme a la ley, administrar y prestar los servicios públicos
-          municipales, y ejercer las competencias que el ordenamiento le atribuye
-          en materia de planificación urbana, control de construcciones y
-          protección del ambiente a nivel local.
+          El artículo 170 de la Constitución Política reconoce a las municipalidades una autonomía
+          que el artículo 4 del Código Municipal concreta en tres planos: político, administrativo y
+          financiero. En su ejercicio, la municipalidad dicta reglamentos autónomos de organización y
+          de servicio, acuerda y ejecuta su presupuesto, administra y presta los servicios públicos
+          locales, aprueba las tasas, los precios y las contribuciones municipales, y propone sus
+          proyectos de tributos a la Asamblea Legislativa. Esa autonomía no es ilimitada: la
+          municipalidad está sujeta al principio de legalidad y sus conductas son fiscalizables e
+          impugnables.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Licencias municipales y patentes comerciales" fundamento="Código Municipal, arts. 68 a 74">
+      <Instrumento titulo="Licencias y patentes municipales" fundamento="Código Municipal, arts. 88-92">
         <p>
-          Los artículos 68 a 74 del Código Municipal regulan el régimen de
-          licencias municipales. El artículo 68 establece que para ejercer
-          cualquier actividad lucrativa en el cantón se requiere contar con la
-          licencia municipal respectiva. El artículo 69 dispone que la
-          municipalidad, mediante acuerdo del Concejo, fijará las condiciones y
-          requisitos para el otorgamiento de las licencias. El artículo 70 prevé
-          las causales de denegación de la licencia, y el artículo 74 regula las
-          tasas y precios que las municipalidades cobran por los servicios que
-          prestan, los cuales se fijarán tomando en consideración el costo
-          efectivo más un diez por ciento de utilidad para su desarrollo. La
-          suspensión y cancelación de la patente por incumplimiento de las
-          obligaciones tributarias se regula en el artículo 81 bis del Código
-          Municipal. La patente municipal constituye un tributo cuyo hecho
-          generador es el ejercicio de la actividad lucrativa autorizada.
+          Para ejercer cualquier actividad lucrativa en el cantón se requiere la licencia municipal,
+          que se obtiene mediante el pago de un impuesto de patente (art. 88). La municipalidad debe
+          resolver la solicitud en un plazo máximo de treinta días naturales; vencido ese plazo y
+          cumplidos los requisitos sin respuesta, el solicitante puede establecer su actividad
+          —silencio positivo (art. 89)—.
+        </p>
+        <p>
+          La licencia solo puede denegarse cuando la actividad sea contraria a la ley, la moral o las
+          buenas costumbres, cuando no se cumplan los requisitos legales o cuando la ubicación no esté
+          permitida por los reglamentos municipales (art. 90). Se suspende por falta de pago de dos o
+          más trimestres y, en caso de reincidencia, puede revocarse previo debido proceso (art. 90
+          bis). El impuesto de patentes y la licencia de licores se rigen, además, por leyes
+          especiales (art. 92).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Tributos municipales e impuesto de bienes inmuebles" fundamento="Código Municipal, art. 68; Ley 7509, arts. 1 a 8">
+      <Instrumento titulo="Tributos, tasas y precios municipales" fundamento="Código Municipal, arts. 77, 77 bis, 82 y 83">
         <p>
-          Las municipalidades poseen potestad tributaria propia, reconocida
-          constitucionalmente y desarrollada en el Código Municipal y leyes
-          especiales. El impuesto sobre bienes inmuebles, regulado por la Ley de
-          Impuesto sobre Bienes Inmuebles (Ley N.° 7509 del 9 de mayo de 1995),
-          constituye el tributo municipal más relevante. El artículo 1 de la Ley
-          7509 establece un impuesto anual sobre los bienes inmuebles situados en
-          cada cantón, cuya administración corresponde a la municipalidad
-          respectiva. Los artículos 2 a 8 regulan el sujeto pasivo, la base
-          imponible (valor del inmueble inscrito en la plataforma de valores),
-          la tarifa aplicable y las exenciones. Los contribuyentes pueden
-          impugnar las valoraciones y los cobros municipales mediante los recursos
-          administrativos que establece el Código Municipal.
+          La municipalidad acuerda su presupuesto, propone sus tributos a la Asamblea Legislativa y
+          fija las tasas y los precios de los servicios municipales (art. 77). Como administración
+          tributaria, ejerce la fiscalización y el cobro de los tributos a su cargo con las facultades
+          del Código de Normas y Procedimientos Tributarios (art. 77 bis). Las tasas y precios se
+          fijan tomando en cuenta el costo del servicio más un diez por ciento de utilidad para
+          desarrollarlo (art. 83).
+        </p>
+        <p>
+          Los tributos municipales prescriben en cinco años (art. 82) y las certificaciones del
+          contador municipal sobre deudas constituyen título ejecutivo, en cuyo cobro solo caben las
+          excepciones de pago o prescripción (art. 80). Por eso conviene revisar a tiempo la legalidad
+          de un cobro o de una valoración antes de que venza el plazo para impugnarlo.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Recursos de revocatoria ante el Alcalde y apelación ante el Concejo" fundamento="Código Municipal, arts. 142 a 161">
+      <Instrumento titulo="Recursos contra los acuerdos del Concejo" fundamento="Código Municipal, arts. 162, 163 y 165">
         <p>
-          Los artículos 142 a 161 del Código Municipal regulan los recursos
-          administrativos procedentes contra los actos de la municipalidad. El
-          recurso de revocatoria se interpone ante el Alcalde Municipal —como
-          administrador general y jefe de las dependencias municipales— contra
-          los actos que este haya dictado. El recurso de apelación se interpone
-          de forma subsidiaria ante el Concejo Municipal, como órgano superior.
-          Contra los acuerdos del Concejo Municipal cabe el recurso de
-          revocatoria ante el propio Concejo. Estos recursos deben interponerse
-          dentro de los cinco días hábiles siguientes a la notificación del acto
-          y constituyen el mecanismo de agotamiento de la vía administrativa
-          previo a la impugnación jurisdiccional.
+          Contra los acuerdos del Concejo Municipal, los interesados disponen de los recursos
+          ordinarios de revocatoria y de apelación, que deben interponerse —en memorial razonado—
+          dentro del quinto día (arts. 162 y 165). La revocatoria la conoce el propio Concejo; la
+          apelación la resuelve el Tribunal Contencioso-Administrativo, que actúa como jerarca
+          impropio. La apelación procede solo por ilegalidad, mientras que la revocatoria puede
+          fundarse también en la inoportunidad del acuerdo (art. 165).
+        </p>
+        <p>
+          No todos los acuerdos admiten estos recursos: quedan excluidos los no aprobados
+          definitivamente, los de mero trámite o ejecución, los presupuestarios y los reglamentarios
+          (art. 163). Frente a esos y demás conductas, la vía es la jurisdiccional.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Impugnación de acuerdos del Concejo Municipal" fundamento="Código Municipal, arts. 153-161; CPCA, art. 31">
+      <Instrumento titulo="Recursos contra los demás actos municipales y veto del alcalde" fundamento="Código Municipal, arts. 167, 170 y 171">
         <p>
-          Los acuerdos del Concejo Municipal son actos administrativos
-          susceptibles de impugnación tanto en vía administrativa como
-          jurisdiccional. En vía administrativa, procede el recurso de
-          revocatoria ante el propio Concejo, conforme a los artículos 153 a 161
-          del Código Municipal. Agotada la vía administrativa, el administrado
-          puede acudir al Tribunal Contencioso Administrativo para impugnar el
-          acuerdo municipal. El artículo 31 del CPCA establece las reglas de
-          agotamiento preceptivo de la vía administrativa como condición de
-          admisibilidad de la demanda contencioso-administrativa. La jurisdicción
-          contenciosa puede revisar la legalidad del acuerdo, su conformidad con
-          el plan regulador y el ordenamiento urbanístico, así como la eventual
-          lesión de derechos subjetivos o intereses legítimos del administrado.
+          Contra las decisiones de los funcionarios que dependen directamente del Concejo caben
+          revocatoria ante el órgano que las dictó y apelación ante el Concejo Municipal, dentro del
+          quinto día (art. 170). Cuando se trata de funcionarios bajo la alcaldía, la apelación sube a
+          la alcaldía; y contra las decisiones de la propia alcaldía, la apelación se interpone, en el
+          mismo plazo, ante el Tribunal Contencioso-Administrativo (art. 171).
+        </p>
+        <p>
+          A ello se suma el veto: el alcalde puede vetar los acuerdos del Concejo por motivos de
+          legalidad u oportunidad dentro del quinto día hábil; si el Concejo lo rechaza, el asunto se
+          eleva en alzada al Tribunal Contencioso-Administrativo (art. 167).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Litigio contencioso-administrativo contra la municipalidad" fundamento="CPCA, arts. 1, 10 y 36">
+      <Instrumento titulo="Agotamiento preceptivo y litigio contencioso-administrativo" fundamento="CPCA, arts. 31 y 42">
         <p>
-          El CPCA atribuye a la jurisdicción contencioso-administrativa el
-          conocimiento de los litigios contra las municipalidades. El artículo 1
-          incluye expresamente a los entes públicos —entre ellos las
-          corporaciones municipales— como sujetos pasivos del proceso
-          contencioso. El artículo 10 establece las pretensiones que pueden
-          formularse: anulación de actos municipales, reconocimiento de
-          situaciones jurídicas individualizadas, condena al pago de daños y
-          perjuicios, y cualquier otra pretensión fundada en derecho
-          administrativo. El artículo 36 regula las medidas cautelares que pueden
-          solicitarse para proteger los derechos del administrado mientras se
-          resuelve el proceso contra la municipalidad.
+          La materia municipal es una de las excepciones en que el agotamiento de la vía
+          administrativa es preceptivo: el artículo 31 del CPCA exige agotarla en los supuestos del
+          artículo 173 de la Constitución, de modo que —a diferencia de la regla general— aquí sí hay
+          que cumplir los recursos del Código Municipal antes de demandar. El jerarca impropio debe
+          resolver la apelación en el plazo máximo de un mes.
+        </p>
+        <p>
+          Agotada esa vía, el conflicto se lleva a la jurisdicción contencioso-administrativa, donde
+          puede pretenderse la anulación total o parcial del acto o acuerdo municipal, el
+          reconocimiento o restablecimiento de la situación jurídica, la condena de la municipalidad a
+          una conducta específica y la indemnización de los daños (art. 42 del CPCA). Mientras se
+          resuelve, pueden solicitarse medidas cautelares para proteger los derechos del administrado
+          (art. 19 del CPCA).
         </p>
       </Instrumento>
 
@@ -2195,39 +2189,33 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               ¿Cómo se impugna una decisión de la municipalidad en Costa Rica?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los artículos 142 a 161 del Código Municipal (Ley N.° 7794) regulan los recursos
-              administrativos contra los actos municipales. El recurso de revocatoria se interpone ante
-              el Alcalde Municipal contra los actos que este haya dictado, y el recurso de apelación se
-              presenta subsidiariamente ante el Concejo Municipal como órgano superior. Contra los
-              acuerdos del propio Concejo cabe revocatoria ante el mismo cuerpo colegiado. Estos
-              recursos deben interponerse dentro de los cinco días hábiles siguientes a la notificación
-              del acto y constituyen el mecanismo de agotamiento de la vía administrativa previo a la
-              impugnación jurisdiccional. Agotada la vía administrativa conforme al artículo 31 del
-              CPCA, el administrado puede demandar ante el Tribunal Contencioso Administrativo conforme
-              a los artículos 1 y 10 del CPCA, solicitando la anulación del acto municipal, el
-              reconocimiento de situaciones jurídicas individualizadas y la condena al pago de daños y
-              perjuicios. También pueden solicitarse medidas cautelares para proteger derechos durante
-              el proceso (arts. 19-30 CPCA).
+              Depende del órgano que la dictó. Contra los acuerdos del Concejo Municipal caben
+              revocatoria —ante el propio Concejo— y apelación —ante el Tribunal Contencioso-
+              Administrativo, que actúa como jerarca impropio—, dentro del quinto día (arts. 162 y 165
+              del Código Municipal). Contra los actos de funcionarios bajo la alcaldía, la apelación
+              sube a la alcaldía y, contra las decisiones de la alcaldía, al Tribunal Contencioso-
+              Administrativo (art. 171). En materia municipal el agotamiento de la vía administrativa
+              es preceptivo (art. 31 del CPCA, supuesto del art. 173 de la Constitución), por lo que
+              hay que cumplir esos recursos antes de demandar. Agotada la vía, se acude a la
+              jurisdicción contencioso-administrativa con las pretensiones del artículo 42 del CPCA
+              (anulación, restablecimiento, daños) y, si procede, medidas cautelares (art. 19).
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué requisitos exige una municipalidad para otorgar una patente comercial?
+              ¿Qué pasa si me deniegan o suspenden la patente comercial?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los artículos 68 a 74 del Código Municipal regulan el régimen de licencias municipales.
-              El artículo 68 establece que para ejercer cualquier actividad lucrativa en el cantón se
-              requiere contar con la licencia municipal respectiva (patente comercial). El artículo 69
-              dispone que la municipalidad, mediante acuerdo del Concejo, fija las condiciones y
-              requisitos para su otorgamiento, que generalmente incluyen: uso de suelo conforme al plan
-              regulador, permiso sanitario, póliza de riesgos del trabajo, estar al día con las
-              obligaciones tributarias municipales y cumplir los requisitos específicos según la actividad.
-              El artículo 70 prevé las causales de denegación de la licencia. La patente municipal
-              constituye un tributo cuyo hecho generador es el ejercicio de la actividad lucrativa
-              autorizada (art. 74). El artículo 81 bis regula la suspensión y cancelación de la patente
-              por incumplimiento de obligaciones tributarias. La denegación injustificada puede
-              impugnarse mediante los recursos de los artículos 142 a 161 del Código Municipal.
+              Para ejercer una actividad lucrativa se requiere la licencia municipal, que se obtiene
+              pagando el impuesto de patente (art. 88 del Código Municipal). La municipalidad debe
+              resolver la solicitud en treinta días naturales; si no responde y los requisitos están
+              cumplidos, opera el silencio positivo y el solicitante puede operar (art. 89). La
+              licencia solo puede denegarse por las causales del artículo 90 (actividad contraria a la
+              ley, requisitos incumplidos o ubicación no permitida) y se suspende por falta de pago de
+              dos o más trimestres, con eventual revocación por reincidencia y previo debido proceso
+              (art. 90 bis). Una denegación o suspensión sin fundamento es impugnable con los recursos
+              del Código Municipal.
             </p>
           </div>
 
@@ -2237,18 +2225,14 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
               La autonomía municipal tiene rango constitucional. El artículo 170 de la Constitución
-              Política establece que las corporaciones municipales son autónomas, y el artículo 4 del
-              Código Municipal (Ley N.° 7794) desarrolla esta autonomía señalando que la municipalidad
-              posee autonomía política, administrativa y financiera. Esta autonomía comprende potestades
-              significativas: dictar reglamentos autónomos de organización y servicio, crear tributos
-              locales conforme a la ley (arts. 68-74), administrar y prestar servicios públicos
-              municipales, y ejercer competencias en materia de planificación urbana y control de
-              construcciones. Los artículos 168 a 175 de la Constitución delimitan el marco
-              constitucional de esta autonomía. Sin embargo, la autonomía no es absoluta: las
-              municipalidades están sujetas al principio de legalidad (art. 11 LGAP), sus actos son
-              fiscalizables por la Contraloría General de la República en materia presupuestaria
-              (art. 184 de la Constitución), y sus resoluciones son impugnables ante la jurisdicción
-              contencioso-administrativa conforme al CPCA.
+              reconoce a las corporaciones municipales como autónomas, y el artículo 4 del Código
+              Municipal (Ley N.° 7794) la concreta en autonomía política, administrativa y financiera:
+              dictar reglamentos autónomos, acordar el presupuesto, administrar los servicios locales,
+              aprobar tasas y precios y proponer sus tributos a la Asamblea Legislativa. Los artículos
+              168 a 175 de la Constitución delimitan ese marco. Pero la autonomía no es absoluta: la
+              municipalidad está sujeta al principio de legalidad, sus presupuestos los fiscaliza la
+              Contraloría General de la República y sus actos son impugnables ante la jurisdicción
+              contencioso-administrativa.
             </p>
           </div>
         </div>
