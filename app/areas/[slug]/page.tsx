@@ -2632,122 +2632,120 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El derecho urbanístico costarricense regula la planificación, el
-          ordenamiento territorial y el control del desarrollo urbano. Sus
-          fuentes principales son la Ley de Planificación Urbana (Ley N.° 4240
-          del 15 de noviembre de 1968) y la Ley de Construcciones (Ley N.° 833
-          del 2 de noviembre de 1949), complementadas por los planes reguladores
-          cantonales que cada municipalidad adopta en ejercicio de su autonomía.
-          Esta rama del derecho administrativo incide directamente sobre el
-          derecho de propiedad, al establecer las limitaciones y condiciones bajo
-          las cuales los propietarios pueden desarrollar sus inmuebles.
+          El derecho urbanístico regula la planificación del territorio y el control del desarrollo
+          urbano. Sus fuentes principales son la Ley de Planificación Urbana (Ley N.° 4240) y la Ley
+          de Construcciones (Ley N.° 833), que cada municipalidad aplica a través de su plan regulador
+          y de los reglamentos de desarrollo urbano. La propia Ley de Planificación Urbana reconoce la
+          competencia de los gobiernos municipales para planificar y controlar el desarrollo urbano de
+          su cantón (art. 15), en desarrollo del artículo 169 de la Constitución Política.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          La práctica en derecho urbanístico abarca la tramitación de permisos de
-          construcción, la impugnación de restricciones urbanísticas y la defensa
-          de los derechos de los propietarios frente a las decisiones de las
-          autoridades de planificación.
+          Como abogados en derecho urbanístico en Costa Rica, en Corporación GC defendemos a
+          propietarios y desarrolladores frente a denegatorias de permisos de construcción, negativas
+          de uso del suelo, clausuras, restricciones de zonificación y cargas en fraccionamientos y
+          urbanizaciones. A continuación se describen los instrumentos jurídicos que integran esta
+          área de práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Plan regulador cantonal" fundamento="Ley 4240, arts. 23 a 38">
+      <Instrumento titulo="El plan regulador y su procedimiento de adopción" fundamento="Ley 4240, arts. 15, 16, 17 y 21">
         <p>
-          El plan regulador cantonal es el instrumento técnico-jurídico que
-          define la política de desarrollo urbano del cantón y establece la
-          zonificación, los usos del suelo permitidos, las densidades de
-          construcción y los requisitos de infraestructura aplicables a cada zona.
-          Los artículos 23 a 38 de la Ley de Planificación Urbana regulan el
-          contenido, la elaboración y la aprobación de los planes reguladores. El
-          artículo 23 establece que el plan regulador es el instrumento de
-          planificación local que define el desarrollo urbano del cantón. Los
-          artículos 24 a 28 detallan los componentes del plan: zonificación del
-          uso del suelo, reglamento de fraccionamiento, reglamento de mapa
-          oficial, reglamento de construcciones y reglamento de renovación urbana.
-          Su aprobación corresponde al Concejo Municipal, previo dictamen del
-          Instituto Nacional de Vivienda y Urbanismo (INVU).
+          El plan regulador es el instrumento de planificación local que define la zonificación, los
+          usos del suelo, la circulación, los servicios y la vivienda del cantón (art. 16). Su
+          adopción —y también su modificación, suspensión o derogatoria— exige un procedimiento
+          reglado (art. 17): una audiencia pública convocada por La Gaceta con al menos quince días
+          hábiles de antelación, la aprobación de la Dirección de Urbanismo del INVU, la adopción
+          formal por mayoría absoluta del Concejo y la publicación del aviso en La Gaceta.
+        </p>
+        <p>
+          El plan se desarrolla mediante cinco reglamentos: zonificación; fraccionamiento y
+          urbanización; mapa oficial; renovación urbana; y construcciones (art. 21). La omisión de la
+          audiencia pública o de cualquiera de esos requisitos vicia la adopción del plan y abre la
+          vía de impugnación.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Permisos de construcción" fundamento="Ley 4240, arts. 65 a 76; Ley 833, arts. 74-87">
+      <Instrumento titulo="Zonificación, uso del suelo y patente" fundamento="Ley 4240, arts. 24, 28 y 29">
         <p>
-          El permiso de construcción es el acto administrativo mediante el cual
-          la municipalidad autoriza la ejecución de obras de edificación en un
-          inmueble determinado, verificando su conformidad con el plan regulador,
-          las normas de zonificación y los reglamentos de construcción aplicables.
-          Los artículos 65 a 76 de la Ley de Planificación Urbana y los artículos
-          74 a 87 de la Ley de Construcciones regulan los requisitos, el
-          procedimiento y las condiciones para el otorgamiento de estos permisos.
-          La municipalidad debe resolver la solicitud dentro del plazo legal, y
-          su denegación debe ser motivada, indicando las normas urbanísticas o
-          constructivas que el proyecto incumple. El silencio administrativo
-          positivo puede operar conforme a las reglas generales cuando la
-          Administración no resuelve dentro del plazo establecido.
+          El reglamento de zonificación divide el área urbana en zonas de uso y fija, para cada una,
+          los usos permitidos, las alturas, las dimensiones de los lotes, los retiros y los espacios
+          de estacionamiento (art. 24). Está prohibido dedicar un terreno o un edificio a un uso
+          incompatible con la zonificación, por lo que el propietario debe obtener un certificado
+          municipal de uso del suelo (art. 28).
+        </p>
+        <p>
+          Ese certificado de uso del suelo es determinante para la actividad económica: sin él no se
+          conceden patentes para establecimientos comerciales o industriales y, en caso de
+          contravención, se procede a la clausura del local (art. 29). Por eso un uso del suelo mal
+          denegado puede frenar un negocio entero, y es impugnable.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Zonificación y uso del suelo" fundamento="Ley 4240, arts. 24 a 28">
+      <Instrumento titulo="Fraccionamiento, urbanización y cesión de áreas" fundamento="Ley 4240, arts. 33, 34, 38 y 40">
         <p>
-          La zonificación es el instrumento urbanístico mediante el cual el plan
-          regulador divide el territorio del cantón en zonas con usos del suelo
-          diferenciados: residencial, comercial, industrial, agrícola, de
-          protección ambiental, entre otros. Los artículos 24 a 28 de la Ley de
-          Planificación Urbana establecen que el reglamento de zonificación debe
-          definir para cada zona los usos permitidos, los usos condicionales, los
-          usos prohibidos, la cobertura máxima del lote, la altura máxima de las
-          edificaciones, los retiros mínimos y la densidad de población
-          permitida. La zonificación constituye una limitación de interés social
-          al derecho de propiedad, cuya constitucionalidad ha sido reconocida
-          por la Sala Constitucional, siempre que sea razonable y proporcionada.
+          Para fraccionar un terreno en distritos urbanos es indispensable el visado municipal del
+          plano; sin él, el Registro Público suspende la inscripción y las oficinas públicas tienen el
+          fraccionamiento por inexistente (arts. 33 y 34). La urbanización —apertura de calles y
+          dotación de servicios— exige un permiso que la municipalidad niega si el proyecto no cumple
+          las normas mínimas, no cuenta con la aprobación de la Dirección de Urbanismo y del AyA, o no
+          garantiza las obras (art. 38).
+        </p>
+        <p>
+          El urbanizador debe ceder gratuitamente al uso público las áreas de vías, parques y
+          facilidades comunales: entre un cinco y un veinte por ciento del terreno según el tamaño de
+          los lotes, sin que el total supere el cuarenta y cinco por ciento (art. 40). El alcance de
+          esa cesión es uno de los puntos que con más frecuencia se discute con la municipalidad.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Fraccionamiento y urbanización" fundamento="Ley 4240, arts. 39 a 50">
+      <Instrumento titulo="Permiso de construcción y control de obras" fundamento="Ley 833, arts. 74, 83, 83 bis y 87; Ley 4240, art. 58">
         <p>
-          Los artículos 39 a 50 de la Ley de Planificación Urbana regulan el
-          régimen de fraccionamiento y urbanización de terrenos. El
-          fraccionamiento es la división de un inmueble en dos o más lotes que
-          requiere la aprobación municipal conforme al reglamento de
-          fraccionamiento del plan regulador. La urbanización es el proceso por
-          el cual se habilitan terrenos para el desarrollo urbano mediante la
-          instalación de infraestructura vial, de servicios públicos y de áreas
-          comunales. El artículo 40 establece que todo fraccionamiento debe
-          contar con la visación municipal, que verifica la conformidad del
-          proyecto con el plan regulador. El artículo 44 dispone que el
-          urbanizador está obligado a ceder las áreas destinadas a calles,
-          parques y facilidades comunales conforme a los porcentajes que la ley
-          y el plan regulador establecen.
+          Toda obra de construcción requiere licencia de la municipalidad (art. 74 de la Ley de
+          Construcciones), que solicita un profesional responsable —ingeniero o arquitecto incorporado
+          al CFIA (art. 83)—. Las obras menores que no superen el equivalente a diez salarios base no
+          requieren ese profesional, pero sí la licencia municipal (art. 83 bis). La municipalidad
+          ejerce la vigilancia y el control constructivo de las obras de su cantón (art. 87).
+        </p>
+        <p>
+          El permiso debe negarse cuando la obra no guarda conformidad con la zonificación, cuando el
+          predio proviene de un fraccionamiento sin visado o cuando el lote carece de acceso o de
+          servicios (art. 58 de la Ley de Planificación Urbana). Una denegatoria que se aparte de esas
+          causales —o que se demore sin justificación— es revisable.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Impugnación de denegatorias de permisos" fundamento="Código Municipal, arts. 142-161; CPCA, arts. 1 y 10">
+      <Instrumento titulo="Construcción sin permiso: sanciones y clausura" fundamento="Ley 833, arts. 88, 89, 93 y 96">
         <p>
-          Cuando la municipalidad deniega un permiso de construcción o impone
-          condiciones que el solicitante estima ilegales o desproporcionadas,
-          este puede impugnar la resolución mediante los recursos administrativos
-          previstos en los artículos 142 a 161 del Código Municipal: revocatoria
-          ante el Alcalde y apelación ante el Concejo Municipal. Agotada la vía
-          administrativa, procede la demanda contencioso-administrativa conforme
-          a los artículos 1 y 10 del CPCA, mediante la cual el Tribunal puede
-          anular la denegación ilegal, ordenar el otorgamiento del permiso y
-          condenar a la municipalidad al pago de los daños y perjuicios causados
-          por la demora o la denegación injustificada.
+          Construir sin licencia, con licencia vencida o apartándose del proyecto aprobado es una
+          infracción a la Ley de Construcciones (arts. 88 y 89). Ante una obra terminada sin licencia,
+          la municipalidad levanta una información y fija un plazo improrrogable de treinta días para
+          regularizarla, presentando el proyecto y la solicitud de licencia (art. 93).
+        </p>
+        <p>
+          Si el propietario no regulariza, la municipalidad puede ordenar la destrucción de las partes
+          defectuosas, negar el uso de la construcción y disponer su desocupación y clausura (art. 96).
+          Frente a una orden de clausura o demolición conviene actuar de inmediato: una defensa técnica
+          a tiempo puede evitar la pérdida de la obra.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Litigio contra restricciones urbanísticas" fundamento="Constitución, art. 45; Ley 4240, art. 37; CPCA, art. 10">
+      <Instrumento titulo="Vías de impugnación: municipalidad, INVU y contencioso" fundamento="Ley 4240, art. 13; Código Municipal, arts. 165 y 171; CPCA, arts. 31 y 42">
         <p>
-          Las restricciones urbanísticas que limitan el derecho de propiedad más
-          allá de lo razonable pueden ser impugnadas por el propietario afectado.
-          El artículo 45 de la Constitución Política garantiza la inviolabilidad
-          de la propiedad, admitiendo limitaciones de interés social únicamente
-          cuando sean proporcionales y no vacíen de contenido el derecho. El
-          artículo 37 de la Ley 4240 establece que el plan regulador puede
-          imponer restricciones al uso de la propiedad, pero estas deben ser
-          razonables y compensadas cuando constituyan una privación singular que
-          exceda las cargas normales de la propiedad. El artículo 10 del CPCA
-          permite al propietario demandar ante el Tribunal Contencioso
-          Administrativo la anulación de las restricciones ilegales y la
-          indemnización por los daños sufridos.
+          La impugnación depende del órgano que dictó el acto. Contra los actos urbanísticos
+          municipales —denegatoria de uso del suelo, de patente o de permiso de construcción,
+          clausura— proceden los recursos del Código Municipal: revocatoria y apelación dentro del
+          quinto día, que se elevan al Tribunal Contencioso-Administrativo como jerarca impropio
+          (arts. 165 y 171). Contra las decisiones de la Dirección de Urbanismo del INVU cabe revisión
+          ante su Junta Directiva y, luego, recurso ante el Poder Ejecutivo dentro de quince días
+          hábiles, con lo que se agota la vía administrativa (art. 13 de la Ley de Planificación
+          Urbana).
+        </p>
+        <p>
+          En materia municipal el agotamiento de la vía administrativa es preceptivo (art. 31 del
+          CPCA). Agotada, el conflicto se lleva a la jurisdicción contencioso-administrativa, donde
+          puede pedirse la anulación del acto, el otorgamiento del permiso o del uso del suelo, el
+          restablecimiento del derecho y la indemnización de los daños (art. 42 del CPCA), con medidas
+          cautelares cuando hay urgencia (art. 19).
         </p>
       </Instrumento>
 
@@ -2760,65 +2758,54 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es un plan regulador cantonal y cómo afecta mi propiedad?
+              ¿Qué es un plan regulador y cómo afecta mi propiedad?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El plan regulador cantonal es el instrumento técnico-jurídico que define la política de
-              desarrollo urbano del cantón, regulado en los artículos 23 a 38 de la Ley de Planificación
-              Urbana (Ley N.° 4240). El artículo 23 establece que el plan regulador define el desarrollo
-              urbano del cantón mediante la zonificación del uso del suelo: residencial, comercial,
-              industrial, agrícola o de protección ambiental. Los artículos 24 a 28 detallan sus
-              componentes: reglamento de zonificación, reglamento de fraccionamiento, reglamento de mapa
-              oficial, reglamento de construcciones y reglamento de renovación urbana. El plan establece
-              para cada zona los usos permitidos, la cobertura máxima del lote, la altura máxima de las
-              edificaciones, los retiros mínimos y la densidad de población. Su aprobación corresponde al
-              Concejo Municipal previo dictamen del INVU. Las restricciones urbanísticas constituyen
-              limitaciones de interés social al derecho de propiedad cuya constitucionalidad ha sido
-              reconocida por la Sala Constitucional, siempre que sean razonables y proporcionadas
-              conforme al artículo 45 de la Constitución Política.
+              El plan regulador es el instrumento de planificación local que define la zonificación y
+              los usos del suelo del cantón —residencial, comercial, industrial, de protección— junto
+              con alturas, lotes, retiros y densidades (arts. 16 y 24 de la Ley de Planificación Urbana,
+              Ley N.° 4240). Se desarrolla mediante cinco reglamentos: zonificación, fraccionamiento y
+              urbanización, mapa oficial, renovación urbana y construcciones (art. 21). Su adopción o
+              modificación exige audiencia pública con al menos quince días hábiles de aviso, la
+              aprobación de la Dirección de Urbanismo del INVU, la votación por mayoría absoluta del
+              Concejo y la publicación en La Gaceta (art. 17). Las restricciones de zonificación son
+              limitaciones de interés social al derecho de propiedad (art. 45 de la Constitución):
+              válidas si son razonables y proporcionadas, e impugnables cuando no lo son.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué hago si la municipalidad me deniega un permiso de construcción?
+              ¿Qué hago si la municipalidad me deniega un permiso de construcción o un uso del suelo?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Si la municipalidad deniega un permiso de construcción o impone condiciones que se estiman
-              ilegales o desproporcionadas, el solicitante puede impugnar la resolución mediante los
-              recursos administrativos previstos en los artículos 142 a 161 del Código Municipal (Ley
-              N.° 7794): recurso de revocatoria ante el Alcalde y recurso de apelación subsidiario ante
-              el Concejo Municipal, dentro de cinco días hábiles. La denegación debe ser motivada,
-              indicando las normas urbanísticas o constructivas incumplidas conforme a los artículos 65
-              a 76 de la Ley 4240 y los artículos 74 a 87 de la Ley de Construcciones (Ley N.° 833).
-              Agotada la vía administrativa, procede la demanda contencioso-administrativa conforme a los
-              artículos 1 y 10 del CPCA, mediante la cual el Tribunal puede anular la denegación ilegal,
-              ordenar el otorgamiento del permiso y condenar a la municipalidad al pago de daños y
-              perjuicios causados por la demora o denegación injustificada. Si la Administración no
-              resuelve dentro del plazo legal, puede operar el silencio administrativo positivo conforme
-              al artículo 330 de la LGAP en materia autorizatoria.
+              La denegatoria debe ser motivada y ajustarse a las causales legales (art. 58 de la Ley de
+              Planificación Urbana; art. 74 de la Ley de Construcciones, Ley N.° 833). Se impugna con los
+              recursos del Código Municipal: revocatoria y apelación dentro del quinto día, que se elevan
+              al Tribunal Contencioso-Administrativo como jerarca impropio (arts. 165 y 171). En materia
+              municipal el agotamiento de la vía administrativa es preceptivo (art. 31 del CPCA, supuesto
+              del art. 173 de la Constitución); agotada, se demanda ante la jurisdicción contencioso-
+              administrativa para que se anule la denegatoria, se ordene el permiso o el uso del suelo y
+              se indemnicen los daños (art. 42 del CPCA), con medidas cautelares cuando hay urgencia
+              (art. 19). Recuerde que sin certificado de uso del suelo no se otorgan patentes y procede
+              la clausura del local (art. 29 de la Ley de Planificación Urbana).
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Se puede demandar a la municipalidad por restricciones urbanísticas excesivas?
+              ¿Pueden restringir o reservar mi terreno para uso público sin pagarme?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Sí. Las restricciones urbanísticas que limitan el derecho de propiedad más allá de lo
-              razonable pueden ser impugnadas por el propietario afectado. El artículo 45 de la
-              Constitución Política garantiza la inviolabilidad de la propiedad, admitiendo limitaciones
-              de interés social únicamente cuando sean proporcionales y no vacíen de contenido el
-              derecho. El artículo 37 de la Ley 4240 establece que el plan regulador puede imponer
-              restricciones al uso de la propiedad, pero estas deben ser razonables y compensadas cuando
-              constituyan una privación singular que exceda las cargas normales de la propiedad. El
-              artículo 10 del CPCA permite al propietario demandar ante el Tribunal Contencioso
-              Administrativo la anulación de las restricciones ilegales y la indemnización por los daños
-              sufridos. Cuando la restricción equivale a una expropiación de hecho, el propietario puede
-              invocar el artículo 45 constitucional para exigir indemnización previa y justa. La Sala
-              Constitucional ha establecido que las limitaciones urbanísticas deben respetar un balance
-              entre el interés público y los derechos del propietario conforme al principio de
-              proporcionalidad.
+              El artículo 45 de la Constitución protege la propiedad: solo puede privarse de ella por
+              interés público legalmente comprobado y previa indemnización. Al urbanizar o fraccionar
+              fuera del cuadrante hay un deber de ceder gratuitamente áreas de uso público —entre un 5%
+              y un 20%, con tope del 45% (art. 40 de la Ley de Planificación Urbana)—, pero más allá de
+              eso la carga no es gratuita: cuando se niega el permiso porque la finca, o una parte que
+              excede esa cesión, queda reservada a uso público, la municipalidad, el Estado o la
+              institución deben negociar la compra o iniciar la expropiación dentro del año siguiente
+              (art. 48). La reserva no puede mantenerse indefinidamente sin pagar, y una restricción que
+              vacíe de contenido la propiedad es impugnable.
             </p>
           </div>
         </div>

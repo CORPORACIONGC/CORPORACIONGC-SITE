@@ -960,4 +960,78 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea: La potestad discrecional de la administración municipal en materia urbanística",
   },
+  "derecho-urbanistico": {
+    hookHeadline: "¿Le denegaron un permiso de construcción o un uso del suelo?",
+    hookSubtext:
+      "El urbanismo lo controla la municipalidad a través del plan regulador y de los reglamentos de zonificación, fraccionamiento y construcciones. Si le negaron un uso del suelo, un permiso de construcción, o le ordenaron una clausura o una demolición, esa decisión debe ajustarse a la Ley de Planificación Urbana (Ley N.° 4240) y a la Ley de Construcciones (Ley N.° 833). Una denegatoria mal fundada, o una carga de cesión excesiva en un fraccionamiento, es impugnable —y en lo municipal hay que actuar en cinco días—.",
+    scenariosTitle: "¿Cuándo necesita un abogado en derecho urbanístico?",
+    triggerScenarios: [
+      "La municipalidad le denegó un permiso de construcción o se lo condiciona ilegalmente",
+      "Le negaron el certificado de uso del suelo y no puede sacar la patente",
+      "Le notificaron una clausura o una orden de demolición de su obra",
+      "Le exigen ceder un porcentaje de terreno excesivo en un fraccionamiento o urbanización",
+      "Su finca quedó reservada a uso público en el plan regulador y nadie se la compra",
+      "Una restricción de zonificación le impide el uso razonable de su propiedad",
+      "El INVU o la Dirección de Urbanismo le rechazó un proyecto o un plano",
+    ],
+    services: [
+      {
+        title: "Permisos de construcción y uso del suelo",
+        description:
+          "Gestionamos e impugnamos permisos de construcción (art. 74 de la Ley de Construcciones) y certificados de uso del suelo (art. 28 de la Ley de Planificación Urbana). Atacamos las denegatorias que se apartan de las causales legales (art. 58) y que frenan su patente o su obra.",
+      },
+      {
+        title: "Fraccionamientos y urbanizaciones",
+        description:
+          "Tramitamos el visado municipal de planos (arts. 33 y 34) y la aprobación de urbanizaciones (art. 38), y discutimos la cesión de áreas de uso público —entre el 5% y el 20%, con tope del 45% (art. 40)— cuando la municipalidad la exige de más.",
+      },
+      {
+        title: "Defensa frente a clausuras y demoliciones",
+        description:
+          "Lo defendemos ante una información por construir sin licencia: el plazo de treinta días para regularizar (art. 93) y la amenaza de destrucción o clausura (art. 96 de la Ley de Construcciones). Una respuesta técnica a tiempo puede salvar la obra.",
+      },
+      {
+        title: "Restricciones de zonificación y reserva de uso público",
+        description:
+          "Cuando una restricción urbanística o una reserva del plan vacía de contenido su propiedad, invocamos el artículo 45 de la Constitución y el artículo 48 de la Ley de Planificación Urbana: si la reserva excede la cesión normal, la municipalidad o el Estado deben comprar o expropiar dentro del año.",
+      },
+      {
+        title: "Impugnación del plan regulador y sus reglamentos",
+        description:
+          "Revisamos la legalidad del plan regulador y de sus reglamentos, incluido el procedimiento de adopción —audiencia pública, aprobación del INVU y publicación (art. 17)—. Los vicios de procedimiento o de fondo abren la vía de impugnación.",
+      },
+      {
+        title: "Recursos ante la municipalidad, el INVU y el contencioso",
+        description:
+          "Interponemos los recursos del Código Municipal —revocatoria y apelación ante el Tribunal Contencioso como jerarca impropio (arts. 165 y 171)— y los de la Ley de Planificación Urbana ante la Junta Directiva del INVU y el Poder Ejecutivo (art. 13). Agotada la vía, demandamos con las pretensiones del art. 42 del CPCA.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un problema urbanístico (permiso de construcción o uso del suelo) y necesito asesoría.",
+    commercialFaq: [
+      {
+        question: "¿Qué hago si me deniegan el permiso de construcción o el uso del suelo?",
+        answer:
+          "La denegatoria debe ser motivada y ajustarse a las causales legales (art. 58 de la Ley de Planificación Urbana; art. 74 de la Ley de Construcciones). Se impugna con los recursos del Código Municipal —revocatoria y apelación dentro del quinto día, que suben al Tribunal Contencioso-Administrativo como jerarca impropio (arts. 165 y 171)—. En materia municipal el agotamiento de la vía es preceptivo (art. 31 del CPCA); agotada, se demanda para que se anule la denegatoria, se ordene el permiso y se indemnicen los daños (art. 42 del CPCA).",
+      },
+      {
+        question: "¿Necesito permiso para una remodelación pequeña?",
+        answer:
+          "Las obras menores que no superen el equivalente a diez salarios base no requieren un profesional responsable (ingeniero o arquitecto), pero sí necesitan la licencia municipal correspondiente (art. 83 bis de la Ley de Construcciones). Ojo: no se puede fraccionar una obra mayor en varias obras menores para evadir los controles; la municipalidad puede denegar el permiso si lo detecta.",
+      },
+      {
+        question: "¿Pueden obligarme a ceder parte de mi terreno al urbanizar?",
+        answer:
+          "Sí, dentro de un límite. Quien urbaniza o fracciona fuera del cuadrante debe ceder gratuitamente al uso público las áreas de vías, parques y facilidades comunales: entre un 5% y un 20% del terreno según el tamaño de los lotes, sin que el total supere el 45% (art. 40 de la Ley de Planificación Urbana). Una exigencia por encima de esos porcentajes es discutible.",
+      },
+      {
+        question: "¿Y si el plan regulador reserva mi finca para uso público?",
+        answer:
+          "El artículo 45 de la Constitución protege la propiedad: solo puede privarse de ella por interés público y previa indemnización. Cuando se niega el permiso porque la finca —o una parte que excede la cesión normal— queda reservada a uso público, la municipalidad, el Estado o la institución deben negociar la compra o iniciar la expropiación dentro del año siguiente (art. 48 de la Ley de Planificación Urbana). La reserva no puede mantenerse indefinidamente sin pagar.",
+      },
+    ],
+    relatedArticleSlug: "potestad-discrecional-municipalidades-urbanismo",
+    relatedArticleLabel:
+      "Lea: La potestad discrecional de la administración municipal en materia urbanística",
+  },
 };
