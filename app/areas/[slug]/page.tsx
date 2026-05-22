@@ -210,7 +210,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           La demanda contencioso-administrativa es el acto procesal mediante el cual una persona
           física o jurídica —o incluso una entidad pública— acude ante el Tribunal Contencioso
           Administrativo para impugnar una conducta administrativa que le causa un perjuicio. El
-          artículo 10 del CPCA establece las pretensiones que pueden formularse: declaración de
+          artículo 42 del CPCA establece las pretensiones que pueden formularse: declaración de
           disconformidad de la conducta administrativa con el ordenamiento jurídico, anulación total
           o parcial de actos administrativos, reconocimiento de situaciones jurídicas
           individualizadas, constitución de nuevas situaciones jurídicas, y la condena a la
@@ -2422,7 +2422,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               administrativo debe respetar el debido proceso conforme a los artículos 308 a 319 de la
               LGAP, garantizando la notificación, el derecho de audiencia y la posibilidad de recurrir.
               Las resoluciones que ordenen desalojos son impugnables ante la jurisdicción
-              contencioso-administrativa conforme al artículo 10 del CPCA. Los ocupantes no pueden
+              contencioso-administrativa conforme al artículo 1 del CPCA. Los ocupantes no pueden
               alegar derechos posesorios sobre bienes demaniales dada su imprescriptibilidad
               constitucional (art. 262 del Código Civil).
             </p>
@@ -2550,8 +2550,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           densidades y las restricciones ambientales aplicables a cada sector de
           la zona restringida. Las resoluciones que aprueban, modifican o
           deniegan planes reguladores costeros constituyen actos administrativos
-          impugnables ante el Tribunal Contencioso Administrativo conforme a los
-          artículos 1 y 10 del CPCA.
+          impugnables ante el Tribunal Contencioso Administrativo conforme al
+          artículo 1 del CPCA.
         </p>
       </Instrumento>
 
@@ -2617,7 +2617,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               municipalidad, como custodia de la ZMT conforme al artículo 27, tiene la potestad y el
               deber de impedir las ocupaciones ilegales y de iniciar los procedimientos sancionatorios
               correspondientes. Las resoluciones que ordenen la demolición o el desalojo son impugnables
-              ante la jurisdicción contencioso-administrativa conforme a los artículos 1 y 10 del CPCA.
+              ante la jurisdicción contencioso-administrativa conforme al artículo 1 del CPCA.
               El infractor no puede alegar derechos posesorios ni adquirir propiedad sobre bienes
               demaniales dada su imprescriptibilidad constitucional. Corporación GC asesora tanto en la
               defensa como en la impugnación de estas resoluciones.
@@ -2894,7 +2894,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           interpone ante el Despacho Contralor y el recurso de apelación ante la
           División correspondiente. Agotada la vía administrativa, las
           resoluciones de la Contraloría pueden ser impugnadas ante la
-          jurisdicción contencioso-administrativa conforme a los artículos 1 y 10
+          jurisdicción contencioso-administrativa conforme al artículo 1
           del CPCA. El Tribunal Contencioso Administrativo puede revisar la
           legalidad de los actos del órgano contralor, incluyendo las
           resoluciones de aprobación o improbación presupuestaria y las
@@ -2975,7 +2975,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               el recurso de revocatoria se interpone ante el Despacho Contralor que dictó la resolución
               y el recurso de apelación se presenta ante la División correspondiente. Agotada la vía
               administrativa, las resoluciones de la Contraloría pueden impugnarse ante la jurisdicción
-              contencioso-administrativa conforme a los artículos 1 y 10 del CPCA. El Tribunal
+              contencioso-administrativa conforme al artículo 1 del CPCA. El Tribunal
               Contencioso Administrativo puede revisar la legalidad de los actos del órgano contralor,
               incluyendo las resoluciones de aprobación o improbación presupuestaria y las disposiciones
               emitidas en ejercicio de sus funciones fiscalizadoras. Esta vía jurisdiccional permite
