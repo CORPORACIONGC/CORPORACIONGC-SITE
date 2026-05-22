@@ -245,14 +245,14 @@ export const PRACTICE_AREA_PAGES = [
   {
     slug: "empleo-publico",
     title: "Empleo Público y Servicio Civil",
-    subtitle: "Defensa de servidores públicos en procedimientos disciplinarios, sanciones y despidos",
-    description: "Defensa de servidores públicos en procedimientos disciplinarios: amonestaciones, suspensiones y despidos conforme al Estatuto de Servicio Civil (Ley N.° 1581), la Ley Marco de Empleo Público (Ley N.° 10159) y el procedimiento ordinario de la LGAP (arts. 308 a 319).",
+    subtitle: "Defensa de servidores públicos ante despidos, suspensiones y sanciones disciplinarias",
+    description: "Defensa de servidores públicos ante despidos, suspensiones y sanciones disciplinarias conforme al Estatuto de Servicio Civil (Ley N.° 1581) y la Ley Marco de Empleo Público (Ley N.° 10159, arts. 20 a 22), con apelación ante el Tribunal de Servicio Civil e impugnación en la vía laboral o contencioso-administrativa.",
     icon: "IdentificationBadge" as const,
     priority: "primary" as const,
-    seoTitle: "Empleo Público · Defensa de Servidores | CR",
-    seoDescription: "Defensa de servidores públicos en procedimientos disciplinarios, suspensiones y despidos. Estatuto de Servicio Civil, Ley Marco de Empleo Público (Ley N.° 10159) y procedimiento ordinario LGAP.",
-    ogShortTitle: "Empleo Público y {{em}}",
-    ogEmphasis: "Servicio Civil",
+    seoTitle: "Abogado en Empleo Público en Costa Rica",
+    seoDescription: "Abogado en empleo público en Costa Rica. Defendemos a servidores ante despidos y sanciones (Ley 10159) y apelamos ante el Tribunal de Servicio Civil.",
+    ogShortTitle: "Abogado en {{em}}",
+    ogEmphasis: "Empleo Público",
   },
   // ─── Áreas Especializadas ───
   {

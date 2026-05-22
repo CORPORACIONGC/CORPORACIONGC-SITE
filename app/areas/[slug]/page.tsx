@@ -1677,98 +1677,118 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El empleo público en Costa Rica se rige por un conjunto de normas que regulan el
-          ingreso, la permanencia, el régimen disciplinario y la salida de los servidores
-          públicos. El Estatuto de Servicio Civil (Ley N.° 1581), la Ley Marco de Empleo
-          Público (Ley N.° 10159) y la Ley General de la Administración Pública constituyen
-          los cuerpos normativos fundamentales que disciplinan las relaciones de empleo público
-          y los procedimientos sancionatorios aplicables a los funcionarios del Estado.
+          El empleo público en Costa Rica es una relación de derecho público —no un contrato
+          laboral común— y goza de una garantía constitucional de estabilidad: el servidor solo
+          puede ser removido por una causal de despido justificado o por reducción forzosa de
+          servicios (art. 192 de la Constitución Política). Esa relación se rige por el Estatuto
+          de Servicio Civil (Ley N.° 1581), la Ley Marco de Empleo Público (Ley N.° 10159) —que
+          unificó el régimen y reguló el procedimiento de despido— y, supletoriamente, la Ley
+          General de la Administración Pública y el Código de Trabajo.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC asesora y representa a servidores públicos y entidades estatales en
-          asuntos de empleo público, incluyendo procedimientos disciplinarios, impugnaciones
-          ante el Tribunal de Servicio Civil y demandas ante la jurisdicción
-          contencioso-administrativa. A continuación se describen los instrumentos jurídicos
-          que integran esta área de práctica.
+          Como abogados en empleo público en Costa Rica, en Corporación GC representamos a
+          servidores públicos frente a despidos, suspensiones y sanciones, y asesoramos a
+          instituciones del Estado en la tramitación correcta de sus procedimientos. A
+          continuación se describen los instrumentos jurídicos que integran esta área de
+          práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Régimen disciplinario del Estatuto de Servicio Civil" fundamento="Ley 1581, arts. 59-82">
+      <Instrumento titulo="Estabilidad del servidor público" fundamento="Constitución, art. 192; Ley 1581, art. 37">
         <p>
-          Los artículos 59 a 82 del Estatuto de Servicio Civil establecen el régimen disciplinario
-          aplicable a los servidores del Poder Ejecutivo cubiertos por el Servicio Civil. Este
-          régimen contempla cuatro tipos de sanciones: la amonestación verbal, la amonestación
-          escrita, la suspensión sin goce de salario y el despido. La imposición de cada sanción
-          se rige por criterios de proporcionalidad y gravedad de la falta, debiendo la
-          Administración observar el procedimiento que corresponda según la naturaleza de la
-          sanción.
+          La estabilidad es la primera garantía del servidor público. El artículo 192 de la
+          Constitución Política dispone que los servidores públicos son nombrados a base de
+          idoneidad comprobada y solo pueden ser removidos por las causales de despido justificado
+          que exprese la legislación de trabajo, o en el caso de reducción forzosa de servicios por
+          falta de fondos o para conseguir una mejor organización. El artículo 37, inciso a), del
+          Estatuto de Servicio Civil reitera esa protección: el servidor no puede ser despedido a
+          menos que incurra en una causal de despido o medie una reducción forzosa de servicios.
+        </p>
+        <p>
+          Por eso, todo despido de un funcionario regular exige una causa legal y un procedimiento
+          previo. Un despido sin causa acreditada, o sin el procedimiento debido, es impugnable.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Procedimiento ordinario obligatorio para sanciones graves" fundamento="LGAP, arts. 308-319">
+      <Instrumento titulo="Procedimiento administrativo de despido" fundamento="Ley 10159, art. 21">
         <p>
-          Para la imposición de sanciones graves —suspensión sin goce de salario y despido—, la
-          Administración debe tramitar el procedimiento administrativo ordinario regulado en los
-          artículos 308 a 319 de la Ley General de la Administración Pública. Este procedimiento
-          garantiza al servidor investigado el derecho a conocer los cargos formulados, a acceder
-          al expediente administrativo, a ofrecer prueba de descargo, a participar en la
-          comparecencia oral y privada, y a contar con asistencia letrada durante todas las
-          etapas del procedimiento.
+          El artículo 21 de la Ley Marco de Empleo Público (Ley N.° 10159) establece un único
+          procedimiento administrativo especial de despido, aplicable a toda persona servidora
+          pública, que debe concluir por acto final en el plazo de dos meses desde su inicio. Este
+          procedimiento sustituyó a los artículos 43 y 44 del Estatuto de Servicio Civil, derogados
+          por el artículo 50 de la propia Ley N.° 10159.
         </p>
         <p>
-          La omisión del procedimiento ordinario o la violación de cualquiera de sus garantías
-          esenciales constituye un vicio de nulidad absoluta que puede ser impugnado en sede
-          administrativa y jurisdiccional.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Ley Marco de Empleo Público" fundamento="Ley 10159">
-        <p>
-          La Ley N.° 10159, Ley Marco de Empleo Público, establece un régimen unificado de
-          empleo público aplicable a la generalidad de las instituciones del Estado. Esta ley
-          regula las condiciones de ingreso, la clasificación de puestos, el sistema de
-          remuneraciones, la evaluación del desempeño, la movilidad laboral y el régimen
-          disciplinario de los servidores públicos, buscando armonizar las distintas normativas
-          sectoriales que históricamente regularon el empleo público de manera fragmentaria.
-        </p>
-        <p>
-          La Ley Marco introduce un régimen disciplinario propio con tipificación de faltas
-          leves, graves y gravísimas, así como un procedimiento sancionatorio que debe respetar
-          las garantías del debido proceso administrativo.
+          El jerarca institucional nombra un órgano director que formula los cargos por escrito y da
+          traslado al servidor por quince días para presentar sus descargos y ofrecer prueba, la
+          cual se evacúa en una comparecencia oral y privada. Si el jerarca concluye que la falta
+          existe pero no amerita el despido, puede ordenar una amonestación oral, una advertencia
+          escrita o una suspensión sin goce de salario hasta por un mes. En lo no previsto, el
+          procedimiento se rige supletoriamente por la Ley General de la Administración Pública
+          (arts. 308 y 309).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Tribunal de Servicio Civil" fundamento="Ley 1581, arts. 7-14">
+      <Instrumento titulo="Fase recursiva y Tribunal de Servicio Civil" fundamento="Ley 10159, art. 22">
         <p>
-          Los artículos 7 a 14 del Estatuto de Servicio Civil regulan el Tribunal de Servicio
-          Civil, órgano especializado competente para conocer en alzada de los reclamos de los
-          servidores públicos cubiertos por el régimen de Servicio Civil contra las decisiones
-          de despido dictadas por la Administración. El Tribunal tiene la potestad de confirmar,
-          revocar o modificar la decisión impugnada, y su resolución agota la vía administrativa
-          para efectos de la impugnación jurisdiccional posterior.
+          Contra la resolución de despido, el servidor dispone de un plazo improrrogable de cinco
+          días hábiles para interponer el recurso de revocatoria y, en subsidio, el de apelación. En
+          las instituciones cubiertas por el Estatuto de Servicio Civil, la apelación se concede en
+          ambos efectos ante el Tribunal de Servicio Civil, cuya resolución agota la vía
+          administrativa y es vinculante para el jerarca.
+        </p>
+        <p>
+          Si el Tribunal de Servicio Civil revoca el despido, dicta un nuevo fallo y resuelve si
+          procede la restitución del servidor en su puesto, con pleno goce de sus derechos y el pago
+          de los salarios caídos. Es la pieza central de la defensa de un funcionario despedido.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Impugnación ante la jurisdicción contencioso-administrativa" fundamento="CPCA, arts. 1-2">
+      <Instrumento titulo="Causas de cese y reducción forzosa" fundamento="Ley 10159, art. 20">
         <p>
-          Agotada la vía administrativa —ya sea ante el superior jerárquico o ante el Tribunal
-          de Servicio Civil—, el servidor público puede impugnar el acto sancionatorio ante la
-          jurisdicción contencioso-administrativa conforme al Código Procesal Contencioso
-          Administrativo. Esta vía permite solicitar la anulación del acto de despido o sanción,
-          el reconocimiento de salarios dejados de percibir, la reinstalación en el cargo y la
-          indemnización de los daños y perjuicios causados.
+          El artículo 20 de la Ley N.° 10159 enumera las causas de cese del empleo público: la
+          renuncia, la jubilación, la sanción firme de despido, la inhabilitación firme para la
+          función pública y, en casos muy calificados, la reducción forzosa de servicios —por falta
+          de fondos o por una reorganización que afecte al menos al cincuenta por ciento de los
+          empleados de la dependencia—.
+        </p>
+        <p>
+          La reducción forzosa no es discrecional: debe estar precedida de una rigurosa
+          justificación técnica y procede previo pago de las prestaciones y de la indemnización que
+          correspondan. Cuando esos requisitos se incumplen, el cese es impugnable.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Suspensión provisional durante investigación" fundamento="LGAP, art. 309; Ley 1581, art. 67">
+      <Instrumento titulo="Suspensión provisional durante el procedimiento" fundamento="Ley 10159, art. 21 inciso d); LGAP, art. 309">
         <p>
-          La Administración puede disponer la suspensión provisional del servidor público durante
-          la tramitación del procedimiento disciplinario, como medida cautelar y no como sanción.
-          El artículo 67 del Estatuto de Servicio Civil contempla la suspensión provisional con
-          goce de salario, mientras que la LGAP permite la adopción de medidas cautelares en el
-          marco del procedimiento ordinario. Esta suspensión debe ser proporcionada, debidamente
-          motivada y temporal, y no implica pronunciamiento alguno sobre la culpabilidad del
-          servidor investigado.
+          Durante el procedimiento de despido, el jerarca puede decretar —en resolución motivada— la
+          suspensión provisional del servidor cuando el cargo implique responsabilidad penal, cuando
+          sea necesario para el buen éxito del procedimiento o para salvaguardar el decoro de la
+          Administración. Se trata de una medida cautelar, no de una sanción: no implica
+          pronunciamiento alguno sobre la culpabilidad y debe ser proporcionada y temporal.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="La vía judicial: jurisdicción laboral o contencioso-administrativa" fundamento="Código de Trabajo, art. 420; Sala Constitucional, voto 9928-2010">
+        <p>
+          Agotada la vía administrativa —que es facultativa (art. 460 del Código de Trabajo)—, el
+          servidor puede acudir a la vía judicial. Determinar la jurisdicción competente es uno de
+          los puntos más técnicos del empleo público, y un error de competencia puede costar el
+          caso. Tras la Reforma Procesal Laboral, el artículo 420 del Código de Trabajo atribuye a
+          la jurisdicción laboral las impugnaciones y nulidades de actos relativos al empleo público
+          “cuando por su contenido material o sustancial y el régimen jurídico aplicable” deban
+          ventilarse en esa sede.
+        </p>
+        <p>
+          La Sala Constitucional, en el voto N.° 9928-2010, fijó dos criterios de deslinde: el
+          régimen jurídico aplicable y el contenido material de la pretensión. Como regla, las
+          pretensiones laborales y patrimoniales derivadas de la relación —salarios caídos,
+          prestaciones, reinstalación— y la tutela de fueros especiales y del debido proceso (vía
+          sumarísima del art. 540 del Código de Trabajo) se ventilan en la jurisdicción laboral,
+          mientras que las que cuestionan la validez de una manifestación de la función
+          administrativa pueden corresponder a la contencioso-administrativa. La frontera sigue
+          siendo objeto de jurisprudencia cambiante, por lo que la vía correcta debe definirse caso
+          por caso.
         </p>
       </Instrumento>
 
@@ -1781,62 +1801,68 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué procedimiento debe seguirse para despedir a un servidor público en Costa Rica?
+              ¿Pueden despedir a un servidor público en Costa Rica?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Para despedir a un servidor público cubierto por el régimen de Servicio Civil, la
-              Administración debe tramitar obligatoriamente el procedimiento administrativo ordinario
-              regulado en los artículos 308 a 319 de la LGAP. Este procedimiento garantiza al servidor
-              investigado el derecho a conocer los cargos formulados, acceder al expediente
-              administrativo, ofrecer prueba de descargo, participar en la comparecencia oral y privada,
-              y contar con asistencia letrada. El artículo 309 exige que un órgano director imparcial
-              instruya el procedimiento. El régimen disciplinario del Estatuto de Servicio Civil
-              (Ley N.° 1581, arts. 59-82) establece las causales y tipos de sanción: amonestación
-              verbal, amonestación escrita, suspensión sin goce de salario y despido. La Ley Marco de
-              Empleo Público (Ley N.° 10159) introduce además un régimen disciplinario propio con
-              tipificación de faltas leves, graves y gravísimas. La omisión del procedimiento o la
-              violación de cualquiera de sus garantías esenciales constituye nulidad absoluta impugnable.
+              Sí, pero solo con causa legal y procedimiento previo. El artículo 192 de la
+              Constitución Política y el artículo 37 del Estatuto de Servicio Civil garantizan la
+              estabilidad: el servidor nombrado por idoneidad comprobada solo puede ser removido por
+              una causal de despido justificado de la legislación laboral o por reducción forzosa de
+              servicios. Antes del despido, la Administración debe tramitar el procedimiento especial
+              del artículo 21 de la Ley Marco de Empleo Público (Ley N.° 10159), con órgano director,
+              traslado de cargos y comparecencia oral. Un despido sin causa o sin ese procedimiento
+              es impugnable.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se impugna un despido en el sector público costarricense?
+              ¿Qué procedimiento debe seguir la Administración para despedir a un funcionario?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El servidor público despedido cuenta con varias vías de impugnación. En primera instancia,
-              puede acudir al Tribunal de Servicio Civil, regulado en los artículos 7 a 14 del Estatuto
-              de Servicio Civil (Ley N.° 1581), que es el órgano especializado competente para conocer
-              en alzada de los reclamos contra decisiones de despido. El Tribunal puede confirmar,
-              revocar o modificar la decisión impugnada, y su resolución agota la vía administrativa.
-              Posteriormente, agotada la vía administrativa, el servidor puede demandar ante la
-              jurisdicción contencioso-administrativa conforme a los artículos 1 y 2 del CPCA,
-              solicitando la anulación del acto de despido, el reconocimiento de salarios dejados de
-              percibir, la reinstalación en el cargo y la indemnización de daños y perjuicios causados.
-              Durante la tramitación del procedimiento disciplinario, la Administración puede disponer la
-              suspensión provisional del servidor con goce de salario (art. 67 del Estatuto), como medida
-              cautelar que no constituye sanción ni implica pronunciamiento sobre culpabilidad.
+              El artículo 21 de la Ley N.° 10159 establece un único procedimiento administrativo
+              especial de despido que debe concluir en dos meses. El jerarca nombra un órgano
+              director que formula los cargos por escrito y da traslado al servidor por quince días
+              para presentar descargos y ofrecer prueba, la cual se evacúa en una comparecencia oral
+              y privada. Si la falta existe pero no amerita el despido, puede imponerse una
+              amonestación, una advertencia escrita o una suspensión sin goce de salario hasta por un
+              mes. En lo no previsto rige supletoriamente la Ley General de la Administración Pública
+              (arts. 308 y 309). La omisión del procedimiento o de sus garantías esenciales causa
+              nulidad.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué cambió la Ley Marco de Empleo Público para los servidores del Estado?
+              ¿Qué es el Tribunal de Servicio Civil y puede ordenar la reinstalación?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Ley N.° 10159, Ley Marco de Empleo Público, estableció un régimen unificado aplicable
-              a la generalidad de las instituciones del Estado, buscando armonizar las distintas
-              normativas sectoriales que regulaban el empleo público de manera fragmentaria. La ley
-              regula las condiciones de ingreso al servicio público, la clasificación de puestos, el
-              sistema de remuneraciones basado en salario global, la evaluación del desempeño como
-              requisito para la permanencia, la movilidad laboral entre instituciones y un régimen
-              disciplinario propio con tipificación de faltas leves, graves y gravísimas. El régimen
-              disciplinario de la Ley Marco establece sanciones específicas y un procedimiento
-              sancionatorio que debe respetar las garantías del debido proceso consagradas en los
-              artículos 39 y 41 de la Constitución Política y desarrolladas en los artículos 308 a 319
-              de la LGAP. La ley coexiste con el Estatuto de Servicio Civil (Ley N.° 1581) y su
-              articulación requiere un análisis especializado para determinar cuál normativa prevalece
-              en cada caso concreto según la institución y el tipo de servidor involucrado.
+              El Tribunal de Servicio Civil conoce, en alzada, la apelación contra el despido de los
+              servidores cubiertos por el Estatuto de Servicio Civil. Conforme al artículo 22 de la
+              Ley N.° 10159, la apelación se le remite en ambos efectos y su resolución agota la vía
+              administrativa. Si el Tribunal revoca el despido, dicta un nuevo fallo y resuelve si
+              procede la restitución del servidor en su puesto, con pleno goce de sus derechos y el
+              pago de los salarios caídos. Por eso la apelación dentro del plazo de cinco días
+              hábiles es decisiva.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Ante qué jurisdicción se impugna un despido en el sector público?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Depende del contenido de la pretensión. Tras la Reforma Procesal Laboral, el artículo
+              420 del Código de Trabajo atribuye a la jurisdicción laboral las impugnaciones
+              relativas al empleo público según su contenido material y el régimen jurídico
+              aplicable, criterios de deslinde fijados por la Sala Constitucional en el voto
+              N.° 9928-2010. Como regla, las pretensiones patrimoniales (salarios caídos,
+              prestaciones, reinstalación) y la tutela de fueros y del debido proceso (vía sumarísima
+              del art. 540 del Código de Trabajo) se ventilan en la jurisdicción laboral, mientras
+              que las que cuestionan la validez de un acto administrativo pueden corresponder a la
+              contencioso-administrativa. La frontera es objeto de jurisprudencia cambiante y debe
+              evaluarse caso por caso. Además, el agotamiento de la vía administrativa es facultativo
+              (art. 460 del Código de Trabajo).
             </p>
           </div>
         </div>

@@ -815,4 +815,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea nuestra guía: ¿Cómo demandar al Estado en Costa Rica?",
   },
+  "empleo-publico": {
+    hookHeadline: "¿Lo despidieron o sancionaron de un puesto público?",
+    hookSubtext:
+      "El servidor público goza de estabilidad: solo puede ser removido por una causal de despido justificado o por reducción forzosa de servicios (art. 192 de la Constitución). Antes de despedirlo, la Administración debe seguir el procedimiento especial del artículo 21 de la Ley Marco de Empleo Público (Ley N.° 10159), con órgano director, traslado de cargos y comparecencia oral. Si revoca el despido, el Tribunal de Servicio Civil puede ordenar su restitución con salarios caídos (art. 22). Defendemos su puesto en sede administrativa y judicial.",
+    scenariosTitle: "¿Cuándo necesita un abogado en empleo público?",
+    triggerScenarios: [
+      "Le abrieron un procedimiento de despido o le notificaron un traslado de cargos",
+      "Lo despidieron de una institución pública y cree que fue sin causa o sin debido proceso",
+      "Le impusieron una suspensión sin goce de salario u otra sanción disciplinaria",
+      "Lo suspendieron de su cargo durante una investigación",
+      "Lo cesaron por una reducción forzosa de servicios sin justificación técnica ni pago de prestaciones",
+      "Necesita apelar ante el Tribunal de Servicio Civil dentro del plazo de cinco días hábiles",
+      "No sabe si su caso se litiga en la vía laboral o en la contencioso-administrativa",
+    ],
+    services: [
+      {
+        title: "Defensa en el procedimiento de despido",
+        description:
+          "Ejercemos su defensa en el procedimiento especial del artículo 21 de la Ley N.° 10159: contestamos el traslado de cargos dentro de los quince días, ofrecemos prueba y lo representamos en la comparecencia oral y privada. La omisión del procedimiento o de sus garantías esenciales causa nulidad.",
+      },
+      {
+        title: "Recursos y apelación ante el Tribunal de Servicio Civil",
+        description:
+          "Interponemos la revocatoria y la apelación en subsidio dentro del plazo improrrogable de cinco días hábiles (art. 22). En las instituciones cubiertas por el Estatuto, la apelación se remite en ambos efectos al Tribunal de Servicio Civil, que puede revocar el despido y ordenar la restitución con salarios caídos.",
+      },
+      {
+        title: "Impugnación de sanciones disciplinarias",
+        description:
+          "Defendemos contra amonestaciones, advertencias escritas y suspensiones sin goce de salario. Verificamos que exista causal, proporcionalidad y un procedimiento previo respetuoso del debido proceso, y atacamos la sanción cuando falta alguno de esos elementos.",
+      },
+      {
+        title: "Cese por reducción forzosa",
+        description:
+          "Revisamos los ceses por reducción forzosa de servicios (art. 20 de la Ley N.° 10159): exigimos la rigurosa justificación técnica y el pago previo de las prestaciones e indemnización. Cuando esos requisitos faltan, impugnamos el cese.",
+      },
+      {
+        title: "Determinación de la vía: laboral o contencioso-administrativa",
+        description:
+          "Definimos la jurisdicción competente según el contenido de la pretensión y el régimen aplicable (art. 420 del Código de Trabajo; voto 9928-2010 de la Sala Constitucional). Un error de competencia puede costar el caso; lo evitamos antes de demandar.",
+      },
+      {
+        title: "Demanda y reinstalación en sede judicial",
+        description:
+          "Llevamos su caso a la vía judicial —laboral o contencioso-administrativa según corresponda— para pedir la nulidad del despido, la reinstalación en el puesto, el pago de salarios caídos y la indemnización de daños. El agotamiento de la vía administrativa es facultativo (art. 460 del Código de Trabajo).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, soy servidor público y necesito asesoría por un despido o una sanción en mi trabajo.",
+    commercialFaq: [
+      {
+        question: "¿Pueden despedirme de un puesto público sin causa?",
+        answer:
+          "No. El artículo 192 de la Constitución y el artículo 37 del Estatuto de Servicio Civil garantizan la estabilidad: el servidor solo puede ser removido por una causal de despido justificado o por reducción forzosa de servicios. Además, antes del despido la Administración debe tramitar el procedimiento especial del artículo 21 de la Ley N.° 10159, con órgano director, traslado de cargos y comparecencia oral. Un despido sin causa o sin ese procedimiento es impugnable.",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para apelar un despido?",
+        answer:
+          "El plazo es improrrogable: cinco días hábiles desde la notificación de la resolución de despido, para interponer la revocatoria y la apelación en subsidio (art. 22 de la Ley N.° 10159). En las instituciones cubiertas por el Estatuto de Servicio Civil, la apelación se concede en ambos efectos ante el Tribunal de Servicio Civil, que puede revocar el despido y ordenar la restitución con salarios caídos. Por lo corto del plazo, conviene actuar de inmediato.",
+      },
+      {
+        question: "¿Mi caso va a la jurisdicción laboral o a la contencioso-administrativa?",
+        answer:
+          "Depende del contenido de la pretensión y del régimen jurídico aplicable, criterios de deslinde que fijó la Sala Constitucional en el voto N.° 9928-2010 y que recoge el artículo 420 del Código de Trabajo. Como regla, las pretensiones patrimoniales y la tutela de fueros y del debido proceso se ventilan en la jurisdicción laboral; las que cuestionan la validez de un acto administrativo pueden corresponder a la contencioso-administrativa. Es una frontera técnica y cambiante: un error de competencia puede costar el caso, por lo que la evaluamos antes de demandar.",
+      },
+      {
+        question: "¿Puedo recuperar mi puesto y los salarios caídos?",
+        answer:
+          "Sí, es posible. Si el Tribunal de Servicio Civil revoca el despido, dicta un nuevo fallo y resuelve si procede la restitución del servidor en su puesto, con pleno goce de sus derechos y el pago de los salarios caídos (art. 22 de la Ley N.° 10159). En la vía judicial, la reinstalación y los salarios caídos son también pretensiones típicas de la defensa de un funcionario despedido.",
+      },
+    ],
+  },
 };
