@@ -121,10 +121,17 @@ export default async function ArticlePage({
       article.institution ||
       null;
 
-  /* JSON-LD for academic SEO */
+  /* JSON-LD. ScholarlyArticle solo para piezas académicas (tesis, libros,
+     ponencias); las guías y artículos informativos usan el tipo general
+     Article, más apropiado para contenido no académico (mejor comprensión
+     por Google e IA). */
+  const SCHOLARLY_TYPES = ["tesis", "libro", "ponencia"];
+  const articleSchemaType = SCHOLARLY_TYPES.includes(article.publicationType ?? "")
+    ? "ScholarlyArticle"
+    : "Article";
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
+    "@type": articleSchemaType,
     headline: article.title,
     description: article.excerpt,
     datePublished: article.date,

@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { GlobalWhatsAppFloat } from "@/components/layout/GlobalWhatsAppFloat";
 import "./globals.css";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.corporaciongc.com";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
