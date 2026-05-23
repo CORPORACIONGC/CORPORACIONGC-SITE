@@ -1034,4 +1034,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea: La potestad discrecional de la administración municipal en materia urbanística",
   },
+  "dominio-publico": {
+    hookHeadline: "¿Le revocaron una concesión o le ordenaron desalojar un bien del Estado?",
+    hookSubtext:
+      "Las cosas públicas están fuera del comercio (art. 262 del Código Civil), pero los derechos del concesionario y del permisionario sí están protegidos. Si la Administración revoca su concesión, ordena un desalojo o le niega un permiso de uso, esa decisión debe ajustarse a la ley: el art. 154 de la LGAP fija reglas sobre permisos precarios; el 155 exige dictamen de la Contraloría e indemnización completa para revocar derechos subjetivos; el 194 fija la responsabilidad por sacrificio especial. Cuando hay urgencia, llevamos medidas cautelares para suspender el acto.",
+    scenariosTitle: "¿Cuándo necesita un abogado en dominio público?",
+    triggerScenarios: [
+      "La Administración revocó —o anunció revocar— su concesión sobre un bien del Estado",
+      "Le notificaron una orden de desalojo o sanción por ocupar un bien demanial",
+      "Le denegaron un permiso de uso del dominio público o se lo revocaron sin motivación adecuada",
+      "Declararon la caducidad de su concesión por incumplimiento",
+      "Le restringieron o limitaron derechos sobre un bien del Estado en su perjuicio",
+      "La Administración usó la autotutela sin respetar el debido proceso",
+      "Necesita una indemnización por la revocatoria de su concesión por interés público",
+    ],
+    services: [
+      {
+        title: "Defensa de concesiones y revocatorias con indemnización",
+        description:
+          "Cuando la Administración intenta revocar una concesión, exigimos el cumplimiento estricto del artículo 155 de la LGAP: dictamen favorable de la Contraloría General de la República y reconocimiento simultáneo de la indemnización completa, so pena de nulidad absoluta. Esa nulidad es el argumento principal cuando el procedimiento se omite.",
+      },
+      {
+        title: "Permisos de uso precarios",
+        description:
+          "Tramitamos e impugnamos permisos de uso del dominio público (art. 154 de la LGAP). Aunque el título sea precario, la revocación no puede ser intempestiva ni arbitraria y debe darse un plazo prudencial: una revocación apresurada o sin motivación adecuada es revisable.",
+      },
+      {
+        title: "Defensa frente a desalojos administrativos",
+        description:
+          "Defendemos a ocupantes y poseedores ante desalojos administrativos: exigimos el debido proceso ordinario (LGAP, arts. 308 y 309) y, cuando el desalojo es inminente, solicitamos medidas cautelares para suspenderlo (art. 19 del CPCA).",
+      },
+      {
+        title: "Indemnizaciones por sacrificio especial",
+        description:
+          "Reclamamos la indemnización por conducta lícita de la Administración cuando un acto legítimo —típicamente la revocatoria por interés público— le causa un daño especial. El artículo 194 de la LGAP cubre el valor del daño al momento del pago; cuando la conducta es ilícita (arts. 190-192), la reparación incluye además el lucro cesante.",
+      },
+      {
+        title: "Caducidad de concesiones por incumplimiento",
+        description:
+          "Cuando la Administración declara la caducidad por incumplimiento del concesionario, revisamos si el procedimiento siguió las reglas y si los hechos imputados se acreditaron: una caducidad sin debido proceso o sin causa probada es impugnable.",
+      },
+      {
+        title: "Litigio contencioso-administrativo demanial",
+        description:
+          "Llevamos el caso a la jurisdicción contencioso-administrativa con las pretensiones del artículo 42 del CPCA: anulación del acto, restablecimiento del concesionario en su derecho e indemnización. Para casos urgentes, medidas cautelares (art. 19) para suspender el desalojo o la revocatoria.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un problema con una concesión o permiso sobre un bien del Estado y necesito asesoría.",
+    commercialFaq: [
+      {
+        question: "¿Pueden quitarme una concesión sin pagarme?",
+        answer:
+          "No, si la concesión otorga un derecho subjetivo. El artículo 155 de la LGAP exige, para revocar un acto declaratorio de derechos subjetivos, el dictamen favorable de la Contraloría General de la República y el reconocimiento simultáneo de la indemnización completa de los daños y perjuicios, so pena de nulidad absoluta. Una revocación sin esos requisitos —o sin liquidación de daños dentro del mes siguiente a la solicitud— es impugnable. Distinto es el permiso de uso precario del artículo 154, que sí puede revocarse «sin responsabilidad», aunque no de forma intempestiva ni arbitraria.",
+      },
+      {
+        question: "¿Puedo recuperar el lucro cesante si me revocan la concesión?",
+        answer:
+          "Depende de la causa. Si la revocatoria es por conducta lícita de la Administración —típicamente, por interés público sobrevenido—, el artículo 194 de la LGAP limita la indemnización al valor de los daños al momento del pago, pero «no el lucro cesante». Si la revocatoria es por conducta ilícita (arts. 190-192) o por falta de un servidor en el ejercicio del cargo, la reparación es más amplia y sí alcanza el lucro cesante. Por eso es decisivo encuadrar correctamente la causa de la revocatoria.",
+      },
+      {
+        question: "¿Pueden desalojarme de un terreno del Estado sin juicio?",
+        answer:
+          "Sí, en virtud de la autotutela administrativa, pero con debido proceso. La Administración debe seguir el procedimiento ordinario de los artículos 308 y 309 de la LGAP —notificación, traslado de cargos, comparecencia oral y privada y derecho de defensa— antes de ejecutar el desalojo. Su omisión causa nulidad. La orden de desalojo es además impugnable: cuando es inminente, conviene pedir medidas cautelares de urgencia (art. 19 del CPCA) para suspenderla mientras se resuelve el fondo.",
+      },
+      {
+        question: "¿Puedo adquirir por usucapión un bien del Estado?",
+        answer:
+          "No. El artículo 262 del Código Civil pone las cosas públicas «fuera del comercio», y de ahí la jurisprudencia deriva la imprescriptibilidad: por más tiempo que se ocupe un bien demanial, el ocupante no adquiere la propiedad. Esa exclusión cede solo si la propia ley desafecta el bien y lo separa del uso público al que estaba destinado.",
+      },
+    ],
+  },
 };

@@ -286,9 +286,9 @@ export const PRACTICE_AREA_PAGES = [
     description: "Solicitud y defensa de concesiones sobre bienes de dominio público, impugnación de revocatorias y caducidades, defensa frente a desalojos administrativos y protección de derechos derivados de permisos de uso.",
     icon: "MapPin" as const,
     priority: "specialized" as const,
-    seoTitle: "Dominio Público y Concesiones · Costa Rica",
-    seoDescription: "Concesiones sobre bienes del Estado, defensa contra revocatorias, caducidades y desalojos administrativos. Protección de derechos derivados de permisos de uso sobre bienes demaniales en Costa Rica.",
-    ogShortTitle: "{{em}} y Concesiones Demaniales",
+    seoTitle: "Abogados en Dominio Público en Costa Rica",
+    seoDescription: "Abogados en dominio público en Costa Rica: defensa de concesiones y permisos de uso, frente a revocatorias, caducidades y desalojos administrativos de bienes del Estado.",
+    ogShortTitle: "Abogados en {{em}}",
     ogEmphasis: "Dominio Público",
   },
   {

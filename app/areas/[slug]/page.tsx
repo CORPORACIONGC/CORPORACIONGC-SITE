@@ -2244,119 +2244,124 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El dominio público comprende el conjunto de bienes que, por su
-          naturaleza o por disposición legal, están destinados al uso público o a
-          la prestación de un servicio público y se encuentran sujetos a un
-          régimen jurídico especial de derecho público. En Costa Rica, los bienes
-          demaniales están protegidos por los principios de inalienabilidad,
-          imprescriptibilidad e inembargabilidad, consagrados en los artículos 261
-          y 262 del Código Civil y desarrollados por la Ley General de la
-          Administración Pública y la legislación sectorial aplicable.
+          El régimen demanial costarricense se construye sobre dos artículos del Código Civil. El
+          artículo 261 define como «cosas públicas» tanto las que por ley están destinadas de modo
+          permanente a un servicio de utilidad general como aquellas «de que todos pueden aprovecharse
+          por estar entregadas al uso público». El artículo 262 dispone que esas cosas «están fuera
+          del comercio» —de ahí la doctrina y la jurisprudencia derivan los principios de
+          inalienabilidad, imprescriptibilidad e inembargabilidad—. Solo una desafectación legal puede
+          devolverlas al tráfico jurídico privado.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          La práctica en materia de dominio público abarca la obtención,
-          mantenimiento y defensa de concesiones y permisos de uso sobre bienes
-          demaniales, así como la impugnación de los actos administrativos que
-          afecten los derechos de los concesionarios y usuarios.
+          Como abogados en dominio público en Costa Rica, en Corporación GC defendemos a
+          concesionarios, permisionarios y administrados frente a revocatorias y caducidades de
+          concesiones, desalojos administrativos y denegatorias de permisos de uso sobre bienes del
+          Estado. A continuación se describen los instrumentos jurídicos que integran esta área de
+          práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Principios del régimen demanial" fundamento="Código Civil, arts. 261-262">
+      <Instrumento titulo="Cosas públicas: definición y régimen demanial" fundamento="Código Civil, arts. 261 y 262">
         <p>
-          Los bienes de dominio público están sujetos a un régimen de protección
-          reforzada que los distingue de los bienes patrimoniales de la
-          Administración. El artículo 261 del Código Civil establece que los
-          bienes de dominio público son aquellos que por ley están destinados de
-          un modo permanente a cualquier servicio de utilidad general. El artículo
-          262 dispone que estos bienes son inalienables y no pueden adquirirse
-          por prescripción. La jurisprudencia constitucional ha reiterado que los
-          principios de inalienabilidad, imprescriptibilidad e inembargabilidad
-          constituyen el núcleo esencial del régimen demanial y se aplican a
-          todos los bienes de dominio público, con independencia de su naturaleza
-          específica.
+          El artículo 261 del Código Civil define las cosas públicas en dos categorías: (i) las que
+          por ley están destinadas de modo permanente a cualquier servicio de utilidad general y
+          (ii) aquellas «de que todos pueden aprovecharse por estar entregadas al uso público».
+          Quedan así dentro del dominio público las plazas, calles, parques, playas, ríos,
+          carreteras y los edificios afectos a un servicio público. El propio artículo aclara que
+          los demás bienes son privados, aunque pertenezcan al Estado o a los municipios: la mera
+          titularidad estatal no convierte un bien en demanial.
+        </p>
+        <p>
+          El artículo 262 dispone que las cosas públicas «están fuera del comercio», de donde la
+          doctrina y la jurisprudencia derivan los principios de inalienabilidad, imprescriptibilidad
+          e inembargabilidad. Esa exclusión cede únicamente cuando la propia ley desafecta el bien y
+          lo separa del uso público al que estaba destinado.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Concesiones de uso sobre bienes demaniales" fundamento="LGAP, arts. 154-160; Ley 6043, arts. 38-56">
+      <Instrumento titulo="Permisos de uso del dominio público" fundamento="LGAP, art. 154">
         <p>
-          La concesión de uso es el título jurídico mediante el cual la
-          Administración otorga a un particular el derecho de utilizar un bien de
-          dominio público de manera exclusiva durante un plazo determinado,
-          sujeto a las condiciones que establezca el acto concesional. Los
-          artículos 154 a 160 de la Ley General de la Administración Pública
-          regulan el régimen general de las concesiones administrativas. La
-          concesión no transfiere la propiedad del bien, sino que otorga un
-          derecho de uso que coexiste con la titularidad demanial del Estado. El
-          concesionario adquiere un derecho subjetivo cuya estabilidad depende
-          del cumplimiento de las obligaciones establecidas en el acto concesional
-          y de la subsistencia del interés público que motivó su otorgamiento.
+          El artículo 154 de la Ley General de la Administración Pública regula los permisos de uso
+          del dominio público y los demás actos que otorgan a un administrado un derecho a título
+          precario. La Administración puede revocarlos «por razones de oportunidad o conveniencia,
+          sin responsabilidad de la Administración», pero el propio artículo aclara que la revocación
+          «no deberá ser intempestiva ni arbitraria» y exige otorgar un plazo prudencial para el
+          cumplimiento del acto de revocación.
+        </p>
+        <p>
+          De esa precariedad nace una zona gris donde una revocación apresurada o sin motivación
+          adecuada es revisable, aun cuando el título sea precario.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Permisos de uso precarios" fundamento="LGAP, art. 154; Código Municipal, art. 62">
+      <Instrumento titulo="Concesiones demaniales y revocación con indemnización" fundamento="LGAP, art. 155; Constitución, art. 121, inciso 14">
         <p>
-          El permiso de uso es un acto administrativo unilateral mediante el cual
-          la Administración autoriza a un particular a utilizar un bien de dominio
-          público de forma temporal y precaria. A diferencia de la concesión, el
-          permiso de uso no genera un derecho subjetivo en favor del
-          permisionario, sino una situación de tolerancia administrativa que
-          puede ser revocada en cualquier momento por razones de interés público,
-          sin que proceda indemnización alguna. El artículo 154 de la Ley General
-          de la Administración Pública y el artículo 62 del Código Municipal
-          regulan estos permisos. La precariedad del título implica que la
-          Administración conserva en todo momento la potestad de revocar el
-          permiso cuando así lo exija el interés público.
+          Las concesiones sobre bienes del dominio público se rigen por las leyes sectoriales —zona
+          marítimo terrestre, aguas, caminos, obra pública, telecomunicaciones, electricidad—, en
+          desarrollo de la reserva legal del artículo 121, inciso 14, de la Constitución, según el
+          cual le corresponde a la Asamblea Legislativa decretar la enajenación o la aplicación a
+          usos públicos de los bienes propios de la Nación.
+        </p>
+        <p>
+          Cuando la Administración pretende revocar una concesión —que es un acto declaratorio de
+          derechos subjetivos—, el artículo 155 de la LGAP impone un régimen estricto: la revocación
+          la dicta el jerarca del ente respectivo, previo dictamen favorable de la Contraloría
+          General de la República, y debe contener simultáneamente el reconocimiento —y, si es
+          posible, el cálculo— de la indemnización completa de los daños y perjuicios, so pena de
+          nulidad absoluta. La liquidación corresponde a la Administración en el mes posterior a la
+          solicitud o recurso del administrado.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Revocatoria y caducidad de concesiones" fundamento="LGAP, arts. 154-160; Ley 6043, art. 48">
+      <Instrumento titulo="Responsabilidad de la Administración por sacrificio especial" fundamento="LGAP, arts. 190, 191 y 194">
         <p>
-          La revocatoria de una concesión demanial es el acto administrativo
-          mediante el cual la Administración extingue el derecho del
-          concesionario antes del vencimiento del plazo originalmente establecido.
-          La revocatoria puede fundarse en razones de interés público
-          sobrevenido o en el incumplimiento de las obligaciones del
-          concesionario. La caducidad, por su parte, opera como consecuencia
-          automática del incumplimiento grave de las condiciones del acto
-          concesional. Los artículos 154 a 160 de la LGAP establecen el marco
-          general de extinción de las concesiones. Cuando la revocatoria obedece
-          a razones de interés público y no a incumplimiento del concesionario,
-          este tiene derecho a una indemnización integral conforme al artículo
-          48 de la Ley 6043 y la jurisprudencia constitucional aplicable.
+          La Administración responde por todos los daños causados por su funcionamiento legítimo o
+          ilegítimo, normal o anormal, salvo fuerza mayor, culpa de la víctima o hecho de un tercero
+          (art. 190 de la LGAP). Cuando el daño proviene de la falta de un servidor en el ejercicio
+          del cargo —conducta ilícita—, la reparación alcanza al daño emergente y al lucro cesante
+          (art. 191).
+        </p>
+        <p>
+          Distinta es la responsabilidad por conducta lícita o funcionamiento normal —típicamente, la
+          revocatoria de una concesión por interés público sobrevenido—. El artículo 194 reconoce
+          esa responsabilidad por «sacrificio especial», pero limita la indemnización: «la
+          indemnización deberá cubrir el valor de los daños al momento de su pago, pero no el lucro
+          cesante». Encuadrar correctamente la causa de la revocatoria define el alcance económico
+          del reclamo.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Desalojos administrativos de bienes demaniales" fundamento="Ley 6043, arts. 13 y 57; Código Municipal, art. 8">
+      <Instrumento titulo="Desalojo administrativo y autotutela demanial" fundamento="LGAP, arts. 308 y 309; principio de autotutela administrativa">
         <p>
-          La Administración titular del dominio público está facultada para
-          ordenar y ejecutar el desalojo de quienes ocupen bienes demaniales sin
-          título legítimo. El artículo 8 del Código Municipal otorga a las
-          municipalidades la potestad de recuperar administrativamente los bienes
-          de dominio público que se encuentren en posesión indebida de
-          particulares. En materia de zona marítimo terrestre, el artículo 13 de
-          la Ley 6043 dispone que las autoridades deben impedir las ocupaciones
-          ilegales, y el artículo 57 establece las sanciones aplicables a
-          quienes ocupen o construyan en la zona pública sin autorización. El
-          desalojo administrativo debe respetar el debido proceso y puede ser
-          impugnado ante la jurisdicción contencioso-administrativa.
+          La Administración titular del dominio público está facultada para recuperar de oficio los
+          bienes demaniales ocupados sin título legítimo, en ejercicio de la autotutela
+          administrativa. El desalojo debe respetar el debido proceso del procedimiento ordinario
+          regulado en los artículos 308 y 309 de la LGAP —con traslado de cargos, comparecencia oral
+          y privada y derecho de defensa—; su omisión causa nulidad.
+        </p>
+        <p>
+          En materia de zona marítimo terrestre, la Ley N.° 6043 establece reglas específicas de
+          sanciones y desalojo de ocupantes, que se tratan en el área específica de Zona Marítimo
+          Terrestre.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Indemnizaciones por revocatoria de concesiones" fundamento="Constitución, art. 45; LGAP, arts. 190-194">
+      <Instrumento titulo="Impugnación: vía administrativa y contencioso-administrativa" fundamento="CPCA, arts. 1, 31 y 42">
         <p>
-          Cuando la Administración revoca una concesión demanial por razones de
-          interés público —no por incumplimiento del concesionario—, surge el
-          derecho a una indemnización integral en favor del concesionario
-          afectado. El artículo 45 de la Constitución Política establece el
-          derecho a la propiedad, del cual la jurisprudencia ha derivado la
-          protección de los derechos patrimoniales adquiridos al amparo de una
-          concesión legítima. Los artículos 190 a 194 de la Ley General de la
-          Administración Pública regulan la responsabilidad patrimonial de la
-          Administración por su funcionamiento legítimo, que comprende la
-          obligación de indemnizar cuando se produce un sacrificio especial del
-          administrado en beneficio del interés público. La indemnización debe
-          cubrir el daño efectivamente causado, incluyendo el daño emergente y
-          el lucro cesante demostrados.
+          Las decisiones de la Administración sobre bienes demaniales —denegatoria de permiso o
+          concesión, revocatoria, caducidad, orden de desalojo, sanción por ocupación— son
+          impugnables. Los actos municipales se recurren con los recursos del Código Municipal
+          (revocatoria y apelación dentro del quinto día, esta última ante el Tribunal
+          Contencioso-Administrativo como jerarca impropio); los demás actos, con los recursos
+          ordinarios de la LGAP. En materia municipal el agotamiento de la vía administrativa es
+          preceptivo (art. 31 del CPCA, supuesto del art. 173 de la Constitución).
+        </p>
+        <p>
+          Agotada la vía, la jurisdicción contencioso-administrativa puede anular el acto,
+          restablecer al concesionario en su derecho y condenar al Estado al pago de la
+          indemnización (art. 42 del CPCA). Cuando el desalojo o la revocatoria es inminente,
+          conviene pedir medidas cautelares de urgencia para suspender los efectos del acto mientras
+          se resuelve el fondo (art. 19 del CPCA).
         </p>
       </Instrumento>
 
@@ -2369,62 +2374,55 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué son los bienes de dominio público y qué protección especial tienen?
+              ¿Qué es una «cosa pública» y por qué no puede venderse ni embargarse?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los bienes de dominio público son aquellos que por ley están destinados de un modo
-              permanente a cualquier servicio de utilidad general, conforme al artículo 261 del Código
-              Civil. Están sujetos a un régimen de protección reforzada basado en tres principios
-              fundamentales: inalienabilidad (no pueden venderse ni enajenarse), imprescriptibilidad (no
-              pueden adquirirse por prescripción o usucapión) e inembargabilidad (no pueden ser objeto
-              de embargo). El artículo 262 del Código Civil consagra expresamente los dos primeros
-              principios. La jurisprudencia constitucional ha reiterado que estos principios constituyen
-              el núcleo esencial del régimen demanial y se aplican a todos los bienes de dominio público
-              con independencia de su naturaleza: playas, ríos, carreteras, plazas, edificios públicos,
-              entre otros. Los particulares pueden acceder al uso de estos bienes mediante concesiones
-              (arts. 154-160 LGAP) o permisos de uso precarios (art. 154 LGAP, art. 62 del Código
-              Municipal), pero nunca adquirir su propiedad.
+              El artículo 261 del Código Civil define las cosas públicas como las que «por ley, están
+              destinadas de modo permanente a cualquier servicio de utilidad general» y aquellas «de
+              que todos pueden aprovecharse por estar entregadas al uso público»: plazas, calles,
+              parques, playas, ríos, carreteras y los edificios afectos a un servicio público entran
+              en esa categoría. El artículo 262 las pone «fuera del comercio», y de ahí la doctrina y
+              la jurisprudencia derivan los principios de inalienabilidad (no pueden venderse),
+              imprescriptibilidad (no se adquieren por usucapión) e inembargabilidad (no pueden ser
+              embargadas). Esa exclusión solo cede si una ley desafecta el bien y lo separa del uso
+              público al que estaba destinado. La sola titularidad estatal o municipal no convierte
+              un bien en demanial: los demás bienes del Estado son privados.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué diferencia hay entre una concesión y un permiso de uso sobre bienes del Estado?
+              ¿Qué diferencia hay entre una concesión y un permiso de uso?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La concesión de uso, regulada en los artículos 154 a 160 de la LGAP, otorga al particular
-              un derecho subjetivo de utilizar un bien de dominio público de manera exclusiva durante un
-              plazo determinado. El concesionario adquiere un derecho cuya estabilidad depende del
-              cumplimiento de las obligaciones del acto concesional y de la subsistencia del interés
-              público. Si la Administración revoca la concesión por razones de interés público y no por
-              incumplimiento, el concesionario tiene derecho a indemnización integral conforme a los
-              artículos 190 a 194 de la LGAP y al artículo 45 de la Constitución. El permiso de uso, en
-              cambio, es un acto administrativo unilateral que autoriza el uso temporal y precario del
-              bien (art. 154 LGAP, art. 62 del Código Municipal). No genera un derecho subjetivo sino
-              una situación de tolerancia administrativa revocable en cualquier momento por razones de
-              interés público, sin que proceda indemnización alguna. Esta distinción es fundamental para
-              determinar los derechos del particular frente a la Administración.
+              El permiso de uso es un título precario regulado por el artículo 154 de la LGAP: la
+              Administración puede revocarlo por razones de oportunidad o conveniencia «sin
+              responsabilidad», aunque la propia norma exige que la revocación «no sea intempestiva
+              ni arbitraria» y otorgue un plazo prudencial. La concesión, en cambio, otorga al
+              concesionario un derecho subjetivo y se rige por las leyes sectoriales y la reserva
+              legal del artículo 121, inciso 14, de la Constitución. Su revocación es un acto que
+              extingue derechos subjetivos: el artículo 155 de la LGAP exige que la dicte el jerarca
+              del ente respectivo, con dictamen favorable de la Contraloría General de la República y
+              el reconocimiento simultáneo de la indemnización completa, so pena de nulidad absoluta.
+              Esa distinción cambia por completo lo que el administrado puede reclamar.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Puede la Administración desalojar a quien ocupa un bien de dominio público sin autorización?
+              ¿Puede la Administración desalojar a quien ocupa un bien demanial sin permiso?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Sí. La Administración titular del dominio público está facultada para ordenar y ejecutar
-              el desalojo de quienes ocupen bienes demaniales sin título legítimo. El artículo 8 del
-              Código Municipal (Ley N.° 7794) otorga a las municipalidades la potestad de recuperar
-              administrativamente los bienes de dominio público que se encuentren en posesión indebida
-              de particulares. En materia de zona marítimo terrestre, el artículo 13 de la Ley 6043
-              dispone que las autoridades deben impedir las ocupaciones ilegales, y el artículo 57
-              establece sanciones que incluyen la demolición de obras a costa del infractor. El desalojo
-              administrativo debe respetar el debido proceso conforme a los artículos 308 a 319 de la
-              LGAP, garantizando la notificación, el derecho de audiencia y la posibilidad de recurrir.
-              Las resoluciones que ordenen desalojos son impugnables ante la jurisdicción
-              contencioso-administrativa conforme al artículo 1 del CPCA. Los ocupantes no pueden
-              alegar derechos posesorios sobre bienes demaniales dada su imprescriptibilidad
-              constitucional (art. 262 del Código Civil).
+              Sí, en virtud de la autotutela administrativa, pero con debido proceso. El procedimiento
+              ordinario de los artículos 308 y 309 de la LGAP exige notificación, traslado de cargos,
+              comparecencia oral y privada y derecho de defensa; su omisión causa nulidad. La orden de
+              desalojo es impugnable: en sede administrativa, con los recursos del Código Municipal
+              (cuando es municipal) o los recursos ordinarios de la LGAP; en sede judicial, mediante
+              demanda contencioso-administrativa con las pretensiones del artículo 42 del CPCA y, si
+              hay urgencia, medidas cautelares para suspender el desalojo (art. 19 del CPCA). Por la
+              imprescriptibilidad del dominio público derivada del artículo 262 del Código Civil, el
+              ocupante no puede alegar derechos posesorios ni adquirir el bien por el paso del
+              tiempo.
             </p>
           </div>
         </div>
