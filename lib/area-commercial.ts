@@ -1250,14 +1250,14 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
   "alianzas-publico-privadas-infraestructura": {
     hookHeadline: "¿Necesita estructurar, impugnar o defender un proyecto de concesión o APP?",
     hookSubtext:
-      "Costa Rica está en transición. La Ley 7762 sigue siendo el régimen vigente para los contratos de concesión y para todos los procedimientos en curso. El expediente 24.009 (Ley Marco APP) fue aprobado en primer debate el 19 de mayo de 2026 pero está suspendido por una consulta de constitucionalidad ante la Sala Constitucional; cuando entre en vigor —tras su reglamentación— sustituirá al Consejo Nacional de Concesiones por la Agencia Nacional de APP. Defendemos a concesionarios, consorcios, inversionistas y al sector público en ambos regímenes: estructuración, refrendo, objeción de carteles, apelación de adjudicaciones, arbitraje contractual y litigio contencioso.",
+      "Costa Rica está en transición. La Ley 7762 sigue siendo el régimen vigente para los contratos de concesión y para todos los procedimientos en curso. El expediente 24.009 (Ley Marco APP) fue aprobado en primer debate el 19 de mayo de 2026 pero está suspendido por una consulta de constitucionalidad ante la Sala Constitucional; cuando entre en vigor —tras su reglamentación— sustituirá al Consejo Nacional de Concesiones por la Agencia Nacional de APP. Defendemos a concesionarios, consorcios, inversionistas y al sector público en ambos regímenes: estructuración, refrendo, objeción de carteles, apelación de adjudicaciones y litigio contencioso contra los actos del CNC, MOPT y CGR.",
     scenariosTitle: "¿Cuándo necesita un abogado en concesiones y APP?",
     triggerScenarios: [
       "Va a participar en una licitación de concesión y necesita estructurar la oferta",
       "Le rechazaron el refrendo de un contrato de concesión ante la CGR",
       "Necesita objetar un cartel o apelar una adjudicación ante la Contraloría",
       "Un contrato de concesión vigente enfrenta una controversia de equilibrio económico-financiero",
-      "Va a iniciar o defender un arbitraje contractual contra el Estado",
+      "Necesita impugnar en sede contenciosa un acto del CNC, MOPT o CGR que afecta su contrato",
       "Es proponente de una iniciativa privada y la quiere llevar al CNC (o, en su día, a la ANAPP)",
       "Necesita saber cómo le afectará el expediente 24.009 a su proyecto vigente",
     ],
@@ -1283,14 +1283,14 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "Interponemos objeciones al cartel ante la CGR (art. 34: primer tercio del plazo para presentar ofertas; resolución en 30 días naturales con silencio positivo) y apelaciones contra la adjudicación (art. 35: diez días hábiles desde la publicación, resolución en 40 días hábiles prorrogables).",
       },
       {
-        title: "Arbitraje contractual y resolución alterna de conflictos",
-        description:
-          "Llevamos arbitrajes contractuales conforme al artículo 39 de la Ley 7762, en la cláusula compromisoria del contrato. No son arbitrables las potestades de imperio, pero sí el derecho y monto de indemnización por su ejercicio y el reajuste del equilibrio económico-financiero. El arbitraje es de derecho y exigible sin agotamiento previo de la vía administrativa.",
-      },
-      {
         title: "Litigio contencioso contra actos del CNC, MOPT y CGR",
         description:
           "Impugnamos los actos del Consejo Nacional de Concesiones, del MOPT y de la Contraloría que afecten el contrato o el procedimiento de licitación, ante la jurisdicción contencioso-administrativa, con las pretensiones del art. 42 del CPCA y medidas cautelares de urgencia cuando el caso lo amerite (art. 19).",
+      },
+      {
+        title: "Equilibrio económico-financiero y reclamos contra el Estado",
+        description:
+          "Analizamos y reclamamos administrativa y judicialmente el restablecimiento del equilibrio económico-financiero del contrato y las indemnizaciones por hecho del príncipe, fuerza mayor o decisiones de la Administración que afecten al concesionario, con fundamento en la Ley 7762 y en el régimen de responsabilidad de la LGAP (arts. 190 a 194).",
       },
     ],
     whatsappMessage:
@@ -1307,9 +1307,9 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "La objeción al cartel debe presentarse dentro del primer tercio del plazo para presentar ofertas (art. 34 de la Ley 7762); la CGR resuelve en treinta días naturales y, si no lo hace, la objeción se tiene por acogida en los términos del recurrente. La apelación contra la adjudicación se presenta dentro de los diez días hábiles siguientes a la publicación en La Gaceta (art. 35); la CGR resuelve en cuarenta días hábiles prorrogables. Quien pudiendo recurrir no lo hiciere no podrá usar esos argumentos después.",
       },
       {
-        question: "¿Cómo se resuelven las disputas en un contrato de concesión actual?",
+        question: "¿Cómo se impugnan los actos del CNC, del MOPT o de la CGR que afectan un contrato de concesión vigente?",
         answer:
-          "La Ley 7762 prevé dos vías. La primera es la cláusula de arbitraje del artículo 39, que el cartel debe autorizar y que se rige por la Ley N.° 7727 sobre resolución alterna de conflictos. Es exigible sin agotamiento previo de la vía administrativa. La segunda es la jurisdicción contencioso-administrativa contra los actos del CNC, del MOPT o de la CGR que afecten el contrato, con las pretensiones del artículo 42 del CPCA y, cuando hay urgencia, medidas cautelares del artículo 19.",
+          "Se impugnan en sede contencioso-administrativa contra los actos del Consejo Nacional de Concesiones, del MOPT o de la Contraloría que afecten el contrato o su ejecución. La demanda se rige por el CPCA: pretensiones del artículo 42 (anulación, restablecimiento, indemnización por daños y perjuicios) y, cuando hay urgencia y peligro de daño irreparable, medidas cautelares del artículo 19. En lo pecuniario aplica además el régimen de responsabilidad de la Administración de la LGAP (arts. 190 a 194), incluido el equilibrio económico-financiero del contrato.",
       },
       {
         question: "¿Qué pasa con mi contrato vigente bajo Ley 7762 cuando entre en vigor la Ley Marco APP?",

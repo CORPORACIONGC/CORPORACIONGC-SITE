@@ -4315,10 +4315,10 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados en concesiones y APP en Costa Rica, en Corporación GC asesoramos a
           concesionarios, consorcios, inversionistas y al sector público en la estructuración de
           proyectos, el refrendo de contratos, la objeción de carteles, la apelación de
-          adjudicaciones ante la Contraloría, el arbitraje contractual y el litigio
-          contencioso-administrativo. La doble lectura del régimen vigente y del régimen entrante
-          es una ventaja decisiva. A continuación se describen los instrumentos jurídicos que
-          integran esta área de práctica.
+          adjudicaciones ante la Contraloría y el litigio contencioso-administrativo contra los
+          actos del CNC, MOPT y CGR que afecten el contrato. La doble lectura del régimen vigente
+          y del régimen entrante es una ventaja decisiva. A continuación se describen los
+          instrumentos jurídicos que integran esta área de práctica.
         </p>
       </section>
 
@@ -4393,21 +4393,23 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Arbitraje contractual y resolución alterna de conflictos" fundamento="Ley 7762, art. 39">
+      <Instrumento titulo="Litigio contencioso-administrativo y equilibrio económico-financiero del contrato" fundamento="Ley 7762; CPCA, arts. 19 y 42; LGAP, arts. 190 a 194">
         <p>
-          La cláusula compromisoria de arbitraje es —en el régimen vigente— el mecanismo natural
-          para resolver las controversias derivadas del contrato de concesión. El artículo 39 de
-          la Ley 7762 autoriza estas cláusulas y manda que el cartel deba contemplarlas; se rigen
-          por la Ley sobre resolución alterna de conflictos (Ley N.° 7727).
+          Las controversias derivadas del contrato de concesión y los actos del Consejo Nacional
+          de Concesiones, del MOPT o de la Contraloría que afecten su ejecución se discuten en
+          sede contencioso-administrativa. La demanda admite las pretensiones del artículo 42 del
+          CPCA —anulación del acto, restablecimiento de la situación jurídica, indemnización
+          por daños y perjuicios—, y la urgencia se atiende con las medidas cautelares del
+          artículo 19 del mismo Código.
         </p>
         <p>
-          No es arbitrable el ejercicio de potestades de imperio ni el ejercicio de los deberes
-          públicos por parte de la Administración, pero sí lo es —y este es el campo más
-          relevante— el derecho y el monto de la indemnización del concesionario por ese ejercicio,
-          y el reajuste del equilibrio económico-financiero del contrato cuando no esté sujeto a
-          ajustes tarifarios que formen parte de la potestad de imperio. El arbitraje será
-          necesariamente de derecho y, salvo las excepciones señaladas en la ley, la cláusula
-          compromisoria es exigible sin agotamiento previo de la vía administrativa.
+          En lo patrimonial es la vía natural para reclamar el restablecimiento del equilibrio
+          económico-financiero del contrato y las indemnizaciones derivadas del hecho del
+          príncipe, de la fuerza mayor o de decisiones de la Administración que sacrifican
+          especialmente al concesionario. Aplica el régimen de responsabilidad de la
+          Administración de la LGAP (arts. 190 a 194), con sus reglas sobre conducta lícita e
+          ilícita, daño cierto y efectivo y los límites del artículo 194 sobre lucro cesante en
+          la conducta lícita.
         </p>
       </Instrumento>
 
@@ -4460,18 +4462,17 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se resuelven las disputas en un contrato de concesión vigente?
+              ¿Cómo se impugnan los actos del CNC, MOPT o CGR que afectan un contrato de concesión vigente?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Ley 7762 prevé dos vías. La primera es la cláusula de arbitraje del artículo 39:
-              el cartel debe autorizar el arbitraje como solución alterna y, una vez incorporada al
-              contrato, es exigible sin necesidad de agotar la vía administrativa. No son
-              arbitrables el ejercicio de potestades de imperio ni los deberes públicos, pero sí lo
-              son el derecho y el monto de la indemnización por su ejercicio, y el reajuste del
-              equilibrio económico-financiero del contrato. La segunda vía es la jurisdicción
-              contencioso-administrativa contra los actos del CNC, del MOPT o de la CGR que afecten
-              el contrato, con las pretensiones del artículo 42 del CPCA y, cuando hay urgencia,
-              medidas cautelares del artículo 19.
+              Se impugnan en sede contencioso-administrativa contra los actos del Consejo Nacional
+              de Concesiones, del MOPT o de la Contraloría que afecten el contrato o su ejecución.
+              La demanda se rige por el CPCA: pretensiones del artículo 42 —anulación,
+              restablecimiento de la situación jurídica, indemnización por daños y perjuicios— y,
+              cuando hay urgencia y peligro de daño irreparable, medidas cautelares del artículo
+              19. En lo patrimonial aplica además el régimen de responsabilidad de la
+              Administración de la LGAP (arts. 190 a 194), incluyendo el restablecimiento del
+              equilibrio económico-financiero del contrato.
             </p>
           </div>
 
