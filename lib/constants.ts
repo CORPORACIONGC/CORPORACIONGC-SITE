@@ -262,9 +262,9 @@ export const PRACTICE_AREA_PAGES = [
     description: "Representación en procedimientos de fijación tarifaria, impugnación de resoluciones de ARESEP y SUTEL, defensa de concesiones de servicios públicos y litigio en materia regulatoria conforme a la Ley N.° 7593.",
     icon: "Lightning" as const,
     priority: "specialized" as const,
-    seoTitle: "Litigio ante ARESEP y SUTEL · Costa Rica",
-    seoDescription: "Fijación tarifaria, impugnación de resoluciones de ARESEP y SUTEL, defensa de concesiones de servicios públicos y litigio regulatorio conforme a la Ley N.° 7593. Bufete con experiencia comprobada.",
-    ogShortTitle: "Litigio ante {{em}}",
+    seoTitle: "Abogados ante ARESEP y SUTEL en Costa Rica",
+    seoDescription: "Abogados ante ARESEP y SUTEL en Costa Rica: solicitudes tarifarias, audiencias públicas, recursos y litigio regulatorio en defensa de prestadores de servicios públicos.",
+    ogShortTitle: "Abogados ante {{em}}",
     ogEmphasis: "ARESEP y SUTEL",
   },
   {

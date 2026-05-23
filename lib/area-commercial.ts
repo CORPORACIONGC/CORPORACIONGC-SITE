@@ -1034,6 +1034,77 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
     relatedArticleLabel:
       "Lea: La potestad discrecional de la administración municipal en materia urbanística",
   },
+  "servicio-publico": {
+    hookHeadline: "¿ARESEP o SUTEL le dictó una resolución que afecta su tarifa, su concesión o su operación?",
+    hookSubtext:
+      "El régimen regulatorio costarricense es denso y técnico: una solicitud tarifaria mal armada o una audiencia pública mal trabajada cuesta millones. Defendemos a prestadores de servicios públicos —cooperativas de electrificación, operadores de telecomunicaciones, concesionarios de transporte y otros— en solicitudes tarifarias ordinarias, en audiencias públicas, en procedimientos sancionatorios y en la impugnación de resoluciones desfavorables, en sede regulatoria y, agotada la vía, ante el contencioso.",
+    scenariosTitle: "¿Cuándo necesita un abogado ante ARESEP o SUTEL?",
+    triggerScenarios: [
+      "ARESEP redujo o denegó su solicitud de fijación tarifaria ordinaria",
+      "SUTEL le notificó un procedimiento sancionatorio o una resolución desfavorable",
+      "Le abrieron una revocatoria de concesión o título habilitante",
+      "Hay una audiencia pública en curso que afecta su tarifa o su operación",
+      "Necesita preparar una solicitud tarifaria sólida que pase el filtro técnico",
+      "Quiere oponerse formalmente a la tarifa o concesión que otro operador busca obtener",
+      "Una resolución regulatoria lo afecta y quiere impugnarla en la jurisdicción contencioso-administrativa",
+    ],
+    services: [
+      {
+        title: "Solicitudes tarifarias (ordinaria y extraordinaria)",
+        description:
+          "Preparamos solicitudes tarifarias técnicas y jurídicamente sólidas: en las ordinarias, el estudio anual del prestador (art. 30 de la Ley 7593) bajo el principio de servicio al costo (art. 31); en las extraordinarias, la gestión correcta del modelo automático de ajuste o la sustentación técnica de las circunstancias que justifican una revisión de oficio.",
+      },
+      {
+        title: "Audiencias públicas ante ARESEP/SUTEL",
+        description:
+          "Lo representamos en las audiencias públicas del artículo 36 de la Ley 7593: oposiciones por escrito y sustentación oral basadas en estudios técnicos. La intervención sólida en audiencia es a menudo el punto de quiebre del expediente.",
+      },
+      {
+        title: "Recursos contra resoluciones regulatorias",
+        description:
+          "Interponemos los recursos de revocatoria y apelación contra resoluciones del Regulador General; la Junta Directiva resuelve en alzada y agota la vía (art. 53 de la Ley 7593). Cuidamos el plazo —tres días hábiles, supletoriedad de la LGAP— para no perder la impugnación por vencimiento.",
+      },
+      {
+        title: "Defensa en procedimientos sancionatorios",
+        description:
+          "Defendemos al prestador en procedimientos sancionatorios. En ARESEP (art. 38 de la Ley 7593), las multas se calculan sobre el daño o salarios base; en SUTEL (arts. 67 y 68 de la Ley 8642), sobre los ingresos brutos. La calificación de la infracción cambia la sanción por uno o dos órdenes de magnitud.",
+      },
+      {
+        title: "Defensa de concesiones y títulos habilitantes",
+        description:
+          "Defendemos las concesiones de servicios públicos frente a revocatorias (art. 41 de la Ley 7593) y los títulos habilitantes en telecomunicaciones —concesiones, autorizaciones y permisos— frente a las causales de extinción de la Ley 8642 (arts. 22, 25 y 26).",
+      },
+      {
+        title: "Litigio contencioso-administrativo regulatorio",
+        description:
+          "El agotamiento de la vía administrativa es facultativo en materia regulatoria (art. 31 del CPCA). Acudimos directamente al contencioso —o tras agotar los recursos— con las pretensiones del art. 42 del CPCA: anulación, restablecimiento, indemnización. Cuando hay urgencia, medidas cautelares (art. 19) para suspender los efectos.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, somos prestadores de un servicio regulado por ARESEP/SUTEL y necesitamos asesoría.",
+    commercialFaq: [
+      {
+        question: "¿Cuánto tiempo tengo para impugnar una resolución de ARESEP o SUTEL?",
+        answer:
+          "La Ley 7593 no fija plazos especiales para los recursos, por lo que rige la LGAP en forma supletoria: tres días hábiles para impugnar el acto final (art. 346 de la LGAP). La revocatoria se interpone ante el Regulador General y la apelación ante la Junta Directiva de la ARESEP, que agota la vía (art. 53, incisos b y k). Es un plazo muy corto; conviene actuar de inmediato.",
+      },
+      {
+        question: "¿La audiencia pública es obligatoria antes de fijar una tarifa?",
+        answer:
+          "Sí, en las fijaciones ordinarias. El artículo 36 de la Ley 7593 obliga a la ARESEP a convocar a audiencia pública —publicación en La Gaceta y en dos periódicos de circulación nacional— y dar treinta días naturales para presentar oposiciones por escrito y sustentarlas oralmente. La omisión de la audiencia vicia el acto tarifario. Las extraordinarias, en cambio, se hacen de oficio y no requieren audiencia.",
+      },
+      {
+        question: "¿Tengo que agotar la vía administrativa antes de demandar al regulador?",
+        answer:
+          "No. En materia regulatoria el agotamiento de la vía administrativa es facultativo (art. 31 del CPCA): no es uno de los supuestos preceptivos de los artículos 173 y 182 de la Constitución. El prestador puede agotar los recursos ante la Junta Directiva de la ARESEP o acudir directamente a la jurisdicción contencioso-administrativa, según convenga al caso y a la urgencia.",
+      },
+      {
+        question: "¿Qué pasa si la sanción de ARESEP o SUTEL pone en riesgo mi operación?",
+        answer:
+          "Si la resolución es inminente y compromete la prestación del servicio, junto con la impugnación se solicitan medidas cautelares de urgencia ante el Tribunal Contencioso-Administrativo (art. 19 del CPCA) para suspender los efectos del acto mientras se resuelve el fondo. En el contencioso pueden pretenderse, además, la anulación, el restablecimiento del derecho y la indemnización (art. 42 del CPCA).",
+      },
+    ],
+  },
   "dominio-publico": {
     hookHeadline: "¿Le revocaron una concesión o le ordenaron desalojar un bien del Estado?",
     hookSubtext:

@@ -1873,120 +1873,127 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          La regulación de los servicios públicos en Costa Rica se articula
-          principalmente a través de la Ley de la Autoridad Reguladora de los
-          Servicios Públicos (Ley N.° 7593 del 9 de agosto de 1996), que creó la
-          ARESEP como ente encargado de fijar tarifas y fiscalizar la prestación
-          de servicios públicos esenciales: energía eléctrica, telecomunicaciones,
-          agua potable, combustibles y transporte público, entre otros. Los
-          operadores y usuarios disponen de una serie de instrumentos legales para
-          participar en los procedimientos regulatorios, impugnar las resoluciones
-          tarifarias y defender sus derechos ante esta jurisdicción especializada.
+          La regulación de los servicios públicos costarricenses se articula a través de dos cuerpos
+          normativos centrales: la Ley de la Autoridad Reguladora de los Servicios Públicos
+          (Ley N.° 7593) y la Ley General de Telecomunicaciones (Ley N.° 8642). La ARESEP fija
+          precios y tarifas y vigila la calidad de los servicios definidos en el artículo 5 de la
+          Ley 7593: electricidad, agua y alcantarillado, combustibles, riego, transporte público
+          remunerado, puertos, ferrocarril y residuos. La SUTEL es un órgano de la ARESEP, encargado
+          específicamente de regular, supervisar, vigilar y controlar el ordenamiento jurídico de
+          las telecomunicaciones (art. 6, inciso 27, de la Ley 8642).
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          La materia regulatoria de servicios públicos comprende tanto los
-          procedimientos administrativos ante ARESEP y SUTEL como la vía
-          jurisdiccional contencioso-administrativa para la impugnación de las
-          resoluciones que de ellos deriven.
+          Como abogados ante ARESEP y SUTEL en Costa Rica, en Corporación GC representamos a
+          prestadores de servicios públicos —cooperativas de electrificación, operadores de
+          telecomunicaciones, concesionarios de transporte y otros— en solicitudes tarifarias,
+          audiencias públicas, recursos administrativos y litigio contencioso contra el regulador. A
+          continuación se describen los instrumentos jurídicos que integran esta área de práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Fijación tarifaria ordinaria" fundamento="Ley 7593, arts. 30 a 32">
+      <Instrumento titulo="Servicios públicos regulados por ARESEP y SUTEL" fundamento="Ley 7593, arts. 3 y 5; Ley 8642, arts. 1 y 6">
         <p>
-          La fijación tarifaria ordinaria es el procedimiento mediante el cual la
-          ARESEP establece las tarifas que los prestadores de servicios públicos
-          pueden cobrar a los usuarios. El artículo 30 de la Ley 7593 dispone que
-          para fijar las tarifas, la Autoridad Reguladora debe tomar en cuenta
-          los criterios de equidad social, sostenibilidad ambiental, conservación
-          de energía y eficiencia económica. El artículo 31 establece que las
-          tarifas deben contemplar únicamente los costos necesarios para prestar
-          el servicio, incluyendo una retribución competitiva que permita la
-          adecuada expansión del servicio.
+          La Ley 7593 califica como servicio público el que «por su importancia para el desarrollo
+          sostenible del país sea calificado como tal por la Asamblea Legislativa» (art. 3.a) y lista
+          en el artículo 5 los servicios sujetos a la ARESEP: electricidad (generación, trasmisión,
+          distribución y comercialización); telecomunicaciones autorizadas por ley; agua y
+          alcantarillado; combustibles derivados de hidrocarburos; riego y avenamiento; transporte
+          público remunerado de personas (salvo el aéreo); servicios marítimos y aéreos en los
+          puertos; transporte de carga por ferrocarril; y recolección y tratamiento de residuos.
+          Para prestar cualquiera de estos servicios se requiere concesión o permiso del ente
+          competente (art. 9).
         </p>
         <p>
-          El artículo 32 faculta tanto al prestador del servicio como a la
-          ARESEP, de oficio, a iniciar el procedimiento de fijación tarifaria.
-          Las solicitudes tarifarias deben acompañarse de los estudios técnicos
-          y financieros que justifiquen el ajuste solicitado. La resolución
-          tarifaria constituye un acto administrativo de alcance general,
-          impugnable mediante los recursos que la propia Ley 7593 establece.
+          En el sector telecomunicaciones, la Ley General de Telecomunicaciones (Ley 8642) creó la
+          SUTEL como un órgano de la ARESEP encargado de regular, supervisar, aplicar, vigilar y
+          controlar el ordenamiento jurídico de las telecomunicaciones (art. 6, inciso 27).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Fijación tarifaria extraordinaria" fundamento="Ley 7593, art. 31">
+      <Instrumento titulo="Servicio al costo y fijación tarifaria ordinaria" fundamento="Ley 7593, arts. 3.b, 30 y 31">
         <p>
-          La fijación tarifaria extraordinaria procede cuando circunstancias
-          sobrevenidas e imprevistas alteran sustancialmente la estructura de
-          costos del servicio público y hacen necesario un ajuste fuera del ciclo
-          ordinario. Estas circunstancias pueden incluir variaciones abruptas en
-          el tipo de cambio, incrementos significativos en el precio de insumos
-          esenciales o eventos de fuerza mayor que impacten la prestación del
-          servicio. El artículo 31 de la Ley 7593 establece que las tarifas deben
-          reflejar los costos necesarios para la prestación eficiente del servicio,
-          lo que fundamenta la posibilidad de revisiones extraordinarias cuando
-          las condiciones originales de la fijación se han modificado
-          sustancialmente.
+          El principio de servicio al costo —definido en el artículo 3.b de la Ley 7593— ordena que
+          las tarifas contemplen únicamente los costos necesarios para prestar el servicio,
+          permitan una retribución competitiva y garanticen el desarrollo adecuado de la actividad.
+          Las fijaciones ordinarias contemplan factores de costo e inversión, y los prestatarios
+          deben presentar, al menos una vez al año, un estudio ordinario (art. 30).
+        </p>
+        <p>
+          Para fijar precios, tarifas y tasas, la ARESEP toma en cuenta las estructuras productivas
+          modelo, la tecnología, las posibilidades del servicio y el tamaño de las empresas (art.
+          31). Los criterios de equidad social, sostenibilidad ambiental, conservación de energía y
+          eficiencia económica son elementos centrales. El propio artículo 31 cierra con una regla
+          clave para la defensa del prestador: «No se permitirán fijaciones que atenten contra el
+          equilibrio financiero de las entidades prestatarias del servicio público.»
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Audiencia pública ante ARESEP" fundamento="Ley 7593, art. 36">
+      <Instrumento titulo="Fijación tarifaria extraordinaria (de oficio)" fundamento="Ley 7593, art. 30 párrafo final">
         <p>
-          El artículo 36 de la Ley 7593 establece que antes de dictar la
-          resolución tarifaria, la ARESEP debe convocar a una audiencia pública
-          en la que los usuarios, los prestadores del servicio y cualquier
-          interesado pueden presentar su posición respecto de la propuesta
-          tarifaria. La audiencia pública constituye un requisito esencial del
-          debido proceso regulatorio y su omisión puede generar la nulidad del
-          acto tarifario. Los interesados pueden presentar oposiciones técnicas
-          y jurídicas que la Autoridad Reguladora está obligada a considerar y
-          resolver motivadamente en la resolución final.
+          A diferencia de la ordinaria, las fijaciones extraordinarias se hacen «de oficio» por la
+          ARESEP cuando consideren variaciones importantes en el entorno económico, por caso
+          fortuito o fuerza mayor, o cuando se cumplan las condiciones de los modelos automáticos
+          de ajuste (art. 30, párrafo final).
+        </p>
+        <p>
+          La distinción importa: el prestador no «solicita» una extraordinaria, sino que gestiona
+          ante la ARESEP la activación de los modelos automáticos o sustenta técnicamente las
+          circunstancias que justifiquen una revisión de oficio. Una petición planteada con la
+          categoría procesal equivocada puede ser desestimada sin entrar al fondo.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Recursos de revocatoria y apelación contra resoluciones tarifarias" fundamento="Ley 7593, art. 53">
+      <Instrumento titulo="Audiencia pública y plazo de resolución" fundamento="Ley 7593, arts. 36 y 37">
         <p>
-          El artículo 53 de la Ley 7593 establece los recursos administrativos
-          procedentes contra las resoluciones de la ARESEP. El recurso de
-          revocatoria se interpone ante el mismo órgano que dictó la resolución
-          y tiene por objeto que este reconsidere su decisión a la luz de los
-          argumentos del recurrente. El recurso de apelación se interpone de
-          forma subsidiaria ante la Junta Directiva de la ARESEP, como órgano
-          superior jerárquico. Ambos recursos deben interponerse dentro del plazo
-          de cinco días hábiles contados desde la notificación de la resolución
-          impugnada. La interposición de estos recursos es requisito previo para
-          acudir a la vía contencioso-administrativa, conforme a la regla de
-          agotamiento de la vía administrativa.
+          Antes de resolver las solicitudes de fijación ordinaria de tarifas, las autorizaciones de
+          generación eléctrica (Ley 7200), la formulación o revisión de normas técnicas y los
+          modelos de fijación, la ARESEP debe convocar a una audiencia pública —publicación en La
+          Gaceta y en dos periódicos de circulación nacional, audiencia dentro de los treinta días
+          naturales siguientes para presentar oposiciones por escrito y sustentarlas oralmente
+          (art. 36)—. Las oposiciones deben fundarse en estudios técnicos: una intervención técnica
+          sólida en audiencia es a menudo el punto de quiebre del expediente.
+        </p>
+        <p>
+          La ARESEP debe resolver en definitiva la solicitud ordinaria dentro de los treinta días
+          naturales posteriores a la audiencia (art. 37); el incumplimiento del plazo acarrea
+          sanciones disciplinarias contra el Regulador General.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Impugnación de sanciones y revocatoria de concesiones" fundamento="Ley 7593, arts. 38 a 41">
+      <Instrumento titulo="Régimen sancionatorio y revocatoria de concesión" fundamento="Ley 7593, arts. 38 y 41; Ley 8642, arts. 67 y 68">
         <p>
-          Los artículos 38 a 41 de la Ley 7593 regulan el régimen sancionatorio
-          aplicable a los prestadores de servicios públicos. El artículo 38
-          tipifica las infracciones, que incluyen la prestación del servicio sin
-          autorización, el incumplimiento de las normas de calidad y la
-          obstrucción de la labor fiscalizadora de la ARESEP. El artículo 39
-          establece las sanciones aplicables, que van desde multas hasta la
-          revocatoria de la concesión o el permiso de operación. La revocatoria
-          de la concesión, regulada en los artículos 40 y 41, procede ante
-          incumplimientos graves y reiterados del prestador. Contra estas
-          sanciones proceden los recursos administrativos previstos en el artículo
-          53 de la Ley.
+          La ARESEP sanciona al prestador con multa de cinco a diez veces el valor del daño causado
+          —o, cuando no se pueda estimar, con cinco a veinte salarios base— por las conductas del
+          artículo 38: cobro de precios distintos de los autorizados, mantenimiento inadecuado de
+          equipos, uso fraudulento, prestación sin autorización, levantamiento no autorizado de
+          instalaciones y omisión de afiliación a la CCSS. La reincidencia y otras causales
+          calificadas conducen a la revocatoria de la concesión o el permiso (art. 41).
+        </p>
+        <p>
+          En telecomunicaciones, la Ley 8642 trae un régimen propio (arts. 67 y 68). Las
+          infracciones se clasifican en graves y muy graves, y la multa se calcula como porcentaje
+          de los ingresos brutos del operador: de 0,025% a 0,5% para las graves y de 0,5% a 1%
+          para las muy graves; en gravedad particular, la SUTEL puede imponer hasta un 10% de los
+          ingresos brutos o del valor de los activos del infractor. La diferencia entre una y otra
+          calificación se traduce en cifras de impacto significativo.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Litigio contencioso-administrativo contra resoluciones de ARESEP" fundamento="CPCA, arts. 1 y 36; Ley 7593, art. 53">
+      <Instrumento titulo="Recursos y litigio contencioso-administrativo regulatorio" fundamento="Ley 7593, art. 53; LGAP, art. 346; CPCA, arts. 31 y 42">
         <p>
-          Agotada la vía administrativa mediante la interposición de los recursos
-          de revocatoria y apelación, el administrado puede acudir a la
-          jurisdicción contencioso-administrativa para impugnar las resoluciones
-          de la ARESEP que considere contrarias al ordenamiento jurídico. El
-          artículo 1 del CPCA atribuye a esta jurisdicción el conocimiento de
-          los litigios contra los entes públicos, incluidas las autoridades
-          reguladoras. El Tribunal Contencioso Administrativo puede revisar tanto
-          la legalidad formal del procedimiento regulatorio como la razonabilidad
-          técnica de las resoluciones tarifarias, verificando que se hayan
-          respetado los criterios establecidos en la Ley 7593.
+          Contra las resoluciones del Regulador General proceden los recursos ordinarios de
+          revocatoria y apelación: la Junta Directiva de la ARESEP conoce en alzada y, al hacerlo,
+          agota la vía administrativa (art. 53, incisos b y k, de la Ley 7593). La Ley 7593 no fija
+          plazos especiales, por lo que rige la LGAP en forma supletoria: tres días hábiles para
+          impugnar el acto final (art. 346 de la LGAP).
+        </p>
+        <p>
+          En materia regulatoria, el agotamiento de la vía administrativa es facultativo (art. 31
+          del CPCA): el prestador puede optar entre agotar los recursos ante la Junta Directiva o
+          acudir directamente a la jurisdicción contencioso-administrativa. Allí caben las
+          pretensiones del artículo 42 del CPCA —anulación, restablecimiento del derecho,
+          indemnización— y, cuando una resolución pone en riesgo la operación, medidas cautelares
+          de urgencia para suspender sus efectos mientras se resuelve el fondo (art. 19 del CPCA).
         </p>
       </Instrumento>
 
@@ -2002,58 +2009,58 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               ¿Cómo se fijan las tarifas de los servicios públicos en Costa Rica?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Las tarifas de los servicios públicos son fijadas por la Autoridad Reguladora de los
-              Servicios Públicos (ARESEP) conforme a la Ley N.° 7593. El artículo 30 establece que
-              para fijar tarifas la ARESEP debe considerar criterios de equidad social, sostenibilidad
-              ambiental, conservación de energía y eficiencia económica. El artículo 31 dispone que las
-              tarifas deben contemplar únicamente los costos necesarios para prestar el servicio,
-              incluyendo una retribución competitiva que permita su adecuada expansión. El procedimiento
-              de fijación tarifaria puede ser iniciado por el prestador del servicio o de oficio por la
-              ARESEP (art. 32), y las solicitudes deben acompañarse de estudios técnicos y financieros
-              justificativos. Antes de dictar la resolución tarifaria, el artículo 36 exige la
-              celebración de una audiencia pública en la que usuarios, prestadores y cualquier interesado
-              pueden presentar oposiciones técnicas y jurídicas que la Autoridad debe considerar y
-              resolver motivadamente. La omisión de la audiencia genera nulidad del acto tarifario.
+              Las tarifas las fija la ARESEP bajo el principio de servicio al costo (arts. 3.b y 31
+              de la Ley 7593): deben contemplar únicamente los costos necesarios para prestar el
+              servicio y permitir una retribución competitiva, sin atentar contra el equilibrio
+              financiero del prestador. Las fijaciones ordinarias contemplan factores de costo e
+              inversión y los prestatarios deben presentar, al menos una vez al año, un estudio
+              ordinario (art. 30). Las fijaciones extraordinarias se hacen «de oficio» por la
+              ARESEP cuando consideren variaciones importantes en el entorno económico, caso fortuito
+              o fuerza mayor, o cuando se cumplan las condiciones de los modelos automáticos de
+              ajuste (art. 30, párrafo final). Antes de resolver la solicitud ordinaria, el
+              artículo 36 exige una audiencia pública convocada por La Gaceta y dos periódicos de
+              circulación nacional, dentro de los treinta días naturales siguientes; su omisión vicia
+              el acto. La resolución debe dictarse en los treinta días naturales posteriores a la
+              audiencia (art. 37).
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué recursos existen contra una resolución tarifaria de ARESEP?
+              ¿Qué recursos existen contra una resolución de ARESEP o SUTEL?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El artículo 53 de la Ley 7593 establece los recursos administrativos procedentes contra
-              las resoluciones de la ARESEP. El recurso de revocatoria se interpone ante el mismo órgano
-              que dictó la resolución para que reconsidere su decisión. El recurso de apelación se
-              interpone subsidiariamente ante la Junta Directiva de la ARESEP como superior jerárquico.
-              Ambos recursos deben presentarse dentro de los cinco días hábiles siguientes a la
-              notificación de la resolución impugnada. Su interposición constituye requisito previo para
-              acudir a la vía contencioso-administrativa conforme a la regla de agotamiento de la vía
-              administrativa. Agotados los recursos, el administrado puede demandar ante el Tribunal
-              Contencioso Administrativo conforme al artículo 1 del CPCA, que puede revisar tanto la
-              legalidad formal del procedimiento regulatorio como la razonabilidad técnica de las
-              resoluciones tarifarias. El TCA verifica que se hayan respetado los criterios de equidad
-              social, eficiencia y sostenibilidad establecidos en los artículos 30 a 32 de la Ley 7593.
+              Contra las resoluciones del Regulador General proceden la revocatoria y la apelación;
+              la Junta Directiva de la ARESEP las resuelve en alzada y agota la vía administrativa
+              (art. 53, incisos b y k, de la Ley 7593). La Ley 7593 no fija plazos especiales, por
+              lo que rige la LGAP en forma supletoria: tres días hábiles para impugnar el acto final
+              (art. 346 de la LGAP). En materia regulatoria, el agotamiento de la vía administrativa
+              es facultativo (art. 31 del CPCA, ya que no es uno de los supuestos preceptivos de los
+              artículos 173 y 182 de la Constitución): el prestador puede agotar los recursos
+              internos o acudir directamente al contencioso. Allí caben las pretensiones del artículo
+              42 del CPCA —anulación, restablecimiento, indemnización— y, cuando el acto pone en
+              riesgo la operación, medidas cautelares de urgencia (art. 19 del CPCA) para suspenderlo
+              mientras se resuelve el fondo.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué sanciones puede imponer ARESEP a los prestadores de servicios públicos?
+              ¿Qué sanciones puede imponer ARESEP o SUTEL a un prestador?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los artículos 38 a 41 de la Ley 7593 regulan el régimen sancionatorio aplicable a los
-              prestadores de servicios públicos. El artículo 38 tipifica las infracciones, que incluyen
-              la prestación del servicio sin autorización, el incumplimiento de las normas de calidad y
-              la obstrucción de la labor fiscalizadora de la ARESEP. El artículo 39 establece las
-              sanciones aplicables, que van desde multas hasta la revocatoria de la concesión o el
-              permiso de operación. La revocatoria de la concesión, regulada en los artículos 40 y 41,
-              procede ante incumplimientos graves y reiterados del prestador y constituye la sanción más
-              severa del régimen. Contra estas sanciones proceden los recursos administrativos previstos
-              en el artículo 53 de la Ley: revocatoria y apelación dentro de cinco días hábiles.
-              Agotada la vía administrativa, las resoluciones sancionatorias son impugnables ante la
-              jurisdicción contencioso-administrativa conforme al CPCA, donde puede solicitarse la
-              anulación de la sanción, la restitución de derechos y la indemnización de daños causados.
+              En servicios regulados por la ARESEP, el artículo 38 de la Ley 7593 prevé multas de
+              cinco a diez veces el valor del daño causado —o de cinco a veinte salarios base cuando
+              no se pueda estimar— por conductas como el cobro de precios distintos de los
+              autorizados, el mantenimiento inadecuado de equipos, el uso fraudulento, la prestación
+              sin autorización o el levantamiento no autorizado de instalaciones. La reincidencia y
+              otras causales calificadas conducen a la revocatoria de la concesión o permiso (art.
+              41). En telecomunicaciones, la Ley 8642 trae un régimen propio (arts. 67 y 68): las
+              infracciones se clasifican en graves y muy graves, y la multa se calcula como
+              porcentaje de los ingresos brutos del operador —de 0,025% a 0,5% en graves y de 0,5%
+              a 1% en muy graves—; en casos de gravedad particular, la SUTEL puede imponer hasta un
+              10% de los ingresos brutos o del valor de los activos. La calificación correcta de la
+              infracción es decisiva: cambia la cifra por uno o dos órdenes de magnitud.
             </p>
           </div>
         </div>
