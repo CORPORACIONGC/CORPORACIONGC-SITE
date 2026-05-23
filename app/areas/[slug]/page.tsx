@@ -4274,114 +4274,236 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          Los reguladores sectoriales costarricenses — COPROCOM, SUTEL, SUGEF, ARESEP y Ministerio
-          de Salud — ejercen potestades sancionatorias con consecuencias económicas severas para las
-          empresas reguladas. Las multas pueden alcanzar el 10% del volumen de negocios (COPROCOM)
-          o la inhabilitación por hasta 10 años. Sin embargo, estos procedimientos sancionatorios
-          son procedimientos administrativos sujetos a garantías constitucionales que la Sala
-          Constitucional ha extendido mutatis mutandis desde el proceso penal.
+          Las autoridades reguladoras económicas del país ejercen potestades sancionatorias y de
+          intervención sobre amplios sectores de la actividad económica. Cada una se rige por su
+          propia ley orgánica y por un régimen disciplinario propio, con tipos de infracción,
+          plazos, criterios de graduación de la sanción y procedimientos especiales: la Comisión
+          para Promover la Competencia (Coprocom) bajo la Ley 7472 reformada por la Ley 9736 de
+          Fortalecimiento de las Autoridades de Competencia, las cuatro superintendencias del
+          sistema financiero —SUGEF, SUGEVAL, SUGESE y SUPEN— bajo la dirección del Consejo
+          Nacional de Supervisión del Sistema Financiero (Conassif), el Ministerio de Salud bajo
+          la Ley General de Salud (Ley 5395), el Servicio Nacional de Salud Animal (Senasa, Ley
+          8495) y el Servicio Fitosanitario del Estado (SFE, Ley 7664).
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC ofrece una defensa cross-regulatoria integrada: conocemos las
-          particularidades de cada regulador y litigamos ante todos ellos con la misma profundidad
-          en derecho administrativo.
+          Como abogados en defensa regulatoria sectorial, en Corporación GC representamos a
+          empresas y a sus directivos en cada fase del procedimiento sancionatorio: respuesta al
+          traslado de cargos, evacuación de la prueba, alegatos finales, recursos administrativos,
+          amparo ante medidas cautelares desproporcionadas y litigio contencioso contra el acto
+          final firme. La diferencia se construye en el primer escrito: cada sector tiene su
+          propio régimen de plazos cortos y de cargas de la prueba que, mal manejados, cierran la
+          puerta de la defensa.
         </p>
       </section>
 
-      <Instrumento titulo="Defensa ante COPROCOM (competencia)" fundamento="Ley N.° 7472 (LFAC)">
+      <Instrumento titulo="Sector competencia: defensa ante la Comisión para Promover la Competencia (Coprocom)" fundamento="Ley 7472, arts. 11, 12, 13, 14, 15 y 21; Ley 9736 de Fortalecimiento de las Autoridades de Competencia">
         <p>
-          La Comisión para Promover la Competencia (COPROCOM) investiga y sanciona prácticas
-          monopolísticas, acuerdos entre competidores (cárteles), abusos de posición dominante
-          y concentraciones económicas conforme a la Ley de Promoción de la Competencia y Defensa
-          Efectiva del Consumidor (Ley N.° 7472). Las sanciones incluyen multas del 0.1% al 10%
-          del volumen de negocios e inhabilitación para contratar con el Estado de hasta 10 años.
+          La Coprocom es órgano de máxima desconcentración adscrito al Ministerio de Economía,
+          Industria y Comercio, con independencia administrativa, presupuestaria y funcional
+          (art. 21 de la Ley 7472). Investiga y sanciona dos grandes categorías de prácticas: las
+          monopolísticas absolutas del artículo 11 —acuerdos entre competidores para fijar precios,
+          limitar producción, dividir mercados, coordinar ofertas en licitaciones o intercambiar
+          información con esos fines, todos nulos de pleno derecho— y las monopolísticas relativas
+          del artículo 12 —ventas atadas, fijación de precios de reventa, depredación, descuentos
+          discriminatorios, subsidios cruzados, estrangulamiento de márgenes, entre otras—, que
+          requieren acreditar poder sustancial en el mercado relevante (arts. 13, 14 y 15).
         </p>
         <p>
-          Representamos a empresas investigadas en todas las fases: respuesta a requerimientos
-          de información, audiencias orales, presentación de compromisos, solicitud de acogimiento
-          al Programa de Clemencia (lanzado en 2024), e impugnación de resoluciones sancionatorias
-          ante el TCA. COPROCOM ha sancionado a más de 215 agentes económicos con multas
-          acumuladas superiores a ₡8,275 millones.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Defensa ante SUTEL (telecomunicaciones)" fundamento="Ley N.° 8642">
-        <p>
-          La Superintendencia de Telecomunicaciones (SUTEL) regula y sanciona a los operadores
-          de telecomunicaciones conforme a la Ley General de Telecomunicaciones (Ley N.° 8642).
-          Tras la subasta 5G de enero 2025, los 7 concesionarios adjudicatarios enfrentan
-          obligaciones de cobertura, inversión y calidad de servicio cuyo incumplimiento puede
-          generar procedimientos sancionatorios.
-        </p>
-        <p>
-          Defendemos a operadores en procedimientos de SUTEL por incumplimiento de condiciones
-          de concesión, disputas de interconexión, infracciones de calidad de servicio y controversias
-          sobre compartición de infraestructura, garantizando las garantías del procedimiento
-          administrativo ordinario (arts. 308-319 LGAP).
+          La Ley 9736 reorganizó el régimen de procedimiento y sanción de la Coprocom, incorporó
+          el programa de clemencia y reforzó las potestades de investigación. La defensa eficaz
+          ante la Coprocom se diseña sobre tres ejes: la delimitación correcta del mercado
+          relevante y la prueba del poder sustancial, la valoración técnica de los efectos
+          procompetitivos o de eficiencia que admite el último párrafo del artículo 12, y la
+          ponderación oportuna del acogimiento al programa de clemencia cuando proceda.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Defensa ante SUGEF (financiero)" fundamento="Ley N.° 7558, arts. 115-117">
+      <Instrumento titulo="Sector financiero: defensa ante SUGEF y el Conassif" fundamento="Ley 7558, arts. 115, 116, 119, 131, 135, 136, 139, 155, 155 bis, 155 ter y 155 quinquies">
         <p>
-          La Superintendencia General de Entidades Financieras (SUGEF) supervisa y sanciona a las
-          entidades del sistema financiero conforme a la Ley Orgánica del Banco Central (Ley N.° 7558,
-          arts. 115 y 117), los Acuerdos SUGEF y la normativa de CONASSIF. Las sanciones incluyen
-          multas, intervención y liquidación de entidades.
+          La Superintendencia General de Entidades Financieras es órgano de desconcentración
+          máxima del Banco Central (art. 115 de la Ley 7558) y supervisa toda actividad de
+          intermediación financiera definida en el artículo 116. El régimen de irregularidad
+          financiera del artículo 136 distingue tres grados: el grado uno (inestabilidad leve,
+          corregible con medidas de corto plazo), el grado dos (que exige plan de saneamiento
+          aprobado por la Superintendencia conforme al artículo 139.b) y el grado tres
+          (intervención de la entidad por el Conassif, según el artículo 139.c y los supuestos
+          del artículo 136.d, incluida la operación fraudulenta o ilegal, la suspensión de pagos,
+          el incumplimiento de suficiencia patrimonial o la pérdida de más de la mitad del
+          patrimonio).
         </p>
         <p>
-          Representamos a bancos, cooperativas, financieras y fintechs en procedimientos
-          sancionatorios de SUGEF, impugnación de resoluciones de CONASSIF, y litigio
-          contencioso-administrativo contra medidas de intervención conforme al CPCA.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Defensa ante ARESEP (servicios públicos)" fundamento="Ley N.° 7593">
-        <p>
-          La Autoridad Reguladora de los Servicios Públicos (ARESEP) regula las tarifas y la calidad
-          de los servicios públicos de electricidad, agua, transporte y combustibles conforme a la
-          Ley N.° 7593. ARESEP puede imponer sanciones por incumplimiento de estándares de calidad,
-          cobro indebido y negativa de prestación del servicio.
-        </p>
-        <p>
-          Defendemos a prestadores de servicios públicos en procedimientos sancionatorios de ARESEP,
-          impugnamos fijaciones tarifarias que no respeten el principio de servicio al costo, y
-          litigamos ante el TCA resoluciones que afecten la viabilidad económica de las concesiones.
+          El régimen sancionatorio del artículo 155 escalona las multas: muy graves del uno al
+          dos por ciento del patrimonio contable, graves del cero coma cinco al uno por ciento,
+          y leves hasta el cero coma cinco por ciento. El artículo 155 bis permite sancionar
+          directamente a los miembros del órgano de dirección, gerentes, subgerentes,
+          representantes legales y auditores internos hasta con cien salarios base e inhabilitar
+          a los responsables hasta por tres años; el 155 ter alcanza a los auditores externos
+          con multas de hasta doscientos salarios base y suspensión del registro hasta por cinco
+          años. La responsabilidad administrativa prescribe en cuatro años (art. 155 quinquies)
+          y el procedimiento sancionador no podrá superar dos años.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Impugnación constitucional de sanciones" fundamento="Arts. 39, 41 CP; Ley N.° 7135">
+      <Instrumento titulo="Sector valores: defensa ante SUGEVAL" fundamento="Ley 7732, arts. 3, 102, 103, 157, 158, 159, 160, 163 y 167">
         <p>
-          La Sala Constitucional ha establecido reiteradamente que las garantías del debido proceso
-          penal se extienden mutatis mutandis a los procedimientos administrativos sancionatorios:
-          presunción de inocencia, derecho de defensa, principio de tipicidad, proporcionalidad de
-          la sanción y prohibición de doble sanción (non bis in idem). Cuando un regulador
-          sectorial vulnera estas garantías, procede el recurso de amparo ante la Sala IV
-          (Ley N.° 7135, arts. 29-56).
+          La Superintendencia General de Valores es órgano de máxima desconcentración del Banco
+          Central (art. 3 de la Ley 7732) y vela por la transparencia de los mercados, la correcta
+          formación de precios y la protección de los inversionistas. Los regímenes más
+          fiscalizados son el de información privilegiada (arts. 102 y 103) —que prohíbe a quienes
+          tengan acceso a información concreta no pública susceptible de afectar precios,
+          operarla por sí o por interpósita persona— y el de normas de conducta de los puestos
+          de bolsa, sociedades administradoras de fondos y demás intermediarios (arts. 106 a 114).
         </p>
         <p>
-          Corporación GC combina la defensa administrativa ante el regulador con la impugnación
-          constitucional ante Sala IV y el litigio contencioso-administrativo ante el TCA,
-          ofreciendo una estrategia de defensa integral en las tres jurisdicciones.
+          Las infracciones se gradúan en muy graves, graves y leves (arts. 157, 159 y 161). Las
+          muy graves se sancionan con multas que pueden alcanzar el cinco por ciento del patrimonio
+          de la sociedad, doscientos salarios base, suspensión de actividades por cinco años o
+          revocación de la autorización (art. 158); las graves, multas de hasta el dos por ciento
+          del patrimonio o cien salarios base (art. 160). El artículo 163 permite sancionar
+          adicionalmente a directivos, personeros y empleados con suspensión, separación del
+          cargo e inhabilitación de hasta cinco años. El procedimiento se rige por la Ley 7558
+          y supletoriamente por la LGAP (art. 167).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Sector seguros: defensa ante SUGESE" fundamento="Ley 8653, arts. 28, 29, 30, 32, 35, 36, 37, 38, 39, 41, 42 y 44">
+        <p>
+          La Superintendencia General de Seguros es órgano de máxima desconcentración del Banco
+          Central (art. 28 de la Ley 8653) y vela por la estabilidad y el eficiente funcionamiento
+          del mercado de seguros. El sancionador tiene un régimen propio: infracciones muy graves
+          con multas hasta del cinco por ciento del patrimonio o de cuatrocientos salarios base
+          según el sujeto, suspensión de actividades por hasta dos años y cancelación de la
+          autorización por hasta cinco años (arts. 36 y 37); graves con multas hasta del dos por
+          ciento del patrimonio o doscientos salarios base, suspensión de hasta dos años (arts.
+          38 y 39). Las sanciones adicionales a miembros de órgano de dirección y funcionarios
+          se gradúan según dolo o culpa (art. 41).
+        </p>
+        <p>
+          La oferta pública de seguros sin autorización tiene un régimen sancionador especial:
+          multa hasta de mil veces el salario base por cada infracción (art. 42). La cancelación
+          de la autorización y la liquidación se rigen por los artículos 32 y siguientes; los
+          casos de quiebra, por el artículo 34. La responsabilidad administrativa prescribe en
+          cuatro años (art. 44) y el procedimiento sancionador no puede superar dos años.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Sector pensiones: defensa ante SUPEN" fundamento="Ley 7983, arts. 33 a 60">
+        <p>
+          La Superintendencia de Pensiones es órgano de máxima desconcentración del Banco Central
+          (art. 33 de la Ley 7983) y supervisa al Régimen Obligatorio y Voluntario de Pensiones
+          Complementarias, al Régimen de Invalidez, Vejez y Muerte de la CCSS, a los regímenes
+          especiales con leyes propias y a los Fondos de Capitalización Laboral. Su régimen
+          sancionador clasifica las infracciones en muy graves, graves y leves (arts. 46, 48 y
+          50), con multas que llegan hasta cinco veces el beneficio patrimonial obtenido, el
+          cinco por ciento del patrimonio o doscientos salarios base, y suspensión o revocatoria
+          de la autorización de funcionamiento (art. 47).
+        </p>
+        <p>
+          La normativa contempla además medidas precautorias específicas —corrección, plan de
+          saneamiento e intervención administrativa— escalonadas según el grado de irregularidad
+          financiera de la entidad (arts. 41 y 42). La defensa eficaz exige conocer la zona
+          intermedia entre el ámbito SUPEN y el ámbito SUGEF para las entidades que integran
+          grupos financieros y para los regímenes que comparten estructura institucional con
+          otras superintendencias.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Otros sectores: salud humana, salud animal y fitosanitaria" fundamento="Ley General de Salud (5395) arts. 358, 359, 363 y 378; Ley del Senasa (8495) arts. 78 a 80; Ley 7664 arts. 75 a 77">
+        <p>
+          El Ministerio de Salud ejerce potestades de policía sanitaria ordenando medidas
+          especiales como retención, decomiso, desnaturalización, destrucción de bienes, clausura
+          de establecimientos, cancelación de permisos, aislamiento de personas y sacrificio de
+          animales (arts. 356 a 366 de la Ley 5395), además del régimen de multas del artículo
+          378 modulado por salarios base y de los delitos contra la salud de los artículos 370
+          a 384. El Senasa cuenta con su propio Tribunal de Procedimiento Administrativo
+          Sancionador (arts. 99 a 104 de la Ley 8495) y un régimen de multas escalonado de uno
+          a cincuenta salarios base de un profesional licenciado universitario (art. 80), con
+          medidas sanitarias que incluyen el cierre de establecimientos, decomiso, cuarentena
+          y sacrificio (art. 89).
+        </p>
+        <p>
+          El Servicio Fitosanitario del Estado tipifica contravenciones específicas —obstrucción
+          a las autoridades (art. 75), falta de inscripción y registro de sustancias (art. 76),
+          falta de autorización para reenvasar o reempacar (art. 77)— y delitos contra la sanidad
+          vegetal (arts. 68 a 73). La defensa ante estos reguladores requiere actuar dentro de
+          plazos cortos de los procedimientos sumarios y conocer las particularidades de la
+          policía sanitaria, distinta del procedimiento ordinario de la LGAP.
         </p>
       </Instrumento>
 
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre defensa regulatoria
+          Preguntas frecuentes sobre defensa regulatoria sectorial
         </h2>
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué sanciones puede imponer COPROCOM a mi empresa?
+              ¿Cómo es realmente el procedimiento sancionatorio ante una superintendencia financiera?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              COPROCOM puede imponer multas del 0.1% al 10% del volumen de negocios del infractor
-              conforme a la Ley N.° 7472, inhabilitación para contratar con el Estado por hasta
-              10 años, y órdenes de cesación de la conducta anticompetitiva. En casos de cárteles
-              (acuerdos entre competidores), las sanciones se ubican en el rango máximo. Sin embargo,
-              el Programa de Clemencia (lanzado en 2024) permite a las empresas que revelen un
-              cártel obtener reducción total o parcial de la multa. Corporación GC asesora en la
-              evaluación estratégica de acogimiento a clemencia y en la defensa ante investigaciones.
+              Comienza con un acto de apertura del procedimiento donde la Superintendencia
+              traslada los cargos al investigado, le otorga un plazo para defenderse, ofrecer
+              prueba y acceder al expediente. Aplican supletoriamente las reglas del libro
+              segundo de la LGAP. La sanción del superintendente tiene recurso de revocatoria
+              ante el propio órgano y de apelación ante el Conassif (artículos 152 y 153 de la
+              Ley 7558 para SUGEF y normas paralelas en las demás superintendencias). La
+              responsabilidad administrativa prescribe en cuatro años (art. 155 quinquies de la
+              Ley 7558 para el sector financiero, art. 155 quinquies de la 7732 para valores,
+              art. 44 de la Ley 8653 para seguros), y el procedimiento sancionador no puede
+              superar dos años.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué pasa si la Coprocom investiga a mi empresa por un acuerdo con competidores?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Si los hechos investigados configuran alguno de los supuestos del artículo 11 de
+              la Ley 7472 —fijación concertada de precios, limitación de producción, división
+              del mercado, coordinación en licitaciones, abstención coordinada de comprar o
+              vender, o intercambio de información con esos fines—, la conducta es una práctica
+              monopolística absoluta, declarada nula de pleno derecho y sancionable conforme al
+              régimen reorganizado por la Ley 9736. Tres escenarios deben evaluarse en las
+              primeras setenta y dos horas: la viabilidad del acogimiento al programa de
+              clemencia incorporado por la Ley 9736, la solidez probatoria del expediente
+              administrativo y la posibilidad de demostrar efectos procompetitivos o eficiencias
+              que requieran abandonar la calificación de absoluta para entrar al análisis de
+              relativas, donde sí cabe defensa por mercado relevante y poder sustancial.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Pueden sancionar directamente a los directivos de mi empresa, además de la sociedad?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí, y es una de las características más subestimadas del régimen regulatorio
+              costarricense. El artículo 155 bis de la Ley 7558 permite sancionar a miembros del
+              órgano de dirección, gerente, subgerentes, representantes legales y auditor interno
+              de las entidades supervisadas por SUGEF, con multas de hasta cien salarios base e
+              inhabilitación hasta de tres años. El artículo 163 de la Ley 7732 prevé en valores
+              suspensión de hasta un año, separación del cargo e inhabilitación de hasta cinco
+              años. El artículo 41 de la Ley 8653 hace lo propio en seguros, con inhabilitación
+              de hasta cinco años. Cuando se trata de hechos culposos las penas son distintas de
+              las dolosas, y por eso una defensa técnicamente correcta debe disociar desde el
+              inicio la conducta de la entidad de la conducta de cada directivo.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿La sanción del regulador pone fin al asunto o se puede llevar al contencioso?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La sanción firme del regulador agota la vía administrativa, pero se impugna ante
+              la jurisdicción contencioso-administrativa con las pretensiones del artículo 42 del
+              CPCA (anulación, restablecimiento de la situación jurídica, indemnización por daños
+              y perjuicios) y, cuando hay urgencia y peligro de daño irreparable, con medidas
+              cautelares del artículo 19. Adicionalmente, cuando la sanción vulnera derechos
+              fundamentales —debido proceso, derecho de defensa, principio de proporcionalidad,
+              non bis in idem—, procede el recurso de amparo ante la Sala Constitucional (Ley
+              7135, arts. 29 a 56). El ejercicio de la potestad sancionatoria es independiente
+              de las demás acciones civiles o penales (art. 168 de la Ley 7732), por lo que un
+              mismo hecho puede generar procesos paralelos que deben coordinarse en una
+              estrategia única.
             </p>
           </div>
         </div>

@@ -1460,4 +1460,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "defensa-regulatoria-sectorial": {
+    hookHeadline: "¿Está su empresa investigada o sancionada por un regulador sectorial?",
+    hookSubtext:
+      "Cada superintendencia y cada órgano regulador tiene su propio régimen sancionatorio, sus propios plazos cortos y sus propios criterios de prueba. Las sanciones llegan a un dos por ciento del patrimonio en el sector financiero, al cinco por ciento del patrimonio en valores y en seguros, e involucran a los directivos personalmente con inhabilitación de hasta cinco años. La defensa eficaz exige conocer desde adentro el procedimiento de cada regulador y cómo se llega al contencioso. Defendemos empresas y directivos ante Coprocom, SUGEF, SUGEVAL, SUGESE, SUPEN, Ministerio de Salud, Senasa y SFE.",
+    scenariosTitle: "¿Cuándo necesita un abogado en defensa regulatoria sectorial?",
+    triggerScenarios: [
+      "La Coprocom le notificó la apertura de un procedimiento por prácticas monopolísticas",
+      "Está evaluando acogerse al programa de clemencia incorporado por la Ley 9736",
+      "Su entidad financiera fue calificada en irregularidad de grado dos o tres por SUGEF",
+      "SUGEVAL le notificó un procedimiento por uso de información privilegiada o normas de conducta",
+      "SUGESE abrió procedimiento contra su entidad aseguradora o intermediario de seguros",
+      "Es directivo de una entidad supervisada y le notificaron procedimiento personal",
+      "Necesita impugnar en sede contenciosa una sanción regulatoria firme",
+    ],
+    services: [
+      {
+        title: "Defensa ante la Comisión para Promover la Competencia (Coprocom)",
+        description:
+          "Representamos a empresas en investigaciones por prácticas monopolísticas absolutas (art. 11 Ley 7472) y relativas (art. 12), con análisis de mercado relevante y poder sustancial (arts. 13 a 15) y, cuando proceda, evaluación de acogimiento al programa de clemencia incorporado por la Ley 9736.",
+      },
+      {
+        title: "Defensa ante SUGEF y CONASSIF en el sector financiero",
+        description:
+          "Atendemos procedimientos sancionatorios bajo el régimen de los artículos 155 (entidades) y 155 bis (directivos) de la Ley 7558, los procesos de intervención por irregularidad de grado tres (art. 139), y los recursos verticales contra resoluciones del superintendente ante el Conassif.",
+      },
+      {
+        title: "Defensa ante SUGEVAL en el mercado de valores",
+        description:
+          "Defendemos a emisores, puestos de bolsa, sociedades administradoras de fondos de inversión, agentes de bolsa y demás participantes del mercado en infracciones muy graves, graves y leves (arts. 157, 159 y 161 de la Ley 7732), con atención al régimen de información privilegiada (arts. 102 y 103) y a las sanciones adicionales a directivos del artículo 163.",
+      },
+      {
+        title: "Defensa ante SUGESE en el mercado de seguros",
+        description:
+          "Representamos a entidades aseguradoras, reaseguradoras, intermediarios y proveedores de servicios auxiliares en procedimientos sancionatorios (arts. 36 a 39 de la Ley 8653) y atendemos los casos de cancelación de autorización y liquidación (arts. 32 a 34), así como las imputaciones por ejercicio ilegal de la actividad (art. 42).",
+      },
+      {
+        title: "Defensa ante SUPEN en el régimen de pensiones",
+        description:
+          "Defendemos a operadoras de pensiones complementarias y a entidades supervisadas en procedimientos por infracciones muy graves, graves y leves (arts. 46 a 51 de la Ley 7983), incluidas las medidas precautorias correctivas, los planes de saneamiento y los procesos de intervención administrativa.",
+      },
+      {
+        title: "Defensa ante Ministerio de Salud, Senasa y Servicio Fitosanitario",
+        description:
+          "Atendemos procedimientos sanitarios, veterinarios y fitosanitarios: medidas especiales del Ministerio de Salud (arts. 355 a 366 de la Ley 5395), procedimiento sancionatorio del Senasa ante su Tribunal de Procedimiento Administrativo Sancionador (arts. 99 a 104 de la Ley 8495) y contravenciones del Servicio Fitosanitario del Estado (arts. 75 a 77 de la Ley 7664).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, mi empresa enfrenta un procedimiento ante un regulador sectorial y necesito asesoría especializada.",
+    commercialFaq: [
+      {
+        question: "¿Qué hago si la Coprocom me notifica una investigación por acuerdo con competidores?",
+        answer:
+          "Lo primero es identificar si los hechos investigados encajan en alguno de los supuestos del artículo 11 de la Ley 7472 —fijación de precios, limitación de producción, división de mercados, coordinación en licitaciones, abstención coordinada o intercambio de información con esos fines—. Si encajan, son prácticas monopolísticas absolutas, declaradas nulas de pleno derecho. En esas primeras setenta y dos horas hay que evaluar tres rutas: el acogimiento al programa de clemencia incorporado por la Ley 9736 (que puede llevar a reducción o exoneración de sanción al primero que coopere), la solidez probatoria de lo que la Coprocom tiene en el expediente, y la viabilidad de reconducir el caso al análisis de prácticas relativas del artículo 12, donde sí caben defensas por mercado relevante y poder sustancial (arts. 13 a 15). Esa decisión inicial define el resto del procedimiento.",
+      },
+      {
+        question: "Si soy directivo de una entidad supervisada por SUGEF, ¿puedo ser sancionado personalmente?",
+        answer:
+          "Sí. El artículo 155 bis de la Ley 7558 permite sancionar a miembros del órgano de dirección, gerente, subgerentes o puestos de similar naturaleza, representantes legales, y auditor y subauditor internos cuando resulten responsables, por dolo o culpa grave, de actuaciones que impacten negativamente la situación financiera de la entidad, pongan en peligro su estabilidad, oculten información, distorsionen estados financieros, autoricen operaciones fraudulentas o afecten intereses de ahorrantes. Las sanciones son multa de diez a cien salarios base e inhabilitación para ser miembro del órgano de dirección, gerente o auditor interno de cualquier entidad o empresa supervisada hasta por tres años. Por eso la defensa debe disociar desde el primer escrito la conducta de la entidad de la conducta personal de cada directivo: rara vez los criterios de imputación se solapan exactamente.",
+      },
+      {
+        question: "¿Cuál es la diferencia entre la inestabilidad o irregularidad financiera de grados uno, dos y tres?",
+        answer:
+          "El artículo 136 de la Ley 7558 los define con criterios distintos. El grado uno corresponde a situaciones de inestabilidad leve que pueden ser superadas con medidas correctivas de corto plazo; la Superintendencia convoca al directorio de la entidad, le señala las irregularidades y otorga un plazo prudencial para corregirlas (art. 139.a). El grado dos exige la presentación de un plan de saneamiento aprobado por el superintendente, que es vinculante para la entidad (art. 139.b). El grado tres habilita al Conassif para decretar la intervención por resolución fundada y se aplica en casos de operaciones fraudulentas, suspensión de pagos, incumplimiento de suficiencia patrimonial, lavado de dinero o reducción del patrimonio en más del cincuenta por ciento (art. 136.d). Cada grado abre distintas opciones de defensa y de negociación con la Superintendencia.",
+      },
+      {
+        question: "Una vez sancionada por el regulador, ¿qué opciones tengo para impugnar?",
+        answer:
+          "Dos vías principales, que pueden ejercerse en paralelo. La administrativa: revocatoria ante el superintendente y apelación ante el Conassif, con plazos cortos de cinco días hábiles (arts. 152 y 153 de la Ley 7558 para SUGEF; equivalentes en valores y seguros). Una vez agotada la vía administrativa, la jurisdicción contencioso-administrativa con las pretensiones del artículo 42 del CPCA (anulación, restablecimiento, indemnización por daños y perjuicios) y, cuando hay urgencia, medidas cautelares del artículo 19 del CPCA. Si la sanción vulnera derechos fundamentales —debido proceso, derecho de defensa, proporcionalidad, non bis in idem—, procede recurso de amparo ante la Sala Constitucional (Ley 7135, arts. 29 a 56). El artículo 168 de la Ley 7732 confirma que la potestad sancionatoria es independiente de las acciones civiles o penales, por lo que un mismo hecho puede generar procesos paralelos que deben coordinarse en una estrategia única.",
+      },
+    ],
+  },
 };
