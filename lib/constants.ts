@@ -343,13 +343,13 @@ export const PRACTICE_AREA_PAGES = [
   {
     slug: "compliance-publico-anticorrupcion",
     title: "Compliance Público y Anticorrupción",
-    subtitle: "Programas de cumplimiento para contratistas del Estado y defensa ante CGR y Ministerio Público",
-    description: "Corporación GC diseña e implementa programas de compliance anticorrupción para empresas que contratan con el Estado, conforme a la Ley General de Contratación Pública (Ley N.° 9986) y la Ley de Responsabilidad Penal de Personas Jurídicas (Ley N.° 9699). Asesoramos en la estructuración de programas que cumplan los requisitos del artículo 8 de la Ley N.° 9699 para obtener la reducción de hasta el 40% en multas, y defendemos empresas investigadas por la CGR o el Ministerio Público. Nuestros servicios incluyen diagnósticos de riesgo anticorrupción, diseño de manuales de compliance adaptados a SICOP, capacitación corporativa, debida diligencia de contrapartes conforme a la Ley N.° 8204 y la Convención Anticohecho de la OCDE (ratificada por Costa Rica en 2017), y representación legal ante investigaciones administrativas y penales derivadas de la Ley N.° 8422 (Anticorrupción).",
+    subtitle: "Defensa ante la Contraloría y el Ministerio Público, declaración jurada patrimonial y programas de cumplimiento bajo la Ley 8422",
+    description: "Asesoría y defensa bajo la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública (Ley N.° 8422), con sus reformas recientes: Ley N.° 10437 (protección de personas denunciantes y testigos contra represalias laborales), Ley N.° 10523 (que reforzó la verificación de las declaraciones juradas con información del Banco Central sobre beneficiarios finales), Ley N.° 10691 (que reforzó el régimen de prescripción de los delitos de corrupción) y Ley N.° 10373 (reformas para atender las recomendaciones del Grupo de Trabajo contra el Cohecho de la OCDE, que incorporó al texto el régimen de medidas cautelares inmediatas, decomiso y destino del dinero decomisado). Atendemos declaraciones juradas patrimoniales, régimen de incompatibilidades y de obsequios, procedimientos de responsabilidad administrativa ante la CGR y defensa penal por delitos contra los deberes de la función pública.",
     icon: "Certificate" as const,
     priority: "specialized" as const,
-    seoTitle: "Compliance Anticorrupción · Costa Rica",
-    seoDescription: "Programas de compliance para contratistas del Estado y defensa ante CGR y Ministerio Público. Reducción de hasta 40% en multas conforme a la Ley N.° 9699. Diagnóstico de riesgo y debida diligencia.",
-    ogShortTitle: "Compliance {{em}}",
+    seoTitle: "Abogados Anticorrupción en Costa Rica",
+    seoDescription: "Abogados en compliance público y anticorrupción en Costa Rica: declaración jurada patrimonial, régimen de incompatibilidades, defensa ante la CGR y el Ministerio Público bajo la Ley 8422 y sus reformas (10437, 10523, 10691, 10373).",
+    ogShortTitle: "Abogados {{em}}",
     ogEmphasis: "Anticorrupción",
   },
   {

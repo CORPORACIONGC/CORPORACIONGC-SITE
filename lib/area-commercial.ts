@@ -1318,4 +1318,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "compliance-publico-anticorrupcion": {
+    hookHeadline: "¿Está expuesto al régimen anticorrupción al contratar con el Estado o ejercer un cargo público?",
+    hookSubtext:
+      "La Ley 8422 articula tres planos: prevención (prohibiciones, incompatibilidades, declaración jurada de bienes), sanción administrativa ante la Contraloría y persecución penal por delitos contra los deberes de la función pública. Las reformas recientes endurecieron la persecución: la Ley 10437 (2024) protege al denunciante, la Ley 10523 (2024) cruzó las declaraciones con la información del Banco Central sobre beneficiarios finales, la Ley 10691 (2025) reforzó la prescripción y la Ley 10373 (2023, OCDE) incorporó un capítulo entero de medidas cautelares inmediatas, decomiso y destino del dinero decomisado. Defendemos a funcionarios y a empresas en sede administrativa y penal.",
+    scenariosTitle: "¿Cuándo necesita un abogado en compliance y anticorrupción?",
+    triggerScenarios: [
+      "Va a asumir un cargo público sujeto a declaración jurada y necesita prepararla correctamente",
+      "La Contraloría le previno por no presentar la declaración o le pidió aclaraciones",
+      "Está investigado por la CGR en un procedimiento de responsabilidad administrativa",
+      "El Ministerio Público le sigue causa por enriquecimiento ilícito, sobreprecio, tráfico de influencias o soborno transnacional",
+      "Las autoridades le congelaron cuentas o bienes en aplicación del artículo 67 de la Ley 8422",
+      "Su empresa contrata con el Estado y necesita un programa de cumplimiento que la blinde",
+      "Fue denunciado por una persona protegida bajo la Ley 10437 y necesita defenderse sin afectar la confidencialidad",
+    ],
+    services: [
+      {
+        title: "Declaración jurada de bienes y régimen patrimonial",
+        description:
+          "Preparamos las declaraciones inicial, anual y final ante la Contraloría (arts. 21, 22 y 29 de la Ley 8422) con el detalle que exige el contenido del artículo 29: derechos reales sobre inmuebles, muebles, participaciones societarias, bonos, certificados, cuentas, fondos de pensión, rentas, activos intangibles y pasivos. Acompañamos también las constataciones de veracidad reforzadas tras la Ley 10523/2024, cuando el cruce con beneficiarios finales del Banco Central genera consultas o ampliaciones.",
+      },
+      {
+        title: "Régimen de prohibiciones e incompatibilidades",
+        description:
+          "Asesoramos sobre la prohibición del ejercicio liberal (art. 14), el desempeño simultáneo de cargos públicos (art. 17), las incompatibilidades del artículo 18 —cargos directivos, representación, apoderamiento y participación accionaria— y su levantamiento ante la Contraloría (art. 19); también sobre la «puerta giratoria» del artículo 53 (un año de prohibición tras contratos administrativos relevantes) y el régimen de obsequios del artículo 20.",
+      },
+      {
+        title: "Defensa en procedimientos de responsabilidad administrativa ante la CGR",
+        description:
+          "Representamos al funcionario o al exfuncionario investigado por las causales del artículo 38 (incumplimiento del régimen de prohibiciones, falta de veracidad o simulación en la declaración, conflicto de intereses, debilitamiento del control interno, percepción indebida de retribuciones, entre otras), con la mira en las sanciones del artículo 39 y en los criterios del artículo 41 (dolo o culpa grave, reincidencia, impacto en el servicio).",
+      },
+      {
+        title: "Defensa penal por delitos contra los deberes de la función pública",
+        description:
+          "Defendemos ante el Ministerio Público y los tribunales penales en causas por enriquecimiento ilícito (art. 45), falsedad en la declaración (art. 46), legislación o administración en provecho propio (art. 48), sobreprecio irregular (art. 49), falsedad en la recepción de bienes o servicios (art. 50), pago irregular de contratos (art. 51), tráfico de influencias (art. 52), soborno transnacional (art. 55) y fraude de ley en función administrativa (art. 58), con atención a la inhabilitación del artículo 59 y a la prescripción reforzada del artículo 62 (Ley 10691/2025).",
+      },
+      {
+        title: "Medidas cautelares, congelamiento de cuentas y decomiso",
+        description:
+          "Impugnamos y modulamos las medidas cautelares de los artículos 65 y 67 de la Ley 8422 —congelamiento e inmovilización de cuentas, productos financieros y bienes muebles e inmuebles— dentro de los plazos cortos del propio capítulo VI (24 horas la UIF, 10 días hábiles el Ministerio Público, 5 días hábiles el juez), y atendemos el procedimiento de comiso del artículo 68 y la liquidación de los bienes administrados por el ICD (art. 69).",
+      },
+      {
+        title: "Programas de cumplimiento para contratistas del Estado",
+        description:
+          "Diseñamos para empresas y consorcios que contratan con el Estado programas integrales de cumplimiento anticorrupción: códigos de conducta, canal de denuncias con la confidencialidad reforzada del artículo 8 de la Ley 8422 y la Ley 10437/2024, debida diligencia de contrapartes, capacitación documentada, matriz de riesgo por modalidad de contratación, auditoría interna y protocolos de respuesta ante medidas cautelares de la UIF.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo una consulta sobre compliance público o un asunto de la Ley 8422 (anticorrupción).",
+    commercialFaq: [
+      {
+        question: "¿Tener un programa de cumplimiento sirve de algo si la empresa es investigada?",
+        answer:
+          "Sí. Un programa serio de cumplimiento aporta dos cosas en el procedimiento administrativo y penal. En sede administrativa, refleja el deber de control interno cuya omisión es ella misma causal de responsabilidad (art. 38.d de la Ley 8422) y permite documentar la diligencia debida en la selección y vigilancia de personas, lo que pesa al valorar la culpa grave que exige el artículo 41. En sede penal, demuestra ausencia o reducción de la culpabilidad organizacional y crea base probatoria para defender la actuación de buena fe del representante. La Ley N.° 9699 de responsabilidad penal de personas jurídicas regula además, con sus propias reglas, los efectos atenuantes del cumplimiento empresarial; ese análisis lo hacemos caso por caso con el texto literal de esa ley.",
+      },
+      {
+        question: "¿Puede la Contraloría exigirle declaración jurada a alguien que no está en la lista del artículo 21?",
+        answer:
+          "Sí. El artículo 23 de la Ley 8422 autoriza a la Contraloría —y al Ministerio Público, por medio del fiscal general— a exigir por orden singular y en cualquier momento la declaración jurada a todo funcionario público que administre o custodie fondos públicos. Desde la fecha de la orden corren los plazos, términos y sanciones de la ley. Por eso conviene preparar la situación patrimonial aun en cargos no listados que manejen fondos públicos.",
+      },
+      {
+        question: "¿Qué pasa si congelan las cuentas de mi empresa por aplicación del artículo 67?",
+        answer:
+          "Es lo que más afecta operativamente. La Ley N.° 10373 de 2023 incorporó el artículo 67 a la Ley 8422: cuando la UIF lo comunica formalmente, las entidades financieras y el Registro Nacional inmovilizan productos financieros, dinero, activos y bienes muebles o inmuebles vinculados a la investigación, e informan a la UIF en veinticuatro horas. El Ministerio Público tiene diez días hábiles para solicitar al juez la medida formal, y el juez cinco días hábiles para resolverla. La defensa dentro de esos plazos —para impugnar la causa de la medida, su proporcionalidad o su alcance— es la diferencia entre conservar liquidez operativa y verla paralizada por meses. En paralelo se trabaja el comiso del artículo 68 y el destino del dinero decomisado del artículo 70.",
+      },
+      {
+        question: "¿Cuánto tiempo dura la persecución penal por delitos de corrupción tras la reforma de 2025?",
+        answer:
+          "La Ley N.° 10691, publicada en mayo de 2025, reformó el artículo 62 de la Ley 8422. Hoy una vez interrumpida la prescripción los plazos del artículo 31 del CPP vuelven a correr íntegros, sin reducción; se añaden como causales de interrupción la declaratoria de ilegalidad de la función administrativa y la anulación de actos y contratos vinculados al delito —en vía judicial o administrativa—; el plazo se suspende mientras dure una asistencia legal internacional; y el plazo de prescripción de los delitos del título XV del Código Penal y del capítulo V de la Ley 8422 remite al inciso d) del artículo 31 del CPP. Resultado práctico: causas que antes prescribían por inactividad procesal hoy pueden mantenerse vivas por más tiempo, y la defensa debe diseñarse pensando en horizontes más largos.",
+      },
+    ],
+  },
 };

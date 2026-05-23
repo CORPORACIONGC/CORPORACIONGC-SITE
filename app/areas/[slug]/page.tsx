@@ -3836,113 +3836,262 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El compliance público anticorrupción es el conjunto de políticas, procedimientos y controles
-          internos que una empresa implementa para prevenir y detectar actos de corrupción en su
-          relación con la Administración Pública. En Costa Rica, la convergencia de la Ley de
-          Responsabilidad Penal de Personas Jurídicas (Ley N.° 9699), la Ley General de Contratación
-          Pública (Ley N.° 9986) y la Ley contra la Corrupción y el Enriquecimiento Ilícito (Ley N.° 8422)
-          ha transformado el compliance de una opción voluntaria a un imperativo empresarial con
-          consecuencias jurídicas concretas.
+          La Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública (Ley
+          N.° 8422) construyó en Costa Rica un régimen articulado en tres planos: un régimen
+          preventivo (prohibiciones, incompatibilidades, declaración jurada de bienes), un
+          régimen sancionatorio administrativo que se tramita ante la Contraloría y la propia
+          Administración, y un régimen penal específico con delitos contra los deberes de la
+          función pública. Sobre ese armazón, las reformas recientes han endurecido la
+          persecución: la Ley N.° 10437 (2024) protege a quienes denuncian; la Ley N.° 10523
+          (2024) reforzó la verificación de las declaraciones cruzando información del Banco
+          Central sobre beneficiarios finales; la Ley N.° 10691 (2025) reforzó el régimen de
+          prescripción; y la Ley N.° 10373 (2023, OCDE) incorporó todo un capítulo nuevo de
+          medidas cautelares inmediatas, decomiso y destino del dinero decomisado.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC diseña programas de compliance que resisten escrutinio judicial, porque
-          nuestro equipo conoce exactamente qué evalúan los tribunales al determinar la efectividad
-          de un programa de cumplimiento.
+          Como abogados anticorrupción en Costa Rica, en Corporación GC asesoramos a funcionarios
+          públicos sujetos a declaración jurada e incompatibilidades, a empresas y consorcios que
+          contratan con el Estado, y a quienes resultan investigados o denunciados —en sede
+          administrativa ante la CGR o en sede penal ante el Ministerio Público— por delitos contra
+          los deberes de la función pública. A continuación se describen los instrumentos jurídicos
+          que integran esta área de práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Programas de compliance bajo Ley 9699" fundamento="Ley N.° 9699, art. 8">
+      <Instrumento titulo="Deber de probidad, prohibiciones e incompatibilidades" fundamento="Ley 8422, arts. 2, 3, 4, 14, 17, 18 y 19">
         <p>
-          La Ley de Responsabilidad Penal de Personas Jurídicas (Ley N.° 9699) establece que las
-          empresas pueden ser penalmente responsables por delitos cometidos en su nombre o beneficio
-          por sus representantes, directores o empleados. El artículo 8 establece que la existencia
-          de un programa de compliance efectivo previo a la comisión del delito constituye una
-          circunstancia atenuante que permite la reducción de hasta el 40% de las multas, las cuales
-          pueden alcanzar hasta 10,000 salarios base (~₡4,500 millones).
+          La Ley 8422 considera servidor público a toda persona que presta servicios en órganos y
+          entes de la Administración Pública, estatal y no estatal —en virtud de un acto de
+          investidura y con independencia del carácter remunerado o permanente de la actividad—,
+          y extiende sus disposiciones a apoderados, administradores, gerentes y representantes
+          legales de personas jurídicas que custodien, administren o exploten fondos, bienes o
+          servicios de la Administración Pública, por cualquier título o modalidad de gestión
+          (art. 2). El deber de probidad obliga a orientar la gestión a la satisfacción del
+          interés público, con rectitud, buena fe e imparcialidad (art. 3); su infracción es
+          justa causa para la separación del cargo sin responsabilidad patronal (art. 4).
         </p>
         <p>
-          Corporación GC estructura programas que cumplen los requisitos judicialmente exigibles:
-          código de conducta, canal de denuncias, debida diligencia de contrapartes, capacitación
-          documentada, auditoría periódica y órgano de cumplimiento independiente.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Compliance en contratación pública" fundamento="Ley N.° 9986; SICOP">
-        <p>
-          La Ley General de Contratación Pública (Ley N.° 9986, vigente desde diciembre 2022)
-          establece un régimen de prohibiciones, inhabilidades y sanciones para los contratistas
-          del Estado. Con más de 48,000 proveedores registrados en SICOP (plataforma digital
-          unificada de compras públicas), el cumplimiento de las obligaciones de la Ley N.° 9986
-          es condición necesaria para participar en el mercado de contratación estatal.
-        </p>
-        <p>
-          Asesoramos en la preparación de ofertas conformes al marco normativo, la implementación
-          de controles internos contra prácticas colusorias y la defensa ante inhabilitaciones o
-          sanciones de la CGR derivadas de irregularidades en procedimientos de contratación.
+          El régimen preventivo establece tres anillos. Primero, la prohibición de ejercer
+          profesiones liberales para una lista de altos funcionarios y jefaturas técnicas
+          (art. 14), con su compensación económica (art. 15). Segundo, la prohibición de
+          desempeñar simultáneamente más de un cargo público remunerado (art. 17), con las
+          salvedades de docencia, sesiones de junta directiva sin superposición horaria y
+          autorización de la CGR para más de tres puestos colegiados. Tercero, las
+          incompatibilidades del artículo 18 —cargos directivos en empresas privadas,
+          representación, apoderamiento y participación accionaria en entidades que compitan
+          con la institución o que reciban recursos del Estado—, levantables solo de manera
+          fundada por la CGR (art. 19).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Defensa ante CGR y Ministerio Público" fundamento="Ley N.° 7428; Ley N.° 8422">
+      <Instrumento titulo="Declaración jurada de bienes y su verificación cruzada con beneficiarios finales" fundamento="Ley 8422, arts. 21, 22, 29, 34 y 36">
         <p>
-          La Contraloría General de la República (CGR), conforme a la Ley Orgánica de la CGR
-          (Ley N.° 7428), ejerce fiscalización sobre el uso de fondos públicos e investiga
-          irregularidades en la contratación administrativa. Cuando las investigaciones derivan
-          en responsabilidad penal, el caso se traslada al Ministerio Público conforme a la
-          Ley N.° 8422 (Anticorrupción).
+          La obligación de declarar la situación patrimonial alcanza a un universo amplio:
+          presidente y vicepresidentes; diputados; ministros y viceministros; magistrados,
+          jueces y fiscales; contralor y subcontralor; defensor de los habitantes; procurador
+          general; regulador general; superintendentes e intendentes de SUGEF, SUGEVAL,
+          SUGESE y SUPEN; presidentes ejecutivos, gerentes, subgerentes y auditores internos
+          de toda la Administración Pública y empresas públicas; alcaldes y regidores
+          municipales; y, por el reglamento, todos los empleados que custodien, administren,
+          fiscalicen o recauden fondos públicos, los que aprueben erogaciones, los empleados
+          de aduanas y quienes tramitan licitaciones (art. 21). La declaración inicial se
+          presenta dentro de los treinta días hábiles del nombramiento; la anual, en los
+          primeros quince días hábiles de mayo; y la final, en los treinta días hábiles
+          posteriores al cese (art. 22). Su contenido se detalla en el artículo 29: inmuebles
+          y muebles con sus citas registrales, participaciones societarias, bonos, certificados,
+          cuentas, fondos de pensión, salarios y rentas, activos intangibles, pasivos y todo
+          otro interés patrimonial.
         </p>
         <p>
-          Corporación GC representa a empresas y directivos investigados tanto en la fase
-          administrativa ante CGR (procedimientos de responsabilidad conforme al art. 68 y
-          siguientes de la Ley N.° 7428) como en la fase penal ante el Ministerio Público,
-          garantizando el respeto de las garantías del debido proceso.
+          La Ley N.° 10523 de 2024 reformó el artículo 34 para reforzar la verificación: la
+          CGR informa al Banco Central, al menos una vez al año, los nombres y las cédulas de
+          todos los funcionarios obligados; el Banco Central, en quince días hábiles, debe
+          remitir un informe que detalle las personas o estructuras jurídicas en las que esos
+          funcionarios aparezcan como accionistas o beneficiarios finales —con fechas de inicio
+          y de fin—, a partir del Registro de Transparencia y Beneficiarios Finales. Esa
+          información es confidencial frente a terceros, pero permite a la Contraloría
+          contrastar la realidad patrimonial con lo declarado y detectar simulación (art. 32).
+          Quien tenga una declaración jurada pendiente no puede acceder a un nuevo cargo público
+          (art. 36).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Cumplimiento OCDE y prevención de lavado" fundamento="Convención Anticohecho OCDE; Ley N.° 8204">
+      <Instrumento titulo="Régimen de obsequios, puerta giratoria y prohibiciones tras el cese del cargo" fundamento="Ley 8422, arts. 20 y 53">
         <p>
-          Con la adhesión de Costa Rica a la OCDE en 2021, el país se comprometió a cumplir la
-          Convención Anticohecho de la OCDE (ratificada en 2017) y a fortalecer los mecanismos
-          de prevención de lavado de capitales conforme a la Ley N.° 8204. Las empresas que
-          contratan con el Estado deben implementar debida diligencia reforzada respecto de sus
-          socios, subcontratistas y cadena de suministro.
+          Los obsequios recibidos por un funcionario público como gesto de cortesía o costumbre
+          diplomática son bienes de la Nación cuando su valor supera un salario base, según la
+          definición de la Ley N.° 7337; se exceptúan condecoraciones y premios honoríficos,
+          culturales, académicos o científicos (art. 20). La apropiación o retención de
+          obsequios que el funcionario debió entregar al Estado es delito y se sanciona con
+          prisión de uno a dos años (art. 54).
         </p>
         <p>
-          Diseñamos políticas de debida diligencia de contrapartes (KYC corporativo), matrices
-          de riesgo anticorrupción adaptadas al sector de actividad, y protocolos de reporte
-          conforme a los estándares OCDE y las recomendaciones del GAFI/GAFILAT.
+          El artículo 53 regula la conocida «puerta giratoria»: dentro del año siguiente a la
+          celebración de un contrato administrativo mayor o igual que el límite para la
+          licitación pública en la entidad donde sirvió, el funcionario no puede aceptar empleo
+          remunerado ni participación accionaria con la persona física o jurídica favorecida si
+          tuvo participación en alguna fase del diseño, las especificaciones técnicas, los
+          planos, la selección, la adjudicación, los recursos administrativos o la fiscalización
+          de la ejecución. La sanción es de cien a ciento cincuenta días multa.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Responsabilidad administrativa y competencia vinculante de la CGR" fundamento="Ley 8422, arts. 38, 39, 40, 41, 43 y 44">
+        <p>
+          Las causales de responsabilidad administrativa se enumeran en el artículo 38: incumplir
+          prohibiciones e incompatibilidades; desplegar actividades que comprometan la
+          imparcialidad o generen conflicto de intereses; favorecer al cónyuge o pariente
+          hasta el tercer grado; debilitar el control interno; infringir el régimen de
+          obsequios; asesorar con inexcusable negligencia; no presentar declaración jurada
+          previo apercibimiento; faltar a la veracidad o simular en la declaración; violar la
+          confidencialidad de las declaraciones; percibir retribuciones indebidas; incumplir la
+          prohibición del artículo 17, entre otras. Las sanciones son tres: amonestación escrita
+          publicada en La Gaceta, suspensión sin goce de salario de quince a treinta días y
+          separación del cargo sin responsabilidad patronal o cancelación de credencial cuando
+          corresponda (art. 39).
+        </p>
+        <p>
+          La potestad disciplinaria la ejerce el órgano competente en cada entidad, pero la
+          Contraloría también puede tramitar el procedimiento y, en materia de Hacienda Pública,
+          requerir vinculantemente a la entidad la aplicación de la sanción que determine
+          (art. 40). Las infracciones requieren dolo o culpa grave; se ponderan la lesión a los
+          intereses económicos, el resultado obtenido por el autor, el impacto en el servicio
+          público, la reincidencia en los cuatro años anteriores y el rango y funciones del
+          servidor (art. 41). Cuando la infracción se atribuye a un miembro de los Supremos
+          Poderes, la CGR informa al órgano que constitucionalmente puede sancionarlo (art. 43).
+          La prescripción remite al artículo 43 de la Ley General de Control Interno y al
+          artículo 71 de la Ley Orgánica de la CGR (art. 44).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Delitos contra los deberes de la función pública" fundamento="Ley 8422, arts. 45 a 60">
+        <p>
+          El capítulo V tipifica el núcleo penal especial de la corrupción en Costa Rica:
+          enriquecimiento ilícito, con prisión de tres a seis años (art. 45); falsedad en la
+          declaración jurada, de seis meses a un año (art. 46); legislación o administración en
+          provecho propio, de uno a ocho años (art. 48); sobreprecio irregular en la adquisición,
+          enajenación o concesión de bienes, obras o servicios, de tres a diez años (art. 49);
+          falsedad en la recepción de bienes y servicios contratados, de dos a ocho años, con
+          agravante de un tercio cuando se entorpece el servicio (art. 50); pago irregular de
+          contratos administrativos, de uno a tres años (art. 51); y tráfico de influencias,
+          de dos a cinco años, con agravante de un tercio cuando la influencia proviene del
+          presidente, vicepresidentes, ministros, contralor, fiscal general, defensor o
+          dirigentes nacionales de partidos políticos (art. 52).
+        </p>
+        <p>
+          Completan el catálogo el reconocimiento ilegal de beneficios laborales (art. 56), la
+          influencia en contra de la Hacienda Pública (art. 57, de dos a ocho años), el fraude
+          de ley en la función administrativa (art. 58, de uno a cinco años) y el soborno
+          transnacional (art. 55, de cuatro a doce años, hasta catorce cuando el funcionario
+          extranjero ejecuta un acto contrario a sus deberes, con multa de hasta quince veces
+          el valor del beneficio cuando el autor es persona física). Como pena accesoria, el
+          juez puede imponer inhabilitación para empleo o cargo público de uno a diez años
+          (art. 59). La violación de la privacidad de las declaraciones juradas se sanciona
+          con prisión de tres a cinco años (art. 60).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Persecución penal moderna: medidas cautelares inmediatas, decomiso y prescripción reforzada" fundamento="Ley 8422, arts. 62, 63, 65, 67, 68 y 70 (adicionados por la Ley 10373/2023 OCDE; reformados por la Ley 10691/2025)">
+        <p>
+          La Ley N.° 10373 de 2023 adicionó a la Ley 8422 todo un capítulo VI sobre persecución
+          penal moderna. El Ministerio Público puede usar la inteligencia financiera de la
+          Unidad de Inteligencia Financiera del Instituto Costarricense sobre Drogas como fuente
+          de información, con todas las facultades de la Ley N.° 7786 (art. 63), y solicitar al
+          juez —en cualquier momento, sin notificación ni audiencia previas— medidas cautelares
+          para preservar bienes, productos o instrumentos relacionados con el eventual comiso
+          (art. 65). El artículo 67 estableció el resguardo cautelar inmediato: cuando la UIF lo
+          comunica formalmente, las entidades financieras y el Registro Nacional deben congelar
+          o inmovilizar productos, dinero, activos y bienes muebles o inmuebles vinculados a la
+          investigación, e informar a la UIF en veinticuatro horas; el Ministerio Público tiene
+          diez días hábiles para solicitar al juez la medida formal, que se resuelve en cinco
+          días hábiles. El decomiso opera sobre todo bien o instrumento utilizado o proveniente
+          del delito, incluidas acciones, aportes de capital y patrimonio de personas jurídicas
+          vinculadas (art. 68).
+        </p>
+        <p>
+          El destino del dinero decomisado (art. 70) está redistribuido para fortalecer la
+          persecución: el Instituto Costarricense sobre Drogas administra los fondos y
+          transfiere el 30% al Ministerio Público para investigación y combate de la corrupción,
+          30% a la sección especializada del OIJ, 15% al propio ICD y 25% al Área de Procuraduría
+          de Ética Pública. La Ley N.° 10691 de 2025 reformó el artículo 62 de la Ley 8422: la
+          interrupción de la prescripción reinicia íntegros los plazos del CPP, sin reducción;
+          se añaden causales de interrupción —declaratoria de ilegalidad de la función
+          administrativa y anulación de actos y contratos vinculados—; se suspende el plazo
+          mientras dure una asistencia legal internacional; y el plazo de prescripción de los
+          delitos del título XV del Código Penal y del capítulo V de la Ley 8422 remite al
+          inciso d) del artículo 31 del CPP.
         </p>
       </Instrumento>
 
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre compliance público
+          Preguntas frecuentes sobre compliance público y anticorrupción
         </h2>
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Mi empresa necesita un programa de compliance para contratar con el Estado?
+              ¿Quiénes están obligados a presentar la declaración jurada de bienes ante la Contraloría?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Aunque la Ley N.° 9986 no impone un programa de compliance como requisito formal
-              de elegibilidad, la Ley N.° 9699 de Responsabilidad Penal de Personas Jurídicas
-              convierte al compliance en un escudo jurídico esencial: permite reducir hasta un 40%
-              las multas penales corporativas. Tras el Caso Cochinilla (₡78,000 millones en fondos
-              malversados, 80+ sospechosos), toda empresa que participe en contratación pública
-              enfrenta un riesgo reputacional y penal significativo sin un programa de cumplimiento
-              documentado.
+              El artículo 21 de la Ley 8422 obliga a un universo amplio: presidente y
+              vicepresidentes, diputados, ministros y viceministros, magistrados, jueces y
+              fiscales, contralor y subcontralor, defensor, procurador general, regulador
+              general, superintendentes e intendentes de SUGEF, SUGEVAL, SUGESE y SUPEN,
+              presidentes ejecutivos, gerentes, subgerentes, auditores internos, alcaldes y
+              regidores municipales. Adicionalmente, el reglamento extiende la obligación a
+              quienes custodien, administren, fiscalicen o recauden fondos públicos, aprueben
+              erogaciones, trabajen en aduanas o tramiten licitaciones; y a apoderados,
+              gerentes y representantes de personas jurídicas privadas que administren, custodien
+              o sean concesionarios de fondos, bienes o servicios públicos (art. 2, párrafo 2).
+              Quien tenga una declaración pendiente no puede acceder a un nuevo cargo público
+              (art. 36).
             </p>
           </div>
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué beneficio concreto tiene el programa de compliance ante los tribunales?
+              ¿Puede la Contraloría obligar a un funcionario a declarar aun sin estar en la lista del artículo 21?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El artículo 8 de la Ley N.° 9699 establece que un programa de compliance efectivo,
-              preexistente a la comisión del delito, constituye una circunstancia atenuante que
-              permite al juez reducir la sanción hasta en un 40%. Para que el programa sea
-              considerado efectivo, debe ser integral, documentado, implementado efectivamente y
-              sometido a auditoría periódica. Corporación GC diseña programas que cumplen estos
-              requisitos porque conocemos los criterios judiciales de evaluación.
+              Sí. El artículo 23 de la Ley 8422 autoriza a la Contraloría —y al Ministerio
+              Público, por medio del fiscal general— a exigir, por orden singular y en cualquier
+              momento, la declaración jurada a todo funcionario público que administre o custodie
+              fondos públicos. Desde la fecha de la orden, el funcionario queda sujeto a los
+              plazos, términos y sanciones de la ley. Esto es decisivo cuando hay denuncia o
+              indicios de enriquecimiento que no encajan con la lista cerrada del artículo 21.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Pueden congelar las cuentas y bienes de una empresa o un funcionario antes del juicio?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí. Desde la Ley N.° 10373 de 2023, el artículo 67 de la Ley 8422 obliga a las
+              entidades financieras y al Registro Nacional —cuando la UIF lo comunica
+              formalmente— a congelar o inmovilizar de inmediato productos financieros, dinero,
+              activos y bienes muebles o inmuebles vinculados a la investigación, e informar a
+              la UIF en veinticuatro horas. El Ministerio Público tiene diez días hábiles para
+              solicitar la medida cautelar judicial, y el juez resuelve en cinco días hábiles
+              (art. 67). La defensa oportuna en ese plazo —para impugnar la causa de la medida o
+              ajustar su alcance— es la diferencia entre conservar liquidez operativa y verla
+              paralizada por meses.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿En qué se diferencia el procedimiento ante la CGR del procedimiento penal?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El procedimiento ante la CGR es administrativo: declara responsabilidad
+              administrativa con sanciones del artículo 39 (amonestación, suspensión de quince a
+              treinta días, separación del cargo o cancelación de credencial), aplica el régimen
+              de la Ley General de la Administración Pública y exige dolo o culpa grave (art. 41).
+              El procedimiento penal lo lleva el Ministerio Público y se funda en los delitos del
+              capítulo V de la Ley 8422 (arts. 45 a 60) y del título XV del Código Penal, con
+              penas de prisión que llegan hasta catorce años en soborno transnacional agravado
+              (art. 55) y diez años en sobreprecio irregular (art. 49); puede imponerse
+              inhabilitación de uno a diez años (art. 59). Las dos vías pueden tramitarse en
+              paralelo y la CGR está obligada a denunciar ante las autoridades judiciales los
+              hechos que considere delito (art. 40, párrafo final).
             </p>
           </div>
         </div>
