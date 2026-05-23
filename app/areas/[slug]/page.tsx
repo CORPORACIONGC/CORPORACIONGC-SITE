@@ -4300,90 +4300,196 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          Las Alianzas Público-Privadas (APP) representan el mecanismo mediante el cual el Estado
-          costarricense canaliza inversión privada hacia infraestructura pública: carreteras,
-          puertos, aeropuertos, transporte público y servicios esenciales. Con una brecha de
-          inversión en infraestructura del 1.1% del PIB actual versus el 3.7% necesario, y un
-          pipeline activo que incluye proyectos por más de USD $1,200 millones, la demanda de
-          asesoría jurídica especializada en APP es creciente.
+          Costa Rica vive un momento de transición en infraestructura. La Ley General de Concesión
+          de Obras Públicas con Servicios Públicos (Ley N.° 7762 de 1998, reformada por las leyes
+          N.° 8643 de 2008 y N.° 9701 de 2019) sigue siendo el régimen vigente para los contratos
+          de concesión de obra pública, de obra con servicio público y de optimización de activos
+          de infraestructura. Paralelamente, el expediente N.° 24.009, Ley Marco de las
+          Asociaciones Público-Privadas, fue aprobado en primer debate el 19 de mayo de 2026, pero
+          fue suspendido por una consulta facultativa de constitucionalidad presentada ante la
+          Sala Constitucional; cuando entre en vigor —a partir de su reglamentación— derogará la
+          Ley 7762 y sustituirá al Consejo Nacional de Concesiones (CNC) por la Agencia Nacional
+          de Asociaciones Público-Privadas (ANAPP).
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Como abogados en concesiones y APP en Costa Rica, en Corporación GC asesoramos a
+          concesionarios, consorcios, inversionistas y al sector público en la estructuración de
+          proyectos, el refrendo de contratos, la objeción de carteles, la apelación de
+          adjudicaciones ante la Contraloría, el arbitraje contractual y el litigio
+          contencioso-administrativo. La doble lectura del régimen vigente y del régimen entrante
+          es una ventaja decisiva. A continuación se describen los instrumentos jurídicos que
+          integran esta área de práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Concesión de obras públicas" fundamento="Ley N.° 7762; Ley N.° 8643; Ley N.° 9701">
+      <Instrumento titulo="Las tres modalidades vigentes: concesión de obra, de obra con servicio público y optimización de activos" fundamento="Ley 7762, art. 1">
         <p>
-          La Ley General de Concesión de Obras Públicas con Servicios Públicos (Ley N.° 7762,
-          1998), reformada por la Ley N.° 8643 (2008) y la Ley N.° 9701 (2019, que creó el
-          fondo de preinversión de ~$6M/año por 10 años), constituye el marco normativo central
-          de las APP en Costa Rica. La Comisión Nacional de Concesiones (CNC) actúa como ente
-          coordinador.
-        </p>
-        <p>
-          Asesoramos a empresas concesionarias y consorcios en la preparación de ofertas,
-          la negociación de contratos de concesión, el cumplimiento de obligaciones contractuales,
-          y la gestión de modificaciones y renegociaciones conforme al equilibrio económico-financiero
-          del contrato.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Disputas y arbitraje en concesiones" fundamento="Ley N.° 7762, art. 61 y ss.">
-        <p>
-          Los contratos de concesión de obras públicas incluyen cláusulas de resolución de disputas
-          que contemplan el arbitraje conforme al artículo 61 y siguientes de la Ley N.° 7762.
-          Las controversias más frecuentes involucran el equilibrio económico-financiero, el
-          cumplimiento de cronogramas, sobrecostos, caso fortuito o fuerza mayor, y la terminación
-          anticipada del contrato.
-        </p>
-        <p>
-          Representamos a concesionarios y al Estado en paneles arbitrales, y litigamos ante el
-          TCA la impugnación de actos administrativos del MOPT y la CNC que afecten los términos
-          de la concesión. Nuestro director tiene experiencia directa con el marco del derecho
-          de la contratación administrativa y los procedimientos ante CGR.
+          La Ley 7762 regula hoy tres figuras contractuales (art. 1, reformado por la Ley 9701):
+          la concesión de obra pública, en la que la Administración encarga a un tercero el diseño,
+          la planificación, el financiamiento, la construcción, la conservación, ampliación o
+          reparación de un inmueble público, a cambio de contraprestaciones cobradas a los
+          usuarios, a los beneficiarios o pagadas por la propia Administración; la concesión de
+          obra con servicio público, que agrega a lo anterior la explotación del servicio; y la
+          optimización de activos de infraestructura —incorporada por la Ley 9701 de 2019—, en la
+          que se entrega un bien inmueble público preexistente para su operación, mantenimiento,
+          ampliación o reparación, con explotación, y a cambio de un pago inicial o diferido del
+          concesionario que la Administración debe invertir en proyectos de obra pública y
+          servicios conexos.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Objeciones ante CGR en adjudicaciones" fundamento="Ley N.° 9986; Ley N.° 7428">
+      <Instrumento titulo="Estructura institucional vigente: Consejo Nacional de Concesiones (CNC)" fundamento="Ley 7762, arts. 5, 6, 8 y 9">
         <p>
-          Los procedimientos de adjudicación de concesiones y contratos de infraestructura pública
-          están sujetos a la fiscalización de la Contraloría General de la República conforme a
-          la Ley N.° 7428 y la Ley N.° 9986. Los participantes pueden interponer objeciones y
-          recursos contra las decisiones de adjudicación.
+          En el régimen actual, la Administración concedente es el Poder Ejecutivo, las empresas
+          públicas y el sector descentralizado territorial e institucional (art. 5). Cuando la
+          concesión está dentro del ámbito del Poder Ejecutivo, el Consejo Nacional de Concesiones
+          (CNC) —órgano con desconcentración máxima adscrito al MOPT (art. 6)— actúa como entidad
+          técnica competente en la contratación y, cuando se requiera, durante la ejecución. El
+          contrato lo suscriben el ministro del ramo, el ministro de Hacienda, el presidente de la
+          República y el CNC.
         </p>
         <p>
-          Asesoramos en la formulación de objeciones técnicas y jurídicas ante la CGR, la defensa
-          de adjudicaciones impugnadas por competidores, y el litigio contencioso-administrativo
-          derivado de resoluciones de CGR sobre contratos de infraestructura.
+          La Secretaría Técnica del CNC (arts. 8 y 9) prepara los actos preparatorios, contrata los
+          estudios, confecciona el cartel, vigila el cumplimiento del concesionario, impone las
+          sanciones del régimen sancionatorio y ejecuta los trámites previos a la expropiación
+          conforme a la Ley N.° 7495.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Nueva Ley de APP (Expediente 21.420)" fundamento="Expediente N.° 21.420">
+      <Instrumento titulo="Procedimiento concursal, contrato y refrendo" fundamento="Ley 7762, arts. 21, 23, 28, 30 y 64.1.b">
         <p>
-          El Expediente N.° 21.420 de nueva Ley Nacional de APP se encuentra en trámite legislativo
-          y busca modernizar el marco jurídico de las alianzas público-privadas, incorporando
-          estándares internacionales del PPP Project Preparation Facility (PPF) lanzado en
-          diciembre 2023 con apoyo del BID, FMI, BEI y PNUD.
+          La adjudicación se hace por licitación pública (art. 23), guiada por los principios de
+          eficiencia, publicidad, igualdad y libre competencia. La Secretaría Técnica del CNC
+          realiza los estudios y eleva el cartel (art. 21) para aprobación del Consejo. La
+          selección se hace por uno o varios factores del artículo 28 (valor presente de ingresos,
+          tarifa, plazo, monto de subsidio, pagos al Estado, ingresos mínimos garantizados,
+          puntaje técnico, reducciones por rentabilidad excesiva).
         </p>
         <p>
-          Corporación GC asesora a empresas e inversionistas sobre las implicaciones del nuevo
-          marco normativo en preparación, la estructuración de proyectos conforme a los estándares
-          del PPF, y la participación en el pipeline activo de proyectos de infraestructura.
+          Firme la adjudicación, el adjudicatario constituye en noventa días naturales la sociedad
+          anónima nacional con la que se firma el contrato (art. 31), que debe ser refrendado por
+          la Contraloría General de la República (art. 30). La Ley 7762 excluye expresamente al
+          CNC de la aplicación del artículo 20 de la Ley Orgánica de la CGR (art. 64.1.b), por lo
+          que el refrendo en concesiones tiene un régimen propio dentro del marco general.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Recursos: objeción al cartel y apelación de la adjudicación" fundamento="Ley 7762, arts. 34 y 35">
+        <p>
+          Contra el cartel cabe recurso de objeción ante la Contraloría General de la República,
+          dentro del primer tercio del plazo para presentar ofertas; la CGR debe resolver dentro
+          de los treinta días naturales siguientes y, si no resuelve, la objeción se tiene por
+          acogida favorablemente en los términos del recurrente (art. 34). Quien pudiendo recurrir
+          no lo hiciere no podrá luego usar esos argumentos en la apelación.
+        </p>
+        <p>
+          Contra el acto de adjudicación cabe recurso de apelación ante la CGR dentro de los diez
+          días hábiles siguientes a la publicación del acuerdo en La Gaceta. Se resuelve en
+          cuarenta días hábiles desde el auto inicial de traslado, prorrogables hasta por quince
+          más en casos calificados; vencido el plazo sin resolución, se tiene por confirmado el
+          acto de adjudicación recurrido (art. 35). La resolución agota la vía administrativa, y
+          el acto final es impugnable sin efecto suspensivo ante la jurisdicción
+          contencioso-administrativa.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Arbitraje contractual y resolución alterna de conflictos" fundamento="Ley 7762, art. 39">
+        <p>
+          La cláusula compromisoria de arbitraje es —en el régimen vigente— el mecanismo natural
+          para resolver las controversias derivadas del contrato de concesión. El artículo 39 de
+          la Ley 7762 autoriza estas cláusulas y manda que el cartel deba contemplarlas; se rigen
+          por la Ley sobre resolución alterna de conflictos (Ley N.° 7727).
+        </p>
+        <p>
+          No es arbitrable el ejercicio de potestades de imperio ni el ejercicio de los deberes
+          públicos por parte de la Administración, pero sí lo es —y este es el campo más
+          relevante— el derecho y el monto de la indemnización del concesionario por ese ejercicio,
+          y el reajuste del equilibrio económico-financiero del contrato cuando no esté sujeto a
+          ajustes tarifarios que formen parte de la potestad de imperio. El arbitraje será
+          necesariamente de derecho y, salvo las excepciones señaladas en la ley, la cláusula
+          compromisoria es exigible sin agotamiento previo de la vía administrativa.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="La transición: expediente 24.009 (Ley Marco APP)" fundamento="Expediente N.° 24.009; transitorios I y II">
+        <p>
+          El expediente N.° 24.009, Ley Marco de las Asociaciones Público-Privadas, fue aprobado
+          en primer debate el 19 de mayo de 2026; veinte diputados presentaron una consulta
+          facultativa de constitucionalidad ante la Sala Constitucional, lo que suspende el trámite
+          legislativo y bloquea el segundo debate hasta que la Sala se pronuncie. Aun cuando supere
+          ese tamiz y se publique, la propia ley rige a partir de su reglamentación, que el Poder
+          Ejecutivo tiene hasta doce meses para emitir.
+        </p>
+        <p>
+          Cuando entre en vigor, derogará la Ley 7762, sustituirá al CNC por la Agencia Nacional de
+          Asociaciones Público-Privadas (ANAPP) —con personalidad jurídica instrumental y
+          patrimonio propio, junto con una Dirección General de APP (DGAPP)—, reordenará el ciclo
+          de vida del proyecto en fases de preinversión, inversión y postinversión integradas al
+          Sistema Nacional de Inversión Pública (Ley N.° 10.441), e introducirá expresamente el
+          principio de «valor por el dinero» y un régimen de compromisos firmes y contingentes con
+          tope plurianual a cargo del Ministerio de Hacienda. La adjudicación se hará por
+          licitación mayor con invitación internacional según la Ley General de Contratación
+          Pública (Ley N.° 9986). Los transitorios resguardan los contratos vigentes bajo la Ley
+          7762: los ya formalizados o en ejecución continúan bajo ese régimen, salvo acuerdo
+          conjunto de las partes para migrar.
         </p>
       </Instrumento>
 
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre APP e infraestructura
+          Preguntas frecuentes sobre concesiones y APP
         </h2>
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se resuelven las disputas en un contrato de concesión?
+              ¿La Ley 7762 sigue vigente o ya rige la nueva Ley Marco APP?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Ley N.° 7762 establece el arbitraje como mecanismo preferente de resolución de
-              disputas en contratos de concesión (art. 61 y siguientes). Las controversias técnicas,
-              financieras y jurídicas derivadas del contrato se someten a un panel arbitral conforme
-              a las reglas pactadas. Adicionalmente, los actos administrativos del MOPT o la CNC
-              que afecten el contrato pueden impugnarse ante el TCA conforme al CPCA.
+              La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) fue
+              aprobado en primer debate el 19 de mayo de 2026, pero veinte diputados presentaron
+              una consulta facultativa de constitucionalidad ante la Sala Constitucional, lo que
+              suspende el segundo debate hasta que la Sala se pronuncie. Aun cuando supere ese
+              tamiz, la propia ley rige a partir de su reglamentación, que el Poder Ejecutivo tiene
+              hasta doce meses para emitir. Mientras tanto, todos los contratos de concesión de
+              obra pública, de obra con servicio público y de optimización de activos se rigen por
+              la Ley 7762; los contratos ya adjudicados continuarán bajo ese régimen aun después de
+              la nueva ley, salvo acuerdo mutuo en contrario (transitorios I y II del expediente
+              24.009).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se resuelven las disputas en un contrato de concesión vigente?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La Ley 7762 prevé dos vías. La primera es la cláusula de arbitraje del artículo 39:
+              el cartel debe autorizar el arbitraje como solución alterna y, una vez incorporada al
+              contrato, es exigible sin necesidad de agotar la vía administrativa. No son
+              arbitrables el ejercicio de potestades de imperio ni los deberes públicos, pero sí lo
+              son el derecho y el monto de la indemnización por su ejercicio, y el reajuste del
+              equilibrio económico-financiero del contrato. La segunda vía es la jurisdicción
+              contencioso-administrativa contra los actos del CNC, del MOPT o de la CGR que afecten
+              el contrato, con las pretensiones del artículo 42 del CPCA y, cuando hay urgencia,
+              medidas cautelares del artículo 19.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuáles serán los cambios principales cuando entre en vigor la Ley Marco APP?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Tres cambios estructurales destacables: (i) crea la Agencia Nacional de Asociaciones
+              Público-Privadas (ANAPP), órgano con personalidad jurídica instrumental, que
+              sustituye al Consejo Nacional de Concesiones; (ii) reordena el ciclo de vida del
+              proyecto en fases de preinversión, inversión y postinversión, integradas al Sistema
+              Nacional de Inversión Pública (Ley N.° 10.441); y (iii) introduce expresamente el
+              principio de «valor por el dinero» y un régimen de compromisos firmes y contingentes
+              con tope plurianual fijado por el Ministerio de Hacienda. La adjudicación se rige por
+              la Ley General de Contratación Pública (Ley N.° 9986) bajo la modalidad de licitación
+              mayor con invitación internacional. Los contratos vigentes bajo la Ley 7762 se
+              mantienen bajo ese régimen, salvo acuerdo expreso de las partes para migrar.
             </p>
           </div>
         </div>

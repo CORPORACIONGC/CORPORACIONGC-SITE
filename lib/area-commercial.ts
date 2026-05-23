@@ -1247,4 +1247,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "alianzas-publico-privadas-infraestructura": {
+    hookHeadline: "¿Necesita estructurar, impugnar o defender un proyecto de concesión o APP?",
+    hookSubtext:
+      "Costa Rica está en transición. La Ley 7762 sigue siendo el régimen vigente para los contratos de concesión y para todos los procedimientos en curso. El expediente 24.009 (Ley Marco APP) fue aprobado en primer debate el 19 de mayo de 2026 pero está suspendido por una consulta de constitucionalidad ante la Sala Constitucional; cuando entre en vigor —tras su reglamentación— sustituirá al Consejo Nacional de Concesiones por la Agencia Nacional de APP. Defendemos a concesionarios, consorcios, inversionistas y al sector público en ambos regímenes: estructuración, refrendo, objeción de carteles, apelación de adjudicaciones, arbitraje contractual y litigio contencioso.",
+    scenariosTitle: "¿Cuándo necesita un abogado en concesiones y APP?",
+    triggerScenarios: [
+      "Va a participar en una licitación de concesión y necesita estructurar la oferta",
+      "Le rechazaron el refrendo de un contrato de concesión ante la CGR",
+      "Necesita objetar un cartel o apelar una adjudicación ante la Contraloría",
+      "Un contrato de concesión vigente enfrenta una controversia de equilibrio económico-financiero",
+      "Va a iniciar o defender un arbitraje contractual contra el Estado",
+      "Es proponente de una iniciativa privada y la quiere llevar al CNC (o, en su día, a la ANAPP)",
+      "Necesita saber cómo le afectará el expediente 24.009 a su proyecto vigente",
+    ],
+    services: [
+      {
+        title: "Estructuración y participación en licitaciones",
+        description:
+          "Preparamos las ofertas técnica y económica conforme al cartel (Ley 7762 arts. 21 a 28), evaluando los factores de selección del art. 28 (valor presente de ingresos, tarifa, plazo, subsidio, pagos al Estado, ingresos mínimos garantizados, puntaje técnico) y los requisitos de admisibilidad. Tramitamos también la constitución de la sociedad anónima nacional (art. 31).",
+      },
+      {
+        title: "Iniciativa privada y proyectos del sector público",
+        description:
+          "Acompañamos al proponente privado en la presentación de iniciativas (art. 20), incluyendo los estudios de factibilidad técnica, ambiental y económica, y el régimen de recuperación de costos cuando se llegue a la adjudicación.",
+      },
+      {
+        title: "Refrendo de contratos y modificaciones",
+        description:
+          "Gestionamos el refrendo del contrato de concesión ante la Contraloría (art. 30 Ley 7762) y la aprobación de modificaciones e inversiones adicionales, dentro del tope del 25% de la inversión inicial (art. 48).",
+      },
+      {
+        title: "Objeción de carteles y apelación de adjudicaciones ante la CGR",
+        description:
+          "Interponemos objeciones al cartel ante la CGR (art. 34: primer tercio del plazo para presentar ofertas; resolución en 30 días naturales con silencio positivo) y apelaciones contra la adjudicación (art. 35: diez días hábiles desde la publicación, resolución en 40 días hábiles prorrogables).",
+      },
+      {
+        title: "Arbitraje contractual y resolución alterna de conflictos",
+        description:
+          "Llevamos arbitrajes contractuales conforme al artículo 39 de la Ley 7762, en la cláusula compromisoria del contrato. No son arbitrables las potestades de imperio, pero sí el derecho y monto de indemnización por su ejercicio y el reajuste del equilibrio económico-financiero. El arbitraje es de derecho y exigible sin agotamiento previo de la vía administrativa.",
+      },
+      {
+        title: "Litigio contencioso contra actos del CNC, MOPT y CGR",
+        description:
+          "Impugnamos los actos del Consejo Nacional de Concesiones, del MOPT y de la Contraloría que afecten el contrato o el procedimiento de licitación, ante la jurisdicción contencioso-administrativa, con las pretensiones del art. 42 del CPCA y medidas cautelares de urgencia cuando el caso lo amerite (art. 19).",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un proyecto de concesión u APP y necesito asesoría jurídica especializada.",
+    commercialFaq: [
+      {
+        question: "¿La Ley 7762 sigue vigente o ya rige la nueva Ley Marco APP?",
+        answer:
+          "La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) fue aprobado en primer debate el 19 de mayo de 2026, pero veinte diputados presentaron consulta facultativa de constitucionalidad ante la Sala Constitucional, lo que suspende el segundo debate hasta que la Sala se pronuncie. Aun cuando supere ese tamiz, la propia ley rige a partir de su reglamentación, que el Poder Ejecutivo tiene hasta doce meses para emitir. Los contratos ya adjudicados continuarán bajo la Ley 7762 aun después de la nueva ley, salvo acuerdo mutuo en contrario (transitorios I y II).",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para objetar un cartel o apelar una adjudicación ante la CGR?",
+        answer:
+          "La objeción al cartel debe presentarse dentro del primer tercio del plazo para presentar ofertas (art. 34 de la Ley 7762); la CGR resuelve en treinta días naturales y, si no lo hace, la objeción se tiene por acogida en los términos del recurrente. La apelación contra la adjudicación se presenta dentro de los diez días hábiles siguientes a la publicación en La Gaceta (art. 35); la CGR resuelve en cuarenta días hábiles prorrogables. Quien pudiendo recurrir no lo hiciere no podrá usar esos argumentos después.",
+      },
+      {
+        question: "¿Cómo se resuelven las disputas en un contrato de concesión actual?",
+        answer:
+          "La Ley 7762 prevé dos vías. La primera es la cláusula de arbitraje del artículo 39, que el cartel debe autorizar y que se rige por la Ley N.° 7727 sobre resolución alterna de conflictos. Es exigible sin agotamiento previo de la vía administrativa. La segunda es la jurisdicción contencioso-administrativa contra los actos del CNC, del MOPT o de la CGR que afecten el contrato, con las pretensiones del artículo 42 del CPCA y, cuando hay urgencia, medidas cautelares del artículo 19.",
+      },
+      {
+        question: "¿Qué pasa con mi contrato vigente bajo Ley 7762 cuando entre en vigor la Ley Marco APP?",
+        answer:
+          "Su contrato continúa bajo la Ley 7762. El transitorio I del expediente 24.009 establece que los procedimientos con acto de adjudicación firme, los contratos ya formalizados y los contratos en ejecución bajo la Ley 7762 se ejecutan según esa misma ley, salvo que las partes —de manera necesariamente conjunta— declaren la conveniencia de aplicar la nueva ley. La ANAPP asumirá las funciones del antiguo CNC en estos casos. Los procedimientos en licitación sin adjudicación firme se ajustarán al nuevo marco, con excepciones cuando ya hay ofertas o adjudicación no firme.",
+      },
+    ],
+  },
 };
