@@ -1389,4 +1389,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "asesoria-regulatoria": {
+    hookHeadline: "¿Necesita redactar o reformar un reglamento que aguante el control jurisdiccional?",
+    hookSubtext:
+      "Municipalidades, colegios profesionales, instituciones autónomas y ministerios nos consultan constantemente. Redactamos el reglamento completo, acompañamos el procedimiento de aprobación (audiencias del artículo 361 de la LGAP, consulta de diez días, información pública, publicación) y, si después es impugnado en el contencioso o en la Sala Constitucional, lo defendemos. La ventaja decisiva es conocer desde adentro qué hace caer un reglamento: con esa lectura, lo diseñamos para resistir el escrutinio desde la primera versión.",
+    scenariosTitle: "¿Cuándo necesita asesoría en redacción de reglamentos?",
+    triggerScenarios: [
+      "Una municipalidad necesita redactar o reformar un reglamento autónomo o municipal",
+      "Un colegio profesional debe actualizar su código de ética, reglamento disciplinario o arancelario",
+      "Una institución autónoma quiere modernizar su reglamento de organización y servicio",
+      "Un ministerio prepara un decreto ejecutivo y necesita garantizar la legalidad y constitucionalidad",
+      "El reglamento vigente fue impugnado y se requiere defenderlo en el contencioso o ante la Sala IV",
+      "Hay duda sobre si una materia se puede regular por reglamento o requiere ley formal",
+      "El proceso de consulta pública (LGAP art. 361) fue omitido o defectuoso y hay riesgo de nulidad",
+    ],
+    services: [
+      {
+        title: "Redacción integral de reglamentos",
+        description:
+          "Diseñamos y redactamos reglamentos completos —ejecutivos, autónomos, municipales y de colegios profesionales—, con análisis previo del marco habilitante, jerarquía de fuentes (art. 6 LGAP), límites del reglamento autónomo (arts. 19.2, 59.2 y 124 LGAP) y articulación con la legislación sectorial. Entregamos texto final, exposición de motivos y memoria técnica.",
+      },
+      {
+        title: "Dictámenes jurídicos sobre proyectos normativos",
+        description:
+          "Emitimos dictámenes técnicos sobre la constitucionalidad y legalidad de proyectos de reglamento, identificando los frentes de riesgo (reserva de ley, exceso de la potestad reglamentaria, vicios de procedimiento, contradicciones con normas superiores) y proponiendo los ajustes necesarios antes de la aprobación.",
+      },
+      {
+        title: "Acompañamiento del procedimiento de aprobación",
+        description:
+          "Conducimos el procedimiento especial de elaboración del Título IX de la LGAP: audiencia a entidades descentralizadas (art. 361.1), consulta a entidades representativas de intereses afectados con plazo de diez días (art. 361.2), información pública cuando corresponde (art. 361.3), consignación expresa de normas reformadas o derogadas (art. 362) y remisión a Ministros con ocho días de antelación cuando se requiera aprobación del Consejo de Gobierno (art. 363).",
+      },
+      {
+        title: "Reglamentos de colegios profesionales y entes públicos no estatales",
+        description:
+          "Diseñamos códigos de ética, reglamentos disciplinarios, reglamentos electorales y reglamentos arancelarios para colegios profesionales, con atención a la reserva de ley sancionatoria (art. 124 LGAP), las garantías del debido proceso interno (arts. 39 y 41 de la Constitución) y la articulación con la jurisdicción contencioso-administrativa que conoce de la impugnación de los actos del colegio.",
+      },
+      {
+        title: "Reforma integral de cuerpos normativos",
+        description:
+          "Auditamos reglamentos vigentes desactualizados o incoherentes, identificamos contradicciones con la legislación posterior y producimos una reforma integral o un texto sustitutivo, con plan de transición y régimen transitorio para preservar situaciones jurídicas consolidadas.",
+      },
+      {
+        title: "Defensa del reglamento ante impugnaciones posteriores",
+        description:
+          "Defendemos al ente emisor ante la impugnación directa en el contencioso (CPCA art. 10.2), la acción de inconstitucionalidad ante la Sala Constitucional (Ley 7135, arts. 73 a 95) y la impugnación incidental en casos concretos. Contestamos demandas, rendimos informes ante la Sala IV y articulamos el expediente administrativo de respaldo del reglamento.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, necesitamos asesoría para redactar (o defender) un reglamento o disposición de carácter general.",
+    commercialFaq: [
+      {
+        question: "¿Puede una municipalidad o un colegio profesional contratarnos para redactar su reglamento?",
+        answer:
+          "Sí. La redacción técnica de un reglamento es asistencia profesional especializada y se contrata bajo la Ley General de Contratación Pública (Ley N.° 9986). El acto formal de aprobación —acuerdo del Concejo Municipal, acuerdo de Junta Directiva del colegio profesional o decreto ejecutivo— sigue siendo competencia exclusiva del órgano titular; lo que se contrata es el trabajo profesional de diseño, redacción, dictamen y acompañamiento del procedimiento.",
+      },
+      {
+        question: "¿Cuánto demora redactar un reglamento completo, con consulta pública incluida?",
+        answer:
+          "Depende del tamaño y de la complejidad. En la práctica, un reglamento medio pasa por cuatro fases: diagnóstico y marco habilitante (dos a tres semanas), borrador y revisión interna (tres a cinco semanas), procedimiento de elaboración con audiencias y consulta de diez días del artículo 361 de la LGAP, y cierre con informe de observaciones y texto final para aprobación. Trabajamos con cronograma y entregables definidos desde el inicio.",
+      },
+      {
+        question: "¿Qué pasa si descubrimos que el reglamento vigente tiene vicios?",
+        answer:
+          "Hay dos rutas, según la gravedad. Si los vicios son sustanciales —invasión de reserva de ley, regulación de penas o tributos en contra del artículo 124 de la LGAP, omisión de la consulta del artículo 361—, lo prudente es promover su reforma o sustitución y, si ya está produciendo efectos lesivos, anularlo por sus propias vías (revisión de oficio del artículo 173 LGAP cuando proceda). Si los vicios son menores, se corrigen mediante reforma parcial conservando la vigencia del cuerpo principal. En todos los casos diseñamos un régimen transitorio para no afectar situaciones jurídicas consolidadas.",
+      },
+      {
+        question: "Si después de aprobado lo impugnan, ¿pueden defenderlo ustedes?",
+        answer:
+          "Sí, y de hecho la línea editorial del despacho es esa: diseñamos el reglamento pensando en cómo se defenderá. Contestamos demandas de impugnación directa en el contencioso (CPCA art. 10.2), rendimos informes ante la Sala Constitucional en acciones de inconstitucionalidad (Ley 7135, arts. 73 a 95) y oponemos las defensas pertinentes a la pretensión de inaplicación incidental en casos concretos. El expediente administrativo de respaldo del reglamento —que documenta la audiencia del artículo 361, las observaciones recibidas y su tratamiento, y la motivación técnica— es el activo decisivo de esa defensa, y por eso lo construimos desde la fase de redacción.",
+      },
+    ],
+  },
 };

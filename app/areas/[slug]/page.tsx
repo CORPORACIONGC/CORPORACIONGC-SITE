@@ -595,193 +595,233 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          La potestad reglamentaria es la facultad que el ordenamiento jurídico otorga al Poder
-          Ejecutivo y a los entes descentralizados para dictar normas de alcance general que
-          desarrollen, complementen o ejecuten las leyes. En Costa Rica, esta potestad tiene
-          rango constitucional (artículo 140, inciso 3 de la Constitución Política) y está
-          regulada por la Ley General de la Administración Pública (LGAP, Ley N.° 6227).
+          Municipalidades, colegios profesionales, instituciones autónomas y ministerios nos
+          consultan constantemente para que les ayudemos a redactar reglamentos, reformar
+          cuerpos normativos completos y emitir dictámenes sobre la conformidad jurídica de un
+          proyecto antes de aprobarlo. El marco habilitante combina la potestad reglamentaria
+          del Poder Ejecutivo (art. 140 incisos 3 y 18 de la Constitución), la autonomía
+          municipal (arts. 169 y 170 de la Constitución), la autonomía institucional de los
+          entes descentralizados (art. 188 de la Constitución) y la jerarquía de fuentes del
+          artículo 6 de la LGAP, que ubica a los reglamentos por debajo de la Constitución, los
+          tratados y la ley, y reconoce expresamente los reglamentos autónomos del Poder
+          Ejecutivo y de los entes descentralizados.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          Corporación GC asesora a entes y órganos de la Administración Pública en la
-          elaboración, revisión y perfeccionamiento de instrumentos normativos de alcance
-          general. El conocimiento profundo del Derecho Administrativo sustantivo y del
-          control jurisdiccional posterior permite diseñar normativa que cumpla con los
-          principios de legalidad, proporcionalidad y razonabilidad exigidos por el ordenamiento.
+          En Corporación GC redactamos el reglamento de principio a fin, acompañamos el
+          proceso de aprobación —consulta pública, audiencia a entidades, publicación— y, si
+          después es impugnado, lo defendemos. Conocer qué hace caer un reglamento ante la
+          jurisdicción contencioso-administrativa y ante la Sala Constitucional es lo que nos
+          permite diseñarlo para resistir ese escrutinio desde la primera versión.
         </p>
       </section>
 
-      <Instrumento titulo="Reglamentos ejecutivos" fundamento="Constitución, art. 140.3; LGAP, art. 6">
+      <Instrumento titulo="Tipos de actos normativos: decretos, reglamentos, acuerdos y resoluciones" fundamento="LGAP, arts. 6 y 121">
         <p>
-          El reglamento ejecutivo es la norma de alcance general que dicta el Poder Ejecutivo
-          para desarrollar y facilitar la aplicación de una ley. El artículo 140, inciso 3 de
-          la Constitución Política atribuye al Presidente de la República y al Ministro del ramo
-          la potestad de reglamentar las leyes. El artículo 6 de la LGAP establece la jerarquía
-          normativa: la ley prevalece sobre el reglamento, y este no puede contradecir, exceder
-          ni restringir el alcance de la ley que desarrolla.
+          El artículo 121 de la LGAP distingue con precisión las categorías. Los actos de la
+          Administración se llaman decretos cuando son de alcance general y acuerdos cuando son
+          concretos; los decretos de alcance normativo se llaman también reglamentos o decretos
+          reglamentarios; y los acuerdos que deciden un recurso o reclamo administrativo se
+          llaman resoluciones. Esa precisión técnica es decisiva en la redacción: la elección
+          equivocada del nombre y del vehículo jurídico puede arrastrar consecuencias formales y
+          de publicidad que terminen en nulidad.
         </p>
         <p>
-          La redacción de un reglamento ejecutivo exige un conocimiento preciso del marco legal
-          que se pretende reglamentar, de los límites de la potestad reglamentaria y de la
-          jurisprudencia constitucional sobre la reserva de ley. Un reglamento que exceda la ley
-          o regule materia reservada al legislador es susceptible de ser anulado por la Sala
-          Constitucional o por la jurisdicción contencioso-administrativa.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Reglamentos autónomos de organización y servicio" fundamento="LGAP, arts. 103 y 104">
-        <p>
-          El reglamento autónomo es el instrumento mediante el cual un ente u órgano de la
-          Administración Pública regula su organización interna y la prestación de los servicios
-          a su cargo, sin necesidad de una ley previa que lo habilite. Los artículos 103 y 104
-          de la LGAP reconocen esta potestad a los entes descentralizados —municipalidades,
-          instituciones autónomas, universidades públicas— en el ámbito de sus competencias.
-        </p>
-        <p>
-          A diferencia del reglamento ejecutivo, el reglamento autónomo no desarrolla una ley
-          específica sino que regula materias propias de la organización administrativa. Sin
-          embargo, tampoco puede contravenir la ley ni afectar derechos fundamentales de los
-          administrados. Su elaboración requiere atención a los principios de competencia,
-          jerarquía normativa y respeto al bloque de legalidad.
+          La jerarquía del artículo 6 de la LGAP fija el orden: Constitución, tratados, leyes y
+          actos con valor de ley, decretos del Poder Ejecutivo que reglamentan las leyes,
+          demás reglamentos del Poder Ejecutivo y reglamentos de los entes descentralizados, y
+          finalmente las demás normas subordinadas. Los reglamentos autónomos del Poder
+          Ejecutivo y de los entes descentralizados están subordinados entre sí dentro de sus
+          respectivos campos de vigencia, y en lo no dispuesto expresamente quedan sujetos a las
+          reglas y principios que regulan los actos administrativos.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Decretos ejecutivos" fundamento="Constitución, art. 140.3 y 140.18">
+      <Instrumento titulo="Reglamentos autónomos: hasta dónde se puede regular sin habilitación legal" fundamento="LGAP, arts. 6.2, 19.2, 59.2 y 124">
         <p>
-          El decreto ejecutivo es el acto normativo que emite el Poder Ejecutivo —Presidente de
-          la República con el Ministro del ramo o con el Consejo de Gobierno, según la materia—
-          para establecer disposiciones de alcance general. El artículo 140, incisos 3 y 18 de
-          la Constitución Política fundamentan esta potestad. Los decretos pueden ser
-          reglamentarios (cuando desarrollan una ley) o de contenido propio (cuando regulan
-          materias de competencia del Ejecutivo).
+          El reglamento autónomo es la herramienta de los entes y órganos con autonomía
+          institucional o territorial para regular su organización interna y la prestación de
+          los servicios a su cargo sin necesidad de una ley específica que lo habilite. La LGAP
+          fija expresamente sus dos límites técnicos. Primero, el artículo 19 reserva a la ley
+          el régimen jurídico de los derechos constitucionales y prohíbe los reglamentos
+          autónomos en esa materia. Segundo, el artículo 124 prohíbe que los reglamentos, las
+          circulares, las instrucciones y demás disposiciones administrativas de carácter
+          general establezcan penas o impongan exacciones, tasas, multas u otras cargas
+          similares: lo tributario y lo sancionador exigen ley formal.
         </p>
         <p>
-          La elaboración de un decreto ejecutivo implica cumplir con requisitos formales
-          —refrendo ministerial, publicación en La Gaceta— y sustantivos —respeto a la jerarquía
-          normativa, motivación, proporcionalidad—. Un decreto que carezca de estos elementos
-          puede ser impugnado mediante acción de inconstitucionalidad (si vulnera la Constitución)
-          o mediante demanda contencioso-administrativa (si contraviene la ley o el principio de
-          legalidad).
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Directrices y circulares" fundamento="LGAP, arts. 99 y 100">
-        <p>
-          Las directrices son instrucciones de alcance general que un órgano superior dirige a
-          los órganos o entes sujetos a su dirección para orientar el ejercicio de sus
-          competencias. Los artículos 99 y 100 de la LGAP regulan la potestad de dirección y
-          establecen que las directrices no pueden ordenar actos concretos sino fijar los fines
-          y objetivos generales que deben perseguir los entes dirigidos. Las circulares, por su
-          parte, son comunicaciones internas que interpretan o aclaran la aplicación de normas
-          vigentes.
-        </p>
-        <p>
-          La diferencia entre una directriz vinculante y una recomendación no vinculante tiene
-          consecuencias jurídicas relevantes: el incumplimiento de una directriz vinculante
-          puede generar responsabilidad administrativa del funcionario, mientras que su emisión
-          fuera de los límites legales puede ser impugnada por el ente dirigido o por terceros
-          afectados.
+          El artículo 59 acota el ámbito propio del reglamento autónomo: la distribución interna
+          de competencias y la creación de servicios sin potestades de imperio. Toda regulación
+          que pretenda atribuir potestades de imperio frente al particular —fiscalizar, ordenar,
+          sancionar, gravar— exige cobertura legal. Saber dibujar esa frontera entre lo que se
+          puede y lo que no se puede regular por reglamento autónomo es la diferencia entre una
+          norma que se sostiene y otra que cae al primer recurso.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Consulta pública y participación ciudadana" fundamento="Ley 8220, art. 12; Decreto 37045-MP-MEIC">
+      <Instrumento titulo="Reglamentos municipales: autonomía cantonal y rango del reglamento autónomo" fundamento="Constitución, arts. 169 y 170; Código Municipal, Ley 7794">
         <p>
-          La elaboración de normativa de alcance general está sujeta, en muchos casos, al
-          trámite de consulta pública. La Ley de Protección al Ciudadano del Exceso de
-          Requisitos y Trámites Administrativos (Ley N.° 8220) y el Decreto Ejecutivo
-          N.° 37045-MP-MEIC establecen la obligación de someter los proyectos de reglamentos
-          y decretos a un período de consulta pública de diez días hábiles. Este trámite permite
-          a los administrados y sectores interesados formular observaciones que la Administración
-          debe considerar y responder motivadamente.
+          La autonomía municipal del artículo 170 de la Constitución es una de las más fuertes
+          del derecho costarricense: las municipalidades son autónomas en lo político, en lo
+          administrativo y en lo financiero. Sobre esa base, los reglamentos municipales son
+          reglamentos autónomos del ente descentralizado territorial, con cobertura constitucional
+          propia. Lo que se reglamenta es el gobierno de los intereses y servicios locales del
+          cantón (art. 169 de la Constitución y art. 4 del Código Municipal), no el ejercicio de
+          la potestad reglamentaria ejecutiva del Poder Ejecutivo.
         </p>
         <p>
-          La omisión del trámite de consulta pública cuando es obligatorio constituye un vicio
-          del procedimiento que puede acarrear la nulidad del reglamento o decreto aprobado.
+          La redacción rigurosa de un reglamento municipal exige resolver tres preguntas
+          recurrentes que hemos visto fallar en la práctica: cuáles son las competencias propias
+          del Concejo y cuáles las del alcalde, qué materias requieren ley formal y, por tanto,
+          no caben en el reglamento autónomo (sanciones, tributos, restricciones a derechos
+          constitucionales), y cómo se articula el reglamento con los planes reguladores
+          urbanísticos vigentes. Trabajar mal cualquiera de las tres convierte el reglamento en
+          objetivo fácil de la jurisdicción contencioso-administrativa.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Control de legalidad de la normativa administrativa" fundamento="CPCA, art. 10; Ley 7135, art. 73">
+      <Instrumento titulo="Procedimiento de elaboración: audiencias, plazo de diez días e información pública" fundamento="LGAP, arts. 361, 362 y 363">
         <p>
-          Toda normativa de alcance general dictada por la Administración Pública está sujeta a
-          control jurisdiccional. El artículo 10 del CPCA permite impugnar ante el Tribunal
-          Contencioso Administrativo los reglamentos, decretos y disposiciones generales que se
-          consideren contrarios al ordenamiento jurídico. El artículo 73 de la Ley de la
-          Jurisdicción Constitucional (Ley N.° 7135) habilita la acción de inconstitucionalidad
-          contra normas reglamentarias que vulneren la Constitución.
+          El Título IX de la LGAP regula el procedimiento especial para la elaboración de
+          disposiciones de carácter general. El artículo 361 ordena tres pasos. Primero, dar
+          audiencia a las entidades descentralizadas sobre los proyectos de disposiciones
+          generales que puedan afectarlas. Segundo, conceder a las entidades representativas de
+          intereses de carácter general o corporativo afectados por la disposición la oportunidad
+          de exponer su parecer, dentro del plazo de diez días, salvo cuando se opongan a ello
+          razones de interés público o de urgencia debidamente consignadas en el anteproyecto.
+          Tercero, cuando la naturaleza de la disposición lo aconseje, someter el anteproyecto a
+          información pública por el plazo que en cada caso se señale.
         </p>
         <p>
-          Este marco de control posterior es precisamente lo que hace indispensable una asesoría
-          regulatoria rigurosa: una norma mal fundamentada, desproporcionada o que exceda la
-          competencia del órgano emisor será anulada por los tribunales. La experiencia de
-          Corporación GC en el litigio contencioso-administrativo y constitucional permite
-          anticipar las objeciones que la normativa podría enfrentar y diseñarla para resistir
-          ese escrutinio.
+          El artículo 362 obliga a consignar expresamente, en la disposición general, las normas
+          anteriores que quedan total o parcialmente reformadas o derogadas: una exigencia
+          formal que con frecuencia se omite y que abre flanco para impugnaciones por
+          desorganización del ordenamiento. El artículo 363 establece que los proyectos que
+          deban someterse a la aprobación del Consejo de Gobierno se remiten con ocho días de
+          antelación a los demás Ministros para que formulen observaciones, salvo casos de
+          urgencia apreciada por el propio Consejo. La omisión de cualquiera de estos trámites,
+          cuando es obligatorio, constituye un vicio de procedimiento susceptible de acarrear la
+          nulidad de la disposición.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Reglamentos de colegios profesionales y de entes públicos no estatales" fundamento="Jurisprudencia constitucional sobre colegios profesionales; LGAP supletoria">
+        <p>
+          Los colegios profesionales son entes públicos no estatales reconocidos por la
+          jurisprudencia constitucional con potestad reglamentaria sobre el ejercicio de la
+          profesión, el régimen disciplinario interno, los procedimientos electorales del
+          colegio, los aranceles de servicios y la gobernanza de juntas directivas. Cada colegio
+          actúa al amparo de su propia ley orgánica, pero el procedimiento general de
+          elaboración de sus disposiciones se rige supletoriamente por la LGAP cuando la ley
+          orgánica no contempla un procedimiento especial: audiencia a sectores interesados,
+          consulta y publicación.
+        </p>
+        <p>
+          Asesoramos a colegios profesionales en la redacción de códigos de ética, reglamentos
+          de procedimiento disciplinario, reglamentos electorales y reglamentos arancelarios,
+          con atención a tres puntos críticos: la reserva de ley para sanciones (art. 124 de la
+          LGAP), las garantías de debido proceso en el procedimiento disciplinario interno
+          (arts. 39 y 41 de la Constitución), y la articulación con la jurisdicción
+          contencioso-administrativa, que es la que conoce de la impugnación de los actos del
+          colegio.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Control posterior del reglamento: impugnación directa, acción de inconstitucionalidad y nulidad por vicios" fundamento="CPCA, art. 10.2; Ley 7135, arts. 73 a 95; LGAP, arts. 158 y 166">
+        <p>
+          Una vez publicado, el reglamento queda expuesto a tres frentes. El primero, la
+          impugnación directa ante la jurisdicción contencioso-administrativa: el artículo 10.2
+          del CPCA legitima a impugnar las disposiciones de carácter general que deban ser
+          cumplidas directamente por los administrados sin necesidad de un previo acto de
+          requerimiento o sujeción individual. El segundo, la acción de inconstitucionalidad
+          (arts. 73 a 95 de la Ley 7135) cuando el reglamento, decreto o disposición de alcance
+          general vulnera normas o principios constitucionales. El tercero, la impugnación
+          incidental, en el marco de un caso concreto, alegando los vicios de invalidez de los
+          artículos 158 y 166 de la LGAP.
+        </p>
+        <p>
+          Defendemos al ente emisor en cualquiera de los tres frentes: contestación de demandas
+          contencioso-administrativas contra el reglamento, informe ante la Sala Constitucional
+          en la acción de inconstitucionalidad y oposición a la pretensión de inaplicación en
+          casos concretos. La estrategia parte de un análisis de vicios riguroso —competencia,
+          forma, contenido, motivo, fin, procedimiento— y de la jurisprudencia sobre el alcance
+          de la potestad reglamentaria del órgano que lo dictó.
         </p>
       </Instrumento>
 
       {/* ── Preguntas Frecuentes ── */}
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre asesoría regulatoria
+          Preguntas frecuentes sobre asesoría regulatoria y redacción de reglamentos
         </h2>
 
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Quién puede emitir reglamentos en Costa Rica y cuáles son sus límites?
+              ¿Puede una municipalidad o un colegio profesional contratar a un despacho privado para que le redacte un reglamento?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La potestad reglamentaria en Costa Rica corresponde al Poder Ejecutivo conforme al
-              artículo 140, inciso 3 de la Constitución Política, que faculta al Presidente y al
-              Ministro del ramo a reglamentar las leyes. Los entes descentralizados —municipalidades,
-              instituciones autónomas, universidades públicas— pueden dictar reglamentos autónomos de
-              organización y servicio conforme a los artículos 103 y 104 de la LGAP, sin necesidad de
-              ley habilitante previa. El artículo 6 de la LGAP establece la jerarquía normativa: el
-              reglamento no puede contradecir, exceder ni restringir el alcance de la ley que
-              desarrolla. Un reglamento que regule materia reservada al legislador o que exceda la ley
-              es susceptible de anulación por la Sala Constitucional (art. 73, Ley 7135) o por la
-              jurisdicción contencioso-administrativa (art. 10, CPCA). La consulta pública previa,
-              regulada en la Ley 8220 y el Decreto 37045-MP-MEIC, es obligatoria en muchos casos y
-              su omisión puede acarrear la nulidad del instrumento normativo aprobado.
+              Sí. La redacción de un reglamento es una asistencia técnica especializada que se
+              contrata bajo el régimen de la Ley General de Contratación Pública (Ley N.° 9986).
+              El acto formal de aprobación —el acuerdo del Concejo Municipal en el caso del
+              reglamento municipal, el acuerdo de Junta Directiva en el caso del colegio
+              profesional o el decreto ejecutivo del Poder Ejecutivo— sigue siendo competencia
+              exclusiva del órgano competente; lo que se contrata es el trabajo profesional de
+              diseño, redacción y acompañamiento del procedimiento. El producto final es del
+              ente contratante.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué diferencia hay entre un reglamento ejecutivo y un reglamento autónomo?
+              ¿Cuánto tiempo dura el trámite de consulta pública obligatoria de un proyecto de reglamento?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El reglamento ejecutivo es la norma que dicta el Poder Ejecutivo para desarrollar y
-              facilitar la aplicación de una ley específica, con fundamento en el artículo 140, inciso
-              3 de la Constitución Política. Su contenido está subordinado y vinculado a la ley que
-              reglamenta; no puede crear obligaciones nuevas ni restringir derechos que la ley no haya
-              previsto. El reglamento autónomo, regulado en los artículos 103 y 104 de la LGAP, es el
-              instrumento mediante el cual un ente u órgano público regula su organización interna y la
-              prestación de sus servicios sin necesidad de una ley previa habilitante. A diferencia del
-              ejecutivo, el autónomo no desarrolla una ley específica sino que regula materias propias
-              de la organización administrativa. Sin embargo, ambos tipos de reglamento están sometidos
-              a la jerarquía normativa del artículo 6 de la LGAP: no pueden contravenir la ley ni
-              afectar derechos fundamentales. Ambos son impugnables ante la jurisdicción
-              contencioso-administrativa si contravienen el ordenamiento jurídico.
+              El artículo 361 de la LGAP establece el procedimiento general. Se concede audiencia
+              a las entidades descentralizadas afectadas y, separadamente, a las entidades
+              representativas de intereses de carácter general o corporativo afectados, las
+              cuales pueden exponer su parecer dentro del plazo de diez días, salvo cuando se
+              opongan a ello razones de interés público o de urgencia debidamente consignadas en
+              el anteproyecto. Si la naturaleza de la disposición lo aconseja, el anteproyecto
+              se somete adicionalmente a información pública por el plazo que en cada caso se
+              señale. La omisión del trámite cuando es obligatorio es un vicio de procedimiento
+              que puede acarrear la nulidad de la disposición.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Se puede impugnar un decreto ejecutivo o un reglamento en Costa Rica?
+              ¿Qué materias NO puede regular un reglamento autónomo —ni municipal ni de un colegio profesional?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Sí. Toda normativa de alcance general dictada por la Administración Pública está sujeta a
-              control jurisdiccional por dos vías. Primero, el artículo 10 del CPCA permite impugnar
-              ante el Tribunal Contencioso Administrativo los reglamentos, decretos y disposiciones
-              generales que se consideren contrarios al ordenamiento jurídico infraconstitucional; esta
-              vía permite obtener la anulación del instrumento y la indemnización de los daños causados.
-              Segundo, el artículo 73 de la Ley de la Jurisdicción Constitucional (Ley 7135) habilita
-              la acción de inconstitucionalidad ante la Sala Constitucional contra normas reglamentarias
-              que vulneren la Constitución; la declaratoria tiene efectos erga omnes y elimina la norma
-              del ordenamiento. Los vicios más frecuentes incluyen la invasión de la reserva de ley, la
-              desproporción, la falta de consulta pública obligatoria (Ley 8220, art. 12) y la ausencia
-              de motivación. Corporación GC asesora tanto en la redacción preventiva de normativa como en
-              su impugnación cuando resulte contraria a derecho.
+              Dos límites técnicos derivados de la LGAP cierran la puerta. Primero, el artículo
+              19 reserva a la ley el régimen jurídico de los derechos constitucionales y prohíbe
+              expresamente los reglamentos autónomos en esa materia. Segundo, el artículo 124
+              prohíbe que los reglamentos, las circulares, las instrucciones y demás
+              disposiciones administrativas de carácter general establezcan penas o impongan
+              exacciones, tasas, multas u otras cargas similares. Resultado práctico: sanciones,
+              tributos y restricciones a derechos fundamentales requieren ley formal y no caben
+              en un reglamento autónomo. El artículo 59 confirma que la atribución de potestades
+              de imperio queda fuera de su alcance.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cómo se redacta un reglamento que resista una impugnación judicial?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Hay cuatro frentes técnicos que decidir bien en la fase de diseño. El primero,
+              competencia: identificar con precisión el órgano que legalmente puede dictar la
+              norma y la fuente de su potestad (ejecutiva, autónoma, municipal o de colegio
+              profesional). El segundo, contenido: respetar la jerarquía del artículo 6 de la
+              LGAP y los límites del artículo 124, sin invadir reserva de ley ni regular en
+              contra de la ley superior. El tercero, motivación: explicar en el considerando
+              por qué la norma es necesaria, proporcionada y razonable. El cuarto,
+              procedimiento: cumplir las audiencias y la consulta del artículo 361 y la
+              identificación expresa de las normas reformadas o derogadas (art. 362). Cuando
+              esos cuatro frentes están bien trabajados, la impugnación directa en el contencioso
+              (CPCA art. 10.2) y la acción de inconstitucionalidad (Ley 7135, arts. 73 a 95)
+              quedan sin asideros.
             </p>
           </div>
         </div>
