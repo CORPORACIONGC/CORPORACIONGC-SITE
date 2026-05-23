@@ -91,7 +91,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados especialistas en expropiaciones en Costa Rica, en Corporación GC
           defendemos al propietario y al titular de derechos en todas las etapas: desde la
           oposición al avalúo administrativo hasta la fijación del justo precio y la indemnización
-          en sede judicial. A continuación se describen los instrumentos que integran esta materia.
+          en sede judicial. El caso se decide casi siempre en la oposición al avalúo: lo que no se
+          controvierte ahí difícilmente se recupera después.
         </p>
       </section>
 
@@ -199,9 +200,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           en su redacción.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          El litigio contencioso-administrativo comprende distintos tipos de procesos y pretensiones,
-          cada uno diseñado para una finalidad específica. A continuación se explican los
-          instrumentos procesales que conforman esta jurisdicción.
+          El litigio contencioso-administrativo se gana o se pierde en la combinación correcta de
+          pretensiones, medidas cautelares y plazos. La elección estratégica de cada herramienta
+          procesal define la verdadera capacidad de impugnar la conducta administrativa.
         </p>
       </section>
 
@@ -1479,8 +1480,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Corporación GC asesora y representa a personas físicas y jurídicas en la interposición
           de acciones de inconstitucionalidad, tanto por vía incidental —derivada de un asunto
           pendiente de resolución judicial o administrativa— como por legitimación directa en
-          defensa de intereses difusos o colectivos. A continuación se describen los instrumentos
-          procesales que conforman esta garantía constitucional.
+          defensa de intereses difusos o colectivos. La legitimación es la primera batalla del
+          caso: una acción mal anclada en un asunto previo o sin un interés cualificado se rechaza
+          sin entrar al fondo.
         </p>
       </section>
 
@@ -1577,8 +1579,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados en procedimientos administrativos sancionatorios en Costa Rica, en
           Corporación GC asesoramos y representamos a personas físicas y jurídicas sometidas a
           estos procedimientos, garantizando el respeto de las garantías constitucionales del
-          debido proceso en todas las etapas. A continuación se describen los instrumentos que
-          integran esta materia.
+          debido proceso en todas las etapas. La defensa se diseña desde el primer traslado de
+          cargos: lo que no se alega y prueba ante el órgano director difícilmente se rescata
+          después en el recurso o en sede contenciosa.
         </p>
       </section>
 
@@ -1688,9 +1691,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
           Como abogados en empleo público en Costa Rica, en Corporación GC representamos a
           servidores públicos frente a despidos, suspensiones y sanciones, y asesoramos a
-          instituciones del Estado en la tramitación correcta de sus procedimientos. A
-          continuación se describen los instrumentos jurídicos que integran esta área de
-          práctica.
+          instituciones del Estado en la tramitación correcta de sus procedimientos. Los plazos
+          para impugnar son perentorios y muy cortos: lo que no se ataca dentro del plazo se
+          consolida y se pierde para siempre.
         </p>
       </section>
 
@@ -1886,8 +1889,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados ante ARESEP y SUTEL en Costa Rica, en Corporación GC representamos a
           prestadores de servicios públicos —cooperativas de electrificación, operadores de
           telecomunicaciones, concesionarios de transporte y otros— en solicitudes tarifarias,
-          audiencias públicas, recursos administrativos y litigio contencioso contra el regulador. A
-          continuación se describen los instrumentos jurídicos que integran esta área de práctica.
+          audiencias públicas, recursos administrativos y litigio contencioso contra el regulador.
+          En materia tarifaria todo se juega en el expediente y en los plazos de la audiencia
+          pública: ahí se construye la prueba económica que después se defiende en el contencioso.
         </p>
       </section>
 
@@ -2082,8 +2086,10 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
           Como abogados en derecho municipal en Costa Rica, en Corporación GC impugnamos los actos y
           acuerdos municipales que lesionan a vecinos y empresas —patentes denegadas, cobros de
-          tributos, clausuras, acuerdos del Concejo— y asesoramos a las propias municipalidades. A
-          continuación se describen los instrumentos jurídicos que integran esta área de práctica.
+          tributos, clausuras, acuerdos del Concejo— y asesoramos a las propias municipalidades. La
+          impugnación municipal exige conocer la doble vía del Código Municipal: revocatoria ante el
+          alcalde y apelación ante el TCA, dentro de plazos cortos que abren o cierran el acceso al
+          contencioso.
         </p>
       </section>
 
@@ -2263,8 +2269,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados en dominio público en Costa Rica, en Corporación GC defendemos a
           concesionarios, permisionarios y administrados frente a revocatorias y caducidades de
           concesiones, desalojos administrativos y denegatorias de permisos de uso sobre bienes del
-          Estado. A continuación se describen los instrumentos jurídicos que integran esta área de
-          práctica.
+          Estado. La primera batalla técnica es la de la afectación: definir si el bien es
+          demanial o de dominio privado del Estado decide casi todo el régimen aplicable y, con él,
+          el resultado del caso.
         </p>
       </section>
 
@@ -2648,8 +2655,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados en derecho urbanístico en Costa Rica, en Corporación GC defendemos a
           propietarios y desarrolladores frente a denegatorias de permisos de construcción, negativas
           de uso del suelo, clausuras, restricciones de zonificación y cargas en fraccionamientos y
-          urbanizaciones. A continuación se describen los instrumentos jurídicos que integran esta
-          área de práctica.
+          urbanizaciones. El éxito del caso se construye sobre el control técnico del plan
+          regulador y los reglamentos de desarrollo urbano: cuando esa lectura es sólida, las
+          decisiones municipales se vuelven impugnables; cuando es débil, no hay caso.
         </p>
       </section>
 
@@ -2834,8 +2842,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Como abogados ante la Contraloría en Costa Rica, en Corporación GC defendemos a
           funcionarios, jerarcas, regidores, instituciones y contratistas frente a procedimientos
           sancionatorios, improbaciones presupuestarias, negativas de refrendo, declaratorias de
-          nulidad, cancelaciones de credencial y resoluciones de reintegro. A continuación se
-          describen los instrumentos jurídicos que integran esta área de práctica.
+          nulidad, cancelaciones de credencial y resoluciones de reintegro. Conocer el filtro de
+          la CGR es decisivo: sus criterios son vinculantes y prevalecen sobre cualquier disposición
+          en contrario, y sus actos solo se impugnan en sede contencioso-administrativa.
         </p>
       </section>
 
@@ -3636,8 +3645,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
         Si bien la especialidad principal de Corporación GC es el Derecho Público, la firma
         ofrece representación en litigios laborales para clientes que requieren cobertura
-        jurídica integral. A continuación se describen los instrumentos procesales más
-        relevantes de esta jurisdicción.
+        jurídica integral, con énfasis en empleo público y en las interfaces entre la
+        jurisdicción laboral y la contencioso-administrativa.
       </p>
     </section>
 
@@ -3853,8 +3862,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           públicos sujetos a declaración jurada e incompatibilidades, a empresas y consorcios que
           contratan con el Estado, y a quienes resultan investigados o denunciados —en sede
           administrativa ante la CGR o en sede penal ante el Ministerio Público— por delitos contra
-          los deberes de la función pública. A continuación se describen los instrumentos jurídicos
-          que integran esta área de práctica.
+          los deberes de la función pública. Los plazos cortos del capítulo VI —veinticuatro horas
+          la UIF, diez días hábiles el Ministerio Público, cinco días hábiles el juez— abren o
+          cierran puertas procesales, y la defensa eficaz se diseña dentro de esa ventana.
         </p>
       </section>
 
@@ -4466,8 +4476,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           proyectos, el refrendo de contratos, la objeción de carteles, la apelación de
           adjudicaciones ante la Contraloría y el litigio contencioso-administrativo contra los
           actos del CNC, MOPT y CGR que afecten el contrato. La doble lectura del régimen vigente
-          y del régimen entrante es una ventaja decisiva. A continuación se describen los
-          instrumentos jurídicos que integran esta área de práctica.
+          y del régimen entrante es una ventaja decisiva: lo que se firma o se impugna hoy bajo la
+          Ley 7762 puede tener consecuencias bajo la Ley Marco APP cuando entre en vigor.
         </p>
       </section>
 
