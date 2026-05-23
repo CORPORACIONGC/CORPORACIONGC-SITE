@@ -833,197 +833,231 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          La Administración Pública costarricense opera bajo el principio de legalidad: solo
-          puede hacer aquello que el ordenamiento jurídico le autoriza (artículo 11 de la
-          Constitución Política y artículo 11 de la LGAP). Cada decisión administrativa —desde
-          la adjudicación de un contrato hasta la imposición de una sanción— debe tener respaldo
-          en una norma habilitante y respetar los procedimientos establecidos. Cuando una
-          institución pública necesita certeza sobre la conformidad jurídica de una actuación
-          antes de ejecutarla, acude a un informe jurídico o dictamen especializado.
+          Municipalidades, instituciones autónomas, empresas públicas, ministerios y colegios
+          profesionales nos consultan permanentemente para que les emitamos dictámenes jurídicos
+          externos sobre la legalidad de actos, contratos, reglamentos y procedimientos de alto
+          impacto. La Administración costarricense actúa bajo el principio de legalidad (art. 11
+          de la Constitución y art. 11 de la LGAP) y cada decisión debe poder defenderse ante
+          la Contraloría, los tribunales contencioso-administrativos y la Sala Constitucional.
+          El dictamen externo se ha convertido en una herramienta estándar de gobernanza
+          institucional para reducir el riesgo de nulidad, las contingencias patrimoniales y
+          la responsabilidad personal de los jerarcas.
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          La Procuraduría General de la República (PGR) cumple esta función como órgano
-          consultivo del Estado, pero sus dictámenes son vinculantes y sus tiempos de respuesta
-          pueden no ajustarse a la urgencia institucional. Corporación GC ofrece a entes y
-          órganos públicos un servicio análogo de consultoría jurídica externa: informes técnicos
-          rigurosos, fundamentados en la legislación vigente y en la jurisprudencia actualizada,
-          con la agilidad que requiere la gestión pública.
+          Como abogados en dictámenes jurídicos en Costa Rica, en Corporación GC complementamos a
+          la asesoría legal interna del ente y a la consulta vinculante de la Procuraduría
+          General de la República con un análisis externo, rápido y especializado. Lo que nos
+          distingue es la doble lectura: redactamos cada dictamen sabiendo cómo lo van a leer
+          después la Contraloría, el TCA y la Sala IV; ese ángulo de defensa anticipada es lo
+          que vuelve útil un dictamen, no solo correcto.
         </p>
       </section>
 
-      <Instrumento titulo="Dictámenes sobre legalidad de actos administrativos" fundamento="LGAP, arts. 11, 128 a 133 y 158 a 174">
+      <Instrumento titulo="Dictámenes sobre legalidad de actos administrativos" fundamento="LGAP, arts. 11, 128 a 136 y 158 a 189">
         <p>
-          El acto administrativo —declaración unilateral de voluntad de la Administración que
-          produce efectos jurídicos— debe reunir los elementos de validez que establece la LGAP:
-          competencia del órgano emisor (art. 129), legitimación del sujeto (art. 130), motivo
-          (art. 133), contenido lícito y determinado (art. 132), procedimiento debido y forma
-          prescrita (art. 134). La ausencia o vicio de cualquiera de estos elementos puede
-          generar la nulidad absoluta o relativa del acto conforme a los artículos 158 a 174
-          de la LGAP.
+          El acto administrativo es válido solo si su contenido se conforma sustancialmente con
+          el ordenamiento jurídico (art. 128). La LGAP detalla cada elemento: el órgano
+          competente actuando por servidor regular y previo cumplimiento de los trámites
+          sustanciales (art. 129); voluntad libre y consciente, no afectada por vicios de error,
+          dolo o violencia (art. 130); fin público sin desviación de poder (art. 131); contenido
+          lícito, posible, claro y preciso (art. 132); motivo cierto, con fundamento en los
+          hechos y el derecho aplicable (art. 133); forma escrita u oral según corresponda, con
+          motivación, fecha y firma del titular (arts. 134 y 135); y comunicación por
+          publicación o notificación válida (art. 136).
         </p>
         <p>
-          Un dictamen previo permite a la institución identificar estos vicios antes de que el
-          acto sea impugnado, ya sea en sede administrativa o ante el Tribunal Contencioso
-          Administrativo. El informe analiza la cadena de legalidad completa: la norma
-          habilitante, la competencia del órgano, la suficiencia de la motivación, el respeto
-          al debido proceso y la proporcionalidad de la decisión.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Informes sobre procedimientos administrativos en curso" fundamento="LGAP, arts. 308 a 319 y 214 a 240">
-        <p>
-          Las instituciones públicas instruyen constantemente procedimientos administrativos
-          ordinarios (artículos 308 a 319 de la LGAP) para dictar actos que afectan derechos
-          de los administrados: sanciones disciplinarias, cobros, revocaciones de permisos,
-          resoluciones contractuales. Cada fase del procedimiento —apertura, intimación,
-          instrucción probatoria, audiencia oral, resolución final— debe cumplir garantías
-          específicas del debido proceso.
-        </p>
-        <p>
-          Un informe jurídico sobre un procedimiento en curso permite detectar vicios que
-          podrían invalidar la resolución final: notificaciones defectuosas, plazos incumplidos,
-          prueba obtenida ilegítimamente, falta de audiencia oral o insuficiencia de la
-          fundamentación. El artículo 223 de la LGAP establece que la nulidad absoluta del acto
-          dictado en un procedimiento viciado puede ser declarada incluso de oficio.
+          Los vicios en cualquiera de esos elementos generan nulidad absoluta cuando falta
+          totalmente un elemento (art. 166) o nulidad relativa cuando hay imperfección
+          subsanable (art. 167); todo el régimen está en los arts. 158 a 189. El dictamen previo
+          de legalidad revisa la cadena completa y advierte el riesgo antes de que el acto se
+          dicte; el dictamen de revisión, una vez dictado el acto, evalúa si procede la
+          declaratoria de lesividad —previa a la demanda de anulación en sede contenciosa— o si
+          se trata de un caso de nulidad evidente y manifiesta del artículo 173, donde la
+          Administración puede anular en sede administrativa con dictamen favorable y previo
+          de la Procuraduría General de la República o de la Contraloría.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Opiniones sobre contratación administrativa" fundamento="Ley 9986; LGAP, art. 182 Constitución">
+      <Instrumento titulo="Dictámenes sobre contratación administrativa: cartel, adjudicación, refrendo y modificaciones" fundamento="Constitución, art. 182; Ley 9986; LOCGR (Ley 7428), arts. 20 y 21">
         <p>
-          La contratación administrativa es una de las áreas de mayor exposición jurídica para
-          las instituciones públicas. El artículo 182 de la Constitución Política establece el
-          principio de licitación pública, y la Ley General de Contratación Pública (Ley N.° 9986)
-          regula exhaustivamente los procedimientos de selección, adjudicación y ejecución
-          contractual. Los errores en la elaboración del cartel, la calificación de ofertas o la
-          fundamentación de la adjudicación exponen a la institución a recursos de objeción,
-          apelación y demandas ante el TCA.
+          La contratación pública es la zona de mayor exposición jurídica del sector público.
+          Tres puntos del ciclo concentran el riesgo y por lo tanto la demanda de dictamen
+          externo: la elaboración del cartel —donde un requisito mal redactado activa el recurso
+          de objeción y puede arrastrar el procedimiento entero—, la motivación del acto de
+          adjudicación —cuya insuficiencia genera el recurso de apelación ante la Contraloría—,
+          y el refrendo del contrato y de sus modificaciones por la propia Contraloría conforme
+          al artículo 20 de su Ley Orgánica y al procedimiento del artículo 21.
         </p>
         <p>
-          Los informes jurídicos en esta materia evalúan la legalidad de los pliegos de
-          condiciones antes de su publicación, la conformidad del proceso de evaluación con los
-          criterios del cartel, la suficiencia de la motivación del acto de adjudicación y los
-          riesgos de impugnación. Este análisis preventivo reduce sustancialmente la exposición
-          de la institución al litigio.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Dictámenes sobre competencia y organización administrativa" fundamento="LGAP, arts. 59 a 90">
-        <p>
-          Las disputas de competencia entre órganos y entes públicos son frecuentes en la
-          Administración costarricense. Los artículos 59 a 90 de la LGAP regulan la competencia
-          administrativa: su atribución, delegación, avocación y los conflictos que pueden
-          surgir entre órganos del mismo ente o entre entes distintos. Un dictamen sobre
-          competencia determina qué órgano tiene la potestad legal para conocer un asunto,
-          dictar un acto o ejercer una función.
-        </p>
-        <p>
-          Este tipo de informe es especialmente relevante cuando una institución enfrenta
-          reclamos de invasión de competencia por parte de otro ente, cuando necesita justificar
-          la delegación de funciones a un inferior o cuando debe resolver si una materia
-          corresponde a su ámbito o al de otra entidad del sector público.
+          Nuestros dictámenes anticipan los argumentos de los oferentes y de la Contraloría:
+          legalidad del cartel y del sistema de evaluación, ajuste del procedimiento al tipo de
+          contratación, motivación del acto de adjudicación frente a las objeciones de las
+          ofertas no adjudicatarias, viabilidad de modificaciones contractuales dentro de los
+          topes y supuestos de la Ley 9986, riesgos del cierre del contrato y de la liquidación
+          final.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Análisis de riesgo jurídico y responsabilidad patrimonial" fundamento="LGAP, arts. 190 a 204">
+      <Instrumento titulo="Dictámenes en procedimientos administrativos: vicios procesales y régimen disciplinario" fundamento="LGAP, arts. 214 a 229 y 308 a 319; arts. 211 a 213; CPCA, art. 31">
         <p>
-          Los artículos 190 a 204 de la LGAP regulan la responsabilidad patrimonial de la
-          Administración Pública: el Estado responde por todos los daños que cause su
-          funcionamiento, sea este legítimo o ilegítimo, normal o anormal. Esta responsabilidad
-          objetiva implica que una actuación administrativa que cause un daño antijurídico —un
-          sacrificio especial que el administrado no tiene el deber de soportar— genera la
-          obligación de indemnizar, aunque la Administración haya actuado conforme a derecho.
+          El procedimiento administrativo ordinario (arts. 308 a 319) se activa toda vez que se
+          afecten derechos del administrado: sanciones disciplinarias, despidos en empleo
+          público, revocatorias de permisos, declaratorias de incumplimiento, cobros relevantes.
+          Cada etapa tiene exigencias propias y plazos cortos: el traslado de cargos, la
+          comparecencia oral del artículo 309, la prueba, los alegatos finales, el plazo de
+          quince días para el acto final del artículo 319. La omisión de formalidades
+          sustanciales causa nulidad del procedimiento por aplicación del artículo 223. Los
+          principios generales del Título I del libro segundo (arts. 214 a 229) ordenan toda
+          la actuación.
         </p>
         <p>
-          Un informe de riesgo jurídico evalúa las contingencias que una decisión administrativa
-          puede generar en términos de responsabilidad patrimonial: cuánto podría costar una
-          condena, qué probabilidad existe de que la actuación sea impugnada exitosamente y qué
-          alternativas existen para mitigar la exposición. Este análisis permite a la institución
-          tomar decisiones informadas y provisionarse adecuadamente.
+          El régimen disciplinario tiene reglas propias: la responsabilidad disciplinaria del
+          servidor existe independientemente de las responsabilidades civiles y penales (arts.
+          211, 212 y 213). En estos casos, el dictamen previo identifica los riesgos de
+          notificación defectuosa, prueba mal incorporada, falta de comparecencia oral cuando
+          es exigible, motivación insuficiente del acto sancionador o sanción desproporcionada,
+          puntos que después atacarán los recursos administrativos y la demanda contenciosa
+          (CPCA art. 31: agotamiento facultativo de la vía administrativa).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Diferencia con los dictámenes de la PGR" fundamento="Ley Orgánica de la PGR, Ley 6815, art. 2">
+      <Instrumento titulo="Dictámenes en materia presupuestaria y de Hacienda Pública: criterios vinculantes de la CGR" fundamento="LOCGR (Ley 7428), arts. 12, 18, 27 y 34; Ley 8131">
         <p>
-          La Procuraduría General de la República, conforme al artículo 2 de su Ley Orgánica
-          (Ley N.° 6815), es el órgano superior consultivo de la Administración Pública. Sus
-          dictámenes son vinculantes para la Administración consultante, salvo que esta decida
-          apartarse de ellos mediante acto debidamente motivado del jerarca. Los criterios
-          emitidos por la PGR constituyen jurisprudencia administrativa.
+          La Contraloría es órgano constitucional fundamental, rector del sistema de
+          fiscalización y control de la Hacienda Pública (art. 1 de la Ley 7428). Sus criterios
+          y disposiciones son de acatamiento obligatorio para los sujetos pasivos y prevalecen
+          sobre cualquier disposición en contrario (art. 12). Esta vinculatoriedad reorganiza
+          toda la consultoría pública: ningún dictamen jurídico útil puede ignorar el filtro de
+          la Contraloría.
         </p>
         <p>
-          Los informes jurídicos de Corporación GC cumplen una función distinta: son opiniones
-          técnicas externas, no vinculantes, que la institución puede utilizar como insumo para
-          fundamentar sus decisiones. Su valor reside en la especialización en Derecho Público
-          y en la perspectiva que aporta un equipo con experiencia tanto en la judicatura como
-          en el litigio contencioso-administrativo — una visión que anticipa cómo los tribunales
-          evaluarían la legalidad de la actuación consultada.
+          Atendemos consultas sobre aprobación e improbación presupuestaria (art. 18),
+          dictámenes sobre proyectos de presupuesto y contratos sujetos a refrendo (art. 27),
+          impugnabilidad de los actos finales de la Contraloría —que se discuten directamente
+          en sede contencioso-administrativa por la vía del artículo 34, sin recursos
+          administrativos previos—, y la articulación con la Ley de Administración Financiera
+          (Ley 8131) en lo relativo al gasto público, ejecución y liquidación presupuestaria.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Dictámenes sobre potestad reglamentaria y conformidad jurídica de la normativa propia" fundamento="Constitución, arts. 140 y 169-170; LGAP, arts. 6, 121, 124 y 361 a 363">
+        <p>
+          Las municipalidades, instituciones autónomas, colegios profesionales y ministerios
+          dictan reglamentos con frecuencia, y antes de aprobarlos suele convenirles un dictamen
+          externo que evalúe la conformidad del proyecto con la jerarquía normativa, los
+          límites de la potestad reglamentaria del órgano que va a emitirlo, el cumplimiento
+          del procedimiento de elaboración del Título IX de la LGAP (audiencias del artículo
+          361, consulta de diez días a entidades representativas de intereses afectados,
+          consignación expresa de normas derogadas conforme al artículo 362) y la ausencia de
+          invasión de reserva de ley.
+        </p>
+        <p>
+          El artículo 124 de la LGAP es el límite estructural: reglamentos, circulares,
+          instrucciones y demás disposiciones administrativas de carácter general no pueden
+          establecer penas ni imponer exacciones, tasas, multas u otras cargas similares. Un
+          dictamen oportuno permite reescribir el proyecto antes de la votación y evita la
+          impugnación directa por la vía del artículo 10.2 del CPCA y la acción de
+          inconstitucionalidad de la Ley 7135.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Dictámenes de riesgo patrimonial y responsabilidad personal del jerarca" fundamento="LGAP, arts. 190 a 198 (Administración) y 199 a 213 (servidor); LOCGR, arts. 71 y 72">
+        <p>
+          La Administración responde por su funcionamiento legítimo o ilegítimo, normal o
+          anormal (art. 190 de la LGAP); también lo hace por conducta ilícita (art. 191), por
+          funcionamiento anormal en régimen objetivo (art. 192) y por sacrificio especial
+          derivado de conducta lícita (art. 194), aunque este último excluye el lucro cesante.
+          La responsabilidad del servidor es personal cuando media dolo o culpa grave (art.
+          199), y la Administración puede repetir contra el servidor en los términos de los
+          artículos 203 a 209.
+        </p>
+        <p>
+          A los jerarcas y demás funcionarios sometidos al régimen de Hacienda Pública les
+          aplica además el régimen sancionador de la Ley Orgánica de la CGR (responsabilidad
+          administrativa de los arts. 68 y siguientes; prescripción del art. 71). El dictamen
+          de riesgo dimensiona la exposición patrimonial de la institución, identifica los
+          escenarios en que la responsabilidad puede recaer en lo personal y propone los pasos
+          de mitigación: motivación reforzada, dictámenes previos, expedientes técnicos, votos
+          razonados.
         </p>
       </Instrumento>
 
       {/* ── Preguntas Frecuentes ── */}
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre informes jurídicos y dictámenes
+          Preguntas frecuentes sobre dictámenes jurídicos para el sector público
         </h2>
 
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué elementos debe verificar un dictamen de legalidad de un acto administrativo?
+              ¿Cuándo conviene encargar un dictamen externo si la institución ya tiene asesoría jurídica interna?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Un dictamen de legalidad debe analizar la cadena completa de validez del acto
-              administrativo conforme a la LGAP. Los artículos 128 a 133 establecen los elementos
-              esenciales: competencia del órgano emisor (art. 129), legitimación del sujeto (art. 130),
-              contenido lícito y determinado (art. 132), motivo o causa justificante (art. 133),
-              procedimiento debido y forma prescrita (art. 134). El informe verifica además que la
-              motivación sea suficiente y que la decisión respete los principios de proporcionalidad y
-              razonabilidad. Los artículos 158 a 174 de la LGAP regulan las consecuencias de los vicios:
-              la nulidad absoluta cuando falta un elemento esencial, y la nulidad relativa cuando el
-              vicio es subsanable. Un dictamen previo permite identificar estos defectos antes de que el
-              acto sea impugnado en sede administrativa o ante el Tribunal Contencioso Administrativo,
-              reduciendo significativamente la exposición de la institución al litigio y a condenas
-              patrimoniales derivadas de actos viciados.
+              El dictamen externo no sustituye a la asesoría jurídica interna; la complementa
+              cuando la decisión es de alto impacto, cuando hay riesgo de responsabilidad personal
+              del jerarca, cuando un órgano de control —Contraloría, Defensoría, Asamblea
+              Legislativa— está observando el expediente, cuando hay un litigio en marcha o
+              previsible, o cuando la propia asesoría interna emite un criterio que la junta o
+              concejo quiere contrastar con una opinión externa. Una segunda opinión
+              especializada en derecho público aporta dos cosas: una lectura desde fuera del
+              marco institucional, libre de inercias, y un análisis de cómo se va a ver la
+              decisión cuando llegue al contencioso o a la Sala IV.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿En qué se diferencia un informe jurídico externo de un dictamen de la Procuraduría General?
+              ¿Qué diferencia hay entre nuestro dictamen externo y un dictamen vinculante de la Procuraduría General de la República?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Procuraduría General de la República (PGR), conforme al artículo 2 de su Ley Orgánica
-              (Ley N.° 6815), es el órgano superior consultivo de la Administración Pública. Sus
-              dictámenes son vinculantes para la Administración consultante —salvo que el jerarca
-              decida apartarse mediante acto debidamente motivado— y constituyen jurisprudencia
-              administrativa. Sin embargo, los tiempos de respuesta de la PGR pueden no ajustarse a la
-              urgencia institucional. Los informes jurídicos de Corporación GC cumplen una función
-              distinta: son opiniones técnicas externas, no vinculantes, que la institución utiliza
-              como insumo para fundamentar sus decisiones. Su valor reside en la especialización en
-              Derecho Público y en la perspectiva que aporta un equipo con experiencia en la judicatura
-              y en el litigio contencioso-administrativo. Esta visión permite anticipar cómo los
-              tribunales evaluarían la legalidad de la actuación consultada, complementando el criterio
-              interno de las asesorías jurídicas institucionales con análisis de riesgo actualizados.
+              La Procuraduría General es el órgano superior consultivo técnico-jurídico de la
+              Administración Pública y sus dictámenes son de acatamiento obligatorio para la
+              Administración consultante, conforme a su Ley Orgánica. Es la primera opción para
+              consultas sobre interpretación general del ordenamiento. Sin embargo, sus plazos
+              de respuesta no siempre coinciden con la urgencia operativa, y solo el jerarca
+              está legitimado para consultarla. El dictamen externo privado es no vinculante,
+              ágil, dirigido al caso concreto y puede ser solicitado por cualquier órgano del
+              ente: una junta directiva, un concejo municipal, un comité técnico, una auditoría
+              interna. Es, en la práctica, el insumo que prepara la decisión, mientras la
+              consulta a la Procuraduría es la consulta que la blinda institucionalmente cuando
+              el asunto lo amerita.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuándo necesita una institución pública un informe sobre riesgo de responsabilidad patrimonial?
+              ¿El dictamen externo sirve como respaldo si después la Contraloría o un juez cuestionan la decisión?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los artículos 190 a 204 de la LGAP establecen que la Administración Pública responde por
-              todos los daños causados por su funcionamiento, sea este legítimo o ilegítimo, normal o
-              anormal. Esta responsabilidad objetiva implica que incluso una actuación conforme a derecho
-              puede generar obligación de indemnizar si produce un sacrificio especial que el administrado
-              no tiene el deber de soportar. Un informe de riesgo jurídico es necesario cuando la
-              institución enfrenta decisiones de alto impacto: adjudicaciones de contratos significativos,
-              revocatorias de permisos o concesiones, imposición de sanciones graves o cambios normativos
-              que afecten derechos adquiridos. El informe evalúa las contingencias patrimoniales: la
-              probabilidad de impugnación exitosa, el monto estimado de una eventual condena y las
-              alternativas para mitigar la exposición. El principio de legalidad del artículo 11 de la
-              LGAP exige que cada actuación tenga respaldo normativo, y el análisis preventivo permite
-              tomar decisiones informadas antes de que se materialice el riesgo.
+              Sí, y este es uno de los usos centrales del dictamen externo. Aunque no es
+              vinculante, el dictamen incorporado al expediente administrativo refuerza la
+              motivación del acto y ayuda a romper la imputación de culpa grave del artículo
+              199 de la LGAP, que es presupuesto para el repetir contra el servidor. Cuando un
+              jerarca actúa con base en un dictamen jurídico fundado y de buena fe, el régimen
+              de responsabilidad personal se mueve hacia atrás: queda la responsabilidad de la
+              Administración —que se asegura con el patrimonio público— y se aleja la
+              responsabilidad patrimonial directa del funcionario. En sede contencioso-administrativa,
+              el dictamen integra el expediente y opera como prueba documental del análisis
+              técnico que respalda la decisión impugnada.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Pueden las municipalidades, las instituciones autónomas y los entes descentralizados contratar dictámenes externos?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí. La contratación de asesoría profesional especializada es un servicio que se
+              adquiere bajo el régimen de la Ley General de Contratación Pública (Ley N.° 9986),
+              en alguna de sus modalidades según el monto y el objeto. Cuando se trata de un
+              servicio especializado, la institución puede acudir a la modalidad correspondiente
+              dentro de los procedimientos previstos en esa Ley y reglamentariamente. Los
+              dictámenes que emitimos no implican delegación de la potestad pública: la decisión
+              sigue siendo del órgano competente del ente, y el dictamen es un insumo técnico que
+              integra el expediente administrativo. Trabajamos rutinariamente bajo esta figura
+              con municipalidades, instituciones autónomas, empresas públicas, colegios
+              profesionales y ministerios.
             </p>
           </div>
         </div>

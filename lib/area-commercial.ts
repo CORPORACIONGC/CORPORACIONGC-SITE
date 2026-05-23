@@ -1531,4 +1531,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "informes-juridicos-dictamenes": {
+    hookHeadline: "¿Necesita una opinión jurídica externa para respaldar una decisión sensible de su institución?",
+    hookSubtext:
+      "Municipalidades, instituciones autónomas, empresas públicas, ministerios y colegios profesionales nos consultan permanentemente para emitir dictámenes externos sobre la legalidad de actos, contratos, reglamentos y procedimientos de alto impacto. Cada decisión administrativa debe poder defenderse después ante la Contraloría, el contencioso-administrativo y la Sala Constitucional. La diferencia de un dictamen útil de uno meramente correcto es que el primero se escribe sabiendo cómo lo van a leer esos tres órganos de control.",
+    scenariosTitle: "¿Cuándo necesita un dictamen jurídico externo?",
+    triggerScenarios: [
+      "Una decisión institucional de alto impacto patrimonial o político requiere respaldo técnico",
+      "La asesoría jurídica interna emitió un criterio que la junta o concejo quiere contrastar",
+      "Hay riesgo de responsabilidad personal del jerarca o de los miembros del órgano colegiado",
+      "Se prepara o se cuestiona la nulidad de un acto administrativo en sede administrativa o contenciosa",
+      "Se va a aprobar un reglamento, contrato o procedimiento sensible y se quiere blindarlo",
+      "La Contraloría, la Defensoría o la Asamblea Legislativa están observando el expediente",
+      "Un órgano necesita una segunda opinión técnica frente a la consulta a la Procuraduría",
+    ],
+    services: [
+      {
+        title: "Dictámenes sobre legalidad de actos administrativos",
+        description:
+          "Análisis previo a la emisión del acto o de revisión posterior: cumplimiento del bloque de legalidad (art. 11 LGAP), elementos de validez de los artículos 128 a 136, régimen de nulidades (arts. 158 a 189), procedencia de la revisión de oficio por nulidad evidente y manifiesta del artículo 173 con dictamen favorable de la PGR o la CGR, o de la declaratoria de lesividad como paso previo a la demanda de anulación.",
+      },
+      {
+        title: "Dictámenes en contratación administrativa",
+        description:
+          "Revisión técnica del cartel y del sistema de evaluación antes de su publicación; análisis de la motivación del acto de adjudicación; viabilidad de modificaciones contractuales dentro de los topes de la Ley 9986; refrendo del contrato ante la Contraloría (arts. 20 y 21 de la Ley 7428); riesgos de los recursos de objeción y apelación; cierre del contrato y liquidación.",
+      },
+      {
+        title: "Dictámenes en procedimientos administrativos y régimen disciplinario",
+        description:
+          "Detección de vicios procesales —notificación, audiencia oral del art. 309 LGAP, prueba, motivación, sanción— antes de la firmeza del acto. Especial atención al régimen disciplinario del funcionario (arts. 211 a 213 LGAP) y a su articulación con la responsabilidad civil del artículo 199 y siguientes.",
+      },
+      {
+        title: "Dictámenes en materia presupuestaria y de Hacienda Pública",
+        description:
+          "Análisis ante la Contraloría: aprobación e improbación presupuestaria (art. 18 Ley 7428), dictámenes sobre proyectos de presupuesto y contratos sujetos a refrendo (art. 27), impugnabilidad directa de los actos finales de la CGR ante el contencioso (art. 34), y articulación con la Ley 8131 de Administración Financiera.",
+      },
+      {
+        title: "Dictámenes sobre potestad reglamentaria y normativa propia",
+        description:
+          "Evaluación de la conformidad de un proyecto de reglamento con la jerarquía normativa (art. 6 LGAP), los límites del artículo 19.2 (reserva de ley en derechos fundamentales) y del artículo 124 (prohibición de penas y cargas por vía reglamentaria), y el cumplimiento del procedimiento de elaboración del Título IX (arts. 361 a 363 LGAP).",
+      },
+      {
+        title: "Dictámenes de riesgo patrimonial y responsabilidad personal del jerarca",
+        description:
+          "Cuantificación del riesgo patrimonial de la institución (arts. 190 a 198 LGAP) y de la exposición personal del funcionario por dolo o culpa grave (arts. 199 a 213). Incluye análisis del régimen sancionador de la Ley Orgánica de la CGR (arts. 68 y siguientes) cuando la materia involucra Hacienda Pública.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, somos una institución pública y necesitamos un dictamen jurídico externo sobre una decisión sensible.",
+    commercialFaq: [
+      {
+        question: "¿Pueden las municipalidades, las instituciones autónomas y los entes descentralizados contratarnos para dictámenes externos?",
+        answer:
+          "Sí. La contratación de asesoría profesional especializada se adquiere bajo el régimen de la Ley General de Contratación Pública (Ley N.° 9986), en alguna de sus modalidades según el monto y el objeto. El dictamen es un insumo técnico que integra el expediente administrativo: la decisión sigue siendo del órgano competente del ente. Trabajamos rutinariamente bajo esta figura con municipalidades, instituciones autónomas, empresas públicas, colegios profesionales y ministerios.",
+      },
+      {
+        question: "¿Cuánto demora la entrega de un dictamen jurídico externo?",
+        answer:
+          "Depende del alcance y de la complejidad del asunto. En la práctica, manejamos tres rangos: dictámenes urgentes para asuntos definidos jurídicamente y de alcance acotado, dentro de cinco a diez días hábiles; dictámenes de complejidad media con análisis del expediente, doctrina y jurisprudencia, en dos a cuatro semanas; y dictámenes de gran complejidad o de auditoría jurídica integral, con tres a seis semanas. El plazo se fija desde el inicio del encargo, dentro del propio contrato.",
+      },
+      {
+        question: "¿El dictamen externo blinda al jerarca frente a la responsabilidad personal del artículo 199 de la LGAP?",
+        answer:
+          "No la elimina automáticamente, pero la atenúa significativamente. El artículo 199 de la LGAP exige dolo o culpa grave del servidor para que pueda repetirse contra él. Cuando el jerarca actúa con base en un dictamen jurídico fundado, recibido de buena fe y razonablemente seguido, la imputación de culpa grave se vuelve mucho más difícil de sostener. El dictamen, incorporado al expediente, opera como prueba documental del análisis técnico que respaldó la decisión; los jueces y la propia Contraloría suelen darle peso al evaluar la conducta personal del jerarca. Es por eso que muchas juntas directivas y concejos lo incorporan como práctica rutinaria antes de decisiones sensibles.",
+      },
+      {
+        question: "¿Se puede usar nuestro dictamen para revocar en sede administrativa un acto declaratorio de derechos?",
+        answer:
+          "Sí, en los términos del artículo 173 de la LGAP. La Administración puede declarar la nulidad absoluta evidente y manifiesta de un acto declarativo de derechos en su propia sede, sin acudir al proceso de lesividad, siempre que cuente con dictamen favorable y previo de la Procuraduría General de la República o, cuando la materia es de Hacienda Pública, de la Contraloría. Nuestro dictamen externo es un insumo del análisis preparatorio: identifica si efectivamente se está ante una nulidad de ese tipo, dimensiona el riesgo de impugnación y orienta el expediente para que la solicitud a la PGR o la CGR llegue bien planteada. Si la situación no encaja en el artículo 173, el camino es la declaratoria de lesividad y la demanda de anulación en sede contenciosa, donde también acompañamos.",
+      },
+    ],
+  },
 };
