@@ -212,10 +212,10 @@ export const PRACTICE_AREA_PAGES = [
     description: "Dictámenes jurídicos externos para el sector público costarricense: análisis técnicos sobre la legalidad de actos administrativos, contratos, procedimientos sancionatorios, proyectos de reglamento y decisiones de alto impacto. Trabajamos para municipalidades, instituciones autónomas, empresas públicas, ministerios y colegios profesionales que necesitan una segunda opinión técnica frente a su asesoría jurídica interna o un complemento ágil frente a la consulta de la Procuraduría General de la República. Anclamos los dictámenes en la LGAP (Ley 6227), la Ley Orgánica de la CGR (Ley 7428), la Ley General de Contratación Pública (Ley 9986), el CPCA (Ley 8508) y la jurisprudencia administrativa, constitucional y contencioso-administrativa actualizada.",
     icon: "FileText" as const,
     priority: "primary" as const,
-    seoTitle: "Abogados en Dictámenes Jurídicos en Costa Rica",
-    seoDescription: "Abogados en dictámenes jurídicos externos para el sector público en Costa Rica: análisis de legalidad de actos administrativos, contratos, reglamentos y procedimientos para municipalidades, instituciones autónomas y ministerios.",
+    seoTitle: "Abogados en Dictámenes de Derecho Público en CR",
+    seoDescription: "Abogados en dictámenes de derecho público en Costa Rica: análisis de legalidad de actos administrativos, contratos, reglamentos y procedimientos para municipalidades, instituciones autónomas, empresas públicas y ministerios.",
     ogShortTitle: "Abogados en {{em}}",
-    ogEmphasis: "Dictámenes Jurídicos",
+    ogEmphasis: "Dictámenes de Derecho Público",
   },
   {
     slug: "derecho-administrativo",
