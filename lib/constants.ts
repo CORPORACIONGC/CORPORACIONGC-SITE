@@ -322,9 +322,9 @@ export const PRACTICE_AREA_PAGES = [
     description: "Impugnación de resoluciones de la Contraloría General de la República, defensa en procedimientos de responsabilidad fiscal, litigio sobre aprobación presupuestaria y asesoría en administración financiera conforme a la Ley N.° 8131 y la Ley N.° 7428.",
     icon: "CurrencyCircleDollar" as const,
     priority: "specialized" as const,
-    seoTitle: "Litigio contra la Contraloría · Costa Rica",
-    seoDescription: "Impugnación de resoluciones de la Contraloría General, defensa en responsabilidad fiscal y litigio sobre aprobación presupuestaria conforme a la Ley N.° 8131 y la Ley Orgánica de la CGR (N.° 7428).",
-    ogShortTitle: "Litigio contra la {{em}}",
+    seoTitle: "Abogados ante la Contraloría en Costa Rica",
+    seoDescription: "Abogados ante la Contraloría en Costa Rica: defensa en procedimientos sancionatorios, refrendos, presupuestos y litigio directo en contencioso conforme a la Ley 7428 y la Ley 8131.",
+    ogShortTitle: "Abogados ante la {{em}}",
     ogEmphasis: "Contraloría",
   },
   {

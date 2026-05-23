@@ -2822,123 +2822,134 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El derecho presupuestario costarricense regula la formulación,
-          aprobación, ejecución y control del presupuesto público. Sus fuentes
-          principales son la Constitución Política (artículos 176 a 187), la Ley
-          de la Administración Financiera de la República y Presupuestos Públicos
-          (Ley N.° 8131 del 18 de septiembre de 2001) y la Ley Orgánica de la
-          Contraloría General de la República (Ley N.° 7428 del 7 de septiembre
-          de 1994). Este marco normativo establece los principios de legalidad
-          presupuestaria, universalidad, unidad de caja y equilibrio
-          presupuestario que rigen la hacienda pública costarricense.
+          La materia presupuestaria y de hacienda pública se articula sobre tres cuerpos normativos:
+          la Constitución Política (arts. 176 a 187 y 183-184), la Ley Orgánica de la Contraloría
+          General de la República (Ley N.° 7428) y la Ley de Administración Financiera de la
+          República y Presupuestos Públicos (Ley N.° 8131). La CGR es órgano constitucional
+          fundamental y rector del sistema de fiscalización de la Hacienda Pública (art. 1 de la
+          Ley 7428); sus criterios y disposiciones son de acatamiento obligatorio para los sujetos
+          pasivos y prevalecen sobre cualquier disposición en contrario (art. 12).
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          La práctica en materia presupuestaria abarca la asesoría en la
-          formulación y ejecución presupuestaria de entes públicos, la
-          impugnación de resoluciones de la Contraloría General de la República y
-          la defensa en procedimientos de responsabilidad fiscal.
+          Como abogados ante la Contraloría en Costa Rica, en Corporación GC defendemos a
+          funcionarios, jerarcas, regidores, instituciones y contratistas frente a procedimientos
+          sancionatorios, improbaciones presupuestarias, negativas de refrendo, declaratorias de
+          nulidad, cancelaciones de credencial y resoluciones de reintegro. A continuación se
+          describen los instrumentos jurídicos que integran esta área de práctica.
         </p>
       </section>
 
-      <Instrumento titulo="Presupuesto ordinario y extraordinario de la República" fundamento="Constitución, arts. 176 a 187; Ley 8131, arts. 1 a 10">
+      <Instrumento titulo="La Contraloría y el ordenamiento de fiscalización superior" fundamento="Constitución, arts. 183-184; Ley 7428, arts. 1, 8 y 12">
         <p>
-          Los artículos 176 a 187 de la Constitución Política regulan el
-          presupuesto de la República. El artículo 176 establece que el
-          presupuesto ordinario comprende todos los ingresos probables y todos
-          los gastos autorizados de la Administración Pública durante el año
-          económico. El artículo 177 dispone que la preparación del proyecto de
-          presupuesto corresponde al Poder Ejecutivo y su aprobación a la
-          Asamblea Legislativa. Los artículos 178 a 181 regulan los presupuestos
-          extraordinarios y las modificaciones presupuestarias. La Ley 8131, en
-          sus artículos 1 a 10, desarrolla los principios constitucionales y
-          establece el marco técnico para la formulación, aprobación, ejecución
-          y evaluación del presupuesto público.
+          El artículo 183 de la Constitución crea a la Contraloría General de la República como
+          institución auxiliar de la Asamblea Legislativa en la vigilancia de la Hacienda Pública;
+          el 184 le atribuye las funciones de fiscalizar la ejecución y liquidación de los
+          presupuestos, examinar y aprobar los presupuestos de las municipalidades e instituciones
+          autónomas y rendir memoria anual a la Asamblea. La Ley 7428 confirma su carácter de
+          órgano constitucional fundamental (art. 1) y rector del ordenamiento de fiscalización
+          (art. 12), cuyas disposiciones, normas, políticas y directrices son de acatamiento
+          obligatorio y prevalecen sobre cualquier disposición que se les oponga.
+        </p>
+        <p>
+          La Hacienda Pública —concepto que el artículo 8 de la Ley 7428 define— comprende los
+          fondos públicos, las potestades para manejarlos y las normas relativas al proceso
+          presupuestario, la contratación administrativa, el control interno y externo y la
+          responsabilidad de los funcionarios.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Control presupuestario de la Contraloría General" fundamento="Constitución, arts. 183-184; Ley 7428, arts. 1 a 12">
+      <Instrumento titulo="Fiscalización presupuestaria: aprobación e improbación" fundamento="Ley 7428, arts. 18 y 19; Ley 8131, art. 53">
         <p>
-          La Contraloría General de la República es el órgano constitucional
-          encargado de la fiscalización superior de la Hacienda Pública. El
-          artículo 183 de la Constitución establece que la Contraloría es una
-          institución auxiliar de la Asamblea Legislativa en la vigilancia de la
-          Hacienda Pública. El artículo 184 le atribuye las funciones de
-          fiscalizar la ejecución y liquidación de los presupuestos ordinarios y
-          extraordinarios, examinar y aprobar los presupuestos de las
-          municipalidades e instituciones autónomas, y enviar anualmente a la
-          Asamblea una memoria sobre el movimiento de los fondos públicos. La Ley
-          7428, en sus artículos 1 a 12, desarrolla la organización, competencias
-          y procedimientos de la Contraloría, otorgándole independencia funcional
-          y administrativa en el ejercicio de sus atribuciones fiscalizadoras.
+          El artículo 18 de la Ley 7428 ordena a la Contraloría examinar, para su aprobación o
+          improbación total o parcial, los presupuestos de los entes del artículo 184 de la
+          Constitución, así como los de la Administración descentralizada, las instituciones
+          semiautónomas y las empresas públicas. Los entes públicos no estatales cumplen este
+          requisito cuando una ley especial lo exija.
+        </p>
+        <p>
+          Si un presupuesto es improbado, rige el del año inmediato anterior; si la improbación es
+          parcial, el del año anterior rige solamente en cuanto a lo improbado, hasta que se
+          corrijan las deficiencias. Los presupuestos se presentan a más tardar el 30 de setiembre
+          y las liquidaciones el 16 de febrero (art. 19), y los entes sujetos a aprobación CGR
+          deben atender las normas técnicas que ella dicta (Ley 8131, art. 53).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Aprobación presupuestaria de entes descentralizados" fundamento="Ley 8131, arts. 75 a 81">
+      <Instrumento titulo="Refrendo de actos y contratos" fundamento="Ley 7428, arts. 20 y 30">
         <p>
-          Los artículos 75 a 81 de la Ley 8131 regulan el régimen presupuestario
-          de las instituciones autónomas, semiautónomas y empresas públicas. El
-          artículo 75 establece que los presupuestos de estas entidades deben ser
-          aprobados por la Contraloría General de la República, quien verifica su
-          conformidad con el ordenamiento jurídico, los planes nacionales de
-          desarrollo y las directrices de política presupuestaria emitidas por la
-          Autoridad Presupuestaria. El artículo 77 dispone que la Contraloría
-          puede improbar total o parcialmente un presupuesto cuando contenga
-          partidas que contravengan disposiciones legales o cuando el ente no
-          haya cumplido con los requisitos de formulación establecidos. Contra la
-          resolución de improbación proceden los recursos que la Ley Orgánica de
-          la Contraloría establece.
+          La Contraloría aprueba —dentro de un plazo que no excede de treinta días hábiles— los
+          contratos que celebre el Estado y los demás que por ley especial deban cumplir con este
+          requisito; no se aplica a los contratos de trabajo ni a los que constituyan actividad
+          ordinaria (art. 20). La administración obligada debe gestionar y obtener el refrendo
+          antes de dar la orden de inicio; sin el refrendo el acto o contrato no surte efectos
+          jurídicos y su ejecución queda prohibida, so pena de nulidad absoluta.
+        </p>
+        <p>
+          La falta de pronunciamiento dentro del plazo da lugar al silencio positivo. El artículo
+          30 lo confirma: en autorizaciones, refrendo de contratos y aprobación de modificaciones
+          presupuestarias opera el silencio positivo y la Administración puede ejecutar válidamente
+          el acto. Esa misma norma permite que la adjudicación en licitaciones se tenga por válida
+          y eficaz si la CGR no resuelve la apelación en el plazo legal.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Impugnación de resoluciones de la Contraloría General" fundamento="Ley 7428, arts. 67 a 72; CPCA, arts. 1 y 10">
+      <Instrumento titulo="Potestad sancionatoria: criterio técnico vinculante" fundamento="Ley 7428, arts. 67, 68 y 71; Ley 8131, arts. 110 y 113">
         <p>
-          Las resoluciones de la Contraloría General de la República son
-          impugnables mediante los mecanismos que establece su Ley Orgánica. Los
-          artículos 67 a 72 de la Ley 7428 regulan los recursos procedentes
-          contra los actos del órgano contralor. El recurso de revocatoria se
-          interpone ante el Despacho Contralor y el recurso de apelación ante la
-          División correspondiente. Agotada la vía administrativa, las
-          resoluciones de la Contraloría pueden ser impugnadas ante la
-          jurisdicción contencioso-administrativa conforme al artículo 1
-          del CPCA. El Tribunal Contencioso Administrativo puede revisar la
-          legalidad de los actos del órgano contralor, incluyendo las
-          resoluciones de aprobación o improbación presupuestaria y las
-          disposiciones emitidas en el ejercicio de sus funciones fiscalizadoras.
+          Frente a infracciones del ordenamiento de fiscalización o lesiones a la Hacienda Pública,
+          la Contraloría recomienda al órgano competente la sanción aplicable mediante criterio
+          técnico vinculante (art. 68 de la Ley 7428). La autoridad del sujeto pasivo debe cumplir
+          la recomendación en el plazo que la Contraloría fije, salvo que dentro de ocho días
+          hábiles interponga una gestión de revisión motivada; resuelta esta, el incumplimiento
+          configura el delito de desobediencia. La potestad de la Contraloría prescribe en dos años
+          desde el inicio del expediente.
+        </p>
+        <p>
+          Los hechos generadores de responsabilidad administrativa están en el artículo 110 de la
+          Ley 8131 (lista extensa: omisiones de control, uso indebido de fondos, daño al patrimonio,
+          contrataciones sin procedimiento, entre otros). El artículo 113 enumera las sanciones:
+          amonestación escrita, amonestación escrita publicada en La Gaceta, suspensión sin goce de
+          salario de ocho a treinta días y destitución sin responsabilidad. La responsabilidad
+          disciplinaria prescribe en cinco años desde el hecho o desde el informe (art. 71 de la
+          Ley 7428).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Procedimientos de responsabilidad fiscal" fundamento="Ley 7428, arts. 68-73; Ley 8131, arts. 107-114">
+      <Instrumento titulo="Responsabilidad civil y reintegro por daño económico" fundamento="Ley 7428, arts. 74, 75 y 76; Ley 8131, arts. 114, 116 y 118">
         <p>
-          Los procedimientos de responsabilidad fiscal permiten determinar la
-          responsabilidad patrimonial de los funcionarios y exfuncionarios
-          públicos por el manejo irregular de fondos públicos. Los artículos 68
-          a 73 de la Ley 7428 facultan a la Contraloría General para instruir
-          procedimientos administrativos tendientes a determinar la
-          responsabilidad disciplinaria y patrimonial de quienes administren
-          fondos públicos. Los artículos 107 a 114 de la Ley 8131 regulan el
-          régimen de responsabilidad en la administración financiera, estableciendo
-          que los funcionarios responden personal y pecuniariamente por los
-          daños que causen a la Hacienda Pública por dolo, culpa grave o
-          incumplimiento de sus deberes. Las resoluciones que impongan
-          responsabilidad fiscal son impugnables en vía administrativa y,
-          posteriormente, ante la jurisdicción contencioso-administrativa.
+          Todo servidor público responde civilmente, por dolo o culpa grave, frente al ente
+          afectado y a terceros (Ley 7428 art. 74; Ley 8131 art. 114). Cuando varios responsables
+          intervienen, la responsabilidad es solidaria (Ley 8131 art. 116); no efectuar
+          oportunamente las acciones de cobro es, además, falta grave del funcionario competente
+          (Ley 7428 art. 75).
+        </p>
+        <p>
+          La pieza clave del reintegro está en el artículo 76 de la Ley 7428: cuando hay daño
+          contra los fondos públicos «proveniente de una ilegalidad flagrante y manifiesta» y el
+          monto es líquido o liquidable con vista de documentos, la Contraloría dicta resolución
+          razonada que declara la responsabilidad y su monto pecuniario, previa formación de
+          expediente y audiencia. La certificación de esa resolución constituye **título
+          ejecutivo** contra el responsable, y el sujeto pasivo afectado debe iniciar de inmediato
+          el cobro judicial (también art. 118 de la Ley 8131).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Acciones de inconstitucionalidad contra leyes presupuestarias" fundamento="Constitución, art. 10; Ley 7135, arts. 73 a 79">
+      <Instrumento titulo="Impugnación: vía contenciosa directa en presupuestos, refrendo y contratación" fundamento="Ley 7428, arts. 33 y 34; CPCA, arts. 31 y 42">
         <p>
-          Las leyes de presupuesto y sus modificaciones están sujetas al control
-          de constitucionalidad que ejerce la Sala Constitucional. El artículo 10
-          de la Constitución Política establece que corresponde a la Sala
-          Constitucional declarar la inconstitucionalidad de las normas de
-          cualquier naturaleza y de los actos sujetos al derecho público. Los
-          artículos 73 a 79 de la Ley de la Jurisdicción Constitucional (Ley N.°
-          7135) regulan el procedimiento de la acción de inconstitucionalidad,
-          que puede interponerse contra las disposiciones presupuestarias que
-          contravengan normas o principios constitucionales, incluyendo la
-          violación de los principios de legalidad presupuestaria, equilibrio
-          financiero, destino específico de rentas y universalidad del
-          presupuesto.
+          Los actos definitivos de la Contraloría están sujetos al régimen común de impugnación
+          (LGAP y CPCA) cuando lesionen derechos subjetivos o intereses legítimos (art. 33 de la
+          Ley 7428). Pero el artículo 34 exceptúa expresamente —y los hace firmes desde que se
+          dictan, sin recurso administrativo— tres categorías de actos: los dictados en
+          procedimientos de contratación administrativa, los de aprobación de contratos
+          administrativos (refrendos) y los relacionados con la materia presupuestaria.
+        </p>
+        <p>
+          Esto significa que contra una improbación presupuestaria, una negativa de refrendo o un
+          acto de contratación administrativa **no hay recurso administrativo**: la impugnación se
+          lleva directamente a la jurisdicción contencioso-administrativa. El agotamiento de la vía
+          administrativa es facultativo (art. 31 del CPCA, pues estos no son supuestos preceptivos
+          de los arts. 173 ni 182 de la Constitución). Allí caben las pretensiones del artículo 42
+          del CPCA —anulación, restablecimiento del derecho, indemnización— y, cuando hay urgencia,
+          medidas cautelares (art. 19 del CPCA) para suspender los efectos del acto.
         </p>
       </Instrumento>
 
@@ -2951,65 +2962,54 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué papel tiene la Contraloría General en el control del presupuesto público?
+              ¿Qué pasa si la Contraloría me improba el presupuesto o me niega un refrendo?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Contraloría General de la República es el órgano constitucional encargado de la
-              fiscalización superior de la Hacienda Pública. El artículo 183 de la Constitución
-              Política la establece como institución auxiliar de la Asamblea Legislativa en la vigilancia
-              de la Hacienda Pública. El artículo 184 le atribuye funciones fundamentales: fiscalizar la
-              ejecución y liquidación de los presupuestos ordinarios y extraordinarios, examinar y
-              aprobar los presupuestos de las municipalidades e instituciones autónomas, y enviar
-              anualmente a la Asamblea una memoria sobre el movimiento de fondos públicos. La Ley
-              Orgánica de la Contraloría (Ley N.° 7428), en sus artículos 1 a 12, desarrolla su
-              organización, competencias y procedimientos, otorgándole independencia funcional y
-              administrativa. El artículo 75 de la Ley 8131 establece que los presupuestos de entes
-              descentralizados deben ser aprobados por la Contraloría, que puede improbar total o
-              parcialmente un presupuesto cuando contenga partidas que contravengan disposiciones legales
-              (art. 77). Sus resoluciones son impugnables conforme a los artículos 67 a 72 de la Ley 7428.
+              En la improbación, rige el presupuesto del año inmediato anterior; si la improbación es
+              parcial, el del año anterior rige solamente en cuanto a lo improbado, hasta que se
+              corrijan las deficiencias (art. 18 de la Ley 7428). En el refrendo, la Contraloría tiene
+              treinta días hábiles para aprobar; si no se pronuncia, opera el silencio positivo y la
+              Administración puede ejecutar el acto (arts. 20 y 30). Sin refrendo, el acto o contrato
+              no surte efectos jurídicos. Ambas categorías de actos —improbación presupuestaria y
+              negativa de refrendo— tienen una particularidad clave: el artículo 34 de la Ley 7428 los
+              declara firmes desde que se dictan, sin recurso administrativo. La impugnación va
+              directamente a la jurisdicción contencioso-administrativa.
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se impugna una resolución de la Contraloría General de la República?
+              ¿Cuáles son las sanciones que puede imponer la Contraloría a un funcionario?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Las resoluciones de la Contraloría son impugnables mediante los mecanismos que establece
-              su Ley Orgánica (Ley N.° 7428). Los artículos 67 a 72 regulan los recursos procedentes:
-              el recurso de revocatoria se interpone ante el Despacho Contralor que dictó la resolución
-              y el recurso de apelación se presenta ante la División correspondiente. Agotada la vía
-              administrativa, las resoluciones de la Contraloría pueden impugnarse ante la jurisdicción
-              contencioso-administrativa conforme al artículo 1 del CPCA. El Tribunal
-              Contencioso Administrativo puede revisar la legalidad de los actos del órgano contralor,
-              incluyendo las resoluciones de aprobación o improbación presupuestaria y las disposiciones
-              emitidas en ejercicio de sus funciones fiscalizadoras. Esta vía jurisdiccional permite
-              solicitar la anulación de resoluciones que el administrado considere contrarias al
-              ordenamiento jurídico, así como la indemnización de daños y perjuicios causados. La
-              impugnación requiere un análisis especializado del marco presupuestario constitucional
-              (arts. 176-187) y de la Ley 8131.
+              La Contraloría no impone la sanción directamente: la recomienda al órgano competente con
+              criterio técnico vinculante, y este debe cumplirla en el plazo que ella fije (art. 68 de
+              la Ley 7428). El catálogo de sanciones está en el artículo 113 de la Ley 8131: amonestación
+              escrita; amonestación escrita publicada en La Gaceta; suspensión sin goce de salario de
+              ocho a treinta días; y destitución sin responsabilidad. Los hechos que las generan están
+              en el artículo 110 (lista extensa: uso indebido de fondos, omisión de control,
+              contrataciones sin procedimiento, daño al patrimonio, entre otros). La responsabilidad
+              disciplinaria prescribe en cinco años (art. 71). Además, si los hechos configuran daño
+              líquido o fácilmente liquidable, la Contraloría dicta resolución de reintegro cuya
+              certificación es título ejecutivo (art. 76 de la Ley 7428).
             </p>
           </div>
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué es un procedimiento de responsabilidad fiscal y qué consecuencias tiene?
+              ¿Cómo se impugna un acto de la Contraloría?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Los procedimientos de responsabilidad fiscal permiten determinar la responsabilidad
-              patrimonial de funcionarios y exfuncionarios públicos por el manejo irregular de fondos
-              públicos. Los artículos 68 a 73 de la Ley N.° 7428 facultan a la Contraloría General
-              para instruir procedimientos administrativos tendientes a determinar responsabilidad
-              disciplinaria y patrimonial de quienes administren fondos públicos. Los artículos 107 a
-              114 de la Ley 8131 regulan el régimen de responsabilidad en la administración financiera,
-              estableciendo que los funcionarios responden personal y pecuniariamente por los daños que
-              causen a la Hacienda Pública por dolo, culpa grave o incumplimiento de sus deberes. Las
-              consecuencias incluyen la obligación de resarcir el daño patrimonial causado al erario
-              público, sanciones disciplinarias y la inhabilitación para el ejercicio de cargos públicos
-              en casos graves. Las resoluciones que impongan responsabilidad fiscal son impugnables en
-              vía administrativa y, posteriormente, ante la jurisdicción contencioso-administrativa
-              conforme al CPCA. Corporación GC defiende a funcionarios investigados en estos
-              procedimientos.
+              Depende del acto. Los actos definitivos que lesionen derechos subjetivos o intereses
+              legítimos están sujetos al régimen común de impugnación: LGAP en sede administrativa y
+              CPCA en sede judicial (art. 33 de la Ley 7428). Pero el artículo 34 exceptúa expresamente
+              tres categorías: los actos en procedimientos de contratación administrativa, los de
+              refrendo de contratos y los de materia presupuestaria; estos quedan firmes desde que se
+              dictan, sin recurso administrativo, y se impugnan directamente ante la jurisdicción
+              contencioso-administrativa. El agotamiento de la vía administrativa es facultativo
+              (art. 31 del CPCA). Allí caben las pretensiones del artículo 42 del CPCA —anulación,
+              restablecimiento, indemnización— y, cuando hay urgencia, medidas cautelares (art. 19) para
+              suspender los efectos del acto mientras se resuelve el fondo.
             </p>
           </div>
         </div>

@@ -1176,4 +1176,75 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "materia-presupuestaria": {
+    hookHeadline: "¿La Contraloría le abrió un procedimiento sancionatorio o le rechazó un refrendo o un presupuesto?",
+    hookSubtext:
+      "Las potestades de la Contraloría son vinculantes para la Administración (art. 68 de la Ley 7428): cuando recomienda una sanción, el órgano competente debe imponerla en el plazo fijado. Y en materia de presupuesto, refrendo y contratación, los actos de la Contraloría no son recurribles administrativamente (art. 34): se llevan directamente al contencioso. Defendemos a funcionarios, jerarcas, regidores y entidades públicas con la técnica que ese marco exige.",
+    scenariosTitle: "¿Cuándo necesita un abogado ante la Contraloría?",
+    triggerScenarios: [
+      "La CGR le abrió un procedimiento sancionatorio o le recomendó una sanción contra usted",
+      "Le rechazaron el refrendo de un contrato o se lo objetaron",
+      "Le improbaron parcial o totalmente el presupuesto institucional",
+      "La CGR declaró una nulidad absoluta evidente y manifiesta de un acto",
+      "Es regidor o síndico y enfrenta una posible cancelación de credencial",
+      "Le notificaron una resolución de reintegro por daño económico (título ejecutivo)",
+      "Necesita demandar a la CGR en el contencioso por un acto que lo afecta",
+    ],
+    services: [
+      {
+        title: "Defensa en procedimientos sancionatorios CGR",
+        description:
+          "Defendemos al funcionario, jerarca o regidor desde el inicio del expediente. La recomendación de sanción de la CGR es vinculante para el órgano competente (art. 68 de la Ley 7428), por lo que la defensa técnica en el procedimiento —no después— es decisiva. Aplicamos los criterios de valoración del art. 108 de la Ley 8131 y el catálogo del art. 113.",
+      },
+      {
+        title: "Refrendo de contratos administrativos",
+        description:
+          "Gestionamos el refrendo de contratos ante la CGR dentro del plazo de treinta días hábiles (art. 20 de la Ley 7428), defendemos frente a negativas y aprovechamos el silencio positivo cuando se vence el plazo (art. 30). Cuando se niega, la impugnación va directo al contencioso (art. 34).",
+      },
+      {
+        title: "Presupuestos y modificaciones",
+        description:
+          "Asesoramos a las instituciones en la formulación y defensa de sus presupuestos ante la CGR; en la improbación parcial trabajamos con la regla del art. 18 (el del año anterior rige solo en cuanto a lo improbado) y, en las modificaciones, con la regla del silencio positivo del art. 30.",
+      },
+      {
+        title: "Cancelación de credencial de regidores y síndicos",
+        description:
+          "Defendemos a regidores y síndicos en procesos de cancelación de credencial por falta grave o por condena penal en delitos contra los deberes de la función pública (art. 73 de la Ley 7428). El estándar probatorio y el debido proceso son la batalla principal.",
+      },
+      {
+        title: "Reintegro por daño económico y responsabilidad civil",
+        description:
+          "Defendemos al servidor en el procedimiento del art. 76 de la Ley 7428 —donde la certificación de la resolución es título ejecutivo— y, del lado de la institución, perseguimos el cobro de los daños. La responsabilidad civil se rige por la LGAP y el régimen del título X de la Ley 8131, y puede ser solidaria (art. 116).",
+      },
+      {
+        title: "Litigio contencioso directo contra actos de la CGR",
+        description:
+          "En contratación administrativa, refrendo y materia presupuestaria, los actos de la CGR no son recurribles administrativamente (art. 34 de la Ley 7428): vamos directo al contencioso con las pretensiones del art. 42 del CPCA y, cuando hay urgencia, con medidas cautelares (art. 19) para suspender los efectos.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un asunto ante la Contraloría General de la República y necesito asesoría.",
+    commercialFaq: [
+      {
+        question: "¿Es vinculante la recomendación de sanción de la Contraloría?",
+        answer:
+          "Sí. El artículo 68 de la Ley 7428 establece que el criterio técnico de la CGR es vinculante: la autoridad competente del sujeto pasivo debe cumplir la recomendación de sanción en el plazo que la Contraloría fije. Solo cabe una gestión de revisión motivada en ocho días hábiles; resuelta esta, el incumplimiento configura delito de desobediencia. Por eso la defensa técnica desde el inicio del expediente es decisiva: una vez emitido el criterio técnico, el margen de maniobra se cierra.",
+      },
+      {
+        question: "¿Cómo se impugna un acto de la Contraloría?",
+        answer:
+          "Depende del acto. La regla general (art. 33 de la Ley 7428) es el régimen común de impugnación: LGAP en sede administrativa y CPCA en sede judicial. Pero el artículo 34 exceptúa expresamente tres categorías —contratación administrativa, refrendo y materia presupuestaria—: esos actos quedan firmes desde que se dictan, sin recurso administrativo, y se impugnan directamente en el contencioso. En todos los casos, el agotamiento de la vía administrativa es facultativo (art. 31 del CPCA).",
+      },
+      {
+        question: "¿Qué pasa si la CGR me improba el presupuesto?",
+        answer:
+          "Si la improbación es total, rige el del año inmediato anterior; si es parcial, el del año anterior rige solamente en cuanto a lo improbado, hasta que se corrijan las deficiencias (art. 18 de la Ley 7428). La improbación no es recurrible administrativamente (art. 34): se impugna directamente ante la jurisdicción contencioso-administrativa, con las pretensiones del art. 42 del CPCA y, cuando se compromete la operación, medidas cautelares (art. 19).",
+      },
+      {
+        question: "¿Qué es el reintegro por daño económico que ordena la Contraloría?",
+        answer:
+          "Es el procedimiento del artículo 76 de la Ley 7428: cuando hay daño contra los fondos públicos «proveniente de una ilegalidad flagrante y manifiesta» y el monto es líquido o liquidable con vista de documentos, la Contraloría dicta resolución razonada que declara la responsabilidad y su monto, previo expediente con audiencia. La certificación de esa resolución constituye título ejecutivo contra el responsable y el sujeto pasivo afectado debe iniciar de inmediato el cobro judicial. Por eso defenderse en el procedimiento —antes de la certificación— es la diferencia entre un asunto administrativo y una ejecución forzosa en su contra.",
+      },
+    ],
+  },
 };
