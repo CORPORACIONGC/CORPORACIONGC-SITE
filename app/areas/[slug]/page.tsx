@@ -19,6 +19,10 @@ import {
   CheckCircle,
 } from "@phosphor-icons/react/dist/ssr";
 
+// Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
+// evitando que Google los archive como "rastreada, sin indexar".
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return PRACTICE_AREA_PAGES.map((area) => ({ slug: area.slug }));
 }

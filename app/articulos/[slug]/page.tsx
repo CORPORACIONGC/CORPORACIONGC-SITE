@@ -34,6 +34,10 @@ import { buildArticleMetadata } from "@/lib/page-metadata";
 const ORG_AUTHOR_CREDENTIAL =
   "Bufete dirigido por el Dr. Óscar Eduardo González Camacho · Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508) y ex-Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
 
+// Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
+// evitando que Google los archive como "rastreada, sin indexar".
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const articles = getAllArticles();
   return articles.map((a) => ({ slug: a.slug }));

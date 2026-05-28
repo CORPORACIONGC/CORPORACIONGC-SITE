@@ -28,6 +28,10 @@ import {
 import { FIRM } from "@/lib/constants";
 import { buildJurisprudenciaMetadata } from "@/lib/page-metadata";
 
+// Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
+// evitando que Google los archive como "rastreada, sin indexar".
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllSentencias().map((s) => ({ slug: s.slug }));
 }

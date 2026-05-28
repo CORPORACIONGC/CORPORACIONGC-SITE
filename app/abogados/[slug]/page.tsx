@@ -50,7 +50,11 @@ import {
 } from "@/lib/constants";
 import { generateAttorneyMetadata } from "@/lib/page-metadata";
 
-// Generate static params for all team members
+// Generate static params for all team members.
+// Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
+// evitando que Google los archive como "rastreada, sin indexar".
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return TEAM.map((member) => ({ slug: member.slug }));
 }

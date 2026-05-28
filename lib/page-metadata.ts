@@ -22,7 +22,9 @@ export const homeMetadata: Metadata = {
 };
 
 export const sobreNosotrosMetadata: Metadata = {
-  title: "Sobre Nosotros · Corporación GC",
+  // El layout aplica la plantilla "%s · Corporación GC"; el título no repite la
+  // marca para evitar "Sobre Nosotros · Corporación GC · Corporación GC".
+  title: "Sobre Nosotros",
   description:
     "Bufete fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados al Derecho Público.",
   openGraph: {
@@ -56,7 +58,8 @@ export const areasMetadata: Metadata = {
 };
 
 export const articulosMetadata: Metadata = {
-  title: "Publicaciones Académicas · Corporación GC",
+  // La plantilla del layout añade "· Corporación GC"; no duplicar la marca aquí.
+  title: "Publicaciones Académicas",
   description:
     "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
   openGraph: {
@@ -110,7 +113,8 @@ export const contactoMetadata: Metadata = {
 };
 
 export const privacidadMetadata: Metadata = {
-  title: "Política de Privacidad · Corporación GC",
+  // La plantilla del layout añade "· Corporación GC"; no duplicar la marca aquí.
+  title: "Política de Privacidad",
   description:
     "Política de privacidad de Corporación GC. Tratamiento de datos personales conforme a la Ley N.° 8968 y al Reglamento de PRODHAB. Costa Rica.",
   robots: { index: false, follow: true },
