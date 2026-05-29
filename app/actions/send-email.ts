@@ -1,6 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
+import { headers } from "next/headers";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -11,9 +12,37 @@ const RECIPIENTS = [
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_LEN = { name: 200, email: 254, phone: 30, message: 5000 };
+
+/* Rate limiting POR IP (no global): cada visitante tiene su propio cupo, de
+   modo que un abusador nunca bloquea a clientes legítimos que escriben en el
+   mismo minuto. Es "best effort" en memoria — en serverless cada instancia
+   tiene su propio mapa, lo que solo lo hace más permisivo, nunca lo contrario
+   (jamás bloquea a un cliente real de más). El honeypot es la defensa principal
+   anti-bots; esto solo frena ráfagas obvias desde una misma IP. */
 const RATE_WINDOW_MS = 60_000;
-const RATE_MAX = 3;
-const recentSends: number[] = [];
+const RATE_MAX = 5;
+const sendsByIp = new Map<string, number[]>();
+
+/** Devuelve true si la IP está dentro de su cupo (y registra el intento). */
+function withinRateLimit(ip: string, now: number): boolean {
+  // Limpieza global: descarta IPs sin actividad reciente para acotar memoria.
+  for (const [key, times] of sendsByIp) {
+    const live = times.filter((t) => now - t <= RATE_WINDOW_MS);
+    if (live.length === 0) sendsByIp.delete(key);
+    else sendsByIp.set(key, live);
+  }
+
+  const recent = (sendsByIp.get(ip) ?? []).filter(
+    (t) => now - t <= RATE_WINDOW_MS
+  );
+  if (recent.length >= RATE_MAX) {
+    sendsByIp.set(ip, recent);
+    return false;
+  }
+  recent.push(now);
+  sendsByIp.set(ip, recent);
+  return true;
+}
 
 function esc(s: string): string {
   return s
@@ -37,12 +66,15 @@ export async function sendContactEmail(data: ContactFormData) {
     return { success: true };
   }
 
-  // Rate limiting básico (en memoria del servidor)
+  // Rate limiting POR IP (en memoria del servidor). En Vercel la IP real del
+  // visitante viaja en "x-forwarded-for" (primer valor de la lista).
   const now = Date.now();
-  while (recentSends.length > 0 && now - recentSends[0] > RATE_WINDOW_MS) {
-    recentSends.shift();
-  }
-  if (recentSends.length >= RATE_MAX) {
+  const hdrs = await headers();
+  const ip =
+    hdrs.get("x-forwarded-for")?.split(",")[0].trim() ||
+    hdrs.get("x-real-ip") ||
+    "unknown";
+  if (!withinRateLimit(ip, now)) {
     return { success: false, error: "Demasiados envíos. Intente de nuevo en un minuto." };
   }
 
@@ -69,8 +101,6 @@ export async function sendContactEmail(data: ContactFormData) {
   const safeMessage = esc(message.trim());
 
   try {
-    recentSends.push(now);
-
     const { error } = await resend.emails.send({
       from: "Corporación GC <onboarding@resend.dev>",
       to: RECIPIENTS,

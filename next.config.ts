@@ -17,6 +17,13 @@ const csp = [
 ].join("; ");
 
 const nextConfig: NextConfig = {
+  images: {
+    // AVIF primero: mejor nitidez por byte que WebP/JPEG para fotos.
+    formats: ["image/avif", "image/webp"],
+    // Next 16 exige declarar las calidades permitidas. 90 = foto del fundador
+    // en máxima nitidez; 75 se mantiene como valor por defecto del resto.
+    qualities: [75, 90],
+  },
   async redirects() {
     return [
       {
@@ -41,7 +48,6 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
-          { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           {
             key: "Strict-Transport-Security",
@@ -62,7 +68,6 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
-          { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           {
             key: "Strict-Transport-Security",

@@ -14,12 +14,17 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import {
+  INDEXNOW_KEY,
+  INDEXNOW_HOST,
+  INDEXNOW_ENDPOINT,
+} from "../lib/indexnow.mjs";
 
-const HOST = "www.corporaciongc.com";
+const HOST = INDEXNOW_HOST;
 const BASE = `https://${HOST}`;
-const KEY = "9bfd4199e0da6032800261f5b858adeb";
+const KEY = INDEXNOW_KEY;
 const KEY_LOCATION = `${BASE}/${KEY}.txt`;
-const ENDPOINT = "https://api.indexnow.org/indexnow";
+const ENDPOINT = INDEXNOW_ENDPOINT;
 
 const VERCEL_ENV = process.env.VERCEL_ENV;
 const FORCE = process.env.INDEXNOW_FORCE === "1";

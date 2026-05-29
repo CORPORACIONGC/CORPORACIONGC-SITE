@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-
-const INDEXNOW_KEY = "9bfd4199e0da6032800261f5b858adeb";
-const HOST = "www.corporaciongc.com";
+import {
+  INDEXNOW_KEY,
+  INDEXNOW_HOST,
+  INDEXNOW_ENDPOINT,
+} from "@/lib/indexnow.mjs";
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,13 +16,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const response = await fetch("https://api.indexnow.org/indexnow", {
+    const response = await fetch(INDEXNOW_ENDPOINT, {
       method: "POST",
       headers: { "Content-Type": "application/json; charset=utf-8" },
       body: JSON.stringify({
-        host: HOST,
+        host: INDEXNOW_HOST,
         key: INDEXNOW_KEY,
-        keyLocation: `https://${HOST}/${INDEXNOW_KEY}.txt`,
+        keyLocation: `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`,
         urlList: urls,
       }),
     });
