@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 import { OSCAR_PROFILE } from "@/lib/constants";
@@ -16,37 +15,39 @@ export function FirmHero() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-8 md:gap-6 items-center">
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
-          <AnimatedEntry delay={0.15}>
+          <div className="gc-rise" style={{ animationDelay: "0.05s" }}>
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-gold" />
               <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
                 Bufete de Abogados en Derecho P&#250;blico
               </span>
             </div>
-          </AnimatedEntry>
+          </div>
 
-          <AnimatedEntry delay={0.25}>
+          <div className="gc-rise" style={{ animationDelay: "0.12s" }}>
             <h1 className="font-body text-4xl md:text-6xl lg:text-7xl tracking-[0.08em] uppercase leading-none text-cream font-medium">
               Corporaci&#243;n GC
               <span className="sr-only"> — Abogados Especialistas en Derecho Administrativo y Contencioso Administrativo en Costa Rica</span>
             </h1>
-          </AnimatedEntry>
+          </div>
 
-          <AnimatedEntry delay={0.35}>
+          <div className="gc-rise" style={{ animationDelay: "0.2s" }}>
             <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/55 font-medium">
               Fundado y dirigido por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
             </p>
-          </AnimatedEntry>
+          </div>
 
-          {/* Mobile-only: full editorial photo */}
-          <AnimatedEntry delay={0.4} className="md:hidden">
+          {/* Mobile-only: full editorial photo (LCP en móvil — solo transform, sin opacidad) */}
+          <div className="md:hidden gc-slide-x">
             <div className="mt-6 w-full overflow-hidden relative">
               <Image
                 src={OSCAR_PROFILE.photo}
                 alt={`${OSCAR_PROFILE.name} \u2014 Fundador y Director de Corporaci\u00f3n GC`}
-                width={768}
+                width={1536}
                 height={1024}
                 priority
+                quality={90}
+                sizes="100vw"
                 className="w-full h-auto"
               />
               {/* Burgundy tint overlay */}
@@ -56,9 +57,9 @@ export function FirmHero() {
               {/* Thin gold accent line — bottom */}
               <div className="absolute inset-x-[15%] bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
             </div>
-          </AnimatedEntry>
+          </div>
 
-          <AnimatedEntry delay={0.45}>
+          <div className="gc-rise" style={{ animationDelay: "0.28s" }}>
             <div className="mt-6 md:mt-8 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/80 leading-relaxed max-w-[50ch]">
@@ -70,9 +71,9 @@ export function FirmHero() {
                 ayudó a construir.
               </p>
             </div>
-          </AnimatedEntry>
+          </div>
 
-          <AnimatedEntry delay={0.55}>
+          <div className="gc-rise" style={{ animationDelay: "0.36s" }}>
             <p className="mt-4 text-sm text-cream/65 leading-relaxed max-w-[55ch]">
               El Dr. Gonz&#225;lez Camacho dirige y trabaja personalmente
               en cada caso junto a un equipo de cinco abogados formados
@@ -80,9 +81,9 @@ export function FirmHero() {
               supervisi&#243;n directa. Conocimiento de autor y un equipo
               entrenado para ejecutarlo.
             </p>
-          </AnimatedEntry>
+          </div>
 
-          <AnimatedEntry delay={0.65}>
+          <div className="gc-rise" style={{ animationDelay: "0.44s" }}>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <MagneticButton href="#contacto" variant="primary">
                 Agendar consulta
@@ -91,20 +92,23 @@ export function FirmHero() {
                 Conocer la firma
               </MagneticButton>
             </div>
-          </AnimatedEntry>
+          </div>
         </div>
 
-        {/* Right — Founder Photo (desktop only, monumental editorial treatment) */}
-        <AnimatedEntry delay={0.3} direction="right" className="relative hidden md:block">
+        {/* Right — Founder Photo (desktop only, monumental editorial treatment).
+            LCP element: solo desliza (transform), nunca queda invisible. */}
+        <div className="relative hidden md:block gc-slide-x">
           <div className="relative md:h-[82vh] max-h-[780px]">
             {/* Photo — full column, no rounded corners, editorial crop */}
             <div className="relative w-full h-full overflow-hidden">
               <Image
                 src={OSCAR_PROFILE.photo}
                 alt={`${OSCAR_PROFILE.name} \u2014 Fundador y Director de Corporaci\u00f3n GC`}
-                width={768}
+                width={1536}
                 height={1024}
                 priority
+                quality={90}
+                sizes="(max-width: 767px) 0px, 1536px"
                 className="w-full h-full object-cover object-[50%_20%]"
               />
 
@@ -119,7 +123,7 @@ export function FirmHero() {
             </div>
 
           </div>
-        </AnimatedEntry>
+        </div>
       </div>
     </section>
   );

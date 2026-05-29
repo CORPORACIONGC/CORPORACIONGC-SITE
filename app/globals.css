@@ -399,6 +399,30 @@ html {
   animation: theme-icon-in 0.2s ease-out both;
 }
 
+/* ── Entrada del encabezado (above-the-fold): animación CSS pura ──
+   A diferencia de AnimatedEntry (que espera a hidratar el JavaScript y a que
+   el IntersectionObserver dispare), estas clases animan en el PRIMER pintado
+   del navegador. El contenido crítico aparece aunque el JS falle o tarde, y
+   no penaliza el LCP. El bloque de prefers-reduced-motion de abajo las salta
+   al estado final automáticamente (animation-fill-mode: both). */
+@keyframes gc-rise {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.gc-rise {
+  animation: gc-rise 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Solo transform (sin opacidad): para el elemento LCP — la foto del fundador.
+   Nunca queda invisible, por lo que Google lo detecta como pintado al instante. */
+@keyframes gc-slide-x {
+  from { transform: translateX(24px); }
+  to   { transform: translateX(0); }
+}
+.gc-slide-x {
+  animation: gc-slide-x 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 /* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
