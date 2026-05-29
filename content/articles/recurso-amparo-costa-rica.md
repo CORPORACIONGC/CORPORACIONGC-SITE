@@ -1,14 +1,14 @@
 ---
 title: "Recurso de Amparo en Costa Rica: requisitos, plazos y trámite"
-date: "2026-04-26"
+date: "2026-05-28"
 excerpt: "El recurso de amparo es la herramienta constitucional más rápida para proteger sus derechos fundamentales frente a la autoridad pública o privada. Esta guía explica, con base en la Ley de la Jurisdicción Constitucional, qué actos pueden impugnarse, cuál es el plazo de dos meses, dónde se presenta y los errores que llevan al rechazo de plano por la Sala Constitucional."
 tags: ["Guía práctica", "Recurso de Amparo", "Sala Constitucional", "Derechos Fundamentales", "Derecho Constitucional"]
 type: "article"
 author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Recurso de Amparo en Costa Rica: Plazos y Trámite 2026"
-seoDescription: "Cómo presentar un recurso de amparo en Costa Rica: plazo, requisitos, cuánto tarda la Sala IV y los errores que llevan al rechazo de plano. Guía 2026."
+seoTitle: "Recurso de Amparo en Costa Rica: Qué Es y Cómo Presentarlo 2026"
+seoDescription: "Presente un recurso de amparo en Costa Rica paso a paso y en línea: es gratis y sin abogado. Plazo de 2 meses, requisitos, cuánto tarda la Sala IV y errores a evitar."
 faq:
   - question: "¿Cuánto tarda la Sala Constitucional en resolver un amparo?"
     answer: "No existe plazo legal específico. En amparos sencillos sobre listas de espera, derecho de petición o sanciones evidentes, la sentencia suele dictarse en uno a tres meses. En casos con prueba, audiencia o múltiples partes, el trámite puede extenderse a seis u ocho meses. Casi siempre es más rápido que la vía contencioso-administrativa."
@@ -26,9 +26,11 @@ faq:
     answer: "Sí, siempre que el nuevo amparo se base en hechos distintos, derechos diferentes o si la lesión continúa produciendo efectos nuevos. No puede replantear exactamente el mismo asunto que ya fue resuelto en el fondo, por la cosa juzgada constitucional."
   - question: "¿Qué es la amenaza de violación de un derecho?"
     answer: "El artículo 29 admite el amparo no solo contra violaciones consumadas, sino también contra amenazas inminentes: anuncio de un despido sin debido proceso, notificación de una orden de demolición sin acto firme, aviso de un cierre sin procedimiento previo. La amenaza debe ser cierta, próxima y verificable."
+  - question: "¿Se puede presentar el recurso de amparo en línea en Costa Rica?"
+    answer: "Sí, y es hoy la vía más utilizada. Se hace por la plataforma Gestión en Línea del Poder Judicial. Lo único que se necesita de previo es una clave de acceso, que se solicita gratis y una sola vez, de forma presencial, en cualquier despacho judicial presentando la cédula de identidad. Con la clave puede presentar el recurso desde cualquier lugar y a cualquier hora, incluso fines de semana y feriados, eligiendo el I Circuito Judicial de San José y la Sala Constitucional. El sistema genera un comprobante con fecha y hora. No requiere abogado ni pago alguno."
 ---
 
-Cuando una autoridad pública —o incluso un sujeto privado en posición de poder— actúa o deja de actuar de forma que vulnera un derecho fundamental, la Constitución Política le ofrece una vía rápida y especial para defenderse: el **recurso de amparo**. No es una demanda ordinaria, no requiere abogado para presentarse y se resuelve mediante un trámite preferente y sumario ante la Sala Constitucional de la Corte Suprema de Justicia.
+Cuando una autoridad pública —o incluso un sujeto privado en posición de poder— actúa o deja de actuar de forma que vulnera un derecho fundamental, la Constitución Política le ofrece una vía rápida y especial para defenderse: el **recurso de amparo**. No es una demanda ordinaria: es **gratuito, puede presentarse en línea y sin abogado**, y se resuelve mediante un trámite preferente y sumario ante la Sala Constitucional de la Corte Suprema de Justicia.
 
 Esta guía explica, con base en la Ley de la Jurisdicción Constitucional (Ley N.° 7135) y en la jurisprudencia consolidada de la Sala Cuarta, cómo funciona el recurso de amparo en Costa Rica, qué derechos protege, cuál es el plazo de dos meses para interponerlo y cuáles son los errores frecuentes que llevan al rechazo de plano. Si ya recibió una orden, sanción o negativa que considera inconstitucional, lea con atención el apartado de plazos: en muchos casos el tiempo corre desde que cesan los efectos del acto, no desde que fue notificado.
 
@@ -38,7 +40,7 @@ Esta guía explica, con base en la Ley de la Jurisdicción Constitucional (Ley N
 
 El recurso de amparo es una garantía constitucional regulada en el artículo 48 de la Constitución Política y desarrollada en los artículos 29 a 56 de la Ley de la Jurisdicción Constitucional. Su propósito es **mantener o restablecer el goce de los derechos fundamentales** consagrados en la Constitución Política y en los instrumentos internacionales sobre derechos humanos vigentes en Costa Rica.
 
-A diferencia de la demanda contencioso-administrativa, que se tramita ante el Tribunal Contencioso Administrativo bajo el Código Procesal Contencioso Administrativo y puede durar varios años, el amparo se rige por dos principios procesales que lo hacen único:
+A diferencia de la [demanda contencioso-administrativa](/areas/litigio-contencioso-administrativo), que se tramita ante el Tribunal Contencioso Administrativo bajo el Código Procesal Contencioso Administrativo y puede durar varios años, el amparo se rige por dos principios procesales que lo hacen único:
 
 - **Sumariedad.** El procedimiento está diseñado para resolverse en plazos cortos y sin las dilaciones del proceso ordinario.
 - **Preferencia.** La Sala Constitucional debe darle preferencia sobre cualquier otro asunto, salvo el hábeas corpus.
@@ -69,7 +71,7 @@ Casos típicos: hospitales privados, universidades, colegios privados, asociacio
 
 El artículo 30 de la ley excluye expresamente:
 
-- Las **leyes y demás disposiciones normativas**, salvo cuando se impugnen junto con actos de aplicación o cuando se trate de normas autoaplicativas. Para impugnar la norma en sí misma, la vía es la **acción de inconstitucionalidad**.
+- Las **leyes y demás disposiciones normativas**, salvo cuando se impugnen junto con actos de aplicación o cuando se trate de normas autoaplicativas. Para impugnar la norma en sí misma, la vía es la [**acción de inconstitucionalidad**](/areas/acciones-de-inconstitucionalidad).
 - Las **resoluciones y actuaciones jurisdiccionales del Poder Judicial**.
 - Los **actos consentidos** expresamente por el agraviado.
 - Cuando ya haya cesado la lesión del derecho.
@@ -143,13 +145,43 @@ La Sala Constitucional admite cuatro vías de presentación, todas igualmente v�
 
 **1. Presentación electrónica.** A través del sitio web oficial de la Sala Constitucional, mediante el formulario habilitado, o por medio de la plataforma del Poder Judicial **Gestión en Línea**. Es el medio más utilizado actualmente y permite presentar el recurso desde cualquier lugar y a cualquier hora.
 
-**2. Presentación presencial en la sede de la Sala.** Sabana Sur, San José. Horario de lunes a viernes, de 7:30 a.m. a 4:30 p.m.
+**2. Presentación presencial.** En el edificio de la Sala Constitucional, en **Sabana Sur (Calle Morenos, 75 metros al sur de la iglesia del Perpetuo Socorro)**, de lunes a viernes de 7:30 a.m. a 4:30 p.m.
 
-**3. Presentación fuera de horario o en días no hábiles.** En el edificio de la Corte Suprema de Justicia, San José centro. Esto incluye fines de semana y feriados, lo cual es relevante cuando hay urgencia.
+**3. Presentación fuera del horario hábil.** El turno vespertino (de 4:30 p.m. a 9:30 p.m.) y la recepción en horas y días no hábiles —incluidos fines de semana y feriados— se atienden en el **mismo edificio de la Sala en Sabana Sur**. Es relevante cuando hay urgencia.
 
 **4. Presentación por correo o fax.** Aunque cada vez menos frecuente, sigue siendo válida.
 
 Si presenta el escrito de forma presencial, **lleve dos copias**: una queda en el expediente y la otra le será devuelta con sello de recibido. Conserve esa copia: es su comprobante.
+
+### Cómo presentar el recurso de amparo en línea, paso a paso
+
+La vía electrónica es hoy la más utilizada: se tramita por la plataforma **Gestión en Línea** del Poder Judicial y permite presentar el recurso desde cualquier lugar y a cualquier hora. Solo exige un trámite previo que se hace una única vez.
+
+**Antes de empezar: obtenga su clave de Gestión en Línea.** Si todavía no la tiene, debe solicitarla **una sola vez y de forma presencial** en cualquier despacho judicial del país, presentando su cédula de identidad. Con esa clave podrá presentar este recurso —y cualquier otro proceso— por internet en adelante. *(Si vive en una zona alejada donde no hay ningún despacho judicial al que pueda acceder y tampoco puede enviar el recurso por fax, la Sala Constitucional admite, de forma excepcional, su presentación por otros medios.)*
+
+Una vez que tenga la clave, el procedimiento es el siguiente:
+
+1. **Redacte y firme el escrito.** Debe contener lo que exige el artículo 38 (ver el detalle más abajo) e ir **firmado**. Tenga el archivo listo para adjuntarlo, preferiblemente en PDF.
+2. **Ingrese a la plataforma.** Entre a [pjenlinea.poder-judicial.go.cr](https://pjenlinea.poder-judicial.go.cr/sistemagestionenlineapj/publica/), seleccione **«Acceso privado»** y digite su usuario y su clave.
+3. **Abra el envío de un caso nuevo.** En el menú **«Servicios»**, ingrese a **«Envío de casos nuevos»** y luego a **«Envío de demandas o denuncias»**.
+4. **Complete los datos del caso.** Llene el formulario de **datos generales** del caso y el de **intervinientes** (las partes), y pulse **«Guardar Parte»** en cada uno. De forma opcional puede agregar los medios de notificación y los representantes legales de cada interviniente, y guardarlos.
+5. **Elija bien el despacho (paso decisivo).** Seleccione **«I Circuito Judicial de San José»** y, como despacho, **«Sala Constitucional»**. Si se equivoca aquí, el recurso llega a otra oficina y se atrasa.
+6. **Adjunte el escrito y envíe.** Suba el archivo con el recurso y pulse **«Enviar»**. Conserve el comprobante de envío con fecha y hora: es su constancia de presentación.
+
+**No olvide** señalar un medio para recibir notificaciones (por ejemplo, un correo electrónico) y **firmar** el recurso.
+
+> ¿Tiene dudas con la plataforma? La Sala Constitucional cuenta con una línea telefónica gratuita: **800-SALA 4TA (800-7252-482)**.
+
+Conforme al artículo 38, el escrito debe expresar:
+
+- El hecho o la omisión que lo motiva.
+- El derecho que se considera violado o amenazado.
+- El nombre del servidor público u órgano autor de la amenaza o del agravio.
+- Las pruebas de cargo.
+
+En la práctica conviene, además, identificarse (nombre y número de cédula), indicar si se actúa a favor de otra persona y señalar un medio para recibir notificaciones (artículo 40).
+
+> Recuerde que, por el artículo 41, la sola presentación del amparo **suspende de pleno derecho** la aplicación al recurrente del acto impugnado. Presentarlo cuanto antes activa esa protección.
 
 ---
 
@@ -161,7 +193,7 @@ Una vez recibido el escrito, el trámite sigue estas etapas:
 
 2. **Suspensión de los actos impugnados.** Conforme al artículo 41 de la Ley de la Jurisdicción Constitucional, la sola interposición del amparo suspende —de pleno derecho— la aplicación al recurrente de los actos concretos impugnados. La Sala puede, a petición de la Administración o de oficio, mantener la ejecución cuando la suspensión cause o amenace causar daños mayores al interés público que los que la ejecución causaría al agraviado, dictando las cautelas que correspondan.
 
-3. **Informe de la autoridad recurrida.** El artículo 43 ordena pedir informe al servidor o titular del órgano señalado como autor del agravio. La autoridad debe contestar bajo juramento; sus afirmaciones se tienen como ciertas y su falsedad genera responsabilidad.
+3. **Informe de la autoridad recurrida.** El artículo 43 ordena pedir informe al servidor o al titular del órgano señalado como autor del agravio. El plazo es de uno a tres días (artículo 44) y el informe se rinde bajo juramento: cualquier inexactitud o falsedad hace incurrir al funcionario en las penas del perjurio o del falso testimonio. Si la autoridad **no rinde el informe** dentro del plazo, se tienen por ciertos los hechos alegados por el recurrente y la Sala resuelve sin más trámite (artículo 45).
 
 4. **Diligencias para mejor proveer.** El artículo 47 faculta a la Sala para ordenar, antes de dictar sentencia, cualquier otra diligencia que considere necesaria.
 
@@ -244,6 +276,10 @@ Sí, siempre que el nuevo amparo se base en hechos distintos, derechos diferente
 ### ¿Qué es la "amenaza" de violación de un derecho?
 
 El artículo 29 admite el amparo no solo contra violaciones consumadas, sino también contra **amenazas inminentes**. Por ejemplo: el anuncio de un despido sin debido proceso, la notificación de una orden de demolición sin acto firme, el aviso de un cierre de establecimiento sin procedimiento previo. La amenaza debe ser cierta, próxima y verificable; las hipotéticas no son suficientes.
+
+### ¿Se puede presentar el recurso de amparo en línea en Costa Rica?
+
+Sí, y es hoy la vía más utilizada. Se hace por la plataforma *Gestión en Línea* del Poder Judicial. Lo único que se necesita de previo es una **clave de acceso**, que se solicita gratis y una sola vez, de forma presencial, en cualquier despacho judicial presentando la cédula de identidad. Con la clave puede presentar el recurso desde cualquier lugar y a cualquier hora —incluso fines de semana y feriados—, eligiendo el **I Circuito Judicial de San José** y la **Sala Constitucional**. El sistema genera un comprobante con fecha y hora. No requiere abogado ni pago alguno.
 
 ---
 
