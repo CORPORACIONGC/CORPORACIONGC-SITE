@@ -6,10 +6,12 @@ import {
   CircleNotch,
   CheckCircle,
   WarningCircle,
+  WhatsappLogo,
 } from "@phosphor-icons/react";
 import { FIRM_CONTACT } from "@/lib/constants";
 import { sendContactEmail } from "@/app/actions/send-email";
 import { trackFormSubmit } from "@/lib/analytics";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -21,6 +23,12 @@ export function LeadForm() {
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+
+  /* Alternativa de contacto por WhatsApp (canal preferido por la mayoría de
+     consultantes). Mensaje genérico pre-rellenado; mismo número del bufete. */
+  const whatsappUrl = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(
+    FIRM_CONTACT.whatsappMessage
+  )}`;
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -75,12 +83,15 @@ export function LeadForm() {
 
       {/* Name */}
       <div>
-        <label className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+        <label htmlFor="lf-name" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
           Nombre completo *
         </label>
         <input
+          id="lf-name"
+          name="name"
           type="text"
           required
+          autoComplete="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           disabled={state === "submitting"}
@@ -92,12 +103,16 @@ export function LeadForm() {
       {/* Email + Phone row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+          <label htmlFor="lf-email" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
             Correo electrónico *
           </label>
           <input
+            id="lf-email"
+            name="email"
             type="email"
             required
+            autoComplete="email"
+            inputMode="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
@@ -106,11 +121,15 @@ export function LeadForm() {
           />
         </div>
         <div>
-          <label className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+          <label htmlFor="lf-phone" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
             Teléfono
           </label>
           <input
+            id="lf-phone"
+            name="phone"
             type="tel"
+            autoComplete="tel"
+            inputMode="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             disabled={state === "submitting"}
@@ -122,10 +141,12 @@ export function LeadForm() {
 
       {/* Message */}
       <div>
-        <label className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+        <label htmlFor="lf-message" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
           Describa brevemente su consulta *
         </label>
         <textarea
+          id="lf-message"
+          name="message"
           required
           rows={4}
           value={message}
@@ -170,6 +191,25 @@ export function LeadForm() {
           </>
         )}
       </button>
+
+      {/* Salida directa a WhatsApp — canal preferido por la mayoría de
+          consultantes. Ofrece una alternativa inmediata a quien no desea
+          completar el formulario, reduciendo el abandono. */}
+      <div className="flex items-center gap-3 pt-1">
+        <div className="h-px flex-1 bg-cream/[0.08]" />
+        <span className="text-[10px] uppercase tracking-wider text-cream/30">o</span>
+        <div className="h-px flex-1 bg-cream/[0.08]" />
+      </div>
+      <TrackedContactLink
+        href={whatsappUrl}
+        contactTarget="lead-form-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-cream/15 bg-cream/[0.04] text-cream text-sm font-medium tracking-wide hover:border-gold/40 hover:bg-cream/[0.07] active:scale-[0.97] transition-all duration-300"
+      >
+        <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
+        Prefiero escribir por WhatsApp
+      </TrackedContactLink>
 
       <p className="text-[10px] text-cream/30 text-center leading-relaxed">
         Sus datos se tratan de forma confidencial y no se comparten con
