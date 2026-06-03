@@ -296,7 +296,7 @@ export default async function ArticlePage({
                 señal de confianza al lector. Para personas usa la credencial
                 de ATTORNEYS (misma fuente que las imágenes OG). Para la voz
                 institucional usa ORG_AUTHOR_CREDENTIAL. */}
-            {article.author && (
+            {article.author && article.authorVisible !== false && (
               <div className="mb-10">
                 <div className="text-[10px] tracking-[0.3em] uppercase text-gold/60 font-medium mb-2">
                   Por
@@ -406,7 +406,7 @@ export default async function ArticlePage({
             )}
 
             {/* About the Author(s) */}
-            {authorMembers.length > 0 && (
+            {authorMembers.length > 0 && article.authorVisible !== false && (
               <div className="mt-16 pt-8 border-t border-cream/[0.06]">
                 <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-5">
                   {authorMembers.length > 1 ? "Sobre los autores" : "Sobre el autor"}

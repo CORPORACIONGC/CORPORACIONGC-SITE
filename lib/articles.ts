@@ -18,6 +18,9 @@ export type ArticleMeta = {
   type: "article" | "pdf";
   pdfFile?: string;
   author?: string;
+  /** Si es false, el autor NO se muestra en la página (byline + bio ocultos)
+      pero SÍ se emite en el JSON-LD (señal de autoría para SEO/E-E-A-T). */
+  authorVisible?: boolean;
   institution?: string;
   publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley" | "guia";
   sourceReference?: string;
@@ -41,6 +44,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     type: (data.type as "article" | "pdf") || "article",
     pdfFile: data.pdfFile as string | undefined,
     author: data.author as string | undefined,
+    authorVisible: data.authorVisible as boolean | undefined,
     institution: data.institution as string | undefined,
     publicationType: data.publicationType as ArticleMeta["publicationType"],
     sourceReference: data.sourceReference as string | undefined,

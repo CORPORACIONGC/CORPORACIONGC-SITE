@@ -1,24 +1,47 @@
 // lib/page-metadata.ts
 // Metadata estática centralizada — para importar desde cada page.tsx.
 // Las rutas dinámicas usan generateMetadata() en su page.tsx (ver README).
+//
+// IMPORTANTE — Next.js hace *shallow merge* de metadata: cuando una ruta define
+// su propio `openGraph` o `twitter`, REEMPLAZA por completo el del root layout
+// (no se fusionan campo a campo). Por eso CADA objeto openGraph debe repetir
+// `siteName` + `locale` (+ `type`) y CADA twitter debe repetir `card`; de lo
+// contrario las páginas hijas pierden `og:locale=es_CR`, `og:site_name` y caen
+// a `twitter:card=summary`. Los helpers `og()` y `tw()` garantizan esos valores.
 
 import type { Metadata } from "next";
+
+const SITE_NAME = "Corporación GC";
+const LOCALE = "es_CR";
+
+type OG = NonNullable<Metadata["openGraph"]>;
+type TW = NonNullable<Metadata["twitter"]>;
+
+/** openGraph con los defaults que el shallow-merge de Next borraría. */
+function og(overrides: OG): OG {
+  return { type: "website", siteName: SITE_NAME, locale: LOCALE, ...overrides };
+}
+/** twitter con card grande garantizada (si no, Next cae a "summary"). */
+function tw(overrides: TW): TW {
+  return { card: "summary_large_image", ...overrides };
+}
 
 export const homeMetadata: Metadata = {
   title: "Corporación GC · Abogados en Derecho Público | Costa Rica",
   description:
     "Bufete líder en litigio contencioso-administrativo en Costa Rica. Dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA.",
-  openGraph: {
+  alternates: { canonical: "/" },
+  openGraph: og({
     title: "Corporación GC · Abogados en Derecho Público en Costa Rica",
     description:
       "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
     url: "/",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Corporación GC | Abogados en Derecho Público — CR",
     description:
       "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
-  },
+  }),
 };
 
 export const sobreNosotrosMetadata: Metadata = {
@@ -27,34 +50,36 @@ export const sobreNosotrosMetadata: Metadata = {
   title: "Sobre Nosotros",
   description:
     "Bufete fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados al Derecho Público.",
-  openGraph: {
+  alternates: { canonical: "/sobre-nosotros" },
+  openGraph: og({
     title: "Quiénes somos · Corporación GC, Costa Rica",
     description:
       "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y co-redactor del CPCA.",
     url: "/sobre-nosotros",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Sobre Nosotros · Corporación GC",
     description:
       "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y co-redactor del CPCA.",
-  },
+  }),
 };
 
 export const areasMetadata: Metadata = {
   title: "Áreas de Práctica · Derecho Público y Administrativo",
   description:
     "32 áreas en Derecho Público: contencioso-administrativo, medidas cautelares, casación ante Sala Primera, amparo, contratación pública y más. Costa Rica.",
-  openGraph: {
+  alternates: { canonical: "/areas" },
+  openGraph: og({
     title: "Áreas de Práctica · Corporación GC, Costa Rica",
     description:
       "32 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
     url: "/areas",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Áreas de Práctica · Corporación GC",
     description:
       "32 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
-  },
+  }),
 };
 
 export const articulosMetadata: Metadata = {
@@ -62,17 +87,18 @@ export const articulosMetadata: Metadata = {
   title: "Publicaciones Académicas",
   description:
     "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
-  openGraph: {
+  alternates: { canonical: "/articulos" },
+  openGraph: og({
     title: "Publicaciones Académicas · Corporación GC, CR",
     description:
       "Artículos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público escritas por los abogados de Corporación GC. Doctrina jurídica costarricense.",
     url: "/articulos",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Publicaciones Académicas · Corporación GC",
     description:
       "Artículos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público escritas por los abogados de Corporación GC. Doctrina jurídica costarricense.",
-  },
+  }),
 };
 
 export const jurisprudenciaMetadata: Metadata = {
@@ -80,17 +106,18 @@ export const jurisprudenciaMetadata: Metadata = {
     "Jurisprudencia Destacada · Sentencias del Dr. Óscar González Camacho",
   description:
     "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
-  openGraph: {
+  alternates: { canonical: "/jurisprudencia-destacada" },
+  openGraph: og({
     title: "Jurisprudencia Destacada · Corporación GC, Costa Rica",
     description:
       "Selección editorial de fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
     url: "/jurisprudencia-destacada",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Jurisprudencia Destacada · Corporación GC",
     description:
       "Selección editorial de fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
-  },
+  }),
 };
 
 export const contactoMetadata: Metadata = {
@@ -99,17 +126,18 @@ export const contactoMetadata: Metadata = {
   title: "Contacto",
   description:
     "Contacte a Corporación GC, bufete especialista en Derecho Público y litigio contencioso-administrativo en Costa Rica. Escríbanos por formulario, WhatsApp, correo o teléfono y le orientamos sin compromiso.",
-  openGraph: {
+  alternates: { canonical: "/contacto" },
+  openGraph: og({
     title: "Contacto · Corporación GC, Costa Rica",
     description:
       "Hablemos de su caso. Bufete dedicado al Derecho Público y al contencioso-administrativo en Costa Rica, dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA. Le orientamos sin compromiso.",
     url: "/contacto",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Contacto · Corporación GC",
     description:
       "Hablemos de su caso. Bufete especialista en Derecho Público y contencioso-administrativo en Costa Rica. Le orientamos sin compromiso.",
-  },
+  }),
 };
 
 export const privacidadMetadata: Metadata = {
@@ -117,18 +145,19 @@ export const privacidadMetadata: Metadata = {
   title: "Política de Privacidad",
   description:
     "Política de privacidad de Corporación GC. Tratamiento de datos personales conforme a la Ley N.° 8968 y al Reglamento de PRODHAB. Costa Rica.",
+  alternates: { canonical: "/politica-de-privacidad" },
   robots: { index: false, follow: true },
-  openGraph: {
+  openGraph: og({
     title: "Política de Privacidad — Corporación GC",
     description:
       "Cómo Corporación GC recopila, usa y protege los datos personales de sus visitantes y clientes conforme a la Ley de Protección de la Persona frente al Tratamiento de sus Datos.",
     url: "/politica-de-privacidad",
-  },
-  twitter: {
+  }),
+  twitter: tw({
     title: "Política de Privacidad · Corporación GC",
     description:
       "Cómo Corporación GC recopila, usa y protege los datos personales de sus visitantes y clientes conforme a la Ley de Protección de la Persona frente al Tratamiento de sus Datos.",
-  },
+  }),
 };
 
 // =============================================================
@@ -159,12 +188,12 @@ export async function generateAreaMetadata(
   return {
     title,
     description,
-    openGraph: {
+    openGraph: og({
       title: `${title} · Corporación GC`,
       description,
       url: `/areas/${slug}`,
-    },
-    twitter: { title, description },
+    }),
+    twitter: tw({ title, description }),
   };
 }
 
@@ -178,13 +207,13 @@ export async function generateAttorneyMetadata(
   return {
     title: a.seoTitle,
     description: a.seoDescription,
-    openGraph: {
+    openGraph: og({
       title: a.ogTitle,
       description: a.ogDescription,
       url: `/abogados/${slug}`,
       type: "profile",
-    },
-    twitter: { title: a.twitterTitle, description: a.ogDescription },
+    }),
+    twitter: tw({ title: a.twitterTitle, description: a.ogDescription }),
   };
 }
 
@@ -236,7 +265,8 @@ export function buildJurisprudenciaMetadata(
   return {
     title: seoTitle,
     description: sentencia.metaDescription,
-    openGraph: {
+    alternates: { canonical: `/jurisprudencia-destacada/${slug}` },
+    openGraph: og({
       title: ogTitle,
       description: sentencia.metaDescription,
       type: "article",
@@ -250,11 +280,11 @@ export function buildJurisprudenciaMetadata(
         "Jurisprudencia Costa Rica",
         "Sala Primera",
       ],
-    },
-    twitter: {
+    }),
+    twitter: tw({
       title: seoTitle,
       description: sentencia.metaDescription,
-    },
+    }),
   };
 }
 
@@ -283,7 +313,7 @@ export function buildArticleMetadata(
   return {
     title,
     description,
-    openGraph: {
+    openGraph: og({
       title: `${title} · Corporación GC`,
       description,
       type: "article",
@@ -291,7 +321,7 @@ export function buildArticleMetadata(
       publishedTime: article.date,
       authors: [article.author],
       section: "Derecho Público",
-    },
-    twitter: { title, description },
+    }),
+    twitter: tw({ title, description }),
   };
 }

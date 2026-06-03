@@ -4,7 +4,8 @@ date: "2026-03-28"
 excerpt: "El Derecho Contencioso-Administrativo es la jurisdicción que permite demandar al Estado cuando actúa de forma ilegal. En Costa Rica, esta materia exige abogados con dominio del CPCA, experiencia ante el TCA y capacidad de litigio oral. Esta guía le explica qué implica y qué buscar."
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Litigio", "Abogados", "Costa Rica"]
 type: "article"
-author: "Corporación GC"
+author: "Dr. Óscar Eduardo González Camacho"
+authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Abogado Contencioso-Administrativo en Costa Rica 2026"

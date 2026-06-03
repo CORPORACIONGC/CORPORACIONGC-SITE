@@ -4,7 +4,8 @@ date: "2026-03-28"
 excerpt: "Un proceso contencioso-administrativo puede durar años. Las medidas cautelares permiten proteger sus derechos desde el primer día — incluso antes de presentar la demanda. Conozca qué son, cuándo proceden y por qué pueden definir el resultado de su caso."
 tags: ["Guía práctica", "Medidas Cautelares", "CPCA", "Contencioso Administrativo", "Derecho Administrativo"]
 type: "article"
-author: "Corporación GC"
+author: "Dr. Óscar Eduardo González Camacho"
+authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Medidas Cautelares contra el Estado en Costa Rica 2026"
