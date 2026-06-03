@@ -11,7 +11,7 @@ export function GoogleMap() {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Ubicación de Corporación GC — OFIDENT, San Pedro"
+        title="Ubicación de Corporación GC — Barrio Dent, San José"
         className="w-full h-[280px] md:h-[350px] grayscale-[0.3] contrast-[1.05]"
       />
     </div>

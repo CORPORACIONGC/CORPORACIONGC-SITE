@@ -66,16 +66,16 @@ const jsonLdOrganization = {
   email: "info@corporaciongc.com",
   priceRange: "$$",
   currenciesAccepted: "CRC, USD",
-  areaServed: {
-    "@type": "Country",
-    name: "Costa Rica",
-  },
+  areaServed: [
+    { "@type": "Country", name: "Costa Rica" },
+    { "@type": "City", name: "San José" },
+    { "@type": "AdministrativeArea", name: "Gran Área Metropolitana" },
+  ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "OFIDENT, Barrio Dent",
-    addressLocality: "Montes de Oca",
+    streetAddress: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent",
+    addressLocality: "San José",
     addressRegion: "San Jos\u00e9",
-    postalCode: "11501",
     addressCountry: "CR",
   },
   geo: {
@@ -178,12 +178,12 @@ const jsonLdOrganization = {
       },
     ],
   },
-  hasMap: "https://maps.google.com/?q=Ofident,+Barrio+Dent,+Montes+de+Oca,+San+Jos%C3%A9,+Costa+Rica",
+  hasMap: "https://maps.google.com/?q=Centro+Cultural+Norteamericano,+Barrio+Dent,+San+Jos%C3%A9,+Costa+Rica",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+506 8317-9564",
     contactType: "customer service",
-    availableLanguage: ["es", "en", "fr", "de", "it"],
+    availableLanguage: ["es"],
     areaServed: "CR",
   },
   sameAs: [
