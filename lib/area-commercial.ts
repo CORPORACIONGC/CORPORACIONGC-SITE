@@ -1602,4 +1602,633 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       },
     ],
   },
+  "comercio-internacional": {
+    hookHeadline: "¿Le aplicaron un derecho antidumping, una clasificación arancelaria distinta o le frenaron un embarque en aduana?",
+    hookSubtext:
+      "El comercio internacional costarricense vive un momento de tensión: investigaciones de defensa comercial activas en la región, ajustes de valoración y clasificación en el sistema TICA, y un giro global hacia el proteccionismo arancelario que está reescribiendo cadenas de suministro. En 2023, Costa Rica obtuvo un fallo favorable de un grupo especial de la OMC contra las medidas antidumping de República Dominicana sobre las varillas de acero corrugado (diferencia DS605), prueba de que estos casos se ganan con técnica. Acompañamos a importadores, exportadores, productores nacionales y agentes aduaneros que enfrentan ajustes de la DGA, derechos antidumping o compensatorios, o controversias bajo tratados de libre comercio. Los plazos para recurrir son cortos y la fundamentación técnica decide el resultado.",
+    scenariosTitle: "¿Cuándo necesita defensa en comercio internacional o aduanas?",
+    triggerScenarios: [
+      "La aduana le ajustó el valor en aduana, la clasificación arancelaria o el origen de su mercancía y le exige un pago adicional",
+      "Recibió una resolución de la Dirección General de Aduanas que quiere recurrir ante el Tribunal Aduanero Nacional",
+      "Sus productos quedaron sujetos a un derecho antidumping o compensatorio en otro país y exporta desde Costa Rica",
+      "El sector productor nacional enfrenta importaciones a precios desleales y evalúa solicitar una investigación de defensa comercial",
+      "Le negaron un trato arancelario preferencial al amparo del CAFTA-DR u otro TLC por dudas sobre el origen",
+      "La administración aduanera le inició un procedimiento sancionatorio o le determinó una obligación tributaria aduanera",
+      "Necesita estructurar operaciones de importación, exportación o régimen de zona franca con seguridad jurídica",
+      "Una controversia comercial debe ventilarse ante los mecanismos de solución de diferencias de un TLC o de la OMC",
+    ],
+    services: [
+      { title: "Impugnación de ajustes y resoluciones aduaneras", description: "Asumimos los recursos de reconsideración y de apelación ante el Tribunal Aduanero Nacional contra las resoluciones de la Dirección General de Aduanas y las aduanas de control, dentro del plazo de quince días hábiles siguientes a la notificación (art. 198, Ley General de Aduanas, N.° 7557). Litigamos ajustes de valoración, clasificación arancelaria y origen, y agotada la vía administrativa continuamos en sede contencioso-administrativa." },
+      { title: "Defensa comercial: antidumping, derechos compensatorios y salvaguardias", description: "Representamos tanto al sector productor nacional que solicita protección como a importadores y exportadores investigados. Tramitamos solicitudes y nos personamos en investigaciones ante el MEIC, autoridad investigadora nacional, conforme al Reglamento Centroamericano sobre Prácticas Desleales de Comercio (Resolución COMIECO N.° 193-2007) y a los Acuerdos de la OMC Antidumping, sobre Subvenciones y Medidas Compensatorias y sobre Salvaguardias." },
+      { title: "Solución de controversias bajo TLCs y OMC", description: "Asesoramos en los mecanismos de solución de diferencias del CAFTA-DR (aprobado por Ley N.° 8622, vigente desde el 1.° de enero de 2009) y de los demás tratados suscritos por Costa Rica, así como en el sistema de la OMC. La diferencia DS605 ante la OMC, en que Costa Rica prevaleció contra medidas antidumping sobre varillas de acero, ilustra el tipo de defensa que articulamos." },
+      { title: "Trato preferencial, reglas de origen y certificación", description: "Verificamos el cumplimiento de las reglas de origen para el aprovechamiento de preferencias arancelarias al amparo del CAFTA-DR y demás TLCs, defendemos la calificación de origen ante cuestionamientos de la autoridad aduanera y prevenimos contingencias en verificaciones de origen que pueden derivar en el cobro retroactivo de aranceles." },
+      { title: "Cumplimiento aduanero y régimen de zonas francas", description: "Estructuramos operaciones de importación, exportación, tránsito y regímenes especiales con apego a la Ley General de Aduanas (N.° 7557) y su reglamento, y asesoramos a empresas bajo el Régimen de Zonas Francas en su relación con PROCOMER y COMEX, creados por la Ley N.° 7638." },
+      { title: "Defensa en procedimientos sancionatorios y determinativos", description: "Asumimos la defensa técnica frente a procedimientos sancionatorios y determinativos de la obligación tributaria aduanera, garantizando el debido proceso y articulando la estrategia probatoria desde el inicio del expediente hasta el litigio contencioso-administrativo, cuando corresponda." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría en comercio internacional o derecho aduanero (aduanas, antidumping o TLC) en Costa Rica. Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Cómo recurro una resolución de la aduana con la que no estoy de acuerdo?",
+        answer:
+          "La Ley General de Aduanas (N.° 7557) prevé los recursos de reconsideración y de apelación ante el Tribunal Aduanero Nacional contra los actos finales dictados por la Dirección General de Aduanas y las aduanas de control. El plazo para interponerlos es de quince días hábiles contados a partir de la notificación del acto (art. 198), y puede usar uno solo o ambos. El Tribunal Aduanero Nacional es el órgano de alzada que agota la vía administrativa; agotada esta, el asunto puede llevarse a la jurisdicción contencioso-administrativa. Por la cortedad del plazo, conviene actuar de inmediato.",
+      },
+      {
+        question: "¿Quién investiga en Costa Rica el dumping, los subsidios y las salvaguardias?",
+        answer:
+          "La autoridad investigadora nacional en materia de defensa comercial es el Ministerio de Economía, Industria y Comercio (MEIC), no COMEX. Las investigaciones se rigen por el Reglamento Centroamericano sobre Prácticas Desleales de Comercio (aprobado por Resolución COMIECO N.° 193-2007), complementado por los Acuerdos de la OMC relativos a la aplicación del Artículo VI del GATT (Antidumping), sobre Subvenciones y Medidas Compensatorias y sobre Salvaguardias. La investigación suele iniciarse a solicitud de la rama de producción nacional, aunque la autoridad puede actuar de oficio en casos excepcionales.",
+      },
+      {
+        question: "¿Qué pasa si exporto desde Costa Rica y otro país me impone un derecho antidumping?",
+        answer:
+          "Puede defenderse en dos planos. En el procedimiento administrativo del país importador, personándose en la investigación para cuestionar el cálculo del margen de dumping, la determinación del daño y los aspectos procesales. Y en el plano interestatal, cuando la medida viola las normas multilaterales, el Estado costarricense puede activar el mecanismo de solución de diferencias de la OMC. Eso ocurrió en la diferencia DS605, donde Costa Rica reclamó contra las medidas antidumping de República Dominicana sobre las varillas de acero corrugado: el informe del grupo especial, distribuido el 27 de julio de 2023, dio la razón a Costa Rica en varias de sus alegaciones.",
+      },
+      {
+        question: "¿Qué riesgo hay si la aduana cuestiona el origen de mi mercancía bajo un TLC?",
+        answer:
+          "El trato arancelario preferencial de un tratado de libre comercio depende de que la mercancía cumpla las reglas de origen pactadas. Si en una verificación la autoridad aduanera concluye que el origen no se acredita, puede denegar la preferencia y cobrar el arancel de nación más favorecida, en ocasiones de forma retroactiva y con eventuales sanciones. Por eso es clave documentar el origen desde el inicio y atender técnicamente cualquier verificación. En el marco del CAFTA-DR (Ley N.° 8622), los criterios de origen y los procedimientos de verificación son detallados y exigen rigor probatorio.",
+      },
+      {
+        question: "¿En qué se diferencian COMEX, PROCOMER y la Dirección General de Aduanas?",
+        answer:
+          "El Ministerio de Comercio Exterior (COMEX) define y dirige la política comercial externa y negocia los tratados; PROCOMER es la entidad que promueve exportaciones e inversión y administra trámites como los del Régimen de Zonas Francas. Ambos fueron creados por la Ley N.° 7638 de 1996. La Dirección General de Aduanas, adscrita al Ministerio de Hacienda, es la autoridad que aplica la legislación aduanera en la importación y exportación de mercancías conforme a la Ley General de Aduanas (N.° 7557). Y, como se indicó, la defensa comercial (antidumping, compensatorios y salvaguardias) corresponde al MEIC. Identificar el órgano competente es el primer paso de cualquier estrategia.",
+      },
+      {
+        question: "¿Cómo afecta el giro proteccionista global a las empresas costarricenses?",
+        answer:
+          "El endurecimiento arancelario y la proliferación de investigaciones de defensa comercial a nivel internacional elevan el riesgo para exportadores e importadores costarricenses: nuevas barreras, ajustes de origen y disputas que antes eran excepcionales hoy son frecuentes. La respuesta no es reactiva sino preventiva: auditar el cumplimiento aduanero, blindar la documentación de origen, anticipar exposiciones a medidas antidumping en mercados de destino y, cuando proceda, activar los mecanismos de los TLCs y de la OMC. Acompañamos esa estrategia con la técnica que exige un litigio comercial moderno.",
+      },
+    ],
+  },
+  "gobierno-digital-inteligencia-artificial-datos": {
+    hookHeadline: "¿Su institución usa algoritmos para decidir, o la PRODHAB le abrió un procedimiento por datos?",
+    hookSubtext:
+      "El Estado costarricense ya decide con software: scoring, perfilado, automatización de trámites y, cada vez más, inteligencia artificial. Pero a 2026 Costa Rica NO tiene una ley específica de IA: la materia se rige por la protección de datos (Ley N.° 8968 y su Reglamento, Decreto Ejecutivo N.° 37554-JP), la firma y los documentos electrónicos (Ley N.° 8454), el régimen de Gobierno Digital (Ley N.° 9943) y los principios del derecho administrativo —legalidad, debido proceso y motivación—. Eso convierte cada decisión algorítmica en un terreno jurídicamente delicado. Corporación GC, dirigida por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508), asesora a instituciones y empresas sobre gobernanza de datos, transparencia algorítmica y defensa ante la PRODHAB.",
+    scenariosTitle: "¿Cuándo necesita asesoría en datos, IA y gobierno digital?",
+    triggerScenarios: [
+      "La PRODHAB le notificó una denuncia o inició un procedimiento por tratamiento indebido de datos personales",
+      "Su institución va a automatizar decisiones (perfilado, scoring o IA) que afectan derechos de las personas y necesita blindar la motivación",
+      "Recibió un requerimiento de acceso, rectificación o cancelación de datos (autodeterminación informativa) y no sabe cómo responder en plazo",
+      "Va a contratar una solución de IA o software con un proveedor y debe regular tratamiento de datos, transferencias y responsabilidades en el cartel y el contrato",
+      "Necesita inscribir o actualizar bases de datos ante la PRODHAB o diseñar protocolos de actuación y consentimiento informado",
+      "Una decisión administrativa basada en un algoritmo o sistema automatizado le perjudicó y carece de motivación o debido proceso",
+      "Su empresa debe alinearse con el estándar europeo (RGPD) ante el proyecto de reforma integral a la Ley N.° 8968 (Expediente N.° 23.097) o con los proyectos de IA en trámite (Expedientes N.° 23.771, 23.919 y 24.484)",
+    ],
+    services: [
+      { title: "Defensa ante la PRODHAB en procedimientos sancionatorios", description: "Representamos a responsables y encargados de tratamiento ante la Agencia de Protección de Datos de los Habitantes (PRODHAB) —órgano de desconcentración máxima adscrito al Ministerio de Justicia y Paz, creado por la Ley N.° 8968— en denuncias, inspecciones y procedimientos por violación al derecho de autodeterminación informativa (art. 4 Ley N.° 8968). Construimos la defensa técnica y, agotada la vía administrativa, impugnamos las resoluciones en sede contencioso-administrativa." },
+      { title: "Cumplimiento y gobernanza de datos personales (Ley N.° 8968)", description: "Diseñamos programas de cumplimiento conforme a la Ley N.° 8968 y su Reglamento (Decreto Ejecutivo N.° 37554-JP): protocolos de actuación, consentimiento informado, base de legitimación del tratamiento, manejo de datos sensibles, inscripción de bases de datos ante la PRODHAB y atención de los derechos de acceso, rectificación y cancelación dentro de los plazos de ley." },
+      { title: "Gobernanza algorítmica y transparencia en decisiones automatizadas", description: "Como en Costa Rica no existe a 2026 una ley específica de IA, anclamos el uso de algoritmos en el sector público a los principios realmente vigentes: legalidad y reserva de ley (art. 11 Constitución Política y art. 11 LGAP), debido proceso (art. 39 CP) y deber de motivación del acto administrativo. Diseñamos marcos que documenten la lógica de la decisión, la trazabilidad de los datos y la posibilidad de revisión humana, alineados además con la Estrategia Nacional de Inteligencia Artificial 2024-2027 (ENIA) del MICITT." },
+      { title: "Firma digital, documentos y trámites electrónicos (Ley N.° 8454)", description: "Asesoramos en la validez y eficacia jurídica de documentos electrónicos, firma digital certificada y notificaciones electrónicas conforme a la Ley N.° 8454, de modo que los actos y contratos electrónicos —públicos y privados— surtan plenos efectos y resistan una eventual impugnación." },
+      { title: "Datos e IA en contratación pública y convenios tecnológicos", description: "Revisamos y redactamos las cláusulas de tratamiento de datos, ciberseguridad, propiedad de los modelos, transferencias internacionales y responsabilidad en carteles, contratos y convenios para adquirir software, servicios en la nube o soluciones de IA, articulando la normativa de datos con el régimen de contratación administrativa y de Gobierno Digital (Ley N.° 9943)." },
+      { title: "Litigio constitucional y contencioso por decisiones algorítmicas", description: "Impugnamos por la vía de amparo ante la Sala Constitucional o por la vía contencioso-administrativa las decisiones automatizadas o tratamientos de datos que vulneren la intimidad, la autodeterminación informativa o el debido proceso, y reclamamos la responsabilidad patrimonial de la Administración cuando corresponda." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría sobre protección de datos, gobierno digital o uso de inteligencia artificial en Costa Rica. Me gustaría coordinar una consulta con Corporación GC.",
+    commercialFaq: [
+      {
+        question: "¿Existe en Costa Rica una ley de inteligencia artificial?",
+        answer:
+          "No. A 2026 Costa Rica no cuenta con una ley específica que regule la inteligencia artificial. Lo que existe son tres proyectos de ley en trámite en la Asamblea Legislativa (Expedientes N.° 23.771, 23.919 y 24.484) y una política pública: la Estrategia Nacional de Inteligencia Artificial 2024-2027 (ENIA), presentada por el MICITT en octubre de 2024, que no es una ley sino un instrumento de planificación. Mientras tanto, el uso de IA se rige por el marco realmente vigente: la protección de datos (Ley N.° 8968), la firma y los documentos electrónicos (Ley N.° 8454), el Gobierno Digital (Ley N.° 9943) y los principios del derecho administrativo. Desconfíe de quien le cite una 'Ley de IA' costarricense: no existe.",
+      },
+      {
+        question: "¿Qué es la PRODHAB y cuándo puede sancionarme?",
+        answer:
+          "La Agencia de Protección de Datos de los Habitantes (PRODHAB) es el órgano —de desconcentración máxima adscrito al Ministerio de Justicia y Paz— creado por la Ley N.° 8968 para velar por el derecho de autodeterminación informativa de las personas (art. 4). Fiscaliza el tratamiento de datos en bases automatizadas o manuales, públicas y privadas, conoce denuncias y puede imponer sanciones administrativas y económicas a los responsables que incumplan la ley o su Reglamento (Decreto Ejecutivo N.° 37554-JP). Si recibe una notificación de la PRODHAB, conviene actuar de inmediato: el procedimiento tiene fases y plazos, y una defensa temprana mejora el resultado.",
+      },
+      {
+        question: "¿Puede una institución pública decidir mi caso con un algoritmo o IA?",
+        answer:
+          "Puede apoyarse en herramientas automatizadas, pero la decisión sigue siendo un acto administrativo y debe cumplir los mismos requisitos que cualquier otro: estar habilitada por norma (principio de legalidad, art. 11 de la Constitución Política y art. 11 de la Ley General de la Administración Pública), respetar el debido proceso (art. 39 CP) y estar debidamente motivada. Un acto que se limite a invocar el resultado de un algoritmo, sin explicar la lógica ni permitir defensa, es impugnable. Por eso recomendamos a las instituciones documentar la trazabilidad de los datos y prever la revisión humana de las decisiones.",
+      },
+      {
+        question: "¿Qué derechos tengo sobre mis datos personales?",
+        answer:
+          "La Ley N.° 8968 reconoce el derecho a la autodeterminación informativa (art. 4), que comprende los derechos de acceso, rectificación y cancelación: usted puede saber qué datos suyos tiene una entidad, de dónde los obtuvo y para qué los usa, y exigir que se corrijan o eliminen cuando proceda. El tratamiento de datos sensibles tiene protección reforzada. Si una entidad ignora su solicitud o trata sus datos sin base legítima, puede acudir a la PRODHAB y, según el caso, a la vía de amparo ante la Sala Constitucional.",
+      },
+      {
+        question: "¿Tienen valor legal los documentos firmados digitalmente y los trámites electrónicos?",
+        answer:
+          "Sí. La Ley N.° 8454, de Certificados, Firmas Digitales y Documentos Electrónicos, establece que los documentos electrónicos y la firma digital certificada tienen eficacia jurídica y se equiparan, en términos generales, a sus equivalentes físicos, tanto en el ámbito privado como en la actuación del Estado y los entes públicos. Lo decisivo es que se cumplan los requisitos técnicos y de certificación: por eso revisamos que sus actos y contratos electrónicos estén bien constituidos y resistan una eventual impugnación.",
+      },
+      {
+        question: "¿Cómo debe regularse el tratamiento de datos cuando se contrata software o IA con un proveedor?",
+        answer:
+          "El cartel y el contrato deben definir con claridad quién es responsable y quién encargado del tratamiento, las finalidades autorizadas, las medidas de seguridad, el régimen de transferencias —especialmente las internacionales o hacia la nube— y las responsabilidades por incidentes, todo conforme a la Ley N.° 8968 y su Reglamento (Decreto Ejecutivo N.° 37554-JP). En el sector público, esto se articula además con la normativa de contratación administrativa y con el régimen de Gobierno Digital (Ley N.° 9943). Una cláusula bien redactada le evita asumir, por omisión, responsabilidades del proveedor.",
+      },
+    ],
+  },
+  "regulacion-ambiental-mercados-carbono": {
+    hookHeadline: "¿SETENA frenó su proyecto o necesita estructurar carbono neutralidad sin pisar un vacío legal?",
+    hookSubtext:
+      "En Costa Rica, ninguna obra que altere el ambiente puede iniciar sin la viabilidad ambiental previa de la SETENA: la evaluación de impacto ambiental es requisito indispensable de arranque (art. 17, Ley Orgánica del Ambiente, Ley N.° 7554), y la Sala Constitucional ha hecho del derecho a un ambiente sano (art. 50 de la Constitución Política) un estándar exigente. Al mismo tiempo, la carbono neutralidad del país descansa en gran medida en decretos y política pública —no en una ley marco de mercados de carbono—, lo que genera incertidumbre para quien quiere compensar, vender créditos o exportar bajo nuevas reglas climáticas. Acompañamos a desarrolladores, industria, agroexportadores y organizaciones que buscan certificarse, en el difícil punto donde el rigor ambiental, el plazo del proyecto y la oportunidad de los mercados de carbono se cruzan.",
+    scenariosTitle: "¿Cuándo necesita un abogado en materia ambiental y de carbono?",
+    triggerScenarios: [
+      "La SETENA le rechazó, archivó o suspendió la viabilidad ambiental de su proyecto",
+      "Le exigieron un estudio de impacto ambiental y no sabe en qué categoría cae su obra ni qué instrumento aplica",
+      "Recibió una medida cautelar, clausura o denuncia ambiental que paralizó su operación",
+      "Un recurso de amparo ante la Sala Constitucional detuvo su proyecto por motivos ambientales",
+      "Quiere certificar su organización en carbono neutralidad o compensar emisiones y necesita claridad sobre el régimen aplicable",
+      "Va a estructurar, comprar o vender créditos de carbono o Unidades Costarricenses de Compensación y necesita seguridad jurídica",
+      "Es agroexportador o industria y debe anticiparse a exigencias climáticas de sus compradores o de la regulación europea de frontera",
+    ],
+    services: [
+      { title: "Tramitación y defensa de la viabilidad ambiental ante SETENA", description: "Gestionamos el proceso de evaluación de impacto ambiental ante la Secretaría Técnica Nacional Ambiental —órgano de desconcentración máxima del MINAE creado por la Ley N.° 7554—, desde la determinación del instrumento aplicable hasta la obtención de la viabilidad. La aprobación previa de SETENA es requisito indispensable para iniciar actividades, obras o proyectos que alteren el ambiente (art. 17, Ley N.° 7554), de modo que estructuramos el expediente para evitar prevenciones, archivos y retrasos costosos." },
+      { title: "Impugnación de resoluciones de SETENA, MINAE y SINAC", description: "Recurrimos en vía administrativa y contencioso-administrativa las resoluciones que rechazan la viabilidad ambiental, imponen medidas, ordenan clausuras o sancionan. Llevamos el caso ante el Tribunal Contencioso Administrativo y, cuando corresponde, defendemos o impugnamos actuaciones del Sistema Nacional de Áreas de Conservación (SINAC), integrado bajo la Ley de Biodiversidad (Ley N.° 7788)." },
+      { title: "Defensa y litigio en amparos ambientales ante la Sala Constitucional", description: "El derecho a un ambiente sano y ecológicamente equilibrado tiene rango constitucional (art. 50 de la Constitución Política) y la Sala Constitucional ha sido muy activa en suspender proyectos. Asumimos tanto la defensa de proyectos amparados como la promoción de recursos cuando una actuación administrativa lesiona derechos ambientales, con la experiencia de un equipo dirigido por un ex-Magistrado de la Corte Suprema." },
+      { title: "Asesoría en carbono neutralidad y mercados de carbono", description: "Le explicamos con honestidad el régimen vigente: la carbono neutralidad nacional se articula principalmente mediante el Programa País Carbono Neutralidad 2.0 (Decreto Ejecutivo N.° 41122-MINAE) y el Plan Nacional de Descarbonización 2018-2050 —instrumentos de política y decreto, no una ley marco de mercados de carbono—, apoyados en normas técnicas de medición de carácter voluntario. Estructuramos su estrategia de certificación, compensación y reporte sobre esa base, sin atribuirle un régimen legal que no existe." },
+      { title: "Estructuración legal de compensación y créditos de carbono", description: "Asesoramos en la compensación de emisiones mediante Unidades Costarricenses de Compensación, cuya gestión se canaliza a través del Fondo Nacional de Financiamiento Forestal (FONAFIFO), y en el Pago por Servicios Ambientales que reconoce la mitigación de gases de efecto invernadero como servicio ambiental (art. 3, Ley Forestal, Ley N.° 7575). Redactamos y revisamos los contratos, verificamos titularidad y adicionalidad, y blindamos la transacción frente a riesgos de doble contabilidad." },
+      { title: "Cumplimiento ambiental preventivo y due diligence", description: "Realizamos auditorías de cumplimiento ambiental para empresas, fondos y operaciones inmobiliarias: revisamos la vigencia de la viabilidad ambiental, las condiciones de SETENA, los permisos forestales y de aprovechamiento, y los pasivos ambientales antes de una compra, financiamiento o expansión. Identificamos el riesgo regulatorio y climático antes de que se convierta en clausura, sanción o contingencia en una transacción." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría en materia de regulación ambiental o mercados de carbono en Costa Rica (SETENA, evaluación de impacto ambiental o carbono neutralidad). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Por qué mi proyecto necesita la aprobación de SETENA antes de comenzar?",
+        answer:
+          "Porque la ley lo exige como requisito previo. Las actividades humanas que alteren o destruyan elementos del ambiente o generen residuos, materiales tóxicos o peligrosos requieren una evaluación de impacto ambiental por parte de la Secretaría Técnica Nacional Ambiental (SETENA), y su aprobación previa es requisito indispensable para iniciar actividades, obras o proyectos (art. 17, Ley Orgánica del Ambiente, Ley N.° 7554). Iniciar sin la viabilidad ambiental expone el proyecto a clausura, sanciones y a amparos ante la Sala Constitucional. Por eso conviene determinar desde el inicio en qué supuesto cae la obra y qué instrumento de evaluación corresponde.",
+      },
+      {
+        question: "¿Qué es SETENA y de quién depende?",
+        answer:
+          "La Secretaría Técnica Nacional Ambiental (SETENA) fue creada por la Ley Orgánica del Ambiente (Ley N.° 7554) como órgano de desconcentración máxima del Ministerio de Ambiente y Energía (MINAE). Su función central es analizar las evaluaciones de impacto ambiental, recomendar las acciones para minimizar el impacto y velar por el cumplimiento de sus resoluciones (art. 84, Ley N.° 7554). Es la autoridad ante la que se tramita y se defiende la viabilidad ambiental de un proyecto.",
+      },
+      {
+        question: "¿Existe en Costa Rica una ley de mercados de carbono?",
+        answer:
+          "No existe a la fecha una ley marco que regule de forma integral los mercados de carbono. La carbono neutralidad del país se articula principalmente por vía de política pública y decreto: el Programa País Carbono Neutralidad 2.0, oficializado mediante el Decreto Ejecutivo N.° 41122-MINAE, y el Plan Nacional de Descarbonización 2018-2050, cuya meta es alcanzar cero emisiones netas al 2050. La medición y demostración de la carbono neutralidad se apoya además en normas técnicas de aplicación voluntaria. Es importante tenerlo claro: quien estructure una estrategia de compensación o de créditos debe hacerlo sobre este andamiaje de decretos y normas técnicas, no sobre una ley que no existe.",
+      },
+      {
+        question: "¿Cómo puede mi organización compensar sus emisiones legalmente?",
+        answer:
+          "En el marco del Programa País Carbono Neutralidad, la compensación de emisiones se realiza mediante Unidades Costarricenses de Compensación, cuya gestión se canaliza a través del Fondo Nacional de Financiamiento Forestal (FONAFIFO). Estas unidades se vinculan con el Pago por Servicios Ambientales, ya que la Ley Forestal (Ley N.° 7575) reconoce expresamente la mitigación de gases de efecto invernadero —fijación, reducción, secuestro, almacenamiento y absorción— como un servicio ambiental (art. 3). Le ayudamos a estructurar la compensación, revisar los contratos y verificar que la transacción tenga respaldo y no incurra en doble contabilidad.",
+      },
+      {
+        question: "¿Qué hago si recibí un recurso de amparo o una medida cautelar ambiental que paralizó mi obra?",
+        answer:
+          "Debe actuar de inmediato. El derecho a un ambiente sano y ecológicamente equilibrado tiene rango constitucional (art. 50 de la Constitución Política) y la Sala Constitucional suele suspender proyectos de forma preventiva mientras resuelve. Asumimos la defensa del proyecto demostrando que cuenta con la viabilidad ambiental y que cumple las condiciones de SETENA, y atacamos en la vía que corresponda las medidas que carezcan de fundamento. La rapidez es clave porque la suspensión puede prolongarse y generar pérdidas significativas.",
+      },
+      {
+        question: "¿La Ley de Biodiversidad afecta mi proyecto o mi investigación?",
+        answer:
+          "Puede hacerlo. La Ley de Biodiversidad (Ley N.° 7788) tiene por objeto conservar la biodiversidad y el uso sostenible de los recursos, así como distribuir de forma justa los beneficios y costos derivados. Integra competencias en el Sistema Nacional de Áreas de Conservación (SINAC) y regula el acceso a los elementos genéticos y bioquímicos, exigiendo el consentimiento previamente informado como condición para acceder a recursos genéticos con fines de investigación, bioprospección o aprovechamiento económico. Si su proyecto toca áreas protegidas, especies o recursos genéticos, evaluamos qué autorizaciones del SINAC y qué requisitos de acceso aplican.",
+      },
+    ],
+  },
+  "regulacion-fintech-criptoactivos": {
+    hookHeadline: "¿Opera una fintech, exchange o billetera y no sabe si SUGEF lo va a registrar o lo va a sancionar?",
+    hookSubtext:
+      "En Costa Rica no existe, a 2026, una ley integral de mercado de criptoactivos: el colón es la única unidad monetaria de la República (art. 42, Ley N.° 7558) y el Banco Central ha sido claro en que las criptomonedas no son moneda de curso legal y su uso es por cuenta y riesgo del usuario. Pero el escenario acaba de cambiar: en mayo de 2026 la Asamblea Legislativa aprobó en segundo debate, por unanimidad, una reforma a la Ley N.° 7786 (expediente N.° 25.340) que obliga a los proveedores de servicios de activos virtuales (VASP) a inscribirse ante la SUGEF y a aplicar controles antilavado, y que entra a regir tres meses después de su publicación en La Gaceta. A eso se suma el marco financiero vigente —supervisión de SUGEF y CONASSIF, prevención de legitimación de capitales (arts. 15 y 15 bis, Ley N.° 7786) y los límites que la Procuraduría fijó a los proveedores de pago en el dictamen C-196-2024—. Acompañamos a fintechs, exchanges, billeteras, plataformas de pago y emisores que necesitan operar sin caer en captación ilegal ni en sanciones.",
+    scenariosTitle: "¿Cuándo necesita asesoría regulatoria fintech o cripto?",
+    triggerScenarios: [
+      "Va a lanzar una plataforma de pagos, billetera o exchange y no sabe si requiere inscripción ante SUGEF",
+      "SUGEF le requirió inscribirse como sujeto obligado por los artículos 15 o 15 bis de la Ley N.° 7786 y debe responder",
+      "Su modelo de negocio capta o moviliza fondos de terceros y teme cruzar la línea de la intermediación financiera reservada a bancos",
+      "Quiere conectarse al SINPE o a un proveedor de pago y necesita estructurar la operación dentro de los límites del dictamen PGR C-196-2024",
+      "Enfrenta un procedimiento sancionatorio de SUGEF, SUGEVAL o CONASSIF por presunto incumplimiento de prevención de legitimación de capitales (AML/CFT)",
+      "Va a emitir o comercializar un token y no sabe si constituye una oferta pública de valores sujeta a la Ley N.° 7732",
+      "Opera como proveedor de servicios de activos virtuales (VASP) y debe prepararse para la inscripción ante SUGEF y los controles antilavado que introduce la reforma a la Ley N.° 7786 (expediente N.° 25.340) antes de que venza su plazo de entrada en vigencia",
+    ],
+    services: [
+      { title: "Diagnóstico regulatorio del modelo de negocio fintech", description: "Analizamos su operación para determinar qué normativa le aplica realmente: si configura intermediación financiera reservada, servicio de pago, oferta pública de valores (Ley N.° 7732) o actividad sujeta a inscripción ante SUGEF por los artículos 15 y 15 bis de la Ley N.° 7786. Le decimos con honestidad qué está regulado, qué está en zona gris y qué riesgos asume." },
+      { title: "Inscripción y cumplimiento ante SUGEF (sujetos obligados)", description: "Gestionamos la inscripción ante SUGEF de quienes realizan las actividades de los artículos 15 y 15 bis de la Ley N.° 7786, conforme al Acuerdo SUGEF 11-18, y diseñamos el programa de prevención de legitimación de capitales y financiamiento del terrorismo exigido por el Acuerdo SUGEF 13-19 (políticas de conocimiento del cliente, debida diligencia y reporte)." },
+      { title: "Estructuración de plataformas de pago dentro de los límites del dictamen C-196-2024", description: "Diseñamos su operación de pagos respetando la frontera fijada por la Procuraduría: los proveedores de pago pueden transferir fondos, remesar y procesar cobros e incluso conectarse al SINPE, pero no abrir ni mantener cuentas a la vista para clientes, lo que constituiría captación reservada. Estructuramos contratos y flujos de fondos para evitar el reproche de intermediación ilegal." },
+      { title: "Defensa en procedimientos sancionatorios de SUGEF, SUGEVAL y CONASSIF", description: "Asumimos la defensa en los procedimientos administrativos que estos órganos tramitan bajo la Ley General de la Administración Pública, exigiendo el debido proceso, y la impugnación en sede contencioso-administrativa de las sanciones o requerimientos que consideramos ilegales o desproporcionados." },
+      { title: "Tokens, oferta pública de valores y mercado regulado", description: "Evaluamos si la emisión o comercialización de un token o instrumento digital constituye oferta pública de valores sujeta a la autorización y supervisión de SUGEVAL conforme a la Ley N.° 7732, o si queda fuera del perímetro regulado, para evitar tanto la operación ilegal como el sometimiento innecesario al régimen del mercado de valores." },
+      { title: "Cumplimiento VASP bajo la reforma a la Ley N.° 7786 (expediente N.° 25.340)", description: "Preparamos a exchanges, custodios y demás proveedores de servicios de activos virtuales para la nueva obligación de inscribirse ante SUGEF y aplicar controles antilavado que introduce la reforma a la Ley N.° 7786 aprobada en 2026. Diseñamos políticas AML/CFT, identificación de clientes y beneficiarios finales, registros de transacciones y reporte de operaciones sospechosas, de modo que cumpla dentro del plazo de entrada en vigencia y no enfrente sanciones." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría regulatoria para una fintech / actividad con criptoactivos en Costa Rica. Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Las criptomonedas son legales en Costa Rica?",
+        answer:
+          "Su uso no está prohibido, pero tampoco son moneda de curso legal. La unidad monetaria de la República es el colón (art. 42, Ley N.° 7558), y el Banco Central ha sido reiterado en que las criptomonedas no son emitidas ni respaldadas por él, no se consideran moneda ni divisa bajo el régimen cambiario, y quien las adquiere lo hace por su propia cuenta y riesgo. En otras palabras: usted puede operar con criptoactivos por acuerdo entre privados, pero sin la protección que el ordenamiento da a la moneda.",
+      },
+      {
+        question: "¿Existe una ley de criptoactivos en Costa Rica en 2026?",
+        answer:
+          "No existe una ley integral de mercado de criptoactivos, pero sí hay una novedad importante: en mayo de 2026 la Asamblea Legislativa aprobó en segundo debate, por unanimidad, una reforma a la Ley N.° 7786 (expediente N.° 25.340) que obliga a los proveedores de servicios de activos virtuales (VASP) —exchanges, custodios, plataformas— a inscribirse ante la SUGEF, identificar clientes y beneficiarios finales, llevar registros y reportar operaciones sospechosas a la Unidad de Inteligencia Financiera del ICD. Esa reforma entra a regir tres meses después de su publicación en La Gaceta. Más allá de ese componente antilavado, su actividad sigue rigiéndose por el marco financiero general: la Ley N.° 7558, la Ley N.° 7732, los artículos 15 y 15 bis de la Ley N.° 7786 y la normativa de SUGEF. Cualquiera que le ofrezca tramitar una 'licencia cripto' integral costarricense le está vendiendo algo que hoy no existe como tal.",
+      },
+      {
+        question: "¿Mi fintech debe inscribirse ante la SUGEF?",
+        answer:
+          "Depende de la actividad. La SUGEF es un órgano de desconcentración máxima del Banco Central creado por el artículo 115 de la Ley N.° 7558. Quienes realizan determinadas actividades financieras —transferencias y remesas de fondos, cambio de divisas, administración de recursos de terceros, entre otras— deben inscribirse ante SUGEF y someterse a su supervisión en materia de prevención de legitimación de capitales, conforme a los artículos 15 y 15 bis de la Ley N.° 7786 y al Acuerdo SUGEF 11-18. Con la reforma de 2026, además, los proveedores de servicios de activos virtuales quedan expresamente obligados a inscribirse. No toda fintech queda sujeta, pero muchas operaciones de pago, cambio y cripto sí. Hacemos ese diagnóstico antes de que sea SUGEF quien se lo haga.",
+      },
+      {
+        question: "¿Puede mi plataforma recibir y mantener el dinero de los clientes?",
+        answer:
+          "Con un límite importante. En el dictamen C-196-2024 (consulta conjunta de SUGEF y el Banco Central), la Procuraduría General de la República concluyó que los proveedores de servicios de pago pueden transferir fondos, remesar, procesar pagos y cobros e incluso conectarse al SINPE para movilizar fondos propios o de terceros, pero no pueden abrir ni mantener cuentas corrientes o de ahorro a la vista para sus clientes, porque eso constituye captación reservada a los bancos y entidades financieras autorizadas. Estructuramos su operación para movilizar fondos sin incurrir en intermediación financiera ilegal.",
+      },
+      {
+        question: "¿Quién supervisa el sector financiero y de valores, y quién me puede sancionar?",
+        answer:
+          "La supervisión está repartida. El CONASSIF (Consejo Nacional de Supervisión del Sistema Financiero), creado por el artículo 169 de la Ley N.° 7732, es el órgano colegiado que dirige y aprueba la normativa, y bajo su sombrilla operan las superintendencias: SUGEF para entidades financieras, SUGEVAL para el mercado de valores (art. 3, Ley N.° 7732), SUPEN para pensiones y SUGESE para seguros. Estos órganos tramitan procedimientos administrativos bajo la Ley General de la Administración Pública y pueden imponer sanciones; sus resoluciones son impugnables en sede administrativa y ante la jurisdicción contencioso-administrativa.",
+      },
+      {
+        question: "¿Emitir un token cuenta como oferta pública de valores?",
+        answer:
+          "Puede que sí. Si un token se ofrece al público con expectativa de rendimiento y reúne las características de un valor, su emisión podría constituir oferta pública sujeta a la autorización y supervisión de SUGEVAL conforme a la Ley N.° 7732, con todas las obligaciones que ello implica. Si no las reúne, podría quedar fuera del perímetro regulado. La calificación es técnica y caso por caso: analizamos la estructura del token antes de la emisión para evitar tanto operar ilegalmente como someterse sin necesidad al régimen del mercado de valores.",
+      },
+    ],
+  },
+  "derecho-electoral-financiamiento-politico": {
+    hookHeadline: "¿El TSE le abrió un procedimiento por su liquidación de deuda política o sus contribuciones privadas?",
+    hookSubtext:
+      "El financiamiento de los partidos costarricenses cambió en setiembre de 2025: la Ley N.° 10755, \"Ley para fortalecer el acceso, la equidad y el control del financiamiento de los partidos políticos\", reformó artículos clave del Código Electoral (Ley N.° 8765) en materia de financiamiento anticipado caucionado y control contable. A las puertas del ciclo municipal de febrero de 2028, los plazos de liquidación son cortos, las certificaciones contables se fiscalizan a fondo y los delitos de financiamiento llegan a seis años de prisión. Acompañamos a partidos, comités ejecutivos, tesoreros y candidatos ante la jurisdicción exclusiva e independiente del Tribunal Supremo de Elecciones (TSE), cuyas resoluciones no tienen recurso salvo la acción por prevaricato (art. 103 de la Constitución Política).",
+    scenariosTitle: "¿Cuándo necesita asesoría electoral y de financiamiento político?",
+    triggerScenarios: [
+      "El TSE le previno por inconsistencias en la liquidación de gastos para el reconocimiento de la contribución estatal",
+      "Su partido recibió financiamiento anticipado caucionado y debe devolver excedentes o sumas no comprobadas",
+      "Detectó una contribución de una persona jurídica o de un extranjero y necesita reportarla y subsanarla antes de incurrir en delito",
+      "La tesorería del partido fue requerida formalmente por el TSE para informar sobre el financiamiento privado",
+      "Recibió una contribución depositada por una entidad financiera fuera del territorio nacional y no sabe cómo proceder",
+      "Es candidato a una alcaldía y prepara la estructura financiera de su campaña para febrero de 2028",
+      "Necesita impugnar o defender una resolución del Registro Electoral y de Financiamiento de Partidos Políticos ante el TSE",
+    ],
+    services: [
+      { title: "Cumplimiento del régimen de financiamiento partidario", description: "Auditamos y ordenamos las finanzas del partido conforme al Código Electoral: cuenta corriente única para el financiamiento privado (art. 122), requisitos de las donaciones individualizadas y no anónimas (art. 123), prohibición de gestión paralela (art. 126) y reporte de contribuciones en especie superiores a dos salarios base (art. 130). Diseñamos controles internos que resisten la fiscalización del TSE." },
+      { title: "Liquidación de deuda política y reconocimiento de la contribución estatal", description: "Preparamos y defendemos la liquidación de gastos que el partido debe comprobar para recibir el aporte del Estado (arts. 102 a 107). La liquidación debe ir refrendada por contador público autorizado (art. 104) y presentarse, en procesos municipales, dentro de los cuarenta y cinco días hábiles posteriores a la declaratoria de las autoridades municipales (art. 102). Coordinamos la certificación contable y el respaldo documental ante la Dirección de Financiamiento Político del TSE (art. 106)." },
+      { title: "Financiamiento anticipado caucionado", description: "Asesoramos en el acceso al financiamiento anticipado —hasta un quince por ciento de la contribución estatal, previa rendición de garantías líquidas suficientes (art. 96)— y en el retiro de las sumas caucionadas conforme a la resolución del TSE (art. 97, reformado por la Ley N.° 10755). Gestionamos la devolución de excedentes o de montos no comprobados para evitar sanciones." },
+      { title: "Defensa en procedimientos sancionatorios y delitos de financiamiento", description: "Representamos a partidos, miembros del comité ejecutivo superior y tesoreros en los procedimientos del TSE y en la sede penal electoral. El Código Electoral tipifica delitos sobre el financiamiento partidario (art. 273), las contribuciones privadas de extranjeros y personas jurídicas (art. 274) y las tesorerías (art. 276), con penas de hasta seis años de prisión. Aplicamos el estándar de la Sala Constitucional (voto N.° 1691-2019), que exige un examen de lesividad y culpabilidad previo a toda sanción." },
+      { title: "Litigio electoral ante el TSE", description: "Litigamos ante la jurisdicción electoral exclusiva e independiente del Tribunal Supremo de Elecciones (art. 99 de la Constitución Política), que interpreta de forma exclusiva y obligatoria la normativa electoral (art. 102 inciso 3). Promovemos recursos contra resoluciones del Registro Civil y de las juntas electorales y demás gestiones electorales, teniendo presente que las resoluciones del TSE no tienen recurso, salvo la acción por prevaricato (art. 103)." },
+      { title: "Estructuración de campañas municipales 2028", description: "Acompañamos a candidatos a alcaldías y a las agrupaciones cantonales en la planificación financiera y de cumplimiento de cara a las elecciones municipales del primer domingo de febrero de 2028 (art. 150). Implementamos los controles de financiamiento a precandidaturas y candidaturas (arts. 125 y 127) para que la contribución se canalice por la tesorería del partido y la campaña sea liquidable." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría en derecho electoral y financiamiento político en Costa Rica (liquidación de deuda política, cumplimiento o un asunto ante el TSE). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Cuánto aporta el Estado a los partidos políticos y quién tiene derecho a la contribución?",
+        answer:
+          "La contribución estatal equivale a un cero coma diecinueve por ciento (0,19%) del producto interno bruto del año anterior a la elección, según el artículo 96 de la Constitución Política (reformado por la Ley N.° 7675 de 2 de julio de 1997). Tienen derecho a ella los partidos que obtengan al menos un cuatro por ciento (4%) de los sufragios válidamente emitidos a escala nacional, o ese mismo porcentaje en su provincia si son provinciales, o que elijan al menos una diputación. El TSE fija el monto doce meses antes de la elección, tomando como base de cálculo el PIB a precios de mercado certificado por el Banco Central de Costa Rica (art. 90 del Código Electoral, Ley N.° 8765).",
+      },
+      {
+        question: "¿Qué cambió con la Ley N.° 10755 para el ciclo electoral 2026-2028?",
+        answer:
+          "La Ley N.° 10755, \"Ley para fortalecer el acceso, la equidad y el control del financiamiento de los partidos políticos\", se publicó en el Alcance N.° 120 a La Gaceta N.° 175 de 19 de setiembre de 2025 y rige desde el 29 de setiembre de 2025. Reformó varios artículos del Código Electoral (Ley N.° 8765), entre ellos el artículo 97 sobre el retiro del financiamiento anticipado caucionado y el artículo 105 sobre el registro de los profesionales contables ante la Dirección General del Registro Electoral y de Financiamiento de Partidos Políticos. Conviene revisar la estructura financiera del partido a la luz de estas reformas antes del ciclo municipal de 2028.",
+      },
+      {
+        question: "¿Pueden las empresas o los extranjeros financiar a un partido político en Costa Rica?",
+        answer:
+          "No. El artículo 128 del Código Electoral prohíbe a los extranjeros y a las personas jurídicas de cualquier naturaleza y nacionalidad efectuar, directa o indirectamente, contribuciones, donaciones o aportes a los partidos; a los extranjeros también se les prohíbe otorgar préstamos o adquirir títulos en su beneficio. Tampoco pueden recibirse contribuciones por medio de entidades financieras ubicadas fuera del territorio nacional (art. 129). Infringir estas reglas configura delito: el artículo 274 sanciona con prisión de dos a cuatro años las contribuciones de personas jurídicas y de extranjeros, y el artículo 276 castiga a la tesorería que las reciba. La Sala Constitucional, en el voto N.° 1691-2019, precisó que su aplicación exige un examen previo de lesividad y culpabilidad.",
+      },
+      {
+        question: "¿En qué plazo se presenta la liquidación de gastos y quién debe firmarla?",
+        answer:
+          "Para recibir el aporte estatal, el partido debe comprobar y liquidar sus gastos (art. 102 del Código Electoral). En procesos municipales, la liquidación se presenta dentro de los cuarenta y cinco días hábiles contados a partir de la declaratoria de elección de todas las autoridades municipales. La liquidación debe ir refrendada por un contador público autorizado, en su condición de profesional responsable y fedatario público (art. 104), y presentarse ante la Dirección de Financiamiento Político del TSE con la certificación de gastos y los documentos de respaldo (art. 106). Corresponde al TSE evaluar las liquidaciones y ordenar el pago de los gastos reconocidos (art. 103).",
+      },
+      {
+        question: "¿Por qué las disputas electorales se ventilan ante el TSE y no ante la Sala Constitucional?",
+        answer:
+          "La Constitución Política encomienda la organización, dirección y vigilancia de los actos relativos al sufragio exclusivamente al Tribunal Supremo de Elecciones, que goza de independencia en su función (art. 99) e interpreta en forma exclusiva y obligatoria las disposiciones constitucionales y legales en materia electoral (art. 102, inciso 3). Por eso la jurisdicción electoral es propia y distinta de la constitucional. Además, las resoluciones del TSE no tienen recurso, salvo la acción por prevaricato (art. 103), de modo que la estrategia debe construirse correctamente desde la primera gestión. La experiencia constitucional de nuestro fundador es directamente útil para delimitar la frontera entre la competencia del TSE y la de la Sala IV.",
+      },
+      {
+        question: "¿Cuándo son las próximas elecciones municipales y cómo conviene preparar la campaña?",
+        answer:
+          "Las elecciones municipales se celebran el primer domingo de febrero, dos años después de la elección presidencial y legislativa (art. 150 del Código Electoral), por lo que el próximo proceso municipal corresponde a febrero de 2028. Recomendamos estructurar desde temprano la cuenta única del partido (art. 122) y los controles de financiamiento a precandidaturas y candidaturas (arts. 125 y 127), de modo que toda contribución se canalice por la tesorería y los gastos sean liquidables y reconocibles dentro de la contribución estatal.",
+      },
+    ],
+  },
+  "telecomunicaciones-espectro-5g": {
+    hookHeadline: "¿Ganó espectro en la subasta 5G y ahora enfrenta las obligaciones de cobertura?",
+    hookSubtext:
+      "La subasta 5G de enero de 2026 cambió el tablero: siete adjudicatarios —Claro y Liberty en el ámbito nacional, y las cooperativas Coopealfaroruiz, Coopeguanacaste, Coopelesca, Coopesantos junto a Ring en el regional— se comprometieron a desplegar 3.304 radiobases y a cubrir 31 cantones en las siete provincias, en bandas de 700 MHz, 3500 MHz y 26-28 GHz. El espectro radioeléctrico es un bien de dominio público (art. 7, Ley N.° 8642) y la concesión vive de su contrato: cumplir cobertura, pagar la contraprestación, contribuir a FONATEL y respetar las condiciones de la concesión no son trámites, son la frontera entre operar y perder el título. Acompañamos a concesionarios de espectro, operadores de torres, satelitales y cooperativas de electrificación frente a SUTEL y al MICITT.",
+    scenariosTitle: "¿Cuándo necesita defender su concesión o desbloquear su despliegue?",
+    triggerScenarios: [
+      "SUTEL le abrió un procedimiento por presunto incumplimiento de las metas de cobertura o de despliegue comprometidas en el concurso 5G",
+      "Una municipalidad le frena o le rechaza el permiso de construcción de torres y radiobases pese al interés público del servicio",
+      "Necesita negociar compartición de infraestructura o coubicación con otro operador y la contraparte se niega o impone condiciones abusivas",
+      "Su concesión de espectro se aproxima al vencimiento y debe gestionar la prórroga con la antelación que exige la ley",
+      "Le notificaron un procedimiento de extinción, caducidad o revocación de la concesión o de la autorización",
+      "Es operador satelital (Starlink, OneWeb u otro) y requiere el título habilitante para operar en Costa Rica",
+      "SUTEL le impuso una multa o sanción por una presunta infracción a la Ley General de Telecomunicaciones y necesita impugnarla",
+    ],
+    services: [
+      { title: "Cumplimiento de obligaciones de cobertura y despliegue 5G", description: "Estructuramos el cumplimiento de las metas de cobertura, calidad y despliegue de infraestructura asumidas en el cartel del concurso (art. 13, Ley N.° 8642), documentamos avances ante SUTEL y diseñamos la defensa anticipada frente a eventuales objeciones sobre el ritmo de instalación de radiobases." },
+      { title: "Permisos municipales para torres y radiobases", description: "Acompañamos la gestión de permisos de construcción de torres y estaciones base ante las municipalidades, conciliando la autonomía municipal con el carácter de servicio de interés público y el régimen de recursos escasos —que incluye expresamente las torres, los postes, los ductos y las canalizaciones— definido en la propia ley (art. 6, Ley N.° 8642), e impugnamos denegatorias o moratorias ilegítimas." },
+      { title: "Compartición de infraestructura, acceso e interconexión", description: "Negociamos y, cuando corresponde, llevamos ante SUTEL los acuerdos de acceso e interconexión y de uso compartido de infraestructura (arts. 59 y 60, Ley N.° 8642), incluida la coubicación de equipos, para que la falta de acuerdo entre operadores no detenga el despliegue. Si la negociación no se concreta dentro de los tres meses siguientes a su notificación, SUTEL puede intervenir de oficio o a petición de parte y fijar las condiciones." },
+      { title: "Otorgamiento, prórroga y traspaso de concesiones de espectro", description: "Gestionamos solicitudes de concesión por concurso público otorgadas por el Poder Ejecutivo (art. 12, Ley N.° 8642) y la prórroga de concesiones de frecuencias —plazo máximo de quince años, prorrogable hasta veinticinco—, presentando la solicitud al menos dieciocho meses antes del vencimiento, como exige la ley (art. 24, inciso a)." },
+      { title: "Defensa en procedimientos sancionatorios ante SUTEL", description: "Asumimos la defensa en los procedimientos de la potestad sancionatoria de SUTEL (art. 65, Ley N.° 8642), donde las infracciones se clasifican en muy graves o graves (art. 67) con multas de hasta el uno por ciento de los ingresos brutos en las muy graves (art. 68), e impugnamos las resoluciones en sede administrativa y contencioso-administrativa." },
+      { title: "Títulos habilitantes para operadores satelitales y nuevos entrantes", description: "Asesoramos a operadores satelitales y nuevos entrantes en la obtención del título habilitante para operar redes y prestar servicios en Costa Rica, así como en el régimen de contribución a FONATEL (art. 34, Ley N.° 8642), instrumento de financiamiento del acceso y el servicio universal." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría sobre un caso de telecomunicaciones, espectro o despliegue 5G en Costa Rica (cumplimiento ante SUTEL, permisos de torres o concesión de frecuencias). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Cómo se otorga una concesión de espectro radioeléctrico en Costa Rica?",
+        answer:
+          "El espectro radioeléctrico es un bien de dominio público (art. 7, Ley N.° 8642). Las concesiones de frecuencias para operar y explotar redes públicas de telecomunicaciones las otorga el Poder Ejecutivo mediante un procedimiento de concurso público, conforme a la Ley de Contratación Administrativa; SUTEL instruye el procedimiento previa realización de los estudios de necesidad y factibilidad, de acuerdo con el Plan Nacional de Desarrollo de las Telecomunicaciones (art. 12, Ley N.° 8642). El cartel del concurso fija, entre otros, las bandas y la zona de cobertura, las obligaciones de acceso y servicio universal, el período de vigencia, la contraprestación y las multas por incumplimiento (art. 13).",
+      },
+      {
+        question: "¿Cuánto dura una concesión de frecuencias y cuándo debo pedir la prórroga?",
+        answer:
+          "Las concesiones de frecuencias para la operación y explotación de redes públicas se otorgan por un período máximo de quince años, prorrogable a solicitud de parte hasta que el plazo acumulado —inicial y prórrogas— no exceda veinticinco años. La solicitud de prórroga debe presentarse por lo menos dieciocho meses antes del vencimiento (art. 24, inciso a), Ley N.° 8642). Las autorizaciones, en cambio, se otorgan por un máximo de diez años, prorrogables por períodos de cinco años hasta un máximo de tres prórrogas, con solicitud al menos seis meses antes (art. 24, inciso b).",
+      },
+      {
+        question: "¿Quién regula las telecomunicaciones en Costa Rica: SUTEL o el MICITT?",
+        answer:
+          "Ambos, con roles distintos. La Superintendencia de Telecomunicaciones (SUTEL) es el órgano que aplica, vigila y controla el marco regulatorio del sector; fue creada mediante la Ley N.° 8660, que reformó la Ley N.° 7593 y la adscribió como órgano de máxima desconcentración a la ARESEP. El Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones (MICITT) ejerce la rectoría del sector y, a través del Poder Ejecutivo, otorga las concesiones de espectro. La ARESEP, por su parte, conserva competencias tarifarias en los servicios regulados.",
+      },
+      {
+        question: "¿Qué obligaciones de despliegue asumieron los adjudicatarios de la subasta 5G?",
+        answer:
+          "La subasta 5G de enero de 2026 se cerró con siete adjudicatarios: Claro y Liberty en el ámbito nacional, y las cooperativas Coopealfaroruiz, Coopeguanacaste, Coopelesca y Coopesantos, junto a Ring Centrales de Costa Rica, en el ámbito regional. En conjunto se comprometió el despliegue de 3.304 radiobases para llevar 5G a 31 cantones de las siete provincias, en bandas de 700 MHz, 3500 MHz y 26-28 GHz. Estas metas de cobertura y despliegue forman parte de las condiciones del título: su incumplimiento puede abrir procedimientos sancionatorios ante SUTEL e incluso afectar la vigencia de la concesión.",
+      },
+      {
+        question: "¿Puede una municipalidad impedirme instalar torres y radiobases?",
+        answer:
+          "Las municipalidades conservan competencias urbanísticas y de permisos de construcción dentro de su jurisdicción, pero esas competencias deben ejercerse de forma compatible con el carácter de interés público del servicio de telecomunicaciones y con el régimen de recursos escasos —que incluye expresamente las torres, los postes, los ductos y las canalizaciones— definido en la Ley General de Telecomunicaciones (art. 6, Ley N.° 8642). Una denegatoria injustificada, una moratoria de hecho o condiciones desproporcionadas pueden impugnarse en sede administrativa y contencioso-administrativa. Cada caso exige analizar el plan regulador y los reglamentos municipales aplicables.",
+      },
+      {
+        question: "¿Qué pasa si SUTEL me abre un procedimiento sancionatorio?",
+        answer:
+          "SUTEL ejerce la potestad sancionatoria del sector (art. 65, Ley N.° 8642). Las infracciones se clasifican en muy graves o graves (art. 67), con multas que, en las muy graves, van de cero coma cinco por ciento (0,5%) hasta el uno por ciento (1%) de los ingresos brutos del operador del período fiscal anterior, y que pueden elevarse cuando el caso reviste gravedad particular (art. 68). Negarse a contribuir a FONATEL, por ejemplo, está tipificado como infracción muy grave. Es esencial atender el procedimiento desde su inicio, ejercer el derecho de defensa y, si la resolución es desfavorable, impugnarla por los recursos administrativos y, en su caso, en la vía contencioso-administrativa.",
+      },
+    ],
+  },
+  "energia-renovable-transicion-energetica": {
+    hookHeadline: "¿Le denegaron el permiso de generación o el ICE no le firma el contrato de compra de energía?",
+    hookSubtext:
+      "Costa Rica produce cerca del 98% de su electricidad con fuentes renovables, pero el acceso del generador privado a la red sigue acotado por una ley de 1990: la generación autónoma o paralela está sujeta a un tope individual de 20.000 kW por planta (art. 2) y a un límite del 15% de la potencia del sistema eléctrico nacional para la generación paralela elegible (art. 7, Ley N.° 7200). Eso convierte cada permiso, cada contrato con el ICE y cada gestión tarifaria ante ARESEP en un cuello de botella regulatorio. Mientras la Asamblea Legislativa debate la apertura del mercado de generación, acompañamos a desarrolladores solares, eólicos, hidroeléctricos, de biomasa y de almacenamiento a defender su derecho de acceso, su tarifa y su proyecto.",
+    scenariosTitle: "¿Cuándo necesita asesoría en energía y transición energética?",
+    triggerScenarios: [
+      "El ICE le denegó o no le renueva el contrato de compra de energía de su planta de generación privada",
+      "Su solicitud de permiso de generación choca con el tope del 15% del sistema (art. 7) o el límite de 20.000 kW por planta de la Ley N.° 7200",
+      "ARESEP le fijó una tarifa o un peaje de acceso que no cubre los costos reales de su proyecto",
+      "La SETENA rechazó o condicionó la viabilidad ambiental de su parque solar, eólico o hidroeléctrico",
+      "Tiene una disputa con el ICE sobre el despacho de su energía o el acceso a la red de transmisión",
+      "Desarrolla un proyecto de hidrógeno verde, almacenamiento en baterías o autoconsumo y no encuentra el marco regulatorio aplicable",
+      "Quiere participar en el Mercado Eléctrico Regional vía SIEPAC o estructurar un contrato de compra de energía (PPA) de largo plazo",
+    ],
+    services: [
+      { title: "Permisos de generación privada y elegibilidad bajo la Ley N.° 7200", description: "Analizamos la viabilidad de su proyecto frente al régimen de generación autónoma o paralela: el tope de capacidad limitada de 20.000 kW por planta (art. 2) y el límite del 15% de la potencia del conjunto de centrales del sistema eléctrico nacional que puede provenir de generación paralela elegible (art. 7, Ley N.° 7200). Distinguimos entre el Capítulo I (venta de energía al ICE por centrales de capacidad limitada) y el Capítulo II (Compra de Energía Bajo Régimen de Competencia, incorporado por la Ley N.° 7508, en el que la planta se construye, opera y su titularidad se traspasa al ICE al final del contrato) y gestionamos los permisos ante el ICE y el MINAE." },
+      { title: "Negociación y estructuración de contratos de compra de energía (PPA)", description: "Estructuramos y negociamos los contratos de compra de energía con el ICE y las distribuidoras: precio, plazo, garantías, puntos de entrega, despacho, fórmulas de indexación y cláusulas de fuerza mayor. Defendemos al generador cuando el ICE no firma, retrasa o pretende modificar unilateralmente las condiciones del contrato." },
+      { title: "Regulación tarifaria y peajes ante ARESEP", description: "Representamos al generador y al usuario en los procesos de fijación tarifaria ante la ARESEP, regidos por el principio de servicio al costo (art. 3 inc. b, Ley N.° 7593) y sometidos a audiencia pública (art. 36). La energía eléctrica en sus etapas de generación, transmisión, distribución y comercialización es servicio público regulado (art. 5 inc. a). Impugnamos resoluciones tarifarias y peajes de acceso a la red que no reflejen los costos del proyecto." },
+      { title: "Defensa contencioso-administrativa de denegatorias y disputas con el ICE", description: "Impugnamos en sede administrativa y ante el Tribunal Contencioso Administrativo las denegatorias de permisos, las negativas de contrato y las controversias sobre despacho y acceso a la red de transmisión. Solicitamos medidas cautelares conforme a los artículos 19-30 del CPCA (Ley N.° 8508) cuando la ejecución del acto pone en riesgo el proyecto." },
+      { title: "Viabilidad ambiental SETENA para proyectos renovables", description: "Acompañamos el trámite de viabilidad ambiental ante la SETENA para parques solares, eólicos, hidroeléctricos y de biomasa, y recurrimos las denegatorias o condicionamientos que comprometen la rentabilidad del proyecto, articulando la defensa con el marco de eficiencia y uso racional de la energía (Ley N.° 7447, bajo rectoría del MINAE)." },
+      { title: "Marcos emergentes: hidrógeno verde, almacenamiento y Mercado Eléctrico Regional", description: "Asesoramos sobre los marcos emergentes de hidrógeno verde, almacenamiento en baterías y autoconsumo, que a la fecha carecen de una ley sectorial específica en Costa Rica y se rigen por la normativa general aplicable. También estructuramos la participación en el Mercado Eléctrico Regional (MER) a través del SIEPAC, conforme al Tratado Marco del Mercado Eléctrico de América Central." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría sobre un proyecto de energía renovable / generación eléctrica en Costa Rica (permisos, contrato con el ICE o tarifa ante ARESEP). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Puede una empresa privada generar y vender electricidad en Costa Rica?",
+        answer:
+          "Sí, dentro del régimen de generación autónoma o paralela de la Ley N.° 7200. La ley autoriza a empresas privadas y a cooperativas de electrificación rural a operar plantas de capacidad limitada e integrarse al sistema eléctrico nacional. Existen dos modalidades: el Capítulo I, para la venta de energía al ICE por plantas de capacidad limitada, y el Capítulo II, denominado 'Compra de Energía Bajo Régimen de Competencia' (incorporado por la Ley N.° 7508), en el que la planta se construye, opera y su titularidad se traspasa al ICE al término del contrato (esquema tipo BOT). El ICE mantiene la rectoría del sistema eléctrico nacional y es la contraparte de los contratos de compra de energía.",
+      },
+      {
+        question: "¿Cuál es el tamaño máximo de una planta de generación privada?",
+        answer:
+          "Bajo la Ley N.° 7200, se consideran centrales de capacidad limitada las que no sobrepasan los 20.000 kW (20 MW), sean hidroeléctricas o de fuentes no convencionales (art. 2). Además, el ICE solo puede declarar elegible un proyecto si la potencia por concepto de generación paralela no llega a constituir más del 15% de la potencia del conjunto de centrales que conforman el sistema eléctrico nacional (art. 7). Estos límites son el principal cuello de botella para nuevos proyectos y están en el centro del debate legislativo sobre la apertura del mercado de generación.",
+      },
+      {
+        question: "¿Quién fija la tarifa a la que se paga la energía y cómo se impugna?",
+        answer:
+          "La ARESEP fija los precios y tarifas de los servicios públicos, incluida la energía eléctrica en sus etapas de generación, transmisión, distribución y comercialización (art. 5 inc. a, Ley N.° 7593). Lo hace conforme al principio de servicio al costo, que contempla únicamente los costos necesarios para prestar el servicio (art. 3 inc. b), y mediante audiencia pública para las fijaciones ordinarias (art. 36). Si la tarifa o el peaje no reflejan los costos reales de su proyecto, la resolución de ARESEP puede impugnarse en sede administrativa y, agotada la vía, ante la jurisdicción contencioso-administrativa.",
+      },
+      {
+        question: "¿Qué hago si el ICE me deniega o no me renueva el contrato de compra de energía?",
+        answer:
+          "La denegatoria o la negativa de renovación es un acto que puede recurrirse. Evaluamos primero si la decisión respeta el debido proceso y los límites de la Ley N.° 7200, y agotamos los recursos administrativos correspondientes. Si la negativa es ilegítima o arbitraria, acudimos al Tribunal Contencioso Administrativo y, cuando la continuidad del proyecto está en riesgo, solicitamos medidas cautelares conforme a los artículos 19-30 del Código Procesal Contencioso Administrativo (Ley N.° 8508) para suspender los efectos del acto mientras se resuelve el fondo.",
+      },
+      {
+        question: "¿Existe en Costa Rica una ley específica para el hidrógeno verde o el almacenamiento en baterías?",
+        answer:
+          "A la fecha, Costa Rica no cuenta con una ley sectorial específica que regule de forma integral el hidrógeno verde ni el almacenamiento en baterías. Estos proyectos se enmarcan en la normativa general aplicable: el régimen de generación de la Ley N.° 7200, la regulación de la ARESEP bajo la Ley N.° 7593, la Ley de Regulación del Uso Racional de la Energía (Ley N.° 7447) bajo rectoría del MINAE, y la normativa ambiental y de permisos correspondiente. Por honestidad profesional preferimos advertirlo: estructuramos estos proyectos sobre el marco realmente vigente, sin invocar regulaciones que aún no existen, y damos seguimiento a las iniciativas legislativas en trámite.",
+      },
+      {
+        question: "¿Puedo vender mi energía fuera de Costa Rica o participar en el mercado regional?",
+        answer:
+          "La participación en el Mercado Eléctrico Regional (MER) se rige por el Tratado Marco del Mercado Eléctrico de América Central y se ejecuta a través de la red de interconexión del SIEPAC. El acceso de un generador costarricense a esas transacciones está condicionado por su régimen interno bajo la Ley N.° 7200 y por la coordinación con el ICE. Analizamos la viabilidad de su proyecto para transacciones regionales y estructuramos los contratos correspondientes dentro de ese marco.",
+      },
+    ],
+  },
+  "derecho-civil": {
+    hookHeadline: "¿Le deben dinero, le incumplieron un contrato o le invadieron su propiedad?",
+    hookSubtext:
+      "El conflicto civil entre particulares se gana o se pierde en los detalles: el título correcto, la vía procesal adecuada y, sobre todo, el plazo. Desde la entrada en vigencia del Código Procesal Civil (Ley N.° 9342) el 8 de octubre de 2018, el litigio civil costarricense es oral y mucho más rápido: en el proceso monitorio de cobro, tras la resolución intimatoria el deudor tiene apenas cinco días para cumplir u oponerse (art. 110 CPC). Acompañamos a personas y empresas en cobros judiciales, responsabilidad civil, defensa de la propiedad y disputas contractuales, con la misma rigurosidad técnica que aplicamos ante el Estado.",
+    scenariosTitle: "¿Cuándo necesita un abogado en materia civil?",
+    triggerScenarios: [
+      "Un cliente, socio o tercero le adeuda una suma de dinero documentada y no le paga",
+      "Le incumplieron un contrato de obra, servicios, arrendamiento o compraventa y sufrió pérdidas",
+      "Un tercero ocupa, invade o usa su propiedad sin título y necesita recuperarla",
+      "Sufrió un daño a su persona o a su patrimonio por culpa o negligencia de otro",
+      "Su inquilino dejó de pagar la renta y necesita recuperar el inmueble",
+      "Le notificaron una demanda de cobro o un proceso monitorio en su contra y el plazo corre",
+      "Firmó un contrato que considera nulo, lesivo o viciado y quiere impugnarlo",
+    ],
+    services: [
+      { title: "Cobro judicial por proceso monitorio", description: "Tramitamos el cobro de obligaciones dinerarias líquidas y exigibles documentadas mediante el proceso monitorio dinerario (arts. 110 y 111 CPC), que inicia con una resolución intimatoria al deudor y le concede solo cinco días para oponerse o pagar. Si no hay oposición fundada, se avanza directamente a la ejecución sobre los bienes del deudor." },
+      { title: "Defensa frente a demandas de cobro y procesos monitorios", description: "Si le notificaron un monitorio o un proceso de ejecución, los plazos son cortos y la oposición debe plantearse con la prueba y los motivos tasados que la ley admite. Analizamos el título, las defensas oponibles (pago comprobado por escrito, prescripción, falsedad del documento, falta de exigibilidad) y la estrategia para evitar el embargo o liberar bienes ya afectados." },
+      { title: "Responsabilidad civil contractual y extracontractual", description: "Reclamamos la reparación de daños y perjuicios derivados del incumplimiento de un contrato o de hechos ilícitos. El art. 1045 del Código Civil (Ley N.° 63) obliga a reparar el daño a quien lo causa por dolo, falta, negligencia o imprudencia; cuantificamos daño emergente, lucro cesante y daño moral, y construimos la prueba pericial necesaria." },
+      { title: "Procesos sobre propiedad: reivindicatorios, interdictos y deslinde", description: "Defendemos y recuperamos la propiedad y la posesión frente a invasiones, despojos o usurpaciones. Promovemos la acción reivindicatoria del dueño no poseedor y los interdictos posesorios, que se tramitan por el proceso sumario por su urgencia, además de procesos de deslinde y amojonamiento cuando los linderos están en disputa." },
+      { title: "Desahucio y conflictos de arrendamiento", description: "Recuperamos inmuebles arrendados por falta de pago, vencimiento del plazo u otras causales legales, mediante el proceso sumario de desahucio (art. 104 CPC) o el monitorio arrendaticio según corresponda. Asesoramos también a arrendatarios frente a desalojos improcedentes o sin el debido proceso." },
+      { title: "Nulidad de contratos y actos jurídicos", description: "Impugnamos contratos y actos viciados por error, dolo, simulación, objeto o causa ilícita, o por incapacidad de las partes, conforme al Código Civil. Buscamos la nulidad o la resolución del contrato y la restitución de prestaciones, con la indemnización que corresponda." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría en un asunto de derecho civil (cobro, contrato, propiedad o responsabilidad civil) en Costa Rica. Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Cuánto tarda un cobro judicial con el nuevo Código Procesal Civil?",
+        answer:
+          "Depende de si el deudor se opone. El proceso monitorio (art. 110 del Código Procesal Civil, Ley N.° 9342) inicia con una resolución intimatoria que ordena el pago al deudor, a quien se le conceden cinco días para pagar u oponerse. Si no se opone, el proceso pasa directamente a la fase de ejecución (embargo y remate de bienes), lo que acorta considerablemente los tiempos respecto del régimen anterior. Si presenta oposición fundada, se convoca a una audiencia oral para resolver. La rapidez efectiva depende de la calidad del título, de la prueba aportada desde el inicio y de la carga del despacho judicial.",
+      },
+      {
+        question: "¿Qué documentos sirven para cobrar una deuda por la vía monitoria?",
+        answer:
+          "El proceso monitorio dinerario procede para obligaciones dinerarias líquidas y exigibles que consten en un documento. Sirven, entre otros, las escrituras públicas, los documentos privados con la firma reconocida o tenida por reconocida, las letras de cambio, pagarés, facturas y las certificaciones de resoluciones judiciales firmes que establezcan una obligación de dinero. Lo esencial es que el documento identifique con claridad al deudor y refleje una suma cierta y exigible. Revisamos el título antes de demandar para evitar que una oposición prospere por defectos formales.",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para reclamar un daño o cobrar una deuda antes de que prescriba?",
+        answer:
+          "Como regla general, los derechos y acciones civiles para los que la ley no fija un plazo especial prescriben en diez años (art. 868 del Código Civil, Ley N.° 63), conocida como prescripción decenal. Sin embargo, muchas materias tienen plazos especiales más cortos previstos en leyes específicas, y en materia mercantil rigen plazos distintos. Por eso es importante consultar cuanto antes: dejar correr el plazo puede extinguir un derecho perfectamente válido. Analizamos en cada caso el plazo aplicable y los actos que lo interrumpen.",
+      },
+      {
+        question: "¿Qué diferencia hay entre responsabilidad civil contractual y extracontractual?",
+        answer:
+          "La responsabilidad contractual nace del incumplimiento de un contrato: una parte no cumple lo pactado y debe reparar los daños y perjuicios causados a la otra. La responsabilidad extracontractual surge de un hecho ilícito al margen de cualquier contrato: el art. 1045 del Código Civil establece que todo aquel que por dolo, falta, negligencia o imprudencia causa a otro un daño está obligado a repararlo junto con los perjuicios. En ambos casos cuantificamos el daño emergente, el lucro cesante y, cuando procede, el daño moral, sustentados en prueba técnica.",
+      },
+      {
+        question: "Un tercero ocupa mi propiedad. ¿Cómo la recupero?",
+        answer:
+          "Las herramientas varían según su situación jurídica. Si usted es el propietario y otro posee el bien sin título, procede la acción reivindicatoria para recuperar la propiedad. Si lo que se discute es la posesión actual, frente a un despojo o perturbación reciente, proceden los interdictos posesorios, que por su urgencia se tramitan por el proceso sumario. Cuando el conflicto es sobre la ubicación exacta de los linderos, procede el deslinde y amojonamiento. Analizamos el estado registral, la posesión y la prueba disponible para elegir la vía correcta, porque equivocarla retrasa la recuperación.",
+      },
+      {
+        question: "Mi inquilino no paga. ¿Cómo lo desalojo legalmente?",
+        answer:
+          "No es legal recuperar el inmueble por mano propia ni cambiar cerraduras: debe acudirse a la vía judicial. Según el caso, procede el proceso sumario de desahucio (art. 104 del Código Procesal Civil) o el monitorio arrendaticio, que permiten recuperar el inmueble por falta de pago de la renta, vencimiento del plazo u otras causales legales, con plazos abreviados respecto del litigio ordinario. Preparamos la demanda con el contrato y la prueba del incumplimiento, y le acompañamos hasta la entrega efectiva del inmueble.",
+      },
+    ],
+  },
+  "derecho-de-familia": {
+    hookHeadline: "¿Enfrenta un divorcio, una pensión alimentaria o el reparto de los bienes del matrimonio?",
+    hookSubtext:
+      "Desde el 1.° de octubre de 2024 rige en su integridad el Código Procesal de Familia (Ley N.° 9747), que trasladó estos conflictos a procesos orales, por audiencias y con énfasis en el interés superior de la persona menor de edad. Cambian los tiempos, la estrategia probatoria y la forma de litigar el divorcio, la pensión alimentaria, la filiación y la liquidación de gananciales. En materia tan sensible —donde el apremio corporal por pensión puede dictarse hasta por seis meses (arts. 24 y 25, Ley N.° 7654)— un error procesal cuesta caro. Acompañamos a personas y familias en todo el país, con la firmeza técnica y la cercanía que estos asuntos exigen.",
+    scenariosTitle: "¿Cuándo necesita un abogado de familia?",
+    triggerScenarios: [
+      "Quiere divorciarse por mutuo consentimiento o necesita demandar el divorcio por una causal",
+      "Le demandaron pensión alimentaria o tiene una orden de apremio corporal por mora",
+      "La pensión fijada es desproporcionada respecto a sus ingresos reales y necesita revisarla",
+      "Discute la guarda, crianza, régimen de visitas o la patria potestad de sus hijos",
+      "Hay que liquidar los bienes gananciales tras la disolución del matrimonio",
+      "Necesita reconocer, impugnar o investigar la paternidad o filiación de un hijo",
+      "Vive una situación de violencia doméstica y requiere medidas de protección urgentes",
+    ],
+    services: [
+      { title: "Divorcio por mutuo consentimiento o por causal", description: "Tramitamos el divorcio por mutuo consentimiento mediante el convenio en escritura pública que regula la guarda y crianza de los hijos, la obligación alimentaria entre cónyuges y la distribución de los bienes (art. 60, Código de Familia, Ley N.° 5476), así como el divorcio por las causales del artículo 48 del mismo Código, entre ellas la separación de hecho por un plazo no menor de tres años. Bajo el Código Procesal de Familia (Ley N.° 9747) el trámite es oral y por audiencias." },
+      { title: "Pensiones alimentarias: fijación, defensa y revisión", description: "Asumimos demandas de pensión alimentaria, la defensa del demandado y los incidentes de aumento o rebajo. El juez fija una pensión provisional ya en la resolución que da traslado a la demanda, ejecutable aunque el auto no esté firme (art. 21, Ley N.° 7654), por lo que la actuación temprana es decisiva para ajustar la cuota a la capacidad económica real." },
+      { title: "Defensa frente al apremio corporal por mora", description: "Atendemos órdenes de apremio corporal por incumplimiento del deber alimentario, que procede hasta por seis mensualidades y no puede mantenerse más de seis meses (arts. 24 y 25, Ley N.° 7654). La ley excluye del apremio a la persona menor de edad y a la mayor de setenta y un años. Gestionamos arreglos de pago, levantamiento de la orden y la regularización de la deuda." },
+      { title: "Guarda, crianza, patria potestad y régimen de visitas", description: "Litigamos la guarda, crianza y educación de los hijos bajo el principio del interés superior de la persona menor de edad (art. 56, Código de Familia). Estas resoluciones no constituyen cosa juzgada material y pueden modificarse cuando cambian las circunstancias, por lo que diseñamos la prueba tanto para el proceso inicial como para futuras revisiones." },
+      { title: "Liquidación de bienes gananciales", description: "Al disolverse o declararse nulo el matrimonio, cada cónyuge adquiere el derecho a participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro (art. 41, Código de Familia). Identificamos qué bienes son gananciales y cuáles quedan excluidos, valoramos el patrimonio y negociamos o litigamos su distribución." },
+      { title: "Filiación: reconocimiento, impugnación e investigación de paternidad", description: "Tramitamos procesos de reconocimiento, impugnación de paternidad y declaración judicial de filiación conforme al Código de Familia, incluida la prueba científica de marcadores genéticos (ADN). La filiación define derechos sucesorios, alimentarios y de identidad del menor, por lo que la estrategia probatoria es central." },
+      { title: "Violencia doméstica y medidas de protección", description: "Solicitamos y nos oponemos a las medidas de protección de la Ley contra la Violencia Doméstica (Ley N.° 7586), coordinándolas con los procesos de familia en curso. Actuamos con la urgencia que estos casos demandan para resguardar la integridad de las personas afectadas." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría en un asunto de Derecho de Familia en Costa Rica (divorcio, pensión alimentaria, guarda o bienes gananciales). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Cómo funciona el divorcio por mutuo consentimiento en Costa Rica?",
+        answer:
+          "Cuando ambos cónyuges están de acuerdo, el divorcio por mutuo consentimiento se tramita con base en un convenio en escritura pública que debe regular tres aspectos: la guarda y crianza de los hijos comunes, la obligación alimentaria entre los cónyuges y la distribución de los bienes (art. 60, Código de Familia, Ley N.° 5476). El mutuo consentimiento es una de las vías previstas en el artículo 48 del mismo Código. Desde el 1.° de octubre de 2024 el proceso se rige por el Código Procesal de Familia (Ley N.° 9747), que es oral y por audiencias. Si no hay acuerdo, el divorcio debe demandarse invocando alguna de las causales del artículo 48, como la separación de hecho por un plazo no menor de tres años.",
+      },
+      {
+        question: "¿Cómo se calcula la pensión alimentaria y cuándo empiezo a pagarla?",
+        answer:
+          "La pensión se fija en proporción a las necesidades del acreedor alimentario y a la capacidad económica del obligado. Conviene actuar pronto: en la misma resolución que da traslado a la demanda, el juez fija una pensión alimentaria provisional, ejecutable aunque el auto no esté firme (art. 21, Ley de Pensiones Alimentarias, Ley N.° 7654). Por eso es clave acreditar desde el inicio los ingresos reales y las cargas del obligado, tanto para fijar una cuota justa como para defenderse de montos desproporcionados.",
+      },
+      {
+        question: "Me llegó una orden de apremio corporal por pensión. ¿Qué puedo hacer?",
+        answer:
+          "El apremio corporal por incumplimiento del deber alimentario procede hasta por seis mensualidades y no puede mantenerse por más de seis meses (arts. 24 y 25, Ley N.° 7654). La ley excluye de esta medida a la persona menor de edad y a la mayor de setenta y un años. La orden se deja sin efecto al pagar lo adeudado. Lo recomendable es no esperar: gestionamos arreglos de pago, la regularización de la deuda y el levantamiento del apremio, además de valorar un eventual incidente de rebajo si su situación económica cambió.",
+      },
+      {
+        question: "¿Cómo se reparten los bienes cuando termina el matrimonio?",
+        answer:
+          "Costa Rica reconoce el régimen de participación en los gananciales. Al disolverse o declararse nulo el matrimonio, cada cónyuge adquiere el derecho a participar en la mitad del valor neto de los bienes gananciales que existan en el patrimonio del otro (art. 41, Código de Familia, Ley N.° 5476). No todo es ganancial: quedan excluidos, por ejemplo, los bienes que cada cónyuge tenía antes del matrimonio y los adquiridos por título gratuito, como herencias o donaciones. Identificar y valorar correctamente qué es ganancial es el punto que más se discute en la práctica.",
+      },
+      {
+        question: "¿Quién decide la guarda de los hijos y se puede cambiar después?",
+        answer:
+          "El tribunal determina la guarda, crianza y educación de los hijos atendiendo siempre al interés superior de la persona menor de edad (art. 56, Código de Familia). Un punto importante es que estas resoluciones no constituyen cosa juzgada material: pueden modificarse cuando cambian las circunstancias que se tuvieron en cuenta al dictarlas. Por eso conviene documentar bien la situación de los hijos, tanto en el proceso inicial como ante una eventual solicitud de modificación del régimen de guarda o de visitas.",
+      },
+      {
+        question: "¿Ya está vigente el nuevo Código Procesal de Familia?",
+        answer:
+          "Sí. El Código Procesal de Familia (Ley N.° 9747, del 23 de octubre de 2019) rige en su integridad desde el 1.° de octubre de 2024, luego de varias prórrogas de su entrada en vigencia (la última fijada por la Ley N.° 10315, del 27 de septiembre de 2022). Introduce un proceso oral, por audiencias y con plazos propios, distinto del esquema escrito anterior. Esto cambia la forma de litigar el divorcio, la pensión, la filiación y la liquidación de bienes, por lo que la estrategia procesal y probatoria debe ajustarse a las reglas vigentes.",
+      },
+    ],
+  },
+  "derecho-laboral": {
+    hookHeadline: "¿Lo despidieron sin justa causa o le adeudan sus prestaciones?",
+    hookSubtext:
+      "Un despido mal liquidado, un finiquito firmado a la ligera o una jornada que nunca le pagaron como extra pueden costarle —o representarle— montos cuantiosos. Desde la Reforma Procesal Laboral (Ley N.° 9343, vigente desde el 25 de julio de 2017), los conflictos laborales se resuelven en un proceso oral por audiencias, mucho más ágil, donde la prueba se ofrece y se evacúa frente al juez. Y los plazos corren rápido: las acciones derivadas del contrato de trabajo prescriben, por regla general, en un año desde su extinción. Acompañamos a personas trabajadoras y a patronos —del sector privado y del empleo público— en despidos, cobro de prestaciones, riesgos del trabajo, discriminación y litigio laboral oral ante los juzgados de trabajo y la Sala Segunda.",
+    scenariosTitle: "¿Cuándo necesita un abogado laboralista?",
+    triggerScenarios: [
+      "Lo despidieron y la liquidación no incluye preaviso, auxilio de cesantía, vacaciones o aguinaldo proporcionales",
+      "Le pidieron firmar un finiquito o una renuncia y duda de su validez o de los montos",
+      "Lo despidieron estando embarazada, en lactancia, con fuero sindical o tras denunciar un hostigamiento",
+      "Trabajó horas extra, en días feriados o de descanso que nunca le pagaron correctamente",
+      "Sufrió un accidente o enfermedad laboral y el INS o el patrono no reconocen el riesgo del trabajo",
+      "Es funcionario público y enfrenta un despido, un traslado o un recorte salarial que considera ilegal",
+      "Es patrono y necesita documentar un despido con justa causa para evitar una demanda costosa",
+    ],
+    services: [
+      { title: "Demanda por despido injustificado y cobro de prestaciones", description: "Reclamamos en sede judicial el preaviso (art. 28 del Código de Trabajo) y el auxilio de cesantía (art. 29), más vacaciones y aguinaldo proporcionales, salarios adeudados y, cuando procede, daños y perjuicios. El auxilio de cesantía se calcula según la antigüedad conforme a la tabla del artículo 29, con un tope general de ocho años de servicio. Litigamos en el proceso ordinario oral por audiencias de la Reforma Procesal Laboral (Ley N.° 9343)." },
+      { title: "Defensa del patrono y despido con justa causa", description: "Asesoramos a empresas para documentar y ejecutar despidos sin responsabilidad patronal por las causales del artículo 81 del Código de Trabajo, respetando el plazo de un mes que tiene el patrono para sancionar la falta (art. 414) y el debido proceso. Una falta mal acreditada convierte el despido en injustificado y obliga a pagar prestaciones; prevenirlo es más barato que litigarlo." },
+      { title: "Procesos de protección de fueros y no discriminación", description: "Tramitamos el proceso sumarísimo de tutela del fuero especial y de protección contra la discriminación (arts. 540 y siguientes, Reforma Procesal Laboral): mujeres embarazadas o en lactancia, personas con fuero sindical, denunciantes de hostigamiento y otras categorías protegidas. El juez puede ordenar como medida cautelar la suspensión del acto y la reinstalación mientras se resuelve el fondo." },
+      { title: "Riesgos del trabajo y enfermedades laborales", description: "Reclamamos el reconocimiento del accidente o la enfermedad laboral y las prestaciones del seguro de riesgos del trabajo (Título IV del Código de Trabajo) frente al INS y al patrono: incapacidades, indemnizaciones por pérdida de capacidad y atención médica. Impugnamos las calificaciones que niegan indebidamente la naturaleza laboral del riesgo." },
+      { title: "Litigio laboral en el empleo público", description: "Defendemos a personas funcionarias frente a despidos, reducciones salariales, traslados y procesos disciplinarios. Atendemos los efectos de la Ley Marco de Empleo Público (Ley N.° 10159) —salario global, evaluación del desempeño y rectoría del régimen— y deslindamos cuándo el conflicto corresponde a la jurisdicción laboral y cuándo a la contencioso-administrativa, según el régimen de empleo aplicable." },
+      { title: "Recurso de casación laboral ante la Sala Segunda", description: "Cuando la sentencia de segunda instancia es contraria a derecho, planteamos el recurso de casación ante la Sala Segunda de la Corte Suprema de Justicia, último órgano de la jurisdicción laboral. Preparamos el escrito con la técnica que exige la casación para que el recurso no sea rechazado por defectos formales." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría sobre un caso de Derecho Laboral en Costa Rica (despido, prestaciones o empleo público). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Qué me corresponde si me despiden sin justa causa?",
+        answer:
+          "En un despido sin justa causa de un contrato por tiempo indefinido, la persona trabajadora tiene derecho al preaviso (art. 28 del Código de Trabajo) y al auxilio de cesantía (art. 29), además de las vacaciones y el aguinaldo proporcionales y los salarios pendientes. El preaviso depende del tiempo laborado y la cesantía se calcula según la tabla del artículo 29, en función de la antigüedad, con un tope general de ocho años de servicio. Si el patrono alega una causa del artículo 81 pero no logra acreditarla en juicio, el despido se reputa injustificado y debe pagar igualmente esos rubros.",
+      },
+      {
+        question: "¿Cuánto tiempo tengo para demandar a mi patrono?",
+        answer:
+          "Los plazos laborales son cortos. Como regla general, los derechos y acciones derivados de los contratos de trabajo prescriben en un año contado desde la extinción del contrato. Existen plazos y reglas especiales según el tipo de reclamo, y la prescripción puede interrumpirse, por ejemplo, con la gestión de conciliación ante el Ministerio de Trabajo. Por eso conviene consultar de inmediato: dejar correr el tiempo puede hacerle perder un reclamo válido.",
+      },
+      {
+        question: "¿Cómo cambió el juicio laboral con la Reforma Procesal Laboral?",
+        answer:
+          "La Reforma Procesal Laboral (Ley N.° 9343) rige desde el 25 de julio de 2017 y transformó el proceso laboral. Hoy el ordinario es un proceso oral por audiencias, regido por principios de oralidad, concentración, inmediación y celeridad: la prueba se ofrece y se evacúa ante el juez en audiencia, lo que acorta los tiempos frente al antiguo proceso escrito. La reforma también creó procesos especiales más rápidos, como el sumarísimo de protección de fueros, e introdujo la asistencia legal gratuita para personas trabajadoras de escasos recursos.",
+      },
+      {
+        question: "Estoy embarazada y me despidieron, ¿qué puedo hacer?",
+        answer:
+          "El despido de una trabajadora embarazada o en período de lactancia está sujeto a un fuero especial de protección. La Reforma Procesal Laboral establece un proceso sumarísimo de tutela del fuero (arts. 540 y siguientes) en el que el juez puede ordenar, como medida cautelar, la suspensión del despido y la reinstalación mientras se resuelve el fondo. Conviene actuar con rapidez y documentar que el patrono conocía el estado de embarazo. Este mismo proceso protege a personas con fuero sindical, a denunciantes de hostigamiento y a otras categorías frente a la discriminación.",
+      },
+      {
+        question: "¿La Ley Marco de Empleo Público afecta mi caso si soy funcionario?",
+        answer:
+          "Puede afectarlo. La Ley Marco de Empleo Público (Ley N.° 10159) reorganizó el empleo público costarricense e introdujo, entre otras figuras, el salario global y la evaluación del desempeño. Sus efectos dependen del régimen al que pertenezca su plaza y de la fecha de su nombramiento. Además, no todo conflicto de empleo público se ventila en la jurisdicción laboral: según el régimen aplicable, algunos asuntos corresponden a la jurisdicción contencioso-administrativa. En la consulta determinamos cuál es la vía correcta para su caso concreto.",
+      },
+      {
+        question: "Soy patrono, ¿cómo evito una demanda al despedir a alguien?",
+        answer:
+          "La clave es el despido con justa causa bien fundamentado. El artículo 81 del Código de Trabajo enumera las causas que permiten despedir sin responsabilidad patronal, pero deben acreditarse con prueba. Además, el patrono cuenta con un plazo de un mes para sancionar la falta una vez que la conoce y está en posición de resolver (art. 414), y debe respetar el debido proceso. Un despido apresurado, sin prueba o fuera de plazo se convierte en injustificado y obliga a pagar prestaciones. Asesoramos en la documentación previa para reducir ese riesgo.",
+      },
+    ],
+  },
+  "derecho-notarial": {
+    hookHeadline: "¿Necesita una escritura, un poder o constituir su sociedad sin errores que luego cuesten años?",
+    hookSubtext:
+      "En materia notarial, un defecto de forma no se nota el día de la firma: aparece cuando usted intenta vender, hipotecar o heredar, y el Registro rechaza el documento. El notariado público es una función pública ejercida privadamente (art. 1, Código Notarial, Ley N.° 7764), y el notario da fe pública de los hechos y actos que documenta, cuyas manifestaciones se presumen ciertas (art. 31). En Corporación GC redactamos cada instrumento con el rigor de quien sabe que la escritura sobrevive a la operación: poderes, compraventas, hipotecas, constitución de sociedades y procesos sucesorios en sede notarial, con presentación oportuna y trazabilidad ante la Dirección Nacional de Notariado y el Archivo Notarial.",
+    scenariosTitle: "¿Cuándo necesita un notario público?",
+    triggerScenarios: [
+      "Va a comprar o vender un inmueble y necesita la escritura pública e inscripción registral",
+      "Requiere otorgar un poder (generalísimo, general o especial) para que alguien actúe en su nombre",
+      "Va a constituir una sociedad anónima o de responsabilidad limitada y necesita los estatutos y la inscripción",
+      "Debe formalizar una hipoteca, un fideicomiso o una garantía sobre un bien",
+      "Un familiar falleció y desea tramitar la sucesión en sede notarial, más ágil que la judicial cuando hay acuerdo",
+      "Necesita protocolizar un acta de asamblea, una reforma de estatutos o un cambio de junta directiva",
+      "Requiere certificaciones notariales, copias certificadas o autenticación de firmas para un trámite",
+    ],
+    services: [
+      { title: "Otorgamiento de escrituras públicas y gestión registral", description: "Redactamos la escritura pública con sus tres partes —introducción, contenido y conclusión (art. 81, Ley N.° 7764)— para compraventas, hipotecas, donaciones, servidumbres y demás actos, y expedimos el testimonio para su inscripción en el Registro Nacional. Cuidamos que el instrumento ingrese sin defectos que provoquen calificación registral negativa o nota de defectos." },
+      { title: "Poderes: generalísimos, generales y especiales", description: "Otorgamos el poder con el alcance exacto que usted necesita y el riesgo que está dispuesto a asumir. Distinguimos el poder generalísimo del general y del especial conforme a los artículos 1253 y siguientes del Código Civil, y lo inscribimos en el Registro cuando la ley lo exige, para que su apoderado pueda actuar sin que el banco, la contraparte o el Registro lo objeten." },
+      { title: "Constitución y reforma de sociedades", description: "Constituimos sociedades anónimas y de responsabilidad limitada conforme al Código de Comercio (Ley N.° 3284): redacción de estatutos a la medida, nombramiento de junta directiva o gerencia, capital social, libros legales e inscripción en el Registro de Personas Jurídicas. Tramitamos también reformas de estatutos, aumentos de capital, cambios de junta y fusiones, y le orientamos sobre los cambios introducidos por la Ley N.° 10729 (2025) en la identificación de las sociedades." },
+      { title: "Procesos sucesorios en sede notarial", description: "Tramitamos sucesiones testamentarias y ab intestato ante notario, una vía generalmente más ágil que la judicial cuando hay acuerdo entre los herederos. Levantamos el acta inicial, protocolizamos el inventario y la partición, y resolvemos el interés fiscal. La actividad notarial no contenciosa está regulada en el Título VI del Código Notarial (Ley N.° 7764): si surge oposición de un interesado, el notario pierde competencia, suspende su intervención y remite el expediente al tribunal competente (art. 134), donde el asunto continúa por la vía judicial conforme al Código Procesal Civil (Ley N.° 9342)." },
+      { title: "Protocolización de actas y documentos", description: "Protocolizamos actas de asamblea, reformas estatutarias, documentos y piezas de expedientes (art. 105, Ley N.° 7764), indicando en la introducción el motivo por el cual se actúa, para dar fecha cierta y eficacia registral a sus acuerdos societarios y decisiones corporativas." },
+      { title: "Certificaciones, copias certificadas y autenticaciones", description: "Expedimos certificaciones notariales, copias certificadas y autenticación de firmas para los trámites que las requieren ante entidades públicas, bancos y contrapartes. Garantizamos la presentación oportuna de los índices quincenales al Archivo Notarial, dentro de los cinco días hábiles siguientes a los días quince y último de cada mes (arts. 26 y 27, Ley N.° 7764)." },
+    ],
+    whatsappMessage:
+      "Hola, necesito asesoría notarial en Costa Rica (escritura, poder, constitución de sociedad o sucesión). Me gustaría coordinar una consulta.",
+    commercialFaq: [
+      {
+        question: "¿Qué es la fe pública notarial y por qué importa?",
+        answer:
+          "La fe pública es la facultad del notario de dar autenticidad a los hechos y actos jurídicos que presencia y documenta dentro de los límites de la ley. En virtud de ella, se presumen ciertas las manifestaciones del notario que constan en los instrumentos y demás documentos autorizados por él (art. 31, Código Notarial, Ley N.° 7764). El notariado público es la función pública ejercida privadamente (art. 1). En la práctica, eso significa que una escritura bien otorgada tiene valor probatorio frente a terceros, al Registro y a los tribunales; un instrumento mal redactado, en cambio, puede ser objetado y dejarle sin la seguridad jurídica que creía tener.",
+      },
+      {
+        question: "¿Qué diferencia hay entre un poder generalísimo, uno general y uno especial?",
+        answer:
+          "El alcance: el poder generalísimo faculta para actuar en todos los negocios del poderdante, incluso disponer de sus bienes (vender, hipotecar) y representarlo de la manera más amplia; el poder general se limita a la administración de los bienes o de un giro de negocios, sin facultad para disponer libremente; el poder especial se otorga para uno o varios actos concretos. Estas categorías y sus límites están en los artículos 1253 y siguientes del Código Civil. Elegir mal el tipo de poder es un error frecuente: un generalísimo entrega demasiado control y un especial puede quedarse corto para el trámite que usted necesita. Por eso lo ajustamos al acto y al riesgo concreto.",
+      },
+      {
+        question: "¿Puedo tramitar una sucesión ante notario en lugar del juzgado?",
+        answer:
+          "Sí. El Código Notarial (Ley N.° 7764), en su Título VI sobre actividad judicial no contenciosa, permite tramitar el proceso sucesorio en sede notarial cuando hay acuerdo entre los herederos, vía que suele ser más ágil que la judicial. El notario levanta el acta inicial, protocoliza el inventario y la partición, y atiende el interés fiscal. La clave es la ausencia de conflicto: si cualquier interesado formula oposición, el notario pierde competencia, suspende su intervención y remite el expediente al tribunal competente (art. 134), donde el asunto continúa por la vía judicial conforme al Código Procesal Civil (Ley N.° 9342). Por eso evaluamos primero si su caso es idóneo para la vía notarial.",
+      },
+      {
+        question: "¿Cuánto tarda y qué necesito para constituir una sociedad?",
+        answer:
+          "La constitución de una sociedad anónima o de responsabilidad limitada se rige por el Código de Comercio (Ley N.° 3284) y se formaliza mediante escritura pública que luego se inscribe en el Registro de Personas Jurídicas del Registro Nacional. Necesitamos la identificación de los socios, el nombre y objeto social, el capital, la estructura de administración (junta directiva o gerencia) y el domicilio. Redactamos los estatutos a la medida del negocio —no plantillas genéricas— y dejamos lista la sociedad con sus libros legales. Después conviene atender obligaciones complementarias como la inscripción tributaria y la declaración del Registro de Transparencia y Beneficiarios Finales. Tenga presente, además, los cambios de la Ley N.° 10729 (2025) en materia de identificación de las sociedades.",
+      },
+      {
+        question: "¿Por qué el Registro rechaza algunas escrituras y cómo lo evitan?",
+        answer:
+          "El Registro Nacional califica cada documento y puede consignar una nota de defectos cuando la escritura no reúne los requisitos de forma o de fondo: descripción incorrecta del inmueble, citas registrales erróneas, falta de comparecencia o representación debidamente acreditada, o ausencia de alguno de los elementos de la escritura pública (introducción, contenido y conclusión; art. 81, Ley N.° 7764). Nosotros revisamos el estado registral y los antecedentes antes de otorgar, de modo que el testimonio ingrese limpio y se inscriba sin que usted tenga que pagar reprocesos ni perder la prioridad de presentación.",
+      },
+      {
+        question: "¿Quién supervisa a los notarios en Costa Rica?",
+        answer:
+          "La Dirección Nacional de Notariado (DNN) es el órgano rector de la actividad notarial; tras la reforma del Código Notarial por la Ley N.° 8795 (2010), es un órgano de desconcentración máxima adscrito al Ministerio de Justicia y Paz, con competencia para regular, habilitar y fiscalizar a los notarios públicos (art. 21, Ley N.° 7764). Además, los notarios deben rendir cuentas presentando índices quincenales al Archivo Notarial, dentro de los cinco días hábiles siguientes a los días quince y último de cada mes (arts. 26 y 27). Trabajar con un notario que cumple estos controles le da trazabilidad: sus instrumentos quedan debidamente reportados y archivados.",
+      },
+    ],
+  },
 };
