@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { ORGANIZATION_SCHEMA } from "@/lib/organization-schema";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
-import { FIRM, FIRM_NAV_LINKS } from "@/lib/constants";
+import { FIRM_NAV_LINKS } from "@/lib/constants";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 /* ── SEO: Structured Data (JSON-LD) ── */
@@ -57,104 +58,7 @@ const jsonLdBreadcrumb = {
   ],
 };
 
-const jsonLdOrganization = {
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "@id": "https://www.corporaciongc.com/#organization",
-  name: "Corporación GC",
-  alternateName: "Corporación González Camacho",
-  description: FIRM.description,
-  url: "https://www.corporaciongc.com",
-  logo: "https://www.corporaciongc.com/images/logo-gc.png",
-  telephone: "+506 8317-9564",
-  email: "info@corporaciongc.com",
-  foundingDate: "2015",
-  areaServed: { "@type": "Country", name: "Costa Rica" },
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent",
-    addressLocality: "San José",
-    addressRegion: "San José",
-    addressCountry: "CR",
-  },
-  numberOfEmployees: { "@type": "QuantitativeValue", value: 6 },
-  founder: {
-    "@type": "Person",
-    "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
-    name: "Dr. Óscar Eduardo González Camacho",
-    jobTitle: "Fundador y Director",
-    honorificPrefix: "Dr.",
-    description:
-      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014). Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508). Doctor en Derecho por la Universidad de Alcalá de Henares, Sobresaliente Cum Laude.",
-    alumniOf: [
-      { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá de Henares" },
-      { "@type": "CollegeOrUniversity", name: "Universidad de Costa Rica" },
-    ],
-    hasCredential: [
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "degree",
-        name: "Doctor en Derecho",
-        recognizedBy: { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá de Henares" },
-      },
-    ],
-    memberOf: {
-      "@type": "Organization",
-      name: "Colegio de Abogados y Abogadas de Costa Rica",
-      identifier: "3191",
-    },
-    worksFor: { "@id": "https://www.corporaciongc.com/#organization" },
-  },
-  employee: [
-    {
-      "@type": "Person",
-      name: "Lic. Khevin Sánchez Zamora",
-      jobTitle: "Abogado Asociado",
-      url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "37920" },
-    },
-    {
-      "@type": "Person",
-      name: "MSc. Katherine González Coto",
-      jobTitle: "Abogada Asociada",
-      url: "https://www.corporaciongc.com/abogados/katherine-gonzalez",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "30256" },
-    },
-    {
-      "@type": "Person",
-      name: "Licda. Mariana Montero Acuña",
-      jobTitle: "Abogada Asociada",
-      url: "https://www.corporaciongc.com/abogados/mariana-montero",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "33716" },
-    },
-    {
-      "@type": "Person",
-      name: "Lic. Esteban Pérez Herrera",
-      jobTitle: "Abogado Asociado y Notario Público",
-      url: "https://www.corporaciongc.com/abogados/esteban-perez",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34399" },
-    },
-    {
-      "@type": "Person",
-      name: "Lic. José Carlos Solano Salas",
-      jobTitle: "Abogado Asociado",
-      url: "https://www.corporaciongc.com/abogados/jose-carlos-solano",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34724" },
-    },
-  ],
-  knowsAbout: [
-    "Derecho Administrativo",
-    "Contencioso Administrativo",
-    "Derecho Constitucional",
-    "Contratación Pública",
-    "Derecho Público",
-  ],
-  sameAs: [
-    "https://www.linkedin.com/company/corporacion-gc",
-    "https://www.abogados.or.cr/consultaagremiados/",
-    "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=57436",
-  ],
-};
+const jsonLdOrganization = ORGANIZATION_SCHEMA;
 
 import { sobreNosotrosMetadata } from "@/lib/page-metadata";
 
