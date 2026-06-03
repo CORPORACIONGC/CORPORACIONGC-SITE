@@ -191,15 +191,13 @@ Una vez recibido el escrito, el trámite sigue estas etapas:
 
 1. **Estudio de admisibilidad.** El magistrado instructor designado revisa si la gestión es manifiestamente improcedente o infundada y, en tal caso, somete a la Sala el rechazo de plano conforme al artículo 9 de la Ley de la Jurisdicción Constitucional. Si el recurso supera ese filtro, se da curso al trámite.
 
-2. **Suspensión de los actos impugnados.** Conforme al artículo 41 de la Ley de la Jurisdicción Constitucional, la sola interposición del amparo suspende —de pleno derecho— la aplicación al recurrente de los actos concretos impugnados. La Sala puede, a petición de la Administración o de oficio, mantener la ejecución cuando la suspensión cause o amenace causar daños mayores al interés público que los que la ejecución causaría al agraviado, dictando las cautelas que correspondan.
+2. **Informe de la autoridad recurrida.** El artículo 43 ordena pedir informe al servidor o al titular del órgano señalado como autor del agravio. El plazo es de uno a tres días (artículo 44) y el informe se rinde bajo juramento: cualquier inexactitud o falsedad hace incurrir al funcionario en las penas del perjurio o del falso testimonio. Si la autoridad **no rinde el informe** dentro del plazo, se tienen por ciertos los hechos alegados por el recurrente y la Sala resuelve sin más trámite (artículo 45).
 
-3. **Informe de la autoridad recurrida.** El artículo 43 ordena pedir informe al servidor o al titular del órgano señalado como autor del agravio. El plazo es de uno a tres días (artículo 44) y el informe se rinde bajo juramento: cualquier inexactitud o falsedad hace incurrir al funcionario en las penas del perjurio o del falso testimonio. Si la autoridad **no rinde el informe** dentro del plazo, se tienen por ciertos los hechos alegados por el recurrente y la Sala resuelve sin más trámite (artículo 45).
+3. **Diligencias para mejor proveer.** El artículo 47 faculta a la Sala para ordenar, antes de dictar sentencia, cualquier otra diligencia que considere necesaria.
 
-4. **Diligencias para mejor proveer.** El artículo 47 faculta a la Sala para ordenar, antes de dictar sentencia, cualquier otra diligencia que considere necesaria.
+4. **Sentencia.** La Sala resuelve por escrito, con efectos vinculantes y de cumplimiento inmediato. La sentencia que acoge el recurso ordena la restitución del agraviado en el goce de su derecho y condena en abstracto al pago de daños, perjuicios y costas (artículo 51).
 
-5. **Sentencia.** La Sala resuelve por escrito, con efectos vinculantes y de cumplimiento inmediato. La sentencia que acoge el recurso ordena la restitución del agraviado en el goce de su derecho y condena en abstracto al pago de daños, perjuicios y costas (artículo 51).
-
-6. **Ejecución.** El cumplimiento de la sentencia corresponde a la propia Sala (artículo 56). El incumplimiento doloso de las órdenes dictadas configura el delito de desobediencia previsto en el artículo 71, sancionado con prisión de tres meses a dos años o de veinte a sesenta días multa. La cuantificación de los daños se realiza después en la jurisdicción contencioso-administrativa.
+5. **Ejecución.** El cumplimiento de la sentencia corresponde a la propia Sala (artículo 56). El incumplimiento doloso de las órdenes dictadas configura el delito de desobediencia previsto en el artículo 71, sancionado con prisión de tres meses a dos años o de veinte a sesenta días multa. La cuantificación de los daños se realiza después en la jurisdicción contencioso-administrativa.
 
 ---
 
