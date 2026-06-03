@@ -8,8 +8,8 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "articulo"
-seoTitle: "CPCA vs. la antigua Ley Reguladora (LRJCA)"
-seoDescription: "Qué cambió de la antigua Ley Reguladora (Ley N.° 3667 de 1966) al CPCA (Ley N.° 8508): plazos, pretensiones, medidas cautelares y más, artículo por artículo."
+seoTitle: "CPCA vs LRJCA: qué cambió de la Ley 3667 a la 8508"
+seoDescription: "El CPCA (Ley N.° 8508) frente a la antigua Ley Reguladora LRJCA (Ley N.° 3667): plazos, pretensiones y medidas cautelares, artículo por artículo."
 faq:
   - question: "¿Qué ley rige el proceso contencioso-administrativo en Costa Rica hoy?"
     answer: "Hoy rige el Código Procesal Contencioso-Administrativo (CPCA, Ley N.° 8508), vigente desde el 1.° de enero de 2008. Sustituyó a la antigua Ley Reguladora de la Jurisdicción Contencioso-Administrativa (Ley N.° 3667 de 1966)."

@@ -8,8 +8,8 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Recurso de Amparo en Costa Rica: Qué Es y Cómo Presentarlo 2026"
-seoDescription: "Presente un recurso de amparo en Costa Rica paso a paso y en línea: es gratis y sin abogado. Plazo de 2 meses, requisitos, cuánto tarda la Sala IV y errores a evitar."
+seoTitle: "Recurso de Amparo Costa Rica: Guía Paso a Paso 2026"
+seoDescription: "Cómo presentar un recurso de amparo en Costa Rica paso a paso: gratis, en línea y sin abogado. Plazo de 2 meses, requisitos y errores ante la Sala IV."
 faq:
   - question: "¿Cuánto tarda la Sala Constitucional en resolver un amparo?"
     answer: "No existe plazo legal específico. En amparos sencillos sobre listas de espera, derecho de petición o sanciones evidentes, la sentencia suele dictarse en uno a tres meses. En casos con prueba, audiencia o múltiples partes, el trámite puede extenderse a seis u ocho meses. Casi siempre es más rápido que la vía contencioso-administrativa."
