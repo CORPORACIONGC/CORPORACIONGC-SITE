@@ -187,7 +187,6 @@ export const ORGANIZATION_SCHEMA = {
     areaServed: "CR",
   },
   sameAs: [
-    "https://www.linkedin.com/company/corporacion-gc",
     "https://www.abogados.or.cr/consultaagremiados/",
     "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=57436",
   ],

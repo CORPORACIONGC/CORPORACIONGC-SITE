@@ -100,6 +100,10 @@ export default function SobreNosotros() {
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-4">
               Corporación{" "}
               <span className="text-burgundy">GC</span>
+              <span className="block mt-3 text-base md:text-lg tracking-normal leading-snug text-cream/55">
+                Abogados especialistas en Derecho Administrativo y Contencioso
+                Administrativo en Costa Rica
+              </span>
             </h1>
 
             <article className="mt-10 space-y-10 text-sm text-cream/65 leading-relaxed">
