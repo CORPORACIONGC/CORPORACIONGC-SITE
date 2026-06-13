@@ -9,7 +9,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Amparo por Negativa de Medicamentos en la CCSS | Sala IV"
-seoDescription: "Qué dice la Sala Constitucional cuando la CCSS niega un medicamento fuera de la Lista Oficial: jurisprudencia verificada y cómo presentar el recurso de amparo."
+seoDescription: "¿La CCSS le negó un medicamento por no estar en la Lista Oficial? Vea cuándo la Sala IV obliga a entregarlo y cómo presentar el amparo paso a paso."
 faq:
   - question: "¿La CCSS puede negarme un medicamento solo porque no está en la Lista Oficial de Medicamentos?"
     answer: "No de forma automática. La Sala Constitucional ha ordenado a la CCSS entregar medicamentos que no figuran en la Lista Oficial de Medicamentos cuando el médico tratante los prescribe y existe un criterio técnico que los respalda. El caso fundacional es el voto N.° 5934-97, que ordenó suministrar antirretrovirales para el VIH pese a no estar en la lista; la línea se mantiene en fallos recientes como la sentencia N.° 2019-015241, sobre el medicamento Riociguat para hipertensión pulmonar."

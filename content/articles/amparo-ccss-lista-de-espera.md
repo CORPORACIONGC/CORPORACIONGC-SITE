@@ -9,7 +9,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Amparo contra la CCSS por Lista de Espera: Cómo Exigir Cita"
-seoDescription: "Cómo presentar un recurso de amparo contra la CCSS por lista de espera, cirugía pospuesta o cita lejana, paso a paso, y reclamar después la indemnización."
+seoDescription: "¿La CCSS le pospuso la cirugía o le dio una cita para dentro de años? El amparo puede obligarla a atenderlo en un plazo fijo. Guía paso a paso para lograrlo."
 faq:
   - question: "¿Es obligatorio tener abogado para presentar el amparo contra la CCSS?"
     answer: "La ley no lo exige: el artículo 33 de la Ley de la Jurisdicción Constitucional permite que cualquier persona interponga el recurso y el artículo 38 dispone que no requiere autenticación. Ahora bien, que no sea obligatorio no significa que sea indiferente. Cómo se describe el riesgo médico, qué prueba se aporta y cómo se prepara la posterior indemnización son decisiones de Derecho Público que inciden directamente en el resultado, por lo que conviene al menos que un especialista revise el caso antes de presentarlo."
