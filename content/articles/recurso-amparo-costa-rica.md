@@ -52,7 +52,7 @@ Esta combinación hace que el amparo sea, en la práctica, **la vía más eficaz
 
 ## ¿Contra qué actos u omisiones procede el amparo?
 
-El artículo 29 de la Ley de la Jurisdicción Constitucional establece que el amparo procede contra **toda disposición, acuerdo o resolución** y, en general, **contra toda acción, omisión o simple actuación material** no fundada en un acto administrativo eficaz, de los servidores y órganos públicos, que haya violado, viole o amenace violar cualquiera de los derechos fundamentales.
+El artículo 29 de la Ley de la Jurisdicción Constitucional establece que el amparo procede *"contra toda disposición, acuerdo o resolución y, en general, contra toda acción, omisión o simple actuación material no fundada en un acto administrativo eficaz, de los servidores y órganos públicos, que haya violado, viole o amenace violar cualquiera de aquellos derechos"*.
 
 En la práctica, esto cubre tres grandes categorías:
 
@@ -107,7 +107,7 @@ Para impugnar la legalidad ordinaria de un acto administrativo —sin componente
 
 ## ¿Cuál es el plazo para presentar un recurso de amparo?
 
-El **artículo 35 de la Ley de la Jurisdicción Constitucional** establece que el amparo puede interponerse **en cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción**. Cuando los efectos del acto cesen o se vuelvan irrelevantes, el plazo es de **dos meses** contados desde la cesación de esos efectos o desde el momento en que el agraviado los conoció en forma indubitable.
+El **artículo 35 de la Ley de la Jurisdicción Constitucional** establece que el amparo puede interponerse *"en cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción"*. Cuando los efectos del acto cesen o se vuelvan irrelevantes, el plazo es de **dos meses** contados desde la cesación de esos efectos o desde el momento en que el agraviado los conoció en forma indubitable.
 
 Esta regla es la que más confusión genera, y conviene tenerla clara:
 

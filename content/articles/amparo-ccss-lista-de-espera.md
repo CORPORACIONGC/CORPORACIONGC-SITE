@@ -37,11 +37,11 @@ Conviene aclarar primero el lenguaje: aunque coloquialmente se habla de "demanda
 
 ## ¿Por qué una lista de espera puede violar sus derechos fundamentales?
 
-El punto de partida es el artículo 21 de la Constitución Política, que contiene una de las frases más cortas y contundentes de todo el ordenamiento costarricense: **"La vida humana es inviolable."** De esa inviolabilidad la jurisprudencia constitucional ha derivado el **derecho a la salud**: una atención médica que llega demasiado tarde puede equivaler, sencillamente, a no llegar.
+El punto de partida es el artículo 21 de la Constitución Política, que contiene una de las frases más cortas y contundentes de todo el ordenamiento costarricense: *"La vida humana es inviolable."* De esa inviolabilidad la jurisprudencia constitucional ha derivado el **derecho a la salud**: una atención médica que llega demasiado tarde puede equivaler, sencillamente, a no llegar.
 
-A ese fundamento se suma el artículo 73 constitucional, que establece los seguros sociales precisamente "a fin de proteger a éstos contra los riesgos de enfermedad, invalidez, maternidad, vejez, muerte y demás contingencias que la ley determine", y dispone que **"la administración y el gobierno de los seguros sociales estarán a cargo de una institución autónoma, denominada Caja Costarricense de Seguro Social."** La CCSS no presta un favor: administra un seguro al que usted contribuye de manera forzosa y que existe, por mandato constitucional, para protegerlo cuando enferma.
+A ese fundamento se suma el artículo 73 constitucional, que establece los seguros sociales precisamente *"a fin de proteger a éstos contra los riesgos de enfermedad, invalidez, maternidad, vejez, muerte y demás contingencias que la ley determine"*, y dispone que *"la administración y el gobierno de los seguros sociales estarán a cargo de una institución autónoma, denominada Caja Costarricense de Seguro Social."* La CCSS no presta un favor: administra un seguro al que usted contribuye de manera forzosa y que existe, por mandato constitucional, para protegerlo cuando enferma.
 
-El puente entre esos derechos y su caso concreto es el artículo 48 de la Constitución: **toda persona tiene derecho al recurso de amparo "para mantener o restablecer el goce de los otros derechos consagrados en esta Constitución, así como de los de carácter fundamental establecidos en los instrumentos internacionales sobre derechos humanos, aplicables a la República"**. Cuando la espera compromete su salud o su vida, el amparo es el mecanismo que la propia Constitución diseñó para reaccionar.
+El puente entre esos derechos y su caso concreto es el artículo 48 de la Constitución: toda persona tiene derecho al recurso de amparo *"para mantener o restablecer el goce de los otros derechos consagrados en esta Constitución, así como de los de carácter fundamental establecidos en los instrumentos internacionales sobre derechos humanos, aplicables a la República"*. Cuando la espera compromete su salud o su vida, el amparo es el mecanismo que la propia Constitución diseñó para reaccionar.
 
 Para una explicación general del recurso —qué derechos protege, contra qué actos procede y sus reglas completas—, puede consultar nuestra [guía del recurso de amparo en Costa Rica](/articulos/recurso-amparo-costa-rica). Lo que sigue se concentra en el caso específico de la CCSS y las listas de espera.
 
@@ -49,7 +49,7 @@ Para una explicación general del recurso —qué derechos protege, contra qué 
 
 ## ¿Cuándo procede el amparo contra la CCSS por lista de espera?
 
-El artículo 29 de la Ley de la Jurisdicción Constitucional define el campo de acción del amparo con una amplitud deliberada: procede contra toda disposición, acuerdo o resolución y, en general, **"contra toda acción, omisión o simple actuación material no fundada en un acto administrativo eficaz, de los servidores y órganos públicos, que haya violado, viole o amenace violar cualquiera de aquellos derechos"**.
+El artículo 29 de la Ley de la Jurisdicción Constitucional define el campo de acción del amparo con una amplitud deliberada: procede contra toda disposición, acuerdo o resolución y, en general, *"contra toda acción, omisión o simple actuación material no fundada en un acto administrativo eficaz, de los servidores y órganos públicos, que haya violado, viole o amenace violar cualquiera de aquellos derechos"*.
 
 La palabra clave para las listas de espera es **omisión**. No hace falta que la CCSS le haya negado nada por escrito: la postergación indefinida de una cirugía, la cita fijada a años vista o el silencio frente a sus gestiones son omisiones o actuaciones materiales impugnables. Y note el verbo "amenace": el amparo procede también frente a la amenaza de violación, sin que usted deba esperar a que el daño se consume.
 
@@ -74,13 +74,13 @@ El amparo no es un buzón universal de quejas contra la Caja. Si su reclamo es d
 
 Antes de redactar nada, tenga presentes tres reglas de la Ley de la Jurisdicción Constitucional que despejan las dudas más comunes:
 
-**1. No tiene que reclamar primero ante la CCSS.** El artículo 31 es categórico: **"No será necesaria la reposición ni ningún otro recurso administrativo para interponer el recurso de amparo."** Puede presentar gestiones internas si lo desea —y servirán como prueba—, pero no son un requisito. Si optó por esa vía, el mismo artículo dispone que el plazo de prescripción se suspende mientras la Administración no resuelva expresamente, sin perjuicio de acudir directamente a la Sala en cualquier momento.
+**1. No tiene que reclamar primero ante la CCSS.** El artículo 31 es categórico: *"No será necesaria la reposición ni ningún otro recurso administrativo para interponer el recurso de amparo."* Puede presentar gestiones internas si lo desea —y servirán como prueba—, pero no son un requisito. Si optó por esa vía, el mismo artículo dispone que el plazo de prescripción se suspende mientras la Administración no resuelva expresamente, sin perjuicio de acudir directamente a la Sala en cualquier momento.
 
-**2. Mientras siga esperando, no hay plazo que se le venza.** Conforme al artículo 35, el amparo **"podrá interponerse en cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción"**, y hasta dos meses después de que hayan cesado totalmente sus efectos directos. En una lista de espera la lesión es continuada: cada día sin cirugía la omisión persiste y el recurso sigue siendo procedente.
+**2. Mientras siga esperando, no hay plazo que se le venza.** Conforme al artículo 35, el amparo *"podrá interponerse en cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción"*, y hasta dos meses después de que hayan cesado totalmente sus efectos directos. En una lista de espera la lesión es continuada: cada día sin cirugía la omisión persiste y el recurso sigue siendo procedente.
 
-**3. Cualquier persona puede presentarlo, incluso por otra.** El artículo 33 lo dice en una sola línea: **"Cualquier persona podrá interponer el recurso de amparo."** No importa la edad ni la nacionalidad, y se admite el amparo a favor de un tercero: un hijo puede presentarlo por su madre hospitalizada, un cónyuge por el paciente que no puede gestionarlo.
+**3. Cualquier persona puede presentarlo, incluso por otra.** El artículo 33 lo dice en una sola línea: *"Cualquier persona podrá interponer el recurso de amparo."* No importa la edad ni la nacionalidad, y se admite el amparo a favor de un tercero: un hijo puede presentarlo por su madre hospitalizada, un cónyuge por el paciente que no puede gestionarlo.
 
-¿Y contra quién se dirige? El artículo 34 establece que el recurso se dirige contra el servidor o el titular del órgano que aparezca como presunto autor del agravio, y resuelve la duda práctica más frecuente: **"De ignorarse la identidad del servidor, el recurso se tendrá por establecido contra el jerarca."** Basta con identificar el hospital o la clínica y la institución; no necesita averiguar el nombre del funcionario que maneja la agenda quirúrgica.
+¿Y contra quién se dirige? El artículo 34 establece que el recurso se dirige contra el servidor o el titular del órgano que aparezca como presunto autor del agravio, y resuelve la duda práctica más frecuente: *"De ignorarse la identidad del servidor, el recurso se tendrá por establecido contra el jerarca."* Basta con identificar el hospital o la clínica y la institución; no necesita averiguar el nombre del funcionario que maneja la agenda quirúrgica.
 
 ---
 
@@ -88,7 +88,7 @@ Antes de redactar nada, tenga presentes tres reglas de la Ley de la Jurisdicció
 
 ### Paso 1. Reúna la prueba
 
-El artículo 38 de la Ley N.° 7135 exige acompañar "las pruebas de cargo". Para una lista de espera, los documentos típicos son:
+El artículo 38 de la Ley N.° 7135 exige acompañar *"las pruebas de cargo"*. Para una lista de espera, los documentos típicos son:
 
 - Su **cédula de identidad** (o la del paciente, si actúa por un familiar).
 - El **comprobante de la cita o de la cirugía** programada o pospuesta (boletas de citas, reprogramaciones).
@@ -122,22 +122,22 @@ El recurso **no está sujeto a otras formalidades ni requiere autenticación**: 
 
 Presentado el recurso, la ley impone un ritmo que favorece al paciente:
 
-1. **Tramitación privilegiada.** El amparo se sustancia "en forma privilegiada", posponiendo cualquier asunto de naturaleza diferente, salvo el hábeas corpus (artículo 39). Los plazos son perentorios e improrrogables.
+1. **Tramitación privilegiada.** El amparo se sustancia *"en forma privilegiada"*, posponiendo cualquier asunto de naturaleza diferente, salvo el hábeas corpus (artículo 39). Los plazos son perentorios e improrrogables.
 2. **Informe bajo juramento en uno a tres días.** La Sala pide informe a la autoridad recurrida por el medio escrito más rápido posible (artículo 43), con un plazo de uno a tres días (artículo 44). Los informes **se consideran dados bajo juramento**: cualquier inexactitud o falsedad expone al funcionario a las penas del perjurio o del falso testimonio.
 3. **Si la CCSS no contesta, usted gana terreno.** Si el informe no se rinde dentro del plazo, **se tendrán por ciertos los hechos** y la Sala entra a resolver sin más trámite (artículo 45).
 4. **Si el informe confirma el cargo, el amparo se declara con lugar** sin más trámite, si procede conforme a derecho (artículo 46).
 
 ### Paso 5. La sentencia: una fecha cierta para su atención
 
-Cuando lo impugnado es una omisión —el caso típico de la lista de espera—, el artículo 49 ordena exactamente lo que el paciente necesita: **"la sentencia ordenará realizarlo, para lo cual se otorgará un plazo prudencial perentorio."** En la práctica, eso se traduce en una orden a la CCSS de practicar la cirugía, la cita o el examen dentro de un plazo concreto fijado por la Sala.
+Cuando lo impugnado es una omisión —el caso típico de la lista de espera—, el artículo 49 ordena exactamente lo que el paciente necesita: *"la sentencia ordenará realizarlo, para lo cual se otorgará un plazo prudencial perentorio."* En la práctica, eso se traduce en una orden a la CCSS de practicar la cirugía, la cita o el examen dentro de un plazo concreto fijado por la Sala.
 
 ---
 
 ## ¿Qué gana exactamente con la sentencia?
 
-**Una orden de cumplimiento inmediato.** Firme la sentencia, el órgano o servidor responsable **"deberá cumplirla sin demora"** (artículo 53). Si no lo hace dentro de las cuarenta y ocho horas siguientes a su firmeza, la Sala se dirige al superior del responsable, le requiere el cumplimiento y ordena abrir procedimiento disciplinario; pasadas otras cuarenta y ocho horas, manda abrir proceso también contra el superior omiso.
+**Una orden de cumplimiento inmediato.** Firme la sentencia, el órgano o servidor responsable *"deberá cumplirla sin demora"* (artículo 53). Si no lo hace dentro de las cuarenta y ocho horas siguientes a su firmeza, la Sala se dirige al superior del responsable, le requiere el cumplimiento y ordena abrir procedimiento disciplinario; pasadas otras cuarenta y ocho horas, manda abrir proceso también contra el superior omiso.
 
-**Una condena en abstracto a daños y costas.** El artículo 51 dispone que **toda resolución que acoja el recurso "condenará en abstracto a la indemnización de los daños y perjuicios causados y al pago de las costas del recurso"**, reservando su liquidación para la ejecución de sentencia. La condenatoria recae contra el Estado o la entidad de que dependa el demandado —aquí, la CCSS— y solidariamente contra el servidor si medió dolo o culpa de su parte, en los términos del artículo 199 de la Ley General de la Administración Pública (remisión que hace el propio artículo 51).
+**Una condena en abstracto a daños y costas.** El artículo 51 dispone que toda resolución que acoja el recurso *"condenará en abstracto a la indemnización de los daños y perjuicios causados y al pago de las costas del recurso"*, reservando su liquidación para la ejecución de sentencia. La condenatoria recae contra el Estado o la entidad de que dependa el demandado —aquí, la CCSS— y solidariamente contra el servidor si medió dolo o culpa de su parte, en los términos del artículo 199 de la Ley General de la Administración Pública (remisión que hace el propio artículo 51).
 
 **La puerta a la indemnización real.** La cuantificación de esos daños no la hace la Sala: la ejecución de las sentencias corresponde a la Sala Constitucional salvo en lo relativo a la liquidación y cumplimiento de indemnizaciones y responsabilidades pecuniarias, que se tramita **en la vía contencioso-administrativa** por el procedimiento de ejecución de sentencia (artículo 56). Es un proceso aparte, donde se demuestra y liquida el daño sufrido por la espera —incluido el daño moral—. En esa etapa nuestro equipo litiga con regularidad: puede conocer el área de [litigio contencioso-administrativo](/areas/litigio-contencioso-administrativo) y, como respaldo académico de la firma en esta materia, la [tesis sobre el daño moral indirecto](/articulos/tesis-dano-moral-indirecto) y la [investigación sobre iatrogenia y responsabilidad administrativa sanitaria](/articulos/tesis-iatrogenia-responsabilidad-administrativa) publicadas por el bufete.
 

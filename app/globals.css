@@ -791,3 +791,84 @@ html {
   }
   .prose-article .gc-reforma .gc-new::before { color: var(--color-burgundy-light); }
 }
+
+/* ============================================================
+   Refinamientos de maquetación de los artículos (.prose-article).
+   Van al final para ganar en orden a las reglas anteriores.
+   Aplican en modo claro y oscuro: negritas con más contraste,
+   cursivas para citas, viñetas y números de marca, citas con
+   fondo sutil y tablas Markdown legibles también en modo claro.
+   ============================================================ */
+
+/* Negritas: más peso y contraste para destacar términos clave */
+.prose-article strong { font-weight: 700; color: #1C1C1E; }
+.dark .prose-article strong { font-weight: 600; color: #FFFFFF; }
+
+/* Cursivas: citas textuales de ley y jurisprudencia */
+.prose-article em { font-style: italic; color: #1C1C1E; }
+.dark .prose-article em { color: #F7F3EE; }
+
+/* Viñetas con marcador circular de marca */
+.prose-article ul { list-style: none; padding-left: 1.5rem; }
+.prose-article ul > li { position: relative; padding-left: 0.25rem; }
+.prose-article ul > li::before {
+  content: "";
+  position: absolute;
+  left: -1.05rem;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6B1D3A;
+}
+.dark .prose-article ul > li::before { background: #C4A265; }
+
+/* Listas numeradas (pasos): número en color de marca y en negrita */
+.prose-article ol { padding-left: 1.6rem; }
+.prose-article ol > li::marker { color: #6B1D3A; font-weight: 700; }
+.dark .prose-article ol > li::marker { color: #C4A265; }
+
+/* Más aire entre ítems y para sublistas */
+.prose-article li { margin-bottom: 0.5rem; }
+.prose-article li > ul,
+.prose-article li > ol { margin-top: 0.5rem; }
+
+/* Citas destacadas: fondo sutil y esquina redondeada */
+.prose-article blockquote {
+  background: color-mix(in oklab, #6B1D3A 5%, transparent);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  color: #1C1C1E;
+}
+.dark .prose-article blockquote {
+  background: color-mix(in oklab, #C4A265 8%, transparent);
+  color: #F7F3EEcc;
+}
+
+/* Tablas Markdown legibles también en modo claro
+   (el estilo base usa tonos crema, pensados para modo oscuro) */
+.prose-article > table thead th {
+  color: #6B1D3A;
+  border-bottom-color: color-mix(in oklab, #1C1C1E 18%, transparent);
+}
+.prose-article > table tbody td {
+  color: color-mix(in oklab, #1C1C1E 80%, transparent);
+  border-bottom-color: color-mix(in oklab, #1C1C1E 10%, transparent);
+}
+.prose-article > table thead th:first-child,
+.prose-article > table tbody td:first-child {
+  color: #1C1C1E;
+  font-weight: 600;
+}
+.dark .prose-article > table thead th {
+  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  border-bottom-color: color-mix(in oklab, var(--color-cream) 18%, transparent);
+}
+.dark .prose-article > table tbody td {
+  color: color-mix(in oklab, var(--color-cream) 78%, transparent);
+  border-bottom-color: color-mix(in oklab, var(--color-cream) 8%, transparent);
+}
+.dark .prose-article > table thead th:first-child,
+.dark .prose-article > table tbody td:first-child {
+  color: var(--color-cream);
+}
