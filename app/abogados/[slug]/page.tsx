@@ -16,6 +16,7 @@ import { OscarAbout } from "@/components/sections/OscarAbout";
 import { OscarExperience } from "@/components/sections/OscarExperience";
 import { OscarConferencias } from "@/components/sections/OscarConferencias";
 import { OscarEventoDestacado } from "@/components/sections/OscarEventoDestacado";
+import { OscarCapacitacionEleinmsa } from "@/components/sections/OscarCapacitacionEleinmsa";
 import { KhevinEventoDestacado } from "@/components/sections/KhevinEventoDestacado";
 import { OscarContact } from "@/components/sections/OscarContact";
 import { EstebanHero } from "@/components/sections/EstebanHero";
@@ -433,6 +434,7 @@ function OscarProfile() {
           <JurisprudenciaDestacada variant="profile" />
           <Publications articles={articles} />
           <OscarEventoDestacado />
+          <OscarCapacitacionEleinmsa />
           <OscarConferencias />
           <OscarContact />
         </main>
