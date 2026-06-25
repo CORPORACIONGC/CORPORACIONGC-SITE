@@ -480,7 +480,8 @@ export function OscarCapacitacionEleinmsa() {
             <span className="font-medium text-cream/80">ELEINMSA</span>{" "}
             <span className="text-cream/45">(Electr&oacute;nica Industrial y M&eacute;dica S.A.)</span>{" "}
             sobre el equilibrio econ&oacute;mico de los contratos p&uacute;blicos y el reajuste de
-            precios en la contrataci&oacute;n administrativa.
+            precios en la contrataci&oacute;n administrativa. La primera sesi&oacute;n se
+            imparti&oacute; el <span className="text-cream/80">13 de junio de 2026</span>.
           </p>
         </AnimatedEntry>
 
