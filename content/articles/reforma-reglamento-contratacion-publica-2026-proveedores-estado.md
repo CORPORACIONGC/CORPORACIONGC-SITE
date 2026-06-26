@@ -121,6 +121,8 @@ Hasta ahora, tanto las instituciones como los terceros (empresas, cámaras, ases
 
 ---
 
+<CapacitacionEleinmsa />
+
 ## Preguntas frecuentes
 
 ### ¿Qué es la subsanación de ofertas en SICOP?

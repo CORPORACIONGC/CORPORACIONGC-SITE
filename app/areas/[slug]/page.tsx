@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT, getRelatedAreas } from "@/lib/constants";
 import { AREA_COMMERCIAL } from "@/lib/area-commercial";
 import { generateAreaMetadata } from "@/lib/page-metadata";
@@ -1156,6 +1157,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           tiene reglas propias de plazos, publicidad, recepción de ofertas y régimen recursivo.
         </p>
       </Instrumento>
+
+      <CapacitacionEleinmsa />
     </>
   ),
 
