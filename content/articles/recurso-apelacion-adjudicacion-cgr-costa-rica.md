@@ -5,7 +5,7 @@ excerpt: "Perdió una licitación mayor y tiene ocho días hábiles para apelar 
 tags: ["Guía práctica", "Contratación Pública", "Ley 9986", "CGR", "Apelación", "Licitaciones", "Adjudicación"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
-authorVisible: false
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Apelación de adjudicación ante la CGR: plazos y requisitos"

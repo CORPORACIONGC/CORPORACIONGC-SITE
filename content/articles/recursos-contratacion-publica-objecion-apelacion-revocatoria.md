@@ -5,7 +5,7 @@ excerpt: "Perdió una licitación o el cartel lo deja fuera. La Ley 9986 le da t
 tags: ["Guía práctica", "Contratación Pública", "Ley 9986", "Recursos", "CGR", "Licitaciones"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
-authorVisible: false
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Objeción, apelación y revocatoria en contratación pública CR"
