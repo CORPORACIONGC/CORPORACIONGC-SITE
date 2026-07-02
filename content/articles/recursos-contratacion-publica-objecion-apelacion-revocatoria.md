@@ -4,7 +4,7 @@ date: "2026-07-02"
 excerpt: "Perdió una licitación o el cartel lo deja fuera. La Ley 9986 le da tres recursos — pero presentar el equivocado, o presentarlo tarde, significa el rechazo de plano. Guía completa con plazos, órganos competentes y tabla comparativa."
 tags: ["Guía práctica", "Contratación Pública", "Ley 9986", "Recursos", "CGR", "Licitaciones"]
 type: "article"
-author: "Dr. Óscar Eduardo González Camacho"
+author: "Lic. Khevin Sánchez Zamora"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
