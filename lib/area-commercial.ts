@@ -486,14 +486,19 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "El artículo 87 ordena rechazar el recurso por inadmisible (incompetencia en razón de la materia, el tiempo, el tipo de procedimiento o la inobservancia de requisitos formales) o por improcedencia manifiesta (cuando el recurrente carece de legitimación o de mejor derecho, no fundamenta el recurso o gira sobre argumentos precluidos). Por eso el recurso debe presentarse debidamente fundamentado y con la prueba idónea (art. 88).",
       },
       {
+        question: "Me rechazaron o me excluyeron la oferta, ¿qué puedo hacer?",
+        answer:
+          "Primero hay que determinar si la exclusión se debió a un defecto subsanable (art. 50): si la Administración no le dio la oportunidad de subsanar, ese es un vicio alegable. Luego, la vía depende del procedimiento: en licitación mayor, recurso de apelación ante la Contraloría dentro de los ocho días hábiles siguientes a la comunicación del acto final; en licitación menor o subasta inversa, recurso de revocatoria en cinco días hábiles. En el recurso deberá acreditar su “mejor derecho”: que su oferta era elegible y que, corregido el vicio, usted resultaría adjudicatario. Ese análisis debe hacerse de inmediato — el plazo corre desde la notificación.",
+      },
+      {
         question: "Después de la Contraloría, ¿puedo acudir a los tribunales?",
         answer:
           "Sí. La resolución que resuelve por el fondo el recurso de objeción o de apelación da por agotada la vía administrativa (arts. 96 y 98). A partir de ese momento procede la demanda ante la jurisdicción contencioso-administrativa, donde además puede solicitarse una medida cautelar para proteger su posición mientras se resuelve el caso.",
       },
     ],
-    relatedArticleSlug: "hermeneutica-ia-contratacion-publica",
+    relatedArticleSlug: "recursos-contratacion-publica-objecion-apelacion-revocatoria",
     relatedArticleLabel:
-      "Publicación de la firma sobre la Ley N.° 9986: inteligencia artificial en la contratación pública",
+      "Guía completa: objeción, apelación o revocatoria — qué recurso corresponde, ante quién y en qué plazo",
   },
 
   "recursos-de-amparo": {

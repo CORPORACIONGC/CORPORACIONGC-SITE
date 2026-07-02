@@ -17,6 +17,7 @@ import { PDFViewer } from "@/components/article/PDFViewer";
 import { WhatsAppFloat } from "@/components/article/WhatsAppFloat";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmparo";
+import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import {
@@ -345,7 +346,7 @@ export default async function ArticlePage({
               <div className="prose-article mb-10">
                 <MDXRemote
                   source={article.content}
-                  components={{ ComparativaViasAmparo, ReformaCpca, CapacitacionEleinmsa }}
+                  components={{ ComparativaViasAmparo, ComparativaRecursosContratacion, ReformaCpca, CapacitacionEleinmsa }}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],
@@ -360,7 +361,7 @@ export default async function ArticlePage({
               <div className="prose-article">
                 <MDXRemote
                   source={article.content}
-                  components={{ ComparativaViasAmparo, ReformaCpca, CapacitacionEleinmsa }}
+                  components={{ ComparativaViasAmparo, ComparativaRecursosContratacion, ReformaCpca, CapacitacionEleinmsa }}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],

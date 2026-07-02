@@ -1158,6 +1158,57 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
+      <Instrumento titulo="Después de la Contraloría: el litigio ante el Tribunal Contencioso Administrativo" fundamento="CPCA, Ley 8508">
+        <p>
+          La resolución que decide por el fondo un recurso de objeción o de apelación agota la
+          vía administrativa (arts. 96 y 98 de la Ley N.° 9986). Ese no es el final del camino:
+          la adjudicación —o la resolución de la propia Contraloría— puede impugnarse ante la
+          Jurisdicción Contencioso-Administrativa, donde además cabe solicitar{" "}
+          <Link href="/areas/medidas-cautelares" className="text-gold hover:text-gold/80 transition-colors">
+            medidas cautelares
+          </Link>{" "}
+          para suspender el acto y reclamar los daños y perjuicios causados al oferente
+          ilegítimamente excluido.
+        </p>
+        <p>
+          Esta fase —la que decide los casos de mayor cuantía— es el terreno natural de la
+          firma: nuestro director fue co-redactor del Código Procesal Contencioso Administrativo
+          y ex-Magistrado de la Sala Primera, la sala que conoce en casación las sentencias del
+          Tribunal Contencioso. Vea nuestras áreas de{" "}
+          <Link href="/areas/litigio-contencioso-administrativo" className="text-gold hover:text-gold/80 transition-colors">
+            litigio contencioso-administrativo
+          </Link>{" "}
+          y{" "}
+          <Link href="/areas/casacion-sala-primera" className="text-gold hover:text-gold/80 transition-colors">
+            casación ante la Sala Primera
+          </Link>
+          , o la guía{" "}
+          <Link href="/articulos/como-demandar-al-estado-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+            ¿cómo demandar al Estado en Costa Rica?
+          </Link>
+          .
+        </p>
+      </Instrumento>
+
+      <section className="mt-12 mb-2">
+        <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-4">
+          Quién atiende estos casos
+        </h2>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          Los recursos en contratación pública se litigan ante la Contraloría General de la
+          República y la propia Administración a través de SICOP, y su fase judicial ante el
+          Tribunal Contencioso Administrativo y la Sala Primera de la Corte Suprema de Justicia.
+          El equipo de Corporación GC es dirigido por el{" "}
+          <Link href="/abogados/oscar-gonzalez" className="text-gold hover:text-gold/80 transition-colors">
+            Dr. Óscar Eduardo González Camacho
+          </Link>
+          , ex-Magistrado de la Sala Primera (2002–2014), co-redactor del Código Procesal
+          Contencioso Administrativo y Doctor en Derecho por la Universidad de Alcalá. Esa
+          trayectoria —en la judicatura que resuelve en definitiva estos conflictos— es la base
+          del criterio con que evaluamos la viabilidad de cada recurso antes de presentarlo.
+        </p>
+      </section>
+
       <CapacitacionEleinmsa />
     </>
   ),
