@@ -1,7 +1,7 @@
 ---
 title: "Reajuste de precios en obra pública: cómo cobrar el equilibrio económico de su contrato"
 date: "2026-07-03"
-excerpt: "Sus costos subieron y la Administración no le paga la diferencia. El reajuste de precios es un derecho de rango constitucional que subsiste aunque el cartel calle. Aquí le explicamos qué se reajusta, cómo se calcula y cómo cobrarlo."
+excerpt: "Sus costos subieron y la Administración no le paga la diferencia. El reajuste de precios protege un derecho que subsiste aunque el cartel calle. Vea qué protege, cuándo procede y en qué plazo se reclama."
 tags: ["Guía práctica", "Contratación Pública", "Reajuste de precios", "Equilibrio económico", "Obra pública", "Ley 9986"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
@@ -9,134 +9,93 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Reajuste de precios obra pública Costa Rica"
-seoDescription: "Cómo cobrar el reajuste de precios en obra pública bajo la Ley 9986: qué se reajusta, la fórmula, los índices del BCCR e INEC y cómo solicitarlo."
+seoDescription: "Reajuste de precios en obra pública bajo la Ley 9986 y el Decreto 44937: el derecho al equilibrio económico, cuándo procede y en qué plazo se reclama."
 faq:
   - question: "¿Qué es el reajuste de precios en un contrato de obra pública?"
-    answer: "Es el mecanismo que mantiene el equilibrio económico del contrato cuando los costos suben o bajan por causas ajenas al contratista. La Administración aumenta o disminuye los precios midiendo la variación de los costos directos e indirectos contra la fecha de la oferta, mediante fórmulas con índices oficiales. Protege la ecuación financiera que existía cuando usted ofertó, para que el contrato siga siendo viable durante toda su ejecución."
+    answer: "Es el mecanismo que mantiene el equilibrio económico del contrato cuando los costos varían por causas ajenas al contratista. Permite ajustar el precio para conservar la ecuación financiera que existía cuando usted ofertó, de modo que el contrato siga siendo viable durante toda su ejecución. Es un derecho reconocido por el artículo 43 de la Ley General de Contratación Pública."
   - question: "¿Se puede cobrar el reajuste si el cartel no trae fórmula o lo niega?"
-    answer: "Sí. El derecho al equilibrio económico es de rango constitucional y subsiste aunque el cartel guarde silencio o intente eliminarlo; una cláusula que lo niegue es inaplicable. Sin fórmula, la vía es el método analítico documental: probar el evento ajeno, su incidencia en un costo concreto, el desequilibrio real y su cuantificación. Lo ideal es objetar el cartel a tiempo para que incluya la fórmula."
-  - question: "¿Qué costos se reajustan y cuáles nunca?"
-    answer: "Solo se reajustan los elementos de costo del precio: los costos directos e indirectos como mano de obra, insumos y subcontrataciones. La Ley 9986 prohíbe expresamente reajustar la utilidad, y el imprevisto tampoco entra en la fórmula. Cada componente se reajusta con su propio índice específico, según la moneda en que se presentó la oferta. Reajustar la utilidad o el imprevisto es un error que la Administración rechazará."
-  - question: "¿Cuál es la fórmula del reajuste y qué índices se usan?"
-    answer: "La fórmula, contenida en el artículo 25 del Decreto 44937, compara el índice oficial del mes de ejecución con el del mes de la oferta, pondera esa variación según el peso de cada componente de costo y la aplica al precio unitario del contrato. Los índices los emiten el INEC y el BCCR (y el MTSS para salarios mínimos), y siguen la moneda de la oferta. Es un cálculo por componente, con reglas estrictas de índice y precisión, que debe sustentarse con rigor para que la Administración no lo rechace."
+    answer: "Sí. El derecho al equilibrio económico está amparado por los principios constitucionales de la contratación administrativa y subsiste aunque el cartel guarde silencio o intente eliminarlo; una cláusula que lo niegue es inaplicable. Aun sin fórmula el reajuste puede reclamarse, por una vía con mayor exigencia de prueba. La estrategia se define desde el análisis del cartel, antes de ofertar."
+  - question: "¿Qué protege el reajuste y qué deja fuera?"
+    answer: "La ley solo permite reajustar los elementos de costo del precio; la utilidad, por prohibición expresa del artículo 43, nunca se reajusta. El reajuste compensa que un costo real del contrato varió, sin tocar el margen de ganancia que usted fijó al ofertar. Definir qué rubros entran y cómo se acredita cada variación es la parte técnica del trámite."
+  - question: "¿Cómo se calcula el reajuste?"
+    answer: "Mediante una fórmula matemática oficial contenida en el artículo 25 del Decreto Ejecutivo N.° 44937, que cuantifica la variación de los costos con índices de precios oficiales publicados por el INEC y el Banco Central de Costa Rica. Es un cálculo técnico, sujeto a reglas estrictas, que debe sustentarse con rigor para que la Administración lo acepte."
   - question: "¿En qué plazo prescribe el derecho a cobrar el reajuste?"
-    answer: "Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. El reajuste se pide a petición de parte: el contratista lo calcula y lo presenta, a diferencia de la indexación, que el juez reconoce de oficio. Conviene calcular el efecto neto antes de solicitarlo, porque si varios índices bajaron, pedirlo podría reducir el precio."
-  - question: "¿El reajuste es lo mismo que un reclamo de daños por pago tardío?"
-    answer: "Son vías distintas. El reajuste mide la variación de costos contra la oferta y se calcula con la fórmula. El reclamo de daños cubre hechos ajenos a esa variación, como el pago tardío o el perjuicio cambiario por facturación demorada; tras treinta días sin pago corren intereses moratorios. La indexación consiste en traer a valor presente un monto ya reconocido y pagado tarde. Confundirlas debilita el reclamo."
+    answer: "Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. El reajuste se reclama a petición de parte. La indexación, que es otra figura, la reconoce el juez de oficio. Conviene actuar sin dejar correr el plazo, porque la prueba se degrada con el tiempo."
+  - question: "¿En qué se diferencian el reajuste, el reclamo de daños y la indexación?"
+    answer: "Son figuras distintas. El reajuste responde a la variación de los costos del contrato; el reclamo de daños cubre hechos ajenos a esa variación, como el pago tardío; y la indexación actualiza a valor presente un monto ya reconocido y pagado con retraso. Encuadrar mal la pretensión debilita el reclamo, por lo que conviene identificar bien cuál corresponde."
 ---
 
-> **Qué hacer en la práctica:** si es contratista de obra pública y sus costos subieron después de ofertar, tiene derecho a que la Administración le reajuste el precio. Ese derecho existe aunque el cartel no traiga fórmula. Nuestra área de [contratación pública](/areas/contratacion-publica) acompaña a los constructores desde el análisis del cartel hasta el cobro del reajuste o su litigio cuando lo deniegan.
+> **Qué hacer en la práctica:** si es contratista de obra pública y sus costos subieron después de ofertar, tiene derecho a que la Administración le reajuste el precio, aun cuando el cartel no traiga fórmula. Nuestra área de [contratación pública](/areas/contratacion-publica) acompaña a los constructores desde el análisis del cartel hasta el cobro del reajuste o su litigio cuando lo deniegan.
 
 Un contratista firma una obra a un precio calculado con los costos de hoy. La obra dura dos años. En ese lapso el acero sube, el salario de sus operarios se ajusta por decreto y el diésel de su maquinaria se dispara. El precio que ofertó ya no cubre la obra. La pregunta que llega a nuestra firma casi siempre es la misma: ¿tengo que absorber esa pérdida o el Estado debe pagarme la diferencia?
 
-La respuesta la da el **derecho al mantenimiento del equilibrio económico del contrato**. Esta guía explica qué protege ese derecho, qué se reajusta y qué nunca, cómo se calcula el reajuste con la fórmula y los índices oficiales, y cómo y cuándo se solicita. El objetivo es que un constructor de alto ticket entienda que el reajuste se gana o se pierde mucho antes de la primera factura: se administra desde la oferta.
+La respuesta la da el **derecho al mantenimiento del equilibrio económico del contrato**. Esta guía explica qué protege ese derecho, cuándo procede, en qué plazos se reclama y por qué, en la práctica, se decide mucho antes de la primera factura.
 
 ## El equilibrio económico: el derecho que protege su contrato
 
 El artículo 43 de la Ley General de Contratación Pública (Ley N.° 9986) es claro: "tanto el contratista como la Administración tendrán derecho al mantenimiento del equilibrio económico del contrato". Ese equilibrio es la ecuación financiera entre lo que usted se obligó a construir y el precio que se fijó cuando ofertó. La ley busca que esa ecuación se mantenga viva durante toda la ejecución.
 
-El mismo artículo 41 dispone que el precio sea cierto y definitivo, pero de inmediato agrega "sin perjuicio de eventuales reajustes o revisiones regulados en el artículo 43". Es decir, la propia ley admite que un precio "definitivo" se mueva cuando los costos se mueven por causas ajenas a las partes.
+El propio artículo 41 dispone que el precio sea cierto y definitivo, pero de inmediato agrega "sin perjuicio de eventuales reajustes o revisiones regulados en el artículo 43". La misma ley admite, entonces, que un precio "definitivo" se mueva cuando los costos se mueven por causas ajenas a las partes.
 
-Conviene fijar una distinción que gobierna todo lo demás. El derecho protegido es el equilibrio económico. La fórmula matemática es apenas el instrumento para calcularlo. El derecho subsiste aunque el cartel guarde silencio, aunque no traiga fórmula, e incluso cuando una cláusula intente negarlo. El equilibrio económico tiene rango constitucional, y por eso una cláusula del cartel que lo elimine o lo limite es inaplicable. Aunque el contrato carezca de fórmula, el derecho a reajustar sigue existiendo; lo que cambia entonces es la manera de probarlo, como veremos más adelante.
+Un punto que conviene fijar desde el inicio: el derecho protegido es el equilibrio económico, amparado por los principios constitucionales que rigen la contratación administrativa. Subsiste aunque el cartel guarde silencio y aun cuando una cláusula intente negarlo; una cláusula que lo elimine o lo limite es inaplicable. Es un derecho del contratista que no queda librado a la buena voluntad de la Administración.
 
-## Qué se reajusta y qué nunca
+## Qué protege el reajuste y qué deja fuera
 
-Aquí la ley es tajante. El artículo 43 dispone: "Solo serán reajustados o revisados los elementos de costo del precio cotizado. Bajo ningún supuesto la utilidad será susceptible de ser reajustada o revisada."
+En este punto la ley es tajante. El artículo 43 dispone: "Solo serán reajustados o revisados los elementos de costo del precio cotizado. Bajo ningún supuesto la utilidad será susceptible de ser reajustada o revisada."
 
-Traducido a la estructura de una oferta, esto significa:
+La consecuencia conviene tenerla clara. El reajuste compensa que un costo real del contrato varió por causas ajenas al contratista. Y su margen de ganancia queda protegido: la utilidad que usted fijó al ofertar se mantiene intacta. Definir qué rubros entran en el cálculo y cómo se acredita cada variación es la parte técnica del trámite, y ahí se define si un reclamo prospera.
 
-| Componente del precio | ¿Se reajusta? |
-| --- | --- |
-| Costos directos (mano de obra de la obra, insumos, materiales) | Sí |
-| Costos indirectos (administración, equipo, gastos generales ligados a la obra) | Sí |
-| Subcontrataciones | Sí |
-| Imprevisto | No entra en la fórmula |
-| Utilidad | Nunca, por prohibición expresa de la ley |
+## El marco vigente: el Decreto 44937
 
-La lógica es sencilla. El reajuste compensa que un costo real subió; la utilidad y el imprevisto son márgenes que usted fijó al ofertar, ajenos a la variación de los costos del mercado. Reajustar la utilidad es uno de los errores que la Administración rechaza de inmediato, y basta para que se cuestione todo el cálculo.
+El detalle técnico del reajuste lo fija el reglamento, y desde 2025 rige uno nuevo: el **Decreto Ejecutivo N.° 44937-H-MICITT-MIDEPLAN**, "Reglamento para el Reajuste de Precios en los Contratos de Obra Pública y la Revisión de Precios en los Contratos de Bienes y Servicios", publicado en el Alcance N.° 46 a La Gaceta N.° 64 del 3 de abril de 2025. Rige desde el 4 de agosto de 2025 y derogó el reglamento anterior, de 2006.
 
-Un matiz importante para la estrategia: el reajuste se calcula sobre lo que usted declaró en la oferta. Si al ofertar subdeclaró un costo para verse más competitivo, limitó el reajuste que podrá cobrar después. La estructura de costos de la oferta es la base contra la que se medirá cada variación durante años.
+Ese reglamento contiene, en su **artículo 25**, la fórmula matemática con la que se cuantifica el reajuste, y ordena que la variación se mida con **índices de precios oficiales** publicados por el INEC y el Banco Central de Costa Rica (artículos 9 a 11). Es un cálculo técnico, sujeto a reglas estrictas, en el que pequeñas imprecisiones bastan para que la Administración rechace la gestión. Trabajar con el reglamento vigente, en lugar del derogado de 2006, es la base para que un reclamo tenga sustento.
 
-## El reglamento vigente y la fórmula de reajuste
+## Cuándo procede: causas ajenas y extraordinarias
 
-El artículo 43 remite el detalle técnico al reglamento. Ese reglamento ya existe y está vigente: el **Decreto Ejecutivo N.° 44937-H-MICITT-MIDEPLAN**, "Reglamento para el Reajuste de Precios en los Contratos de Obra Pública y la Revisión de Precios en los Contratos de Bienes y Servicios", publicado en el Alcance N.° 46 a La Gaceta N.° 64 del 3 de abril de 2025. Rige a partir del 4 de agosto de 2025 (cuatro meses después de su publicación) y derogó el reglamento anterior de 2006. El Banco Central de Costa Rica confirmó su vigencia en una cápsula informativa oficial.
+Aquí una advertencia importante. No cualquier variación de costos abre la puerta al reajuste. El derecho nace cuando el desequilibrio proviene de causas **ajenas al contratista y de carácter extraordinario**, como el hecho del príncipe (una medida de la propia Administración que incide en la economía del contrato), la teoría de la imprevisión (una circunstancia extraordinaria e imprevisible) o la fuerza mayor. El riesgo ordinario del negocio y lo que era previsible al ofertar corren por cuenta del contratista.
 
-Su **artículo 25** contiene la fórmula matemática de reajuste. En lo esencial, esa fórmula compara el valor del índice oficial en el mes de ejecución con su valor en el mes de la oferta, pondera esa variación según el peso de cada componente de costo dentro del precio y la aplica al precio unitario contractual. Es una operación que se hace componente por componente y línea por línea, con reglas estrictas sobre cuál índice corresponde a cada costo, cuál es la fecha base y con qué precisión se calcula.
+Dónde queda exactamente esa frontera —qué se tiene por previsible y qué por extraordinario— es una valoración jurídica que decide muchos casos. Un reclamo mal encuadrado se pierde y desgasta credibilidad para el que sí procede.
 
-Ese rigor explica por qué el reajuste se gana o se pierde en el detalle. Usar el índice equivocado, medir contra una fecha base incorrecta o pretender reajustar un rubro que la ley excluye (la utilidad y el imprevisto quedan siempre fuera) basta para que la Administración rechace el cálculo. Calcular y sustentar bien un reajuste obliga a manejar a la vez el reglamento, los índices oficiales y la estructura de la propia oferta, y el margen de error es estrecho.
+## Plazos y cómo se reclama
 
-## Los índices oficiales y la regla de la moneda
+Dos reglas de tiempo y forma marcan el resultado:
 
-Los índices no los fija la empresa. El artículo 9 del reglamento dispone que "los índices de precios nacionales serán emitidos y publicados por el Instituto Nacional de Estadística y Censos de Costa Rica (INEC), el Banco Central de Costa Rica (BCCR) y cualquier otro ente público competente". El artículo 10 ordena al INEC o al BCCR elaborar índices de precios para las ocupaciones genéricas reguladas por el Ministerio de Trabajo y Seguridad Social, y el artículo 11 los obliga a difundir esos índices mensualmente en sus páginas web. Un transitorio prevé que, mientras no existan índices específicos de mano de obra, la revisión se haga con los índices de salarios mínimos nominales del BCCR o, supletoriamente, con los decretos de salarios mínimos del MTSS.
+- **El reajuste se reclama a petición de parte.** Es el contratista quien debe pedirlo y sustentarlo ante la Administración. La indexación, que es otra figura, la reconoce el juez de oficio sobre montos ya adeudados.
+- **El plazo es de cinco años.** Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. Es un plazo amplio, pero corre, y la prueba se degrada con el tiempo.
 
-La regla de oro es la de la moneda: **el índice sigue la moneda en que se presentó la oferta**. Si usted ofertó en colones, aplican los índices nacionales (INEC, BCCR, y los salarios del MTSS), con independencia del país de origen del producto. Cada componente lleva su índice específico; si no existe uno exacto, se usa uno similar debidamente justificado. Esos índices siempre los emite un tercero oficial, lo que garantiza su objetividad.
+Y si el cartel no trae fórmula, el derecho se mantiene, aunque la ruta para acreditarlo cambia. Lo determinante es la estrategia, que se define desde el análisis del cartel, antes de ofertar.
 
-## Cuando no hay fórmula: el método analítico documental
+## El reajuste se decide desde la oferta
 
-¿Qué pasa si el cartel no trae fórmula, o si la Administración objeta los índices que usted declaró? El derecho al reajuste se mantiene intacto; lo que cambia es la carga de la prueba. La vía entonces es el **método analítico documental**, que obliga a acreditar con respaldo documental toda la cadena que une el evento con el desequilibrio económico: qué ocurrió, cómo incidió en un costo concreto, que el desequilibrio efectivamente se produjo y en qué cuantía. Si un solo eslabón de esa cadena queda sin prueba, el reclamo cae.
+La lección de fondo: el reajuste no se improvisa durante la ejecución; queda determinado desde la oferta. Un cartel aceptado sin objetar, o un precio mal planteado, puede cerrar la puerta al reajuste antes de que la obra empiece. Y si la Administración ya denegó uno que procedía, el camino siguiente es el litigio.
 
-Ese camino es bastante más exigente que aplicar una fórmula, y su resultado depende de cómo se documentó la ejecución y de cómo se construye el reclamo. La diferencia entre uno que prospera y uno que se pierde suele estar en la calidad de esa prueba y en su presentación ante la Administración.
-
-## Qué rompe el equilibrio y qué no
-
-No toda variación de costos da derecho a reajuste. La rompen causas **no imputables al contratista y extraordinarias**:
-
-- **Hecho del príncipe:** una medida de la propia Administración, dictada con poder de imperio, que incide en la economía del contrato.
-- **Teoría de la imprevisión:** una circunstancia extraordinaria e imprevisible, ajena a las partes.
-- **Fuerza mayor y caso fortuito.**
-
-En cambio, **no rompen el equilibrio** y no dan reajuste:
-
-- El álea o riesgo ordinario del negocio (lo que todo constructor asume al contratar).
-- El error de cálculo propio al ofertar.
-- Lo que era previsible. En principio, el tipo de cambio y la moneda extranjera no se reajustan, porque su fluctuación era previsible al ofertar.
-
-Esta frontera importa porque un reclamo mal encuadrado (pedir reajuste por un riesgo que usted asumió) se pierde y desgasta credibilidad para el reclamo que sí procede.
-
-## Cómo y cuándo se solicita el reajuste
-
-El reajuste se pide **a petición de parte**. Esto lo diferencia de la indexación, que el juez reconoce de oficio en obligaciones dinerarias. Aquí es el contratista quien calcula el reajuste y lo presenta ante la Administración.
-
-Un punto que sorprende a muchos contratistas: la fórmula reajusta hacia arriba y hacia abajo. Si varios índices bajaron, pedir el reajuste podría terminar reduciendo el precio. Por eso, antes de presentar cualquier gestión, conviene valorar el efecto neto y decidir si reclamar es lo que realmente le conviene.
-
-El plazo también manda. Los aspectos patrimoniales del contrato, incluido el reajuste, **prescriben en cinco años contados desde el evento** que rompió el equilibrio. Es un plazo amplio, pero corre; y la prueba se degrada con el tiempo.
-
-Conviene no mezclar figuras que viajan por vías distintas:
-
-- **Reajuste:** variación de costos medida contra la oferta.
-- **Reclamo de daños:** hechos ajenos a la variación de costos, como el pago tardío o el perjuicio cambiario por facturación demorada. Tras treinta días sin pago corren intereses moratorios.
-- **Indexación:** traer a valor presente un monto ya reconocido y pagado tarde (con el IPC del INEC).
-
-## El reajuste se administra desde la oferta
-
-La lección de fondo: el reajuste no se improvisa durante la ejecución; queda determinado desde la oferta. La manera en que se estructura el precio, los índices que se asocian a cada componente y la fecha base contra la que se medirán las variaciones condicionan todo lo que se podrá cobrar años después. Un precio mal estructurado, o un cartel aceptado sin objetar, puede cerrar la puerta al reajuste antes de que la obra empiece.
-
-Por eso el trabajo decisivo ocurre antes de ofertar: analizar el cartel, estructurar el precio de forma que preserve el derecho al reajuste y objetar a tiempo las cláusulas que lo limiten o lo nieguen. Recuerde que en contratación pública el agotamiento de la vía administrativa es preceptivo, y que en licitación mayor la Contraloría General de la República actúa como jerarca impropio. Nuestra guía sobre [cómo objetar el cartel](/articulos/recurso-objecion-cartel-costa-rica) y la de [los recursos en contratación pública](/articulos/recursos-contratacion-publica-objecion-apelacion-revocatoria) explican esos plazos y esas vías. Si la Administración ya denegó un reajuste que procedía, el paso siguiente es el litigio: nuestra guía sobre [cómo demandar al Estado](/articulos/como-demandar-al-estado-costa-rica) detalla ese camino.
+Recuerde que en contratación pública el agotamiento de la vía administrativa tiene reglas propias según el tipo de procedimiento, y definir la vía correcta es parte del acompañamiento. Nuestra guía sobre [cómo objetar el cartel](/articulos/recurso-objecion-cartel-costa-rica) y la de [los recursos en contratación pública](/articulos/recursos-contratacion-publica-objecion-apelacion-revocatoria) explican esos plazos y esas vías; y si el reclamo llega a los tribunales, la de [cómo demandar al Estado](/articulos/como-demandar-al-estado-costa-rica) detalla ese camino.
 
 ## Preguntas frecuentes
 
 ### ¿Qué es el reajuste de precios en un contrato de obra pública?
 
-Es el mecanismo que mantiene el equilibrio económico del contrato cuando los costos suben o bajan por causas ajenas al contratista. La Administración aumenta o disminuye los precios midiendo la variación de los costos directos e indirectos contra la fecha de la oferta, mediante fórmulas con índices oficiales. Protege la ecuación financiera que existía cuando usted ofertó, para que el contrato siga siendo viable durante toda su ejecución.
+Es el mecanismo que mantiene el equilibrio económico del contrato cuando los costos varían por causas ajenas al contratista. Permite ajustar el precio para conservar la ecuación financiera que existía cuando usted ofertó, de modo que el contrato siga siendo viable durante toda su ejecución. Es un derecho reconocido por el artículo 43 de la Ley General de Contratación Pública.
 
 ### ¿Se puede cobrar el reajuste si el cartel no trae fórmula o lo niega?
 
-Sí. El derecho al equilibrio económico es de rango constitucional y subsiste aunque el cartel guarde silencio o intente eliminarlo; una cláusula que lo niegue es inaplicable. Sin fórmula, la vía es el método analítico documental: probar el evento ajeno, su incidencia en un costo concreto, el desequilibrio real y su cuantificación. Lo ideal es objetar el cartel a tiempo para que incluya la fórmula.
+Sí. El derecho al equilibrio económico está amparado por los principios constitucionales de la contratación administrativa y subsiste aunque el cartel guarde silencio o intente eliminarlo; una cláusula que lo niegue es inaplicable. Aun sin fórmula el reajuste puede reclamarse, por una vía con mayor exigencia de prueba. La estrategia se define desde el análisis del cartel, antes de ofertar.
 
-### ¿Qué costos se reajustan y cuáles nunca?
+### ¿Qué protege el reajuste y qué deja fuera?
 
-Solo se reajustan los elementos de costo del precio: los costos directos e indirectos como mano de obra, insumos y subcontrataciones. La Ley 9986 prohíbe expresamente reajustar la utilidad, y el imprevisto tampoco entra en la fórmula. Cada componente se reajusta con su propio índice específico, según la moneda en que se presentó la oferta. Reajustar la utilidad o el imprevisto es un error que la Administración rechazará.
+La ley solo permite reajustar los elementos de costo del precio; la utilidad, por prohibición expresa del artículo 43, nunca se reajusta. El reajuste compensa que un costo real del contrato varió, sin tocar el margen de ganancia que usted fijó al ofertar. Definir qué rubros entran y cómo se acredita cada variación es la parte técnica del trámite.
 
-### ¿Cuál es la fórmula del reajuste y qué índices se usan?
+### ¿Cómo se calcula el reajuste?
 
-La fórmula, contenida en el artículo 25 del Decreto 44937, compara el índice oficial del mes de ejecución con el del mes de la oferta, pondera esa variación según el peso de cada componente de costo y la aplica al precio unitario del contrato. Los índices los emiten el INEC y el BCCR (y el MTSS para salarios mínimos), y siguen la moneda de la oferta. Es un cálculo por componente, con reglas estrictas de índice y precisión, que debe sustentarse con rigor para que la Administración no lo rechace.
+Mediante una fórmula matemática oficial contenida en el artículo 25 del Decreto Ejecutivo N.° 44937, que cuantifica la variación de los costos con índices de precios oficiales publicados por el INEC y el Banco Central de Costa Rica. Es un cálculo técnico, sujeto a reglas estrictas, que debe sustentarse con rigor para que la Administración lo acepte.
 
 ### ¿En qué plazo prescribe el derecho a cobrar el reajuste?
 
-Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. El reajuste se pide a petición de parte: el contratista lo calcula y lo presenta, a diferencia de la indexación, que el juez reconoce de oficio. Conviene calcular el efecto neto antes de solicitarlo, porque si varios índices bajaron, pedirlo podría reducir el precio.
+Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. El reajuste se reclama a petición de parte. La indexación, que es otra figura, la reconoce el juez de oficio. Conviene actuar sin dejar correr el plazo, porque la prueba se degrada con el tiempo.
 
-### ¿El reajuste es lo mismo que un reclamo de daños por pago tardío?
+### ¿En qué se diferencian el reajuste, el reclamo de daños y la indexación?
 
-Son vías distintas. El reajuste mide la variación de costos contra la oferta y se calcula con la fórmula. El reclamo de daños cubre hechos ajenos a esa variación, como el pago tardío o el perjuicio cambiario por facturación demorada; tras treinta días sin pago corren intereses moratorios. La indexación consiste en traer a valor presente un monto ya reconocido y pagado tarde. Confundirlas debilita el reclamo.
+Son figuras distintas. El reajuste responde a la variación de los costos del contrato; el reclamo de daños cubre hechos ajenos a esa variación, como el pago tardío; y la indexación actualiza a valor presente un monto ya reconocido y pagado con retraso. Encuadrar mal la pretensión debilita el reclamo, por lo que conviene identificar bien cuál corresponde.
 
 📌 **Lea también:** [Recurso de objeción al cartel en Costa Rica: cómo y cuándo objetar](/articulos/recurso-objecion-cartel-costa-rica)
