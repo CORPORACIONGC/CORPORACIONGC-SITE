@@ -9,7 +9,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Defensa por inhabilitación de proveedor del Estado CR"
-seoDescription: "Lo inhabilitaron para contratar con el Estado. Vea las causales, la diferencia entre inhabilitación simple y calificada, y cómo defenderse."
+seoDescription: "Lo inhabilitaron para contratar con el Estado: causales, inhabilitación simple vs. calificada y cómo defenderse en el procedimiento (Ley 9986)."
 faq:
   - question: "¿Qué diferencia hay entre inhabilitación simple y calificada?"
     answer: "La inhabilitación simple va de seis meses a dos años y solo le impide participar en los concursos de la entidad que lo sancionó. La calificada va de dos a diez años y le cierra las puertas de toda la Administración Pública. La simple admite una excepción: la Administración puede contratarlo si acredita que no hay otros proveedores que brinden esa prestación."

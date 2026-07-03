@@ -2,14 +2,14 @@
 title: "Cómo anular una adjudicación en el Tribunal Contencioso Administrativo (después de la Contraloría)"
 date: "2026-07-02"
 excerpt: "La Contraloría rechazó su apelación y el contrato se adjudicó a otro. Todavía tiene un año para llevar el caso al Tribunal Contencioso, anular la adjudicación y reclamar daños y perjuicios."
-tags: ["Litigio contencioso", "Contratación Pública", "Guía práctica", "Medidas cautelares", "Adjudicación", "Contraloría"]
+tags: ["Litigio contencioso", "TCA", "Contratación Pública", "Medidas cautelares", "Adjudicación", "Contraloría", "CPCA"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Anular una adjudicación en el Tribunal Contencioso CR"
-seoDescription: "La CGR rechazó su apelación. Aún puede anular la adjudicación en el Tribunal Contencioso: plazo de un año, medidas cautelares y daños."
+seoTitle: "Anular la adjudicación en el Tribunal Contencioso (TCA)"
+seoDescription: "¿La CGR rechazó su apelación? Aún puede anular la adjudicación ante el Tribunal Contencioso Administrativo: plazo de un año, medidas cautelares y daños."
 faq:
   - question: "¿Si la Contraloría rechaza mi apelación, ya no puedo hacer nada?"
     answer: "Todavía puede actuar. Cuando la Contraloría declara sin lugar la apelación o la rechaza en admisibilidad, la vía administrativa queda agotada y se abre la vía judicial. A partir de ese momento usted puede acudir al Tribunal Contencioso Administrativo para pedir la anulación de la adjudicación, bajo el control jurisdiccional que sigue a la fase administrativa."

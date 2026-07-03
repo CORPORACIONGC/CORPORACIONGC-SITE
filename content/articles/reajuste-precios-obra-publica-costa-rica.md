@@ -2,13 +2,13 @@
 title: "Reajuste de precios en obra pública: cómo cobrar el equilibrio económico de su contrato"
 date: "2026-07-03"
 excerpt: "Sus costos subieron y la Administración no le paga la diferencia. El reajuste de precios protege un derecho que subsiste aunque el cartel calle. Vea qué protege, cuándo procede y en qué plazo se reclama."
-tags: ["Guía práctica", "Contratación Pública", "Reajuste de precios", "Equilibrio económico", "Obra pública", "Ley 9986"]
+tags: ["Reajuste de precios", "Equilibrio económico", "Obra pública", "Decreto 44937", "Contratación Pública", "Ley 9986", "Guía práctica"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Reajuste de precios obra pública Costa Rica"
+seoTitle: "Reajuste de precios obra pública: Ley 9986 y Decreto 44937"
 seoDescription: "Reajuste de precios en obra pública bajo la Ley 9986 y el Decreto 44937: el derecho al equilibrio económico, cuándo procede y en qué plazo se reclama."
 faq:
   - question: "¿Qué es el reajuste de precios en un contrato de obra pública?"

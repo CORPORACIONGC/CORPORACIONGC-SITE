@@ -2,14 +2,14 @@
 title: "Recurso de objeción al cartel en Costa Rica: cómo tumbar la cláusula que lo deja fuera"
 date: "2026-07-02"
 excerpt: "Si una cláusula del cartel lo excluye del concurso, la objeción es su primera arma. Guía práctica con plazos exactos por procedimiento, quién puede objetar y qué prueba técnica exige la Contraloría para ganar."
-tags: ["Guía práctica", "Contratación Pública", "Recurso de objeción", "Cartel", "SICOP", "Contraloría General"]
+tags: ["Recurso de objeción", "Cartel", "Contratación Pública", "SICOP", "Contraloría General", "Licitaciones", "Ley 9986"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Recurso de objeción al cartel Costa Rica"
-seoDescription: "Guía práctica: plazos exactos, quién puede objetar y qué prueba exige la CGR para tumbar una cláusula del cartel que limita la participación."
+seoTitle: "Recurso de objeción al cartel en Costa Rica: plazos"
+seoDescription: "Recurso de objeción al cartel en licitaciones: plazos por procedimiento, quién puede objetar y qué prueba exige la CGR para tumbar la cláusula que lo excluye."
 faq:
   - question: "¿Qué es el recurso de objeción al cartel?"
     answer: "Es el recurso que permite atacar el pliego de condiciones antes de presentar ofertas, cuando una cláusula limita ilegalmente la participación o infringe el ordenamiento. Bajo la Ley General de Contratación Pública es uno de los únicos dos tipos de recurso admitidos y su fin es corregir el cartel a tiempo, no impugnar la adjudicación posterior."

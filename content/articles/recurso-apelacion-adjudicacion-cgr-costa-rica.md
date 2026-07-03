@@ -9,7 +9,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Apelación de adjudicación ante la CGR: plazos y requisitos"
-seoDescription: "Cómo impugnar la adjudicación de una licitación en Costa Rica: recurso de apelación ante la CGR, plazo de 8 días hábiles, efecto suspensivo y mejor derecho (Ley 9986)."
+seoDescription: "Cómo impugnar la adjudicación de una licitación en Costa Rica: recurso de apelación ante la CGR, plazo de 8 días, efecto suspensivo y mejor derecho."
 faq:
   - question: "¿Cuánto tiempo tengo para apelar una adjudicación ante la Contraloría?"
     answer: "Ocho días hábiles contados a partir del día hábil siguiente a la comunicación del acto final (art. 97 de la Ley 9986). El recurso se presenta en el sistema digital unificado (SICOP) mediante el formulario electrónico dispuesto al efecto; el día del vencimiento son hábiles todas las horas del día."

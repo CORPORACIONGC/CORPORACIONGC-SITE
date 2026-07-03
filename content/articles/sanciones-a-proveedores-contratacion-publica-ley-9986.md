@@ -2,14 +2,14 @@
 title: "Sanciones a proveedores del Estado: guía del régimen sancionatorio (Ley 9986)"
 date: "2026-07-03"
 excerpt: "Multas, cláusula penal e inhabilitación: entienda a qué se expone su empresa como proveedor del Estado bajo la Ley 9986 y cómo prevenir que lo saquen de las contrataciones públicas."
-tags: ["Guía práctica", "Contratación Pública", "Procedimientos Sancionatorios", "Inhabilitación", "Proveedores del Estado", "Ley 9986"]
+tags: ["Sanciones", "Proveedores del Estado", "Inhabilitación", "Multas", "Contratación Pública", "Procedimientos Sancionatorios", "Ley 9986"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Sanciones a proveedores del Estado (Ley 9986) | Guía"
-seoDescription: "Multas, cláusula penal e inhabilitación bajo la Ley 9986. Conozca a qué se expone su empresa como proveedor y cómo prevenir una sanción. Guía práctica."
+seoTitle: "Sanciones a proveedores del Estado: multas e inhabilitación"
+seoDescription: "Régimen sancionatorio a proveedores del Estado bajo la Ley 9986: multas, cláusula penal e inhabilitación, y cómo prevenir una sanción."
 faq:
   - question: "¿Cuáles son las sanciones que puede recibir un proveedor del Estado?"
     answer: "Existen dos grandes tipos. Las sanciones económicas del contrato, que son las multas por ejecución defectuosa y la cláusula penal por ejecución tardía o prematura, con un tope conjunto del veinticinco por ciento del precio del contrato. Y la inhabilitación, que impide seguir contratando: simple, de seis meses a dos años ante la propia entidad, o calificada, de dos a diez años ante toda la Administración Pública."

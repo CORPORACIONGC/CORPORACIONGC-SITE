@@ -2,14 +2,14 @@
 title: "Objeción, apelación o revocatoria: ¿qué recurso presento en una licitación pública?"
 date: "2026-07-02"
 excerpt: "Perdió una licitación o el cartel lo deja fuera. La Ley 9986 le da tres recursos — pero presentar el equivocado, o presentarlo tarde, significa el rechazo de plano. Guía completa con plazos, órganos competentes y tabla comparativa."
-tags: ["Guía práctica", "Contratación Pública", "Ley 9986", "Recursos", "CGR", "Licitaciones"]
+tags: ["Recursos", "Objeción", "Apelación", "Revocatoria", "Contratación Pública", "CGR", "Ley 9986"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Objeción, apelación y revocatoria en contratación pública CR"
-seoDescription: "¿Qué recurso procede en una licitación en Costa Rica? Objeción al cartel, apelación ante la CGR y revocatoria: plazos, órgano competente y tabla comparativa (Ley 9986)."
+seoDescription: "¿Qué recurso procede en una licitación? Objeción al cartel, apelación ante la CGR o revocatoria: plazos, órgano competente y cuál corresponde en cada caso."
 faq:
   - question: "¿Cuál es la diferencia entre objeción, apelación y revocatoria en contratación pública?"
     answer: "La objeción impugna el pliego de condiciones (cartel) antes de la apertura de ofertas; la apelación y la revocatoria impugnan el acto final (adjudicación, desierto o infructuoso). La apelación procede contra el acto final de la licitación mayor y la conoce la Contraloría General de la República; la revocatoria procede contra el acto final de la licitación menor, la subasta inversa electrónica y las nuevas adjudicaciones, y la conoce la propia Administración (arts. 86, 95, 97 y 99 de la Ley 9986)."
