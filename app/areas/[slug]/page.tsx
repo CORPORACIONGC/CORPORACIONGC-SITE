@@ -1805,6 +1805,47 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           perjuicios causados por sanciones ilegítimas.
         </p>
       </Instrumento>
+
+      <section className="mt-12 mb-2">
+        <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-4">
+          Guías de defensa para el administrado
+        </h2>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          Hemos preparado guías prácticas, escritas desde la perspectiva de quien recibe el
+          procedimiento, que explican los plazos, los derechos y las vías de impugnación de esta
+          materia:{" "}
+          <Link href="/articulos/defensa-procedimiento-administrativo-sancionatorio" className="text-gold hover:text-gold/80 transition-colors">
+            me abrieron un procedimiento administrativo sancionatorio: ¿cómo defenderse?
+          </Link>{" "}
+          (la guía madre del tema),{" "}
+          <Link href="/articulos/traslado-de-cargos-que-hacer-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+            me llegó un traslado de cargos: qué significa, plazos y qué hacer
+          </Link>{" "}
+          (el momento inicial, donde más defensas se ganan y se pierden) y{" "}
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+            medidas cautelares contra el Estado
+          </Link>{" "}
+          (cómo suspender una sanción, multa o clausura mientras se litiga su validez).
+        </p>
+      </section>
+
+      <section className="mt-12 mb-2">
+        <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-4">
+          Quién atiende estos casos
+        </h2>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          La validez de una sanción administrativa se decide, en última instancia, ante la
+          jurisdicción contencioso-administrativa. El equipo de Corporación GC es dirigido por el{" "}
+          <Link href="/abogados/oscar-gonzalez" className="text-gold hover:text-gold/80 transition-colors">
+            Dr. Óscar Eduardo González Camacho
+          </Link>
+          , ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014),
+          co-redactor del Código Procesal Contencioso Administrativo y Doctor en Derecho por la
+          Universidad de Alcalá. Por eso cada procedimiento se defiende desde el primer día
+          pensando en el expediente que un juez examinará después: la prueba que se forma ante el
+          órgano director es la misma que decidirá el litigio.
+        </p>
+      </section>
     </>
   ),
 

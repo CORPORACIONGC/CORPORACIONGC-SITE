@@ -409,10 +409,25 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
         answer:
           "Sí. Contra el acto final caben los recursos ordinarios de revocatoria y apelación, que deben interponerse dentro de los tres días hábiles siguientes a su notificación (arts. 343, 345 y 346). La apelación la resuelve el órgano superior, que agota la vía administrativa (art. 350) y abre la puerta a la jurisdicción contencioso-administrativa.",
       },
+      {
+        question: "¿Necesito un abogado especialista en procedimientos administrativos sancionatorios?",
+        answer:
+          "La ley permite comparecer sin abogado, pero la comparecencia oral funciona como un juicio: se interrogan testigos y peritos, se objeta prueba y se formulan conclusiones verbalmente, bajo sanción de caducidad si se omiten (art. 317). Los vicios que anulan una sanción son técnicos y se alegan en momentos y por vías precisas. Un especialista en derecho administrativo detecta desde el inicio las nulidades, los problemas de competencia del órgano director y los defectos de la imputación que definen el caso.",
+      },
+      {
+        question: "¿Puede caducar el procedimiento en mi contra por el paso del tiempo?",
+        answer:
+          "Sí. Si el procedimiento iniciado de oficio se paraliza por más de seis meses por causa imputable a la Administración, se produce la caducidad y debe ordenarse su archivo (art. 340). A ello se suman los plazos de prescripción de la potestad sancionatoria, que varían según el régimen aplicable. Antes de asumir que el caso sigue vivo, conviene que un especialista revise el expediente: el tiempo transcurrido es, con frecuencia, una defensa completa.",
+      },
+      {
+        question: "¿Se puede suspender la multa o la sanción mientras se discute su validez?",
+        answer:
+          "Sí. En la vía contencioso-administrativa puede solicitarse una medida cautelar —incluso antes de presentar la demanda— para suspender los efectos de la sanción mientras el tribunal examina su legalidad (arts. 19 a 30 del CPCA). Para una empresa cuya operación depende de un permiso, o para un servidor destituido, esa suspensión evita que la sanción se ejecute antes de que un juez la revise.",
+      },
     ],
-    relatedArticleSlug: "como-demandar-al-estado-costa-rica",
+    relatedArticleSlug: "defensa-procedimiento-administrativo-sancionatorio",
     relatedArticleLabel:
-      "Lectura complementaria: ¿Cómo demandar al Estado en Costa Rica?",
+      "Guía de defensa: me abrieron un procedimiento administrativo sancionatorio, ¿cómo defenderse?",
   },
 
   "contratacion-publica": {
