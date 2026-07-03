@@ -18,7 +18,7 @@ faq:
   - question: "¿Qué costos se reajustan y cuáles nunca?"
     answer: "Solo se reajustan los elementos de costo del precio: los costos directos e indirectos como mano de obra, insumos y subcontrataciones. La Ley 9986 prohíbe expresamente reajustar la utilidad, y el imprevisto tampoco entra en la fórmula. Cada componente se reajusta con su propio índice específico, según la moneda en que se presentó la oferta. Reajustar la utilidad o el imprevisto es un error que la Administración rechazará."
   - question: "¿Cuál es la fórmula del reajuste y qué índices se usan?"
-    answer: "Para cada componente que varió: se divide el índice del mes de ejecución entre el índice del mes de la oferta, se resta uno, se multiplica por la ponderación del componente y luego por el precio unitario contractual, redondeando a cuatro decimales. Los índices los emiten el INEC y el BCCR (y el MTSS para salarios mínimos). Como regla, el índice sigue la moneda de la oferta y siempre lo emite un tercero oficial."
+    answer: "La fórmula, contenida en el artículo 25 del Decreto 44937, compara el índice oficial del mes de ejecución con el del mes de la oferta, pondera esa variación según el peso de cada componente de costo y la aplica al precio unitario del contrato. Los índices los emiten el INEC y el BCCR (y el MTSS para salarios mínimos), y siguen la moneda de la oferta. Es un cálculo por componente, con reglas estrictas de índice y precisión, que conviene sustentar con asesoría técnica para que la Administración no lo rechace."
   - question: "¿En qué plazo prescribe el derecho a cobrar el reajuste?"
     answer: "Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. El reajuste se pide a petición de parte: el contratista lo calcula y lo presenta, a diferencia de la indexación, que el juez reconoce de oficio. Conviene calcular el efecto neto antes de solicitarlo, porque si varios índices bajaron, pedirlo podría reducir el precio."
   - question: "¿El reajuste es lo mismo que un reclamo de daños por pago tardío?"
@@ -57,23 +57,13 @@ La lógica es sencilla. El reajuste compensa que un costo real subió; la utilid
 
 Un matiz importante para la estrategia: el reajuste se calcula sobre lo que usted declaró en la oferta. Si al ofertar subdeclaró un costo para verse más competitivo, limitó el reajuste que podrá cobrar después. La estructura de costos de la oferta es la base contra la que se medirá cada variación durante años.
 
-## El reglamento vigente y la fórmula en palabras
+## El reglamento vigente y la fórmula de reajuste
 
 El artículo 43 remite el detalle técnico al reglamento. Ese reglamento ya existe y está vigente: el **Decreto Ejecutivo N.° 44937-H-MICITT-MIDEPLAN**, "Reglamento para el Reajuste de Precios en los Contratos de Obra Pública y la Revisión de Precios en los Contratos de Bienes y Servicios", publicado en el Alcance N.° 46 a La Gaceta N.° 64 del 3 de abril de 2025. Rige a partir del 4 de agosto de 2025 (cuatro meses después de su publicación) y derogó el reglamento anterior de 2006. El Banco Central de Costa Rica confirmó su vigencia en una cápsula informativa oficial.
 
-La fórmula base de reajuste está en el **artículo 25 de ese reglamento** ("Fórmula de reajuste de precios"). Explicada en palabras, funciona así:
+Su **artículo 25** contiene la fórmula matemática de reajuste. En lo esencial, esa fórmula compara el valor del índice oficial en el mes de ejecución con su valor en el mes de la oferta, pondera esa variación según el peso de cada componente de costo dentro del precio y la aplica al precio unitario contractual. Es una operación que se hace componente por componente y línea por línea, con reglas estrictas sobre cuál índice corresponde a cada costo, cuál es la fecha base y con qué precisión se calcula.
 
-1. Se toma cada componente de costo que varió (mano de obra, un insumo, una subcontratación).
-2. Para ese componente se calcula su variación: se divide el índice del mes de ejecución entre el índice del mes de presentación de la oferta y se resta uno.
-3. Ese resultado se multiplica por la ponderación del componente (el peso porcentual que tiene dentro del precio).
-4. Se suman todos los componentes que variaron.
-5. El total se multiplica por el precio unitario contractual de la línea o renglón de pago.
-
-En notación conceptual, la variación de cada componente es:
-
-> variación = (índice del mes de ejecución ÷ índice del mes de la oferta) − 1
-
-Dos reglas técnicas que cambian el resultado si se ignoran. Primero, el reglamento expresa cada ponderación **a la diezmilésima (cuatro decimales)**, y en la práctica el cálculo se lleva con esa misma precisión de cuatro decimales, incluido el cociente de índices. Segundo, cada componente se reajusta únicamente con su propio índice; aplicar el índice del acero a la mano de obra, o un solo índice a todo el precio, es un error de cálculo. Y recuerde: la fórmula no lleva utilidad ni imprevisto.
+Ese rigor explica por qué el reajuste se gana o se pierde en el detalle. Usar el índice equivocado, medir contra una fecha base incorrecta o pretender reajustar un rubro que la ley excluye (la utilidad y el imprevisto quedan siempre fuera) basta para que la Administración rechace el cálculo. Por eso, calcular y sustentar correctamente un reajuste es un trabajo técnico-jurídico especializado, que combina el dominio del reglamento, de los índices oficiales y de la estructura de la propia oferta.
 
 ## Los índices oficiales y la regla de la moneda
 
@@ -83,14 +73,9 @@ La regla de oro es la de la moneda: **el índice sigue la moneda en que se prese
 
 ## Cuando no hay fórmula: el método analítico documental
 
-¿Qué pasa si el cartel no trae fórmula, o si la Administración objeta los índices que usted declaró? El derecho al reajuste se mantiene intacto; lo que cambia es la carga de la prueba. La vía entonces es el **método analítico documental**, y exige probar una cadena completa:
+¿Qué pasa si el cartel no trae fórmula, o si la Administración objeta los índices que usted declaró? El derecho al reajuste se mantiene intacto; lo que cambia es la carga de la prueba. La vía entonces es el **método analítico documental**, que obliga a acreditar con respaldo documental toda la cadena que une el evento con el desequilibrio económico: qué ocurrió, cómo incidió en un costo concreto, que el desequilibrio efectivamente se produjo y en qué cuantía. Si un solo eslabón de esa cadena queda sin prueba, el reclamo cae.
 
-1. Que ocurrió un evento no imputable a usted (y, en su caso, extraordinario).
-2. Que ese evento incidió en un costo directo o indirecto concreto.
-3. Que el desequilibrio se materializó de verdad (no basta el riesgo de que ocurriera).
-4. Que el monto está cuantificado con respaldo documental.
-
-Si un eslabón de esa cadena falla, el reclamo cae. Por eso la documentación de la ejecución (compras, facturas, cronogramas, índices al comprar y al facturar) se construye desde el primer día, no al final. Este mecanismo funciona en conjunto con la llamada "no objeción": si la Administración no objeta los índices que usted declaró, se aplica la fórmula; si los objeta, se litiga por la vía analítica.
+Ese camino es bastante más exigente que aplicar una fórmula, y su resultado depende de cómo se documentó la ejecución y de cómo se construya el reclamo. Es un trabajo jurídico especializado, y la diferencia entre un reclamo que prospera y uno que se pierde suele estar en la calidad de esa prueba y en su correcta presentación ante la Administración.
 
 ## Qué rompe el equilibrio y qué no
 
@@ -112,7 +97,7 @@ Esta frontera importa porque un reclamo mal encuadrado (pedir reajuste por un ri
 
 El reajuste se pide **a petición de parte**. Esto lo diferencia de la indexación, que el juez reconoce de oficio en obligaciones dinerarias. Aquí es el contratista quien calcula el reajuste y lo presenta ante la Administración.
 
-Antes de presentarlo, calcule el **efecto neto**. La fórmula reajusta hacia arriba y hacia abajo: si varios de sus índices bajaron, pedir el reajuste podría terminar reduciéndole el precio. Se presenta cuando el resultado neto lo favorece.
+Un punto que sorprende a muchos contratistas: la fórmula reajusta hacia arriba y hacia abajo. Si varios índices bajaron, pedir el reajuste podría terminar reduciendo el precio. Por eso, antes de presentar cualquier gestión, conviene una valoración del efecto neto para decidir si reclamar es lo que le conviene; es una decisión estratégica que se toma con asesoría.
 
 El plazo también manda. Los aspectos patrimoniales del contrato, incluido el reajuste, **prescriben en cinco años contados desde el evento** que rompió el equilibrio. Es un plazo amplio, pero corre; y la prueba se degrada con el tiempo.
 
@@ -124,13 +109,9 @@ Conviene no mezclar figuras que viajan por vías distintas:
 
 ## El reajuste se administra desde la oferta
 
-La lección práctica de fondo: el reajuste no se improvisa en la ejecución; se prepara desde la oferta. Un contratista que quiera cobrarlo sin problemas debe, desde que presenta su propuesta:
+La lección de fondo: el reajuste no se improvisa durante la ejecución; queda determinado desde la oferta. La manera en que se estructura el precio, los índices que se asocian a cada componente y la fecha base contra la que se medirán las variaciones condicionan todo lo que se podrá cobrar años después. Un precio mal estructurado, o un cartel aceptado sin objetar, puede cerrar la puerta al reajuste antes de que la obra empiece.
 
-- Anotar el **índice básico (I0)** de cada componente a la fecha de la oferta. Contra ese valor se medirá toda variación futura.
-- Guardar la **estructura de costos** en valor y en porcentaje, componente por componente.
-- Monitorear los índices oficiales al comprar y al facturar, y archivar el respaldo.
-
-Y si el cartel no trae fórmula o pretende negar el reajuste, la respuesta correcta llega antes de ofertar: se objeta el cartel a tiempo mediante el recurso de objeción, para que incorpore la fórmula o elimine la cláusula que limita el derecho. Recuerde que en contratación pública el agotamiento de la vía administrativa es preceptivo, y que en licitación mayor la Contraloría General de la República actúa como jerarca impropio. Nuestra guía sobre [cómo objetar el cartel](/articulos/recurso-objecion-cartel-costa-rica) y la de [los recursos en contratación pública](/articulos/recursos-contratacion-publica-objecion-apelacion-revocatoria) explican esos plazos y esas vías. Si la Administración ya denegó un reajuste que procedía, el paso siguiente es el litigio: nuestra guía sobre [cómo demandar al Estado](/articulos/como-demandar-al-estado-costa-rica) detalla ese camino.
+Ahí es donde pesa la asesoría especializada: analizar el cartel antes de ofertar, estructurar el precio de forma que preserve el derecho al reajuste y objetar a tiempo las cláusulas que lo limiten o lo nieguen. Recuerde que en contratación pública el agotamiento de la vía administrativa es preceptivo, y que en licitación mayor la Contraloría General de la República actúa como jerarca impropio. Nuestra guía sobre [cómo objetar el cartel](/articulos/recurso-objecion-cartel-costa-rica) y la de [los recursos en contratación pública](/articulos/recursos-contratacion-publica-objecion-apelacion-revocatoria) explican esos plazos y esas vías. Si la Administración ya denegó un reajuste que procedía, el paso siguiente es el litigio: nuestra guía sobre [cómo demandar al Estado](/articulos/como-demandar-al-estado-costa-rica) detalla ese camino.
 
 ## Preguntas frecuentes
 
@@ -148,7 +129,7 @@ Solo se reajustan los elementos de costo del precio: los costos directos e indir
 
 ### ¿Cuál es la fórmula del reajuste y qué índices se usan?
 
-Para cada componente que varió: se divide el índice del mes de ejecución entre el índice del mes de la oferta, se resta uno, se multiplica por la ponderación del componente y luego por el precio unitario contractual, redondeando a cuatro decimales. Los índices los emiten el INEC y el BCCR (y el MTSS para salarios mínimos). Como regla, el índice sigue la moneda de la oferta y siempre lo emite un tercero oficial.
+La fórmula, contenida en el artículo 25 del Decreto 44937, compara el índice oficial del mes de ejecución con el del mes de la oferta, pondera esa variación según el peso de cada componente de costo y la aplica al precio unitario del contrato. Los índices los emiten el INEC y el BCCR (y el MTSS para salarios mínimos), y siguen la moneda de la oferta. Es un cálculo por componente, con reglas estrictas de índice y precisión, que conviene sustentar con asesoría técnica para que la Administración no lo rechace.
 
 ### ¿En qué plazo prescribe el derecho a cobrar el reajuste?
 
