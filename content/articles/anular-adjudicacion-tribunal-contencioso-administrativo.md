@@ -1,7 +1,7 @@
 ---
 title: "Cómo anular una adjudicación en el Tribunal Contencioso Administrativo (después de la Contraloría)"
 date: "2026-07-02"
-excerpt: "La Contraloría rechazó su apelación y el contrato se adjudicó a otro. No es el final: tiene un año para llevar el caso al Tribunal Contencioso, anular la adjudicación y reclamar daños y perjuicios."
+excerpt: "La Contraloría rechazó su apelación y el contrato se adjudicó a otro. Todavía tiene un año para llevar el caso al Tribunal Contencioso, anular la adjudicación y reclamar daños y perjuicios."
 tags: ["Litigio contencioso", "Contratación Pública", "Guía práctica", "Medidas cautelares", "Adjudicación", "Contraloría"]
 type: "article"
 author: "Lic. Khevin Sánchez Zamora"
@@ -12,9 +12,9 @@ seoTitle: "Anular una adjudicación en el Tribunal Contencioso CR"
 seoDescription: "La CGR rechazó su apelación. Aún puede anular la adjudicación en el Tribunal Contencioso: plazo de un año, medidas cautelares y daños."
 faq:
   - question: "¿Si la Contraloría rechaza mi apelación, ya no puedo hacer nada?"
-    answer: "No es el final. Cuando la Contraloría declara sin lugar la apelación o la rechaza en admisibilidad, la vía administrativa queda agotada y se abre la vía judicial. A partir de ese momento usted puede acudir al Tribunal Contencioso Administrativo para pedir la anulación de la adjudicación. La resolución de la Contraloría no es la última palabra: existe un control jurisdiccional posterior."
+    answer: "Todavía puede actuar. Cuando la Contraloría declara sin lugar la apelación o la rechaza en admisibilidad, la vía administrativa queda agotada y se abre la vía judicial. A partir de ese momento usted puede acudir al Tribunal Contencioso Administrativo para pedir la anulación de la adjudicación, bajo el control jurisdiccional que sigue a la fase administrativa."
   - question: "¿Cuánto tiempo tengo para demandar después de la resolución de la Contraloría?"
-    answer: "El plazo máximo para acudir al Tribunal Contencioso es de un año, según el artículo 39 del Código Procesal Contencioso-Administrativo. Se cuenta desde el día siguiente a la notificación del acto. No son días hábiles cortos como en la Contraloría: es un año calendario. Aun así conviene actuar pronto, sobre todo si el contrato podría empezar a ejecutarse."
+    answer: "El plazo máximo para acudir al Tribunal Contencioso es de un año, según el artículo 39 del Código Procesal Contencioso-Administrativo. Se cuenta desde el día siguiente a la notificación del acto. Se trata de un año calendario, mucho más holgado que los días hábiles de la Contraloría. Aun así conviene actuar pronto, sobre todo si el contrato podría empezar a ejecutarse."
   - question: "¿Puedo pedir que se suspenda el contrato mientras el juicio avanza?"
     answer: "Sí. El Código Procesal Contencioso-Administrativo permite solicitar medidas cautelares para suspender los efectos del acto mientras dura el proceso, incluso antes de presentar la demanda. Proceden cuando la ejecución del acto pueda causar daños graves y la pretensión no sea temeraria. En casos de extrema urgencia existe la medida provisionalísima, que el juez resuelve de inmediato."
   - question: "¿Qué puedo pedirle al Tribunal Contencioso?"
@@ -27,9 +27,9 @@ faq:
 
 > Esta guía forma parte de nuestro trabajo en [litigio contencioso administrativo](/areas/litigio-contencioso-administrativo) y [contratación pública](/areas/contratacion-publica). Si la Contraloría rechazó su apelación, el caso no termina ahí: el Tribunal Contencioso Administrativo puede anular la adjudicación.
 
-Usted presentó su apelación ante la Contraloría General de la República, defendió su oferta y confió en el resultado. Pero la Contraloría declaró sin lugar el recurso, o lo rechazó en la etapa de admisibilidad, y el contrato quedó en manos de otro oferente. La sensación natural es que el caso terminó. **No terminó.**
+Usted presentó su apelación ante la Contraloría General de la República, defendió su oferta y confió en el resultado. Pero la Contraloría declaró sin lugar el recurso, o lo rechazó en la etapa de admisibilidad, y el contrato quedó en manos de otro oferente. Aunque parezca el punto final del caso, todavía queda abierta una etapa decisiva: la vía judicial.
 
-La resolución de la Contraloría no es la última instancia. Es, precisamente, la puerta que abre el camino judicial. En esta guía le explicamos por qué el caso no termina en la Contraloría, qué se impugna, cuánto tiempo tiene y qué le puede pedir al Tribunal Contencioso Administrativo.
+La resolución de la Contraloría funciona, precisamente, como la puerta que abre el camino a los tribunales. En esta guía le explicamos por qué el caso no termina en la Contraloría, qué se impugna, cuánto tiempo tiene y qué le puede pedir al Tribunal Contencioso Administrativo.
 
 ## Por qué el caso no termina en la Contraloría
 
@@ -37,7 +37,7 @@ Cuando la Contraloría resuelve el fondo de la apelación, esa resolución **ago
 
 Esto conecta con una regla del proceso contencioso. Por norma general, el agotamiento de la vía administrativa es **facultativo** en Costa Rica (artículo 31.1 del Código Procesal Contencioso-Administrativo). Pero en contratación administrativa la Constitución exige agotarla primero, y por eso la ley dispone que la resolución de la apelación o la objeción sea la que cierra la etapa administrativa. Cumplido ese paso, la vía judicial queda abierta.
 
-En otras palabras: la Contraloría no es un tribunal que dicta la última palabra. Es un órgano de control administrativo cuya decisión puede ser revisada por los jueces. La Sala Constitucional lo confirmó desde temprano, al reconocer que la Contraloría es "un órgano de relevancia constitucional, auxiliar de la Asamblea Legislativa" ([Voto n.º 00998-1998](https://vlex.co.cr/vid/497723798)), dentro del marco de principios constitucionales de la contratación que esa misma sentencia fijó.
+En otras palabras: la Contraloría actúa como órgano de control administrativo, y su decisión puede ser revisada por los jueces. La Sala Constitucional lo confirmó desde temprano, al reconocer que la Contraloría es "un órgano de relevancia constitucional, auxiliar de la Asamblea Legislativa" ([Voto n.º 00998-1998](https://vlex.co.cr/vid/497723798)), dentro del marco de principios constitucionales de la contratación que esa misma sentencia fijó.
 
 > **Qué hacer en la práctica:** guarde la resolución de la Contraloría con su fecha de notificación. Ese documento es la prueba de que la vía administrativa quedó agotada y marca el punto de partida de su plazo para demandar.
 
@@ -51,7 +51,7 @@ En el caso de una adjudicación, esto significa que el proceso ataca el acto de 
 
 ## El plazo real: un año, no días hábiles
 
-Aquí conviene desterrar un malentendido frecuente. En la Contraloría los plazos son cortos y en días hábiles: ocho días para apelar, cinco para la revocatoria. Muchos suponen que, agotada esa vía, tienen apenas unos días para ir a los tribunales. **No es así.**
+Aquí conviene desterrar un malentendido frecuente. En la Contraloría los plazos son cortos y en días hábiles: ocho días para apelar, cinco para la revocatoria. Muchos suponen que, agotada esa vía, tienen apenas unos días para ir a los tribunales, cuando en realidad disponen de mucho más tiempo.
 
 El plazo máximo para acudir al Tribunal Contencioso Administrativo es de **un año**, según el artículo 39.1 del Código Procesal Contencioso-Administrativo. Ese año se cuenta desde el día siguiente a la notificación cuando el acto deba notificarse; desde el día siguiente a la última publicación cuando deba publicarse; o desde el día siguiente al cese de efectos cuando se trate de actuaciones materiales.
 
@@ -92,7 +92,7 @@ Esto tiene una consecuencia práctica: la nulidad "pura" (deshacer la adjudicaci
 
 ## El control judicial de las adjudicaciones es real
 
-No es teoría. Los tribunales costarricenses anulan adjudicaciones cuando encuentran vicios. La Sala Primera de la Corte confirmó en casación la **nulidad de una adjudicación** del Instituto Nacional de Aprendizaje, porque una empresa estaba impedida de participar por un conflicto de intereses ([Voto n.º 01096-F-S1-2011](https://vlex.co.cr/vid/499597050)) —una sentencia de la que fue ponente el Dr. Óscar González Camacho, hoy director de Corporación GC.
+En la práctica, los tribunales costarricenses anulan adjudicaciones cuando encuentran vicios. La Sala Primera de la Corte confirmó en casación la **nulidad de una adjudicación** del Instituto Nacional de Aprendizaje, porque una empresa estaba impedida de participar por un conflicto de intereses ([Voto n.º 01096-F-S1-2011](https://vlex.co.cr/vid/499597050)) —una sentencia de la que fue ponente el Dr. Óscar González Camacho, hoy director de Corporación GC.
 
 Esto confirma dos cosas. Primera: la jurisdicción contencioso-administrativa efectivamente anula adjudicaciones ilegales. Segunda: por encima del Tribunal Contencioso está la **Sala Primera**, que revisa las sentencias en casación. Nuestro despacho litiga en ambos niveles; puede conocer nuestro trabajo en [casación ante la Sala Primera](/areas/casacion-sala-primera).
 
@@ -102,11 +102,11 @@ Litigar la anulación de una adjudicación exige dominar tanto la Ley General de
 
 ### ¿Si la Contraloría rechaza mi apelación, ya no puedo hacer nada?
 
-No es el final. Cuando la Contraloría declara sin lugar la apelación o la rechaza en admisibilidad, la vía administrativa queda agotada y se abre la vía judicial. A partir de ese momento usted puede acudir al Tribunal Contencioso Administrativo para pedir la anulación de la adjudicación. La resolución de la Contraloría no es la última palabra: existe un control jurisdiccional posterior.
+Todavía puede actuar. Cuando la Contraloría declara sin lugar la apelación o la rechaza en admisibilidad, la vía administrativa queda agotada y se abre la vía judicial. A partir de ese momento usted puede acudir al Tribunal Contencioso Administrativo para pedir la anulación de la adjudicación, bajo el control jurisdiccional que sigue a la fase administrativa.
 
 ### ¿Cuánto tiempo tengo para demandar después de la resolución de la Contraloría?
 
-El plazo máximo para acudir al Tribunal Contencioso es de un año, según el artículo 39 del Código Procesal Contencioso-Administrativo. Se cuenta desde el día siguiente a la notificación del acto. No son días hábiles cortos como en la Contraloría: es un año calendario. Aun así conviene actuar pronto, sobre todo si el contrato podría empezar a ejecutarse.
+El plazo máximo para acudir al Tribunal Contencioso es de un año, según el artículo 39 del Código Procesal Contencioso-Administrativo. Se cuenta desde el día siguiente a la notificación del acto. Se trata de un año calendario, mucho más holgado que los días hábiles de la Contraloría. Aun así conviene actuar pronto, sobre todo si el contrato podría empezar a ejecutarse.
 
 ### ¿Puedo pedir que se suspenda el contrato mientras el juicio avanza?
 

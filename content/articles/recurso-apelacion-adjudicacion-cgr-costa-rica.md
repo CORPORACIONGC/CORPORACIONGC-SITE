@@ -107,7 +107,7 @@ Cuando el recurso está bien construido, el resultado es contundente. En la reso
 
 ## Si la CGR resuelve en contra: la fase que casi nadie litiga
 
-La resolución de fondo **agota la vía administrativa** (art. 98). Lo que sigue no es un callejón sin salida sino un cambio de foro: la **demanda ante el Tribunal Contencioso Administrativo** para anular la adjudicación —e incluso la resolución de la propia Contraloría—, con posibilidad de **medidas cautelares** para impedir que el contrato avance mientras el juicio se decide.
+La resolución de fondo **agota la vía administrativa** (art. 98). Lo que sigue es un cambio de foro: la **demanda ante el Tribunal Contencioso Administrativo** para anular la adjudicación —e incluso la resolución de la propia Contraloría—, con posibilidad de **medidas cautelares** para impedir que el contrato avance mientras el juicio se decide.
 
 Y si la contratación ya se ejecutó o está en curso de ejecución, la propia ley define el desenlace: la sentencia favorable reconoce al oferente ilegítimamente excluido **el pago de los daños y perjuicios causados** (art. 98) — que en contratos de gran cuantía puede representar la utilidad dejada de percibir.
 

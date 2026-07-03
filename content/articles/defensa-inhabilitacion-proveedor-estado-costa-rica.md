@@ -27,7 +27,7 @@ faq:
 
 > Si le abrieron un procedimiento sancionatorio o ya lo inhabilitaron para contratar con el Estado, este artículo es para usted. En [Corporación GC](/areas/procedimientos-sancionatorios) defendemos a proveedores frente a la Administración y la Contraloría, y sabemos que aquí no se discute una multa: se discute su permanencia en el mercado estatal.
 
-Una inhabilitación es, para muchas empresas, la sanción más grave que existe en la contratación pública. No es una llamada de atención ni un ajuste económico: es la orden de que usted deje de venderle al Estado durante un plazo que puede llegar a diez años. Para un proveedor cuyo giro depende de los concursos públicos, esa sanción equivale a cerrar la operación.
+Una inhabilitación es, para muchas empresas, la sanción más grave que existe en la contratación pública. Equivale a la orden de que usted deje de venderle al Estado durante un plazo que puede llegar a diez años. Para un proveedor cuyo giro depende de los concursos públicos, esa sanción llega a cerrar la operación.
 
 La buena noticia es que la inhabilitación no cae del cielo. Es el resultado de un procedimiento reglado, con plazos, con derecho de defensa y con recursos. Y como todo procedimiento reglado, puede combatirse cuando la Administración se equivoca, cuando los hechos no encajan en la causal, o cuando la sanción es desproporcionada. Esta guía le explica qué está en juego y cómo defenderse, con base en el régimen sancionatorio de la Ley General de Contratación Pública (Ley N.° 9986), artículos 118 a 123.
 
@@ -72,7 +72,7 @@ El artículo 119 enumera las conductas que habilitan una sanción, en una lista 
 - Subcontratar con personas distintas al listado autorizado (inciso q).
 - Resolución contractual declarada en sede jurisdiccional con condena firme (inciso r).
 
-Conviene saber que ciertas causales no solo generan la sanción: también producen la exclusión de la oferta y la resolución del contrato. Es decir, un mismo hecho puede desencadenar varios efectos a la vez, y la estrategia de defensa debe contemplarlos todos.
+Conviene saber que ciertas causales, además de la sanción, producen la exclusión de la oferta y la resolución del contrato. Un mismo hecho puede desencadenar varios efectos a la vez, y la estrategia de defensa debe contemplarlos todos.
 
 > **Qué hacer en la práctica:** lea con lupa la causal que le imputan y confróntela con los hechos reales. Muchas veces la Administración encuadra una conducta en una causal más grave de la que corresponde, o pretende sancionar un incumplimiento que en realidad tenía justa causa. Documentar esa justa causa —una orden de la propia institución, un caso fortuito, un atraso ajeno a usted— suele ser el corazón de la defensa.
 
@@ -84,7 +84,7 @@ Por eso, uno de los primeros pasos de cualquier defensa seria es reconstruir con
 
 ## El procedimiento sancionatorio del artículo 121: dónde se defiende
 
-La inhabilitación no la decide un funcionario a solas. La impone, por acto firme, la entidad que promovió el concurso o la Contraloría General de la República, siguiendo un procedimiento especial regulado en el artículo 121. Conocer sus etapas es saber en qué momento y cómo actuar.
+La inhabilitación se impone por acto firme y solo al cabo de un procedimiento reglado: la dicta la entidad que promovió el concurso o la Contraloría General de la República, conforme al procedimiento especial del artículo 121. Conocer sus etapas es saber en qué momento y cómo actuar.
 
 **1. Notificación e imputación de cargos.** El procedimiento inicia cuando le notifican los hechos, con la imputación de cargos y la prueba en que se apoya la Administración. Si hay responsabilidad patrimonial de por medio, el acto debe especificar su monto. Esta notificación es su punto de partida: a partir de aquí corren los plazos.
 
@@ -100,19 +100,19 @@ La inhabilitación no la decide un funcionario a solas. La impone, por acto firm
 
 Una tentación frecuente —y peligrosa— es intentar esquivar la inhabilitación disolviendo la empresa sancionada y abriendo otra. La ley cierra esa puerta de forma expresa. El artículo 122 establece que la sanción **no se extingue por fusión, transformación ni cambio de razón o denominación social**. En caso de fusión, la sanción recae sobre la sociedad prevaleciente.
 
-Y va más allá: constituir una nueva sociedad o acudir a una persona física para evadir la sanción constituye **fraude de ley**, y los efectos de la inhabilitación recaen igualmente sobre esa nueva figura. Dicho de forma directa: intentar burlar la sanción no solo no funciona, sino que agrava su posición. La defensa correcta es la jurídica, dentro del procedimiento, no la maniobra societaria.
+Y va más allá: constituir una nueva sociedad o acudir a una persona física para evadir la sanción constituye **fraude de ley**, y los efectos de la inhabilitación recaen igualmente sobre esa nueva figura. Dicho de forma directa: intentar burlar la sanción agrava la posición del proveedor, porque esos efectos se le trasladan de todos modos. La defensa eficaz es la jurídica, planteada dentro del procedimiento.
 
 ## El registro público de sanciones
 
 Al daño comercial se suma el reputacional. El artículo 123 obliga a la Administración o a la Contraloría a comunicar toda sanción a la Dirección de Contratación Pública dentro del día hábil siguiente a su firmeza. Existe un **registro único de sanciones**, público y accesible en el sistema digital unificado, que muestra su inhabilitación durante todo el plazo que dure.
 
-Esto significa que cualquier institución —y cualquier competidor— puede verificar su situación. Por eso lograr una defensa exitosa no solo evita la exclusión de los concursos: también evita que su nombre figure públicamente como proveedor sancionado. La reputación, en este mercado, es un activo que también se defiende.
+Esto significa que cualquier institución —y cualquier competidor— puede verificar su situación. Por eso una defensa exitosa evita, a la vez, la exclusión de los concursos y que su nombre figure públicamente como proveedor sancionado. La reputación, en este mercado, es un activo que también se defiende.
 
 ## Sanción administrativa, civil y penal: los frentes no se excluyen
 
 Un punto que conviene tener claro desde el inicio: las sanciones del régimen son de naturaleza administrativa y civil, pero su aplicación **no excluye** las sanciones penales ni la responsabilidad por daños y perjuicios. Un mismo hecho —por ejemplo, ofrecer una dádiva o introducir información falsa— puede abrir simultáneamente un frente administrativo, uno civil y uno penal.
 
-Por eso una defensa bien planteada no mira solo el procedimiento sancionatorio en aislamiento, sino el conjunto de riesgos. Si además la sanción incluye una condena patrimonial, o si la conducta puede tener consecuencias penales, la estrategia debe coordinarse en todos los frentes desde el primer día.
+Por eso una defensa bien planteada abarca el conjunto de riesgos, más allá del procedimiento sancionatorio en sí mismo. Si además la sanción incluye una condena patrimonial, o si la conducta puede tener consecuencias penales, la estrategia debe coordinarse en todos los frentes desde el primer día.
 
 ## Preguntas frecuentes
 

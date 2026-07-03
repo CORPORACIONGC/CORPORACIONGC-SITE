@@ -35,7 +35,7 @@ Esta guía explica, en términos prácticos, qué es la objeción, quién puede 
 
 La objeción es un recurso que ataca el **pliego de condiciones** —el cartel— antes de que se presenten las ofertas. Su propósito es corregir a tiempo las reglas del concurso cuando una cláusula limita ilegalmente la participación o infringe el ordenamiento jurídico.
 
-El artículo 86 de la Ley 9986 es tajante: en contratación pública los **únicos recursos** son dos. Uno es la objeción al pliego de condiciones. El otro es la apelación o revocatoria contra el acto de adjudicación (o el que declare desierto o infructuoso el concurso). No hay más. Esto significa que la objeción cubre una etapa distinta —las reglas del juego— y la apelación cubre otra —quién ganó—.
+El artículo 86 de la Ley 9986 es tajante: en contratación pública solo existen dos recursos. Uno es la objeción al pliego de condiciones; el otro, la apelación o revocatoria contra el acto de adjudicación (o el que declare desierto o infructuoso el concurso). Esa taxatividad tiene una consecuencia: la objeción cubre una etapa —las reglas del juego— y la apelación cubre otra —quién ganó—.
 
 La distinción es determinante por una razón: la **preclusión**. El artículo 90 de la Ley 9986 establece que se extingue la facultad de impugnar aquello que ya se pudo recurrir. Y es todavía más explícito: por la vía de revocatoria o apelación **no pueden impugnarse cláusulas del pliego**. Traducido a la práctica: si usted ve hoy una cláusula abusiva en el cartel y no la objeta dentro del plazo, no podrá atacarla después cuando pierda la adjudicación. La ventana se cierra.
 
@@ -96,7 +96,7 @@ La misma lógica se aplica también a la Administración. En [R-DCA-SICOP-01621-
 
 ## Qué pasa después: cartel corregido o concurso que sigue
 
-Si la objeción prospera, la consecuencia es la **modificación del cartel**: la Administración debe corregir la cláusula cuestionada, y el concurso continúa con reglas depuradas. Ese es el objetivo del recurso: no ganar un pleito, sino competir en un concurso limpio.
+Si la objeción prospera, la consecuencia es la **modificación del cartel**: la Administración debe corregir la cláusula cuestionada, y el concurso continúa con reglas depuradas. Ese es el objetivo del recurso: competir en igualdad de condiciones.
 
 Ahora bien, cuando el cartel se modifica surge una pregunta práctica: ¿se puede objetar la modificación? El Reglamento (artículo 256) responde que **solo cabe objeción contra modificaciones sustanciales**: una variación fundamental del objeto, un cambio en los factores o pesos de evaluación, o una alteración relevante de los riesgos. Contra ajustes menores no hay recurso.
 
