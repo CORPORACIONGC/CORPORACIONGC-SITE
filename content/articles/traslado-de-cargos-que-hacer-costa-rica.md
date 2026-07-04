@@ -8,7 +8,7 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Traslado de Cargos en Costa Rica: Qué Hacer y Plazos"
+seoTitle: "Traslado de Cargos: Qué Hacer y Plazos (Guía 2026)"
 seoDescription: "¿Le llegó un traslado de cargos en Costa Rica? Qué significa, qué debe contener para ser válido y qué hacer con los plazos corriendo. Guía de defensa (LGAP)."
 faq:
   - question: "¿Qué es un traslado de cargos?"

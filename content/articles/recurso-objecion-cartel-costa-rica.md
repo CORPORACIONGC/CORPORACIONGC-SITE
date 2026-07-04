@@ -8,7 +8,7 @@ author: "Lic. Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Recurso de objeción al cartel en Costa Rica: plazos"
+seoTitle: "Recurso de Objeción al Cartel: Plazos y Guía 2026"
 seoDescription: "Recurso de objeción al cartel en licitaciones: plazos por procedimiento, quién puede objetar y qué prueba exige la CGR para tumbar la cláusula que lo excluye."
 faq:
   - question: "¿Qué es el recurso de objeción al cartel?"

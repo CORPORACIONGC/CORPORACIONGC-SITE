@@ -8,7 +8,7 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Procedimiento Administrativo Sancionatorio: Cómo Defenderse"
+seoTitle: "Procedimiento Sancionatorio: Cómo Defenderse (Guía 2026)"
 seoDescription: "¿Le abrieron un procedimiento administrativo sancionatorio en Costa Rica? Guía de defensa: plazos de la LGAP, sus derechos, nulidades y cómo impugnar la sanción."
 faq:
   - question: "¿Qué es un procedimiento administrativo sancionatorio?"
