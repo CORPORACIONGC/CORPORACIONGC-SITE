@@ -378,6 +378,15 @@ html {
   animation: breathe 3s ease-in-out infinite;
 }
 
+/* ── Ocultar barra de scroll en galerías horizontales (todos los motores) ── */
+.gc-scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.gc-scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 /* ── Client logos marquee (mobile) ── */
 @keyframes marquee {
   0% { transform: translateX(0); }
