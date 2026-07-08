@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { ArrowDown } from "@phosphor-icons/react/dist/ssr";
+import { Medal } from "@phosphor-icons/react/dist/ssr";
 
 export function Hero() {
   return (
@@ -39,16 +39,22 @@ export function Hero() {
             <div className="mt-6 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[55ch]">
-                Amplia experiencia en medidas cautelares y litigio contra el Estado
-                en materia contencioso-administrativa. Investigador en
-                inteligencia artificial aplicada a la justicia. Licenciado
-                con mención en Derecho Tributario por la UCR, 3er mejor
-                promedio en el Examen de Excelencia del Colegio de Abogados, 2025.
+                Licenciado en Derecho por la Universidad de Costa Rica, con
+                mención en Derecho Tributario. Litigio contra el Estado:
+                medidas cautelares, demandas contencioso-administrativas y
+                casación ante la Sala Primera. Investigador y panelista
+                internacional en inteligencia artificial aplicada a la justicia.
               </p>
             </div>
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.5}>
+            <div className="mt-5 inline-flex items-center gap-2.5 px-3.5 py-2 rounded-lg border border-gold/25 bg-gold/[0.06]">
+              <Medal size={16} weight="duotone" className="text-gold shrink-0" />
+              <span className="text-[11px] md:text-xs text-gold/90 font-medium tracking-wide">
+                3.er mejor promedio — Examen de Excelencia del Colegio de Abogados, 2025
+              </span>
+            </div>
             <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
               Carnet CAACR 37920
             </div>
@@ -71,7 +77,7 @@ export function Hero() {
           <div className="relative md:h-[75vh] max-h-[700px] flex items-center justify-center">
             <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
-                src="/images/foto-perfil.png"
+                src="/images/khevin-sanchez.jpg"
                 alt="Lic. Khevin Sánchez Zamora — Abogado Asociado de Corporación GC"
                 width={768}
                 height={1024}

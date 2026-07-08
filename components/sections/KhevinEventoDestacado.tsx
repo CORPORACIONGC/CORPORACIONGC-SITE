@@ -83,7 +83,7 @@ export function KhevinEventoDestacado() {
                     &Eacute;tica, gobernanza de datos e inteligencia artificial aplicada al ejercicio del Derecho en Latinoam&eacute;rica
                   </p>
                   <p className="text-[11px] text-cream/35 mt-2 leading-relaxed">
-                    Junto a representantes de Microsoft, VillateLab y Keralty &mdash; primera edici&oacute;n suramericana del summit global
+                    Junto a Jimena Mora (Microsoft), &Aacute;ngela Villate (VillateLab) y Nicol&aacute;s Casta&ntilde;eda (Keralty)
                   </p>
                 </div>
 

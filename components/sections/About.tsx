@@ -7,6 +7,7 @@ import {
   FileText,
   Stamp,
   Brain,
+  Bank,
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
@@ -19,6 +20,7 @@ const iconMap: Record<string, React.ElementType> = {
   FileText,
   Stamp,
   Brain,
+  Bank,
 };
 
 export function About() {
@@ -49,19 +51,38 @@ export function About() {
 
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Litigo contra el Estado en sectores regulados de alto impacto:
-                telecomunicaciones, mercado de valores, salud pública,
-                contratación administrativa y turismo.
+                Litigo contra el Estado ante el Tribunal Contencioso
+                Administrativo, la Sala Constitucional, la Sala Primera y la
+                Contraloría General de la República. Mi práctica cruza
+                materias y sectores muy diversos: contratación administrativa,
+                expropiaciones, empleo público, régimen disciplinario,
+                responsabilidad del Estado, telecomunicaciones, energía,
+                mercado de valores, banca, salud, educación y turismo,
+                entre otros.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
               <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Formado durante siete años bajo la dirección del Dr. Óscar
-                Eduardo González Camacho — co-redactor del Código Procesal
-                Contencioso Administrativo —, aplico técnicas de vanguardia en
-                inteligencia artificial como infraestructura técnica del
-                ejercicio profesional.
+                Manejo el proceso contencioso completo: medidas cautelares
+                provisionalísimas y ante causam, demandas de nulidad y de
+                responsabilidad patrimonial, preparación de audiencias
+                orales y recursos de casación. Inicié mi carrera en la Sala
+                Constitucional, en el despacho del Magistrado Paul Rueda
+                Leal, y me formé durante siete años bajo la dirección del
+                Dr. Óscar Eduardo González Camacho, co-redactor del Código
+                Procesal Contencioso Administrativo.
+              </p>
+            </AnimatedEntry>
+
+            <AnimatedEntry delay={0.35}>
+              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+                A esa base procesal sumo una línea de investigación en
+                inteligencia artificial aplicada a la justicia, que integro
+                como infraestructura técnica del ejercicio profesional, que
+                he presentado en paneles internacionales en Bogotá y San
+                José, y que he publicado en revistas jurídicas
+                especializadas.
               </p>
             </AnimatedEntry>
 
@@ -112,6 +133,51 @@ export function About() {
                 </p>
                 <div className="mt-2 text-[10px] text-cream/35">
                   Director: Dr. Óscar Eduardo González Camacho — UCR, 2025
+                </div>
+                <a
+                  href="/articulos/tesis-ia-justicia"
+                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-gold/80 hover:text-gold transition-colors duration-300 font-medium"
+                >
+                  Leer la investigación completa
+                  <span aria-hidden>&rarr;</span>
+                </a>
+                <div className="mt-4 pt-4 border-t border-cream/[0.06]">
+                  <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-2">
+                    Publicaciones académicas
+                  </div>
+                  <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
+                    La personalidad jurídica instrumental como técnica de
+                    organización administrativa
+                  </h3>
+                  <p className="mt-1.5 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                    Revista El Foro, N.° 32 — Colegio de Abogados y Abogadas
+                    de Costa Rica, ISSN 2215-6771, pp. 7–22.
+                  </p>
+                  <a
+                    href="/articulos/personalidad-juridica-instrumental"
+                    className="mt-2 inline-flex items-center gap-1.5 text-xs text-gold/80 hover:text-gold transition-colors duration-300 font-medium"
+                  >
+                    Leer el artículo
+                    <span aria-hidden>&rarr;</span>
+                  </a>
+                  <div className="mt-4 pt-4 border-t border-cream/[0.06]">
+                    <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
+                      Administración Pública aumentada: inteligencia artificial
+                      en la contratación estatal costarricense
+                    </h3>
+                    <p className="mt-1.5 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                      Revista Estudiantil Hermenéutica, Ed. XXVI — Facultad de
+                      Derecho, Universidad de Costa Rica, 2025, pp. 75–144.
+                      Coautoría con la Licda. Mariana Montero Acuña.
+                    </p>
+                    <a
+                      href="/articulos/hermeneutica-ia-contratacion-publica"
+                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-gold/80 hover:text-gold transition-colors duration-300 font-medium"
+                    >
+                      Leer el artículo
+                      <span aria-hidden>&rarr;</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </AnimatedEntry>

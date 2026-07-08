@@ -90,6 +90,9 @@ export default async function AttorneyProfile({
     carnet: string;
     education: { degree: string; institution: string; distinction?: string }[];
     sameAs?: string[];
+    alternateName?: string[];
+    award?: string[];
+    knowsAboutExtra?: string[];
   }> = {
     "oscar-gonzalez": {
       honorificPrefix: "Dr.",
@@ -113,6 +116,23 @@ export default async function AttorneyProfile({
       ],
       sameAs: [
         "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/",
+        "https://www.instagram.com/lic.sanchezzamora",
+        "https://www.abogados.or.cr/consultaagremiados/",
+      ],
+      /* "Kevin" es la grafía con la que muchos usuarios lo buscan;
+         alternateName permite que Google asocie ambas variantes. */
+      alternateName: ["Kevin Sánchez Zamora", "Khevin Sánchez"],
+      award: [
+        "3.er mejor promedio — Examen de Excelencia Académica, Colegio de Abogados y Abogadas de Costa Rica (II Convocatoria, 2025)",
+      ],
+      knowsAboutExtra: [
+        "Medidas cautelares contencioso-administrativas",
+        "Recurso de casación ante la Sala Primera",
+        "Responsabilidad patrimonial del Estado",
+        "Expropiaciones y justiprecio",
+        "Empleo público y régimen disciplinario",
+        "Regulación sectorial: telecomunicaciones, energía y mercado de valores",
+        "Inteligencia artificial aplicada al derecho",
       ],
     },
     "katherine-gonzalez": {
@@ -162,7 +182,7 @@ export default async function AttorneyProfile({
     image: `${FIRM.url}${member.photo}`,
     description: member.shortBio,
     worksFor: { "@id": `${FIRM.url}/#organization` },
-    knowsAbout: [...member.areas],
+    knowsAbout: [...member.areas, ...(enrichment.knowsAboutExtra ?? [])],
     knowsLanguage: member.languages?.map((l: string) => l) ?? ["Español"],
     memberOf: {
       "@type": "Organization",
@@ -229,6 +249,12 @@ export default async function AttorneyProfile({
   if (enrichment.sameAs && enrichment.sameAs.length > 0) {
     jsonLdPerson.sameAs = enrichment.sameAs;
   }
+  if (enrichment.alternateName && enrichment.alternateName.length > 0) {
+    jsonLdPerson.alternateName = enrichment.alternateName;
+  }
+  if (enrichment.award && enrichment.award.length > 0) {
+    jsonLdPerson.award = enrichment.award;
+  }
 
   /* ── JSON-LD: ProfilePage ── */
   const jsonLdProfilePage = {
@@ -240,7 +266,7 @@ export default async function AttorneyProfile({
     mainEntity: { "@id": `${FIRM.url}/abogados/${member.slug}#person` },
     isPartOf: { "@id": `${FIRM.url}/#website` },
     dateCreated: "2025-01-01",
-    dateModified: "2026-03-28",
+    dateModified: "2026-07-07",
     inLanguage: "es-CR",
   };
 
@@ -289,10 +315,35 @@ export default async function AttorneyProfile({
       },
       description: "Primera edición suramericana del Global Summit Legal Hackers. Panel: IA en el Derecho — Más allá de la Eficiencia, la Urgencia de un Marco Ético. Panelistas: Khevin Sánchez, Ángela Villate (VillateLab), Jimena Mora (Microsoft), Nicolás Castañeda (Keralty).",
     };
+    const jsonLdEventCR = {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Global Summit Legal Hackers — Costa Rica 2024",
+      startDate: "2024-12-06",
+      endDate: "2024-12-06",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      eventStatus: "https://schema.org/EventCompleted",
+      location: {
+        "@type": "Place",
+        name: "Colegio de Abogados y Abogadas de Costa Rica",
+        address: { "@type": "PostalAddress", addressLocality: "San José", addressCountry: "CR" },
+      },
+      organizer: [
+        { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica" },
+        { "@type": "Organization", name: "Babaluum" },
+        { "@type": "Organization", name: "Legal Hackers Costa Rica" },
+      ],
+      performer: {
+        "@type": "Person",
+        name: "Lic. Khevin Sánchez Zamora",
+        "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
+      },
+      description: "Panel: ¿Cómo llevar el cumplimiento ético de inteligencia artificial a la práctica y la automatización? Perspectiva de riesgos y ciencia de datos. Panelistas: Khevin Sánchez, Katherine Romero C., Raúl Trejos.",
+    };
     return (
       <>
         {schemaScripts}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdEvent) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLdEvent, jsonLdEventCR]) }} />
         <KhevinProfile />
       </>
     );
@@ -388,6 +439,7 @@ function KhevinProfile() {
         <Navbar navLinks={profileNavLinks} topOffset />
         <main>
           <Hero />
+          <Credentials />
           <About />
           <Experience />
           <Publications articles={articles} />
