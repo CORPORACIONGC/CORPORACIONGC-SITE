@@ -228,7 +228,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         question: "¿Cuál es el plazo para demandar al Estado?",
         answer:
-          "El artículo 39 del CPCA establece un plazo máximo de un año para incoar el proceso. Como regla general se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales se cuenta desde la cesación de sus efectos. Cuando la conducta produce efectos continuados, el plazo no comienza a correr hasta que esos efectos cesen — distinción a menudo pasada por alto que puede mantener viva una causa que parecía perdida.",
+          "Depende del tipo de reclamo. Para impugnar conductas administrativas (actos, actuaciones materiales u omisiones), el artículo 39 del CPCA establece un plazo de caducidad de un año: como regla se cuenta desde el día siguiente a la notificación del acto, para actuaciones materiales desde la cesación de sus efectos, y cuando la conducta produce efectos continuados el plazo no comienza a correr hasta que esos efectos cesen — distinción a menudo pasada por alto que puede mantener viva una causa que parecía perdida. Para reclamos puramente indemnizatorios contra la Administración (responsabilidad patrimonial del Estado), el artículo 198 de la LGAP establece una prescripción de cuatro años, contados a partir del hecho que motiva la responsabilidad, según lo ha confirmado la Sala Primera.",
       },
       {
         question: "¿Es necesario agotar la vía administrativa antes de demandar?",
@@ -1367,11 +1367,6 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
         title: "Defensa en procedimientos de responsabilidad administrativa ante la CGR",
         description:
           "Representamos al funcionario o al exfuncionario investigado por las causales del artículo 38 (incumplimiento del régimen de prohibiciones, falta de veracidad o simulación en la declaración, conflicto de intereses, debilitamiento del control interno, percepción indebida de retribuciones, entre otras), con la mira en las sanciones del artículo 39 y en los criterios del artículo 41 (dolo o culpa grave, reincidencia, impacto en el servicio).",
-      },
-      {
-        title: "Defensa penal por delitos contra los deberes de la función pública",
-        description:
-          "Defendemos ante el Ministerio Público y los tribunales penales en causas por enriquecimiento ilícito (art. 45), falsedad en la declaración (art. 46), legislación o administración en provecho propio (art. 48), sobreprecio irregular (art. 49), falsedad en la recepción de bienes o servicios (art. 50), pago irregular de contratos (art. 51), tráfico de influencias (art. 52), soborno transnacional (art. 55) y fraude de ley en función administrativa (art. 58), con atención a la inhabilitación del artículo 59 y a la prescripción reforzada del artículo 62 (Ley 10691/2025).",
       },
       {
         title: "Medidas cautelares, congelamiento de cuentas y decomiso",
