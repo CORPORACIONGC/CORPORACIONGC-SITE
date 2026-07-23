@@ -1,22 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { DM_Sans, Newsreader } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GlobalWhatsAppFloat } from "@/components/layout/GlobalWhatsAppFloat";
 import "./globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.corporaciongc.com";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
 const dmSans = DM_Sans({
   subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
   display: "swap",
 });
 
@@ -64,7 +64,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${cormorant.variable} ${dmSans.variable}`} suppressHydrationWarning>
+    <html
+      lang="es"
+      className={`${dmSans.variable} ${newsreader.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{

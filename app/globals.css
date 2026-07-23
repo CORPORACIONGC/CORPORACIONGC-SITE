@@ -49,8 +49,30 @@
   --color-surface: var(--surface-val);
   --color-surface-alt: var(--surface-alt-val);
 
-  --font-display: var(--font-cormorant);
+  --font-display: var(--font-body);
   --font-body: var(--font-dm-sans);
+}
+
+/* DM Sans como tipografía de títulos: peso medio por defecto —
+   los pesos explícitos (font-semibold, font-bold) siguen ganando. */
+@layer base {
+  .font-display {
+    font-weight: 500;
+  }
+}
+
+/* Newsreader queda reservada para el manifiesto principal de la firma
+   y para las citas; el resto de la jerarquía usa DM Sans. */
+#la-firma h2.font-display {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.font-display.italic {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 html {
