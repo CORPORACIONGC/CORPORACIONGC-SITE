@@ -390,7 +390,7 @@ export default async function ArticlePage({
                   <p className="mt-2.5 text-sm text-cream/60 leading-relaxed max-w-[54ch]">
                     Escríbanos por WhatsApp para una respuesta rápida y directa.
                     Converse con nuestro equipo y reciba una orientación inicial
-                    de su situación, sin compromiso.
+                    de su situación.
                   </p>
                   <TrackedContactLink
                     href={whatsappUrl}
