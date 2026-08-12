@@ -9,7 +9,7 @@ authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Cómo Demandar al Estado en Costa Rica: Guía 2026"
-seoDescription: "Guía 2026 para demandar al Estado en Costa Rica: plazo de un año, qué puede reclamar y los pasos del proceso, explicados por co-redactores del CPCA."
+seoDescription: "Guía 2026 para demandar al Estado en Costa Rica: los plazos según su reclamo, qué puede pedir y los pasos del proceso, explicados por co-redactores del CPCA."
 faq:
   - question: "¿A quiénes se puede demandar en la jurisdicción contencioso-administrativa?"
     answer: "Permite demandar al Estado (Gobierno Central, ministerios), instituciones autónomas (CCSS, ICE, INVU, AyA, IMAS), municipalidades, entes públicos (universidades estatales, ARESEP, SUTEL, CGR) y empresas públicas (RECOPE, INS). El principio de universalidad del control garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial."
@@ -18,7 +18,7 @@ faq:
   - question: "¿Es necesario agotar la vía administrativa antes de demandar al Estado?"
     answer: "En la mayoría de los casos no es obligatorio. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo: el administrado puede interponer recursos o acudir directamente al Tribunal Contencioso. Las excepciones principales son la contratación pública (Ley 9986) y los casos derivados de los artículos 173 y 182 de la Constitución."
   - question: "¿Cuál es el plazo para demandar al Estado en Costa Rica?"
-    answer: "El artículo 39 del CPCA establece un plazo de caducidad de un año. Como regla general se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales se cuenta desde la cesación de sus efectos. Cuando la conducta produce efectos continuados, el plazo no comienza a correr hasta que esos efectos cesen."
+    answer: "Depende del tipo de reclamo. Para impugnar conductas administrativas (actos, actuaciones materiales u omisiones), el artículo 39 del CPCA establece un plazo de caducidad de un año, contado como regla desde el día siguiente a la notificación del acto. Para reclamos puramente indemnizatorios contra la Administración (responsabilidad patrimonial del Estado), el artículo 198 de la LGAP establece una prescripción de cuatro años, contados a partir del hecho que motiva la responsabilidad, según lo ha confirmado la Sala Primera."
   - question: "¿Ante quién se presenta la demanda contencioso-administrativa?"
     answer: "Ante el Tribunal Contencioso Administrativo, jurisdicción especializada del Poder Judicial. El proceso es oral y por audiencias: presentación, admisión y traslado, contestación, audiencia preliminar, audiencia complementaria (juicio oral), sentencia y eventual casación ante Sala Primera. Un caso puede durar entre dos y cinco años."
   - question: "¿Necesito un abogado para demandar al Estado?"
@@ -73,13 +73,17 @@ En la gran mayoría de los casos — sanciones administrativas, responsabilidad 
 
 ## ¿Cuál es el plazo para demandar?
 
-El artículo 39 del CPCA establece un plazo de caducidad de **un año**. Si se le pasa este plazo, pierde el derecho a demandar — no hay prórroga ni excepción general.
+Depende de lo que usted vaya a pedir. La ley establece dos plazos distintos según el tipo de reclamo, e identificar cuál aplica a su caso es el primer paso de cualquier estrategia.
+
+**Para impugnar una conducta administrativa** — un acto que le afecta, una actuación material o una omisión —, el artículo 39 del CPCA establece un plazo de caducidad de **un año**. Si se le pasa este plazo, pierde el derecho a impugnar esa conducta — no hay prórroga ni excepción general.
 
 El cómputo del plazo depende del tipo de conducta que se impugna. Como regla general, el año se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales, se cuenta desde el día siguiente a la **cesación de sus efectos** — una distinción fundamental y a menudo pasada por alto. La ley contempla reglas específicas según la naturaleza de la conducta impugnada, por lo que el cálculo del plazo debe evaluarse caso por caso con asesoría especializada.
 
+**Para reclamar una indemnización a la Administración** — la llamada **responsabilidad patrimonial del Estado** — rige un plazo mayor. El artículo 198 de la Ley General de la Administración Pública dispone que *"el derecho de reclamar la indemnización a la Administración prescribirá en cuatro años, contados a partir del hecho que motiva la responsabilidad"*. La Sala Primera ha confirmado que a las demandas puramente indemnizatorias les aplica esta prescripción de **cuatro años**, y que la caducidad anual del artículo 39 queda reservada para la impugnación de conductas administrativas (resolución N.° 1778-2021, entre otras).
+
 ### Los efectos continuados: un plazo que muchos creen vencido y no lo está
 
-Cuando una conducta administrativa produce **efectos continuados** — es decir, sus consecuencias persisten en el tiempo —, el plazo de un año no comienza a correr hasta que esos efectos cesan. Mientras la conducta siga produciendo efectos, el plazo de caducidad no ha empezado a correr.
+Cuando una conducta administrativa produce **efectos continuados** — es decir, sus consecuencias persisten en el tiempo —, el plazo de caducidad de un año del artículo 39 no comienza a correr hasta que esos efectos cesan. Mientras la conducta siga produciendo efectos, el plazo no ha empezado a correr.
 
 Muchas personas asumen que "ya se les pasó el plazo" sin consultar a un abogado especialista. Un análisis riguroso de la naturaleza de la conducta y de sus efectos puede revelar que la vía jurisdiccional sigue abierta.
 
