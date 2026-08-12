@@ -85,4 +85,4 @@ Si ya recibió la notificación o anticipa que su propiedad podría verse afecta
 
 > 📌 Lea también: [Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuáles son mis derechos?](/articulos/expropiacion-costa-rica-derechos)
 
-> Si tiene preguntas sobre su caso particular o necesita orientación sobre los pasos a seguir, puede escribirnos a [info@corporaciongc.com](mailto:info@corporaciongc.com). Con gusto le ayudamos a evaluar su situación sin costo inicial.
+> Si tiene preguntas sobre su caso particular o necesita orientación sobre los pasos a seguir, puede escribirnos a [info@corporaciongc.com](mailto:info@corporaciongc.com). Con gusto le ayudamos a evaluar su situación.

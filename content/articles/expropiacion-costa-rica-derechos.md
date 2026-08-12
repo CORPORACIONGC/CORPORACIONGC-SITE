@@ -114,4 +114,4 @@ Recibir una notificación de expropiación genera preguntas y preocupación, eso
 
 Lo que no puede hacer es dejar pasar el tiempo sin actuar, dado que los plazos son cortos (**cinco días hábiles para oponerse al avalúo**) y las consecuencias de la inacción son difíciles de revertir.
 
-> Si tiene preguntas sobre su caso particular o necesita orientación sobre los pasos a seguir, puede escribirnos a [info@corporaciongc.com](mailto:info@corporaciongc.com). Con gusto le ayudamos a evaluar su situación sin costo inicial.
+> Si tiene preguntas sobre su caso particular o necesita orientación sobre los pasos a seguir, puede escribirnos a [info@corporaciongc.com](mailto:info@corporaciongc.com). Con gusto le ayudamos a evaluar su situación.

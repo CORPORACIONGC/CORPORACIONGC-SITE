@@ -228,7 +228,7 @@ En la práctica, sin embargo, conviene distinguir tres situaciones:
 
 **Casos complejos, con múltiples partes o estrategia procesal.** Cuando el amparo se entrelaza con un procedimiento administrativo, una demanda contencioso-administrativa o una posible acción de inconstitucionalidad, el análisis estratégico es indispensable. Un escrito mal articulado puede llevar al rechazo y, peor aún, dejar firme el acto que se pretendía impugnar.
 
-La pregunta no es solo "¿puedo presentarlo solo?" sino "¿qué riesgo asumo al hacerlo?". Un análisis previo de viabilidad —que muchas firmas brindan sin costo— suele ahorrar tiempo y evitar precluir derechos.
+La pregunta no es solo "¿puedo presentarlo solo?" sino "¿qué riesgo asumo al hacerlo?". Un análisis previo de viabilidad suele ahorrar tiempo y evitar precluir derechos.
 
 ---
 
@@ -288,7 +288,7 @@ Si tiene claro el derecho violado, los hechos son concretos y los efectos del ac
 
 Para conocer cómo intervenimos en estos casos —desde la redacción del recurso hasta la ejecución de la condena en abstracto ante el Tribunal Contencioso Administrativo— puede revisar nuestra área de práctica de [Recursos de Amparo](/areas/recursos-de-amparo).
 
-> Si necesita evaluar la viabilidad de un recurso de amparo o quiere que lo redacte un equipo con experiencia ante la Sala Constitucional, puede escribirnos a [info@corporaciongc.com](mailto:info@corporaciongc.com) o [contactarnos por nuestro formulario](/contacto). Revisamos el caso sin costo inicial y le indicamos si la vía es la adecuada y qué probabilidades reales tiene.
+> Si necesita evaluar la viabilidad de un recurso de amparo o quiere que lo redacte un equipo con experiencia ante la Sala Constitucional, puede escribirnos a [info@corporaciongc.com](mailto:info@corporaciongc.com) o [contactarnos por nuestro formulario](/contacto). Revisamos el caso y le indicamos si la vía es la adecuada y qué probabilidades reales tiene.
 
 ---
 

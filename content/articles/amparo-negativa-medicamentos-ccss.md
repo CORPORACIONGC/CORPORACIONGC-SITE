@@ -143,7 +143,7 @@ Por eso, aunque el amparo sea de acceso directo para el ciudadano, la forma de p
 
 Para conocer cómo intervenimos en estos casos, puede visitar nuestra área de [Recursos de Amparo](/areas/recursos-de-amparo).
 
-> Si la CCSS le negó un medicamento o un tratamiento que su salud no puede esperar, escríbanos por WhatsApp al [+506 8317-9564](https://wa.me/50683179564), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por [nuestro formulario de contacto](/contacto). Revisamos su caso sin costo inicial y le decimos con franqueza si el amparo es la vía adecuada y cómo conviene plantearlo.
+> Si la CCSS le negó un medicamento o un tratamiento que su salud no puede esperar, escríbanos por WhatsApp al [+506 8317-9564](https://wa.me/50683179564), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por [nuestro formulario de contacto](/contacto). Revisamos su caso y le decimos con franqueza si el amparo es la vía adecuada y cómo conviene plantearlo.
 
 ---
 
