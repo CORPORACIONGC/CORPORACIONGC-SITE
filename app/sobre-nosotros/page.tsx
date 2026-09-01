@@ -269,7 +269,7 @@ export default function SobreNosotros() {
                 </h2>
                 <ul className="space-y-2">
                   <li><strong className="text-cream/80">Dirección:</strong> 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica</li>
-                  <li><strong className="text-cream/80">Teléfono:</strong> <TrackedContactLink href="tel:+50683179564" contactTarget="sobre-nosotros" className="text-gold hover:underline">+506 8317-9564</TrackedContactLink></li>
+                  <li><strong className="text-cream/80">Teléfono:</strong> <TrackedContactLink href="tel:+50686622169" contactTarget="sobre-nosotros" className="text-gold hover:underline">+506 8662-2169</TrackedContactLink></li>
                   <li><strong className="text-cream/80">Email:</strong> <TrackedContactLink href="mailto:info@corporaciongc.com" contactTarget="sobre-nosotros" className="text-gold hover:underline">info@corporaciongc.com</TrackedContactLink></li>
                   <li><strong className="text-cream/80">Horario:</strong> Lunes a Viernes, 9:00 am – 6:00 pm</li>
                   <li><strong className="text-cream/80">Sitio web:</strong> <a href="https://www.corporaciongc.com" className="text-gold hover:underline">corporaciongc.com</a></li>

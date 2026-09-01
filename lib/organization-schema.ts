@@ -18,7 +18,7 @@ export const ORGANIZATION_SCHEMA = {
   url: "https://www.corporaciongc.com",
   logo: "https://www.corporaciongc.com/images/logo-gc.png",
   image: "https://www.corporaciongc.com/images/logo-gc.png",
-  telephone: "+506 8317-9564",
+  telephone: "+506 8662-2169",
   email: "info@corporaciongc.com",
   priceRange: "$$",
   currenciesAccepted: "CRC, USD",
@@ -181,7 +181,7 @@ export const ORGANIZATION_SCHEMA = {
     "https://maps.google.com/?q=Centro+Cultural+Norteamericano,+Barrio+Dent,+San+Jos%C3%A9,+Costa+Rica",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+506 8317-9564",
+    telephone: "+506 8662-2169",
     contactType: "customer service",
     availableLanguage: ["es"],
     areaServed: "CR",

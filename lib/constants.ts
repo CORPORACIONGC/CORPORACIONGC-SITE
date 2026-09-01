@@ -11,8 +11,8 @@ export const FIRM = {
 
 export const FIRM_CONTACT = {
   email: "info@corporaciongc.com",
-  phone: "+506 8317-9564",
-  phoneRaw: "50683179564",
+  phone: "+506 8662-2169",
+  phoneRaw: "50686622169",
   location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
   hours: "Lunes a Viernes, 9:00 am – 6:00 pm",
   mapsEmbed:
@@ -691,8 +691,8 @@ export const OSCAR_CREDENTIALS = [
 
 export const OSCAR_CONTACT = {
   email: "ogonzalez@corporaciongc.com",
-  phone: "+506 8317-9564",
-  phoneRaw: "50683179564",
+  phone: "+506 8662-2169",
+  phoneRaw: "50686622169",
   location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
 } as const;
 
@@ -714,8 +714,8 @@ export const OSCAR_NAV_LINKS = [
 
 export const ESTEBAN_CONTACT = {
   email: "eperez@corporaciongc.com",
-  phone: "+506 8317-9564",
-  phoneRaw: "50683179564",
+  phone: "+506 8662-2169",
+  phoneRaw: "50686622169",
   location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
 } as const;
 
@@ -845,8 +845,8 @@ export const KATHERINE_PROFILE = {
 
 export const KATHERINE_CONTACT = {
   email: "kgonzalez@corporaciongc.com",
-  phone: "+506 8317-9564",
-  phoneRaw: "50683179564",
+  phone: "+506 8662-2169",
+  phoneRaw: "50686622169",
   location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
 } as const;
 

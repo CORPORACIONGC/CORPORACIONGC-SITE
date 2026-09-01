@@ -118,7 +118,7 @@ El silencio positivo es una herramienta valiosa frente a la municipalidad que no
 
 Todo eso es **Derecho Público** —urbanístico, municipal y administrativo—, una materia técnica donde un error de encuadre cuesta la obra entera. Confirmar que el silencio positivo realmente operó antes de seguir construyendo, y armar la gestión para que resista una eventual lesividad, es la clase de análisis que conviene hacer con un especialista. Puede conocer nuestras áreas de [Derecho Urbanístico](/areas/derecho-urbanistico) y [Materia Municipal](/areas/materia-municipal), y, como respaldo académico de la firma en la materia, el [artículo sobre la potestad discrecional de las municipalidades en el urbanismo](/articulos/potestad-discrecional-municipalidades-urbanismo).
 
-> Si la municipalidad dejó vencer el plazo de su permiso de construcción o desconoce un silencio positivo ya operado, escríbanos por WhatsApp al [+506 8317-9564](https://wa.me/50683179564), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por [nuestro formulario de contacto](/contacto). Revisamos su caso y le decimos con franqueza si el silencio positivo procede y cómo conviene hacerlo valer.
+> Si la municipalidad dejó vencer el plazo de su permiso de construcción o desconoce un silencio positivo ya operado, escríbanos por WhatsApp al [+506 8662-2169](https://wa.me/50686622169), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por [nuestro formulario de contacto](/contacto). Revisamos su caso y le decimos con franqueza si el silencio positivo procede y cómo conviene hacerlo valer.
 
 ---
 

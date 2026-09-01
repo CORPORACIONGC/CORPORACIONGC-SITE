@@ -64,10 +64,10 @@ export default function PoliticaDePrivacidad() {
                   </a>{" "}
                   o llamar al{" "}
                   <a
-                    href="tel:+50683179564"
+                    href="tel:+50686622169"
                     className="text-gold hover:underline"
                   >
-                    +506 8317-9564
+                    +506 8662-2169
                   </a>
                   .
                 </p>

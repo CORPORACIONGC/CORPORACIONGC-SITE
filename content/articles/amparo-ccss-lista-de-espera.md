@@ -212,7 +212,7 @@ Pero accesible no es lo mismo que sencillo. Detrás de un amparo de salud en apa
 
 Para conocer cómo intervenimos en estos casos, desde la redacción del recurso hasta la liquidación de los daños ante el Tribunal Contencioso Administrativo, puede visitar nuestra área de [Recursos de Amparo](/areas/recursos-de-amparo).
 
-> Si la CCSS le pospuso una cirugía o le fijó una cita que su salud no puede esperar, escríbanos por WhatsApp al [+506 8317-9564](https://wa.me/50683179564), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por [nuestro formulario de contacto](/contacto). Revisamos su caso y le decimos con franqueza si el amparo es la vía adecuada y cómo conviene plantearlo.
+> Si la CCSS le pospuso una cirugía o le fijó una cita que su salud no puede esperar, escríbanos por WhatsApp al [+506 8662-2169](https://wa.me/50686622169), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por [nuestro formulario de contacto](/contacto). Revisamos su caso y le decimos con franqueza si el amparo es la vía adecuada y cómo conviene plantearlo.
 
 ---
 
