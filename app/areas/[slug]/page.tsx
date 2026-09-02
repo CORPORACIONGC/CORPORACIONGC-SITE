@@ -5030,25 +5030,21 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Adecuación societaria, tributaria y bancaria" fundamento="Código de Comercio, art. 18; Ley N.° 9428; Acuerdo SUGEF 11-18">
+      <Instrumento titulo="Adecuación societaria, tributaria y bancaria" fundamento="Código de Comercio; Ley N.° 9428; Acuerdo SUGEF 11-18">
         <p>
-          Tres cuellos de botella deciden el cronograma real de cualquier inscripción. La
-          solicitud se presenta por la plataforma de SUGEF firmada por el representante legal, y
-          el certificado de firma digital costarricense solo se emite a portadores de cédula de
-          identidad o DIMEX. El registro exige una cuenta en una entidad supervisada, a nombre del
-          sujeto obligado y de uso exclusivo para la actividad, cuya apertura depende de la
-          política de riesgo de cada banco. Y SUGEF exigirá una descripción exhaustiva de la
-          actividad, que resulta incoherente cuando la sociedad consta ante Hacienda como inactiva
-          o sin actividad económica declarada.
+          El cronograma real de una inscripción se decide en detalles que desde el extranjero
+          resultan invisibles: la forma en que se firma y presenta la solicitud, la relación
+          bancaria de la sociedad y la coherencia entre lo que la empresa le describirá a SUGEF y
+          lo que consta de ella ante las demás autoridades costarricenses. Cada uno de esos
+          frentes tiene solución, y cada uno se vuelve un bloqueo serio cuando se descubre con el
+          plazo corriendo.
         </p>
         <p>
-          Resolvemos los tres antes de que corra el plazo: rutas para la firma digital cuando los
-          representantes son extranjeros, expediente de origen de fondos para la apertura
-          bancaria, regularización tributaria y del registro de beneficiarios finales, revisión
-          del objeto social y de los poderes, y designación del agente residente cuando ningún
-          apoderado esté domiciliado en el país. Figuras como el «legal manager» carecen de
-          existencia en el ordenamiento costarricense; cada rubro que cobramos tiene nombre y
-          fundamento en una norma nacional.
+          Nuestro diagnóstico audita la estructura societaria, tributaria y bancaria contra lo
+          que el supervisor va a ver, resuelve esos frentes antes de que corran los plazos y
+          descarta las figuras que el ordenamiento costarricense desconoce, como la «licencia
+          cripto» o el «legal manager»: cada rubro que cobramos tiene nombre y fundamento en una
+          norma nacional.
         </p>
       </Instrumento>
 
@@ -5148,13 +5144,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               ¿Una empresa extranjera puede inscribirse como VASP en Costa Rica?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Sí, mediante una sociedad costarricense. El proyecto exige resolver dos requisitos
-              locales desde el inicio: un representante legal con certificado de firma digital
-              costarricense, que solo se emite a portadores de cédula de identidad o DIMEX, y una
-              cuenta bancaria en una entidad supervisada de uso exclusivo para la actividad
-              inscrita. Cada socio, participante y beneficiario final aporta antecedentes penales
-              apostillados de su país de nacimiento, de nacionalidad y de residencia, con
-              traducción oficial al español.
+              Sí, mediante una sociedad costarricense. El proyecto exige resolver desde el inicio
+              varios requisitos que solo se ven desde la práctica local —la representación, la
+              relación bancaria y la coherencia del perfil de la sociedad ante las autoridades
+              costarricenses, entre otros—, y descubrirlos tarde traba el trámite cuando ya corre
+              el plazo. Verificarlos es la primera fase de nuestro diagnóstico.
             </p>
           </div>
           <div>
