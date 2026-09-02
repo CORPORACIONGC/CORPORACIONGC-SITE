@@ -5084,27 +5084,6 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       </Instrumento>
 
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-6 tracking-tight">
-          Equipo a cargo del área
-        </h2>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          El área de regulación fintech y activos virtuales la conducen{" "}
-          <Link href="/abogados/khevin-sanchez" className="text-gold hover:text-gold/80 transition-colors">
-            Khevin Sánchez Zamora
-          </Link>{" "}
-          y{" "}
-          <Link href="/abogados/esteban-perez" className="text-gold hover:text-gold/80 transition-colors">
-            Esteban Pérez Herrera
-          </Link>
-          , con atención en español e inglés y bajo la dirección del Dr. Óscar Eduardo González
-          Camacho, exmagistrado de la Sala Primera de la Corte Suprema de Justicia. El equipo
-          litiga a diario frente a los supervisores financieros y ante la jurisdicción
-          contencioso-administrativa, y actúa como contraparte local de firmas internacionales de
-          licenciamiento y cumplimiento que traen clientes a Costa Rica.
-        </p>
-      </section>
-
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
           Preguntas frecuentes sobre el registro VASP
         </h2>

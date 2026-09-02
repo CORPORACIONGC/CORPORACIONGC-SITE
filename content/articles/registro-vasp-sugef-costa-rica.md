@@ -128,7 +128,7 @@ Por eso el orden correcto del proyecto empieza por un **diagnóstico de sujeció
 
 ## Prepare su inscripción con criterio experto
 
-En Corporación GC asesoramos a proveedores de servicios de activos virtuales —locales e internacionales— en todo el ciclo: dictamen de sujeción, adecuación de la estructura, programa de cumplimiento y presentación del expediente el día en que la ventana se abra. El área la conducen [Khevin Sánchez Zamora](/abogados/khevin-sanchez) y [Esteban Pérez Herrera](/abogados/esteban-perez), con atención en español e inglés; nuestro socio fundador es exmagistrado de la Sala Primera de la Corte Suprema de Justicia, y el equipo litiga a diario frente a los supervisores financieros y la jurisdicción contencioso-administrativa. Actuamos también como contraparte local de firmas internacionales de cumplimiento que traen clientes a Costa Rica.
+En Corporación GC asesoramos a proveedores de servicios de activos virtuales —locales e internacionales— en todo el ciclo: dictamen de sujeción, adecuación de la estructura, programa de cumplimiento y presentación del expediente el día en que la ventana se abra. Nuestro socio fundador es exmagistrado de la Sala Primera de la Corte Suprema de Justicia, y el equipo litiga a diario frente a los supervisores financieros y la jurisdicción contencioso-administrativa. Actuamos también como contraparte local de firmas internacionales de cumplimiento que traen clientes a Costa Rica.
 
 > **¿Su empresa presta servicios con activos virtuales?** [Escríbanos](/contacto) o visite el área de [regulación fintech y criptoactivos](/areas/regulacion-fintech-criptoactivos). Una evaluación de sujeción hoy vale más que un descubrimiento urgente el 19 de setiembre.
 

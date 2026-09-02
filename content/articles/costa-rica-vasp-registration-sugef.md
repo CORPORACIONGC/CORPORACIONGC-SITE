@@ -128,7 +128,7 @@ That is why a serious project starts with a **scope and feasibility diagnostic**
 
 ## Prepare your registration with counsel that has done the homework
 
-Corporación GC advises local and international virtual asset businesses across the full cycle: scope opinion, adequacy of the structure, compliance programme and submission of the file the day the window opens. The practice is led by [Khevin Sánchez Zamora](/abogados/khevin-sanchez) and [Esteban Pérez Herrera](/abogados/esteban-perez), who work in Spanish and English; our founding partner is a former justice of the First Chamber of Costa Rica's Supreme Court, and the team litigates daily before the country's financial supervisors and administrative courts. We also act as local regulatory counsel for international law firms and compliance advisors who bring clients to Costa Rica.
+Corporación GC advises local and international virtual asset businesses across the full cycle: scope opinion, adequacy of the structure, compliance programme and submission of the file the day the window opens. Our founding partner is a former justice of the First Chamber of Costa Rica's Supreme Court, and the team litigates daily before the country's financial supervisors and administrative courts. We also act as local regulatory counsel for international law firms and compliance advisors who bring clients to Costa Rica.
 
 > **Does your company provide virtual asset services in or into Costa Rica?** [Contact us](/contacto) or visit our [fintech and crypto regulatory practice](/areas/regulacion-fintech-criptoactivos). A scope assessment today is worth more than an urgent discovery on 19 September.
 
