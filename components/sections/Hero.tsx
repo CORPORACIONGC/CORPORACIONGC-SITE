@@ -42,8 +42,9 @@ export function Hero() {
                 Licenciado en Derecho por la Universidad de Costa Rica, con
                 mención en Derecho Tributario. Litigio contra el Estado:
                 medidas cautelares, demandas contencioso-administrativas y
-                casación ante la Sala Primera. Investigador y panelista
-                internacional en inteligencia artificial aplicada a la justicia.
+                casación ante la Sala Primera. Regulación fintech y registro
+                VASP ante SUGEF. Investigador y panelista internacional en
+                inteligencia artificial aplicada a la justicia.
               </p>
             </div>
           </AnimatedEntry>

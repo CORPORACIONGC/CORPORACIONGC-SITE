@@ -128,6 +128,8 @@ export const ORGANIZATION_SCHEMA = {
     "Derecho Laboral",
     "Propiedad Intelectual",
     "Derecho Civil",
+    "Regulación Fintech y Criptoactivos",
+    "Registro de proveedores de servicios de activos virtuales (VASP) ante SUGEF — Ley N.° 10961",
   ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",

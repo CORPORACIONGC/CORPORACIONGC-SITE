@@ -4956,92 +4956,218 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          Costa Rica experimenta un crecimiento acelerado del ecosistema fintech: 61 empresas
-          operando en la región de Centroamérica y el Caribe, la expansión de SINPE Móvil como
-          infraestructura de pagos, y la inminente aprobación del Proyecto de Ley N.° 22.837 de
-          Registro de VASP que obligará a todas las empresas de criptoactivos a registrarse ante
-          la SUGEF. Los procedimientos de enforcement de SUGEF y CONASSIF son procedimientos
-          administrativos — territorio natural de Corporación GC.
+          Costa Rica ya regula a los proveedores de servicios de activos virtuales. La Ley
+          N.° 10961, publicada en el Alcance 78 a La Gaceta del 19 de junio de 2026, adicionó el
+          artículo 15 quater a la Ley N.° 7786 y obliga a los VASP —exchanges, custodios,
+          procesadores de pagos cripto y plataformas de emisión— a inscribirse ante la SUGEF y a
+          aplicar el régimen de prevención de legitimación de capitales, financiamiento del
+          terrorismo y proliferación bajo un enfoque basado en riesgos. La ley rige desde el 19
+          de setiembre de 2026; el reglamento del CONASSIF, que fijará umbrales, categorías y
+          requisitos documentales del trámite, sigue pendiente de emisión. Los procedimientos de
+          SUGEF y CONASSIF son procedimientos administrativos regidos por la Ley General de la
+          Administración Pública, territorio natural de Corporación GC.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Publicamos una guía completa del trámite, en{" "}
+          <Link href="/articulos/registro-vasp-sugef-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+            español
+          </Link>{" "}
+          y en{" "}
+          <Link href="/articulos/costa-rica-vasp-registration-sugef" className="text-gold hover:text-gold/80 transition-colors">
+            inglés
+          </Link>
+          , construida sobre el texto publicado de la ley y sobre asesorías en curso a plataformas
+          locales e internacionales.
         </p>
       </section>
 
-      <Instrumento titulo="Registro VASP ante SUGEF" fundamento="Proyecto N.° 22.837; Ley N.° 7558, art. 15 Bis">
+      <Instrumento titulo="Inscripción como VASP ante SUGEF" fundamento="Ley N.° 10961; Ley N.° 7786, art. 15 quater">
         <p>
-          El Proyecto de Ley N.° 22.837 (Registro de VASP), aprobado en primer debate, establecerá
-          el registro obligatorio ante SUGEF para proveedores de servicios de activos virtuales,
-          con debida diligencia reforzada y multas de 2 a 100 salarios base por incumplimiento.
-          Actualmente, la SUGEF supervisa estas actividades bajo la Ley N.° 7558 (art. 15 Bis).
+          El artículo 15 quater define al proveedor de servicios de activos virtuales como la
+          persona física o jurídica que, como negocio, realiza para sí o para terceros el
+          intercambio entre activos virtuales y monedas de curso legal o entre activos virtuales,
+          la transferencia de activos virtuales, su custodia, depósito, administración o control,
+          o servicios financieros vinculados a su emisión, comercialización, oferta o venta. El
+          criterio de conexión es territorial: la norma alcanza a quien opere en Costa Rica con
+          independencia de su domicilio legal. La inscripción «no representa una autorización de
+          operación», y la misma norma prohíbe a las entidades del artículo 14 y a los demás
+          sujetos inscritos mantener relaciones comerciales con quien preste estos servicios sin
+          estar inscrito: el registro funciona como llave de acceso al sistema bancario.
         </p>
         <p>
-          Asesoramos a fintechs, exchanges, custodios de cripto y plataformas de tokenización
-          en la preparación para el registro VASP obligatorio: diagnóstico de readiness, diseño
-          de estructura corporativa conforme a requisitos regulatorios, implementación de
-          controles AML/CFT, y representación ante SUGEF durante el proceso de registro.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Cumplimiento AML/CFT" fundamento="Ley N.° 8204; Acuerdos SUGEF 13-19">
-        <p>
-          La Ley sobre Estupefacientes, Sustancias Psicotrópicas, Drogas de Uso no Autorizado,
-          Actividades Conexas, Legitimación de Capitales y Financiamiento al Terrorismo
-          (Ley N.° 8204) y los Acuerdos SUGEF 13-19 establecen las obligaciones de prevención
-          de legitimación de capitales aplicables a todas las entidades supervisadas, incluyendo
-          fintechs y proveedores de servicios de criptoactivos.
-        </p>
-        <p>
-          Diseñamos programas de cumplimiento AML/CFT adaptados a empresas fintech: políticas
-          de conocimiento del cliente (KYC), monitoreo de transacciones, reporte de operaciones
-          sospechosas, y capacitación del personal conforme a los estándares GAFI/GAFILAT y
-          la normativa SUGEF vigente.
+          Emitimos el dictamen de sujeción, mapeamos qué actividad realiza cada entidad del grupo
+          —un arreglo frecuente combina una sociedad costarricense con otra extranjera—, armamos
+          el expediente y lo presentamos el día en que SUGEF habilite el trámite conforme al
+          reglamento del CONASSIF. Como referencia del ritmo previsible, en el procedimiento
+          vigente para los demás sujetos inscritos (Acuerdo SUGEF 11-18) la Superintendencia
+          verifica los requisitos en un máximo de diez días hábiles y previene por diez días
+          hábiles prorrogables una vez.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Defensa en procedimientos sancionatorios de SUGEF" fundamento="Ley N.° 7558, arts. 115-117; LGAP">
+      <Instrumento titulo="Programa de cumplimiento LC/FT/FPADM y regla de viaje" fundamento="Ley N.° 7786, art. 15 quater, incisos a) a j); Acuerdo SUGEF 13-19">
         <p>
-          Los procedimientos sancionatorios de SUGEF contra entidades financieras y fintechs
-          son procedimientos administrativos sujetos a las garantías de la LGAP y los artículos
-          39 y 41 de la Constitución Política. Las sanciones incluyen multas, intervención,
-          suspensión de operaciones y liquidación forzosa.
+          Los incisos a) a j) del artículo 15 quater imponen a los VASP el catálogo completo del
+          estándar del GAFI: identificación de clientes y beneficiarios finales con fuentes
+          independientes, registros de transacciones reconstruibles, controles sobre personas
+          expuestas políticamente, sobre nuevos productos y tecnologías, sobre transferencias de
+          activos virtuales, sobre la delegación de la debida diligencia en terceros, sobre
+          sucursales y filiales extranjeras y sobre países de riesgo, reporte inmediato de
+          operaciones sospechosas a la UIF del ICD y confidencialidad estricta. El cuerpo del
+          artículo añade la evaluación de riesgo institucional documentada, la regla de viaje del
+          GAFI en cada transferencia, el congelamiento inmediato de fondos de personas designadas,
+          la actualización permanente de la información registral y la contribución al costo de
+          la supervisión conforme a los artículos 174 y 175 de la Ley N.° 7732.
         </p>
         <p>
-          Representamos a fintechs y entidades financieras en procedimientos sancionatorios
-          de SUGEF, garantizando el respeto del debido proceso, e impugnamos resoluciones
-          sancionatorias ante el TCA conforme al CPCA cuando existan vicios de legalidad,
-          proporcionalidad o motivación.
+          Redactamos el manual de prevención, la matriz de riesgo institucional y los
+          procedimientos contra la norma costarricense, en español y defendibles ante SUGEF, y
+          definimos el perfil del oficial de cumplimiento con el enfoque basado en riesgos que la
+          propia ley ordena: SUGEF valorará tamaño, estructura, volumen y exposición para exigir
+          un oficial o autorizar una estructura diferenciada. Ninguna norma exige que el oficial
+          lo provea el asesor legal; la independencia del cargo aconseja que el nombramiento
+          quede en manos de la empresa.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Estructuración regulatoria y límites de plataformas" fundamento="Opinión PGR C-196-2024; Ley N.° 7558">
+      <Instrumento titulo="Adecuación societaria, tributaria y bancaria" fundamento="Código de Comercio, art. 18; Ley N.° 9428; Acuerdo SUGEF 11-18">
         <p>
-          La Opinión de la Procuraduría General de la República C-196-2024 definió los límites
-          regulatorios de las plataformas fintech en Costa Rica, delimitando las actividades
-          que requieren autorización de SUGEF de las que operan en un marco no regulado.
-          La implementación de los estándares CARF de la OCDE para intercambio fiscal automático
-          de criptoactivos está proyectada para 2028.
+          Tres cuellos de botella deciden el cronograma real de cualquier inscripción. La
+          solicitud se presenta por la plataforma de SUGEF firmada por el representante legal, y
+          el certificado de firma digital costarricense solo se emite a portadores de cédula de
+          identidad o DIMEX. El registro exige una cuenta en una entidad supervisada, a nombre del
+          sujeto obligado y de uso exclusivo para la actividad, cuya apertura depende de la
+          política de riesgo de cada banco. Y SUGEF exigirá una descripción exhaustiva de la
+          actividad, que resulta incoherente cuando la sociedad consta ante Hacienda como inactiva
+          o sin actividad económica declarada.
         </p>
         <p>
-          Asesoramos en la estructuración regulatoria de plataformas fintech — determinando
-          si la actividad requiere autorización, registro o puede operar bajo régimen general —,
-          y en el cumplimiento anticipado de los estándares CARF para evitar sanciones futuras.
+          Resolvemos los tres antes de que corra el plazo: rutas para la firma digital cuando los
+          representantes son extranjeros, expediente de origen de fondos para la apertura
+          bancaria, regularización tributaria y del registro de beneficiarios finales, revisión
+          del objeto social y de los poderes, y designación del agente residente cuando ningún
+          apoderado esté domiciliado en el país. Figuras como el «legal manager» carecen de
+          existencia en el ordenamiento costarricense; cada rubro que cobramos tiene nombre y
+          fundamento en una norma nacional.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Sanciones y defensa ante SUGEF y CONASSIF" fundamento="Ley N.° 7786, art. 81 reformado; LGAP; CPCA">
+        <p>
+          El artículo 81 reformado sanciona con multa del 5 % al 50 % del monto de la transacción
+          los fallos de registro en operaciones iguales o superiores a US$10.000, y con multa de
+          dos a cien salarios base la negativa a inscribirse, los incumplimientos de debida
+          diligencia y reportes y el mantenimiento de relaciones comerciales con sujetos no
+          inscritos. Las multas se pagan en ocho días hábiles con recargo del 3 % mensual y las
+          sanciones firmes se publican. Estos procedimientos son procedimientos administrativos
+          sujetos a las garantías de la LGAP y de los artículos 39 y 41 de la Constitución
+          Política.
+        </p>
+        <p>
+          Asumimos la defensa en los procedimientos sancionatorios de SUGEF, SUGEVAL y CONASSIF,
+          exigimos el debido proceso y la proporcionalidad, e impugnamos ante el Tribunal
+          Contencioso Administrativo, con medidas cautelares cuando la sanción compromete la
+          continuidad de la operación, conforme al Código Procesal Contencioso Administrativo.
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Plataformas de pago, tokens y perímetro regulado" fundamento="Dictamen PGR C-196-2024; Ley N.° 7732; Ley N.° 7558">
+        <p>
+          El dictamen C-196-2024 de la Procuraduría General de la República fijó la frontera de
+          los proveedores de servicios de pago: pueden transferir fondos, remesar, procesar cobros
+          y conectarse al SINPE, y tienen vedado abrir o mantener cuentas a la vista para sus
+          clientes, porque eso constituye captación reservada a los bancos. La emisión o
+          comercialización de un token puede configurar oferta pública de valores sujeta a la
+          autorización y supervisión de SUGEVAL bajo la Ley N.° 7732.
+        </p>
+        <p>
+          Estructuramos contratos y flujos de fondos dentro de esos límites, calificamos cada
+          token antes de la emisión y determinamos si la actividad requiere autorización,
+          inscripción o puede operar bajo el régimen general.
         </p>
       </Instrumento>
 
       <section className="mt-16 pt-12 border-t border-cream/[0.06]">
+        <h2 className="font-display text-2xl md:text-3xl text-cream mb-6 tracking-tight">
+          Equipo a cargo del área
+        </h2>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          El área de regulación fintech y activos virtuales la conducen{" "}
+          <Link href="/abogados/khevin-sanchez" className="text-gold hover:text-gold/80 transition-colors">
+            Khevin Sánchez Zamora
+          </Link>{" "}
+          y{" "}
+          <Link href="/abogados/esteban-perez" className="text-gold hover:text-gold/80 transition-colors">
+            Esteban Pérez Herrera
+          </Link>
+          , con atención en español e inglés y bajo la dirección del Dr. Óscar Eduardo González
+          Camacho, exmagistrado de la Sala Primera de la Corte Suprema de Justicia. El equipo
+          litiga a diario frente a los supervisores financieros y ante la jurisdicción
+          contencioso-administrativa, y actúa como contraparte local de firmas internacionales de
+          licenciamiento y cumplimiento que traen clientes a Costa Rica.
+        </p>
+      </section>
+
+      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
         <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre regulación fintech
+          Preguntas frecuentes sobre el registro VASP
         </h2>
         <div className="space-y-10">
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Mi empresa de criptoactivos necesita registrarse ante SUGEF?
+              ¿Existe una licencia cripto en Costa Rica?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Con la aprobación inminente del Proyecto N.° 22.837, todas las empresas que ofrezcan
-              servicios de activos virtuales (exchanges, custodios, wallets, plataformas de
-              tokenización) deberán registrarse obligatoriamente ante SUGEF. El incumplimiento
-              generará multas de 2 a 100 salarios base. Recomendamos iniciar la preparación
-              antes de la aprobación definitiva para cumplir con los requisitos desde el día uno
-              de vigencia.
+              La Ley N.° 10961 creó un registro obligatorio ante SUGEF con supervisión antilavado,
+              y el propio artículo 15 quater dispone que la inscripción «no representa una
+              autorización de operación». La ley dejó fuera la regulación prudencial, la conducta
+              de mercado y la protección al inversionista. Quien le ofrezca una «licencia cripto»
+              costarricense le está vendiendo una figura que la legislación vigente desconoce; lo
+              que existe es la inscripción como proveedor de servicios de activos virtuales, y en
+              la práctica resulta decisiva, porque sin ella ningún banco puede mantener relaciones
+              comerciales con la empresa.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Cuándo abre el registro y qué puede hacerse mientras tanto?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              La ley rige desde el 19 de setiembre de 2026. El reglamento del CONASSIF, que
+              definirá la plataforma, los formularios, los umbrales y los requisitos documentales,
+              sigue pendiente de emisión, y al 1 de setiembre de 2026 el registro de normativa en
+              consulta de SUGEF tampoco incluye ninguna propuesta sobre el artículo 15 quater.
+              Hasta entonces la ventana permanece cerrada. Lo que sí puede ejecutarse hoy, porque
+              depende de la ley ya publicada: el dictamen de sujeción, la adecuación societaria y
+              tributaria, la firma digital, la estrategia bancaria y el programa de cumplimiento,
+              para presentar el expediente el día en que el trámite se habilite.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Una empresa extranjera puede inscribirse como VASP en Costa Rica?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Sí, mediante una sociedad costarricense. El proyecto exige resolver dos requisitos
+              locales desde el inicio: un representante legal con certificado de firma digital
+              costarricense, que solo se emite a portadores de cédula de identidad o DIMEX, y una
+              cuenta bancaria en una entidad supervisada de uso exclusivo para la actividad
+              inscrita. Cada socio, participante y beneficiario final aporta antecedentes penales
+              apostillados de su país de nacimiento, de nacionalidad y de residencia, con
+              traducción oficial al español.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué pasa si mi empresa presta estos servicios sin inscribirse?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              El artículo 81 reformado sanciona la negativa a inscribirse con multa de dos a cien
+              salarios base, y los fallos de registro en operaciones iguales o superiores a
+              US$10.000 con multa del 5 % al 50 % del monto de la transacción. Las sanciones
+              firmes se publican. A eso se suma la exclusión del sistema financiero: ningún sujeto
+              supervisado puede mantener relaciones comerciales con un proveedor sin inscripción
+              vigente, y el propio sujeto supervisado que lo haga queda expuesto a sanción.
             </p>
           </div>
         </div>

@@ -8,6 +8,7 @@ import {
   Stamp,
   Brain,
   Bank,
+  Wallet,
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
@@ -21,6 +22,7 @@ const iconMap: Record<string, React.ElementType> = {
   Stamp,
   Brain,
   Bank,
+  Wallet,
 };
 
 export function About() {
@@ -57,8 +59,12 @@ export function About() {
                 materias y sectores muy diversos: contratación administrativa,
                 expropiaciones, empleo público, régimen disciplinario,
                 responsabilidad del Estado, telecomunicaciones, energía,
-                mercado de valores, banca, salud, educación y turismo,
-                entre otros.
+                mercado de valores, banca, fintech y activos virtuales,
+                salud, educación y turismo, entre otros. Junto con Esteban
+                Pérez Herrera conduzco el área de regulación fintech de la
+                firma: inscripción de proveedores de servicios de activos
+                virtuales ante SUGEF bajo la Ley N.° 10961 y cumplimiento
+                antilavado.
               </p>
             </AnimatedEntry>
 

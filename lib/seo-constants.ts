@@ -218,10 +218,10 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
   "regulacion-fintech-criptoactivos": {
     title: "Regulación fintech y criptoactivos",
     description:
-      "Asesoría a fintechs, exchanges y VASPs ante SUGEF y CONASSIF.",
-    seoTitle: "Regulación Fintech y Cripto · Costa Rica",
+      "Registro VASP ante SUGEF (Ley N.° 10961), cumplimiento LC/FT y defensa ante SUGEF y CONASSIF.",
+    seoTitle: "Registro VASP y Regulación Fintech · Costa Rica",
     seoDescription:
-      "Asesoría a fintechs, exchanges y VASPs ante SUGEF y CONASSIF. Registro VASP (Proyecto N.° 22.837), AML/CFT (Ley N.° 8204) y cumplimiento de estándares CARF/OCDE para criptoactivos.",
+      "Registro VASP ante SUGEF bajo la Ley 10961, cumplimiento LC/FT y regla de viaje, adecuación societaria y defensa ante SUGEF y CONASSIF para fintechs, exchanges y custodios.",
     ogShortTitle: "Regulación {{em}} y cripto",
     ogEmphasis: "fintech",
   },
