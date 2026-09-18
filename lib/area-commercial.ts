@@ -1803,7 +1803,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       "Quiere conectarse al SINPE o a un proveedor de pago y necesita estructurar la operación dentro de los límites del dictamen PGR C-196-2024",
       "Enfrenta un procedimiento sancionatorio de SUGEF, SUGEVAL o CONASSIF por presunto incumplimiento de prevención de legitimación de capitales (AML/CFT)",
       "Va a emitir o comercializar un token y no sabe si constituye una oferta pública de valores sujeta a la Ley N.° 7732",
-      "Opera como proveedor de servicios de activos virtuales (VASP) y debe llegar al 19 de setiembre de 2026 con el expediente de inscripción ante SUGEF y el programa de cumplimiento del artículo 15 quater listos",
+      "Opera como proveedor de servicios de activos virtuales (VASP) y, con la Ley 10961 vigente desde el 19 de setiembre de 2026, necesita tener listos el expediente de inscripción ante SUGEF y el programa de cumplimiento del artículo 15 quater",
       "Su sociedad costarricense opera una plataforma global de activos virtuales y consta ante Hacienda como inactiva, sin representante con firma digital o sin cuenta bancaria exclusiva para la actividad",
       "Es una firma internacional de cumplimiento o de licenciamiento y busca un socio local en Costa Rica para el registro VASP y la asesoría regulatoria de sus clientes",
     ],
@@ -1833,7 +1833,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         question: "¿Cuándo abre la inscripción VASP ante SUGEF y qué puedo hacer mientras tanto?",
         answer:
-          "La ley rige desde el 19 de setiembre de 2026, pero el reglamento del CONASSIF que definirá la plataforma, los formularios, los umbrales y los requisitos documentales sigue pendiente; al 1 de setiembre de 2026 el registro de normativa en consulta de SUGEF tampoco incluye ninguna propuesta sobre el artículo 15 quater. Hasta que se publique, la ventana de inscripción permanece cerrada y ninguna firma puede garantizar con seriedad una inscripción completada. Lo que sí puede hacerse hoy, porque depende de la ley ya publicada: el dictamen de sujeción, la adecuación societaria y tributaria, la firma digital del representante, la estrategia bancaria y el programa de cumplimiento, de modo que el expediente se presente el día en que SUGEF habilite el trámite.",
+          "La ley rige desde el 19 de setiembre de 2026, pero el reglamento del CONASSIF que definirá la plataforma, los formularios, los umbrales y los requisitos documentales sigue pendiente; al 18 de setiembre de 2026 el registro de normativa en consulta de SUGEF tampoco incluía ninguna propuesta sobre el artículo 15 quater. Hasta que se publique, la ventana de inscripción permanece cerrada y ninguna firma puede garantizar con seriedad una inscripción completada. Lo que sí puede hacerse hoy, porque depende de la ley ya publicada: el dictamen de sujeción, la adecuación societaria y tributaria, la firma digital del representante, la estrategia bancaria y el programa de cumplimiento, de modo que el expediente se presente el día en que SUGEF habilite el trámite.",
       },
       {
         question: "¿Mi fintech debe inscribirse ante la SUGEF?",

@@ -67,10 +67,10 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-3">
               {FIRM_NAV_LINKS.map((link) =>
-                link.href.startsWith("/") ? (
+                ("pageHref" in link ? link.pageHref : link.href).startsWith("/") ? (
                   <Link
                     key={link.href}
-                    href={link.href}
+                    href={"pageHref" in link ? link.pageHref : link.href}
                     className="text-sm text-cream/65 hover:text-cream transition-colors duration-300"
                   >
                     {link.label}

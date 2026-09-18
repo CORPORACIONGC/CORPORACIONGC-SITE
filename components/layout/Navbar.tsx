@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { List, X } from "@phosphor-icons/react";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { FIRM_NAV_LINKS } from "@/lib/constants";
@@ -11,9 +12,15 @@ export function Navbar({
   navLinks = FIRM_NAV_LINKS,
   topOffset = false,
 }: {
-  navLinks?: readonly { label: string; href: string }[];
+  navLinks?: readonly { label: string; href: string; pageHref?: string }[];
   topOffset?: boolean;
 }) {
+  const pathname = usePathname() || "/";
+  /* Un ancla sin su sección en esta página apunta a su ruta real (pageHref). */
+  const hrefOf = (link: { href: string; pageHref?: string }) =>
+    link.href.startsWith("#") && link.pageHref && pathname !== "/"
+      ? link.pageHref
+      : link.href;
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -146,10 +153,10 @@ export function Navbar({
             className="hidden md:flex items-center gap-8 relative"
           >
             {navLinks.map((link, i) =>
-              link.href.startsWith("/") ? (
+              hrefOf(link).startsWith("/") ? (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={hrefOf(link)}
                   ref={(el: HTMLAnchorElement | null) => {
                     linkEls.current[i] = el;
                   }}
@@ -237,10 +244,10 @@ export function Navbar({
           {navLinks.map((link, i) => (
             <a
               key={link.href}
-              href={link.href}
+              href={hrefOf(link)}
               onClick={(e) => {
                 setMobileOpen(false);
-                if (link.href.startsWith("#")) {
+                if (hrefOf(link).startsWith("#")) {
                   e.preventDefault();
                   const id = link.href.replace("#", "");
                   setTimeout(() => {

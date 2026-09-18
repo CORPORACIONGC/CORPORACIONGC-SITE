@@ -4963,7 +4963,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           aplicar el régimen de prevención de legitimación de capitales, financiamiento del
           terrorismo y proliferación bajo un enfoque basado en riesgos. La ley rige desde el 19
           de setiembre de 2026; el reglamento del CONASSIF, que fijará umbrales, categorías y
-          requisitos documentales del trámite, sigue pendiente de emisión. Los procedimientos de
+          requisitos documentales del trámite, seguía sin publicarse al 18 de setiembre de 2026. Los procedimientos de
           SUGEF y CONASSIF son procedimientos administrativos regidos por la Ley General de la
           Administración Pública, territorio natural de Corporación GC.
         </p>
@@ -5110,8 +5110,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
               La ley rige desde el 19 de setiembre de 2026. El reglamento del CONASSIF, que
               definirá la plataforma, los formularios, los umbrales y los requisitos documentales,
-              sigue pendiente de emisión, y al 1 de setiembre de 2026 el registro de normativa en
-              consulta de SUGEF tampoco incluye ninguna propuesta sobre el artículo 15 quater.
+              sigue pendiente de emisión, y al 18 de setiembre de 2026 el registro de normativa en
+              consulta de SUGEF tampoco incluía ninguna propuesta sobre el artículo 15 quater.
               Hasta entonces la ventana permanece cerrada. Lo que sí puede ejecutarse hoy, porque
               depende de la ley ya publicada: el dictamen de sujeción, la adecuación societaria y
               tributaria, la firma digital, la estrategia bancaria y el programa de cumplimiento,

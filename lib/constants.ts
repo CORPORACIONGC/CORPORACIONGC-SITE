@@ -21,13 +21,15 @@ export const FIRM_CONTACT = {
     "Hola, me gustaría coordinar una consulta jurídica con Corporación GC.",
 } as const;
 
+// Las anclas (#...) solo existen en la portada. `pageHref` es el destino real
+// fuera de ella: el menú y el pie lo usan en las demás páginas.
 export const FIRM_NAV_LINKS = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "La Firma", href: "#la-firma" },
-  { label: "Equipo", href: "#equipo" },
+  { label: "Inicio", href: "#inicio", pageHref: "/" },
+  { label: "La Firma", href: "#la-firma", pageHref: "/sobre-nosotros" },
+  { label: "Equipo", href: "#equipo", pageHref: "/#equipo" },
   { label: "Áreas", href: "/areas" },
   { label: "Artículos", href: "/articulos" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Contacto", href: "#contacto", pageHref: "/contacto" },
 ] as const;
 
 export const FIRM_CREDENTIALS = [
