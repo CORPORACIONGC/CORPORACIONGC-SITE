@@ -22,7 +22,7 @@ const contactItems = [
     icon: Phone,
     label: "Teléfono",
     value: MARIANA_CONTACT.phone,
-    href: `tel:${MARIANA_CONTACT.phoneRaw}`,
+    href: `tel:+${MARIANA_CONTACT.phoneRaw}`,
   },
 ];
 

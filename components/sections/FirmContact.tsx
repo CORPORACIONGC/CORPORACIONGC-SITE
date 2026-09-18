@@ -28,7 +28,7 @@ const contactItems = [
     icon: Phone,
     label: "Teléfono",
     value: FIRM_CONTACT.phone,
-    href: `tel:${FIRM_CONTACT.phoneRaw}`,
+    href: `tel:+${FIRM_CONTACT.phoneRaw}`,
   },
   {
     icon: MapPin,

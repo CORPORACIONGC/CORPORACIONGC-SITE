@@ -149,7 +149,7 @@ export default async function ArticlePage({
     },
     image: {
       "@type": "ImageObject",
-      url: `https://www.corporaciongc.com/articulos/${slug}/opengraph-image`,
+      url: `https://www.corporaciongc.com/articulos/${slug}/opengraph-image/default`,
       width: 1200,
       height: 630,
     },

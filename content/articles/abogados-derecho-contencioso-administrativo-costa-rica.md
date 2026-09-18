@@ -98,6 +98,6 @@ Si necesita evaluar un caso contra el Estado, puede [contactarnos](/contacto).
 ---
 
 *Artículos relacionados:*
-- *[¿Cómo demandar al Estado en Costa Rica?](/blog/como-demandar-al-estado-costa-rica)*
-- *[¿Cómo proteger sus derechos mientras dura el proceso contra el Estado?](/blog/medidas-cautelares-contra-el-estado-costa-rica)*
-- *[¿Necesita un abogado de Derecho Administrativo en Costa Rica?](/blog/abogados-derecho-administrativo-costa-rica)*
+- *[¿Cómo demandar al Estado en Costa Rica?](/articulos/como-demandar-al-estado-costa-rica)*
+- *[¿Cómo proteger sus derechos mientras dura el proceso contra el Estado?](/articulos/medidas-cautelares-contra-el-estado-costa-rica)*
+- *[¿Necesita un abogado de Derecho Administrativo en Costa Rica?](/articulos/abogados-derecho-administrativo-costa-rica)*

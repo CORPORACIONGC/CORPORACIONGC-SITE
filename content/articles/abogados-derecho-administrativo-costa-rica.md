@@ -98,5 +98,5 @@ Si tiene un caso que involucra al Estado y necesita una evaluación, puede [cont
 ---
 
 *Artículos relacionados:*
-- *[¿Cómo demandar al Estado en Costa Rica?](/blog/como-demandar-al-estado-costa-rica)*
-- *[¿Cómo proteger sus derechos mientras dura el proceso contra el Estado?](/blog/medidas-cautelares-contra-el-estado-costa-rica)*
+- *[¿Cómo demandar al Estado en Costa Rica?](/articulos/como-demandar-al-estado-costa-rica)*
+- *[¿Cómo proteger sus derechos mientras dura el proceso contra el Estado?](/articulos/medidas-cautelares-contra-el-estado-costa-rica)*

@@ -50,7 +50,7 @@ export function Footer() {
                 <Envelope size={18} weight="regular" />
               </TrackedContactLink>
               <TrackedContactLink
-                href={`tel:${FIRM_CONTACT.phoneRaw}`}
+                href={`tel:+${FIRM_CONTACT.phoneRaw}`}
                 contactTarget="footer"
                 className="p-2 rounded-lg border border-cream/12 hover:border-cream/25 hover:text-cream transition-all duration-300"
                 aria-label="Teléfono"

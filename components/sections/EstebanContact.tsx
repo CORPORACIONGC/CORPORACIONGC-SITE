@@ -22,7 +22,7 @@ const contactItems = [
     icon: Phone,
     label: "Teléfono",
     value: ESTEBAN_CONTACT.phone,
-    href: `tel:${ESTEBAN_CONTACT.phoneRaw}`,
+    href: `tel:+${ESTEBAN_CONTACT.phoneRaw}`,
   },
 ];
 

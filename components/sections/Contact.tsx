@@ -24,7 +24,7 @@ const contactItems = [
     icon: Phone,
     label: "Teléfono",
     value: CONTACT.phone,
-    href: `tel:${CONTACT.phoneRaw}`,
+    href: `tel:+${CONTACT.phoneRaw}`,
   },
   {
     icon: LinkedinLogo,
