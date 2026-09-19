@@ -525,7 +525,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Más de veinte años después, la sentencia sigue en uso. Hemos encontrado su cita en el texto de al menos 132 resoluciones de 16 despachos, dictadas entre 2005 y 2026: tribunales contencioso-administrativos, las Salas Primera, Segunda y Constitucional, y tribunales civiles, de trabajo, de familia y agrarios.",
+          "Más de veinte años después, la sentencia sigue en uso. Hemos encontrado su cita en el texto de al menos 132 resoluciones de 16 despachos, dictadas entre 2005 y 2026: el Tribunal Contencioso Administrativo, las Salas Primera, Segunda y Constitucional, y tribunales civiles, de trabajo, de familia y agrarios.",
           "Es el alcance de un fallo que nació en un pleito entre una arrendataria y la dueña de un edificio, y que además negó lo que la recurrente pedía. Cada vez que un tribunal actualiza una condena dineraria a su valor presente sin que las partes lo hayan pactado, aplica una regla que se escribió aquí, directamente o a través de la ley y de los fallos que la siguieron.",
         ],
         visual: "citas",
@@ -735,7 +735,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     sintesisPortada: {
       caso: "Un peatón murió atropellado al cruzar la Autopista General Cañas, en un punto donde los vecinos **pedían un puente peatonal desde 1986**. Iba en alto estado de ebriedad. Su viuda demandó al Estado, y el Juzgado y el Tribunal rechazaron la demanda por culpa de la víctima.",
       analisis: "La Sala Primera ordenó el **régimen de responsabilidad objetiva** de la Administración. Definió el funcionamiento anormal, lo distinguió de la ilicitud y de la antijuridicidad, y declaró que **la inactividad también obliga a reparar**. La embriaguez de la víctima **redujo la condena a la mitad**, sin eliminarla.",
-      impacto: "**Al menos 477 resoluciones** la citan, y **2024 y 2025 son los años de mayor uso**. La aplican los tribunales contencioso-administrativos, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
+      impacto: "**Al menos 477 resoluciones** la citan, y **2024 y 2025 son los años de mayor uso**. La aplican el Tribunal Contencioso Administrativo, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
     },
     fragmentosPortada: [
       {
@@ -1048,7 +1048,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Más de veinte años después, la sentencia sigue en pleno uso. Hemos encontrado su cita en el texto de al menos 477 resoluciones, dictadas entre 2005 y 2026. La mayor parte proviene de los tribunales contencioso-administrativos; también la citan las Salas Primera, Segunda y Tercera, la Sala Constitucional y los tribunales penales cuando resuelven la acción civil contra el Estado.",
+          "Más de veinte años después, la sentencia sigue en pleno uso. Hemos encontrado su cita en el texto de al menos 477 resoluciones, dictadas entre 2005 y 2026. La mayor parte proviene del Tribunal Contencioso Administrativo; también la citan las Salas Primera, Segunda y Tercera, la Sala Constitucional y los tribunales penales cuando resuelven la acción civil contra el Estado.",
           "Su uso crece. Los dos años con más citas son 2024 y 2025, con 59 y 53 resoluciones, y en lo que va de 2026 ya suman 13. Lo que se cita es su andamiaje: la definición de anormalidad, la inactividad material, la antijuridicidad de base, la causalidad adecuada y la eximente parcial."
         ],
         visual: "citas"
@@ -1351,6 +1351,574 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-315154",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     metaDescription: "Resolución N° 584-F-2005 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció la responsabilidad del Estado por inactividad, con la culpa de la víctima como eximente parcial."
+  },
+  /* 34-F-S1-2011. Pasajes copiados del texto de Nexus. */
+  {
+    slug: "caducidad-del-procedimiento-administrativo",
+    numero: "Resolución N° 34-F-S1-2011",
+    fecha: "20 de enero de 2011",
+    fechaCorta: "20 Ene 2011",
+    fechaISO: "2011-01-20",
+    hora: "8:00 horas",
+    expediente: "09-000644-1027-CA",
+    tribunal: "Sala Primera de la Corte Suprema de Justicia",
+    area: "Derecho Administrativo",
+    materia: "Caducidad del procedimiento administrativo",
+    badge: {
+      type: "referencia",
+      label: "Sentencia de Referencia"
+    },
+    titulo: "La inercia que cierra el procedimiento",
+    subtitulo: "La Sala Primera extendió la caducidad a los procedimientos que la Administración inicia de oficio, incluidos los sancionatorios, y fijó cómo opera: de pleno derecho, sin extinguir la competencia y como garantía de seguridad jurídica.",
+    pullQuote: {
+      texto: "Así, a pesar de que el ordinal 340 no regula la caducidad para los procedimientos iniciados de oficio por la Administración, sus postulados básicos son aplicables, mutatis mutandi, a estos, por integración del ordenamiento.",
+      citation: "Considerando VIII"
+    },
+    sintesisPortada: {
+      caso: "La Superintendencia de Pensiones abrió en 2004 un procedimiento sancionador contra la operadora BN Vital y lo dejó **paralizado más de dos años** después de la audiencia oral. Luego le impuso una multa de ¢26,8 millones, que el Tribunal Contencioso Administrativo **anuló por caducidad**.",
+      analisis: "La redacción original del artículo 340 de la LGAP solo preveía la caducidad del procedimiento promovido por el interesado. La Sala la extendió **por integración a los procedimientos de oficio**, con fundamento en la **igualdad, la justicia pronta y la seguridad jurídica**, y fijó que opera **de pleno derecho** y sin extinguir la competencia.",
+      impacto: "La reforma del CPCA, vigente desde 2008, ya recogía esa solución para los procedimientos nuevos, y lo que hoy se cita son sus reglas de funcionamiento. **Al menos 158 resoluciones** la citan. En 2016 la Sala Primera le fijó un límite: **dictado el acto final, la caducidad ya no procede**."
+    },
+    fragmentosPortada: [
+      {
+        texto: "La caducidad es un instituto mediante el cual, en aras de garantizar el principio constitucional de seguridad jurídica, se sanciona con el archivo del expediente aquellas paralizaciones injustificadas del procedimiento por un plazo superior a los seis meses.",
+        citation: "Considerando VI"
+      },
+      {
+        texto: "Esto implica que sus efectos se producen de pleno derecho, y por ende su reconocimiento tiene efectos meramente declarativos, no constitutivos.",
+        citation: "Considerando VIII"
+      },
+      {
+        texto: "Desde esta perspectiva, si la prolongación o paralización de un expediente puede generar incluso la anulación del acto al vulnerar derechos y principios de orden constitucional, por mayoría de razón, puede generar la caducidad del procedimiento.",
+        citation: "Considerando IX"
+      }
+    ],
+    contexto: [
+      "El artículo 340 de la Ley General de la Administración Pública sanciona con la caducidad el procedimiento paralizado más de seis meses. En su redacción original solo se refería al procedimiento promovido por el interesado, y durante años se discutió si alcanzaba también a los que la Administración inicia de oficio, como los sancionatorios.",
+      "La sentencia 34-F-S1-2011, redactada por el magistrado Óscar Eduardo González Camacho, resolvió esa discusión para los procedimientos anteriores a la reforma de 2008 y fijó las reglas con que el instituto opera desde entonces."
+    ],
+    pasajes: [
+      {
+        titulo: "La integración",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Así, a pesar de que el ordinal 340 no regula la caducidad para los procedimientos iniciados de oficio por la Administración, sus postulados básicos son aplicables, mutatis mutandi, a estos, por integración del ordenamiento."
+          }
+        ]
+      },
+      {
+        titulo: "Qué es la caducidad",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "La caducidad es un instituto mediante el cual, en aras de garantizar el principio constitucional de seguridad jurídica, se sanciona con el archivo del expediente aquellas paralizaciones injustificadas del procedimiento por un plazo superior a los seis meses.",
+            destacar: [
+              "se sanciona con el archivo del expediente"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Lo que no la justifica",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "Lo mismo debe ser dicho de los alegatos relacionados con la complejidad del caso concreto y la carga de trabajo de la SUPEN, ya que se trata de cuestiones metajurídicas, a las cuales las disposiciones relacionadas con la caducidad no les otorga ningún efecto exculpante, ni generan, en consecuencia, un régimen de excepción.",
+            destacar: [
+              "se trata de cuestiones metajurídicas"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El impulso",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "Por el contrario, cuando lo pretendido es la satisfacción de un interés público, particularmente cuando este procura la imposición de una situación de desventaja o gravamen al particular (ablatorias en general), como en este caso, resulta ilógico, además de antijurídico, exigirle a este último que promueva su continuación. En este supuesto, la tramitación y el impulso recae, en forma exclusiva, en la Administración.",
+            destacar: [
+              "resulta ilógico, además de antijurídico, exigirle a este último que promueva su continuación"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "A gestión de parte",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "Empero, cuando el particular lo promueve para obtener un beneficio, asume, en forma concomitante, el deber de instar su prosecución en lo que le corresponda, asumiendo las consecuencias de su indolencia cuando esta resulte un impedimento para la continuación de las actuaciones, en concordancia con lo dispuesto en el precepto 340 de la LGAP, según se dirá en el siguiente considerando."
+          }
+        ]
+      },
+      {
+        titulo: "Los efectos",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "En primer término, se puede observar que la norma recién transcrita se encuentra redactada en forma imperativa, es decir, no regula una facultad; por el contrario, una vez cumplidos los presupuestos de hecho en ella contenidos, la consecuencia deviene en obligatoria para el órgano encargado de la tramitación. Esto implica que sus efectos se producen de pleno derecho, y por ende su reconocimiento tiene efectos meramente declarativos, no constitutivos. Vale aclarar que lo anterior no debe ser interpretado como una pérdida de competencia –la cual es, por definición, irrenunciable, intransmisible e imprescriptible según el numeral 66 LGAP-, sino, únicamente, como la imposibilidad de continuar con la tramitación del procedimiento específico en el que se produjo la inercia.",
+            destacar: [
+              "sus efectos se producen de pleno derecho",
+              "no debe ser interpretado como una pérdida de competencia"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La igualdad",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "No obstante lo anterior, en virtud del principio de igualdad, debe integrarse el ordenamiento a efectos de reconocer su aplicabilidad en los procedimientos iniciados de oficio por la Administración. Desde esta perspectiva, el reconocimiento del instituto en beneficio de solo una de las partes podría rozar con el Derecho de la Constitución, máxime si se considera que opera en perjuicio de los individuos. Por esta razón, y considerando la posición de igualdad que debe existir entre partes, no cabe duda que la laguna normativa existente respecto de los procedimientos oficiosos debe resolverse en los mismos términos que aplicaría si la situación fuera inversa.",
+            destacar: [
+              "en virtud del principio de igualdad, debe integrarse el ordenamiento"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Justicia pronta y seguridad jurídica",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "En este orden de ideas, la aplicación extensiva del instituto que se analiza a los procedimientos oficiosos es una consecuencia directa del principio de justicia pronta y cumplida, el cual permea incluso a la sede administrativa y el sentido que se le debe dar a las disposiciones de la LGAP."
+          },
+          {
+            texto: "El reconocimiento de la caducidad dentro de los procedimientos administrativos regulados por la LGAP deviene de la interpretación armónica del ordinal 340 ya citado, no sólo con el principio de igualdad, según se desarrolló en las líneas precedentes, sino también con el de seguridad jurídica, en la medida en que permite garantizar a los administrados que no se les someterá a un trámite en forma indefinida.",
+            destacar: [
+              "no se les someterá a un trámite en forma indefinida"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La reforma",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Finalmente, conviene indicar que la reforma legal operada lo que hace es reconocer, expresamente, esta interpretación. En este sentido, la modificación torna innecesaria la integración, supliendo una laguna existente, por lo que no puede inferirse que, con anterioridad a esta, los procedimientos oficiosos estuvieran excluidos de la figura de la caducidad al no existir norma expresa.",
+            destacar: [
+              "lo que hace es reconocer, expresamente, esta interpretación"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "De oficio, basta el plazo",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Por el contrario, en aquellos casos iniciados en forma oficiosa, la anterior precisión no resulta aplicable, siendo que al administrado no le asiste ninguna responsabilidad de impulsar la tramitación, según lo ya dicho, lo determinante es el transcurso de los seis meses sin actuaciones tendientes al avance del trámite."
+          }
+        ]
+      },
+      {
+        titulo: "Por mayoría de razón",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "Desde esta perspectiva, si la prolongación o paralización de un expediente puede generar incluso la anulación del acto al vulnerar derechos y principios de orden constitucional, por mayoría de razón, puede generar la caducidad del procedimiento."
+          }
+        ]
+      },
+      {
+        titulo: "Plazos ordenatorios",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "Los dos primeros constituyen plazos ordenatorios previstos a efectos de agilizar el procedimiento, y en nada justifican la paralización del proceso más allá del tiempo legal fijado para que opere la caducidad."
+          }
+        ]
+      },
+      {
+        titulo: "La sanción de la inercia",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "Uno y otro supuesto se diferencian en que en este último, existe un actuar antijurídico identificado en la infracción al deber de impulsar el procedimiento y para el cual se prevé, como sanción, la caducidad."
+          }
+        ]
+      },
+      {
+        titulo: "El expediente listo para resolver",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "Como se ha insistido, la caducidad surge como respuesta a una inercia durante la tramitación que evita que el asunto llegue a ser resuelto en forma definitiva, por lo que, y tal y como se estipula en el mismo canon 340 tantas veces citado, no opera cuando “el expediente se encuentre listo para la resolución final”, toda vez que, a partir de ese momento, el particular puede hacer valer sus derechos mediante la figura silencial."
+          }
+        ]
+      },
+      {
+        titulo: "La inactividad, no el juez",
+        citation: "Considerando XI",
+        parrafos: [
+          {
+            texto: "Si una conducta antijurídica no se sanciona por haber operado la caducidad en el procedimiento, esto se deriva de una inactividad administrativa, y no de un pronunciamiento jurisdiccional que por el fondo lo implida o invalide pues solo se limitó a aplicar la sanción prevista por el ordenamiento ante la irregularidad en la tramitación del expediente."
+          }
+        ]
+      }
+    ],
+    analisis: [
+      {
+        id: "el-caso",
+        titulo: "El caso",
+        parrafos: [
+          "El 21 de octubre de 2004, la Superintendencia de Pensiones abrió un procedimiento sancionador contra BN Vital, operadora de pensiones complementarias, por incumplimientos denunciados por afiliados durante la llamada crisis de los fondos de inversión. La audiencia oral y privada se celebró el 22 y el 23 de noviembre de ese año.",
+          "Después, el expediente se detuvo. La Superintendencia puso la transcripción de la audiencia en conocimiento de la operadora hasta febrero de 2007, más de dos años más tarde. La operadora alegó entonces la caducidad del procedimiento; el órgano director la rechazó y el acto final le impuso una multa de ¢30,2 millones, que el Consejo Nacional de Supervisión del Sistema Financiero dejó en ¢26,8 millones al corregir una diferencia aritmética.",
+          "La operadora demandó la nulidad. El Tribunal Contencioso Administrativo anuló los actos por caducidad y ordenó devolver la multa con intereses. La Superintendencia recurrió en casación: sostuvo que, con la redacción del artículo 340 vigente al momento de los hechos, la caducidad solo operaba cuando la inercia era del administrado."
+        ],
+        visual: "trayectoria"
+      },
+      {
+        id: "impulso",
+        titulo: "Quién impulsa el procedimiento",
+        parrafos: [
+          "La Sala partió del impulso procesal. El artículo 222 de la LGAP obliga a la Administración a impulsar de oficio todo procedimiento, sin perjuicio del impulso que le den las partes. La carga de cada una depende de lo que el procedimiento persigue, y cuando busca imponer un gravamen al particular, la carga es solo de la Administración:",
+          "Por eso el plazo se cuenta de modo distinto según quién haya iniciado el procedimiento:"
+        ],
+        literales: [
+          [
+            3,
+            0,
+            0
+          ]
+        ],
+        visual: "comparacion"
+      },
+      {
+        id: "integracion",
+        titulo: "Una laguna que se integra",
+        parrafos: [
+          "En un punto, la Sala dio la razón a la Superintendencia. El artículo 340, en su redacción original, hablaba del «interesado» que promovió el procedimiento, y la Administración no ocupa ese lugar, porque actúa en un interés fiduciario, nunca propio. El Tribunal se había equivocado al leer «interesado» como comprensivo de ambos. El resultado, en cambio, se mantenía:",
+          "La Sala enlazó esa integración con la jurisprudencia constitucional sobre la duración razonable de los procedimientos administrativos, y cerró con un argumento de mayor a menor:",
+          "Advirtió, por último, que la reforma introducida por el Código Procesal Contencioso-Administrativo, vigente desde 2008, vino a reconocer esa misma lectura:",
+          "La integración descansa así en tres fundamentos:"
+        ],
+        literales: [
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            2
+          ]
+        ],
+        visual: "formas"
+      },
+      {
+        id: "efectos",
+        titulo: "Cómo opera",
+        parrafos: [
+          "Integrada la laguna, la Sala precisó cómo funciona el instituto. La norma es imperativa: cumplido el plazo, el órgano no puede elegir.",
+          "De ahí tres rasgos que la jurisprudencia posterior repite casi siempre con las mismas palabras:"
+        ],
+        literales: [
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        visual: "formas"
+      },
+      {
+        id: "plazos",
+        titulo: "Plazos que ordenan y plazo que sanciona",
+        parrafos: [
+          "La Superintendencia alegó que la jurisprudencia constitucional tolera procedimientos más largos que los plazos de la ley. La Sala distinguió tres plazos: el de dos meses para concluir el procedimiento (artículo 261 de la LGAP), los del órgano director para resolver las incidencias (artículo 262) y el de seis meses de la caducidad (artículo 340).",
+          "Por la misma razón descartó el argumento del artículo 329, según el cual el acto dictado fuera de plazo es válido. La caducidad responde a la inercia durante la tramitación, y por eso deja de operar cuando el expediente ya está listo para el acto final:"
+        ],
+        literales: [
+          [
+            13,
+            0,
+            1
+          ]
+        ],
+        visual: "comparacion"
+      },
+      {
+        id: "excusas",
+        titulo: "Lo que no la excusa",
+        parrafos: [
+          "La Superintendencia invocó también la complejidad del caso, su carga de trabajo y la protección de los afiliados. La Sala respondió que nada de eso cambia las consecuencias de la paralización:",
+          "Y precisó a quién es imputable que una infracción quede sin sanción:"
+        ],
+        literales: [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            1
+          ]
+        ],
+        nota: "En los procedimientos de oficio, el administrado no tiene que impulsar el expediente: basta que transcurran seis meses sin actuaciones de la Administración."
+      },
+      {
+        id: "recepcion",
+        titulo: "La recepción",
+        parrafos: [
+          "La Sala Primera asumió el criterio como propio. En 2012 sistematizó a partir de él los requisitos de la caducidad, y en 2016 le fijó un límite: una vez dictado el acto final, la caducidad ya no procede, porque la fase recursiva no puede terminar un procedimiento que ya concluyó. Desde entonces la cita habitual es «34-F-S1-2011, reiterada en 147-F-S1-2016».",
+          "El precedente salió también de la jurisdicción contencioso-administrativa. Lo transcriben la Sala Segunda, en demandas laborales contra entidades públicas, y el Tribunal Agrario, al conocer recursos jerárquicos impropios."
+        ],
+        visual: "recepcion"
+      },
+      {
+        id: "impacto",
+        titulo: "Su impacto",
+        parrafos: [
+          "Hemos encontrado su cita en el texto de al menos 158 resoluciones, dictadas entre 2011 y 2026. La mayor parte proviene del Tribunal Contencioso Administrativo y del Tribunal de Casación de lo Contencioso Administrativo; también la citan la Sala Primera, la Sala Segunda, el Tribunal Agrario y la Sala Constitucional.",
+          "Su uso alcanzó el máximo en 2015, con 27 resoluciones, y se mantiene: 11 en 2023, 8 en 2024 y 10 en 2025. La reforma del CPCA había resuelto ya la pregunta principal para los procedimientos iniciados después de 2008. Lo que se sigue citando son sus reglas de funcionamiento: los efectos de pleno derecho, la conservación de la competencia, la distinción con los plazos ordenatorios y el límite del acto final."
+        ],
+        visual: "citas"
+      }
+    ],
+    visuales: {
+      trayectoria: [
+        {
+          etapa: "El procedimiento",
+          sede: "Superintendencia de Pensiones · 21 de octubre de 2004",
+          detalle: "Abre un procedimiento sancionador contra BN Vital por la crisis de los fondos de inversión. La audiencia oral se celebra el 22 y el 23 de noviembre."
+        },
+        {
+          etapa: "La paralización",
+          sede: "Noviembre de 2004 a febrero de 2007",
+          detalle: "Más de dos años sin actuaciones. Se rechaza la caducidad y se impone una multa, que el CONASSIF deja en ¢26,8 millones."
+        },
+        {
+          etapa: "Primera instancia",
+          sede: "Tribunal Contencioso Administrativo, Sección Cuarta · 4 de noviembre de 2009",
+          detalle: "Anula los actos por caducidad y ordena devolver la multa con intereses."
+        },
+        {
+          etapa: "Casación",
+          sede: "Sala Primera · 20 de enero de 2011",
+          detalle: "Declara sin lugar el recurso de la Superintendencia: la caducidad rige también en los procedimientos de oficio.",
+          final: true
+        }
+      ],
+      comparaciones: {
+        impulso: [
+          {
+            titulo: "A gestión de parte",
+            rasgo: "El particular pide algo para sí y comparte la carga de impulsar el expediente.",
+            literal: "Empero, cuando el particular lo promueve para obtener un beneficio, asume, en forma concomitante, el deber de instar su prosecución en lo que le corresponda, asumiendo las consecuencias de su indolencia cuando esta resulte un impedimento para la continuación de las actuaciones, en concordancia con lo dispuesto en el precepto 340 de la LGAP, según se dirá en el siguiente considerando.",
+            citation: "Considerando VII"
+          },
+          {
+            titulo: "De oficio",
+            rasgo: "La Administración persigue un interés público, a menudo un gravamen, y el impulso le corresponde solo a ella.",
+            literal: "Por el contrario, en aquellos casos iniciados en forma oficiosa, la anterior precisión no resulta aplicable, siendo que al administrado no le asiste ninguna responsabilidad de impulsar la tramitación, según lo ya dicho, lo determinante es el transcurso de los seis meses sin actuaciones tendientes al avance del trámite.",
+            citation: "Considerando VIII"
+          }
+        ],
+        plazos: [
+          {
+            titulo: "Plazos ordenatorios",
+            rasgo: "Artículos 261 y 262 de la LGAP. Ordenan el procedimiento; su incumplimiento puede generar responsabilidad del funcionario.",
+            literal: "Los dos primeros constituyen plazos ordenatorios previstos a efectos de agilizar el procedimiento, y en nada justifican la paralización del proceso más allá del tiempo legal fijado para que opere la caducidad.",
+            citation: "Considerando X"
+          },
+          {
+            titulo: "Plazo de caducidad",
+            rasgo: "Artículo 340 de la LGAP. Seis meses de paralización cierran el procedimiento.",
+            literal: "Uno y otro supuesto se diferencian en que en este último, existe un actuar antijurídico identificado en la infracción al deber de impulsar el procedimiento y para el cual se prevé, como sanción, la caducidad.",
+            citation: "Considerando X"
+          }
+        ]
+      },
+      formas: {
+        integracion: [
+          {
+            titulo: "Igualdad",
+            texto: "Reconocer la caducidad solo a favor de la Administración rozaría la Constitución. La laguna se resuelve como se resolvería si la situación fuera inversa."
+          },
+          {
+            titulo: "Justicia pronta y cumplida",
+            texto: "El artículo 41 de la Constitución alcanza a la sede administrativa y exige plazos razonables también en los procedimientos de oficio."
+          },
+          {
+            titulo: "Seguridad jurídica",
+            texto: "Nadie puede quedar sometido a un trámite en forma indefinida, en la incertidumbre sobre su situación jurídica."
+          }
+        ],
+        efectos: [
+          {
+            titulo: "De pleno derecho",
+            texto: "Cumplidos los seis meses, la consecuencia es obligatoria. La resolución que la reconoce solo la declara."
+          },
+          {
+            titulo: "Sin pérdida de competencia",
+            texto: "La competencia es irrenunciable e imprescriptible. Lo que termina es ese procedimiento, no la potestad de la Administración."
+          },
+          {
+            titulo: "Antes del acto final",
+            texto: "No opera cuando el expediente ya está listo para resolver: desde ese momento, el particular cuenta con el silencio."
+          }
+        ]
+      },
+      recepcion: [
+        {
+          anio: "2012",
+          organo: "Sala Primera",
+          texto: "Sistematiza los requisitos de la caducidad y reitera que antes de la reforma la solución era la misma.",
+          enlaces: [
+            {
+              etiqueta: "Voto 608-F-S1-2012",
+              nexusId: "sen-1-0034-685779"
+            }
+          ]
+        },
+        {
+          anio: "2013",
+          organo: "Tribunal Agrario",
+          texto: "Transcribe su considerando sobre los efectos al conocer un recurso jerárquico impropio.",
+          enlaces: [
+            {
+              etiqueta: "Voto 198-2013",
+              nexusId: "sen-1-0034-587084"
+            }
+          ]
+        },
+        {
+          anio: "2015",
+          organo: "Sala Segunda",
+          texto: "Lo transcribe en una demanda laboral contra una entidad pública.",
+          enlaces: [
+            {
+              etiqueta: "Voto 809-2015",
+              nexusId: "sen-1-0034-645508"
+            }
+          ]
+        },
+        {
+          anio: "2016",
+          organo: "Sala Primera",
+          texto: "Le fija un límite: dictado el acto final, la caducidad ya no procede en la fase recursiva.",
+          enlaces: [
+            {
+              etiqueta: "Voto 147-F-S1-2016",
+              nexusId: "sen-1-0034-660952"
+            }
+          ]
+        },
+        {
+          anio: "2025",
+          organo: "Sala Primera",
+          texto: "Aplica la fórmula «34-F-S1-2011, reiterada en 147-F-S1-2016» y niega la caducidad en la fase recursiva de un caso tributario.",
+          enlaces: [
+            {
+              etiqueta: "Voto 820-F-S1-2025",
+              nexusId: "sen-1-0004-1291129"
+            }
+          ],
+          final: true
+        }
+      ],
+      citas: {
+        corte: "19 de setiembre de 2026",
+        metodo: "Resoluciones judiciales cuyo texto cita la 34-F-S1-2011, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente y los órganos administrativos, y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        csv: "/datos/jurisprudencia/34-F-S1-2011-resoluciones-que-la-citan.csv"
+      }
+    },
+    casoFactico: [
+      "En 2004 la Superintendencia de Pensiones abrió un procedimiento sancionador contra la operadora BN Vital. Tras la audiencia oral de noviembre de ese año, el expediente estuvo paralizado hasta febrero de 2007.",
+      "La operadora fue multada y demandó la nulidad. El Tribunal Contencioso Administrativo anuló los actos por caducidad, y la Sala Primera confirmó el resultado: la caducidad rige también en los procedimientos que la Administración inicia de oficio."
+    ],
+    nexusId: "sen-1-0034-509623",
+    precedentes: [
+      {
+        organo: "Sala Constitucional",
+        numero: "Voto 3140-2007",
+        fecha: "09-03-2007",
+        nexusId: "sen-1-0007-373776",
+        nota: "Duración excesiva de un procedimiento administrativo; justicia pronta y cumplida en sede administrativa."
+      },
+      {
+        organo: "Sala Constitucional",
+        numero: "Voto 6758-2007",
+        fecha: "18-05-2007",
+        nexusId: "sen-1-0007-381479",
+        nota: "Plazo razonable de la actividad administrativa, apreciado caso por caso."
+      }
+    ],
+    citadaPor: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 608-F-S1-2012",
+        fecha: "16-05-2012",
+        nexusId: "sen-1-0034-685779",
+        nota: "Sistematiza los requisitos de la caducidad."
+      },
+      {
+        organo: "Tribunal Agrario",
+        numero: "Voto 198-2013",
+        fecha: "28-02-2013",
+        nexusId: "sen-1-0034-587084",
+        nota: "Transcribe su considerando sobre los efectos."
+      },
+      {
+        organo: "Sala Segunda",
+        numero: "Voto 809-2015",
+        fecha: "29-07-2015",
+        nexusId: "sen-1-0034-645508",
+        nota: "Lo transcribe en una demanda laboral contra una entidad pública."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 147-F-S1-2016",
+        fecha: "18-02-2016",
+        nexusId: "sen-1-0034-660952",
+        nota: "La caducidad no procede en la fase recursiva."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 820-F-S1-2025",
+        fecha: "08-05-2025",
+        nexusId: "sen-1-0004-1291129",
+        nota: "Reitera la fórmula con el 147-F-S1-2016 en un caso tributario."
+      }
+    ],
+    normativa: [
+      {
+        nombre: "Ley General de la Administración Pública",
+        detalle: "Ley 6227 · 2 de mayo de 1978",
+        articulos: "Arts. 222, 261, 262, 329 y 340",
+        scijId: 13231
+      },
+      {
+        nombre: "Código Procesal Contencioso-Administrativo",
+        detalle: "Ley 8508 · 28 de abril de 2006",
+        articulos: "Art. 200, inciso 10 (reforma del art. 340 de la LGAP)",
+        scijId: 57436,
+        tema: "Posterior a los hechos"
+      },
+      {
+        nombre: "Constitución Política de la República de Costa Rica",
+        detalle: "7 de noviembre de 1949",
+        articulos: "Art. 41",
+        scijId: 871
+      }
+    ],
+    redactor: "Magistrado Óscar Eduardo González Camacho",
+    redactorTextual: "Redacta el Magistrado González Camacho.",
+    redactoresAdicionales: [],
+    fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-509623",
+    fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    metaDescription: "Resolución N° 34-F-S1-2011 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Extendió la caducidad del artículo 340 de la LGAP a los procedimientos administrativos iniciados de oficio, incluidos los sancionatorios, y fijó sus efectos."
   }
 ];
 

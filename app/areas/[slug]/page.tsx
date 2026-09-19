@@ -843,7 +843,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           externos sobre la legalidad de actos, contratos, reglamentos y procedimientos de alto
           impacto. La Administración costarricense actúa bajo el principio de legalidad (art. 11
           de la Constitución y art. 11 de la LGAP) y cada decisión debe poder defenderse ante
-          la Contraloría, los tribunales contencioso-administrativos y la Sala Constitucional.
+          la Contraloría, el Tribunal Contencioso Administrativo y la Sala Constitucional.
           El dictamen externo se ha convertido en una herramienta estándar de gobernanza
           institucional para reducir el riesgo de nulidad, las contingencias patrimoniales y
           la responsabilidad personal de los jerarcas.
