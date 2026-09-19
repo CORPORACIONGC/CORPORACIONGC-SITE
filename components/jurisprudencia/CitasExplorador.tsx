@@ -640,8 +640,11 @@ export function CitasExplorador({
         </div>
       )}
 
-      <figcaption className="mt-10 border-t border-cream/10 pt-6 text-[13px] leading-relaxed text-cream/65">
-        {metodo} Corte al {corte}.
+      <figcaption className="mt-10 border-t border-cream/10 pt-6">
+        <span className="type-label block text-cream/65">Cómo se contó</span>
+        <span className="mt-3 block max-w-[78ch] text-[13px] leading-relaxed text-cream/65">
+          {metodo} Corte al {corte}.
+        </span>
       </figcaption>
     </figure>
   );

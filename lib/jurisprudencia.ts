@@ -649,7 +649,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       citas: {
         corte: "19 de setiembre de 2026",
         metodo:
-          "Resoluciones judiciales cuyo texto cita la 1016-F-2004, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+          "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 1016-F-2004, por cualquiera de sus puntos. Las fuentes son públicas: Nexus del Poder Judicial para las resoluciones y las actas, el SINALEVI de la Procuraduría, y los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP; la doctrina, en los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/1016-F-2004-resoluciones-que-la-citan.csv",
       },
     },
@@ -1245,7 +1245,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 584-F-2005, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 584-F-2005, por cualquiera de sus puntos. Las fuentes son públicas: Nexus del Poder Judicial para las resoluciones y las actas, el SINALEVI de la Procuraduría, y los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP; la doctrina, en los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/584-F-2005-resoluciones-que-la-citan.csv"
       }
     },
@@ -1839,7 +1839,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 34-F-S1-2011, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 34-F-S1-2011, por cualquiera de sus puntos. Las fuentes son públicas: Nexus del Poder Judicial para las resoluciones y las actas, el SINALEVI de la Procuraduría, y los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP; la doctrina, en los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/34-F-S1-2011-resoluciones-que-la-citan.csv"
       }
     },
@@ -2560,7 +2560,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 300-F-S1-2009, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 300-F-S1-2009, por cualquiera de sus puntos. Las fuentes son públicas: Nexus del Poder Judicial para las resoluciones y las actas, el SINALEVI de la Procuraduría, y los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP; la doctrina, en los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/300-F-S1-2009-resoluciones-que-la-citan.csv"
       }
     },
@@ -3144,7 +3144,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 1426-F-S1-2012, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 1426-F-S1-2012, por cualquiera de sus puntos. Las fuentes son públicas: Nexus del Poder Judicial para las resoluciones y las actas, el SINALEVI de la Procuraduría, y los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP; la doctrina, en los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/1426-F-S1-2012-resoluciones-que-la-citan.csv"
       }
     },
