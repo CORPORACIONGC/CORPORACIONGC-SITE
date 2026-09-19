@@ -60,7 +60,7 @@ export function LeadForm() {
         <h4 className="text-base font-semibold text-cream mb-2">
           Mensaje enviado
         </h4>
-        <p className="text-xs text-cream/50 leading-relaxed max-w-[30ch]">
+        <p className="text-xs text-cream/65 leading-relaxed max-w-[30ch]">
           Revisaremos su consulta y le contactaremos a la brevedad.
         </p>
       </div>
@@ -83,7 +83,7 @@ export function LeadForm() {
 
       {/* Name */}
       <div>
-        <label htmlFor="lf-name" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+        <label htmlFor="lf-name" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
           Nombre completo *
         </label>
         <input
@@ -103,7 +103,7 @@ export function LeadForm() {
       {/* Email + Phone row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="lf-email" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+          <label htmlFor="lf-email" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
             Correo electrónico *
           </label>
           <input
@@ -121,7 +121,7 @@ export function LeadForm() {
           />
         </div>
         <div>
-          <label htmlFor="lf-phone" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+          <label htmlFor="lf-phone" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
             Teléfono
           </label>
           <input
@@ -141,7 +141,7 @@ export function LeadForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="lf-message" className="text-[10px] tracking-wider uppercase text-cream/40 mb-1.5 block">
+        <label htmlFor="lf-message" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
           Describa brevemente su consulta *
         </label>
         <textarea
@@ -161,7 +161,7 @@ export function LeadForm() {
       {state === "error" && (
         <div className="flex items-center gap-2 p-3 rounded-lg bg-burgundy/[0.08] border border-burgundy/20">
           <WarningCircle size={16} className="text-burgundy-light shrink-0" />
-          <p className="text-xs text-cream/60">
+          <p className="text-xs text-cream/65">
             {errorMsg} Intente de nuevo o escríbanos a{" "}
             <a
               href={`mailto:${FIRM_CONTACT.email}`}
@@ -197,7 +197,7 @@ export function LeadForm() {
           completar el formulario, reduciendo el abandono. */}
       <div className="flex items-center gap-3 pt-1">
         <div className="h-px flex-1 bg-cream/[0.08]" />
-        <span className="text-[10px] uppercase tracking-wider text-cream/30">o</span>
+        <span className="text-xs text-cream/65">o</span>
         <div className="h-px flex-1 bg-cream/[0.08]" />
       </div>
       <TrackedContactLink
@@ -211,7 +211,7 @@ export function LeadForm() {
         Prefiero escribir por WhatsApp
       </TrackedContactLink>
 
-      <p className="text-[10px] text-cream/30 text-center leading-relaxed">
+      <p className="text-xs text-cream/65 text-center leading-relaxed">
         Sus datos se tratan de forma confidencial y no se comparten con
         terceros.
       </p>

@@ -15,7 +15,7 @@ export function MagneticButton({
   children: React.ReactNode;
   href?: string;
   className?: string;
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "outline" | "outline-inverse";
   onClick?: () => void;
   contactTarget?: string;
 }) {
@@ -50,7 +50,12 @@ export function MagneticButton({
       "bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98]",
     secondary:
       "bg-charcoal text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-dark-bg active:scale-[0.98]",
+    /* Sobre fondo claro el dorado de marca no alcanza 4.5:1 como texto:
+       el rótulo usa el bronce oscuro y el borde conserva el dorado. */
     outline:
+      "border-2 border-gold/60 text-[#7A5F2E] dark:text-gold px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-gold hover:bg-gold/[0.06] active:scale-[0.98]",
+    /* Para secciones siempre oscuras (borgoña), en cualquier tema. */
+    "outline-inverse":
       "border-2 border-gold/60 text-gold px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-gold hover:bg-gold/[0.06] active:scale-[0.98]",
   };
 
@@ -64,7 +69,7 @@ export function MagneticButton({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className="inline-block"
-      style={{ transition: "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+      style={{ transition: "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)" }}
     >
       {isInternal ? (
         <Link href={href} onClick={handleClick} className={combinedClassName}>

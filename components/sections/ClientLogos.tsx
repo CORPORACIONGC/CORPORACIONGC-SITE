@@ -35,7 +35,7 @@ export function ClientLogos() {
         <AnimatedEntry>
           <div className="flex items-center justify-center gap-4 mb-10 md:mb-12">
             <div className="h-px w-10 bg-gradient-to-r from-transparent to-gold/30" />
-            <span className="text-[9px] tracking-[0.3em] uppercase text-white/60 font-medium">
+            <span className="type-label text-white/70">
               Han confiado en nosotros
             </span>
             <div className="h-px w-10 bg-gradient-to-l from-transparent to-gold/30" />

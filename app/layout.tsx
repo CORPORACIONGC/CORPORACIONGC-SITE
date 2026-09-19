@@ -1,22 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Newsreader } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { GlobalWhatsAppFloat } from "@/components/layout/GlobalWhatsAppFloat";
 import "./globals.css";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.corporaciongc.com";
 
+/* DM Sans variable con su eje de tamaño óptico (opsz 9–40): el navegador
+   elige el diseño según el tamaño, más abierto en el texto pequeño y más
+   cerrado y fino en los titulares. Cubre todos los pesos en un solo archivo. */
 const dmSans = DM_Sans({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
+  axes: ["opsz"],
   variable: "--font-dm-sans",
-  display: "swap",
-});
-
-const newsreader = Newsreader({
-  subsets: ["latin", "latin-ext"],
-  style: ["normal", "italic"],
-  variable: "--font-newsreader",
   display: "swap",
 });
 
@@ -66,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${dmSans.variable} ${newsreader.variable}`}
+      className={dmSans.variable}
       suppressHydrationWarning
     >
       <head>

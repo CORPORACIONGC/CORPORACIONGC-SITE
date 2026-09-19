@@ -66,21 +66,15 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
             {showHeading && (
               <>
                 <AnimatedEntry>
-                  <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
-                    Contacto
-                  </span>
-                </AnimatedEntry>
-
-                <AnimatedEntry delay={0.1}>
-                  <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
+                  <h2 className="type-headline text-cream">
                     Hablemos sobre
                     <br />
-                    <span className="text-burgundy-light">su caso</span>
+                    <span className="text-emphasis">su caso</span>
                   </h2>
                 </AnimatedEntry>
 
                 <AnimatedEntry delay={0.2}>
-                  <p className="mt-5 text-sm text-cream/70 leading-relaxed max-w-[50ch]">
+                  <p className="mt-6 type-body text-cream/70 max-w-[50ch]">
                     Ofrecemos asesoría y representación jurídica de primer nivel
                     en todas las ramas del Derecho Público. Cuéntenos su
                     situación y buscaremos juntos la mejor estrategia legal.
@@ -98,7 +92,7 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
                       <item.icon size={20} weight="duotone" />
                     </div>
                     <div>
-                      <div className="text-[10px] tracking-wider uppercase text-cream/55">
+                      <div className="text-xs text-cream/65">
                         {item.label}
                       </div>
                       <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">
@@ -132,10 +126,10 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
           <div className="flex items-start lg:items-center">
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
               <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
-                <h3 className="font-display text-xl font-semibold text-cream tracking-tight mb-2">
+                <h3 className="text-xl font-semibold text-cream tracking-[-0.01em] mb-2">
                   Solicite una consulta
                 </h3>
-                <p className="text-xs text-cream/60 leading-relaxed mb-8">
+                <p className="text-sm text-cream/65 leading-relaxed mb-8">
                   Complete el formulario y le contactaremos a la brevedad para
                   coordinar una reunión.
                 </p>

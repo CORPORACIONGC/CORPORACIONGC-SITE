@@ -17,17 +17,17 @@ export function FirmPracticeAreas() {
         <AnimatedEntry>
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-gold" />
-            <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">&Aacute;reas de pr&aacute;ctica</span>
+            <span className="type-label text-cream/65">&Aacute;reas de pr&aacute;ctica</span>
           </div>
         </AnimatedEntry>
 
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
             <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">N&uacute;cleo en{" "}<span className="text-burgundy-light">Derecho P&uacute;blico</span></h2>
+              <h2 className="type-headline text-cream">N&uacute;cleo en{" "}<span className="text-emphasis">Derecho P&uacute;blico</span></h2>
             </AnimatedEntry>
             <AnimatedEntry delay={0.2}>
-              <p className="mt-4 text-sm text-cream/70 leading-relaxed max-w-[55ch]">
+              <p className="mt-5 type-body text-cream/70 max-w-[55ch]">
 Litigamos, asesoramos y redactamos normativa en las materias que definen el Derecho P&uacute;blico costarricense.
               </p>
             </AnimatedEntry>
@@ -35,7 +35,7 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
           <AnimatedEntry delay={0.25}>
             <Link
               href="/areas"
-              className="text-xs text-cream/40 hover:text-gold transition-colors duration-300 flex items-center gap-1.5 shrink-0"
+              className="text-sm text-cream/65 hover:text-burgundy dark:hover:text-gold transition-colors duration-300 flex items-center gap-1.5 shrink-0"
             >
               Ver todas las &aacute;reas
               <ArrowRight size={12} weight="bold" />
@@ -59,7 +59,7 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
                     </div>
                     <div className="flex-1">
                       <h3 className="text-sm md:text-base font-semibold text-cream tracking-tight group-hover:text-gold transition-colors duration-300">{(area as any).homepageTitle ?? area.title}</h3>
-                      <p className="mt-1.5 text-xs text-cream/60 leading-relaxed line-clamp-2">{area.subtitle}</p>
+                      <p className="mt-1.5 text-[13px] text-cream/65 leading-relaxed line-clamp-2">{area.subtitle}</p>
                     </div>
                   </div>
                 </Link>
@@ -71,7 +71,7 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
         {/* Complementary areas */}
         <AnimatedEntry delay={0.5}>
           <div className="mt-8 pt-6 border-t border-cream/[0.05]">
-            <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-4">Cobertura complementaria</div>
+            <div className="type-label text-cream/65 mb-4">Cobertura complementaria</div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-2">
               {complementary.map((area, i) => {
                 const Icon = iconMap[area.icon];
@@ -82,7 +82,7 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
                     className="flex items-center gap-2 py-1 group"
                   >
                     {Icon && <Icon size={14} weight="duotone" className="text-cream/35 group-hover:text-burgundy-light shrink-0 transition-colors duration-300" />}
-                    <span className="text-xs text-cream/50 group-hover:text-gold transition-colors duration-300">{area.title}</span>
+                    <span className="text-[13px] text-cream/65 group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300">{area.title}</span>
                   </Link>
                 );
               })}

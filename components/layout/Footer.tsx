@@ -62,7 +62,7 @@ export function Footer() {
 
           {/* Nav */}
           <div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-cream/55 mb-5">
+            <div className="type-label text-cream/65 mb-5">
               Navegación
             </div>
             <div className="flex flex-col gap-3">
@@ -90,7 +90,7 @@ export function Footer() {
 
           {/* Contact info */}
           <div>
-            <div className="text-[10px] tracking-[0.25em] uppercase text-cream/55 mb-5">
+            <div className="type-label text-cream/65 mb-5">
               Contacto
             </div>
             <div className="space-y-3">

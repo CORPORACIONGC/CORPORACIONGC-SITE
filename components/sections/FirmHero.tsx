@@ -16,23 +16,25 @@ export function FirmHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <div className="gc-rise" style={{ animationDelay: "0.05s" }}>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
+            <div className="flex items-center gap-3 mb-7">
+              <div className="hidden sm:block h-px w-8 bg-gold" />
+              <span className="type-label text-cream/65">
                 Bufete de Abogados en Derecho P&#250;blico
               </span>
             </div>
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.12s" }}>
-            <h1 className="font-body text-4xl md:text-6xl lg:text-7xl tracking-[0.08em] uppercase leading-none text-cream font-medium">
+            {/* Misma composición del logotipo: DM Sans en mayúsculas espaciadas.
+                En móvil baja a 32 px para que no se parta en dos líneas. */}
+            <h1 className="font-body text-[2rem] sm:text-4xl md:text-6xl lg:text-7xl tracking-[0.08em] uppercase leading-none text-cream font-medium">
               Corporaci&#243;n GC
               <span className="sr-only"> — Abogados Especialistas en Derecho Administrativo y Contencioso Administrativo en Costa Rica</span>
             </h1>
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.2s" }}>
-            <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/55 font-medium">
+            <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/65 font-medium">
               Fundado y dirigido por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
             </p>
           </div>
@@ -60,9 +62,8 @@ export function FirmHero() {
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.28s" }}>
-            <div className="mt-6 md:mt-8 flex items-center gap-3">
-              <div className="w-1 h-8 bg-burgundy rounded-full" />
-              <p className="text-base md:text-lg text-cream/80 leading-relaxed max-w-[50ch]">
+            <div className="mt-8 md:mt-10 pt-8 md:pt-10 border-t border-cream/10 max-w-[52ch]">
+              <p className="type-lead text-cream/85">
                 Co-redactor del Código Procesal Contencioso
                 Administrativo. Magistrado de la Sala Primera de la Corte
                 Suprema durante doce años. Coordinador de la
@@ -74,7 +75,7 @@ export function FirmHero() {
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.36s" }}>
-            <p className="mt-4 text-sm text-cream/65 leading-relaxed max-w-[55ch]">
+            <p className="mt-4 type-body text-cream/65 max-w-[52ch]">
               El Dr. Gonz&#225;lez Camacho dirige y trabaja personalmente
               en cada caso junto a un equipo de cinco abogados formados
               exclusivamente en Derecho P&#250;blico bajo su

@@ -10,7 +10,7 @@ const StaggerCtx = createContext<{ isVisible: boolean; stagger: number; counter:
 /**
  * CSS-based replacement for Framer Motion AnimatedEntry.
  * Uses IntersectionObserver + CSS transitions (zero external dependencies).
- * Spring-like cubic-bezier: cubic-bezier(0.34, 1.56, 0.64, 1)
+ * Desaceleración exponencial, sin rebote: cubic-bezier(0.16, 1, 0.3, 1)
  */
 
 export function AnimatedEntry({
@@ -44,7 +44,7 @@ export function AnimatedEntry({
   }, []);
 
   const offsets = {
-    up: "translateY(32px)",
+    up: "translateY(20px)",
     down: "translateY(-32px)",
     left: "translateX(32px)",
     right: "translateX(-32px)",
@@ -58,7 +58,7 @@ export function AnimatedEntry({
       style={{
         opacity: isInView ? 1 : 0,
         transform: isInView ? "translate(0, 0)" : offsets[direction],
-        transition: `opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}s`,
+        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
         willChange: isInView ? "auto" : "opacity, transform",
       }}
     >
@@ -137,7 +137,7 @@ export function StaggerItem({
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(24px)",
-        transition: `opacity 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}s, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}s`,
+        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
         willChange: isVisible ? "auto" : "opacity, transform",
       }}
     >

@@ -16,23 +16,14 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
   const hasArticles = articles.length > 0;
 
   return (
-    <section className="relative bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#1E0610] py-24 md:py-32 overflow-hidden">
+    <section className="gc-on-dark relative bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#1E0610] py-24 md:py-32 overflow-hidden">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-8">
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-white/50 font-medium">
-                  Publicaciones
-                </span>
-              </div>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-white">
+              <h2 className="type-headline text-white">
                 Art&iacute;culos y{" "}
                 <span className="text-gold">an&aacute;lisis jur&iacute;dico</span>
               </h2>
@@ -42,7 +33,7 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
 
           {hasArticles && (
             <AnimatedEntry delay={0.3}>
-              <MagneticButton href="/articulos" variant="outline">
+              <MagneticButton href="/articulos" variant="outline-inverse">
                 Ver todos
                 <ArrowRight size={14} weight="bold" />
               </MagneticButton>
@@ -75,10 +66,10 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
                         <Article size={14} weight="duotone" />
                       )}
                     </div>
-                    <span className="text-[10px] tracking-wider uppercase text-white/45">
+                    <span className="text-xs text-white/60">
                       {article.type === "pdf" ? "PDF" : "Art\u00edculo"}
                     </span>
-                    <span className="text-[10px] text-white/30 ml-auto">
+                    <span className="text-xs text-white/50 ml-auto tabular-nums">
                       {new Date(article.date).toLocaleDateString("es-CR", {
                         year: "numeric",
                         month: "short",
@@ -86,11 +77,11 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
                     </span>
                   </div>
 
-                  <h3 className="font-display text-lg font-semibold tracking-tight text-white group-hover:text-gold transition-colors duration-300">
+                  <h3 className="type-card-title text-white group-hover:text-gold transition-colors duration-300">
                     {article.title}
                   </h3>
 
-                  <p className="mt-2 text-xs text-white/50 leading-relaxed max-w-[55ch]">
+                  <p className="mt-2 text-sm text-white/65 leading-relaxed max-w-[60ch]">
                     {article.excerpt}
                   </p>
 
@@ -99,7 +90,7 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
                       {article.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2 py-0.5 rounded text-[9px] tracking-wide bg-white/[0.06] text-white/45"
+                          className="px-2 py-0.5 rounded text-[11px] bg-white/[0.07] text-white/60"
                         >
                           {tag}
                         </span>

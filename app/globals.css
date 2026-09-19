@@ -16,6 +16,7 @@
   --scrollbar-thumb-hover: rgba(107, 29, 58, 0.35);
   --selection-bg: #C4A265;
   --selection-fg: #FFFFFF;
+  --emphasis-val: #8B2252;
 }
 
 .dark {
@@ -31,6 +32,9 @@
   --scrollbar-thumb-hover: #6B1D3A;
   --selection-bg: #C4A265;
   --selection-fg: #0F0A0D;
+  /* El burdeos claro sobre negro no llega a 2.3:1: de noche el énfasis
+     de los titulares pasa al dorado (7.9:1), como en Publicaciones. */
+  --emphasis-val: #C4A265;
 }
 
 @theme {
@@ -48,30 +52,174 @@
   --color-dark-bg: var(--dark-bg-val);
   --color-surface: var(--surface-val);
   --color-surface-alt: var(--surface-alt-val);
+  --color-emphasis: var(--emphasis-val);
 
   --font-display: var(--font-body);
   --font-body: var(--font-dm-sans);
 }
 
-/* DM Sans como tipografía de títulos: peso medio por defecto —
-   los pesos explícitos (font-semibold, font-bold) siguen ganando. */
+/* font-display es la clase de titular de todo el sitio fuera de la portada.
+   Por defecto rige el rol de título de tarjeta de la opción 3 (semibold);
+   un peso explícito en el componente sigue ganando. */
 @layer base {
   .font-display {
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
-/* Newsreader queda reservada para el manifiesto principal de la firma
-   y para las citas; el resto de la jerarquía usa DM Sans. */
-#la-firma h2.font-display {
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-weight: 500;
-  letter-spacing: -0.025em;
+/* ── Sistema tipográfico: una sola familia, un titular, un tono ──
+   Todo el sitio habla en DM Sans, la familia del logotipo. Los titulares van
+   en ligera (300), en un solo color y un solo peso: la jerarquía la hacen el
+   tamaño y el aire. Partir cada titular en dos colores y dos pesos era una
+   fórmula repetida que se leía como plantilla; el énfasis quedó reducido a un
+   único gesto en todo el sitio, el subrayado en hilo dorado (gc-subrayado).
+   El nombre de la firma en el hero queda fuera de este sistema: va en DM Sans
+   medio, mayúscula y espaciado, con la composición del logotipo.
+   Con el eje óptico cargado, los titulares usan el diseño de 40 pt, más
+   cerrado y de trazo más fino. */
+:root {
+  --t-head-weight: 300;
+  --t-head-size: clamp(2.375rem, 1.55rem + 2.8vw, 4rem);
+  --t-head-lh: 1.02;
+  --t-head-track: -0.015em;
+  --t-title-size: clamp(1.75rem, 1.4rem + 1.1vw, 2.375rem);
+  --t-title-lh: 1.1;
+  --t-title-track: -0.012em;
+  --t-card-weight: 600;
+  --t-card-size: 1.1875rem;
+  --t-card-lh: 1.3;
+  --t-card-track: -0.01em;
+  --t-quote-weight: 300;
+  --t-quote-size: clamp(1.1875rem, 1.05rem + 0.45vw, 1.375rem);
+  --t-quote-lh: 1.6;
+  --t-quote-track: -0.01em;
+}
+/* La ligera sobre fondo oscuro se adelgaza por irradiación: un punto más. */
+.dark,
+.gc-on-dark {
+  --t-head-weight: 350;
+  --t-quote-weight: 350;
 }
 
+@utility type-headline {
+  font-family: var(--font-body);
+  font-weight: var(--t-head-weight);
+  font-size: var(--t-head-size);
+  line-height: var(--t-head-lh);
+  letter-spacing: var(--t-head-track);
+  text-wrap: balance;
+}
+@utility type-title {
+  font-family: var(--font-body);
+  font-weight: var(--t-head-weight);
+  font-size: var(--t-title-size);
+  line-height: var(--t-title-lh);
+  letter-spacing: var(--t-title-track);
+  text-wrap: balance;
+}
+@utility type-card-title {
+  font-family: var(--font-body);
+  font-weight: var(--t-card-weight);
+  font-size: var(--t-card-size);
+  line-height: var(--t-card-lh);
+  letter-spacing: var(--t-card-track);
+  text-wrap: balance;
+}
+@utility type-quote {
+  font-family: var(--font-body);
+  font-weight: var(--t-quote-weight);
+  font-size: var(--t-quote-size);
+  line-height: var(--t-quote-lh);
+  letter-spacing: var(--t-quote-track);
+  font-style: normal;
+  text-wrap: pretty;
+}
+@utility type-lead {
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+@utility type-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+@utility type-label {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Un titular, un tono: las frases que los componentes todavía envuelven en
+   un span de color (burdeos, dorado, énfasis) heredan el color y el peso del
+   titular. Vale para la portada y para las páginas interiores. */
+.type-headline span,
+.type-title span,
+.font-display span:is([class*="text-burgundy"], [class*="text-gold"], [class*="text-emphasis"]) {
+  color: inherit;
+  font-weight: inherit;
+}
+
+/* ── El subrayado del abogado ──
+   El único énfasis del sitio: un hilo dorado bajo la frase que resume a la
+   firma, como quien subraya la línea decisiva de una sentencia. Se traza de
+   izquierda a derecha una sola vez, cuando el titular entra en pantalla (en
+   los navegadores con animaciones ligadas al desplazamiento); en los demás, y
+   con movimiento reducido, aparece ya trazado. */
+@utility gc-subrayado {
+  background-image: linear-gradient(var(--color-gold), var(--color-gold));
+  background-repeat: no-repeat;
+  background-position: 0 94%;
+  background-size: 100% max(1.5px, 0.035em);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+@keyframes gc-subrayar {
+  from { background-size: 0% max(1.5px, 0.035em); }
+  to { background-size: 100% max(1.5px, 0.035em); }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .gc-subrayado {
+      animation: gc-subrayar linear both;
+      animation-timeline: view();
+      animation-range: entry 60% cover 40%;
+    }
+  }
+}
+
+/* ── La opción 3 en todo el sitio ──
+   Las páginas interiores (perfiles, áreas, artículos, jurisprudencia,
+   contacto, sobre nosotros) arman sus titulares con font-display y un tamaño
+   de Tailwind. Estas reglas les aplican la misma voz que la portada sin
+   reescribir cada componente:
+   - de 28–30 px en adelante, el titular va en ligera, en un solo tono;
+   - por debajo, el título va en semibold (regla base de arriba);
+   - el interletraje se abre a −0,01/−0,015 em, porque el diseño óptico de
+     DM Sans ya viene cerrado en tamaños grandes; se respetan los rótulos con
+     interletraje amplio a propósito, como el menú móvil;
+   - las citas, antes en cursiva de Newsreader, van en ligera y redonda. */
+.font-display:not([class*="tracking-wide"]) {
+  letter-spacing: -0.01em;
+}
+.font-display:is(
+    [class*="text-3xl"], [class*="text-4xl"], [class*="text-5xl"],
+    [class*="text-6xl"], [class*="text-7xl"], [class*="text-8xl"],
+    [class*="text-9xl"], [class*="text-[28px]"], [class*="text-[1.85rem]"],
+    [class*="text-[2.5rem]"], [class*="text-[8rem]"], [class*="text-[12rem]"]
+  ) {
+  font-weight: var(--t-head-weight);
+  letter-spacing: -0.015em;
+}
+.font-display[class*="text-white"] {
+  --t-head-weight: 350;
+}
 .font-display.italic {
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-weight: 400;
+  font-family: var(--font-body);
+  font-weight: var(--t-quote-weight);
+  font-style: normal;
   letter-spacing: -0.01em;
 }
 
@@ -120,7 +268,7 @@ body {
 .dark .prose-article h3 {
   font-family: var(--font-display), Georgia, serif;
   color: #F7F3EE;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .dark .prose-article a { color: #C4A265; }
 .dark .prose-article a:hover { color: #D4B87A; }
@@ -150,11 +298,14 @@ body {
 .prose-article h3 {
   font-family: var(--font-display), Georgia, serif;
   color: #1C1C1E;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  /* El cuerpo usa 1.8; un subtítulo con esa interlínea se desarma. */
+  line-height: 1.25;
+  text-wrap: balance;
 }
-.prose-article h1 { font-size: 2rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 1rem; }
+.prose-article h1 { font-size: 2rem; font-weight: var(--t-head-weight); letter-spacing: -0.015em; margin-top: 2.5rem; margin-bottom: 1rem; }
 .prose-article h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
-.prose-article h3 { font-size: 1.25rem; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.prose-article h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
 .prose-article p { margin-bottom: 1.25rem; max-width: 65ch; text-align: justify; }
 .prose-article a { color: #6B1D3A; text-decoration: underline; text-underline-offset: 2px; }
 .prose-article a:hover { color: #8B2252; }
@@ -162,7 +313,7 @@ body {
   border-left: 3px solid #6B1D3A;
   padding-left: 1.25rem;
   margin: 1.5rem 0;
-  font-style: italic;
+  font-style: normal;
   color: #1C1C1E80;
 }
 .prose-article ul,
@@ -171,6 +322,19 @@ body {
   margin-bottom: 1.25rem;
 }
 .prose-article li { margin-bottom: 0.375rem; text-align: justify; }
+/* El texto justificado necesita división silábica para no abrir calles entre
+   palabras; en pantallas angostas ni así alcanza, y se alinea a la izquierda. */
+.prose-article p,
+.prose-article li {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+@media (max-width: 639px) {
+  .prose-article p,
+  .prose-article li {
+    text-align: left;
+  }
+}
 .prose-article code {
   background: #1C1C1E0A;
   padding: 0.15rem 0.4rem;
@@ -437,11 +601,11 @@ html {
    no penaliza el LCP. El bloque de prefers-reduced-motion de abajo las salta
    al estado final automáticamente (animation-fill-mode: both). */
 @keyframes gc-rise {
-  from { opacity: 0; transform: translateY(28px); }
+  from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 .gc-rise {
-  animation: gc-rise 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation: gc-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* Solo transform (sin opacidad): para el elemento LCP — la foto del fundador.
