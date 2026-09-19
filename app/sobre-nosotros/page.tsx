@@ -137,6 +137,7 @@ const AREAS = [
 const ABOGADOS = [
   {
     slug: "oscar-gonzalez",
+    portrait: "/images/equipo/oscar-gonzalez-oficina.jpg",
     name: "Dr. Óscar Eduardo González Camacho",
     role: "Fundador y Director",
     desc: "Ex-Magistrado de la Sala Primera (2002–2014). Co-redactor del CPCA.",
@@ -297,18 +298,16 @@ export default function SobreNosotros() {
             {/* II · El fundador */}
             <section id="fundador" className="scroll-mt-32">
               <SectionTitle>¿Quién fundó Corporación GC?</SectionTitle>
-              {/* Foto de la capacitación a ELEINMSA (junio de 2026), a lo ancho
-                  y en proporción 3:2 para que el doctor y la diapositiva quepan
-                  enteros. */}
+              {/* La misma foto del hero de la portada, a lo ancho y en su
+                  proporción original (3:2). */}
               <figure className="mb-10 md:mb-12">
                 <div className="relative aspect-[3/2] overflow-hidden bg-cream/[0.04]">
                   <Image
-                    src="/images/oscar-imsa-ponencia.jpg"
-                    alt="El Dr. Óscar Eduardo González Camacho durante su ponencia sobre el ajuste del precio y el equilibrio económico del contrato"
+                    src="/images/oscar-gonzalez-oficina.png"
+                    alt="Dr. Óscar Eduardo González Camacho, fundador y director de Corporación GC"
                     fill
                     sizes="(min-width: 1100px) 760px, 100vw"
                     className="object-cover"
-                    style={{ objectPosition: "50% 60%" }}
                   />
                   <span
                     aria-hidden="true"
@@ -316,8 +315,7 @@ export default function SobreNosotros() {
                   />
                 </div>
                 <figcaption className="mt-3 text-[13px] leading-snug text-cream/65">
-                  El Dr. González Camacho en la capacitación sobre el equilibrio económico
-                  de los contratos públicos que impartió a ELEINMSA, junio de 2026.
+                  Dr. Óscar Eduardo González Camacho, fundador y director de Corporación GC.
                 </figcaption>
               </figure>
               <div>
@@ -403,7 +401,7 @@ export default function SobreNosotros() {
                       <Link href={`/abogados/${a.slug}`} className="group block outline-none">
                         <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-gold group-focus-visible:outline-2">
                           <Image
-                            src={`/images/equipo/${a.slug}.jpg`}
+                            src={"portrait" in a && a.portrait ? a.portrait : `/images/equipo/${a.slug}.jpg`}
                             alt={`Retrato de ${a.name}`}
                             fill
                             sizes="(min-width: 1280px) 240px, (min-width: 640px) 34vw, 45vw"
