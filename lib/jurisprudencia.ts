@@ -3661,7 +3661,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         titulo: "Su impacto",
         parrafos: [
           "Hemos encontrado su cita en el texto de al menos 255 resoluciones, dictadas entre 2009 y 2026. La jurisdicción contencioso-administrativa reúne 212 —el Tribunal Contencioso Administrativo, con la Sección Sexta a la cabeza, y su Tribunal de Casación—, y la Sala Primera la cita en 39. También aparece en la Sala Tercera, en la Sala Constitucional y en un tribunal de trabajo.",
-          "Su uso no ha bajado en quince años: 2024 es el año de mayor cita, con 28 resoluciones, y desde 2020 se acumulan 119, casi la mitad de todas. El compendio de don Óscar registraba 158 citas; la búsqueda sobre las fuentes completas encontró casi cien más.",
+          "Su uso no ha bajado en quince años: 2024 es el año de mayor cita, con 28 resoluciones, y desde 2020 se acumulan 119, casi la mitad de todas.",
           "Fuera de los tribunales la citan catorce pronunciamientos, y doce son actas del Consejo Superior del Poder Judicial, que es el órgano que resuelve en sede administrativa los reclamos contra el Estado por error judicial: la sentencia se convirtió en el criterio con que el propio Poder Judicial mide su responsabilidad. La Procuraduría la usó en un informe a la Sala Constitucional y la Corte Plena la citó en 2013.",
           "En la doctrina la citan la Revista Judicial 138, de la Escuela Judicial, que la ubica entre los enfoques posibles sobre la responsabilidad del Estado juez, y una tesis de la Universidad de Costa Rica de 2024."
         ],
