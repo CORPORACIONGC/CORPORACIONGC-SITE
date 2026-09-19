@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { CitasExplorador } from "@/components/jurisprudencia/CitasExplorador";
+import { ConNegritas } from "@/components/jurisprudencia/ConNegritas";
 import {
   Anclajes,
   Comparacion,
@@ -209,7 +210,9 @@ export default async function SentenciaDestacadaPage({
                 ].map(([t, x]) => (
                   <div key={t} className="border-b border-cream/10 py-7 last:border-b-0 md:border-b-0 md:px-8 md:first:pl-0 md:last:pr-0">
                     <h2 className="type-label text-cream/65">{t}</h2>
-                    <p className="mt-3 text-[15px] leading-[1.7] text-cream/80">{x}</p>
+                    <p className="mt-3 text-[15px] leading-[1.7] text-cream/80">
+                      <ConNegritas texto={x} />
+                    </p>
                   </div>
                 ))}
               </section>
@@ -512,8 +515,12 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
         <Anclajes anclajes={v.anclajes.filter((a) => esLiteral(sentencia, a.literal))} />
       )}
 
-      {sec.visual === "comparacion" && v.comparacion && (
-        <Comparacion columnas={v.comparacion.filter((c) => esLiteral(sentencia, c.literal))} />
+      {sec.visual === "comparacion" && (v.comparaciones?.[sec.id] ?? v.comparacion) && (
+        <Comparacion
+          columnas={(v.comparaciones?.[sec.id] ?? v.comparacion ?? []).filter((c) =>
+            esLiteral(sentencia, c.literal),
+          )}
+        />
       )}
 
       {sec.visual === "periodo" && v.periodo && <Periodo periodo={v.periodo} />}

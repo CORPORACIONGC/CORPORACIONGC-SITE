@@ -3,7 +3,7 @@
 /* Explorador de áreas de práctica.
    En lugar de una cuadrícula de tarjetas iguales, las 32 áreas se ordenan en
    cinco grupos de práctica: a la izquierda, los grupos en tipografía ligera
-   grande (pestañas verticales); a la derecha, las áreas del grupo elegido,
+   grande (pestañas verticales, sin conteo); a la derecha, las áreas del grupo elegido,
    con nombre y descripción en filas separadas por filetes. Pasar el cursor,
    hacer clic o moverse con las flechas del teclado cambia de grupo. En móvil
    los grupos son una tira de pestañas deslizable. Todas las áreas quedan en
@@ -159,10 +159,7 @@ export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
               >
                 {g.title}
               </span>
-              <span className="flex items-center gap-3">
-                <span className="text-[13px] tabular-nums text-cream/65">
-                  {String(g.items.length).padStart(2, "0")}
-                </span>
+              <span className="flex items-center">
                 <ArrowRight
                   size={16}
                   aria-hidden="true"
@@ -201,7 +198,6 @@ export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
               }`}
             >
               {g.title}
-              <span className="ml-1.5 text-[13px] font-normal tabular-nums text-cream/65">{g.items.length}</span>
               <span
                 aria-hidden="true"
                 className={`absolute inset-x-0 -bottom-px h-0.5 bg-burgundy transition-opacity duration-300 dark:bg-gold ${

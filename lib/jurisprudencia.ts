@@ -80,6 +80,9 @@ export type VisualesSentencia = {
     citation: string;
   }[];
   periodo?: { desde: string; hasta: string; tramo: string; parametro: string };
+  /** Comparaciones por id de sección, cuando la página tiene más de una
+   *  (si falta la de una sección, se usa `comparacion`). */
+  comparaciones?: Record<string, NonNullable<VisualesSentencia["comparacion"]>>;
   /** Tres o cuatro formas de un concepto, en prosa de la firma, por id de
    *  la sección que las muestra. */
   formas?: Record<string, { titulo: string; texto: string }[]>;
@@ -259,11 +262,11 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
 
     sintesisPortada: {
       caso:
-        "Una arrendataria de cinco locales comerciales en San José demandó a la propietaria del edificio, que simuló la venta del inmueble para no devolvérselos después de una remodelación. Obtuvo una indemnización por el derecho de llave y el lucro cesante; cuando después pidió actualizar esas sumas a su valor presente, el Tribunal se lo negó con base en la jurisprudencia nominalista.",
+        "Una arrendataria de cinco locales comerciales en San José demandó a la propietaria del edificio, que **simuló la venta del inmueble** para no devolvérselos después de una remodelación. Obtuvo una indemnización por el derecho de llave y el lucro cesante; cuando después pidió actualizar esas sumas a su valor presente, el Tribunal se lo negó con base en la jurisprudencia nominalista.",
       analisis:
-        "La Sala Primera abandonó quince años de doctrina según la cual la indexación solo procedía si las partes la habían pactado. Con fundamento directo en los artículos 41, 33 y 49 de la Constitución, sostuvo que reparar exige restituir el valor real de lo debido, distinguió las obligaciones dinerarias de las de valor y señaló el Índice de Precios al Consumidor como parámetro.",
+        "La Sala Primera **abandonó quince años de doctrina** según la cual la indexación solo procedía si las partes la habían pactado. Con fundamento directo en los **artículos 41, 33 y 49 de la Constitución**, sostuvo que **reparar exige restituir el valor real de lo debido**, distinguió las obligaciones dinerarias de las de valor y señaló el Índice de Precios al Consumidor como parámetro.",
       impacto:
-        "La Sala Primera la reiteró en 2005, la Sala Segunda la llevó a los procesos laborales y la Sala Constitucional avaló esa extensión en 2012; en lo contencioso-administrativo, el Código de 2006 hizo de la actualización un deber de toda condena dineraria. Hoy la citan al menos 132 resoluciones de 16 despachos. Su regla práctica sigue intacta: la indexación se pide desde la demanda.",
+        "La Sala Primera la reiteró en 2005, la Sala Segunda la llevó a los procesos laborales y la Sala Constitucional avaló esa extensión en 2012; en lo contencioso-administrativo, el Código de 2006 hizo de la actualización un deber de toda condena dineraria. Hoy la citan **al menos 132 resoluciones de 16 despachos**. Su regla práctica sigue intacta: **la indexación se pide desde la demanda**.",
     },
 
     fragmentosPortada: [
@@ -730,9 +733,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       citation: "Considerando VII"
     },
     sintesisPortada: {
-      caso: "Un peatón murió atropellado al cruzar la Autopista General Cañas, en un punto donde los vecinos pedían un puente peatonal desde 1986. Iba en alto estado de ebriedad. Su viuda demandó al Estado, y el Juzgado y el Tribunal rechazaron la demanda por culpa de la víctima.",
-      analisis: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración. Definió el funcionamiento anormal, lo distinguió de la ilicitud y de la antijuridicidad, y declaró que la inactividad también obliga a reparar. La embriaguez de la víctima redujo la condena a la mitad, sin eliminarla.",
-      impacto: "Al menos 477 resoluciones la citan, y 2024 y 2025 son los años de mayor uso. La aplican los tribunales contencioso-administrativos, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
+      caso: "Un peatón murió atropellado al cruzar la Autopista General Cañas, en un punto donde los vecinos **pedían un puente peatonal desde 1986**. Iba en alto estado de ebriedad. Su viuda demandó al Estado, y el Juzgado y el Tribunal rechazaron la demanda por culpa de la víctima.",
+      analisis: "La Sala Primera ordenó el **régimen de responsabilidad objetiva** de la Administración. Definió el funcionamiento anormal, lo distinguió de la ilicitud y de la antijuridicidad, y declaró que **la inactividad también obliga a reparar**. La embriaguez de la víctima **redujo la condena a la mitad**, sin eliminarla.",
+      impacto: "**Al menos 477 resoluciones** la citan, y **2024 y 2025 son los años de mayor uso**. La aplican los tribunales contencioso-administrativos, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
     },
     fragmentosPortada: [
       {
@@ -1248,33 +1251,39 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       {
         numero: "Voto 263-1990",
         fecha: "22-08-1990",
+        nexusId: "sen-1-0034-150731",
         nota: "Aplicó antes el reparto porcentual por responsabilidad concurrente."
       },
       {
         numero: "Voto 132-1991",
         fecha: "14-08-1991",
+        nexusId: "sen-1-0034-878",
         nota: "Carácter objetivo de la responsabilidad bajo la Ley General de la Administración Pública."
       },
       {
         numero: "Voto 25-F-1999",
         fecha: "22-01-1999",
+        nexusId: "sen-1-0034-5064",
         nota: "Eximentes taxativas, cuya prueba corresponde a la Administración."
       },
       {
         numero: "Voto 252-F-2001",
         fecha: "28-03-2001",
+        nexusId: "sen-1-0034-162277",
         nota: "Causa próxima, adecuada y eficiente; eximentes de responsabilidad."
       },
       {
         organo: "Sala Constitucional",
         numero: "Voto 11519-2003",
         fecha: "10-10-2003",
+        nexusId: "sen-1-0007-251643",
         nota: "Obligación objetiva del Estado de tutelar la vida; soluciones peatonales."
       },
       {
         organo: "Sala Constitucional",
         numero: "Voto 5207-2004",
         fecha: "18-05-2004",
+        nexusId: "sen-1-0007-264576",
         nota: "Fundamento constitucional de la responsabilidad de las administraciones públicas."
       }
     ],

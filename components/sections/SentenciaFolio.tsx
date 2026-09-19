@@ -3,9 +3,10 @@
 /* La sentencia destacada de la portada, presentada como un folio: una hoja
    con sombra sobre un pequeño expediente, que se lee como el documento que
    es. Arriba, el encabezado de la resolución. Debajo, dos voces separadas:
-   a la izquierda, tres síntesis breves en prosa de la firma (el caso, el
-   análisis y su impacto); a la derecha, los pasajes literales de la Sala, en
-   cursiva. Al pie, la fórmula de redacción y los enlaces.
+   a la izquierda, un bloque de prosa de la firma en tres párrafos (el caso,
+   el análisis y su impacto), sin rótulos y con las frases clave en
+   negrita; a la derecha, los pasajes literales de la Sala, en cursiva. Al
+   pie, la fórmula de redacción y los enlaces.
 
    Jerarquía: el titular de la sección es el único grande. El título de cada
    sentencia es el encabezado del documento, a menor escala y centrado dentro
@@ -19,6 +20,7 @@
 import { useId, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ArrowSquareOut } from "@phosphor-icons/react";
+import { ConNegritas } from "@/components/jurisprudencia/ConNegritas";
 
 export type SentenciaPortada = {
   slug: string;
@@ -55,13 +57,7 @@ function Comillas({ children }: { children: string }) {
 }
 
 function Folio({ s }: { s: SentenciaPortada }) {
-  const sintesis = s.sintesis
-    ? [
-        { titulo: "El caso", texto: s.sintesis.caso },
-        { titulo: "El análisis", texto: s.sintesis.analisis },
-        { titulo: "Impacto en la jurisprudencia", texto: s.sintesis.impacto },
-      ]
-    : [];
+  const sintesis = s.sintesis ? [s.sintesis.caso, s.sintesis.analisis, s.sintesis.impacto] : [];
 
   return (
     <article className="gc-papel gc-panel-in rounded-md px-6 py-10 sm:px-10 md:px-14 md:py-14" data-active="true">
@@ -96,12 +92,11 @@ function Folio({ s }: { s: SentenciaPortada }) {
       {/* Dos voces: la síntesis de la firma y el texto de la Sala */}
       <div className="mt-10 grid gap-10 border-t border-cream/10 pt-10 md:mt-12 md:pt-12 lg:grid-cols-2 lg:gap-0 lg:divide-x lg:divide-cream/10">
         {sintesis.length > 0 && (
-          <div className="space-y-7 lg:pr-12">
+          <div className="space-y-5 lg:pr-12">
             {sintesis.map((x) => (
-              <section key={x.titulo}>
-                <h4 className="type-label text-cream/65">{x.titulo}</h4>
-                <p className="mt-2.5 text-[15px] leading-[1.7] text-cream/80 text-pretty">{x.texto}</p>
-              </section>
+              <p key={x.slice(0, 32)} className="text-base leading-[1.7] text-cream/80 text-pretty">
+                <ConNegritas texto={x} />
+              </p>
             ))}
           </div>
         )}
