@@ -328,9 +328,9 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     name: "Dr. Óscar Eduardo González Camacho",
     initials: "OG",
     role: "Fundador y Director",
-    seoTitle: "Dr. Óscar González Camacho · Fundador y Director",
+    seoTitle: "Dr. Óscar González Camacho · Exmagistrado de la Sala Primera",
     seoDescription:
-      "Ex-Magistrado de la Sala Primera, co-redactor del CPCA. Dr. en Derecho por la Universidad de Alcalá. 38+ años de trayectoria en Derecho Público en Costa Rica.",
+      "Ex-Magistrado de la Sala Primera (2002–2014), co-redactor del CPCA y Doctor en Derecho por Alcalá. Sus sentencias sobre responsabilidad del Estado, caducidad y fraude bancario, analizadas.",
     ogTitle: "Dr. Óscar González Camacho — Fundador, Corporación GC",
     ogDescription:
       "Ex-Magistrado de la Corte Suprema (2002-2014), co-redactor del Código Procesal Contencioso Administrativo. Doctor en Derecho por Alcalá, Cum Laude. Litigante de mayor calado en lo contencioso CR.",

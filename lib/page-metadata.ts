@@ -258,12 +258,16 @@ export function buildJurisprudenciaMetadata(
 ): Metadata {
   if (!sentencia) return {};
 
-  const seoTitle = `${sentencia.titulo} · ${sentencia.numero}`;
+  /* El nombre del magistrado que redactó el fallo va en el título: es como
+     buscan estas sentencias quienes conocen su obra. Título absoluto, sin la
+     marca de la plantilla, para que el nombre no quede fuera del corte. */
+  const numeroCorto = sentencia.numero.replace(/^Resolución N° /, "Voto ");
+  const seoTitle = `${sentencia.titulo} · ${numeroCorto} · Óscar González Camacho`;
   const ogTitle = `${sentencia.titulo} | ${sentencia.numero} | Corporación GC`;
   const publishedTime = spanishDateToISO(sentencia.fecha);
 
   return {
-    title: seoTitle,
+    title: { absolute: seoTitle },
     description: sentencia.metaDescription,
     alternates: { canonical: `/jurisprudencia-destacada/${slug}` },
     openGraph: og({

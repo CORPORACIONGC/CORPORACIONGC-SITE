@@ -107,6 +107,9 @@ export default async function AttorneyProfile({
         "https://derecho.ucr.ac.cr/docentes/gonzalez-camacho-oscar",
         "https://www.abogados.or.cr/consultaagremiados/",
       ],
+      /* Variantes con que se busca su nombre, con y sin tilde y con el
+         segundo nombre. */
+      alternateName: ["Óscar González Camacho", "Oscar González Camacho", "Óscar Eduardo González Camacho"],
     },
     "khevin-sanchez": {
       carnet: "37920",
