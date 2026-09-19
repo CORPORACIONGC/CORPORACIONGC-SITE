@@ -57,8 +57,9 @@ export type SeccionAnalisis = {
   nota?: string;
 };
 
-/** Enlace a una fuente oficial: un voto en Nexus o una norma en SINALEVI. */
-export type EnlaceFuente = { etiqueta: string; nexusId?: string; scijId?: number };
+/** Enlace a una fuente oficial: un voto en Nexus, una norma en SINALEVI o,
+ *  con `url`, otra fuente oficial (un dictamen de la Procuraduría en SINALEVI). */
+export type EnlaceFuente = { etiqueta: string; nexusId?: string; scijId?: number; url?: string };
 
 /** Datos de los elementos visuales. Toda frase marcada `literal` debe ser
  *  copia exacta de un pasaje; la página la descarta si no lo es. */
@@ -266,7 +267,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       analisis:
         "La Sala Primera **abandonó quince años de doctrina** según la cual la indexación solo procedía si las partes la habían pactado. Con fundamento directo en los **artículos 41, 33 y 49 de la Constitución**, sostuvo que **reparar exige restituir el valor real de lo debido**, distinguió las obligaciones dinerarias de las de valor y señaló el Índice de Precios al Consumidor como parámetro.",
       impacto:
-        "La Sala Primera la reiteró en 2005, la Sala Segunda la llevó a los procesos laborales y la Sala Constitucional avaló esa extensión en 2012; en lo contencioso-administrativo, el Código de 2006 hizo de la actualización un deber de toda condena dineraria. Hoy la citan **al menos 132 resoluciones de 16 despachos**. Su regla práctica sigue intacta: **la indexación se pide desde la demanda**.",
+        "La Sala Primera la reiteró en 2005, la Sala Segunda la llevó a los procesos laborales y la Sala Constitucional avaló esa extensión en 2012; en lo contencioso-administrativo, el Código de 2006 hizo de la actualización un deber de toda condena dineraria. Hoy la citan **al menos 139 resoluciones de 16 despachos**. Su regla práctica sigue intacta: **la indexación se pide desde la demanda**.",
     },
 
     fragmentosPortada: [
@@ -525,7 +526,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Más de veinte años después, la sentencia sigue en uso. Hemos encontrado su cita en el texto de al menos 132 resoluciones de 16 despachos, dictadas entre 2005 y 2026: el Tribunal Contencioso Administrativo, las Salas Primera, Segunda y Constitucional, y tribunales civiles, de trabajo, de familia y agrarios.",
+          "Más de veinte años después, la sentencia sigue en uso. Hemos encontrado su cita en el texto de al menos 139 resoluciones de 16 despachos, dictadas entre 2005 y 2026: el Tribunal Contencioso Administrativo, las Salas Primera, Segunda y Constitucional, y tribunales civiles, de trabajo, de familia y agrarios.",
           "Es el alcance de un fallo que nació en un pleito entre una arrendataria y la dueña de un edificio, y que además negó lo que la recurrente pedía. Cada vez que un tribunal actualiza una condena dineraria a su valor presente sin que las partes lo hayan pactado, aplica una regla que se escribió aquí, directamente o a través de la ley y de los fallos que la siguieron.",
         ],
         visual: "citas",
@@ -1377,7 +1378,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     sintesisPortada: {
       caso: "La Superintendencia de Pensiones abrió en 2004 un procedimiento sancionador contra la operadora BN Vital y lo dejó **paralizado más de dos años** después de la audiencia oral. Luego le impuso una multa de ¢26,8 millones, que el Tribunal Contencioso Administrativo **anuló por caducidad**.",
       analisis: "La redacción original del artículo 340 de la LGAP solo preveía la caducidad del procedimiento promovido por el interesado. La Sala la extendió **por integración a los procedimientos de oficio**, con fundamento en la **igualdad, la justicia pronta y la seguridad jurídica**, y fijó que opera **de pleno derecho** y sin extinguir la competencia.",
-      impacto: "La reforma del CPCA, vigente desde 2008, ya recogía esa solución para los procedimientos nuevos, y lo que hoy se cita son sus reglas de funcionamiento. **Al menos 158 resoluciones** la citan. En 2016 la Sala Primera le fijó un límite: **dictado el acto final, la caducidad ya no procede**."
+      impacto: "La reforma del CPCA, vigente desde 2008, ya recogía esa solución para los procedimientos nuevos, y lo que hoy se cita son sus reglas de funcionamiento. **Al menos 160 resoluciones** la citan. En 2016 la Sala Primera le fijó un límite: **dictado el acto final, la caducidad ya no procede**."
     },
     fragmentosPortada: [
       {
@@ -1680,7 +1681,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Hemos encontrado su cita en el texto de al menos 158 resoluciones, dictadas entre 2011 y 2026. La mayor parte proviene del Tribunal Contencioso Administrativo y del Tribunal de Casación de lo Contencioso Administrativo; también la citan la Sala Primera, la Sala Segunda, el Tribunal Agrario y la Sala Constitucional.",
+          "Hemos encontrado su cita en el texto de al menos 160 resoluciones, dictadas entre 2011 y 2026. La mayor parte proviene del Tribunal Contencioso Administrativo y del Tribunal de Casación de lo Contencioso Administrativo; también la citan la Sala Primera, la Sala Segunda, el Tribunal Agrario y la Sala Constitucional.",
           "Su uso alcanzó el máximo en 2015, con 27 resoluciones, y se mantiene: 11 en 2023, 8 en 2024 y 10 en 2025. La reforma del CPCA había resuelto ya la pregunta principal para los procedimientos iniciados después de 2008. Lo que se sigue citando son sus reglas de funcionamiento: los efectos de pleno derecho, la conservación de la competencia, la distinción con los plazos ordenatorios y el límite del acto final."
         ],
         visual: "citas"
@@ -1945,7 +1946,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     sintesisPortada: {
       caso: "En 2007 y 2008, un tercero entró a la banca por internet de una clienta del Banco de Costa Rica con su usuario y su clave, y le sustrajo **¢1,49 millones y $4.379**. El banco rechazó el reclamo porque **la operación se hizo con una clave válida**, y el Tribunal Contencioso Administrativo lo condenó a reintegrar el dinero.",
       analisis: "La Sala encuadró la relación en la **Ley del Consumidor** y aplicó la **teoría del riesgo creado**. La plataforma del banco no fue vulnerada, pero el riesgo estaba en **el mecanismo que identifica al cliente**, que forma parte del servicio. El banco solo se libera si **prueba una causa eximente**, y su reglamento interno no puede trasladar esa prueba al cliente.",
-      impacto: "**Al menos 270 resoluciones** la citan, cerca de la mitad en litigios ajenos a la banca. Desde 2022 la Sala Primera usa el mismo marco para liberar al banco cuando el cliente **entregó sus claves a un estafador**, y en 2026 la **Ley 10889** escribió en el artículo 35 de la Ley del Consumidor la responsabilidad objetiva de las entidades financieras por la sustracción de fondos."
+      impacto: "**Al menos 271 resoluciones** la citan, cerca de la mitad en litigios ajenos a la banca. Desde 2022 la Sala Primera usa el mismo marco para liberar al banco cuando el cliente **entregó sus claves a un estafador**, y en 2026 la **Ley 10889** escribió en el artículo 35 de la Ley del Consumidor la responsabilidad objetiva de las entidades financieras por la sustracción de fondos."
     },
     fragmentosPortada: [
       {
@@ -2405,9 +2406,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Hemos encontrado su cita en el texto de al menos 270 resoluciones, dictadas entre 2009 y 2026. La mayoría proviene del Tribunal Contencioso Administrativo, que conoce las demandas contra los bancos públicos, y de la Sala Primera, con 98 resoluciones. También la citan el Tribunal de Casación de lo Contencioso Administrativo, tribunales civiles y penales, la Sala Segunda y la Sala Constitucional.",
+          "Hemos encontrado su cita en el texto de al menos 271 resoluciones, dictadas entre 2009 y 2026. La mayoría proviene del Tribunal Contencioso Administrativo, que conoce las demandas contra los bancos públicos, y de la Sala Primera, con 99 resoluciones. También la citan el Tribunal de Casación de lo Contencioso Administrativo, tribunales civiles y penales, la Sala Segunda y la Sala Constitucional.",
           "Cerca de la mitad resuelve demandas contra bancos y otras entidades financieras. El resto la invoca como doctrina general de la responsabilidad objetiva. El pasaje sobre el riesgo anormal aparece en el texto de más de un centenar de resoluciones, y el de la transferencia patrimonial automática, en más de un tercio.",
-          "Su uso tuvo dos momentos. Entre 2010 y 2012 la citaron 77 resoluciones. Desde 2022 volvió a crecer: 98 resoluciones entre 2022 y 2025, con 31 en 2024."
+          "Su uso tuvo dos momentos. Entre 2010 y 2012 la citaron 77 resoluciones. Desde 2022 volvió a crecer: 99 resoluciones entre 2022 y 2025, con 32 en 2024."
         ],
         visual: "citas"
       }
@@ -2677,6 +2678,565 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-442609",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     metaDescription: "Resolución N° 300-F-S1-2009 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Aplicó la responsabilidad objetiva de la Ley del Consumidor al fraude en la banca por internet: el banco responde por el riesgo del servicio, incluida la identificación del cliente, salvo causa eximente probada."
+  },
+  /* 1426-F-S1-2012. Pasajes copiados del texto de Nexus. */
+  {
+    slug: "caducidad-de-la-accion",
+    numero: "Resolución N° 1426-F-S1-2012",
+    fecha: "23 de octubre de 2012",
+    fechaCorta: "23 Oct 2012",
+    fechaISO: "2012-10-23",
+    hora: "10:10 horas",
+    expediente: "11-002378-1027-CA",
+    tribunal: "Sala Primera de la Corte Suprema de Justicia",
+    area: "Derecho Administrativo",
+    materia: "Caducidad de la acción y actos de efectos continuados",
+    badge: {
+      type: "referencia",
+      label: "Sentencia de Referencia"
+    },
+    titulo: "El acto que se agota en un solo momento",
+    subtitulo: "La Sala Primera definió cuándo un acto administrativo tiene efectos continuados: las consecuencias que se derivan de una situación ya definida dejan el plazo para demandar donde estaba, y la caducidad la examina el juez de oficio.",
+    pullQuote: {
+      texto: "Ahora bien, las distintas consecuencias que se puedan derivar de ello, como la pretendida imposibilidad de acceder a estudios de postgrado, o bien, eventuales ingresos adicionales, no constituyen efectos jurídicos y directos dispuestos por el acto administrativo que resolvió la gestión del petente, sino, que derivan, precisamente, de esa consolidación del estatus académico otorgado como una repercusión consecuencial, secundaria y permanente en el tiempo, pero no de incidencia repetida.",
+      citation: "Considerando IX"
+    },
+    sintesisPortada: {
+      caso: "En 1987 la Universidad de Costa Rica equiparó a licenciatura el título de un ingeniero formado en la antigua Unión Soviética. En 2007 él pidió la equiparación como maestría; la Universidad la negó y le notificó la negativa en **febrero de 2008**. Demandó en **mayo de 2011**, y el Tribunal Contencioso Administrativo declaró **de oficio** caducada la acción.",
+      analisis: "La Sala confirmó que la caducidad **se examina de oficio** y que el régimen aplicable lo fija **la firmeza del acto**. Distinguió el acto de **efecto instantáneo**, que se agota en un solo momento, del de **efectos continuados**, que incide una y otra vez, y precisó que las consecuencias de un estatus ya definido **dejan el plazo donde estaba**.",
+      impacto: "**Al menos 187 resoluciones** la citan, y cuatro de cada cinco son de 2020 en adelante. Su definición decide cuatro plazos: la demanda, la lesividad, la anulación de oficio y la revisión municipal. Fuera de los tribunales la citan **diez dictámenes de la Procuraduría** y la Corte Plena."
+    },
+    fragmentosPortada: [
+      {
+        texto: "aquellos actos de efecto instantáneo en los que su incidencia o efecto se agota en un solo momento, precisamente en el que varía, en forma positiva o negativa, el conjunto de derechos, potestades, obligaciones, deberes, y cargas de las personas.",
+        citation: "Considerando IX"
+      },
+      {
+        texto: "Esta constituye un presupuesto esencial para que la controversia pueda ser conocida por los órganos jurisdiccionales, ya que una vez traspasado ese umbral temporal, la acción mediante la que se solicita la actuación e intervención judicial decae, dado que, incluso, es irrenunciable para la parte.",
+        citation: "Considerando IV"
+      },
+      {
+        texto: "En la línea de lo expuesto en el considerando anterior, el acto impugnado no es la causa de las afectaciones aducidas, sino que tales efectos son derivación del estatus jurídico que se perpetuó una vez resuelta la gestión de homologación.",
+        citation: "Considerando IX"
+      }
+    ],
+    contexto: [
+      "Desde 2008, el Código Procesal Contencioso-Administrativo da un año para demandar la nulidad de un acto administrativo. Si el acto tiene efectos continuados, el año corre desde que esos efectos cesan. La ley, sin embargo, no dice qué es un efecto continuado.",
+      "La sentencia 1426-F-S1-2012, redactada por el magistrado Óscar Eduardo González Camacho, dio la definición que desde entonces usan los tribunales, la Procuraduría y la Corte Plena."
+    ],
+    pasajes: [
+      {
+        titulo: "La caducidad, de oficio",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "En este sentido, es importante destacar que, a diferencia de la prescripción, que puede ser renunciada expresa o tácitamente, la caducidad de la acción no se encuentra sujeta al principio rogatorio, y por ende, su análisis puede efectuarse de manera oficiosa.",
+            destacar: [
+              "no se encuentra sujeta al principio rogatorio"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Un presupuesto esencial",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Esta constituye un presupuesto esencial para que la controversia pueda ser conocida por los órganos jurisdiccionales, ya que una vez traspasado ese umbral temporal, la acción mediante la que se solicita la actuación e intervención judicial decae, dado que, incluso, es irrenunciable para la parte.",
+            destacar: [
+              "presupuesto esencial"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El plazo del Código",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "En este sentido, con la excepción contenida en el artículo 40 respecto de la inaplicabilidad futura de los actos cuyos efectos sean continuados, el CPCA dispone un plazo máximo para incoar el proceso de un año, momento a partir del cual la demanda resulta inadmisible, tal y como se consigna en el precepto 92 del mismo cuerpo normativo."
+          }
+        ]
+      },
+      {
+        titulo: "La firmeza decide",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Así, la ultractividad de la redacción original del precepto 175 previamente citado, y por ende, del plazo de caducidad de cuatro años, únicamente cobija aquellos actos que hayan adquirido firmeza antes del 2008. Es decir, el supuesto de hecho determinante para la aplicación del transitorio mencionado es el momento a partir del cual se puede considerar que el acto adquirió firmeza.",
+            destacar: [
+              "el momento a partir del cual se puede considerar que el acto adquirió firmeza"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La comunicación del acto",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "En este sentido, y dado que la eficacia de los actos, salvo que concedan derechos al particular, se encuentra supeditada a la comunicación (art. 140 de la Ley General de la Administración Pública), lo cierto es que la firmeza del acto sobrevino cuando ya estaba vigente el CPCA."
+          }
+        ]
+      },
+      {
+        titulo: "Efectos continuados",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "este supuesto es propio de aquellas relaciones jurídicas de duración, entendiendo que opera cuando el acto incide reiteradamente en la esfera jurídica del particular, ya sea creando, modificado o extinguiendo durante ese período las relaciones o situaciones jurídicas que integran dicha esfera jurídica.",
+            destacar: [
+              "incide reiteradamente en la esfera jurídica del particular"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Efecto instantáneo",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "aquellos actos de efecto instantáneo en los que su incidencia o efecto se agota en un solo momento, precisamente en el que varía, en forma positiva o negativa, el conjunto de derechos, potestades, obligaciones, deberes, y cargas de las personas.",
+            destacar: [
+              "se agota en un solo momento"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Consecuencias que no son efectos",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "Ahora bien, las distintas consecuencias que se puedan derivar de ello, como la pretendida imposibilidad de acceder a estudios de postgrado, o bien, eventuales ingresos adicionales, no constituyen efectos jurídicos y directos dispuestos por el acto administrativo que resolvió la gestión del petente, sino, que derivan, precisamente, de esa consolidación del estatus académico otorgado como una repercusión consecuencial, secundaria y permanente en el tiempo, pero no de incidencia repetida.",
+            destacar: [
+              "una repercusión consecuencial, secundaria y permanente en el tiempo, pero no de incidencia repetida"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La causa de las afectaciones",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "En la línea de lo expuesto en el considerando anterior, el acto impugnado no es la causa de las afectaciones aducidas, sino que tales efectos son derivación del estatus jurídico que se perpetuó una vez resuelta la gestión de homologación."
+          }
+        ]
+      },
+      {
+        titulo: "El plazo vencido",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "A partir de las razones expuestas, el plazo máximo para interponer este proceso jurisdiccional contra el oficio ORI-R-1437-2007 feneció en febrero de 2009, y la demanda se interpuso el 2 de mayo de 2011, lo que confirma lo resuelto, y obliga al rechazo del reparo."
+          }
+        ]
+      },
+      {
+        titulo: "Un acto firme y consentido",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "Dicha omisión consolidó lo resuelto en aquel entonces, por lo que la presentación del segundo procedimiento administrativo, así como este proceso, resultan improcedentes, en la medida en que pretenden modificar un acto administrativo firme y consentido.",
+            destacar: [
+              "un acto administrativo firme y consentido"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La nota sobre las costas",
+        citation: "Nota de los magistrados González Camacho y Escoto Fernández",
+        parrafos: [
+          {
+            texto: "Sin embargo, en parecer de los suscritos, la indebida inaplicación de los preceptos que permiten la exoneración de costas, infringe, sin duda, el Ordenamiento Jurídico y, en concreto, las normas que la autorizan, ya sea por error o inadecuada apreciación de los jueces en el conflicto específico. En ese tanto, aunque se trate de una facultad, es lo cierto que no se encuentra inmune al control casacional, pues tanto en su ejercicio como en su inaplicación, puede operar una violación de ley, y en esa medida, la indebida omisión no es ni debe ser, sinónimo de arbitrariedad, en tal caso, cometida por el propio Juzgador.",
+            destacar: [
+              "no se encuentra inmune al control casacional"
+            ]
+          }
+        ]
+      }
+    ],
+    analisis: [
+      {
+        id: "el-caso",
+        titulo: "El caso",
+        parrafos: [
+          "En diciembre de 1987, la Universidad de Costa Rica reconoció y equiparó al grado de licenciatura el título de ingeniero eléctrico que un profesional había obtenido en un instituto politécnico de la antigua Unión Soviética. En abril de 2007, él pidió que el mismo título se equiparara al grado de maestría, al amparo del convenio de cooperación cultural y científica entre ambos países.",
+          "La Universidad rechazó la gestión con un oficio que le notificó el 5 de febrero de 2008. El 2 de mayo de 2011 él demandó la nulidad de ese oficio, la equiparación y una indemnización. El Tribunal Contencioso Administrativo declaró de oficio caducada la acción de nulidad y, por accesoriedad, rechazó las demás pretensiones, aunque el juez tramitador había desestimado la caducidad en la audiencia preliminar.",
+          "El actor recurrió en casación. Alegó que la caducidad no podía examinarse de oficio, que la equiparación era su pretensión principal, que el caso debía regirse por el plazo de cuatro años anterior al Código y que la negativa tenía efectos continuados, porque le impedía cada día aspirar a un doctorado."
+        ],
+        visual: "trayectoria"
+      },
+      {
+        id: "de-oficio",
+        titulo: "La caducidad, de oficio",
+        parrafos: [
+          "El actor sostuvo que el Tribunal no podía volver sobre la caducidad, porque el juez tramitador la había rechazado y la Universidad no la reiteró en sus conclusiones. La Sala separó las dos defensas que se habían opuesto:",
+          "La caducidad funciona como una condición para que el juez pueda conocer el asunto:",
+          "Y el Código fija ese umbral en un año:"
+        ],
+        literales: [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        nota: "La prescripción solo se examina si la parte la alega. La caducidad de la acción la revisa el juez aunque nadie la invoque."
+      },
+      {
+        id: "firmeza",
+        titulo: "El plazo lo fija la firmeza del acto",
+        parrafos: [
+          "El actor pidió el plazo de cuatro años del artículo 175 de la Ley General de la Administración Pública, vigente antes del Código, porque su gestión había empezado en 2007. La Sala precisó qué decide el régimen aplicable según el transitorio III del Código:",
+          "El oficio que negó la equiparación se dictó en 2007, pero se notificó en febrero de 2008, y un acto es eficaz desde que se comunica:",
+          "Regía, entonces, el plazo de un año del Código Procesal Contencioso-Administrativo."
+        ],
+        literales: [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        id: "efectos",
+        titulo: "Instantáneo o continuado",
+        parrafos: [
+          "El núcleo del fallo está en el considerando IX. El artículo 40 del Código permite demandar un acto de efectos continuados mientras esos efectos subsistan, y la ley deja sin definir la categoría. La Sala la definió por contraste.",
+          "La pregunta es si el acto sigue actuando sobre la situación jurídica de la persona o si la fijó de una vez:"
+        ],
+        visual: "comparacion"
+      },
+      {
+        id: "consecuencias",
+        titulo: "Consecuencias que no son efectos",
+        parrafos: [
+          "El actor alegaba un daño que se renovaba cada día: sin la maestría no podía aspirar a un doctorado ni a mejores ingresos. La Sala respondió con la distinción que la jurisprudencia posterior más repite:",
+          "Con un acto de efecto instantáneo, el plazo había vencido mucho antes de la demanda:",
+          "A mayor abundamiento, la Sala advirtió que la equiparación de 1987 había quedado firme y consentida:"
+        ],
+        literales: [
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            1
+          ],
+          [
+            10,
+            0,
+            2
+          ]
+        ],
+        nota: "Lo decisivo es si el acto vuelve a incidir en la situación jurídica de la persona. Las repercusiones de un estatus ya definido dejan el plazo donde estaba."
+      },
+      {
+        id: "cuatro-plazos",
+        titulo: "Una distinción que decide cuatro plazos",
+        parrafos: [
+          "La sentencia resolvió un problema de caducidad de la acción. Su definición sirvió después en todas las normas que hacen depender un plazo de que los efectos del acto perduren:"
+        ],
+        visual: "formas"
+      },
+      {
+        id: "costas",
+        titulo: "La nota sobre las costas",
+        parrafos: [
+          "El considerando sobre las costas lo redactó el magistrado Solís, con el criterio de la mayoría: la condena al vencido no se revisa en casación cuando el tribunal se limita a imponerla. Los magistrados González Camacho y Escoto Fernández mantuvieron su posición en una nota separada:",
+          "En el caso concreto compartieron la condena, así que la nota no cambió el resultado."
+        ],
+        literales: [
+          [
+            11,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        id: "recepcion",
+        titulo: "La recepción",
+        parrafos: [
+          "La recepción fue rápida. En 2013, el Tribunal de Casación de lo Contencioso Administrativo hizo suyo el considerando IX para confirmar la caducidad de una demanda contra una orden municipal de reabrir un camino público, y la Sección Cuarta del Tribunal Contencioso Administrativo lo aplicó para rechazar la caducidad opuesta a una lesividad del Estado.",
+          "La Sala Primera la aplicó en los dos sentidos. En 2016 negó efectos continuados a la cancelación del asiento de nacimiento de una persona; en 2022 los reconoció en la exoneración de una contribución que se descuenta cada mes, y casó los fallos que habían declarado inadmisibles las lesividades del Estado. En la Procuraduría, al menos diez dictámenes la citan, como el C-169-2024, que la usa para decidir si sigue abierta la potestad de anular de oficio un acto absolutamente nulo."
+        ],
+        visual: "recepcion"
+      },
+      {
+        id: "impacto",
+        titulo: "Su impacto",
+        parrafos: [
+          "Hemos encontrado su cita en el texto de al menos 187 resoluciones, dictadas entre 2013 y 2026. Casi todas provienen del Tribunal Contencioso Administrativo y de su Tribunal de Casación; la Sección Tercera, que conoce las apelaciones contra acuerdos municipales, la cita en 28 resoluciones. La Sala Primera la cita en 24, y el Tribunal Agrario, en dos.",
+          "Su uso creció con el tiempo: cuatro de cada cinco citas son de 2020 en adelante, con 31 en 2020 y 30 en 2022. Fuera de los tribunales la citan diez dictámenes de la Procuraduría, el Consejo Superior y la Corte Plena, que en una sola sesión de 2026 la invocó en 158 artículos."
+        ],
+        visual: "citas"
+      }
+    ],
+    visuales: {
+      trayectoria: [
+        {
+          etapa: "La equiparación",
+          sede: "Universidad de Costa Rica · diciembre de 1987",
+          detalle: "Reconoce el título soviético como licenciatura en ingeniería eléctrica. La decisión no se impugna."
+        },
+        {
+          etapa: "La nueva gestión",
+          sede: "Abril de 2007 · negativa notificada el 5 de febrero de 2008",
+          detalle: "Pide la equiparación como maestría. La Universidad la rechaza."
+        },
+        {
+          etapa: "Primera instancia",
+          sede: "Tribunal Contencioso Administrativo, Sección Sexta · 28 de octubre de 2011",
+          detalle: "La demanda llega el 2 de mayo de 2011. El Tribunal declara de oficio la caducidad."
+        },
+        {
+          etapa: "Casación",
+          sede: "Sala Primera · 23 de octubre de 2012",
+          detalle: "Rechaza de plano el recurso: el plazo para demandar venció en febrero de 2009.",
+          final: true
+        }
+      ],
+      comparaciones: {
+        efectos: [
+          {
+            titulo: "Efecto instantáneo",
+            rasgo: "La incidencia del acto se agota en un solo momento. El año para demandar corre desde la notificación (artículo 39 del Código).",
+            enElCaso: "La negativa a equiparar el título.",
+            literal: "aquellos actos de efecto instantáneo en los que su incidencia o efecto se agota en un solo momento, precisamente en el que varía, en forma positiva o negativa, el conjunto de derechos, potestades, obligaciones, deberes, y cargas de las personas.",
+            citation: "Considerando IX"
+          },
+          {
+            titulo: "Efectos continuados",
+            rasgo: "Propio de relaciones jurídicas de duración: el acto incide una y otra vez. El año corre desde que cesan sus efectos (artículo 40 del Código).",
+            enElCaso: "Lo que alegaba el actor.",
+            literal: "este supuesto es propio de aquellas relaciones jurídicas de duración, entendiendo que opera cuando el acto incide reiteradamente en la esfera jurídica del particular, ya sea creando, modificado o extinguiendo durante ese período las relaciones o situaciones jurídicas que integran dicha esfera jurídica.",
+            citation: "Considerando IX"
+          }
+        ]
+      },
+      formas: {
+        "cuatro-plazos": [
+          {
+            titulo: "La demanda",
+            texto: "Artículos 39 y 40 del Código Procesal Contencioso-Administrativo. Un año desde la notificación; con efectos continuados, un año desde que cesan, para anular el acto hacia el futuro."
+          },
+          {
+            titulo: "La lesividad",
+            texto: "Artículo 34 del mismo Código. La Administración declara lesivo su acto en un año; si es absolutamente nulo, mientras perduren sus efectos."
+          },
+          {
+            titulo: "La anulación de oficio",
+            texto: "Artículo 173 de la Ley General de la Administración Pública. La potestad de anular un acto de nulidad evidente y manifiesta caduca en un año, salvo que sus efectos perduren."
+          },
+          {
+            titulo: "La revisión municipal",
+            texto: "Artículo 166 del Código Municipal. El recurso extraordinario procede si no han pasado diez años y el acto no ha agotado todos sus efectos."
+          }
+        ]
+      },
+      recepcion: [
+        {
+          anio: "2013",
+          organo: "Tribunal de Casación de lo Contencioso Administrativo",
+          texto: "Hace suyo el considerando IX y confirma la caducidad de una demanda contra una orden municipal de reabrir un camino.",
+          enlaces: [
+            {
+              etiqueta: "Voto 51-A-TC-2013",
+              nexusId: "sen-1-0034-585291"
+            }
+          ]
+        },
+        {
+          anio: "2013",
+          organo: "Tribunal Contencioso Administrativo",
+          texto: "Lo aplica para rechazar la caducidad opuesta a una lesividad del Estado.",
+          enlaces: [
+            {
+              etiqueta: "Voto 52-2013, Sección Cuarta",
+              nexusId: "sen-1-0034-578000"
+            }
+          ]
+        },
+        {
+          anio: "2016",
+          organo: "Sala Primera",
+          texto: "La cancelación de un asiento de nacimiento cambió la situación de la persona en un solo momento.",
+          enlaces: [
+            {
+              etiqueta: "Voto 836-F-S1-2016",
+              nexusId: "sen-1-0034-676008"
+            }
+          ]
+        },
+        {
+          anio: "2022",
+          organo: "Sala Primera",
+          texto: "La exoneración de una contribución que se descuenta cada mes tiene efectos continuados: la lesividad estaba en plazo.",
+          enlaces: [
+            {
+              etiqueta: "Voto 1148-F-S1-2022",
+              nexusId: "sen-1-0004-1091769"
+            },
+            {
+              etiqueta: "Voto 2066-F-S1-2022",
+              nexusId: "sen-1-0004-1116400"
+            }
+          ]
+        },
+        {
+          anio: "2024",
+          organo: "Procuraduría General de la República",
+          texto: "La usa para decidir si sigue abierta la potestad de anular de oficio un acto absolutamente nulo.",
+          enlaces: [
+            {
+              etiqueta: "Dictamen C-169-2024",
+              url: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=24584&param2=1&param3=1"
+            }
+          ]
+        },
+        {
+          anio: "2026",
+          organo: "Corte Plena",
+          texto: "En una sola sesión la invoca en 158 artículos, sobre pluses salariales de pago periódico.",
+          enlaces: [
+            {
+              etiqueta: "Sesión 30-2026",
+              nexusId: "act-1-0003-9050-25"
+            }
+          ],
+          final: true
+        }
+      ],
+      citas: {
+        corte: "19 de setiembre de 2026",
+        metodo: "Resoluciones judiciales cuyo texto cita la 1426-F-S1-2012, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente, y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        csv: "/datos/jurisprudencia/1426-F-S1-2012-resoluciones-que-la-citan.csv"
+      }
+    },
+    casoFactico: [
+      "En 1987 la Universidad de Costa Rica equiparó a licenciatura un título de ingeniería obtenido en la antigua Unión Soviética. En 2007 el titular pidió la equiparación como maestría, y la Universidad la negó en un oficio notificado en febrero de 2008.",
+      "La demanda llegó en mayo de 2011. El Tribunal Contencioso Administrativo declaró de oficio la caducidad, y la Sala Primera la confirmó: la negativa fue un acto de efecto instantáneo, y el plazo había vencido en febrero de 2009."
+    ],
+    nexusId: "sen-1-0004-767786",
+    precedentes: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1001-F-2002",
+        fecha: "20-12-2002",
+        nexusId: "sen-1-0034-228564",
+        nota: "La nota la recoge entre los fallos del criterio de mayoría sobre las costas."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 541-F-2003",
+        fecha: "03-09-2003",
+        nexusId: "sen-1-0034-250519",
+        nota: "La nota la cita a contrario sensu, con la 563-F-2003, sobre las costas en casación."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 563-F-2003",
+        fecha: "10-09-2003",
+        nexusId: "sen-1-0034-250539",
+        nota: "La nota la cita a contrario sensu, con la 541-F-2003, sobre las costas en casación."
+      }
+    ],
+    citadaPor: [
+      {
+        organo: "Tribunal de Casación de lo Contencioso Administrativo",
+        numero: "Voto 51-A-TC-2013",
+        fecha: "13-06-2013",
+        nexusId: "sen-1-0034-585291",
+        nota: "Hace suyo el considerando IX; confirma una caducidad."
+      },
+      {
+        organo: "Tribunal Contencioso Administrativo, Sección Cuarta",
+        numero: "Voto 52-2013",
+        fecha: "11-06-2013",
+        nexusId: "sen-1-0034-578000",
+        nota: "Rechaza la caducidad opuesta a una lesividad del Estado."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 836-F-S1-2016",
+        fecha: "11-08-2016",
+        nexusId: "sen-1-0034-676008",
+        nota: "Cancelación de un asiento de nacimiento: efecto instantáneo."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1148-F-S1-2022",
+        fecha: "12-05-2022",
+        nexusId: "sen-1-0004-1091769",
+        nota: "Exoneración mensual: efectos continuados."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 2066-F-S1-2022",
+        fecha: "29-09-2022",
+        nexusId: "sen-1-0004-1116400",
+        nota: "Reitera el criterio en otra lesividad del Estado."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 712-F-S1-2025",
+        fecha: "24-04-2025",
+        nexusId: "sen-1-0004-1288892",
+        nota: "Por mayoría: el otorgamiento de una pensión tiene efectos continuados y la lesividad estaba en plazo."
+      }
+    ],
+    normativa: [
+      {
+        nombre: "Código Procesal Contencioso-Administrativo",
+        detalle: "Ley 8508 · 28 de abril de 2006",
+        articulos: "Arts. 34, 39, 40, 92, 140 y 193; transitorio III",
+        scijId: 57436
+      },
+      {
+        nombre: "Ley General de la Administración Pública",
+        detalle: "Ley 6227 · 2 de mayo de 1978",
+        articulos: "Arts. 140 y 175; art. 173 en la aplicación posterior",
+        scijId: 13231
+      },
+      {
+        nombre: "Código Municipal",
+        detalle: "Ley 7794 · 30 de abril de 1998",
+        articulos: "Art. 166 (recurso extraordinario de revisión)",
+        scijId: 40197,
+        tema: "Aplicación posterior"
+      }
+    ],
+    redactor: "Magistrado Óscar Eduardo González Camacho",
+    redactorTextual: "Redacta el magistrado González Camacho excepto el XIII que lo redacta el magistrado Solís",
+    redactoresAdicionales: [
+      "Magistrado Román Solís Zelaya (considerando XIII)"
+    ],
+    fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767786",
+    fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    metaDescription: "Resolución N° 1426-F-S1-2012 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Distinguió el acto de efecto instantáneo del de efectos continuados para computar la caducidad de la acción del CPCA y fijó que el juez la examina de oficio."
   }
 ];
 

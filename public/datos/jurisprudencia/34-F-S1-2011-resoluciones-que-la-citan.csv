@@ -1,4 +1,4 @@
-﻿fecha,resolucion,despacho,expediente,enlace_nexus
+﻿fecha,resolucion,despacho,expediente,enlace
 2011-09-12,199-2011,"Tribunal Contencioso Administrativo, Sección VI",09-002162-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-523150
 2011-10-25,222-2011,"Tribunal Contencioso Administrativo, Sección VI",11-000579-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-526303
 2012-05-16,608-2012,Sala Primera,09-002919-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-685779
@@ -12,6 +12,7 @@
 2012-09-21,86-2012,"Tribunal Contencioso Administrativo, Sección VIII",10-003856-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-549699
 2012-09-28,204-2012,"Tribunal Contencioso Administrativo, Sección VI",11-004660-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-550508
 2012-10-04,210-2012,"Tribunal Contencioso Administrativo, Sección VI",11-004109-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-549985
+2012-10-30,139-2012,"Tribunal Contencioso Administrativo, Sección VII",06-000884-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-550667
 2012-10-31,244-2012,Tribunal Contencioso Administrativo,10-000558-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-552115
 2012-11-07,254-2012,"Tribunal Contencioso Administrativo, Sección VI",94-014052-0227-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-604205
 2012-11-21,272-2012,"Tribunal Contencioso Administrativo, Sección VI",11-000490-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-552134
@@ -31,6 +32,7 @@
 2014-02-06,9-2014,Tribunal de Casación Contencioso Administrativo y Civil de Hacienda,11-002276-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-601331
 2014-03-06,286-2014,Sala Primera,11-004341-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-599869
 2014-04-21,50-2014,"Tribunal Contencioso Administrativo, Sección VI",12-001506-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-607378
+2014-04-24,34-2014,Tribunal de Casación Contencioso Administrativo y Civil de Hacienda,11-004839-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-606362
 2014-04-30,59-2014,"Tribunal Contencioso Administrativo, Sección VI",12-004572-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-616835
 2014-05-22,67-2014,"Tribunal Contencioso Administrativo, Sección VI",13-004239-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-604823
 2014-06-25,46-2014,"Tribunal Contencioso Administrativo, Sección V",11-006628-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-613780
@@ -157,3 +159,32 @@
 2026-02-05,200-2026,Sala Primera,23-002654-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1372307
 2026-06-17,3990-2026,Tribunal Contencioso Administrativo,21-001919-1102-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1410319
 2026-07-13,4619-2026,Tribunal Contencioso Administrativo,20-004620-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1410728
+2011-11-28,1031-2011,Tribunal Registral Administrativo · Voto,,https://www.tra.go.cr/sites/default/files/2021-11/1031-2011-2010-0874-tra-pi--version-1.pdf
+2014-09-30,Sesión 57-2014,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2013/12/ACTA_57-2014_VERSION_FINAL.pdf
+2015-01-26,Sesión 3-2015,Corte Plena · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-2947-11
+2015-04-09,C-069-2015,Procuraduría General de la República · Dictamen,,https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=18787&param2=1&param3=1
+2015-05-25,Sesión 19-2015,Corte Plena · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-3015-15
+2015-07-14,Sesión 64-2015,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-3035-70
+2015-07-27,DJ-1484-2015,Contraloría General de la República · Criterios y pronunciamientos,,https://cgrfiles.cgr.go.cr/publico/docs_cgr/2015/SIGYD_D_2015013541.pdf
+2015-07-30,Sesión 69-2015,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-3043-4
+2015-10-19,Sesión 52-2015,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2015/01/ACTA_52-2015_VERSION_FINAL.pdf
+2015-11-26,Sesión 59-2015,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2015/01/ACTA_59-2015_VERSION_FINAL.pdf
+2015-12-07,Sesión 61-2015,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2015/01/ACTA_61-2015_VERSION_FINAL.pdf
+2016-03-10,Sesión 15-2016,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2015/12/ACTA_15-2016_VERSION_FINAL.pdf
+2016-03-31,Sesión 18-2016,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2015/12/ACTA_18-2016_VERSION_FINAL.pdf
+2016-05-12,Sesión 27-2016,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2015/12/ACTA_27-2016_VERSION_FINAL.pdf
+2016-12-20,Sesión 113-2016,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-3262-113
+2017-12-01,Sesión 65-2017,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2017/01/ACTA_65-2017.pdf
+2018-09-05,Sesión 79-2018,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-3555-4
+2018-11-06,Sesión 66-2018,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2018/02/ACTA_66-2018.pdf
+2019-08-29,Resolución 2471-2019,Tribunal de la Inspección Judicial · Resolución,,https://nexuspj.poder-judicial.go.cr/document/sen-1-0031-1015048
+2019-12-03,Resolución 3624-2019,Tribunal de la Inspección Judicial · Resolución,,https://nexuspj.poder-judicial.go.cr/document/sen-1-0031-1010700
+2020-04-15,Resolución 1162-2020,Tribunal de la Inspección Judicial · Resolución,,https://nexuspj.poder-judicial.go.cr/document/ext-1-0031-281101
+2020-05-11,Resolución 1441-2020,Tribunal de la Inspección Judicial · Resolución,,https://nexuspj.poder-judicial.go.cr/document/sen-1-0031-973609
+2020-06-08,Resolución 1775-2020,Tribunal de la Inspección Judicial · Resolución,,https://nexuspj.poder-judicial.go.cr/document/sen-1-0031-978647
+2021-11-30,Resolución 4141-2021,Tribunal de la Inspección Judicial · Resolución,,https://nexuspj.poder-judicial.go.cr/document/sen-1-0031-1077243
+2022-10-06,Sesión 87-2022,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-5894-19
+2023-03-09,Sesión 19-2023,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-6972-7
+2025-01-21,Sesión 2-2025,Junta del Fondo de Jubilaciones y Pensiones del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-1907-8703-10
+2025-09-09,Sesión 40-2025,Junta del Fondo de Jubilaciones y Pensiones del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-1907-9044-16
+2025-12-10,Sesión 55-2025 (2 artículos),Junta del Fondo de Jubilaciones y Pensiones del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-1907-8869-13

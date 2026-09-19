@@ -1,4 +1,4 @@
-﻿fecha,resolucion,despacho,expediente,enlace_nexus
+﻿fecha,resolucion,despacho,expediente,enlace
 2005-02-22,81-2005,Sala Primera,94-000455-0178-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-305981
 2005-03-04,11-2005,"Tribunal Contencioso Administrativo, Sección IV",00-000846-0161-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-298558
 2005-07-20,519-2005,Sala Primera,00-000549-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-315153
@@ -23,6 +23,7 @@
 2007-07-20,504-2007,Sala Primera,90-001408-0178-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-388290
 2007-12-20,352-2007,"Tribunal Segundo Civil, Sección II",03-001139-0180-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-401090
 2008-04-09,259-2008,Sala Primera,98-000531-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-412983
+2008-05-12,220-2008,"Tribunal de Trabajo, Sección III",05-001619-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-410861
 2008-05-22,172-2008,"Tribunal Contencioso Administrativo, Sección II",92-000906-0179-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-412843
 2008-08-14,270-2008,"Tribunal Contencioso Administrativo, Sección II",05-000716-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-418160
 2008-10-30,291-2008,"Tribunal Segundo Civil, Sección II",97-001350-0183-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-422122
@@ -42,6 +43,7 @@
 2010-02-12,222-2010,Sala Primera,05-000331-0161-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-463011
 2010-02-17,225-2010,Sala Segunda,05-000037-0641-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-465494
 2010-02-23,82-2010,"Tribunal Contencioso Administrativo, Sección II",06-001170-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-462129
+2010-05-18,275-2010,"Tribunal Contencioso Administrativo, Sección I",06-001337-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-473068
 2010-05-28,49-2010,"Tribunal Contencioso Administrativo, Sección VII",02-000895-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-478698
 2010-07-30,281-2010,"Tribunal Segundo Civil, Sección II",06-000255-0180-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-493889
 2010-08-30,265-2010,"Tribunal Segundo Civil, Sección I",99-001683-0164-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-489017
@@ -55,7 +57,9 @@
 2011-11-10,1236-2011,Tribunal Agrario,05-000159-0391-AG,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-529858
 2011-11-30,336-2011,"Tribunal Segundo Civil, Sección II",04-100481-0390-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-534096
 2012-02-29,63-2012,"Tribunal Contencioso Administrativo, Sección I",04-000843-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-535684
+2012-05-30,467-2012,Sala Segunda,08-000868-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-542272
 2012-06-27,8742-2012,Sala Constitucional,12-000615-0007-CO,https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-543071
+2012-08-10,299-2012,"Tribunal de Trabajo, Sección I",08-000869-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-550272
 2012-10-09,94-2012,"Tribunal Contencioso Administrativo, Sección V",11-001419-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-551942
 2012-10-10,1284-2012,Sala Primera,10-000382-1028-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-553636
 2012-10-24,14891-2012,Sala Constitucional,12-001637-0007-CO,https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-550981
@@ -76,11 +80,14 @@
 2014-07-03,862-2014,Sala Primera,11-000009-1028-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-610289
 2014-07-30,95-2014,"Tribunal Contencioso Administrativo, Sección II",01-000289-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-616140
 2014-09-09,756-2014,Tribunal de Familia,05-000384-0292-FA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-614934
+2014-11-19,1135-2014,Sala Segunda,08-000867-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-621100
 2015-01-29,117-2015,Sala Primera,14-000090-0004-AR,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-640257
 2015-07-30,85-2015,"Tribunal Contencioso Administrativo, Sección II",04-001216-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-646129
 2015-10-21,1214-2015,Sala Primera,14-000198-0004-AR,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-660317
 2015-11-04,116-2015,"Tribunal Contencioso Administrativo, Sección V",13-003846-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-651080
+2015-11-30,538-2015,"Tribunal de Trabajo, Sección II",08-001117-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-656988
 2016-03-14,115-2016,"Tribunal de Trabajo, Sección II",10-001492-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-662918
+2016-04-27,393-2016,Sala Segunda,08-001117-0166-LA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-665133
 2016-06-29,56-2016,"Tribunal Contencioso Administrativo, Sección II",06-000507-0163-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-669659
 2016-06-29,66-2016,"Tribunal Contencioso Administrativo, Sección V",11-004917-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-668414
 2017-01-30,6-2017,"Tribunal Contencioso Administrativo, Sección V",11-003730-1027-CA,https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-693446
@@ -131,3 +138,13 @@
 2024-06-06,572-2024,Sala Primera,11-000562-0164-CI,https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1235338
 2026-07-15,26765-2026,Sala Constitucional,26-022961-0007-CO,https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1409860
 2026-07-29,28702-2026,Sala Constitucional,26-022961-0007-CO,https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1411008
+2005-07-07,Sesión 52-2005,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-1536-53
+2005-08-23,Sesión 65-2005,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-1549-57
+2005-09-06,Sesión 70-2005,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-1554-7
+2009-08-31,Sesión 59-2009,Junta Directiva de la ARESEP · Acta,,https://aresep.go.cr/wp-content/uploads/2012/09/Acta_059-2009ultima_version.pdf
+2012-02-10,Informe en la acción 12-000615-0007-CO,Procuraduría General de la República · Informe a la Sala Constitucional,,https://sinalevi.go.cr/ResultadosAsuntos/Informacion?param1=4721&param2=1&param3=1
+2012-04-20,Informe en la acción 12-001637-0007-CO,Procuraduría General de la República · Informe a la Sala Constitucional,,https://sinalevi.go.cr/ResultadosAsuntos/Informacion?param1=4760&param2=1&param3=1
+2013-12-16,Sesión 52-2013,Corte Plena · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-2762-24
+2015-07-28,OJ-079-2015,Procuraduría General de la República · Opinión jurídica,,https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=18952&param2=1&param3=1
+2018-06-28,Informe en la acción 18-008401-0007-CO,Procuraduría General de la República · Informe a la Sala Constitucional,,https://sinalevi.go.cr/ResultadosAsuntos/Informacion?param1=7091&param2=1&param3=1
+2025-04-24,Sesión 34-2025,Consejo Superior del Poder Judicial · Acta,,https://nexuspj.poder-judicial.go.cr/document/act-1-0003-8649-13

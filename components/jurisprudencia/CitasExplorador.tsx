@@ -1,7 +1,10 @@
 "use client";
 
 /* Las citas de una sentencia: la cifra total, la serie por año y el reparto
-   por despacho, con la lista completa de resoluciones detrás. Cada año y
+   por despacho, con la lista completa de resoluciones detrás. Debajo, las
+   citas fuera de los tribunales (Procuraduría, Contraloría, Tribunal
+   Registral, ARESEP y el Poder Judicial en sede administrativa), cada una
+   enlazada a su fuente oficial. Cada año y
    cada despacho es un botón que abre la lista filtrada; la lista está
    siempre en el HTML (oculta hasta que se abre) y se descarga en CSV, así
    cualquier cifra del gráfico se puede comprobar una por una en Nexus.
@@ -10,12 +13,39 @@
 
 import { useId, useRef, useState } from "react";
 import { ArrowSquareOut, CaretDown, DownloadSimple } from "@phosphor-icons/react";
-import type { ResolucionQueCita } from "@/lib/jurisprudencia-citas";
+import type { PronunciamientoQueCita, ResolucionQueCita } from "@/lib/jurisprudencia-citas";
 
 type Filtro = { tipo: "anio"; valor: number } | { tipo: "grupo"; valor: string } | null;
 
 const fechaCorta = (iso: string) => iso.split("-").reverse().join("-");
 const nexus = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
+
+const PLURAL: Record<string, string> = {
+  Dictamen: "dictámenes",
+  "Opinión jurídica": "opiniones jurídicas",
+  "Informe a la Sala Constitucional": "informes a la Sala Constitucional",
+  "Criterios y pronunciamientos": "criterios",
+  Voto: "votos",
+  Acta: "actas",
+  Resolución: "resoluciones",
+};
+/* Cada órgano, en el orden del pie; lo que no es de las cuatro primeras
+   sedes es del Poder Judicial en sede administrativa. */
+const SEDES = [
+  { prefijo: /^Procuraduría/, sede: "de la Procuraduría" },
+  { prefijo: /^Contraloría/, sede: "de la Contraloría" },
+  { prefijo: /^Tribunal Registral/, sede: "del Tribunal Registral Administrativo" },
+  { prefijo: /ARESEP/, sede: "de la ARESEP" },
+  { prefijo: /^(?!Procuraduría|Contraloría|Tribunal Registral|.*ARESEP)/, sede: "del Poder Judicial en sede administrativa" },
+];
+/* «a, b y c», con «e» ante palabra que empieza por el sonido i. */
+function enumerar(xs: string[]) {
+  if (xs.length < 2) return xs[0] ?? "";
+  const ultimo = xs[xs.length - 1];
+  const y = /^h?i(?!e)/i.test(ultimo) ? "e" : "y";
+  return `${xs.slice(0, -1).join(", ")} ${y} ${ultimo}`;
+}
+const mayuscula = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export function CitasExplorador({
   lista,
@@ -23,8 +53,10 @@ export function CitasExplorador({
   corte,
   metodo,
   csv,
+  pronunciamientos = [],
 }: {
   lista: ResolucionQueCita[];
+  pronunciamientos?: PronunciamientoQueCita[];
   grupos: string[];
   corte: string;
   metodo: string;
@@ -32,7 +64,22 @@ export function CitasExplorador({
 }) {
   const [filtro, setFiltro] = useState<Filtro>(null);
   const [abierta, setAbierta] = useState(false);
+  const [abiertaP, setAbiertaP] = useState(false);
   const listaId = useId();
+  const listaPId = useId();
+  const np = pronunciamientos.length;
+  const porOrgano = Object.entries(
+    pronunciamientos.reduce<Record<string, number>>((acc, p) => ({ ...acc, [p.organo]: (acc[p.organo] ?? 0) + 1 }), {}),
+  ).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "es"));
+  /* El pie describe solo las fuentes presentes: «dictámenes e informes de la
+     Procuraduría y actas del Poder Judicial en sede administrativa». */
+  const fuentes = SEDES.flatMap(({ prefijo, sede }) => {
+    const tipos = [
+      ...new Set(pronunciamientos.filter((p) => prefijo.test(p.organo)).map((p) => PLURAL[p.tipo] ?? p.tipo.toLowerCase())),
+    ];
+    return tipos.length ? [`${enumerar(tipos)} ${sede}`] : [];
+  });
+  const hayActas = pronunciamientos.some((p) => p.tipo === "Acta");
   const cabecera = useRef<HTMLDivElement>(null);
 
   const total = lista.length;
@@ -303,6 +350,85 @@ export function CitasExplorador({
           </p>
         </div>
       </div>
+
+      {/* Fuera de los tribunales */}
+      {np > 0 && (
+        <div className="mt-12 border-t border-cream/10 pt-8">
+          <p className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+            <span className="text-[32px] font-light leading-none tabular-nums tracking-[-0.02em] text-cream">
+              {np}
+            </span>
+            <span className="max-w-[56ch] text-[15px] leading-snug text-cream/80">
+              {np === 1 ? "pronunciamiento la cita" : "pronunciamientos la citan"} fuera de los tribunales
+            </span>
+          </p>
+          <ul role="list" className="mt-5 grid gap-x-10 sm:grid-cols-2">
+            {porOrgano.map(([organo, n]) => (
+              <li
+                key={organo}
+                className="flex items-baseline justify-between gap-4 border-b border-cream/10 py-2 text-[15px] leading-snug"
+              >
+                <span className="text-cream/85">{organo}</span>
+                <span className="tabular-nums text-cream">{n}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5">
+            <button
+              type="button"
+              aria-expanded={abiertaP}
+              aria-controls={listaPId}
+              onClick={() => setAbiertaP((v) => !v)}
+              className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy outline-none transition-colors hover:text-burgundy-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold dark:text-gold dark:hover:text-gold-light"
+            >
+              {abiertaP ? "Ocultar la lista" : np === 1 ? "Ver el pronunciamiento" : `Ver los ${np} pronunciamientos`}
+              <CaretDown
+                size={13}
+                weight="bold"
+                aria-hidden="true"
+                className={`transition-transform duration-300 ${abiertaP ? "rotate-180" : ""}`}
+              />
+            </button>
+          </p>
+          <div id={listaPId} hidden={!abiertaP}>
+            <ol role="list" className="mt-4 divide-y divide-cream/10 border-y border-cream/10">
+              {pronunciamientos.map((p) => (
+                <li
+                  key={`${p.organo}-${p.numero}`}
+                  className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-0.5 py-3 text-[15px] leading-snug md:grid-cols-[96px_minmax(0,16rem)_minmax(0,1fr)] md:gap-5"
+                >
+                  <span className="order-2 whitespace-nowrap text-right text-[13px] tabular-nums text-cream/65 md:order-none md:text-left md:text-[15px]">
+                    {p.fecha.length === 10 ? fechaCorta(p.fecha) : p.fecha}
+                  </span>
+                  <span className="order-1 md:order-none">
+                    {p.enlace ? (
+                      <a
+                        href={p.enlace}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 font-medium tabular-nums text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                      >
+                        {p.numero}
+                        <ArrowSquareOut size={11} aria-hidden="true" className="text-cream/50" />
+                      </a>
+                    ) : (
+                      <span className="font-medium tabular-nums text-cream">{p.numero}</span>
+                    )}
+                  </span>
+                  <span className="order-3 col-span-2 text-[13px] text-cream/75 md:order-none md:col-span-1 md:text-[15px]">
+                    {p.organo} · {p.tipo}
+                    {p.articulos ? ` · en ${p.articulos} artículos` : ""}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <p className="mt-4 max-w-[72ch] text-[13px] leading-relaxed text-cream/65">
+            {mayuscula(enumerar(fuentes))}. {hayActas ? "Las actas cuentan una vez por sesión. " : ""}Cada número enlaza a su
+            fuente oficial.
+          </p>
+        </div>
+      )}
 
       <figcaption className="mt-8 text-[13px] leading-relaxed text-cream/65">
         {metodo} Corte al {corte}.
