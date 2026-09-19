@@ -21,13 +21,13 @@ import { ComparativaRecursosContratacion } from "@/components/article/Comparativ
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import {
-  ClavesRecursosLgap,
   MapaRecursosLgap,
   PlazoTresDiasLgap,
   FlujoApelacionSubsidio,
   ComparativaRecursosLgap,
   MateriasEspecialesRecursos,
   NulidadAbsolutaRelativa,
+  JurisprudenciaRecursosLgap,
 } from "@/components/article/RecursosLgap";
 import {
   ArrowLeft,
@@ -52,13 +52,13 @@ const ARTICLE_COMPONENTS = {
   ComparativaRecursosContratacion,
   ReformaCpca,
   CapacitacionEleinmsa,
-  ClavesRecursosLgap,
   MapaRecursosLgap,
   PlazoTresDiasLgap,
   FlujoApelacionSubsidio,
   ComparativaRecursosLgap,
   MateriasEspecialesRecursos,
   NulidadAbsolutaRelativa,
+  JurisprudenciaRecursosLgap,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
@@ -288,13 +288,13 @@ export default async function ArticlePage({
               </div>
 
               {article.tags.length > 0 && (
-                <div className="flex items-center gap-1.5">
+                <div className="flex items-start gap-1.5 min-w-0">
                   <Tag
                     size={13}
                     weight="regular"
                     className="text-cream/35"
                   />
-                  <div className="flex gap-1.5">
+                  <div className="flex flex-wrap gap-1.5">
                     {article.tags.map((tag) => (
                       <span
                         key={tag}
