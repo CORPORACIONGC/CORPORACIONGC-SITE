@@ -33,6 +33,9 @@ export type ArticleMeta = {
   lang?: "es" | "en";
   /** Slug de la versión del mismo artículo en el otro idioma, si existe. */
   translation?: string;
+  /** Minutos de lectura, a 220 palabras por minuto. Lo calcula
+      getAllArticles a partir del cuerpo del artículo. */
+  minutos?: number;
 };
 
 export type Article = ArticleMeta & {
@@ -71,8 +74,12 @@ export function getAllArticles(): ArticleMeta[] {
 
   const articles = files.map((file) => {
     const raw = fs.readFileSync(path.join(ARTICLES_DIR, file), "utf-8");
-    const { data } = matter(raw);
-    return extractMeta(data, file.replace(/\.md$/, ""));
+    const { data, content } = matter(raw);
+    const palabras = content.split(/\s+/).filter(Boolean).length;
+    return {
+      ...extractMeta(data, file.replace(/\.md$/, "")),
+      minutos: Math.max(1, Math.round(palabras / 220)),
+    };
   });
 
   return articles.sort(

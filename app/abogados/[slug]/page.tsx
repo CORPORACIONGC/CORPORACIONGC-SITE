@@ -414,14 +414,16 @@ export default async function AttorneyProfile({
 // ─── Khevin's Full Profile ───
 
 function KhevinProfile() {
-  const articles = getArticlesByAuthor("Sánchez").map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor("Sánchez")
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   const profileNavLinks = [
     { label: "Inicio", href: "#inicio" },
@@ -464,14 +466,16 @@ function KhevinProfile() {
 // ─── Oscar's Full Profile ───
 
 function OscarProfile() {
-  const articles = getArticlesByAuthor("González Camacho").map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor("González Camacho")
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>
@@ -508,14 +512,16 @@ function OscarProfile() {
 // ─── Esteban's Full Profile ───
 
 function EstebanProfile() {
-  const articles = getArticlesByAuthor("Pérez").map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor("Pérez")
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>
@@ -549,14 +555,16 @@ function EstebanProfile() {
 // ─── José Carlos's Full Profile ───
 
 function JoseCarlosProfile() {
-  const articles = getArticlesByAuthor("Solano").map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor("Solano")
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>
@@ -590,14 +598,16 @@ function JoseCarlosProfile() {
 // ─── Katherine's Full Profile ───
 
 function KatherineProfile() {
-  const articles = getArticlesByAuthor("González Coto").map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor("González Coto")
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>
@@ -631,14 +641,16 @@ function KatherineProfile() {
 // ─── Mariana's Full Profile ───
 
 function MarianaProfile() {
-  const articles = getArticlesByAuthor("Montero").map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor("Montero")
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>
@@ -690,14 +702,16 @@ function BasicProfile({
   // Extract first surname for author search
   const nameWords = member.name.replace(/^(Dr\.|Lic\.|Licda\.)\s+/i, "").split(" ").filter((w) => w.length > 0);
   const authorKey = nameWords.length >= 3 ? nameWords[nameWords.length - 2] : nameWords[nameWords.length - 1];
-  const articles = getArticlesByAuthor(authorKey).map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  const articles = getArticlesByAuthor(authorKey)
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>

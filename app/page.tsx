@@ -161,14 +161,18 @@ const jsonLdBreadcrumb = {
 };
 
 export default function Home() {
-  const articles = getAllArticles().map((a) => ({
-    slug: a.slug,
-    title: a.title,
-    excerpt: a.excerpt,
-    date: a.date,
-    type: a.type,
-    tags: [...a.tags],
-  }));
+  /* La portada muestra solo los artículos en español: las guías en inglés
+     tienen su versión en español, y mostrar ambas repetiría el tema. */
+  const articles = getAllArticles()
+    .filter((a) => a.lang !== "en")
+    .map((a) => ({
+      slug: a.slug,
+      title: a.title,
+      excerpt: a.excerpt,
+      date: a.date,
+      author: a.authorVisible === false ? undefined : a.author,
+      minutos: a.minutos ?? 1,
+    }));
 
   return (
     <>
