@@ -732,7 +732,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     sintesisPortada: {
       caso: "Un peatón murió atropellado al cruzar la Autopista General Cañas, en un punto donde los vecinos pedían un puente peatonal desde 1986. Iba en alto estado de ebriedad. Su viuda demandó al Estado, y el Juzgado y el Tribunal rechazaron la demanda por culpa de la víctima.",
       analisis: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración. Definió el funcionamiento anormal, lo distinguió de la ilicitud y de la antijuridicidad, y declaró que la inactividad también obliga a reparar. La embriaguez de la víctima redujo la condena a la mitad, sin eliminarla.",
-      impacto: "Al menos 480 resoluciones la citan, y 2024 y 2025 son los años de mayor uso. La aplican los tribunales contencioso-administrativos, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
+      impacto: "Al menos 477 resoluciones la citan, y 2024 y 2025 son los años de mayor uso. La aplican los tribunales contencioso-administrativos, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
     },
     fragmentosPortada: [
       {
@@ -1045,7 +1045,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Más de veinte años después, la sentencia sigue en pleno uso. Hemos encontrado su cita en el texto de al menos 480 resoluciones, dictadas entre 2005 y 2026. La mayor parte proviene de los tribunales contencioso-administrativos; también la citan las Salas Primera, Segunda y Tercera, la Sala Constitucional y los tribunales penales cuando resuelven la acción civil contra el Estado.",
+          "Más de veinte años después, la sentencia sigue en pleno uso. Hemos encontrado su cita en el texto de al menos 477 resoluciones, dictadas entre 2005 y 2026. La mayor parte proviene de los tribunales contencioso-administrativos; también la citan las Salas Primera, Segunda y Tercera, la Sala Constitucional y los tribunales penales cuando resuelven la acción civil contra el Estado.",
           "Su uso crece. Los dos años con más citas son 2024 y 2025, con 59 y 53 resoluciones, y en lo que va de 2026 ya suman 13. Lo que se cita es su andamiaje: la definición de anormalidad, la inactividad material, la antijuridicidad de base, la causalidad adecuada y la eximente parcial."
         ],
         visual: "citas"
@@ -1172,7 +1172,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
           enlaces: [
             {
               etiqueta: "Voto 590-F-2005",
-              nexusId: "ext-1-0034-120080"
+              nexusId: "sen-1-0034-341952"
             }
           ]
         },
@@ -1283,7 +1283,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         organo: "Sala Primera",
         numero: "Voto 590-F-2005",
         fecha: "17-08-2005",
-        nexusId: "ext-1-0034-120080",
+        nexusId: "sen-1-0034-341952",
         nota: "Transcribe su pasaje sobre la carga de la prueba."
       },
       {
