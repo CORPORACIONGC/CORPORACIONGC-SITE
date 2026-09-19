@@ -411,8 +411,8 @@ export function PlazoTresDiasLgap() {
       <FigSource>
         LGAP, arts. 256, 346.1 y 347.2; Ley de Notificaciones Judiciales (Ley N.° 8687), arts. 1 y 38;
         Corte Plena, <a href="https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=70140" target="_blank" rel="noopener noreferrer">circular 42-2011</a>; Sala Primera, voto <V n="515-F-S1-2024" />; TCA, Sección IV, voto
-        <V n="2024-6600" />; PGR, dictamen <D n="C-037-2025" />; CGR, resoluciones R-DFOE-DEC-00016-2026 y
-        R-DCA-SICOP-00888-2023.
+        <V n="2024-6600" />; PGR, dictamen <D n="C-037-2025" />; CGR, resoluciones <a href="https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026013798.pdf" target="_blank" rel="noopener noreferrer">R-DFOE-DEC-00016-2026</a> y
+        <a href="https://cgrfiles.cgr.go.cr/publico/docs_cgr/2023/SIGYD_D/SIGYD_D_2023012493.pdf" target="_blank" rel="noopener noreferrer">R-DCA-SICOP-00888-2023</a>.
       </FigSource>
     </figure>
   );
@@ -659,7 +659,7 @@ const ADMINISTRATIVOS: Criterio[] = [
   { organo: "Procuraduría General", numero: "Dictamen C-300-2012", fecha: "05-11-2012", tema: "Demanda directa", criterio: "La audiencia de ocho días del art. 31.3 del CPCA procede solo si no se agotó la vía, y se da al superior jerárquico supremo.", href: PGR("C-300-2012") },
   { organo: "Procuraduría General", numero: "Dictamen C-030-2011", fecha: "14-02-2011", tema: "Efecto suspensivo", criterio: "El efecto suspensivo es excepcional y existe solo cuando una ley lo da, como el Estatuto de Servicio Civil.", href: PGR("C-030-2011") },
   { organo: "Contraloría General", numero: "R-DFOE-DEC-00016-2026", fecha: "19-08-2026", tema: "Notificación electrónica", criterio: "Tuvo por presentado en tiempo un recurso que solo llegaba al plazo gracias al día adicional del art. 38.", href: CGR("2026/SIGYD_D/SIGYD_D_2026013798.pdf") },
-  { organo: "Contraloría General", numero: "R-DCA-SICOP-00888-2023", fecha: "07-08-2023", tema: "Contratación pública", criterio: "En compras públicas el plazo corre desde la comunicación en el sistema, sin el día adicional de la notificación electrónica." },
+  { organo: "Contraloría General", numero: "R-DCA-SICOP-00888-2023", fecha: "07-08-2023", tema: "Contratación pública", criterio: "En compras públicas el plazo corre desde la comunicación en el sistema, sin el día adicional de la notificación electrónica.", href: CGR("2023/SIGYD_D/SIGYD_D_2023012493.pdf") },
   { organo: "Contraloría General", numero: "R-DFOE-CIU-00002-2023", fecha: "25-04-2023", tema: "Suspensión y revisión", criterio: "La suspensión es excepcional y su perjuicio debe constatarse; la revisión no rescata una orden firme por falta de recurso oportuno.", href: CGR("2023/SIGYD_D/SIGYD_D_2023006441.pdf") },
   { organo: "Contraloría General", numero: "Oficio DJ-0655-2012", fecha: "28-06-2012", tema: "Elevación de la apelación", criterio: "El órgano director que rechaza la apelación en lugar de elevarla infringe el art. 349 y causa indefensión.", href: CGR("2012/SIGYD_D_2012010433.pdf") },
 ];
