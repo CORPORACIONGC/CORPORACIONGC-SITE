@@ -1,5 +1,3 @@
-import { TEXTO_1016_F_2004 } from "./jurisprudencia-textos/1016-f-2004";
-
 /**
  * Jurisprudencia Destacada — Sentencias redactadas por el Dr. Óscar Eduardo
  * González Camacho durante su tiempo como Magistrado de la Sala Primera de
@@ -69,16 +67,45 @@ export type SentenciaDestacada = {
   /** Pasajes destacados con el texto literal de la sentencia */
   pasajes: Pasaje[];
 
+  /** Síntesis breves para la ficha de la portada, en prosa y en voz de la
+   *  firma (a diferencia de los fragmentos, que son de la Sala). Deben
+   *  sostenerse en el análisis de esta misma página. */
+  sintesisPortada?: {
+    caso: string;
+    analisis: string;
+    impacto: string;
+  };
+
+  /** Frases breves para la portada. Deben ser copia exacta de una frase de
+   *  `pasajes`: `fragmentosLiterales` descarta la que no lo sea. */
+  fragmentosPortada?: { texto: string; citation: string }[];
+
   /** Análisis doctrinal — qué estableció jurídicamente */
   doctrina: SeccionDoctrinal[];
 
   /** Resumen del caso (las partes y el conflicto fáctico) */
   casoFactico?: string[];
 
-  /** Texto íntegro de la sentencia (puede ser largo) */
-  textoCompleto?: string;
-  textoCompletoFuente?: string;
-  textoCompletoUrl?: string;
+  /** Identificador del documento de la sentencia en Nexus PJ (tipo «sen-»,
+   *  el texto completo; no el extracto «ext-»). El sitio no reproduce el
+   *  texto íntegro: enlaza directo a Nexus. */
+  nexusId: string;
+
+  /** Votos que la propia sentencia cita, con su documento en Nexus. */
+  precedentes?: {
+    numero: string;
+    fecha: string;
+    nexusId: string;
+    nota: string;
+  }[];
+
+  /** Normativa que la sentencia aplica, con su identificador en SINALEVI. */
+  normativa?: {
+    nombre: string;
+    detalle: string;
+    articulos: string;
+    scijId: number;
+  }[];
 
   /** Atribución */
   redactor: string;
@@ -124,6 +151,31 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         "Luego de una profunda y concienzuda reflexión, se llega al convencimiento de que el referido instituto (indexación no convencional), sí cabe en determinados supuestos obligacionales en que la parte con derecho así lo requiera, todo ello por aplicación directa de la Constitución Política.",
       citation: "Considerando VIII",
     },
+
+    sintesisPortada: {
+      caso:
+        "Una arrendataria de cinco locales comerciales en San José demandó a la propietaria del edificio, que simuló la venta del inmueble para no devolvérselos después de una remodelación. Reclamó la nulidad de esa venta, la cláusula penal, los daños y la actualización de lo adeudado, que las instancias le negaron con base en la jurisprudencia nominalista.",
+      analisis:
+        "La Sala Primera abandonó quince años de doctrina según la cual la indexación solo procedía si las partes la habían pactado. Con fundamento directo en los artículos 41, 33 y 49 de la Constitución, sostuvo que reparar exige restituir el valor real de lo debido, distinguió las obligaciones dinerarias de las de valor y señaló el Índice de Precios al Consumidor como parámetro.",
+      impacto:
+        "Desde 2004, la indexación extra-convencional se aplica en procesos civiles, comerciales y contencioso-administrativos: una condena dineraria puede actualizarse a su valor presente aunque las partes no lo hayan pactado, siempre que la parte lo pida. En ese caso concreto la Sala no la concedió por un motivo procesal, pero la doctrina cambió para todos.",
+    },
+
+    fragmentosPortada: [
+      {
+        texto:
+          "Reparar implica restituir, reponer en lo posible el estado de cosas lesionado a su situación anterior dentro del contexto y valor presente.",
+        citation: "Considerando VIII · Artículo 41",
+      },
+      {
+        texto: "No hay justicia cumplida y efectiva sin restitución plena de lo debido.",
+        citation: "Considerando VIII · Artículo 41",
+      },
+      {
+        texto: "Ante una misma situación, la misma solución.",
+        citation: "Considerando VIII · Artículo 33",
+      },
+    ],
 
     contexto: [
       "Hasta el 26 de noviembre de 2004, la Sala Primera de la Corte Suprema de Justicia sostenía, en jurisprudencia constante desde 1989, que la indexación de obligaciones dinerarias solo procedía cuando las partes la habían pactado expresamente. Ante la ausencia de norma legal que la autorizara, la actualización del valor de la deuda se consideraba improcedente — el deudor solo debía la suma nominal, aunque la inflación la hubiera vaciado de contenido.",
@@ -266,18 +318,33 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       "La instancia y el tribunal le dieron parcialmente la razón pero rechazaron la indexación, citando la jurisprudencia nominalista. La actora recurrió en casación. La Sala desestimó el recurso por razones procesales (la indexación no se había pedido expresamente en la demanda original), pero aprovechó el caso para reformular la doctrina hacia el futuro. La pretensión particular se perdió; la doctrina cambió para todos.",
     ],
 
-    textoCompleto: TEXTO_1016_F_2004,
+    nexusId: "sen-1-0034-292363",
 
-    textoCompletoFuente: "Sistema NEXUS-PJ — Poder Judicial de Costa Rica",
-    textoCompletoUrl:
-      "https://salaprimera.poder-judicial.go.cr/phocadownload/Textos_fallos_relevantes/Civil/1016-F-04.pdf",
+    /* Los cinco votos de la línea nominalista que la sentencia enumera y
+       abandona, en el orden y con las fechas con que los cita. */
+    precedentes: [
+      { numero: "Voto 57-1989", fecha: "24-07-1989", nexusId: "sen-1-0034-148328", nota: "Precedente de la tesis nominalista que la sentencia abandona." },
+      { numero: "Voto 75-1992", fecha: "13-05-1992", nexusId: "sen-1-0034-157067", nota: "Precedente de la tesis nominalista que la sentencia abandona." },
+      { numero: "Voto 49-1995", fecha: "19-05-1995", nexusId: "sen-1-0034-162798", nota: "Precedente de la tesis nominalista que la sentencia abandona." },
+      { numero: "Voto 947-2000", fecha: "22-12-2000", nexusId: "sen-1-0034-148487", nota: "Precedente de la tesis nominalista que la sentencia abandona." },
+      { numero: "Voto 518-2003", fecha: "28-08-2003", nexusId: "sen-1-0034-250505", nota: "Precedente de la tesis nominalista que la sentencia abandona." },
+    ],
+
+    normativa: [
+      {
+        nombre: "Constitución Política de la República de Costa Rica",
+        detalle: "7 de noviembre de 1949",
+        articulos: "Arts. 33, 41 y 49",
+        scijId: 871,
+      },
+    ],
 
     redactor: "Magistrado Óscar Eduardo González Camacho",
     redactorTextual: "Redacta el Magistrado González Camacho.",
     redactoresAdicionales: [],
 
     fuenteUrl:
-      "https://nexuspj.poder-judicial.go.cr",
+      "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-292363",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
 
     metaDescription:
@@ -285,8 +352,20 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
   },
 ];
 
+export const nexusUrl = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
+export const scijUrl = (id: number) =>
+  `https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=${id}`;
+
 export function getSentenciaBySlug(slug: string): SentenciaDestacada | null {
   return SENTENCIAS_DESTACADAS.find((s) => s.slug === slug) ?? null;
+}
+
+/** Los fragmentos de portada que aparecen literalmente en algún pasaje. Un
+ *  fragmento que no coincida carácter por carácter no se muestra: la portada
+ *  nunca cita algo que la sentencia no dice. */
+export function fragmentosLiterales(s: SentenciaDestacada) {
+  const textos = s.pasajes.flatMap((p) => p.parrafos.map((q) => q.texto));
+  return (s.fragmentosPortada ?? []).filter((f) => textos.some((t) => t.includes(f.texto)));
 }
 
 export function getAllSentencias(): SentenciaDestacada[] {

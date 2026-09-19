@@ -129,8 +129,8 @@ export default function JurisprudenciaDestacadaIndexPage() {
               <p className="text-lg text-cream/60 leading-relaxed max-w-[60ch] mb-3">
                 Selección de fallos redactados por el Dr. Óscar Eduardo González
                 Camacho durante su gestión como Magistrado de la Sala Primera
-                (2002–2014). Cada sentencia con texto íntegro verificado y
-                análisis doctrinal.
+                (2002–2014). Cada sentencia con pasajes literales verificados,
+                análisis doctrinal y enlace a su texto íntegro en Nexus.
               </p>
             </AnimatedEntry>
           </div>

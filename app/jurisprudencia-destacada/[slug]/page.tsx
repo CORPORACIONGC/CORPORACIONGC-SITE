@@ -6,12 +6,9 @@ import {
   ArrowLeft,
   Quotes,
   Scales,
-  BookOpen,
   Gavel,
   CalendarBlank,
   ArrowSquareOut,
-  CaretDown,
-  FilePdf,
 } from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -24,6 +21,8 @@ import {
 import {
   getAllSentencias,
   getSentenciaBySlug,
+  nexusUrl,
+  scijUrl,
 } from "@/lib/jurisprudencia";
 import { FIRM } from "@/lib/constants";
 import { buildJurisprudenciaMetadata } from "@/lib/page-metadata";
@@ -101,6 +100,9 @@ export default async function SentenciaDestacadaPage({
       "@type": "Thing",
       name: sentencia.materia,
     },
+    /* El texto íntegro vive en Nexus PJ; el análisis se basa en él. */
+    isBasedOn: nexusUrl(sentencia.nexusId),
+    citation: (sentencia.precedentes ?? []).map((p) => nexusUrl(p.nexusId)),
   };
 
   const jsonLdBreadcrumb = {
@@ -324,7 +326,7 @@ export default async function SentenciaDestacadaPage({
                       {pasaje.parrafos.map((p, j) => (
                         <p
                           key={j}
-                          className="text-[15px] md:text-base text-cream/72 leading-[1.75] max-w-[62ch]"
+                          className="text-base text-cream/72 leading-[1.75] max-w-[62ch]"
                         >
                           <HighlightedText
                             texto={p.texto}
@@ -411,69 +413,117 @@ export default async function SentenciaDestacadaPage({
           </section>
         )}
 
-        {/* ─── TEXTO ÍNTEGRO ─── */}
-        {sentencia.textoCompleto && (
-          <section className="relative py-12 md:py-16">
-            <div className="max-w-[820px] mx-auto px-6 md:px-10">
-              <AnimatedEntry>
-                <details
-                  open
-                  className="group rounded-2xl border border-cream/[0.10] bg-cream/[0.02] overflow-hidden"
-                >
-                  <summary className="cursor-pointer list-none p-6 md:p-8 flex items-center justify-between gap-4 hover:bg-cream/[0.03] transition-colors duration-300">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <BookOpen
-                          size={16}
-                          weight="duotone"
-                          className="text-gold/70"
-                        />
-                        <span className="text-[10px] tracking-[0.3em] uppercase text-gold/85 font-medium">
-                          Texto íntegro de la resolución
+        {/* ─── TEXTO ÍNTEGRO: enlace directo a Nexus ─── */}
+        <section className="relative py-12 md:py-16">
+          <div className="max-w-[820px] mx-auto px-6 md:px-10">
+            <AnimatedEntry>
+              <a
+                href={nexusUrl(sentencia.nexusId)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col gap-5 rounded-2xl border border-cream/[0.10] bg-cream/[0.02] p-6 transition-colors duration-300 hover:border-burgundy/30 dark:hover:border-gold/30 md:flex-row md:items-center md:justify-between md:p-8"
+              >
+                <div>
+                  <p className="type-label mb-2 text-cream/65">Texto íntegro de la resolución</p>
+                  <p className="text-lg font-semibold tracking-[-0.01em] text-cream md:text-xl">
+                    {sentencia.numero}, en Nexus del Poder Judicial
+                  </p>
+                  <p className="mt-1.5 text-sm text-cream/65">
+                    Resultandos, considerandos, por tanto y firmas, en la fuente oficial.
+                  </p>
+                </div>
+                <span className="inline-flex shrink-0 items-center gap-2 text-sm font-medium text-burgundy transition-colors group-hover:text-burgundy-light dark:text-gold dark:group-hover:text-gold-light">
+                  Leer en Nexus
+                  <ArrowSquareOut size={14} weight="bold" />
+                </span>
+              </a>
+            </AnimatedEntry>
+          </div>
+        </section>
+
+        {/* ─── BIBLIOGRAFÍA ─── */}
+        <section className="relative py-12 md:py-16">
+          <div className="max-w-[820px] mx-auto px-6 md:px-10">
+            <AnimatedEntry>
+              <h2 className="type-title mb-8 text-cream">Bibliografía</h2>
+              <div className="prose-article">
+                <div className="gc-fig gc-biblio">
+                  <section className="gc-juris-grupo">
+                    <span className="gc-fig-label">Sentencia comentada</span>
+                    <ol>
+                      <li className="gc-juris-item">
+                        <span className="gc-juris-id">
+                          <b>
+                            <a href={nexusUrl(sentencia.nexusId)} target="_blank" rel="noopener noreferrer">
+                              {sentencia.numero}
+                            </a>
+                          </b>
+                          <span className="gc-juris-org">{sentencia.tribunal}</span>
+                          <span className="gc-juris-fecha">{sentencia.fecha}</span>
                         </span>
-                      </div>
-                      <h3 className="font-display text-lg md:text-xl text-cream/95 tracking-tight">
-                        Reproducción literal de la sentencia
-                      </h3>
-                      <p className="text-xs text-cream/45 mt-1.5 leading-relaxed">
-                        Resultandos, considerandos completos, por tanto y firmas
-                      </p>
-                      {sentencia.textoCompletoFuente && (
-                        <p className="text-[11px] text-cream/40 mt-3 italic">
-                          Fuente: {sentencia.textoCompletoFuente}
-                        </p>
-                      )}
-                    </div>
-                    <CaretDown
-                      size={22}
-                      weight="bold"
-                      className="text-cream/40 group-open:rotate-180 transition-transform duration-300 shrink-0"
-                    />
-                  </summary>
+                        <span className="gc-juris-criterio">
+                          <span className="gc-juris-tema">{sentencia.materia}</span>
+                          Expediente {sentencia.expediente}. {sentencia.redactorTextual}
+                        </span>
+                      </li>
+                    </ol>
+                  </section>
 
-                  <div className="px-6 md:px-10 pb-8 md:pb-10 pt-2 border-t border-cream/[0.06]">
-                    <pre className="font-body whitespace-pre-wrap text-[14px] text-cream/70 leading-[1.85] mt-6 max-w-[68ch]">
-                      {sentencia.textoCompleto}
-                    </pre>
+                  {sentencia.precedentes && sentencia.precedentes.length > 0 && (
+                    <section className="gc-juris-grupo">
+                      <span className="gc-fig-label">Precedentes citados</span>
+                      <ol>
+                        {sentencia.precedentes.map((p) => (
+                          <li key={p.nexusId} className="gc-juris-item">
+                            <span className="gc-juris-id">
+                              <b>
+                                <a href={nexusUrl(p.nexusId)} target="_blank" rel="noopener noreferrer">
+                                  {p.numero}
+                                </a>
+                              </b>
+                              <span className="gc-juris-org">Sala Primera</span>
+                              <span className="gc-juris-fecha">{p.fecha}</span>
+                            </span>
+                            <span className="gc-juris-criterio">{p.nota}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    </section>
+                  )}
 
-                    {sentencia.textoCompletoUrl && (
-                      <a
-                        href={sentencia.textoCompletoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-8 inline-flex items-center gap-2 text-xs text-gold/85 hover:text-gold transition-colors duration-300"
-                      >
-                        <FilePdf size={14} weight="duotone" />
-                        Descargar PDF oficial del Poder Judicial
-                        <ArrowSquareOut size={11} weight="bold" />
-                      </a>
-                    )}
-                  </div>
-                </details>
-              </AnimatedEntry>
-            </div>
-          </section>
-        )}
+                  {sentencia.normativa && sentencia.normativa.length > 0 && (
+                    <section className="gc-juris-grupo">
+                      <span className="gc-fig-label">Normativa</span>
+                      <ol>
+                        {sentencia.normativa.map((n) => (
+                          <li key={n.scijId} className="gc-juris-item">
+                            <span className="gc-juris-id">
+                              <b>
+                                <a href={scijUrl(n.scijId)} target="_blank" rel="noopener noreferrer">
+                                  {n.nombre}
+                                </a>
+                              </b>
+                              <span className="gc-juris-org">{n.detalle}</span>
+                            </span>
+                            <span className="gc-juris-criterio">
+                              <span className="gc-juris-tema">Disposiciones aplicadas</span>
+                              {n.articulos}
+                            </span>
+                          </li>
+                        ))}
+                      </ol>
+                    </section>
+                  )}
+
+                  <p className="gc-fig-source">
+                    Jurisprudencia: Nexus del Poder Judicial. Normativa: Sistema Costarricense de
+                    Información Jurídica (SINALEVI), en su versión vigente.
+                  </p>
+                </div>
+              </div>
+            </AnimatedEntry>
+          </div>
+        </section>
 
         {/* ─── ATRIBUCIÓN ─── */}
         <section className="relative py-12 md:py-20">
