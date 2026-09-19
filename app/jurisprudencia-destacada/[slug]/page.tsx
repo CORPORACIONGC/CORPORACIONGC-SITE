@@ -11,10 +11,12 @@ import { CitasExplorador } from "@/components/jurisprudencia/CitasExplorador";
 import {
   Anclajes,
   Comparacion,
+  Formas,
   LineaTemporal,
   PasajeLiteral,
   Periodo,
   Recepcion,
+  Reparto,
   Trayectoria,
 } from "@/components/jurisprudencia/SentenciaVisuales";
 import {
@@ -87,15 +89,15 @@ export default async function SentenciaDestacadaPage({
     },
     inLanguage: "es-CR",
     isPartOf: { "@id": `${FIRM.url}/#website` },
-    datePublished: "2004-11-26",
+    datePublished: sentencia.fechaISO,
     about: {
       "@type": "Thing",
       name: sentencia.materia,
     },
     /* El texto íntegro vive en Nexus PJ; el análisis se basa en él. */
     isBasedOn: nexusUrl(sentencia.nexusId),
-    citation: [...(sentencia.precedentes ?? []), ...(sentencia.citadaPor ?? [])].map((p) =>
-      nexusUrl(p.nexusId),
+    citation: [...(sentencia.precedentes ?? []), ...(sentencia.citadaPor ?? [])].flatMap((p) =>
+      p.nexusId ? [nexusUrl(p.nexusId)] : [],
     ),
   };
 
@@ -294,12 +296,16 @@ export default async function SentenciaDestacadaPage({
                       <span className="gc-fig-label">Jurisprudencia citada</span>
                       <ol>
                         {sentencia.precedentes.map((p) => (
-                          <li key={p.nexusId} className="gc-juris-item">
+                          <li key={p.numero} className="gc-juris-item">
                             <span className="gc-juris-id">
                               <b>
-                                <a href={nexusUrl(p.nexusId)} target="_blank" rel="noopener noreferrer">
-                                  {p.numero}
-                                </a>
+                                {p.nexusId ? (
+                                  <a href={nexusUrl(p.nexusId)} target="_blank" rel="noopener noreferrer">
+                                    {p.numero}
+                                  </a>
+                                ) : (
+                                  p.numero
+                                )}
                               </b>
                               <span className="gc-juris-org">{p.organo ?? "Sala Primera"}</span>
                               <span className="gc-juris-fecha">{p.fecha}</span>
@@ -491,7 +497,7 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
               anio: p.fecha.slice(-4),
               numero: p.numero,
               fecha: p.fecha,
-              href: nexusUrl(p.nexusId),
+              href: p.nexusId ? nexusUrl(p.nexusId) : nexusUrl(sentencia.nexusId),
             }))}
           giro={{
             anio: sentencia.fecha.slice(-4),
@@ -511,6 +517,12 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
       )}
 
       {sec.visual === "periodo" && v.periodo && <Periodo periodo={v.periodo} />}
+
+      {sec.visual === "formas" && v.formas?.[sec.id] && (
+        <Formas formas={v.formas[sec.id]} etiqueta={sec.titulo} />
+      )}
+
+      {sec.visual === "reparto" && v.reparto && <Reparto reparto={v.reparto} />}
 
       {sec.visual === "recepcion" && v.recepcion && (
         <Recepcion

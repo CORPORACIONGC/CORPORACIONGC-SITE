@@ -235,6 +235,7 @@ export function Anclajes({
             <span className="text-[44px] font-light leading-none tracking-[-0.02em] tabular-nums">
               {a.articulo}
             </span>
+            {a.norma && <span className="text-[13px] text-cream/65">{a.norma}</span>}
           </p>
           <p className="mt-3 text-[17px] font-semibold tracking-[-0.01em] text-cream">
             {a.principio}
@@ -385,5 +386,82 @@ export function Recepcion({
           </li>
         ))}
     </ol>
+  );
+}
+
+/* ── Tres formas de un mismo concepto ──
+   Columnas con numeral romano, título y una explicación breve de la firma. */
+export function Formas({
+  formas,
+  etiqueta,
+}: {
+  formas: { titulo: string; texto: string }[];
+  etiqueta: string;
+}) {
+  const romanos = ["I", "II", "III", "IV"];
+  return (
+    <ol
+      role="list"
+      aria-label={etiqueta}
+      className="my-10 grid gap-10 md:my-12 md:grid-cols-3 md:gap-8"
+    >
+      {formas.map((f, i) => (
+        <li key={f.titulo} className="border-t border-gold/60 pt-6">
+          <p className="text-[26px] font-light leading-none tracking-[-0.01em] text-cream/65">
+            {romanos[i]}
+          </p>
+          <p className="mt-4 text-[17px] font-semibold leading-snug tracking-[-0.01em] text-cream">
+            {f.titulo}
+          </p>
+          <p className="mt-2 text-[15px] leading-relaxed text-cream/75">{f.texto}</p>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/* ── El reparto de una condena entre causas concurrentes ──
+   Una barra dividida en proporción, con el monto de cada parte debajo. La
+   parte que asume la Administración va en burdeos; la otra, en dorado. */
+export function Reparto({
+  reparto,
+}: {
+  reparto: NonNullable<VisualesSentencia["reparto"]>;
+}) {
+  return (
+    <figure className="my-10 md:my-12">
+      <p className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+        <span className="type-label text-cream/65">{reparto.total.etiqueta}</span>
+        <span className="text-[26px] font-light leading-none tabular-nums tracking-[-0.01em] text-cream">
+          {reparto.total.monto}
+        </span>
+      </p>
+      <div aria-hidden="true" className="mt-5 flex h-3 gap-[3px]">
+        {reparto.partes.map((p) => (
+          <span
+            key={p.etiqueta}
+            className={p.condena ? "bg-burgundy dark:bg-gold-light" : "bg-gold/45"}
+            style={{ width: `${p.porcentaje}%` }}
+          />
+        ))}
+      </div>
+      <dl className="mt-4 grid gap-x-8 gap-y-5 sm:grid-cols-2">
+        {reparto.partes.map((p) => (
+          <div key={p.etiqueta}>
+            <dt
+              className={`text-[15px] font-semibold leading-snug ${
+                p.condena ? "text-burgundy dark:text-gold" : "text-cream"
+              }`}
+            >
+              {p.etiqueta} · {p.porcentaje} %
+            </dt>
+            <dd className="mt-1 text-[15px] leading-relaxed text-cream/75">{p.detalle}</dd>
+          </div>
+        ))}
+      </dl>
+      <figcaption className="mt-5 border-t border-cream/10 pt-4 text-[13px] leading-relaxed text-cream/65">
+        {reparto.nota}
+      </figcaption>
+    </figure>
   );
 }

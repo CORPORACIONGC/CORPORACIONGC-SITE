@@ -291,9 +291,11 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 **Página de una sentencia** (`app/jurisprudencia-destacada/[slug]/page.tsx`). Se lee como un documento analizado. Arriba, el título y el resumen a la izquierda y, a la derecha, la ficha de la resolución en papel (`gc-papel`), con el enlace al texto íntegro en Nexus. Debajo, la franja «En síntesis», con el caso, el análisis y el impacto. El cuerpo es prosa de la firma (`analisis` en los datos), con índice al margen en números romanos. En cada sección, los pasajes literales de la Sala se tejen en cursiva después del primer párrafo (o antes, si la prosa los comenta), con las frases decisivas bajo el subrayado dorado (`gc-subrayado`) y el considerando al pie. Los pasajes de otras resoluciones que citan la sentencia (`citasExternas`) usan el mismo tratamiento, van después del párrafo que los introduce y enlazan su referencia a Nexus. Los elementos visuales viven en `components/jurisprudencia/SentenciaVisuales.tsx` y se activan por sección (`visual`):
 - la trayectoria procesal del caso;
 - la línea de tiempo de los precedentes hasta el giro;
-- los anclajes constitucionales, con el número del artículo a 44 px;
+- los anclajes normativos, con el número del artículo a 44 px y, si no es la Constitución, la ley al lado («LGAP»);
 - el contraste entre dos categorías jurídicas;
 - el período que cubre un cálculo;
+- tres formas de un concepto (`formas`, por id de sección): columnas con numeral romano a 26 px, título y una explicación breve de la firma;
+- el reparto de una condena entre causas concurrentes (`reparto`): el monto total, una barra dividida en proporción, en burdeos la parte que asume la Administración y en dorado la otra, y el detalle de cada parte;
 - la recepción: hitos verticales con año, órgano, una frase y los votos enlazados;
 - las citas (`components/jurisprudencia/CitasExplorador.tsx`): la cifra total, una serie anual en columnas doradas y el reparto por despacho con barras. Cada año y cada despacho es un botón que abre la lista de resoluciones filtrada, con fecha, número enlazado a Nexus, despacho y expediente; la lista completa está en el HTML y se descarga en CSV. Las cifras se calculan desde la lista (`lib/jurisprudencia-citas.ts`, generada), nunca se escriben a mano. Al pie, el método y la fecha de corte.
 

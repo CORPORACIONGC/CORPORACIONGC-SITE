@@ -50,7 +50,9 @@ export type SeccionAnalisis = {
     | "comparacion"
     | "periodo"
     | "recepcion"
-    | "citas";
+    | "citas"
+    | "formas"
+    | "reparto";
   /** Nota práctica breve al cierre de la sección. */
   nota?: string;
 };
@@ -62,7 +64,14 @@ export type EnlaceFuente = { etiqueta: string; nexusId?: string; scijId?: number
  *  copia exacta de un pasaje; la página la descarta si no lo es. */
 export type VisualesSentencia = {
   trayectoria?: { etapa: string; sede: string; detalle: string; final?: boolean }[];
-  anclajes?: { articulo: string; principio: string; literal: string; citation: string }[];
+  anclajes?: {
+    articulo: string;
+    /** Ley del artículo, si no es la Constitución (p. ej. «LGAP»). */
+    norma?: string;
+    principio: string;
+    literal: string;
+    citation: string;
+  }[];
   comparacion?: {
     titulo: string;
     rasgo: string;
@@ -71,6 +80,16 @@ export type VisualesSentencia = {
     citation: string;
   }[];
   periodo?: { desde: string; hasta: string; tramo: string; parametro: string };
+  /** Tres o cuatro formas de un concepto, en prosa de la firma, por id de
+   *  la sección que las muestra. */
+  formas?: Record<string, { titulo: string; texto: string }[]>;
+  /** Reparto de una condena entre causas concurrentes. `condena` marca la
+   *  parte que asume la Administración. */
+  reparto?: {
+    total: { etiqueta: string; monto: string };
+    partes: { etiqueta: string; porcentaje: number; detalle: string; condena?: boolean }[];
+    nota: string;
+  };
   /** Cómo la recibieron la jurisprudencia y la ley, en orden cronológico. */
   recepcion?: {
     anio: string;
@@ -98,6 +117,7 @@ export type SentenciaDestacada = {
   numero: string; // "Resolución N° 1016-F-2004"
   fecha: string; // "26 de noviembre de 2004"
   fechaCorta: string; // "26 Nov 2004"
+  fechaISO: string; // "2004-11-26"
   hora?: string;
   expediente: string;
   tribunal: string;
@@ -160,13 +180,14 @@ export type SentenciaDestacada = {
    *  texto íntegro: enlaza directo a Nexus. */
   nexusId: string;
 
-  /** Votos que la propia sentencia cita, con su documento en Nexus. */
+  /** Votos que la propia sentencia cita, con su documento en Nexus (si aún
+   *  no se tiene, se muestran sin enlace). */
   precedentes?: {
     /** Sala Primera si se omite. */
     organo?: string;
     numero: string;
     fecha: string;
-    nexusId: string;
+    nexusId?: string;
     nota: string;
   }[];
 
@@ -213,6 +234,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     numero: "Resolución N° 1016-F-2004",
     fecha: "26 de noviembre de 2004",
     fechaCorta: "26 Nov 2004",
+    fechaISO: "2004-11-26",
     hora: "9:30 horas",
     expediente: "95-000223-181-CI",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -684,6 +706,643 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     metaDescription:
       "Resolución N° 1016-F-2004 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Sentencia fundacional que estableció la procedencia de la indexación extra-convencional de obligaciones dinerarias en Costa Rica con base directa en los artículos 41, 33 y 49 de la Constitución Política.",
   },
+  /* 584-F-2005. Los pasajes se copiaron del texto de Nexus, que anonimiza a
+     las personas: por eso la prosa tampoco las nombra. */
+  {
+    slug: "responsabilidad-del-estado-por-omision",
+    numero: "Resolución N° 584-F-2005",
+    fecha: "11 de agosto de 2005",
+    fechaCorta: "11 Ago 2005",
+    fechaISO: "2005-08-11",
+    hora: "10:40 horas",
+    expediente: "97-000736-0163-CA",
+    tribunal: "Sala Primera de la Corte Suprema de Justicia",
+    area: "Derecho Administrativo",
+    materia: "Responsabilidad patrimonial de la Administración",
+    badge: {
+      type: "paradigmatica",
+      label: "Sentencia Paradigmática"
+    },
+    titulo: "La omisión que obliga a reparar",
+    subtitulo: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció que la inactividad del Estado también genera el deber de indemnizar.",
+    pullQuote: {
+      texto: "De ahí que, ha de afirmarse de manera contundente (con fundamento y de acuerdo con lo dicho en considerandos anteriores) que la Administración Pública también es responsable por los daños y perjuicios ocasionados con su inactividad administrativa.",
+      citation: "Considerando VII"
+    },
+    sintesisPortada: {
+      caso: "Un peatón murió atropellado al cruzar la Autopista General Cañas, en un punto donde los vecinos pedían un puente peatonal desde 1986. Iba en alto estado de ebriedad. Su viuda demandó al Estado, y el Juzgado y el Tribunal rechazaron la demanda por culpa de la víctima.",
+      analisis: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración. Definió el funcionamiento anormal, lo distinguió de la ilicitud y de la antijuridicidad, y declaró que la inactividad también obliga a reparar. La embriaguez de la víctima redujo la condena a la mitad, sin eliminarla.",
+      impacto: "Al menos 480 resoluciones la citan, y 2024 y 2025 son los años de mayor uso. La aplican los tribunales contencioso-administrativos, las tres Salas de casación, la Sala Constitucional y la jurisdicción penal, para condenar por omisión y para reducir la condena cuando la víctima concurre al daño."
+    },
+    fragmentosPortada: [
+      {
+        texto: "Desde que el Estado es persona sometida al Derecho y parte esencial del engranaje democrático, es responsable.",
+        citation: "Considerando III"
+      },
+      {
+        texto: "Esto permite señalar que la anormalidad puede manifestarse a través de un mal funcionamiento; un funcionamiento tardío, o una ausencia total de funcionamiento.",
+        citation: "Considerando VI"
+      },
+      {
+        texto: "De más está decir, que la indolencia administrativa puede producir (y de hecho produce) más graves lesiones que la propia actuación limitativa del órgano o ente público.",
+        citation: "Considerando VII"
+      }
+    ],
+    contexto: [
+      "Desde la Ley General de la Administración Pública de 1978, la responsabilidad patrimonial de la Administración en Costa Rica es objetiva: la víctima no tiene que probar la culpa de ningún funcionario. La ley, sin embargo, dejó abiertas preguntas que la jurisprudencia tuvo que resolver, entre ellas qué es un funcionamiento anormal y si el Estado responde por lo que deja de hacer.",
+      "La sentencia 584-F-2005, redactada por el magistrado Óscar Eduardo González Camacho, respondió esas preguntas en un solo cuerpo doctrinal y lo aplicó a un caso de omisión con resultado de muerte."
+    ],
+    pasajes: [
+      {
+        titulo: "La inactividad también obliga",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "De más está decir, que la indolencia administrativa puede producir (y de hecho produce) más graves lesiones que la propia actuación limitativa del órgano o ente público. De ahí que, ha de afirmarse de manera contundente (con fundamento y de acuerdo con lo dicho en considerandos anteriores) que la Administración Pública también es responsable por los daños y perjuicios ocasionados con su inactividad administrativa.",
+            destacar: [
+              "la Administración Pública también es responsable por los daños y perjuicios ocasionados con su inactividad administrativa"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El Estado responsable",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "Desde que el Estado es persona sometida al Derecho y parte esencial del engranaje democrático, es responsable. En abandono ha quedado aquella inmunidad absoluta de quien ejerce el poder.",
+            destacar: [
+              "es responsable"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El régimen objetivo",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Este criterio finalista produce a su vez, una transformación plena en el eje central de la responsabilidad misma, pues abandona la observación analítica del sujeto productor del daño y la calificación de su conducta, para ubicarse en la posición de la víctima, que menguada en su situación jurídica, queda eximida en la comprobación de cualquier parámetro subjetivo del agente público actuante (salvo en lo que a su responsabilidad personal se refiere). Esto ocasiona, sin duda, un giro en el enfoque mismo de su fundamento, ya que habrá responsabilidad de la Administración siempre que su funcionamiento normal o anormal, cause un daño que la víctima no tenga el deber de soportar, ya sea patrimonial o extrapatrimonial, con independencia de su situación jurídica subjetiva y la titularidad o condición de poder que ostente, cumpliendo claro está, con el presupuesto imprescindible del nexo causal.",
+            destacar: [
+              "un daño que la víctima no tenga el deber de soportar",
+              "cumpliendo claro está, con el presupuesto imprescindible del nexo causal"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Los parámetros de la ley",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "De esta manera, el numeral 190 de nuestra Ley General de la Administración Pública refiere a “funcionamiento legítimo o ilegítimo, normal o anormal”, de donde la legitimidad o su antítesis, hace referencia básicamente a las conductas jurídicas de la Administración, mientras que lo normal o anormal, apunta, ante todo (pero no en exclusiva), a la conducta material de la Administración, representada entre otras, por la actividad prestacional que se atribuye al Estado como parte de la categoría social que también se le asigna en procura del bienestar general del colectivo. Nótese como el artículo 194 de la indicada ley, hace referencia a los “actos lícitos”, bajo la concepción de actividad jurídica, distinguiéndolos en la misma norma, de lo que califica como “funcionamiento normal”, entendido como actividad material."
+          }
+        ]
+      },
+      {
+        titulo: "Los requisitos del daño",
+        citation: "Considerando IV · cita el voto 132 de 1991",
+        parrafos: [
+          {
+            texto: "para establecer así la responsabilidad directa del Estado sin necesidad de probar previamente que el daño se produjo por culpa del funcionario o de la Administración, exigiendo para la procedencia de la indemnización que el daño sufrido sea efectivo, evaluable e individualizable en relación con una persona o grupo -artículo 196-."
+          }
+        ]
+      },
+      {
+        titulo: "La anormalidad",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "De esta manera, la anormalidad atiende a aquellas conductas administrativas, que en sí mismas, se apartan de la buena administración (conforme al concepto utilizado por la propia Ley General en el artículo 102 inciso d., que entre otras cosas incluye la eficacia y la eficiencia) o de la organización, de las reglas técnicas o de la pericia y el prudente quehacer en el despliegue de sus actuaciones, con efecto lesivo para la persona. Esto permite señalar que la anormalidad puede manifestarse a través de un mal funcionamiento; un funcionamiento tardío, o una ausencia total de funcionamiento.",
+            destacar: [
+              "un mal funcionamiento; un funcionamiento tardío, o una ausencia total de funcionamiento"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La antijuridicidad de base",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "Siempre que la víctima no tenga ese deber de soportar la lesión, se convierte en antijurídica, por menoscabo a un tercero a contrapelo del ordenamiento. De no existir ésta, no cabe reparación.",
+            destacar: [
+              "De no existir ésta, no cabe reparación."
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La inactividad material",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "Más simple, hay inactividad de este tipo cuando existiendo para el ente u órgano público una obligación de dar o hacer impuesta por el ordenamiento jurídico o por una previa decisión suya, fuera o dentro de un procedimiento administrativo, no se despliega la debida actividad fáctica o jurídica que lleve a buen término la función otorgada, con detrimento de los derechos o intereses de uno o varios sujetos pasivos, ya sean privados o públicos, individuales o colectivos."
+          }
+        ]
+      },
+      {
+        titulo: "La omisión, anormal e ilegítima",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "Esa pasividad frente al cumplimiento de obligaciones preexistentes se enmarca, para efectos de la responsabilidad civil extracontractual, como funcionamiento anormal de la Administración (en tanto se corresponda con una actividad material debida) y con una conducta ilegítima, que para este caso puede ser concurrente, en la medida en que el incumplimiento de lo debido no sólo atenta contra las reglas de buena administración, sino que infringe la juricidad en tanto incumple las potestades administrativas funcionales que dimanan del propio Ordenamiento Jurídico."
+          }
+        ]
+      },
+      {
+        titulo: "La concurrencia de responsabilidades",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "Esta circunstancia confluye con el funcionamiento anormal e ilícito indicado, y por tanto, atenúa la responsabilidad de la Administración establecida en el considerando precedente."
+          },
+          {
+            texto: "En efecto, de conformidad con todo lo anteriormente dicho, queda claro que en este caso existe una concurrencia de responsabilidades, pues confluyeron para la acción dañosa, tanto factores imputables a la Administración demandada (inactividad material-funcionamiento anormal e ilícito), cuanto a la propia culpa de la víctima por estado de ebriedad. Esta última sin embargo, no exime al Estado de su obligación indemnizatoria, pues como se ha dicho tantas veces, la ausencia del puente peatonal puso al occiso en una situación obligada de riesgo.",
+            destacar: [
+              "no exime al Estado de su obligación indemnizatoria"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El cálculo del daño moral",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "Ahora bien, tomando en cuenta las condiciones sociales, económicas y temporales del fallecido, v.gr. su edad, ocupación, estado civil, ingresos posibles, expectativa de vida, etc, esta Sala arriba a la conclusión de que para el extremo de daño moral pleno corresponde una indemnización de ¢20.000.000,00. No obstante, siendo que la responsabilidad del Estado queda reducida a un cincuenta por ciento de la indemnización total –por virtud de la concurrencia de responsabilidades anteriormente indicada- debe reconocerse a la actora una indemnización por daño moral subjetivo en la suma de ¢10.000.000,00.",
+            destacar: [
+              "queda reducida a un cincuenta por ciento de la indemnización total"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El voto salvado",
+        citation: "Voto salvado de la magistrada León Feoli",
+        parrafos: [
+          {
+            texto: "Es cierto que el Estado debe asegurar el bienestar colectivo, emprender las obras y el actuar necesario para garantía de la seguridad y que el cumplimiento de estas tareas genera responsabilidad. Pero, ello no conlleva a que las personas se conduzcan faltando al deber de cuidado y pongan en peligro su vida e integridad."
+          }
+        ]
+      },
+      {
+        titulo: "La coincidencia en la doctrina",
+        citation: "Voto salvado de la magistrada León Feoli",
+        parrafos: [
+          {
+            texto: "Concuerdo con el preámbulo que se expone en el voto de mayoría, en punto a la temática sobre la evolución e independencia del régimen de responsabilidad objetiva, su fundamento constitucional, los parámetros de imputación legal, la obligatoriedad indemnizatoria frente a los daños y perjuicios causados por inacción y el nexo causal como presupuesto de responsabilidad, pese a que, en mi criterio, el Tribunal nunca desconoció la responsabilidad de la Administración, sólo que estimó aplicable una eximente que, como tal, la libera de asumirla."
+          }
+        ]
+      }
+    ],
+    analisis: [
+      {
+        id: "el-caso",
+        titulo: "El caso",
+        parrafos: [
+          "En 1986, la asociación de vecinos de la urbanización Los Arcos pidió al Ministerio de Obras Públicas y Transportes un puente peatonal para cruzar la Autopista General Cañas en ese sector. Once años después el puente seguía sin construirse. El 22 de enero de 1997, un hombre murió atropellado cuando intentaba cruzar la autopista en ese punto. La autopsia le encontró 377 mg % de alcohol en la sangre, un estado de intoxicación aguda.",
+          "Su viuda reclamó la indemnización ante el Ministerio, que la denegó, y demandó al Estado por la responsabilidad objetiva derivada de esa omisión. El Juzgado acogió la defensa de culpa de la víctima y rechazó la demanda, y el Tribunal Contencioso Administrativo confirmó. Para ambas instancias, la embriaguez del peatón liberaba al Estado por completo.",
+          "La Sala Primera casó la sentencia. Reconoció que la omisión del Ministerio fue causa de la muerte, admitió que la culpa de la víctima concurrió con ella y repartió el daño entre ambas. Condenó al Estado a pagar ¢10 millones por daño moral, con intereses y costas. La magistrada León Feoli salvó el voto."
+        ],
+        visual: "trayectoria"
+      },
+      {
+        id: "regimen",
+        titulo: "Un régimen objetivo",
+        parrafos: [
+          "Antes de resolver el caso, la Sala ordenó el régimen completo de la responsabilidad de la Administración. Partió de una premisa histórica:",
+          "Desde la Ley General de la Administración Pública, esa responsabilidad es objetiva. La víctima no tiene que probar la culpa ni el dolo de ningún funcionario: le basta demostrar el daño y el nexo causal, y es la Administración la que debe probar una causa que la exima. La Sala lo explicó como un cambio de perspectiva, que deja de juzgar al autor del daño y se sitúa en la posición de quien lo sufre:",
+          "El fundamento, recordó la Sala con la sentencia 5207-2004 de la Sala Constitucional, está en la propia Constitución, que obliga a reparar los daños antijurídicos causados por las administraciones públicas. En la ley, el régimen descansa en tres artículos de la Ley General:"
+        ],
+        literales: [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        visual: "anclajes"
+      },
+      {
+        id: "anormalidad",
+        titulo: "Funcionar mal, tarde o nunca",
+        parrafos: [
+          "El carácter objetivo del régimen tiene límites. La Sala lo advirtió con franqueza: un deber de reparar irrestricto y permanente sería insoportable para cualquier Estado con recursos limitados. Por eso la ley acude a criterios de imputación, y uno de ellos es el funcionamiento anormal:",
+          "La anormalidad mide la conducta material de la Administración, es decir, cómo presta el servicio o ejecuta la obra frente a las reglas de la buena administración, la técnica y la pericia. Puede presentarse de tres maneras:"
+        ],
+        literales: [
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        visual: "formas"
+      },
+      {
+        id: "antijuridicidad",
+        titulo: "El daño que no hay deber de soportar",
+        parrafos: [
+          "La sentencia separa tres conceptos que la práctica suele mezclar. La ilegitimidad se refiere a la conducta jurídica de la Administración; la anormalidad, a su conducta material; la antijuridicidad, al daño mismo. Esta última existe cuando la víctima no tiene el deber de soportar la lesión, y es el presupuesto de toda reparación:",
+          "De ahí una consecuencia práctica. El Estado responde también por sus actos lícitos y por su funcionamiento normal cuando el daño es especial, por la pequeña proporción de afectados o por su intensidad excepcional, como prevé el artículo 194. En esos casos la conducta se ajusta a Derecho, y lo que obliga a reparar es la antijuridicidad del daño."
+        ],
+        literales: [
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        visual: "formas"
+      },
+      {
+        id: "inactividad",
+        titulo: "La omisión también obliga",
+        parrafos: [
+          "Con ese marco, la Sala respondió la pregunta del caso: si el Estado responde por lo que dejó de hacer. La conducta administrativa comprende también la omisión, y la Sala definió con precisión la inactividad material:",
+          "Esa pasividad es, a la vez, funcionamiento anormal y conducta ilegítima, porque incumple una obligación que el ordenamiento ya imponía. La construcción y el mantenimiento de las vías y de los puentes peatonales correspondían al Ministerio según su ley orgánica, y la Sala Constitucional había declarado en la sentencia 11519-2003 que el Estado debe adoptar las medidas idóneas frente a un peligro inminente para la vida, incluidas las soluciones peatonales. La conclusión fue categórica:"
+        ],
+        literales: [
+          [
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        id: "concausa",
+        titulo: "Nexo causal y culpa de la víctima",
+        parrafos: [
+          "Faltaba el nexo causal. La Sala aplicó la teoría de la causa adecuada: entre los factores que confluyen en un daño, cuenta aquel del que es lógico o probable que derive el resultado. La ausencia del puente obligó al peatón, como a cualquier otro, a cruzar sin ningún medio seguro una autopista por la que los vehículos circulan a alta velocidad. Eso lo colocó en una situación obligada de riesgo que fue, en alguna medida, causa adecuada de su muerte.",
+          "Quedaba la embriaguez. El artículo 190 admite tres eximentes, la fuerza mayor, el hecho de un tercero y la culpa de la víctima, y la Sala precisó que el caso fortuito quedó excluido a propósito. Cualquiera de ellas rompe el nexo causal, en forma total o parcial. Aquí la culpa del peatón concurrió con la omisión del Estado:",
+          "La consecuencia fue un reparto. La Sala fijó el daño moral pleno en ¢20 millones y lo redujo a la mitad por la concurrencia de responsabilidades, con un mecanismo porcentual que ya había aplicado en 1990. El daño material se rechazó porque no se probó."
+        ],
+        literales: [
+          [
+            9,
+            1,
+            1
+          ],
+          [
+            10,
+            0,
+            2
+          ]
+        ],
+        visual: "reparto",
+        nota: "Quien alegue la culpa de la víctima debe probarla. Aun probada, si la omisión del Estado también fue causa del daño, solo reduce la condena."
+      },
+      {
+        id: "voto-salvado",
+        titulo: "El voto salvado",
+        parrafos: [
+          "La magistrada León Feoli compartió todo el desarrollo doctrinal de la mayoría, aunque lo consideró innecesario para el caso, porque el Tribunal nunca había negado la responsabilidad del Estado:",
+          "Su desacuerdo fue sobre el peso de la embriaguez. Para ella, quien cruza una autopista en ese estado asume el riesgo, y esa culpa rompe por completo el nexo causal. Entre ambas posiciones media la diferencia entre una eximente parcial y una total:"
+        ],
+        literales: [
+          [
+            12,
+            0,
+            0
+          ]
+        ],
+        visual: "comparacion"
+      },
+      {
+        id: "recepcion",
+        titulo: "La recepción",
+        parrafos: [
+          "La sentencia se volvió referencia de inmediato. Seis días después, la Sala Primera transcribió su pasaje sobre la carga de la prueba para resolver una demanda contra la Caja Costarricense de Seguro Social en el voto 590-F-2005, y en 2007 el Tribunal Contencioso Administrativo ya transcribía sus páginas sobre la inactividad para resolver la muerte de una menor.",
+          "Su propio redactor fijó el alcance del precedente seis meses después. En el voto 74-F-2007, el Estado lo invocó para pedir que se repartiera la responsabilidad con un tercero, y la Sala respondió que las bases jurídicas del 584 eran aplicables, con un cuadro fáctico que no admitía comparación:",
+          "Desde entonces se aplica en las dos direcciones: para condenar por omisión y para reducir la condena cuando la víctima concurre al daño. En junio de 2026, la Sala Primera mantuvo un fallo que, con la misma fórmula, atenuó la reparación por la concausa del propio lesionado."
+        ],
+        citasExternas: [
+          {
+            texto: "La especie es total y diametralmente distinta. El cuadro fáctico de ambos procesos es a todas luces incomparable, aún cuando las bases jurídicas en que se sentó la responsabilidad pública sean de plena aplicabilidad a la presente. A diferencia del precedente invocado, no existe eximente alguna en esta contienda.",
+            destacar: [
+              "las bases jurídicas en que se sentó la responsabilidad pública sean de plena aplicabilidad"
+            ],
+            citation: "Sala Primera, voto 74-F-2007 · redacta el magistrado González Camacho",
+            nexusId: "sen-1-0034-370854",
+            tras: 1
+          }
+        ],
+        visual: "recepcion"
+      },
+      {
+        id: "impacto",
+        titulo: "Su impacto",
+        parrafos: [
+          "Más de veinte años después, la sentencia sigue en pleno uso. Hemos encontrado su cita en el texto de al menos 480 resoluciones, dictadas entre 2005 y 2026. La mayor parte proviene de los tribunales contencioso-administrativos; también la citan las Salas Primera, Segunda y Tercera, la Sala Constitucional y los tribunales penales cuando resuelven la acción civil contra el Estado.",
+          "Su uso crece. Los dos años con más citas son 2024 y 2025, con 59 y 53 resoluciones, y en lo que va de 2026 ya suman 13. Lo que se cita es su andamiaje: la definición de anormalidad, la inactividad material, la antijuridicidad de base, la causalidad adecuada y la eximente parcial."
+        ],
+        visual: "citas"
+      }
+    ],
+    visuales: {
+      trayectoria: [
+        {
+          etapa: "La demanda",
+          sede: "Juzgado Contencioso Administrativo y Civil de Hacienda",
+          detalle: "La viuda reclama ¢84,9 millones de daño material y ¢35,1 millones de daño moral por la omisión del Ministerio, que había denegado el reclamo en 1997."
+        },
+        {
+          etapa: "Primera instancia",
+          sede: "Sentencia 357-2003 · 8 de mayo de 2003",
+          detalle: "Acoge la falta de derecho por culpa de la víctima y declara sin lugar la demanda."
+        },
+        {
+          etapa: "Apelación",
+          sede: "Tribunal Contencioso Administrativo, Sección Primera · 28 de mayo de 2004",
+          detalle: "Confirma el fallo: la culpa de la víctima libera al Estado."
+        },
+        {
+          etapa: "Casación",
+          sede: "Sala Primera · 11 de agosto de 2005",
+          detalle: "Declara con lugar el recurso: la omisión del Estado es causa del daño y la culpa de la víctima solo reduce la condena, que fija en ¢10 millones.",
+          final: true
+        }
+      ],
+      anclajes: [
+        {
+          articulo: "190",
+          norma: "LGAP",
+          principio: "Responde por todo su funcionamiento",
+          literal: "funcionamiento legítimo o ilegítimo, normal o anormal",
+          citation: "Considerando VI"
+        },
+        {
+          articulo: "194",
+          norma: "LGAP",
+          principio: "Conducta lícita y funcionamiento normal",
+          literal: "Nótese como el artículo 194 de la indicada ley, hace referencia a los “actos lícitos”, bajo la concepción de actividad jurídica, distinguiéndolos en la misma norma, de lo que califica como “funcionamiento normal”, entendido como actividad material.",
+          citation: "Considerando VI"
+        },
+        {
+          articulo: "196",
+          norma: "LGAP",
+          principio: "Un daño efectivo, evaluable e individualizable",
+          literal: "que el daño sufrido sea efectivo, evaluable e individualizable en relación con una persona o grupo",
+          citation: "Considerando IV · cita el voto 132 de 1991"
+        }
+      ],
+      formas: {
+        anormalidad: [
+          {
+            titulo: "Mal funcionamiento",
+            texto: "El servicio se presta, pero sin la técnica, la pericia o el cuidado que exige la buena administración."
+          },
+          {
+            titulo: "Funcionamiento tardío",
+            texto: "La Administración actúa fuera del tiempo en que su actuación habría evitado el daño."
+          },
+          {
+            titulo: "Ausencia total de funcionamiento",
+            texto: "La Administración no actúa aunque debía hacerlo. Es el caso del puente que nunca se construyó."
+          }
+        ],
+        antijuridicidad: [
+          {
+            titulo: "Ilegitimidad",
+            texto: "Se predica de la conducta jurídica: los actos de la Administración y su conformidad con el ordenamiento."
+          },
+          {
+            titulo: "Anormalidad",
+            texto: "Se predica de la conducta material: el servicio o la obra frente a la buena administración, la técnica y la pericia."
+          },
+          {
+            titulo: "Antijuridicidad",
+            texto: "Se predica del daño: la víctima no tiene el deber de soportarlo. Está presente en todo daño indemnizable, aun por conducta lícita."
+          }
+        ]
+      },
+      comparacion: [
+        {
+          titulo: "La mayoría",
+          rasgo: "La culpa de la víctima concurre con la omisión del Estado y reduce la condena.",
+          enElCaso: "¢10 millones, la mitad del daño moral.",
+          literal: "Esta última sin embargo, no exime al Estado de su obligación indemnizatoria, pues como se ha dicho tantas veces, la ausencia del puente peatonal puso al occiso en una situación obligada de riesgo.",
+          citation: "Considerando IX"
+        },
+        {
+          titulo: "El voto salvado",
+          rasgo: "La embriaguez de la víctima rompe el nexo causal y libera por completo al Estado.",
+          enElCaso: "Sin condena, como resolvieron el Juzgado y el Tribunal.",
+          literal: "Es cierto que el Estado debe asegurar el bienestar colectivo, emprender las obras y el actuar necesario para garantía de la seguridad y que el cumplimiento de estas tareas genera responsabilidad. Pero, ello no conlleva a que las personas se conduzcan faltando al deber de cuidado y pongan en peligro su vida e integridad.",
+          citation: "Voto salvado de la magistrada León Feoli"
+        }
+      ],
+      reparto: {
+        total: {
+          etiqueta: "Daño moral pleno fijado por la Sala",
+          monto: "¢20.000.000"
+        },
+        partes: [
+          {
+            etiqueta: "Omisión del Estado",
+            porcentaje: 50,
+            detalle: "¢10.000.000 a cargo del Estado, con intereses desde la firmeza del fallo.",
+            condena: true
+          },
+          {
+            etiqueta: "Culpa de la víctima",
+            porcentaje: 50,
+            detalle: "La embriaguez fue concausa del atropello. Esa mitad no se indemniza."
+          }
+        ],
+        nota: "Las costas del proceso quedaron a cargo del Estado, porque la actora resultó vencedora, aunque en forma parcial."
+      },
+      recepcion: [
+        {
+          anio: "2005",
+          organo: "Sala Primera",
+          texto: "Seis días después, transcribe su pasaje sobre la carga de la prueba.",
+          enlaces: [
+            {
+              etiqueta: "Voto 590-F-2005",
+              nexusId: "ext-1-0034-120080"
+            }
+          ]
+        },
+        {
+          anio: "2007",
+          organo: "Sala Primera",
+          texto: "Del mismo redactor: aplica sus bases jurídicas y distingue los hechos. Sin culpa de la víctima, el Estado responde por completo.",
+          enlaces: [
+            {
+              etiqueta: "Voto 74-F-2007",
+              nexusId: "sen-1-0034-370854"
+            }
+          ]
+        },
+        {
+          anio: "2011",
+          organo: "Tribunal de Apelación de Sentencia Penal",
+          texto: "Lo cita al resolver la acción civil resarcitoria en un proceso penal.",
+          enlaces: [
+            {
+              etiqueta: "Voto 1590-2011",
+              nexusId: "sen-1-0034-532522"
+            }
+          ]
+        },
+        {
+          anio: "2024",
+          organo: "Sala Primera",
+          texto: "Transcribe su definición de anormalidad y mantiene la condena al Estado.",
+          enlaces: [
+            {
+              etiqueta: "Voto 1242-F-S1-2024",
+              nexusId: "sen-1-0004-1250512"
+            }
+          ]
+        },
+        {
+          anio: "2025",
+          organo: "Sala Constitucional",
+          texto: "Transcribe su definición de anormalidad.",
+          enlaces: [
+            {
+              etiqueta: "Voto 20640-2025",
+              nexusId: "sen-1-0007-1336893"
+            }
+          ]
+        },
+        {
+          anio: "2026",
+          organo: "Sala Primera",
+          texto: "Mantiene una reparación atenuada por la concausa del lesionado, con la fórmula del 584.",
+          enlaces: [
+            {
+              etiqueta: "Voto 711-F-S1-2026",
+              nexusId: "sen-1-0004-1402661"
+            }
+          ],
+          final: true
+        }
+      ],
+      citas: {
+        corte: "19 de setiembre de 2026",
+        metodo: "Resoluciones judiciales cuyo texto cita la 584-F-2005, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        csv: "/datos/jurisprudencia/584-F-2005-resoluciones-que-la-citan.csv"
+      }
+    },
+    casoFactico: [
+      "En 1986, los vecinos de la urbanización Los Arcos pidieron al Ministerio de Obras Públicas y Transportes un puente peatonal sobre la Autopista General Cañas. En 1997 el puente no existía, y un hombre murió atropellado al cruzar la autopista en ese sector, en alto estado de ebriedad.",
+      "Su viuda demandó al Estado. El Juzgado y el Tribunal rechazaron la demanda por culpa de la víctima. La Sala Primera casó la sentencia, declaró la responsabilidad del Estado por su omisión y redujo la indemnización a la mitad por la concurrencia de la culpa de la víctima."
+    ],
+    nexusId: "sen-1-0034-315154",
+    precedentes: [
+      {
+        numero: "Voto 263-1990",
+        fecha: "22-08-1990",
+        nota: "Aplicó antes el reparto porcentual por responsabilidad concurrente."
+      },
+      {
+        numero: "Voto 132-1991",
+        fecha: "14-08-1991",
+        nota: "Carácter objetivo de la responsabilidad bajo la Ley General de la Administración Pública."
+      },
+      {
+        numero: "Voto 25-F-1999",
+        fecha: "22-01-1999",
+        nota: "Eximentes taxativas, cuya prueba corresponde a la Administración."
+      },
+      {
+        numero: "Voto 252-F-2001",
+        fecha: "28-03-2001",
+        nota: "Causa próxima, adecuada y eficiente; eximentes de responsabilidad."
+      },
+      {
+        organo: "Sala Constitucional",
+        numero: "Voto 11519-2003",
+        fecha: "10-10-2003",
+        nota: "Obligación objetiva del Estado de tutelar la vida; soluciones peatonales."
+      },
+      {
+        organo: "Sala Constitucional",
+        numero: "Voto 5207-2004",
+        fecha: "18-05-2004",
+        nota: "Fundamento constitucional de la responsabilidad de las administraciones públicas."
+      }
+    ],
+    citadaPor: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 590-F-2005",
+        fecha: "17-08-2005",
+        nexusId: "ext-1-0034-120080",
+        nota: "Transcribe su pasaje sobre la carga de la prueba."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 74-F-2007",
+        fecha: "02-02-2007",
+        nexusId: "sen-1-0034-370854",
+        nota: "Aplica sus bases jurídicas y distingue los hechos: sin eximente, el Estado responde por completo."
+      },
+      {
+        organo: "Tribunal de Apelación de Sentencia Penal",
+        numero: "Voto 1590-2011",
+        fecha: "23-11-2011",
+        nexusId: "sen-1-0034-532522",
+        nota: "Lo cita en la acción civil resarcitoria contra la Administración."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1242-F-S1-2024",
+        fecha: "19-09-2024",
+        nexusId: "sen-1-0004-1250512",
+        nota: "Transcribe su definición de anormalidad."
+      },
+      {
+        organo: "Sala Constitucional",
+        numero: "Voto 20640-2025",
+        fecha: "04-07-2025",
+        nexusId: "sen-1-0007-1336893",
+        nota: "Transcribe su definición de anormalidad."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 711-F-S1-2026",
+        fecha: "04-06-2026",
+        nexusId: "sen-1-0004-1402661",
+        nota: "Mantiene una reparación atenuada por concausa del lesionado."
+      }
+    ],
+    normativa: [
+      {
+        nombre: "Ley General de la Administración Pública",
+        detalle: "Ley 6227 · 2 de mayo de 1978",
+        articulos: "Arts. 190, 191, 194 y 196",
+        scijId: 13231
+      },
+      {
+        nombre: "Constitución Política de la República de Costa Rica",
+        detalle: "7 de noviembre de 1949",
+        articulos: "Arts. 9 y 41",
+        scijId: 871
+      }
+    ],
+    redactor: "Magistrado Óscar Eduardo González Camacho",
+    redactorTextual: "Redacta el Magistrado González Camacho.",
+    redactoresAdicionales: [],
+    fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-315154",
+    fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    metaDescription: "Resolución N° 584-F-2005 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció la responsabilidad del Estado por inactividad, con la culpa de la víctima como eximente parcial."
+  }
 ];
 
 export const nexusUrl = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
