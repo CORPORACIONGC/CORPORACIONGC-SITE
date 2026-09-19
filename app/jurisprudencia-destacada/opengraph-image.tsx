@@ -13,7 +13,7 @@ export default async function Image() {
     eyebrow: "Jurisprudencia Destacada",
     title: "Sentencias que marcaron el {{em}}",
     emphasis: "rumbo",
-    body: "Fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho durante sus doce años como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+    body: "Fallos redactados por el Dr. Óscar Eduardo González Camacho durante sus doce años como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
     url: "corporaciongc.com/jurisprudencia-destacada",
   });
 }

@@ -105,18 +105,18 @@ export const jurisprudenciaMetadata: Metadata = {
   title:
     "Jurisprudencia Destacada · Sentencias del Dr. Óscar González Camacho",
   description:
-    "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+    "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
   alternates: { canonical: "/jurisprudencia-destacada" },
   openGraph: og({
     title: "Jurisprudencia Destacada · Corporación GC, Costa Rica",
     description:
-      "Selección editorial de fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+      "Selección editorial de fallos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
     url: "/jurisprudencia-destacada",
   }),
   twitter: tw({
     title: "Jurisprudencia Destacada · Corporación GC",
     description:
-      "Selección editorial de fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro verificado y pasajes destacados.",
+      "Selección editorial de fallos redactados por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
   }),
 };
 

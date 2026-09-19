@@ -47,7 +47,7 @@ export default async function Image({
       tribunal: "Sala Primera de la Corte Suprema de Justicia",
       title: "Jurisprudencia destacada",
       pullQuote:
-        "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema.",
+        "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema.",
       baseUrl,
     });
   }

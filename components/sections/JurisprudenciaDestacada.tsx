@@ -16,7 +16,7 @@ import { SentenciaFolio, type SentenciaPortada } from "@/components/sections/Sen
 const BADGE_STYLES: Record<string, string> = {
   fundacional:
     "bg-gold/[0.12] text-[#8A6F3D] dark:text-gold border-gold/40",
-  paradigmatica:
+  referencia:
     "bg-burgundy/[0.10] text-burgundy dark:text-burgundy-light border-burgundy/30",
   ambiental:
     "bg-emerald-600/[0.08] text-emerald-700 dark:text-emerald-300 border-emerald-600/25 dark:border-emerald-500/25",
@@ -68,8 +68,8 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
 
   const sectionSubhead =
     variant === "profile"
-      ? "Selección de fallos paradigmáticos redactados durante sus doce años como Magistrado de la Sala Primera de la Corte Suprema (2002–2014)."
-      : "Fallos paradigmáticos redactados por el Dr. Óscar Eduardo González Camacho durante sus doce años como Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
+      ? "Selección de fallos redactados durante sus doce años como Magistrado de la Sala Primera de la Corte Suprema (2002–2014)."
+      : "Fallos redactados por el Dr. Óscar Eduardo González Camacho durante sus doce años como Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
 
   return (
     <section

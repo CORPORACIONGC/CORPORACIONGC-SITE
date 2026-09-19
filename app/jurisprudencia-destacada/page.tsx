@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 const BADGE_STYLES: Record<string, string> = {
   fundacional: "bg-gold/[0.12] text-gold border-gold/30",
-  paradigmatica: "bg-burgundy/[0.15] text-burgundy-light border-burgundy/30",
+  referencia: "bg-burgundy/[0.15] text-burgundy-light border-burgundy/30",
   ambiental: "bg-emerald-500/[0.10] text-emerald-300 border-emerald-500/25",
   doctrinal: "bg-cream/[0.08] text-cream/80 border-cream/15",
 };
@@ -39,7 +39,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
     "@type": "CollectionPage",
     name: "Jurisprudencia Destacada | Corporación GC",
     description:
-      "Sentencias paradigmáticas redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Texto íntegro y análisis editorial.",
+      "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
     url: `${FIRM.url}/jurisprudencia-destacada`,
     isPartOf: { "@id": `${FIRM.url}/#website` },
     about: {

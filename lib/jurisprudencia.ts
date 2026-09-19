@@ -128,7 +128,7 @@ export type SentenciaDestacada = {
 
   /** Badge editorial opcional */
   badge?: {
-    type: "fundacional" | "paradigmatica" | "ambiental" | "doctrinal";
+    type: "fundacional" | "referencia" | "ambiental" | "doctrinal";
     label: string;
   };
 
@@ -720,8 +720,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Administrativo",
     materia: "Responsabilidad patrimonial de la Administración",
     badge: {
-      type: "paradigmatica",
-      label: "Sentencia Paradigmática"
+      type: "referencia",
+      label: "Sentencia de Referencia"
     },
     titulo: "La omisión que obliga a reparar",
     subtitulo: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció que la inactividad del Estado también genera el deber de indemnizar.",
