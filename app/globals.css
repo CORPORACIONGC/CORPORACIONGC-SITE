@@ -1188,6 +1188,7 @@ html {
 
 /* Figura 7 · jurisprudencia y criterios citados */
 .prose-article .gc-juris-grupo + .gc-juris-grupo { margin-top: 28px; }
+.prose-article .gc-fig.gc-biblio { margin-top: 1.25rem; }
 .prose-article .gc-juris-grupo > .gc-fig-label { margin-bottom: 0; padding-bottom: 10px; border-bottom: 1px solid var(--fig-rule); }
 .prose-article .gc-juris-item {
   display: grid; grid-template-columns: minmax(170px, 0.9fr) 2.6fr; column-gap: 28px;

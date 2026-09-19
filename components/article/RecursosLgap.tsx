@@ -34,6 +34,47 @@ function Ref({ children }: { children: React.ReactNode }) {
   return <span className="gc-fig-ref">{children}</span>;
 }
 
+/* Identificadores de Nexus (Poder Judicial) de cada voto citado. */
+const NEXUS_IDS: Record<string, string> = {
+  "2006-3669": "sen-1-0007-337671",
+  "2012-17737": "sen-1-0007-569858",
+  "2014-2529": "sen-1-0007-601432",
+  "2016-9506": "sen-1-0007-677832",
+  "2017-15945": "sen-1-0007-734465",
+  "2018-10287": "sen-1-0007-878411",
+  "2026-11597": "sen-1-0007-1375431",
+  "2026-24826": "sen-1-0007-1408848",
+  "2026-28581": "sen-1-0007-1415269",
+  "515-F-S1-2024": "sen-1-0004-1229516",
+  "1560-F-S1-2022": "sen-1-0004-1102286",
+  "32-F-S1-2022": "sen-1-0004-1075221",
+  "2053-F-S1-2022": "sen-1-0004-1115309",
+  "680-F-S1-2022": "sen-1-0004-1080557",
+  "1429-A-S1-2024": "sen-1-0004-1258728",
+  "8-F-S1-2026": "sen-1-0004-1363077",
+  "1050-S1-2026": "sen-1-0004-1416782",
+  "920-F-S1-2026": "sen-1-0004-1403886",
+  "103-F-TC-2025": "sen-1-1011-1323288",
+  "584-2020": "sen-1-0034-1010955",
+  "2026-4285": "sen-1-0034-1410509",
+  "2024-6600": "sen-1-0034-1257727",
+  "2024-1476": "sen-1-0034-1223221",
+  "43-2023": "sen-1-0034-1170723",
+  "479-2019": "sen-1-0034-944688",
+  "417-2019": "sen-1-0034-944643",
+  "166-2016": "sen-1-0034-688662",
+  "99-2013": "sen-1-0034-580802",
+  "33-2013": "sen-1-0034-565589",
+};
+
+function V({ n }: { n: string }) {
+  return (
+    <a href={`https://nexuspj.poder-judicial.go.cr/document/${NEXUS_IDS[n]}`} target="_blank" rel="noopener noreferrer">
+      {n}
+    </a>
+  );
+}
+
 /* ── Figura 1. La ruta del recurso ──────────────────────────────────── */
 
 export function MapaRecursosLgap() {
@@ -348,8 +389,8 @@ export function PlazoTresDiasLgap() {
 
       <FigSource>
         LGAP, arts. 256, 346.1 y 347.2; Ley de Notificaciones Judiciales (Ley N.° 8687), arts. 1 y 38;
-        Corte Plena, circular 42-2011; Sala Primera, voto 515-F-S1-2024; TCA, Sección IV, voto
-        2024-6600; PGR, dictamen C-037-2025; CGR, resoluciones R-DFOE-DEC-00016-2026 y
+        Corte Plena, <a href="https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=70140" target="_blank" rel="noopener noreferrer">circular 42-2011</a>; Sala Primera, voto <V n="515-F-S1-2024" />; TCA, Sección IV, voto
+        <V n="2024-6600" />; PGR, dictamen C-037-2025; CGR, resoluciones R-DFOE-DEC-00016-2026 y
         R-DCA-SICOP-00888-2023.
       </FigSource>
     </figure>
@@ -418,8 +459,8 @@ export function FlujoApelacionSubsidio() {
       </ol>
       <FigSource>
         LGAP, arts. 127, 148, 261, 346 a 352 y 356; CPCA, arts. 31.6, 31.7, 39 y 41; Sala Constitucional,
-        voto 2016-9506; Sala Primera, votos 32-F-S1-2022 y 1560-F-S1-2022; TCA, Sección III, voto
-        479-2019, y Sección IV, voto 43-2023.
+        voto <V n="2016-9506" />; Sala Primera, votos <V n="32-F-S1-2022" /> y <V n="1560-F-S1-2022" />; TCA, Sección III, voto
+        <V n="479-2019" />, y Sección IV, voto <V n="43-2023" />.
       </FigSource>
     </figure>
   );
@@ -450,8 +491,8 @@ const ASPECTOS: { aspecto: string; absoluta: React.ReactNode; relativa: React.Re
   },
   {
     aspecto: "Al resolver la apelación",
-    absoluta: <>Solo el jerarca propio puede declararla aun en perjuicio de quien recurre. <Ref>art. 351.2; TCA IV, voto 43-2023</Ref></>,
-    relativa: <>Rige la prohibición de reformar en perjuicio de quien recurre. <Ref>Sala Constitucional, voto 2016-9506</Ref></>,
+    absoluta: <>Solo el jerarca propio puede declararla aun en perjuicio de quien recurre. <Ref>art. 351.2; TCA IV, voto <V n="43-2023" /></Ref></>,
+    relativa: <>Rige la prohibición de reformar en perjuicio de quien recurre. <Ref>Sala Constitucional, voto <V n="2016-9506" /></Ref></>,
   },
 ];
 
@@ -478,7 +519,7 @@ export function NulidadAbsolutaRelativa() {
       </div>
       <FigSource>
         LGAP, arts. 166, 167, 169, 175, 176 y 351.2; CPCA, arts. 39 y 40; Sala Primera, voto
-        2053-F-S1-2022; Sala Constitucional, votos 2016-9506 y 2017-15945.
+        <V n="2053-F-S1-2022" />; Sala Constitucional, votos <V n="2016-9506" /> y <V n="2017-15945" />.
       </FigSource>
     </figure>
   );
@@ -542,15 +583,15 @@ export function MateriasEspecialesRecursos() {
       </p>
       <FigSource>
         Código Municipal (Ley N.° 7794), arts. 165, 170 y 171; Código de Normas y Procedimientos
-        Tributarios (Ley N.° 4755, CNPT), arts. 145, 146 y 156; CPCA, art. 41.2; TCA, voto 2026-4285, y
-        Sección III, voto 417-2019; Sala Constitucional, voto 2014-2529; Sala Primera, voto
-        920-F-S1-2026. La contratación pública tiene su propio régimen en la Ley N.° 9986.
+        Tributarios (Ley N.° 4755, CNPT), arts. 145, 146 y 156; CPCA, art. 41.2; TCA, voto <V n="2026-4285" />, y
+        Sección III, voto <V n="417-2019" />; Sala Constitucional, voto <V n="2014-2529" />; Sala Primera, voto
+        <V n="920-F-S1-2026" />. La contratación pública tiene su propio régimen en la Ley N.° 9986.
       </FigSource>
     </figure>
   );
 }
 
-/* ── Figura 7. Jurisprudencia y criterios citados ───────────────────── */
+/* ── Bibliografía: normativa, jurisprudencia y criterios citados ─────── */
 
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
 const CGR = (ruta: string) => `https://cgrfiles.cgr.go.cr/publico/docs_cgr/${ruta}`;
@@ -558,34 +599,35 @@ const CGR = (ruta: string) => `https://cgrfiles.cgr.go.cr/publico/docs_cgr/${rut
 type Criterio = { organo: string; numero: string; fecha: string; tema: string; criterio: string; href?: string };
 
 const JUDICIALES: Criterio[] = [
-  { organo: "Sala Constitucional", numero: "Voto 2006-3669", fecha: "15-03-2006", tema: "Agotamiento de la vía", criterio: "Anuló la obligación de agotar la vía administrativa antes de demandar y dejó a salvo los acuerdos municipales y la contratación administrativa." },
-  { organo: "Sala Constitucional", numero: "Voto 2012-17737", fecha: "12-12-2012", tema: "Agotamiento de la vía", criterio: "Reafirma las dos excepciones. En lo municipal, la falta de agotamiento debe alegarla la Administración al inicio del proceso." },
-  { organo: "Sala Constitucional", numero: "Voto 2014-2529", fecha: "26-02-2014", tema: "Materia tributaria", criterio: "La vía administrativa tributaria se agota ante el Tribunal Fiscal Administrativo por medio de la apelación." },
-  { organo: "Sala Constitucional", numero: "Voto 2016-9506", fecha: "08-07-2016", tema: "Reforma en perjuicio", criterio: "El superior que conoce la apelación se limita a lo recurrido y no puede empeorar la situación de quien recurre." },
-  { organo: "Sala Constitucional", numero: "Voto 2017-15945", fecha: "04-10-2017", tema: "Nulidad absoluta", criterio: "Es constitucional impugnar el acto absolutamente nulo mientras duren sus efectos, con anulación solo hacia el futuro." },
-  { organo: "Sala Constitucional", numero: "Voto 2018-10287", fecha: "26-06-2018", tema: "Motivación", criterio: "Motivar el acto es una exigencia del debido proceso y del derecho de defensa; anuló un acto motivado en términos generales." },
+  { organo: "Sala Constitucional", numero: "Voto 2006-3669", fecha: "15-03-2006", tema: "Agotamiento de la vía", criterio: "Anuló la obligación de agotar la vía administrativa antes de demandar y dejó a salvo los acuerdos municipales y la contratación administrativa.", href: NEXUS("sen-1-0007-337671") },
+  { organo: "Sala Constitucional", numero: "Voto 2012-17737", fecha: "12-12-2012", tema: "Agotamiento de la vía", criterio: "Reafirma las dos excepciones. En lo municipal, la falta de agotamiento debe alegarla la Administración al inicio del proceso.", href: NEXUS("sen-1-0007-569858") },
+  { organo: "Sala Constitucional", numero: "Voto 2014-2529", fecha: "26-02-2014", tema: "Materia tributaria", criterio: "La vía administrativa tributaria se agota ante el Tribunal Fiscal Administrativo por medio de la apelación.", href: NEXUS("sen-1-0007-601432") },
+  { organo: "Sala Constitucional", numero: "Voto 2016-9506", fecha: "08-07-2016", tema: "Reforma en perjuicio", criterio: "El superior que conoce la apelación se limita a lo recurrido y no puede empeorar la situación de quien recurre.", href: NEXUS("sen-1-0007-677832") },
+  { organo: "Sala Constitucional", numero: "Voto 2017-15945", fecha: "04-10-2017", tema: "Nulidad absoluta", criterio: "Es constitucional impugnar el acto absolutamente nulo mientras duren sus efectos, con anulación solo hacia el futuro.", href: NEXUS("sen-1-0007-734465") },
+  { organo: "Sala Constitucional", numero: "Voto 2018-10287", fecha: "26-06-2018", tema: "Motivación", criterio: "Motivar el acto es una exigencia del debido proceso y del derecho de defensa; anuló un acto motivado en términos generales.", href: NEXUS("sen-1-0007-878411") },
   { organo: "Sala Constitucional", numero: "Voto 2026-11597", fecha: "27-03-2026", tema: "Notificación", criterio: "El acto inicial que debía notificarse personalmente se envió por correo: anuló el procedimiento. Aplica el cómputo del art. 38.", href: NEXUS("sen-1-0007-1375431") },
   { organo: "Sala Constitucional", numero: "Voto 2026-24826", fecha: "02-07-2026", tema: "Demora en resolver", criterio: "Excepción a la regla anterior: acogió un amparo por la demora de casi un año en resolver una apelación sobre disponibilidad de agua.", href: NEXUS("sen-1-0007-1408848") },
   { organo: "Sala Constitucional", numero: "Voto 2026-28581", fecha: "28-07-2026", tema: "Demora en resolver", criterio: "La demora en resolver recursos administrativos se discute en la vía contencioso-administrativa, salvo supuestos de excepción.", href: NEXUS("sen-1-0007-1415269") },
-  { organo: "Sala Primera", numero: "Voto 515-F-S1-2024", fecha: "17-05-2024", tema: "Notificación electrónica", criterio: "Ante el vacío de la LGAP, la notificación electrónica en sede administrativa se rige por el art. 38 de la Ley de Notificaciones." },
-  { organo: "Sala Primera", numero: "Voto 1560-F-S1-2022", fecha: "07-07-2022", tema: "Plazo para demandar", criterio: "Si se recurrió, el año corre desde la notificación de lo resuelto, aunque la resolución llegue años después. En la línea del 32-F-S1-2022." },
-  { organo: "Sala Primera", numero: "Voto 2053-F-S1-2022", fecha: "29-09-2022", tema: "Nulidad absoluta", criterio: "La alegación de nulidad absoluta no es perpetua: está sujeta al plazo de un año." },
+  { organo: "Sala Primera", numero: "Voto 515-F-S1-2024", fecha: "17-05-2024", tema: "Notificación electrónica", criterio: "Ante el vacío de la LGAP, la notificación electrónica en sede administrativa se rige por el art. 38 de la Ley de Notificaciones.", href: NEXUS("sen-1-0004-1229516") },
+  { organo: "Sala Primera", numero: "Voto 1560-F-S1-2022", fecha: "07-07-2022", tema: "Plazo para demandar", criterio: "Si se recurrió, el año corre desde la notificación de lo resuelto, aunque la resolución llegue años después.", href: NEXUS("sen-1-0004-1102286") },
+  { organo: "Sala Primera", numero: "Voto 32-F-S1-2022", fecha: "18-01-2022", tema: "Plazo para demandar", criterio: "Si se agotó la vía y el recurso se resolvió expresamente, aunque fuera tarde, el año para demandar corre desde esa notificación.", href: NEXUS("sen-1-0004-1075221") },
+  { organo: "Sala Primera", numero: "Voto 2053-F-S1-2022", fecha: "29-09-2022", tema: "Nulidad absoluta", criterio: "La alegación de nulidad absoluta no es perpetua: está sujeta al plazo de un año.", href: NEXUS("sen-1-0004-1115309") },
   { organo: "Sala Primera", numero: "Voto 680-F-S1-2022", fecha: "22-03-2022", tema: "Formalidades sustanciales", criterio: "Solo anula la omisión que cambió la decisión o causó indefensión; no hay nulidad por la nulidad misma.", href: NEXUS("sen-1-0004-1080557") },
   { organo: "Sala Primera", numero: "Resolución 1429-A-S1-2024", fecha: "17-10-2024", tema: "Motivación", criterio: "Queda firme la nulidad absoluta de un acto de la CCSS que no analizó la prueba de descargo, por falta de motivación.", href: NEXUS("sen-1-0004-1258728") },
   { organo: "Sala Primera", numero: "Voto 8-F-S1-2026", fecha: "15-01-2026", tema: "Contratación administrativa", criterio: "El agotamiento preceptivo se exige solo cuando se discute la validez de un acto; una pretensión indemnizatoria puede ir directo al juez.", href: NEXUS("sen-1-0004-1363077") },
   { organo: "Sala Primera", numero: "Resolución 1050-S1-2026", fecha: "22-07-2026", tema: "Agotamiento municipal", criterio: "El agotamiento municipal es preceptivo, pero si el defecto se advierte en juicio se tiene por subsanado (CPCA, art. 120.4).", href: NEXUS("sen-1-0004-1416782") },
   { organo: "Sala Primera", numero: "Voto 920-F-S1-2026", fecha: "26-06-2026", tema: "Materia tributaria", criterio: "Para demandar rige el plazo de prescripción del derecho de fondo (CPCA, art. 41.2).", href: NEXUS("sen-1-0004-1403886") },
-  { organo: "Tribunal de Casación Contencioso", numero: "Voto 103-F-TC-2025", fecha: "07-08-2025", tema: "Recurso de revisión", criterio: "Por ser extraordinario, el recurso de revisión no interrumpe el año para demandar." },
-  { organo: "Tribunal de Apelación Contencioso, Sección II", numero: "Voto 584-2020", fecha: "17-12-2020", tema: "Ejecución del acto", criterio: "El acto final puede ejecutarse aunque no esté firme: los recursos administrativos tienen efecto devolutivo." },
+  { organo: "Tribunal de Casación Contencioso", numero: "Voto 103-F-TC-2025", fecha: "07-08-2025", tema: "Recurso de revisión", criterio: "Por ser extraordinario, el recurso de revisión no interrumpe el año para demandar.", href: NEXUS("sen-1-1011-1323288") },
+  { organo: "Tribunal de Apelación Contencioso, Sección II", numero: "Voto 584-2020", fecha: "17-12-2020", tema: "Ejecución del acto", criterio: "El acto final puede ejecutarse aunque no esté firme: los recursos administrativos tienen efecto devolutivo.", href: NEXUS("sen-1-0034-1010955") },
   { organo: "Tribunal Contencioso Administrativo, jerarquía impropia municipal", numero: "Voto 2026-4285", fecha: "26-06-2026", tema: "Plazo municipal", criterio: "El quinto día del Código Municipal son cinco días hábiles y desplaza los tres días de la LGAP; acoge una apelación por inadmisión.", href: NEXUS("sen-1-0034-1410509") },
   { organo: "Tribunal Contencioso Administrativo, Sección IV", numero: "Voto 2024-6600", fecha: "30-09-2024", tema: "Notificación electrónica", criterio: "El art. 38 de la Ley de Notificaciones se aplica supletoriamente al plazo de tres días del art. 346 LGAP.", href: NEXUS("sen-1-0034-1257727") },
   { organo: "Tribunal Contencioso Administrativo", numero: "Voto 2024-1476", fecha: "08-03-2024", tema: "Notificación defectuosa", criterio: "Notificado el acto en un medio distinto del señalado, se tiene por hecha la notificación cuando la parte gestiona.", href: NEXUS("sen-1-0034-1223221") },
   { organo: "Tribunal Contencioso Administrativo, Sección IV", numero: "Voto 43-2023", fecha: "10-05-2023", tema: "Jerarquía impropia", criterio: "El art. 351.2 habilita solo al jerarca propio; el impropio no puede anular de oficio lo que no se recurrió.", href: NEXUS("sen-1-0034-1170723") },
-  { organo: "Tribunal Contencioso Administrativo, Sección III", numero: "Voto 479-2019", fecha: "25-09-2019", tema: "Apelación", criterio: "La apelación puede interponerse sola, y su admisibilidad la decide el superior." },
-  { organo: "Tribunal Contencioso Administrativo, Sección III", numero: "Voto 417-2019", fecha: "30-08-2019", tema: "Suspensión en lo municipal", criterio: "La apelación ante el Tribunal contra lo resuelto por la Alcaldía no suspende el acto; hace falta una medida cautelar." },
-  { organo: "Tribunal Contencioso Administrativo, Sección VI", numero: "Voto 166-2016", fecha: "08-11-2016", tema: "Plazo y taxatividad", criterio: "Solo se impugna lo que la ley permite y dentro de su plazo; el recurso extemporáneo es inadmisible." },
-  { organo: "Tribunal Contencioso Administrativo, Sección VI", numero: "Voto 99-2013", fecha: "31-07-2013", tema: "Recurso de revisión", criterio: "La revisión procede solo por las causales del art. 353; usarla como tercera instancia es improcedente." },
-  { organo: "Tribunal Contencioso Administrativo, Sección VI", numero: "Voto 33-2013", fecha: "21-02-2013", tema: "Consulta jurídica previa", criterio: "Omitir la consulta del art. 356 no anula el acto que agota la vía si no causó perjuicio." },
+  { organo: "Tribunal Contencioso Administrativo, Sección III", numero: "Voto 479-2019", fecha: "25-09-2019", tema: "Apelación", criterio: "La apelación puede interponerse sola, y su admisibilidad la decide el superior.", href: NEXUS("sen-1-0034-944688") },
+  { organo: "Tribunal Contencioso Administrativo, Sección III", numero: "Voto 417-2019", fecha: "30-08-2019", tema: "Suspensión en lo municipal", criterio: "La apelación ante el Tribunal contra lo resuelto por la Alcaldía no suspende el acto; hace falta una medida cautelar.", href: NEXUS("sen-1-0034-944643") },
+  { organo: "Tribunal Contencioso Administrativo, Sección VI", numero: "Voto 166-2016", fecha: "08-11-2016", tema: "Plazo y taxatividad", criterio: "Solo se impugna lo que la ley permite y dentro de su plazo; el recurso extemporáneo es inadmisible.", href: NEXUS("sen-1-0034-688662") },
+  { organo: "Tribunal Contencioso Administrativo, Sección VI", numero: "Voto 99-2013", fecha: "31-07-2013", tema: "Recurso de revisión", criterio: "La revisión procede solo por las causales del art. 353; usarla como tercera instancia es improcedente.", href: NEXUS("sen-1-0034-580802") },
+  { organo: "Tribunal Contencioso Administrativo, Sección VI", numero: "Voto 33-2013", fecha: "21-02-2013", tema: "Consulta jurídica previa", criterio: "Omitir la consulta del art. 356 no anula el acto que agota la vía si no causó perjuicio.", href: NEXUS("sen-1-0034-565589") },
 ];
 
 const ADMINISTRATIVOS: Criterio[] = [
@@ -599,6 +641,22 @@ const ADMINISTRATIVOS: Criterio[] = [
   { organo: "Contraloría General", numero: "R-DCA-SICOP-00888-2023", fecha: "07-08-2023", tema: "Contratación pública", criterio: "En compras públicas el plazo corre desde la comunicación en el sistema, sin el día adicional de la notificación electrónica." },
   { organo: "Contraloría General", numero: "R-DFOE-CIU-00002-2023", fecha: "25-04-2023", tema: "Suspensión y revisión", criterio: "La suspensión es excepcional y su perjuicio debe constatarse; la revisión no rescata una orden firme por falta de recurso oportuno.", href: CGR("2023/SIGYD_D/SIGYD_D_2023006441.pdf") },
   { organo: "Contraloría General", numero: "Oficio DJ-0655-2012", fecha: "28-06-2012", tema: "Elevación de la apelación", criterio: "El órgano director que rechaza la apelación en lugar de elevarla infringe el art. 349 y causa indefensión.", href: CGR("2012/SIGYD_D_2012010433.pdf") },
+];
+
+const SCIJ = (id: number) =>
+  `https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=${id}`;
+
+const NORMATIVA: { nombre: string; detalle: string; articulos: string; id: number }[] = [
+  { nombre: "Constitución Política de la República de Costa Rica", detalle: "7 de noviembre de 1949", articulos: "Arts. 173, 182 y 184", id: 871 },
+  { nombre: "Ley General de la Administración Pública", detalle: "Ley N.° 6227, 2 de mayo de 1978", articulos: "Arts. 126, 127, 131, 133, 136, 141, 148, 158, 166, 167, 169, 175, 176, 223, 229, 243, 247, 256, 258, 260, 261, 329 y 342 a 356", id: 13231 },
+  { nombre: "Código Procesal Contencioso-Administrativo", detalle: "Ley N.° 8508, 28 de abril de 2006", articulos: "Arts. 31, 39, 40, 41 y 120", id: 57436 },
+  { nombre: "Ley de Notificaciones Judiciales", detalle: "Ley N.° 8687, 4 de diciembre de 2008", articulos: "Arts. 1, 20 y 38", id: 64786 },
+  { nombre: "Ley para establecer el correo electrónico como medio de notificación para las sociedades mercantiles", detalle: "Ley N.° 10597, 5 de noviembre de 2024", articulos: "Reforma de los arts. 20 de la Ley N.° 8687 y 243 de la LGAP", id: 103387 },
+  { nombre: "Código Municipal", detalle: "Ley N.° 7794, 30 de abril de 1998", articulos: "Arts. 163 a 171", id: 40197 },
+  { nombre: "Código de Normas y Procedimientos Tributarios", detalle: "Ley N.° 4755, 3 de mayo de 1971", articulos: "Arts. 145, 146 y 156", id: 6530 },
+  { nombre: "Ley General de Contratación Pública", detalle: "Ley N.° 9986, 27 de mayo de 2021", articulos: "Régimen de recursos", id: 94469 },
+  { nombre: "Estatuto de Servicio Civil", detalle: "Ley N.° 1581, 30 de mayo de 1953", articulos: "Efecto de los recursos", id: 32708 },
+  { nombre: "Corte Plena, circular N.° 42-2011", detalle: "Aplicación del artículo 38 de la Ley de Notificaciones Judiciales, 5 de abril de 2011", articulos: "Cómputo de la notificación electrónica", id: 70140 },
 ];
 
 function ListaCriterios({ titulo, items }: { titulo: string; items: Criterio[] }) {
@@ -632,22 +690,36 @@ function ListaCriterios({ titulo, items }: { titulo: string; items: Criterio[] }
   );
 }
 
-export function JurisprudenciaRecursosLgap() {
+export function BibliografiaRecursosLgap() {
   return (
-    <figure className="gc-fig gc-fig-juris" aria-labelledby="fig-juris">
-      <FigHead
-        id="fig-juris"
-        n={7}
-        kicker="Jurisprudencia"
-        title="Jurisprudencia y criterios administrativos citados"
-        lead="Cada pieza se leyó completa antes de citarla. Los enlaces llevan al texto oficial cuando está disponible en línea."
-      />
-      <ListaCriterios titulo="Judicial" items={JUDICIALES} />
-      <ListaCriterios titulo="Administrativa" items={ADMINISTRATIVOS} />
-      <FigSource>
-        Nexus del Poder Judicial, Sistema Costarricense de Información Jurídica y repositorio de la
-        Contraloría General de la República.
-      </FigSource>
-    </figure>
+    <div className="gc-fig gc-biblio">
+      <section className="gc-juris-grupo">
+        <span className="gc-fig-label">Normativa</span>
+        <ol>
+          {NORMATIVA.map((n) => (
+            <li key={n.id} className="gc-juris-item">
+              <span className="gc-juris-id">
+                <b>
+                  <a href={SCIJ(n.id)} target="_blank" rel="noopener noreferrer">
+                    {n.nombre}
+                  </a>
+                </b>
+                <span className="gc-juris-org">{n.detalle}</span>
+              </span>
+              <span className="gc-juris-criterio">
+                <span className="gc-juris-tema">Disposiciones revisadas</span>
+                {n.articulos}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <ListaCriterios titulo="Jurisprudencia judicial" items={JUDICIALES} />
+      <ListaCriterios titulo="Criterios administrativos" items={ADMINISTRATIVOS} />
+      <p className="gc-fig-source">
+        Textos normativos: Sistema Costarricense de Información Jurídica (SINALEVI), en su versión
+        vigente. Jurisprudencia judicial: Nexus del Poder Judicial.
+      </p>
+    </div>
   );
 }

@@ -27,7 +27,7 @@ import {
   ComparativaRecursosLgap,
   MateriasEspecialesRecursos,
   NulidadAbsolutaRelativa,
-  JurisprudenciaRecursosLgap,
+  BibliografiaRecursosLgap,
 } from "@/components/article/RecursosLgap";
 import {
   ArrowLeft,
@@ -58,7 +58,7 @@ const ARTICLE_COMPONENTS = {
   ComparativaRecursosLgap,
   MateriasEspecialesRecursos,
   NulidadAbsolutaRelativa,
-  JurisprudenciaRecursosLgap,
+  BibliografiaRecursosLgap,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
