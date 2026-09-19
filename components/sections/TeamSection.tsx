@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { TeamGallery, type TeamGalleryMember } from "@/components/sections/TeamGallery";
 import { TEAM } from "@/lib/constants";
@@ -49,6 +51,21 @@ export function TeamSection() {
         <AnimatedEntry delay={0.2}>
           <TeamGallery members={teamMembers} />
         </AnimatedEntry>
+
+        {/* Reseñas, carnés y el fundador están en Sobre nosotros */}
+        <div className="mt-10 flex lg:mt-14 lg:justify-end">
+          <Link
+            href="/sobre-nosotros#abogados"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+          >
+            Conozca al equipo completo
+            <ArrowRight
+              size={14}
+              weight="bold"
+              className="transition-transform duration-300 group-hover:translate-x-0.5"
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );
