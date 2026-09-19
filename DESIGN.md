@@ -89,6 +89,30 @@ typography:
     fontWeight: 300
     lineHeight: 1.2
     letterSpacing: 0.3em
+  membrete-name:
+    fontFamily: DM Sans
+    fontSize: 32px
+    fontWeight: 500
+    lineHeight: 1
+    letterSpacing: 0.2em
+  membrete-name-mobile:
+    fontFamily: DM Sans
+    fontSize: 22px
+    fontWeight: 500
+    lineHeight: 1
+    letterSpacing: 0.2em
+  membrete-caption:
+    fontFamily: DM Sans
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: 0.34em
+  membrete-caption-mobile:
+    fontFamily: DM Sans
+    fontSize: 10px
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: 0.34em
   button:
     fontFamily: DM Sans
     fontSize: 14px
@@ -209,6 +233,10 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 **Retrato del equipo.** Foto 4:5 recortada a partir de la detección del rostro, de modo que las cinco cabezas tengan la misma escala y los ojos la misma altura. Los recortes viven en `public/images/equipo/<slug>.jpg`; para un integrante nuevo se genera su recorte con la misma proporción de rostro (ancho del rostro ≈ 36 % del ancho del cuadro) y la misma línea de ojos (≈ 23,5 % de la altura). La imagen se muestra al 90 % de saturación y recupera el color completo al pasar el cursor o al recibir el foco; no se amplía. Debajo, una línea fina que se tiñe de burdeos (dorado de noche) al pasar el cursor, el nombre en DM Sans 17 px semibold con el título académico (Lic., Licda., MSc., Dr.) atenuado en peso regular, y el cargo en 13 px.
 
 **Botones.** El principal es burdeos macizo con texto blanco. El secundario tiene borde dorado y texto en bronce oscuro de día, dorado de noche; en las secciones siempre oscuras se usa la variante `outline-inverse`. Ambos se desplazan levemente hacia el cursor con una desaceleración exponencial, sin rebote.
+
+**Membrete.** La composición de la hoja membretada de los escritos, llevada a la web (`components/ui/Membrete.tsx`): el sello GC a la izquierda y, a su lado, «CORPORACIÓN GC» en DM Sans medio, mayúscula y 0,2 em de interletraje (`membrete-name`), con «ABOGADOS · DERECHO PÚBLICO» debajo en gris espaciado (`membrete-caption`). Encabeza «Sobre nosotros», centrado y seguido de la regla dorada de los dictámenes. Es una pieza de marca: sus tamaños quedan fuera de la escala de texto a propósito.
+
+**Figuras de fotos de evento.** Las fotos de actos, como la capacitación a ELEINMSA, van a lo ancho en proporción 3:2 y nunca en una columna estrecha: en un recuadro vertical, el recorte lateral deja fuera a quien habla.
 
 **Movimiento.** Una sola entrada por bloque: aparece desde 20 px más abajo con desaceleración exponencial (`cubic-bezier(0.16, 1, 0.3, 1)`). Con `prefers-reduced-motion` todo llega a su estado final sin animar.
 
