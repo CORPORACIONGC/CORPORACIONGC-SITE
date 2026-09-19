@@ -41,22 +41,18 @@ const photoCache = new Map<string, string>();
 async function loadFonts(): Promise<FontEntry[]> {
   if (cachedFonts) return cachedFonts;
   const fontsDir = join(process.cwd(), "public/fonts");
-  const [dmLight, dmRegular, dmMedium, dmSemiBold, cormorantMedium, cormorantSemiBold] =
-    await Promise.all([
-      readFile(join(fontsDir, "DMSans-Light.ttf")),
-      readFile(join(fontsDir, "DMSans-Regular.ttf")),
-      readFile(join(fontsDir, "DMSans-Medium.ttf")),
-      readFile(join(fontsDir, "DMSans-SemiBold.ttf")),
-      readFile(join(fontsDir, "CormorantGaramond-Medium.ttf")),
-      readFile(join(fontsDir, "CormorantGaramond-SemiBold.ttf")),
-    ]);
+  // Una sola familia, como el sitio: DM Sans (opción 3 del estudio tipográfico).
+  const [dmLight, dmRegular, dmMedium, dmSemiBold] = await Promise.all([
+    readFile(join(fontsDir, "DMSans-Light.ttf")),
+    readFile(join(fontsDir, "DMSans-Regular.ttf")),
+    readFile(join(fontsDir, "DMSans-Medium.ttf")),
+    readFile(join(fontsDir, "DMSans-SemiBold.ttf")),
+  ]);
   cachedFonts = [
     { name: "DM Sans", data: dmLight, weight: 300, style: "normal" },
     { name: "DM Sans", data: dmRegular, weight: 400, style: "normal" },
     { name: "DM Sans", data: dmMedium, weight: 500, style: "normal" },
     { name: "DM Sans", data: dmSemiBold, weight: 600, style: "normal" },
-    { name: "Cormorant Garamond", data: cormorantMedium, weight: 500, style: "normal" },
-    { name: "Cormorant Garamond", data: cormorantSemiBold, weight: 600, style: "normal" },
   ];
   return cachedFonts;
 }
@@ -122,16 +118,6 @@ async function loadPhoto(
   }
 }
 
-// ---------- Helper para preservar espacios alrededor de la emphasis ----------
-const NBSP = " ";
-function splitWithNbsp(text: string, marker = "{{em}}"): [string, string] {
-  const parts = text.split(marker);
-  return [
-    parts[0].replace(/\s+$/, NBSP),
-    (parts[1] ?? "").replace(/^\s+/, NBSP),
-  ];
-}
-
 // =============================================================
 // VARIANTE A1 — HOME (hero centrado con wordmark + tagline)
 // =============================================================
@@ -145,10 +131,8 @@ export interface HomeOgInput {
 
 export async function renderHomeOg(input: HomeOgInput) {
   const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
-  // Si hay emphasis, usamos split. Si no, una sola pieza.
-  const [taglineBefore, taglineAfter] = input.emphasis
-    ? splitWithNbsp(input.tagline)
-    : [input.tagline, ""];
+  // Un solo tono: la frase marcada con {{em}} se integra al texto corrido.
+  const tagline = input.tagline.replace("{{em}}", input.emphasis ?? "");
 
   return new ImageResponse(
     (
@@ -213,15 +197,7 @@ export async function renderHomeOg(input: HomeOgInput) {
               display: "flex",
             }}
           >
-            {input.emphasis ? (
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
-                <span>{taglineBefore}</span>
-                <span style={{ color: C.burgundy, fontWeight: 600 }}>{input.emphasis}</span>
-                <span>{taglineAfter}</span>
-              </div>
-            ) : (
-              <span>{input.tagline}</span>
-            )}
+            <span>{tagline}</span>
           </div>
         </div>
         <div
@@ -264,7 +240,8 @@ export interface DefaultOgInput {
 
 export async function renderDefaultOg(input: DefaultOgInput) {
   const [fonts, logoSrc] = await Promise.all([loadFonts(), loadLogo()]);
-  const [titleBefore, titleAfter] = splitWithNbsp(input.title);
+  // Un solo tono: la frase marcada con {{em}} se integra al título.
+  const title = input.title.replace("{{em}}", input.emphasis ?? "");
 
   return new ImageResponse(
     (
@@ -343,19 +320,17 @@ export async function renderDefaultOg(input: DefaultOgInput) {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            fontFamily: "Cormorant Garamond",
-            fontWeight: 500,
-            fontSize: 76,
-            letterSpacing: "-0.02em",
+            fontFamily: "DM Sans",
+            fontWeight: 300,
+            fontSize: 64,
+            letterSpacing: "-0.015em",
             lineHeight: 1.05,
             color: C.charcoal,
             marginBottom: 28,
             maxWidth: 920,
           }}
         >
-          <span>{titleBefore}</span>
-          {input.emphasis ? <span style={{ color: C.burgundy }}>{input.emphasis}</span> : null}
-          <span>{titleAfter}</span>
+          <span>{title}</span>
         </div>
         <div
           style={{
@@ -459,10 +434,10 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
           </div>
           <div
             style={{
-              fontFamily: "Cormorant Garamond",
-              fontWeight: 500,
-              fontSize: 60,
-              letterSpacing: "-0.02em",
+              fontFamily: "DM Sans",
+              fontWeight: 300,
+              fontSize: 50,
+              letterSpacing: "-0.015em",
               lineHeight: 1.05,
               color: C.charcoal,
               marginBottom: 24,
@@ -544,11 +519,11 @@ export async function renderAttorneyOg(input: AttorneyOgInput) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontFamily: "Cormorant Garamond",
-                fontWeight: 600,
-                fontSize: 140,
+                fontFamily: "DM Sans",
+                fontWeight: 500,
+                fontSize: 120,
                 color: C.burgundy,
-                letterSpacing: "0.04em",
+                letterSpacing: "0.08em",
               }}
             >
               {input.initials}
@@ -596,7 +571,7 @@ export async function renderJurisprudenceOg(input: JurisprudenceOgInput) {
   ]);
 
   const titleLen = input.title.length;
-  const titleFontSize = titleLen > 80 ? 46 : titleLen > 55 ? 54 : 60;
+  const titleFontSize = titleLen > 80 ? 38 : titleLen > 55 ? 44 : 50;
 
   const trimmedQuote =
     input.pullQuote.length > 190
@@ -702,10 +677,10 @@ export async function renderJurisprudenceOg(input: JurisprudenceOgInput) {
         <div
           style={{
             display: "flex",
-            fontFamily: "Cormorant Garamond",
-            fontWeight: 500,
+            fontFamily: "DM Sans",
+            fontWeight: 300,
             fontSize: titleFontSize,
-            letterSpacing: "-0.02em",
+            letterSpacing: "-0.015em",
             lineHeight: 1.05,
             color: C.charcoal,
             marginBottom: 26,
@@ -719,10 +694,9 @@ export async function renderJurisprudenceOg(input: JurisprudenceOgInput) {
         <div
           style={{
             display: "flex",
-            fontFamily: "Cormorant Garamond",
-            fontStyle: "italic",
-            fontWeight: 500,
-            fontSize: 22,
+            fontFamily: "DM Sans",
+            fontWeight: 300,
+            fontSize: 21,
             lineHeight: 1.4,
             color: "rgba(28,28,30,0.72)",
             maxWidth: 1000,
@@ -779,8 +753,8 @@ export async function renderJurisprudenceOg(input: JurisprudenceOgInput) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontFamily: "Cormorant Garamond",
-                fontSize: 22,
+                fontFamily: "DM Sans",
+                fontSize: 19,
                 fontWeight: 600,
                 color: C.white,
               }}
@@ -790,7 +764,7 @@ export async function renderJurisprudenceOg(input: JurisprudenceOgInput) {
           )}
           <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
             <div style={{ fontSize: 14, fontWeight: 600, color: C.charcoal }}>
-              Redactado por {redactorName}
+              {`Redactado por ${redactorName}`}
             </div>
             <div
               style={{
@@ -838,7 +812,7 @@ export async function renderArticleOg(input: ArticleOgInput) {
 
   // Tamaño del título adaptativo según largo, para evitar overflow
   const titleLen = input.title.length;
-  const titleFontSize = titleLen > 110 ? 38 : titleLen > 80 ? 46 : titleLen > 55 ? 54 : 60;
+  const titleFontSize = titleLen > 110 ? 32 : titleLen > 80 ? 38 : titleLen > 55 ? 44 : 50;
   const trimmedExcerpt =
     input.excerpt.length > 220 ? input.excerpt.slice(0, 217).trimEnd() + "…" : input.excerpt;
 
@@ -902,10 +876,10 @@ export async function renderArticleOg(input: ArticleOgInput) {
         <div
           style={{
             display: "flex",
-            fontFamily: "Cormorant Garamond",
-            fontWeight: 500,
+            fontFamily: "DM Sans",
+            fontWeight: 300,
             fontSize: titleFontSize,
-            letterSpacing: "-0.02em",
+            letterSpacing: "-0.015em",
             lineHeight: 1.1,
             color: C.charcoal,
             marginBottom: 20,
@@ -946,8 +920,8 @@ export async function renderArticleOg(input: ArticleOgInput) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontFamily: "Cormorant Garamond",
-              fontSize: 18,
+              fontFamily: "DM Sans",
+              fontSize: 16,
               fontWeight: 600,
               color: C.white,
             }}
