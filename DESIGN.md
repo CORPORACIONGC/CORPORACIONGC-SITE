@@ -113,6 +113,18 @@ typography:
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.34em
+  group-tab:
+    fontFamily: DM Sans
+    fontSize: 28px
+    fontWeight: 300
+    lineHeight: 1.1
+    letterSpacing: -0.015em
+  group-tab-large:
+    fontFamily: DM Sans
+    fontSize: 32px
+    fontWeight: 300
+    lineHeight: 1.1
+    letterSpacing: -0.015em
   button:
     fontFamily: DM Sans
     fontSize: 14px
@@ -237,6 +249,8 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 **Membrete.** La composición de la hoja membretada de los escritos, llevada a la web (`components/ui/Membrete.tsx`): el sello GC a la izquierda y, a su lado, «CORPORACIÓN GC» en DM Sans medio, mayúscula y 0,2 em de interletraje (`membrete-name`), con «ABOGADOS · DERECHO PÚBLICO» debajo en gris espaciado (`membrete-caption`). Encabeza «Sobre nosotros», centrado y seguido de la regla dorada de los dictámenes. Es una pieza de marca: sus tamaños quedan fuera de la escala de texto a propósito.
 
 **Figuras de fotos de evento.** Las fotos de actos, como la capacitación a ELEINMSA, van a lo ancho en proporción 3:2 y nunca en una columna estrecha: en un recuadro vertical, el recorte lateral deja fuera a quien habla.
+
+**Explorador de áreas de práctica** (`components/sections/PracticeExplorer.tsx`). Reemplaza la cuadrícula de tarjetas con ícono. Las 32 áreas se ordenan en cinco grupos de práctica: Litigio y tribunales, Administración pública, Sectores regulados, Territorio y bienes públicos, y Cobertura complementaria. En escritorio, los grupos forman una columna de pestañas verticales en DM Sans ligera de 28–32 px (`group-tab`) con su conteo. El grupo activo toma el color de marca, su filete se traza y aparece una flecha. A la derecha, las áreas del grupo van en dos columnas de filas con filete, con el nombre en semibold y la descripción en 13 px, y el mismo trazo al pasar el cursor que la fila del equipo. El grupo cambia al pasar el cursor, con clic o con las flechas del teclado. Los paneles se apilan en la misma celda para que la sección no salte. En móvil, los grupos son una tira de pestañas deslizable. Las 32 áreas están siempre en el HTML inicial. Si se agrega un área nueva a `PRACTICE_AREA_PAGES`, hay que asignarla a un grupo en `GROUPS`; si no, cae por defecto en el grupo que corresponde a su prioridad.
 
 **Movimiento.** Una sola entrada por bloque: aparece desde 20 px más abajo con desaceleración exponencial (`cubic-bezier(0.16, 1, 0.3, 1)`). Con `prefers-reduced-motion` todo llega a su estado final sin animar.
 

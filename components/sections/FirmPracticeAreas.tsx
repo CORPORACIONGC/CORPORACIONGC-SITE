@@ -1,14 +1,18 @@
 import Link from "next/link";
-import { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, ArrowRight, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench, Certificate, Robot, ShieldWarning, Recycle, Factory, Wallet, Flag, WifiHigh, SolarPanel } from "@phosphor-icons/react/dist/ssr";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREA_PAGES } from "@/lib/constants";
-
-const iconMap: Record<string, React.ElementType> = { Scales, Gavel, ShieldCheck, Shield, FileText, Buildings, Stamp, Briefcase, Bank, Lightbulb, UsersThree, Leaf, Handshake, BookOpen, Warning, IdentificationBadge, Lightning, MapPin, Waves, HouseSimple, CurrencyCircleDollar, Globe, Heart, Wrench, Certificate, Robot, ShieldWarning, Recycle, Factory, Wallet, Flag, WifiHigh, SolarPanel };
+import { PracticeExplorer, type PracticeAreaLite } from "@/components/sections/PracticeExplorer";
 
 export function FirmPracticeAreas() {
-  const primary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "primary");
-  const specialized = PRACTICE_AREA_PAGES.filter((a) => a.priority === "specialized");
-  const complementary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "complementary");
+  /* Solo lo que la portada muestra de cada área: el explorador corre en el
+     cliente y no debe arrastrar el contenido completo de las páginas. */
+  const areas: PracticeAreaLite[] = PRACTICE_AREA_PAGES.map((a) => ({
+    slug: a.slug,
+    title: ("homepageTitle" in a && a.homepageTitle ? a.homepageTitle : a.title) as string,
+    subtitle: a.subtitle,
+    priority: a.priority,
+  }));
 
   return (
     <section id="areas" className="relative bg-surface py-24 md:py-32">
@@ -43,51 +47,8 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
           </AnimatedEntry>
         </div>
 
-        {/* All practice areas — unified grid of 3 columns */}
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" stagger={0.04}>
-          {[...primary, ...specialized].map((area, i) => {
-            const Icon = iconMap[area.icon];
-            return (
-              <StaggerItem key={i}>
-                <Link
-                  href={`/areas/${area.slug}`}
-                  className="group block p-5 md:p-6 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] hover:bg-burgundy/[0.08] transition-all duration-400 h-full"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="p-2.5 rounded-xl bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300 shrink-0">
-                      {Icon && <Icon size={22} weight="duotone" />}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-sm md:text-base font-semibold text-cream tracking-tight group-hover:text-gold transition-colors duration-300">{(area as any).homepageTitle ?? area.title}</h3>
-                      <p className="mt-1.5 text-[13px] text-cream/65 leading-relaxed line-clamp-2">{area.subtitle}</p>
-                    </div>
-                  </div>
-                </Link>
-              </StaggerItem>
-            );
-          })}
-        </StaggerContainer>
-
-        {/* Complementary areas */}
-        <AnimatedEntry delay={0.5}>
-          <div className="mt-8 pt-6 border-t border-cream/[0.05]">
-            <div className="type-label text-cream/65 mb-4">Cobertura complementaria</div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-2">
-              {complementary.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <Link
-                    key={i}
-                    href={`/areas/${area.slug}`}
-                    className="flex items-center gap-2 py-1 group"
-                  >
-                    {Icon && <Icon size={14} weight="duotone" className="text-cream/35 group-hover:text-burgundy-light shrink-0 transition-colors duration-300" />}
-                    <span className="text-[13px] text-cream/65 group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300">{area.title}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
+        <AnimatedEntry delay={0.1}>
+          <PracticeExplorer areas={areas} />
         </AnimatedEntry>
       </div>
     </section>

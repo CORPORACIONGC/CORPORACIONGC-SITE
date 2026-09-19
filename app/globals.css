@@ -626,6 +626,16 @@ html {
   animation: gc-slide-x 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+/* Panel del explorador de áreas: entra con un desliz corto al cambiar de
+   grupo (la animación se reinicia cada vez que el panel pasa a activo). */
+@keyframes gc-panel-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.gc-panel-in[data-active="true"] {
+  animation: gc-panel-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
 /* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
