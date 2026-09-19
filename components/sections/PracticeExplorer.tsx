@@ -23,7 +23,11 @@ export type PracticeAreaLite = {
 };
 
 /* Grupos por materia. Un área nueva que no figure en ninguno cae en el grupo
-   que corresponde a su prioridad, para que nunca desaparezca de la portada. */
+   que corresponde a su prioridad, para que nunca desaparezca de la portada.
+   Ningún grupo pasa de ocho áreas (cuatro filas): los paneles se apilan en
+   la misma celda y la sección mide lo que el grupo más largo, así que un
+   grupo de nueve dejaba un hueco bajo el grupo de Litigio, que se abre por
+   defecto con siete. */
 const GROUPS: { title: string; slugs: string[] }[] = [
   {
     title: "Litigio y tribunales",
@@ -45,7 +49,6 @@ const GROUPS: { title: string; slugs: string[] }[] = [
       "empleo-publico",
       "informes-juridicos-dictamenes",
       "asesoria-regulatoria",
-      "materia-municipal",
       "materia-presupuestaria",
       "compliance-publico-anticorrupcion",
       "derecho-electoral-financiamiento-politico",
@@ -59,7 +62,6 @@ const GROUPS: { title: string; slugs: string[] }[] = [
       "energia-renovable-transicion-energetica",
       "regulacion-fintech-criptoactivos",
       "regulacion-ambiental-mercados-carbono",
-      "alianzas-publico-privadas-infraestructura",
       "defensa-regulatoria-sectorial",
       "comercio-internacional",
       "gobierno-digital-inteligencia-artificial-datos",
@@ -67,7 +69,13 @@ const GROUPS: { title: string; slugs: string[] }[] = [
   },
   {
     title: "Territorio y bienes públicos",
-    slugs: ["dominio-publico", "zona-maritimo-terrestre", "derecho-urbanistico"],
+    slugs: [
+      "dominio-publico",
+      "zona-maritimo-terrestre",
+      "derecho-urbanistico",
+      "materia-municipal",
+      "alianzas-publico-privadas-infraestructura",
+    ],
   },
   {
     title: "Cobertura complementaria",

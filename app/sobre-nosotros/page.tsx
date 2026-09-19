@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Membrete } from "@/components/ui/Membrete";
-import { CLIENT_LOGOS } from "@/lib/constants";
+import { CLIENTES, tamanoOptico } from "@/lib/constants";
 import { sobreNosotrosMetadata } from "@/lib/page-metadata";
 
 /* ── SEO: Structured Data (JSON-LD) ── */
@@ -451,31 +451,34 @@ export default function SobreNosotros() {
                 Taboga, ELEINMSA, Gas Zeta (Gas Z), Grupo Orosí, Mercasa, Taxis Unidos
                 Aeropuerto y Coocafé, entre otros.
               </p>
-              {/* Los logos traen márgenes propios dentro de la imagen; el scale de
-                  CLIENT_LOGOS los iguala en peso visual, como en la cinta de la
-                  portada. En filas centradas la última nunca queda coja. */}
+              {/* Los logos se recortaron a su contenido y tamanoOptico() los
+                  iguala en peso visual, como en la cinta de la portada. En
+                  filas centradas la última nunca queda coja. */}
               <div className="mt-12 rounded-xl bg-[#3A0B1F] px-4 py-10 md:px-8 md:py-14">
                 <ul
                   role="list"
                   aria-label="Clientes que han confiado en Corporación GC"
                   className="flex flex-wrap items-center justify-center gap-x-4 gap-y-6 md:gap-x-6 md:gap-y-8"
                 >
-                  {CLIENT_LOGOS.map((logo) => (
-                    <li
-                      key={logo.name}
-                      className="flex h-16 w-[132px] items-center justify-center md:h-20 md:w-[150px]"
-                      title={logo.name}
-                    >
-                      <Image
-                        src={logo.src}
-                        alt={logo.name}
-                        width={180}
-                        height={120}
-                        className="h-11 w-auto object-contain opacity-85 mix-blend-screen md:h-12"
-                        style={{ transform: `scale(${logo.scale}) translateY(${logo.offsetY / 2}px)` }}
-                      />
-                    </li>
-                  ))}
+                  {CLIENTES.map((c) => {
+                    const t = tamanoOptico(c.ratio, c.densidad, 48);
+                    return (
+                      <li
+                        key={c.name}
+                        className="flex h-16 w-[132px] items-center justify-center md:h-20 md:w-[150px]"
+                        title={c.name}
+                      >
+                        <Image
+                          src={c.src}
+                          alt={c.name}
+                          width={t.width * 2}
+                          height={t.height * 2}
+                          className="opacity-85 mix-blend-screen"
+                          style={{ width: t.width, height: t.height }}
+                        />
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </section>

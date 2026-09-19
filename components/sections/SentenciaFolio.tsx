@@ -169,6 +169,17 @@ export function SentenciaFolio({ sentencias }: { sentencias: SentenciaPortada[] 
   if (sentencias.length === 0) return null;
   const s = sentencias[activa];
 
+  /* Columnas del índice sin filas cojas: con cuatro sentencias, dos por dos en
+     tableta y cuatro en escritorio; con tres, tres; con más, filas de cuatro
+     cuando el número lo permite y de tres en otro caso. */
+  const n = sentencias.length;
+  const columnas =
+    n === 2
+      ? "sm:grid-cols-2"
+      : n === 3 || (n > 4 && n % 4 !== 0)
+        ? "md:grid-cols-3"
+        : "sm:grid-cols-2 lg:grid-cols-4";
+
   return (
     <div>
       <div id={folioId} className="gc-pila mx-auto max-w-[1080px]">
@@ -178,7 +189,7 @@ export function SentenciaFolio({ sentencias }: { sentencias: SentenciaPortada[] 
       {/* Índice de sentencias: solo cuando hay más de una */}
       {sentencias.length > 1 && (
         <nav aria-label="Sentencias destacadas" className="mx-auto mt-16 max-w-[1080px]">
-          <ul role="list" className="grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+          <ul role="list" className={`grid gap-x-8 ${columnas}`}>
             {sentencias.map((x, i) => {
               const on = i === activa;
               return (

@@ -38,26 +38,42 @@ export const FIRM_CREDENTIALS = [
   { metric: "11", label: "Años litigando en lo Contencioso Administrativo", detail: "Desde 2015" },
 ] as const;
 
-export const CLIENT_LOGOS = [
-  { name: "SUTEL", src: "/images/clients/sutel-white.png", scale: 1.95, offsetY: -4 },
-  { name: "INS", src: "/images/clients/ins-white.png", scale: 1.15, offsetY: -6 },
-  { name: "Banco Mundial", src: "/images/clients/world-bank-white.png", scale: 2.15, offsetY: 3 },
-  { name: "CFIA", src: "/images/clients/cfia-white.png", scale: 1.55, offsetY: 0 },
-  { name: "Colegio de Abogados", src: "/images/clients/cab-white.png", scale: 1.35, offsetY: 0 },
-  { name: "Colegio de Médicos", src: "/images/clients/colegio-medicos-white.png", scale: 1.5, offsetY: 0 },
-  { name: "El Viejo", src: "/images/clients/el-viejo-white.png", scale: 1.1, offsetY: 0 },
-  { name: "Taboga", src: "/images/clients/taboga-white.png", scale: 1.55, offsetY: 0 },
-  { name: "Municipalidad de San Carlos", src: "/images/clients/san-carlos-white.png", scale: 1.2, offsetY: 0 },
-  { name: "ELEINMSA", src: "/images/clients/eleinmsa-white.png", scale: 1.3, offsetY: 0 },
-  { name: "Gas Z", src: "/images/clients/gasz-white.png", scale: 1.3, offsetY: 0 },
-  { name: "Grupo Orosí", src: "/images/clients/grupo-orosi-white.png", scale: 1.3, offsetY: 6 },
-  { name: "Mercasa", src: "/images/clients/mercasa-white.png", scale: 1.3, offsetY: 0 },
-  { name: "UNA", src: "/images/clients/una-white.png", scale: 1.3, offsetY: 0 },
-  { name: "ICE", src: "/images/clients/ice-white.png", scale: 1.4, offsetY: -3 },
-  { name: "Taxis Unidos", src: "/images/clients/taxis-unidos-white.png", scale: 1.5, offsetY: 0 },
-  { name: "Colegio de Terapeutas", src: "/images/clients/colegio-terapeutas-white.png", scale: 1.3, offsetY: 0 },
-  { name: "Coocafé", src: "/images/clients/coocafe-white.png", scale: 1.3, offsetY: 0 },
+/* Clientes para la banda «Han confiado en nosotros». Cada logo está recortado
+   a su contenido (public/images/clients/recorte) y trae su proporción (ancho
+   entre alto) y su densidad de tinta (brillo medio del logo sobre negro, de 0
+   a 1), medidas sobre el archivo. Con esos dos datos, tamanoOptico() los
+   iguala en peso visual sin ajustes a mano. */
+export const CLIENTES = [
+  { name: "SUTEL", src: "/images/clients/recorte/sutel.png", ratio: 3.678, densidad: 0.165 },
+  { name: "INS", src: "/images/clients/recorte/ins.png", ratio: 3.019, densidad: 0.373 },
+  { name: "Banco Mundial", src: "/images/clients/recorte/world-bank.png", ratio: 4.604, densidad: 0.181 },
+  { name: "ICE", src: "/images/clients/recorte/ice.png", ratio: 1.262, densidad: 0.341 },
+  { name: "UNA", src: "/images/clients/recorte/una.png", ratio: 1.35, densidad: 0.222 },
+  { name: "Municipalidad de San Carlos", src: "/images/clients/recorte/san-carlos.png", ratio: 1.025, densidad: 0.393 },
+  { name: "CFIA", src: "/images/clients/recorte/cfia.png", ratio: 3.855, densidad: 0.455 },
+  { name: "Colegio de Abogados", src: "/images/clients/recorte/cab.png", ratio: 1.1, densidad: 0.351 },
+  { name: "Colegio de Médicos", src: "/images/clients/recorte/colegio-medicos.png", ratio: 1.812, densidad: 0.093 },
+  { name: "Colegio de Terapeutas", src: "/images/clients/recorte/colegio-terapeutas.png", ratio: 1.822, densidad: 0.335 },
+  { name: "El Viejo", src: "/images/clients/recorte/el-viejo.png", ratio: 2.623, densidad: 0.291 },
+  { name: "Taboga", src: "/images/clients/recorte/taboga.png", ratio: 2.058, densidad: 0.184 },
+  { name: "ELEINMSA", src: "/images/clients/recorte/eleinmsa.png", ratio: 2.353, densidad: 0.431 },
+  { name: "Gas Z", src: "/images/clients/recorte/gasz.png", ratio: 0.666, densidad: 0.204 },
+  { name: "Grupo Orosí", src: "/images/clients/recorte/grupo-orosi.png", ratio: 1.938, densidad: 0.362 },
+  { name: "Mercasa", src: "/images/clients/recorte/mercasa.png", ratio: 3.422, densidad: 0.407 },
+  { name: "Taxis Unidos", src: "/images/clients/recorte/taxis-unidos.png", ratio: 2.388, densidad: 0.247 },
+  { name: "Coocafé", src: "/images/clients/recorte/coocafe.png", ratio: 3.575, densidad: 0.334 },
 ] as const;
+
+/** Tamaño de un logo para que todos pesen lo mismo a la vista. `alto` es la
+ *  altura que tendría un logo cuadrado de densidad media. Un logo ancho baja
+ *  de alto sin llegar a igualar el área (exponente 0,45), y uno liviano,
+ *  de trazo fino, crece un poco (hasta 20 %) frente a uno macizo. */
+export function tamanoOptico(ratio: number, densidad: number, alto: number) {
+  const DENSIDAD_MEDIA = 0.334;
+  const peso = Math.min(1.2, Math.max(0.88, Math.pow(densidad / DENSIDAD_MEDIA, -0.2)));
+  const h = Math.min(alto * 1.3, alto * Math.pow(ratio, -0.45) * peso);
+  return { width: Math.round(h * ratio), height: Math.round(h) };
+}
 
 export const OSCAR_PROFILE = {
   name: "Dr. Óscar Eduardo González Camacho",

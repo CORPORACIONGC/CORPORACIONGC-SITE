@@ -1,71 +1,76 @@
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
-import { CLIENT_LOGOS } from "@/lib/constants";
+import { CLIENTES, tamanoOptico } from "@/lib/constants";
 
-function LogoItem({ logo }: { logo: (typeof CLIENT_LOGOS)[number] }) {
-  /* Los logos llevan un scale() de normalización visual que crece más allá
-     de su caja (hasta 2.15×) e invade el espacio del vecino. Este margen
-     lateral proporcional al scale devuelve a cada logo el aire que su
-     agrandamiento le roba al gap del contenedor. */
-  const bleed = Math.round((logo.scale - 1) * 24);
+type Cliente = (typeof CLIENTES)[number];
+
+/* Un logo a su tamaño óptico. Los archivos son blancos sobre transparente
+   (algunos traen un fondo negro que el modo de mezcla «screen» vuelve
+   invisible sobre el borgoña). Carga inmediata: la banda está justo debajo
+   del hero y la cinta mueve los logos hacia la pantalla. */
+function Logo({ c, alto, className = "" }: { c: Cliente; alto: number; className?: string }) {
+  const t = tamanoOptico(c.ratio, c.densidad, alto);
   return (
-    <div
-      className="shrink-0 flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity duration-500 h-12 md:h-16"
-      title={logo.name}
-      style={{ marginInline: bleed }}
-    >
-      <Image
-        src={logo.src}
-        alt={logo.name}
-        width={180}
-        height={60}
-        className="h-full w-auto object-contain mix-blend-screen"
-        style={{ transform: `scale(${logo.scale}) translateY(${logo.offsetY}px)` }}
-      />
+    <Image
+      src={c.src}
+      alt={c.name}
+      title={c.name}
+      width={t.width * 2}
+      height={t.height * 2}
+      loading="eager"
+      className={`mix-blend-screen ${className}`}
+      style={{ width: t.width, height: t.height }}
+    />
+  );
+}
+
+const Rotulo = () => (
+  <div className="flex items-center justify-center gap-4">
+    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-r from-transparent to-gold/40" />
+    <h2 className="type-label text-white/70">Han confiado en nosotros</h2>
+    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-l from-transparent to-gold/40" />
+  </div>
+);
+
+/* ── Cinta de clientes: los logos igualados por tamaño óptico, a 80 s por
+   vuelta, con pausa al pasar el cursor o recibir el foco. ── */
+function Cinta() {
+  return (
+    <div className="pb-12 pt-12 md:pb-16 md:pt-16">
+      <AnimatedEntry>
+        <Rotulo />
+      </AnimatedEntry>
+      {/* Los bordes se desvanecen con una máscara, no con franjas del color de
+          fondo: así no aparecen rectángulos si el fondo cambia de tono. */}
+      <div className="group/cinta relative mt-10 [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] md:mt-12 motion-reduce:[mask-image:none]">
+        {/* El pr igual al gap cierra el ciclo: el translateX(-50%) cae justo
+            en el inicio de la copia. Con movimiento reducido, la cinta se
+            detiene y los logos se reparten en filas centradas. */}
+        <ul
+          role="list"
+          aria-label="Clientes"
+          className="animate-marquee-lenta flex w-max items-center gap-14 pr-14 group-hover/cinta:[animation-play-state:paused] group-focus-within/cinta:[animation-play-state:paused] md:gap-20 md:pr-20 motion-reduce:mx-auto motion-reduce:grid motion-reduce:w-auto motion-reduce:max-w-[1400px] motion-reduce:grid-cols-3 motion-reduce:justify-items-center motion-reduce:gap-y-10 motion-reduce:px-6 motion-reduce:pr-6 motion-reduce:[animation:none] md:motion-reduce:grid-cols-6 md:motion-reduce:px-10"
+        >
+          {CLIENTES.map((c) => (
+            <li key={c.name} className="flex shrink-0 items-center opacity-75 transition-opacity duration-500 hover:opacity-100">
+              <Logo c={c} alto={52} />
+            </li>
+          ))}
+          {CLIENTES.map((c) => (
+            <li key={`copia-${c.name}`} aria-hidden="true" className="flex shrink-0 items-center opacity-75 motion-reduce:hidden">
+              <Logo c={c} alto={52} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
 
 export function ClientLogos() {
   return (
-    <section className="relative bg-[#3A0B1F] overflow-hidden">
-      {/* Elegant subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#280D16] pointer-events-none" />
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-12 md:pt-16">
-        <AnimatedEntry>
-          <div className="flex items-center justify-center gap-4 mb-10 md:mb-12">
-            <div className="h-px w-10 bg-gradient-to-r from-transparent to-gold/30" />
-            <span className="type-label text-white/70">
-              Han confiado en nosotros
-            </span>
-            <div className="h-px w-10 bg-gradient-to-l from-transparent to-gold/30" />
-          </div>
-        </AnimatedEntry>
-      </div>
-
-      <AnimatedEntry delay={0.1}>
-        <div className="relative pb-12 md:pb-16">
-          {/* Fade edges matching burgundy bg — extra tall to cover scaled logos */}
-          <div className="absolute left-0 -top-16 -bottom-16 w-36 md:w-56 bg-gradient-to-r from-[#3A0B1F] via-[#3A0B1F]/90 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 -top-16 -bottom-16 w-36 md:w-56 bg-gradient-to-l from-[#3A0B1F] via-[#3A0B1F]/90 to-transparent z-10 pointer-events-none" />
-
-          {/* pr igual al gap: cierra el ciclo con un espacio final para que el
-              translateX(-50%) del bucle caiga exactamente en el inicio de la
-              copia y la cinta no dé un salto en cada vuelta. */}
-          <div className="animate-marquee flex items-center gap-24 md:gap-32 pr-24 md:pr-32 w-max">
-            {CLIENT_LOGOS.map((logo) => (
-              <LogoItem key={logo.name} logo={logo} />
-            ))}
-            {/* Copia para el bucle infinito de la cinta — oculta a lectores
-                de pantalla para no anunciar cada logo dos veces. */}
-            <div aria-hidden="true" className="contents">
-              {CLIENT_LOGOS.map((logo) => (
-                <LogoItem key={`dup-${logo.name}`} logo={logo} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </AnimatedEntry>
+    <section className="gc-on-dark relative overflow-hidden bg-[#3A0B1F]">
+      <Cinta />
     </section>
   );
 }

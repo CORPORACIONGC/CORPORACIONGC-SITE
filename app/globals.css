@@ -586,11 +586,10 @@ html {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-.animate-marquee {
-  animation: marquee 55s linear infinite;
-}
-.animate-marquee:hover {
-  animation-play-state: paused;
+/* Cinta de clientes: 80 s por vuelta, para que cada logo se alcance a leer.
+   La pausa al pasar el cursor la pone el componente. */
+.animate-marquee-lenta {
+  animation: marquee 80s linear infinite;
 }
 
 /* Theme toggle icon animation */

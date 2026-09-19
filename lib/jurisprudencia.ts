@@ -2701,6 +2701,8 @@ export function fragmentosLiterales(s: SentenciaDestacada) {
   return (s.fragmentosPortada ?? []).filter((f) => textos.some((t) => t.includes(f.texto)));
 }
 
+/** Las sentencias en orden cronológico, como se lee una línea
+ *  jurisprudencial: el folio de la portada abre con la más antigua. */
 export function getAllSentencias(): SentenciaDestacada[] {
-  return SENTENCIAS_DESTACADAS;
+  return [...SENTENCIAS_DESTACADAS].sort((a, b) => a.fechaISO.localeCompare(b.fechaISO));
 }
