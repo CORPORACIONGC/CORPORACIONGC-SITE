@@ -636,6 +636,53 @@ html {
   animation: gc-panel-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* ── Papel: la ficha de la sentencia como una hoja sobre la mesa ──
+   Sombra en cuatro capas teñida de burdeos (nunca negra): contacto, borde,
+   caída y ambiente. En modo oscuro, la hoja es un tono más claro que el fondo
+   y la luz entra por el filo superior. */
+.gc-papel {
+  background: #ffffff;
+  border: 1px solid rgba(74, 14, 39, 0.08);
+  box-shadow:
+    0 1px 1px rgba(74, 14, 39, 0.04),
+    0 3px 6px -2px rgba(74, 14, 39, 0.06),
+    0 14px 28px -10px rgba(74, 14, 39, 0.14),
+    0 40px 80px -30px rgba(74, 14, 39, 0.28);
+}
+.dark .gc-papel {
+  background: #1b141a;
+  border-color: rgba(247, 243, 238, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(247, 243, 238, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 24px 60px -20px rgba(0, 0, 0, 0.7);
+}
+/* Hojas debajo del folio, como un expediente: el contenedor no tiene fondo,
+   así que las hojas quedan detrás de la principal. */
+.gc-pila {
+  position: relative;
+  isolation: isolate;
+}
+.gc-pila::before,
+.gc-pila::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(74, 14, 39, 0.07);
+  box-shadow: 0 10px 24px -14px rgba(74, 14, 39, 0.2);
+}
+.gc-pila::before { transform: translateY(9px) scale(0.978); }
+.gc-pila::after { transform: translateY(18px) scale(0.956); opacity: 0.7; }
+.dark .gc-pila::before,
+.dark .gc-pila::after {
+  background: #171116;
+  border-color: rgba(247, 243, 238, 0.06);
+  box-shadow: 0 12px 30px -16px rgba(0, 0, 0, 0.8);
+}
+
 /* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

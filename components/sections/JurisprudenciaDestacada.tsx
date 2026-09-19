@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Quotes,
   Scales,
-  BookOpen,
 } from "@phosphor-icons/react/dist/ssr";
 import {
   AnimatedEntry,
@@ -11,7 +10,8 @@ import {
   StaggerItem,
 } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { getAllSentencias } from "@/lib/jurisprudencia";
+import { fragmentosLiterales, getAllSentencias, nexusUrl } from "@/lib/jurisprudencia";
+import { SentenciaFolio, type SentenciaPortada } from "@/components/sections/SentenciaFolio";
 
 const BADGE_STYLES: Record<string, string> = {
   fundacional:
@@ -37,6 +37,24 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
 
   const featured = sentencias[0];
   const additional = sentencias.slice(1);
+
+  /* Solo lo que el folio de la portada muestra de cada sentencia: el
+     componente corre en el cliente y no debe cargar el análisis completo. */
+  const portadas: SentenciaPortada[] = sentencias.map((x) => ({
+    slug: x.slug,
+    numero: x.numero,
+    fecha: x.fecha,
+    anio: x.fecha.slice(-4),
+    hora: x.hora,
+    tribunal: x.tribunal,
+    titulo: x.titulo,
+    badgeLabel: x.badge?.label,
+    sintesis: x.sintesisPortada,
+    pullQuote: x.pullQuote,
+    fragmentos: fragmentosLiterales(x),
+    redactorTextual: x.redactorTextual,
+    nexusUrl: nexusUrl(x.nexusId),
+  }));
 
   const sectionEyebrow =
     variant === "profile"
@@ -99,6 +117,13 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
           </AnimatedEntry>
         </div>
 
+        {variant === "home" ? (
+          /* Portada: el folio, con índice cuando haya más de una sentencia */
+          <AnimatedEntry delay={0.3}>
+            <SentenciaFolio sentencias={portadas} />
+          </AnimatedEntry>
+        ) : (
+          <>
         {/* ── Featured sentencia card (editorial glass) ── */}
         <AnimatedEntry delay={0.3}>
           <Link
@@ -247,14 +272,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
           </StaggerContainer>
         )}
 
-        {/* Footer reading hint — only on home */}
-        {variant === "home" && additional.length === 0 && (
-          <AnimatedEntry delay={0.4}>
-            <div className="mt-10 flex items-center justify-center gap-2 text-[13px] text-cream/65">
-              <BookOpen size={12} weight="duotone" className="text-burgundy/60 dark:text-gold/60" />
-              <span>Texto íntegro disponible · análisis editorial</span>
-            </div>
-          </AnimatedEntry>
+          </>
         )}
       </div>
 

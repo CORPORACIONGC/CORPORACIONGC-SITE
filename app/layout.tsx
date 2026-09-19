@@ -8,9 +8,12 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.corporaciongc.
 
 /* DM Sans variable con su eje de tamaño óptico (opsz 9–40): el navegador
    elige el diseño según el tamaño, más abierto en el texto pequeño y más
-   cerrado y fino en los titulares. Cubre todos los pesos en un solo archivo. */
+   cerrado y fino en los titulares. Cubre todos los pesos en un solo archivo.
+   La cursiva es la real de la familia (pasajes literales y énfasis en los
+   artículos); sin ella el navegador inclinaría la redonda. */
 const dmSans = DM_Sans({
   subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
   axes: ["opsz"],
   variable: "--font-dm-sans",
   display: "swap",

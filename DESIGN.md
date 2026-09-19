@@ -56,6 +56,28 @@ typography:
     fontWeight: 300
     lineHeight: 1.6
     letterSpacing: -0.01em
+  literal-passage:
+    fontFamily: DM Sans
+    fontSize: 21px
+    fontWeight: 300
+    lineHeight: 1.55
+  folio-title-mobile:
+    fontFamily: DM Sans
+    fontSize: 26px
+    fontWeight: 300
+    lineHeight: 1.15
+    letterSpacing: -0.012em
+  folio-prose:
+    fontFamily: DM Sans
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.7
+  folio-title:
+    fontFamily: DM Sans
+    fontSize: 30px
+    fontWeight: 300
+    lineHeight: 1.15
+    letterSpacing: -0.012em
   lead:
     fontFamily: DM Sans
     fontSize: 1.1875rem
@@ -216,7 +238,7 @@ La tinta (#1C1C1E) se atenúa por opacidad para jerarquizar: 85 % para el texto 
 
 Una sola familia, **DM Sans**, la misma del logotipo. Se carga como fuente variable con su eje de tamaño óptico: el navegador elige el diseño según el tamaño, más abierto en el texto pequeño y más cerrado y de trazo más fino en los titulares. Como ese diseño de gran tamaño ya viene cerrado, el interletraje de los titulares es apenas negativo (−0,015 em); más apretado, las letras se tocan.
 
-**Un titular, un tono.** Los titulares de sección (`type-headline`) y los títulos destacados, como el nombre del fundador o el de la sentencia fundacional (`type-title`), van en ligera (300), en un solo color y un solo peso; la jerarquía la hacen el tamaño y el aire. Partir cada titular en dos colores y dos pesos era una fórmula repetida en 39 titulares que se leía como plantilla, y quedó retirada: si un componente todavía envuelve una frase en un `span` de color, el `span` hereda el color y el peso del titular. El único énfasis del sitio es **el subrayado del abogado** (`gc-subrayado`): un hilo dorado bajo «conocimiento de autor», la frase que resume a la firma, que se traza de izquierda a derecha cuando el titular entra en pantalla. Se usa una sola vez; si aparece en un segundo lugar, deja de significar. En modo nocturno la ligera sube a 350, porque el texto claro sobre negro se adelgaza por irradiación. Los títulos de tarjetas, como artículos o sentencias, van en semibold a 19 px (`type-card-title`). Las citas van en ligera a 22 px y en redonda (`type-quote`), nunca en cursiva.
+**Un titular, un tono.** Los titulares de sección (`type-headline`) y los títulos destacados, como el nombre del fundador o el de la sentencia fundacional (`type-title`), van en ligera (300), en un solo color y un solo peso; la jerarquía la hacen el tamaño y el aire. Partir cada titular en dos colores y dos pesos era una fórmula repetida en 39 titulares que se leía como plantilla, y quedó retirada: si un componente todavía envuelve una frase en un `span` de color, el `span` hereda el color y el peso del titular. El único énfasis del sitio es **el subrayado del abogado** (`gc-subrayado`): un hilo dorado bajo «conocimiento de autor», la frase que resume a la firma, que se traza de izquierda a derecha cuando el titular entra en pantalla. Se usa una sola vez; si aparece en un segundo lugar, deja de significar. En modo nocturno la ligera sube a 350, porque el texto claro sobre negro se adelgaza por irradiación. Los títulos de tarjetas, como artículos o sentencias, van en semibold a 19 px (`type-card-title`). Las citas generales van en ligera a 22 px y en redonda (`type-quote`); los pasajes literales de las sentencias van en la cursiva real de DM Sans, que se carga para eso.
 
 El nombre de la firma en el hero queda fuera de esa escala. Repite la composición del logotipo: DM Sans medio, en mayúsculas, con 0,08 em de interletraje (`wordmark-display`), y debajo, en versalitas pequeñas, la línea «Fundado y dirigido por…», que hace el papel del «ABOGADOS» del logotipo. En móvil el nombre baja a 32 px para no partirse en dos líneas.
 
@@ -252,6 +274,8 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 
 **Explorador de áreas de práctica** (`components/sections/PracticeExplorer.tsx`). Reemplaza la cuadrícula de tarjetas con ícono. Las 32 áreas se ordenan en cinco grupos de práctica: Litigio y tribunales, Administración pública, Sectores regulados, Territorio y bienes públicos, y Cobertura complementaria. En escritorio, los grupos forman una columna de pestañas verticales en DM Sans ligera de 28–32 px (`group-tab`) con su conteo. El grupo activo toma el color de marca, su filete se traza y aparece una flecha. A la derecha, las áreas del grupo van en dos columnas de filas con filete, con el nombre en semibold y la descripción en 13 px, y el mismo trazo al pasar el cursor que la fila del equipo. El grupo cambia al pasar el cursor, con clic o con las flechas del teclado. Los paneles se apilan en la misma celda para que la sección no salte. En móvil, los grupos son una tira de pestañas deslizable. Las 32 áreas están siempre en el HTML inicial. Si se agrega un área nueva a `PRACTICE_AREA_PAGES`, hay que asignarla a un grupo en `GROUPS`; si no, cae por defecto en el grupo que corresponde a su prioridad.
 
+**Folio de sentencia** (`components/sections/SentenciaFolio.tsx`). La sentencia destacada de la portada es una hoja de papel (`gc-papel`) apoyada sobre dos hojas más, como un expediente (`gc-pila`). La sombra tiene cuatro capas teñidas de burdeos, nunca negras. Arriba va el encabezado de la resolución, centrado: tribunal, número, fecha y hora, un filete dorado, la categoría y el título. El título se escribe a 26–30 px en ligera, un encabezado de documento subordinado al titular de la sección. Debajo, dos voces separadas por un filete. A la izquierda, tres síntesis en prosa de la firma: el caso, el análisis y el impacto en la jurisprudencia (`sintesisPortada`). A la derecha, los pasajes literales de la Sala **en cursiva**, con comillas angulares doradas colgadas al margen y su considerando debajo (`fragmentosPortada`, verificados por `fragmentosLiterales`). Al pie van la fórmula de redacción, el enlace al texto íntegro en Nexus y el enlace al análisis. Con más de una sentencia, debajo del folio aparece un índice (año, categoría, título y número) y la hoja cambia a la elegida; con una sola, el índice no se muestra. La página de cada sentencia no reproduce el texto íntegro: enlaza a Nexus y cierra con una bibliografía (sentencia, precedentes citados y normativa, con enlaces a Nexus y SINALEVI).
+
 **Movimiento.** Una sola entrada por bloque: aparece desde 20 px más abajo con desaceleración exponencial (`cubic-bezier(0.16, 1, 0.3, 1)`). Con `prefers-reduced-motion` todo llega a su estado final sin animar.
 
 ## Do's and Don'ts
@@ -262,7 +286,7 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 - Encuadrar cada retrato nuevo con la misma escala de rostro y línea de ojos que los existentes.
 - No partir titulares en dos colores ni en dos pesos, ni repetir el subrayado dorado en otra sección.
 - No cambiar la composición del nombre de la firma en el hero: DM Sans medio, mayúsculas, 0,08 em.
-- No poner citas en cursiva ni cerrar el interletraje de los titulares más allá de −0,015 em.
+- Reservar la cursiva para los pasajes literales de las sentencias; las citas de otra clase van en redonda. No cerrar el interletraje de los titulares más allá de −0,015 em.
 - No poner etiquetas en versalitas sobre cada titular; tres en toda la portada como máximo.
 - No superponer nombres, cargos ni biografías sobre las fotos.
 - No usar texto dorado sobre fondo claro (2,4:1), ni tinta por debajo del 65 % de opacidad para texto que deba leerse.
