@@ -462,7 +462,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
       <span className="gc-fig-label">{titulo}</span>
       <ol>
         {items.map((f) => (
-          <li key={f.href} className="gc-juris-item">
+          <li key={f.href} className="gc-juris-item gc-juris-item--simple">
             <span className="gc-juris-id">
               <b>
                 <a href={f.href} {...EXT}>

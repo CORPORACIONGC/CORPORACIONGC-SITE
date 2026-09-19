@@ -1207,6 +1207,8 @@ html {
   text-transform: uppercase; color: var(--fig-accent);
 }
 .prose-article .gc-juris-criterio { font-size: 14.5px; line-height: 1.6; color: var(--fig-text); }
+/* Entradas sin criterio (documentos, normativa, prensa): una sola columna a todo el ancho. */
+.prose-article .gc-juris-item--simple { grid-template-columns: 1fr; padding: 14px 0; }
 @media (max-width: 720px) {
   .prose-article .gc-juris-item { grid-template-columns: 1fr; row-gap: 8px; }
 }
