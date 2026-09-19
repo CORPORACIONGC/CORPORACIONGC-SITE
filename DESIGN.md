@@ -294,7 +294,7 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 - los anclajes normativos, con el número del artículo a 44 px y, si no es la Constitución, la ley al lado («LGAP»);
 - el contraste entre dos categorías jurídicas;
 - el período que cubre un cálculo;
-- tres formas de un concepto (`formas`, por id de sección): columnas con numeral romano a 26 px, título y una explicación breve de la firma;
+- tres o cuatro formas de un concepto (`formas`, por id de sección): columnas con numeral romano a 26 px, título y una explicación breve de la firma; con cuatro, la cuadrícula pasa a dos columnas para que ninguna quede sola en la segunda fila;
 - el reparto de una condena entre causas concurrentes (`reparto`): el monto total, una barra dividida en proporción, en burdeos la parte que asume la Administración y en dorado la otra, y el detalle de cada parte;
 - la recepción: hitos verticales con año, órgano, una frase y los votos enlazados;
 - las citas (`components/jurisprudencia/CitasExplorador.tsx`): la cifra total, una serie anual en columnas doradas y el reparto por despacho con barras. Cada año y cada despacho es un botón que abre la lista de resoluciones filtrada, con fecha, número enlazado a Nexus, despacho y expediente; la lista completa está en el HTML y se descarga en CSV. Las cifras se calculan desde la lista (`lib/jurisprudencia-citas.ts`, generada), nunca se escriben a mano. Al pie, el método y la fecha de corte.

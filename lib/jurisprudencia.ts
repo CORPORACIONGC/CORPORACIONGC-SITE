@@ -1919,6 +1919,764 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-509623",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     metaDescription: "Resolución N° 34-F-S1-2011 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Extendió la caducidad del artículo 340 de la LGAP a los procedimientos administrativos iniciados de oficio, incluidos los sancionatorios, y fijó sus efectos."
+  },
+  /* 300-F-S1-2009. Pasajes copiados del texto de Nexus. */
+  {
+    slug: "responsabilidad-bancaria-por-fraude-electronico",
+    numero: "Resolución N° 300-F-S1-2009",
+    fecha: "26 de marzo de 2009",
+    fechaCorta: "26 Mar 2009",
+    fechaISO: "2009-03-26",
+    hora: "11:25 horas",
+    expediente: "08-000123-0161-CA",
+    tribunal: "Sala Primera de la Corte Suprema de Justicia",
+    area: "Derecho del Consumidor",
+    materia: "Responsabilidad bancaria por fraude electrónico",
+    badge: {
+      type: "referencia",
+      label: "Sentencia de Referencia"
+    },
+    titulo: "El riesgo que el banco no puede trasladar",
+    subtitulo: "La Sala Primera aplicó a la banca por internet la responsabilidad objetiva de la Ley del Consumidor: el banco responde por la seguridad del servicio completo, incluido el mecanismo que identifica al cliente, y solo se libera si prueba una causa eximente.",
+    pullQuote: {
+      texto: "Al fin y al cabo, los bancos, sin que el demandado sea la excepción, custodian y administran, entre otros, un bien ajeno; y no cualquier bien, sino fondos del público. Así las cosas, no solo responde por la fortaleza de sus sistemas internos, sino también por la seguridad de quien, para llegar allí, utiliza los únicos canales posibles que el propio Banco conoce y reconoce como riesgosos.",
+      citation: "Considerando V"
+    },
+    sintesisPortada: {
+      caso: "En 2007 y 2008, un tercero entró a la banca por internet de una clienta del Banco de Costa Rica con su usuario y su clave, y le sustrajo **¢1,49 millones y $4.379**. El banco rechazó el reclamo porque **la operación se hizo con una clave válida**, y el Tribunal Contencioso Administrativo lo condenó a reintegrar el dinero.",
+      analisis: "La Sala encuadró la relación en la **Ley del Consumidor** y aplicó la **teoría del riesgo creado**. La plataforma del banco no fue vulnerada, pero el riesgo estaba en **el mecanismo que identifica al cliente**, que forma parte del servicio. El banco solo se libera si **prueba una causa eximente**, y su reglamento interno no puede trasladar esa prueba al cliente.",
+      impacto: "**Al menos 270 resoluciones** la citan, cerca de la mitad en litigios ajenos a la banca. Desde 2022 la Sala Primera usa el mismo marco para liberar al banco cuando el cliente **entregó sus claves a un estafador**, y en 2026 la **Ley 10889** escribió en el artículo 35 de la Ley del Consumidor la responsabilidad objetiva de las entidades financieras por la sustracción de fondos."
+    },
+    fragmentosPortada: [
+      {
+        texto: "Por lo anterior, no es admisible el argumento, para eximirse de responsabilidad, de que internet no es del Banco, cuando bien sabe el demandado que ofrece un servicio altamente riesgoso.",
+        citation: "Considerando V"
+      },
+      {
+        texto: "Lo anterior, aunado a la existencia de causales eximentes demuestra que la legislación en comentario no constituye una transferencia patrimonial automática.",
+        citation: "Considerando III"
+      },
+      {
+        texto: "De allí que los mecanismos de garantía al cliente –usuario-, deben darse no solo dentro de los muros informáticos del propio Banco, sino también en el camino de acceso a él como parte del servicio.",
+        citation: "Considerando V"
+      }
+    ],
+    contexto: [
+      "El artículo 35 de la Ley de Promoción de la Competencia y Defensa Efectiva del Consumidor, de 1994, obliga al comerciante y al proveedor a responder por los daños de sus bienes y servicios con independencia de la culpa, y solo libera a quien demuestre que fue ajeno al daño. Cuando llegó la banca por internet, los reglamentos del servicio, como el del Banco de Costa Rica, daban por hecha por el cliente toda operación realizada con su clave.",
+      "La sentencia 300-F-S1-2009, redactada por el magistrado Óscar Eduardo González Camacho, abrió la jurisprudencia de la Sala Primera sobre fraude en la banca por internet y fijó el marco con que esos casos se resuelven desde entonces."
+    ],
+    pasajes: [
+      {
+        titulo: "La relación de consumo",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "El Banco actúa en ejercicio de su capacidad de derecho privado, como una verdadera empresa pública, y en dicha condición, ofrece a sus clientes un servicio, por lo que, al existir una relación de consumo, el caso particular debe ser analizado bajo el ámbito de cobertura del numeral 35 en comentario.",
+            destacar: [
+              "al existir una relación de consumo"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Los elementos de la responsabilidad",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "Asimismo, es importante considerar, por su influencia en el tema probatorio, que los elementos determinantes para el surgimiento de la responsabilidad civil, sea esta subjetiva u objetiva, son: una conducta lesiva (la cual puede ser activa o pasiva, legítima o ilegítima), la existencia de un daño (es decir, una lesión a un bien jurídico tutelado), un nexo de causalidad que vincule los dos anteriores, y en la mayoría de los casos la verificación de un criterio de atribución, que dependerá del régimen legal específico."
+          }
+        ]
+      },
+      {
+        titulo: "La causalidad adecuada",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "Si bien existen diversas teorías sobre la materia, la que se ha considerado más acorde con el régimen costarricense es la de causalidad adecuada, según la cual existe una vinculación entre daño y conducta cuando el primero se origine, si no necesariamente, al menos con una alta probabilidad según las circunstancias específicas que incidan en la materia, de la segunda",
+            destacar: [
+              "causalidad adecuada"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El riesgo creado",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "En esencia, dicha teoría postula que, quien crea, ejerza o se aprovecha de una actividad lucrativa lícita que presenta elementos potencialmente peligrosos para los demás, debe también soportar sus inconvenientes (ubi emolumentum, ubi onus, el cual puede ser traducido como donde está el emolumento, está la carga).",
+            destacar: [
+              "debe también soportar sus inconvenientes"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Un riesgo anormal",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "Lo anterior lleva a afirmar que, para el surgimiento del deber de reparación, el riesgo asociado con la actividad debe presentar un grado de anormalidad, esto es, que exceda el margen de tolerancia que resulta admisible de acuerdo a las reglas de la experiencia, lo cual debe ser analizado, de manera casuística, por el juez.",
+            destacar: [
+              "debe presentar un grado de anormalidad"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Sin transferencia automática",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "Es importante mencionar que en una actividad es dable encontrar distintos grados de riesgo, los cuales deben ser administrados por aquel sujeto que se beneficia de esta, circunstancia que ejerce una influencia directa en el deber probatorio que le compete, ya que resulta relevante para determinar la imputación en el caso concreto. Lo anterior, aunado a la existencia de causales eximentes demuestra que la legislación en comentario no constituye una transferencia patrimonial automática.",
+            destacar: [
+              "no constituye una transferencia patrimonial automática"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La carga se redistribuye",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Producto de lo anterior, y según lo ha indicado esta Sala con anterioridad, se redistribuye el deber de demostración entre las partes litigantes, en donde el “onus probandi” (deber probatorio) le corresponde a quien se encuentre en mejores condiciones para aportar la prueba al proceso (en este sentido, se puede ver la resolución no. 212 de las 8 horas 15 minutos del 25 de marzo de 2008).",
+            destacar: [
+              "le corresponde a quien se encuentre en mejores condiciones para aportar la prueba"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Lo que prueba la víctima",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Empero, de lo anterior no debe extraerse que la víctima se encuentra exenta del deber probatorio, ya que le corresponde acreditar, en los términos dichos, el daño sufrido y el nexo de causalidad."
+          }
+        ]
+      },
+      {
+        titulo: "Lo que prueba el banco",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Por su parte, corre por cuenta del accionado probar que es ajeno a la producción del daño, es decir, debe demostrar la concurrencia de alguna de las causas eximentes de responsabilidad, ya sea la culpa de la víctima, el hecho de un tercero o la fuerza mayor."
+          }
+        ]
+      },
+      {
+        titulo: "La buena fe",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Así, un correcto entendimiento de los mecanismos de seguridad que en cada momento implementen los intermediarios financieros resulta clave para apreciar si la parte demandante actúa, o no, con buena fe."
+          }
+        ]
+      },
+      {
+        titulo: "La identidad del cliente",
+        citation: "Considerando V",
+        parrafos: [
+          {
+            texto: "No cabe duda que se encuentra sometida a una ineludible obligación de garantizar la seguridad de las transacciones realizadas, ya sea en ventanilla o mediante cualquier otro medio puesto a disposición de los clientes, la cual debe abarcar, necesariamente, el uso de todos aquellos mecanismos disponibles que le permitan contar con un mayor grado de certeza en cuanto a la identificación de las personas que se encuentran facultadas para realizar transacciones electrónicas desde las cuentas.",
+            destacar: [
+              "ineludible obligación de garantizar la seguridad de las transacciones"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El mecanismo de identificación",
+        citation: "Considerando V",
+        parrafos: [
+          {
+            texto: "En este sentido, debe tomarse en cuenta que el riesgo en el funcionamiento del sistema se da, precisamente, por el mecanismo mediante el cual se comprueba la identidad del cliente, motivo por el cual, no se aprecia el yerro que se imputa a la sentencia del Tribunal.",
+            destacar: [
+              "por el mecanismo mediante el cual se comprueba la identidad del cliente"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Internet también cuenta",
+        citation: "Considerando V",
+        parrafos: [
+          {
+            texto: "Por lo anterior, no es admisible el argumento, para eximirse de responsabilidad, de que internet no es del Banco, cuando bien sabe el demandado que ofrece un servicio altamente riesgoso."
+          }
+        ]
+      },
+      {
+        titulo: "Fondos del público",
+        citation: "Considerando V",
+        parrafos: [
+          {
+            texto: "Al fin y al cabo, los bancos, sin que el demandado sea la excepción, custodian y administran, entre otros, un bien ajeno; y no cualquier bien, sino fondos del público. Así las cosas, no solo responde por la fortaleza de sus sistemas internos, sino también por la seguridad de quien, para llegar allí, utiliza los únicos canales posibles que el propio Banco conoce y reconoce como riesgosos.",
+            destacar: [
+              "fondos del público"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El camino de acceso",
+        citation: "Considerando V",
+        parrafos: [
+          {
+            texto: "El medio para acceder a la plataforma del Banco no se trata, por ende, de un foco ajeno de riesgo, sino de un instrumento consustancial al servicio que presta; si se quiere, forma parte intrínseca de la actividad, que si bien es accesorio a la actividad del intermediario, resulta imprescindible. De allí que los mecanismos de garantía al cliente –usuario-, deben darse no solo dentro de los muros informáticos del propio Banco, sino también en el camino de acceso a él como parte del servicio.",
+            destacar: [
+              "también en el camino de acceso a él como parte del servicio"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Sin eximente probada",
+        citation: "Considerando V",
+        parrafos: [
+          {
+            texto: "En sede jurisdiccional, no se puede afirmar que la actora haya producido, por conducta suya, la lesión a su propio patrimonio; según se ha dicho reiteradamente, no quedó acreditado un uso indebido ni incorrecto de sus mecanismos de seguridad – usuario y claves propias."
+          }
+        ]
+      },
+      {
+        titulo: "Contrato y responsabilidad",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "En este sentido, es importante aclarar que el numeral 35 de la Ley de Defensa del Consumidor resulta aplicable tanto a los supuestos de responsabilidad extracontractual como contractual, independientemente, en este último caso, del incumplimiento de los acuerdos inter- partes que regulan la relación específica."
+          }
+        ]
+      },
+      {
+        titulo: "El reglamento del banco",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "En segundo lugar, no resulta admisible pretender que un Reglamento interno del Banco (cuyo objeto es regular el servicio ofrecido al público, no el régimen de responsabilidad aplicable) configure una presunción que tenga por efecto variar el deber probatorio que vincula a las partes, ya que sería ir en contra de la norma legal correspondiente, máxime que la conducta que se analiza no es el incumplimiento de cláusulas contractuales.",
+            destacar: [
+              "configure una presunción que tenga por efecto variar el deber probatorio"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Los deberes del cliente",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "En este sentido, debe quedar claro que la posición del cliente no resulta totalmente pasiva, sino que, por el contrario, se encuentra compelido por una serie de deberes que le impone la buena fe contractual. Así, no cabe duda que es su responsabilidad el garantizar el manejo adecuado de la clave de acceso, así como seguir las recomendaciones dadas por las entidades financieras en materia de seguridad. La decisión de ser beneficiario de estos servicios lleva aparejado un deber de diligencia que, en caso de ser incumplido, podría liberar de responsabilidad al prestatario. No resulta admisible, de acuerdo a los principios de razonabilidad y proporcionalidad, relevar al cliente de sus deberes de prudencia en aquellos aspectos que forman parte de su ámbito personal de control, como lo es el lugar donde realiza la conexión, así como utilizar equipos de cómputo adecuados y con los programas informáticos adecuados para garantizar la seguridad de la información.",
+            destacar: [
+              "podría liberar de responsabilidad al prestatario"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El contralor de la Constitución",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "El Juez de Casación se erige no sólo en operador del Derecho de la Constitución, sino también (y sobre todo) en su contralor."
+          },
+          {
+            texto: "De modo que habrá invalidez de la sentencia contencioso-administrativa, así como de aquellas dictadas en otras materias, siempre que habiéndose recurrido, se alegue y se encuentre, una desatención, inaplicación o indebida interpretación de cualquier norma o principio del Derecho de la Constitución, tal y como lo ha dispuesto y aplicado en múltiples precedentes esta misma Sala, con anterioridad, incluso, del propio Código Procesal Contencioso Administrativo."
+          }
+        ]
+      },
+      {
+        titulo: "Lo metajurídico",
+        citation: "Considerando XI",
+        parrafos: [
+          {
+            texto: "Resulta pertinente indicar que el test de razonabilidad a que hace referencia el recurso debe ser realizado teniendo como punto de partida un marco jurídico determinado, de forma tal que no es dable limitar los argumentos con que se combate la sentencia a cuestiones metajurídicas como lo hace el recurrente, como la presunta socialización de todos los riesgos de una relación de consumo.",
+            destacar: [
+              "cuestiones metajurídicas"
+            ]
+          }
+        ]
+      }
+    ],
+    analisis: [
+      {
+        id: "el-caso",
+        titulo: "El caso",
+        parrafos: [
+          "En julio de 2007 y en abril de 2008, un tercero entró a la banca por internet de una clienta del Banco de Costa Rica con su usuario y su clave, y transfirió en total ¢1.489.290,60 de su cuenta corriente y $4.379,53 de su cuenta de ahorros en dólares. La clienta denunció los hechos ante el Organismo de Investigación Judicial y ante la Contraloría de Servicios del banco.",
+          "El banco rechazó el reclamo porque las transferencias se hicieron con una clave válida. La clienta lo demandó, y el Tribunal Contencioso Administrativo lo condenó a reintegrar las sumas, con intereses y costas, con base en la responsabilidad objetiva del artículo 35 de la Ley del Consumidor.",
+          "El banco recurrió en casación. Su perito había declarado que la plataforma del banco no fue vulnerada, y con eso sostuvo que el riesgo estaba fuera de su control, en internet o en el manejo de la clave. Invocó además su Reglamento de Servicios de Banca Electrónica, según el cual toda operación hecha con la clave correcta se tiene por realizada por el cliente."
+        ],
+        visual: "trayectoria"
+      },
+      {
+        id: "consumo",
+        titulo: "Una relación de consumo",
+        parrafos: [
+          "La Sala empezó por el régimen. El Banco de Costa Rica es una entidad pública, pero al ofrecer la banca por internet actúa con su capacidad de derecho privado, frente a un cliente que es consumidor:",
+          "En ese régimen la culpa no cuenta: el artículo 35 obliga al proveedor a responder aunque no haya negligencia, imprudencia, impericia ni dolo. Para el nexo causal, la Sala adoptó la teoría que considera más acorde con el ordenamiento costarricense:",
+          "Aun sin culpa, toda responsabilidad exige los mismos elementos, sea objetiva o subjetiva:"
+        ],
+        literales: [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        visual: "formas"
+      },
+      {
+        id: "riesgo",
+        titulo: "El riesgo creado y su medida",
+        parrafos: [
+          "El criterio de atribución del artículo 35 es el riesgo creado. La Sala lo explicó con una máxima latina:",
+          "Enseguida le fijó límites. El riesgo que obliga a reparar es el anormal, el que excede lo que la vida en sociedad tolera:",
+          "Responde, además, quien domina la actividad y obtiene de ella un beneficio, directo o indirecto. Con esos límites y con las eximentes, el régimen objetivo queda lejos de una garantía total a cargo del proveedor:"
+        ],
+        literales: [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            1
+          ],
+          [
+            5,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        id: "prueba",
+        titulo: "Quién prueba qué",
+        parrafos: [
+          "El fraude electrónico deja a la víctima con pocas pruebas: no sabe cómo obtuvo el tercero su clave ni puede examinar los sistemas del banco. La Sala retomó un criterio que había fijado en 2008 y redistribuyó la carga:",
+          "El banco enfrenta una dificultad parecida cuando alega la culpa de la víctima, porque tendría que probar hechos de la esfera personal del cliente. Por eso la Sala pidió valorar la prueba según el acceso de cada parte a ella, desde la presunción de buena fe del demandante:",
+          "Así quedó repartida la prueba:"
+        ],
+        literales: [
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            1
+          ]
+        ],
+        visual: "comparacion",
+        nota: "El consumidor prueba el daño y el nexo causal. La causa eximente la prueba el banco."
+      },
+      {
+        id: "el-camino",
+        titulo: "El camino de acceso",
+        parrafos: [
+          "El núcleo del fallo está en el considerando V. La Sala aceptó que la plataforma interna del banco no fue vulnerada. Lo decisivo era otra obligación, la de identificar a quien opera las cuentas:",
+          "El riesgo que se materializó estaba en ese mecanismo de identificación, y con él en el acceso al servicio. Internet es el canal que el propio banco ofrece y promociona para su beneficio, de modo que forma parte de lo que presta:",
+          "Tampoco había prueba de una eximente. Nada indicaba que la clienta hubiera usado mal su usuario o sus claves, y el banco no demostró haber adoptado las mejores medidas de seguridad en todo el servicio: su propio perito declaró que trabajaba en un sistema de firma digital y que había implementado la clave dinámica como factor adicional de identificación."
+        ],
+        literales: [
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            1
+          ],
+          [
+            15,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        id: "reglamento",
+        titulo: "El reglamento y los deberes del cliente",
+        parrafos: [
+          "El banco sostuvo que su reglamento, aceptado por la clienta al afiliarse al servicio, era un contrato: la custodia de la clave corría por cuenta del cliente, y toda transacción hecha con ella se tenía por suya. La Sala respondió que el artículo 35 rige en la responsabilidad contractual y en la extracontractual:",
+          "Y que una cláusula del propio banco carece de fuerza para cambiar la prueba que la ley reparte:",
+          "A mayor abundamiento, y al margen del caso, la Sala dejó dicho qué se espera del cliente:"
+        ],
+        literales: [
+          [
+            16,
+            0,
+            0
+          ],
+          [
+            17,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        id: "constitucion",
+        titulo: "El juez de casación y la Constitución",
+        parrafos: [
+          "El último agravio del banco invocaba la razonabilidad y la proporcionalidad: responder por un robo ocurrido en «el infinito mundo de Internet» equivalía, según el recurso, a socializar todos los riesgos del consumo. La Sala aprovechó para fijar el papel de la casación frente a la Constitución:",
+          "Y rechazó el agravio. El Tribunal había aplicado el régimen que el legislador dictó en desarrollo de los artículos 41 y 46 de la Constitución, y el argumento del banco quedaba fuera del marco jurídico:"
+        ],
+        literales: [
+          [
+            19,
+            0,
+            0
+          ],
+          [
+            19,
+            1,
+            0
+          ],
+          [
+            20,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        id: "ingenieria-social",
+        titulo: "Cuando el cliente entrega la clave",
+        parrafos: [
+          "La sentencia dejó abierta la puerta de las eximentes. En 2013, la Sección Octava del Tribunal Contencioso Administrativo aplicó su marco para tener por probada la culpa de la víctima y absolver al banco en otro fraude electrónico.",
+          "Con la estafa por ingeniería social, en la que el propio cliente entrega sus datos a quien se hace pasar por el banco, la cuestión llegó a la Sala Primera. En 2022, en un caso ajeno a la banca, la Sala precisó qué significa ser «ajeno al daño»: la fuerza mayor, la culpa de la víctima y el hecho de un tercero del artículo 190 de la Ley General de la Administración Pública. Ese mismo año llevó el criterio a los fraudes bancarios. Sus sentencias citan la 300-F-S1-2009 para recordar que el régimen objetivo tiene límites, y liberan al banco cuando un tercero operó con los datos del cliente y la entidad probó medidas de seguridad razonables:",
+          "La misma sentencia conservó la regla de la prueba: el consumidor no tiene que demostrar que la actividad del banco excede los riesgos tolerables. La línea tiene, además, una disidencia. En 2023, en un caso de mensajes de texto y correos que pedían a la clienta cambiar su clave, el magistrado López Casal salvó el voto:",
+          "A su juicio, el banco no probó haber advertido debidamente a la clienta, y sin esa información la culpa de la víctima no podía tenerse por configurada."
+        ],
+        citasExternas: [
+          {
+            texto: "Con base en el amplio bagaje jurisprudencial desarrollado por esta Sala, es dable señalar, con total seguridad, que la realización de un acto ilícito y dañino por parte de un tercero – con o sin participación de la presunta víctima -, sin que el agente oferente del servicio bancario haya propiciado condiciones idóneas para tal acción – antes bien, se demostró la realización de actos útiles para evitarlo, incluidas campañas informativas y la utilización de sistemas de seguridad que superan los estándares imperantes -, resulta totalmente inimputable a este último, por cuanto el daño no es el resultado de un riesgo propiciado o creado por la entidad financiera, sino de actos ilícitos - muy posiblemente constitutivos de delitos - ideados y materializados por personas externas a la organización empresarial del BN.",
+            destacar: [
+              "resulta totalmente inimputable a este último"
+            ],
+            citation: "Sala Primera, voto 2007-F-S1-2022 · Considerando VII",
+            nexusId: "sen-1-0004-1113951",
+            tras: 1
+          },
+          {
+            texto: "En el presente litigio no hubo culpa de la víctima porque quedó demostrado que a ella se le envió un mensaje de texto, a su teléfono celular y también un correo electrónico, en el cual se le pidió el cambio de su clave y se le comunicó que había olvidado su contraseña.",
+            citation: "Sala Primera, voto 1892-F-S1-2023 · voto salvado del magistrado López Casal",
+            nexusId: "sen-1-0004-1198530",
+            tras: 2
+          }
+        ]
+      },
+      {
+        id: "reforma",
+        titulo: "La reforma de 2026",
+        parrafos: [
+          "El 22 de abril de 2026 entró en vigor la Ley 10889, que reformó el artículo 35 de la Ley del Consumidor. Las entidades financieras responden, con independencia de la culpa, por la sustracción de dinero que haga un tercero no autorizado por el titular, «independientemente del mecanismo utilizado para la sustracción», salvo que se configure una eximente legal. La ley invirtió además la carga de la prueba en los fraudes electrónicos y reguló el reclamo ante la entidad, que solo puede rechazarlo si prueba autofraude, dolo o una transferencia entre cuentas del mismo titular, con revisión de la Sugef.",
+          "La Asociación Bancaria Costarricense impugnó los artículos 3, 5 y 8 de la ley, que regulan el reclamo, sus plazos y el reporte de las cuentas usadas en fraudes. La Sala Constitucional dio curso a la acción el 28 de mayo de 2026 y le acumuló las de la Cámara de Bancos e Instituciones Financieras y de la Federación de Cooperativas de Ahorro y Crédito. Al cierre de este análisis, Nexus no registra sentencia de fondo."
+        ]
+      },
+      {
+        id: "recepcion",
+        titulo: "La recepción",
+        parrafos: [
+          "La Sala Primera asumió el criterio como propio en 2009, cuando lo aplicó a otro fraude por internet contra el mismo banco. En 2010, el Tribunal de Casación de lo Contencioso Administrativo lo usó para calificar como de consumo la relación entre el banco y el titular de una tarjeta de débito, y condenó solidariamente al Banco Popular y a la empresa dueña del cajero automático donde se hicieron seis retiros no autorizados.",
+          "La doctrina salió también del ámbito bancario. El Tribunal Contencioso Administrativo y la Sala Primera la citan en demandas contra el Estado, la Caja Costarricense de Seguro Social, las municipalidades o el Instituto Costarricense de Electricidad, por su formulación de la causalidad adecuada y de la carga de la prueba. En enero de 2026 la Sala Primera la citó en la demanda de una funcionaria pública herida por el desprendimiento de un cielorraso."
+        ],
+        visual: "recepcion"
+      },
+      {
+        id: "impacto",
+        titulo: "Su impacto",
+        parrafos: [
+          "Hemos encontrado su cita en el texto de al menos 270 resoluciones, dictadas entre 2009 y 2026. La mayoría proviene del Tribunal Contencioso Administrativo, que conoce las demandas contra los bancos públicos, y de la Sala Primera, con 98 resoluciones. También la citan el Tribunal de Casación de lo Contencioso Administrativo, tribunales civiles y penales, la Sala Segunda y la Sala Constitucional.",
+          "Cerca de la mitad resuelve demandas contra bancos y otras entidades financieras. El resto la invoca como doctrina general de la responsabilidad objetiva. El pasaje sobre el riesgo anormal aparece en el texto de más de un centenar de resoluciones, y el de la transferencia patrimonial automática, en más de un tercio.",
+          "Su uso tuvo dos momentos. Entre 2010 y 2012 la citaron 77 resoluciones. Desde 2022 volvió a crecer: 98 resoluciones entre 2022 y 2025, con 31 en 2024."
+        ],
+        visual: "citas"
+      }
+    ],
+    visuales: {
+      trayectoria: [
+        {
+          etapa: "Los fraudes",
+          sede: "Banca por internet del Banco de Costa Rica · julio de 2007 y abril de 2008",
+          detalle: "Transferencias hechas con el usuario y la clave de la clienta sustraen ¢1.489.290,60 y $4.379,53 de sus cuentas."
+        },
+        {
+          etapa: "El reclamo",
+          sede: "Banco de Costa Rica",
+          detalle: "La clienta denuncia ante el OIJ y la Contraloría de Servicios. El banco rechaza el reclamo porque se usó una clave válida."
+        },
+        {
+          etapa: "Primera instancia",
+          sede: "Tribunal Contencioso Administrativo, Sección Cuarta · 19 de setiembre de 2008",
+          detalle: "Condena al banco a reintegrar lo sustraído, con intereses y costas."
+        },
+        {
+          etapa: "Casación",
+          sede: "Sala Primera · 26 de marzo de 2009",
+          detalle: "Declara sin lugar el recurso del banco: el riesgo estaba en el funcionamiento del servicio y no se probó ninguna eximente.",
+          final: true
+        }
+      ],
+      comparaciones: {
+        prueba: [
+          {
+            titulo: "La víctima",
+            rasgo: "Prueba el daño y el nexo causal. Su buena fe se presume.",
+            enElCaso: "Acreditó las sustracciones y sus denuncias ante el OIJ y el banco.",
+            literal: "Empero, de lo anterior no debe extraerse que la víctima se encuentra exenta del deber probatorio, ya que le corresponde acreditar, en los términos dichos, el daño sufrido y el nexo de causalidad.",
+            citation: "Considerando IV"
+          },
+          {
+            titulo: "El banco",
+            rasgo: "Prueba que fue ajeno al daño: culpa de la víctima, hecho de un tercero o fuerza mayor.",
+            enElCaso: "Probó que su plataforma no fue vulnerada. No probó ninguna eximente.",
+            literal: "Por su parte, corre por cuenta del accionado probar que es ajeno a la producción del daño, es decir, debe demostrar la concurrencia de alguna de las causas eximentes de responsabilidad, ya sea la culpa de la víctima, el hecho de un tercero o la fuerza mayor.",
+            citation: "Considerando IV"
+          }
+        ]
+      },
+      formas: {
+        consumo: [
+          {
+            titulo: "Una conducta lesiva",
+            texto: "Activa u omisiva, legítima o ilegítima. En el caso, el funcionamiento del servicio de banca por internet."
+          },
+          {
+            titulo: "Un daño",
+            texto: "La lesión de un bien jurídico tutelado. En el caso, el dinero sustraído de las cuentas."
+          },
+          {
+            titulo: "El nexo causal",
+            texto: "Se aprecia con la causalidad adecuada. Las eximentes actúan sobre él y lo rompen."
+          },
+          {
+            titulo: "Un criterio de atribución",
+            texto: "Depende del régimen legal. En el artículo 35 de la Ley del Consumidor, el riesgo creado."
+          }
+        ]
+      },
+      recepcion: [
+        {
+          anio: "2009",
+          organo: "Sala Primera",
+          texto: "Lo aplica a otro fraude por internet contra el mismo banco y transcribe sus considerandos sobre la prueba.",
+          enlaces: [
+            {
+              etiqueta: "Voto 827-F-S1-2009",
+              nexusId: "sen-1-0034-449085"
+            }
+          ]
+        },
+        {
+          anio: "2010",
+          organo: "Tribunal de Casación de lo Contencioso Administrativo",
+          texto: "Califica como de consumo la relación con el titular de una tarjeta y condena solidariamente al banco y a la dueña del cajero.",
+          enlaces: [
+            {
+              etiqueta: "Voto 84-F-TC-2010",
+              nexusId: "sen-1-0034-465549"
+            }
+          ]
+        },
+        {
+          anio: "2013",
+          organo: "Tribunal Contencioso Administrativo",
+          texto: "Con el mismo marco, tiene por probada la culpa de la víctima y absuelve al banco.",
+          enlaces: [
+            {
+              etiqueta: "Voto 9-2013, Sección Octava",
+              nexusId: "sen-1-0034-561177"
+            }
+          ]
+        },
+        {
+          anio: "2022",
+          organo: "Sala Primera",
+          texto: "Define qué es ser «ajeno al daño» y libera al banco cuando un tercero operó con los datos del cliente.",
+          enlaces: [
+            {
+              etiqueta: "Voto 1016-F-S1-2022",
+              nexusId: "sen-1-0004-1092614"
+            },
+            {
+              etiqueta: "Voto 2007-F-S1-2022",
+              nexusId: "sen-1-0004-1113951"
+            }
+          ]
+        },
+        {
+          anio: "2023",
+          organo: "Sala Primera",
+          texto: "Mantiene la línea en un caso de mensajes falsos, con el voto salvado del magistrado López Casal.",
+          enlaces: [
+            {
+              etiqueta: "Voto 1892-F-S1-2023",
+              nexusId: "sen-1-0004-1198530"
+            }
+          ]
+        },
+        {
+          anio: "2026",
+          organo: "Asamblea Legislativa",
+          texto: "La Ley 10889 reforma el artículo 35 de la Ley del Consumidor e invierte la carga de la prueba en los fraudes electrónicos.",
+          enlaces: [
+            {
+              etiqueta: "Ley 10889",
+              scijId: 106861
+            }
+          ],
+          final: true
+        }
+      ],
+      citas: {
+        corte: "19 de setiembre de 2026",
+        metodo: "Resoluciones judiciales cuyo texto cita la 300-F-S1-2009, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente y los órganos administrativos, y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        csv: "/datos/jurisprudencia/300-F-S1-2009-resoluciones-que-la-citan.csv"
+      }
+    },
+    casoFactico: [
+      "En julio de 2007 y en abril de 2008, un tercero usó el usuario y la clave de una clienta del Banco de Costa Rica para transferir fondos desde sus cuentas por la banca por internet. El banco rechazó el reclamo porque las operaciones se hicieron con una clave válida.",
+      "El Tribunal Contencioso Administrativo condenó al banco a reintegrar lo sustraído, y la Sala Primera confirmó la condena: el riesgo estaba en el funcionamiento del servicio, y el banco no probó ninguna causa eximente."
+    ],
+    nexusId: "sen-1-0034-442609",
+    precedentes: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1008-F-2006",
+        fecha: "21-12-2006",
+        nexusId: "sen-1-0034-391270",
+        nota: "La causalidad adecuada como teoría del nexo causal."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 212-F-S1-2008",
+        fecha: "25-03-2008",
+        nexusId: "sen-1-0034-412982",
+        nota: "La carga de la prueba corresponde a quien está en mejores condiciones de aportarla."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 467-F-S1-2008",
+        fecha: "04-07-2008",
+        nexusId: "sen-1-0034-429238",
+        nota: "La causalidad adecuada como teoría del nexo causal."
+      }
+    ],
+    citadaPor: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 827-F-S1-2009",
+        fecha: "07-08-2009",
+        nexusId: "sen-1-0034-449085",
+        nota: "Aplica el criterio a otro fraude por internet contra el Banco de Costa Rica."
+      },
+      {
+        organo: "Tribunal de Casación de lo Contencioso Administrativo",
+        numero: "Voto 84-F-TC-2010",
+        fecha: "21-01-2010",
+        nexusId: "sen-1-0034-465549",
+        nota: "Relación de consumo con el titular de una tarjeta; condena solidaria de la dueña del cajero."
+      },
+      {
+        organo: "Tribunal Contencioso Administrativo, Sección Octava",
+        numero: "Voto 9-2013",
+        fecha: "06-02-2013",
+        nexusId: "sen-1-0034-561177",
+        nota: "Tiene por probada la culpa de la víctima y absuelve al banco."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1016-F-S1-2022",
+        fecha: "12-05-2022",
+        nexusId: "sen-1-0004-1092614",
+        nota: "Qué significa ser ajeno al daño."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 2007-F-S1-2022",
+        fecha: "13-09-2022",
+        nexusId: "sen-1-0004-1113951",
+        nota: "Libera al banco en un fraude hecho con los datos del cliente."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1892-F-S1-2023",
+        fecha: "02-11-2023",
+        nexusId: "sen-1-0004-1198530",
+        nota: "Voto salvado del magistrado López Casal."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 48-F-S1-2026",
+        fecha: "15-01-2026",
+        nexusId: "sen-1-0004-1361322",
+        nota: "La cita como doctrina general de la causalidad adecuada."
+      }
+    ],
+    normativa: [
+      {
+        nombre: "Ley de Promoción de la Competencia y Defensa Efectiva del Consumidor",
+        detalle: "Ley 7472 · 20 de diciembre de 1994",
+        articulos: "Art. 35",
+        scijId: 26481
+      },
+      {
+        nombre: "Código Civil",
+        detalle: "Ley 30 · 19 de abril de 1885",
+        articulos: "Arts. 1022, 1045 y 1048",
+        scijId: 15437
+      },
+      {
+        nombre: "Ley General de la Administración Pública",
+        detalle: "Ley 6227 · 2 de mayo de 1978",
+        articulos: "Art. 190",
+        scijId: 13231
+      },
+      {
+        nombre: "Código Procesal Contencioso-Administrativo",
+        detalle: "Ley 8508 · 28 de abril de 2006",
+        articulos: "Arts. 138 y 150",
+        scijId: 57436
+      },
+      {
+        nombre: "Constitución Política de la República de Costa Rica",
+        detalle: "7 de noviembre de 1949",
+        articulos: "Arts. 41 y 46",
+        scijId: 871
+      },
+      {
+        nombre: "Ley de protección a las personas consumidoras en la custodia de su dinero",
+        detalle: "Ley 10889 · 23 de marzo de 2026",
+        articulos: "Art. 1 (reforma del art. 35 de la Ley 7472)",
+        scijId: 106861,
+        tema: "Posterior a la sentencia"
+      }
+    ],
+    redactor: "Magistrado Óscar Eduardo González Camacho",
+    redactorTextual: "Redacta el Magistrado González Camacho",
+    redactoresAdicionales: [],
+    fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-442609",
+    fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    metaDescription: "Resolución N° 300-F-S1-2009 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Aplicó la responsabilidad objetiva de la Ley del Consumidor al fraude en la banca por internet: el banco responde por el riesgo del servicio, incluida la identificación del cliente, salvo causa eximente probada."
   }
 ];
 

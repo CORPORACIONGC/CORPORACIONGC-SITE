@@ -389,8 +389,9 @@ export function Recepcion({
   );
 }
 
-/* ── Tres formas de un mismo concepto ──
-   Columnas con numeral romano, título y una explicación breve de la firma. */
+/* ── Tres o cuatro formas de un mismo concepto ──
+   Columnas con numeral romano, título y una explicación breve de la firma.
+   Con cuatro, la cuadrícula pasa a dos columnas para no dejar una sola abajo. */
 export function Formas({
   formas,
   etiqueta,
@@ -403,7 +404,9 @@ export function Formas({
     <ol
       role="list"
       aria-label={etiqueta}
-      className="my-10 grid gap-10 md:my-12 md:grid-cols-3 md:gap-8"
+      className={`my-10 grid gap-10 md:my-12 md:gap-8 ${
+        formas.length === 4 ? "md:grid-cols-2" : "md:grid-cols-3"
+      }`}
     >
       {formas.map((f, i) => (
         <li key={f.titulo} className="border-t border-gold/60 pt-6">
