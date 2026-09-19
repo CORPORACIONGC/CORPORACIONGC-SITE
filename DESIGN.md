@@ -147,6 +147,18 @@ typography:
     fontWeight: 300
     lineHeight: 1.1
     letterSpacing: -0.015em
+  article-number:
+    fontFamily: DM Sans
+    fontSize: 44px
+    fontWeight: 300
+    lineHeight: 1
+    letterSpacing: -0.02em
+  timeline-year:
+    fontFamily: DM Sans
+    fontSize: 26px
+    fontWeight: 300
+    lineHeight: 1
+    letterSpacing: -0.01em
   button:
     fontFamily: DM Sans
     fontSize: 14px
@@ -275,6 +287,17 @@ Las fotografías tienen esquinas rectas: son retratos y documentos, y el ángulo
 **Explorador de áreas de práctica** (`components/sections/PracticeExplorer.tsx`). Reemplaza la cuadrícula de tarjetas con ícono. Las 32 áreas se ordenan en cinco grupos de práctica: Litigio y tribunales, Administración pública, Sectores regulados, Territorio y bienes públicos, y Cobertura complementaria. En escritorio, los grupos forman una columna de pestañas verticales en DM Sans ligera de 28–32 px (`group-tab`) con su conteo. El grupo activo toma el color de marca, su filete se traza y aparece una flecha. A la derecha, las áreas del grupo van en dos columnas de filas con filete, con el nombre en semibold y la descripción en 13 px, y el mismo trazo al pasar el cursor que la fila del equipo. El grupo cambia al pasar el cursor, con clic o con las flechas del teclado. Los paneles se apilan en la misma celda para que la sección no salte. En móvil, los grupos son una tira de pestañas deslizable. Las 32 áreas están siempre en el HTML inicial. Si se agrega un área nueva a `PRACTICE_AREA_PAGES`, hay que asignarla a un grupo en `GROUPS`; si no, cae por defecto en el grupo que corresponde a su prioridad.
 
 **Folio de sentencia** (`components/sections/SentenciaFolio.tsx`). La sentencia destacada de la portada es una hoja de papel (`gc-papel`) apoyada sobre dos hojas más, como un expediente (`gc-pila`). La sombra tiene cuatro capas teñidas de burdeos, nunca negras. Arriba va el encabezado de la resolución, centrado: tribunal, número, fecha y hora, un filete dorado, la categoría y el título. El título se escribe a 26–30 px en ligera, un encabezado de documento subordinado al titular de la sección. Debajo, dos voces separadas por un filete. A la izquierda, tres síntesis en prosa de la firma: el caso, el análisis y el impacto en la jurisprudencia (`sintesisPortada`). A la derecha, los pasajes literales de la Sala **en cursiva**, con comillas angulares doradas colgadas al margen y su considerando debajo (`fragmentosPortada`, verificados por `fragmentosLiterales`). Al pie van la fórmula de redacción, el enlace al texto íntegro en Nexus y el enlace al análisis. Con más de una sentencia, debajo del folio aparece un índice (año, categoría, título y número) y la hoja cambia a la elegida; con una sola, el índice no se muestra. La página de cada sentencia no reproduce el texto íntegro: enlaza a Nexus y cierra con una bibliografía (sentencia, precedentes citados y normativa, con enlaces a Nexus y SINALEVI).
+
+**Página de una sentencia** (`app/jurisprudencia-destacada/[slug]/page.tsx`). Se lee como un documento analizado. Arriba, el título y el resumen a la izquierda y, a la derecha, la ficha de la resolución en papel (`gc-papel`), con el enlace al texto íntegro en Nexus. Debajo, la franja «En síntesis», con el caso, el análisis y el impacto. El cuerpo es prosa de la firma (`analisis` en los datos), con índice al margen en números romanos. En cada sección, los pasajes literales de la Sala se tejen en cursiva después del primer párrafo (o antes, si la prosa los comenta), con las frases decisivas bajo el subrayado dorado (`gc-subrayado`) y el considerando al pie. Los pasajes de otras resoluciones que citan la sentencia (`citasExternas`) usan el mismo tratamiento, van después del párrafo que los introduce y enlazan su referencia a Nexus. Los elementos visuales viven en `components/jurisprudencia/SentenciaVisuales.tsx` y se activan por sección (`visual`):
+- la trayectoria procesal del caso;
+- la línea de tiempo de los precedentes hasta el giro;
+- los anclajes constitucionales, con el número del artículo a 44 px;
+- el contraste entre dos categorías jurídicas;
+- el período que cubre un cálculo;
+- la recepción: hitos verticales con año, órgano, una frase y los votos enlazados;
+- las citas (`components/jurisprudencia/CitasExplorador.tsx`): la cifra total, una serie anual en columnas doradas y el reparto por despacho con barras. Cada año y cada despacho es un botón que abre la lista de resoluciones filtrada, con fecha, número enlazado a Nexus, despacho y expediente; la lista completa está en el HTML y se descarga en CSV. Las cifras se calculan desde la lista (`lib/jurisprudencia-citas.ts`, generada), nunca se escriben a mano. Al pie, el método y la fecha de corte.
+
+Todos se dibujan con filetes, puntos dorados y un único punto burdeos para el hito final. Toda frase literal de un visual se comprueba con `esLiteral` y se descarta si no coincide con un pasaje. La página cierra con el texto íntegro en Nexus, la bibliografía (con la jurisprudencia posterior que la cita, `citadaPor`) y quién redactó la sentencia.
 
 **Movimiento.** Una sola entrada por bloque: aparece desde 20 px más abajo con desaceleración exponencial (`cubic-bezier(0.16, 1, 0.3, 1)`). Con `prefers-reduced-motion` todo llega a su estado final sin animar.
 
