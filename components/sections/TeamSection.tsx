@@ -6,8 +6,13 @@ import { TEAM } from "@/lib/constants";
 // Explicit surname order: González, Montero, Pérez, Sánchez, Solano
 const surnameOrder = ["katherine-gonzalez", "mariana-montero", "esteban-perez", "khevin-sanchez", "jose-carlos-solano"] as const;
 const teamMembers: TeamGalleryMember[] = TEAM
-  .map((m) => ({ slug: m.slug, name: m.name, role: m.role, photo: m.photo, shortBio: m.shortBio }))
   .filter((m) => m.slug !== "oscar-gonzalez")
+  .map((m) => ({
+    slug: m.slug,
+    name: m.name,
+    role: m.role,
+    portrait: `/images/equipo/${m.slug}.jpg`,
+  }))
   .sort((a, b) => {
     const ai = surnameOrder.indexOf(a.slug as typeof surnameOrder[number]);
     const bi = surnameOrder.indexOf(b.slug as typeof surnameOrder[number]);
@@ -20,23 +25,16 @@ export function TeamSection() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        {/* Header — right-aligned for variety */}
-        <div className="mb-14 md:text-right">
+        <div className="mb-12 md:mb-16 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
           <AnimatedEntry>
-            <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
-              Nuestro equipo
-            </span>
-          </AnimatedEntry>
-
-          <AnimatedEntry delay={0.1}>
-            <h2 className="font-display text-3xl md:text-5xl tracking-tight leading-[1.05] text-cream mt-4 mb-4">
+            <h2 className="type-headline text-cream max-w-[14ch]">
               El equipo detr&#225;s{" "}
-              <span className="text-burgundy-light">de cada caso</span>
+              <span className="text-emphasis">de cada caso</span>
             </h2>
           </AnimatedEntry>
 
-          <AnimatedEntry delay={0.2}>
-            <p className="text-sm text-cream/70 leading-relaxed max-w-[55ch] md:ml-auto">
+          <AnimatedEntry delay={0.1}>
+            <p className="type-body text-cream/75 max-w-[56ch]">
               El Dr. Gonz&#225;lez Camacho form&#243; a cada abogado de
               esta firma &mdash; todos desde sus primeros a&#241;os de
               carrera &mdash; con la disciplina y el rigor que veintiocho
@@ -47,12 +45,11 @@ export function TeamSection() {
             </p>
           </AnimatedEntry>
         </div>
-      </div>
 
-      {/* Horizontal scroll gallery */}
-      <AnimatedEntry delay={0.3}>
-        <TeamGallery members={teamMembers} />
-      </AnimatedEntry>
+        <AnimatedEntry delay={0.2}>
+          <TeamGallery members={teamMembers} />
+        </AnimatedEntry>
+      </div>
     </section>
   );
 }
