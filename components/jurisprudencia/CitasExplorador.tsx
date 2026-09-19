@@ -17,6 +17,7 @@ import { ArrowSquareOut, CaretDown, DownloadSimple } from "@phosphor-icons/react
 import type { PronunciamientoQueCita, ResolucionQueCita, TrabajoQueCita } from "@/lib/jurisprudencia-citas";
 
 type Filtro = { tipo: "anio"; valor: number } | { tipo: "grupo"; valor: string } | null;
+type FiltroP = { tipo: "anio"; valor: number } | { tipo: "organo"; valor: string } | null;
 
 const fechaCorta = (iso: string) => iso.split("-").reverse().join("-");
 const nexus = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
@@ -73,6 +74,7 @@ export function CitasExplorador({
   const [filtro, setFiltro] = useState<Filtro>(null);
   const [abierta, setAbierta] = useState(false);
   const [abiertaP, setAbiertaP] = useState(false);
+  const [filtroP, setFiltroP] = useState<FiltroP>(null);
   const listaId = useId();
   const listaPId = useId();
   const np = pronunciamientos.length;
@@ -103,6 +105,29 @@ export function CitasExplorador({
   const rotulosP = new Set(
     porAnioP.length ? [primeroP, ultimoP, ...(ultimoP - primeroP > 6 ? [primeroP + Math.round((ultimoP - primeroP) / 2)] : [])] : [],
   );
+  const visiblesP = pronunciamientos.filter((p) =>
+    !filtroP
+      ? true
+      : filtroP.tipo === "anio"
+        ? Number(p.fecha.slice(0, 4)) === filtroP.valor
+        : p.organo === filtroP.valor,
+  );
+  const etiquetaP = filtroP ? (filtroP.tipo === "anio" ? String(filtroP.valor) : filtroP.valor) : "";
+  const elegirP = (f: NonNullable<FiltroP>) => {
+    const mismo = filtroP?.tipo === f.tipo && filtroP.valor === f.valor;
+    setFiltroP(mismo ? null : f);
+    setAbiertaP(true);
+    requestAnimationFrame(() => {
+      const quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      cabeceraP.current?.scrollIntoView({ block: "nearest", behavior: quieto ? "auto" : "smooth" });
+    });
+  };
+  const activoAnioP = (anio: number) => filtroP?.tipo === "anio" && filtroP.valor === anio;
+  const activoOrgano = (o: string) => filtroP?.tipo === "organo" && filtroP.valor === o;
+  const parteAnioP = (anio: number) =>
+    !filtroP ? null : visiblesP.filter((p) => Number(p.fecha.slice(0, 4)) === anio).length;
+  const parteOrgano = (o: string) => (!filtroP ? null : visiblesP.filter((p) => p.organo === o).length);
+  const cabeceraP = useRef<HTMLDivElement>(null);
   const nd = doctrina.length;
   const tesis = doctrina.filter((d) => d.clase === "Tesis").length;
   const cabecera = useRef<HTMLDivElement>(null);
@@ -391,21 +416,43 @@ export function CitasExplorador({
           <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-14">
             <div>
               <p className="type-label text-cream/65">Por año</p>
-              <ul
-                role="list"
+              <div
+                role="group"
                 aria-label="Pronunciamientos por año"
                 className="mt-5 flex h-24 items-end gap-[3px] border-b border-cream/15 md:gap-1 lg:h-32"
               >
-                {porAnioP.map((a) => (
-                  <li key={a.anio} className="flex h-full flex-1 items-end" title={`${a.anio}: ${a.n}`}>
-                    <span
-                      className="block w-full bg-gold/80"
-                      style={{ height: `${(a.n / maxAnioP) * 100}%` }}
-                      aria-label={`${a.anio}: ${a.n}`}
-                    />
-                  </li>
-                ))}
-              </ul>
+                {porAnioP.map((a) => {
+                  const on = activoAnioP(a.anio);
+                  const parte = parteAnioP(a.anio);
+                  return (
+                    <button
+                      key={a.anio}
+                      type="button"
+                      disabled={a.n === 0}
+                      aria-pressed={on}
+                      aria-controls={listaPId}
+                      aria-label={`${a.anio}: ${a.n} ${a.n === 1 ? "pronunciamiento" : "pronunciamientos"}`}
+                      title={`${a.anio}: ${a.n}`}
+                      onClick={() => elegirP({ tipo: "anio", valor: a.anio })}
+                      className="group flex h-full flex-1 items-end outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:cursor-default"
+                    >
+                      <span
+                        className={`relative block w-full transition-colors duration-300 ${
+                          filtroP ? "bg-gold/30 group-hover:bg-gold/60" : "bg-gold/80 group-hover:bg-gold"
+                        }`}
+                        style={{ height: `${(a.n / maxAnioP) * 100}%` }}
+                      >
+                        {!!parte && (
+                          <span
+                            className="absolute inset-x-0 bottom-0 bg-burgundy dark:bg-gold-light"
+                            style={{ height: `${(parte / a.n) * 100}%` }}
+                          />
+                        )}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
               <div aria-hidden="true" className="mt-2 flex gap-[3px] md:gap-1">
                 {porAnioP.map((a) => (
                   <span
@@ -421,21 +468,54 @@ export function CitasExplorador({
             <div>
               <p className="type-label text-cream/65">Por órgano</p>
               <ul role="list" className="mt-3">
-                {porOrgano.map(([organo, n]) => (
-                  <li key={organo} className="py-2">
-                    <span className="flex items-baseline justify-between gap-4 text-[15px] leading-snug">
-                      <span className="text-cream/85">{organo}</span>
-                      <span className="tabular-nums text-cream">{n}</span>
-                    </span>
-                    <span aria-hidden="true" className="mt-1.5 block h-[3px] bg-cream/10">
-                      <span className="block h-full bg-gold" style={{ width: `${(n / maxOrgano) * 100}%` }} />
-                    </span>
-                  </li>
-                ))}
+                {porOrgano.map(([organo, n]) => {
+                  const on = activoOrgano(organo);
+                  const parte = parteOrgano(organo);
+                  return (
+                    <li key={organo}>
+                      <button
+                        type="button"
+                        aria-pressed={on}
+                        aria-controls={listaPId}
+                        onClick={() => elegirP({ tipo: "organo", valor: organo })}
+                        className="group block w-full py-2 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                      >
+                        <span className="flex items-baseline justify-between gap-4 text-[15px] leading-snug">
+                          <span
+                            className={`transition-colors duration-300 ${
+                              on
+                                ? "text-burgundy dark:text-gold"
+                                : "text-cream/85 group-hover:text-burgundy dark:group-hover:text-gold"
+                            }`}
+                          >
+                            {organo}
+                          </span>
+                          <span className="tabular-nums text-cream">
+                            {filtroP?.tipo === "anio" && <span className="text-burgundy dark:text-gold">{parte} de </span>}
+                            {n}
+                          </span>
+                        </span>
+                        <span aria-hidden="true" className="mt-1.5 block h-[3px] bg-cream/10">
+                          <span
+                            className={`relative block h-full transition-colors duration-300 ${filtroP ? "bg-gold/30" : "bg-gold"}`}
+                            style={{ width: `${(n / maxOrgano) * 100}%` }}
+                          >
+                            {!!parte && (
+                              <span
+                                className="absolute inset-y-0 left-0 bg-burgundy dark:bg-gold-light"
+                                style={{ width: `${(parte / n) * 100}%` }}
+                              />
+                            )}
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
-          <p className="mt-5">
+          <p ref={cabeceraP} className="mt-5 flex scroll-mt-32 flex-wrap items-baseline gap-x-2 gap-y-1">
             <button
               type="button"
               aria-expanded={abiertaP}
@@ -451,10 +531,31 @@ export function CitasExplorador({
                 className={`transition-transform duration-300 ${abiertaP ? "rotate-180" : ""}`}
               />
             </button>
+            {!abiertaP && np > 1 && <span className="text-sm text-cream/65">o elija un año o un órgano.</span>}
           </p>
           <div id={listaPId} hidden={!abiertaP}>
+            <p aria-live="polite" className="mt-5 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[13px] text-cream/65">
+              {filtroP ? (
+                <>
+                  <span>
+                    <span className="font-medium text-cream">{etiquetaP}</span> · {visiblesP.length} de {np}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setFiltroP(null)}
+                    className="underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                  >
+                    Ver todos
+                  </button>
+                </>
+              ) : (
+                <span>
+                  {np === 1 ? "El pronunciamiento" : `Los ${np} pronunciamientos`}, en orden cronológico.
+                </span>
+              )}
+            </p>
             <ol role="list" className="mt-4 divide-y divide-cream/10 border-y border-cream/10">
-              {pronunciamientos.map((p) => (
+              {visiblesP.map((p) => (
                 <li
                   key={`${p.organo}-${p.numero}`}
                   className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-0.5 py-3 text-[15px] leading-snug md:grid-cols-[96px_minmax(0,16rem)_minmax(0,1fr)] md:gap-5"
