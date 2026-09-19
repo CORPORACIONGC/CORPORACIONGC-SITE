@@ -30,6 +30,12 @@ import {
   BibliografiaRecursosLgap,
 } from "@/components/article/RecursosLgap";
 import {
+  FalloSalaApp,
+  RutaLegislativaApp,
+  RegimenProyectosApp,
+  FuentesLeyMarcoApp,
+} from "@/components/article/LeyMarcoApp";
+import {
   ArrowLeft,
   CalendarBlank,
   Tag,
@@ -98,6 +104,10 @@ const ARTICLE_COMPONENTS = {
   MateriasEspecialesRecursos,
   NulidadAbsolutaRelativa,
   BibliografiaRecursosLgap,
+  FalloSalaApp,
+  RutaLegislativaApp,
+  RegimenProyectosApp,
+  FuentesLeyMarcoApp,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
