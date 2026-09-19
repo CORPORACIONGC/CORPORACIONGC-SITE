@@ -75,6 +75,27 @@ function V({ n }: { n: string }) {
   );
 }
 
+/* Identificadores de SINALEVI de cada dictamen de la Procuraduría citado. */
+const PGR_IDS: Record<string, number> = {
+  "C-016-98": 10940,
+  "C-030-2011": 16609,
+  "C-181-2012": 17351,
+  "C-300-2012": 17424,
+  "C-244-2015": 19015,
+  "C-037-2025": 24852,
+};
+
+const PGR = (n: string) =>
+  `https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=${PGR_IDS[n]}&param2=1&param3=1`;
+
+function D({ n }: { n: string }) {
+  return (
+    <a href={PGR(n)} target="_blank" rel="noopener noreferrer">
+      {n}
+    </a>
+  );
+}
+
 /* ── Figura 1. La ruta del recurso ──────────────────────────────────── */
 
 export function MapaRecursosLgap() {
@@ -390,7 +411,7 @@ export function PlazoTresDiasLgap() {
       <FigSource>
         LGAP, arts. 256, 346.1 y 347.2; Ley de Notificaciones Judiciales (Ley N.° 8687), arts. 1 y 38;
         Corte Plena, <a href="https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=70140" target="_blank" rel="noopener noreferrer">circular 42-2011</a>; Sala Primera, voto <V n="515-F-S1-2024" />; TCA, Sección IV, voto
-        <V n="2024-6600" />; PGR, dictamen C-037-2025; CGR, resoluciones R-DFOE-DEC-00016-2026 y
+        <V n="2024-6600" />; PGR, dictamen <D n="C-037-2025" />; CGR, resoluciones R-DFOE-DEC-00016-2026 y
         R-DCA-SICOP-00888-2023.
       </FigSource>
     </figure>
@@ -631,12 +652,12 @@ const JUDICIALES: Criterio[] = [
 ];
 
 const ADMINISTRATIVOS: Criterio[] = [
-  { organo: "Procuraduría General", numero: "Dictamen C-037-2025", fecha: "24-02-2025", tema: "Notificación electrónica", criterio: "El art. 38 de la Ley de Notificaciones rige en los procedimientos de la LGAP, salvo norma especial que cuente desde el recibo." },
-  { organo: "Procuraduría General", numero: "Dictamen C-016-98", fecha: "1998", tema: "Plazo de 24 horas", criterio: "Las veinticuatro horas se reducen a las horas en que el despacho debe estar abierto el día siguiente a la comunicación." },
-  { organo: "Procuraduría General", numero: "Dictamen C-244-2015", fecha: "07-09-2015", tema: "Única alzada", criterio: "Deben evitarse las cadenas de recursos: lo resuelto en alzada no tiene ulterior recurso." },
-  { organo: "Procuraduría General", numero: "Dictamen C-181-2012", fecha: "20-07-2012", tema: "Jerarquía impropia", criterio: "El jerarca impropio solo controla legalidad y en virtud de recurso; lo que resuelve es definitivo en sede administrativa." },
-  { organo: "Procuraduría General", numero: "Dictamen C-300-2012", fecha: "05-11-2012", tema: "Demanda directa", criterio: "La audiencia de ocho días del art. 31.3 del CPCA procede solo si no se agotó la vía, y se da al superior jerárquico supremo." },
-  { organo: "Procuraduría General", numero: "Dictamen C-030-2011", fecha: "2011", tema: "Efecto suspensivo", criterio: "El efecto suspensivo es excepcional y existe solo cuando una ley lo da, como el Estatuto de Servicio Civil." },
+  { organo: "Procuraduría General", numero: "Dictamen C-037-2025", fecha: "24-02-2025", tema: "Notificación electrónica", criterio: "El art. 38 de la Ley de Notificaciones rige en los procedimientos de la LGAP, salvo norma especial que cuente desde el recibo.", href: PGR("C-037-2025") },
+  { organo: "Procuraduría General", numero: "Dictamen C-016-98", fecha: "22-01-1998", tema: "Plazo de 24 horas", criterio: "Las veinticuatro horas se reducen a las horas en que el despacho debe estar abierto el día siguiente a la comunicación.", href: PGR("C-016-98") },
+  { organo: "Procuraduría General", numero: "Dictamen C-244-2015", fecha: "07-09-2015", tema: "Única alzada", criterio: "Deben evitarse las cadenas de recursos: lo resuelto en alzada no tiene ulterior recurso.", href: PGR("C-244-2015") },
+  { organo: "Procuraduría General", numero: "Dictamen C-181-2012", fecha: "20-07-2012", tema: "Jerarquía impropia", criterio: "El jerarca impropio solo controla legalidad y en virtud de recurso; lo que resuelve es definitivo en sede administrativa.", href: PGR("C-181-2012") },
+  { organo: "Procuraduría General", numero: "Dictamen C-300-2012", fecha: "05-11-2012", tema: "Demanda directa", criterio: "La audiencia de ocho días del art. 31.3 del CPCA procede solo si no se agotó la vía, y se da al superior jerárquico supremo.", href: PGR("C-300-2012") },
+  { organo: "Procuraduría General", numero: "Dictamen C-030-2011", fecha: "14-02-2011", tema: "Efecto suspensivo", criterio: "El efecto suspensivo es excepcional y existe solo cuando una ley lo da, como el Estatuto de Servicio Civil.", href: PGR("C-030-2011") },
   { organo: "Contraloría General", numero: "R-DFOE-DEC-00016-2026", fecha: "19-08-2026", tema: "Notificación electrónica", criterio: "Tuvo por presentado en tiempo un recurso que solo llegaba al plazo gracias al día adicional del art. 38.", href: CGR("2026/SIGYD_D/SIGYD_D_2026013798.pdf") },
   { organo: "Contraloría General", numero: "R-DCA-SICOP-00888-2023", fecha: "07-08-2023", tema: "Contratación pública", criterio: "En compras públicas el plazo corre desde la comunicación en el sistema, sin el día adicional de la notificación electrónica." },
   { organo: "Contraloría General", numero: "R-DFOE-CIU-00002-2023", fecha: "25-04-2023", tema: "Suspensión y revisión", criterio: "La suspensión es excepcional y su perjuicio debe constatarse; la revisión no rescata una orden firme por falta de recurso oportuno.", href: CGR("2023/SIGYD_D/SIGYD_D_2023006441.pdf") },
@@ -718,7 +739,8 @@ export function BibliografiaRecursosLgap() {
       <ListaCriterios titulo="Criterios administrativos" items={ADMINISTRATIVOS} />
       <p className="gc-fig-source">
         Textos normativos: Sistema Costarricense de Información Jurídica (SINALEVI), en su versión
-        vigente. Jurisprudencia judicial: Nexus del Poder Judicial.
+        vigente. Jurisprudencia judicial: Nexus del Poder Judicial. Dictámenes de la Procuraduría:
+        SINALEVI. Resoluciones de la Contraloría: su repositorio de documentos.
       </p>
     </div>
   );
