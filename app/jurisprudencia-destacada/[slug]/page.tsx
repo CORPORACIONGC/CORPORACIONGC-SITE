@@ -29,7 +29,12 @@ import {
   type SeccionAnalisis,
   type SentenciaDestacada,
 } from "@/lib/jurisprudencia";
-import { GRUPOS_CITAS, PRONUNCIAMIENTOS_QUE_CITAN, RESOLUCIONES_QUE_CITAN } from "@/lib/jurisprudencia-citas";
+import {
+  DOCTRINA_QUE_CITA,
+  GRUPOS_CITAS,
+  PRONUNCIAMIENTOS_QUE_CITAN,
+  RESOLUCIONES_QUE_CITAN,
+} from "@/lib/jurisprudencia-citas";
 import { FIRM } from "@/lib/constants";
 import { buildJurisprudenciaMetadata } from "@/lib/page-metadata";
 
@@ -556,6 +561,7 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
           metodo={v.citas.metodo}
           csv={v.citas.csv}
           pronunciamientos={PRONUNCIAMIENTOS_QUE_CITAN[sentencia.slug]}
+          doctrina={DOCTRINA_QUE_CITA[sentencia.slug]}
         />
       )}
 

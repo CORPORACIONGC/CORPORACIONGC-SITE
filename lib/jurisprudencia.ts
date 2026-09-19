@@ -267,7 +267,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       analisis:
         "La Sala Primera **abandonó quince años de doctrina** según la cual la indexación solo procedía si las partes la habían pactado. Con fundamento directo en los **artículos 41, 33 y 49 de la Constitución**, sostuvo que **reparar exige restituir el valor real de lo debido**, distinguió las obligaciones dinerarias de las de valor y señaló el Índice de Precios al Consumidor como parámetro.",
       impacto:
-        "La Sala Primera la reiteró en 2005, la Sala Segunda la llevó a los procesos laborales y la Sala Constitucional avaló esa extensión en 2012; en lo contencioso-administrativo, el Código de 2006 hizo de la actualización un deber de toda condena dineraria. Hoy la citan **al menos 139 resoluciones de 16 despachos**. Su regla práctica sigue intacta: **la indexación se pide desde la demanda**.",
+        "La Sala Primera la reiteró en 2005, la Sala Segunda la llevó a los procesos laborales y la Sala Constitucional avaló esa extensión en 2012; en lo contencioso-administrativo, el Código de 2006 hizo de la actualización un deber de toda condena dineraria. Hoy la citan **al menos 154 resoluciones de 16 despachos**, además de catorce pronunciamientos de la Procuraduría, de la Corte y de la ARESEP. Su regla práctica sigue intacta: **la indexación se pide desde la demanda**.",
     },
 
     fragmentosPortada: [
@@ -526,7 +526,10 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Más de veinte años después, la sentencia sigue en uso. Hemos encontrado su cita en el texto de al menos 139 resoluciones de 16 despachos, dictadas entre 2005 y 2026: el Tribunal Contencioso Administrativo, las Salas Primera, Segunda y Constitucional, y tribunales civiles, de trabajo, de familia y agrarios.",
+          "Más de veinte años después, la sentencia sigue en uso. Hemos buscado su cita en Nexus, el buscador público del Poder Judicial, y la hemos encontrado en el texto de al menos 154 resoluciones de 16 despachos, dictadas entre 2005 y 2026.",
+          "El reparto dice a dónde llegó. La jurisdicción contencioso-administrativa la cita en 43 resoluciones y la propia Sala Primera en 34, pero el grupo más numeroso después de ellas es la Sala Segunda con los tribunales de trabajo, con 41. Los tribunales civiles la citan en 18, la Sala Constitucional en 7, y el Tribunal de Familia y el Tribunal Agrario en 4 cada uno. La primera cita llegó tres meses después del fallo, en el voto 81-2005 de la misma Sala, del 22 de febrero de 2005; las dos últimas son sentencias de la Sala Constitucional de julio de 2026.",
+          "Fuera de los tribunales la citan 14 pronunciamientos. Ocho son de la Procuraduría: dos opiniones jurídicas de 2005, a los pocos meses del fallo; tres informes rendidos a la Sala Constitucional en acciones de inconstitucionalidad de 2012 y 2018; y los dictámenes C-457-2020 y C-159-2024, que reproducen su párrafo sobre actualizar lo debido a la fecha efectiva del pago. El Consejo Superior del Poder Judicial la invocó en cuatro sesiones, la última en abril de 2025, y la Junta Directiva de la ARESEP en 2009, al tratar el derecho al equilibrio financiero de un contrato de servicio público. La Corte Plena la citó en 2013.",
+          "En la doctrina aparece en cuatro revistas de acceso libre: El Foro 9 (2009), del Colegio de Abogados; la Revista Judicial 98 (2010) y 112 (2014), de la Escuela Judicial; y la Revista de Derecho de la Hacienda Pública de la Contraloría, de 2025, que la trae a propósito de la plusvalía ecológica.",
           "Es el alcance de un fallo que nació en un pleito entre una arrendataria y la dueña de un edificio, y que además negó lo que la recurrente pedía. Cada vez que un tribunal actualiza una condena dineraria a su valor presente sin que las partes lo hayan pactado, aplica una regla que se escribió aquí, directamente o a través de la ley y de los fallos que la siguieron.",
         ],
         visual: "citas",
@@ -646,7 +649,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       citas: {
         corte: "19 de setiembre de 2026",
         metodo:
-          "Resoluciones judiciales cuyo texto cita la 1016-F-2004, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez y las secciones de un mismo tribunal, como un solo despacho.",
+          "Resoluciones judiciales cuyo texto cita la 1016-F-2004, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/1016-F-2004-resoluciones-que-la-citan.csv",
       },
     },
@@ -1049,8 +1052,11 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Más de veinte años después, la sentencia sigue en pleno uso. Hemos encontrado su cita en el texto de al menos 477 resoluciones, dictadas entre 2005 y 2026. La mayor parte proviene del Tribunal Contencioso Administrativo; también la citan las Salas Primera, Segunda y Tercera, la Sala Constitucional y los tribunales penales cuando resuelven la acción civil contra el Estado.",
-          "Su uso crece. Los dos años con más citas son 2024 y 2025, con 59 y 53 resoluciones, y en lo que va de 2026 ya suman 13. Lo que se cita es su andamiaje: la definición de anormalidad, la inactividad material, la antijuridicidad de base, la causalidad adecuada y la eximente parcial."
+          "Más de veinte años después, la sentencia sigue en pleno uso. En Nexus, el buscador público del Poder Judicial, su cita aparece en el texto de al menos 477 resoluciones, dictadas entre 2005 y 2026. Es la más citada de las cinco sentencias que hemos estudiado.",
+          "Cuatro de cada cinco citas vienen de la jurisdicción contencioso-administrativa, con 406 resoluciones, y dentro de ella manda la Sección Sexta, que la cita 106 veces. La Sala Primera la cita en 43, la jurisdicción penal en 17 —al resolver la acción civil contra el Estado—, la Sala Segunda y los tribunales de trabajo en 8, y la Sala Constitucional en 2.",
+          "Su uso crece. Los dos años con más citas son 2024 y 2025, con 59 y 53 resoluciones, y en lo que va de 2026 ya suman 13: desde 2022 se acumulan 187, casi dos de cada cinco de toda su vida. Lo que se cita es su andamiaje: la definición de anormalidad, la inactividad material, la antijuridicidad de base, la causalidad adecuada y la eximente parcial.",
+          "Fuera de los tribunales la citan 18 pronunciamientos. Nueve son de la Procuraduría, desde el dictamen C-196-2008 hasta el C-152-2024, que dice que con esta sentencia la Sala esclareció «de una vez por todas» el concepto de anormalidad; entre ellos, el C-299-2011 y el C-162-2015 la usan para exigir que la Administración actúe conforme a las reglas de la ciencia y de la técnica, y el C-060-2021 para explicar las causas que liberan de responsabilidad. El Consejo Superior del Poder Judicial la ha invocado en ocho sesiones, entre 2014 y 2022, y la Corte Plena en una.",
+          "En la doctrina la citan cinco trabajos: tres tesis del repositorio Kérwá de la Universidad de Costa Rica —sobre el régimen de la lesividad, sobre el silencio administrativo y sobre la legalidad urbanística—, un número de El Foro del Colegio de Abogados y la Revista Judicial 138, de 2024, de la Escuela Judicial."
         ],
         visual: "citas"
       }
@@ -1239,7 +1245,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 584-F-2005, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Resoluciones judiciales cuyo texto cita la 584-F-2005, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/584-F-2005-resoluciones-que-la-citan.csv"
       }
     },
@@ -1378,7 +1384,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     sintesisPortada: {
       caso: "La Superintendencia de Pensiones abrió en 2004 un procedimiento sancionador contra la operadora BN Vital y lo dejó **paralizado más de dos años** después de la audiencia oral. Luego le impuso una multa de ¢26,8 millones, que el Tribunal Contencioso Administrativo **anuló por caducidad**.",
       analisis: "La redacción original del artículo 340 de la LGAP solo preveía la caducidad del procedimiento promovido por el interesado. La Sala la extendió **por integración a los procedimientos de oficio**, con fundamento en la **igualdad, la justicia pronta y la seguridad jurídica**, y fijó que opera **de pleno derecho** y sin extinguir la competencia.",
-      impacto: "La reforma del CPCA, vigente desde 2008, ya recogía esa solución para los procedimientos nuevos, y lo que hoy se cita son sus reglas de funcionamiento. **Al menos 160 resoluciones** la citan. En 2016 la Sala Primera le fijó un límite: **dictado el acto final, la caducidad ya no procede**."
+      impacto: "La reforma del CPCA, vigente desde 2008, ya recogía esa solución para los procedimientos nuevos, y lo que hoy se cita son sus reglas de funcionamiento. **Al menos 166 resoluciones** la citan, y otros 29 pronunciamientos fuera de los tribunales, desde la ARESEP hasta la Contraloría. En 2016 la Sala Primera le fijó un límite: **dictado el acto final, la caducidad ya no procede**."
     },
     fragmentosPortada: [
       {
@@ -1681,8 +1687,10 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         id: "impacto",
         titulo: "Su impacto",
         parrafos: [
-          "Hemos encontrado su cita en el texto de al menos 160 resoluciones, dictadas entre 2011 y 2026. La mayor parte proviene del Tribunal Contencioso Administrativo y del Tribunal de Casación de lo Contencioso Administrativo; también la citan la Sala Primera, la Sala Segunda, el Tribunal Agrario y la Sala Constitucional.",
-          "Su uso alcanzó el máximo en 2015, con 27 resoluciones, y se mantiene: 11 en 2023, 8 en 2024 y 10 en 2025. La reforma del CPCA había resuelto ya la pregunta principal para los procedimientos iniciados después de 2008. Lo que se sigue citando son sus reglas de funcionamiento: los efectos de pleno derecho, la conservación de la competencia, la distinción con los plazos ordenatorios y el límite del acto final."
+          "En Nexus, el buscador público del Poder Judicial, su cita aparece en el texto de al menos 166 resoluciones, dictadas entre 2011 y 2026. La jurisdicción contencioso-administrativa reúne 141, con la Sección Sexta a la cabeza (56) y el Tribunal de Casación con 20. La Sala Primera la cita en 13, la Sala Segunda en 6, el Tribunal Agrario en 5 y la Sala Constitucional en 1.",
+          "Su uso alcanzó el máximo en 2015, con 28 resoluciones, y se mantiene: 11 en 2023, 8 en 2024 y 13 en 2025. La reforma del CPCA había resuelto ya la pregunta principal para los procedimientos iniciados después de 2008. Lo que se sigue citando son sus reglas de funcionamiento: los efectos de pleno derecho, la conservación de la competencia, la distinción con los plazos ordenatorios y el límite del acto final.",
+          "De las cinco sentencias que hemos estudiado, esta es la que más salió de los tribunales: 29 pronunciamientos de siete órganos distintos. El primero llegó a los diez meses, en el voto 1031-2011 que el Tribunal Registral Administrativo publica en su propio sitio. La Junta Directiva de la ARESEP la ha citado en nueve sesiones; el Tribunal de la Inspección Judicial, en seis resoluciones disciplinarias entre 2019 y 2021; el Consejo Superior, en seis sesiones; la Junta del Fondo de Jubilaciones y Pensiones del Poder Judicial, en tres, la última de diciembre de 2025; y la Corte Plena, en dos. La Contraloría la recoge en el oficio DJ-1484-2015 y la Procuraduría en el dictamen C-069-2015, los dos del mismo verano.",
+          "En la doctrina, el repositorio Kérwá de la Universidad de Costa Rica devuelve cuatro tesis que la citan, de 2017 a 2025: sobre la caducidad de la instancia, sobre los conflictos de competencia entre la jurisdicción agraria y la contencioso-administrativa, sobre la instrucción de faltas en la propia Universidad y sobre el elemento temporal de la potestad disciplinaria."
         ],
         visual: "citas"
       }
@@ -1831,7 +1839,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 34-F-S1-2011, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente y los órganos administrativos, y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Resoluciones judiciales cuyo texto cita la 34-F-S1-2011, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/34-F-S1-2011-resoluciones-que-la-citan.csv"
       }
     },
@@ -2408,7 +2416,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         parrafos: [
           "Hemos encontrado su cita en el texto de al menos 271 resoluciones, dictadas entre 2009 y 2026. La mayoría proviene del Tribunal Contencioso Administrativo, que conoce las demandas contra los bancos públicos, y de la Sala Primera, con 99 resoluciones. También la citan el Tribunal de Casación de lo Contencioso Administrativo, tribunales civiles y penales, la Sala Segunda y la Sala Constitucional.",
           "Cerca de la mitad resuelve demandas contra bancos y otras entidades financieras. El resto la invoca como doctrina general de la responsabilidad objetiva. El pasaje sobre el riesgo anormal aparece en el texto de más de un centenar de resoluciones, y el de la transferencia patrimonial automática, en más de un tercio.",
-          "Su uso tuvo dos momentos. Entre 2010 y 2012 la citaron 77 resoluciones. Desde 2022 volvió a crecer: 99 resoluciones entre 2022 y 2025, con 32 en 2024."
+          "Su uso tuvo dos momentos. Entre 2010 y 2012 la citaron 77 resoluciones. Desde 2022 volvió a crecer: 99 resoluciones entre 2022 y 2025, con 32 en 2024.",
+          "Fuera de los tribunales el rastro es más corto y más llamativo. La Junta Directiva de la ARESEP y el Consejo Superior del Poder Judicial la citan para explicar la causalidad adecuada y el deber de la entidad de mantener sistemas de doble identificación y claves cambiantes. Y el Poder Ejecutivo la llevó a una norma: el Decreto 43629-MICITT de 2022, que reformó el Reglamento para la transición a la televisión digital terrestre, la cita en sus considerandos para fundar la carga dinámica de la prueba, o sea, que prueba quien está en mejores condiciones de hacerlo.",
+          "En la doctrina la citan la Revista Judicial 112, de 2014, y dos tesis de acceso abierto: una del repositorio de la ULACIT, sobre la responsabilidad objetiva de la banca frente al phishing, de 2020, y otra de Kérwá, sobre el delito de estafa informática, de 2021."
         ],
         visual: "citas"
       }
@@ -2550,7 +2560,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 300-F-S1-2009, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente y los órganos administrativos, y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Resoluciones judiciales cuyo texto cita la 300-F-S1-2009, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/300-F-S1-2009-resoluciones-que-la-citan.csv"
       }
     },
@@ -2704,7 +2714,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     sintesisPortada: {
       caso: "En 1987 la Universidad de Costa Rica equiparó a licenciatura el título de un ingeniero formado en la antigua Unión Soviética. En 2007 él pidió la equiparación como maestría; la Universidad la negó y le notificó la negativa en **febrero de 2008**. Demandó en **mayo de 2011**, y el Tribunal Contencioso Administrativo declaró **de oficio** caducada la acción.",
       analisis: "La Sala confirmó que la caducidad **se examina de oficio** y que el régimen aplicable lo fija **la firmeza del acto**. Distinguió el acto de **efecto instantáneo**, que se agota en un solo momento, del de **efectos continuados**, que incide una y otra vez, y precisó que las consecuencias de un estatus ya definido **dejan el plazo donde estaba**.",
-      impacto: "**Al menos 187 resoluciones** la citan, y cuatro de cada cinco son de 2020 en adelante. Su definición decide cuatro plazos: la demanda, la lesividad, la anulación de oficio y la revisión municipal. Fuera de los tribunales la citan **diez dictámenes de la Procuraduría** y la Corte Plena."
+      impacto: "**Al menos 187 resoluciones** la citan, y cuatro de cada cinco son de 2020 en adelante. Su definición decide cuatro plazos: la demanda, la lesividad, la anulación de oficio y la revisión municipal. Fuera de los tribunales suman **16 pronunciamientos**: diez dictámenes de la Procuraduría y cinco sesiones de Corte Plena, una de ellas con 158 artículos."
     },
     fragmentosPortada: [
       {
@@ -2990,7 +3000,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
         titulo: "Su impacto",
         parrafos: [
           "Hemos encontrado su cita en el texto de al menos 187 resoluciones, dictadas entre 2013 y 2026. Casi todas provienen del Tribunal Contencioso Administrativo y de su Tribunal de Casación; la Sección Tercera, que conoce las apelaciones contra acuerdos municipales, la cita en 28 resoluciones. La Sala Primera la cita en 24, y el Tribunal Agrario, en dos.",
-          "Su uso creció con el tiempo: cuatro de cada cinco citas son de 2020 en adelante, con 31 en 2020 y 30 en 2022. Fuera de los tribunales la citan diez dictámenes de la Procuraduría, el Consejo Superior y la Corte Plena, que en una sola sesión de 2026 la invocó en 158 artículos."
+          "Su uso creció con el tiempo: cuatro de cada cinco citas son de 2020 en adelante, con 31 en 2020 y 30 en 2022. Es la más joven de las cinco sentencias que hemos estudiado y ya la citan tantas resoluciones como a las que tienen diez años más.",
+          "Fuera de los tribunales la citan 16 pronunciamientos. Diez son dictámenes de la Procuraduría, de 2014 a 2025, que usan su definición para decidir si sigue abierta la potestad de anular de oficio un acto absolutamente nulo. La Corte Plena la ha invocado en cinco sesiones, y en una sola de 2026 la cita en 158 artículos, al resolver sobre pluses salariales de pago periódico: cada pago renueva el efecto y mantiene abierto el plazo. El Consejo Superior la citó en 2022.",
+          "En la doctrina la citan dos tesis publicadas en Kérwá, el repositorio de la Universidad de Costa Rica: una sobre la caducidad de la instancia y otra sobre el régimen de la lesividad, las dos escritas después de que el fallo se volviera la referencia obligada de la materia."
         ],
         visual: "citas"
       }
@@ -3132,7 +3144,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       ],
       citas: {
         corte: "19 de setiembre de 2026",
-        metodo: "Resoluciones judiciales cuyo texto cita la 1426-F-S1-2012, por cualquiera de sus puntos, leídas una por una. Recuento de Corporación GC sobre jurisprudencia publicada: cada resolución cuenta una vez, se excluyen las del mismo expediente, y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        metodo: "Resoluciones judiciales cuyo texto cita la 1426-F-S1-2012, por cualquiera de sus puntos. Búsqueda con todas las formas del número, incluidas las que llevan ceros delante, y lectura una por una de cada coincidencia, sobre las fuentes públicas: Nexus del Poder Judicial, el SINALEVI de la Procuraduría, los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP, las actas del Poder Judicial, y los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT para la doctrina. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
         csv: "/datos/jurisprudencia/1426-F-S1-2012-resoluciones-que-la-citan.csv"
       }
     },

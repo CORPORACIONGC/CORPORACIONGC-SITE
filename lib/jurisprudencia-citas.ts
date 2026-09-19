@@ -33,9 +33,22 @@ export type PronunciamientoQueCita = {
   articulos?: number;
 };
 
+export type TrabajoQueCita = {
+  /** Año de publicación; vacío si el número no lo consigna. */
+  anio: string;
+  titulo: string;
+  /** «Tesis» o «Revista». */
+  clase: string;
+  autores?: string;
+  institucion?: string;
+  publicacion?: string;
+  /** Repositorio o PDF oficial. */
+  enlace?: string;
+};
+
 /** Orden de los grupos en el gráfico: de más a menos citas, «Otros» al final. */
 export const GRUPOS_CITAS: Record<string, string[]> = {
-  "indexacion-de-obligaciones-dinerarias": ["Sala Segunda y tribunales de trabajo", "Jurisdicción contencioso-administrativa", "Sala Primera", "Tribunales civiles", "Sala Constitucional", "Tribunal Agrario", "Tribunal de Familia", "Otros"],
+  "indexacion-de-obligaciones-dinerarias": ["Jurisdicción contencioso-administrativa", "Sala Segunda y tribunales de trabajo", "Sala Primera", "Tribunales civiles", "Sala Constitucional", "Tribunal Agrario", "Tribunal de Familia", "Otros"],
   "responsabilidad-del-estado-por-omision": ["Jurisdicción contencioso-administrativa", "Sala Primera", "Jurisdicción penal", "Sala Segunda y tribunales de trabajo", "Sala Constitucional", "Otros"],
   "caducidad-del-procedimiento-administrativo": ["Jurisdicción contencioso-administrativa", "Sala Primera", "Sala Segunda y tribunales de trabajo", "Tribunal Agrario", "Sala Constitucional"],
   "responsabilidad-bancaria-por-fraude-electronico": ["Jurisdicción contencioso-administrativa", "Sala Primera", "Tribunales civiles", "Jurisdicción penal", "Sala Constitucional", "Sala Segunda y tribunales de trabajo"],
@@ -62,6 +75,7 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2006-09-29", numero: "389-2006", despacho: "Tribunal Contencioso Administrativo, Sección III", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "02-000009-0163-CA", nexusId: "sen-1-0034-358336" },
     { fecha: "2006-10-31", numero: "830-2006", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "01-000812-0627-NO", nexusId: "sen-1-0034-366231" },
     { fecha: "2006-12-21", numero: "1015-2006", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "95-000113-0180-CI", nexusId: "sen-1-0034-370380" },
+    { fecha: "2007-02-20", numero: "93-2007", despacho: "Tribunal Contencioso Administrativo, Sección III", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "04-000639-0163-CA", nexusId: "sen-1-0034-369926" },
     { fecha: "2007-03-29", numero: "238-2007", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "03-100334-0297-CI", nexusId: "sen-1-0034-377724" },
     { fecha: "2007-07-06", numero: "482-2007", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "88-000045-0177-CA", nexusId: "sen-1-0034-389402" },
     { fecha: "2007-07-06", numero: "486-2007", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "97-100728-0216-CI", nexusId: "sen-1-0034-408929" },
@@ -80,10 +94,11 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2009-05-07", numero: "466-2009", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "03-000241-0163-CA", nexusId: "sen-1-0034-451978" },
     { fecha: "2009-05-13", numero: "386-2009", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "00-001767-0504-CI", nexusId: "sen-1-0034-443536" },
     { fecha: "2009-06-30", numero: "323-2009", despacho: "Tribunal Segundo Civil, Sección I", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "01-001133-0184-CI", nexusId: "sen-1-0034-444200" },
+    { fecha: "2009-07-20", numero: "323-2009", despacho: "Tribunal Contencioso Administrativo, Sección I", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "97-000046-0178-CA", nexusId: "sen-1-0034-445279" },
     { fecha: "2009-07-30", numero: "78-2009", despacho: "Tribunal Contencioso Administrativo, Sección X", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "00-000448-0163-CA", nexusId: "sen-1-0034-446756" },
     { fecha: "2009-11-17", numero: "503-2009", despacho: "Tribunal Contencioso Administrativo, Sección I", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "07-001519-0163-CA", nexusId: "sen-1-0034-457505" },
     { fecha: "2009-11-18", numero: "452-2009", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "03-000994-0163-CA", nexusId: "sen-1-0034-459571" },
-    { fecha: "2009-11-18", numero: "454-2009", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "07-001612-0163-CA", nexusId: "sen-1-0034-459725" },
+    { fecha: "2009-11-18", numero: "454-2009", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "03-608951-0189-TC", nexusId: "sen-1-0034-459725" },
     { fecha: "2010-02-11", numero: "203-2010", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "00-000448-0163-CA", nexusId: "sen-1-0034-474460" },
     { fecha: "2010-02-12", numero: "222-2010", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "05-000331-0161-CA", nexusId: "sen-1-0034-463011" },
     { fecha: "2010-02-17", numero: "225-2010", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "05-000037-0641-LA", nexusId: "sen-1-0034-465494" },
@@ -102,17 +117,20 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2011-11-10", numero: "1236-2011", despacho: "Tribunal Agrario", tribunal: "Tribunal Agrario", grupo: "Tribunal Agrario", expediente: "05-000159-0391-AG", nexusId: "sen-1-0034-529858" },
     { fecha: "2011-11-30", numero: "336-2011", despacho: "Tribunal Segundo Civil, Sección II", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "04-100481-0390-CI", nexusId: "sen-1-0034-534096" },
     { fecha: "2012-02-29", numero: "63-2012", despacho: "Tribunal Contencioso Administrativo, Sección I", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "04-000843-0163-CA", nexusId: "sen-1-0034-535684" },
+    { fecha: "2012-04-19", numero: "490-2012", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "04-001173-0163-CA", nexusId: "sen-1-0034-542639" },
     { fecha: "2012-05-30", numero: "467-2012", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "08-000868-0166-LA", nexusId: "sen-1-0034-542272" },
     { fecha: "2012-06-27", numero: "8742-2012", despacho: "Sala Constitucional", tribunal: "Sala Constitucional", grupo: "Sala Constitucional", expediente: "12-000615-0007-CO", nexusId: "sen-1-0007-543071" },
     { fecha: "2012-08-10", numero: "299-2012", despacho: "Tribunal de Trabajo, Sección I", tribunal: "Tribunal de Trabajo", grupo: "Sala Segunda y tribunales de trabajo", expediente: "08-000869-0166-LA", nexusId: "sen-1-0034-550272" },
     { fecha: "2012-10-09", numero: "94-2012", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "11-001419-1027-CA", nexusId: "sen-1-0034-551942" },
     { fecha: "2012-10-10", numero: "1284-2012", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "10-000382-1028-CA", nexusId: "sen-1-0034-553636" },
     { fecha: "2012-10-24", numero: "14891-2012", despacho: "Sala Constitucional", tribunal: "Sala Constitucional", grupo: "Sala Constitucional", expediente: "12-001637-0007-CO", nexusId: "sen-1-0007-550981" },
+    { fecha: "2012-10-30", numero: "1440-2012", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "09-002807-1027-CA", nexusId: "sen-1-0034-560412" },
     { fecha: "2012-10-31", numero: "286-2012", despacho: "Tribunal Segundo Civil, Sección II", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "10-000306-0164-CI", nexusId: "sen-1-0034-567039" },
     { fecha: "2013-03-20", numero: "62-2013", despacho: "Tribunal Segundo Civil, Sección II", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "08-000741-0164-CI", nexusId: "sen-1-0034-578428" },
     { fecha: "2013-05-17", numero: "124-2013", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "06-000442-0163-CA", nexusId: "sen-1-0034-569151" },
     { fecha: "2013-07-31", numero: "78-2013", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "11-004917-1027-CA", nexusId: "sen-1-0034-580792" },
     { fecha: "2013-08-28", numero: "96-2013", despacho: "Tribunal Contencioso Administrativo, Sección I", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "01-000785-0163-CA", nexusId: "sen-1-0034-585374" },
+    { fecha: "2013-09-27", numero: "271-2013", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "89-001310-0178-CA", nexusId: "sen-1-0034-587057" },
     { fecha: "2013-09-30", numero: "124-2013", despacho: "Tribunal Contencioso Administrativo, Sección I", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "06-000421-0163-CA", nexusId: "sen-1-0034-587026" },
     { fecha: "2013-11-04", numero: "155-2013", despacho: "Tribunal Contencioso Administrativo, Sección I", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "07-000553-0163-CA", nexusId: "sen-1-0034-589822" },
     { fecha: "2013-11-21", numero: "286-2013", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "04-001216-0163-CA", nexusId: "sen-1-0034-607496" },
@@ -126,15 +144,20 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2014-07-30", numero: "95-2014", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "01-000289-0163-CA", nexusId: "sen-1-0034-616140" },
     { fecha: "2014-09-09", numero: "756-2014", despacho: "Tribunal de Familia", tribunal: "Tribunal de Familia", grupo: "Tribunal de Familia", expediente: "05-000384-0292-FA", nexusId: "sen-1-0034-614934" },
     { fecha: "2014-11-19", numero: "1135-2014", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "08-000867-0166-LA", nexusId: "sen-1-0034-621100" },
+    { fecha: "2014-12-11", numero: "1631-2014", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "12-002181-1027-CA", nexusId: "sen-1-0034-624547" },
     { fecha: "2015-01-29", numero: "117-2015", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "14-000090-0004-AR", nexusId: "sen-1-0034-640257" },
     { fecha: "2015-07-30", numero: "85-2015", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "04-001216-0163-CA", nexusId: "sen-1-0034-646129" },
+    { fecha: "2015-10-09", numero: "458-2015", despacho: "Tribunal Segundo Civil, Sección II", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "00-100087-0425-CI", nexusId: "sen-1-0034-652257" },
     { fecha: "2015-10-21", numero: "1214-2015", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "14-000198-0004-AR", nexusId: "sen-1-0034-660317" },
     { fecha: "2015-11-04", numero: "116-2015", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-003846-1027-CA", nexusId: "sen-1-0034-651080" },
     { fecha: "2015-11-30", numero: "538-2015", despacho: "Tribunal de Trabajo, Sección II", tribunal: "Tribunal de Trabajo", grupo: "Sala Segunda y tribunales de trabajo", expediente: "08-001117-0166-LA", nexusId: "sen-1-0034-656988" },
     { fecha: "2016-03-14", numero: "115-2016", despacho: "Tribunal de Trabajo, Sección II", tribunal: "Tribunal de Trabajo", grupo: "Sala Segunda y tribunales de trabajo", expediente: "10-001492-0166-LA", nexusId: "sen-1-0034-662918" },
     { fecha: "2016-04-27", numero: "393-2016", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "08-001117-0166-LA", nexusId: "sen-1-0034-665133" },
+    { fecha: "2016-06-17", numero: "394-2016", despacho: "Tribunal Segundo Civil, Sección I", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "03-000388-0185-CI", nexusId: "sen-1-0034-670215" },
     { fecha: "2016-06-29", numero: "56-2016", despacho: "Tribunal Contencioso Administrativo, Sección II", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "06-000507-0163-CA", nexusId: "sen-1-0034-669659" },
     { fecha: "2016-06-29", numero: "66-2016", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "11-004917-1027-CA", nexusId: "sen-1-0034-668414" },
+    { fecha: "2016-09-21", numero: "659-2016", despacho: "Tribunal Segundo Civil, Sección I", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "13-000098-0678-CI", nexusId: "sen-1-0034-681479" },
+    { fecha: "2016-12-02", numero: "149-2016", despacho: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", tribunal: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-005495-1027-CA", nexusId: "sen-1-0034-692685" },
     { fecha: "2017-01-30", numero: "6-2017", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "11-003730-1027-CA", nexusId: "sen-1-0034-693446" },
     { fecha: "2017-02-10", numero: "67-2017", despacho: "Tribunal Segundo Civil, Sección I", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "07-100513-0642-CI", nexusId: "sen-1-0034-703762" },
     { fecha: "2017-06-30", numero: "401-2017", despacho: "Tribunal Segundo Civil, Sección Extraordinaria", tribunal: "Tribunal Segundo Civil", grupo: "Tribunales civiles", expediente: "12-000046-0182-CI", nexusId: "sen-1-0034-719334" },
@@ -176,11 +199,16 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2022-01-05", numero: "2-2022", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "15-001661-0166-LA", nexusId: "sen-1-0005-1070683" },
     { fecha: "2022-03-30", numero: "7482-2022", despacho: "Sala Constitucional", tribunal: "Sala Constitucional", grupo: "Sala Constitucional", expediente: "22-004324-0007-CO", nexusId: "sen-1-0007-1102529" },
     { fecha: "2022-05-26", numero: "273-2022", despacho: "Tribunal de Apelación de Sentencia Penal de Cartago", tribunal: "Tribunal de Apelación de Sentencia Penal de Cartago", grupo: "Otros", expediente: "02-202468-0345-PE", nexusId: "sen-1-0034-1092748" },
+    { fecha: "2022-07-07", numero: "1562-2022", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "13-000098-0678-CI", nexusId: "sen-1-0004-1105395" },
     { fecha: "2022-11-29", numero: "221-2022", despacho: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", tribunal: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", grupo: "Jurisdicción contencioso-administrativa", expediente: "00-001043-0163-CA", nexusId: "sen-1-1011-1168555" },
     { fecha: "2023-02-10", numero: "96-2023", despacho: "Tribunal de Familia", tribunal: "Tribunal de Familia", grupo: "Tribunal de Familia", expediente: "14-000192-0924-FA", nexusId: "sen-1-0034-1140101" },
+    { fecha: "2023-06-08", numero: "858-2023", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "04-000417-0163-CA", nexusId: "sen-1-0004-1159233" },
     { fecha: "2024-02-22", numero: "95-2024", despacho: "Tribunal Segundo de Apelación Civil de San José", tribunal: "Tribunal Segundo de Apelación Civil de San José", grupo: "Tribunales civiles", expediente: "08-000609-0183-CI", nexusId: "sen-1-0034-1232005" },
     { fecha: "2024-02-29", numero: "488-2024", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "10-000235-0181-CI", nexusId: "sen-1-0005-1238852" },
     { fecha: "2024-06-06", numero: "572-2024", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "11-000562-0164-CI", nexusId: "sen-1-0004-1235338" },
+    { fecha: "2024-10-01", numero: "1370-2024", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "21-000029-1634-CI", nexusId: "sen-1-0004-1253342" },
+    { fecha: "2025-02-14", numero: "1235-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "20-005250-1027-CA", nexusId: "sen-1-0034-1280520" },
+    { fecha: "2025-04-03", numero: "582-2025", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "18-000010-1624-CI", nexusId: "sen-1-0004-1288091" },
     { fecha: "2026-07-15", numero: "26765-2026", despacho: "Sala Constitucional", tribunal: "Sala Constitucional", grupo: "Sala Constitucional", expediente: "26-022961-0007-CO", nexusId: "sen-1-0007-1409860" },
     { fecha: "2026-07-29", numero: "28702-2026", despacho: "Sala Constitucional", tribunal: "Sala Constitucional", grupo: "Sala Constitucional", expediente: "26-022961-0007-CO", nexusId: "sen-1-0007-1411008" },
   ],
@@ -374,13 +402,13 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2015-12-09", numero: "124-2015", despacho: "Tribunal Contencioso Administrativo, Sección IV", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-008877-1027-CA", nexusId: "sen-1-0034-658971" },
     { fecha: "2015-12-10", numero: "130-2015", despacho: "Tribunal Contencioso Administrativo, Sección VII", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "12-006292-1027-CA", nexusId: "sen-1-0034-660749" },
     { fecha: "2015-12-15", numero: "210-2015", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-006667-1027-CA", nexusId: "sen-1-0034-655231" },
+    { fecha: "2015-12-18", numero: "215-2015", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-002959-1027-CA", nexusId: "sen-1-0034-655235" },
     { fecha: "2016-02-16", numero: "26-2016", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "12-006846-1027-CA", nexusId: "sen-1-0034-944294" },
     { fecha: "2016-02-19", numero: "20-2016", despacho: "Tribunal Contencioso Administrativo, Sección IV", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-004568-1027-CA", nexusId: "sen-1-0034-659147" },
     { fecha: "2016-03-03", numero: "182-2016", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "15-000031-0004-CA", nexusId: "sen-1-0034-661633" },
     { fecha: "2016-03-16", numero: "31-2016", despacho: "Tribunal Contencioso Administrativo, Sección VIII", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-008861-1027-CA", nexusId: "sen-1-0034-660792" },
     { fecha: "2016-04-19", numero: "41-2016", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "11-007130-1027-CA", nexusId: "sen-1-0034-664284" },
     { fecha: "2016-04-19", numero: "42-2016", despacho: "Tribunal Contencioso Administrativo, Sección VIII", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-008453-1027-CA", nexusId: "sen-1-0034-664152" },
-    { fecha: "2016-05-27", numero: "517-2016", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "12-001061-1178-LA", nexusId: "sen-1-0034-666279" },
     { fecha: "2016-06-27", numero: "59-2016", despacho: "Tribunal Contencioso Administrativo, Sección IV", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-007114-1027-CA", nexusId: "sen-1-0034-668412" },
     { fecha: "2016-06-29", numero: "66-2016", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "11-004917-1027-CA", nexusId: "sen-1-0034-668414" },
     { fecha: "2016-06-29", numero: "99-2016", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "12-000771-0679-LA", nexusId: "sen-1-0034-668419" },
@@ -721,6 +749,7 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2015-05-26", numero: "51-2015", despacho: "Tribunal Contencioso Administrativo, Sección VII", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-004174-1027-CA", nexusId: "sen-1-0034-641046" },
     { fecha: "2015-05-28", numero: "90-2015", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-004830-1027-CA", nexusId: "sen-1-0034-641044" },
     { fecha: "2015-06-12", numero: "94-2015", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-004506-1027-CA", nexusId: "sen-1-0034-641941" },
+    { fecha: "2015-06-12", numero: "57-2015", despacho: "Tribunal Contencioso Administrativo, Sección VII", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "13-006761-1027-CA", nexusId: "sen-1-0034-641945" },
     { fecha: "2015-07-03", numero: "111-2015", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-001687-1027-CA", nexusId: "sen-1-0034-647600" },
     { fecha: "2015-07-22", numero: "120-2015", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "12-001357-1027-CA", nexusId: "sen-1-0034-644719" },
     { fecha: "2015-07-29", numero: "809-2015", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "11-003175-1027-CA", nexusId: "sen-1-0034-645508" },
@@ -769,6 +798,7 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2019-08-06", numero: "1841-2019", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "14-006572-1027-CA", nexusId: "sen-1-0004-943585" },
     { fecha: "2019-08-30", numero: "456-2019", despacho: "Tribunal Contencioso Administrativo, Sección III", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "17-011361-1027-CA", nexusId: "sen-1-0034-944671" },
     { fecha: "2019-10-31", numero: "137-2019", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "17-003019-1027-CA", nexusId: "sen-1-0034-944773" },
+    { fecha: "2020-02-27", numero: "44-2020", despacho: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", tribunal: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", grupo: "Jurisdicción contencioso-administrativa", expediente: "14-003951-1027-CA", nexusId: "sen-1-1011-978788" },
     { fecha: "2020-03-20", numero: "26-2020", despacho: "Tribunal Contencioso Administrativo, Sección VII", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "18-004488-1027-CA", nexusId: "sen-1-0034-968515" },
     { fecha: "2020-03-23", numero: "33-2020", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "18-004121-1027-CA", nexusId: "sen-1-0034-968483" },
     { fecha: "2020-04-23", numero: "46-2020", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "15-007534-1027-CA", nexusId: "sen-1-0034-971508" },
@@ -782,6 +812,7 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2021-02-11", numero: "28-2021", despacho: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", tribunal: "Tribunal de Casación Contencioso Administrativo y Civil de Hacienda", grupo: "Jurisdicción contencioso-administrativa", expediente: "15-004234-1027-CA", nexusId: "sen-1-1011-1039746" },
     { fecha: "2021-05-31", numero: "49-2021", despacho: "Tribunal Contencioso Administrativo, Sección V", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "18-002675-1027-CA", nexusId: "sen-1-0034-1032058" },
     { fecha: "2021-06-30", numero: "88-2021", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "16-009230-1027-CA", nexusId: "sen-1-0034-1042815" },
+    { fecha: "2021-09-16", numero: "107-2021", despacho: "Tribunal Contencioso Administrativo, Sección IV", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "18-008705-1027-CA", nexusId: "sen-1-0034-1059611" },
     { fecha: "2021-09-30", numero: "422-2021", despacho: "Tribunal Contencioso Administrativo, Sección III", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "19-002993-1027-CA", nexusId: "sen-1-0034-1059835" },
     { fecha: "2021-11-09", numero: "148-2021", despacho: "Tribunal Contencioso Administrativo, Sección VI", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "17-007143-1027-CA", nexusId: "sen-1-0034-1059913" },
     { fecha: "2021-11-26", numero: "535-2021", despacho: "Tribunal Contencioso Administrativo, Sección III", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "19-003935-1027-CA", nexusId: "sen-1-0034-1064072" },
@@ -819,6 +850,9 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
     { fecha: "2025-09-08", numero: "8960-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "17-000575-1027-CA", nexusId: "sen-1-0034-1332374" },
     { fecha: "2025-09-17", numero: "3021-2025", despacho: "Sala Segunda", tribunal: "Sala Segunda", grupo: "Sala Segunda y tribunales de trabajo", expediente: "19-000861-1102-LA", nexusId: "sen-1-0034-1335948" },
     { fecha: "2025-09-29", numero: "9445-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "18-011517-1027-CA", nexusId: "sen-1-0034-1337258" },
+    { fecha: "2025-09-29", numero: "9486-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "21-007216-1027-CA", nexusId: "sen-1-0034-1337293" },
+    { fecha: "2025-10-06", numero: "9641-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "24-006867-1027-CA", nexusId: "sen-1-0034-1337389" },
+    { fecha: "2025-10-31", numero: "10306-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "21-003814-1027-CA", nexusId: "sen-1-0034-1349629" },
     { fecha: "2025-12-18", numero: "11433-2025", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "16-000623-1027-CA", nexusId: "sen-1-0034-1357138" },
     { fecha: "2026-01-28", numero: "591-2026", despacho: "Tribunal Contencioso Administrativo", tribunal: "Tribunal Contencioso Administrativo", grupo: "Jurisdicción contencioso-administrativa", expediente: "21-001068-1028-CA", nexusId: "sen-1-0034-1363385" },
     { fecha: "2026-02-05", numero: "200-2026", despacho: "Sala Primera", tribunal: "Sala Primera", grupo: "Sala Primera", expediente: "23-002654-1027-CA", nexusId: "sen-1-0004-1372307" },
@@ -1295,7 +1329,9 @@ export const RESOLUCIONES_QUE_CITAN: Record<string, ResolucionQueCita[]> = {
  *  vez por sesión; `articulos` dice en cuántos artículos de esa sesión. */
 export const PRONUNCIAMIENTOS_QUE_CITAN: Record<string, PronunciamientoQueCita[]> = {
   "indexacion-de-obligaciones-dinerarias": [
+    { fecha: "2005-06-10", numero: "OJ-074-2005", organo: "Procuraduría General de la República", tipo: "Opinión jurídica", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=13221&param2=1&param3=1" },
     { fecha: "2005-07-07", numero: "Sesión 52-2005", organo: "Consejo Superior del Poder Judicial", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-1536-53" },
+    { fecha: "2005-08-01", numero: "OJ-108-2005", organo: "Procuraduría General de la República", tipo: "Opinión jurídica", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=13299&param2=1&param3=1" },
     { fecha: "2005-08-23", numero: "Sesión 65-2005", organo: "Consejo Superior del Poder Judicial", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-1549-57" },
     { fecha: "2005-09-06", numero: "Sesión 70-2005", organo: "Consejo Superior del Poder Judicial", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-1554-7" },
     { fecha: "2009-08-31", numero: "Sesión 59-2009", organo: "Junta Directiva de la ARESEP", tipo: "Acta", enlace: "https://aresep.go.cr/wp-content/uploads/2012/09/Acta_059-2009ultima_version.pdf" },
@@ -1304,6 +1340,8 @@ export const PRONUNCIAMIENTOS_QUE_CITAN: Record<string, PronunciamientoQueCita[]
     { fecha: "2013-12-16", numero: "Sesión 52-2013", organo: "Corte Plena", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-2762-24" },
     { fecha: "2015-07-28", numero: "OJ-079-2015", organo: "Procuraduría General de la República", tipo: "Opinión jurídica", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=18952&param2=1&param3=1" },
     { fecha: "2018-06-28", numero: "Informe en la acción 18-008401-0007-CO", organo: "Procuraduría General de la República", tipo: "Informe a la Sala Constitucional", enlace: "https://sinalevi.go.cr/ResultadosAsuntos/Informacion?param1=7091&param2=1&param3=1" },
+    { fecha: "2020-11-18", numero: "C-457-2020", organo: "Procuraduría General de la República", tipo: "Dictamen", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=22434&param2=1&param3=1" },
+    { fecha: "2024-07-22", numero: "C-159-2024", organo: "Procuraduría General de la República", tipo: "Dictamen", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=24561&param2=1&param3=1" },
     { fecha: "2025-04-24", numero: "Sesión 34-2025", organo: "Consejo Superior del Poder Judicial", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-8649-13" },
   ],
   "responsabilidad-del-estado-por-omision": [
@@ -1361,6 +1399,7 @@ export const PRONUNCIAMIENTOS_QUE_CITAN: Record<string, PronunciamientoQueCita[]
     { fecha: "2019-02-15", numero: "Sesión 9-2019", organo: "Junta Directiva de la ARESEP", tipo: "Acta", enlace: "https://aresep.go.cr/wp-content/uploads/2019/01/ACTA_09-2019.pdf" },
     { fecha: "2021-08-19", numero: "Sesión 71-2021", organo: "Consejo Superior del Poder Judicial", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-5464-25" },
     { fecha: "2022-06-23", numero: "Sesión 53-2022", organo: "Consejo Superior del Poder Judicial", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-5748-14" },
+    { fecha: "2022-06-28", numero: "Decreto 43629-MICITT", organo: "Poder Ejecutivo", tipo: "Decreto ejecutivo", enlace: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=97412&param2=131492&param3=1" },
   ],
   "caducidad-de-la-accion": [
     { fecha: "2014-03-10", numero: "Sesión 10-2014", organo: "Corte Plena", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-2792-20" },
@@ -1378,6 +1417,39 @@ export const PRONUNCIAMIENTOS_QUE_CITAN: Record<string, PronunciamientoQueCita[]
     { fecha: "2024-05-06", numero: "Sesión 19-2024", organo: "Corte Plena", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-8333-13" },
     { fecha: "2024-08-05", numero: "C-169-2024", organo: "Procuraduría General de la República", tipo: "Dictamen", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=24584&param2=1&param3=1" },
     { fecha: "2025-02-17", numero: "C-031-2025", organo: "Procuraduría General de la República", tipo: "Dictamen", enlace: "https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=24827&param2=1&param3=1" },
-    { fecha: "2026-07-06", numero: "Sesión 30-2026", organo: "Corte Plena", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-9050-25", articulos: 158 },
+    { fecha: "2026-07-06", numero: "Sesión 30-2026", organo: "Corte Plena", tipo: "Acta", enlace: "https://nexuspj.poder-judicial.go.cr/document/act-1-0003-9050-94", articulos: 158 },
+  ],
+};
+
+/** Trabajos académicos del corpus de doctrina que citan cada sentencia:
+ *  tesis universitarias y revistas jurídicas, revisadas una por una. */
+export const DOCTRINA_QUE_CITA: Record<string, TrabajoQueCita[]> = {
+  "indexacion-de-obligaciones-dinerarias": [
+    { anio: "2009", titulo: "Revista El Foro N.° 9 (2009)", clase: "Revista", institucion: "Colegio de Abogados y Abogadas de Costa Rica", publicacion: "Revista El Foro", enlace: "https://abogados.or.cr/El-Foro-9.pdf" },
+    { anio: "2010", titulo: "Revista Judicial N.° 98 (2010)", clase: "Revista", institucion: "Corte Suprema de Justicia — Escuela Judicial", publicacion: "Revista Judicial", enlace: "https://escuelajudicialpj.poder-judicial.go.cr/images/DocsRevista/revistajudicial_098.pdf" },
+    { anio: "2014", titulo: "Revista Judicial N.° 112 (2014)", clase: "Revista", institucion: "Corte Suprema de Justicia — Escuela Judicial", publicacion: "Revista Judicial", enlace: "https://escuelajudicialpj.poder-judicial.go.cr/images/DocsRevista/revistajudicial_112.pdf" },
+    { anio: "2025", titulo: "Revista de Derecho de la Hacienda Pública (CGR) — Vol-XXV_2025", clase: "Revista", institucion: "Contraloría General de la República de Costa Rica", publicacion: "Revista de Derecho de la Hacienda Pública (CGR)", enlace: "https://www.cgr.go.cr/03-docs-rev-der.html" },
+  ],
+  "responsabilidad-del-estado-por-omision": [
+    { anio: "", titulo: "Revista El Foro N.° 12", clase: "Revista", institucion: "Colegio de Abogados y Abogadas de Costa Rica", publicacion: "Revista El Foro", enlace: "https://abogados.or.cr/El-Foro-12.pdf" },
+    { anio: "2021", titulo: "El régimen jurídico de la lesividad en el nuevo proceso contencioso administrativo. A propósito de la materia administrativa sancionatoria y la materia tributaria", clase: "Tesis", autores: "Garita Navarro, José Roberto", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/84467" },
+    { anio: "2021", titulo: "Apuntes sobre el tratamiento jurídico del silencio en el derecho administrativo y en el derecho tributario", clase: "Tesis", autores: "Rodríguez Vargas, Luis Felipe; Segura Sánchez, Luis Alejandro", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/85232" },
+    { anio: "2022", titulo: "El restablecimiento de la legalidad urbanística en Costa Rica: Un análisis teórico y pragmático de la utilización de la demolición en sede administrativa municipal", clase: "Tesis", autores: "Mejías Rodríguez, Carlos José", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/88169" },
+    { anio: "2024", titulo: "Revista Judicial N.° 138 (2024)", clase: "Revista", institucion: "Corte Suprema de Justicia — Escuela Judicial", publicacion: "Revista Judicial", enlace: "https://escuelajudicialpj.poder-judicial.go.cr/images/DocsRevista/revistajudicial_138_2024.pdf" },
+  ],
+  "caducidad-del-procedimiento-administrativo": [
+    { anio: "2017", titulo: "La caducidad de la instancia en el proceso contencioso-administrativo: una reflexión en torno a la inactividad procesal y su tratamiento jurisdiccional", clase: "Tesis", autores: "Argüello Rojas, Luis Mariano", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/89882" },
+    { anio: "2024", titulo: "Tutela del acceso a la justicia en la resolución de conflictos de competencia entre la jurisdicción agraria y contencioso administrativa: Soluciones desde la Teoría del Derecho Público y conforme a un enfoque de Derechos Humanos", clase: "Tesis", autores: "Rudín Arguedas, Diego Alejandro; Vives Blen, Javier Antonio", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/99883" },
+    { anio: "2025", titulo: "Instrucción de faltas graves y muy graves en la Universidad de Costa Rica: quo vadis? A modo de rendición de cuentas como integrante de la Comisión Instructora Institucional", clase: "Tesis", autores: "De La Cruz Figueroa, Yalena", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/101767" },
+    { anio: "2025", titulo: "El elemento temporal de la potestad disciplinaria en las relaciones de empleo público en Costa Rica, crítica y análisis de inseguridades jurídicas en su tratamiento jurisprudencial", clase: "Tesis", autores: "Chacón Mora, Carolina; López Carrillo, Edgar Andrey", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/102992" },
+  ],
+  "responsabilidad-bancaria-por-fraude-electronico": [
+    { anio: "2014", titulo: "Revista Judicial N.° 112 (2014)", clase: "Revista", institucion: "Corte Suprema de Justicia — Escuela Judicial", publicacion: "Revista Judicial", enlace: "https://escuelajudicialpj.poder-judicial.go.cr/images/DocsRevista/revistajudicial_112.pdf" },
+    { anio: "2020", titulo: "Responsabilidad civil objetiva de la actividad bancaria frente al fraude informático: phishing", clase: "Tesis", autores: "Espinoza Cerdas, Stephanie Karina", institucion: "ULACIT — Universidad Latinoamericana de Ciencia y Tecnología", publicacion: "Tesis ULACIT", enlace: "https://hdl.handle.net/20.500.14230/7315" },
+    { anio: "2021", titulo: "Construcción legislativa y aplicación jurisprudencial del delito de “estafa” informática en Costa Rica del año 2014 al 2019. Énfasis en el uso indebido de datos", clase: "Tesis", autores: "Calderón Chaves, Freddy", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/86548" },
+  ],
+  "caducidad-de-la-accion": [
+    { anio: "2017", titulo: "La caducidad de la instancia en el proceso contencioso-administrativo: una reflexión en torno a la inactividad procesal y su tratamiento jurisdiccional", clase: "Tesis", autores: "Argüello Rojas, Luis Mariano", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/89882" },
+    { anio: "2021", titulo: "El régimen jurídico de la lesividad en el nuevo proceso contencioso administrativo. A propósito de la materia administrativa sancionatoria y la materia tributaria", clase: "Tesis", autores: "Garita Navarro, José Roberto", institucion: "Universidad de Costa Rica — Facultad de Derecho", publicacion: "Tesis UCR (Kérwá)", enlace: "https://hdl.handle.net/10669/84467" },
   ],
 };

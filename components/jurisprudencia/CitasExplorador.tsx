@@ -3,8 +3,9 @@
 /* Las citas de una sentencia: la cifra total, la serie por año y el reparto
    por despacho, con la lista completa de resoluciones detrás. Debajo, las
    citas fuera de los tribunales (Procuraduría, Contraloría, Tribunal
-   Registral, ARESEP y el Poder Judicial en sede administrativa), cada una
-   enlazada a su fuente oficial. Cada año y
+   Registral, ARESEP y el Poder Judicial en sede administrativa) y, al final,
+   los trabajos académicos que la citan, cada uno enlazado a su fuente
+   oficial. Cada año y
    cada despacho es un botón que abre la lista filtrada; la lista está
    siempre en el HTML (oculta hasta que se abre) y se descarga en CSV, así
    cualquier cifra del gráfico se puede comprobar una por una en Nexus.
@@ -13,7 +14,7 @@
 
 import { useId, useRef, useState } from "react";
 import { ArrowSquareOut, CaretDown, DownloadSimple } from "@phosphor-icons/react";
-import type { PronunciamientoQueCita, ResolucionQueCita } from "@/lib/jurisprudencia-citas";
+import type { PronunciamientoQueCita, ResolucionQueCita, TrabajoQueCita } from "@/lib/jurisprudencia-citas";
 
 type Filtro = { tipo: "anio"; valor: number } | { tipo: "grupo"; valor: string } | null;
 
@@ -28,6 +29,7 @@ const PLURAL: Record<string, string> = {
   Voto: "votos",
   Acta: "actas",
   Resolución: "resoluciones",
+  "Decreto ejecutivo": "decretos ejecutivos",
 };
 /* Cada órgano, en el orden del pie; lo que no es de las cuatro primeras
    sedes es del Poder Judicial en sede administrativa. */
@@ -36,7 +38,11 @@ const SEDES = [
   { prefijo: /^Contraloría/, sede: "de la Contraloría" },
   { prefijo: /^Tribunal Registral/, sede: "del Tribunal Registral Administrativo" },
   { prefijo: /ARESEP/, sede: "de la ARESEP" },
-  { prefijo: /^(?!Procuraduría|Contraloría|Tribunal Registral|.*ARESEP)/, sede: "del Poder Judicial en sede administrativa" },
+  { prefijo: /^Poder Ejecutivo/, sede: "" },
+  {
+    prefijo: /^(?!Procuraduría|Contraloría|Tribunal Registral|Poder Ejecutivo|.*ARESEP)/,
+    sede: "del Poder Judicial en sede administrativa",
+  },
 ];
 /* «a, b y c», con «e» ante palabra que empieza por el sonido i. */
 function enumerar(xs: string[]) {
@@ -54,9 +60,11 @@ export function CitasExplorador({
   metodo,
   csv,
   pronunciamientos = [],
+  doctrina = [],
 }: {
   lista: ResolucionQueCita[];
   pronunciamientos?: PronunciamientoQueCita[];
+  doctrina?: TrabajoQueCita[];
   grupos: string[];
   corte: string;
   metodo: string;
@@ -77,9 +85,26 @@ export function CitasExplorador({
     const tipos = [
       ...new Set(pronunciamientos.filter((p) => prefijo.test(p.organo)).map((p) => PLURAL[p.tipo] ?? p.tipo.toLowerCase())),
     ];
-    return tipos.length ? [`${enumerar(tipos)} ${sede}`] : [];
+    return tipos.length ? [`${enumerar(tipos)} ${sede}`.trim()] : [];
   });
   const hayActas = pronunciamientos.some((p) => p.tipo === "Acta");
+  /* Los pronunciamientos se dibujan con la misma gramática que las
+     resoluciones: columnas por año y barras por órgano. Las fechas que solo
+     traen el año cuentan igual, por sus cuatro primeras cifras. */
+  const aniosP = pronunciamientos.map((p) => Number(p.fecha.slice(0, 4)));
+  const primeroP = aniosP.length ? Math.min(...aniosP) : 0;
+  const ultimoP = aniosP.length ? Math.max(...aniosP) : 0;
+  const porAnioP = Array.from({ length: ultimoP - primeroP + 1 }, (_, i) => {
+    const anio = primeroP + i;
+    return { anio, n: aniosP.filter((a) => a === anio).length };
+  });
+  const maxAnioP = Math.max(1, ...porAnioP.map((a) => a.n));
+  const maxOrgano = Math.max(1, ...porOrgano.map(([, n]) => n));
+  const rotulosP = new Set(
+    porAnioP.length ? [primeroP, ultimoP, ...(ultimoP - primeroP > 6 ? [primeroP + Math.round((ultimoP - primeroP) / 2)] : [])] : [],
+  );
+  const nd = doctrina.length;
+  const tesis = doctrina.filter((d) => d.clase === "Tesis").length;
   const cabecera = useRef<HTMLDivElement>(null);
 
   const total = lista.length;
@@ -360,19 +385,56 @@ export function CitasExplorador({
             </span>
             <span className="max-w-[56ch] text-[15px] leading-snug text-cream/80">
               {np === 1 ? "pronunciamiento la cita" : "pronunciamientos la citan"} fuera de los tribunales
+              {ultimoP > primeroP ? `, entre ${primeroP} y ${ultimoP}` : primeroP ? `, en ${primeroP}` : ""}
             </span>
           </p>
-          <ul role="list" className="mt-5 grid gap-x-10 sm:grid-cols-2">
-            {porOrgano.map(([organo, n]) => (
-              <li
-                key={organo}
-                className="flex items-baseline justify-between gap-4 border-b border-cream/10 py-2 text-[15px] leading-snug"
+          <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-14">
+            <div>
+              <p className="type-label text-cream/65">Por año</p>
+              <ul
+                role="list"
+                aria-label="Pronunciamientos por año"
+                className="mt-5 flex h-24 items-end gap-[3px] border-b border-cream/15 md:gap-1 lg:h-32"
               >
-                <span className="text-cream/85">{organo}</span>
-                <span className="tabular-nums text-cream">{n}</span>
-              </li>
-            ))}
-          </ul>
+                {porAnioP.map((a) => (
+                  <li key={a.anio} className="flex h-full flex-1 items-end" title={`${a.anio}: ${a.n}`}>
+                    <span
+                      className="block w-full bg-gold/80"
+                      style={{ height: `${(a.n / maxAnioP) * 100}%` }}
+                      aria-label={`${a.anio}: ${a.n}`}
+                    />
+                  </li>
+                ))}
+              </ul>
+              <div aria-hidden="true" className="mt-2 flex gap-[3px] md:gap-1">
+                {porAnioP.map((a) => (
+                  <span
+                    key={a.anio}
+                    className="flex flex-1 justify-center whitespace-nowrap text-[13px] tabular-nums text-cream/65"
+                  >
+                    {rotulosP.has(a.anio) ? a.anio : ""}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="type-label text-cream/65">Por órgano</p>
+              <ul role="list" className="mt-3">
+                {porOrgano.map(([organo, n]) => (
+                  <li key={organo} className="py-2">
+                    <span className="flex items-baseline justify-between gap-4 text-[15px] leading-snug">
+                      <span className="text-cream/85">{organo}</span>
+                      <span className="tabular-nums text-cream">{n}</span>
+                    </span>
+                    <span aria-hidden="true" className="mt-1.5 block h-[3px] bg-cream/10">
+                      <span className="block h-full bg-gold" style={{ width: `${(n / maxOrgano) * 100}%` }} />
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
           <p className="mt-5">
             <button
               type="button"
@@ -426,6 +488,54 @@ export function CitasExplorador({
           <p className="mt-4 max-w-[72ch] text-[13px] leading-relaxed text-cream/65">
             {mayuscula(enumerar(fuentes))}. {hayActas ? "Las actas cuentan una vez por sesión. " : ""}Cada número enlaza a su
             fuente oficial.
+          </p>
+        </div>
+      )}
+
+      {/* En la doctrina */}
+      {nd > 0 && (
+        <div className="mt-12 border-t border-cream/10 pt-8">
+          <p className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+            <span className="text-[32px] font-light leading-none tabular-nums tracking-[-0.02em] text-cream">{nd}</span>
+            <span className="max-w-[56ch] text-[15px] leading-snug text-cream/80">
+              {nd === 1 ? "trabajo académico la cita" : "trabajos académicos la citan"}
+              {tesis > 0 && `, ${tesis === nd ? (nd === 1 ? "una tesis universitaria" : "todas tesis universitarias") : `${tesis} de ellos tesis universitarias`}`}
+            </span>
+          </p>
+          <ol role="list" className="mt-5 divide-y divide-cream/10 border-y border-cream/10">
+            {doctrina.map((d) => (
+              <li
+                key={`${d.titulo}-${d.anio}`}
+                className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1 py-3 text-[15px] leading-snug md:grid-cols-[64px_minmax(0,1fr)] md:gap-5"
+              >
+                <span className="tabular-nums text-cream/65">{d.anio || "—"}</span>
+                <span className="min-w-0">
+                  {d.enlace ? (
+                    <a
+                      href={d.enlace}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline items-center gap-1 font-medium text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                    >
+                      {d.titulo}
+                      <ArrowSquareOut size={11} aria-hidden="true" className="ml-1 inline text-cream/50" />
+                    </a>
+                  ) : (
+                    <span className="font-medium text-cream">{d.titulo}</span>
+                  )}
+                  <span className="mt-0.5 block text-[13px] text-cream/70 md:text-[14px]">
+                    {[d.autores, d.institucion, d.clase === "Revista" ? d.publicacion : null]
+                      .filter((x) => x && x !== d.titulo)
+                      .join(" · ")}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-4 max-w-[72ch] text-[13px] leading-relaxed text-cream/65">
+            Tesis de los repositorios universitarios de acceso abierto y revistas jurídicas publicadas en línea,
+            leídas una por una. De un número completo de revista se cita el número, porque la cita está en uno de sus
+            artículos. Cada título enlaza a su fuente.
           </p>
         </div>
       )}
