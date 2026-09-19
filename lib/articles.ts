@@ -94,6 +94,25 @@ export function getArticlesByAuthor(authorSubstring: string): ArticleMeta[] {
 
 export function formatDate(dateStr: string): string {
   try {
+    // Las fechas del frontmatter vienen como "YYYY-MM-DD" (solo día). Si se
+    // pasan a `new Date(dateStr)` se interpretan como medianoche UTC y, al
+    // formatearlas en una zona con offset negativo (Costa Rica, UTC-6), la
+    // fecha retrocede un día. Para evitarlo, construimos la fecha en UTC a
+    // partir de sus componentes y la formateamos también en UTC, de modo que
+    // el día mostrado siempre coincida con el escrito, sin importar la zona
+    // horaria del servidor.
+    const isoDayMatch = dateStr.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (isoDayMatch) {
+      const [, year, month, day] = isoDayMatch;
+      const d = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+      return d.toLocaleDateString("es-CR", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "UTC",
+      });
+    }
+
     const d = new Date(dateStr);
     return d.toLocaleDateString("es-CR", {
       year: "numeric",

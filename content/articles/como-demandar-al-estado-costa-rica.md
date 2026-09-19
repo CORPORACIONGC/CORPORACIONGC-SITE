@@ -63,7 +63,7 @@ Aquí existe una confusión generalizada que conviene aclarar. **En la mayoría 
 
 El artículo 31 del CPCA establece con claridad: *"El agotamiento de la vía administrativa será facultativo."* Esto significa que el administrado puede optar por interponer los recursos administrativos (revocatoria, apelación) o puede acudir directamente al Tribunal Contencioso Administrativo sin pasar por esa etapa.
 
-Esta fue una de las reformas más importantes del CPCA. Antes de 2008, el agotamiento era un requisito obligatorio — si usted no interponía los recursos administrativos, la demanda era inadmisible. El CPCA eliminó esa barrera para facilitar el acceso a la justicia.
+Esta fue una de las reformas más importantes del régimen contencioso. La ley de 1966 hacía del agotamiento un requisito obligatorio, y la demanda presentada sin los recursos previos era inadmisible. La Sala Constitucional anuló esa exigencia en 2006 (voto 2006-3669) y el CPCA, vigente desde 2008, la sustituyó por la regla del agotamiento facultativo. Qué recurso cabe, ante quién y en qué plazo lo explicamos en la guía sobre el [recurso de revocatoria y apelación contra un acto administrativo](/articulos/recursos-contra-acto-administrativo-revocatoria-apelacion-lgap).
 
 **¿Cuándo sí es obligatorio?** El propio artículo 31 contempla excepciones derivadas de los artículos 173 y 182 de la Constitución Política. En la práctica, la excepción más clara es la [contratación pública](/areas/contratacion-publica), donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Las demás excepciones requieren un análisis caso por caso que debe realizar un abogado especialista.
 

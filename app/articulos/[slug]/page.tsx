@@ -21,6 +21,15 @@ import { ComparativaRecursosContratacion } from "@/components/article/Comparativ
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import {
+  ClavesRecursosLgap,
+  MapaRecursosLgap,
+  PlazoTresDiasLgap,
+  FlujoApelacionSubsidio,
+  ComparativaRecursosLgap,
+  MateriasEspecialesRecursos,
+  NulidadAbsolutaRelativa,
+} from "@/components/article/RecursosLgap";
+import {
   ArrowLeft,
   CalendarBlank,
   Tag,
@@ -35,6 +44,22 @@ import { buildArticleMetadata } from "@/lib/page-metadata";
    sin alterar la voz editorial corporativa del artículo. */
 const ORG_AUTHOR_CREDENTIAL =
   "Bufete dirigido por el Dr. Óscar Eduardo González Camacho · Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508) y ex-Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
+
+/* Componentes que los artículos en Markdown pueden insertar como etiquetas
+   (<ReformaCpca />, <MapaRecursosLgap />, etc.). */
+const ARTICLE_COMPONENTS = {
+  ComparativaViasAmparo,
+  ComparativaRecursosContratacion,
+  ReformaCpca,
+  CapacitacionEleinmsa,
+  ClavesRecursosLgap,
+  MapaRecursosLgap,
+  PlazoTresDiasLgap,
+  FlujoApelacionSubsidio,
+  ComparativaRecursosLgap,
+  MateriasEspecialesRecursos,
+  NulidadAbsolutaRelativa,
+};
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
 // evitando que Google los archive como "rastreada, sin indexar".
@@ -346,7 +371,7 @@ export default async function ArticlePage({
               <div className="prose-article mb-10">
                 <MDXRemote
                   source={article.content}
-                  components={{ ComparativaViasAmparo, ComparativaRecursosContratacion, ReformaCpca, CapacitacionEleinmsa }}
+                  components={ARTICLE_COMPONENTS}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],
@@ -361,7 +386,7 @@ export default async function ArticlePage({
               <div className="prose-article">
                 <MDXRemote
                   source={article.content}
-                  components={{ ComparativaViasAmparo, ComparativaRecursosContratacion, ReformaCpca, CapacitacionEleinmsa }}
+                  components={ARTICLE_COMPONENTS}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],

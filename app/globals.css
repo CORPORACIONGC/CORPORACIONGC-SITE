@@ -903,3 +903,290 @@ html {
 .dark .prose-article > table tbody td:first-child {
   color: var(--color-cream);
 }
+
+/* ============================================================
+   Guía de recursos de la LGAP (.gc-lgap): cifras clave, mapa de
+   decisión, cómputo del plazo, recorrido de la apelación en
+   subsidio, tablas y nulidades. Componentes en
+   components/article/RecursosLgap.tsx. Colores del tema: el
+   burdeos es el acento en modo claro y el oro en modo oscuro.
+   ============================================================ */
+.prose-article .gc-lgap {
+  --lgap-accent: var(--color-burgundy);
+  --lgap-accent-text: var(--color-burgundy);
+  --lgap-line: color-mix(in oklab, var(--color-cream) 11%, transparent);
+  --lgap-soft: color-mix(in oklab, var(--color-burgundy) 6%, transparent);
+  margin: 2.5rem 0; padding: 28px; border-radius: 20px;
+  border: 1px solid var(--lgap-line);
+  background: color-mix(in oklab, var(--color-cream) 2%, var(--color-surface));
+  color: var(--color-cream); font-family: var(--font-body);
+}
+.dark .prose-article .gc-lgap {
+  --lgap-accent-text: var(--color-gold);
+  --lgap-soft: color-mix(in oklab, var(--color-burgundy) 16%, transparent);
+}
+.prose-article .gc-lgap :where(p) { margin: 0; max-width: none; text-align: left; }
+.prose-article .gc-lgap :where(ul, ol) { list-style: none; padding: 0; margin: 0; }
+.prose-article .gc-lgap :where(li) { margin: 0; text-align: left; }
+.prose-article .gc-lgap a { font-weight: 500; }
+.prose-article .gc-lgap figcaption { display: grid; gap: 6px; margin: 0 0 22px; }
+.prose-article .gc-lgap .gc-lgap-eyebrow {
+  font-size: 10.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--lgap-accent-text);
+}
+.prose-article .gc-lgap .gc-lgap-titulo {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 600;
+  letter-spacing: -0.02em; line-height: 1.25; color: var(--color-cream);
+}
+.prose-article .gc-lgap .gc-lgap-texto {
+  font-size: 0.95rem; line-height: 1.6;
+  color: color-mix(in oklab, var(--color-cream) 78%, transparent);
+}
+.prose-article .gc-lgap .gc-lgap-ref {
+  display: inline-block; margin-top: 10px; padding: 4px 8px; border-radius: 6px;
+  font-size: 11px; font-weight: 500; line-height: 1.3; letter-spacing: 0.01em;
+  background: color-mix(in oklab, var(--color-burgundy) 10%, transparent);
+  color: var(--color-burgundy);
+}
+.dark .prose-article .gc-lgap .gc-lgap-ref {
+  background: color-mix(in oklab, var(--color-burgundy) 30%, transparent);
+  color: color-mix(in oklab, var(--color-burgundy-light) 45%, white);
+}
+.prose-article .gc-lgap .gc-lgap-plazo {
+  display: inline-block; margin-left: 8px; padding: 3px 10px; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.01em; line-height: 1.4;
+  background: var(--color-burgundy); color: #fff; vertical-align: 1px; white-space: nowrap;
+}
+
+/* Las listas de estos diagramas no llevan la viñeta genérica de la prosa */
+.prose-article .gc-lgap .gc-lgap-claves-grid > li,
+.prose-article .gc-lgap .gc-lgap-chips > li { padding-left: 0; }
+.prose-article .gc-lgap .gc-lgap-claves-grid > li::before,
+.prose-article .gc-lgap .gc-lgap-chips > li::before { content: none; display: none; }
+.prose-article .gc-lgap .gc-lgap-nulidad-col ul > li::before { left: 0; top: 0.62em; }
+
+/* 1 · Cifras clave */
+.prose-article .gc-lgap-claves { padding: 24px; }
+.prose-article .gc-lgap-claves figcaption { margin-bottom: 16px; }
+.prose-article .gc-lgap-claves-grid {
+  display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.prose-article .gc-lgap-clave {
+  display: flex; flex-direction: column; padding: 16px; border-radius: 14px;
+  background: var(--lgap-soft);
+  border: 1px solid color-mix(in oklab, var(--color-burgundy) 20%, transparent);
+}
+.prose-article .gc-lgap-clave-valor {
+  font-family: var(--font-display); font-size: 2.3rem; font-weight: 600; line-height: 1;
+  letter-spacing: -0.03em; color: var(--lgap-accent-text);
+}
+.prose-article .gc-lgap-clave-unidad {
+  display: block; margin-top: 6px; font-family: var(--font-body); font-size: 0.8rem;
+  font-weight: 600; letter-spacing: 0.02em; color: var(--color-cream);
+}
+.prose-article .gc-lgap-clave-texto {
+  margin-top: 6px; font-size: 0.86rem; line-height: 1.4;
+  color: color-mix(in oklab, var(--color-cream) 72%, transparent);
+}
+.prose-article .gc-lgap-clave .gc-lgap-ref { margin-top: auto; padding-top: 4px; align-self: flex-start; }
+.prose-article .gc-lgap-clave-texto { margin-bottom: 10px; }
+
+/* 2 · Mapa de decisión */
+.prose-article .gc-lgap-pasos { counter-reset: none; }
+.prose-article .gc-lgap-paso {
+  position: relative; display: grid; grid-template-columns: 36px minmax(0, 1fr);
+  gap: 16px; padding-bottom: 26px;
+}
+.prose-article .gc-lgap-paso::before {
+  content: ""; position: absolute; left: 17px; top: 40px; bottom: 4px; width: 2px;
+  background: var(--lgap-line);
+}
+.prose-article .gc-lgap-paso:last-child { padding-bottom: 0; }
+.prose-article .gc-lgap-paso:last-child::before { display: none; }
+.prose-article .gc-lgap-paso-num {
+  width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--color-burgundy); color: #fff; font-weight: 600; font-size: 0.95rem;
+}
+.prose-article .gc-lgap-pregunta {
+  font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+  line-height: 1.35; color: var(--color-cream); padding-top: 6px; margin-bottom: 10px;
+}
+.prose-article .gc-lgap-ramas {
+  display: grid; gap: 10px; margin: 2px 0 12px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+.prose-article .gc-lgap-rama {
+  display: flex; flex-direction: column; padding: 14px 16px; border-radius: 14px;
+  border: 1px solid var(--lgap-line); background: var(--color-surface);
+}
+.prose-article .gc-lgap-rama--fuerte {
+  border-color: color-mix(in oklab, var(--color-burgundy) 45%, transparent);
+  background: var(--lgap-soft);
+}
+.prose-article .gc-lgap-rama--tenue { border-style: dashed; }
+.prose-article .gc-lgap-rama-caso {
+  font-size: 0.84rem; line-height: 1.45; margin-bottom: 8px;
+  color: color-mix(in oklab, var(--color-cream) 66%, transparent);
+}
+.prose-article .gc-lgap-rama-resultado {
+  font-size: 0.95rem; font-weight: 600; line-height: 1.45; color: var(--color-cream);
+}
+.prose-article .gc-lgap-rama-resultado .gc-lgap-plazo { margin: 6px 0 0; display: table; }
+.prose-article .gc-lgap-rama .gc-lgap-ref { margin-top: auto; padding-top: 4px; align-self: flex-start; }
+.prose-article .gc-lgap-rama-resultado { margin-bottom: 10px; }
+.prose-article .gc-lgap-chips {
+  display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.prose-article .gc-lgap-chips li {
+  padding: 12px 14px; border-radius: 12px; border: 1px solid var(--lgap-line);
+  font-size: 0.9rem; line-height: 1.45;
+  color: color-mix(in oklab, var(--color-cream) 78%, transparent);
+}
+.prose-article .gc-lgap-chips li b { display: block; color: var(--color-cream); font-weight: 600; }
+.prose-article .gc-lgap-chips .gc-lgap-ref { display: table; margin-top: 8px; }
+.prose-article .gc-lgap-salida {
+  margin-top: 22px; padding: 16px 18px; border-radius: 12px;
+  border-left: 3px solid var(--color-gold);
+  background: color-mix(in oklab, var(--color-gold) 9%, transparent);
+  font-size: 0.95rem; line-height: 1.6; color: color-mix(in oklab, var(--color-cream) 85%, transparent);
+}
+.prose-article .gc-lgap-salida .gc-lgap-ref { display: table; }
+
+/* 3 · Cómputo del plazo */
+.prose-article .gc-lgap-semana { display: grid; gap: 8px; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.prose-article .gc-lgap-dia {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px 6px; border-radius: 12px; border: 1px solid var(--lgap-line); text-align: center;
+}
+.prose-article .gc-lgap-dia-nombre {
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-cream);
+}
+.prose-article .gc-lgap-dia-nota {
+  font-size: 0.74rem; line-height: 1.3; color: color-mix(in oklab, var(--color-cream) 72%, transparent);
+  overflow-wrap: anywhere;
+}
+.prose-article .gc-lgap-dia--notif {
+  border-color: color-mix(in oklab, var(--color-gold) 70%, transparent);
+  background: color-mix(in oklab, var(--color-gold) 14%, transparent);
+}
+.prose-article .gc-lgap-dia--inhabil {
+  background: repeating-linear-gradient(135deg, transparent 0 6px, color-mix(in oklab, var(--color-cream) 5%, transparent) 6px 8px);
+}
+.prose-article .gc-lgap-dia--inhabil .gc-lgap-dia-nombre,
+.prose-article .gc-lgap-dia--inhabil .gc-lgap-dia-nota { color: color-mix(in oklab, var(--color-cream) 45%, transparent); }
+.prose-article .gc-lgap-dia--habil {
+  border-color: color-mix(in oklab, var(--color-burgundy) 30%, transparent); background: var(--lgap-soft);
+}
+.prose-article .gc-lgap-dia--vence { border-color: var(--color-burgundy); background: var(--color-burgundy); }
+.prose-article .gc-lgap-dia--vence .gc-lgap-dia-nombre,
+.prose-article .gc-lgap-dia--vence .gc-lgap-dia-nota { color: #fff; }
+.prose-article .gc-lgap-dia--tarde { border-style: dashed; }
+.prose-article .gc-lgap-dia--tarde .gc-lgap-dia-nota { text-decoration: line-through; }
+.prose-article .gc-lgap-pie {
+  margin-top: 16px; font-size: 0.9rem; line-height: 1.6;
+  color: color-mix(in oklab, var(--color-cream) 72%, transparent);
+}
+.prose-article .gc-lgap-pie .gc-lgap-ref { display: table; }
+
+/* 4 · Recorrido de la apelación en subsidio */
+.prose-article .gc-lgap-flujo-lista { display: grid; gap: 0; }
+.prose-article .gc-lgap-nodo {
+  --nodo: var(--color-burgundy);
+  position: relative; display: grid; gap: 10px; padding: 0 0 18px 30px;
+}
+.prose-article .gc-lgap-nodo::before {
+  content: ""; position: absolute; left: 2px; top: 20px; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--nodo); box-shadow: 0 0 0 4px var(--color-surface);
+}
+.prose-article .gc-lgap-nodo::after {
+  content: ""; position: absolute; left: 7px; top: 34px; bottom: -2px; width: 2px; background: var(--lgap-line);
+}
+.prose-article .gc-lgap-nodo:last-child { padding-bottom: 0; }
+.prose-article .gc-lgap-nodo:last-child::after { display: none; }
+.prose-article .gc-lgap-nodo--usted { --nodo: var(--color-gold); }
+.prose-article .gc-lgap-nodo--organo { --nodo: var(--color-burgundy-light); }
+.prose-article .gc-lgap-nodo--superior { --nodo: var(--color-burgundy-dark); }
+.dark .prose-article .gc-lgap-nodo--superior { --nodo: #C77A98; }
+.prose-article .gc-lgap-nodo--juez { --nodo: var(--color-cream); }
+@media (min-width: 760px) {
+  .prose-article .gc-lgap-nodo:has(.gc-lgap-desvio) { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); }
+}
+.prose-article .gc-lgap-nodo-principal {
+  padding: 16px 18px; border-radius: 16px; border: 1px solid var(--lgap-line); background: var(--color-surface);
+}
+.prose-article .gc-lgap-actor {
+  display: block; margin-bottom: 6px; font-size: 10.5px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--lgap-accent-text);
+}
+.prose-article .gc-lgap-nodo-titulo {
+  font-family: var(--font-display); font-size: 1.02rem; font-weight: 600; line-height: 1.4;
+  color: var(--color-cream); margin-bottom: 6px;
+}
+.prose-article .gc-lgap-desvio {
+  align-self: start; padding: 14px 16px; border-radius: 14px;
+  border: 1px dashed color-mix(in oklab, var(--color-burgundy) 40%, transparent);
+  background: var(--lgap-soft);
+}
+.prose-article .gc-lgap-desvio-titulo {
+  font-size: 0.86rem; font-weight: 700; color: var(--lgap-accent-text); margin-bottom: 4px;
+}
+
+/* 5 · Tablas (sobre .gc-comparativa) */
+.prose-article .gc-lgap-tabla { margin: 2.25rem 0; }
+.prose-article .gc-lgap-tabla .gc-table-title {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; letter-spacing: -0.02em;
+  color: var(--color-cream); margin: 0 0 4px; max-width: none; text-align: left;
+}
+.prose-article .gc-lgap-tabla .gc-table-sub { font-size: 12.5px; max-width: none; text-align: left; }
+.prose-article .gc-lgap-tabla .gc-table-wrap { margin-bottom: 16px; }
+.prose-article .gc-lgap-tabla table { min-width: 680px; }
+.prose-article .gc-lgap-tabla td.gc-recurso { font-size: 16.5px; width: 19%; min-width: 130px; }
+.prose-article .gc-lgap-tabla td.gc-plazo b { display: block; color: var(--color-cream); font-weight: 600; }
+.prose-article .gc-lgap-tabla td.gc-plazo span { display: block; margin-bottom: 8px; }
+.prose-article .gc-lgap-tabla .gc-acronyms { max-width: none; text-align: left; }
+.dark .prose-article .gc-lgap-tabla .gc-ref {
+  background: color-mix(in oklab, var(--color-burgundy) 30%, transparent);
+  color: color-mix(in oklab, var(--color-burgundy-light) 45%, white);
+}
+
+/* 6 · Nulidades */
+.prose-article .gc-lgap-nulidad-grid {
+  display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.prose-article .gc-lgap-nulidad-col {
+  display: flex; flex-direction: column; padding: 18px 20px; border-radius: 16px;
+}
+.prose-article .gc-lgap-nulidad-col--absoluta {
+  border: 1px solid color-mix(in oklab, var(--color-burgundy) 45%, transparent); background: var(--lgap-soft);
+}
+.prose-article .gc-lgap-nulidad-col--relativa {
+  border: 1px solid color-mix(in oklab, var(--color-gold) 55%, transparent);
+  background: color-mix(in oklab, var(--color-gold) 8%, transparent);
+}
+.prose-article .gc-lgap-nulidad-nombre {
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--color-cream);
+}
+.prose-article .gc-lgap-nulidad-cuando {
+  margin: 6px 0 12px; font-size: 0.9rem; line-height: 1.5;
+  color: color-mix(in oklab, var(--color-cream) 72%, transparent);
+}
+.prose-article .gc-lgap-nulidad-col ul { display: grid; gap: 8px; margin-bottom: 12px; }
+.prose-article .gc-lgap-nulidad-col li {
+  position: relative; padding-left: 16px; font-size: 0.9rem; line-height: 1.5;
+  color: color-mix(in oklab, var(--color-cream) 84%, transparent);
+}
+.prose-article .gc-lgap-nulidad-col li::before {
+  content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--lgap-accent-text);
+}
+.prose-article .gc-lgap-nulidad-col .gc-lgap-ref { margin-top: auto; align-self: flex-start; }
+
+@media (max-width: 640px) {
+  .prose-article .gc-lgap { padding: 20px 16px; border-radius: 16px; margin-inline: -8px; }
+  .prose-article .gc-lgap-paso { grid-template-columns: 30px minmax(0, 1fr); gap: 12px; }
+  .prose-article .gc-lgap-paso-num { width: 30px; height: 30px; font-size: 0.85rem; }
+  .prose-article .gc-lgap-paso::before { left: 14px; top: 34px; }
+  .prose-article .gc-lgap-semana { grid-template-columns: 1fr; gap: 6px; }
+  .prose-article .gc-lgap-dia { flex-direction: row; justify-content: space-between; padding: 10px 14px; text-align: left; }
+  .prose-article .gc-lgap-clave-valor { font-size: 2rem; }
+}

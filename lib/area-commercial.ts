@@ -831,9 +831,9 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "Cuando el acto final pueda causarle un perjuicio grave —o en procedimientos disciplinarios de gravedad—, la Administración debe seguir el procedimiento ordinario (art. 308) con comparecencia oral y privada (art. 309), acceso al expediente y derecho de defensa. La omisión de formalidades sustanciales que cause indefensión acarrea la nulidad de lo actuado (art. 223).",
       },
     ],
-    relatedArticleSlug: "como-demandar-al-estado-costa-rica",
+    relatedArticleSlug: "recursos-contra-acto-administrativo-revocatoria-apelacion-lgap",
     relatedArticleLabel:
-      "Lea nuestra guía: ¿Cómo demandar al Estado en Costa Rica?",
+      "Lea nuestra guía: recurso de revocatoria y apelación contra un acto administrativo",
   },
   "empleo-publico": {
     hookHeadline: "¿Lo despidieron o sancionaron de un puesto público?",
