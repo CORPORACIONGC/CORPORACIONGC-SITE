@@ -9,7 +9,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
 seoTitle: "Recurso de revocatoria y apelación en subsidio: plazos LGAP"
-seoDescription: "Revocatoria, apelación en subsidio y revisión contra un acto administrativo: el plazo de 3 días hábiles de la LGAP, cómo se cuenta y cuándo ir al juez."
+seoDescription: "Contra el acto final caben revocatoria y apelación en subsidio en 3 días hábiles (art. 346 LGAP). Cómo se cuenta el plazo, ante quién y cuándo ir al juez."
 faq:
   - question: "¿Qué recursos existen contra un acto administrativo en Costa Rica?"
     answer: "La Ley General de la Administración Pública (LGAP) prevé dos recursos ordinarios, el de revocatoria (también llamado de reposición) y el de apelación, y uno extraordinario, el de revisión (artículo 343). La revocatoria la resuelve el mismo órgano que dictó el acto; la apelación, su superior jerárquico. Leyes especiales fijan reglas propias en materia municipal, tributaria y de contratación pública."
@@ -30,6 +30,8 @@ faq:
   - question: "¿Qué puedo alegar en el recurso?"
     answer: "Motivos de legalidad o de oportunidad (artículo 342). En legalidad, cualquier vicio en los elementos del acto: falta de competencia, motivo inexistente o falso, contenido ilícito o impreciso, desviación de poder (artículo 131.3), ausencia de motivación en los actos que imponen obligaciones o deniegan derechos (artículo 136), o la omisión de una formalidad sustancial del procedimiento que causó indefensión (artículo 223). Según la gravedad, el vicio produce nulidad absoluta o relativa (artículos 166 y 167)."
 ---
+
+> **En síntesis.** Contra un acto administrativo caben dos recursos ordinarios: la **revocatoria**, ante el mismo órgano que lo dictó, y la **apelación**, ante su superior jerárquico. Lo usual es presentarlos en un solo escrito, como revocatoria con apelación en subsidio. El plazo es de **tres días hábiles** contra el acto final y de **veinticuatro horas** contra los demás actos recurribles, contados desde el día siguiente a la última notificación (artículos 256 y 346 de la LGAP). Si la notificación llegó por correo electrónico, se tiene por hecha el día hábil siguiente al envío y el plazo corre desde el día hábil posterior (artículo 38 de la Ley N.° 8687). El recurso presentado fuera de plazo es inadmisible (artículo 347.2).
 
 Le llegó una resolución. Le imponen una multa, le niegan un permiso, lo excluyen de un concurso, le cobran una suma, le revocan una licencia o le abren un procedimiento. Al pie dice que contra lo resuelto caben los recursos de ley, y a veces ni eso. La pregunta que sigue es siempre la misma: **qué recurso cabe, ante quién se presenta y cuántos días tengo**. Este artículo la responde con el texto vigente de la [Ley General de la Administración Pública (LGAP, Ley N.° 6227)](https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=13231) y del Código Procesal Contencioso-Administrativo, y con la jurisprudencia de la Sala Constitucional, la Sala Primera y los tribunales contencioso-administrativos, además de los criterios de la Procuraduría General y de la Contraloría General. La advertencia de entrada conviene leerla dos veces: contra el acto final, el plazo es de **tres días hábiles**.
 

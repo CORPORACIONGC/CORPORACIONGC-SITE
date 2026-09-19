@@ -310,8 +310,14 @@ export function buildArticleMetadata(
   const title = article.seoTitle ?? article.title;
   const description = article.seoDescription ?? article.excerpt;
 
+  /* Sufijo de marca condicional: si «título · Corporación GC» supera los 60
+     caracteres, Google lo corta (y a veces lo reescribe en los dos puntos,
+     perdiendo las palabras clave del final). En ese caso el título va sin
+     sufijo; el resultado ya muestra el nombre del sitio encima. */
+  const withSuffix = `${title} · ${SITE_NAME}`;
+
   return {
-    title,
+    title: withSuffix.length > 60 ? { absolute: title } : title,
     description,
     openGraph: og({
       title: `${title} · Corporación GC`,
