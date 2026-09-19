@@ -32,7 +32,7 @@ export function KhevinEventoDestacado() {
               <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden">
                 <Image
                   src="/images/khevin-legal-hackers-bogota.jpeg"
-                  alt="Lic. Khevin Sánchez Zamora — Panelista en Global Summit Legal Hackers 2025, Bogotá"
+                  alt="Lic. Khevin Alberto Sánchez Zamora — Panelista en Global Summit Legal Hackers 2025, Bogotá"
                   width={1200}
                   height={800}
                   className="w-full h-full object-cover object-[50%_30%]"

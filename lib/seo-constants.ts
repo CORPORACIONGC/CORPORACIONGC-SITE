@@ -343,18 +343,18 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     photoFocus: "60% 50%",
   },
   "khevin-sanchez": {
-    name: "Lic. Khevin Sánchez Zamora",
+    name: "Lic. Khevin Alberto Sánchez Zamora",
     initials: "KS",
     role: "Abogado Asociado",
-    seoTitle: "Lic. Khevin Sánchez Zamora — Abogado en Derecho Público",
+    seoTitle: "Lic. Khevin Alberto Sánchez Zamora — Abogado en Derecho Público",
     seoDescription:
       "Abogado en Derecho Público en Costa Rica: medidas cautelares, litigio contencioso-administrativo y casación ante la Sala Primera. 3er mejor promedio, Examen de Excelencia 2025.",
-    ogTitle: "Lic. Khevin Sánchez Zamora — Corporación GC, CR",
+    ogTitle: "Lic. Khevin Alberto Sánchez Zamora — Corporación GC, CR",
     ogDescription:
       "Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. Investigador y panelista internacional en IA aplicada a la justicia. 3er mejor promedio del Examen de Excelencia 2025.",
-    twitterTitle: "Lic. Khevin Sánchez Zamora · Corporación GC",
+    twitterTitle: "Lic. Khevin Alberto Sánchez Zamora · Corporación GC",
     ogImageAlt:
-      "Retrato profesional del Lic. Khevin Sánchez Zamora, Abogado Asociado en Corporación GC.",
+      "Retrato profesional del Lic. Khevin Alberto Sánchez Zamora, Abogado Asociado en Corporación GC.",
     credential:
       "Litigio contra el Estado y medidas cautelares. 3.er mejor promedio del Examen de Excelencia, Colegio de Abogados 2025.",
     photo: "/images/khevin-sanchez.jpg",

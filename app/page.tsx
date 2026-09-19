@@ -105,7 +105,7 @@ const jsonLdSiteNavigation = {
     {
       "@type": "SiteNavigationElement",
       position: 4,
-      name: "Lic. Khevin Sánchez Zamora",
+      name: "Lic. Khevin Alberto Sánchez Zamora",
       description: "Abogado Asociado — Amplia experiencia en medidas cautelares y litigio contencioso-administrativo",
       url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
     },

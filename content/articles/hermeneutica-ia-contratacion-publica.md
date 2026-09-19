@@ -5,7 +5,7 @@ excerpt: "Estudio sobre la viabilidad jurídica y técnica de implementar sistem
 tags: ["Inteligencia Artificial", "Contratación Pública", "Administración Pública", "Transparencia", "SICOP", "Derecho Administrativo"]
 type: "pdf"
 pdfFile: "hermeneutica-ia-contratacion-publica.pdf"
-author: "Lic. Khevin Sánchez Zamora, Licda. Mariana Montero Acuña"
+author: "Lic. Khevin Alberto Sánchez Zamora, Licda. Mariana Montero Acuña"
 institution: "Universidad de Costa Rica"
 publicationType: "articulo"
 sourceReference: "Revista Estudiantil Hermenéutica, Edición XXVI (No. 26), Facultad de Derecho, Universidad de Costa Rica, junio 2025, pp. 75–144."

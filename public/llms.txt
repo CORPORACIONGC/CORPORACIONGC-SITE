@@ -30,7 +30,7 @@
 ## Equipo
 
 - Dr. Óscar Eduardo González Camacho — Fundador y Director. Ex-Magistrado de la Sala Primera (2002–2014). Co-redactor del CPCA. Doctor en Derecho por la Universidad de Alcalá de Henares (Sobresaliente Cum Laude). Catedrático Universitario, Universidad Escuela Libre de Derecho. Profesor de Doctorado, Maestría y Licenciatura en UCR. Carnet CAACR 3191.
-- Lic. Khevin Sánchez Zamora — Abogado Asociado. Amplia experiencia en medidas cautelares y litigio contencioso-administrativo. Investigador en IA aplicada a la justicia. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025. Carnet CAACR 37920.
+- Lic. Khevin Alberto Sánchez Zamora — Abogado Asociado. Amplia experiencia en medidas cautelares y litigio contencioso-administrativo. Investigador en IA aplicada a la justicia. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025. Carnet CAACR 37920.
 - MSc. Katherine González Coto — Abogada Asociada. Especialista en responsabilidad patrimonial y Derecho Expropiatorio. Maestría en Derecho Público, UCR. Carnet CAACR 30256.
 - Licda. Mariana Montero Acuña — Abogada Asociada. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado. Carnet CAACR 33716.
 - Lic. Esteban Pérez Herrera — Abogado Asociado y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR. Carnet CAACR 34399.
@@ -59,7 +59,7 @@ El equipo de Corporación GC ha publicado tesis, artículos en revistas indexada
 
 - Fecha: 23 de octubre de 2025 (jornada presencial)
 - Lugar: Universidad Javeriana, Bogotá, Colombia
-- Participación: Lic. Khevin Sánchez Zamora — Panelista en "IA en el Derecho: Más allá de la Eficiencia, la Urgencia de un Marco Ético"
+- Participación: Lic. Khevin Alberto Sánchez Zamora — Panelista en "IA en el Derecho: Más allá de la Eficiencia, la Urgencia de un Marco Ético"
 - Panelistas: Khevin Sánchez (Costa Rica), Ángela Villate – VillateLab (Colombia), Jimena Mora – Microsoft (México), Nicolás Castañeda – Keralty (Colombia)
 - Descripción: Primera edición suramericana del Global Summit Legal Hackers, encuentro internacional con líderes en legaltech, legal design, IA aplicada al Derecho y gobernanza de datos de más de 130 ciudades.
 - Organizadores: Legal Hackers Bogotá, Universidad Javeriana

@@ -81,7 +81,7 @@ export function Hero() {
             <div className="relative w-[80%] md:w-[85%] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/foto-perfil.jpeg"
-                alt="Lic. Khevin Sánchez Zamora"
+                alt="Lic. Khevin Alberto Sánchez Zamora"
                 width={768}
                 height={1024}
                 priority

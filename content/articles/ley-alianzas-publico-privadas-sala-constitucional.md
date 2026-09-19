@@ -4,7 +4,7 @@ date: "2026-09-18"
 excerpt: "El 9 de setiembre la Sala Constitucional declaró inconstitucional la agencia con la que el proyecto de Ley Marco de las Asociaciones Público Privadas (expediente 24.009) pretendía sustituir al Consejo Nacional de Concesiones, y otras normas sobre la Contraloría, el empleo, las tarifas y la iniciativa privada. Qué cayó, qué se sostuvo, qué sigue en la Asamblea y qué rige hoy."
 tags: ["APP", "Alianzas público-privadas", "Concesión de obra pública", "Sala Constitucional", "Expediente 24.009", "Ley 7762", "ANAPP", "Infraestructura", "Consulta de constitucionalidad"]
 type: "article"
-author: "Khevin Sánchez Zamora"
+author: "Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"

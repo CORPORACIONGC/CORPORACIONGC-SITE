@@ -4,7 +4,7 @@ date: "2026-09-18"
 excerpt: "La Ley 10961 obliga a los proveedores de servicios de activos virtuales a inscribirse ante SUGEF desde el 19 de setiembre de 2026. Quién queda cubierto, qué sanciones trae, por qué el registro es la llave del sistema bancario y por qué el trámite se gana antes de que abra la ventana."
 tags: ["VASP", "SUGEF", "Ley 10961", "Criptoactivos", "Activos Virtuales", "PSAV", "Cumplimiento", "Ley 7786", "CONASSIF", "Regla de Viaje"]
 type: "article"
-author: "Khevin Sánchez Zamora"
+author: "Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"

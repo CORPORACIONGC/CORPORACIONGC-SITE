@@ -124,7 +124,7 @@ export default async function AttorneyProfile({
       ],
       /* "Kevin" es la grafía con la que muchos usuarios lo buscan;
          alternateName permite que Google asocie ambas variantes. */
-      alternateName: ["Kevin Sánchez Zamora", "Khevin Sánchez"],
+      alternateName: ["Khevin Sánchez Zamora", "Kevin Sánchez Zamora", "Khevin Sánchez"],
       award: [
         "3.er mejor promedio — Examen de Excelencia Académica, Colegio de Abogados y Abogadas de Costa Rica (II Convocatoria, 2025)",
       ],
@@ -319,7 +319,7 @@ export default async function AttorneyProfile({
       ],
       performer: {
         "@type": "Person",
-        name: "Lic. Khevin Sánchez Zamora",
+        name: "Lic. Khevin Alberto Sánchez Zamora",
         "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
       },
       description: "Primera edición suramericana del Global Summit Legal Hackers. Panel: IA en el Derecho — Más allá de la Eficiencia, la Urgencia de un Marco Ético. Panelistas: Khevin Sánchez, Ángela Villate (VillateLab), Jimena Mora (Microsoft), Nicolás Castañeda (Keralty).",
@@ -344,7 +344,7 @@ export default async function AttorneyProfile({
       ],
       performer: {
         "@type": "Person",
-        name: "Lic. Khevin Sánchez Zamora",
+        name: "Lic. Khevin Alberto Sánchez Zamora",
         "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
       },
       description: "Panel: ¿Cómo llevar el cumplimiento ético de inteligencia artificial a la práctica y la automatización? Perspectiva de riesgos y ciencia de datos. Panelistas: Khevin Sánchez, Katherine Romero C., Raúl Trejos.",

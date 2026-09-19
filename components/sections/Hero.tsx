@@ -79,7 +79,7 @@ export function Hero() {
             <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/khevin-sanchez.jpg"
-                alt="Lic. Khevin Sánchez Zamora — Abogado Asociado de Corporación GC"
+                alt="Lic. Khevin Alberto Sánchez Zamora — Abogado Asociado de Corporación GC"
                 width={768}
                 height={1024}
                 priority

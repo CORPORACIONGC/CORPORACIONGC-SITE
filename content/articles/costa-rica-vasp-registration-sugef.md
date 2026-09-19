@@ -4,7 +4,7 @@ date: "2026-09-18"
 excerpt: "Costa Rica's Law 10961 requires Virtual Asset Service Providers to register with SUGEF from 19 September 2026. Who is covered, the penalties, why registration is the key to the banking system, and why the filing is won before the window opens."
 tags: ["VASP", "SUGEF", "Law 10961", "Crypto Regulation", "Virtual Assets", "Costa Rica", "AML Compliance", "CONASSIF", "Travel Rule"]
 type: "article"
-author: "Khevin Sánchez Zamora"
+author: "Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"

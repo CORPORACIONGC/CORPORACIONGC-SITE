@@ -4,7 +4,7 @@ date: "2026-07-03"
 excerpt: "Sus costos subieron y la Administración no le paga la diferencia. El reajuste de precios protege un derecho que subsiste aunque el cartel calle. Vea qué protege, cuándo procede y en qué plazo se reclama."
 tags: ["Reajuste de precios", "Equilibrio económico", "Obra pública", "Decreto 44937", "Contratación Pública", "Ley 9986", "Guía práctica"]
 type: "article"
-author: "Lic. Khevin Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"

@@ -166,7 +166,7 @@ const ABOGADOS = [
   },
   {
     slug: "khevin-sanchez",
-    name: "Lic. Khevin Sánchez Zamora",
+    name: "Lic. Khevin Alberto Sánchez Zamora",
     role: "Abogado Asociado",
     desc: "Amplia experiencia en medidas cautelares y litigio contencioso-administrativo. Investigador en IA aplicada a la justicia.",
     carnet: "37920",

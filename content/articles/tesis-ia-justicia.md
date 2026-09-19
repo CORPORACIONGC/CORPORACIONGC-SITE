@@ -5,11 +5,11 @@ excerpt: "Trabajo Final de Graduación que analiza la integración de inteligenc
 tags: ["Inteligencia Artificial", "Justicia Digital", "EU AI Act", "Trabajo Final de Graduación"]
 type: "pdf"
 pdfFile: "tesis-khevin-sanchez-zamora.pdf"
-author: "Lic. Khevin Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 seoTitle: "IA en la Administración de Justicia · Costa Rica"
-seoDescription: "Tesis del Lic. Khevin Sánchez Zamora sobre la integración de IA en la justicia costarricense desde el marco del EU AI Act. Hoja de ruta para una adopción segura. UCR, 2025."
+seoDescription: "Tesis del Lic. Khevin Alberto Sánchez Zamora sobre la integración de IA en la justicia costarricense desde el marco del EU AI Act. Hoja de ruta para una adopción segura. UCR, 2025."
 ---
 
 Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad de Costa Rica.

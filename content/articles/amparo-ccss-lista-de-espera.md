@@ -4,7 +4,7 @@ date: "2026-06-12"
 excerpt: "Si la CCSS le pospuso una cirugía, le dio una cita para dentro de años o no le responde, el recurso de amparo es la vía más rápida para obtener una fecha concreta. Esta guía explica, con base en la Constitución Política y la Ley de la Jurisdicción Constitucional, cuándo procede el amparo por lista de espera, qué documentos reunir, cómo presentarlo paso a paso —en línea o en persona— y qué ordena la Sala Constitucional cuando lo declara con lugar."
 tags: ["Guía práctica", "Recurso de Amparo", "CCSS", "Derecho a la Salud", "Sala Constitucional"]
 type: "article"
-author: "Lic. Khevin Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"

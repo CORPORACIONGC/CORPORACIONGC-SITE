@@ -81,7 +81,7 @@ export const ORGANIZATION_SCHEMA = {
   employee: [
     {
       "@type": "Person",
-      name: "Lic. Khevin Sánchez Zamora",
+      name: "Lic. Khevin Alberto Sánchez Zamora",
       jobTitle: "Abogado Asociado",
       url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
       memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "37920" },
