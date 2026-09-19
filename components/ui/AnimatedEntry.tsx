@@ -75,10 +75,13 @@ export function StaggerContainer({
   children,
   className = "",
   stagger = 0.1,
+  role,
 }: {
   children: React.ReactNode;
   className?: string;
   stagger?: number;
+  /** Rol ARIA del contenedor, p. ej. "list" cuando los elementos son una lista. */
+  role?: React.AriaRole;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
@@ -106,7 +109,7 @@ export function StaggerContainer({
 
   return (
     <StaggerCtx.Provider value={{ isVisible: isInView, stagger, counter }}>
-      <div ref={ref} className={className}>
+      <div ref={ref} className={className} role={role}>
         {children}
       </div>
     </StaggerCtx.Provider>
@@ -120,9 +123,12 @@ export function StaggerContainer({
 export function StaggerItem({
   children,
   className = "",
+  role,
 }: {
   children: React.ReactNode;
   className?: string;
+  /** Rol ARIA del elemento, p. ej. "listitem". */
+  role?: React.AriaRole;
 }) {
   const ctx = useContext(StaggerCtx);
   const isVisible = ctx?.isVisible ?? true;
@@ -133,6 +139,7 @@ export function StaggerItem({
   return (
     <div
       className={className}
+      role={role}
       suppressHydrationWarning
       style={{
         opacity: isVisible ? 1 : 0,

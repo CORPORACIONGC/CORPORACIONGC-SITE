@@ -61,32 +61,25 @@ function Retrato({ src, ancho, encuadre = ENCUADRE_BASE }: { src: string; ancho:
         alt=""
         width={Math.round((ancho * encuadre.ancho) / 50)}
         height={Math.round((ancho * encuadre.ancho * 1.25) / 50)}
-        className="absolute max-w-none saturate-[0.9]"
+        className="absolute max-w-none saturate-[0.9] transition-[filter] duration-500 group-hover:saturate-100 group-focus-visible:saturate-100"
         style={{ width: `${encuadre.ancho}%`, height: "auto", left: `${encuadre.izq}%`, top: `${encuadre.arriba}%` }}
       />
     </span>
   );
 }
 
-function Firma({
-  article,
-  conFecha = true,
-  retrato = 40,
-}: {
-  article: ArticlePreview;
-  conFecha?: boolean;
-  retrato?: number;
-}) {
+function Firma({ article, retrato = 40 }: { article: ArticlePreview; retrato?: number }) {
   const autor = autorDe(article.author);
-  const meta = [conFecha ? fechaCorta(article.date) : null, `${article.minutos} min de lectura`]
-    .filter(Boolean)
-    .join(" · ");
   return (
     <div className="flex items-center gap-3">
       {autor?.retrato && <Retrato src={autor.retrato} ancho={retrato} encuadre={autor.encuadre} />}
       <div className="min-w-0 text-[13px] leading-snug">
         {autor && <p className="truncate font-semibold text-white/90">{autor.nombre}</p>}
-        <p className="tabular-nums text-white/65">{meta}</p>
+        <p className="tabular-nums text-white/65">
+          {article.date && <time dateTime={article.date}>{fechaCorta(article.date)}</time>}
+          {article.date && " · "}
+          {article.minutos} min de lectura
+        </p>
       </div>
     </div>
   );
@@ -110,63 +103,81 @@ const Flecha = () => (
 );
 
 /* ── Sumario: un artículo principal y los siguientes en lista, como la
-   portada de una revista de ideas. Sin cajas: los grupos los separa un filete. ── */
+   portada de una revista de ideas. Sin cajas: los grupos los separa un
+   filete. El filete vertical queda a igual distancia de ambas columnas. ── */
 function Sumario({ articles }: { articles: ArticlePreview[] }) {
   const [principal, ...resto] = articles;
+  const lista = resto.slice(0, 3);
   return (
-    <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-      <AnimatedEntry delay={0.15} className={resto.length ? "lg:col-span-7" : "lg:col-span-8"}>
-        <Link href={`/articulos/${principal.slug}`} className="group block">
+    <div className="grid gap-12 lg:grid-cols-12 lg:gap-x-12">
+      <AnimatedEntry delay={0.15} className={lista.length ? "lg:col-span-7" : "lg:col-span-8"}>
+        <Link href={`/articulos/${principal.slug}`} className="group block outline-offset-8">
           <Firma article={principal} retrato={56} />
           <h3 className="type-title mt-8 max-w-[24ch] text-white transition-colors duration-300 group-hover:text-gold-light">
             {principal.title}
           </h3>
-          <p className="type-lead mt-6 max-w-[58ch] text-white/75 line-clamp-4">{principal.excerpt}</p>
-          <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gold">
+          <p className="type-lead mt-6 max-w-[58ch] text-white/75 line-clamp-3 md:line-clamp-4">
+            {principal.excerpt}
+          </p>
+          <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gold transition-colors duration-300 group-hover:text-gold-light">
             Leer el artículo
-            <ArrowRight size={14} weight="bold" className="transition-transform duration-300 group-hover:translate-x-1" />
+            <ArrowRight
+              size={14}
+              weight="bold"
+              aria-hidden="true"
+              className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1"
+            />
           </span>
         </Link>
       </AnimatedEntry>
 
-      {resto.length > 0 && (
-        <StaggerContainer className="lg:col-span-5 lg:border-l lg:border-white/10 lg:pl-12" stagger={0.08}>
-          <div className="border-t border-white/10 lg:border-t-0">
-            {resto.slice(0, 3).map((a, i) => (
-              <StaggerItem key={a.slug}>
-                <Link
-                  href={`/articulos/${a.slug}`}
-                  className={`group relative flex items-start justify-between gap-6 border-b border-white/10 py-7 ${
-                    i === 0 ? "lg:pt-0" : ""
-                  }`}
-                >
-                  <div className="min-w-0">
-                    <h3 className="type-card-title text-white transition-colors duration-300 group-hover:text-gold-light">
-                      {a.title}
-                    </h3>
-                    <div className="mt-4">
-                      <Firma article={a} conFecha={false} retrato={40} />
-                    </div>
+      {lista.length > 0 && (
+        <StaggerContainer
+          role="list"
+          className="border-t border-white/10 lg:col-span-5 lg:border-l lg:border-t-0 lg:pl-12"
+          stagger={0.08}
+        >
+          {lista.map((a, i) => (
+            <StaggerItem key={a.slug} role="listitem">
+              <Link
+                href={`/articulos/${a.slug}`}
+                className={`group relative flex items-start justify-between gap-6 border-b border-white/10 py-7 outline-offset-4 ${
+                  i === 0 ? "lg:pt-0" : ""
+                }`}
+              >
+                <div className="min-w-0">
+                  <h3 className="type-card-title max-w-[46ch] text-white transition-colors duration-300 group-hover:text-gold-light">
+                    {a.title}
+                  </h3>
+                  <div className="mt-4">
+                    <Firma article={a} retrato={40} />
                   </div>
-                  <span className="mt-1.5">
-                    <Flecha />
-                  </span>
-                  <Trazo />
-                </Link>
-              </StaggerItem>
-            ))}
-          </div>
+                </div>
+                <span className="mt-1">
+                  <Flecha />
+                </span>
+                <Trazo />
+              </Link>
+            </StaggerItem>
+          ))}
         </StaggerContainer>
       )}
     </div>
   );
 }
 
-export function Publications({ articles }: { articles: ArticlePreview[] }) {
+/**
+ * Artículos de la portada y de los perfiles. `total` es la cantidad de
+ * artículos del sitio: si se pasa, el botón la dice («Ver los 43
+ * artículos»); los perfiles no la pasan, porque muestran solo los del autor.
+ */
+export function Publications({ articles, total }: { articles: ArticlePreview[]; total?: number }) {
   const hasArticles = articles.length > 0;
+  const rotulo = total ? `Ver los ${total} artículos` : "Ver todos los artículos";
 
   return (
     <section
+      aria-labelledby="articulos-titulo"
       className="gc-on-dark relative overflow-hidden bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#1E0610] py-24 md:py-32"
     >
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
@@ -174,13 +185,15 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="mb-14 flex items-end justify-between gap-6 md:mb-20">
           <AnimatedEntry>
-            <h2 className="type-headline text-white">Artículos y análisis jurídico</h2>
+            <h2 id="articulos-titulo" className="type-headline text-white">
+              Artículos y análisis jurídico
+            </h2>
           </AnimatedEntry>
 
           {hasArticles && (
-            <AnimatedEntry delay={0.3} className="hidden sm:block">
+            <AnimatedEntry delay={0.3} className="hidden shrink-0 sm:block">
               <MagneticButton href="/articulos" variant="outline-inverse">
-                Ver todos
+                {rotulo}
                 <ArrowRight size={14} weight="bold" />
               </MagneticButton>
             </AnimatedEntry>
@@ -192,17 +205,17 @@ export function Publications({ articles }: { articles: ArticlePreview[] }) {
             <Sumario articles={articles} />
             <div className="mt-12 sm:hidden">
               <MagneticButton href="/articulos" variant="outline-inverse">
-                Ver todos los artículos
+                {rotulo}
                 <ArrowRight size={14} weight="bold" />
               </MagneticButton>
             </div>
           </>
         ) : (
           <AnimatedEntry delay={0.3}>
-            <div className="rounded-2xl border border-dashed border-white/[0.10] bg-white/[0.03] px-6 py-16 text-center">
+            <div className="rounded-xl border border-dashed border-white/[0.10] bg-white/[0.03] px-6 py-16 text-center">
               <Article size={40} weight="duotone" className="mx-auto mb-4 text-white/20" />
               <p className="mb-1 text-sm text-white/65">Próximamente</p>
-              <p className="text-xs text-white/65">Los artículos y publicaciones aparecerán aquí.</p>
+              <p className="text-[13px] text-white/65">Los artículos y publicaciones aparecerán aquí.</p>
             </div>
           </AnimatedEntry>
         )}
