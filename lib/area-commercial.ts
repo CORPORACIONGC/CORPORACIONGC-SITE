@@ -905,6 +905,9 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "Sí, es posible. Si el Tribunal de Servicio Civil revoca el despido, dicta un nuevo fallo y resuelve si procede la restitución del servidor en su puesto, con pleno goce de sus derechos y el pago de los salarios caídos (art. 22 de la Ley N.° 10159). En la vía judicial, la reinstalación y los salarios caídos son también pretensiones típicas de la defensa de un funcionario despedido.",
       },
     ],
+    relatedArticleSlug: "despidos-hacienda-teletrabajo-procedimiento-plazos",
+    relatedArticleLabel:
+      "Análisis: despidos en Hacienda por teletrabajo, el procedimiento y los plazos de la Ley Marco de Empleo Público",
   },
   "materia-municipal": {
     hookHeadline: "¿La municipalidad le denegó una patente o le dictó un acto que lo perjudica?",
