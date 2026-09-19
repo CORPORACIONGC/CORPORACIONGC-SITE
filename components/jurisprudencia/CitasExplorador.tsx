@@ -600,7 +600,16 @@ export function CitasExplorador({
             <span className="text-[32px] font-light leading-none tabular-nums tracking-[-0.02em] text-cream">{nd}</span>
             <span className="max-w-[56ch] text-[15px] leading-snug text-cream/80">
               {nd === 1 ? "trabajo académico la cita" : "trabajos académicos la citan"}
-              {tesis > 0 && `, ${tesis === nd ? (nd === 1 ? "una tesis universitaria" : "todas tesis universitarias") : `${tesis} de ellos tesis universitarias`}`}
+              {tesis > 0 &&
+                `, ${
+                  tesis === nd
+                    ? nd === 1
+                      ? "una tesis universitaria"
+                      : "todas tesis universitarias"
+                    : tesis === 1
+                      ? "uno de ellos una tesis universitaria"
+                      : `${tesis} de ellos tesis universitarias`
+                }`}
             </span>
           </p>
           <ol role="list" className="mt-5 divide-y divide-cream/10 border-y border-cream/10">

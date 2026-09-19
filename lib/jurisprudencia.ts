@@ -3249,6 +3249,660 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767786",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     metaDescription: "Resolución N° 1426-F-S1-2012 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Distinguió el acto de efecto instantáneo del de efectos continuados para computar la caducidad de la acción del CPCA y fijó que el juez la examina de oficio."
+  },
+  /* 654-F-S1-2008. Pasajes copiados del texto de Nexus. */
+  {
+    slug: "responsabilidad-del-estado-juez",
+    numero: "Resolución N° 654-F-S1-2008",
+    fecha: "26 de setiembre de 2008",
+    fechaCorta: "26 Set 2008",
+    fechaISO: "2008-09-26",
+    hora: "10:45 horas",
+    expediente: "02-000605-0163-CA",
+    tribunal: "Sala Primera de la Corte Suprema de Justicia",
+    area: "Derecho Administrativo",
+    materia: "Responsabilidad del Estado por la función jurisdiccional",
+    badge: {
+      type: "referencia",
+      label: "Sentencia de Referencia"
+    },
+    titulo: "El Estado también responde cuando juzga",
+    subtitulo: "La Sala Primera sostuvo que la responsabilidad del Estado por su función jurisdiccional nace de la Constitución y no espera a que una ley la desarrolle, y fijó cuándo la prisión preventiva de quien después resulta inocente debe indemnizarse.",
+    pullQuote: {
+      texto: "Sin embargo, en criterio de esta Sala, esa ausencia legislativa no podría sustentar un principio de irresponsabilidad del Estado en su función jurisdiccional. Ya se ha señalado que dicha responsabilidad deriva del mismo marco del Derecho de la Constitución, como contrapeso relevante en las relaciones del Estado con las personas y como factor de alta trascendencia en la ecuación del Estado de Derecho.",
+      citation: "Considerando VIII"
+    },
+    sintesisPortada: {
+      caso: "El gerente de una agencia bancaria fue asaltado y obligado a abrir la bóveda. Por las contradicciones de su declaración, la Fiscalía pidió su prisión preventiva y él pasó **tres días en la cárcel**, hasta que el Tribunal de Juicio revocó la medida. En 1998 lo sobreseyeron porque **no se le pudo vincular con el hecho**. Demandó al Estado; el Juzgado le concedió ¢9 millones de daño moral y el Tribunal los subió a ¢15 millones.",
+      analisis: "La Sala **cambió su propia línea** sobre el plazo para reclamar: donde antes aplicaba los diez años del Código Civil, fijó los **cuatro años del artículo 198 de la LGAP**, por ser el derecho administrativo el que rige la materia. Y sostuvo que la responsabilidad del Estado por juzgar **deriva de la Constitución**, aunque ninguna ley la desarrolle.",
+      impacto: "**Al menos 255 resoluciones** la citan. Es la sentencia matriz de la responsabilidad del Estado Juez: fija el plazo para reclamar, distingue la función jurisdiccional de la actividad del Organismo de Investigación Judicial y del Ministerio Público, y precisa cuándo un sobreseimiento **demuestra la inocencia**."
+    },
+    fragmentosPortada: [
+      {
+        texto: "Así las cosas, en este último escenario (relevante al presente caso), en tanto exista una lesión antijurídica o ilegítima causada al justiciable, producida como consecuencia de estas competencias, se impone la responsabilidad objetiva del Estado Juez. Como se ha dicho, lo anterior encuentra sustento en los ordinales 9, 11, 33, 41 y 154, todos de la Carta Magna, normas que sientan las bases de la responsabilidad por el error judicial, o por funcionamiento anormal o ilícito de la función jurisdiccional.",
+        citation: "Considerando VII"
+      },
+      {
+        texto: "En el ordenamiento patrio, por principio constitucional, toda persona parte de un estado de inocencia hasta que se demuestre lo contrario. Empero, a fin de perfeccionar el estatus jurídico que acredite el derecho a una reparación patrimonial por la causa aludida, se invierte el presupuesto que rige para lo penal, en tanto, se pasa de un estado de inocencia, a uno de inocencia comprobada, como requisito sine qua non de la aplicabilidad normativa.",
+        citation: "Considerando X"
+      },
+      {
+        texto: "No fue la duda sobre su culpabilidad lo que determinó la decisión del juzgador, sino la certeza en torno a su no participación en el ilícito, cosa muy distinta.",
+        citation: "Considerando XII"
+      }
+    ],
+    contexto: [
+      "El artículo 154 de la Constitución dice que las resoluciones del Poder Judicial no imponen a sus jueces más responsabilidades que las que señale la ley, y el 166 remite a lo que la ley disponga. Durante décadas esa remisión sirvió para sostener que, sin ley que la desarrollara, la responsabilidad del Estado por juzgar no existía.",
+      "La sentencia 654-F-S1-2008, redactada por el magistrado Óscar Eduardo González Camacho, resolvió lo contrario: el principio de responsabilidad pública está en la Constitución y no admite zonas exentas."
+    ],
+    pasajes: [
+      {
+        titulo: "La autonomía del Derecho administrativo",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "No obstante lo anterior, luego de un concienzudo análisis y replanteamiento sobre el tema, este órgano colegiado considera que el plazo con el cual se debe de integrar el derecho es el cuatrienal, regulado en el artículo 198 de la Ley General de la Administración Pública. Lo anterior por cuanto el numeral 9 de dicho cuerpo normativo establece la autonomía del derecho administrativo respecto de otras ramas jurídicas, e indica claramente que, ante la necesidad de integrar el ordenamiento jurídico administrativo, se debe recurrir a las normas y principios del derecho público, de tal forma que existe una prevalencia del derecho administrativo respecto del privado, cuya aplicación sería, en todo caso, subsidiaria y supletoria ante la insuficiencia de aquel.",
+            destacar: [
+              "el plazo con el cual se debe de integrar el derecho es el cuatrienal"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Integrar no es elegir a gusto",
+        citation: "Considerando III",
+        parrafos: [
+          {
+            texto: "Esta Sala no desconoce las bondades que en el fondo llevaría aplicar el plazo decenal que estatuye el ordinal 868 de la normativa civil en el contexto de la interpretación que le asigna el Tribunal. Empero, al momento en que se integra el derecho, supliendo una omisión del legislador, creando la norma aplicable, la discrecionalidad del juzgador no es absoluta, y por el contrario, debe procurar una afinidad entre el supuesto de hecho concreto y la norma de la cual se desprende la consecuencia jurídica aplicable.",
+            destacar: [
+              "la discrecionalidad del juzgador no es absoluta"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Si el Derecho empodera, también responsabiliza",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Si el Derecho empodera al Estado en sus distintas funciones (ejecutiva, legislativa y judicial), la consecuencia lógica y natural de ese efecto, es la imposición de un sistema de responsabilidad que permita la reparación de los efectos lesivos que su proceder pueda generar en la esfera jurídica de las personas (lo que incluye la tutela de los derechos subjetivos y los intereses legítimos).",
+            destacar: [
+              "la imposición de un sistema de responsabilidad"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Una subespecie de la responsabilidad pública",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "Se trata por ende, de una subespecie de aquella, en donde el Estado se encuentra en obligación de reparar cualquier daño efectivo, evaluable e individualizado, imputable a una dependencia judicial, a raíz de su funcionamiento, con prescindencia de los criterios subjetivos de dolo o culpa, salvo aquellos reductos en donde el ordenamiento disponga un esquema subjetivo.",
+            destacar: [
+              "con prescindencia de los criterios subjetivos de dolo o culpa"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Las tres facetas del Poder Judicial",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "En un segundo plano, se ubican las unidades auxiliares que no realizan actividad administrativa, ni jurisdiccional, sino que despliegan actuaciones judiciales de instrucción e investigación (actos judicial stricto sensu), como el Organismo de Investigación Judicial, Ministerio Público, Ciencias Forenses, la Defensa Pública entre otros. Pero a la vez, resulta responsable por los daños ocasionados en el ejercicio de la función jurisdiccional propiamente dicha, sea, en la resolución definitiva de las controversias que le sean planteadas y ejecución de sus sentencias (canon 153 constitucional), cuando su proceder haya sido arbitrario, anormal o ilícito.",
+            destacar: [
+              "actuaciones judiciales de instrucción e investigación"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "La base constitucional",
+        citation: "Considerando VII",
+        parrafos: [
+          {
+            texto: "Así las cosas, en este último escenario (relevante al presente caso), en tanto exista una lesión antijurídica o ilegítima causada al justiciable, producida como consecuencia de estas competencias, se impone la responsabilidad objetiva del Estado Juez. Como se ha dicho, lo anterior encuentra sustento en los ordinales 9, 11, 33, 41 y 154, todos de la Carta Magna, normas que sientan las bases de la responsabilidad por el error judicial, o por funcionamiento anormal o ilícito de la función jurisdiccional.",
+            destacar: [
+              "se impone la responsabilidad objetiva del Estado Juez"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El silencio de la ley no exime",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Sin embargo, en criterio de esta Sala, esa ausencia legislativa no podría sustentar un principio de irresponsabilidad del Estado en su función jurisdiccional. Ya se ha señalado que dicha responsabilidad deriva del mismo marco del Derecho de la Constitución, como contrapeso relevante en las relaciones del Estado con las personas y como factor de alta trascendencia en la ecuación del Estado de Derecho.",
+            destacar: [
+              "esa ausencia legislativa no podría sustentar un principio de irresponsabilidad"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Sin cuadros de dispensa",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "El principio de responsabilidad que dimana, como regla general, del precepto 9 constitucional y encuentra amparo en otras normas que tutelan las garantías del individuo, no contiene marcos de excepción. Así las cosas, cualquier consecuencia final ablativa de la conducta pública debe ser reparada, salvo que concurra en el administrado el deber jurídico de soportar el daño.",
+            destacar: [
+              "no contiene marcos de excepción"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "No solo las sentencias",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Cabe agregar que, esta responsabilidad no se limita a las sentencias solamente. Nótese que el numeral 154 de la Carta Magna utiliza el término “resolución”, con lo cual, resultan comprendidos los distintos modelos que integran esta categoría, sea, providencia, autos, autos con carácter de sentencia y sentencias (numeral 153 Código Procesal Civil).",
+            destacar: [
+              "el numeral 154 de la Carta Magna utiliza el término “resolución”"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Qué es el error judicial",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "El error judicial comprende toda decisión jurisdiccional que prive a la persona de uno de sus derechos o intereses legítimos y que resulte errónea o contraria a derecho."
+          }
+        ]
+      },
+      {
+        titulo: "El segundo párrafo del 271",
+        citation: "Considerando IX",
+        parrafos: [
+          {
+            texto: "Ahora bien, el otro supuesto regulado por el numeral 271 de comentario, en el párrafo segundo, resulta aún más específico, ya que surge por una prisión preventiva, en contra de una persona, quien luego es absuelta o sobreseída, con plena demostración de inocencia. Consiste en una hipótesis concreta y especial, que despliega la responsabilidad exclusiva del Estado, no condicionada a la convergencia de valoraciones atinentes a la conducta del funcionario, por tanto de índole objetiva.",
+            destacar: [
+              "la responsabilidad exclusiva del Estado"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "De la inocencia presumida a la comprobada",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "En el ordenamiento patrio, por principio constitucional, toda persona parte de un estado de inocencia hasta que se demuestre lo contrario. Empero, a fin de perfeccionar el estatus jurídico que acredite el derecho a una reparación patrimonial por la causa aludida, se invierte el presupuesto que rige para lo penal, en tanto, se pasa de un estado de inocencia, a uno de inocencia comprobada, como requisito sine qua non de la aplicabilidad normativa.",
+            destacar: [
+              "se pasa de un estado de inocencia, a uno de inocencia comprobada"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Por qué la inocencia decide",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "La comprobación de inocencia se erige como un elemento fundamental para el surgimiento del deber de reparar, en la medida en que es ésta circunstancia la que determina la existencia de una lesión antijurídica; el que se ordene una prisión preventiva contra una persona respecto de la cual existe, ex post facto, certeza que no ha cometido ningún ilícito deviene, a todas luces, en injustificada, al haberse afectado derechos de la persona cuando se puede colegir que no procedía.",
+            destacar: [
+              "es ésta circunstancia la que determina la existencia de una lesión antijurídica"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "Cuando la medida sí estuvo justificada",
+        citation: "Considerando X",
+        parrafos: [
+          {
+            texto: "En caso contrario, es decir, cuando si bien un imputado es sobreseído o no fue condenado por motivos distintos a una demostración de su inocencia, las razones que concurrieron inicialmente para la adopción de la medida cautelar no son desvirtuadas en forma sobreviniente por el resultado del proceso, como si sucede en el anterior supuesto, al arribarse a una convicción de no culpabilidad o al demostrarse la no participación en el ilícito."
+          }
+        ]
+      },
+      {
+        titulo: "La duda y la certeza",
+        citation: "Considerando XII",
+        parrafos: [
+          {
+            texto: "No fue la duda sobre su culpabilidad lo que determinó la decisión del juzgador, sino la certeza en torno a su no participación en el ilícito, cosa muy distinta.",
+            destacar: [
+              "sino la certeza en torno a su no participación en el ilícito"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El daño de los cuatro días",
+        citation: "Considerando XIV",
+        parrafos: [
+          {
+            texto: "La privación de libertad constituye un estado que en si mismo, ocasiona padecimientos a nivel psíquico y emocional, lo que se intensifica si el recluso en realidad es inocente. Ser expuesto a un ambiente en condiciones sanitarias deficitarias, en un centro carcelario que de manera pública y notoria padece de hacinamiento, con el riesgo que ello implica para la integridad física y emocional del individuo, son fuentes generadoras de un serio detrimento interno.",
+            destacar: [
+              "lo que se intensifica si el recluso en realidad es inocente"
+            ]
+          }
+        ]
+      },
+      {
+        titulo: "El daño moral no se prueba",
+        citation: "Considerando XIV",
+        parrafos: [
+          {
+            texto: "no obstante, por la naturaleza del daño, el cual consiste en una perturbación injusta de las condiciones anímicas del individuo, la prueba de su existencia, y el posterior reconocimiento, se realizan “in re ipsa.",
+            destacar: [
+              "in re ipsa"
+            ]
+          }
+        ]
+      }
+    ],
+    analisis: [
+      {
+        id: "el-caso",
+        titulo: "El caso",
+        parrafos: [
+          "El 21 de febrero de 1998, a las siete de la mañana, el Organismo de Investigación Judicial de Cartago recibió una llamada al 911: habían asaltado una agencia bancaria y su gerente había quedado esposado. Él declaró que dos encapuchados lo interceptaron cuando conducía, le dijeron que tenían raptada a su familia y lo obligaron a volver al banco, desconectar la alarma y abrir la bóveda, de la que sustrajeron cerca de seis millones de colones; después lo maniataron y lo encerraron en el baño.",
+          "Por algunas contradicciones entre las declaraciones, la Fiscalía pidió su prisión preventiva y el Juzgado Penal la ordenó por tres meses. El Tribunal de Juicio la revocó dos días después. En junio de 1998 el Juzgado Penal dictó sobreseimiento definitivo, porque no se pudo determinar que él hubiera participado en el delito.",
+          "En 2000 reclamó ante el Consejo Superior del Poder Judicial, que lo rechazó. En 2002 demandó al Estado por el daño moral y por lo que pagó a su defensa penal. El Juzgado le concedió ¢9 millones y el Tribunal los aumentó a ¢15 millones. El Estado recurrió en casación: alegó que la acción estaba prescrita, que el sobreseimiento no demostraba inocencia y que el monto era desproporcionado."
+        ],
+        visual: "trayectoria"
+      },
+      {
+        id: "prescripcion",
+        titulo: "El plazo para reclamar",
+        parrafos: [
+          "El primer agravio del Estado era el plazo. El Tribunal había aplicado los diez años del artículo 868 del Código Civil, con el argumento de que la responsabilidad por la función jurisdiccional queda fuera de la Ley General de la Administración Pública. La Sala había sostenido antes esa misma tesis, en el voto 436 de 2003. Aquí la abandonó:",
+          "La razón de fondo es de método. Integrar una laguna deja un margen, y ese margen tiene límites:"
+        ],
+        literales: [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        nota: "El Estado ganó el argumento y perdió el caso: la Sala le dio la razón sobre el plazo aplicable, pero el reclamo administrativo de 2000 había interrumpido el cómputo, así que la acción seguía viva."
+      },
+      {
+        id: "fundamento",
+        titulo: "De dónde nace la responsabilidad",
+        parrafos: [
+          "Resuelta la prescripción, la Sala entró en el fondo. Empezó por el principio: si el ordenamiento inviste al Estado de poder, le impone al mismo tiempo el deber de reparar lo que ese poder dañe.",
+          "La responsabilidad del Poder Judicial queda cubierta por esa cláusula general, con el mismo criterio objetivo que rige para la Administración:",
+          "Y tiene anclaje constitucional expreso:"
+        ],
+        literales: [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            5,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        id: "tres-facetas",
+        titulo: "Tres maneras de responder",
+        parrafos: [
+          "Antes de aplicar la regla, la sentencia separó los planos en que el Poder Judicial puede causar un daño. La distinción se volvió la parte más citada del fallo, porque de ella depende qué régimen se aplica a cada reclamo:"
+        ],
+        visual: "formas",
+        nota: "La actividad del Organismo de Investigación Judicial, del Ministerio Público, de la Defensa Pública y de Ciencias Forenses queda bajo la Ley General de la Administración Pública. La función de juzgar tiene su propio régimen."
+      },
+      {
+        id: "sin-ley",
+        titulo: "El silencio de la ley no exime",
+        parrafos: [
+          "El Estado se apoyaba en que los artículos 154 y 166 de la Constitución remiten a la ley, y ninguna ley desarrolla esta responsabilidad. La Sala respondió que la omisión del legislador no crea un privilegio:",
+          "El principio no admite excepciones tácitas:",
+          "La regla alcanza a toda resolución, no solo a las sentencias:",
+          "Y define el error judicial:"
+        ],
+        literales: [
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            2
+          ],
+          [
+            9,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        id: "inocencia",
+        titulo: "Cuándo la prisión preventiva se indemniza",
+        parrafos: [
+          "El Código Procesal Penal sí regula un supuesto concreto. Su artículo 271 tiene dos párrafos: el primero cubre cualquier medida cautelar impuesta indebidamente por un funcionario que actuó con arbitrariedad o culpa grave; el segundo es más específico.",
+          "Ese segundo párrafo exige tres cosas que deben darse juntas: prisión preventiva, sobreseimiento o absolutoria, y plena demostración de inocencia. Lo decisivo es la tercera:"
+        ],
+        literales: [
+          [
+            10,
+            0,
+            1
+          ]
+        ],
+        visual: "comparacion"
+      },
+      {
+        id: "el-fallo",
+        titulo: "La duda y la certeza",
+        parrafos: [
+          "El Estado sostenía que el sobreseimiento se había dictado por falta de certeza sobre la participación del imputado, lo que dejaría fuera la indemnización. La Sala leyó el expediente penal y concluyó lo contrario: la Fiscalía lo había pedido por el inciso a) del artículo 311, el hecho no fue cometido por el imputado.",
+          "De ahí la frase que la jurisprudencia posterior repite:"
+        ],
+        literales: [
+          [
+            14,
+            0,
+            1
+          ]
+        ],
+        nota: "El sobreseimiento por prescripción o por falta de certeza deja intacta la razón que justificó la prisión preventiva. El sobreseimiento porque la persona no cometió el hecho la desvirtúa hacia atrás."
+      },
+      {
+        id: "dano-moral",
+        titulo: "El daño de los días presos",
+        parrafos: [
+          "Quedaba el monto. El Estado reclamaba que ¢15 millones era una suma desproporcionada y que el daño no se había probado. La Sala describió en qué consiste el daño:",
+          "Y recordó que esta clase de daño no necesita prueba:",
+          "A eso sumó la frustración de verse señalado por un contubernio con los asaltantes, en perjuicio de la agencia que gerenciaba, en un cargo donde la confianza lo es todo. Confirmó el monto por razonable y rechazó el recurso, con las costas a cargo del Estado."
+        ],
+        literales: [
+          [
+            15,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        id: "recepcion",
+        titulo: "La recepción",
+        parrafos: [
+          "La sentencia se instaló de inmediato. En 2009 la Sala Primera la usó para separar la responsabilidad civil del juez de la responsabilidad patrimonial del Estado. En 2011 el Tribunal de Casación de lo Contencioso Administrativo reconoció por escrito que con ella «operó un cambio en la línea jurisprudencial» sobre el plazo, y rechazó que ese cambio lesionara la confianza legítima de quien reclamaba.",
+          "El otro frente es el de los órganos auxiliares. La Sala Primera la invocó en 2017, en el caso de unas declaraciones del Fiscal General, y el Tribunal de Casación anuló en 2022 un fallo que había dejado al Ministerio Público fuera del régimen de la Ley General de la Administración Pública. En 2025 el Tribunal Contencioso Administrativo la sigue citando para decir que cualquier resolución, de cualquier jurisdicción, puede generar el deber de reparar."
+        ],
+        visual: "recepcion"
+      },
+      {
+        id: "impacto",
+        titulo: "Su impacto",
+        parrafos: [
+          "Hemos encontrado su cita en el texto de al menos 255 resoluciones, dictadas entre 2009 y 2026. La jurisdicción contencioso-administrativa reúne 212 —el Tribunal Contencioso Administrativo, con la Sección Sexta a la cabeza, y su Tribunal de Casación—, y la Sala Primera la cita en 39. También aparece en la Sala Tercera, en la Sala Constitucional y en un tribunal de trabajo.",
+          "Su uso no ha bajado en quince años: 2024 es el año de mayor cita, con 28 resoluciones, y desde 2020 se acumulan 119, casi la mitad de todas. El compendio de don Óscar registraba 158 citas; la búsqueda sobre las fuentes completas encontró casi cien más.",
+          "Fuera de los tribunales la citan catorce pronunciamientos, y doce son actas del Consejo Superior del Poder Judicial, que es el órgano que resuelve en sede administrativa los reclamos contra el Estado por error judicial: la sentencia se convirtió en el criterio con que el propio Poder Judicial mide su responsabilidad. La Procuraduría la usó en un informe a la Sala Constitucional y la Corte Plena la citó en 2013.",
+          "En la doctrina la citan la Revista Judicial 138, de la Escuela Judicial, que la ubica entre los enfoques posibles sobre la responsabilidad del Estado juez, y una tesis de la Universidad de Costa Rica de 2024."
+        ],
+        visual: "citas"
+      }
+    ],
+    visuales: {
+      trayectoria: [
+        {
+          etapa: "El asalto y la prisión",
+          sede: "Cartago · 21 a 24 de febrero de 1998",
+          detalle: "Dos encapuchados lo obligan a abrir la bóveda. Por contradicciones en su declaración, el Juzgado Penal ordena prisión preventiva; el Tribunal de Juicio la revoca dos días después."
+        },
+        {
+          etapa: "El sobreseimiento",
+          sede: "Juzgado Penal de Cartago · 3 de junio de 1998",
+          detalle: "La Fiscalía lo pide por el inciso a) del artículo 311: el hecho no fue cometido por el imputado."
+        },
+        {
+          etapa: "La vía administrativa",
+          sede: "Consejo Superior del Poder Judicial · 2000",
+          detalle: "El reclamo se presenta en julio y se rechaza en noviembre. Ese trámite interrumpió el plazo de prescripción."
+        },
+        {
+          etapa: "Primera instancia y apelación",
+          sede: "Juzgado y Tribunal Contencioso Administrativo",
+          detalle: "La demanda llega en 2002. El Juzgado concede ¢9 millones de daño moral; el Tribunal los aumenta a ¢15 millones."
+        },
+        {
+          etapa: "Casación",
+          sede: "Sala Primera · 26 de setiembre de 2008",
+          detalle: "Rechaza el recurso del Estado, con las costas a su cargo, y de paso cambia su propia línea sobre el plazo para reclamar.",
+          final: true
+        }
+      ],
+      comparaciones: {
+        inocencia: [
+          {
+            titulo: "Sobreseimiento por inocencia",
+            rasgo: "El hecho no se realizó o no fue cometido por la persona imputada (artículo 311, inciso a). La prisión preventiva queda sin justificación hacia atrás y el Estado indemniza.",
+            enElCaso: "Es el caso de esta sentencia.",
+            literal: "La comprobación de inocencia se erige como un elemento fundamental para el surgimiento del deber de reparar, en la medida en que es ésta circunstancia la que determina la existencia de una lesión antijurídica; el que se ordene una prisión preventiva contra una persona respecto de la cual existe, ex post facto, certeza que no ha cometido ningún ilícito deviene, a todas luces, en injustificada, al haberse afectado derechos de la persona cuando se puede colegir que no procedía.",
+            citation: "Considerando X"
+          },
+          {
+            titulo: "Sobreseimiento por otras causas",
+            rasgo: "Prescripción de la acción penal, o falta de certeza sin posibilidad de nueva prueba (incisos d y e). Las razones que motivaron la medida siguen en pie.",
+            enElCaso: "Lo que el Estado alegaba.",
+            literal: "En caso contrario, es decir, cuando si bien un imputado es sobreseído o no fue condenado por motivos distintos a una demostración de su inocencia, las razones que concurrieron inicialmente para la adopción de la medida cautelar no son desvirtuadas en forma sobreviniente por el resultado del proceso, como si sucede en el anterior supuesto, al arribarse a una convicción de no culpabilidad o al demostrarse la no participación en el ilícito.",
+            citation: "Considerando X"
+          }
+        ]
+      },
+      formas: {
+        "tres-facetas": [
+          {
+            titulo: "La administración de justicia",
+            texto: "El Poder Judicial como servicio público y como organización: los medios materiales y personales que hacen posible juzgar. Responde por su funcionamiento anormal, con la Ley General de la Administración Pública."
+          },
+          {
+            titulo: "Los órganos auxiliares",
+            texto: "Organismo de Investigación Judicial, Ministerio Público, Ciencias Forenses y Defensa Pública. No juzgan: instruyen e investigan. Su actividad queda bajo el mismo régimen administrativo."
+          },
+          {
+            titulo: "La función jurisdiccional",
+            texto: "Resolver las controversias y ejecutar lo resuelto. Aquí responde el Estado Juez cuando su proceder fue arbitrario, anormal o ilícito, por error judicial o por funcionamiento anormal."
+          }
+        ]
+      },
+      recepcion: [
+        {
+          anio: "2009",
+          organo: "Sala Primera",
+          texto: "La usa para separar la responsabilidad civil del juez de la responsabilidad patrimonial del Estado.",
+          enlaces: [
+            {
+              etiqueta: "Voto 783-F-S1-2009",
+              nexusId: "sen-1-0034-447118"
+            }
+          ]
+        },
+        {
+          anio: "2011",
+          organo: "Tribunal de Casación de lo Contencioso Administrativo",
+          texto: "Reconoce que con esta sentencia «operó un cambio en la línea jurisprudencial» sobre el plazo, y rechaza que el cambio lesione la confianza legítima.",
+          enlaces: [
+            {
+              etiqueta: "Voto 27-F-TC-2011",
+              nexusId: "sen-1-0034-532545"
+            }
+          ]
+        },
+        {
+          anio: "2017",
+          organo: "Sala Primera",
+          texto: "Precedente de la responsabilidad objetiva por la actividad de los órganos auxiliares, en el caso de unas declaraciones del Fiscal General.",
+          enlaces: [
+            {
+              etiqueta: "Voto 451-F-S1-2017",
+              nexusId: "sen-1-0034-715582"
+            }
+          ]
+        },
+        {
+          anio: "2019",
+          organo: "Tribunal de Casación de lo Contencioso Administrativo",
+          texto: "El plazo de cuatro años del artículo 198 ya se aplica como regla asentada.",
+          enlaces: [
+            {
+              etiqueta: "Voto 12-F-TC-2019",
+              nexusId: "sen-1-1011-909434"
+            }
+          ]
+        },
+        {
+          anio: "2022",
+          organo: "Tribunal de Casación de lo Contencioso Administrativo",
+          texto: "Anula un fallo que había dejado al Ministerio Público fuera del régimen de la Ley General de la Administración Pública.",
+          enlaces: [
+            {
+              etiqueta: "Voto 104-F-TC-2022",
+              nexusId: "sen-1-1011-1102006"
+            }
+          ]
+        },
+        {
+          anio: "2025",
+          organo: "Tribunal Contencioso Administrativo",
+          texto: "Cualquier resolución, de cualquier jurisdicción, puede generar el deber de reparar si causa un daño antijurídico.",
+          enlaces: [
+            {
+              etiqueta: "Voto 691-2025",
+              nexusId: "sen-1-0034-1277949"
+            }
+          ],
+          final: true
+        }
+      ],
+      citas: {
+        corte: "19 de setiembre de 2026",
+        metodo: "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 654-F-S1-2008, por cualquiera de sus puntos. Las fuentes son públicas: Nexus del Poder Judicial para las resoluciones y las actas, el SINALEVI de la Procuraduría, y los buscadores de la Contraloría, del Tribunal Registral Administrativo y de la ARESEP; la doctrina, en los repositorios Kérwá de la Universidad de Costa Rica y de la ULACIT. Cada resolución cuenta una vez, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho.",
+        csv: "/datos/jurisprudencia/654-F-S1-2008-resoluciones-que-la-citan.csv"
+      }
+    },
+    casoFactico: [
+      "El gerente de una agencia bancaria de Cartago fue asaltado en febrero de 1998 y obligado a abrir la bóveda. Por las contradicciones de su declaración estuvo preso tres días, hasta que el Tribunal de Juicio revocó la prisión preventiva; meses después lo sobreseyeron porque no se le pudo vincular con el hecho.",
+      "Demandó al Estado en 2002. El Juzgado le concedió ¢9 millones de daño moral y el Tribunal los subió a ¢15 millones. La Sala Primera rechazó el recurso del Estado y confirmó la condena."
+    ],
+    nexusId: "sen-1-0004-764867",
+    precedentes: [
+      {
+        organo: "Sala Constitucional",
+        numero: "Voto 5981-1995",
+        fecha: "07-11-1995",
+        nexusId: "sen-1-0007-81793",
+        nota: "Fundamento constitucional de la responsabilidad objetiva del Poder Judicial, que la sentencia transcribe."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1011-F-2006",
+        fecha: "21-12-2006",
+        nexusId: "sen-1-0034-370378",
+        nota: "La responsabilidad del Estado Juez no depende de que una ley la desarrolle."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 584-F-2005",
+        fecha: "11-08-2005",
+        nexusId: "sen-1-0034-315154",
+        nota: "La evolución de la responsabilidad de la Administración, que esta sentencia lleva al Poder Judicial."
+      }
+    ],
+    citadaPor: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 783-F-S1-2009",
+        fecha: "28-07-2009",
+        nexusId: "sen-1-0034-447118",
+        nota: "Separa la responsabilidad civil del juez de la del Estado."
+      },
+      {
+        organo: "Tribunal de Casación de lo Contencioso Administrativo",
+        numero: "Voto 27-F-TC-2011",
+        fecha: "24-11-2011",
+        nexusId: "sen-1-0034-532545",
+        nota: "«Operó un cambio en la línea jurisprudencial» sobre el plazo."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 451-F-S1-2017",
+        fecha: "04-05-2017",
+        nexusId: "sen-1-0034-715582",
+        nota: "Responsabilidad objetiva por la actividad de los órganos auxiliares."
+      },
+      {
+        organo: "Tribunal de Casación de lo Contencioso Administrativo",
+        numero: "Voto 12-F-TC-2019",
+        fecha: "06-02-2019",
+        nexusId: "sen-1-1011-909434",
+        nota: "Aplica el plazo cuatrienal como regla asentada."
+      },
+      {
+        organo: "Tribunal de Casación de lo Contencioso Administrativo",
+        numero: "Voto 104-F-TC-2022",
+        fecha: "29-04-2022",
+        nexusId: "sen-1-1011-1102006",
+        nota: "El Ministerio Público queda dentro del régimen de la LGAP."
+      },
+      {
+        organo: "Tribunal Contencioso Administrativo",
+        numero: "Voto 691-2025",
+        fecha: "31-01-2025",
+        nexusId: "sen-1-0034-1277949",
+        nota: "Alcanza a cualquier resolución de cualquier jurisdicción."
+      }
+    ],
+    normativa: [
+      {
+        nombre: "Constitución Política de la República de Costa Rica",
+        detalle: "7 de noviembre de 1949",
+        articulos: "Arts. 9, 11, 33, 41, 49, 153, 154 y 166",
+        scijId: 871
+      },
+      {
+        nombre: "Ley General de la Administración Pública",
+        detalle: "Ley 6227 · 2 de mayo de 1978",
+        articulos: "Arts. 9, 190, 198 y 199",
+        scijId: 13231
+      },
+      {
+        nombre: "Código Procesal Penal",
+        detalle: "Ley 7594 · 10 de abril de 1996",
+        articulos: "Arts. 271 y 311",
+        scijId: 1224
+      }
+    ],
+    redactor: "Magistrado Óscar Eduardo González Camacho",
+    redactorTextual: "Redacta el Magistrado González Camacho",
+    fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-764867",
+    fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    metaDescription: "Resolución N° 654-F-S1-2008 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Fijó que la responsabilidad del Estado por la función jurisdiccional deriva de la Constitución, aplicó el plazo de cuatro años del artículo 198 de la LGAP y precisó cuándo la prisión preventiva seguida de sobreseimiento por inocencia debe indemnizarse."
   }
 ];
 
