@@ -533,14 +533,13 @@ export function CitasExplorador({
             ))}
           </ol>
           <p className="mt-4 max-w-[72ch] text-[13px] leading-relaxed text-cream/65">
-            Tesis de los repositorios universitarios de acceso abierto y revistas jurídicas publicadas en línea,
-            leídas una por una. De un número completo de revista se cita el número, porque la cita está en uno de sus
-            artículos. Cada título enlaza a su fuente.
+            De un número completo de revista se cita el número, porque la cita está en uno de sus artículos. Cada
+            título enlaza a su fuente.
           </p>
         </div>
       )}
 
-      <figcaption className="mt-8 text-[13px] leading-relaxed text-cream/65">
+      <figcaption className="mt-10 border-t border-cream/10 pt-6 text-[13px] leading-relaxed text-cream/65">
         {metodo} Corte al {corte}.
       </figcaption>
     </figure>
