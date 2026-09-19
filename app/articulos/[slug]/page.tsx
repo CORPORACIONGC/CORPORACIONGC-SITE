@@ -36,6 +36,13 @@ import {
   FuentesLeyMarcoApp,
 } from "@/components/article/LeyMarcoApp";
 import {
+  ProcedimientoDespido10159,
+  PlazosDespido10159,
+  PreguntasExpedienteDespido,
+  CasosTeletrabajoTribunales,
+  FuentesDespidoTeletrabajo,
+} from "@/components/article/DespidoTeletrabajo";
+import {
   ArrowLeft,
   CalendarBlank,
   Tag,
@@ -108,6 +115,11 @@ const ARTICLE_COMPONENTS = {
   RutaLegislativaApp,
   RegimenProyectosApp,
   FuentesLeyMarcoApp,
+  ProcedimientoDespido10159,
+  PlazosDespido10159,
+  PreguntasExpedienteDespido,
+  CasosTeletrabajoTribunales,
+  FuentesDespidoTeletrabajo,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
