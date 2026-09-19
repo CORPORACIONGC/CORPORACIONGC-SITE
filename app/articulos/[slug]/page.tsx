@@ -45,6 +45,45 @@ import { buildArticleMetadata } from "@/lib/page-metadata";
 const ORG_AUTHOR_CREDENTIAL =
   "Bufete dirigido por el Dr. Óscar Eduardo González Camacho · Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508) y ex-Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
 
+/* Textos de la plantilla según el idioma del artículo (campo `lang` del
+   frontmatter): las guías en inglés se leen con la interfaz en inglés. */
+const UI = {
+  es: {
+    back: "Todas las publicaciones",
+    backBottom: "Volver a publicaciones",
+    by: "Por",
+    publishedIn: "Publicado en: ",
+    translation: "Read this guide in English",
+    ctaKicker: "Atención directa",
+    ctaTitle: "¿Enfrenta un caso relacionado con este tema?",
+    ctaText:
+      "Escríbanos por WhatsApp para una respuesta rápida y directa. Converse con nuestro equipo y reciba una orientación inicial de su situación.",
+    ctaButton: "Escribir por WhatsApp",
+    aboutOne: "Sobre el autor",
+    aboutMany: "Sobre los autores",
+    profile: "Ver perfil completo",
+    whatsapp: (topic: string) =>
+      `Hola, leí su artículo "${topic}" en el sitio y quisiera una consulta.`,
+  },
+  en: {
+    back: "All publications",
+    backBottom: "Back to publications",
+    by: "By",
+    publishedIn: "Published in: ",
+    translation: "Leer esta guía en español",
+    ctaKicker: "Direct assistance",
+    ctaTitle: "Facing a matter related to this topic?",
+    ctaText:
+      "Message us on WhatsApp for a quick, direct answer. Talk to our team and get an initial assessment of your situation.",
+    ctaButton: "Message us on WhatsApp",
+    aboutOne: "About the author",
+    aboutMany: "About the authors",
+    profile: "View full profile",
+    whatsapp: (topic: string) =>
+      `Hello, I read your article "${topic}" on your website and would like a consultation.`,
+  },
+};
+
 /* Componentes que los artículos en Markdown pueden insertar como etiquetas
    (<ReformaCpca />, <MapaRecursosLgap />, etc.). */
 const ARTICLE_COMPONENTS = {
@@ -90,10 +129,32 @@ export async function generateMetadata({
       : null,
     slug
   );
+  const url = `https://www.corporaciongc.com/articulos/${slug}`;
+  const lang = article?.lang ?? "es";
+  /* Guías con versión en el otro idioma: hreflang recíproco y x-default
+     hacia la versión en español. */
+  const translationUrl = article?.translation
+    ? `https://www.corporaciongc.com/articulos/${article.translation}`
+    : null;
+  const languages = translationUrl
+    ? lang === "en"
+      ? { es: translationUrl, en: url, "x-default": translationUrl }
+      : { es: url, en: translationUrl, "x-default": url }
+    : undefined;
   return {
     ...base,
+    ...(lang === "en" || translationUrl
+      ? {
+          openGraph: {
+            ...base.openGraph,
+            locale: lang === "en" ? "en_US" : "es_CR",
+            ...(translationUrl ? { alternateLocale: [lang === "en" ? "es_CR" : "en_US"] } : {}),
+          },
+        }
+      : {}),
     alternates: {
-      canonical: `https://www.corporaciongc.com/articulos/${slug}`,
+      canonical: url,
+      ...(languages ? { languages } : {}),
     },
   };
 }
@@ -108,11 +169,13 @@ export default async function ArticlePage({
   if (!article) notFound();
 
   const isPdf = article.type === "pdf" && article.pdfFile;
+  const lang = article.lang ?? "es";
+  const t = UI[lang];
 
   /* Mensaje de WhatsApp con el tema del artículo, para que el contacto llegue
      ya en contexto. Toma la parte del título antes de ":", "·" o "|". */
   const articleTopic = article.title.split(/[:·|]/)[0].trim();
-  const whatsappArticleMessage = `Hola, leí su artículo "${articleTopic}" en el sitio y quisiera una consulta.`;
+  const whatsappArticleMessage = t.whatsapp(articleTopic);
   const whatsappUrl = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(whatsappArticleMessage)}`;
 
   /* Contacto por WhatsApp en artículos:
@@ -214,7 +277,14 @@ export default async function ArticlePage({
         height: 466,
       },
     },
-    inLanguage: "es",
+    inLanguage: lang,
+    ...(article.translation
+      ? {
+          [lang === "en" ? "translationOfWork" : "workTranslation"]: {
+            "@id": `https://www.corporaciongc.com/articulos/${article.translation}`,
+          },
+        }
+      : {}),
     keywords: article.tags.join(", "),
   };
 
@@ -262,6 +332,7 @@ export default async function ArticlePage({
       <main className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">
           <div
+            lang={lang}
             className={`${isPdf ? "max-w-[1000px]" : "max-w-[800px]"} mx-auto px-6 md:px-10`}
           >
             {/* Back */}
@@ -270,7 +341,7 @@ export default async function ArticlePage({
               className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 mb-10"
             >
               <ArrowLeft size={14} weight="regular" />
-              Todas las publicaciones
+              {t.back}
             </Link>
 
             {/* Meta row */}
@@ -278,13 +349,13 @@ export default async function ArticlePage({
               {/* Publication type badge */}
               {article.publicationType && (
                 <span className="px-2.5 py-1 rounded-md text-[9px] tracking-wider uppercase font-medium bg-burgundy/[0.10] text-burgundy dark:text-burgundy-light">
-                  {publicationTypeLabel(article.publicationType)}
+                  {publicationTypeLabel(article.publicationType, lang)}
                 </span>
               )}
 
               <div className="flex items-center gap-1.5 text-xs text-cream/35">
                 <CalendarBlank size={13} weight="regular" />
-                {formatDate(article.date)}
+                {formatDate(article.date, lang)}
               </div>
 
               {article.tags.length > 0 && (
@@ -308,6 +379,19 @@ export default async function ArticlePage({
               )}
             </div>
 
+            {/* Enlace a la versión en el otro idioma */}
+            {article.translation && (
+              <Link
+                href={`/articulos/${article.translation}`}
+                hrefLang={lang === "en" ? "es" : "en"}
+                lang={lang === "en" ? "es" : "en"}
+                className="inline-flex items-center gap-1.5 text-xs text-gold hover:text-gold/80 transition-colors duration-300 mb-6"
+              >
+                {t.translation}
+                <ArrowSquareOut size={11} weight="bold" />
+              </Link>
+            )}
+
             {/* Title */}
             <h1 className="font-display text-2xl md:text-4xl font-semibold tracking-tighter leading-[1.1] text-cream mb-4">
               {article.title}
@@ -326,13 +410,13 @@ export default async function ArticlePage({
             {article.author && article.authorVisible !== false && (
               <div className="mb-10">
                 <div className="text-[10px] tracking-[0.3em] uppercase text-gold/60 font-medium mb-2">
-                  Por
+                  {t.by}
                 </div>
                 <div className="text-base md:text-lg font-medium text-cream tracking-tight">
                   {article.author}
                 </div>
                 {authorCredential && (
-                  <div className="mt-1.5 text-sm text-cream/55 leading-relaxed max-w-[60ch]">
+                  <div lang="es" className="mt-1.5 text-sm text-cream/55 leading-relaxed max-w-[60ch]">
                     {authorCredential}
                   </div>
                 )}
@@ -344,7 +428,7 @@ export default async function ArticlePage({
               <div className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.03] mb-10">
                 <BookOpen size={16} weight="regular" className="text-gold/60 shrink-0 mt-0.5" />
                 <div className="text-xs text-cream/50 leading-relaxed">
-                  <span className="text-cream/60 font-medium">Publicado en: </span>
+                  <span className="text-cream/60 font-medium">{t.publishedIn}</span>
                   {article.sourceReference}
                   {article.sourceUrl && (
                     <>
@@ -407,15 +491,13 @@ export default async function ArticlePage({
                 </div>
                 <div className="flex-1">
                   <div className="text-[10px] tracking-[0.25em] uppercase text-gold/70 font-medium mb-2">
-                    Atención directa
+                    {t.ctaKicker}
                   </div>
                   <h2 className="font-display text-xl md:text-2xl font-semibold tracking-tight text-cream leading-snug">
-                    ¿Enfrenta un caso relacionado con este tema?
+                    {t.ctaTitle}
                   </h2>
                   <p className="mt-2.5 text-sm text-cream/60 leading-relaxed max-w-[54ch]">
-                    Escríbanos por WhatsApp para una respuesta rápida y directa.
-                    Converse con nuestro equipo y reciba una orientación inicial
-                    de su situación.
+                    {t.ctaText}
                   </p>
                   <TrackedContactLink
                     href={whatsappUrl}
@@ -425,7 +507,7 @@ export default async function ArticlePage({
                     className="mt-6 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm font-medium tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.97] transition-all duration-300"
                   >
                     <WhatsappLogo size={18} weight="fill" />
-                    Escribir por WhatsApp
+                    {t.ctaButton}
                   </TrackedContactLink>
                 </div>
               </div>
@@ -436,7 +518,7 @@ export default async function ArticlePage({
             {authorMembers.length > 0 && article.authorVisible !== false && (
               <div className="mt-16 pt-8 border-t border-cream/[0.06]">
                 <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-5">
-                  {authorMembers.length > 1 ? "Sobre los autores" : "Sobre el autor"}
+                  {authorMembers.length > 1 ? t.aboutMany : t.aboutOne}
                 </div>
                 <div className="space-y-6">
                   {authorMembers.map((member) => (
@@ -457,17 +539,17 @@ export default async function ArticlePage({
                         >
                           {member.name}
                         </Link>
-                        <p className="text-xs text-cream/40 mt-0.5">
+                        <p lang="es" className="text-xs text-cream/40 mt-0.5">
                           {member.role} · Corporación GC
                         </p>
-                        <p className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
+                        <p lang="es" className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
                           {member.shortBio}
                         </p>
                         <Link
                           href={`/abogados/${member.slug}`}
                           className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-gold transition-colors duration-300 mt-3"
                         >
-                          Ver perfil completo
+                          {t.profile}
                           <ArrowSquareOut size={11} weight="bold" />
                         </Link>
                       </div>
@@ -484,7 +566,7 @@ export default async function ArticlePage({
                 className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300"
               >
                 <ArrowLeft size={14} weight="regular" />
-                Volver a publicaciones
+                {t.backBottom}
               </Link>
             </div>
           </div>

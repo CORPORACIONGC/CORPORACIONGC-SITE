@@ -31,6 +31,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(article.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    // Guías con versión en otro idioma: cada URL declara las dos (hreflang).
+    ...(article.translation
+      ? {
+          alternates: {
+            languages: {
+              [article.lang ?? "es"]: `${baseUrl}/articulos/${article.slug}`,
+              [article.lang === "en" ? "es" : "en"]: `${baseUrl}/articulos/${article.translation}`,
+            },
+          },
+        }
+      : {}),
   }));
 
   // Fecha real de última actualización de perfiles (no new Date())

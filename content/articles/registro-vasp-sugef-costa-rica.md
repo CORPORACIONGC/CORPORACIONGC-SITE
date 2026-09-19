@@ -8,6 +8,7 @@ author: "Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
+translation: "costa-rica-vasp-registration-sugef"
 seoTitle: "Registro VASP ante SUGEF: Guía 2026 de la Ley 10961"
 seoDescription: "Registro VASP ante SUGEF: la Ley 10961 rige desde el 19 de setiembre de 2026. Quién debe inscribirse, sanciones y qué hacer mientras el CONASSIF no reglamenta."
 faq:

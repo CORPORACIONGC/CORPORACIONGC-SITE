@@ -28,6 +28,11 @@ export type ArticleMeta = {
   seoTitle?: string;
   seoDescription?: string;
   faq?: ArticleFAQ[];
+  /** Idioma del artículo ("es" por omisión). Las guías en inglés declaran
+      "en": la plantilla, el JSON-LD y el hreflang se ajustan a ese idioma. */
+  lang?: "es" | "en";
+  /** Slug de la versión del mismo artículo en el otro idioma, si existe. */
+  translation?: string;
 };
 
 export type Article = ArticleMeta & {
@@ -52,6 +57,8 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     seoTitle: data.seoTitle as string | undefined,
     seoDescription: data.seoDescription as string | undefined,
     faq: data.faq as ArticleFAQ[] | undefined,
+    lang: data.lang === "en" ? "en" : "es",
+    translation: data.translation as string | undefined,
   };
 }
 
@@ -92,7 +99,8 @@ export function getArticlesByAuthor(authorSubstring: string): ArticleMeta[] {
   );
 }
 
-export function formatDate(dateStr: string): string {
+export function formatDate(dateStr: string, lang: "es" | "en" = "es"): string {
+  const locale = lang === "en" ? "en-US" : "es-CR";
   try {
     // Las fechas del frontmatter vienen como "YYYY-MM-DD" (solo día). Si se
     // pasan a `new Date(dateStr)` se interpretan como medianoche UTC y, al
@@ -105,7 +113,7 @@ export function formatDate(dateStr: string): string {
     if (isoDayMatch) {
       const [, year, month, day] = isoDayMatch;
       const d = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
-      return d.toLocaleDateString("es-CR", {
+      return d.toLocaleDateString(locale, {
         year: "numeric",
         month: "long",
         day: "numeric",
@@ -114,7 +122,7 @@ export function formatDate(dateStr: string): string {
     }
 
     const d = new Date(dateStr);
-    return d.toLocaleDateString("es-CR", {
+    return d.toLocaleDateString(locale, {
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -126,8 +134,20 @@ export function formatDate(dateStr: string): string {
 
 /** Map publicationType to a Spanish display label */
 export function publicationTypeLabel(
-  type?: ArticleMeta["publicationType"]
+  type?: ArticleMeta["publicationType"],
+  lang: "es" | "en" = "es"
 ): string {
+  if (lang === "en") {
+    const en: Record<string, string> = {
+      tesis: "Thesis",
+      articulo: "Article",
+      ponencia: "Paper",
+      libro: "Book",
+      ley: "Statute",
+      guia: "Practical guide",
+    };
+    return type ? en[type] || type : "Article";
+  }
   const labels: Record<string, string> = {
     tesis: "Tesis",
     articulo: "Artículo",

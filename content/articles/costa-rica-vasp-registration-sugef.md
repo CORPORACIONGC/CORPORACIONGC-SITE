@@ -8,6 +8,8 @@ author: "Khevin Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
+lang: "en"
+translation: "registro-vasp-sugef-costa-rica"
 seoTitle: "Costa Rica VASP Registration (SUGEF): 2026 Guide, Law 10961"
 seoDescription: "Costa Rica VASP registration with SUGEF: Law 10961 applies from 19 September 2026. Who must register, penalties and what to do while CONASSIF regulates."
 faq:
