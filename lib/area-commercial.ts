@@ -1270,7 +1270,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
   "alianzas-publico-privadas-infraestructura": {
     hookHeadline: "¿Necesita estructurar, impugnar o defender un proyecto de concesión o APP?",
     hookSubtext:
-      "Costa Rica está en transición. La Ley 7762 sigue siendo el régimen vigente para los contratos de concesión y para todos los procedimientos en curso. El expediente 24.009 (Ley Marco APP) fue aprobado en primer debate el 19 de mayo de 2026 pero está suspendido por una consulta de constitucionalidad ante la Sala Constitucional; cuando entre en vigor —tras su reglamentación— sustituirá al Consejo Nacional de Concesiones por la Agencia Nacional de APP. Defendemos a concesionarios, consorcios, inversionistas y al sector público en ambos regímenes: estructuración, refrendo, objeción de carteles, apelación de adjudicaciones y litigio contencioso contra los actos del CNC, MOPT y CGR.",
+      "Costa Rica está en transición. La Ley 7762 sigue siendo el régimen vigente para los contratos de concesión y para todos los procedimientos en curso. El expediente 24.009 (Ley Marco APP), aprobado en primer debate el 18 de mayo de 2026, volvió a la Asamblea después de que la Sala Constitucional declarara inconstitucional, el 9 de setiembre, la Agencia Nacional de APP que debía sustituir al Consejo Nacional de Concesiones. Defendemos a concesionarios, consorcios, inversionistas y al sector público en ambos regímenes: estructuración, refrendo, objeción de carteles, apelación de adjudicaciones y litigio contencioso contra los actos del CNC, MOPT y CGR.",
     scenariosTitle: "¿Cuándo necesita un abogado en concesiones y APP?",
     triggerScenarios: [
       "Va a participar en una licitación de concesión y necesita estructurar la oferta",
@@ -1278,7 +1278,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       "Necesita objetar un cartel o apelar una adjudicación ante la Contraloría",
       "Un contrato de concesión vigente enfrenta una controversia de equilibrio económico-financiero",
       "Necesita impugnar en sede contenciosa un acto del CNC, MOPT o CGR que afecta su contrato",
-      "Es proponente de una iniciativa privada y la quiere llevar al CNC (o, en su día, a la ANAPP)",
+      "Es proponente de una iniciativa privada y la quiere llevar al CNC",
       "Necesita saber cómo le afectará el expediente 24.009 a su proyecto vigente",
     ],
     services: [
@@ -1319,7 +1319,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         question: "¿La Ley 7762 sigue vigente o ya rige la nueva Ley Marco APP?",
         answer:
-          "La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) fue aprobado en primer debate el 19 de mayo de 2026, pero veinte diputados presentaron consulta facultativa de constitucionalidad ante la Sala Constitucional, lo que suspende el segundo debate hasta que la Sala se pronuncie. Aun cuando supere ese tamiz, la propia ley rige a partir de su reglamentación, que el Poder Ejecutivo tiene hasta doce meses para emitir. Los contratos ya adjudicados continuarán bajo la Ley 7762 aun después de la nueva ley, salvo acuerdo mutuo en contrario (transitorios I y II).",
+          "La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) se aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la Sala Constitucional, que el 9 de setiembre de 2026 declaró inconstitucionales, entre otras normas, las que crean la Agencia Nacional de APP (voto 2026-034680). El proyecto volvió a la Asamblea, que debe decidir si lo corrige antes del segundo debate. Si llega a aprobarse, rige desde su publicación y el Poder Ejecutivo tendrá doce meses para reglamentarlo; los contratos ya adjudicados continuarán bajo la Ley 7762, salvo acuerdo mutuo en contrario (transitorios I y II).",
       },
       {
         question: "¿Cuánto tiempo tengo para objetar un cartel o apelar una adjudicación ante la CGR?",
@@ -1334,9 +1334,12 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         question: "¿Qué pasa con mi contrato vigente bajo Ley 7762 cuando entre en vigor la Ley Marco APP?",
         answer:
-          "Su contrato continúa bajo la Ley 7762. El transitorio I del expediente 24.009 establece que los procedimientos con acto de adjudicación firme, los contratos ya formalizados y los contratos en ejecución bajo la Ley 7762 se ejecutan según esa misma ley, salvo que las partes —de manera necesariamente conjunta— declaren la conveniencia de aplicar la nueva ley. La ANAPP asumirá las funciones del antiguo CNC en estos casos. Los procedimientos en licitación sin adjudicación firme se ajustarán al nuevo marco, con excepciones cuando ya hay ofertas o adjudicación no firme.",
+          "Su contrato continúa bajo la Ley 7762. El transitorio I del expediente 24.009 establece que los procedimientos con acto de adjudicación firme, los contratos ya formalizados y los contratos en ejecución bajo la Ley 7762 se ejecutan según esa misma ley, salvo que las partes —de manera necesariamente conjunta— declaren la conveniencia de aplicar la nueva ley. El texto encarga esas funciones a la ANAPP, cuya creación la Sala Constitucional declaró inconstitucional, de modo que esa parte cambiará si la Asamblea rediseña la agencia. Los procedimientos en licitación sin adjudicación firme se ajustarán al nuevo marco, con excepciones cuando ya hay ofertas o adjudicación no firme.",
       },
     ],
+    relatedArticleSlug: "ley-alianzas-publico-privadas-sala-constitucional",
+    relatedArticleLabel:
+      "Análisis: qué declaró la Sala Constitucional sobre el proyecto de Ley Marco de APP",
   },
   "compliance-publico-anticorrupcion": {
     hookHeadline: "¿Está expuesto al régimen anticorrupción al contratar con el Estado o ejercer un cargo público?",

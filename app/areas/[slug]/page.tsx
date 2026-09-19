@@ -4759,11 +4759,15 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           N.° 8643 de 2008 y N.° 9701 de 2019) sigue siendo el régimen vigente para los contratos
           de concesión de obra pública, de obra con servicio público y de optimización de activos
           de infraestructura. Paralelamente, el expediente N.° 24.009, Ley Marco de las
-          Asociaciones Público-Privadas, fue aprobado en primer debate el 19 de mayo de 2026, pero
-          fue suspendido por una consulta facultativa de constitucionalidad presentada ante la
-          Sala Constitucional; cuando entre en vigor —a partir de su reglamentación— derogará la
-          Ley 7762 y sustituirá al Consejo Nacional de Concesiones (CNC) por la Agencia Nacional
-          de Asociaciones Público-Privadas (ANAPP).
+          Asociaciones Público-Privadas, se aprobó en primer debate el 18 de mayo de 2026 con el
+          propósito de derogar la Ley 7762 y sustituir al Consejo Nacional de Concesiones (CNC)
+          por una Agencia Nacional de Asociaciones Público-Privadas (ANAPP). El 9 de setiembre de
+          2026 la Sala Constitucional declaró inconstitucional esa agencia, junto con otras normas
+          del proyecto, y el texto volvió a la Asamblea. Analizamos el voto norma por norma en{" "}
+          <Link href="/articulos/ley-alianzas-publico-privadas-sala-constitucional" className="text-gold hover:text-gold/80 transition-colors">
+            qué declaró la Sala sobre la Ley Marco de APP
+          </Link>
+          .
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
           Como abogados en concesiones y APP en Costa Rica, en Corporación GC asesoramos a
@@ -4869,19 +4873,21 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 
       <Instrumento titulo="La transición: expediente 24.009 (Ley Marco APP)" fundamento="Expediente N.° 24.009; transitorios I y II">
         <p>
-          El expediente N.° 24.009, Ley Marco de las Asociaciones Público-Privadas, fue aprobado
-          en primer debate el 19 de mayo de 2026; veinte diputados presentaron una consulta
-          facultativa de constitucionalidad ante la Sala Constitucional, lo que suspende el trámite
-          legislativo y bloquea el segundo debate hasta que la Sala se pronuncie. Aun cuando supere
-          ese tamiz y se publique, la propia ley rige a partir de su reglamentación, que el Poder
-          Ejecutivo tiene hasta doce meses para emitir.
+          El expediente N.° 24.009, Ley Marco de las Asociaciones Público-Privadas, se aprobó en
+          primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la Sala
+          Constitucional. El 9 de setiembre de 2026 la Sala declaró inconstitucionales, por
+          mayoría, los artículos que crean y organizan la agencia, además de normas sobre la
+          Contraloría, el empleo público, las tarifas y la iniciativa privada (voto 2026-034680).
+          Como los vicios son de fondo, la Asamblea decide si corrige el texto antes del segundo
+          debate. Si llega a aprobarse, la ley rige desde su publicación y el Poder Ejecutivo
+          tiene doce meses para reglamentarla.
         </p>
         <p>
-          Cuando entre en vigor, derogará la Ley 7762, sustituirá al CNC por la Agencia Nacional de
+          En los términos del texto consultado, la ley derogaría la Ley 7762, sustituiría al CNC por la Agencia Nacional de
           Asociaciones Público-Privadas (ANAPP) —con personalidad jurídica instrumental y
-          patrimonio propio, junto con una Dirección General de APP (DGAPP)—, reordenará el ciclo
+          patrimonio propio, junto con una Dirección General de APP (DGAPP)—, reordenaría el ciclo
           de vida del proyecto en fases de preinversión, inversión y postinversión integradas al
-          Sistema Nacional de Inversión Pública (Ley N.° 10.441), e introducirá expresamente el
+          Sistema Nacional de Inversión Pública (Ley N.° 10.441), e introduciría expresamente el
           principio de «valor por el dinero» y un régimen de compromisos firmes y contingentes con
           tope plurianual a cargo del Ministerio de Hacienda. La adjudicación se hará por
           licitación mayor con invitación internacional según la Ley General de Contratación
@@ -4901,12 +4907,12 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               ¿La Ley 7762 sigue vigente o ya rige la nueva Ley Marco APP?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) fue
-              aprobado en primer debate el 19 de mayo de 2026, pero veinte diputados presentaron
-              una consulta facultativa de constitucionalidad ante la Sala Constitucional, lo que
-              suspende el segundo debate hasta que la Sala se pronuncie. Aun cuando supere ese
-              tamiz, la propia ley rige a partir de su reglamentación, que el Poder Ejecutivo tiene
-              hasta doce meses para emitir. Mientras tanto, todos los contratos de concesión de
+              La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) se
+              aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la
+              Sala Constitucional, que el 9 de setiembre de 2026 declaró inconstitucionales, entre
+              otras normas, las que crean la Agencia Nacional de APP. El proyecto volvió a la
+              Asamblea; si llega a aprobarse, rige desde su publicación y el Poder Ejecutivo tendrá
+              doce meses para reglamentarlo. Mientras tanto, todos los contratos de concesión de
               obra pública, de obra con servicio público y de optimización de activos se rigen por
               la Ley 7762; los contratos ya adjudicados continuarán bajo ese régimen aun después de
               la nueva ley, salvo acuerdo mutuo en contrario (transitorios I y II del expediente
@@ -4932,12 +4938,13 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 
           <div>
             <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuáles serán los cambios principales cuando entre en vigor la Ley Marco APP?
+              ¿Qué cambiaría si se aprueba la Ley Marco APP?
             </h3>
             <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Tres cambios estructurales destacables: (i) crea la Agencia Nacional de Asociaciones
-              Público-Privadas (ANAPP), órgano con personalidad jurídica instrumental, que
-              sustituye al Consejo Nacional de Concesiones; (ii) reordena el ciclo de vida del
+              En los términos del texto consultado, tres cambios estructurales: (i) crea la Agencia
+              Nacional de Asociaciones Público-Privadas (ANAPP), con personalidad jurídica
+              instrumental, que sustituye al Consejo Nacional de Concesiones y cuya creación la Sala
+              Constitucional declaró inconstitucional el 9 de setiembre de 2026; (ii) reordena el ciclo de vida del
               proyecto en fases de preinversión, inversión y postinversión, integradas al Sistema
               Nacional de Inversión Pública (Ley N.° 10.441); y (iii) introduce expresamente el
               principio de «valor por el dinero» y un régimen de compromisos firmes y contingentes
