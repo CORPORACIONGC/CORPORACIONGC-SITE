@@ -335,6 +335,14 @@ body {
     text-align: left;
   }
 }
+/* Los bloques propios que viven dentro de un artículo (figuras, recuadros
+   marcados con not-prose) no heredan el justificado ni la división silábica. */
+.prose-article .not-prose p,
+.prose-article .not-prose li {
+  text-align: left;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+}
 .prose-article code {
   background: #1C1C1E0A;
   padding: 0.15rem 0.4rem;
