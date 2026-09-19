@@ -9,7 +9,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
 seoTitle: "Recurso de revocatoria y apelación en subsidio: plazos LGAP"
-seoDescription: "Revocatoria, apelación en subsidio y revisión contra un acto administrativo: el plazo de 3 días hábiles de la LGAP, con diagramas y cuándo ir al juez."
+seoDescription: "Revocatoria, apelación en subsidio y revisión contra un acto administrativo: el plazo de 3 días hábiles de la LGAP, cómo se cuenta y cuándo ir al juez."
 faq:
   - question: "¿Qué recursos existen contra un acto administrativo en Costa Rica?"
     answer: "La Ley General de la Administración Pública (LGAP) prevé dos recursos ordinarios, el de revocatoria (también llamado de reposición) y el de apelación, y uno extraordinario, el de revisión (artículo 343). La revocatoria la resuelve el mismo órgano que dictó el acto; la apelación, su superior jerárquico. Leyes especiales fijan reglas propias en materia municipal, tributaria y de contratación pública."
