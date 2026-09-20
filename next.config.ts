@@ -39,6 +39,15 @@ const nextConfig: NextConfig = {
         destination: "/areas/contratacion-publica",
         permanent: true,
       },
+      // El artículo «Abogado contencioso-administrativo» competía con su
+      // propia área por la misma consulta comercial: 434 y 362 impresiones,
+      // cero clics cada una. Se consolida en el área, que ya tiene el
+      // contenido legal y las preguntas frecuentes.
+      {
+        source: "/articulos/abogados-derecho-contencioso-administrativo-costa-rica",
+        destination: "/areas/litigio-contencioso-administrativo",
+        permanent: true,
+      },
     ];
   },
   async headers() {

@@ -92,7 +92,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Ley de Expropiaciones, Ley N.° 7495, reformada por las leyes N.° 9286 y N.° 9462). El
           procedimiento combina una fase administrativa —declaratoria de interés público, avalúo
           y oposición— y una fase judicial ante el Juzgado Contencioso-Administrativo y Civil de
-          Hacienda.
+          Hacienda.{" "}
+          <Link href="/articulos/expropiacion-costa-rica-derechos" className="text-gold hover:text-gold/80 transition-colors">
+            Si ya le notificaron, aquí explicamos el proceso y los plazos paso a paso
+          </Link>
+          .
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
           Como abogados especialistas en expropiaciones en Costa Rica, en Corporación GC
@@ -366,6 +370,36 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               proteger los derechos del demandante durante el proceso. El CPCA superó el sistema
               anterior, que era predominantemente anulatorio, para establecer una jurisdicción con
               poderes plenos de tutela de los derechos de los administrados frente al poder público.
+            </p>
+          </div>
+
+          {/* Las dos preguntas que traía el artículo «Abogado
+              contencioso-administrativo», consolidado aquí: competían por la
+              misma consulta y ninguna de las dos páginas recibía clics. */}
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Qué tipos de casos se litigan en la jurisdicción contencioso-administrativa?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Nulidad de actos administrativos que deniegan permisos, licencias o beneficios;
+              responsabilidad patrimonial del Estado por daños causados por su funcionamiento normal
+              o anormal, incluida la omisión; contratación pública, desde la impugnación del cartel
+              hasta la anulación de una adjudicación; empleo público y procedimientos disciplinarios;
+              materia municipal, tributaria y regulatoria; y la impugnación de actuaciones materiales
+              y vías de hecho, que no requieren agotar la vía administrativa.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-base font-semibold text-cream/90 mb-3">
+              ¿Por qué conviene un abogado especializado para litigar contra el Estado?
+            </h3>
+            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+              Porque el proceso es oral y por audiencias, con plazos de caducidad que no se
+              suspenden y reglas propias de legitimación, agotamiento y prueba. Una demanda
+              presentada fuera del plazo del artículo 39 del CPCA se rechaza sin examinar el fondo,
+              por fundada que esté. A eso se suma el dominio de la jurisprudencia de la Sala Primera,
+              que fija el alcance de cada figura.
             </p>
           </div>
 
