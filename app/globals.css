@@ -1070,6 +1070,11 @@ html {
 /* Viñetas con marcador circular de marca */
 .prose-article ul { list-style: none; padding-left: 1.5rem; }
 .prose-article ul > li { position: relative; padding-left: 0.25rem; }
+/* Los componentes que se insertan en un artículo traen su propia lista y no
+   quieren la viñeta de la prosa: basta con marcarla «list-none». */
+.prose-article .list-none { padding-left: 0; }
+.prose-article .list-none > li { padding-left: 0; }
+.prose-article .list-none > li::before { content: none; }
 .prose-article ul > li::before {
   content: "";
   position: absolute;

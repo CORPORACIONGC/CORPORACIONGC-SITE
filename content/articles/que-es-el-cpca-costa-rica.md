@@ -8,8 +8,8 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "¿Qué es el CPCA? Código Procesal Contencioso CR"
-seoDescription: "Qué es el CPCA (Ley N.° 8508), para qué sirve y qué permite reclamar contra el Estado, explicado por un bufete dirigido por un co-redactor de la ley."
+seoTitle: "Código Procesal Contencioso-Administrativo (CPCA · Ley 8508)"
+seoDescription: "El CPCA vigente, artículo por artículo y con buscador: plazos para demandar, medidas cautelares, casación y costas, con la jurisprudencia que los interpreta."
 faq:
   - question: "¿Qué es el CPCA?"
     answer: "El CPCA es el Código Procesal Contencioso-Administrativo (Ley N.° 8508 del 28 de abril de 2006), vigente desde el 1.° de enero de 2008. Es la ley que regula cómo se demanda al Estado y a la Administración Pública en Costa Rica ante la Jurisdicción Contencioso-Administrativa. Sustituyó a la antigua Ley Reguladora de la Jurisdicción Contencioso-Administrativa (Ley N.° 3667 de 1966)."
@@ -103,6 +103,14 @@ El CPCA estructura un proceso **oral y por audiencias**, muy distinto del antigu
 La jurisdicción se organiza en varios órganos (artículo 6): los **juzgados** de lo Contencioso-Administrativo y Civil de Hacienda, los **tribunales** de lo Contencioso-Administrativo, el **Tribunal de Casación de lo Contencioso-Administrativo** y la **Sala Primera de la Corte Suprema de Justicia**.
 
 Contra la sentencia procede el **recurso extraordinario de casación** (artículo 134), que —según el órgano del que emane la conducta impugnada— conoce el Tribunal de Casación de lo Contencioso-Administrativo o la Sala Primera de la Corte Suprema (artículos 134 a 136). Se interpone en un plazo de **quince días hábiles** (artículo 139) y procede por motivos procesales (artículo 137) o sustantivos (artículo 138). Puede conocer más en el área de [casación ante Sala Primera](/areas/casacion-sala-primera).
+
+---
+
+## El Código, artículo por artículo
+
+Esta es la versión vigente del Código, con sus doce títulos y sus 220 artículos. Busque por número —escriba «39» y verá el plazo para demandar— o por palabra —«cautelar», «costas», «casación»—. En los artículos que más deciden los casos encontrará la sentencia de esta casa que los interpreta.
+
+<CodigoCPCA />
 
 ---
 
