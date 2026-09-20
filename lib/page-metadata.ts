@@ -27,7 +27,7 @@ function tw(overrides: TW): TW {
 }
 
 export const homeMetadata: Metadata = {
-  title: "Corporación GC · Abogados en Derecho Público | Costa Rica",
+  title: "Abogados en Derecho Público en Costa Rica · Corporación GC",
   description:
     "Bufete líder en litigio contencioso-administrativo en Costa Rica. Dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA.",
   alternates: { canonical: "/" },
@@ -185,8 +185,10 @@ export async function generateAreaMetadata(
   const title = area.seoTitle;
   const description = area.seoDescription;
 
+  /* Título absoluto: la plantilla añadiría «· Corporación GC» y el corte de
+     Google se comería el final. La marca queda en el OpenGraph. */
   return {
-    title,
+    title: { absolute: title },
     description,
     openGraph: og({
       title: `${title} · Corporación GC`,
