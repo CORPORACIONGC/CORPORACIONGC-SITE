@@ -1,15 +1,15 @@
 ---
-title: "Reforma al Reglamento de Contratación Pública en Costa Rica y las nuevas reglas para venderle al Estado"
+title: "Reglamento a la Ley General de Contratación Pública: texto vigente y la reforma de 2026"
 date: "2026-06-05"
-excerpt: "La reforma 2026 al Reglamento de Contratación Pública cambia las reglas de precios, subsanación y subcontratación. Esto debe saber si le vende al Estado."
-tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Reforma 2026", "Decreto 45782", "PYME", "SICOP"]
+excerpt: "El Reglamento completo, artículo por artículo, y los cinco cambios que la reforma de 2026 introdujo en precios, subsanación y subcontratación."
+tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Reforma 2026", "Decreto 45782", "PYME", "SICOP"]
 type: "article"
 author: "Esteban Pérez Herrera"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
-seoTitle: "Reforma 2026 al Reglamento de Contratación Pública: claves"
-seoDescription: "La reforma 2026 al Reglamento de Contratación Pública cambia las reglas de precios, subsanación y subcontratación. Esto debe saber si le vende al Estado."
+seoTitle: "Reglamento a la Ley General de Contratación Pública (2026)"
+seoDescription: "Los 330 artículos del Reglamento a la Ley 9986, con buscador por número o palabra, y los cinco cambios de la reforma de 2026 para quien le vende al Estado."
 faq:
   - question: "¿Qué es la subsanación de ofertas en SICOP?"
     answer: "Es el mecanismo que permite corregir defectos de una oferta después de presentada en el sistema digital unificado (SICOP): certificaciones faltantes, declaraciones incompletas o documentos desactualizados. Con la reforma, la Administración puede excepcionalmente formular una segunda solicitud de subsanación, y la omisión del desglose del precio es subsanable si resulta verificable con los documentos de la oferta."
@@ -118,6 +118,16 @@ Hasta ahora, tanto las instituciones como los terceros (empresas, cámaras, ases
 | **Puntaje PYME en desempate** | Posición ambigua | Primer filtro |
 | **Cooperativas con perfil PYME** | Sin acceso uniforme | Mismos beneficios que PYME |
 | **Consulta de privados a la DCoP** | Permitida | Solo la Administración |
+
+---
+
+## El Reglamento, artículo por artículo
+
+Esta es la versión vigente del Reglamento, con sus ocho títulos y sus 330 artículos, ya con la reforma de mayo de 2026 incorporada. Busque por número —escriba «135» y verá qué defectos de una oferta se pueden subsanar— o por palabra —«precio», «subcontratación», «objeción»—. Cada artículo trae su rótulo oficial y, cuando la ha tenido, la nota de la reforma que lo cambió.
+
+El buscador entiende además el vocabulario anterior. La Ley 9986 rebautizó buena parte de la materia, de modo que quien escriba «cartel» encontrará el pliego de condiciones, quien escriba «licitación abreviada» encontrará la licitación menor y quien escriba «SICOP» encontrará el sistema digital unificado.
+
+<ReglamentoContratacion />
 
 ---
 

@@ -18,6 +18,7 @@ import { WhatsAppFloat } from "@/components/article/WhatsAppFloat";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmparo";
 import { CodigoCPCA } from "@/components/article/CodigoCPCA";
+import { ReglamentoContratacion } from "@/components/article/ReglamentoContratacion";
 import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
@@ -105,6 +106,7 @@ const UI = {
 const ARTICLE_COMPONENTS = {
   ComparativaViasAmparo,
   CodigoCPCA,
+  ReglamentoContratacion,
   ComparativaRecursosContratacion,
   ReformaCpca,
   CapacitacionEleinmsa,

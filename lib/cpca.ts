@@ -1,72 +1,22 @@
-/* El Código Procesal Contencioso-Administrativo como dato: el índice de sus
-   doce títulos y, para los artículos que deciden los casos, un rótulo corto y
-   la sentencia comentada que los interpreta. El texto íntegro de cada
-   artículo vive en /datos/cpca.json y se carga cuando se abre. */
+/* El Código Procesal Contencioso-Administrativo como dato: la ficha de la
+   ley, sus doce títulos y el índice de los 224 artículos con el rótulo de
+   cada uno. El texto íntegro vive en /datos/cpca.json y se descarga al
+   abrir el primer artículo. */
 
-export const CPCA_FICHA = {
-  ley: "Ley 8508",
+import type { FichaNorma, VotoDeArticulo } from "./normas";
+
+export const CPCA_FICHA: FichaNorma = {
   nombre: "Código Procesal Contencioso-Administrativo",
-  sancion: "28 de abril de 2006",
-  vigencia: "1.° de enero de 2008",
+  identificador: "Ley 8508",
+  tipo: "Ley",
+  fecha: "2006-04-28",
   version: "Texto vigente al 6 de mayo de 2025",
   articulos: 220,
+  datos: "/datos/cpca.json",
   sinalevi:
     "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1",
-} as const;
-
-/** Rótulo breve de un artículo clave: lo que resuelve, en una línea. */
-export const CPCA_ROTULOS: Record<string, string> = {
-  "1": "Objeto de la jurisdicción",
-  "2": "Materias que también conoce",
-  "3": "Lo que queda fuera",
-  "10": "Quién puede demandar",
-  "12": "Contra quién se demanda",
-  "19": "Cuándo caben las medidas cautelares",
-  "21": "Requisitos de la medida cautelar",
-  "22": "Medida provisionalísima",
-  "26": "Medida cautelar antes del proceso",
-  "31": "Agotamiento de la vía administrativa",
-  "34": "Lesividad",
-  "36": "Conductas impugnables",
-  "39": "Plazo para demandar",
-  "40": "Actos de efectos continuados",
-  "42": "Pretensiones admisibles",
-  "58": "Requisitos de la demanda",
-  "60": "Traslado de la demanda",
-  "90": "Audiencia preliminar",
-  "92": "Inadmisibilidad",
-  "107": "Sentencia",
-  "122": "Contenido de la sentencia",
-  "123": "Condena en abstracto",
-  "124": "Actualización de sumas",
-  "131": "Recurso de casación",
-  "137": "Motivos de casación",
-  "138": "Casación por razones procesales",
-  "150": "Ejecución de sentencia",
-  "193": "Costas",
-  "200": "Reformas a la Ley General de la Administración Pública",
-};
-
-/** Sentencias comentadas del sitio que interpretan un artículo del Código. */
-export const CPCA_JURISPRUDENCIA: Record<string, { slug: string; voto: string; sobre: string }[]> = {
-  "34": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "el plazo de la lesividad cuando los efectos perduran" }],
-  "39": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "desde cuándo corre el año para demandar" }],
-  "40": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "qué es un acto de efectos continuados" }],
-  "92": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "la inadmisibilidad por el plazo vencido" }],
-  "123": [{ slug: "indexacion-de-obligaciones-dinerarias", voto: "1016-F-2004", sobre: "la condena que se liquida después" }],
-  "124": [{ slug: "indexacion-de-obligaciones-dinerarias", voto: "1016-F-2004", sobre: "actualizar lo debido a su valor presente" }],
-  "138": [{ slug: "responsabilidad-bancaria-por-fraude-electronico", voto: "300-F-S1-2009", sobre: "la casación por razones procesales" }],
-  "150": [{ slug: "responsabilidad-bancaria-por-fraude-electronico", voto: "300-F-S1-2009", sobre: "la ejecución de lo resuelto" }],
-  "193": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "la condena en costas al vencido" }],
-  "200": [{ slug: "caducidad-del-procedimiento-administrativo", voto: "34-F-S1-2011", sobre: "la caducidad del procedimiento, que este artículo reformó" }],
-};
-
-export type ArticuloCPCA = {
-  art: string;
-  titulo: string | null;
-  capitulo: string | null;
-  seccion: string | null;
-  texto: string;
+  etiquetaBusqueda: "Escriba un número de artículo —39— o una palabra —cautelar—",
+  alias: ["CPCA", "Ley 8508"],
 };
 
 /** Los doce títulos del Código, en su orden. */
@@ -85,8 +35,127 @@ export const CPCA_TITULOS: string[] = [
   "Título XII · DISPOSICIONES FINALES",
 ];
 
-/** Índice ligero —número de artículo y título al que pertenece— para que el
- *  Código se pinte con la página; el texto de cada norma llega del JSON. */
-export const CPCA_INDICE: [string, number][] = [
-  ["1",0], ["2",0], ["3",0], ["4",0], ["5",0], ["6",0], ["7",0], ["8",0], ["9",1], ["10",1], ["11",1], ["12",1], ["13",1], ["14",1], ["15",1], ["16",1], ["17",1], ["18",1], ["19",2], ["20",2], ["21",2], ["22",2], ["23",2], ["24",2], ["25",2], ["26",2], ["27",2], ["28",2], ["29",2], ["30",2], ["31",3], ["32",3], ["33",3], ["34",3], ["35",3], ["36",3], ["37",3], ["38",3], ["39",3], ["40",3], ["41",3], ["42",3], ["43",3], ["44",3], ["45",3], ["46",3], ["47",3], ["48",3], ["49",4], ["50",4], ["51",4], ["52",4], ["53",4], ["54",4], ["55",4], ["56",4], ["57",4], ["58",4], ["59",4], ["60",4], ["61",4], ["62",4], ["63",4], ["64",4], ["65",4], ["66",4], ["67",4], ["68",4], ["69",4], ["70",4], ["71",4], ["72",4], ["73",4], ["74",4], ["75",4], ["76",4], ["77",4], ["78",4], ["79",4], ["80",4], ["81",4], ["82",4], ["83",4], ["84",4], ["85",4], ["86",4], ["87",4], ["88",4], ["89",4], ["90",4], ["91",4], ["92",4], ["93",4], ["94",4], ["95",4], ["96",4], ["97",4], ["98",4], ["99",4], ["100",4], ["101",4], ["102",4], ["103",4], ["104",4], ["105",4], ["106",4], ["107",4], ["108",4], ["109",4], ["110",4], ["111",4], ["112",5], ["112bis",5], ["112ter",5], ["113",5], ["114",5], ["115",5], ["116",5], ["117",5], ["118",5], ["119",5], ["120",5], ["121",5], ["122",5], ["123",5], ["124",5], ["125",5], ["126",5], ["127",5], ["128",5], ["129",5], ["130",5], ["131",5], ["132",6], ["133",6], ["134",6], ["135",6], ["136",6], ["137",6], ["138",6], ["139",6], ["140",6], ["141",6], ["142",6], ["143",6], ["144",6], ["145",6], ["146",6], ["147",6], ["148",6], ["149",6], ["150",6], ["151",6], ["152",6], ["153",6], ["154",6], ["155",7], ["156",7], ["157",7], ["158",7], ["159",7], ["160",7], ["161",7], ["162",7], ["163",7], ["164",7], ["165",7], ["166",7], ["167",7], ["168",7], ["169",7], ["170",7], ["171",7], ["172",7], ["173",7], ["174",7], ["175",7], ["176",7], ["177",7], ["178",7], ["179",7], ["180",7], ["181",7], ["182",7], ["183",7], ["184",7], ["185",8], ["186",8], ["187",8], ["188",8], ["189",8], ["190",8], ["191",8], ["192",8], ["193",9], ["194",9], ["195",9], ["196",9], ["197",9], ["198",10], ["199",10], ["200",10], ["201",10], ["202",10], ["203",10], ["204",10], ["205",10], ["206",10], ["207",10], ["208",10], ["209",10], ["210",10], ["211",10], ["212",10], ["213",10], ["214",10], ["215",10], ["216",10], ["217",10], ["218",10], ["219",10], ["220",11], ["221",11], ["222",11],
+/** Los capítulos y las secciones del Código. */
+export const CPCA_GRUPOS: string[] = [
+  "Capítulo I · Naturaleza, extensión y límites de la jurisdicción administrativa",
+  "Capítulo II · Órganos",
+  "Capítulo I · Capacidad procesal",
+  "Capítulo II · Legitimación",
+  "Capítulo III · Representación y defensa de las partes",
+  "Capítulo I · Gestiones prejudiciales",
+  "Capítulo II · Conducta administrativa objeto del proceso",
+  "Capítulo III · Pretensiones de las partes",
+  "Capítulo IV · Acumulación",
+  "Capítulo V · Proceso unificado",
+  "Capítulo I · Normas aplicables a todos los procesos",
+  "Capítulo II · Demanda y contestación",
+  "Capítulo III · Conciliación",
+  "Capítulo IV · La prueba",
+  "Capítulo V · Disposiciones generales aplicables",
+  "Capítulo VI · Audiencia preliminar",
+  "Capítulo VII · Juicio oral y público",
+  "Capítulo I · Otros modos de terminación",
+  "Capítulo II · Sentencia",
+  "Capítulo I · Recursos ordinarios",
+  "Capítulo II · Recurso extraordinario de casación",
+  "Capítulo III · Recurso de casación en interés del ordenamiento jurídico",
+  "Capítulo IV · Recurso extraordinario de revisión",
+  "Capítulo I · Ejecución de sentencias de procesos contencioso-administrativos y civiles de hacienda",
+  "Capítulo II · Ejecución de sentencias de los procesos constitucionales",
+  "Capítulo I · Proceso de extensión y adaptación de la jurisprudencia a terceros",
+  "Capítulo II · Recurso no jerárquico en materia municipal",
 ];
+
+/** Número de artículo, rótulo, y los índices de su título, su capítulo y
+ *  su sección —−1 cuando no los tiene—. */
+export const CPCA_INDICE: [string, string, number, number, number][] = [
+  ["1","Objeto de la jurisdicción",0,0,-1], ["2","Materias que también conoce",0,0,-1], ["3","Lo que queda fuera",0,0,-1],
+  ["4","La competencia de la Jurisdicción Contencioso-Administrativa y Civil de Hacienda se…",0,0,-1], ["5","La Jurisdicción Contencioso-Administrativa y Civil de Hacienda será improrrogable",0,0,-1], ["6","La Jurisdicción Contencioso-Administrativa y Civil de Hacienda será ejercida por los…",0,1,-1],
+  ["7","Para determinar la competencia territorial de los tribunales, se observarán las…",0,1,-1], ["8","Además de lo previsto en el Código Procesal Civil, los jueces de lo…",0,1,-1], ["9","Tendrán capacidad procesal ante la Jurisdicción Contencioso-Administrativa y Civil de…",1,2,-1],
+  ["10","Quién puede demandar",1,3,-1], ["11","Si, durante las audiencias, una parte tiene dos o más personas abogadas, estas…",1,3,-1], ["12","Contra quién se demanda",1,3,-1],
+  ["13","Podrá intervenir como coadyuvante de cualquiera de las partes, el que tenga interés…",1,3,-1], ["14","Cuando la legitimación de las partes derive de alguna relación jurídica transmisible,…",1,3,-1], ["15","Se considerarán también partes del proceso: a) Los terceros que intervengan con…",1,3,-1],
+  ["16","En la Jurisdicción Contencioso-Administrativa y Civil de Hacienda, la representación…",1,4,-1], ["17","La representación y defensa de las entidades descentralizadas o de los particulares,…",1,4,-1], ["18","Quienes actúen como demandados, en virtud de lo dispuesto en el artículo 12 de este…",1,4,-1],
+  ["19","Cuándo caben las medidas cautelares",2,-1,-1], ["20","Las medidas cautelares podrán contener la conservación del estado de cosas, o bien,…",2,-1,-1], ["21","Requisitos de la medida cautelar",2,-1,-1],
+  ["22","Medida provisionalísima",2,-1,-1], ["23","Una vez solicitada la medida cautelar, el tribunal o el juez respectivo, de oficio o…",2,-1,-1], ["24","El tribunal o el respectivo juez o la jueza dará audiencia a las partes hasta por…",2,-1,-1],
+  ["25","En casos de extrema urgencia, el tribunal o el juez respectivo, a solicitud de parte,…",2,-1,-1], ["26","Medida cautelar antes del proceso",2,-1,-1], ["27","El auto que ordena una medida cautelar deberá ser comunicado en forma inmediata, a…",2,-1,-1],
+  ["28","El tribunal respectivo, el juez o la jueza al disponer la medida cautelar, podrá…",2,-1,-1], ["29","Cuando varíen las circunstancias de hecho que motivaron la adopción de alguna medida…",2,-1,-1], ["30","Contra el auto que resuelva la medida cautelar cabrá recurso de apelación, con efecto…",2,-1,-1],
+  ["31","Agotamiento de la vía administrativa",3,5,-1], ["32","Cuando se formule alguna solicitud ante la Administración Pública y esta no notifique…",3,5,-1], ["33","Cuando se opte por el agotamiento de la vía administrativa, la demanda se dirigirá,…",3,5,-1],
+  ["34","Lesividad",3,5,-1], ["35","Cuando se impugne una conducta omisiva de la Administración Pública, el interesado…",3,5,-1], ["36","Conductas impugnables",3,6,-1],
+  ["37","Los actos que para su eficacia requieran publicación, serán impugnables a partir del…",3,6,-1], ["38","No será admisible la pretensión de nulidad en relación con los actos que, estando…",3,6,-1], ["39","Plazo para demandar",3,6,-1],
+  ["40","Actos de efectos continuados",3,6,-1], ["41","El plazo máximo para incoar el proceso será el mismo que disponga el ordenamiento…",3,6,-1], ["42","Pretensiones admisibles",3,7,-1],
+  ["43","En la demanda pueden deducirse de manera conjunta, cualesquiera de las pretensiones…",3,7,-1], ["44","Si las pretensiones del recurrente no son satisfechas en la fase administrativa y…",3,8,-1], ["45","En un mismo proceso serán acumulables: a) Las pretensiones que no sean incompatibles…",3,8,-1],
+  ["46","Si con anterioridad a la audiencia preliminar, se dicta un acto o se tiene…",3,8,-1], ["47","En cualquier momento, antes del dictado de la sentencia, el juez tramitador o el…",3,8,-1], ["48","Cuando se trate de la afectación de intereses grupales, colectivos, corporativos o…",3,9,-1],
+  ["49","De todo escrito y documento presentado por las partes al órgano jurisdiccional, se…",4,10,-1], ["50","Después de la demanda y la contestación, no se admitirán más documentos, salvo: a)…",4,10,-1], ["51","El expediente administrativo deberá aportarse, cuando así corresponda jurídicamente,…",4,10,-1],
+  ["52","La Administración accionante, cuando así corresponda jurídicamente, deberá aportar la…",4,10,-1], ["53","Si el interesado lo estima útil, podrá requerir y presentar, con la demanda, la copia…",4,10,-1], ["54","Para los mismos efectos de la presentación de la demanda, el interesado también podrá…",4,10,-1],
+  ["55","Si las partes estiman que el expediente administrativo está incompleto, podrán…",4,10,-1], ["56","Si en forma antijurídica, cualquier ente u órgano de la Administración Pública,…",4,10,-1], ["57","Toda resolución dictada en cualquiera de las etapas del proceso, sea oral o escrita,…",4,10,-1],
+  ["58","Requisitos de la demanda",4,11,-1], ["59","La jueza o el juez tramitador tramitará el proceso desde su inicio hasta el final de…",4,11,-1], ["60","Traslado de la demanda",4,11,-1],
+  ["61","Cuando la demanda no cumpla los requisitos señalados en el artículo 58 de este…",4,11,-1], ["62","En caso de que la jueza o el juez tramitador lo considere procedente, declarará no…",4,11,-1], ["63","Presentada la demanda en forma debida o subsanados sus defectos, la jueza o el juez…",4,11,-1],
+  ["64","En el escrito de contestación de la demanda, se expondrá con claridad si los hechos…",4,11,-1], ["65","Si el demandado no contesta dentro del emplazamiento, de oficio se le declarará…",4,11,-1], ["66","En la contestación de la demanda o contrademanda, podrán alegarse todas las…",4,11,-1],
+  ["67","No obstante lo señalado en el artículo anterior, las excepciones de cosa juzgada,…",4,11,-1], ["68","Sin perjuicio de lo establecido en el primer párrafo del artículo 46 de este Código,…",4,11,-1], ["69","El actor o reconventor podrá solicitar en su demanda o contrademanda que, una vez…",4,11,-1],
+  ["70","Salvo el supuesto del artículo anterior, una vez contestada la demanda o la…",4,11,-1], ["71","El litis consorcio necesario se integrará de oficio o a gestión de parte",4,11,-1], ["72","La Administración Pública podrá conciliar sobre la conducta administrativa, su…",4,12,-1],
+  ["73","Todo representante de las partes deberá estar acreditado con facultades suficientes…",4,12,-1], ["74","La jueza o el juez conciliador convocará a tantas audiencias como estime necesarias",4,12,-1], ["75","La conciliación se entenderá fracasada cuando: a) Sin mediar justa causa, cualquiera…",4,12,-1],
+  ["76","Si las partes principales o sus representantes llegan a un acuerdo que ponga fin a la…",4,12,-1], ["77","Una vez firme el acuerdo conciliatorio, tendrá el carácter de cosa juzgada material y…",4,12,-1], ["78","La jueza o el juez conciliador podrá adoptar, en el transcurso de la conciliación,…",4,12,-1],
+  ["79","Las partes, por sí mismas, podrán buscar los diversos mecanismos para la solución de…",4,12,-1], ["80","En lo conducente, durante las audiencias conciliatorias serán aplicables los…",4,12,-1], ["81","En el mismo auto que fija la audiencia de conciliación, se advertirá a las partes que…",4,12,-1],
+  ["82","La jueza o el juez ordenará y practicará todas las diligencias de prueba necesarias,…",4,13,-1], ["83","Las partes o sus representantes, la jueza o el juez tramitador o el Tribunal, según…",4,13,-1], ["84","La jueza o el juez tramitador podrá ordenar que se reciba cualquier prueba que sea…",4,13,-1],
+  ["85","La jueza o el juez tramitador y el Tribunal, según sea el caso, deberán asegurar,…",4,14,-1], ["86","Las partes o sus representantes, debidamente acreditados, deberán comparecer a las…",4,14,-1], ["87","Si durante las audiencias una parte tiene dos o más abogados, estos deberán…",4,14,-1],
+  ["88","Durante las audiencias, las resoluciones se dictarán verbalmente y quedarán…",4,14,-1], ["89","Excepto el pronunciamiento que resuelve las defensas previas y la sentencia, contra…",4,14,-1], ["90","Audiencia preliminar",4,15,-1],
+  ["91","Se otorgará la palabra, sucesivamente, a la persona actora, la demandada, los…",4,15,-1], ["92","Inadmisibilidad",4,15,-1], ["93","No se admitirá la prueba cuando exista conformidad acerca de los hechos, salvo que se…",4,15,-1],
+  ["94","Si en la prueba admitida se encuentra la pericial, la jueza o el juez tramitador…",4,15,-1], ["95","Si la jueza, el juez tramitador o el Tribunal, de oficio o a gestión de parte, estima…",4,15,-1], ["96","Lo actuado o manifestado por la jueza o el juez tramitador durante el proceso, no…",4,15,-1],
+  ["97","En la audiencia preliminar, en lo conducente, será de aplicación el capítulo VII de…",4,15,-1], ["98","Cumplido el trámite de la audiencia preliminar, cuando sea procedente, el juez…",4,15,-1], ["99","El Tribunal se constituirá en la sala de audiencias, el día y la hora fijados, y…",4,16,-1],
+  ["100","La audiencia se realizará sin interrupción, durante las sesiones consecutivas que…",4,16,-1], ["101","El Tribunal decidirá la suspensión y anunciará el día y la hora de la continuación de…",4,16,-1], ["102","Se levantará un acta de la audiencia, la cual contendrá: a) El lugar y la fecha de la…",4,16,-1],
+  ["103","Cualquiera de las partes podrá solicitarle al Tribunal la asistencia de un consultor…",4,16,-1], ["104","La parte actora y la demandada, en su orden, resumirán los fundamentos de hecho y de…",4,16,-1], ["105","Durante el juicio oral y público se discutirán los informes periciales",4,16,-1],
+  ["106","Quien presida llamará a los testigos y testigos-peritos; comenzará por los que haya…",4,16,-1], ["107","Sentencia",4,16,-1], ["108","Cuando proceda, el Tribunal recibirá la prueba confesional bajo juramento; los…",4,16,-1],
+  ["109","Evacuada la prueba, las partes formularán conclusiones por el tiempo fijado por el…",4,16,-1], ["110","Si, durante la deliberación, el Tribunal estima absolutamente necesario recibir…",4,16,-1], ["111","Transcurrida la audiencia, el tribunal deliberará inmediatamente y procederá a dictar…",4,16,-1],
+  ["112","Además de los otros mecanismos establecidos por la ley, el proceso podrá terminar de…",5,17,-1], ["112bis","Caducidad",5,17,-1], ["112ter","Caducidad de las medidas cautelares",5,17,-1],
+  ["113","El demandante podrá desistir del proceso antes del dictado de la sentencia del…",5,17,-1], ["114","Los demandados podrán allanarse total o parcialmente a la pretensión, por escrito o…",5,17,-1], ["115","Si, habiéndose incoado el proceso, la Administración Pública demandada reconoce,…",5,17,-1],
+  ["116","Durante el transcurso del litigio, la parte principal podrá solicitar que se…",5,17,-1], ["117","Las partes o sus representantes podrán proponer, en cualquier etapa del proceso, una…",5,17,-1], ["118","Cuando se trate de procesos cuya pretensión esté relacionada con conductas omisivas…",5,17,-1],
+  ["119","La sentencia resolverá sobre todas las pretensiones y todos los extremos permitidos…",5,18,-1], ["120","La sentencia declarará la inadmisibilidad, total o parcial, de la pretensión en los…",5,18,-1], ["121","La pretensión se declarará improcedente, cuando no se ajuste al ordenamiento jurídico",5,18,-1],
+  ["122","Contenido de la sentencia",5,18,-1], ["123","Condena en abstracto",5,18,-1], ["124","Actualización de sumas",5,18,-1],
+  ["125","Cuando la sentencia condenatoria disponga la actualización a valor presente, en los…",5,18,-1], ["126","La sentencia estimatoria siempre obligará a la ejecución de las obligaciones y…",5,18,-1], ["127","Cuando la conducta declarada ilegítima sea reglada o cuando la discrecionalidad de…",5,18,-1],
+  ["128","Cuando la sentencia estimatoria verse sobre potestades administrativas con elementos…",5,18,-1], ["129","Transcurrido el plazo a que se refiere el artículo anterior, sin que la…",5,18,-1], ["130","La sentencia que acuerde la inadmisibilidad o improcedencia de la pretensión solo…",5,18,-1],
+  ["131","Recurso de casación",5,18,-1], ["132","Contra las providencias no cabrá recurso alguno",6,19,-1], ["133","Cuando proceda, el recurso de apelación deberá interponerse directamente ante el…",6,19,-1],
+  ["134","Procederá el recurso de casación contra las sentencias y los autos con carácter de…",6,20,-1], ["135","Corresponderá a la Sala Primera de la Corte Suprema de Justicia, conocer y resolver…",6,20,-1], ["136","Corresponderá al Tribunal de Casación de lo Contencioso-Administrativo y Civil de…",6,20,-1],
+  ["137","Motivos de casación",6,20,-1], ["138","Casación por razones procesales",6,20,-1], ["139","El recurso deberá ser interpuesto directamente ante la Sala Primera o el Tribunal de…",6,20,-1],
+  ["140","El recurso será rechazado de plano cuando: a) Del escrito quede claro que la…",6,20,-1], ["141","Si el recurso no cumple los requisitos señalados en el párrafo segundo del artículo…",6,20,-1], ["142","Salvo que el recurso sea rechazado de plano, la Sala Primera o el Tribunal de…",6,20,-1],
+  ["143","Las causas y los fundamentos del recurso podrán ampliarse en forma escrita, por una…",6,20,-1], ["144","Si alguna de las partes o sus representantes tienen justa causa para no asistir o no…",6,20,-1], ["145","Durante el trámite del recurso, se podrá aportar prueba documental que jure no haber…",6,20,-1],
+  ["146","Estando en trámite el recurso de casación ante la Sala Primera o ante el Tribunal de…",6,20,-1], ["147","Si la Sala Primera o el Tribunal de Casación, antes de dictar sentencia, estiman que…",6,20,-1], ["148","La Sala Primera o el Tribunal de Casación podrán ordenar, antes del dictado de la…",6,20,-1],
+  ["149","Transcurrido el plazo conferido a la parte contraria para conocer del recurso…",6,20,-1], ["150","Ejecución de sentencia",6,20,-1], ["151","En los casos en que la sentencia impugnada deba casarse, en el tanto tuvo por…",6,20,-1],
+  ["152","Contra los autos dictados durante el trámite de la casación, no cabrá recurso alguno,…",6,20,-1], ["153","Cabrá el recurso de casación en interés del ordenamiento jurídico, ante la Sala…",6,21,-1], ["154","El recurso de revisión será de conocimiento de la Sala Primera de la Corte Suprema de…",6,22,-1],
+  ["155","El Tribunal tendrá un cuerpo de jueces ejecutores, encargados de la ejecución de sus…",7,23,-1], ["156","La sentencia deberá ser cumplida, en la forma y los términos consignados por ella",7,23,-1], ["157","La sentencia firme del Tribunal deberá ser ejecutada de inmediato, salvo que el juez…",7,23,-1],
+  ["158","Los servidores de la Administración Pública a quienes se ordene el cumplimiento de la…",7,23,-1], ["159","El funcionario que incumpla sin justa causa cualquiera de los requerimientos del juez…",7,23,-1], ["160","Para el cobro efectivo de las multas impuestas, se seguirá el trámite del proceso…",7,23,-1],
+  ["161","Si, después de impuestas las multas referidas en el artículo 159 de este Código,…",7,23,-1], ["162","El derecho y los hechos nuevos, provenientes, total o parcialmente, de la…",7,23,-1], ["163","Cuando la sentencia condene en abstracto al pago por daños y perjuicios, el…",7,23,-1],
+  ["164","Transcurrido el plazo anterior, el juez ejecutor procederá a dictar la sentencia…",7,23,-1], ["165","Transcurrido el plazo de la audiencia conferida al vencido, el juez ejecutor solo…",7,23,-1], ["166","Cuando la Administración Pública sea condenada al pago de una cantidad líquida,…",7,23,-1],
+  ["167","El juez ejecutor remitirá certificación de lo dispuesto en la sentencia al…",7,23,-1], ["168","Tratándose de la Administración descentralizada, si es preciso algún ajuste o…",7,23,-1], ["169","Serán embargables, a petición de parte y a criterio del juez ejecutor, entre otros:…",7,23,-1],
+  ["170","No podrán ser embargados los bienes de titularidad pública destinados al uso y…",7,23,-1], ["171","Los fondos embargados deberán ser retenidos y depositados a la orden del juez…",7,23,-1], ["172","Cuando el cumplimiento de la sentencia signifique la provisión de fondos para los…",7,23,-1],
+  ["173","No podrá suspenderse el cumplimiento del fallo ni declararse su inejecución total ni…",7,23,-1], ["174","Desaparecidas las graves dislocaciones a la seguridad, la paz o la afectación de la…",7,23,-1], ["175","Será contraria al ordenamiento jurídico la conducta administrativa que no se ajuste a…",7,23,-1],
+  ["176","Cuando la Administración Pública no cumpla sus actos firmes y favorables para el…",7,23,-1], ["177","Si la Administración Pública repite la conducta ilegítima con violación de la…",7,23,-1], ["178","Contra el auto que resuelva el embargo, cabrá recurso de revocatoria con apelación en…",7,23,-1],
+  ["179","Corresponde al Juzgado de lo Contencioso-Administrativo la ejecución de las…",7,24,-1], ["180","En el escrito inicial, el interesado deberá hacer una exposición clara y precisa de…",7,24,-1], ["181","Del escrito presentado se le dará traslado por el plazo de cinco días hábiles a la…",7,24,-1],
+  ["182","Transcurrido el plazo anterior, si hay necesidad de evacuar prueba, se procederá…",7,24,-1], ["183","El Juzgado pronunciará sentencia dentro del plazo de los cinco días hábiles…",7,24,-1], ["184","Una vez firme la resolución que condene a pagar una cantidad líquida, el Juzgado…",7,24,-1],
+  ["185","Los efectos de la jurisprudencia contenida al menos en dos fallos de casación, ya…",8,25,-1], ["186","La petición se formulará en escrito razonado, con el que se acompañará y ofrecerá la…",8,25,-1], ["187","La solicitud será denegada, cuando exista jurisprudencia contradictoria o no exista…",8,25,-1],
+  ["188","La Sala Primera y el Tribunal de Casación podrán modificar sus criterios…",8,25,-1], ["189","Será de conocimiento del Tribunal de lo Contencioso-Administrativo, la apelación…",8,26,-1], ["190","La apelación contra los acuerdos que emanen del concejo municipal, ya sea…",8,26,-1],
+  ["191","Si el concejo no conoce de los recursos de revocatoria o apelación subsidiaria en la…",8,26,-1], ["192","Recibido el expediente o aportada su copia certificada, el Tribunal dará audiencia…",8,26,-1], ["193","Costas",9,-1,-1],
+  ["194","No habrá lugar a la condenatoria en costas, cuando la parte vencedora haya incurrido…",9,-1,-1], ["195","Con la totalidad de las costas personales que deben abonarse a la Administración del…",9,-1,-1], ["196","La parte coadyuvante no devengará ni pagará costas, más que por razón de las…",9,-1,-1],
+  ["197","Salvo acuerdo de las partes en contrario, no habrá condenatoria en costas, en caso de…",9,-1,-1], ["198","Derógase la Ley reguladora de la jurisdicción contencioso-administrativa, N.o 3667,…",10,-1,-1], ["199","Deróganse los artículos 547, 548 y 549 del Código Procesal Civil",10,-1,-1],
+  ["200","Reformas a la Ley General de la Administración Pública",10,-1,-1], ["201","Refórmase el Código de Normas y Procedimientos Tributarios, en las siguientes…",10,-1,-1], ["202","Refórmase el Código Municipal, Ley N.o 7794, de 30 de abril de 1998, y sus reformas,…",10,-1,-1],
+  ["203","Refórmase el artículo 305 del Código Penal, Ley N .o 4573, de 4 de mayo de 1970, y…",10,-1,-1], ["204","Refórmase el artículo 64 de la Ley N.o 7472, Promoción de la competencia y defensa…",10,-1,-1], ["205","En los artículos 79 y 84 del Código de Minería, Ley N .o 6797, de 4 de octubre de…",10,-1,-1],
+  ["206","Refórmase el segundo párrafo del artículo 23 de la Ley orgánica de la agricultura e…",10,-1,-1], ["207","Refórmase el segundo párrafo del artículo 33 de la Ley general de caminos públicos,…",10,-1,-1], ["208","Refórmase el artículo 309 de la Ley general de Aviación Civil, N.o 5150, de 14 de…",10,-1,-1],
+  ["209","Deróganse la Ley N.o 12, de 26 de setiembre de 1918, y sus reformas; así como la Ley…",10,-1,-1], ["210","Deróganse los artículos 23, 24 y 26 de la Ley de inscripción de documentos en el…",10,-1,-1], ["211","Derógase la Ley de creación de la Sección Tercera del Tribunal Superior…",10,-1,-1],
+  ["212","Derógase el artículo 119 de la Ley orgánica del Poder Judicial, N.o 7333, y sus reformas",10,-1,-1], ["213","Modifícase el inciso c) del artículo 7 de la Ley orgánica del Colegio de Médicos y…",10,-1,-1], ["214","Modifícase el inciso b) del artículo 2 de la Ley orgánica del Colegio de…",10,-1,-1],
+  ["215","Derógase el artículo 42 de la Ley de expropiaciones, N.o 7495, de 3 de mayo de 1995,…",10,-1,-1], ["216","Modifícase el artículo 21 de la Ley de adquisiciones, expropiaciones y constitución…",10,-1,-1], ["217","Reformas de la Ley orgánica de la Procuraduría General de la República: 1) Adiciónase al",10,-1,-1],
+  ["218","Reformas y derogaciones de la Ley orgánica de la Contraloría General de la República…",10,-1,-1], ["219","Reformas en relación con atribuciones de la Procuraduría General de la República 1)…",10,-1,-1], ["220","Para lo no previsto expresamente en este Código, se aplicarán los principios del…",11,-1,-1],
+  ["221","Durante el plazo de seis meses después de publicado este Código en La Gaceta, la…",11,-1,-1], ["222","El presente Código empezará a regir el 1o de enero de dos mil ocho",11,-1,-1],
+];
+
+/** Sentencias comentadas del sitio que interpretan un artículo del Código. */
+export const CPCA_JURISPRUDENCIA: Record<string, VotoDeArticulo[]> = {
+  "34": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "el plazo de la lesividad cuando los efectos perduran" }],
+  "39": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "desde cuándo corre el año para demandar" }],
+  "40": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "qué es un acto de efectos continuados" }],
+  "92": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "la inadmisibilidad por el plazo vencido" }],
+  "123": [{ slug: "indexacion-de-obligaciones-dinerarias", voto: "1016-F-2004", sobre: "la condena que se liquida después" }],
+  "124": [{ slug: "indexacion-de-obligaciones-dinerarias", voto: "1016-F-2004", sobre: "actualizar lo debido a su valor presente" }],
+  "138": [{ slug: "responsabilidad-bancaria-por-fraude-electronico", voto: "300-F-S1-2009", sobre: "la casación por razones procesales" }],
+  "150": [{ slug: "responsabilidad-bancaria-por-fraude-electronico", voto: "300-F-S1-2009", sobre: "la ejecución de lo resuelto" }],
+  "193": [{ slug: "caducidad-de-la-accion", voto: "1426-F-S1-2012", sobre: "la condena en costas al vencido" }],
+  "200": [{ slug: "caducidad-del-procedimiento-administrativo", voto: "34-F-S1-2011", sobre: "la caducidad del procedimiento, que este artículo reformó" }],
+};
