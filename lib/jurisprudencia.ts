@@ -226,6 +226,13 @@ export type SentenciaDestacada = {
 
   /** SEO */
   metaDescription: string;
+  /** Áreas de práctica donde aplicamos este criterio. Enlaza la sentencia
+   *  con `/areas/<slug>` en ambos sentidos: la página del área muestra la
+   *  sentencia y la sentencia remite al área. */
+  areas?: string[];
+  /** Etiquetas de artículos con las que se empareja, para ofrecerla al pie
+   *  de los artículos que tratan la misma materia. */
+  temas?: string[];
 };
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -710,6 +717,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-292363",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
 
+    areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "expropiaciones"],
+    temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Responsabilidad Patrimonial", "Derecho Expropiatorio"],
     metaDescription:
       "Resolución N° 1016-F-2004 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Sentencia fundacional que estableció la procedencia de la indexación extra-convencional de obligaciones dinerarias en Costa Rica con base directa en los artículos 41, 33 y 49 de la Constitución Política.",
   },
@@ -1357,6 +1366,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     redactoresAdicionales: [],
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-315154",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    areas: ["litigio-contencioso-administrativo", "derecho-administrativo", "servicio-publico", "casacion-sala-primera"],
+    temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "Derecho a la Salud", "LGAP"],
     metaDescription: "Resolución N° 584-F-2005 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció la responsabilidad del Estado por inactividad, con la culpa de la víctima como eximente parcial."
   },
   /* 34-F-S1-2011. Pasajes copiados del texto de Nexus. */
@@ -1927,6 +1938,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     redactoresAdicionales: [],
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-509623",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    areas: ["procedimientos-sancionatorios", "derecho-administrativo", "empleo-publico", "defensa-regulatoria-sectorial"],
+    temas: ["Procedimientos Sancionatorios", "Derecho Administrativo", "LGAP"],
     metaDescription: "Resolución N° 34-F-S1-2011 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Extendió la caducidad del artículo 340 de la LGAP a los procedimientos administrativos iniciados de oficio, incluidos los sancionatorios, y fijó sus efectos."
   },
   /* 300-F-S1-2009. Pasajes copiados del texto de Nexus. */
@@ -2687,6 +2700,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     redactoresAdicionales: [],
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-442609",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    areas: ["litigio-contencioso-administrativo", "regulacion-fintech-criptoactivos", "defensa-regulatoria-sectorial", "servicio-publico"],
+    temas: ["Responsabilidad Patrimonial", "VASP", "SUGEF", "Derecho Público"],
     metaDescription: "Resolución N° 300-F-S1-2009 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Aplicó la responsabilidad objetiva de la Ley del Consumidor al fraude en la banca por internet: el banco responde por el riesgo del servicio, incluida la identificación del cliente, salvo causa eximente probada."
   },
   /* 1426-F-S1-2012. Pasajes copiados del texto de Nexus. */
@@ -3248,6 +3263,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     ],
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767786",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    areas: ["litigio-contencioso-administrativo", "derecho-administrativo", "materia-municipal", "casacion-sala-primera"],
+    temas: ["Contencioso Administrativo", "CPCA", "Derecho Administrativo"],
     metaDescription: "Resolución N° 1426-F-S1-2012 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Distinguió el acto de efecto instantáneo del de efectos continuados para computar la caducidad de la acción del CPCA y fijó que el juez la examina de oficio."
   },
   /* 654-F-S1-2008. Pasajes copiados del texto de Nexus. */
@@ -3902,6 +3919,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     redactorTextual: "Redacta el Magistrado González Camacho",
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-764867",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
+    areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo"],
+    temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "LGAP", "Derecho Público"],
     metaDescription: "Resolución N° 654-F-S1-2008 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Fijó que la responsabilidad del Estado por la función jurisdiccional deriva de la Constitución, aplicó el plazo de cuatro años del artículo 198 de la LGAP y precisó cuándo la prisión preventiva seguida de sobreseimiento por inocencia debe indemnizarse."
   }
 ];
@@ -3929,6 +3948,24 @@ export function fragmentosLiterales(s: SentenciaDestacada) {
 
 /** Las sentencias en orden cronológico, como se lee una línea
  *  jurisprudencial: el folio de la portada abre con la más antigua. */
+/** Las sentencias ligadas a un área de práctica, de la más nueva a la más
+ *  antigua, para el bloque de jurisprudencia de `/areas/<slug>`. */
+export function getSentenciasPorArea(area: string): SentenciaDestacada[] {
+  return SENTENCIAS_DESTACADAS.filter((s) => s.areas?.includes(area)).sort((a, b) =>
+    b.fechaISO.localeCompare(a.fechaISO),
+  );
+}
+
+/** Las sentencias que tratan alguno de estos temas, para el pie de un
+ *  artículo. La comparación ignora tildes y mayúsculas. */
+const sinTilde = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+export function getSentenciasPorTemas(tags: string[], tope = 2): SentenciaDestacada[] {
+  const t = tags.map(sinTilde);
+  return SENTENCIAS_DESTACADAS.filter((s) => s.temas?.some((tema) => t.includes(sinTilde(tema))))
+    .sort((a, b) => b.fechaISO.localeCompare(a.fechaISO))
+    .slice(0, tope);
+}
+
 export function getAllSentencias(): SentenciaDestacada[] {
   return [...SENTENCIAS_DESTACADAS].sort((a, b) => a.fechaISO.localeCompare(b.fechaISO));
 }

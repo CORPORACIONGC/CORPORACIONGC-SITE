@@ -35,7 +35,7 @@ import {
   PRONUNCIAMIENTOS_QUE_CITAN,
   RESOLUCIONES_QUE_CITAN,
 } from "@/lib/jurisprudencia-citas";
-import { FIRM } from "@/lib/constants";
+import { FIRM, PRACTICE_AREA_PAGES } from "@/lib/constants";
 import { buildJurisprudenciaMetadata } from "@/lib/page-metadata";
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
@@ -77,6 +77,10 @@ export default async function SentenciaDestacadaPage({
   const { slug } = await params;
   const sentencia = getSentenciaBySlug(slug);
   if (!sentencia) notFound();
+
+  /* Las áreas de práctica donde aplicamos el criterio, en el orden en que la
+     sentencia las declara. */
+  const areas = (sentencia.areas ?? []).flatMap((a) => PRACTICE_AREA_PAGES.filter((p) => p.slug === a));
 
   /* ── JSON-LD: Article + LegalForceStatus ── */
   const jsonLd = {
@@ -411,6 +415,40 @@ export default async function SentenciaDestacadaPage({
             </section>
           </article>
         </div>
+
+        {/* ─── Dónde aplicamos este criterio ───
+            El enlace de vuelta hacia las áreas de práctica: cierra el
+            circuito que abre cada área con sus sentencias. */}
+        {areas.length > 0 && (
+          <nav aria-label="Áreas de práctica relacionadas" className="mx-auto max-w-[1200px] px-6 pt-16 md:px-10">
+            <div className="border-t border-cream/10 pt-10">
+              <p className="type-label text-cream/65">Dónde aplicamos este criterio</p>
+              <ul role="list" className="mt-6 grid gap-3 md:grid-cols-2">
+                {areas.map((a) => (
+                  <li key={a.slug}>
+                    <Link
+                      href={`/areas/${a.slug}`}
+                      className="group flex h-full items-start justify-between gap-4 rounded-xl border border-cream/10 bg-cream/[0.02] p-5 transition-colors duration-300 hover:border-burgundy/25 dark:hover:border-gold/30"
+                    >
+                      <span className="min-w-0">
+                        <span className="block text-sm font-semibold text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-gold">
+                          {a.title}
+                        </span>
+                        <span className="mt-1 block text-xs leading-relaxed text-cream/65 line-clamp-2">{a.subtitle}</span>
+                      </span>
+                      <ArrowRight
+                        size={14}
+                        weight="bold"
+                        aria-hidden="true"
+                        className="mt-1 shrink-0 text-cream/40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-burgundy dark:group-hover:text-gold"
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </nav>
+        )}
 
         {/* ─── Navegación final ─── */}
         <div className="mx-auto max-w-[1200px] px-6 pb-20 pt-16 md:px-10">

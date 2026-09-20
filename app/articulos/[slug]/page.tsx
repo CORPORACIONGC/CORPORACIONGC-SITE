@@ -51,6 +51,8 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import { buildArticleMetadata } from "@/lib/page-metadata";
+import { getSentenciasPorTemas } from "@/lib/jurisprudencia";
+import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRelacionadas";
 
 /* Credencial mostrada bajo el byline cuando el "autor" es la firma misma
    (artículos institucionales). Refleja la autoridad del director del bufete
@@ -579,6 +581,15 @@ export default async function ArticlePage({
                   ))}
                 </div>
               </div>
+            )}
+
+            {/* Sentencias de la firma sobre la misma materia. Solo en
+                español: las guías en inglés no las llevan. */}
+            {article.lang !== "en" && (
+              <SentenciasRelacionadas
+                sentencias={getSentenciasPorTemas(article.tags)}
+                titulo="Sentencias comentadas sobre esta materia"
+              />
             )}
 
             {/* Bottom nav */}

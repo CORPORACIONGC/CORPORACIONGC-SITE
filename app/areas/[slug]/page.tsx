@@ -6,6 +6,8 @@ import { Footer } from "@/components/layout/Footer";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT, getRelatedAreas } from "@/lib/constants";
+import { getSentenciasPorArea } from "@/lib/jurisprudencia";
+import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRelacionadas";
 import { AREA_COMMERCIAL } from "@/lib/area-commercial";
 import { generateAreaMetadata } from "@/lib/page-metadata";
 import {
@@ -5466,6 +5468,7 @@ export default async function AreaDetailPage({
     : null;
 
   const relatedAreas = getRelatedAreas(slug);
+  const sentencias = getSentenciasPorArea(slug);
 
   /* JSON-LD Service schema */
   const jsonLd = {
@@ -5723,6 +5726,14 @@ export default async function AreaDetailPage({
                 Contactar a Corporación GC
               </Link>
             </div>
+
+            {/* Sentencias de la firma en esta materia: enlace interno hacia
+                las páginas de jurisprudencia, que son la pieza más citable
+                del sitio. */}
+            <SentenciasRelacionadas
+              sentencias={sentencias}
+              titulo={`Sentencias que aplicamos en ${area.title.toLowerCase()}`}
+            />
 
             {/* Áreas relacionadas — cross-linking interno para descubrimiento
                 de crawlers y navegación temática del usuario hacia materias
