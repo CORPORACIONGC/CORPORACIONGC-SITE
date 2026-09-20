@@ -48,6 +48,13 @@ const nextConfig: NextConfig = {
         destination: "/areas/litigio-contencioso-administrativo",
         permanent: true,
       },
+      // Search Console conserva esta ruta del sitio anterior entre sus 404.
+      // El artículo existe, con otra carpeta.
+      {
+        source: "/blog/:slug",
+        destination: "/articulos/:slug",
+        permanent: true,
+      },
     ];
   },
   async headers() {
