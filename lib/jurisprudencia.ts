@@ -226,6 +226,10 @@ export type SentenciaDestacada = {
 
   /** SEO */
   metaDescription: string;
+  /** Título para el buscador: primero lo que la gente escribe, después el
+   *  voto y el nombre del magistrado. Si falta, se arma con el título
+   *  editorial, que es bello pero no es lo que se busca. */
+  seoTitle?: string;
   /** Áreas de práctica donde aplicamos este criterio. Enlaza la sentencia
    *  con `/areas/<slug>` en ambos sentidos: la página del área muestra la
    *  sentencia y la sentencia remite al área. */
@@ -720,7 +724,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "expropiaciones"],
     temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Responsabilidad Patrimonial", "Derecho Expropiatorio"],
     metaDescription:
-      "Resolución N° 1016-F-2004 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Sentencia fundacional que estableció la procedencia de la indexación extra-convencional de obligaciones dinerarias en Costa Rica con base directa en los artículos 41, 33 y 49 de la Constitución Política.",
+      "¿Se actualiza una condena en colones sin que se haya pactado? La Sala Primera dijo que sí y fijó el IPC. Voto 1016-F-2004, con los pasajes literales.",
+    seoTitle: "Indexación de deudas en Costa Rica · Voto 1016-F-2004 · Óscar González Camacho",
   },
   /* 584-F-2005. Los pasajes se copiaron del texto de Nexus, que anonimiza a
      las personas: por eso la prosa tampoco las nombra. */
@@ -1368,7 +1373,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "derecho-administrativo", "servicio-publico", "casacion-sala-primera"],
     temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "Derecho a la Salud", "LGAP"],
-    metaDescription: "Resolución N° 584-F-2005 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció la responsabilidad del Estado por inactividad, con la culpa de la víctima como eximente parcial."
+    metaDescription:
+      "Cuando el Estado no actúa y el daño ocurre, responde. La Sala Primera definió el funcionamiento anormal y la eximente parcial. Voto 584-F-2005.",
+    seoTitle: "Responsabilidad del Estado por omisión · Voto 584-F-2005 · Óscar González Camacho",
   },
   /* 34-F-S1-2011. Pasajes copiados del texto de Nexus. */
   {
@@ -1940,7 +1947,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["procedimientos-sancionatorios", "derecho-administrativo", "empleo-publico", "defensa-regulatoria-sectorial"],
     temas: ["Procedimientos Sancionatorios", "Derecho Administrativo", "LGAP"],
-    metaDescription: "Resolución N° 34-F-S1-2011 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Extendió la caducidad del artículo 340 de la LGAP a los procedimientos administrativos iniciados de oficio, incluidos los sancionatorios, y fijó sus efectos."
+    metaDescription:
+      "Seis meses de inercia de la Administración caducan el procedimiento, aunque lo haya abierto de oficio. Lo fijó la Sala Primera. Voto 34-F-S1-2011.",
+    seoTitle: "Caducidad del procedimiento administrativo · Voto 34-F-S1-2011 · Óscar González Camacho",
   },
   /* 300-F-S1-2009. Pasajes copiados del texto de Nexus. */
   {
@@ -2702,7 +2711,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "regulacion-fintech-criptoactivos", "defensa-regulatoria-sectorial", "servicio-publico"],
     temas: ["Responsabilidad Patrimonial", "VASP", "SUGEF", "Derecho Público"],
-    metaDescription: "Resolución N° 300-F-S1-2009 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Aplicó la responsabilidad objetiva de la Ley del Consumidor al fraude en la banca por internet: el banco responde por el riesgo del servicio, incluida la identificación del cliente, salvo causa eximente probada."
+    metaDescription:
+      "Si le vacían la cuenta por internet, el riesgo es del banco. La Sala Primera aplicó la responsabilidad objetiva a la banca electrónica. Voto 300-F-S1-2009.",
+    seoTitle: "Fraude en la banca por internet · Voto 300-F-S1-2009 · Óscar González Camacho",
   },
   /* 1426-F-S1-2012. Pasajes copiados del texto de Nexus. */
   {
@@ -3265,7 +3276,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "derecho-administrativo", "materia-municipal", "casacion-sala-primera"],
     temas: ["Contencioso Administrativo", "CPCA", "Derecho Administrativo"],
-    metaDescription: "Resolución N° 1426-F-S1-2012 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Distinguió el acto de efecto instantáneo del de efectos continuados para computar la caducidad de la acción del CPCA y fijó que el juez la examina de oficio."
+    metaDescription:
+      "¿Un año desde cuándo? La Sala Primera separó el acto que se agota en un momento del de efectos continuados: de eso depende el plazo. Voto 1426-F-S1-2012.",
+    seoTitle: "Plazo para demandar un acto administrativo · Voto 1426-F-S1-2012 · Óscar González Camacho",
   },
   /* 654-F-S1-2008. Pasajes copiados del texto de Nexus. */
   {
@@ -3921,7 +3934,9 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo"],
     temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "LGAP", "Derecho Público"],
-    metaDescription: "Resolución N° 654-F-S1-2008 de la Sala Primera de la Corte Suprema de Justicia, redactada por el Magistrado Óscar Eduardo González Camacho. Fijó que la responsabilidad del Estado por la función jurisdiccional deriva de la Constitución, aplicó el plazo de cuatro años del artículo 198 de la LGAP y precisó cuándo la prisión preventiva seguida de sobreseimiento por inocencia debe indemnizarse."
+    metaDescription:
+      "¿Responde el Estado por la prisión preventiva de un inocente? La Sala Primera fijó el plazo de cuatro años y exigió inocencia demostrada. Voto 654-F-S1-2008.",
+    seoTitle: "Indemnización por prisión preventiva · Voto 654-F-S1-2008 · Óscar González Camacho",
   }
 ];
 

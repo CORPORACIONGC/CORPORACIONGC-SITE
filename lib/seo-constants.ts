@@ -356,7 +356,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     ogImageAlt:
       "Retrato profesional del Lic. Khevin Alberto Sánchez Zamora, Abogado Asociado en Corporación GC.",
     credential:
-      "Litigio contra el Estado y medidas cautelares. 3.er mejor promedio del Examen de Excelencia, Colegio de Abogados 2025.",
+      "Licenciado en Derecho por la Universidad de Costa Rica, Abogado Asociado de Corporación GC.",
     photo: "/images/khevin-sanchez.jpg",
     photoFocus: "50% 0%",
     photoTransform: { cropBottomRatio: 0.25 },

@@ -566,8 +566,11 @@ export default async function ArticlePage({
                         <p lang="es" className="text-xs text-cream/40 mt-0.5">
                           {member.role} · Corporación GC
                         </p>
+                        {/* En el artículo, la ficha del autor lleva su
+                            credencial —la misma línea que va bajo la firma—,
+                            no la biografía larga del equipo. */}
                         <p lang="es" className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
-                          {member.shortBio}
+                          {ATTORNEYS[member.slug]?.credential ?? member.shortBio}
                         </p>
                         <Link
                           href={`/abogados/${member.slug}`}

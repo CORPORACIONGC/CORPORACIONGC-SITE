@@ -247,6 +247,7 @@ export function buildJurisprudenciaMetadata(
         titulo: string;
         numero: string;
         metaDescription: string;
+        seoTitle?: string;
         materia: string;
         fecha: string;
         fechaCorta: string;
@@ -262,7 +263,9 @@ export function buildJurisprudenciaMetadata(
      buscan estas sentencias quienes conocen su obra. Título absoluto, sin la
      marca de la plantilla, para que el nombre no quede fuera del corte. */
   const numeroCorto = sentencia.numero.replace(/^Resolución N° /, "Voto ");
-  const seoTitle = `${sentencia.titulo} · ${numeroCorto} · Óscar González Camacho`;
+  /* El título del buscador lo declara la sentencia, y empieza por lo que la
+     gente escribe en Google. Sin él, se arma con el título editorial. */
+  const seoTitle = sentencia.seoTitle ?? `${sentencia.titulo} · ${numeroCorto} · Óscar González Camacho`;
   const ogTitle = `${sentencia.titulo} | ${sentencia.numero} | Corporación GC`;
   const publishedTime = spanishDateToISO(sentencia.fecha);
 
