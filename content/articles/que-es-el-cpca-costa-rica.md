@@ -113,6 +113,8 @@ Esta es la versión vigente del Código. Busque por número —escriba «39» y 
 
 <CodigoCPCA />
 
+Para la jurisprudencia de cada artículo, la Procuraduría General de la República publicó el 3 de setiembre de 2026 su [Código Procesal Contencioso-Administrativo Comentado](https://www.pgr.go.cr/publicaciones/codigo-procesal-contencioso-administrativo-comentado/): 468 páginas del Código con extractos de resoluciones. Es la fuente oficial y complementa lo que esta página ofrece.
+
 ---
 
 ## ¿Por qué importa quién conoce el CPCA por dentro?

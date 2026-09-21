@@ -67,9 +67,49 @@ export function OscarAbout() {
               </p>
             </AnimatedEntry>
 
+            {/* La fuente primaria de la co-redacción del Código. El sitio lo
+                afirma en todas sus páginas y hasta hoy el visitante tenía que
+                creerlo: el expediente legislativo lo consigna por escrito y lo
+                publica la propia Asamblea. */}
+            <AnimatedEntry delay={0.35}>
+              <figure className="mt-8 border-l-2 border-gold/60 pl-5">
+                <blockquote className="text-sm text-cream/75 leading-relaxed max-w-[58ch]">
+                  «la Comisión Redactora de este proyecto estuvo integrada por el
+                  Magistrado Alvaro Fernández Silva, <strong className="font-semibold text-cream">Doctor
+                  Oscar González Camacho</strong>, Licenciada Cristina Víquez Cerdas,
+                  Licenciada Lorena Brenes Esquivel, Licenciado Horacio González
+                  Quiroga, Master Ronald Hidalgo Cuadra, Doctor Manrique Jiménez
+                  Meza, Doctor Ernesto Jinesta Lobo, Licenciado Aldo Milano Sánchez».
+                </blockquote>
+                <figcaption className="mt-3 text-xs text-cream/65 leading-relaxed">
+                  Exposición de motivos del proyecto de ley del Código Procesal
+                  Contencioso-Administrativo.{" "}
+                  <a
+                    href="https://www.asamblea.go.cr/sd/SiteAssets/Lists/Consultas%20Biblioteca/EditForm/Proyecto%2015134%20ley%20Codigo%20Procesal.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                  >
+                    Expediente legislativo 15.134
+                  </a>
+                  , Asamblea Legislativa. El mismo documento lo consigna también en
+                  la Comisión Revisora.{" "}
+                  <a
+                    href="https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                  >
+                    Texto vigente de la Ley 8508
+                  </a>
+                  .
+                </figcaption>
+              </figure>
+            </AnimatedEntry>
+
             <AnimatedEntry delay={0.4}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="type-label text-cream/65 mb-3">
                   Formación académica
                 </div>
                 <div className="space-y-2">
