@@ -262,7 +262,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       label: "Sentencia Fundacional",
     },
 
-    titulo: "El giro hacia la indexación constitucional",
+    titulo: "Fundamento constitucional de la indexación",
     subtitulo:
       "El abandono del nominalismo clásico y el reconocimiento de la indexación extra-convencional como exigencia del Derecho de la Constitución.",
 
@@ -454,7 +454,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "nominalismo",
-        titulo: "Quince años de nominalismo",
+        titulo: "El criterio nominalista anterior",
         parrafos: [
           "Hasta el 26 de noviembre de 2004, la Sala Primera sostenía, en jurisprudencia constante desde 1989, que la indexación de una obligación dineraria solo procedía cuando las partes la habían pactado expresamente. A falta de una norma legal que la autorizara, el deudor debía únicamente la suma nominal, aunque la inflación la hubiera vaciado de contenido.",
           "Cinco sentencias sostenían esa tesis. En la práctica, un acreedor podía recibir, años después de ganar su juicio, una suma que ya no equivalía al daño sufrido: la justicia llegaba, pero llegaba devaluada.",
@@ -464,7 +464,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "el-giro",
-        titulo: "El giro",
+        titulo: "El cambio de criterio",
         parrafos: [
           "Con esas palabras, la Sala abandonó la tesis nominalista. Su fundamento fue la propia Constitución Política: la regla siempre estuvo ahí, y lo que cambió fue la lectura. El artículo 41 manda hacer «justicia pronta, cumplida, sin denegación», y de él la Sala dedujo que la justicia cumplida no admite un pago insuficiente. Si la moneda se devalúa entre la condena y el pago, indemnizar el monto nominal equivale a denegar parcialmente la justicia.",
         ],
@@ -499,7 +499,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "requisito",
-        titulo: "Un requisito: pedirla en la demanda",
+        titulo: "El requisito de pedirla en la demanda",
         parrafos: [
           "La sentencia mantiene el principio dispositivo: la indexación se reconoce cuando la parte la pidió expresamente en su pretensión. Por esa razón la actora no la obtuvo. La solicitó después de la primera sentencia, y concederla habría hecho incongruente el fallo. La Sala declaró sin lugar el recurso y, en el mismo acto, cambió la doctrina para todos los casos siguientes.",
         ],
@@ -508,7 +508,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "recepcion",
-        titulo: "La recepción",
+        titulo: "Recepción jurisprudencial",
         parrafos: [
           "La nueva doctrina se asentó pronto. En julio de 2005, al resolver el reclamo de unas sumas dejadas de percibir por puntos de carrera profesional, la propia Sala Primera la reiteró y dejó constancia de cómo había llegado a ella.",
           "Al año siguiente, la regla pasó a la ley en la jurisdicción contencioso-administrativa. El artículo 123 del Código Procesal Contencioso-Administrativo, del que el magistrado González Camacho fue corredactor, dispone que la sentencia que condene al cumplimiento de una obligación dineraria «deberá incluir pronunciamiento sobre la actualización de dicha suma», y toma para las obligaciones en colones el mismo parámetro que la Sala había señalado: el índice de precios al consumidor.",
@@ -535,7 +535,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impacto",
-        titulo: "Su impacto",
+        titulo: "Alcance posterior",
         parrafos: [
           "Más de veinte años después, la sentencia sigue en uso. Hemos buscado su cita en Nexus, el buscador público del Poder Judicial, y la hemos encontrado en el texto de al menos 154 resoluciones de 16 despachos, dictadas entre 2005 y 2026.",
           "El reparto dice a dónde llegó. La jurisdicción contencioso-administrativa la cita en 43 resoluciones y la propia Sala Primera en 34, pero el grupo más numeroso después de ellas es la Sala Segunda con los tribunales de trabajo, con 41. Los tribunales civiles la citan en 18, la Sala Constitucional en 7, y el Tribunal de Familia y el Tribunal Agrario en 4 cada uno. La primera cita llegó tres meses después del fallo, en el voto 81-2005 de la misma Sala, del 22 de febrero de 2005; las dos últimas son sentencias de la Sala Constitucional de julio de 2026.",
@@ -744,7 +744,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       type: "referencia",
       label: "Sentencia de Referencia"
     },
-    titulo: "La omisión que obliga a reparar",
+    titulo: "Responsabilidad del Estado por inactividad material",
     subtitulo: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció que la inactividad del Estado también genera el deber de indemnizar.",
     pullQuote: {
       texto: "De ahí que, ha de afirmarse de manera contundente (con fundamento y de acuerdo con lo dicho en considerandos anteriores) que la Administración Pública también es responsable por los daños y perjuicios ocasionados con su inactividad administrativa.",
@@ -930,7 +930,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "regimen",
-        titulo: "Un régimen objetivo",
+        titulo: "El régimen de responsabilidad objetiva",
         parrafos: [
           "Antes de resolver el caso, la Sala ordenó el régimen completo de la responsabilidad de la Administración. Partió de una premisa histórica:",
           "Desde la Ley General de la Administración Pública, esa responsabilidad es objetiva. La víctima no tiene que probar la culpa ni el dolo de ningún funcionario: le basta demostrar el daño y el nexo causal, y es la Administración la que debe probar una causa que la exima. La Sala lo explicó como un cambio de perspectiva, que deja de juzgar al autor del daño y se sitúa en la posición de quien lo sufre:",
@@ -952,7 +952,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "anormalidad",
-        titulo: "Funcionar mal, tarde o nunca",
+        titulo: "El funcionamiento anormal",
         parrafos: [
           "El carácter objetivo del régimen tiene límites. La Sala lo advirtió con franqueza: un deber de reparar irrestricto y permanente sería insoportable para cualquier Estado con recursos limitados. Por eso la ley acude a criterios de imputación, y uno de ellos es el funcionamiento anormal:",
           "La anormalidad mide la conducta material de la Administración, es decir, cómo presta el servicio o ejecuta la obra frente a las reglas de la buena administración, la técnica y la pericia. Puede presentarse de tres maneras:"
@@ -968,7 +968,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "antijuridicidad",
-        titulo: "El daño que no hay deber de soportar",
+        titulo: "La antijuridicidad del daño",
         parrafos: [
           "La sentencia separa tres conceptos que la práctica suele mezclar. La ilegitimidad se refiere a la conducta jurídica de la Administración; la anormalidad, a su conducta material; la antijuridicidad, al daño mismo. Esta última existe cuando la víctima no tiene el deber de soportar la lesión, y es el presupuesto de toda reparación:",
           "De ahí una consecuencia práctica. El Estado responde también por sus actos lícitos y por su funcionamiento normal cuando el daño es especial, por la pequeña proporción de afectados o por su intensidad excepcional, como prevé el artículo 194. En esos casos la conducta se ajusta a Derecho, y lo que obliga a reparar es la antijuridicidad del daño."
@@ -984,7 +984,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "inactividad",
-        titulo: "La omisión también obliga",
+        titulo: "La inactividad material",
         parrafos: [
           "Con ese marco, la Sala respondió la pregunta del caso: si el Estado responde por lo que dejó de hacer. La conducta administrativa comprende también la omisión, y la Sala definió con precisión la inactividad material:",
           "Esa pasividad es, a la vez, funcionamiento anormal y conducta ilegítima, porque incumple una obligación que el ordenamiento ya imponía. La construcción y el mantenimiento de las vías y de los puentes peatonales correspondían al Ministerio según su ley orgánica, y la Sala Constitucional había declarado en la sentencia 11519-2003 que el Estado debe adoptar las medidas idóneas frente a un peligro inminente para la vida, incluidas las soluciones peatonales. La conclusión fue categórica:"
@@ -1043,7 +1043,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "recepcion",
-        titulo: "La recepción",
+        titulo: "Recepción jurisprudencial",
         parrafos: [
           "La sentencia se volvió referencia de inmediato. Seis días después, la Sala Primera transcribió su pasaje sobre la carga de la prueba para resolver una demanda contra la Caja Costarricense de Seguro Social en el voto 590-F-2005, y en 2007 el Tribunal Contencioso Administrativo ya transcribía sus páginas sobre la inactividad para resolver la muerte de una menor.",
           "Su propio redactor fijó el alcance del precedente seis meses después. En el voto 74-F-2007, el Estado lo invocó para pedir que se repartiera la responsabilidad con un tercero, y la Sala respondió que las bases jurídicas del 584 eran aplicables, con un cuadro fáctico que no admitía comparación:",
@@ -1064,7 +1064,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impacto",
-        titulo: "Su impacto",
+        titulo: "Alcance posterior",
         parrafos: [
           "Más de veinte años después, la sentencia sigue en pleno uso. En Nexus, el buscador público del Poder Judicial, su cita aparece en el texto de al menos 477 resoluciones, dictadas entre 2005 y 2026. Es la más citada de las cinco sentencias que hemos estudiado.",
           "Cuatro de cada cinco citas vienen de la jurisdicción contencioso-administrativa, con 406 resoluciones, y dentro de ella manda la Sección Sexta, que la cita 106 veces. La Sala Primera la cita en 43, la jurisdicción penal en 17 —al resolver la acción civil contra el Estado—, la Sala Segunda y los tribunales de trabajo en 8, y la Sala Constitucional en 2.",
@@ -1393,7 +1393,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       type: "referencia",
       label: "Sentencia de Referencia"
     },
-    titulo: "La inercia que cierra el procedimiento",
+    titulo: "Caducidad en los procedimientos iniciados de oficio",
     subtitulo: "La Sala Primera extendió la caducidad a los procedimientos que la Administración inicia de oficio, incluidos los sancionatorios, y fijó cómo opera: de pleno derecho, sin extinguir la competencia y como garantía de seguridad jurídica.",
     pullQuote: {
       texto: "Así, a pesar de que el ordinal 340 no regula la caducidad para los procedimientos iniciados de oficio por la Administración, sus postulados básicos son aplicables, mutatis mutandi, a estos, por integración del ordenamiento.",
@@ -1597,7 +1597,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impulso",
-        titulo: "Quién impulsa el procedimiento",
+        titulo: "El deber de impulso del procedimiento",
         parrafos: [
           "La Sala partió del impulso procesal. El artículo 222 de la LGAP obliga a la Administración a impulsar de oficio todo procedimiento, sin perjuicio del impulso que le den las partes. La carga de cada una depende de lo que el procedimiento persigue, y cuando busca imponer un gravamen al particular, la carga es solo de la Administración:",
           "Por eso el plazo se cuenta de modo distinto según quién haya iniciado el procedimiento:"
@@ -1613,7 +1613,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "integracion",
-        titulo: "Una laguna que se integra",
+        titulo: "La integración de la laguna legal",
         parrafos: [
           "En un punto, la Sala dio la razón a la Superintendencia. El artículo 340, en su redacción original, hablaba del «interesado» que promovió el procedimiento, y la Administración no ocupa ese lugar, porque actúa en un interés fiduciario, nunca propio. El Tribunal se había equivocado al leer «interesado» como comprensivo de ambos. El resultado, en cambio, se mantenía:",
           "La Sala enlazó esa integración con la jurisprudencia constitucional sobre la duración razonable de los procedimientos administrativos, y cerró con un argumento de mayor a menor:",
@@ -1641,7 +1641,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "efectos",
-        titulo: "Cómo opera",
+        titulo: "Los efectos de la caducidad",
         parrafos: [
           "Integrada la laguna, la Sala precisó cómo funciona el instituto. La norma es imperativa: cumplido el plazo, el órgano no puede elegir.",
           "De ahí tres rasgos que la jurisprudencia posterior repite casi siempre con las mismas palabras:"
@@ -1657,7 +1657,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "plazos",
-        titulo: "Plazos que ordenan y plazo que sanciona",
+        titulo: "Plazos ordenatorios y plazo perentorio",
         parrafos: [
           "La Superintendencia alegó que la jurisprudencia constitucional tolera procedimientos más largos que los plazos de la ley. La Sala distinguió tres plazos: el de dos meses para concluir el procedimiento (artículo 261 de la LGAP), los del órgano director para resolver las incidencias (artículo 262) y el de seis meses de la caducidad (artículo 340).",
           "Por la misma razón descartó el argumento del artículo 329, según el cual el acto dictado fuera de plazo es válido. La caducidad responde a la inercia durante la tramitación, y por eso deja de operar cuando el expediente ya está listo para el acto final:"
@@ -1673,7 +1673,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "excusas",
-        titulo: "Lo que no la excusa",
+        titulo: "Causas que no la justifican",
         parrafos: [
           "La Superintendencia invocó también la complejidad del caso, su carga de trabajo y la protección de los afiliados. La Sala respondió que nada de eso cambia las consecuencias de la paralización:",
           "Y precisó a quién es imputable que una infracción quede sin sanción:"
@@ -1694,7 +1694,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "recepcion",
-        titulo: "La recepción",
+        titulo: "Recepción jurisprudencial",
         parrafos: [
           "La Sala Primera asumió el criterio como propio. En 2012 sistematizó a partir de él los requisitos de la caducidad, y en 2016 le fijó un límite: una vez dictado el acto final, la caducidad ya no procede, porque la fase recursiva no puede terminar un procedimiento que ya concluyó. Desde entonces la cita habitual es «34-F-S1-2011, reiterada en 147-F-S1-2016».",
           "El precedente salió también de la jurisdicción contencioso-administrativa. Lo transcriben la Sala Segunda, en demandas laborales contra entidades públicas, y el Tribunal Agrario, al conocer recursos jerárquicos impropios."
@@ -1703,7 +1703,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impacto",
-        titulo: "Su impacto",
+        titulo: "Alcance posterior",
         parrafos: [
           "En Nexus, el buscador público del Poder Judicial, su cita aparece en el texto de al menos 166 resoluciones, dictadas entre 2011 y 2026. La jurisdicción contencioso-administrativa reúne 141, con la Sección Sexta a la cabeza (56) y el Tribunal de Casación con 20. La Sala Primera la cita en 13, la Sala Segunda en 6, el Tribunal Agrario en 5 y la Sala Constitucional en 1.",
           "Su uso alcanzó el máximo en 2015, con 28 resoluciones, y se mantiene: 11 en 2023, 8 en 2024 y 13 en 2025. La reforma del CPCA había resuelto ya la pregunta principal para los procedimientos iniciados después de 2008. Lo que se sigue citando son sus reglas de funcionamiento: los efectos de pleno derecho, la conservación de la competencia, la distinción con los plazos ordenatorios y el límite del acto final.",
@@ -1967,7 +1967,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       type: "referencia",
       label: "Sentencia de Referencia"
     },
-    titulo: "El riesgo que el banco no puede trasladar",
+    titulo: "Responsabilidad objetiva en la banca por internet",
     subtitulo: "La Sala Primera aplicó a la banca por internet la responsabilidad objetiva de la Ley del Consumidor: el banco responde por la seguridad del servicio completo, incluido el mecanismo que identifica al cliente, y solo se libera si prueba una causa eximente.",
     pullQuote: {
       texto: "Al fin y al cabo, los bancos, sin que el demandado sea la excepción, custodian y administran, entre otros, un bien ajeno; y no cualquier bien, sino fondos del público. Así las cosas, no solo responde por la fortaleza de sus sistemas internos, sino también por la seguridad de quien, para llegar allí, utiliza los únicos canales posibles que el propio Banco conoce y reconoce como riesgosos.",
@@ -2242,7 +2242,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "consumo",
-        titulo: "Una relación de consumo",
+        titulo: "La relación de consumo",
         parrafos: [
           "La Sala empezó por el régimen. El Banco de Costa Rica es una entidad pública, pero al ofrecer la banca por internet actúa con su capacidad de derecho privado, frente a un cliente que es consumidor:",
           "En ese régimen la culpa no cuenta: el artículo 35 obliga al proveedor a responder aunque no haya negligencia, imprudencia, impericia ni dolo. Para el nexo causal, la Sala adoptó la teoría que considera más acorde con el ordenamiento costarricense:",
@@ -2264,7 +2264,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "riesgo",
-        titulo: "El riesgo creado y su medida",
+        titulo: "El riesgo creado y su alcance",
         parrafos: [
           "El criterio de atribución del artículo 35 es el riesgo creado. La Sala lo explicó con una máxima latina:",
           "Enseguida le fijó límites. El riesgo que obliga a reparar es el anormal, el que excede lo que la vida en sociedad tolera:",
@@ -2290,7 +2290,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "prueba",
-        titulo: "Quién prueba qué",
+        titulo: "La carga de la prueba",
         parrafos: [
           "El fraude electrónico deja a la víctima con pocas pruebas: no sabe cómo obtuvo el tercero su clave ni puede examinar los sistemas del banco. La Sala retomó un criterio que había fijado en 2008 y redistribuyó la carga:",
           "El banco enfrenta una dificultad parecida cuando alega la culpa de la víctima, porque tendría que probar hechos de la esfera personal del cliente. Por eso la Sala pidió valorar la prueba según el acceso de cada parte a ella, desde la presunción de buena fe del demandante:",
@@ -2313,7 +2313,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "el-camino",
-        titulo: "El camino de acceso",
+        titulo: "El mecanismo de acceso al servicio",
         parrafos: [
           "El núcleo del fallo está en el considerando V. La Sala aceptó que la plataforma interna del banco no fue vulnerada. Lo decisivo era otra obligación, la de identificar a quien opera las cuentas:",
           "El riesgo que se materializó estaba en ese mecanismo de identificación, y con él en el acceso al servicio. Internet es el canal que el propio banco ofrece y promociona para su beneficio, de modo que forma parte de lo que presta:",
@@ -2365,7 +2365,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "constitucion",
-        titulo: "El juez de casación y la Constitución",
+        titulo: "El control de constitucionalidad en casación",
         parrafos: [
           "El último agravio del banco invocaba la razonabilidad y la proporcionalidad: responder por un robo ocurrido en «el infinito mundo de Internet» equivalía, según el recurso, a socializar todos los riesgos del consumo. La Sala aprovechó para fijar el papel de la casación frente a la Constitución:",
           "Y rechazó el agravio. El Tribunal había aplicado el régimen que el legislador dictó en desarrollo de los artículos 41 y 46 de la Constitución, y el argumento del banco quedaba fuera del marco jurídico:"
@@ -2390,7 +2390,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "ingenieria-social",
-        titulo: "Cuando el cliente entrega la clave",
+        titulo: "La ingeniería social y la culpa de la víctima",
         parrafos: [
           "La sentencia dejó abierta la puerta de las eximentes. En 2013, la Sección Octava del Tribunal Contencioso Administrativo aplicó su marco para tener por probada la culpa de la víctima y absolver al banco en otro fraude electrónico.",
           "Con la estafa por ingeniería social, en la que el propio cliente entrega sus datos a quien se hace pasar por el banco, la cuestión llegó a la Sala Primera. En 2022, en un caso ajeno a la banca, la Sala precisó qué significa ser «ajeno al daño»: la fuerza mayor, la culpa de la víctima y el hecho de un tercero del artículo 190 de la Ley General de la Administración Pública. Ese mismo año llevó el criterio a los fraudes bancarios. Sus sentencias citan la 300-F-S1-2009 para recordar que el régimen objetivo tiene límites, y liberan al banco cuando un tercero operó con los datos del cliente y la entidad probó medidas de seguridad razonables:",
@@ -2425,7 +2425,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "recepcion",
-        titulo: "La recepción",
+        titulo: "Recepción jurisprudencial",
         parrafos: [
           "La Sala Primera asumió el criterio como propio en 2009, cuando lo aplicó a otro fraude por internet contra el mismo banco. En 2010, el Tribunal de Casación de lo Contencioso Administrativo lo usó para calificar como de consumo la relación entre el banco y el titular de una tarjeta de débito, y condenó solidariamente al Banco Popular y a la empresa dueña del cajero automático donde se hicieron seis retiros no autorizados.",
           "La doctrina salió también del ámbito bancario. El Tribunal Contencioso Administrativo y la Sala Primera la citan en demandas contra el Estado, la Caja Costarricense de Seguro Social, las municipalidades o el Instituto Costarricense de Electricidad, por su formulación de la causalidad adecuada y de la carga de la prueba. En enero de 2026 la Sala Primera la citó en la demanda de una funcionaria pública herida por el desprendimiento de un cielorraso."
@@ -2434,7 +2434,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impacto",
-        titulo: "Su impacto",
+        titulo: "Alcance posterior",
         parrafos: [
           "Hemos encontrado su cita en el texto de al menos 271 resoluciones, dictadas entre 2009 y 2026. La mayoría proviene del Tribunal Contencioso Administrativo, que conoce las demandas contra los bancos públicos, y de la Sala Primera, con 99 resoluciones. También la citan el Tribunal de Casación de lo Contencioso Administrativo, tribunales civiles y penales, la Sala Segunda y la Sala Constitucional.",
           "Cerca de la mitad resuelve demandas contra bancos y otras entidades financieras. El resto la invoca como doctrina general de la responsabilidad objetiva. El pasaje sobre el riesgo anormal aparece en el texto de más de un centenar de resoluciones, y el de la transferencia patrimonial automática, en más de un tercio.",
@@ -2731,7 +2731,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       type: "referencia",
       label: "Sentencia de Referencia"
     },
-    titulo: "El acto que se agota en un solo momento",
+    titulo: "Delimitación del acto de efectos continuados",
     subtitulo: "La Sala Primera definió cuándo un acto administrativo tiene efectos continuados: las consecuencias que se derivan de una situación ya definida dejan el plazo para demandar donde estaba, y la caducidad la examina el juez de oficio.",
     pullQuote: {
       texto: "Ahora bien, las distintas consecuencias que se puedan derivar de ello, como la pretendida imposibilidad de acceder a estudios de postgrado, o bien, eventuales ingresos adicionales, no constituyen efectos jurídicos y directos dispuestos por el acto administrativo que resolvió la gestión del petente, sino, que derivan, precisamente, de esa consolidación del estatus académico otorgado como una repercusión consecuencial, secundaria y permanente en el tiempo, pero no de incidencia repetida.",
@@ -2907,7 +2907,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "de-oficio",
-        titulo: "La caducidad, de oficio",
+        titulo: "El examen de oficio de la caducidad",
         parrafos: [
           "El actor sostuvo que el Tribunal no podía volver sobre la caducidad, porque el juez tramitador la había rechazado y la Universidad no la reiteró en sus conclusiones. La Sala separó las dos defensas que se habían opuesto:",
           "La caducidad funciona como una condición para que el juez pueda conocer el asunto:",
@@ -2934,7 +2934,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "firmeza",
-        titulo: "El plazo lo fija la firmeza del acto",
+        titulo: "La firmeza del acto y el régimen aplicable",
         parrafos: [
           "El actor pidió el plazo de cuatro años del artículo 175 de la Ley General de la Administración Pública, vigente antes del Código, porque su gestión había empezado en 2007. La Sala precisó qué decide el régimen aplicable según el transitorio III del Código:",
           "El oficio que negó la equiparación se dictó en 2007, pero se notificó en febrero de 2008, y un acto es eficaz desde que se comunica:",
@@ -2955,7 +2955,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "efectos",
-        titulo: "Instantáneo o continuado",
+        titulo: "Efecto instantáneo y efectos continuados",
         parrafos: [
           "El núcleo del fallo está en el considerando IX. El artículo 40 del Código permite demandar un acto de efectos continuados mientras esos efectos subsistan, y la ley deja sin definir la categoría. La Sala la definió por contraste.",
           "La pregunta es si el acto sigue actuando sobre la situación jurídica de la persona o si la fijó de una vez:"
@@ -2964,7 +2964,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "consecuencias",
-        titulo: "Consecuencias que no son efectos",
+        titulo: "Consecuencias derivadas y efectos del acto",
         parrafos: [
           "El actor alegaba un daño que se renovaba cada día: sin la maestría no podía aspirar a un doctorado ni a mejores ingresos. La Sala respondió con la distinción que la jurisprudencia posterior más repite:",
           "Con un acto de efecto instantáneo, el plazo había vencido mucho antes de la demanda:",
@@ -2991,7 +2991,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "cuatro-plazos",
-        titulo: "Una distinción que decide cuatro plazos",
+        titulo: "El alcance de la distinción en cuatro plazos",
         parrafos: [
           "La sentencia resolvió un problema de caducidad de la acción. Su definición sirvió después en todas las normas que hacen depender un plazo de que los efectos del acto perduren:"
         ],
@@ -3014,7 +3014,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "recepcion",
-        titulo: "La recepción",
+        titulo: "Recepción jurisprudencial",
         parrafos: [
           "La recepción fue rápida. En 2013, el Tribunal de Casación de lo Contencioso Administrativo hizo suyo el considerando IX para confirmar la caducidad de una demanda contra una orden municipal de reabrir un camino público, y la Sección Cuarta del Tribunal Contencioso Administrativo lo aplicó para rechazar la caducidad opuesta a una lesividad del Estado.",
           "La Sala Primera la aplicó en los dos sentidos. En 2016 negó efectos continuados a la cancelación del asiento de nacimiento de una persona; en 2022 los reconoció en la exoneración de una contribución que se descuenta cada mes, y casó los fallos que habían declarado inadmisibles las lesividades del Estado. En la Procuraduría, al menos diez dictámenes la citan, como el C-169-2024, que la usa para decidir si sigue abierta la potestad de anular de oficio un acto absolutamente nulo."
@@ -3023,7 +3023,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impacto",
-        titulo: "Su impacto",
+        titulo: "Alcance posterior",
         parrafos: [
           "Hemos encontrado su cita en el texto de al menos 187 resoluciones, dictadas entre 2013 y 2026. Casi todas provienen del Tribunal Contencioso Administrativo y de su Tribunal de Casación; la Sección Tercera, que conoce las apelaciones contra acuerdos municipales, la cita en 28 resoluciones. La Sala Primera la cita en 24, y el Tribunal Agrario, en dos.",
           "Su uso creció con el tiempo: cuatro de cada cinco citas son de 2020 en adelante, con 31 en 2020 y 30 en 2022. Es la más joven de las cinco sentencias que hemos estudiado y ya la citan tantas resoluciones como a las que tienen diez años más.",
@@ -3296,7 +3296,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       type: "referencia",
       label: "Sentencia de Referencia"
     },
-    titulo: "El Estado también responde cuando juzga",
+    titulo: "Indemnización por prisión preventiva del absuelto",
     subtitulo: "La Sala Primera sostuvo que la responsabilidad del Estado por su función jurisdiccional nace de la Constitución y no espera a que una ley la desarrolle, y fijó cuándo la prisión preventiva de quien después resulta inocente debe indemnizarse.",
     pullQuote: {
       texto: "Sin embargo, en criterio de esta Sala, esa ausencia legislativa no podría sustentar un principio de irresponsabilidad del Estado en su función jurisdiccional. Ya se ha señalado que dicha responsabilidad deriva del mismo marco del Derecho de la Constitución, como contrapeso relevante en las relaciones del Estado con las personas y como factor de alta trascendencia en la ecuación del Estado de Derecho.",
@@ -3559,7 +3559,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "fundamento",
-        titulo: "De dónde nace la responsabilidad",
+        titulo: "El fundamento constitucional de la responsabilidad",
         parrafos: [
           "Resuelta la prescripción, la Sala entró en el fondo. Empezó por el principio: si el ordenamiento inviste al Estado de poder, le impone al mismo tiempo el deber de reparar lo que ese poder dañe.",
           "La responsabilidad del Poder Judicial queda cubierta por esa cláusula general, con el mismo criterio objetivo que rige para la Administración:",
@@ -3585,7 +3585,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "tres-facetas",
-        titulo: "Tres maneras de responder",
+        titulo: "Las tres facetas de la responsabilidad judicial",
         parrafos: [
           "Antes de aplicar la regla, la sentencia separó los planos en que el Poder Judicial puede causar un daño. La distinción se volvió la parte más citada del fallo, porque de ella depende qué régimen se aplica a cada reclamo:"
         ],
@@ -3594,7 +3594,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "sin-ley",
-        titulo: "El silencio de la ley no exime",
+        titulo: "La falta de desarrollo legal",
         parrafos: [
           "El Estado se apoyaba en que los artículos 154 y 166 de la Constitución remiten a la ley, y ninguna ley desarrolla esta responsabilidad. La Sala respondió que la omisión del legislador no crea un privilegio:",
           "El principio no admite excepciones tácitas:",
@@ -3626,7 +3626,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "inocencia",
-        titulo: "Cuándo la prisión preventiva se indemniza",
+        titulo: "Los supuestos indemnizables de prisión preventiva",
         parrafos: [
           "El Código Procesal Penal sí regula un supuesto concreto. Su artículo 271 tiene dos párrafos: el primero cubre cualquier medida cautelar impuesta indebidamente por un funcionario que actuó con arbitrariedad o culpa grave; el segundo es más específico.",
           "Ese segundo párrafo exige tres cosas que deben darse juntas: prisión preventiva, sobreseimiento o absolutoria, y plena demostración de inocencia. Lo decisivo es la tercera:"
@@ -3642,7 +3642,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "el-fallo",
-        titulo: "La duda y la certeza",
+        titulo: "El grado de certeza exigido",
         parrafos: [
           "El Estado sostenía que el sobreseimiento se había dictado por falta de certeza sobre la participación del imputado, lo que dejaría fuera la indemnización. La Sala leyó el expediente penal y concluyó lo contrario: la Fiscalía lo había pedido por el inciso a) del artículo 311, el hecho no fue cometido por el imputado.",
           "De ahí la frase que la jurisprudencia posterior repite:"
@@ -3658,7 +3658,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "dano-moral",
-        titulo: "El daño de los días presos",
+        titulo: "La cuantificación del daño moral",
         parrafos: [
           "Quedaba el monto. El Estado reclamaba que ¢15 millones era una suma desproporcionada y que el daño no se había probado. La Sala describió en qué consiste el daño:",
           "Y recordó que esta clase de daño no necesita prueba:",
@@ -3679,7 +3679,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "recepcion",
-        titulo: "La recepción",
+        titulo: "Recepción jurisprudencial",
         parrafos: [
           "La sentencia se instaló de inmediato. En 2009 la Sala Primera la usó para separar la responsabilidad civil del juez de la responsabilidad patrimonial del Estado. En 2011 el Tribunal de Casación de lo Contencioso Administrativo reconoció por escrito que con ella «operó un cambio en la línea jurisprudencial» sobre el plazo, y rechazó que ese cambio lesionara la confianza legítima de quien reclamaba.",
           "El otro frente es el de los órganos auxiliares. La Sala Primera la invocó en 2017, en el caso de unas declaraciones del Fiscal General, y el Tribunal de Casación anuló en 2022 un fallo que había dejado al Ministerio Público fuera del régimen de la Ley General de la Administración Pública. En 2025 el Tribunal Contencioso Administrativo la sigue citando para decir que cualquier resolución, de cualquier jurisdicción, puede generar el deber de reparar."
@@ -3688,7 +3688,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
       },
       {
         id: "impacto",
-        titulo: "Su impacto",
+        titulo: "Alcance posterior",
         parrafos: [
           "Hemos encontrado su cita en el texto de al menos 255 resoluciones, dictadas entre 2009 y 2026. La jurisdicción contencioso-administrativa reúne 212 —el Tribunal Contencioso Administrativo, con la Sección Sexta a la cabeza, y su Tribunal de Casación—, y la Sala Primera la cita en 39. También aparece en la Sala Tercera, en la Sala Constitucional y en un tribunal de trabajo.",
           "Su uso no ha bajado en quince años: 2024 es el año de mayor cita, con 28 resoluciones, y desde 2020 se acumulan 119, casi la mitad de todas.",
@@ -3937,6 +3937,434 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     metaDescription:
       "¿Responde el Estado por la prisión preventiva de un inocente? La Sala Primera fijó el plazo de cuatro años y exigió inocencia demostrada. Voto 654-F-S1-2008.",
     seoTitle: "Indemnización por prisión preventiva · Voto 654-F-S1-2008 · Óscar González Camacho",
+  },
+  {
+    slug: "legitimacion-pasiva-del-organo-persona",
+    numero: "Resolución N° 1360-F-S1-2010",
+    fecha: "11 de noviembre de 2010",
+    fechaCorta: "11 Nov 2010",
+    fechaISO: "2010-11-11",
+    hora: "10:25 horas",
+    expediente: "08-000223-0161-CA",
+    tribunal: "Sala Primera de la Corte Suprema de Justicia",
+
+    area: "Derecho Administrativo",
+    materia: "Personalidad jurídica instrumental",
+
+    badge: {
+      type: "doctrinal",
+      label: "Sentencia Doctrinal"
+    },
+
+    titulo: "Legitimación pasiva del órgano con personalidad instrumental",
+    subtitulo: "La Sala Primera fijó que el órgano con personalidad jurídica instrumental es el centro último y único de imputación de sus actos: cuando el daño nace de su competencia exclusiva, la condena no alcanza al Estado. En el mismo fallo delimitó las potestades oficiosas del juez contencioso y la naturaleza del plazo para dictar sentencia.",
+
+    pullQuote: {
+      texto: "Así las cosas, si en sede jurisdiccional se determina que la conducta administrativa objeto de impugnación proviene del ejercicio de una competencia exclusiva del órgano al cual se le otorgó personalidad propia (aunque sea instrumental) para tales efectos, resulta impropio extender la imputación al ente público, mayor o menor, al que se encuentra adscrito.",
+      citation: "Considerando VIII"
+    },
+
+    sintesisPortada: {
+      caso: "El Consejo de Transporte Público declaró **desierta** en 2009 una licitación de ruta de autobús de 1996, después de que el representante de la empresa adjudicataria fuera **condenado penalmente** por uso de documento falso. El Tribunal anuló el acuerdo por falta de motivación y condenó al pago de daños **en forma solidaria** al Consejo y al Estado.",
+      analisis: "La Sala mantuvo la nulidad y **liberó al Estado**. El Consejo tiene personalidad jurídica instrumental, de modo que es **centro último y único de imputación** de lo que hace dentro de su competencia. El artículo 12.2 del Código obliga a traer a los dos al proceso, y esa presencia procesal **no decide quién paga**.",
+      impacto: "**94 resoluciones** la citan entre 2011 y 2026, con **43 del Tribunal Contencioso Administrativo** y 31 de la propia Sala Primera. Su criterio llegó a la jurisdicción laboral por los casos del COSEVI y del CONAVI. En 2016 la Sala **varió el criterio** y añadió la responsabilidad subsidiaria del ente mayor."
+    },
+
+    fragmentosPortada: [
+      {
+        texto: "un centro último y único de imputación de los efectos de sus actuaciones u omisiones",
+        citation: "Considerando VIII"
+      },
+      {
+        texto: "el juzgador no puede sustituir la voluntad de las partes, incorporando, ex novo, aspectos sobre los cuales las partes no han instado la competencia jurisdiccional",
+        citation: "Considerando VI"
+      },
+      {
+        texto: "los 15 días otorgados por el reglamento resulta de carácter ordenatorio, cuyo incumplimiento no tiene la virtud de anular el fallo",
+        citation: "Considerando IV"
+      }
+    ],
+
+    contexto: [
+      "El Código Procesal Contencioso-Administrativo manda demandar juntos al órgano con personalidad jurídica instrumental y al ente al que está adscrito. El artículo 12.2 lo ordena sin decir cuál de los dos paga al final, y de esa omisión nació una discusión que duró años.",
+      "La pregunta es de dinero y de estrategia. Un consejo, una junta o una dirección con personería propia administra su presupuesto y contrata por su cuenta, pero sigue adscrito a un ministerio. Si el daño lo causó el órgano, quien demanda quiere al Estado en la condena, porque el Estado siempre tiene con qué pagar.",
+      "Este fallo dio la respuesta que rigió durante seis años: el órgano responde solo, y la presencia del Estado en el proceso es una garantía de que el expediente no se pierda por haber demandado a quien no era. La Sala cambió ese criterio en 2016, y el análisis lo explica al final."
+    ],
+
+    casoFactico: [
+      "En 1996 la Comisión Técnica de Transportes abrió los concursos 02-96 y 03-96 para concesionar dos rutas de autobús entre Alajuela y Montecillos. Transportes Montecillos de Alajuela ganó las dos. La competidora, Autotransportes La Plaza, impugnó la adjudicación y presentó además una querella penal: sostuvo que la adjudicataria había alterado las características de los vehículos ofrecidos.",
+      "En diciembre de 2002 el Tribunal Penal declaró responsable del delito al representante de la empresa adjudicataria. Con esa sentencia en mano, La Plaza pidió que se le readjudicara la ruta. El Tribunal Administrativo de Transportes acogió en parte su recurso, pero se declaró incompetente para readjudicar.",
+      "En marzo de 2009, al contestar una audiencia del Tribunal Contencioso Administrativo, el Consejo de Transporte Público declaró desierta la licitación. La Plaza demandó. El Tribunal anuló ese acuerdo por falta de motivación, ordenó dictar uno nuevo y condenó en abstracto, en forma solidaria, al Consejo y al Estado. Los dos recurrieron en casación."
+    ],
+
+    pasajes: [
+      {
+        titulo: "El centro de imputación",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "es importante indicar que el otorgamiento de personalidad jurídica a un ente u órgano tiene como consecuencia inmediata el constituirlos en un centro último y único de imputación de los efectos de sus actuaciones u omisiones. Esta es una de las diferencias con cualquier otro órgano que no constituya una personificación jurídica instrumental, respecto de los cuales, cualquier imputación se hace en forma provisional, ya que como parte de una estructura organizativa más amplia, actúan como parte del ente como persona jurídica, y por ende, bajo la personalidad de este último.",
+            destacar: ["un centro último y único de imputación de los efectos de sus actuaciones u omisiones"]
+          }
+        ]
+      },
+      {
+        titulo: "El límite de la imputación",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "Así las cosas, si en sede jurisdiccional se determina que la conducta administrativa objeto de impugnación proviene del ejercicio de una competencia exclusiva del órgano al cual se le otorgó personalidad propia (aunque sea instrumental) para tales efectos, resulta impropio extender la imputación al ente público, mayor o menor, al que se encuentra adscrito.",
+            destacar: ["resulta impropio extender la imputación al ente público, mayor o menor, al que se encuentra adscrito"]
+          }
+        ]
+      },
+      {
+        titulo: "La consecuencia procesal",
+        citation: "Considerando VIII",
+        parrafos: [
+          {
+            texto: "La convergencia de las anteriores precisiones obliga a que, en un caso como el presente, en donde una de las partes participa como consecuencia de lo dispuesto en el ordinal 12.2 tantas veces citado, si se determina que el acto impugnado constituye el ejercicio de una competencia propia y exclusiva del denominado “órgano-persona”, como consecuencia lógica y natural, lo procedente es declarar una falta de derecho respecto del ente al cual está adscrito.",
+            destacar: ["lo procedente es declarar una falta de derecho respecto del ente al cual está adscrito"]
+          }
+        ]
+      },
+      {
+        titulo: "Para qué sirve el artículo 12.2",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "lo dispuesto en el numeral 12.2 del CPCA a que se hizo referencia, debe ser entendido como un mecanismo mediante el cual se evite que, luego de un proceso, se determine que la conducta no se encuentra dentro de la competencia que ejerce el órgano con la cobertura de la personalidad instrumental que le fue otorgada.",
+            destacar: ["debe ser entendido como un mecanismo"]
+          }
+        ]
+      },
+      {
+        titulo: "Las habilitaciones del artículo 122",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "Ejemplo de ello, se puede citar el canon 122 del CPCA, el cual contiene una serie de disposiciones en esta línea, como lo es el inciso d), donde se posibilita al despacho para que adopte cuantas medidas resulten necesarias para reconocer, restablecer o declarar cualquier situación jurídica tutelable. De igual forma, el acápite k) le habilita para suprimir, de manera oficiosa, toda conducta administrativa directamente relacionada con la sometida al proceso cuando sea disconforme con el ordenamiento.",
+            destacar: ["adopte cuantas medidas resulten necesarias para reconocer, restablecer o declarar cualquier situación jurídica tutelable", "suprimir, de manera oficiosa, toda conducta administrativa directamente relacionada con la sometida al proceso"]
+          }
+        ]
+      },
+      {
+        titulo: "El límite de la congruencia",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "A partir de estas normas, sin embargo, el juzgador no puede sustituir la voluntad de las partes, incorporando, ex novo, aspectos sobre los cuales las partes no han instado la competencia jurisdiccional.",
+            destacar: ["el juzgador no puede sustituir la voluntad de las partes, incorporando, ex novo, aspectos sobre los cuales las partes no han instado la competencia jurisdiccional"]
+          }
+        ]
+      },
+      {
+        titulo: "Medidas complementarias",
+        citation: "Considerando VI",
+        parrafos: [
+          {
+            texto: "Por el contrario, el ejercicio de las habilitaciones oficiosas otorgadas al Tribunal sentenciador deben ser entendidas como consecuencia del objeto del proceso, en particular, lo que solicita cada una de las partes y la causa petendi sobre la cual se basa lo pedido. Dicho de otra forma, constituyen disposiciones complementarias a los extremos acogidos en la sentencia, por lo que siempre se deben encontrar relacionados, en forma mediata o inmediata, con lo otorgado.",
+            destacar: ["constituyen disposiciones complementarias a los extremos acogidos en la sentencia"]
+          }
+        ]
+      },
+      {
+        titulo: "Perentorio y ordenatorio",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "En el caso del juicio oral, del cardinal 111 del CPCA se desprende, en forma diáfana que los 15 días en él establecidos son de orden perentorio. Esto a tono con lo ya expuesto sobre la finalidad que persigue la norma. Lo mismo no puede ser dicho del proceso de puro derecho, en el cual los 15 días otorgados por el reglamento resulta de carácter ordenatorio, cuyo incumplimiento no tiene la virtud de anular el fallo.",
+            destacar: ["los 15 días en él establecidos son de orden perentorio", "los 15 días otorgados por el reglamento resulta de carácter ordenatorio, cuyo incumplimiento no tiene la virtud de anular el fallo"]
+          }
+        ]
+      },
+      {
+        titulo: "Contra la nulidad por la nulidad misma",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "A partir de lo anterior, la sanción procesal de nulidad prevista para los otros procesos resulta incompatible, y por el contrario, su aplicación extensiva conllevaría la adopción de un criterio de la nulidad por la nulidad misma, contrario a los principios de la actividad procesal defectuosa que vinculan este efecto a vicios sustanciales del acto procesal.",
+            destacar: ["un criterio de la nulidad por la nulidad misma"]
+          }
+        ]
+      },
+      {
+        titulo: "La razón del plazo",
+        citation: "Considerando IV",
+        parrafos: [
+          {
+            texto: "Lo preceptuado tiene como fundamento garantizar la debida aplicación del principio de concentración e inmediatez.",
+            destacar: ["garantizar la debida aplicación del principio de concentración e inmediatez"]
+          }
+        ]
+      }
+    ],
+
+    analisis: [
+      {
+        id: "el-caso",
+        titulo: "El caso",
+        parrafos: [
+          "Trece años separan la apertura del concurso de la sentencia de casación. En ese tiempo la ruta siguió operando en manos de la empresa cuyo representante había sido condenado, la competidora obtuvo una sentencia penal que no le sirvió para quedarse con la concesión, y la Administración resolvió el problema declarando desierto el procedimiento.",
+          "Ese acuerdo de marzo de 2009 es el acto que se anuló. El Tribunal Contencioso Administrativo encontró que carecía de motivación y ordenó al Consejo dictar uno nuevo, con los parámetros de los artículos 16, 136 y 160 de la Ley General de la Administración Pública. Esa nulidad nadie la discutió con éxito. Lo que llegó a la Sala Primera fue la condena en daños y perjuicios y las órdenes que el Tribunal había dictado de oficio."
+        ],
+        visual: "trayectoria"
+      },
+      {
+        id: "organo-persona",
+        titulo: "El órgano como centro de imputación",
+        parrafos: [
+          "La Sala parte de lo que significa dotar de personalidad jurídica a un órgano. Esa personería, aunque se llame instrumental y se otorgue para fines limitados, produce un efecto inmediato y completo: lo que el órgano hace se le imputa a él y termina en él.",
+          "De ahí sale la regla que el fallo hizo famosa. Cuando la conducta impugnada es el ejercicio de una competencia exclusiva del órgano, extender la condena al ministerio o al ente al que está adscrito resulta improcedente. El órgano tiene presupuesto propio y con él responde.",
+          "La Sala aplicó esa regla al caso con una consecuencia procesal precisa. El acuerdo que declaró desierta la licitación lo dictó el Consejo de Transporte Público en ejercicio de su competencia, y la demanda no había pedido nada contra el Estado. Frente al Estado, entonces, correspondía acoger la falta de derecho y absolverlo."
+        ],
+        literales: [[0,0],[1,0,1],[2,0,2]],
+        visual: "comparacion"
+      },
+      {
+        id: "articulo-12",
+        titulo: "El artículo 12.2 y la integración de la litis",
+        parrafos: [
+          "Queda por explicar por qué el Estado estaba en el proceso. El Código obliga a demandar al ente al que el órgano está adscrito siempre que se impugne una conducta de un órgano con personalidad instrumental. La Sala lee esa norma como un seguro para quien demanda.",
+          "El riesgo que la norma evita es real y conocido: que al final del proceso se descubra que la conducta quedaba fuera de la competencia cubierta por la personería, y que el expediente se pierda por haber demandado a quien no debía. Traer a los dos al proceso deja la puerta abierta para condenar al que resulte responsable.",
+          "La Sala distingue entonces dos planos que conviene no confundir. Estar en el proceso es una cosa, y responder con el patrimonio es otra. La representación también se separa: el órgano-persona litiga con su propio abogado, y la Procuraduría defiende al Estado, porque su competencia se limita a la Administración central y a los Poderes."
+        ],
+        literales: [[3,0,1]]
+      },
+      {
+        id: "congruencia",
+        titulo: "Potestades oficiosas y límite de congruencia",
+        parrafos: [
+          "El segundo reproche del Estado era que el Tribunal había ordenado, sin que nadie lo pidiera, una lista de actuaciones concretas al Consejo: rendir un informe técnico, designar un permisionario provisional, preparar el cartel y valorar si abría procedimiento sancionatorio. La Sala aprovechó para fijar hasta dónde llegan las potestades que el Código le dio al juez contencioso.",
+          "El artículo 122 es generoso. Habilita al despacho para adoptar cuantas medidas sean necesarias para restablecer una situación jurídica y para suprimir de oficio la conducta administrativa conexa que sea disconforme con el ordenamiento.",
+          "El límite viene enseguida, y es el que la jurisprudencia posterior cita con más frecuencia. Esas habilitaciones se ejercen dentro del objeto que las partes definieron. El juez puede completar lo que concedió; no puede incorporar pretensiones nuevas.",
+          "Aplicada al caso, la prueba se superó: las órdenes cuestionadas derivaban de la nulidad del acuerdo que declaró desierta la licitación, y esa nulidad sí la había pedido la actora. La Sala añadió un dato que explica el desenlace, y es que el Estado tampoco estaba legitimado para reclamar contra órdenes dirigidas únicamente al Consejo."
+        ],
+        literales: [[4,0,1],[5,0,2],[6,0,3]]
+      },
+      {
+        id: "plazo",
+        titulo: "El plazo para dictar sentencia",
+        parrafos: [
+          "El primer motivo del recurso era de plazo. El Estado sostenía que la sentencia se había dictado tarde y que eso la anulaba, con el artículo 111 del Código en la mano. La Sala separó dos situaciones que la ley trata de manera distinta.",
+          "En el juicio oral el plazo de quince días es perentorio, y su razón de ser es la inmediación: el juez que vio la prueba debe resolver mientras la recuerda. En el proceso de puro derecho no se recibe prueba en audiencia, el plazo lo fija un reglamento y su incumplimiento no anula nada.",
+          "El argumento de fondo tiene un valor que trasciende este caso. Trasladar la nulidad a un supuesto para el que la ley no la previó llevaría a anular por anular, contra los principios de la actividad procesal defectuosa, que reservan ese efecto a los vicios sustanciales.",
+          "La Sala precisó además desde cuándo corre el plazo en los procesos de puro derecho: desde el auto de pase, cuando el expediente llega al tribunal que va a sentenciar. Con ese cómputo, la sentencia del caso se había dictado en tiempo."
+        ],
+        literales: [[9,0],[7,0,1],[8,0,2]]
+      },
+      {
+        id: "recepcion",
+        titulo: "Recepción y variación del criterio",
+        parrafos: [
+          "La regla se consolidó rápido. En 2012 la propia Sala la repitió al resolver un caso del Registro Nacional, y en 2014 la convirtió en una tipología: había que mirar si la conducta tenía un contenido único, si correspondía a la competencia por la que se otorgó la personería y qué había hecho el jerarca impropio, para saber si respondía el órgano o el ente.",
+          "En 2016 la Sala Primera cambió de criterio, y lo dijo con esas palabras. Con una nueva integración, y después de un estudio que ella misma llama pormenorizado, concluyó que el Estado o el ente al que el órgano está adscrito también responde, de manera subsidiaria, cuando el órgano no pueda hacer frente a la indemnización. El fundamento es el derecho a un resarcimiento pleno del artículo 41 de la Constitución y el artículo 161 del Código.",
+          "El criterio de este fallo no desapareció con ese cambio. Sigue decidiendo el primer paso del examen, que es determinar si el daño nació de la competencia del órgano, porque solo definida esa responsabilidad primaria puede hablarse de la subsidiaria del ente mayor. Así lo dice el propio fallo de 2016 que introdujo la variación.",
+          "Su recorrido más llamativo ocurrió fuera del contencioso. La Sala Segunda y los tribunales de trabajo lo citan desde 2013 en los juicios de empleo público contra el COSEVI, el CONAVI y el Consejo Nacional de Concesiones, donde la pregunta es la misma de siempre: si la condena la soporta el órgano o el ministerio al que pertenece."
+        ],
+        visual: "recepcion"
+      },
+      {
+        id: "impacto",
+        titulo: "Alcance posterior",
+        parrafos: [
+          "Hemos encontrado su cita en el texto de 94 resoluciones, dictadas entre mayo de 2011 y julio de 2026, sin un solo año en blanco. El Tribunal Contencioso Administrativo la cita en 43, la propia Sala Primera en 31 y el Tribunal de Casación de lo Contencioso Administrativo en 13.",
+          "Siete citas vienen de la jurisdicción laboral, seis de la Sala Segunda y una del Tribunal de Trabajo, y son las que mejor muestran el alcance del criterio: un fallo de casación contencioso-administrativa sobre una ruta de autobús terminó decidiendo quién paga las prestaciones en los juicios contra órganos desconcentrados. La más reciente es de julio de 2026.",
+          "Fuera de los tribunales la citan dos pronunciamientos. La Procuraduría la usó en el dictamen C-251-2012 para explicar el alcance de la personería instrumental de una junta administrativa, y el Consejo Superior del Poder Judicial la invocó en su sesión 106-2023. En la doctrina la cita la tesis doctoral de José Roberto Garita Navarro sobre el régimen de la lesividad, dirigida por el propio redactor del fallo."
+        ],
+        visual: "citas"
+      }
+    ],
+
+    visuales: {
+      trayectoria: [
+        {
+          etapa: "Los concursos",
+          sede: "Comisión Técnica de Transportes · 1996",
+          detalle: "Concursos 02-96 y 03-96 para dos rutas de Alajuela. Transportes Montecillos gana las dos."
+        },
+        {
+          etapa: "La condena penal",
+          sede: "Tribunal Penal · 6 de diciembre de 2002",
+          detalle: "Declara responsable de uso de documento falso al representante de la empresa adjudicataria."
+        },
+        {
+          etapa: "La licitación desierta",
+          sede: "Consejo de Transporte Público · 12 de marzo de 2009",
+          detalle: "En vez de readjudicar, declara desierto el concurso 03-96."
+        },
+        {
+          etapa: "Primera instancia",
+          sede: "Tribunal Contencioso Administrativo · 19 de mayo de 2009",
+          detalle: "Anula el acuerdo por falta de motivación y condena en daños al Consejo y al Estado, en forma solidaria."
+        },
+        {
+          etapa: "Casación",
+          sede: "Sala Primera · 11 de noviembre de 2010",
+          detalle: "Mantiene la nulidad y absuelve al Estado: la conducta era competencia exclusiva del Consejo.",
+          final: true
+        }
+      ],
+      comparacion: [
+        {
+          titulo: "Órgano con personalidad instrumental",
+          rasgo: "La imputación termina en él. Tiene presupuesto propio y con él responde por lo que hace dentro de su competencia.",
+          enElCaso: "El Consejo de Transporte Público.",
+          literal: "el otorgamiento de personalidad jurídica a un ente u órgano tiene como consecuencia inmediata el constituirlos en un centro último y único de imputación de los efectos de sus actuaciones u omisiones",
+          citation: "Considerando VIII"
+        },
+        {
+          titulo: "Órgano sin personificación",
+          rasgo: "La imputación es provisional. Actúa bajo la personalidad del ente del que forma parte, y es ese ente el que responde.",
+          enElCaso: "La Comisión Técnica de Transportes que abrió el concurso en 1996.",
+          literal: "cualquier imputación se hace en forma provisional, ya que como parte de una estructura organizativa más amplia, actúan como parte del ente como persona jurídica, y por ende, bajo la personalidad de este último",
+          citation: "Considerando VIII"
+        }
+      ],
+      recepcion: [
+        {
+          anio: "2012",
+          organo: "Sala Primera",
+          texto: "Repite el criterio en un caso de la Junta Administrativa del Registro Nacional.",
+          enlaces: [{ etiqueta: "Voto 1170-F-S1-2012", nexusId: "sen-1-0034-569056" }]
+        },
+        {
+          anio: "2013",
+          organo: "Sala Segunda",
+          texto: "Lo trae a la jurisdicción laboral para decidir si responde el COSEVI o el Ministerio de Obras Públicas.",
+          enlaces: [{ etiqueta: "Voto 1255-2013", nexusId: "sen-1-0034-590930" }]
+        },
+        {
+          anio: "2014",
+          organo: "Sala Primera",
+          texto: "Convierte la regla en una tipología de supuestos según lo que haya hecho el jerarca impropio.",
+          enlaces: [{ etiqueta: "Voto 515-F-S1-2014", nexusId: "sen-1-0004-768657" }]
+        },
+        {
+          anio: "2016",
+          organo: "Sala Primera",
+          texto: "Varía el criterio: el Estado o el ente adscribiente responde de forma subsidiaria si el órgano no puede pagar.",
+          enlaces: [
+            { etiqueta: "Voto 293-F-S1-2016", nexusId: "sen-1-0034-666201" },
+            { etiqueta: "Voto 840-F-S1-2016", nexusId: "sen-1-0034-681223" }
+          ]
+        },
+        {
+          anio: "2026",
+          organo: "Sala Segunda",
+          texto: "Sigue citándose en los juicios de empleo público contra órganos con personería propia.",
+          enlaces: [{ etiqueta: "Voto 2103-2026", nexusId: "sen-1-0034-1409556" }],
+          final: true
+        }
+      ],
+      citas: {
+        corte: "20 de setiembre de 2026",
+        metodo: "Buscamos el número de la sentencia en todas sus formas, incluidas las que llevan ceros delante, y leímos una por una cada coincidencia para dejar solo las que citan de verdad la 1360-F-S1-2010, por cualquiera de sus puntos. El barrido cubrió el corpus completo de la firma, de 1,9 millones de resoluciones, con los pronunciamientos de la Procuraduría y de la Contraloría incluidos. Cada resolución cuenta una vez, se unen la sentencia y su extracto, se excluyen las del mismo expediente y las secciones de un mismo tribunal cuentan como un solo despacho. De las 94 resoluciones, 88 tienen enlace a Nexus; las seis restantes solo constan en el texto de la base y se listan sin enlace.",
+        csv: "/datos/jurisprudencia/1360-F-S1-2010-resoluciones-que-la-citan.csv"
+      }
+    },
+
+    nexusId: "sen-1-0034-502506",
+
+    precedentes: [
+      {
+        numero: "Voto 1202-A-S1-2009",
+        fecha: "19 de noviembre de 2009",
+        nexusId: "sen-1-0034-460135",
+        nota: "El precedente que fija para qué sirve el artículo 12.2: traer al órgano y al ente para que la sentencia pueda ejecutarse contra el patrimonio del responsable. El fallo lo transcribe."
+      },
+      {
+        numero: "Voto 126-F-S1-2009",
+        fecha: "5 de febrero de 2009",
+        nexusId: "sen-1-0034-429732",
+        nota: "Define cuándo una sentencia adolece de falta de motivación, que fue el vicio alegado contra la condena en costas. También lo redactó el magistrado González Camacho."
+      },
+      {
+        numero: "Voto 903-F-S1-2009",
+        fecha: "10 de septiembre de 2009",
+        nexusId: "sen-1-0034-451458",
+        nota: "La regla general del artículo 193 del Código: la condena al vencido en costas no exige una fundamentación especial."
+      }
+    ],
+
+    citadaPor: [
+      {
+        organo: "Sala Primera",
+        numero: "Voto 1170-F-S1-2012",
+        fecha: "17 de septiembre de 2012",
+        nexusId: "sen-1-0034-569056",
+        nota: "Reitera que la imputación termina en el órgano con personería propia cuando actúa dentro de su competencia."
+      },
+      {
+        organo: "Sala Segunda",
+        numero: "Voto 1255-2013",
+        fecha: "1 de noviembre de 2013",
+        nexusId: "sen-1-0034-590930",
+        nota: "Primera entrada del criterio en la jurisdicción laboral, en un juicio contra el COSEVI."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 515-F-S1-2014",
+        fecha: "10 de abril de 2014",
+        nexusId: "sen-1-0004-768657",
+        nota: "Sistematiza la doctrina en supuestos según la intervención del jerarca impropio."
+      },
+      {
+        organo: "Sala Primera",
+        numero: "Voto 840-F-S1-2016",
+        fecha: "11 de agosto de 2016",
+        nexusId: "sen-1-0034-681223",
+        nota: "Reconoce que la jurisprudencia había sido oscilante y declara variado el criterio: añade la responsabilidad subsidiaria del ente mayor."
+      },
+      {
+        organo: "Tribunal de Casación Contencioso Administrativo",
+        numero: "Voto 116-2025",
+        fecha: "18 de septiembre de 2025",
+        nexusId: "sen-1-1011-1342982",
+        nota: "Muestra que la distinción sigue en uso quince años después del fallo."
+      },
+      {
+        organo: "Sala Segunda",
+        numero: "Voto 2103-2026",
+        fecha: "3 de julio de 2026",
+        nexusId: "sen-1-0034-1409556",
+        nota: "La cita más reciente que hemos encontrado, en un caso del Consejo Nacional de Concesiones."
+      }
+    ],
+
+    normativa: [
+      {
+        nombre: "Código Procesal Contencioso-Administrativo",
+        detalle: "Ley 8508 · 28 de abril de 2006",
+        articulos: "Arts. 12.2, 16, 17, 58, 111, 119, 122, 150.3 y 193",
+        scijId: 57436
+      },
+      {
+        nombre: "Ley General de la Administración Pública",
+        detalle: "Ley 6227 · 2 de mayo de 1978",
+        articulos: "Arts. 16, 136, 160, 190 y 196",
+        scijId: 13231
+      },
+      {
+        nombre: "Constitución Política de la República de Costa Rica",
+        detalle: "7 de noviembre de 1949",
+        articulos: "Arts. 9, 41 y 49",
+        scijId: 871,
+        tema: "Disposiciones de la variación posterior del criterio"
+      }
+    ],
+
+    redactor: "Magistrado Óscar Eduardo González Camacho",
+    redactorTextual: "Redacta el Magistrado González Camacho excepto el Considerando IX que lo redacta el Magistrado Solís Zelaya",
+    redactoresAdicionales: ["Magistrado Román Solís Zelaya (Considerando IX)"],
+
+    fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-502506",
+    fuenteNombre: "Nexus PJ · Poder Judicial de Costa Rica",
+
+    metaDescription: "Voto 1360-F-S1-2010 de la Sala Primera: el órgano con personalidad jurídica instrumental es centro último y único de imputación y el Estado no responde por su competencia exclusiva. Análisis y texto oficial.",
+    seoTitle: "Personalidad jurídica instrumental y legitimación pasiva · Voto 1360-F-S1-2010 · Óscar González Camacho",
+    areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo", "servicio-publico"],
+    temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Personalidad Jurídica Instrumental", "Responsabilidad Patrimonial"]
   }
 ];
 
