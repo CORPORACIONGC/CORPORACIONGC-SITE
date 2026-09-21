@@ -1075,6 +1075,16 @@ html {
 .prose-article .list-none { padding-left: 0; }
 .prose-article .list-none > li { padding-left: 0; }
 .prose-article .list-none > li::before { content: none; }
+
+/* El artículo de una norma que se abre: la misma entrada de todo el sitio,
+   desde un poco más arriba y con la misma desaceleración. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes gc-norma-abre {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: none; }
+  }
+  .gc-norma-abre { animation: gc-norma-abre 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+}
 .prose-article ul > li::before {
   content: "";
   position: absolute;

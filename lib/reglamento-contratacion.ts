@@ -241,6 +241,10 @@ export const REGLAMENTO_INDICE: [string, string, number, number, number][] = [
   ["TVIII","Transitorio VIII",7,-1,-1], ["TIX","Transitorio IX",7,-1,-1], ["328","Rige",6,25,-1],
 ];
 
+/** Artículos que el Reglamento ya derogó: se marcan en la lista para que
+ *  nadie los cite creyéndolos vigentes. */
+export const REGLAMENTO_DEROGADOS: string[] = ["61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71"];
+
 /** Guías de la casa que explican lo que un artículo regula. */
 export const REGLAMENTO_GUIAS: Record<string, { href: string; texto: string }> = {
   "107": { href: "/articulos/reajuste-precios-obra-publica-costa-rica", texto: "Cómo se pide el reajuste de precios" },

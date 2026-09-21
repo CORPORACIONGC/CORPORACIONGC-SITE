@@ -2,6 +2,7 @@
 
 import { NormaNavegable } from "./NormaNavegable";
 import {
+  REGLAMENTO_DEROGADOS,
   REGLAMENTO_FICHA,
   REGLAMENTO_GRUPOS,
   REGLAMENTO_GUIAS,
@@ -20,6 +21,7 @@ export function ReglamentoContratacion() {
       indice={REGLAMENTO_INDICE}
       grupos={REGLAMENTO_GRUPOS}
       guias={REGLAMENTO_GUIAS}
+      derogados={REGLAMENTO_DEROGADOS}
     />
   );
 }
