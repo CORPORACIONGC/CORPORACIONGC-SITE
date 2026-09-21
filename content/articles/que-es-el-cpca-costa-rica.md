@@ -106,9 +106,9 @@ Contra la sentencia procede el **recurso extraordinario de casación** (artícul
 
 ---
 
-## El Código, artículo por artículo
+## Articulado vigente del Código
 
-Esta es la versión vigente del Código, con sus doce títulos y sus 220 artículos. Busque por número —escriba «39» y verá el plazo para demandar— o por palabra —«cautelar», «costas», «casación»—.
+Esta es la versión vigente del Código. Busque por número —escriba «39» y verá el plazo para demandar— o por palabra —«cautelar», «costas», «casación»—.
 
 <CodigoCPCA />
 

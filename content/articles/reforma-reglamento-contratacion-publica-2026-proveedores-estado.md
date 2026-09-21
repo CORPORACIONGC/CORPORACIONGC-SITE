@@ -1,7 +1,7 @@
 ---
 title: "Reglamento a la Ley General de Contratación Pública: texto vigente y la reforma de 2026"
 date: "2026-06-05"
-excerpt: "El Reglamento completo, artículo por artículo, y los cinco cambios que la reforma de 2026 introdujo en precios, subsanación y subcontratación."
+excerpt: "El articulado vigente del Reglamento, con buscador, y los cinco cambios que la reforma de 2026 introdujo en precios, subsanación y subcontratación."
 tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Reforma 2026", "Decreto 45782", "PYME", "SICOP"]
 type: "article"
 author: "Esteban Pérez Herrera"
@@ -121,9 +121,9 @@ Hasta ahora, tanto las instituciones como los terceros (empresas, cámaras, ases
 
 ---
 
-## El Reglamento, artículo por artículo
+## Articulado vigente del Reglamento
 
-Esta es la versión vigente del Reglamento, con sus ocho títulos y sus 330 artículos, ya con la reforma de mayo de 2026 incorporada. Busque por número —escriba «135» y verá qué defectos de una oferta se pueden subsanar— o por palabra —«precio», «subcontratación», «objeción»—. Cada artículo trae su rótulo oficial y, cuando la ha tenido, la nota de la reforma que lo cambió.
+Esta es la versión vigente del Reglamento, ya con la reforma de mayo de 2026 incorporada. Busque por número —escriba «135» y verá qué defectos de una oferta se pueden subsanar— o por palabra —«precio», «subcontratación», «objeción»—. Cada artículo trae su rótulo oficial y, cuando la ha tenido, la nota de la reforma que lo cambió.
 
 El buscador entiende además el vocabulario anterior. La Ley 9986 rebautizó buena parte de la materia, de modo que quien escriba «cartel» encontrará el pliego de condiciones, quien escriba «licitación abreviada» encontrará la licitación menor y quien escriba «SICOP» encontrará el sistema digital unificado.
 

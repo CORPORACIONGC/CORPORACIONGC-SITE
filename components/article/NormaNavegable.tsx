@@ -29,7 +29,6 @@ const tituloCorto = (t: string) => {
 };
 const romano = (t: string) => t.match(/^T[íi]tulo\s+([IVXL]+)/)?.[1] ?? "";
 const grupoCorto = (g: string) => g.replace(/^(Cap[íi]tulo|Secci[óo]n)\s+[IVXL]+\s*·\s*/, "");
-const grupoNumeral = (g: string) => g.match(/^(?:Cap[íi]tulo|Secci[óo]n)\s+([IVXL]+)/)?.[1] ?? "";
 
 /** El texto con la palabra buscada marcada. */
 function resaltar(texto: string, aguja: string) {
@@ -226,7 +225,7 @@ export function NormaNavegable({
   };
 
   return (
-    <div className="my-12 border-t border-gold/60 pt-8">
+    <div className="not-prose gc-norma my-12 border-t border-gold/60 pt-8">
       {/* Google entiende así que esta página contiene la norma, no un
           comentario sobre ella. */}
       <script
@@ -253,13 +252,13 @@ export function NormaNavegable({
           {ficha.articulos}
         </span>
         <span className="max-w-[54ch] text-[15px] leading-snug text-cream/80">
-          artículos en {titulos.length} títulos. {ficha.version}.
+          artículos. {ficha.version}.
         </span>
       </p>
 
       {/* El buscador acompaña la lista: en una norma de cientos de artículos,
           perderlo de vista al desplazarse obliga a volver arriba. */}
-      <div className="sticky top-16 z-20 -mx-1 mt-8 bg-surface px-1 pt-3 md:top-20">
+      <div className="sticky top-16 z-20 -mx-1 mt-7 bg-surface px-1 pt-3 md:top-20">
         <div className="flex items-center gap-3 border-b border-cream/15 pb-2">
           <MagnifyingGlass size={16} aria-hidden="true" className="shrink-0 text-cream/65" />
           <input
@@ -296,7 +295,7 @@ export function NormaNavegable({
 
       {/* Los títulos de la norma */}
       {!busca && (
-        <ul role="list" className="mt-6 flex list-none flex-wrap gap-x-5 gap-y-2 pl-0 marker:content-none">
+        <ul role="list" className="mt-5 flex list-none flex-wrap gap-x-5 gap-y-1.5 pl-0 marker:content-none">
           {titulos.map((t, i) => {
             const on = i === tituloActivo;
             return (
@@ -306,7 +305,7 @@ export function NormaNavegable({
                   aria-pressed={on}
                   title={t.replace(/^T[íi]tulo\s+[IVXL]+\s*·\s*/, "")}
                   onClick={() => elegirTitulo(i)}
-                  className={`text-left text-[13px] leading-snug transition-colors duration-300 ${
+                  className={`block text-left text-[13px] leading-snug transition-colors duration-300 ${
                     on ? "text-burgundy dark:text-gold" : "text-cream/65 hover:text-burgundy dark:hover:text-gold"
                   }`}
                 >
@@ -319,34 +318,38 @@ export function NormaNavegable({
         </ul>
       )}
 
-      {/* En un título largo, sus capítulos ahorran el desplazamiento */}
-      {capitulos.length > 0 && (
-        <nav aria-label="Capítulos de este título" className="mt-4 border-t border-cream/10 pt-3">
-          <ul role="list" className="flex list-none flex-wrap gap-x-4 gap-y-1.5 pl-0 marker:content-none">
-            {capitulos.map((c) => (
-              <li key={c.i}>
-                <button
-                  type="button"
-                  onClick={() => desplazarA(c.art)}
-                  className="text-left text-[12.5px] leading-snug text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
-                >
-                  <span className="tabular-nums">{grupoNumeral(grupos[c.i] ?? "")} </span>
-                  {grupoCorto(grupos[c.i] ?? "").toLowerCase()}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
-
-      <div ref={lista} className="mt-6 scroll-mt-28">
-        <p aria-live="polite" className="max-w-[78ch] text-[13px] leading-relaxed text-cream/65">
+      {/* Los capítulos del título abierto y la cuenta comparten renglón: son
+          la misma información, dónde estoy y cuánto hay. */}
+      <div className="mt-4 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 border-t border-cream/10 pt-3">
+        {capitulos.length > 0 ? (
+          <nav aria-label="Capítulos de este título" className="min-w-0 flex-1">
+            <ul role="list" className="flex list-none flex-wrap gap-x-4 gap-y-1 pl-0 marker:content-none">
+              {capitulos.map((c) => (
+                <li key={c.i}>
+                  <button
+                    type="button"
+                    onClick={() => desplazarA(c.art)}
+                    className="block text-left text-[12.5px] leading-snug text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+                  >
+                    {grupoCorto(grupos[c.i] ?? "").toLowerCase()}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ) : (
+          <span aria-hidden="true" />
+        )}
+        <p aria-live="polite" className="max-w-[78ch] shrink-0 text-[12.5px] leading-snug text-cream/65">
           {busca
             ? `${visibles.size} ${visibles.size === 1 ? "artículo coincide" : "artículos coinciden"} con «${sinonimo?.actual ?? busca}».`
-            : `${visibles.size} artículos en este título.`}
+            : `${visibles.size} artículos`}
           {sinonimo && ` ${sinonimo.nota}`}
           {buscandoPalabra && !textos && !error && " Buscando en el texto…"}
         </p>
+      </div>
+
+      <div ref={lista} className="mt-4 scroll-mt-28">
 
         {/* Nadie se queda con las manos vacías */}
         {visibles.size === 0 && (
@@ -372,7 +375,7 @@ export function NormaNavegable({
 
         <ol
           role="list"
-          className={`mt-4 list-none divide-y divide-cream/10 pl-0 marker:content-none ${
+          className={`mt-3 list-none divide-y divide-cream/10 pl-0 marker:content-none ${
             visibles.size === 0 ? "" : "border-y border-cream/10"
           }`}
         >
@@ -392,7 +395,7 @@ export function NormaNavegable({
             return (
               <li key={art} id={`art-${art}`} hidden={oculto} className="scroll-mt-32">
                 {nuevoCap && (
-                  <p className="max-w-[60ch] pt-7 pb-1 text-[14px] font-medium leading-snug text-cream/80">
+                  <p className="max-w-[60ch] pt-6 pb-1 text-[14px] font-medium leading-snug text-cream/80">
                     {grupoCorto(grupos[cap] ?? "")}
                   </p>
                 )}
@@ -450,7 +453,7 @@ export function NormaNavegable({
                 </button>
 
                 {on && (
-                  <div className="gc-norma-abre pb-6 pr-2 sm:pl-[76px]">
+                  <div className="gc-norma-abre pt-4 pb-6 pr-2 sm:pl-[76px]">
                     {error ? (
                       <p className="max-w-[70ch] text-[15px] leading-relaxed text-cream/80">
                         El texto no está disponible en este momento.{" "}
@@ -469,7 +472,7 @@ export function NormaNavegable({
                         Este artículo fue derogado y no está vigente.
                       </p>
                     ) : cuerpo ? (
-                      <p className="max-w-[70ch] whitespace-pre-line text-[15px] leading-relaxed text-cream/80">
+                      <p className="gc-norma-texto max-w-[70ch] whitespace-pre-line text-[15px] leading-relaxed text-cream/80">
                         {buscandoPalabra ? resaltar(cuerpo.texto, aguja) : cuerpo.texto}
                       </p>
                     ) : (

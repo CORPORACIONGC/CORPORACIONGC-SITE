@@ -1076,6 +1076,32 @@ html {
 .prose-article .list-none > li { padding-left: 0; }
 .prose-article .list-none > li::before { content: none; }
 
+/* Una norma insertada en un artículo trae su propia maquetación: la prosa
+   no le pone márgenes a sus párrafos ni a sus filas, ni le recorta el ancho.
+   Sin esto, cada uno de sus cientos de renglones arrastra el margen de una
+   viñeta y la lista se abre en canal. */
+.prose-article .gc-norma p,
+.prose-article .gc-norma li,
+.prose-article .gc-norma ul,
+.prose-article .gc-norma ol {
+  /* Solo el margen inferior, que es el que pone la prosa: el superior lo
+     decide el componente con sus propias utilidades. */
+  margin-bottom: 0;
+  max-width: none;
+}
+.prose-article .gc-norma ul,
+.prose-article .gc-norma ol { padding-left: 0; }
+
+/* El texto del artículo sí se justifica, como el resto de la página. */
+.prose-article .gc-norma .gc-norma-texto {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+@media (max-width: 639px) {
+  .prose-article .gc-norma .gc-norma-texto { text-align: left; }
+}
+
 /* El artículo de una norma que se abre: la misma entrada de todo el sitio,
    desde un poco más arriba y con la misma desaceleración. */
 @media (prefers-reduced-motion: no-preference) {
