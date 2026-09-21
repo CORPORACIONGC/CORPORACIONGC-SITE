@@ -6,6 +6,11 @@ import { VideoCamera, Play } from "@phosphor-icons/react";
 
 type Video = {
   id: string;
+  /** Fecha real de publicación en YouTube, comprobada vídeo por vídeo. Las
+   *  ocho declaraban «2023-01-01», que era relleno: la más antigua es de
+   *  2013 y la más reciente de 2025, y un `VideoObject` con fecha inventada
+   *  es dato estructurado incorrecto. */
+  fecha: string;
   title: string;
   event: string;
   organizer: string;
@@ -15,6 +20,7 @@ type Video = {
 const VIDEOS: Video[] = [
   {
     id: "K5YjYwaqAGU",
+    fecha: "2013-10-15",
     title: "I Seminario de Litigación Oral y Contencioso Administrativo",
     event: "I Seminario de Litigación Oral y Contencioso Administrativo",
     organizer: "Colegio de Abogados y Abogadas de Costa Rica",
@@ -23,6 +29,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "95hHm6MiLOQ",
+    fecha: "2017-09-22",
     title: "Seminario Internacional de Derecho Administrativo",
     event: "Seminario Internacional de Derecho Administrativo",
     organizer: "Colegio de Abogados y Abogadas de Costa Rica",
@@ -31,6 +38,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "o5TwVynhOY8",
+    fecha: "2020-06-14",
     title: "Efectos jurídicos de la contratación administrativa en la época de la pandemia",
     event: "Conferencia sobre contratación administrativa y pandemia",
     organizer: "Universidad Escuela Libre de Derecho",
@@ -39,6 +47,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "LrT-ofnCZoE",
+    fecha: "2024-06-17",
     title: "Seminario: Medidas cautelares en el contencioso administrativo",
     event: "Seminario sobre Medidas Cautelares en el Contencioso Administrativo",
     organizer: "Colegio de Abogados y Abogadas de Costa Rica",
@@ -47,6 +56,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "704meiyKlOY",
+    fecha: "2015-09-29",
     title: "Aporte sustancial del Código Procesal Contencioso Administrativo",
     event: "Seminario sobre el aporte del CPCA",
     organizer: "Colegio de Abogados y Abogadas de Costa Rica",
@@ -55,6 +65,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "nREXX_oROBY",
+    fecha: "2023-07-20",
     title: "El Contencioso Administrativo",
     event: "Conferencia sobre el Contencioso Administrativo",
     organizer: "Universidad Escuela Libre de Derecho",
@@ -63,6 +74,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "0ZKzZrXZiKY",
+    fecha: "2025-10-03",
     title: "Mesa Redonda: El Nuevo Régimen del Servicio Público",
     event: "Mesa Redonda — Derecho Administrativo",
     organizer: "Instituto de Investigaciones Jurídicas, UCR",
@@ -71,6 +83,7 @@ const VIDEOS: Video[] = [
   },
   {
     id: "uyj9G96ib4s",
+    fecha: "2013-11-20",
     title: "Congreso de Derecho Ambiental 2013",
     event: "Congreso de Derecho Ambiental",
     organizer: "Colegio de Abogados y Abogadas de Costa Rica",
@@ -128,6 +141,10 @@ function LiteYouTube({ id, title }: { id: string; title: string }) {
   );
 }
 
+/* De la más reciente a la más antigua: quien llega al perfil quiere ver
+   primero lo último que dijo. */
+const EN_ORDEN = [...VIDEOS].sort((a, b) => b.fecha.localeCompare(a.fecha));
+
 export function OscarConferencias() {
   return (
     <section className="relative bg-surface py-24 md:py-32">
@@ -150,7 +167,7 @@ export function OscarConferencias() {
         </AnimatedEntry>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {VIDEOS.map((video) => (
+          {EN_ORDEN.map((video) => (
             <AnimatedEntry key={video.id} delay={0.2}>
               <div className="rounded-xl border border-cream/[0.06] bg-cream/[0.02] overflow-hidden">
                 {/* Lite YouTube — thumbnail until click */}
@@ -163,8 +180,8 @@ export function OscarConferencias() {
                       weight="duotone"
                       className="text-burgundy-light shrink-0"
                     />
-                    <span className="text-[10px] tracking-[0.2em] uppercase text-cream/40">
-                      {video.organizer}
+                    <span className="text-[10px] tracking-[0.2em] uppercase text-cream/65">
+                      {video.organizer} · {video.fecha.slice(0, 4)}
                     </span>
                   </div>
                   <h3 className="font-display text-lg text-cream">
@@ -181,7 +198,7 @@ export function OscarConferencias() {
       </div>
 
       {/* JSON-LD VideoObject — para que Google e IA indexen los videos */}
-      {VIDEOS.map((video) => (
+      {EN_ORDEN.map((video) => (
         <script
           key={video.id}
           type="application/ld+json"
@@ -192,7 +209,7 @@ export function OscarConferencias() {
               name: video.title,
               description: video.description,
               thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
-              uploadDate: "2023-01-01",
+              uploadDate: video.fecha,
               contentUrl: `https://www.youtube.com/watch?v=${video.id}`,
               embedUrl: `https://www.youtube.com/embed/${video.id}`,
               publisher: {
@@ -202,7 +219,7 @@ export function OscarConferencias() {
               performer: {
                 "@type": "Person",
                 name: "Dr. Óscar Eduardo González Camacho",
-                "@id": "https://corporaciongc.com/abogados/oscar-gonzalez#person",
+                "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
               },
             }),
           }}
