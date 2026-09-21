@@ -21,6 +21,7 @@ import {
   Trayectoria,
 } from "@/components/jurisprudencia/SentenciaVisuales";
 import {
+  ETIQUETA_ESTADO,
   esLiteral,
   getAllSentencias,
   getSentenciaBySlug,
@@ -174,7 +175,7 @@ export default async function SentenciaDestacadaPage({
             <div className="mt-10 grid gap-12 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-20">
               <div>
                 <p className="type-label text-burgundy dark:text-gold">
-                  {[sentencia.badge?.label, sentencia.area].filter(Boolean).join(" · ")}
+                  {[sentencia.estado && ETIQUETA_ESTADO[sentencia.estado], sentencia.area].filter(Boolean).join(" · ")}
                 </p>
                 <h1 className="type-headline mt-5 max-w-[18ch] text-cream">{sentencia.titulo}</h1>
                 {sentencia.subtitulo && (

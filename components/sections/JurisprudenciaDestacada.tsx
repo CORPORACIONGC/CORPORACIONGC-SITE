@@ -10,18 +10,15 @@ import {
   StaggerItem,
 } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { fragmentosLiterales, getAllSentencias, nexusUrl } from "@/lib/jurisprudencia";
+import {
+  ESTADO_ESTILO,
+  ETIQUETA_ESTADO,
+  fragmentosLiterales,
+  getAllSentencias,
+  nexusUrl,
+} from "@/lib/jurisprudencia";
 import { SentenciaFolio, type SentenciaPortada } from "@/components/sections/SentenciaFolio";
 
-const BADGE_STYLES: Record<string, string> = {
-  fundacional:
-    "bg-gold/[0.12] text-[#8A6F3D] dark:text-gold border-gold/40",
-  referencia:
-    "bg-burgundy/[0.10] text-burgundy dark:text-burgundy-light border-burgundy/30",
-  ambiental:
-    "bg-emerald-600/[0.08] text-emerald-700 dark:text-emerald-300 border-emerald-600/25 dark:border-emerald-500/25",
-  doctrinal: "bg-cream/[0.05] text-cream/75 border-cream/20",
-};
 
 type Props = {
   /**
@@ -48,7 +45,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
     hora: x.hora,
     tribunal: x.tribunal,
     titulo: x.titulo,
-    badgeLabel: x.badge?.label,
+    badgeLabel: x.estado ? ETIQUETA_ESTADO[x.estado] : undefined,
     sintesis: x.sintesisPortada,
     pullQuote: x.pullQuote,
     fragmentos: fragmentosLiterales(x),
@@ -142,14 +139,13 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                 <div>
                   {/* Top meta */}
                   <div className="flex flex-wrap items-center gap-3 mb-7">
-                    {featured.badge && (
+                    {featured.estado && (
                       <span
                         className={`px-3 py-1 rounded-md text-[11px] tracking-[0.14em] uppercase font-semibold border ${
-                          BADGE_STYLES[featured.badge.type] ??
-                          BADGE_STYLES.doctrinal
+                          ESTADO_ESTILO[featured.estado]
                         }`}
                       >
-                        {featured.badge.label}
+                        {ETIQUETA_ESTADO[featured.estado]}
                       </span>
                     )}
                   </div>
@@ -247,13 +243,13 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                   <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/15 dark:via-white/20 to-transparent pointer-events-none" />
 
                   <div className="flex items-center gap-3 mb-4">
-                    {s.badge && (
+                    {s.estado && (
                       <span
                         className={`px-2 py-0.5 rounded text-[11px] tracking-[0.12em] uppercase font-semibold border ${
-                          BADGE_STYLES[s.badge.type] ?? BADGE_STYLES.doctrinal
+                          ESTADO_ESTILO[s.estado]
                         }`}
                       >
-                        {s.badge.label}
+                        {ETIQUETA_ESTADO[s.estado]}
                       </span>
                     )}
                     <span className="text-[11px] text-cream/65 ml-auto tabular-nums">

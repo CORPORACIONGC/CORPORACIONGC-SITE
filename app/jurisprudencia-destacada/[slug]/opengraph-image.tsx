@@ -4,7 +4,10 @@ import {
   OG_SIZE,
   OG_CONTENT_TYPE,
 } from "@/lib/og-templates";
-import { getSentenciaBySlug } from "@/lib/jurisprudencia";
+import {
+  ETIQUETA_ESTADO,
+  getSentenciaBySlug,
+} from "@/lib/jurisprudencia";
 
 // nodejs runtime: lee la foto del redactor y las fuentes desde el filesystem.
 export const runtime = "nodejs";
@@ -53,7 +56,7 @@ export default async function Image({
   }
 
   return renderJurisprudenceOg({
-    badge: s.badge?.label,
+    badge: s.estado ? ETIQUETA_ESTADO[s.estado] : undefined,
     numero: s.numero,
     fechaCorta: s.fechaCorta,
     tribunal: s.tribunal,

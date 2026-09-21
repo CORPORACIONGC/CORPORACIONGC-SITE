@@ -13,7 +13,11 @@ import {
   StaggerContainer,
   StaggerItem,
 } from "@/components/ui/AnimatedEntry";
-import { getAllSentencias } from "@/lib/jurisprudencia";
+import {
+  ESTADO_ESTILO,
+  ETIQUETA_ESTADO,
+  getAllSentencias,
+} from "@/lib/jurisprudencia";
 import { FIRM } from "@/lib/constants";
 import { jurisprudenciaMetadata } from "@/lib/page-metadata";
 
@@ -24,12 +28,6 @@ export const metadata: Metadata = {
   },
 };
 
-const BADGE_STYLES: Record<string, string> = {
-  fundacional: "bg-gold/[0.12] text-gold border-gold/30",
-  referencia: "bg-burgundy/[0.15] text-burgundy-light border-burgundy/30",
-  ambiental: "bg-emerald-500/[0.10] text-emerald-300 border-emerald-500/25",
-  doctrinal: "bg-cream/[0.08] text-cream/80 border-cream/15",
-};
 
 export default function JurisprudenciaDestacadaIndexPage() {
   const sentencias = getAllSentencias();
@@ -133,6 +131,25 @@ export default function JurisprudenciaDestacadaIndexPage() {
                 análisis doctrinal y enlace a su texto íntegro en Nexus.
               </p>
             </AnimatedEntry>
+
+            {/* Qué significa la etiqueta de cada ficha. Sin esta línea la
+                etiqueta es adorno, y antes lo era: cinco de las seis
+                sentencias decían «Sentencia de Referencia». */}
+            <AnimatedEntry delay={0.25}>
+              <p className="text-sm text-cream/45 leading-relaxed max-w-[68ch]">
+                Cada ficha lleva el estado de su criterio, comprobado contra
+                los fallos posteriores que la citan.{" "}
+                <span className="text-cream/70">Recogida en la ley</span>{" "}
+                cuando el legislador convirtió la regla en norma escrita;{" "}
+                <span className="text-cream/70">criterio vigente</span> cuando
+                ningún fallo posterior de la Sala la modificó;{" "}
+                <span className="text-cream/70">criterio matizado</span> cuando
+                le fijaron un límite, y{" "}
+                <span className="text-cream/70">criterio variado</span> cuando
+                lo cambiaron. En los dos últimos casos la ficha nombra el voto
+                y el año.
+              </p>
+            </AnimatedEntry>
           </div>
         </section>
 
@@ -151,13 +168,13 @@ export default function JurisprudenciaDestacadaIndexPage() {
                   >
                     {/* Top meta row */}
                     <div className="flex items-center gap-3 mb-6">
-                      {s.badge && (
+                      {s.estado && (
                         <span
                           className={`px-2.5 py-1 rounded-md text-[9px] tracking-[0.2em] uppercase font-medium border ${
-                            BADGE_STYLES[s.badge.type] ?? BADGE_STYLES.doctrinal
+                            ESTADO_ESTILO[s.estado]
                           }`}
                         >
-                          {s.badge.label}
+                          {ETIQUETA_ESTADO[s.estado]}
                         </span>
                       )}
                       <span className="text-[9px] tracking-[0.2em] uppercase text-cream/40 ml-auto">

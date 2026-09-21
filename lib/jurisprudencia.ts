@@ -24,6 +24,38 @@ export type Pasaje = {
   parrafos: PasajeParrafo[];
 };
 
+/** El estado del criterio de una sentencia, con una regla de asignación
+ *  por valor y nada de calificaciones de mérito:
+ *
+ *  - `ley`      el legislador convirtió la regla en norma escrita.
+ *  - `vigente`  ningún fallo posterior de la misma Sala la modificó.
+ *  - `matizado` un fallo posterior le fijó un límite sin sustituirla.
+ *  - `variado`  un fallo posterior cambió la regla.
+ *
+ *  Cuando el valor no es `vigente`, el apartado de recepción de la ficha
+ *  tiene que nombrar la norma o el voto que produjo el cambio, con su año. */
+export type EstadoCriterio = "ley" | "vigente" | "matizado" | "variado";
+
+export const ETIQUETA_ESTADO: Record<EstadoCriterio, string> = {
+  ley: "Recogida en la ley",
+  vigente: "Criterio vigente",
+  matizado: "Criterio matizado",
+  variado: "Criterio variado",
+};
+
+/** Un solo juego de estilos para la etiqueta, en las cuatro superficies que
+ *  la muestran. El dorado queda para la regla que el legislador hizo norma y
+ *  el tono más apagado, para la que un fallo posterior cambió. El texto va
+ *  en dorado o en crema y la diferencia de color la lleva el fondo: la
+ *  etiqueta mide 9 px y `text-burgundy-light` sobre el fondo oscuro daba 2,2
+ *  de contraste, menos de la mitad del mínimo exigible. */
+export const ESTADO_ESTILO: Record<EstadoCriterio, string> = {
+  ley: "bg-gold/[0.12] text-gold border-gold/30",
+  vigente: "bg-cream/[0.08] text-cream/80 border-cream/15",
+  matizado: "bg-burgundy/[0.18] text-cream/85 border-burgundy/40",
+  variado: "bg-cream/[0.04] text-cream/65 border-cream/12",
+};
+
 export type SeccionAnalisis = {
   id: string;
   titulo: string;
@@ -130,11 +162,12 @@ export type SentenciaDestacada = {
   area: string;
   materia: string;
 
-  /** Badge editorial opcional */
-  badge?: {
-    type: "fundacional" | "referencia" | "ambiental" | "doctrinal";
-    label: string;
-  };
+  /** Estado del criterio, comprobado contra los fallos posteriores que la
+   *  citan. No es una calificación de mérito: dice si el lector puede
+   *  apoyarse hoy en el fallo y, cuando no, la ficha nombra el voto o la
+   *  norma y el año que lo cambiaron. La etiqueta sale de
+   *  `ETIQUETA_ESTADO`, nunca se escribe a mano. */
+  estado?: EstadoCriterio;
 
   /** Headline editorial */
   titulo: string;
@@ -257,10 +290,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Civil",
     materia: "Indexación de obligaciones dinerarias",
 
-    badge: {
-      type: "fundacional",
-      label: "Sentencia Fundacional",
-    },
+    estado: "ley",
 
     titulo: "Fundamento constitucional de la indexación",
     subtitulo:
@@ -740,10 +770,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
     area: "Derecho Administrativo",
     materia: "Responsabilidad patrimonial de la Administración",
-    badge: {
-      type: "referencia",
-      label: "Sentencia de Referencia"
-    },
+    estado: "vigente",
     titulo: "Responsabilidad del Estado por inactividad material",
     subtitulo: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció que la inactividad del Estado también genera el deber de indemnizar.",
     pullQuote: {
@@ -1389,10 +1416,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
     area: "Derecho Administrativo",
     materia: "Caducidad del procedimiento administrativo",
-    badge: {
-      type: "referencia",
-      label: "Sentencia de Referencia"
-    },
+    estado: "matizado",
     titulo: "Caducidad en los procedimientos iniciados de oficio",
     subtitulo: "La Sala Primera extendió la caducidad a los procedimientos que la Administración inicia de oficio, incluidos los sancionatorios, y fijó cómo opera: de pleno derecho, sin extinguir la competencia y como garantía de seguridad jurídica.",
     pullQuote: {
@@ -1963,10 +1987,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
     area: "Derecho del Consumidor",
     materia: "Responsabilidad bancaria por fraude electrónico",
-    badge: {
-      type: "referencia",
-      label: "Sentencia de Referencia"
-    },
+    estado: "ley",
     titulo: "Responsabilidad objetiva en la banca por internet",
     subtitulo: "La Sala Primera aplicó a la banca por internet la responsabilidad objetiva de la Ley del Consumidor: el banco responde por la seguridad del servicio completo, incluido el mecanismo que identifica al cliente, y solo se libera si prueba una causa eximente.",
     pullQuote: {
@@ -2727,10 +2748,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
     area: "Derecho Administrativo",
     materia: "Caducidad de la acción y actos de efectos continuados",
-    badge: {
-      type: "referencia",
-      label: "Sentencia de Referencia"
-    },
+    estado: "vigente",
     titulo: "Delimitación del acto de efectos continuados",
     subtitulo: "La Sala Primera definió cuándo un acto administrativo tiene efectos continuados: las consecuencias que se derivan de una situación ya definida dejan el plazo para demandar donde estaba, y la caducidad la examina el juez de oficio.",
     pullQuote: {
@@ -3292,10 +3310,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
     area: "Derecho Administrativo",
     materia: "Responsabilidad del Estado por la función jurisdiccional",
-    badge: {
-      type: "referencia",
-      label: "Sentencia de Referencia"
-    },
+    estado: "vigente",
     titulo: "Indemnización por prisión preventiva del absuelto",
     subtitulo: "La Sala Primera sostuvo que la responsabilidad del Estado por su función jurisdiccional nace de la Constitución y no espera a que una ley la desarrolle, y fijó cuándo la prisión preventiva de quien después resulta inocente debe indemnizarse.",
     pullQuote: {
@@ -3951,10 +3966,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Administrativo",
     materia: "Personalidad jurídica instrumental",
 
-    badge: {
-      type: "doctrinal",
-      label: "Sentencia Doctrinal"
-    },
+    estado: "variado",
 
     titulo: "Legitimación pasiva del órgano con personalidad instrumental",
     subtitulo: "La Sala Primera fijó que el órgano con personalidad jurídica instrumental es el centro último y único de imputación de sus actos: cuando el daño nace de su competencia exclusiva, la condena no alcanza al Estado. En el mismo fallo delimitó las potestades oficiosas del juez contencioso y la naturaleza del plazo para dictar sentencia.",

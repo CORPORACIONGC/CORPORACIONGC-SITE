@@ -77,7 +77,7 @@ function Folio({ s }: { s: SentenciaPortada }) {
         </p>
         <span aria-hidden="true" className="mx-auto mt-7 block h-px w-12 bg-gold" />
         {s.badgeLabel && (
-          <p className="mt-7 text-[13px] font-semibold text-burgundy dark:text-gold">{s.badgeLabel}</p>
+          <p className="mt-7 text-[11px] uppercase tracking-[0.18em] text-cream/50">{s.badgeLabel}</p>
         )}
         <h3 className="mx-auto mt-2 max-w-[24ch] text-[26px] font-light leading-[1.15] tracking-[-0.012em] text-cream text-balance md:text-[30px]">
           <Link
