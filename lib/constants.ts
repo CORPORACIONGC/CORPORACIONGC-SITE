@@ -352,19 +352,6 @@ export const PRACTICE_AREA_PAGES = [
     ogEmphasis: "Contraloría",
   },
   {
-    slug: "comercio-internacional",
-    title: "Comercio Internacional y Derecho Aduanero",
-    subtitle: "Antidumping, salvaguardias, TLCs y solución de controversias comerciales",
-    description: "Representación en investigaciones antidumping y de salvaguardias ante COMEX, defensa frente a derechos compensatorios, litigio ante mecanismos de solución de controversias de la OMC y TLCs, y asesoría en cumplimiento arancelario conforme a la Ley N.° 7638 y acuerdos multilaterales.",
-    icon: "Globe" as const,
-    priority: "specialized" as const,
-    seoTitle: "Antidumping y Comercio Internacional · CR",
-    seoDescription: "Investigaciones antidumping y de salvaguardias ante COMEX, defensa frente a derechos compensatorios y solución de controversias bajo TLCs y OMC. Cumplimiento arancelario conforme a la Ley N.° 7638.",
-    ogShortTitle: "Antidumping y {{em}}",
-    ogEmphasis: "Comercio Internacional",
-  },
-  // ─── Áreas Emergentes y Regulatorias ───
-  {
     slug: "compliance-publico-anticorrupcion",
     title: "Compliance Público y Anticorrupción",
     subtitle: "Defensa ante la Contraloría y el Ministerio Público, declaración jurada patrimonial y programas de cumplimiento bajo la Ley 8422",
@@ -437,18 +424,6 @@ export const PRACTICE_AREA_PAGES = [
     ogEmphasis: "Fintech y Cripto",
   },
   {
-    slug: "derecho-electoral-financiamiento-politico",
-    title: "Derecho Electoral y Financiamiento Político",
-    subtitle: "Cumplimiento electoral, liquidación de deuda política y disputas ante el TSE",
-    description: "Corporación GC es la primera firma en Costa Rica con práctica dedicada a derecho electoral desde la perspectiva del derecho público. Asesoramos a partidos políticos, candidatos y organizaciones en cumplimiento electoral, financiamiento político y disputas ante el Tribunal Supremo de Elecciones (TSE) conforme al Código Electoral (Ley N.° 8765) y la nueva Ley de Fortalecimiento del Financiamiento Político (Ley N.° 10755, septiembre 2025). Nuestros servicios incluyen asesoría en cumplimiento de las obligaciones de transparencia y rendición de cuentas del financiamiento político conforme al artículo 96 constitucional (contribución estatal: 0.19% PIB para partidos que superen el 4%), asistencia en procesos de liquidación de deuda política, defensa en procedimientos sancionatorios del TSE por irregularidades en el financiamiento, representación en disputas electorales ante la jurisdicción exclusiva e independiente del TSE, y asesoría integral a candidatos a alcaldías para el ciclo electoral municipal 2028. La experiencia constitucional de nuestro fundador es directamente transferible a la comprensión de la jurisdicción TSE vs. Sala IV.",
-    icon: "Flag" as const,
-    priority: "specialized" as const,
-    seoTitle: "Derecho Electoral y Financiamiento Político · CR",
-    seoDescription: "Primera firma costarricense con práctica en derecho electoral desde el Derecho Público. Cumplimiento, liquidación de deuda política y disputas ante el TSE. Código Electoral y Ley N.° 10755 (2025).",
-    ogShortTitle: "Derecho {{em}}",
-    ogEmphasis: "Electoral",
-  },
-  {
     slug: "telecomunicaciones-espectro-5g",
     title: "Telecomunicaciones, Espectro y 5G",
     subtitle: "Disputas de espectro, permisos de infraestructura 5G y regulación ante SUTEL y MICITT",
@@ -473,53 +448,25 @@ export const PRACTICE_AREA_PAGES = [
     ogEmphasis: "Transición Energética",
   },
   // ─── Cobertura Complementaria ───
+  /* Seis materias que el despacho atiende sin que sean su especialidad
+     —civil, familia, laboral privado, notarial, electoral y comercio
+     internacional— viven en una sola página. Cada una tenía la suya y
+     Google no rastreó ninguna: seis puertas estrechas hacia un sitio que
+     se presenta como especialista en Derecho Público diluían el mensaje.
+     Sus direcciones antiguas redirigen aquí (next.config.ts). */
   {
-    slug: "derecho-civil",
-    title: "Derecho Civil",
-    subtitle: "Litigio entre particulares: responsabilidad civil, cobros, contratos y propiedad",
-    description: "Litigio civil entre particulares: responsabilidad contractual y extracontractual, procesos de cobro judicial, desahucio, reivindicatorios, sucesiones y nulidades conforme al Código Civil (Ley N.° 63) y al Código Procesal Civil (Ley N.° 9342).",
+    slug: "otras-materias",
+    title: "Otras Materias",
+    subtitle: "Civil, familia, laboral privado, notarial, electoral y comercio internacional",
+    description:
+      "Materias que atendemos además del Derecho Público: litigio civil entre particulares, familia, laboral privado, notariado y registro, financiamiento político y comercio internacional. Las asume el mismo equipo y con el mismo rigor técnico, aunque la especialidad de la casa sea la defensa frente al Estado.",
     icon: "UsersThree" as const,
     priority: "complementary" as const,
-    seoTitle: "Derecho Civil · Litigio Privado | Costa Rica",
-    seoDescription: "Responsabilidad civil contractual y extracontractual, cobro judicial, desahucio, reivindicatorios, sucesiones y nulidades conforme al Código Civil (N.° 63) y al Código Procesal Civil (Ley N.° 9342).",
-    ogShortTitle: "Derecho {{em}}",
-    ogEmphasis: "Civil",
-  },
-  {
-    slug: "derecho-de-familia",
-    title: "Derecho de Familia",
-    subtitle: "Divorcio, pensión alimentaria, guarda y patria potestad",
-    description: "Procesos de divorcio, pensión alimentaria, guarda y crianza, filiación, liquidación de bienes gananciales y violencia doméstica conforme al Código de Familia (Ley N.° 5476), la Ley de Pensiones Alimentarias (Ley N.° 7654) y legislación conexa.",
-    icon: "Heart" as const,
-    priority: "complementary" as const,
-    seoTitle: "Derecho de Familia · Divorcio y Pensiones | CR",
-    seoDescription: "Divorcio, pensión alimentaria, guarda y crianza, filiación, liquidación de gananciales y violencia doméstica conforme al Código de Familia (Ley N.° 5476) y Ley de Pensiones Alimentarias (N.° 7654).",
-    ogShortTitle: "Derecho de {{em}}",
-    ogEmphasis: "Familia",
-  },
-  {
-    slug: "derecho-laboral",
-    title: "Derecho Laboral",
-    subtitle: "Despido injustificado, prestaciones, riesgos del trabajo y litigio laboral oral",
-    description: "Demandas por despido injustificado, cobro de prestaciones laborales, procesos por riesgos del trabajo, discriminación laboral y litigio oral laboral conforme al Código de Trabajo reformado por la Ley N.° 9343 (Reforma Procesal Laboral).",
-    icon: "Wrench" as const,
-    priority: "complementary" as const,
-    seoTitle: "Derecho Laboral · Despido y Prestaciones | CR",
-    seoDescription: "Despido injustificado, cobro de prestaciones, riesgos del trabajo, discriminación y litigio oral laboral conforme al Código de Trabajo y la Reforma Procesal Laboral (Ley N.° 9343). Asesoría experta.",
-    ogShortTitle: "Derecho {{em}}",
-    ogEmphasis: "Laboral",
-  },
-  {
-    slug: "derecho-notarial",
-    title: "Derecho Notarial y Registral",
-    subtitle: "Escrituras públicas, protocolizaciones, constitución de sociedades, trámites registrales y fe pública",
-    description: "Servicios notariales completos: otorgamiento de escrituras públicas, protocolización de actas, constitución de sociedades, compraventas, hipotecas, fideicomisos, certificaciones notariales y gestión registral conforme al Código Notarial (Ley N.° 7764).",
-    icon: "Stamp" as const,
-    priority: "complementary" as const,
-    seoTitle: "Notario Público · Escrituras y Sociedades | CR",
-    seoDescription: "Servicios notariales completos: escrituras públicas, protocolizaciones, constitución de sociedades, compraventas, hipotecas, fideicomisos y gestión registral conforme al Código Notarial (N.° 7764).",
-    ogShortTitle: "Derecho Notarial y {{em}}",
-    ogEmphasis: "Registral",
+    seoTitle: "Otras materias: civil, familia, laboral y notarial · GC",
+    seoDescription:
+      "Litigio civil, familia, laboral privado, notariado y registro, financiamiento político y comercio internacional, atendidos por el mismo equipo que litiga contra el Estado.",
+    ogShortTitle: "Otras {{em}}",
+    ogEmphasis: "materias",
   },
   {
     slug: "expropiaciones",
@@ -569,23 +516,17 @@ export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
   "derecho-urbanistico": ["materia-municipal", "dominio-publico", "litigio-contencioso-administrativo", "expropiaciones"],
   "expropiaciones": ["litigio-contencioso-administrativo", "dominio-publico", "derecho-urbanistico", "medidas-cautelares"],
   "materia-presupuestaria": ["contratacion-publica", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo", "informes-juridicos-dictamenes"],
-  "comercio-internacional": ["defensa-regulatoria-sectorial", "regulacion-fintech-criptoactivos", "asesoria-regulatoria", "litigio-contencioso-administrativo"],
   "defensa-regulatoria-sectorial": ["procedimientos-sancionatorios", "servicio-publico", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo"],
   "alianzas-publico-privadas-infraestructura": ["contratacion-publica", "materia-presupuestaria", "litigio-contencioso-administrativo", "asesoria-regulatoria"],
 
   // ─── Emergentes y sectoriales ───
   "gobierno-digital-inteligencia-artificial-datos": ["asesoria-regulatoria", "telecomunicaciones-espectro-5g", "defensa-regulatoria-sectorial", "compliance-publico-anticorrupcion"],
   "regulacion-ambiental-mercados-carbono": ["energia-renovable-transicion-energetica", "derecho-urbanistico", "litigio-contencioso-administrativo", "recursos-de-amparo"],
-  "regulacion-fintech-criptoactivos": ["defensa-regulatoria-sectorial", "compliance-publico-anticorrupcion", "comercio-internacional", "asesoria-regulatoria"],
-  "derecho-electoral-financiamiento-politico": ["acciones-de-inconstitucionalidad", "compliance-publico-anticorrupcion", "informes-juridicos-dictamenes", "asesoria-regulatoria"],
+  "regulacion-fintech-criptoactivos": ["defensa-regulatoria-sectorial", "compliance-publico-anticorrupcion", "asesoria-regulatoria"],
   "telecomunicaciones-espectro-5g": ["servicio-publico", "defensa-regulatoria-sectorial", "gobierno-digital-inteligencia-artificial-datos", "litigio-contencioso-administrativo"],
   "energia-renovable-transicion-energetica": ["regulacion-ambiental-mercados-carbono", "servicio-publico", "alianzas-publico-privadas-infraestructura", "asesoria-regulatoria"],
 
   // ─── Cobertura complementaria ───
-  "derecho-civil": ["derecho-de-familia", "derecho-notarial", "derecho-laboral", "litigio-contencioso-administrativo"],
-  "derecho-de-familia": ["derecho-civil", "derecho-notarial", "derecho-laboral", "recursos-de-amparo"],
-  "derecho-laboral": ["empleo-publico", "derecho-civil", "procedimientos-sancionatorios", "recursos-de-amparo"],
-  "derecho-notarial": ["derecho-civil", "derecho-urbanistico", "derecho-de-familia", "informes-juridicos-dictamenes"],
 };
 
 export type RelatedArea = {

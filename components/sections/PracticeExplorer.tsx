@@ -51,7 +51,6 @@ const GROUPS: { title: string; slugs: string[] }[] = [
       "asesoria-regulatoria",
       "materia-presupuestaria",
       "compliance-publico-anticorrupcion",
-      "derecho-electoral-financiamiento-politico",
     ],
   },
   {
@@ -63,7 +62,6 @@ const GROUPS: { title: string; slugs: string[] }[] = [
       "regulacion-fintech-criptoactivos",
       "regulacion-ambiental-mercados-carbono",
       "defensa-regulatoria-sectorial",
-      "comercio-internacional",
       "gobierno-digital-inteligencia-artificial-datos",
     ],
   },
@@ -77,14 +75,16 @@ const GROUPS: { title: string; slugs: string[] }[] = [
       "alianzas-publico-privadas-infraestructura",
     ],
   },
-  {
-    title: "Cobertura complementaria",
-    slugs: ["derecho-civil", "derecho-de-familia", "derecho-laboral", "derecho-notarial"],
-  },
 ];
 
+/* «Otras materias» no entra en el explorador. Esta sección presenta el
+   núcleo en Derecho Público y esa página reúne justamente lo que no lo es;
+   como grupo propio dejaba el panel casi vacío. Vive en el hub de áreas. */
+const FUERA_DEL_NUCLEO = new Set(["otras-materias"]);
+
 function groupAreas(areas: PracticeAreaLite[]) {
-  const bySlug = new Map(areas.map((a) => [a.slug, a]));
+  const nucleo = areas.filter((a) => !FUERA_DEL_NUCLEO.has(a.slug));
+  const bySlug = new Map(nucleo.map((a) => [a.slug, a]));
   const used = new Set<string>();
   const groups = GROUPS.map((g) => ({
     title: g.title,
@@ -94,10 +94,11 @@ function groupAreas(areas: PracticeAreaLite[]) {
       return a ? [a] : [];
     }),
   }));
-  for (const a of areas) {
+  /* Un área nueva debe asignarse a su grupo en GROUPS; si no, cae en
+     Administración pública, que es el cajón menos equivocado. */
+  for (const a of nucleo) {
     if (used.has(a.slug)) continue;
-    const i = a.priority === "complementary" ? 4 : a.priority === "specialized" ? 2 : 1;
-    groups[i].items.push(a);
+    groups[a.priority === "specialized" ? 2 : 1].items.push(a);
   }
   return groups;
 }

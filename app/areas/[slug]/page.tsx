@@ -82,6 +82,148 @@ function Instrumento({
 
 /* ─── Contenido de cada área ─── */
 const AREA_CONTENT: Record<string, React.ReactNode> = {
+  /* Las seis materias complementarias en una sola página. Cada sección
+     lleva el ancla a la que redirige su dirección antigua. */
+  "otras-materias": (
+    <>
+      <section className="mb-12">
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+          La especialidad de la casa es el Derecho Público: la defensa frente al Estado, el
+          contencioso-administrativo y la casación. Junto a ella, el mismo equipo atiende seis
+          materias que llegan de la mano de los mismos clientes, porque un conflicto con la
+          Administración casi nunca viene solo. Cada una se aborda con el rigor técnico de un
+          despacho que litiga ante la Sala Primera.
+        </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          Si su asunto es de una de estas materias, escríbanos igual: le diremos con franqueza si
+          es un caso para nosotros o si le conviene un especialista, y en ese caso a quién.
+        </p>
+      </section>
+
+      <div id="civil" className="scroll-mt-28">
+        <Instrumento
+          titulo="Derecho civil: cobros, responsabilidad y propiedad"
+          fundamento="Código Civil, Ley N.° 63; Código Procesal Civil, Ley N.° 9342"
+        >
+          <p>
+            El conflicto civil entre particulares se gana o se pierde en los detalles: el título
+            correcto, la vía procesal adecuada y, sobre todo, el plazo. Desde que el Código
+            Procesal Civil (Ley N.° 9342) entró en vigencia el 8 de octubre de 2018, el litigio
+            civil costarricense es oral y mucho más rápido: en el proceso monitorio de cobro, tras
+            la resolución intimatoria el deudor tiene apenas cinco días para cumplir u oponerse
+            (artículo 110).
+          </p>
+          <p>
+            Asumimos cobros judiciales, responsabilidad contractual y extracontractual, defensa de
+            la propiedad, procesos reivindicatorios, desahucios, sucesiones y nulidades.
+          </p>
+        </Instrumento>
+      </div>
+
+      <div id="familia" className="scroll-mt-28">
+        <Instrumento
+          titulo="Derecho de familia: divorcio, pensiones y filiación"
+          fundamento="Código Procesal de Familia, Ley N.° 9747; Ley de Pensiones Alimentarias, Ley N.° 7654"
+        >
+          <p>
+            Desde el 1.° de octubre de 2024 rige en su integridad el Código Procesal de Familia
+            (Ley N.° 9747), que trasladó estos conflictos a procesos orales, por audiencias y con
+            énfasis en el interés superior de la persona menor de edad. Cambiaron los tiempos, la
+            estrategia probatoria y la forma de litigar.
+          </p>
+          <p>
+            En una materia donde el apremio corporal por pensión alimentaria puede dictarse hasta
+            por seis meses (artículos 24 y 25 de la Ley N.° 7654), un error de procedimiento cuesta
+            la libertad. Atendemos divorcio, pensión alimentaria, guarda y crianza, filiación y
+            liquidación de bienes gananciales.
+          </p>
+        </Instrumento>
+      </div>
+
+      <div id="laboral" className="scroll-mt-28">
+        <Instrumento
+          titulo="Derecho laboral privado: despidos, jornadas y liquidaciones"
+          fundamento="Código de Trabajo; Reforma Procesal Laboral, Ley N.° 9343"
+        >
+          <p>
+            Un despido mal liquidado, un finiquito firmado a la ligera o una jornada que nunca se
+            pagó como extra pueden costar —o representar— montos cuantiosos. Desde la Reforma
+            Procesal Laboral (Ley N.° 9343, vigente desde el 25 de julio de 2017), estos conflictos
+            se resuelven en un proceso oral por audiencias, donde la prueba se ofrece y se evacúa
+            frente al juez.
+          </p>
+          <p>
+            Los plazos corren rápido: como regla, las acciones derivadas del contrato de trabajo
+            prescriben en un año desde su extinción. Acompañamos a personas trabajadoras y a
+            patronos del sector privado. El empleo público, que es otra cosa, tiene su propia
+            área.
+          </p>
+        </Instrumento>
+      </div>
+
+      <div id="notarial" className="scroll-mt-28">
+        <Instrumento
+          titulo="Notariado y registro: escrituras, poderes y sucesiones"
+          fundamento="Código Notarial, Ley N.° 7764"
+        >
+          <p>
+            En materia notarial un defecto de forma no se nota el día de la firma: aparece cuando
+            se intenta vender, hipotecar o heredar, y el Registro rechaza el documento. El
+            notariado es una función pública ejercida privadamente (artículo 1 del Código Notarial)
+            y las manifestaciones del notario se presumen ciertas (artículo 31).
+          </p>
+          <p>
+            El despacho cuenta con notarios públicos activos, con especial fortaleza en los actos
+            que tocan al Derecho Público: protocolización de acuerdos de órganos colegiados,
+            constitución de fundaciones y asociaciones de interés público y formalización de
+            contratos administrativos.
+          </p>
+        </Instrumento>
+      </div>
+
+      <div id="electoral" className="scroll-mt-28">
+        <Instrumento
+          titulo="Financiamiento político y materia electoral"
+          fundamento="Código Electoral, Ley N.° 8765; Ley N.° 10755"
+        >
+          <p>
+            El financiamiento de los partidos costarricenses cambió en setiembre de 2025: la Ley
+            N.° 10755 reformó artículos clave del Código Electoral en materia de financiamiento
+            anticipado caucionado y de control contable. De cara al ciclo municipal de febrero de
+            2028, los plazos de liquidación son cortos, las certificaciones contables se fiscalizan
+            a fondo y los delitos de financiamiento llegan a seis años de prisión.
+          </p>
+          <p>
+            Asesoramos a partidos, comités ejecutivos, tesoreros y candidaturas en liquidaciones
+            ante el Tribunal Supremo de Elecciones, en la defensa de reparos y en la impugnación de
+            resoluciones electorales.
+          </p>
+        </Instrumento>
+      </div>
+
+      <div id="comercio" className="scroll-mt-28">
+        <Instrumento
+          titulo="Comercio internacional: aduanas y defensa comercial"
+          fundamento="Ley General de Aduanas, Ley N.° 7557; acuerdos de la OMC"
+        >
+          <p>
+            El comercio internacional vive un momento de tensión: investigaciones de defensa
+            comercial activas en la región, ajustes de valoración y clasificación en el sistema
+            TICA y un giro global hacia el proteccionismo arancelario. En 2023 Costa Rica obtuvo un
+            fallo favorable de un grupo especial de la OMC contra las medidas antidumping de
+            República Dominicana sobre las varillas de acero corrugado (diferencia DS605), prueba
+            de que estos casos se ganan con técnica.
+          </p>
+          <p>
+            Acompañamos a importadores, exportadores, productores nacionales y agentes aduaneros
+            en determinaciones de la Aduana, recursos ante el Tribunal Aduanero Nacional y
+            procedimientos de defensa comercial.
+          </p>
+        </Instrumento>
+      </div>
+    </>
+  ),
+
   "expropiaciones": (
     <>
       <section className="mb-12">

@@ -48,6 +48,19 @@ const nextConfig: NextConfig = {
         destination: "/areas/litigio-contencioso-administrativo",
         permanent: true,
       },
+      /* Las seis materias complementarias pasaron a una sola página. Cada
+         dirección antigua lleva a su sección dentro de ella, para que quien
+         tenga el enlace guardado caiga donde esperaba. */
+      { source: "/areas/derecho-civil", destination: "/areas/otras-materias#civil", permanent: true },
+      { source: "/areas/derecho-de-familia", destination: "/areas/otras-materias#familia", permanent: true },
+      { source: "/areas/derecho-laboral", destination: "/areas/otras-materias#laboral", permanent: true },
+      { source: "/areas/derecho-notarial", destination: "/areas/otras-materias#notarial", permanent: true },
+      {
+        source: "/areas/derecho-electoral-financiamiento-politico",
+        destination: "/areas/otras-materias#electoral",
+        permanent: true,
+      },
+      { source: "/areas/comercio-internacional", destination: "/areas/otras-materias#comercio", permanent: true },
       // Search Console conserva esta ruta del sitio anterior entre sus 404.
       // El artículo existe, con otra carpeta.
       {

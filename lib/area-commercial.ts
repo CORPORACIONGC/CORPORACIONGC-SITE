@@ -14,6 +14,80 @@ export type CommercialLanding = {
 };
 
 export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
+  /* Las seis materias complementarias comparten una sola landing. Los
+     «servicios» son las materias mismas. */
+  "otras-materias": {
+    hookHeadline: "¿Su asunto no es contra el Estado, pero quiere el mismo rigor?",
+    hookSubtext:
+      "La especialidad de Corporación GC es el Derecho Público, y junto a ella el mismo equipo atiende seis materias que llegan de la mano de los mismos clientes: civil, familia, laboral privado, notariado, financiamiento político y comercio internacional. Un conflicto con la Administración casi nunca viene solo, y no tiene sentido mandar a otra puerta a quien ya confió en la casa. Si el asunto necesita un especialista distinto, se lo diremos con franqueza y le diremos a quién.",
+    scenariosTitle: "¿Cuándo le servimos en estas materias?",
+    triggerScenarios: [
+      "Le deben dinero, le incumplieron un contrato o le invadieron su propiedad",
+      "Enfrenta un divorcio, una pensión alimentaria o un proceso de filiación",
+      "Lo despidieron sin liquidar bien, o es patrono y le reclaman prestaciones",
+      "Necesita una escritura, un poder o una sucesión que el Registro no le rechace",
+      "Su partido debe liquidar ante el Tribunal Supremo de Elecciones o le hicieron un reparo",
+      "La Aduana le determinó un ajuste de valor o de clasificación",
+      "Su producto enfrenta una investigación de defensa comercial en la región",
+    ],
+    services: [
+      {
+        title: "Derecho civil",
+        description:
+          "Cobro judicial, responsabilidad contractual y extracontractual, defensa de la propiedad, reivindicatorios, desahucios, sucesiones y nulidades, en el proceso oral del Código Procesal Civil.",
+      },
+      {
+        title: "Derecho de familia",
+        description:
+          "Divorcio, pensión alimentaria, guarda y crianza, filiación y liquidación de gananciales, bajo el Código Procesal de Familia que rige en su integridad desde octubre de 2024.",
+      },
+      {
+        title: "Derecho laboral privado",
+        description:
+          "Despidos, liquidaciones, jornadas y horas extra, en el proceso por audiencias de la Reforma Procesal Laboral. El empleo público tiene su propia área.",
+      },
+      {
+        title: "Notariado y registro",
+        description:
+          "Escrituras, poderes, compraventas, hipotecas, constitución de sociedades y sucesiones en sede notarial, con fortaleza en los actos que tocan al Derecho Público.",
+      },
+      {
+        title: "Financiamiento político",
+        description:
+          "Liquidaciones ante el Tribunal Supremo de Elecciones, defensa de reparos e impugnación de resoluciones, con las reglas que la Ley N.° 10755 cambió en 2025.",
+      },
+      {
+        title: "Comercio internacional",
+        description:
+          "Determinaciones de la Aduana, recursos ante el Tribunal Aduanero Nacional, valoración y clasificación en TICA, y procedimientos de defensa comercial.",
+      },
+    ],
+    whatsappMessage:
+      "Hola, tengo un asunto que no es de Derecho Público y quisiera saber si lo pueden atender.",
+    commercialFaq: [
+      {
+        question: "¿Atienden estos asuntos con la misma dedicación que los de Derecho Público?",
+        answer:
+          "Los asume el mismo equipo y con el mismo método, pero conviene ser claro: la especialidad declarada de la casa es la defensa frente al Estado. En estas seis materias trabajamos con rigor y, cuando un caso exige una especialización que no tenemos, lo decimos antes de aceptarlo y recomendamos a quién acudir.",
+      },
+      {
+        question: "¿Por qué estas materias comparten una sola página?",
+        answer:
+          "Porque describen lo que hacemos además de nuestra especialidad, y tenerlas separadas daba la impresión de un despacho generalista. Reunirlas dice la verdad: son materias que atendemos, no la razón por la que existe el despacho.",
+      },
+      {
+        question: "Mi asunto es laboral pero trabajo para el Estado. ¿Va aquí?",
+        answer:
+          "No. El empleo público se rige por el Estatuto de Servicio Civil, la Ley Marco de Empleo Público y el procedimiento administrativo, y se litiga en la jurisdicción contencioso-administrativa. Tiene su propia área y es una de las especialidades de la casa.",
+      },
+      {
+        question: "¿Pueden llevar un caso civil hasta la Sala Primera?",
+        answer:
+          "Sí. La casación civil llega a la misma Sala Primera ante la que el despacho litiga en materia contencioso-administrativa, y su fundador la integró como Magistrado durante doce años. Es, de hecho, donde la experiencia de la casa se traslada con más naturalidad a un asunto entre particulares.",
+      },
+    ],
+  },
+
   "medidas-cautelares": {
     hookHeadline: "¿Necesita suspender un acto administrativo urgente?",
     hookSubtext:
