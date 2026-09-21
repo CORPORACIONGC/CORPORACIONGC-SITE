@@ -112,7 +112,7 @@ La resolución de fondo **agota la vía administrativa** (art. 98). Lo que sigue
 
 Y si la contratación ya se ejecutó o está en curso de ejecución, la propia ley define el desenlace: la sentencia favorable reconoce al oferente ilegítimamente excluido **el pago de los daños y perjuicios causados** (art. 98) — que en contratos de gran cuantía puede representar la utilidad dejada de percibir.
 
-Esta fase judicial es la especialidad central de Corporación GC: nuestro director fue co-redactor del Código Procesal Contencioso Administrativo y ex-Magistrado de la Sala Primera, la que revisa en casación estas sentencias. Para entender esa ruta: [¿cómo demandar al Estado en Costa Rica?](/articulos/como-demandar-al-estado-costa-rica), [medidas cautelares contra el Estado](/articulos/medidas-cautelares-contra-el-estado-costa-rica) y nuestras áreas de [litigio contencioso-administrativo](/areas/litigio-contencioso-administrativo) y [casación ante la Sala Primera](/areas/casacion-sala-primera).
+Esta fase judicial es la especialidad central de Corporación GC: nuestro director fue coordinador de la comisión redactora del Código Procesal Contencioso Administrativo y ex-Magistrado de la Sala Primera, la que revisa en casación estas sentencias. Para entender esa ruta: [¿cómo demandar al Estado en Costa Rica?](/articulos/como-demandar-al-estado-costa-rica), [medidas cautelares contra el Estado](/articulos/medidas-cautelares-contra-el-estado-costa-rica) y nuestras áreas de [litigio contencioso-administrativo](/areas/litigio-contencioso-administrativo) y [casación ante la Sala Primera](/areas/casacion-sala-primera).
 
 ---
 

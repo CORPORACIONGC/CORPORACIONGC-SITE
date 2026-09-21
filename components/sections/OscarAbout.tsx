@@ -50,9 +50,9 @@ export function OscarAbout() {
                 Con más de 38 años de trayectoria ininterrumpida en el Derecho
                 Público, el Dr. Óscar Eduardo González Camacho fue Magistrado de la Sala
                 Primera de la Corte Suprema de Justicia durante 12 años y
-                co-redactor del Código Procesal Contencioso Administrativo
-                (Ley N.° 8508), pieza fundamental de la jurisdicción
-                contenciosa moderna.
+                coordinó la comisión redactora del Código Procesal
+                Contencioso Administrativo (Ley N.° 8508), pieza fundamental
+                de la jurisdicción contenciosa moderna.
               </p>
             </AnimatedEntry>
 
@@ -67,40 +67,46 @@ export function OscarAbout() {
               </p>
             </AnimatedEntry>
 
-            {/* La fuente primaria de la co-redacción del Código. El sitio lo
+            {/* La fuente primaria de que coordinó la comisión. El sitio lo
                 afirma en todas sus páginas y hasta hoy el visitante tenía que
-                creerlo: el expediente legislativo lo consigna por escrito y lo
-                publica la propia Asamblea. */}
+                creerlo; lo dice por escrito el propio Poder Judicial. La cita
+                se corta donde la nota sigue con otros nombres, y los puntos
+                suspensivos lo advierten. */}
             <AnimatedEntry delay={0.35}>
               <figure className="mt-8 border-l-2 border-gold/60 pl-5">
                 <blockquote className="text-sm text-cream/75 leading-relaxed max-w-[58ch]">
-                  «la Comisión Redactora de este proyecto estuvo integrada por el
-                  Magistrado Alvaro Fernández Silva, <strong className="font-semibold text-cream">Doctor
-                  Oscar González Camacho</strong>, Licenciada Cristina Víquez Cerdas,
-                  Licenciada Lorena Brenes Esquivel, Licenciado Horacio González
-                  Quiroga, Master Ronald Hidalgo Cuadra, Doctor Manrique Jiménez
-                  Meza, Doctor Ernesto Jinesta Lobo, Licenciado Aldo Milano Sánchez».
+                  «Para la redacción de dicho código la Corte Suprema de Justicia
+                  integró una comisión redactora <strong className="font-semibold text-cream">coordinada
+                  por el magistrado Oscar González Camacho</strong>, integrante de la
+                  Sala Primera…».
                 </blockquote>
                 <figcaption className="mt-3 text-xs text-cream/65 leading-relaxed">
-                  Exposición de motivos del proyecto de ley del Código Procesal
-                  Contencioso-Administrativo.{" "}
+                  <a
+                    href="https://actualidadjudicial.poder-judicial.go.cr/vol35/noticias_judiciales/notjud01.htm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                  >
+                    Actualidad Judicial N.º 35
+                  </a>
+                  , Poder Judicial de Costa Rica. El{" "}
                   <a
                     href="https://www.asamblea.go.cr/sd/SiteAssets/Lists/Consultas%20Biblioteca/EditForm/Proyecto%2015134%20ley%20Codigo%20Procesal.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
                   >
-                    Expediente legislativo 15.134
-                  </a>
-                  , Asamblea Legislativa. El mismo documento lo consigna también en
-                  la Comisión Revisora.{" "}
+                    expediente legislativo 15.134
+                  </a>{" "}
+                  lo consigna en la Comisión Redactora y en la Comisión Revisora del
+                  proyecto, y el Código está hoy en el{" "}
                   <a
                     href="https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
                   >
-                    Texto vigente de la Ley 8508
+                    texto vigente de la Ley 8508
                   </a>
                   .
                 </figcaption>

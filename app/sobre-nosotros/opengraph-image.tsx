@@ -13,7 +13,7 @@ export default async function Image() {
     title: "Seis abogados, una sola {{em}}: Derecho Público.",
     emphasis: "disciplina",
     body:
-      "Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Equipo dedicado exclusivamente al Derecho Público.",
+      "Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Equipo dedicado exclusivamente al Derecho Público.",
     url: "corporaciongc.com/sobre-nosotros",
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com",
   });

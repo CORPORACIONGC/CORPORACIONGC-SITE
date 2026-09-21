@@ -18,10 +18,10 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
   "casacion-sala-primera": {
     title: "Casación ante Sala Primera",
     description:
-      "Recurso ante la Sala Primera dirigido por el ex-Magistrado de la propia Sala y co-redactor del CPCA.",
+      "Recurso ante la Sala Primera dirigido por el ex-Magistrado de la propia Sala y coordinador de la comisión redactora del CPCA.",
     seoTitle: "Recurso de Casación ante Sala Primera · Costa Rica",
     seoDescription:
-      "¿Perdió en el TCA y necesita casación? Recurso ante la Sala Primera dirigido por el ex-Magistrado de la propia Sala y co-redactor del CPCA. Vicios de sentencia, técnica casacional, arts. 134-148.",
+      "¿Perdió en el TCA y necesita casación? Recurso ante la Sala Primera, dirigido por un ex-Magistrado de esa Sala que coordinó la redacción del CPCA. Vicios de sentencia, técnica casacional, arts. 134-148.",
     ogShortTitle: "Recurso de Casación ante la {{em}}",
     ogEmphasis: "Sala Primera",
   },
@@ -71,7 +71,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Informes y dictámenes para entes públicos sobre legalidad de actuaciones, contratos y procedimientos.",
     seoTitle: "Dictámenes de Legalidad Administrativa · Costa Rica",
     seoDescription:
-      "Informes y dictámenes jurídicos para entes públicos sobre legalidad de actuaciones, contratos y procedimientos. Bufete dirigido por el co-redactor del CPCA, ex-Magistrado de la Sala Primera de la CSJ.",
+      "Informes y dictámenes jurídicos para entes públicos sobre legalidad de actuaciones, contratos y procedimientos. Bufete dirigido por el coordinador de la comisión redactora del CPCA, ex-Magistrado de la Sala Primera de la CSJ.",
     ogShortTitle: "Dictámenes de {{em}}",
     ogEmphasis: "legalidad administrativa",
   },
@@ -330,15 +330,15 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     role: "Fundador y Director",
     seoTitle: "Dr. Óscar González Camacho · Exmagistrado de la Sala Primera",
     seoDescription:
-      "Ex-Magistrado de la Sala Primera (2002–2014), co-redactor del CPCA y Doctor en Derecho por Alcalá. Sus sentencias sobre responsabilidad del Estado, caducidad y fraude bancario, analizadas.",
+      "Ex-Magistrado de la Sala Primera (2002–2014) y coordinador de la redacción del CPCA. Sus sentencias sobre responsabilidad del Estado y caducidad, analizadas.",
     ogTitle: "Dr. Óscar González Camacho — Fundador, Corporación GC",
     ogDescription:
-      "Ex-Magistrado de la Corte Suprema (2002-2014), co-redactor del Código Procesal Contencioso Administrativo. Doctor en Derecho por Alcalá, Cum Laude. Litigante de mayor calado en lo contencioso CR.",
+      "Ex-Magistrado de la Corte Suprema (2002-2014), coordinador de la comisión redactora del Código Procesal Contencioso Administrativo. Doctor en Derecho por Alcalá, Cum Laude. Litigante de mayor calado en lo contencioso CR.",
     twitterTitle: "Dr. Óscar González Camacho · Corporación GC",
     ogImageAlt:
       "Retrato profesional del Dr. Óscar Eduardo González Camacho, Fundador y Director de Corporación GC.",
     credential:
-      "Ex-Magistrado de la Sala Primera (2002–2014). Co-redactor del CPCA. Doctor en Derecho por la Universidad de Alcalá, Cum Laude.",
+      "Ex-Magistrado de la Sala Primera (2002–2014). Coordinador de la comisión redactora del CPCA. Doctor en Derecho por la Universidad de Alcalá, Cum Laude.",
     photo: "/images/oscar-gonzalez-solo.png",
     photoFocus: "60% 50%",
   },

@@ -10,7 +10,7 @@ export const contentType = OG_CONTENT_TYPE;
 export default async function Image() {
   return renderHomeOg({
     tagline:
-      "Bufete dirigido por el Dr. Óscar González Camacho — ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508).",
+      "Bufete dirigido por el Dr. Óscar González Camacho — ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA (Ley N.° 8508).",
     url: "corporaciongc.com",
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com",
   });

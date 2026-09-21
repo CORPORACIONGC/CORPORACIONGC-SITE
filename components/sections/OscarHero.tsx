@@ -57,10 +57,10 @@ export function OscarHero() {
             <div className="mt-6 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">
-                Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del
-                Código Procesal Contencioso Administrativo. Uno de los
-                litigantes de mayor calado en la jurisdicción
-                contencioso-administrativa costarricense.
+                Ex-Magistrado de la Corte Suprema de Justicia. Coordinó la
+                comisión redactora del Código Procesal Contencioso
+                Administrativo. Uno de los litigantes de mayor calado en la
+                jurisdicción contencioso-administrativa costarricense.
               </p>
             </div>
           </AnimatedEntry>

@@ -64,7 +64,7 @@ import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRe
    (artículos institucionales). Refleja la autoridad del director del bufete
    sin alterar la voz editorial corporativa del artículo. */
 const ORG_AUTHOR_CREDENTIAL =
-  "Bufete dirigido por el Dr. Óscar Eduardo González Camacho · Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508) y ex-Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
+  "Bufete dirigido por el Dr. Óscar Eduardo González Camacho · Coordinador de la comisión redactora del Código Procesal Contencioso Administrativo (Ley N.° 8508) y ex-Magistrado de la Sala Primera de la Corte Suprema (2002–2014).";
 
 /* Textos de la plantilla según el idioma del artículo (campo `lang` del
    frontmatter): las guías en inglés se leen con la interfaz en inglés. */

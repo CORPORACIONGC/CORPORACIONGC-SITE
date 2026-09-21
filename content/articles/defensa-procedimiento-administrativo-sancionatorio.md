@@ -121,7 +121,7 @@ Todos estos errores comparten un origen: subestimar el procedimiento administrat
 
 ## Quién atiende estos casos
 
-En [Corporación GC](/areas/procedimientos-sancionatorios) la defensa en procedimientos sancionatorios y disciplinarios es un área central de la práctica, unida a nuestra especialidad histórica: el litigio contra el Estado. El equipo es dirigido por el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y co-redactor del Código Procesal Contencioso Administrativo — la jurisdicción que en definitiva controla la validez de las sanciones administrativas.
+En [Corporación GC](/areas/procedimientos-sancionatorios) la defensa en procedimientos sancionatorios y disciplinarios es un área central de la práctica, unida a nuestra especialidad histórica: el litigio contra el Estado. El equipo es dirigido por el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo — la jurisdicción que en definitiva controla la validez de las sanciones administrativas.
 
 Esa doble condición define el enfoque de la firma: cada procedimiento se defiende desde el primer día pensando en el expediente que un juez examinará después. Si usted es servidor público y el procedimiento amenaza su puesto, vea también nuestra área de [empleo público](/areas/empleo-publico) y el [procedimiento de despido de la Ley Marco de Empleo Público](/articulos/despidos-hacienda-teletrabajo-procedimiento-plazos).
 

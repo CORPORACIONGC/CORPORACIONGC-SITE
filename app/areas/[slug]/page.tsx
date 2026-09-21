@@ -1351,7 +1351,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p>
           Esta fase —la que decide los casos de mayor cuantía— es el terreno natural de la
-          firma: nuestro director fue co-redactor del Código Procesal Contencioso Administrativo
+          firma: nuestro director fue coordinador de la comisión redactora del Código Procesal Contencioso Administrativo
           y ex-Magistrado de la Sala Primera, la sala que conoce en casación las sentencias del
           Tribunal Contencioso. Vea nuestras áreas de{" "}
           <Link href="/areas/litigio-contencioso-administrativo" className="text-gold hover:text-gold/80 transition-colors">
@@ -1381,7 +1381,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           <Link href="/abogados/oscar-gonzalez" className="text-gold hover:text-gold/80 transition-colors">
             Dr. Óscar Eduardo González Camacho
           </Link>
-          , ex-Magistrado de la Sala Primera (2002–2014), co-redactor del Código Procesal
+          , ex-Magistrado de la Sala Primera (2002–2014), coordinador de la comisión redactora del Código Procesal
           Contencioso Administrativo y Doctor en Derecho por la Universidad de Alcalá. Esa
           trayectoria —en la judicatura que resuelve en definitiva estos conflictos— es la base
           del criterio con que evaluamos la viabilidad de cada recurso antes de presentarlo.
@@ -2019,7 +2019,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             Dr. Óscar Eduardo González Camacho
           </Link>
           , ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014),
-          co-redactor del Código Procesal Contencioso Administrativo y Doctor en Derecho por la
+          coordinador de la comisión redactora del Código Procesal Contencioso Administrativo y Doctor en Derecho por la
           Universidad de Alcalá. Por eso cada procedimiento se defiende desde el primer día
           pensando en el expediente que un juez examinará después: la prueba que se forma ante el
           órgano director es la misma que decidirá el litigio.

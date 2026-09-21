@@ -64,7 +64,7 @@ export function FirmHero() {
           <div className="gc-rise" style={{ animationDelay: "0.28s" }}>
             <div className="mt-8 md:mt-10 pt-8 md:pt-10 border-t border-cream/10 max-w-[52ch]">
               <p className="type-lead text-cream/85">
-                Co-redactor del Código Procesal Contencioso
+                Coordinador de la comisión redactora del Código Procesal Contencioso
                 Administrativo. Magistrado de la Sala Primera de la Corte
                 Suprema durante doce años. Coordinador de la
                 Jurisdicción Contencioso-Administrativa por nueve

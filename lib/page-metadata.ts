@@ -29,18 +29,18 @@ function tw(overrides: TW): TW {
 export const homeMetadata: Metadata = {
   title: "Abogados en Derecho Público en Costa Rica · Corporación GC",
   description:
-    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA.",
+    "Litigio contencioso-administrativo en Costa Rica. Lo dirige el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA.",
   alternates: { canonical: "/" },
   openGraph: og({
     title: "Corporación GC · Abogados en Derecho Público en Costa Rica",
     description:
-      "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
+      "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
     url: "/",
   }),
   twitter: tw({
     title: "Corporación GC | Abogados en Derecho Público — CR",
     description:
-      "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
+      "Bufete líder en litigio contencioso-administrativo. Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA (Ley N.° 8508). Más de 38 años de trayectoria.",
   }),
 };
 
@@ -49,18 +49,18 @@ export const sobreNosotrosMetadata: Metadata = {
   // marca para evitar "Sobre Nosotros · Corporación GC · Corporación GC".
   title: "Sobre Nosotros",
   description:
-    "Bufete fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados al Derecho Público.",
+    "Fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA. Seis abogados en Derecho Público.",
   alternates: { canonical: "/sobre-nosotros" },
   openGraph: og({
     title: "Quiénes somos · Corporación GC, Costa Rica",
     description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y co-redactor del CPCA.",
+      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
     url: "/sobre-nosotros",
   }),
   twitter: tw({
     title: "Sobre Nosotros · Corporación GC",
     description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y co-redactor del CPCA.",
+      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
   }),
 };
 
@@ -130,7 +130,7 @@ export const contactoMetadata: Metadata = {
   openGraph: og({
     title: "Contacto · Corporación GC, Costa Rica",
     description:
-      "Hablemos de su caso. Bufete dedicado al Derecho Público y al contencioso-administrativo en Costa Rica, dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA. Le orientamos sobre su caso.",
+      "Hablemos de su caso. Bufete dedicado al Derecho Público y al contencioso-administrativo en Costa Rica, dirigido por el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA. Le orientamos sobre su caso.",
     url: "/contacto",
   }),
   twitter: tw({

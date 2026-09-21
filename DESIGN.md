@@ -236,7 +236,7 @@ components:
 
 ## Overview
 
-Una placa de bronce convertida en interfaz. Corporación GC es un bufete dedicado exclusivamente al Derecho Público, fundado y dirigido por un ex-Magistrado de la Sala Primera y co-redactor del CPCA, y el sitio tiene que transmitir esa autoridad con la sobriedad de una revista de ideas y la precisión de una sentencia bien redactada. La página respira: mucho blanco, pocas piezas, cada una con un trabajo claro. El burdeos aparece como sello, en el énfasis de un titular o en el botón principal; el dorado aparece como hilo, en una línea fina o en un borde. La fotografía es siempre de personas reales del despacho.
+Una placa de bronce convertida en interfaz. Corporación GC es un bufete dedicado exclusivamente al Derecho Público, fundado y dirigido por un ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA, y el sitio tiene que transmitir esa autoridad con la sobriedad de una revista de ideas y la precisión de una sentencia bien redactada. La página respira: mucho blanco, pocas piezas, cada una con un trabajo claro. El burdeos aparece como sello, en el énfasis de un titular o en el botón principal; el dorado aparece como hilo, en una línea fina o en un borde. La fotografía es siempre de personas reales del despacho.
 
 El sitio tiene dos temas. El diurno es blanco con tinta casi negra; el nocturno es negro con un matiz borgoña y tinta marfil. El tema se decide por la preferencia del sistema o por la hora local, y todo componente debe verse correcto en ambos.
 

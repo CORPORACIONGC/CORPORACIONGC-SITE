@@ -19,7 +19,7 @@ const jsonLdAboutPage = {
   "@id": "https://www.corporaciongc.com/sobre-nosotros#webpage",
   name: "Sobre Nosotros — Corporación GC",
   description:
-    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y co-redactor del CPCA. Seis abogados dedicados exclusivamente al Derecho Público.",
+    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Seis abogados dedicados exclusivamente al Derecho Público.",
   url: "https://www.corporaciongc.com/sobre-nosotros",
   isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
   about: { "@id": "https://www.corporaciongc.com/#organization" },
@@ -140,7 +140,7 @@ const ABOGADOS = [
     portrait: "/images/equipo/oscar-gonzalez-oficina.jpg",
     name: "Dr. Óscar Eduardo González Camacho",
     role: "Fundador y Director",
-    desc: "Ex-Magistrado de la Sala Primera (2002–2014). Co-redactor del CPCA.",
+    desc: "Ex-Magistrado de la Sala Primera (2002–2014). Coordinador de la comisión redactora del CPCA.",
     carnet: "3191",
   },
   {
@@ -238,7 +238,7 @@ export default function SobreNosotros() {
             <p className="type-lead mx-auto mt-6 max-w-[58ch] text-center text-cream/75">
               Fundado en 2015 y dirigido por el Dr. &Oacute;scar Eduardo Gonz&aacute;lez
               Camacho, ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia y
-              co-redactor del C&oacute;digo Procesal Contencioso Administrativo.
+              coordinador de la comisi&oacute;n redactora del C&oacute;digo Procesal Contencioso Administrativo.
             </p>
 
             {/* Ficha de la firma, con el formato de la tabla de datos de los dictámenes */}
@@ -286,7 +286,7 @@ export default function SobreNosotros() {
                 dedicado exclusivamente al Derecho Público. Con sede en Barrio Dent,
                 San José, Costa Rica, la firma fue fundada y es dirigida por el
                 Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera
-                de la Corte Suprema de Justicia (2002–2014) y co-redactor del Código
+                de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código
                 Procesal Contencioso Administrativo (Ley N.° 8508 del 28 de abril de
                 2006). El bufete cuenta con seis abogados especializados en litigio
                 contencioso-administrativo, medidas cautelares, recursos de casación

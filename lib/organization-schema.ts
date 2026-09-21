@@ -47,7 +47,7 @@ export const ORGANIZATION_SCHEMA = {
     jobTitle: "Fundador y Director",
     honorificPrefix: "Dr.",
     description:
-      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014). Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508). Coordinador de la Jurisdicción Contencioso-Administrativa por nueve años. Doctor en Derecho por la Universidad de Alcalá de Henares, Sobresaliente Cum Laude.",
+      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014). Coordinador de la comisión redactora del Código Procesal Contencioso Administrativo (Ley N.° 8508). Coordinador de la Jurisdicción Contencioso-Administrativa por nueve años. Doctor en Derecho por la Universidad de Alcalá de Henares, Sobresaliente Cum Laude.",
     alumniOf: [
       { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá de Henares" },
       { "@type": "CollegeOrUniversity", name: "Universidad de Costa Rica" },

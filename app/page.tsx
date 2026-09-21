@@ -87,7 +87,7 @@ const jsonLdSiteNavigation = {
       "@type": "SiteNavigationElement",
       position: 2,
       name: "Dr. Óscar Eduardo González Camacho",
-      description: "Fundador y Director — Ex-Magistrado, co-redactor del CPCA",
+      description: "Fundador y Director — Ex-Magistrado, coordinador de la comisión redactora del CPCA",
       url: "https://www.corporaciongc.com/abogados/oscar-gonzalez",
     },
     {

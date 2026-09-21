@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s · Corporación GC",
   },
   description:
-    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Dirigido por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA.",
+    "Litigio contencioso-administrativo en Costa Rica. Lo dirige el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA.",
   applicationName: "Corporación GC",
   authors: [{ name: "Corporación GC" }],
   creator: "Corporación GC",

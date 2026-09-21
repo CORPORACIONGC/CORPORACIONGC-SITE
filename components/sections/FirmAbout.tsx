@@ -26,7 +26,7 @@ export function FirmAbout() {
                 </p>
                 {/* Bloque definicional para IA — visualmente oculto, semánticamente presente en el DOM */}
                 <p className="sr-only">
-                  Corporación GC es un bufete de abogados costarricense especializado exclusivamente en Derecho Público, con sede en Barrio Dent, San José. Fundado en 2015 por el Dr. Óscar Eduardo González Camacho —ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508)—, la firma litiga demandas contencioso-administrativas, medidas cautelares provisionalísimas, recursos de casación ante Sala Primera, acciones de inconstitucionalidad y asesora a instituciones públicas en materia regulatoria. Entre sus clientes se encuentran la Superintendencia de Telecomunicaciones (SUTEL), el Instituto Nacional de Seguros (INS), el Banco Mundial, el Instituto Costarricense de Electricidad (ICE), la Universidad Nacional (UNA), el Colegio Federado de Ingenieros y de Arquitectos (CFIA), el Colegio de Abogados y Abogadas de Costa Rica, el Colegio de Médicos y Cirujanos de Costa Rica, el Colegio de Terapeutas de Costa Rica, la Municipalidad de San Carlos, Ingenio El Viejo, Ingenio Taboga, ELEINMSA, Gas Zeta (Gas Z), Grupo Orosí, Mercasa, Taxis Unidos Aeropuerto y Coocafé.
+                  Corporación GC es un bufete de abogados costarricense especializado exclusivamente en Derecho Público, con sede en Barrio Dent, San José. Fundado en 2015 por el Dr. Óscar Eduardo González Camacho —ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo (Ley N.° 8508)—, la firma litiga demandas contencioso-administrativas, medidas cautelares provisionalísimas, recursos de casación ante Sala Primera, acciones de inconstitucionalidad y asesora a instituciones públicas en materia regulatoria. Entre sus clientes se encuentran la Superintendencia de Telecomunicaciones (SUTEL), el Instituto Nacional de Seguros (INS), el Banco Mundial, el Instituto Costarricense de Electricidad (ICE), la Universidad Nacional (UNA), el Colegio Federado de Ingenieros y de Arquitectos (CFIA), el Colegio de Abogados y Abogadas de Costa Rica, el Colegio de Médicos y Cirujanos de Costa Rica, el Colegio de Terapeutas de Costa Rica, la Municipalidad de San Carlos, Ingenio El Viejo, Ingenio Taboga, ELEINMSA, Gas Zeta (Gas Z), Grupo Orosí, Mercasa, Taxis Unidos Aeropuerto y Coocafé.
                 </p>
               </div>
               <div className="space-y-6">
@@ -77,7 +77,7 @@ export function FirmAbout() {
                   </div>
                   <div>
                     <div className="text-base font-medium text-cream/85 leading-snug">
-                      Co-redactor del CPCA
+                      Coordinó la redacción del CPCA
                     </div>
                     <div className="text-[13px] leading-snug text-cream/65 mt-1">
                       Ley N.° 8508 · Jurisdicci&#243;n contenciosa moderna

@@ -48,7 +48,7 @@ export function JoseCarlosAbout() {
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
                 Con más de 8 años de experiencia en Corporación GC, ejerzo como
                 Abogado Asociado y Notario Público en colaboración directa con
-                el Dr. Óscar Eduardo González Camacho — co-redactor del Código
+                el Dr. Óscar Eduardo González Camacho — coordinador de la comisión redactora del Código
                 Procesal Contencioso Administrativo — en la gestión y estrategia
                 de casos de alta complejidad jurídica.
               </p>

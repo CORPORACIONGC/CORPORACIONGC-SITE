@@ -10,7 +10,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Cómo Demandar al Estado en Costa Rica: Guía 2026"
-seoDescription: "Guía 2026 para demandar al Estado en Costa Rica: los plazos según su reclamo, qué puede pedir y los pasos del proceso, explicados por co-redactores del CPCA."
+seoDescription: "Guía 2026 para demandar al Estado en Costa Rica: los plazos de su reclamo, qué puede pedir y los pasos, por quien coordinó la redacción del CPCA."
 faq:
   - question: "¿A quiénes se puede demandar en la jurisdicción contencioso-administrativa?"
     answer: "Permite demandar al Estado (Gobierno Central, ministerios), instituciones autónomas (CCSS, ICE, INVU, AyA, IMAS), municipalidades, entes públicos (universidades estatales, ARESEP, SUTEL, CGR) y empresas públicas (RECOPE, INS). El principio de universalidad del control garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial."

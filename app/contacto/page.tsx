@@ -80,7 +80,7 @@ export default function ContactoPage() {
               Somos un bufete dedicado exclusivamente al Derecho Público y al
               litigio contencioso-administrativo en Costa Rica, dirigido por el
               Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y
-              co-redactor del Código Procesal Contencioso Administrativo.
+              coordinador de la comisión redactora del Código Procesal Contencioso Administrativo.
               Cuéntenos su situación y le indicaremos si la vía es la adecuada
               y qué opciones tiene.
             </p>

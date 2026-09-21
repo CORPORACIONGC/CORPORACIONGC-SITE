@@ -401,7 +401,7 @@ export default async function SentenciaDestacadaPage({
                 </p>
                 <p className="mt-2 max-w-[60ch] text-[15px] leading-relaxed text-cream/75">
                   Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014),
-                  co-redactor del Código Procesal Contencioso Administrativo y fundador de
+                  coordinador de la comisión redactora del Código Procesal Contencioso Administrativo y fundador de
                   Corporación GC.
                 </p>
                 <Link

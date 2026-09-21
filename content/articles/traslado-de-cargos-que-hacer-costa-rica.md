@@ -97,6 +97,6 @@ Cuando el traslado de cargos amenaza un puesto en el sector público —minister
 
 ## Quién atiende estos casos
 
-En [Corporación GC](/areas/procedimientos-sancionatorios) defendemos a personas, servidores públicos y empresas desde la notificación del traslado de cargos hasta la comparecencia, los recursos y, cuando es necesario, el litigio contencioso-administrativo. La práctica es dirigida por el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y co-redactor del Código Procesal Contencioso Administrativo.
+En [Corporación GC](/areas/procedimientos-sancionatorios) defendemos a personas, servidores públicos y empresas desde la notificación del traslado de cargos hasta la comparecencia, los recursos y, cuando es necesario, el litigio contencioso-administrativo. La práctica es dirigida por el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo.
 
 El momento de consultar es ahora, mientras los plazos del traslado siguen abiertos: la mayor parte del valor de una defensa técnica se concentra en lo que se hace —y en lo que se evita hacer— durante esos primeros quince días. [Escríbanos](/#contacto) y evaluamos su caso con el documento a la vista.

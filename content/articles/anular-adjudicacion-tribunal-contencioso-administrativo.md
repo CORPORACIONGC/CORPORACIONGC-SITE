@@ -97,7 +97,7 @@ En la práctica, los tribunales costarricenses anulan adjudicaciones cuando encu
 
 Esto confirma dos cosas. Primera: la jurisdicción contencioso-administrativa efectivamente anula adjudicaciones ilegales. Segunda: por encima del Tribunal Contencioso está la **Sala Primera**, que revisa las sentencias en casación. Nuestro despacho litiga en ambos niveles; puede conocer nuestro trabajo en [casación ante la Sala Primera](/areas/casacion-sala-primera).
 
-Litigar la anulación de una adjudicación exige dominar tanto la Ley General de Contratación Pública como el Código Procesal Contencioso-Administrativo —código del que el Dr. González Camacho fue co-redactor—, y ese es precisamente el terreno de nuestro equipo.
+Litigar la anulación de una adjudicación exige dominar tanto la Ley General de Contratación Pública como el Código Procesal Contencioso-Administrativo —código cuya comisión redactora coordinó el Dr. González Camacho—, y ese es precisamente el terreno de nuestro equipo.
 
 ## Preguntas frecuentes
 

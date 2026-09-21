@@ -4,7 +4,7 @@ export const FIRM = {
   name: "Corporación GC",
   title: "Corporación GC · Abogados en Derecho Público | Costa Rica",
   description:
-    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado por el Dr. Óscar González Camacho, ex-Magistrado y co-redactor del CPCA. Especialistas en Derecho Público.",
+    "Bufete líder en litigio contencioso-administrativo en Costa Rica. Fundado por el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA. Especialistas en Derecho Público.",
   url: "https://www.corporaciongc.com",
   locale: "es_CR",
 } as const;
@@ -79,7 +79,7 @@ export const OSCAR_PROFILE = {
   name: "Dr. Óscar Eduardo González Camacho",
   role: "Fundador y Director",
   photo: "/images/oscar-gonzalez-oficina.png",
-  heroDescription: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del Código Procesal Contencioso Administrativo. Uno de los litigantes de mayor calado en la jurisdicción contencioso-administrativa costarricense.",
+  heroDescription: "Ex-Magistrado de la Corte Suprema de Justicia. Coordinador de la comisión redactora del Código Procesal Contencioso Administrativo. Uno de los litigantes de mayor calado en la jurisdicción contencioso-administrativa costarricense.",
   heroBio: "Doctor en Derecho por la Universidad de Alcalá de Henares con la calificación Sobresaliente Cum Laude. Con más de 38 años de trayectoria ininterrumpida en el Derecho Público, el Dr. Óscar Eduardo González Camacho forjó la jurisdicción contenciosa moderna desde la judicatura y hoy la domina desde el litigio. Desde 2015 dirige Corporación GC como uno de los abogados litigantes de mayor calado en la materia administrativa del país.",
   education: [
     { degree: "Doctor en Derecho", institution: "Universidad de Alcalá de Henares, España", period: "1995 – 1998", distinction: "Sobresaliente Cum Laude" },
@@ -89,7 +89,7 @@ export const OSCAR_PROFILE = {
   ],
   career: [
     { role: "Fundador y Director — Litigante", org: "Corporación GC", period: "2015 – Presente", description: "Uno de los litigantes de mayor calado en la jurisdicción contencioso-administrativa costarricense. Litigio de alto nivel ante el TCA, Sala Primera, Sala Constitucional y diversas instancias administrativas. Dirección estratégica del bufete y formación de un equipo de abogados especializados en Derecho Público.", highlight: true },
-    { role: "Magistrado", org: "Sala Primera, Corte Suprema de Justicia", period: "2002 – 2014", description: "Magistrado de la Sala Primera de la Corte Suprema de Justicia durante 12 años. Co-redactor del Código Procesal Contencioso Administrativo (Ley N.° 8508). Coordinador de la Jurisdicción Contencioso-Administrativa (2003-2010, 2012) y de la Comisión de Asuntos Ambientales del Poder Judicial (2008-2014).", highlight: false },
+    { role: "Magistrado", org: "Sala Primera, Corte Suprema de Justicia", period: "2002 – 2014", description: "Magistrado de la Sala Primera de la Corte Suprema de Justicia durante 12 años. Coordinador de la comisión redactora del Código Procesal Contencioso Administrativo (Ley N.° 8508). Coordinador de la Jurisdicción Contencioso-Administrativa (2003-2010, 2012) y de la Comisión de Asuntos Ambientales del Poder Judicial (2008-2014).", highlight: false },
     { role: "Juez Superior", org: "Tribunal Contencioso Administrativo", period: "1996 – 2002", description: "Juez Superior del Tribunal de lo Contencioso Administrativo y Magistrado Suplente de la Corte Suprema (1999-2002). Contribución directa al desarrollo de la jurisprudencia administrativa costarricense.", highlight: false },
     { role: "Juez de Primera Instancia", org: "Juzgado Contencioso Administrativo", period: "1986 – 1992", description: "Inicio de la carrera judicial en materia contencioso-administrativa. Funcionario del Juzgado Primero Contencioso Administrativo desde 1984.", highlight: false },
   ],
@@ -101,7 +101,7 @@ export const OSCAR_PROFILE = {
     { role: "Instructor", institution: "Escuela Judicial del Poder Judicial", detail: "Formación de jueces y operadores jurídicos" },
   ],
   publications: [
-    { type: "law" as const, title: "Co-redactor del Código Procesal Contencioso Administrativo", detail: "Ley N.° 8508, 28 de abril de 2006. Pieza fundamental de la jurisdicción contenciosa moderna." },
+    { type: "law" as const, title: "Coordinó la comisión redactora del Código Procesal Contencioso Administrativo", detail: "Ley N.° 8508, 28 de abril de 2006. Pieza fundamental de la jurisdicción contenciosa moderna." },
     { type: "book" as const, title: "La Justicia Administrativa frente a la Inactividad Material de la Administración Pública", detail: "Tesis Doctoral — Universidad de Alcalá, 1998. Publicada como Justicia Administrativa (Tomos I, II y III), Editorial Investigaciones Jurídicas, 2002.", slug: "libro-justicia-administrativa" },
     { type: "book" as const, title: "El Nuevo Proceso Contencioso Administrativo", detail: "Editorial Jurídica Continental / Escuela Judicial, 2006. Obra colectiva sobre la implementación del CPCA.", slug: "libro-nuevo-proceso-contencioso" },
     { type: "book" as const, title: "Consideraciones Prácticas en torno al Proceso Ejecutivo", detail: "Escuela Judicial, 1995. Tratado sobre el proceso ejecutivo en materia civil de hacienda.", slug: "libro-proceso-ejecutivo" },
@@ -111,7 +111,7 @@ export const OSCAR_PROFILE = {
 } as const;
 
 export const TEAM = [
-  { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez-solo.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Co-redactor del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
+  { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez-solo.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Coordinador de la comisión redactora del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
   { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/khevin-sanchez.jpg", shortBio: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario. Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Regulación Fintech y Criptoactivos"], languages: ["Español"], featured: true },
   { slug: "katherine-gonzalez", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
@@ -148,7 +148,7 @@ export const PRACTICE_AREA_PAGES = [
     priority: "primary" as const,
     seoTitle: "Abogados contencioso-administrativos · Demandas contra el Estado",
     seoDescription:
-      "Demandas de nulidad, plena jurisdicción y responsabilidad del Estado ante el Tribunal Contencioso. El bufete lo dirige el ex-Magistrado co-redactor del CPCA.",
+      "Demandas de nulidad, plena jurisdicción y responsabilidad del Estado ante el Tribunal Contencioso. Lo dirige el coordinador de la comisión redactora del CPCA.",
     ogShortTitle: "Demandas contra el {{em}}",
     ogEmphasis: "Estado",
   },
@@ -172,7 +172,7 @@ export const PRACTICE_AREA_PAGES = [
     icon: "Scales" as const,
     priority: "primary" as const,
     seoTitle: "Casación ante Sala Primera Costa Rica 2026 · Abogados",
-    seoDescription: "¿Perdió en el TCA y necesita casación? Recurso ante la Sala Primera, dirigido por un ex-Magistrado de la propia Sala y co-redactor del CPCA. Arts. 134-148.",
+    seoDescription: "¿Perdió en el TCA y necesita casación? Recurso ante la Sala Primera, dirigido por un ex-Magistrado de esa Sala que coordinó la redacción del CPCA.",
     ogShortTitle: "Casación ante la {{em}}",
     ogEmphasis: "Sala Primera",
   },
@@ -574,7 +574,7 @@ export const ESTEBAN_PROFILE = {
   role: "Abogado Asociado",
   photo: "/images/esteban-perez.jpg",
   heroDescription: "Abogado litigante y Notario Público, especializado en Derecho Administrativo, Contencioso Administrativo, Contratación Pública, Derecho Constitucional y regulación fintech y de activos virtuales.",
-  heroBio: "Más de 9 años de experiencia en litigio de alta complejidad contra el Estado. Colaboración directa con el Dr. Óscar Eduardo González Camacho, co-redactor del Código Procesal Contencioso Administrativo.",
+  heroBio: "Más de 9 años de experiencia en litigio de alta complejidad contra el Estado. Colaboración directa con el Dr. Óscar Eduardo González Camacho, coordinador de la comisión redactora del Código Procesal Contencioso Administrativo.",
   education: [
     { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica", status: "Egresado — Tesis en desarrollo" },
     { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica" },
@@ -678,7 +678,7 @@ export const NAV_LINKS = [
 export const OSCAR_CREDENTIALS = [
   { metric: "38+", label: "Años de trayectoria jurídica", detail: "Desde 1986" },
   { metric: "12", label: "Años como Magistrado", detail: "Sala Primera, Corte Suprema · 2002 – 2014" },
-  { metric: "CPCA", label: "Co-redactor del Código Procesal", detail: "Contencioso Administrativo · Ley N.° 8508" },
+  { metric: "CPCA", label: "Coordinó la comisión redactora", detail: "Contencioso Administrativo · Ley N.° 8508" },
 ] as const;
 
 export const OSCAR_CONTACT = {

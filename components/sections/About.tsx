@@ -76,7 +76,7 @@ export function About() {
                 orales y recursos de casación. Inicié mi carrera en la Sala
                 Constitucional, en el despacho del Magistrado Paul Rueda
                 Leal, y me formé durante siete años bajo la dirección del
-                Dr. Óscar Eduardo González Camacho, co-redactor del Código
+                Dr. Óscar Eduardo González Camacho, coordinador de la comisión redactora del Código
                 Procesal Contencioso Administrativo.
               </p>
             </AnimatedEntry>
