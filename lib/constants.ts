@@ -159,7 +159,7 @@ export const PRACTICE_AREA_PAGES = [
     description: "Especialistas en tutela cautelar contencioso-administrativa: medidas provisionalísimas de urgencia extrema, cautelares ante causam y definitivas conforme a los artículos 19 a 30 del CPCA.",
     icon: "ShieldCheck" as const,
     priority: "primary" as const,
-    seoTitle: "Medidas Cautelares contra el Estado Costa Rica 2026",
+    seoTitle: "Abogados en medidas cautelares contra el Estado · Costa Rica",
     seoDescription: "¿Necesita suspender un acto administrativo urgente? Medidas cautelares provisionalísimas y ante causam ante el TCA. CPCA arts. 19-30. Asesoría inmediata.",
     ogShortTitle: "{{em}} contra el Estado",
     ogEmphasis: "Medidas Cautelares",

@@ -1,5 +1,5 @@
 ---
-title: "¿Cómo proteger sus derechos mientras dura el proceso contra el Estado?"
+title: "Medidas cautelares contra el Estado: cómo proteger sus derechos mientras dura el proceso"
 date: "2026-03-28"
 excerpt: "Un proceso contencioso-administrativo puede durar años. Las medidas cautelares permiten proteger sus derechos desde el primer día — incluso antes de presentar la demanda. Conozca qué son, cuándo proceden y por qué pueden definir el resultado de su caso."
 tags: ["Guía práctica", "Medidas Cautelares", "CPCA", "Contencioso Administrativo", "Derecho Administrativo"]
@@ -9,8 +9,8 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Medidas Cautelares contra el Estado en Costa Rica 2026"
-seoDescription: "Qué son las medidas cautelares contra el Estado y cómo pedirlas para frenar un acto administrativo urgente: tipos, plazos y requisitos del CPCA. Guía 2026."
+seoTitle: "Qué son las medidas cautelares y cómo se piden en Costa Rica"
+seoDescription: "Qué son las medidas cautelares contra el Estado, qué requisitos exige el CPCA, cuánto duran y cómo se piden antes o durante la demanda."
 faq:
   - question: "¿Cuándo se puede solicitar una medida cautelar contra el Estado?"
     answer: "El CPCA contempla solicitarlas en dos momentos principales: antes de presentar la demanda (ante causam, cuando la urgencia no permite esperar) y durante el proceso (en cualquier etapa mientras subsista la necesidad). La posibilidad de actuar antes de la demanda es relevante en situaciones de daño inminente, pues evita que el daño se consolide mientras se prepara el expediente completo."
