@@ -4400,12 +4400,21 @@ export function getSentenciasPorArea(area: string): SentenciaDestacada[] {
 }
 
 /** Las sentencias que tratan alguno de estos temas, para el pie de un
- *  artículo. La comparación ignora tildes y mayúsculas. */
+ *  artículo. La comparación ignora tildes y mayúsculas.
+ *
+ *  Ordena primero por cuántos temas comparte con el artículo y después por
+ *  fecha. Antes mandaba solo la fecha, y una etiqueta tan ancha como
+ *  «Derecho Administrativo» bastaba para que la sentencia más reciente
+ *  desplazara a la que trata la materia exacta: el artículo sobre la
+ *  personalidad jurídica instrumental ofrecía dos fallos de caducidad y
+ *  dejaba fuera el que resuelve ese punto. */
 const sinTilde = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 export function getSentenciasPorTemas(tags: string[], tope = 2): SentenciaDestacada[] {
   const t = tags.map(sinTilde);
-  return SENTENCIAS_DESTACADAS.filter((s) => s.temas?.some((tema) => t.includes(sinTilde(tema))))
-    .sort((a, b) => b.fechaISO.localeCompare(a.fechaISO))
+  const afines = (s: SentenciaDestacada) =>
+    s.temas?.filter((tema) => t.includes(sinTilde(tema))).length ?? 0;
+  return SENTENCIAS_DESTACADAS.filter((s) => afines(s) > 0)
+    .sort((a, b) => afines(b) - afines(a) || b.fechaISO.localeCompare(a.fechaISO))
     .slice(0, tope);
 }
 
