@@ -5,7 +5,7 @@ excerpt: "Si una institución pública le denegó un permiso, le impuso una sanc
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Demanda contra el Estado", "Derecho Administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"
-authorVisible: false
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Cómo Demandar al Estado en Costa Rica: Guía 2026"

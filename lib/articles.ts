@@ -21,6 +21,10 @@ export type ArticleMeta = {
   /** Si es false, el autor NO se muestra en la página (byline + bio ocultos)
       pero SÍ se emite en el JSON-LD (señal de autoría para SEO/E-E-A-T). */
   authorVisible?: boolean;
+  /** Fecha de la última revisión de fondo, cuando hubo una posterior a la
+   *  publicación. Alimenta «Actualizado el…», el `dateModified` y el
+   *  `lastModified` del sitemap. */
+  updated?: string;
   institution?: string;
   publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley" | "guia";
   sourceReference?: string;

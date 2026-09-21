@@ -5,7 +5,7 @@ excerpt: "El CPCA (Ley N.° 8508) derogó por completo la antigua Ley Reguladora
 tags: ["Contencioso Administrativo", "CPCA", "Ley 8508", "Ley Reguladora", "Derecho Administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"
-authorVisible: false
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
 seoTitle: "CPCA vs LRJCA: qué cambió de la Ley 3667 a la 8508"

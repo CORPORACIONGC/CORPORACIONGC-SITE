@@ -46,6 +46,7 @@ import {
 } from "@/components/article/DespidoTeletrabajo";
 import {
   ArrowLeft,
+  ArrowsClockwise,
   CalendarBlank,
   Tag,
   BookOpen,
@@ -78,6 +79,7 @@ const UI = {
     ctaButton: "Escribir por WhatsApp",
     aboutOne: "Sobre el autor",
     aboutMany: "Sobre los autores",
+    updated: "Revisado el",
     profile: "Ver perfil completo",
     whatsapp: (topic: string) =>
       `Hola, leí su artículo "${topic}" en el sitio y quisiera una consulta.`,
@@ -95,6 +97,7 @@ const UI = {
     ctaButton: "Message us on WhatsApp",
     aboutOne: "About the author",
     aboutMany: "About the authors",
+    updated: "Reviewed on",
     profile: "View full profile",
     whatsapp: (topic: string) =>
       `Hello, I read your article "${topic}" on your website and would like a consultation.`,
@@ -257,7 +260,7 @@ export default async function ArticlePage({
     headline: article.title,
     description: article.excerpt,
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified: article.updated ?? article.date,
     url: `https://www.corporaciongc.com/articulos/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -281,6 +284,12 @@ export default async function ArticlePage({
               }
             : {
                 "@type": "Person",
+                /* El mismo identificador que usa la página del abogado, para
+                   que Google entienda que quien firma es esa persona y no un
+                   homónimo. */
+                ...(authorMember
+                  ? { "@id": `https://www.corporaciongc.com/abogados/${authorMember.slug}#person` }
+                  : {}),
                 name: article.author,
                 ...(authorMember ? { url: `https://www.corporaciongc.com/abogados/${authorMember.slug}` } : {}),
                 ...(article.institution
@@ -296,6 +305,7 @@ export default async function ArticlePage({
       : {}),
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.corporaciongc.com/#organization",
       name: "Corporación GC",
       url: "https://www.corporaciongc.com",
       logo: {
@@ -383,8 +393,19 @@ export default async function ArticlePage({
 
               <div className="flex items-center gap-1.5 text-xs text-cream/35">
                 <CalendarBlank size={13} weight="regular" />
-                {formatDate(article.date, lang)}
+                <time dateTime={article.date}>{formatDate(article.date, lang)}</time>
               </div>
+
+              {/* La revisión posterior solo se anuncia cuando existe: una
+                  fecha de actualización igual a la de publicación no dice
+                  nada y Google la descuenta. */}
+              {article.updated && article.updated !== article.date && (
+                <div className="flex items-center gap-1.5 text-xs text-cream/35">
+                  <ArrowsClockwise size={13} weight="regular" />
+                  {t.updated}{" "}
+                  <time dateTime={article.updated}>{formatDate(article.updated, lang)}</time>
+                </div>
+              )}
 
               {article.tags.length > 0 && (
                 <div className="flex items-start gap-1.5 min-w-0">

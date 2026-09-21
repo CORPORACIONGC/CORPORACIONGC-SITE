@@ -5,7 +5,7 @@ excerpt: "El CPCA (Código Procesal Contencioso-Administrativo, Ley N.° 8508) e
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Ley 8508", "Derecho Administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"
-authorVisible: false
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Código Procesal Contencioso-Administrativo (CPCA · Ley 8508)"

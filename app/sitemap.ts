@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/articulos/${article.slug}`,
-    lastModified: new Date(article.date),
+    lastModified: new Date(article.updated ?? article.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
     // Guías con versión en otro idioma: cada URL declara las dos (hreflang).
@@ -46,6 +46,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Fecha real de última actualización de perfiles (no new Date())
   const teamLastUpdated = new Date("2026-03-28");
+
+  /* Fecha de la última revisión de las páginas de área. Se actualiza a mano
+     cuando se reescriben sus textos: el 20-09-2026 se rehicieron los títulos
+     y las descripciones de las treinta y dos. */
+  const areasLastUpdated = new Date("2026-09-20");
 
   const teamUrls = TEAM.map((member) => ({
     url: `${baseUrl}/abogados/${member.slug}`,
@@ -79,15 +84,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
-    {
-      url: `${baseUrl}/politica-de-privacidad`,
-      lastModified: new Date("2026-03-28"),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
+    /* La política de privacidad no va en el sitemap: no es contenido que
+       deba competir en la Búsqueda y se llevaba autoridad interna. */
     {
       url: `${baseUrl}/areas`,
-      lastModified: new Date("2026-03-28"),
+      lastModified: areasLastUpdated,
       changeFrequency: "monthly",
       priority: 0.8,
     },
@@ -97,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
        jerarquizar el descubrimiento. */
     ...PRACTICE_AREA_PAGES.map((area) => ({
       url: `${baseUrl}/areas/${area.slug}`,
-      lastModified: new Date("2026-03-28"),
+      lastModified: areasLastUpdated,
       changeFrequency: "monthly" as const,
       priority:
         area.priority === "primary"

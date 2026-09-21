@@ -4,8 +4,8 @@ date: "2026-05-28"
 excerpt: "El recurso de amparo es la herramienta constitucional más rápida para proteger sus derechos fundamentales frente a la autoridad pública o privada. Esta guía explica, con base en la Ley de la Jurisdicción Constitucional, qué actos pueden impugnarse, cuál es el plazo de dos meses, dónde se presenta y los errores que llevan al rechazo de plano por la Sala Constitucional."
 tags: ["Guía práctica", "Recurso de Amparo", "Sala Constitucional", "Derechos Fundamentales", "Derecho Constitucional"]
 type: "article"
-author: "Dr. Óscar Eduardo González Camacho"
-authorVisible: false
+author: "Licda. Mariana Montero Acuña"
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Recurso de amparo en Costa Rica: cómo presentarlo en línea"

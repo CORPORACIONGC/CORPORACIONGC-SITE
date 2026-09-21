@@ -10,7 +10,7 @@ import {
 } from "@phosphor-icons/react";
 import { FIRM_CONTACT } from "@/lib/constants";
 import { sendContactEmail } from "@/app/actions/send-email";
-import { trackFormSubmit } from "@/lib/analytics";
+import { trackFormStart, trackFormSubmit } from "@/lib/analytics";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 
 type FormState = "idle" | "submitting" | "success" | "error";
@@ -68,7 +68,13 @@ export function LeadForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      /* El primer tecleo en el formulario ya es intención de contacto; el
+         envío puede no llegar y esa intención se perdía. */
+      onInput={() => trackFormStart("lead_form")}
+      className="space-y-4"
+    >
       {/* Honeypot — invisible para humanos, los bots lo llenan */}
       <div className="absolute opacity-0 pointer-events-none" style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
         <input

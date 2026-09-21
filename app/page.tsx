@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PRACTICE_AREA_PAGES } from "@/lib/constants";
 import { ORGANIZATION_SCHEMA } from "@/lib/organization-schema";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -63,14 +64,8 @@ const jsonLdWebSite = {
   url: "https://www.corporaciongc.com",
   publisher: { "@id": "https://www.corporaciongc.com/#organization" },
   inLanguage: "es-CR",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: "https://www.google.com/search?q=site%3Acorporaciongc.com+{search_term_string}",
-    },
-    "query-input": "required name=search_term_string",
-  },
+  /* Sin `potentialAction`: el sitio no tiene un buscador propio y declarar
+     uno que lleva a google.com no describe nada del sitio. */
 };
 
 /* ── SEO: SiteNavigationElement (sitelinks hint) ── */
@@ -85,7 +80,7 @@ const jsonLdSiteNavigation = {
       "@type": "SiteNavigationElement",
       position: 1,
       name: "Áreas de Práctica",
-      description: "22 áreas de práctica en Derecho Público y Administrativo",
+      description: `${PRACTICE_AREA_PAGES.length} áreas de práctica en Derecho Público y Administrativo`,
       url: "https://www.corporaciongc.com/areas",
     },
     {
