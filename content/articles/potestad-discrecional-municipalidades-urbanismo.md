@@ -3,6 +3,7 @@ title: "La potestad discrecional de la Administración Municipal en la regulaci�
 date: "2022-12-13"
 excerpt: "Trabajo Final de Graduación que examina los alcances y límites de la discrecionalidad administrativa municipal en la regulación urbanística costarricense, abordando el marco normativo disperso, el rol de los planes reguladores y el control judicial de la actividad urbanística local."
 tags: ["Discrecionalidad Administrativa", "Derecho Urbanístico", "Derecho Municipal", "Plan Regulador", "Ordenamiento Territorial", "Trabajo Final de Graduación"]
+areas: ["derecho-urbanistico", "materia-municipal"]
 type: "pdf"
 pdfFile: "tesis-esteban-perez-herrera.pdf"
 author: "Lic. Esteban Pérez Herrera"

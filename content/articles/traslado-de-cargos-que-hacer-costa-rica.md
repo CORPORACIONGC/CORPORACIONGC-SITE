@@ -3,6 +3,7 @@ title: "Me llegó un traslado de cargos: qué significa, plazos y qué hacer"
 date: "2026-07-03"
 excerpt: "El traslado de cargos es el acto con que la Administración le comunica formalmente los hechos que se le atribuyen y abre el procedimiento que puede terminar en una sanción. Desde su notificación, los plazos corren. Esta guía explica qué debe contener ese documento para ser válido, cuánto tiempo tiene usted, qué derechos puede ejercer de inmediato y los errores que arruinan defensas antes de empezar."
 tags: ["Guía práctica", "Traslado de Cargos", "Procedimiento Sancionatorio", "LGAP", "Derecho Administrativo"]
+areas: ["procedimientos-sancionatorios"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

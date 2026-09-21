@@ -7,6 +7,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT, getRelatedAreas } from "@/lib/constants";
 import { getSentenciasPorArea } from "@/lib/jurisprudencia";
+import { getArticlesByArea, publicationTypeLabel } from "@/lib/articles";
 import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRelacionadas";
 import { AREA_COMMERCIAL } from "@/lib/area-commercial";
 import { generateAreaMetadata } from "@/lib/page-metadata";
@@ -5645,6 +5646,8 @@ export default async function AreaDetailPage({
 
   const relatedAreas = getRelatedAreas(slug);
   const sentencias = getSentenciasPorArea(slug);
+  /* Todo el cluster del área, no una sola guía elegida a mano. */
+  const guias = getArticlesByArea(slug);
 
   /* JSON-LD Service schema */
   const jsonLd = {
@@ -5851,22 +5854,54 @@ export default async function AreaDetailPage({
                   </MagneticButton>
                 </div>
 
-                {/* Related article */}
-                {commercial.relatedArticleSlug && (
-                  <Link
-                    href={`/articulos/${commercial.relatedArticleSlug}`}
-                    className="group mt-10 flex items-center justify-between gap-4 p-5 rounded-xl border border-cream/[0.10] hover:border-gold/30 transition-all duration-300"
-                  >
-                    <div>
-                      <div className="text-[10px] tracking-[0.25em] uppercase text-cream/40 font-medium mb-1">
-                        Profundizar
-                      </div>
-                      <div className="text-sm text-cream/80 group-hover:text-gold transition-colors duration-300">
-                        {commercial.relatedArticleLabel ?? "Artículo relacionado"}
-                      </div>
-                    </div>
-                    <ArrowRight size={16} weight="bold" className="text-cream/40 group-hover:text-gold group-hover:translate-x-1 transition-all duration-300 shrink-0" />
-                  </Link>
+                {/* Todas las guías de la materia, con el mismo trazo de las
+                    filas del equipo y de las áreas. Sustituye al enlace único
+                    que cada área elegía a mano: ahí se quedaba la autoridad. */}
+                {guias.length > 0 && (
+                  <section className="mt-14">
+                    <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
+                      Guías sobre esta materia
+                    </h2>
+                    <p className="text-sm text-cream/60 leading-relaxed max-w-[60ch] mb-6">
+                      {guias.length === 1
+                        ? "La guía que la casa ha publicado sobre esta materia."
+                        : `Las ${guias.length} guías que la casa ha publicado sobre esta materia.`}
+                    </p>
+                    <ul role="list" className="border-t border-cream/[0.08]">
+                      {guias.map((g) => (
+                        <li key={g.slug} className="relative">
+                          <Link
+                            href={`/articulos/${g.slug}`}
+                            className="group relative block py-4 border-b border-cream/[0.06] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-gold"
+                            />
+                            <span className="flex items-start justify-between gap-4">
+                              <span className="min-w-0">
+                                <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300">
+                                  {g.title}
+                                </span>
+                                <span className="mt-1 block text-xs text-cream/65 leading-relaxed max-w-[62ch]">
+                                  {g.excerpt}
+                                </span>
+                                <span className="mt-1.5 block text-[11px] text-cream/50">
+                                  {publicationTypeLabel(g.publicationType)}
+                                  {g.minutos ? ` · ${g.minutos} min de lectura` : ""}
+                                </span>
+                              </span>
+                              <ArrowRight
+                                size={14}
+                                weight="bold"
+                                className="mt-1 shrink-0 text-cream/30 group-hover:text-burgundy dark:group-hover:text-gold group-hover:translate-x-0.5 transition-all duration-300"
+                              />
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
                 )}
 
                 {/* Divider before legal depth content */}

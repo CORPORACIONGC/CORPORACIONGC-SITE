@@ -3,6 +3,7 @@ title: "El Nuevo Proceso Contencioso Administrativo"
 date: "2006-01-01"
 excerpt: "Obra colectiva que analiza en profundidad la implementación del Código Procesal Contencioso Administrativo (Ley N.° 8508), abordando desde las bases constitucionales de la reforma hasta la tutela cautelar, la sentencia, los recursos de casación y la ejecución de los fallos."
 tags: ["Contencioso Administrativo", "CPCA", "Derecho Procesal", "Reforma Jurisdiccional"]
+areas: ["litigio-contencioso-administrativo"]
 type: "pdf"
 pdfFile: "libro-nuevo-proceso-contencioso.pdf"
 author: "Óscar Eduardo González Camacho y otros"

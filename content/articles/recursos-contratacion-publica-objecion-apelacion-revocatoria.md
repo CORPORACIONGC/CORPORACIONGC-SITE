@@ -3,6 +3,7 @@ title: "Objeción, apelación o revocatoria: ¿qué recurso presento en una lici
 date: "2026-07-02"
 excerpt: "Perdió una licitación o el cartel lo deja fuera. La Ley 9986 le da tres recursos — pero presentar el equivocado, o presentarlo tarde, significa el rechazo de plano. Guía completa con plazos, órganos competentes y tabla comparativa."
 tags: ["Recursos", "Objeción", "Apelación", "Revocatoria", "Contratación Pública", "CGR", "Ley 9986"]
+areas: ["contratacion-publica"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

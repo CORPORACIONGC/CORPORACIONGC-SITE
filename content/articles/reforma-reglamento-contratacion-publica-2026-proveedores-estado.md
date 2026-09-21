@@ -3,6 +3,7 @@ title: "Reglamento a la Ley General de Contratación Pública: texto vigente y l
 date: "2026-06-05"
 excerpt: "El articulado vigente del Reglamento, con buscador, y los cinco cambios que la reforma de 2026 introdujo en precios, subsanación y subcontratación."
 tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Reforma 2026", "Decreto 45782", "PYME", "SICOP"]
+areas: ["contratacion-publica"]
 type: "article"
 author: "Esteban Pérez Herrera"
 authorVisible: true

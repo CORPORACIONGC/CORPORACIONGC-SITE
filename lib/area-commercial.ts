@@ -9,6 +9,10 @@ export type CommercialLanding = {
   services: { title: string; description: string }[];
   whatsappMessage: string;
   commercialFaq: { question: string; answer: string }[];
+  /** Retirados el 20-09-2026: el área listaba una sola guía elegida a mano
+   *  y ahí se quedaba la autoridad. Ahora lista todo su cluster, que sale
+   *  del campo `areas` del frontmatter de cada artículo. Los valores se
+   *  conservan como memoria de la curaduría original. */
   relatedArticleSlug?: string;
   relatedArticleLabel?: string;
 };

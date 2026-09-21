@@ -3,6 +3,7 @@ title: "Me abrieron un procedimiento administrativo sancionatorio: ¿cómo defen
 date: "2026-07-03"
 excerpt: "Si una institución pública le notificó la apertura de un procedimiento administrativo en su contra, los plazos ya están corriendo. Esta guía explica, con base en la Ley General de la Administración Pública, qué significa esa notificación, cuáles son las etapas del procedimiento, qué derechos tiene usted en cada una y por dónde pasa una defensa seria: desde la comparecencia oral hasta la impugnación de la sanción ante el Tribunal Contencioso Administrativo."
 tags: ["Guía práctica", "Procedimiento Sancionatorio", "LGAP", "Debido Proceso", "Derecho Administrativo"]
+areas: ["procedimientos-sancionatorios"]
 type: "article"
 author: "MSc. Katherine González Coto"
 authorVisible: true

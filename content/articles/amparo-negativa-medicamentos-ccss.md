@@ -3,6 +3,7 @@ title: "Amparo por negativa de medicamentos en la CCSS: qué dice la Sala Consti
 date: "2026-06-12"
 excerpt: "Cuando la CCSS niega un medicamento prescrito por el médico tratante alegando que no está en la Lista Oficial de Medicamentos, el recurso de amparo suele ser la vía para obtenerlo. Esta guía explica, con base en la Constitución, la Ley de la Jurisdicción Constitucional y la jurisprudencia verificada de la Sala Constitucional —del caso histórico de los antirretrovirales a los fallos recientes sobre medicamentos de alto costo—, cuándo la Sala ordena entregar el fármaco, cuándo lo rechaza y cómo se presenta el recurso."
 tags: ["Guía práctica", "Recurso de Amparo", "CCSS", "Derecho a la Salud", "Sala Constitucional"]
+areas: ["recursos-de-amparo"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

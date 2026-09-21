@@ -3,6 +3,7 @@ title: "Me inhabilitaron como proveedor del Estado: cómo defenderse de la sanci
 date: "2026-07-02"
 excerpt: "Una inhabilitación puede sacarlo del mercado estatal por hasta diez años. Le explicamos qué está en juego, las diferencias entre inhabilitación simple y calificada, y cómo defenderse en el procedimiento sancionatorio de la Ley 9986."
 tags: ["Guía práctica", "Procedimientos Sancionatorios", "Contratación Pública", "Inhabilitación", "Defensa del Proveedor", "Ley 9986"]
+areas: ["procedimientos-sancionatorios", "contratacion-publica"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

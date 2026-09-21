@@ -3,6 +3,7 @@ title: "El daño moral indirecto familiar y social como responsabilidad patrimon
 date: "2024-01-15"
 excerpt: "Trabajo Final de Investigación Aplicada que examina el régimen jurídico del daño moral indirecto, entendido como el perjuicio sufrido por personas colateralmente afectadas por un daño directo infligido a un tercero, y su reconocimiento como responsabilidad patrimonial del Estado."
 tags: ["Responsabilidad Patrimonial", "Daño Moral Indirecto", "Derecho Administrativo", "Derecho Público"]
+areas: ["litigio-contencioso-administrativo"]
 type: "pdf"
 pdfFile: "tesis-katherine-gonzalez-maestria.pdf"
 author: "MSc. Katherine González Coto"

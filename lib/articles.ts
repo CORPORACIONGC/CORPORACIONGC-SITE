@@ -25,6 +25,9 @@ export type ArticleMeta = {
    *  publicación. Alimenta «Actualizado el…», el `dateModified` y el
    *  `lastModified` del sitemap. */
   updated?: string;
+  /** Áreas de práctica a las que pertenece la guía. La primera es su área
+   *  principal: la que aparece en las migas y en el cierre del artículo. */
+  areas?: string[];
   institution?: string;
   publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley" | "guia";
   sourceReference?: string;
@@ -66,6 +69,8 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     faq: data.faq as ArticleFAQ[] | undefined,
     lang: data.lang === "en" ? "en" : "es",
     translation: data.translation as string | undefined,
+    updated: data.updated as string | undefined,
+    areas: (data.areas as string[]) || [],
   };
 }
 
@@ -102,6 +107,61 @@ export function getArticleBySlug(slug: string): Article | null {
     ...extractMeta(data, slug),
     content,
   };
+}
+
+/* ── El cluster de cada área ──────────────────────────────────────────
+   Antes, cada área enlazaba una sola guía elegida a mano y cada guía no
+   enlazaba ninguna. Con el campo `areas` del frontmatter, el área lista
+   todo su cluster y la guía devuelve el camino hacia su área y hacia sus
+   hermanas, que es lo que hace circular la autoridad dentro del sitio. */
+
+/** El área principal de una guía: la primera que declara. */
+export function getPrimaryArea(article: Pick<ArticleMeta, "areas">): string | null {
+  return article.areas?.[0] ?? null;
+}
+
+/* Lo académico —tesis, libros y ponencias— va al final del listado de un
+   área: respalda, pero no es lo que busca quien llega con un problema. */
+const ACADEMICO = new Set(["tesis", "libro", "ponencia"]);
+
+function ordenDeCluster(a: ArticleMeta, b: ArticleMeta): number {
+  const aAcad = ACADEMICO.has(a.publicationType ?? "") ? 1 : 0;
+  const bAcad = ACADEMICO.has(b.publicationType ?? "") ? 1 : 0;
+  if (aAcad !== bAcad) return aAcad - bAcad;
+  return b.date.localeCompare(a.date);
+}
+
+/** Todas las guías de un área, las prácticas antes que las académicas.
+ *  Solo en español: las versiones en inglés viven enlazadas desde su par. */
+export function getArticlesByArea(areaSlug: string): ArticleMeta[] {
+  return getAllArticles()
+    .filter((a) => a.lang !== "en" && a.areas?.includes(areaSlug))
+    .sort(ordenDeCluster);
+}
+
+/** Las guías hermanas de una guía: las que comparten área, ordenadas por
+ *  cuántas comparten y, en empate, por etiquetas en común y por fecha. */
+export function getRelatedArticles(slug: string, tope = 4): ArticleMeta[] {
+  const todos = getAllArticles();
+  const propio = todos.find((a) => a.slug === slug);
+  if (!propio || !propio.areas?.length) return [];
+  const areas = new Set(propio.areas);
+  const tags = new Set(propio.tags);
+  return todos
+    .filter((a) => a.slug !== slug && a.lang === propio.lang && a.areas?.some((x) => areas.has(x)))
+    .map((a) => ({
+      a,
+      areasComunes: a.areas!.filter((x) => areas.has(x)).length,
+      tagsComunes: a.tags.filter((t) => tags.has(t)).length,
+    }))
+    .sort(
+      (x, y) =>
+        y.areasComunes - x.areasComunes ||
+        y.tagsComunes - x.tagsComunes ||
+        ordenDeCluster(x.a, y.a),
+    )
+    .slice(0, tope)
+    .map((x) => x.a);
 }
 
 export function getArticlesByAuthor(authorSubstring: string): ArticleMeta[] {

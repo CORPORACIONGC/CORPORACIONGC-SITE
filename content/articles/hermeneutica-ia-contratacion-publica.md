@@ -3,6 +3,7 @@ title: "Administración Pública aumentada: bases normativas y técnicas para la
 date: "2025-06-01"
 excerpt: "Estudio sobre la viabilidad jurídica y técnica de implementar sistemas de inteligencia artificial en la contratación pública costarricense, demostrando que la Ley General de Contratación Pública (No. 9986) no solo permite sino que favorece la incorporación de IA para fortalecer la transparencia, la libre concurrencia y la eficiencia del gasto público, con propuestas concretas de control algorítmico y supervisión humana."
 tags: ["Inteligencia Artificial", "Contratación Pública", "Administración Pública", "Transparencia", "SICOP", "Derecho Administrativo"]
+areas: ["gobierno-digital-inteligencia-artificial-datos", "contratacion-publica"]
 type: "pdf"
 pdfFile: "hermeneutica-ia-contratacion-publica.pdf"
 author: "Lic. Khevin Alberto Sánchez Zamora, Licda. Mariana Montero Acuña"

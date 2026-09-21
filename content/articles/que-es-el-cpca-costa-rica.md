@@ -3,6 +3,7 @@ title: "¿Qué es el CPCA? El Código que rige las demandas contra el Estado en 
 date: "2026-05-21"
 excerpt: "El CPCA (Código Procesal Contencioso-Administrativo, Ley N.° 8508) es la ley que regula cómo se demanda al Estado en Costa Rica. Esta guía explica qué es, para qué sirve, qué permite reclamar y cómo funciona el proceso, con base en el texto vigente de la ley."
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Ley 8508", "Derecho Administrativo"]
+areas: ["litigio-contencioso-administrativo", "casacion-sala-primera"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: true

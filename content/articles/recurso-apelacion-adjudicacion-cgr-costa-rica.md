@@ -3,6 +3,7 @@ title: "Recurso de apelación contra la adjudicación ante la CGR: cómo impugna
 date: "2026-07-02"
 excerpt: "Perdió una licitación mayor y tiene ocho días hábiles para apelar ante la Contraloría. Qué exige la ley para que el recurso sea admitido, cómo se acredita el mejor derecho, cuánto dura el trámite y qué pasa si la CGR dice que no."
 tags: ["Guía práctica", "Contratación Pública", "Ley 9986", "CGR", "Apelación", "Licitaciones", "Adjudicación"]
+areas: ["contratacion-publica"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

@@ -3,6 +3,7 @@ title: "Transformación y perspectivas del procedimiento expropiatorio en Costa 
 date: "2019-03-01"
 excerpt: "Tesis de grado que analiza el recorrido completo del procedimiento expropiatorio costarricense en sede administrativa y judicial, incorporando las reformas integrales de las leyes 9286 (2014) y 9462 (2017) a la Ley de Expropiaciones N.° 7495."
 tags: ["Derecho Expropiatorio", "Procedimiento Administrativo", "Ley de Expropiaciones", "Derecho Público"]
+areas: ["expropiaciones"]
 type: "pdf"
 pdfFile: "tesis-katherine-gonzalez-licenciatura.pdf"
 author: "MSc. Katherine González Coto"

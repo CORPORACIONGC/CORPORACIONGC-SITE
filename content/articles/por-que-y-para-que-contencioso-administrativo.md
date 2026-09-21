@@ -3,6 +3,7 @@ title: "El por qué y para qué del contencioso administrativo"
 date: "2026-03-25"
 excerpt: "Reflexión crítica sobre los fundamentos, la razón de ser y la finalidad de la jurisdicción contencioso-administrativa costarricense, a veinte años de la aprobación del CPCA. El autor examina la crisis actual del control jurisdiccional de la Administración Pública y reivindica la tutela judicial efectiva como norte irrenunciable del proceso contencioso."
 tags: ["Contencioso Administrativo", "CPCA", "Tutela Judicial Efectiva", "Separación de Poderes", "Control Jurisdiccional", "Derecho Administrativo"]
+areas: ["litigio-contencioso-administrativo"]
 type: "pdf"
 pdfFile: "por-que-y-para-que-contencioso-administrativo.pdf"
 author: "Dr. Óscar Eduardo González Camacho"

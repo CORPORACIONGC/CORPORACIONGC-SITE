@@ -489,6 +489,30 @@ export const PRACTICE_AREA_PAGES = [
    navegación del usuario hacia materias adyacentes. Curado manualmente por
    afinidad procesal (litigio, recursos), sustantiva (sector regulado) y
    sectorial (mismo regulador o régimen). */
+/* Las áreas núcleo y las guías pilar que el pie repite en las 82 páginas.
+   Son enlaces internos deliberados, no una lista de todo: el pie es donde
+   la autoridad del sitio se reparte de forma más pareja, y hasta ahora solo
+   repetía el menú. Los rótulos son cortos a propósito. */
+export const FOOTER_AREAS: { href: string; label: string }[] = [
+  { href: "/areas/litigio-contencioso-administrativo", label: "Litigio contencioso-administrativo" },
+  { href: "/areas/contratacion-publica", label: "Contratación pública" },
+  { href: "/areas/recursos-de-amparo", label: "Recursos de amparo" },
+  { href: "/areas/derecho-administrativo", label: "Vía administrativa y recursos" },
+  { href: "/areas/expropiaciones", label: "Expropiaciones" },
+  { href: "/areas/zona-maritimo-terrestre", label: "Zona marítimo terrestre" },
+  { href: "/areas/procedimientos-sancionatorios", label: "Procedimientos sancionatorios" },
+  { href: "/areas/regulacion-fintech-criptoactivos", label: "Regulación fintech y criptoactivos" },
+];
+
+export const FOOTER_GUIAS: { href: string; label: string }[] = [
+  { href: "/articulos/recurso-amparo-costa-rica", label: "Cómo presentar un recurso de amparo" },
+  { href: "/articulos/como-demandar-al-estado-costa-rica", label: "Cómo demandar al Estado" },
+  { href: "/articulos/que-es-el-cpca-costa-rica", label: "El Código Procesal Contencioso-Administrativo" },
+  { href: "/articulos/reforma-reglamento-contratacion-publica-2026-proveedores-estado", label: "El Reglamento de Contratación Pública" },
+  { href: "/articulos/medidas-cautelares-contra-el-estado-costa-rica", label: "Medidas cautelares contra el Estado" },
+  { href: "/articulos/expropiacion-costa-rica-derechos", label: "Derechos del expropiado" },
+];
+
 export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
   // ─── Núcleo litigioso ───
   "litigio-contencioso-administrativo": ["medidas-cautelares", "casacion-sala-primera", "derecho-administrativo", "procedimientos-sancionatorios"],
@@ -510,11 +534,11 @@ export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
 
   // ─── Especializadas ───
   "servicio-publico": ["defensa-regulatoria-sectorial", "telecomunicaciones-espectro-5g", "energia-renovable-transicion-energetica", "litigio-contencioso-administrativo"],
-  "materia-municipal": ["derecho-urbanistico", "dominio-publico", "litigio-contencioso-administrativo", "materia-presupuestaria"],
+  "materia-municipal": ["derecho-urbanistico", "dominio-publico", "zona-maritimo-terrestre", "litigio-contencioso-administrativo"],
   "dominio-publico": ["zona-maritimo-terrestre", "materia-municipal", "derecho-urbanistico", "litigio-contencioso-administrativo"],
   "zona-maritimo-terrestre": ["dominio-publico", "derecho-urbanistico", "materia-municipal", "regulacion-ambiental-mercados-carbono"],
-  "derecho-urbanistico": ["materia-municipal", "dominio-publico", "litigio-contencioso-administrativo", "expropiaciones"],
-  "expropiaciones": ["litigio-contencioso-administrativo", "dominio-publico", "derecho-urbanistico", "medidas-cautelares"],
+  "derecho-urbanistico": ["materia-municipal", "zona-maritimo-terrestre", "dominio-publico", "expropiaciones"],
+  "expropiaciones": ["litigio-contencioso-administrativo", "dominio-publico", "zona-maritimo-terrestre", "medidas-cautelares"],
   "materia-presupuestaria": ["contratacion-publica", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo", "informes-juridicos-dictamenes"],
   "defensa-regulatoria-sectorial": ["procedimientos-sancionatorios", "servicio-publico", "compliance-publico-anticorrupcion", "litigio-contencioso-administrativo"],
   "alianzas-publico-privadas-infraestructura": ["contratacion-publica", "materia-presupuestaria", "litigio-contencioso-administrativo", "asesoria-regulatoria"],

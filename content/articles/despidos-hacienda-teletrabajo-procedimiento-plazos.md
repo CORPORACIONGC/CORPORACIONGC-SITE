@@ -3,6 +3,7 @@ title: "Despidos en Hacienda por teletrabajo: el procedimiento, los plazos y las
 date: "2026-09-18"
 excerpt: "Hacienda abrió procedimientos de despido contra 36 funcionarios en teletrabajo. Cómo es hoy el procedimiento de despido de la Ley Marco de Empleo Público, qué plazos corren para cada parte, qué preguntas deciden cada caso y qué hacer si recibió una notificación."
 tags: ["Despido", "Empleo público", "Teletrabajo", "Ley Marco de Empleo Público", "Procedimiento disciplinario", "Tribunal de Servicio Civil", "Ministerio de Hacienda", "Debido proceso"]
+areas: ["empleo-publico"]
 type: "article"
 author: "Khevin Alberto Sánchez Zamora"
 authorVisible: true

@@ -3,6 +3,7 @@ title: "La personalidad jurídica instrumental como técnica de organización ad
 date: "2026-01-01"
 excerpt: "Análisis integral de la personalidad jurídica instrumental en Costa Rica: su origen doctrinal sudamericano, desarrollo pretoriano por la Procuraduría y la Sala Constitucional, su uso como mecanismo de flexibilización presupuestaria y patrimonial en órganos desconcentrados, y las tensiones generadas por las recientes reformas del Poder Ejecutivo orientadas a suprimir estas personificaciones jurídico-organizativas."
 tags: ["Derecho Administrativo", "Personalidad Jurídica Instrumental", "Desconcentración Administrativa", "Jurisprudencia Constitucional", "Administración Pública"]
+areas: ["derecho-administrativo", "informes-juridicos-dictamenes"]
 type: "pdf"
 pdfFile: "personalidad-juridica-instrumental-el-foro.pdf"
 author: "Lic. Khevin Alberto Sánchez Zamora"

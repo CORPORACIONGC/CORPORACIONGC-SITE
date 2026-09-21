@@ -3,6 +3,7 @@ title: "¿Cómo proteger sus derechos mientras dura el proceso contra el Estado?
 date: "2026-03-28"
 excerpt: "Un proceso contencioso-administrativo puede durar años. Las medidas cautelares permiten proteger sus derechos desde el primer día — incluso antes de presentar la demanda. Conozca qué son, cuándo proceden y por qué pueden definir el resultado de su caso."
 tags: ["Guía práctica", "Medidas Cautelares", "CPCA", "Contencioso Administrativo", "Derecho Administrativo"]
+areas: ["medidas-cautelares"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

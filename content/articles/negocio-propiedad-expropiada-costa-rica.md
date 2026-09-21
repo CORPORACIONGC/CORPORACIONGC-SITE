@@ -3,6 +3,7 @@ title: "Mi negocio está en una propiedad expropiada en Costa Rica: ¿qué puedo
 date: "2026-05-17"
 excerpt: "Cuando hay un negocio activo sobre una propiedad expropiada, la indemnización no se limita al valor del terreno y las construcciones. La Ley N.° 7495 reconoce derechos comerciales, lucro cesante y daño al remanente — pero el plazo de oposición al avalúo administrativo exige actuar con rapidez y respaldo técnico."
 tags: ["Guía práctica", "Expropiación", "Lucro Cesante", "Derecho Expropiatorio", "Derecho Público"]
+areas: ["expropiaciones"]
 type: "article"
 author: "Lic. Esteban Pérez Herrera"
 institution: "Corporación GC"

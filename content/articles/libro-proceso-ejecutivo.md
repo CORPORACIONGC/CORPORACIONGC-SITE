@@ -3,6 +3,7 @@ title: "Consideraciones Prácticas en torno al Proceso Ejecutivo"
 date: "1995-01-01"
 excerpt: "Obra que analiza el proceso ejecutivo en materia civil de hacienda, con énfasis en la clasificación de títulos ejecutivos, los presupuestos de liquidez y exigibilidad, los requisitos de la demanda y las particularidades del cobro judicial en la jurisdicción contencioso-administrativa."
 tags: ["Proceso Ejecutivo", "Civil de Hacienda", "Título Ejecutivo", "Cobro Judicial"]
+areas: ["litigio-contencioso-administrativo", "materia-presupuestaria"]
 type: "pdf"
 pdfFile: "libro-proceso-ejecutivo.pdf"
 author: "Dr. Óscar Eduardo González Camacho"

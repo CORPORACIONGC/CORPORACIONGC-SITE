@@ -3,6 +3,7 @@ title: "Recurso de revocatoria y apelación contra un acto administrativo: qué 
 date: "2026-09-18"
 excerpt: "Una multa, un permiso denegado, la exclusión de un concurso, un cobro. Contra un acto administrativo caben la revocatoria y la apelación, juntas o por separado, y el plazo de la Ley General de la Administración Pública es de tres días hábiles. Uno de los redactores del Código Procesal Contencioso-Administrativo explica, con la jurisprudencia de las Salas, los tribunales, la Procuraduría y la Contraloría, qué se puede recurrir, cómo se cuenta el plazo, qué pasa si la Administración no resuelve y cuándo conviene ir directo al juez."
 tags: ["Derecho Administrativo", "LGAP", "Recurso de Revocatoria", "Recurso de Apelación", "Apelación en Subsidio", "Acto Administrativo", "Procedimiento Administrativo"]
+areas: ["derecho-administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: true

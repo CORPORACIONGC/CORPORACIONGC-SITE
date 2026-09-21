@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FIRM_CONTACT, FIRM_NAV_LINKS } from "@/lib/constants";
+import { FIRM_CONTACT, FIRM_NAV_LINKS, FOOTER_AREAS, FOOTER_GUIAS } from "@/lib/constants";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import {
   Envelope,
@@ -112,6 +112,42 @@ export function Footer() {
             </div>
           </div>
         </div>
+        {/* Áreas núcleo y guías pilar: los enlaces internos que el pie
+            reparte en las 82 páginas. Antes solo repetía el menú, y la
+            autoridad se escapaba hacia la política de privacidad. */}
+        <div className="mt-14 grid grid-cols-1 gap-12 border-t border-cream/[0.08] pt-12 md:mt-16 md:grid-cols-2 md:gap-8 md:pt-14">
+          <div>
+            <div className="type-label mb-5 text-cream/65">Áreas de práctica</div>
+            <ul role="list" className="grid grid-cols-1 gap-x-8 gap-y-2.5 sm:grid-cols-2">
+              {FOOTER_AREAS.map((a) => (
+                <li key={a.href}>
+                  <Link
+                    href={a.href}
+                    className="text-sm text-cream/65 transition-colors duration-300 hover:text-cream"
+                  >
+                    {a.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div className="type-label mb-5 text-cream/65">Guías más consultadas</div>
+            <ul role="list" className="grid grid-cols-1 gap-x-8 gap-y-2.5 sm:grid-cols-2">
+              {FOOTER_GUIAS.map((g) => (
+                <li key={g.href}>
+                  <Link
+                    href={g.href}
+                    className="text-sm text-cream/65 transition-colors duration-300 hover:text-cream"
+                  >
+                    {g.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
 
         {/* Colegio affiliation */}
         <div className="mt-12 pt-6 border-t border-cream/[0.06]">

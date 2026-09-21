@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { ArrowRight, Article } from "@phosphor-icons/react/dist/ssr";
-import { TEAM } from "@/lib/constants";
+import { TEAM, FOOTER_GUIAS } from "@/lib/constants";
 
 type ArticlePreview = {
   slug: string;
@@ -203,6 +203,33 @@ export function Publications({ articles, total }: { articles: ArticlePreview[]; 
         {hasArticles ? (
           <>
             <Sumario articles={articles} />
+
+            {/* Las guías pilar, fijas. El sumario muestra lo más reciente y
+                por eso dejaba fuera al pilar de amparo, que es la pieza más
+                consultada del sitio. Esta fila no depende de la fecha. */}
+            <nav
+              aria-label="Guías más consultadas"
+              className="mt-14 border-t border-white/[0.10] pt-8 md:mt-16"
+            >
+              <div className="type-label mb-5 text-white/65">Guías más consultadas</div>
+              <ul role="list" className="grid grid-cols-1 gap-x-10 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+                {FOOTER_GUIAS.map((g) => (
+                  <li key={g.href}>
+                    <Link
+                      href={g.href}
+                      className="group relative block py-1 text-sm text-white/80 transition-colors duration-300 hover:text-white"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-gold transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100"
+                      />
+                      {g.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
             <div className="mt-12 sm:hidden">
               <MagneticButton href="/articulos" variant="outline-inverse">
                 {rotulo}

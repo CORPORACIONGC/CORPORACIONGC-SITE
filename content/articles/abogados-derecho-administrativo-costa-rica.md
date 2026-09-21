@@ -3,6 +3,7 @@ title: "¿Necesita un abogado de Derecho Administrativo en Costa Rica?"
 date: "2026-03-28"
 excerpt: "Si tiene un conflicto con una institución pública, necesita un abogado que domine el Derecho Administrativo — no un generalista. Esta materia tiene sus propias leyes, sus propios tribunales y su propia lógica. Un error de enfoque puede costarle el caso."
 tags: ["Guía práctica", "Derecho Administrativo", "Contencioso Administrativo", "Abogados", "Costa Rica"]
+areas: ["derecho-administrativo", "litigio-contencioso-administrativo"]
 type: "article"
 author: "Lic. Esteban Pérez Herrera"
 authorVisible: true

@@ -3,6 +3,7 @@ title: "Silencio positivo: cómo obtener el permiso municipal cuando la municipa
 date: "2026-06-13"
 excerpt: "Si pidió un permiso de construcción y la municipalidad dejó vencer el plazo sin contestar, el silencio positivo puede tener su solicitud por aprobada. Esta guía explica, con base en la Ley General de la Administración Pública y la Ley 8220, cómo opera el silencio positivo, el procedimiento de la declaración jurada, y —sobre todo— los límites que la ley y la Sala Constitucional le imponen: no procede en materia ambiental, sobre bienes de dominio público ni para obtener lo que la ley prohíbe."
 tags: ["Guía práctica", "Silencio positivo", "Derecho Municipal", "Derecho Urbanístico", "Permiso de construcción"]
+areas: ["materia-municipal", "derecho-urbanistico"]
 type: "article"
 author: "Lic. Esteban Pérez Herrera"
 authorVisible: true

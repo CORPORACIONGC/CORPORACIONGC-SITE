@@ -3,6 +3,7 @@ title: "La iatrogenia en la responsabilidad administrativa: una aproximación a 
 date: "2022-05-01"
 excerpt: "Tesis de Licenciatura que determina si la iatrogenia negativa puede categorizarse como una conducta lícita y normal con resultado anormal, descartándola como eximente de responsabilidad para la Administración Pública en casos de malpraxis médica, proponiendo una nueva clasificación de la figura y sus criterios de imputación en el Derecho Administrativo costarricense."
 tags: ["Iatrogenia", "Responsabilidad Administrativa", "Malpraxis Médica", "Derecho a la Salud", "Derecho Administrativo", "Responsabilidad Patrimonial"]
+areas: ["litigio-contencioso-administrativo"]
 type: "pdf"
 pdfFile: "tesis-mariana-montero-iatrogenia.pdf"
 author: "Licda. Mariana Montero Acuña"

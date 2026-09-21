@@ -3,6 +3,7 @@ title: "Recurso de objeción al cartel en Costa Rica: cómo tumbar la cláusula 
 date: "2026-07-02"
 excerpt: "Si una cláusula del cartel lo excluye del concurso, la objeción es su primera arma. Guía práctica con plazos exactos por procedimiento, quién puede objetar y qué prueba técnica exige la Contraloría para ganar."
 tags: ["Recurso de objeción", "Cartel", "Contratación Pública", "SICOP", "Contraloría General", "Licitaciones", "Ley 9986"]
+areas: ["contratacion-publica"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true

@@ -3,6 +3,7 @@ title: "Hacia la implementación de sistemas automatizados de decisión basados 
 date: "2025-06-20"
 excerpt: "Trabajo Final de Graduación que analiza la integración de inteligencia artificial en el ámbito judicial desde el marco normativo de la Unión Europea (EU AI Act), proponiendo una hoja de ruta para su adopción segura en Costa Rica."
 tags: ["Inteligencia Artificial", "Justicia Digital", "EU AI Act", "Trabajo Final de Graduación"]
+areas: ["gobierno-digital-inteligencia-artificial-datos"]
 type: "pdf"
 pdfFile: "tesis-khevin-sanchez-zamora.pdf"
 author: "Lic. Khevin Alberto Sánchez Zamora"
