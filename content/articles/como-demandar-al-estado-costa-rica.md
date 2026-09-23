@@ -92,7 +92,7 @@ Muchas personas asumen que "ya se les pasó el plazo" sin consultar a un abogado
 
 ## ¿Ante quién se presenta la demanda?
 
-La demanda contencioso-administrativa se presenta ante el **Tribunal Contencioso Administrativo**, que es la jurisdicción especializada del Poder Judicial para conocer los conflictos entre los administrados y la Administración Pública.
+La demanda contencioso-administrativa se presenta ante el **Tribunal Contencioso Administrativo**, que es la jurisdicción especializada del Poder Judicial para conocer los conflictos entre los administrados y la Administración Pública. La [guía del Tribunal Contencioso Administrativo](/articulos/tribunal-contencioso-administrativo-costa-rica) explica cómo se organiza por dentro, dónde está y quién revisa sus sentencias.
 
 El proceso contencioso-administrativo en Costa Rica se tramita bajo un sistema **oral y por audiencias**, con las siguientes etapas generales:
 

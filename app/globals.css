@@ -1443,6 +1443,15 @@ html {
   .prose-article .gc-crono-flag { font-size: 8.5px; letter-spacing: 0.06em; }
   .prose-article .gc-flujo-cab { display: none; }
   .prose-article .gc-flujo-paso { grid-template-columns: 30px 1fr; row-gap: 6px; }
+  /* Tabla de dos columnas que en móvil se apila: cada fila pasa a ser
+     un bloque (rótulo arriba, texto abajo) en lugar de desplazarse de lado. */
+  .prose-article .gc-fig-tabla--apilada .gc-table-wrap { padding-inline: 0; }
+  .prose-article .gc-fig-tabla--apilada .gc-comparativa table { min-width: 0; }
+  .prose-article .gc-fig-tabla--apilada thead { display: none; }
+  .prose-article .gc-fig-tabla--apilada tbody tr { display: block; padding: 18px 0; border-bottom: 1px solid var(--fig-rule-soft); }
+  .prose-article .gc-fig-tabla--apilada tbody tr:last-child { border-bottom: 0; }
+  .prose-article .gc-fig-tabla--apilada .gc-comparativa tbody td { display: block; width: auto; min-width: 0; padding: 0; border: 0; }
+  .prose-article .gc-fig-tabla--apilada .gc-comparativa tbody td + td { margin-top: 8px; }
   .prose-article .gc-flujo-que, .prose-article .gc-flujo-plazo, .prose-article .gc-flujo-rama { grid-column: 2 / -1; }
   .prose-article .gc-flujo-rama { margin-top: 6px; }
   .prose-article .gc-cmp-cab { display: none; }

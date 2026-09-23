@@ -103,6 +103,8 @@ El CPCA estructura un proceso **oral y por audiencias**, muy distinto del antigu
 
 La jurisdicción se organiza en varios órganos (artículo 6): los **juzgados** de lo Contencioso-Administrativo y Civil de Hacienda, los **tribunales** de lo Contencioso-Administrativo, el **Tribunal de Casación de lo Contencioso-Administrativo** y la **Sala Primera de la Corte Suprema de Justicia**.
 
+Cómo se reparte el trabajo dentro del Tribunal —juez tramitador, juez conciliador, tribunal de juicio y jueces ejecutores— y ante quién se apela cada resolución lo explica la guía del [Tribunal Contencioso Administrativo](/articulos/tribunal-contencioso-administrativo-costa-rica).
+
 Contra la sentencia procede el **recurso extraordinario de casación** (artículo 134), que —según el órgano del que emane la conducta impugnada— conoce el Tribunal de Casación de lo Contencioso-Administrativo o la Sala Primera de la Corte Suprema (artículos 134 a 136). Se interpone en un plazo de **quince días hábiles** (artículo 139) y procede por motivos procesales (artículo 137) o sustantivos (artículo 138). Puede conocer más en el área de [casación ante Sala Primera](/areas/casacion-sala-primera).
 
 ---
