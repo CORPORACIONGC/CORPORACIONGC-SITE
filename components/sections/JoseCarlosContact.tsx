@@ -41,7 +41,7 @@ export function JoseCarlosContact() {
           {/* Left — Info */}
           <div>
             <AnimatedEntry>
-              <RunningHead title="Contacto" locator="03" />
+              <RunningHead title="Contacto" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>

@@ -66,7 +66,7 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
             {showHeading && (
               <>
                 <AnimatedEntry>
-                  <RunningHead title="Contacto" locator="06" />
+                  <RunningHead title="Contacto" />
                   <h2 className="type-headline text-cream">
                     Hablemos sobre
                     <br />

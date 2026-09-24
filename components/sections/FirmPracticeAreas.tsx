@@ -16,11 +16,11 @@ export function FirmPracticeAreas() {
   }));
 
   return (
-    <section id="areas" className="relative bg-surface py-24 md:py-32">
+    <section id="areas" className="relative bg-surface pt-16 pb-24 md:pt-20 md:pb-32">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <AnimatedEntry>
-          <RunningHead title="&Aacute;reas de pr&aacute;ctica" locator="03" />
+          <RunningHead title="&Aacute;reas de pr&aacute;ctica" />
         </AnimatedEntry>
 
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">

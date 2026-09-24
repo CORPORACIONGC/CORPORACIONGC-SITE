@@ -172,16 +172,7 @@ function Sumario({ articles }: { articles: ArticlePreview[] }) {
  * artículos del sitio: si se pasa, el botón la dice («Ver los 43
  * artículos»); los perfiles no la pasan, porque muestran solo los del autor.
  */
-export function Publications({
-  articles,
-  total,
-  locator,
-}: {
-  articles: ArticlePreview[];
-  total?: number;
-  /* Posición de la sección en la página (la portada la numera). */
-  locator?: string;
-}) {
+export function Publications({ articles, total }: { articles: ArticlePreview[]; total?: number }) {
   const hasArticles = articles.length > 0;
   const rotulo = total ? `Ver los ${total} artículos` : "Ver todos los artículos";
 
@@ -192,7 +183,7 @@ export function Publications({
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <AnimatedEntry>
-          <RunningHead title="Publicaciones" locator={locator} tone="dark" />
+          <RunningHead title="Publicaciones" tone="dark" />
         </AnimatedEntry>
         <div className="mb-14 flex items-end justify-between gap-6 md:mb-20">
           <AnimatedEntry>

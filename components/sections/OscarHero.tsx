@@ -17,7 +17,7 @@ export function OscarHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
-            <RunningHead title="Fundador y Director" locator="Corporación GC" />
+            <RunningHead title="Fundador y Director" />
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.2}>

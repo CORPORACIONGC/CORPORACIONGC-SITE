@@ -24,12 +24,12 @@ const teamMembers: TeamGalleryMember[] = TEAM
 
 export function TeamSection() {
   return (
-    <section id="equipo" className="relative bg-surface-alt py-24 md:py-32">
+    <section id="equipo" className="relative bg-surface-alt pt-24 pb-14 md:pt-32 md:pb-16">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <AnimatedEntry>
-          <RunningHead title="Equipo" locator="02" />
+          <RunningHead title="Equipo" />
         </AnimatedEntry>
         <div className="mb-12 md:mb-16 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
           <AnimatedEntry>

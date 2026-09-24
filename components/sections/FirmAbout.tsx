@@ -10,7 +10,7 @@ export function FirmAbout() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         {/* Heading — dramatic, takes full width */}
         <AnimatedEntry>
-          <RunningHead title="La firma" locator="01" />
+          <RunningHead title="La firma" />
           <h2 className="type-headline text-cream max-w-[17ch]">
             Donde el Derecho P&#250;blico se litiga con{" "}
             <span className="gc-subrayado">conocimiento de autor</span>

@@ -16,7 +16,7 @@ export function MarianaHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
-            <RunningHead title="Abogada Asociada" locator="Corporación GC" />
+            <RunningHead title="Abogada Asociada" />
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.2}>

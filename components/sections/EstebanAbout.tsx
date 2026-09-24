@@ -28,7 +28,7 @@ export function EstebanAbout() {
           {/* Left — CTA */}
           <div>
             <AnimatedEntry>
-              <RunningHead title="Nuestro enfoque" locator="01" />
+              <RunningHead title="Nuestro enfoque" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>

@@ -736,7 +736,7 @@ function BasicProfile({
             <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-32 w-full">
               <div className="grid grid-cols-1 md:grid-cols-[1fr_0.6fr] gap-12 items-center">
                 <div className="relative z-10">
-                  <RunningHead title={member.role} locator="Corporación GC" />
+                  <RunningHead title={member.role} />
 
                   <h1 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none text-cream mb-6">
                     {member.name}

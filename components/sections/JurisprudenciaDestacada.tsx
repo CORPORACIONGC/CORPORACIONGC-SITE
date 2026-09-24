@@ -84,7 +84,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
         {/* ── Section header ── */}
         <AnimatedEntry>
-          <RunningHead title={sectionEyebrow} locator={variant === "home" ? "04" : "Sala Primera"} />
+          <RunningHead title={sectionEyebrow} locator={variant === "home" ? undefined : "Sala Primera"} />
         </AnimatedEntry>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
           <div>

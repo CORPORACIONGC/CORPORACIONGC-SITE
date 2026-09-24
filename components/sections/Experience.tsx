@@ -14,7 +14,7 @@ export function Experience() {
           {/* Left — Heading */}
           <div>
             <AnimatedEntry>
-              <RunningHead title="Trayectoria" locator="02" />
+              <RunningHead title="Trayectoria" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>

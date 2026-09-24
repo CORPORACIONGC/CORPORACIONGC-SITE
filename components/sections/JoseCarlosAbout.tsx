@@ -28,7 +28,7 @@ export function JoseCarlosAbout() {
           {/* Left — Bio */}
           <div>
             <AnimatedEntry>
-              <RunningHead title="Perfil profesional" locator="01" />
+              <RunningHead title="Perfil profesional" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>

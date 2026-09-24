@@ -190,7 +190,7 @@ export default function Home() {
         <TeamSection />
         <FirmPracticeAreas />
         <JurisprudenciaDestacada variant="home" />
-        <Publications articles={articles.slice(0, 4)} total={articles.length} locator="05" />
+        <Publications articles={articles.slice(0, 4)} total={articles.length} />
         <FirmContact />
       </main>
       <Footer />

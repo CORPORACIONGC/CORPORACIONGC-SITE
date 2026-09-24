@@ -18,7 +18,7 @@ export function EstebanHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
-            <RunningHead title="Abogado Asociado" locator="Corporación GC" />
+            <RunningHead title="Abogado Asociado" />
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.2}>
