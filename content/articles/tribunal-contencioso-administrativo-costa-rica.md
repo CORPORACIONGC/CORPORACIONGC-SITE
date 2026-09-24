@@ -9,7 +9,7 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Tribunal Contencioso Administrativo: guía, sede y teléfono"
+seoTitle: "Tribunal Contencioso Administrativo: qué es y cómo funciona"
 seoDescription: "Qué resuelve el Tribunal Contencioso Administrativo, cómo avanza una demanda y sus plazos, quién revisa sus fallos, y su dirección y teléfono en Goicoechea."
 faq:
   - question: "¿Qué es el Tribunal Contencioso Administrativo?"
