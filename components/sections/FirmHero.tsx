@@ -17,7 +17,7 @@ export function FirmHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <div className="gc-rise" style={{ animationDelay: "0.05s" }}>
-            <RunningHead title="Bufete de abogados en Derecho P&#250;blico" className="mb-7 max-w-[52ch]" />
+            <RunningHead title="Abogados especialistas en Derecho P&#250;blico" className="mb-7 max-w-[52ch]" />
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.12s" }}>
