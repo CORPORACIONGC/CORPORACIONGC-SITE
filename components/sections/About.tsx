@@ -12,6 +12,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const iconMap: Record<string, React.ElementType> = {
   Scales,
@@ -33,13 +34,7 @@ export function About() {
           {/* Left — Bio */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="font-display text-lg text-cream/15 font-semibold">01</span>
-                <div className="h-px w-6 bg-cream/10" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Perfil profesional
-                </span>
-              </div>
+              <RunningHead title="Perfil profesional" locator="01" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -99,7 +94,7 @@ export function About() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
+                    <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
                       Licenciatura en Derecho con mención en Derecho Tributario — Universidad de Costa Rica
                     </span>
@@ -108,7 +103,7 @@ export function About() {
                     <div className="w-1 h-1 rounded-full bg-burgundy-light mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
                       Bachillerato en Historia — Universidad de Costa Rica
-                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">En curso</span>
+                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">En curso</span>
                       <span className="block mt-0.5 text-[10px] text-cream/40">Formación complementaria aplicada al litigio de casos con componente histórico-registral</span>
                     </span>
                   </div>
@@ -142,7 +137,7 @@ export function About() {
                 </div>
                 <a
                   href="/articulos/tesis-ia-justicia"
-                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-gold/80 hover:text-gold transition-colors duration-300 font-medium"
+                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
                 >
                   Leer la investigación completa
                   <span aria-hidden>&rarr;</span>
@@ -161,7 +156,7 @@ export function About() {
                   </p>
                   <a
                     href="/articulos/personalidad-juridica-instrumental"
-                    className="mt-2 inline-flex items-center gap-1.5 text-xs text-gold/80 hover:text-gold transition-colors duration-300 font-medium"
+                    className="mt-2 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
                   >
                     Leer el artículo
                     <span aria-hidden>&rarr;</span>
@@ -178,7 +173,7 @@ export function About() {
                     </p>
                     <a
                       href="/articulos/hermeneutica-ia-contratacion-publica"
-                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-gold/80 hover:text-gold transition-colors duration-300 font-medium"
+                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
                     >
                       Leer el artículo
                       <span aria-hidden>&rarr;</span>
@@ -208,7 +203,7 @@ export function About() {
                       <h4 className="text-sm font-semibold text-cream/90 tracking-tight">
                         {conf.title}
                       </h4>
-                      <p className="mt-1 text-xs text-gold/80 font-medium leading-relaxed max-w-[55ch]">
+                      <p className="mt-1 text-xs text-emphasis/80 font-medium leading-relaxed max-w-[55ch]">
                         {conf.panel}
                       </p>
                       <div className="mt-1 text-[10px] text-cream/40">
@@ -227,12 +222,7 @@ export function About() {
           {/* Right — Practice areas */}
           <div className="lg:pt-16">
             <AnimatedEntry delay={0.15}>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-burgundy/50" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Áreas de práctica
-                </span>
-              </div>
+              <RunningHead title="Áreas de práctica" />
             </AnimatedEntry>
 
             <StaggerContainer className="space-y-3" stagger={0.07}>

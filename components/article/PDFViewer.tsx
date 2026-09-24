@@ -21,7 +21,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
             href={pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/60 hover:text-gold hover:border-gold/30 transition-all duration-300"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/60 hover:text-emphasis hover:border-emphasis/30 transition-all duration-300"
           >
             <ArrowSquareOut size={14} weight="regular" />
             Abrir
@@ -29,7 +29,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
           <a
             href={pdfUrl}
             download
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/60 hover:text-gold hover:border-gold/30 transition-all duration-300"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/60 hover:text-emphasis hover:border-emphasis/30 transition-all duration-300"
           >
             <DownloadSimple size={14} weight="regular" />
             Descargar

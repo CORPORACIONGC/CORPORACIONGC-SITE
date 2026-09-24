@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { FirmContact } from "@/components/sections/FirmContact";
 import { FIRM } from "@/lib/constants";
 import { contactoMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export const metadata: Metadata = {
   ...contactoMetadata,
@@ -59,18 +60,13 @@ export default function ContactoPage() {
           <div className="max-w-[1400px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
             </Link>
 
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
-                Contacto
-              </span>
-            </div>
+            <RunningHead title="Contacto" />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream max-w-[20ch]">
               Hablemos de <span className="text-burgundy-light">su caso</span>

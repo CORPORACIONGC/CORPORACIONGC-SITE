@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function MarianaHero() {
   return (
@@ -15,12 +16,7 @@ export function MarianaHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[11px] tracking-[0.25em] uppercase text-cream/50 font-medium">
-                Abogada Asociada · Corporación GC
-              </span>
-            </div>
+            <RunningHead title="Abogada Asociada" locator="Corporación GC" />
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.2}>

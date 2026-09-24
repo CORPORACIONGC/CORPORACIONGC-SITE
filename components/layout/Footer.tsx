@@ -95,15 +95,15 @@ export function Footer() {
             </div>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
-                <MapPin size={14} weight="duotone" className="text-gold mt-0.5 shrink-0" />
+                <MapPin size={14} weight="duotone" className="text-emphasis mt-0.5 shrink-0" />
                 <span className="text-sm text-cream/65">{FIRM_CONTACT.location}</span>
               </div>
               <div className="flex items-start gap-2">
-                <Phone size={14} weight="duotone" className="text-gold mt-0.5 shrink-0" />
+                <Phone size={14} weight="duotone" className="text-emphasis mt-0.5 shrink-0" />
                 <span className="text-sm text-cream/65">{FIRM_CONTACT.phone}</span>
               </div>
               <div className="flex items-start gap-2">
-                <Envelope size={14} weight="duotone" className="text-gold mt-0.5 shrink-0" />
+                <Envelope size={14} weight="duotone" className="text-emphasis mt-0.5 shrink-0" />
                 <span className="text-sm text-cream/65">{FIRM_CONTACT.email}</span>
               </div>
             </div>

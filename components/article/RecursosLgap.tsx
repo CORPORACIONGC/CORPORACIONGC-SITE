@@ -1,19 +1,18 @@
 /* Figuras de la guía «Recurso de revocatoria y apelación contra un acto
    administrativo». Lenguaje editorial del sitio (el de .gc-reforma): filetes
-   finos, antetítulo con línea dorada, filas numeradas y una línea de fuente
+   finos, encabezado corrido, filas numeradas y una línea de fuente
    al pie de cada figura. Todo es HTML semántico, legible para buscadores y
    lectores de pantalla, con los colores del tema claro y oscuro. Estilos en
    app/globals.css, bloque .gc-fig. Cada norma citada se verificó contra el
    texto vigente. */
 
 import Link from "next/link";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 function FigHead({ id, n, kicker, title, lead }: { id: string; n: number; kicker: string; title: string; lead?: string }) {
   return (
     <header className="gc-fig-head">
-      <span className="gc-fig-eyebrow">
-        Figura {n} · {kicker}
-      </span>
+      <RunningHead title={kicker} locator={`Figura ${n}`} />
       <p id={id} className="gc-fig-title">
         {title}
       </p>

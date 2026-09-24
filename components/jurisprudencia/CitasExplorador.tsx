@@ -172,7 +172,7 @@ export function CitasExplorador({
   const parteGrupo = (g: string) => (!filtro ? null : visibles.filter((r) => r.grupo === g).length);
 
   return (
-    <figure className="my-10 border-t border-gold/60 pt-8 md:my-12 md:pt-10">
+    <figure className="my-10 border-t border-[color:var(--rule-strong)] pt-8 md:my-12 md:pt-10">
       <p className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
         <span className="text-[44px] font-light leading-none tabular-nums tracking-[-0.02em] text-cream">
           {total}
@@ -189,7 +189,7 @@ export function CitasExplorador({
           <div
             role="group"
             aria-label="Resoluciones por año"
-            className="mt-5 flex h-36 items-end gap-[3px] border-b border-cream/15 md:gap-1 lg:h-60"
+            className="mt-5 flex h-36 items-end gap-[3px] border-b border-[color:var(--rule-strong)] md:gap-1 lg:h-60"
           >
             {porAnio.map((a) => {
               const on = activoAnio(a.anio);
@@ -208,13 +208,13 @@ export function CitasExplorador({
                 >
                   <span
                     className={`relative block w-full transition-colors duration-300 ${
-                      filtro ? "bg-gold/30 group-hover:bg-gold/60" : "bg-gold/80 group-hover:bg-gold"
+                      filtro ? "bg-[var(--chart-3)] group-hover:bg-[var(--chart-2)]" : "bg-[var(--chart-2)] group-hover:bg-[var(--chart-1)]"
                     }`}
                     style={{ height: `${(a.n / maxAnio) * 100}%` }}
                   >
                     {!!parte && (
                       <span
-                        className="absolute inset-x-0 bottom-0 bg-burgundy dark:bg-gold-light"
+                        className="absolute inset-x-0 bottom-0 bg-[var(--chart-1)]"
                         style={{ height: `${(parte / a.n) * 100}%` }}
                       />
                     )}
@@ -268,16 +268,16 @@ export function CitasExplorador({
                         {g.n}
                       </span>
                     </span>
-                    <span aria-hidden="true" className="mt-1.5 block h-[3px] bg-cream/10">
+                    <span aria-hidden="true" className="mt-2 block h-3.5 overflow-hidden rounded-lg bg-[var(--chart-track)]">
                       <span
-                        className={`relative block h-full transition-colors duration-300 ${
-                          filtro ? "bg-gold/30" : "bg-gold"
+                        className={`relative block h-full overflow-hidden rounded-lg transition-colors duration-300 ${
+                          filtro ? "bg-[var(--chart-3)]" : "bg-[var(--chart-1)]"
                         }`}
                         style={{ width: `${(g.n / maxGrupo) * 100}%` }}
                       >
                         {!!parte && (
                           <span
-                            className="absolute inset-y-0 left-0 bg-burgundy dark:bg-gold-light"
+                            className="absolute inset-y-0 left-0 rounded-lg bg-[var(--chart-1)]"
                             style={{ width: `${(parte / g.n) * 100}%` }}
                           />
                         )}
@@ -419,7 +419,7 @@ export function CitasExplorador({
               <div
                 role="group"
                 aria-label="Pronunciamientos por año"
-                className="mt-5 flex h-24 items-end gap-[3px] border-b border-cream/15 md:gap-1 lg:h-32"
+                className="mt-5 flex h-24 items-end gap-[3px] border-b border-[color:var(--rule-strong)] md:gap-1 lg:h-32"
               >
                 {porAnioP.map((a) => {
                   const on = activoAnioP(a.anio);
@@ -438,13 +438,13 @@ export function CitasExplorador({
                     >
                       <span
                         className={`relative block w-full transition-colors duration-300 ${
-                          filtroP ? "bg-gold/30 group-hover:bg-gold/60" : "bg-gold/80 group-hover:bg-gold"
+                          filtroP ? "bg-[var(--chart-3)] group-hover:bg-[var(--chart-2)]" : "bg-[var(--chart-2)] group-hover:bg-[var(--chart-1)]"
                         }`}
                         style={{ height: `${(a.n / maxAnioP) * 100}%` }}
                       >
                         {!!parte && (
                           <span
-                            className="absolute inset-x-0 bottom-0 bg-burgundy dark:bg-gold-light"
+                            className="absolute inset-x-0 bottom-0 bg-[var(--chart-1)]"
                             style={{ height: `${(parte / a.n) * 100}%` }}
                           />
                         )}
@@ -495,14 +495,14 @@ export function CitasExplorador({
                             {n}
                           </span>
                         </span>
-                        <span aria-hidden="true" className="mt-1.5 block h-[3px] bg-cream/10">
+                        <span aria-hidden="true" className="mt-2 block h-3.5 overflow-hidden rounded-lg bg-[var(--chart-track)]">
                           <span
-                            className={`relative block h-full transition-colors duration-300 ${filtroP ? "bg-gold/30" : "bg-gold"}`}
+                            className={`relative block h-full overflow-hidden rounded-lg transition-colors duration-300 ${filtroP ? "bg-[var(--chart-3)]" : "bg-[var(--chart-1)]"}`}
                             style={{ width: `${(n / maxOrgano) * 100}%` }}
                           >
                             {!!parte && (
                               <span
-                                className="absolute inset-y-0 left-0 bg-burgundy dark:bg-gold-light"
+                                className="absolute inset-y-0 left-0 rounded-lg bg-[var(--chart-1)]"
                                 style={{ width: `${(parte / n) * 100}%` }}
                               />
                             )}

@@ -9,6 +9,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { JOSE_CARLOS_PRACTICE_AREAS } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const iconMap: Record<string, React.ElementType> = {
   Scales,
@@ -27,13 +28,7 @@ export function JoseCarlosAbout() {
           {/* Left — Bio */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="font-display text-lg text-cream/15 font-semibold">01</span>
-                <div className="h-px w-6 bg-cream/10" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Perfil profesional
-                </span>
-              </div>
+              <RunningHead title="Perfil profesional" locator="01" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -71,10 +66,10 @@ export function JoseCarlosAbout() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
+                    <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
                       Maestría en Teoría del Derecho — Goethe-Universität Frankfurt am Main
-                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">
+                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">
                         Aceptado — Inicio oct. 2026
                       </span>
                     </span>
@@ -83,16 +78,16 @@ export function JoseCarlosAbout() {
                     <div className="w-1 h-1 rounded-full bg-burgundy-light mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
                       Especialista en Derecho Notarial y Registral — Universidad La Salle
-                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">
+                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">
                         Con honores
                       </span>
                     </span>
                   </div>
                   <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
+                    <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
                       Licenciatura en Derecho (énfasis Tributario) — Universidad de Costa Rica
-                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">
+                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">
                         Con honores — Promedio &gt;9/10
                       </span>
                     </span>
@@ -114,7 +109,7 @@ export function JoseCarlosAbout() {
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
+                    <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                     <span className="text-sm text-cream/75">
                       Español — Nativo
                     </span>
@@ -145,12 +140,7 @@ export function JoseCarlosAbout() {
           {/* Right — Practice areas */}
           <div className="lg:pt-16">
             <AnimatedEntry delay={0.15}>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-burgundy/50" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Áreas de práctica
-                </span>
-              </div>
+              <RunningHead title="Áreas de práctica" />
             </AnimatedEntry>
 
             <StaggerContainer className="space-y-3" stagger={0.07}>

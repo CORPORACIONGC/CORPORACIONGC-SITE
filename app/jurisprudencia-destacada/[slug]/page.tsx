@@ -38,6 +38,7 @@ import {
 } from "@/lib/jurisprudencia-citas";
 import { FIRM, PRACTICE_AREA_PAGES } from "@/lib/constants";
 import { buildJurisprudenciaMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
 // evitando que Google los archive como "rastreada, sin indexar".
@@ -185,9 +186,8 @@ export default async function SentenciaDestacadaPage({
 
               {/* Ficha en papel, como el folio de la portada */}
               <aside className="gc-papel rounded-md p-7 md:p-8" aria-label="Ficha de la resolución">
-                <p className="type-label text-cream/65">Ficha de la resolución</p>
-                <span aria-hidden="true" className="mt-4 block h-px w-10 bg-gold" />
-                <dl className="mt-5 divide-y divide-cream/10">
+                <RunningHead title="Ficha de la resolución" className="mb-2" />
+                <dl className="divide-y divide-cream/10">
                   {ficha.map(([k, v]) => (
                     <div key={k} className="grid grid-cols-[96px_minmax(0,1fr)] gap-3 py-2.5">
                       <dt className="pt-0.5 text-[13px] text-cream/65">{k}</dt>
@@ -605,7 +605,7 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
       )}
 
       {sec.nota && (
-        <p className="mt-10 max-w-[66ch] border-t border-gold/60 pt-5 text-[17px] leading-relaxed text-cream">
+        <p className="mt-10 max-w-[66ch] border-t border-[color:var(--rule-strong)] pt-5 text-[17px] leading-relaxed text-cream">
           <span className="type-label mr-3 text-burgundy dark:text-gold">En la práctica</span>
           {sec.nota}
         </p>

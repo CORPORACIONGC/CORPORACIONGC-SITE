@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Medal } from "@phosphor-icons/react/dist/ssr";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function Hero() {
   return (
@@ -18,12 +19,7 @@ export function Hero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[11px] tracking-[0.25em] uppercase text-cream/50 font-medium">
-                Abogado Asociado · Corporación GC
-              </span>
-            </div>
+            <RunningHead title="Abogado Asociado" locator="Corporación GC" />
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.2}>
@@ -50,9 +46,9 @@ export function Hero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.5}>
-            <div className="mt-5 inline-flex items-center gap-2.5 px-3.5 py-2 rounded-lg border border-gold/25 bg-gold/[0.06]">
-              <Medal size={16} weight="duotone" className="text-gold shrink-0" />
-              <span className="text-[11px] md:text-xs text-gold/90 font-medium tracking-wide">
+            <div className="mt-5 inline-flex items-center gap-2.5 px-3.5 py-2 rounded-lg border border-emphasis/25 bg-emphasis/[0.06]">
+              <Medal size={16} weight="duotone" className="text-emphasis shrink-0" />
+              <span className="text-[11px] md:text-xs text-emphasis/90 font-medium tracking-wide">
                 3.er mejor promedio — Examen de Excelencia del Colegio de Abogados, 2025
               </span>
             </div>

@@ -45,11 +45,11 @@ const analisisHref = (s: SentenciaPortada) => `/jurisprudencia-destacada/${s.slu
 function Comillas({ children }: { children: string }) {
   return (
     <>
-      <span aria-hidden="true" className="absolute -translate-x-[0.62em] not-italic text-gold">
+      <span aria-hidden="true" className="absolute -translate-x-[0.62em] not-italic text-emphasis">
         «
       </span>
       {children}
-      <span aria-hidden="true" className="not-italic text-gold">
+      <span aria-hidden="true" className="not-italic text-emphasis">
         »
       </span>
     </>
@@ -75,7 +75,7 @@ function Folio({ s }: { s: SentenciaPortada }) {
             </>
           )}
         </p>
-        <span aria-hidden="true" className="mx-auto mt-7 block h-px w-12 bg-gold" />
+        <span aria-hidden="true" className="mx-auto mt-7 block h-px w-12 bg-cream/20" />
         {s.badgeLabel && (
           <p className="mt-7 text-[11px] uppercase tracking-[0.18em] text-cream/50">{s.badgeLabel}</p>
         )}

@@ -16,6 +16,7 @@ import { LeadForm } from "@/components/sections/LeadForm";
 import { GoogleMap } from "@/components/sections/GoogleMap";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { FIRM_CONTACT } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const contactItems = [
   {
@@ -52,8 +53,7 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
       id="contacto"
       className="relative bg-dark-bg py-24 md:py-32 overflow-hidden"
     >
-      {/* Gold accent top */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-cream/[0.08]" />
 
       {/* Subtle glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-burgundy/[0.04] blur-[120px] pointer-events-none hidden dark:block" />
@@ -66,6 +66,7 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
             {showHeading && (
               <>
                 <AnimatedEntry>
+                  <RunningHead title="Contacto" locator="06" />
                   <h2 className="type-headline text-cream">
                     Hablemos sobre
                     <br />
@@ -154,9 +155,9 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
               contactTarget="firm"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2.5 text-sm text-cream/65 hover:text-gold transition-colors duration-300"
+              className="group inline-flex items-center gap-2.5 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
             >
-              <WhatsappLogo size={18} weight="fill" className="text-cream/55 group-hover:text-gold transition-colors duration-300" />
+              <WhatsappLogo size={18} weight="fill" className="text-cream/55 group-hover:text-emphasis transition-colors duration-300" />
               <span>
                 ¿Prefiere WhatsApp? Escríbanos directamente
               </span>

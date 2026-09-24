@@ -6,6 +6,7 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { FIRM } from "@/lib/constants";
 
 import { privacidadMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export const metadata: Metadata = {
   ...privacidadMetadata,
@@ -23,18 +24,13 @@ export default function PoliticaDePrivacidad() {
           <div className="max-w-[800px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
             </Link>
 
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
-                Aviso Legal
-              </span>
-            </div>
+            <RunningHead title="Aviso legal" />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-12">
               Política de{" "}
@@ -58,14 +54,14 @@ export default function PoliticaDePrivacidad() {
                   con la protección de sus datos puede escribirnos a{" "}
                   <a
                     href="mailto:info@corporaciongc.com"
-                    className="text-gold hover:underline"
+                    className="text-emphasis hover:underline"
                   >
                     info@corporaciongc.com
                   </a>{" "}
                   o llamar al{" "}
                   <a
                     href="tel:+50686622169"
-                    className="text-gold hover:underline"
+                    className="text-emphasis hover:underline"
                   >
                     +506 8662-2169
                   </a>
@@ -199,7 +195,7 @@ export default function PoliticaDePrivacidad() {
                   Para ejercer cualquiera de estos derechos, escriba a{" "}
                   <a
                     href="mailto:info@corporaciongc.com"
-                    className="text-gold hover:underline"
+                    className="text-emphasis hover:underline"
                   >
                     info@corporaciongc.com
                   </a>{" "}

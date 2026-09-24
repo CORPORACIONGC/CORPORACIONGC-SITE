@@ -22,6 +22,7 @@ import {
   Warning,
   CheckCircle,
 } from "@phosphor-icons/react/dist/ssr";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
 // evitando que Google los archive como "rastreada, sin indexar".
@@ -236,7 +237,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           procedimiento combina una fase administrativa —declaratoria de interés público, avalúo
           y oposición— y una fase judicial ante el Juzgado Contencioso-Administrativo y Civil de
           Hacienda.{" "}
-          <Link href="/articulos/expropiacion-costa-rica-derechos" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/expropiacion-costa-rica-derechos" className="text-emphasis hover:text-emphasis/80 transition-colors">
             Si ya le notificaron, aquí explicamos el proceso y los plazos paso a paso
           </Link>
           .
@@ -1343,7 +1344,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           vía administrativa (arts. 96 y 98 de la Ley N.° 9986). Ese no es el final del camino:
           la adjudicación —o la resolución de la propia Contraloría— puede impugnarse ante la
           Jurisdicción Contencioso-Administrativa, donde además cabe solicitar{" "}
-          <Link href="/areas/medidas-cautelares" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/areas/medidas-cautelares" className="text-emphasis hover:text-emphasis/80 transition-colors">
             medidas cautelares
           </Link>{" "}
           para suspender el acto y reclamar los daños y perjuicios causados al oferente
@@ -1354,15 +1355,15 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           firma: nuestro director fue coordinador de la comisión redactora del Código Procesal Contencioso Administrativo
           y ex-Magistrado de la Sala Primera, la sala que conoce en casación las sentencias del
           Tribunal Contencioso. Vea nuestras áreas de{" "}
-          <Link href="/areas/litigio-contencioso-administrativo" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/areas/litigio-contencioso-administrativo" className="text-emphasis hover:text-emphasis/80 transition-colors">
             litigio contencioso-administrativo
           </Link>{" "}
           y{" "}
-          <Link href="/areas/casacion-sala-primera" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/areas/casacion-sala-primera" className="text-emphasis hover:text-emphasis/80 transition-colors">
             casación ante la Sala Primera
           </Link>
           , o la guía{" "}
-          <Link href="/articulos/como-demandar-al-estado-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/como-demandar-al-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
             ¿cómo demandar al Estado en Costa Rica?
           </Link>
           .
@@ -1378,7 +1379,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           República y la propia Administración a través de SICOP, y su fase judicial ante el
           Tribunal Contencioso Administrativo y la Sala Primera de la Corte Suprema de Justicia.
           El equipo de Corporación GC es dirigido por el{" "}
-          <Link href="/abogados/oscar-gonzalez" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/abogados/oscar-gonzalez" className="text-emphasis hover:text-emphasis/80 transition-colors">
             Dr. Óscar Eduardo González Camacho
           </Link>
           , ex-Magistrado de la Sala Primera (2002–2014), coordinador de la comisión redactora del Código Procesal
@@ -1725,7 +1726,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           en la posterior ejecución e indemnización en vía contencioso-administrativa.{" "}
           <Link
             href="/articulos/recurso-amparo-costa-rica"
-            className="text-burgundy hover:text-gold transition-colors duration-300 underline-offset-4 hover:underline"
+            className="text-burgundy hover:text-emphasis transition-colors duration-300 underline-offset-4 hover:underline"
           >
             Lea nuestra guía completa sobre el recurso de amparo en Costa Rica
           </Link>{" "}
@@ -1993,15 +1994,15 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Hemos preparado guías prácticas, escritas desde la perspectiva de quien recibe el
           procedimiento, que explican los plazos, los derechos y las vías de impugnación de esta
           materia:{" "}
-          <Link href="/articulos/defensa-procedimiento-administrativo-sancionatorio" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/defensa-procedimiento-administrativo-sancionatorio" className="text-emphasis hover:text-emphasis/80 transition-colors">
             me abrieron un procedimiento administrativo sancionatorio: ¿cómo defenderse?
           </Link>{" "}
           (la guía madre del tema),{" "}
-          <Link href="/articulos/traslado-de-cargos-que-hacer-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/traslado-de-cargos-que-hacer-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
             me llegó un traslado de cargos: qué significa, plazos y qué hacer
           </Link>{" "}
           (el momento inicial, donde más defensas se ganan y se pierden) y{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
             medidas cautelares contra el Estado
           </Link>{" "}
           (cómo suspender una sanción, multa o clausura mientras se litiga su validez).
@@ -2015,7 +2016,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
           La validez de una sanción administrativa se decide, en última instancia, ante la
           jurisdicción contencioso-administrativa. El equipo de Corporación GC es dirigido por el{" "}
-          <Link href="/abogados/oscar-gonzalez" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/abogados/oscar-gonzalez" className="text-emphasis hover:text-emphasis/80 transition-colors">
             Dr. Óscar Eduardo González Camacho
           </Link>
           , ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014),
@@ -4943,7 +4944,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           por una Agencia Nacional de Asociaciones Público-Privadas (ANAPP). El 9 de setiembre de
           2026 la Sala Constitucional declaró inconstitucional esa agencia, junto con otras normas
           del proyecto, y el texto volvió a la Asamblea. Analizamos el voto norma por norma en{" "}
-          <Link href="/articulos/ley-alianzas-publico-privadas-sala-constitucional" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/ley-alianzas-publico-privadas-sala-constitucional" className="text-emphasis hover:text-emphasis/80 transition-colors">
             qué declaró la Sala sobre la Ley Marco de APP
           </Link>
           .
@@ -5155,11 +5156,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
           Publicamos una guía completa del trámite, en{" "}
-          <Link href="/articulos/registro-vasp-sugef-costa-rica" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/registro-vasp-sugef-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
             español
           </Link>{" "}
           y en{" "}
-          <Link href="/articulos/costa-rica-vasp-registration-sugef" className="text-gold hover:text-gold/80 transition-colors">
+          <Link href="/articulos/costa-rica-vasp-registration-sugef" className="text-emphasis hover:text-emphasis/80 transition-colors">
             inglés
           </Link>
           , construida sobre el texto publicado de la ley y sobre asesorías en curso a plataformas
@@ -5727,11 +5728,11 @@ export default async function AreaDetailPage({
           <div className="max-w-[800px] mx-auto px-6 md:px-10">
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-xs text-cream/35 mb-8">
-              <Link href="/" className="hover:text-gold transition-colors">
+              <Link href="/" className="hover:text-emphasis transition-colors">
                 Inicio
               </Link>
               <span>/</span>
-              <Link href="/areas" className="hover:text-gold transition-colors">
+              <Link href="/areas" className="hover:text-emphasis transition-colors">
                 Áreas
               </Link>
               <span>/</span>
@@ -5739,12 +5740,7 @@ export default async function AreaDetailPage({
             </div>
 
             {/* Header */}
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
-                {area.priority === "primary" ? "Área Principal" : "Área de Práctica"}
-              </span>
-            </div>
+            <RunningHead title={area.priority === "primary" ? "Área principal" : "Área de práctica"} />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-4">
               {area.title}
@@ -5794,7 +5790,7 @@ export default async function AreaDetailPage({
                         key={i}
                         className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.02]"
                       >
-                        <CheckCircle size={18} weight="duotone" className="text-gold mt-0.5 shrink-0" />
+                        <CheckCircle size={18} weight="duotone" className="text-emphasis mt-0.5 shrink-0" />
                         <span className="text-sm text-cream/75 leading-relaxed">{scenario}</span>
                       </li>
                     ))}
@@ -5954,12 +5950,7 @@ export default async function AreaDetailPage({
                 aria-label="Áreas relacionadas"
                 className="mt-16 pt-10 border-t border-cream/[0.08]"
               >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="h-px w-8 bg-gold" />
-                  <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                    Áreas relacionadas
-                  </span>
-                </div>
+                <RunningHead title="Áreas relacionadas" />
                 <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-8 max-w-[50ch]">
                   Materias afines a {area.title.toLowerCase()}
                 </h2>
@@ -5971,7 +5962,7 @@ export default async function AreaDetailPage({
                         className="group flex items-start justify-between gap-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02] hover:border-burgundy/25 hover:bg-cream/[0.04] transition-all duration-300"
                       >
                         <div className="min-w-0">
-                          <div className="text-sm font-semibold text-cream group-hover:text-gold transition-colors duration-300">
+                          <div className="text-sm font-semibold text-cream group-hover:text-emphasis transition-colors duration-300">
                             {r.title}
                           </div>
                           <div className="mt-1 text-xs text-cream/50 leading-relaxed line-clamp-2">
@@ -5981,7 +5972,7 @@ export default async function AreaDetailPage({
                         <ArrowRight
                           size={14}
                           weight="bold"
-                          className="mt-1 text-cream/30 group-hover:text-gold group-hover:translate-x-0.5 transition-all duration-300 shrink-0"
+                          className="mt-1 text-cream/30 group-hover:text-emphasis group-hover:translate-x-0.5 transition-all duration-300 shrink-0"
                         />
                       </Link>
                     </li>
@@ -5990,7 +5981,7 @@ export default async function AreaDetailPage({
                 <div className="mt-6">
                   <Link
                     href="/areas"
-                    className="inline-flex items-center gap-1.5 text-xs text-cream/45 hover:text-gold transition-colors duration-300"
+                    className="inline-flex items-center gap-1.5 text-xs text-cream/45 hover:text-emphasis transition-colors duration-300"
                   >
                     Ver todas las áreas de práctica
                     <ArrowRight size={12} weight="bold" />
@@ -6003,7 +5994,7 @@ export default async function AreaDetailPage({
             <div className="mt-10 pt-8 border-t border-cream/[0.06] flex items-center justify-between">
               <Link
                 href="/areas"
-                className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300"
               >
                 <ArrowLeft size={14} weight="regular" />
                 Todas las áreas

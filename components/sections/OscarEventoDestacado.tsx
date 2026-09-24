@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { MapPin, Microphone, BookOpen, Play, VideoCamera } from "@phosphor-icons/react";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const EVENT_VIDEO_ID = "NA4SYDhNtQ0";
 const EVENT_VIDEO_TITLE =
@@ -64,12 +65,7 @@ export function OscarEventoDestacado() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <AnimatedEntry>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-gold" />
-            <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
-              Evento Destacado
-            </span>
-          </div>
+          <RunningHead title="Evento destacado" />
         </AnimatedEntry>
 
         <AnimatedEntry delay={0.1}>
@@ -125,7 +121,7 @@ export function OscarEventoDestacado() {
 
                 {/* Article presented */}
                 <div className="mb-8 pl-4 relative">
-                  <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-gold/50 via-gold/20 to-transparent" />
+                  <div className="absolute left-0 top-0 bottom-0 w-px bg-cream/15" />
                   <p className="text-[13px] text-cream/65 leading-relaxed italic">
                     &ldquo;El por qu&eacute; y para qu&eacute; del contencioso administrativo&rdquo;
                   </p>

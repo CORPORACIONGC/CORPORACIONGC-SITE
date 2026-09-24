@@ -12,7 +12,6 @@ export function Credentials({
 
   return (
     <section className="relative bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#2E0919] overflow-hidden">
-      <div className="h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-10 py-10 md:py-12">
         <AnimatedEntry>
@@ -39,7 +38,6 @@ export function Credentials({
         </AnimatedEntry>
       </div>
 
-      <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
     </section>
   );
 }

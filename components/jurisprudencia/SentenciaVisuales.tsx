@@ -52,12 +52,12 @@ export function PasajeLiteral({
         >
           <span
             aria-hidden="true"
-            className="absolute left-0 not-italic text-gold"
+            className="absolute left-0 not-italic text-emphasis"
           >
             «
           </span>
           {contenido}
-          <span aria-hidden="true" className="not-italic text-gold">
+          <span aria-hidden="true" className="not-italic text-emphasis">
             »
           </span>
         </p>
@@ -85,7 +85,7 @@ export function PasajeLiteral({
   );
 }
 
-/* Punto sobre el eje: dorado vacío para los hitos, lleno para el final.
+/* Punto sobre el eje: vacío para los hitos, lleno para el final.
    `desde` es el ancho a partir del cual el eje se vuelve horizontal. */
 function Punto({
   final = false,
@@ -101,7 +101,7 @@ function Punto({
       className={`absolute left-0 h-[15px] w-[15px] rounded-full border ${top} ${
         final
           ? "border-burgundy bg-burgundy dark:border-gold dark:bg-gold"
-          : "border-gold bg-surface"
+          : "border-cream/45 bg-surface"
       }`}
     />
   );
@@ -229,7 +229,7 @@ export function Anclajes({
       className="my-10 grid gap-10 md:my-12 md:grid-cols-3 md:gap-8"
     >
       {anclajes.map((a) => (
-        <li key={a.articulo} className="border-t border-gold/60 pt-6">
+        <li key={a.articulo} className="border-t border-[color:var(--rule-strong)] pt-6">
           <p className="flex items-baseline gap-2 text-cream">
             <span className="text-[13px] text-cream/65">Art.</span>
             <span className="text-[44px] font-light leading-none tracking-[-0.02em] tabular-nums">
@@ -308,11 +308,11 @@ export function Periodo({
           />
           <span
             aria-hidden="true"
-            className="absolute inset-x-0 top-1/2 h-[3px] -translate-y-1/2 bg-gold"
+            className="absolute inset-x-0 top-1/2 h-[3px] -translate-y-1/2 bg-[var(--chart-2)]"
           />
           <span
             aria-hidden="true"
-            className="absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold"
+            className="absolute left-0 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--chart-2)]"
           />
           <span
             aria-hidden="true"
@@ -409,7 +409,7 @@ export function Formas({
       }`}
     >
       {formas.map((f, i) => (
-        <li key={f.titulo} className="border-t border-gold/60 pt-6">
+        <li key={f.titulo} className="border-t border-[color:var(--rule-strong)] pt-6">
           <p className="text-[26px] font-light leading-none tracking-[-0.01em] text-cream/65">
             {romanos[i]}
           </p>
@@ -425,7 +425,8 @@ export function Formas({
 
 /* ── El reparto de una condena entre causas concurrentes ──
    Una barra dividida en proporción, con el monto de cada parte debajo. La
-   parte que asume la Administración va en burdeos; la otra, en dorado. */
+   parte que asume la Administración va en la serie principal; la otra, en
+   el neutro de contraparte. */
 export function Reparto({
   reparto,
 }: {
@@ -439,11 +440,11 @@ export function Reparto({
           {reparto.total.monto}
         </span>
       </p>
-      <div aria-hidden="true" className="mt-5 flex h-3 gap-[3px]">
+      <div aria-hidden="true" className="mt-5 flex h-3.5 gap-[3px]">
         {reparto.partes.map((p) => (
           <span
             key={p.etiqueta}
-            className={p.condena ? "bg-burgundy dark:bg-gold-light" : "bg-gold/45"}
+            className={`rounded-lg ${p.condena ? "bg-[var(--chart-1)]" : "bg-[var(--chart-neutral)]"}`}
             style={{ width: `${p.porcentaje}%` }}
           />
         ))}

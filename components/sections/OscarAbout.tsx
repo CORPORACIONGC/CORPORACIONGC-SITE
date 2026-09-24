@@ -10,6 +10,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { OSCAR_PROFILE, OSCAR_PRACTICE_AREAS } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const iconMap: Record<string, React.ElementType> = {
   Scales,
@@ -27,13 +28,7 @@ export function OscarAbout() {
           {/* Left — Bio */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="font-display text-lg text-cream/15 font-semibold">01</span>
-                <div className="h-px w-6 bg-cream/10" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Perfil profesional
-                </span>
-              </div>
+              <RunningHead title="Perfil profesional" locator="01" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -73,7 +68,7 @@ export function OscarAbout() {
                 se corta donde la nota sigue con otros nombres, y los puntos
                 suspensivos lo advierten. */}
             <AnimatedEntry delay={0.35}>
-              <figure className="mt-8 border-l-2 border-gold/60 pl-5">
+              <figure className="mt-8 border-l-2 border-emphasis/60 pl-5">
                 <blockquote className="text-sm text-cream/75 leading-relaxed max-w-[58ch]">
                   «Para la redacción de dicho código la Corte Suprema de Justicia
                   integró una comisión redactora <strong className="font-semibold text-cream">coordinada
@@ -121,14 +116,14 @@ export function OscarAbout() {
                 <div className="space-y-2">
                   {OSCAR_PROFILE.education.map((edu, i) => (
                     <div key={i} className="flex items-baseline gap-2">
-                      <div className="w-1 h-1 rounded-full bg-gold mt-1.5 shrink-0" />
+                      <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                       <span className="text-sm text-cream/75">
                         {edu.degree} — {edu.institution}
                         <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/40">
                           {edu.period}
                         </span>
                         {"distinction" in edu && edu.distinction && (
-                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-gold/70 font-medium">
+                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">
                             {edu.distinction}
                           </span>
                         )}
@@ -143,12 +138,7 @@ export function OscarAbout() {
           {/* Right — Practice areas, Teaching, Publications */}
           <div className="lg:pt-16">
             <AnimatedEntry delay={0.15}>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-burgundy/50" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Áreas de práctica
-                </span>
-              </div>
+              <RunningHead title="Áreas de práctica" />
             </AnimatedEntry>
 
             <StaggerContainer className="space-y-3" stagger={0.07}>
@@ -185,7 +175,7 @@ export function OscarAbout() {
                 <div className="space-y-3">
                   {OSCAR_PROFILE.teaching.map((item, i) => (
                     <div key={i} className="flex items-baseline gap-2">
-                      <div className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${i === 0 ? "bg-gold" : "bg-burgundy-light"}`} />
+                      <div className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${i === 0 ? "bg-emphasis" : "bg-burgundy-light"}`} />
                       <div>
                         <span className="text-sm text-cream/75 font-medium">
                           {item.role}
@@ -227,7 +217,7 @@ export function OscarAbout() {
                       <div key={i} className="flex items-baseline gap-2">
                         <div
                           className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${
-                            pub.type === "law" ? "bg-gold" : "bg-burgundy-light"
+                            pub.type === "law" ? "bg-emphasis" : "bg-burgundy-light"
                           }`}
                         />
                         <div className="group/pub">

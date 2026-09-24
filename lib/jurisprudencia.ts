@@ -50,7 +50,7 @@ export const ETIQUETA_ESTADO: Record<EstadoCriterio, string> = {
  *  etiqueta mide 9 px y `text-burgundy-light` sobre el fondo oscuro daba 2,2
  *  de contraste, menos de la mitad del mínimo exigible. */
 export const ESTADO_ESTILO: Record<EstadoCriterio, string> = {
-  ley: "bg-gold/[0.12] text-gold border-gold/30",
+  ley: "bg-emphasis/[0.08] text-emphasis border-emphasis/30",
   vigente: "bg-cream/[0.08] text-cream/80 border-cream/15",
   matizado: "bg-burgundy/[0.18] text-cream/85 border-burgundy/40",
   variado: "bg-cream/[0.04] text-cream/65 border-cream/12",

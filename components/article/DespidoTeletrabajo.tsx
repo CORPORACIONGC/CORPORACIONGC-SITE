@@ -4,6 +4,8 @@
    expediente de despido sin desarrollar su aplicación: la pieza orienta y
    deja la estrategia para el análisis de cada caso. */
 
+import { RunningHead } from "@/components/ui/RunningHead";
+
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
 const SCIJ = (id: number) =>
   `https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=${id}`;
@@ -13,9 +15,7 @@ const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 function FigHead({ id, n, kicker, title, lead }: { id: string; n: number; kicker: string; title: string; lead?: string }) {
   return (
     <header className="gc-fig-head">
-      <span className="gc-fig-eyebrow">
-        Figura {n} · {kicker}
-      </span>
+      <RunningHead title={kicker} locator={`Figura ${n}`} />
       <p id={id} className="gc-fig-title">
         {title}
       </p>

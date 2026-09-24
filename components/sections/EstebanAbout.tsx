@@ -9,6 +9,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { ESTEBAN_PRACTICE_AREAS } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const iconMap: Record<string, React.ElementType> = {
   Scales,
@@ -27,13 +28,7 @@ export function EstebanAbout() {
           {/* Left — CTA */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="font-display text-lg text-cream/15 font-semibold">01</span>
-                <div className="h-px w-6 bg-cream/10" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Nuestro enfoque
-                </span>
-              </div>
+              <RunningHead title="Nuestro enfoque" locator="01" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -78,12 +73,7 @@ export function EstebanAbout() {
           {/* Right — Practice areas */}
           <div className="lg:pt-16">
             <AnimatedEntry delay={0.15}>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-burgundy/50" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Áreas de práctica
-                </span>
-              </div>
+              <RunningHead title="Áreas de práctica" />
             </AnimatedEntry>
 
             <StaggerContainer className="space-y-3" stagger={0.07}>

@@ -202,7 +202,7 @@ export function Navbar({
             <ThemeToggle />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-cream/70 hover:text-gold transition-colors nav-tactile"
+              className="p-2 text-cream/70 hover:text-emphasis transition-colors nav-tactile"
               aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
             >
               {mobileOpen ? (

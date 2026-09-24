@@ -41,6 +41,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 import { areasMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export const metadata: Metadata = {
   ...areasMetadata,
@@ -152,18 +153,13 @@ export default function AreasPage() {
           <div className="max-w-[1000px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
             </Link>
 
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
-                Áreas de Práctica
-              </span>
-            </div>
+            <RunningHead title="Áreas de práctica" />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
               Lo que{" "}
@@ -203,7 +199,7 @@ export default function AreasPage() {
                               weight="duotone"
                               className="text-burgundy shrink-0"
                             />
-                            <h2 className="font-display text-lg md:text-xl text-cream group-hover:text-gold transition-colors duration-300">
+                            <h2 className="font-display text-lg md:text-xl text-cream group-hover:text-emphasis transition-colors duration-300">
                               {area.title}
                             </h2>
                           </div>
@@ -214,7 +210,7 @@ export default function AreasPage() {
                         <ArrowRight
                           size={18}
                           weight="bold"
-                          className="text-cream/20 group-hover:text-gold transition-colors duration-300 shrink-0 mt-1"
+                          className="text-cream/20 group-hover:text-emphasis transition-colors duration-300 shrink-0 mt-1"
                         />
                       </div>
                     </Link>
@@ -243,7 +239,7 @@ export default function AreasPage() {
                           weight="duotone"
                           className="text-burgundy shrink-0"
                         />
-                        <h2 className="font-display text-base text-cream group-hover:text-gold transition-colors duration-300">
+                        <h2 className="font-display text-base text-cream group-hover:text-emphasis transition-colors duration-300">
                           {area.title}
                         </h2>
                       </div>
@@ -276,7 +272,7 @@ export default function AreasPage() {
                           weight="duotone"
                           className="text-cream/40 group-hover:text-burgundy shrink-0 transition-colors duration-300"
                         />
-                        <h2 className="font-display text-sm text-cream/70 group-hover:text-gold transition-colors duration-300">
+                        <h2 className="font-display text-sm text-cream/70 group-hover:text-emphasis transition-colors duration-300">
                           {area.title}
                         </h2>
                       </div>

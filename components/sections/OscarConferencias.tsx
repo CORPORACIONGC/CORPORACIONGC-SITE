@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { VideoCamera, Play } from "@phosphor-icons/react";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 type Video = {
   id: string;
@@ -160,12 +161,7 @@ export function OscarConferencias() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <AnimatedEntry>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-gold" />
-            <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
-              Conferencias y Ponencias
-            </span>
-          </div>
+          <RunningHead title="Conferencias y ponencias" />
         </AnimatedEntry>
 
         <AnimatedEntry delay={0.1}>

@@ -3,6 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { PRACTICE_AREA_PAGES } from "@/lib/constants";
 import { PracticeExplorer, type PracticeAreaLite } from "@/components/sections/PracticeExplorer";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function FirmPracticeAreas() {
   /* Solo lo que la portada muestra de cada área: el explorador corre en el
@@ -19,10 +20,7 @@ export function FirmPracticeAreas() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <AnimatedEntry>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-gold" />
-            <span className="type-label text-cream/65">&Aacute;reas de pr&aacute;ctica</span>
-          </div>
+          <RunningHead title="&Aacute;reas de pr&aacute;ctica" locator="03" />
         </AnimatedEntry>
 
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">

@@ -10,6 +10,7 @@ import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/An
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ESTEBAN_CONTACT } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const contactItems = [
   {
@@ -30,7 +31,7 @@ export function EstebanContact() {
   return (
     <section id="contacto" className="relative bg-dark-bg py-24 md:py-32 overflow-hidden">
       {/* Gold accent top */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-cream/[0.08]" />
 
       {/* Subtle glow — only in dark mode */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-burgundy/[0.04] blur-[120px] pointer-events-none hidden dark:block" />
@@ -40,13 +41,7 @@ export function EstebanContact() {
           {/* Left — Info */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="font-display text-lg text-gold/40 font-semibold">03</span>
-                <div className="h-px w-6 bg-cream/10" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Contacto
-                </span>
-              </div>
+              <RunningHead title="Contacto" locator="03" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -101,7 +96,7 @@ export function EstebanContact() {
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
               <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
-                  <MapPin size={16} weight="duotone" className="text-gold" />
+                  <MapPin size={16} weight="duotone" className="text-emphasis" />
                   <span className="text-xs text-cream/50">
                     {ESTEBAN_CONTACT.location}
                   </span>

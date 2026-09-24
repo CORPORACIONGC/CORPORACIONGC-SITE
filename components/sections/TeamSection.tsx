@@ -3,6 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { TeamGallery, type TeamGalleryMember } from "@/components/sections/TeamGallery";
 import { TEAM } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 // Exclude founder — he has his own dedicated section in La Firma
 // Explicit surname order: González, Montero, Pérez, Sánchez, Solano
@@ -27,6 +28,9 @@ export function TeamSection() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+        <AnimatedEntry>
+          <RunningHead title="Equipo" locator="02" />
+        </AnimatedEntry>
         <div className="mb-12 md:mb-16 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
           <AnimatedEntry>
             <h2 className="type-headline text-cream max-w-[14ch]">

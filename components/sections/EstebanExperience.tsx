@@ -1,6 +1,7 @@
 
 import { ESTEBAN_PROFILE } from "@/lib/constants";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function EstebanExperience() {
   return (
@@ -13,12 +14,7 @@ export function EstebanExperience() {
           {/* Left — Heading */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-2 h-2 rounded-full bg-burgundy animate-breathe" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Trayectoria
-                </span>
-              </div>
+              <RunningHead title="Trayectoria" locator="02" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -48,7 +44,7 @@ export function EstebanExperience() {
                   <div
                     className={`relative pl-10 pr-5 py-5 rounded-xl transition-colors duration-300 ${
                       exp.highlight
-                        ? "bg-gold/[0.06] border border-gold/[0.15]"
+                        ? "bg-emphasis/[0.06] border border-emphasis/[0.15]"
                         : ""
                     }`}
                   >
@@ -56,7 +52,7 @@ export function EstebanExperience() {
                     <div
                       className={`absolute left-[7px] top-7 w-[9px] h-[9px] rounded-full border-2 ${
                         exp.highlight
-                          ? "border-gold bg-gold"
+                          ? "border-emphasis bg-emphasis"
                           : "border-cream/25 bg-surface"
                       }`}
                     />
@@ -70,7 +66,7 @@ export function EstebanExperience() {
                       </span>
                     </div>
 
-                    <div className="text-xs text-gold font-medium mb-2">
+                    <div className="text-xs text-emphasis font-medium mb-2">
                       {exp.org}
                     </div>
 
@@ -79,7 +75,7 @@ export function EstebanExperience() {
                     </p>
 
                     {exp.highlight && (
-                      <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-gold/[0.1] text-gold text-[10px] tracking-wide font-medium">
+                      <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emphasis/[0.1] text-emphasis text-[10px] tracking-wide font-medium">
                         Posición actual
                       </div>
                     )}

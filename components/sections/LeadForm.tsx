@@ -54,8 +54,8 @@ export function LeadForm() {
   if (state === "success") {
     return (
       <div className="flex flex-col items-center justify-center py-12 text-center">
-        <div className="p-3 rounded-full bg-gold/[0.12] mb-4">
-          <CheckCircle size={32} weight="duotone" className="text-gold" />
+        <div className="p-3 rounded-full bg-emphasis/[0.12] mb-4">
+          <CheckCircle size={32} weight="duotone" className="text-emphasis" />
         </div>
         <h4 className="text-base font-semibold text-cream mb-2">
           Mensaje enviado
@@ -171,7 +171,7 @@ export function LeadForm() {
             {errorMsg} Intente de nuevo o escríbanos a{" "}
             <a
               href={`mailto:${FIRM_CONTACT.email}`}
-              className="text-gold underline"
+              className="text-emphasis underline"
             >
               {FIRM_CONTACT.email}
             </a>
@@ -211,7 +211,7 @@ export function LeadForm() {
         contactTarget="lead-form-whatsapp"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-cream/15 bg-cream/[0.04] text-cream text-sm font-medium tracking-wide hover:border-gold/40 hover:bg-cream/[0.07] active:scale-[0.97] transition-all duration-300"
+        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-cream/15 bg-cream/[0.04] text-cream text-sm font-medium tracking-wide hover:border-emphasis/40 hover:bg-cream/[0.07] active:scale-[0.97] transition-all duration-300"
       >
         <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
         Prefiero escribir por WhatsApp

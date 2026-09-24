@@ -2,6 +2,7 @@ import Image from "next/image";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 import { OSCAR_PROFILE } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function FirmHero() {
   return (
@@ -16,12 +17,7 @@ export function FirmHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <div className="gc-rise" style={{ animationDelay: "0.05s" }}>
-            <div className="flex items-center gap-3 mb-7">
-              <div className="hidden sm:block h-px w-8 bg-gold" />
-              <span className="type-label text-cream/65">
-                Bufete de Abogados en Derecho P&#250;blico
-              </span>
-            </div>
+            <RunningHead title="Bufete de abogados en Derecho P&#250;blico" className="mb-7 max-w-[52ch]" />
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.12s" }}>
@@ -56,8 +52,6 @@ export function FirmHero() {
               <div className="absolute inset-0 bg-gradient-to-t from-burgundy-dark/30 via-transparent to-burgundy-dark/10 mix-blend-multiply pointer-events-none" />
               {/* Bottom fade into surface */}
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
-              {/* Thin gold accent line — bottom */}
-              <div className="absolute inset-x-[15%] bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
             </div>
           </div>
 
@@ -119,8 +113,6 @@ export function FirmHero() {
               {/* Bottom fade into surface */}
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface via-surface/60 to-transparent" />
 
-              {/* Thin gold accent line — left edge */}
-              <div className="absolute top-[10%] bottom-[10%] left-0 w-px bg-gradient-to-b from-transparent via-gold/50 to-transparent" />
             </div>
 
           </div>

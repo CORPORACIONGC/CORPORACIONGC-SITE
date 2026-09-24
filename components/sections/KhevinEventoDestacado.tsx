@@ -3,6 +3,7 @@ import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { MapPin, Microphone, GlobeHemisphereWest } from "@phosphor-icons/react/dist/ssr";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function KhevinEventoDestacado() {
   return (
@@ -10,12 +11,7 @@ export function KhevinEventoDestacado() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <AnimatedEntry>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-gold" />
-            <span className="text-[10px] tracking-[0.25em] uppercase text-cream/55 font-medium">
-              Evento Destacado
-            </span>
-          </div>
+          <RunningHead title="Evento destacado" />
         </AnimatedEntry>
 
         <AnimatedEntry delay={0.1}>
@@ -78,7 +74,7 @@ export function KhevinEventoDestacado() {
 
                 {/* Panel context */}
                 <div className="mb-8 pl-4 relative">
-                  <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-gold/50 via-gold/20 to-transparent" />
+                  <div className="absolute left-0 top-0 bottom-0 w-px bg-cream/15" />
                   <p className="text-[13px] text-cream/65 leading-relaxed italic">
                     &Eacute;tica, gobernanza de datos e inteligencia artificial aplicada al ejercicio del Derecho en Latinoam&eacute;rica
                   </p>

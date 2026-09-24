@@ -225,7 +225,7 @@ export function NormaNavegable({
   };
 
   return (
-    <div className="not-prose gc-norma my-12 border-t border-gold/60 pt-8">
+    <div className="not-prose gc-norma my-12 border-t border-emphasis/60 pt-8">
       {/* Google entiende así que esta página contiene la norma, no un
           comentario sobre ella. */}
       <script

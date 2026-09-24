@@ -1,13 +1,15 @@
 /* Comparación "Régimen anterior vs CPCA" (reforma de 2008).
    Diseño estilizado (aportado por el cliente) que reemplaza la tabla Markdown
    de la sección "qué cambió" en el artículo del CPCA. Trae su propio encabezado
-   de sección (eyebrow + H2 + lead) por diseño. Estilos en app/globals.css
+   de sección (encabezado corrido + H2 + lead) por diseño. Estilos en app/globals.css
    (.gc-reforma). */
+
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export function ReformaCpca() {
   return (
     <section className="gc-reforma" aria-labelledby="reforma-h2">
-      <span className="gc-eyebrow">Reforma del 2008</span>
+      <RunningHead title="Reforma del 2008" />
 
       <h2 id="reforma-h2">
         De la revisión del acto <em>a la tutela judicial plena</em>

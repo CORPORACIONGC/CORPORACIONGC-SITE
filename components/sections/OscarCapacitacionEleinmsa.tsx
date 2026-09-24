@@ -10,6 +10,7 @@ import {
   CaretRight,
   CaretLeft,
 } from "@phosphor-icons/react";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 /* ──────────────────────────────────────────────────────────────────────────
    Datos de los mazos. Cada "deck" es una sesión de la capacitación.
@@ -142,9 +143,9 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
             style={{ objectPosition: card.imagePos ?? "center" }}
             draggable={false}
           />
-          {/* Hairline dorada: abajo en móvil, lateral en escritorio */}
+          {/* Filete: abajo en móvil, lateral en escritorio */}
           <div
-            className={`absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent lg:inset-x-auto lg:inset-y-0 lg:h-auto lg:w-px lg:bg-gradient-to-b ${
+            className={`absolute inset-x-0 bottom-0 h-px bg-cream/12 lg:inset-x-auto lg:inset-y-0 lg:h-auto lg:w-px ${
               flip ? "lg:left-0" : "lg:right-0"
             }`}
           />
@@ -153,8 +154,8 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
 
       <div className="flex flex-1 flex-col p-7 md:p-8 lg:p-10 lg:justify-center">
         <div className="mb-4 flex items-center gap-2.5">
-          <span className="h-px w-5 bg-gold/70" />
-          <span className="text-[10px] font-medium uppercase tracking-[0.24em] text-gold/85">
+          <span className="h-px w-5 bg-emphasis/70" />
+          <span className="text-[10px] font-medium uppercase tracking-[0.24em] text-emphasis/85">
             {card.eyebrow}
           </span>
         </div>
@@ -180,7 +181,7 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
         )}
 
         {card.quote && (
-          <figure className="my-2 border-l-2 border-gold/55 pl-5">
+          <figure className="my-2 border-l-2 border-emphasis/55 pl-5">
             <blockquote className="font-display text-[1.35rem] lg:text-[1.6rem] italic leading-[1.25] tracking-tight text-cream/90">
               El derecho es el equilibrio, no la f&oacute;rmula.
             </blockquote>
@@ -196,7 +197,7 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
               const Icon = FACT_ICONS[f.icon];
               return (
                 <div key={i} className="flex items-start gap-3">
-                  <Icon size={16} weight="duotone" className="mt-0.5 shrink-0 text-gold/75" />
+                  <Icon size={16} weight="duotone" className="mt-0.5 shrink-0 text-emphasis/75" />
                   <p className="text-[12.5px] lg:text-[13.5px] leading-relaxed text-cream/65">
                     {f.text}
                   </p>
@@ -212,7 +213,7 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
               <div key={i} className="flex items-start gap-2.5">
                 <span
                   className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${
-                    p.accent === "gold" ? "bg-gold" : "bg-burgundy-light"
+                    p.accent === "gold" ? "bg-emphasis" : "bg-burgundy-light"
                   }`}
                 />
                 <p className="text-[12.5px] lg:text-[13.5px] leading-snug">
@@ -319,8 +320,8 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
       <div className="mb-10 lg:mb-12 lg:flex lg:items-end lg:justify-between lg:gap-12">
         <div>
           <div className="mb-4 flex items-center gap-2.5">
-            <span className="h-px w-7 bg-gold" />
-            <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-gold/85">
+            <span className="h-px w-7 bg-emphasis" />
+            <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-emphasis/85">
               {deck.label}
             </span>
           </div>
@@ -412,7 +413,7 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
                 onClick={() => jumpTo(c.id)}
                 aria-label={`Ir a la tarjeta ${i + 1}`}
                 className={`h-[3px] rounded-full transition-all duration-500 ${
-                  i === frontIndex ? "w-9 bg-gold" : "w-4 bg-cream/20 hover:bg-cream/40"
+                  i === frontIndex ? "w-9 bg-emphasis" : "w-4 bg-cream/20 hover:bg-cream/40"
                 }`}
               />
             ))}
@@ -424,7 +425,7 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
               onClick={prev}
               disabled={animating}
               aria-label="Tarjeta anterior"
-              className="grid h-11 w-11 place-items-center rounded-full border border-cream/[0.14] text-cream/60 transition-all duration-300 hover:border-gold/45 hover:text-gold active:scale-[0.94] disabled:opacity-40"
+              className="grid h-11 w-11 place-items-center rounded-full border border-cream/[0.14] text-cream/60 transition-all duration-300 hover:border-emphasis/45 hover:text-emphasis active:scale-[0.94] disabled:opacity-40"
             >
               <CaretLeft size={16} weight="bold" />
             </button>
@@ -459,12 +460,7 @@ export function OscarCapacitacionEleinmsa() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         {/* Encabezado */}
         <AnimatedEntry>
-          <div className="mb-6 flex items-center gap-3">
-            <div className="h-px w-8 bg-gold" />
-            <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-cream/55">
-              Capacitaci&oacute;n a clientes
-            </span>
-          </div>
+          <RunningHead title="Capacitación a clientes" />
         </AnimatedEntry>
 
         <AnimatedEntry delay={0.1}>

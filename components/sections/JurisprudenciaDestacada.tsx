@@ -18,6 +18,7 @@ import {
   nexusUrl,
 } from "@/lib/jurisprudencia";
 import { SentenciaFolio, type SentenciaPortada } from "@/components/sections/SentenciaFolio";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 
 type Props = {
@@ -75,23 +76,18 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
       }`}
     >
       {/* Top hairline */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/30 dark:via-gold/30 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-cream/[0.08]" />
 
       {/* Dark mode only — subtle warmth in dark mode (no fondo rosa en light mode) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-burgundy/[0.06] blur-[140px] pointer-events-none hidden dark:block" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
         {/* ── Section header ── */}
+        <AnimatedEntry>
+          <RunningHead title={sectionEyebrow} locator={variant === "home" ? "04" : "Sala Primera"} />
+        </AnimatedEntry>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
           <div>
-            <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-burgundy dark:bg-gold" />
-                <span className="type-label text-burgundy dark:text-gold/85">
-                  {sectionEyebrow}
-                </span>
-              </div>
-            </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
               <h2 className="type-headline text-cream mb-5 max-w-[18ch]">
@@ -273,7 +269,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
       </div>
 
       {/* Bottom hairline */}
-      <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/15 dark:via-gold/20 to-transparent" />
+      <div className="absolute bottom-0 inset-x-0 h-px bg-cream/[0.08]" />
     </section>
   );
 }

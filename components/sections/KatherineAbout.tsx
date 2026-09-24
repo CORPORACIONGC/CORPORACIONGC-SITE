@@ -7,6 +7,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { KATHERINE_PRACTICE_AREAS, KATHERINE_PROFILE } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const iconMap: Record<string, React.ElementType> = {
   Scales,
@@ -23,12 +24,7 @@ export function KatherineAbout() {
           {/* Left — Bio */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Perfil profesional
-                </span>
-              </div>
+              <RunningHead title="Perfil profesional" locator="01" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -66,7 +62,7 @@ export function KatherineAbout() {
                 <div className="space-y-2">
                   {KATHERINE_PROFILE.education.map((edu, i) => (
                     <div key={i} className="flex items-baseline gap-2">
-                      <div className={`w-1 h-1 rounded-full ${i === 0 ? "bg-gold" : "bg-burgundy-light"} mt-1.5 shrink-0`} />
+                      <div className={`w-1 h-1 rounded-full ${i === 0 ? "bg-emphasis" : "bg-burgundy-light"} mt-1.5 shrink-0`} />
                       <span className="text-sm text-cream/75">
                         {edu.degree} — {edu.institution}
                         {edu.period && (
@@ -91,12 +87,7 @@ export function KatherineAbout() {
           {/* Right — Practice areas */}
           <div className="lg:pt-16">
             <AnimatedEntry delay={0.15}>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-burgundy/50" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Áreas de práctica
-                </span>
-              </div>
+              <RunningHead title="Áreas de práctica" />
             </AnimatedEntry>
 
             <StaggerContainer className="space-y-3" stagger={0.07}>

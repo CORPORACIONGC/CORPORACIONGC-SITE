@@ -20,6 +20,7 @@ import {
 } from "@/lib/jurisprudencia";
 import { FIRM } from "@/lib/constants";
 import { jurisprudenciaMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export const metadata: Metadata = {
   ...jurisprudenciaMetadata,
@@ -96,25 +97,20 @@ export default function JurisprudenciaDestacadaIndexPage() {
       <main className="bg-surface min-h-[100dvh]">
         {/* ─── HERO ─── */}
         <section className="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-20">
-          <div className="absolute top-20 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+          <div className="absolute top-20 inset-x-0 h-px bg-cream/[0.08]" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-burgundy/[0.04] blur-[140px] pointer-events-none hidden dark:block" />
 
           <div className="max-w-[1100px] mx-auto px-6 md:px-10 relative z-10">
             <Link
               href="/abogados/oscar-gonzalez"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 mb-10"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-10"
             >
               <ArrowLeft size={14} weight="regular" />
               Perfil del Dr. Óscar González
             </Link>
 
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
-                <span className="text-[10px] tracking-[0.3em] uppercase text-gold/85 font-medium">
-                  Jurisprudencia Destacada
-                </span>
-              </div>
+              <RunningHead title="Jurisprudencia destacada" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -164,7 +160,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                 <StaggerItem key={s.slug}>
                   <Link
                     href={`/jurisprudencia-destacada/${s.slug}`}
-                    className="group flex flex-col h-full p-7 md:p-8 rounded-2xl border border-cream/[0.08] bg-cream/[0.02] hover:border-gold/30 hover:bg-cream/[0.035] transition-all duration-400"
+                    className="group flex flex-col h-full p-7 md:p-8 rounded-2xl border border-cream/[0.08] bg-cream/[0.02] hover:border-emphasis/30 hover:bg-cream/[0.035] transition-all duration-400"
                   >
                     {/* Top meta row */}
                     <div className="flex items-center gap-3 mb-6">
@@ -183,7 +179,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                     </div>
 
                     {/* Title */}
-                    <h2 className="font-display text-2xl md:text-[28px] tracking-tight leading-[1.1] text-cream group-hover:text-gold transition-colors duration-300 mb-3">
+                    <h2 className="font-display text-2xl md:text-[28px] tracking-tight leading-[1.1] text-cream group-hover:text-emphasis transition-colors duration-300 mb-3">
                       {s.titulo}
                     </h2>
 
@@ -193,7 +189,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                     </p>
 
                     {/* Quote excerpt */}
-                    <div className="relative pl-4 border-l border-gold/25 mb-6">
+                    <div className="relative pl-4 border-l border-emphasis/25 mb-6">
                       <p className="text-sm italic text-cream/65 leading-relaxed line-clamp-4">
                         «{s.pullQuote.texto}»
                       </p>
@@ -204,7 +200,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                       <div className="text-[10px] font-mono text-cream/40">
                         {s.numero}
                       </div>
-                      <div className="inline-flex items-center gap-1.5 text-xs text-cream/55 group-hover:text-gold transition-colors duration-300">
+                      <div className="inline-flex items-center gap-1.5 text-xs text-cream/55 group-hover:text-emphasis transition-colors duration-300">
                         Leer
                         <ArrowRight
                           size={12}

@@ -14,6 +14,7 @@ import {
   User,
 } from "@phosphor-icons/react/dist/ssr";
 import { articulosMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 export const metadata: Metadata = {
   ...articulosMetadata,
@@ -64,18 +65,13 @@ export default function ArticulosPage() {
           <div className="max-w-[1400px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
             </Link>
 
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-gold" />
-              <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
-                Publicaciones Académicas
-              </span>
-            </div>
+            <RunningHead title="Publicaciones académicas" />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
               Artículos y{" "}
@@ -124,7 +120,7 @@ export default function ArticulosPage() {
                       className={`p-1.5 rounded-md ${
                         article.type === "pdf"
                           ? "bg-burgundy/[0.08] text-burgundy"
-                          : "bg-gold/[0.15] text-gold"
+                          : "bg-emphasis/[0.15] text-emphasis"
                       }`}
                     >
                       {article.type === "pdf" ? (
@@ -143,7 +139,7 @@ export default function ArticulosPage() {
                     </span>
                   </div>
 
-                  <h2 className="font-display text-lg font-semibold tracking-tight text-cream group-hover:text-gold transition-colors duration-300">
+                  <h2 className="font-display text-lg font-semibold tracking-tight text-cream group-hover:text-emphasis transition-colors duration-300">
                     {article.title}
                   </h2>
 

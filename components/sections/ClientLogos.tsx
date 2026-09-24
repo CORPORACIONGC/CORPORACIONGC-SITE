@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { CLIENTES, tamanoOptico } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 type Cliente = (typeof CLIENTES)[number];
 
@@ -25,10 +26,8 @@ function Logo({ c, alto, className = "" }: { c: Cliente; alto: number; className
 }
 
 const Rotulo = () => (
-  <div className="flex items-center justify-center gap-4">
-    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-r from-transparent to-gold/40" />
-    <h2 className="type-label text-white/70">Han confiado en nosotros</h2>
-    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-l from-transparent to-gold/40" />
+  <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+    <RunningHead title="Han confiado en nosotros" titleAs="h2" tone="dark" className="mb-0" />
   </div>
 );
 

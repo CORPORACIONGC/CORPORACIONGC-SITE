@@ -229,8 +229,7 @@ export default function SobreNosotros() {
               />
             </div>
 
-            {/* Regla dorada, como la que abre los dictámenes */}
-            <div aria-hidden="true" className="mx-auto mt-12 h-px max-w-[880px] bg-gold/60 md:mt-14" />
+            <div aria-hidden="true" className="mx-auto mt-12 h-px max-w-[880px] bg-cream/15 md:mt-14" />
 
             <p className="type-headline mx-auto mt-12 max-w-[20ch] text-center text-cream md:mt-16">
               Un bufete dedicado exclusivamente al Derecho P&uacute;blico

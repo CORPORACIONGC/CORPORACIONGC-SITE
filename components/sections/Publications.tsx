@@ -4,6 +4,7 @@ import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/An
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { ArrowRight, Article } from "@phosphor-icons/react/dist/ssr";
 import { TEAM, FOOTER_GUIAS } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 type ArticlePreview = {
   slug: string;
@@ -171,7 +172,16 @@ function Sumario({ articles }: { articles: ArticlePreview[] }) {
  * artículos del sitio: si se pasa, el botón la dice («Ver los 43
  * artículos»); los perfiles no la pasan, porque muestran solo los del autor.
  */
-export function Publications({ articles, total }: { articles: ArticlePreview[]; total?: number }) {
+export function Publications({
+  articles,
+  total,
+  locator,
+}: {
+  articles: ArticlePreview[];
+  total?: number;
+  /* Posición de la sección en la página (la portada la numera). */
+  locator?: string;
+}) {
   const hasArticles = articles.length > 0;
   const rotulo = total ? `Ver los ${total} artículos` : "Ver todos los artículos";
 
@@ -180,9 +190,10 @@ export function Publications({ articles, total }: { articles: ArticlePreview[]; 
       aria-labelledby="articulos-titulo"
       className="gc-on-dark relative overflow-hidden bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#1E0610] py-24 md:py-32"
     >
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
-
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+        <AnimatedEntry>
+          <RunningHead title="Publicaciones" locator={locator} tone="dark" />
+        </AnimatedEntry>
         <div className="mb-14 flex items-end justify-between gap-6 md:mb-20">
           <AnimatedEntry>
             <h2 id="articulos-titulo" className="type-headline text-white">
@@ -248,7 +259,6 @@ export function Publications({ articles, total }: { articles: ArticlePreview[]; 
         )}
       </div>
 
-      <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
     </section>
   );
 }

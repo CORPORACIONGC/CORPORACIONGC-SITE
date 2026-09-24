@@ -10,6 +10,7 @@ import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/An
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { KATHERINE_CONTACT } from "@/lib/constants";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 const contactItems = [
   {
@@ -29,7 +30,7 @@ const contactItems = [
 export function KatherineContact() {
   return (
     <section id="contacto" className="relative bg-dark-bg py-24 md:py-32 overflow-hidden">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-cream/[0.08]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-burgundy/[0.04] blur-[120px] pointer-events-none hidden dark:block" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
@@ -37,12 +38,7 @@ export function KatherineContact() {
           {/* Left — Info */}
           <div>
             <AnimatedEntry>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gold" />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                  Contacto
-                </span>
-              </div>
+              <RunningHead title="Contacto" locator="03" />
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.1}>
@@ -91,7 +87,7 @@ export function KatherineContact() {
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
               <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
-                  <MapPin size={16} weight="duotone" className="text-gold" />
+                  <MapPin size={16} weight="duotone" className="text-emphasis" />
                   <span className="text-xs text-cream/50">
                     {KATHERINE_CONTACT.location}
                   </span>

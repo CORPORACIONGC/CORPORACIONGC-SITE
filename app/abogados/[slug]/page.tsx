@@ -50,6 +50,7 @@ import {
   MARIANA_NAV_LINKS,
 } from "@/lib/constants";
 import { generateAttorneyMetadata } from "@/lib/page-metadata";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 // Generate static params for all team members.
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
@@ -735,12 +736,7 @@ function BasicProfile({
             <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-32 w-full">
               <div className="grid grid-cols-1 md:grid-cols-[1fr_0.6fr] gap-12 items-center">
                 <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-8">
-                    <div className="h-px w-8 bg-gold" />
-                    <span className="text-[11px] tracking-[0.25em] uppercase text-cream/50 font-medium">
-                      {member.role} · Corporación GC
-                    </span>
-                  </div>
+                  <RunningHead title={member.role} locator="Corporación GC" />
 
                   <h1 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none text-cream mb-6">
                     {member.name}
@@ -785,7 +781,7 @@ function BasicProfile({
                     </div>
                   ) : (
                     <div className="w-64 h-80 rounded-[1.5rem] bg-burgundy/10 border border-cream/[0.08] flex items-center justify-center">
-                      <span className="font-display text-6xl font-semibold text-gold/40">
+                      <span className="font-display text-6xl font-semibold text-emphasis/40">
                         {getInitials(member.name)}
                       </span>
                     </div>

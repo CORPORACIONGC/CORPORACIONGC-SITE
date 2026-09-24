@@ -66,6 +66,7 @@ import {
 import { buildArticleMetadata } from "@/lib/page-metadata";
 import { getSentenciasPorTemas } from "@/lib/jurisprudencia";
 import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRelacionadas";
+import { RunningHead } from "@/components/ui/RunningHead";
 
 /* Credencial mostrada bajo el byline cuando el "autor" es la firma misma
    (artículos institucionales). Refleja la autoridad del director del bufete
@@ -418,7 +419,7 @@ export default async function ArticlePage({
             {/* Back */}
             <Link
               href="/articulos"
-              className={`inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300 ${area ? "mb-8" : "mb-10"}`}
+              className={`inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 ${area ? "mb-8" : "mb-10"}`}
             >
               <ArrowLeft size={14} weight="regular" />
               {t.back}
@@ -476,7 +477,7 @@ export default async function ArticlePage({
                 href={`/articulos/${article.translation}`}
                 hrefLang={lang === "en" ? "es" : "en"}
                 lang={lang === "en" ? "es" : "en"}
-                className="inline-flex items-center gap-1.5 text-xs text-gold hover:text-gold/80 transition-colors duration-300 mb-6"
+                className="inline-flex items-center gap-1.5 text-xs text-emphasis hover:text-emphasis/80 transition-colors duration-300 mb-6"
               >
                 {t.translation}
                 <ArrowSquareOut size={11} weight="bold" />
@@ -500,7 +501,7 @@ export default async function ArticlePage({
                 institucional usa ORG_AUTHOR_CREDENTIAL. */}
             {article.author && article.authorVisible !== false && (
               <div className="mb-10">
-                <div className="text-[10px] tracking-[0.3em] uppercase text-gold/60 font-medium mb-2">
+                <div className="text-[10px] tracking-[0.3em] uppercase text-emphasis/60 font-medium mb-2">
                   {t.by}
                 </div>
                 <div className="text-base md:text-lg font-medium text-cream tracking-tight">
@@ -517,7 +518,7 @@ export default async function ArticlePage({
             {/* Source reference for journal articles */}
             {article.sourceReference && (
               <div className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.03] mb-10">
-                <BookOpen size={16} weight="regular" className="text-gold/60 shrink-0 mt-0.5" />
+                <BookOpen size={16} weight="regular" className="text-emphasis/60 shrink-0 mt-0.5" />
                 <div className="text-xs text-cream/50 leading-relaxed">
                   <span className="text-cream/60 font-medium">{t.publishedIn}</span>
                   {article.sourceReference}
@@ -528,7 +529,7 @@ export default async function ArticlePage({
                         href={article.sourceUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-gold hover:text-gold/80 transition-colors duration-300"
+                        className="inline-flex items-center gap-1 text-emphasis hover:text-emphasis/80 transition-colors duration-300"
                       >
                         {article.publicationType === "libro" ? "Acceder al libro" : "Acceder a la revista"}
                         <ArrowSquareOut size={11} weight="bold" />
@@ -581,7 +582,7 @@ export default async function ArticlePage({
                   <WhatsappLogo size={26} weight="fill" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-[10px] tracking-[0.25em] uppercase text-gold/70 font-medium mb-2">
+                  <div className="text-[10px] tracking-[0.25em] uppercase text-emphasis/70 font-medium mb-2">
                     {t.ctaKicker}
                   </div>
                   <h2 className="font-display text-xl md:text-2xl font-semibold tracking-tight text-cream leading-snug">
@@ -626,7 +627,7 @@ export default async function ArticlePage({
                       <div>
                         <Link
                           href={`/abogados/${member.slug}`}
-                          className="text-sm font-medium text-cream hover:text-gold transition-colors duration-300"
+                          className="text-sm font-medium text-cream hover:text-emphasis transition-colors duration-300"
                         >
                           {member.name}
                         </Link>
@@ -641,7 +642,7 @@ export default async function ArticlePage({
                         </p>
                         <Link
                           href={`/abogados/${member.slug}`}
-                          className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-gold transition-colors duration-300 mt-3"
+                          className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-emphasis transition-colors duration-300 mt-3"
                         >
                           {t.profile}
                           <ArrowSquareOut size={11} weight="bold" />
@@ -660,12 +661,7 @@ export default async function ArticlePage({
               <section className="mt-16 pt-10 border-t border-cream/[0.08]">
                 {area && (
                   <>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="h-px w-8 bg-gold" />
-                      <span className="text-[10px] tracking-[0.25em] uppercase text-cream/45 font-medium">
-                        Área de práctica
-                      </span>
-                    </div>
+                    <RunningHead title="Área de práctica" />
                     <Link
                       href={`/areas/${area.slug}`}
                       className="group relative block pb-5 mb-8 border-b border-cream/[0.08] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
@@ -738,7 +734,7 @@ export default async function ArticlePage({
             <div className="mt-10 pt-8 border-t border-cream/[0.06]">
               <Link
                 href="/articulos"
-                className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-gold transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300"
               >
                 <ArrowLeft size={14} weight="regular" />
                 {t.backBottom}
