@@ -82,6 +82,15 @@ const VIDEOS: Video[] = [
       "Participación del Dr. Óscar Eduardo González Camacho en la mesa redonda sobre el nuevo régimen del servicio público, organizada por el Instituto de Investigaciones Jurídicas de la Universidad de Costa Rica.",
   },
   {
+    id: "nEXbbcEQoP8",
+    fecha: "2026-09-22",
+    title: "La reforma a la jurisdicción contencioso-administrativa",
+    event: "VII Jornadas de Investigación del Instituto de Investigaciones Jurídicas",
+    organizer: "Instituto de Investigaciones Jurídicas, UCR",
+    description:
+      "Exposición del Dr. Óscar Eduardo González Camacho sobre la reforma a la jurisdicción contencioso-administrativa, en las Séptimas Jornadas de Investigación del Instituto de Investigaciones Jurídicas de la Universidad de Costa Rica.",
+  },
+  {
     id: "uyj9G96ib4s",
     fecha: "2013-11-20",
     title: "Congreso de Derecho Ambiental 2013",
