@@ -1,7 +1,6 @@
 /* Figuras de la guía «Tribunal Contencioso Administrativo de Costa Rica».
    Mismo lenguaje editorial que las demás guías (bloque .gc-fig de
-   app/globals.css). Los datos de contacto salen del pie de las resoluciones
-   que el Tribunal notificó en 2026; la cronología, de la hemeroteca del
+   app/globals.css). La cronología sale de la hemeroteca del
    Poder Judicial (Observatorio Judicial, en actualidadjudicial.poder-judicial.go.cr). */
 
 import { RunningHead } from "@/components/ui/RunningHead";
@@ -41,12 +40,6 @@ const ORGANOS: { organo: string; donde: string; que: string; norma: string }[] =
     donde: "Tribunal Contencioso Administrativo",
     que: "Admite la demanda, da traslado, resuelve las medidas cautelares y dirige la audiencia preliminar, donde sanea el proceso, fija los hechos en discusión y admite la prueba.",
     norma: "arts. 61, 63 y 90",
-  },
-  {
-    organo: "Juez conciliador",
-    donde: "Tribunal Contencioso Administrativo",
-    que: "Convoca a las partes a conciliar. La Administración puede hacerlo sobre la conducta impugnada, su validez y sus efectos.",
-    norma: "arts. 70 y 72 a 75",
   },
   {
     organo: "Tribunal de juicio",
@@ -153,10 +146,6 @@ const PASOS: { quien: string; que: string; plazo: string; rama?: { cuando: strin
     quien: "Juez tramitador",
     que: "Revisa la demanda. Si le falta un requisito, ordena corregirlo; si no se corrige, la archiva.",
     plazo: "Tres días hábiles para subsanar (art. 61)",
-    rama: {
-      cuando: "Si el asunto es urgente o de gran trascendencia para el interés público",
-      que: "el tribunal puede darle trámite preferente: la contestación se reduce a cinco días hábiles y, si hace falta, todo se resuelve en una única audiencia (art. 60).",
-    },
   },
   {
     quien: "Administración demandada",
@@ -164,9 +153,9 @@ const PASOS: { quien: string; que: string; plazo: string; rama?: { cuando: strin
     plazo: "Quince o treinta días hábiles (art. 63)",
   },
   {
-    quien: "Actora y juez conciliador",
-    que: "La actora se refiere a la contestación y ofrece contraprueba. Después, salvo que las partes renuncien, se celebra la audiencia de conciliación.",
-    plazo: "Tres días hábiles para la réplica (art. 70)",
+    quien: "Parte actora",
+    que: "Se refiere a la contestación y ofrece contraprueba.",
+    plazo: "Tres días hábiles (art. 70)",
   },
   {
     quien: "Juez tramitador",
@@ -246,57 +235,7 @@ export function RutaProcesoContencioso() {
   );
 }
 
-/* ── Figura 3. Ficha del despacho ────────────────────────────────────── */
-
-const FICHA: { dt: string; dd: React.ReactNode }[] = [
-  { dt: "Nombre oficial", dd: "Tribunal Contencioso Administrativo y Civil de Hacienda" },
-  {
-    dt: "Sede",
-    dd: "Segundo Circuito Judicial de San José, Goicoechea, Calle Blancos: 50 metros al oeste del Banco Nacional, frente a Café Dorado",
-  },
-  { dt: "Teléfono", dd: "2545-0099, extensiones 01-2707 y 01-2599" },
-  {
-    dt: "Correo electrónico",
-    dd: <a href="mailto:tproca-sgdoc@poder-judicial.go.cr">tproca-sgdoc@poder-judicial.go.cr</a>,
-  },
-  { dt: "Expedientes", dd: "Electrónicos. Los números de este despacho terminan en 1027-CA, por ejemplo 26-004027-1027-CA" },
-  { dt: "Casación", dd: "Sala Primera o Tribunal de Casación, según quién dictó la conducta impugnada" },
-];
-
-export function FichaTribunalContencioso() {
-  return (
-    <figure className="gc-fig" aria-labelledby="fig-ficha-tca">
-      <FigHead
-        id="fig-ficha-tca"
-        n={3}
-        kicker="Ficha"
-        title="El Tribunal Contencioso Administrativo en una ficha"
-        lead="Datos del despacho tal como aparecen en el pie de sus resoluciones de 2026."
-      />
-      <dl className="gc-fig-dl">
-        {FICHA.map((f) => (
-          <div key={f.dt}>
-            <dt>{f.dt}</dt>
-            <dd>{f.dd}</dd>
-          </div>
-        ))}
-      </dl>
-      <p className="gc-fig-note">
-        El Poder Judicial puede cambiar teléfonos y correos sin aviso. Antes de enviar un escrito o de acudir a la
-        sede, conviene confirmarlos en la resolución más reciente del expediente.
-      </p>
-      <FigSource>
-        Tribunal Contencioso Administrativo y Civil de Hacienda, voto{" "}
-        <a href={NEXUS("sen-1-0034-1423788")} {...EXT}>
-          5350-2026
-        </a>{" "}
-        y demás resoluciones notificadas en 2026.
-      </FigSource>
-    </figure>
-  );
-}
-
-/* ── Figura 4. Cronología ────────────────────────────────────────────── */
+/* ── Figura 3. Cronología ────────────────────────────────────────────── */
 
 const HITOS: { fecha: string; que: React.ReactNode; fuente: { texto: string; href: string } }[] = [
   {
@@ -310,8 +249,8 @@ const HITOS: { fecha: string; que: React.ReactNode; fuente: { texto: string; hre
     fuente: { texto: "Vol. 35", href: AJ("vol35/noticias_judiciales/notjud01.htm") },
   },
   {
-    fecha: "Mayo de 2006",
-    que: "Se sanciona el Código Procesal Contencioso-Administrativo, Ley N.° 8508 del 28 de abril de 2006.",
+    fecha: "Abril de 2006",
+    que: "El Código Procesal Contencioso-Administrativo se convierte en ley: es la Ley N.° 8508, de 28 de abril de 2006.",
     fuente: { texto: "Vol. 42", href: AJ("vol42/noticias_judiciales/nj1.htm") },
   },
   {
@@ -346,7 +285,7 @@ export function CronologiaTribunalContencioso() {
     <figure className="gc-fig gc-fig-flujo" aria-labelledby="fig-cronologia-tca">
       <FigHead
         id="fig-cronologia-tca"
-        n={4}
+        n={3}
         kicker="Cronología"
         title="Del juicio escrito al Tribunal de Calle Blancos"
         lead="Los hitos de la reforma según el Observatorio Judicial, la publicación del Poder Judicial, con enlace a cada nota original."

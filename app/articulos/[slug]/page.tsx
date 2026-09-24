@@ -42,7 +42,6 @@ import {
 import {
   OrganosJurisdiccionContenciosa,
   RutaProcesoContencioso,
-  FichaTribunalContencioso,
   CronologiaTribunalContencioso,
   FuentesTribunalContencioso,
 } from "@/components/article/TribunalContencioso";
@@ -142,7 +141,6 @@ const ARTICLE_COMPONENTS = {
   FuentesDespidoTeletrabajo,
   OrganosJurisdiccionContenciosa,
   RutaProcesoContencioso,
-  FichaTribunalContencioso,
   CronologiaTribunalContencioso,
   FuentesTribunalContencioso,
 };
