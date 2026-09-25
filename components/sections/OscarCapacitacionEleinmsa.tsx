@@ -505,6 +505,19 @@ export function OscarCapacitacionEleinmsa() {
             endDate: "2026-06-13T12:00:00-06:00",
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
+            /* Se dio en las oficinas del cliente. Solo va la localidad que
+               confirma eleinmsa.com/nosotros («San Francisco de Dos Ríos»);
+               las señas exactas no constan en una fuente de la empresa. */
+            location: {
+              "@type": "Place",
+              name: "Oficinas de ELEINMSA",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "San Francisco de Dos Ríos",
+                addressRegion: "San José",
+                addressCountry: "CR",
+              },
+            },
             about: "Equilibrio económico y reajuste de precios en la contratación administrativa",
             inLanguage: "es-CR",
             image: "https://www.corporaciongc.com/images/oscar-imsa-equilibrio.jpg",
