@@ -44,9 +44,11 @@ La ley desarrolla ese mandato con una cláusula general de gran amplitud. La Adm
 
 El elemento que da sentido a todo el sistema es la antijuridicidad del daño, entendida como la ausencia de un deber jurídico de soportarlo. La Sala Primera lo formuló así en una sentencia de 2010:
 
-> «Se trata de un esquema preeminentemente objetivo, a partir del cual, la Administración responde por aquellos daños, patrimoniales o extrapatrimoniales, que la víctima no esté obligada, jurídicamente, a soportar, con total prescindencia de los factores del dolo o la culpa (excepto en lo que se refiere a la responsabilidad personal del servidor).»
->
-> Sala Primera, [53-F-S1-2010](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-765253), considerando IV.
+<Cita fuente="Sala Primera" enlace="53-F-S1-2010" href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-765253" detalle="considerando IV">
+
+«Se trata de un esquema preeminentemente objetivo, a partir del cual, la Administración responde por aquellos daños, patrimoniales o extrapatrimoniales, que la víctima no esté obligada, jurídicamente, a soportar, con total prescindencia de los factores del dolo o la culpa (excepto en lo que se refiere a la responsabilidad personal del servidor).»
+
+</Cita>
 
 La misma sentencia precisa que el régimen es de responsabilidad «objetiva moderada» y que el deber de indemnizar tampoco opera como una transferencia patrimonial automática: exige que concurran todos sus elementos.
 
@@ -110,9 +112,11 @@ El **daño moral** tiene reconocimiento expreso: «Cabrá responsabilidad por el
 
 El artículo 122 del CPCA permite al tribunal condenar en abstracto al pago de daños y perjuicios cuando consta su existencia pero no su cuantía, y aun cuando no consten ni su existencia ni su cuantía, siempre que sean consecuencia de la conducta objeto de la demanda. El Dr. González Camacho redactó esa fórmula en la subcomisión que preparó el Código y explicó el problema que buscaba corregir:
 
-> «Ocurre, y ahora sí, explicándolo de esta manera, que en muchos supuestos hay daños y perjuicios que aunque son lógica consecuencia y en algunas ocasiones evidentes, se rechaza la demanda de los daños y perjuicios porque no hay una prueba contundente respecto de ellos.»
->
-> Subcomisión del expediente legislativo 15.134, acta n.º 27 de 8 de junio de 2005, folio 1435.
+<Cita fuente="Subcomisión del expediente legislativo 15.134" enlace="acta n.º 27 de 8 de junio de 2005" detalle="folio 1435">
+
+«Ocurre, y ahora sí, explicándolo de esta manera, que en muchos supuestos hay daños y perjuicios que aunque son lógica consecuencia y en algunas ocasiones evidentes, se rechaza la demanda de los daños y perjuicios porque no hay una prueba contundente respecto de ellos.»
+
+</Cita>
 
 En la misma intervención precisó que la condena en abstracto debe cumplir los presupuestos de toda condena pecuniaria, en particular el nexo causal.
 
@@ -126,11 +130,15 @@ La indemnización debe llegar al acreedor con su valor real. Si la condena es di
 
 El artículo 198 de la LGAP, en la redacción que le dio la Ley 9057 de 2012, contiene tres reglas:
 
-> «El derecho de reclamar la indemnización a la Administración prescribirá en cuatro años, contados a partir del hecho que motiva la responsabilidad.
->
-> El derecho de reclamar la indemnización contra los servidores públicos prescribirá en cuatro años desde que se tenga conocimiento del hecho dañoso.
->
-> En los casos previstos en los dos párrafos anteriores, cuando se trate del derecho a reclamar daños y perjuicios ocasionados a personas menores de edad, el plazo de prescripción empezará a correr a partir de que la persona afectada haya cumplido la mayoría de edad.»
+<Cita fuente="Ley General de la Administración Pública" enlace="artículo 198" href="https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=13231&param2=150737&param3=1">
+
+«El derecho de reclamar la indemnización a la Administración prescribirá en cuatro años, contados a partir del hecho que motiva la responsabilidad.
+
+El derecho de reclamar la indemnización contra los servidores públicos prescribirá en cuatro años desde que se tenga conocimiento del hecho dañoso.
+
+En los casos previstos en los dos párrafos anteriores, cuando se trate del derecho a reclamar daños y perjuicios ocasionados a personas menores de edad, el plazo de prescripción empezará a correr a partir de que la persona afectada haya cumplido la mayoría de edad.»
+
+</Cita>
 
 Los dos plazos de cuatro años provienen de la Ley 7611 de 1996; la Ley 9057 conservó ese texto y añadió la regla sobre personas menores de edad.
 
@@ -140,9 +148,11 @@ La confusión más frecuente en esta materia es aplicar a la demanda por daños 
 
 Esa solución responde a la intención expresa de quienes redactaron el Código. En la subcomisión del expediente legislativo 15.134, el Dr. González Camacho explicó que la caducidad de la acción y el acto consentido operan en los supuestos en que se impugna un acto en ejercicio de potestades públicas, y que en la materia civil de Hacienda, donde incluyó la responsabilidad extracontractual, el objeto del proceso es el aspecto patrimonial. Y concluyó:
 
-> «De allí que se quiso mantener esta regla, de que no existe una caducidad, de la acción de ese año que ahora estamos aprobando, sino el que corresponda al período de prescripción del derecho de fondo.»
->
-> Subcomisión del expediente legislativo 15.134, acta n.º 14 de 30 de marzo de 2005, folio 949.
+<Cita fuente="Subcomisión del expediente legislativo 15.134" enlace="acta n.º 14 de 30 de marzo de 2005" detalle="folio 949">
+
+«De allí que se quiso mantener esta regla, de que no existe una caducidad, de la acción de ese año que ahora estamos aprobando, sino el que corresponda al período de prescripción del derecho de fondo.»
+
+</Cita>
 
 En esa misma sesión citó los cuatro años del artículo 198 como ejemplo del plazo de fondo aplicable. Cuando la demanda pretende además anular el acto que causó el daño, esa pretensión anulatoria sigue sometida al artículo 39 o, si el acto es absolutamente nulo, al régimen de efectos continuados del artículo 40. Cómo se articulan ambos plazos en un asunto determinado es una de las definiciones que deben tomarse antes de redactar la demanda. La delimitación del acto de efectos continuados se analiza en [Caducidad de la acción](/jurisprudencia-destacada/caducidad-de-la-accion).
 
@@ -150,9 +160,11 @@ En esa misma sesión citó los cuatro años del artículo 198 como ejemplo del p
 
 El artículo 198 fija el inicio en «el hecho que motiva la responsabilidad». La Sala Primera ha precisado que esa regla debe leerse con dos elementos: uno objetivo, la existencia del hecho lesivo, y otro subjetivo, el conocimiento del daño, de la conducta que lo produjo y de su autor:
 
-> «Con respecto al inicio de ese plazo prescriptivo, esta Sala ha señalado que si bien el mandato 198 dispone su inicio desde que se produce el hecho dañoso, lo cierto es que debe interpretarse tal determinación con arreglo a las circunstancias particulares de cada caso y que no fueron previstas de forma expresa por la ley.»
->
-> Sala Primera, [8-F-S1-2013](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767649), considerando VI.
+<Cita fuente="Sala Primera" enlace="8-F-S1-2013" href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767649" detalle="considerando VI">
+
+«Con respecto al inicio de ese plazo prescriptivo, esta Sala ha señalado que si bien el mandato 198 dispone su inicio desde que se produce el hecho dañoso, lo cierto es que debe interpretarse tal determinación con arreglo a las circunstancias particulares de cada caso y que no fueron previstas de forma expresa por la ley.»
+
+</Cita>
 
 La Sala reiteró literalmente ese criterio en 2025 ([1023-F-S1-2025](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1309432)), y la Procuraduría lo ha hecho suyo ([dictamen C-148-2017](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=19953&param2=1&param3=1)). En la misma línea, el plazo puede iniciar cuando la víctima se encuentra en condiciones de invocar su derecho a la indemnización ([615-F-S1-2010](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-765501); [502-F-S1-2011](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-766137)).
 
@@ -162,17 +174,7 @@ El artículo 198 no regula los **daños continuados**, y su cómputo es obra de 
 
 Por tratarse de un plazo de prescripción, admite interrupción ([8-F-S1-2013](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767649); [dictamen C-251-2014](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=18336&param2=1&param3=1)). La jurisprudencia ha reconocido efecto interruptor al reclamo administrativo de indemnización, de modo que el plazo se reinicia desde que se notifica su rechazo ([654-F-S1-2008](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-764867), considerando III), y a la notificación del emplazamiento de la demanda, que hoy regula el artículo 36.2 del Código Procesal Civil. También ha fijado sus límites: una gestión presentada cuando el plazo ya se había cumplido no lo interrumpe ([510-F-S1-2014](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-768601)), y las gestiones que no persiguen la indemnización carecen de ese efecto ([836-F-S1-2016](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-770498)).
 
-### Cuadro de plazos
-
-| Qué se reclama | Plazo | Desde cuándo corre | Fuente |
-|---|---|---|---|
-| Indemnización a la Administración | Cuatro años (prescripción) | El hecho que motiva la responsabilidad, conocido por la víctima | LGAP, art. 198; Sala Primera, 8-F-S1-2013 |
-| Indemnización a un servidor público | Cuatro años (prescripción) | El conocimiento del hecho dañoso | LGAP, art. 198 |
-| Daños a una persona menor de edad | Cuatro años (prescripción) | La mayoría de edad de la persona afectada | LGAP, art. 198 |
-| Anulación del acto que causó el daño | Un año (caducidad) | Notificación, publicación o cese de la actuación material, según el caso | CPCA, art. 39 |
-| Anulación de un acto absolutamente nulo o de una omisión con efectos continuados | Mientras subsistan sus efectos; luego, un año | El cese de los efectos | CPCA, art. 40 |
-| Ejecución de la indemnización ordenada en un amparo o hábeas corpus | Cuatro años (prescripción) | La firmeza de la sentencia constitucional | CPCA, art. 179 |
-| Recuperación de lo pagado por el Estado contra su servidor condenado | Un año | La firmeza de la sentencia que fijó la suma | LGAP, art. 208 |
+<PlazosResponsabilidad />
 
 ---
 

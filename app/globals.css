@@ -355,10 +355,6 @@ body {
 }
 .dark .prose-article a { color: var(--color-hilo); }
 .dark .prose-article a:hover { color: var(--color-hilo-texto); }
-.dark .prose-article blockquote {
-  border-left: 3px solid var(--color-hilo);
-  color: #F7F3EE80;
-}
 .dark .prose-article code {
   background: #F7F3EE0A;
 }
@@ -388,17 +384,10 @@ body {
 }
 .prose-article h1 { font-size: 2rem; font-weight: var(--t-head-weight); letter-spacing: -0.015em; margin-top: 2.5rem; margin-bottom: 1rem; }
 .prose-article h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
-.prose-article h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.prose-article h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2.25rem; margin-bottom: 0.75rem; }
 .prose-article p { margin-bottom: 1.25rem; max-width: 65ch; text-align: justify; }
 .prose-article a { color: #6B1D3A; text-decoration: underline; text-underline-offset: 2px; }
 .prose-article a:hover { color: #8B2252; }
-.prose-article blockquote {
-  border-left: 3px solid #6B1D3A;
-  padding-left: 1.25rem;
-  margin: 1.5rem 0;
-  font-style: normal;
-  color: #1C1C1E80;
-}
 .prose-article ul,
 .prose-article ol {
   padding-left: 1.5rem;
@@ -1215,16 +1204,43 @@ html {
 .prose-article li > ul,
 .prose-article li > ol { margin-top: 0.5rem; }
 
-/* Citas destacadas: fondo sutil y esquina redondeada */
+/* Citas literales, al modo de una revista jurídica: sin fondo ni recuadro,
+   un filete fino y neutro a la izquierda, el texto en el color del cuerpo y
+   el crédito de la fuente en una línea aparte (componente <Cita>). */
 .prose-article blockquote {
-  background: color-mix(in oklab, #6B1D3A 5%, transparent);
-  border-radius: 0 8px 8px 0;
-  padding: 1rem 1.25rem;
-  color: #1C1C1E;
+  margin: 2.25rem 0;
+  padding: 0.125rem 0 0.125rem 1.5rem;
+  border-left: 1px solid color-mix(in oklab, var(--color-cream) 28%, transparent);
+  background: none;
+  border-radius: 0;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: color-mix(in oklab, var(--color-cream) 86%, transparent);
 }
-.dark .prose-article blockquote {
-  background: color-mix(in oklab, var(--color-hilo) 8%, transparent);
-  color: #F7F3EEcc;
+.prose-article blockquote p { margin-bottom: 0.9rem; }
+.prose-article blockquote p:last-child { margin-bottom: 0; }
+.prose-article .gc-cita { margin: 2.5rem 0; }
+.prose-article .gc-cita blockquote { margin: 0; }
+.prose-article .gc-cita figcaption {
+  margin-top: 0.75rem;
+  padding-left: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+}
+.prose-article .gc-cita figcaption a {
+  color: inherit;
+  text-decoration-color: color-mix(in oklab, var(--color-cream) 30%, transparent);
+}
+.prose-article .gc-cita figcaption a:hover { color: var(--color-cream); }
+.prose-article .gc-juris-redacta {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--fig-muted);
 }
 
 /* Tablas Markdown legibles también en modo claro
@@ -1688,7 +1704,6 @@ html:not(.dark) .gc-lectura .prose-article hr {
   background: #8B2252;
   margin: 3rem 0 2.25rem;
 }
-html:not(.dark) .gc-lectura .prose-article blockquote { color: #6B1D3A; }
 html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B2252; }
 
 /* ── Tarjetas de los índices (artículos y áreas) ──

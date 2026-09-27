@@ -27,6 +27,8 @@ import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
 import { FuentesResponsabilidadPatrimonial } from "@/components/article/FuentesResponsabilidadPatrimonial";
+import { Cita } from "@/components/article/Cita";
+import { PlazosResponsabilidad } from "@/components/article/PlazosResponsabilidad";
 import {
   MapaRecursosLgap,
   PlazoTresDiasLgap,
@@ -166,6 +168,8 @@ const ARTICLE_COMPONENTS = {
   CapacitacionEleinmsa,
   SeminarioCautelares,
   FuentesResponsabilidadPatrimonial,
+  Cita,
+  PlazosResponsabilidad,
   MapaRecursosLgap,
   PlazoTresDiasLgap,
   FlujoApelacionSubsidio,

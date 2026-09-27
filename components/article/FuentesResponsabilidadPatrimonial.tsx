@@ -15,7 +15,8 @@ const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 type Fuente = { titulo: string; detalle: string; href?: string };
 type Criterio = { numero: string; organo: string; fecha: string; tema: string; criterio: string; href?: string };
 
-const GC = "Sala Primera · redacta González Camacho";
+const GC = "Sala Primera";
+const REDACTA = new Set(["Voto 584-F-2005","Voto 979-F-2006","Voto 213-F-S1-2008","Voto 654-F-S1-2008","Voto 769-F-S1-2008","Voto 211-F-S1-2009","Voto 300-F-S1-2009","Voto 53-F-S1-2010","Voto 687-F-S1-2010","Voto 119-F-S1-2012","Voto 1144-F-S1-2012","Voto 7-F-S1-2013","Voto 8-F-S1-2013"]);
 
 const NORMAS: Fuente[] = [
   { titulo: "Constitución Política", detalle: "Arts. 9, 41 y 45", href: SINALEVI(871, 147492) },
@@ -122,6 +123,7 @@ export function FuentesResponsabilidadPatrimonial() {
               <span className="gc-juris-criterio">
                 <span className="gc-juris-tema">{c.tema}</span>
                 {c.criterio}
+                {REDACTA.has(c.numero) && <span className="gc-juris-redacta">Redactó el magistrado González Camacho.</span>}
               </span>
             </li>
           ))}
