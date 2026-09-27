@@ -30,8 +30,13 @@ export function FirmHero() {
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.2s" }}>
-            <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/65 font-medium">
-              Fundado y dirigido por el Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
+            {/* Firma editorial: la fórmula arriba, pequeña y gris; el nombre del
+                director en su propia línea, más grande y en tinta plena. */}
+            <p className="mt-4 text-[11px] tracking-[0.2em] uppercase text-cream/55 font-medium">
+              Fundado y dirigido por el
+            </p>
+            <p className="mt-1.5 text-[13px] tracking-[0.08em] sm:text-sm sm:tracking-[0.14em] md:text-base uppercase text-cream font-semibold">
+              Dr. &#211;scar Eduardo Gonz&#225;lez Camacho
             </p>
           </div>
 
