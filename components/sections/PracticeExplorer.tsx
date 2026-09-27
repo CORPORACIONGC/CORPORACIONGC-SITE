@@ -153,17 +153,17 @@ export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
               onClick={() => select(i)}
               onMouseEnter={() => select(i)}
               onKeyDown={(e) => onKey(e, i)}
-              className="group relative flex w-full items-baseline justify-between gap-6 border-b border-cream/10 py-6 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+              className="group relative flex w-full items-baseline justify-between gap-6 border-b border-cream/10 py-6 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
             >
               <span
                 aria-hidden="true"
-                className={`absolute inset-x-0 -bottom-px h-px origin-left bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] dark:bg-gold ${
+                className={`absolute inset-x-0 -bottom-px h-px origin-left bg-burgundy-light transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] dark:bg-hilo ${
                   on ? "scale-x-100" : "scale-x-0"
                 }`}
               />
               <span
                 className={`text-[28px] font-light leading-[1.1] tracking-[-0.015em] transition-colors duration-300 xl:text-[32px] ${
-                  on ? "text-burgundy dark:text-gold" : "text-cream"
+                  on ? "text-burgundy-light dark:text-hilo-texto" : "text-cream"
                 }`}
               >
                 {g.title}
@@ -172,7 +172,7 @@ export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
                 <ArrowRight
                   size={16}
                   aria-hidden="true"
-                  className={`text-burgundy transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] dark:text-gold ${
+                  className={`text-burgundy-light transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] dark:text-hilo-texto ${
                     on ? "translate-x-0 opacity-100" : "-translate-x-1.5 opacity-0"
                   }`}
                 />
@@ -202,14 +202,14 @@ export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
               tabIndex={on ? 0 : -1}
               onClick={() => select(i, false, true)}
               onKeyDown={(e) => onKey(e, i, true)}
-              className={`relative shrink-0 whitespace-nowrap pb-4 pt-1 text-base outline-none transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${
-                on ? "font-semibold text-burgundy dark:text-gold" : "text-cream/70"
+              className={`relative shrink-0 whitespace-nowrap pb-4 pt-1 text-base outline-none transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo ${
+                on ? "font-semibold text-burgundy-light dark:text-hilo-texto" : "text-cream/70"
               }`}
             >
               {g.title}
               <span
                 aria-hidden="true"
-                className={`absolute inset-x-0 -bottom-px h-0.5 bg-burgundy transition-opacity duration-300 dark:bg-gold ${
+                className={`absolute inset-x-0 -bottom-px h-0.5 bg-burgundy-light transition-opacity duration-300 dark:bg-hilo ${
                   on ? "opacity-100" : "opacity-0"
                 }`}
               />
@@ -237,20 +237,20 @@ export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
                 <li key={a.slug}>
                   <Link
                     href={`/areas/${a.slug}`}
-                    className="group relative block border-b border-cream/10 py-5 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold lg:py-6"
+                    className="group relative block border-b border-cream/10 py-5 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo lg:py-6"
                   >
                     <span
                       aria-hidden="true"
-                      className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-gold"
+                      className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy-light transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
                     />
                     <span className="flex items-center justify-between gap-4">
-                      <span className="text-base font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-gold">
+                      <span className="text-base font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-hilo-texto">
                         {a.title}
                       </span>
                       <ArrowRight
                         size={15}
                         aria-hidden="true"
-                        className="shrink-0 -translate-x-1.5 text-burgundy opacity-0 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100 dark:text-gold"
+                        className="shrink-0 -translate-x-1.5 text-burgundy-light opacity-0 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100 dark:text-hilo-texto"
                       />
                     </span>
                     <span className="mt-1.5 block text-[13px] leading-relaxed text-cream/65 line-clamp-2">

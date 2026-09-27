@@ -39,7 +39,7 @@ function resaltar(texto: string, aguja: string) {
   return (
     <>
       {letras.slice(0, i).join("")}
-      <mark className="bg-transparent text-burgundy underline decoration-burgundy/40 decoration-2 underline-offset-[3px] dark:text-gold dark:decoration-gold/40">
+      <mark className="bg-transparent text-burgundy underline decoration-burgundy/40 decoration-2 underline-offset-[3px] dark:text-hilo-texto dark:decoration-hilo/40">
         {letras.slice(i, i + aguja.length).join("")}
       </mark>
       {letras.slice(i + aguja.length).join("")}
@@ -281,7 +281,7 @@ export function NormaNavegable({
                 setBusca("");
                 campo.current?.focus();
               }}
-              className="shrink-0 text-sm text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+              className="shrink-0 text-sm text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
             >
               Limpiar
             </button>
@@ -306,7 +306,7 @@ export function NormaNavegable({
                   title={t.replace(/^T[íi]tulo\s+[IVXL]+\s*·\s*/, "")}
                   onClick={() => elegirTitulo(i)}
                   className={`block text-left text-[13px] leading-snug transition-colors duration-300 ${
-                    on ? "text-burgundy dark:text-gold" : "text-cream/65 hover:text-burgundy dark:hover:text-gold"
+                    on ? "text-burgundy dark:text-hilo-texto" : "text-cream/65 hover:text-burgundy dark:hover:text-hilo-texto"
                   }`}
                 >
                   {romano(t) && <span className="tabular-nums">{romano(t)} </span>}
@@ -329,7 +329,7 @@ export function NormaNavegable({
                   <button
                     type="button"
                     onClick={() => desplazarA(c.art)}
-                    className="block text-left text-[12.5px] leading-snug text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+                    className="block text-left text-[12.5px] leading-snug text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
                   >
                     {grupoCorto(grupos[c.i] ?? "").toLowerCase()}
                   </button>
@@ -365,7 +365,7 @@ export function NormaNavegable({
                   setBusca("");
                   campo.current?.focus();
                 }}
-                className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
               >
                 Ver la norma completa
               </button>
@@ -408,22 +408,22 @@ export function NormaNavegable({
                   type="button"
                   aria-expanded={on}
                   onClick={() => abrir(art)}
-                  className="group relative grid w-full grid-cols-[40px_minmax(0,1fr)_auto] items-baseline gap-3 py-3 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:grid-cols-[60px_minmax(0,1fr)_auto] sm:gap-4"
+                  className="group relative grid w-full grid-cols-[40px_minmax(0,1fr)_auto] items-baseline gap-3 py-3 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo sm:grid-cols-[60px_minmax(0,1fr)_auto] sm:gap-4"
                 >
                   {/* El mismo trazo que recorre las filas del equipo y de las áreas */}
                   <span
                     aria-hidden="true"
-                    className={`absolute inset-x-0 -bottom-px h-px origin-left bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] dark:bg-gold ${
+                    className={`absolute inset-x-0 -bottom-px h-px origin-left bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] dark:bg-hilo ${
                       on ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100 group-focus-visible:scale-x-100"
                     }`}
                   />
-                  <span className={`text-[15px] tabular-nums ${on ? "text-burgundy dark:text-gold" : "text-cream/65"}`}>
+                  <span className={`text-[15px] tabular-nums ${on ? "text-burgundy dark:text-hilo-texto" : "text-cream/65"}`}>
                     {art}
                   </span>
                   <span className="min-w-0">
                     <span
                       className={`block text-[15px] leading-snug transition-colors duration-300 ${
-                        derogado ? "text-cream/65" : on ? "text-burgundy dark:text-gold" : "text-cream group-hover:text-burgundy dark:group-hover:text-gold"
+                        derogado ? "text-cream/65" : on ? "text-burgundy dark:text-hilo-texto" : "text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto"
                       }`}
                     >
                       {busca && !/^\d+$/.test(busca.trim()) ? resaltar(rotulo, aguja) : rotulo || `Artículo ${art}`}
@@ -448,7 +448,7 @@ export function NormaNavegable({
                     size={13}
                     weight="bold"
                     aria-hidden="true"
-                    className={`mt-1 shrink-0 transition-transform duration-300 ${on ? "rotate-180 text-burgundy dark:text-gold" : "text-cream/65"}`}
+                    className={`mt-1 shrink-0 transition-transform duration-300 ${on ? "rotate-180 text-burgundy dark:text-hilo-texto" : "text-cream/65"}`}
                   />
                 </button>
 
@@ -510,7 +510,7 @@ export function NormaNavegable({
                           <li key={v.voto} className="text-[14px] leading-snug">
                             <Link
                               href={`/jurisprudencia-destacada/${v.slug}`}
-                              className="font-medium text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                              className="font-medium text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
                             >
                               Voto {v.voto}
                             </Link>
@@ -521,7 +521,7 @@ export function NormaNavegable({
                           <li className="text-[14px] leading-snug">
                             <Link
                               href={guia.href}
-                              className="font-medium text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                              className="font-medium text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
                             >
                               {guia.texto}
                             </Link>
@@ -541,7 +541,7 @@ export function NormaNavegable({
                             `Artículo ${art}${rotulo ? `. ${rotulo}` : ""}\n\n${cuerpo?.texto ?? ""}\n\n${ficha.nombre} (${ficha.identificador})`,
                           )
                         }
-                        className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy disabled:opacity-40 dark:hover:text-gold"
+                        className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy disabled:opacity-40 dark:hover:text-hilo-texto"
                       >
                         {copiado === `t-${art}` ? (
                           <Check size={12} weight="bold" aria-hidden="true" />
@@ -555,7 +555,7 @@ export function NormaNavegable({
                         onClick={() =>
                           copiar(`e-${art}`, `${window.location.origin}${window.location.pathname}#art-${art}`)
                         }
-                        className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy dark:hover:text-gold"
+                        className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy dark:hover:text-hilo-texto"
                       >
                         {copiado === `e-${art}` ? (
                           <Check size={12} weight="bold" aria-hidden="true" />
@@ -568,7 +568,7 @@ export function NormaNavegable({
                         href={ficha.sinalevi}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy dark:hover:text-gold"
+                        className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy dark:hover:text-hilo-texto"
                       >
                         Ver en el SINALEVI
                         <ArrowSquareOut size={11} aria-hidden="true" />

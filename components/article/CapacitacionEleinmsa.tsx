@@ -25,7 +25,7 @@ export function CapacitacionEleinmsa() {
       </div>
 
       <figcaption className="p-6 md:p-8">
-        <p className="m-0 mb-3 text-left text-[11px] font-semibold uppercase tracking-[0.16em] text-burgundy dark:text-gold">
+        <p className="m-0 mb-3 text-left text-[11px] font-semibold uppercase tracking-[0.16em] text-burgundy dark:text-hilo-texto">
           De la pr&aacute;ctica de Corporaci&oacute;n GC
         </p>
         <h3 className="m-0 mb-3 font-display text-xl text-cream md:text-2xl">
@@ -40,7 +40,7 @@ export function CapacitacionEleinmsa() {
         </p>
         <Link
           href="/abogados/oscar-gonzalez"
-          className="inline-flex items-center gap-1.5 text-[14px] font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+          className="inline-flex items-center gap-1.5 text-[14px] font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
         >
           Conozca su trayectoria
           <span aria-hidden="true">&rarr;</span>

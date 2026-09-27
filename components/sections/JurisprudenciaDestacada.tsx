@@ -121,10 +121,10 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
         <AnimatedEntry delay={0.3}>
           <Link
             href={`/jurisprudencia-destacada/${featured.slug}`}
-            className="group block relative rounded-2xl md:rounded-3xl overflow-hidden border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.04] shadow-[0_30px_80px_-25px_rgba(107,29,58,0.35),0_8px_24px_-8px_rgba(107,29,58,0.18)] dark:shadow-[0_24px_60px_-22px_rgba(0,0,0,0.5)] hover:border-burgundy/25 dark:hover:border-gold/35 hover:shadow-[0_40px_100px_-25px_rgba(107,29,58,0.45),0_12px_30px_-8px_rgba(107,29,58,0.25)] dark:hover:shadow-[0_30px_80px_-22px_rgba(0,0,0,0.6)] transition-all duration-500"
+            className="group block relative rounded-2xl md:rounded-3xl overflow-hidden border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.04] shadow-[0_30px_80px_-25px_rgba(107,29,58,0.35),0_8px_24px_-8px_rgba(107,29,58,0.18)] dark:shadow-[0_24px_60px_-22px_rgba(0,0,0,0.5)] hover:border-burgundy/25 dark:hover:border-hilo/35 hover:shadow-[0_40px_100px_-25px_rgba(107,29,58,0.45),0_12px_30px_-8px_rgba(107,29,58,0.25)] dark:hover:shadow-[0_30px_80px_-22px_rgba(0,0,0,0.6)] transition-all duration-500"
           >
             {/* Inner glass tint — subtle warm wash */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gold/[0.04] via-transparent to-burgundy/[0.05] pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-hilo/[0.04] via-transparent to-burgundy/[0.05] pointer-events-none" />
 
             {/* Top edge highlight (glass gleam) */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/15 dark:via-white/30 to-transparent pointer-events-none" />
@@ -147,7 +147,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                   </div>
 
                   {/* Title */}
-                  <h3 className="type-title text-cream group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-500 mb-4">
+                  <h3 className="type-title text-cream group-hover:text-burgundy-light dark:group-hover:text-hilo-texto transition-colors duration-500 mb-4">
                     {featured.titulo}
                   </h3>
 
@@ -169,7 +169,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                   <div className="text-sm font-medium tabular-nums text-cream/85">
                     {featured.numero}
                   </div>
-                  <div className="inline-flex items-center gap-2 text-sm font-medium text-burgundy dark:text-gold/90 group-hover:text-burgundy-dark dark:group-hover:text-gold transition-colors duration-300">
+                  <div className="inline-flex items-center gap-2 text-sm font-medium text-burgundy dark:text-hilo-texto/90 group-hover:text-burgundy-dark dark:group-hover:text-hilo-texto transition-colors duration-300">
                     Leer la sentencia
                     <ArrowRight
                       size={14}
@@ -181,12 +181,12 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
               </div>
 
               {/* Right: pull quote — glass panel with burgundy / gold tint */}
-              <div className="relative p-8 md:p-12 lg:p-14 lg:border-l border-burgundy/15 dark:border-white/[0.08] flex items-center bg-gradient-to-br from-burgundy/[0.06] via-transparent to-gold/[0.05]">
+              <div className="relative p-8 md:p-12 lg:p-14 lg:border-l border-burgundy/15 dark:border-white/[0.08] flex items-center bg-gradient-to-br from-burgundy/[0.06] via-transparent to-hilo/[0.05]">
                 <div className="relative">
                   <Quotes
                     size={42}
                     weight="fill"
-                    className="absolute -top-3 -left-1 text-burgundy/30 dark:text-gold/35"
+                    className="absolute -top-3 -left-1 text-burgundy/30 dark:text-[#9B2A5C]"
                   />
                   <blockquote className="relative pl-12 pt-2">
                     <p className="type-quote text-cream">
@@ -194,8 +194,8 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                     </p>
                     {featured.pullQuote.citation && (
                       <footer className="mt-7 flex items-center gap-3">
-                        <div className="h-px w-7 bg-burgundy/40 dark:bg-gold/40" />
-                        <cite className="not-italic type-label text-burgundy/85 dark:text-gold/80">
+                        <div className="h-px w-7 bg-burgundy/40 dark:bg-hilo/40" />
+                        <cite className="not-italic type-label text-burgundy/85 dark:text-hilo-texto/80">
                           {featured.pullQuote.citation}
                         </cite>
                       </footer>
@@ -210,7 +210,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
               <Scales
                 size={14}
                 weight="duotone"
-                className="text-burgundy/65 dark:text-gold/65 shrink-0"
+                className="text-burgundy/65 dark:text-hilo-texto/65 shrink-0"
               />
               <span className="text-[13px] text-cream/65">
                 Redactado por el{" "}
@@ -233,7 +233,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
               <StaggerItem key={s.slug}>
                 <Link
                   href={`/jurisprudencia-destacada/${s.slug}`}
-                  className="group relative block h-full p-6 rounded-xl border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.03] shadow-[0_18px_40px_-18px_rgba(107,29,58,0.25),0_4px_12px_-4px_rgba(107,29,58,0.12)] dark:shadow-[0_12px_30px_-15px_rgba(0,0,0,0.4)] hover:border-burgundy/25 dark:hover:border-gold/25 hover:shadow-[0_28px_60px_-18px_rgba(107,29,58,0.35),0_8px_18px_-4px_rgba(107,29,58,0.18)] hover:-translate-y-0.5 transition-all duration-400 overflow-hidden"
+                  className="group relative block h-full p-6 rounded-xl border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.03] shadow-[0_18px_40px_-18px_rgba(107,29,58,0.25),0_4px_12px_-4px_rgba(107,29,58,0.12)] dark:shadow-[0_12px_30px_-15px_rgba(0,0,0,0.4)] hover:border-burgundy/25 dark:hover:border-hilo/25 hover:shadow-[0_28px_60px_-18px_rgba(107,29,58,0.35),0_8px_18px_-4px_rgba(107,29,58,0.18)] hover:-translate-y-0.5 transition-all duration-400 overflow-hidden"
                 >
                   {/* Top hairline gleam */}
                   <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/15 dark:via-white/20 to-transparent pointer-events-none" />
@@ -252,7 +252,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                       {s.fechaCorta}
                     </span>
                   </div>
-                  <h4 className="type-card-title text-cream group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300 mb-2">
+                  <h4 className="type-card-title text-cream group-hover:text-burgundy-light dark:group-hover:text-hilo-texto transition-colors duration-300 mb-2">
                     {s.titulo}
                   </h4>
                   <p className="text-[13px] text-cream/65">

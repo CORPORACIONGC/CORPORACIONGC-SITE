@@ -60,7 +60,7 @@ export function TeamSection() {
         <div className="mt-10 flex lg:mt-14 lg:justify-end">
           <Link
             href="/sobre-nosotros#abogados"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
           >
             Conozca al equipo completo
             <ArrowRight

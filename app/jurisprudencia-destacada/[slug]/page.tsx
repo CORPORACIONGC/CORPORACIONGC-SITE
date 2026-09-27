@@ -147,7 +147,6 @@ export default async function SentenciaDestacadaPage({
     ["Materia", sentencia.materia],
     ["Redacta", sentencia.redactor],
   ];
-  const sintesis = sentencia.sintesisPortada;
 
   return (
     <>
@@ -161,13 +160,13 @@ export default async function SentenciaDestacadaPage({
       />
       <Navbar />
 
-      <main className="min-h-[100dvh] bg-surface">
+      <main className="gc-lectura min-h-[100dvh] bg-surface">
         {/* ─── Portada del documento: título y ficha de la resolución ─── */}
         <header className="pt-28 md:pt-36">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10">
             <Link
               href="/jurisprudencia-destacada"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
             >
               <ArrowLeft size={14} weight="regular" />
               Jurisprudencia destacada
@@ -175,7 +174,7 @@ export default async function SentenciaDestacadaPage({
 
             <div className="mt-10 grid gap-12 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-20">
               <div>
-                <p className="type-label text-burgundy dark:text-gold">
+                <p className="type-label text-burgundy-light dark:text-hilo-texto">
                   {[sentencia.estado && ETIQUETA_ESTADO[sentencia.estado], sentencia.area].filter(Boolean).join(" · ")}
                 </p>
                 <h1 className="type-headline mt-5 max-w-[18ch] text-cream">{sentencia.titulo}</h1>
@@ -199,34 +198,13 @@ export default async function SentenciaDestacadaPage({
                   href={nexusUrl(sentencia.nexusId)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
                 >
                   Texto íntegro en Nexus
                   <ArrowSquareOut size={14} weight="bold" aria-hidden="true" />
                 </a>
               </aside>
             </div>
-
-            {/* En síntesis: el caso, el análisis y el impacto */}
-            {sintesis && (
-              <section
-                aria-label="En síntesis"
-                className="mt-16 grid border-y border-cream/10 md:mt-20 md:grid-cols-3 md:divide-x md:divide-cream/10"
-              >
-                {[
-                  ["El caso", sintesis.caso],
-                  ["El análisis", sintesis.analisis],
-                  ["El impacto", sintesis.impacto],
-                ].map(([t, x]) => (
-                  <div key={t} className="border-b border-cream/10 py-7 last:border-b-0 md:border-b-0 md:px-8 md:first:pl-0 md:last:pr-0">
-                    <h2 className="type-label text-cream/65">{t}</h2>
-                    <p className="mt-3 text-[15px] leading-[1.7] text-cream/80">
-                      <ConNegritas texto={x} />
-                    </p>
-                  </div>
-                ))}
-              </section>
-            )}
           </div>
         </header>
 
@@ -240,9 +218,9 @@ export default async function SentenciaDestacadaPage({
                   <li key={x.id}>
                     <a
                       href={`#${x.id}`}
-                      className="-ml-px flex gap-3 border-l border-transparent py-1.5 pl-4 text-sm leading-snug text-cream/70 transition-colors duration-300 hover:border-burgundy hover:text-cream dark:hover:border-gold"
+                      className="-ml-px flex gap-3 border-l border-transparent py-1.5 pl-4 text-sm leading-snug text-cream/70 transition-colors duration-300 hover:border-burgundy hover:text-cream dark:hover:border-hilo"
                     >
-                      <span className="w-7 shrink-0 tabular-nums text-cream/65">{romanos[i]}</span>
+                      <span className="w-7 shrink-0 tabular-nums text-burgundy-light dark:text-cream/65">{romanos[i]}</span>
                       {x.titulo}
                     </a>
                   </li>
@@ -258,14 +236,14 @@ export default async function SentenciaDestacadaPage({
 
             {/* ─── Fuentes: texto íntegro en Nexus y bibliografía ─── */}
             <section id="fuentes" className="scroll-mt-32 pb-8">
-              <h2 className="type-title mb-8 border-b border-cream/10 pb-5 text-cream md:mb-10 md:pb-6">
+              <h2 className="type-title mb-8 border-b border-burgundy-light pb-5 text-cream md:mb-10 md:pb-6 dark:border-cream/10">
                 Texto íntegro y bibliografía
               </h2>
               <a
                 href={nexusUrl(sentencia.nexusId)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col gap-5 rounded-md border border-cream/10 p-6 transition-colors duration-300 hover:border-burgundy/30 dark:hover:border-gold/30 md:flex-row md:items-center md:justify-between md:p-7"
+                className="group flex flex-col gap-5 rounded-md border border-cream/10 p-6 transition-colors duration-300 hover:border-burgundy/30 dark:hover:border-hilo/30 md:flex-row md:items-center md:justify-between md:p-7"
               >
                 <div>
                   <p className="text-[17px] font-semibold tracking-[-0.01em] text-cream">
@@ -275,7 +253,7 @@ export default async function SentenciaDestacadaPage({
                     Resultandos, considerandos, por tanto y firmas, en la fuente oficial.
                   </p>
                 </div>
-                <span className="inline-flex shrink-0 items-center gap-2 text-sm font-medium text-burgundy transition-colors group-hover:text-burgundy-light dark:text-gold dark:group-hover:text-gold-light">
+                <span className="inline-flex shrink-0 items-center gap-2 text-sm font-medium text-burgundy transition-colors group-hover:text-burgundy-light dark:text-hilo-texto dark:group-hover:text-hilo-texto">
                   Leer en Nexus
                   <ArrowSquareOut size={14} weight="bold" aria-hidden="true" />
                 </span>
@@ -407,7 +385,7 @@ export default async function SentenciaDestacadaPage({
                 </p>
                 <Link
                   href="/abogados/oscar-gonzalez"
-                  className="group mt-4 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+                  className="group mt-4 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
                 >
                   Ver su trayectoria
                   <ArrowRight size={14} weight="bold" aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -429,10 +407,10 @@ export default async function SentenciaDestacadaPage({
                   <li key={a.slug}>
                     <Link
                       href={`/areas/${a.slug}`}
-                      className="group flex h-full items-start justify-between gap-4 rounded-xl border border-cream/10 bg-cream/[0.02] p-5 transition-colors duration-300 hover:border-burgundy/25 dark:hover:border-gold/30"
+                      className="group flex h-full items-start justify-between gap-4 rounded-xl border border-cream/10 bg-cream/[0.02] p-5 transition-colors duration-300 hover:border-burgundy/25 dark:hover:border-hilo/30"
                     >
                       <span className="min-w-0">
-                        <span className="block text-sm font-semibold text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-gold">
+                        <span className="block text-sm font-semibold text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-hilo-texto">
                           {a.title}
                         </span>
                         <span className="mt-1 block text-xs leading-relaxed text-cream/65 line-clamp-2">{a.subtitle}</span>
@@ -441,7 +419,7 @@ export default async function SentenciaDestacadaPage({
                         size={14}
                         weight="bold"
                         aria-hidden="true"
-                        className="mt-1 shrink-0 text-cream/40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-burgundy dark:group-hover:text-gold"
+                        className="mt-1 shrink-0 text-cream/40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-burgundy dark:group-hover:text-hilo-texto"
                       />
                     </Link>
                   </li>
@@ -456,14 +434,14 @@ export default async function SentenciaDestacadaPage({
           <div className="flex items-center justify-between border-t border-cream/10 pt-8">
             <Link
               href="/jurisprudencia-destacada"
-              className="inline-flex items-center gap-1.5 text-sm text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+              className="inline-flex items-center gap-1.5 text-sm text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
             >
               <ArrowLeft size={14} weight="regular" />
               Jurisprudencia destacada
             </Link>
             <Link
               href="/contacto"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-burgundy transition-colors duration-300 hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-burgundy transition-colors duration-300 hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
             >
               Consultar un caso
               <ArrowRight size={14} weight="bold" />
@@ -501,7 +479,7 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
   return (
     <section id={sec.id} className="mb-24 scroll-mt-32 md:mb-32">
       <AnimatedEntry>
-        <h2 className="type-title mb-8 border-b border-cream/10 pb-5 text-cream md:mb-10 md:pb-6">
+        <h2 className="type-title mb-8 border-b border-burgundy-light pb-5 text-cream md:mb-10 md:pb-6 dark:border-cream/10">
           {sec.titulo}
         </h2>
       </AnimatedEntry>
@@ -606,7 +584,7 @@ function Seccion({ sec, sentencia }: { sec: SeccionAnalisis; sentencia: Sentenci
 
       {sec.nota && (
         <p className="mt-10 max-w-[66ch] border-t border-[color:var(--rule-strong)] pt-5 text-[17px] leading-relaxed text-cream">
-          <span className="type-label mr-3 text-burgundy dark:text-gold">En la práctica</span>
+          <span className="type-label mr-3 text-burgundy-light dark:text-hilo-texto">En la práctica</span>
           {sec.nota}
         </p>
       )}

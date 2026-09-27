@@ -101,7 +101,7 @@ export function LeadForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 transition-all duration-300 outline-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none disabled:opacity-50"
           placeholder="Su nombre"
         />
       </div>
@@ -122,7 +122,7 @@ export function LeadForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 transition-all duration-300 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none disabled:opacity-50"
             placeholder="correo@ejemplo.com"
           />
         </div>
@@ -139,7 +139,7 @@ export function LeadForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 transition-all duration-300 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none disabled:opacity-50"
             placeholder="+506 0000-0000"
           />
         </div>
@@ -158,7 +158,7 @@ export function LeadForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 transition-all duration-300 outline-none resize-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none resize-none disabled:opacity-50"
           placeholder="Tipo de caso, contexto general, urgencia..."
         />
       </div>

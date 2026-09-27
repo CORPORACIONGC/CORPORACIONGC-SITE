@@ -80,7 +80,7 @@ export function OscarAbout() {
                     href="https://actualidadjudicial.poder-judicial.go.cr/vol35/noticias_judiciales/notjud01.htm"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
                   >
                     Actualidad Judicial N.º 35
                   </a>
@@ -89,7 +89,7 @@ export function OscarAbout() {
                     href="https://www.asamblea.go.cr/sd/SiteAssets/Lists/Consultas%20Biblioteca/EditForm/Proyecto%2015134%20ley%20Codigo%20Procesal.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
                   >
                     expediente legislativo 15.134
                   </a>{" "}
@@ -99,7 +99,7 @@ export function OscarAbout() {
                     href="https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-gold dark:decoration-gold/30 dark:hover:text-gold-light"
+                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
                   >
                     texto vigente de la Ley 8508
                   </a>
@@ -202,7 +202,7 @@ export function OscarAbout() {
                     const hasSlug = "slug" in pub && pub.slug;
                     const content = (
                       <>
-                        <span className={`text-sm font-medium ${hasSlug ? "text-cream/75 group-hover/pub:text-gold transition-colors duration-300" : "text-cream/75"}`}>
+                        <span className={`text-sm font-medium ${hasSlug ? "text-cream/75 group-hover/pub:text-hilo-texto transition-colors duration-300" : "text-cream/75"}`}>
                           {pub.title}
                           {hasSlug && (
                             <ArrowUpRight size={12} weight="bold" className="inline ml-1 opacity-0 group-hover/pub:opacity-100 transition-opacity duration-300" />

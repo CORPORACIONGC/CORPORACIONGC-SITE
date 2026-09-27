@@ -204,7 +204,7 @@ export function CitasExplorador({
                   aria-label={`${a.anio}: ${a.n} ${a.n === 1 ? "resolución" : "resoluciones"}`}
                   title={`${a.anio}: ${a.n}`}
                   onClick={() => elegir({ tipo: "anio", valor: a.anio })}
-                  className="group flex h-full flex-1 items-end outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:cursor-default"
+                  className="group flex h-full flex-1 items-end outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo disabled:cursor-default"
                 >
                   <span
                     className={`relative block w-full transition-colors duration-300 ${
@@ -249,21 +249,21 @@ export function CitasExplorador({
                     aria-pressed={on}
                     aria-controls={listaId}
                     onClick={() => elegir({ tipo: "grupo", valor: g.grupo })}
-                    className="group block w-full py-2 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                    className="group block w-full py-2 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                   >
                     <span className="flex items-baseline justify-between gap-4 text-[15px] leading-snug">
                       <span
                         className={`transition-colors duration-300 ${
                           on
-                            ? "text-burgundy dark:text-gold"
-                            : "text-cream/85 group-hover:text-burgundy dark:group-hover:text-gold"
+                            ? "text-burgundy dark:text-hilo-texto"
+                            : "text-cream/85 group-hover:text-burgundy dark:group-hover:text-hilo-texto"
                         }`}
                       >
                         {g.grupo}
                       </span>
                       <span className="tabular-nums text-cream">
                         {filtro?.tipo === "anio" && (
-                          <span className="text-burgundy dark:text-gold">{parte} de </span>
+                          <span className="text-burgundy dark:text-hilo-texto">{parte} de </span>
                         )}
                         {g.n}
                       </span>
@@ -303,7 +303,7 @@ export function CitasExplorador({
               aria-expanded={abierta}
               aria-controls={listaId}
               onClick={() => setAbierta((v) => !v)}
-              className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy outline-none transition-colors hover:text-burgundy-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold dark:text-gold dark:hover:text-gold-light"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy outline-none transition-colors hover:text-burgundy-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo dark:text-hilo-texto dark:hover:text-hilo-texto"
             >
               {abierta ? "Ocultar la lista" : `Ver las ${total} resoluciones`}
               <CaretDown
@@ -318,7 +318,7 @@ export function CitasExplorador({
           <a
             href={csv}
             download
-            className="inline-flex items-center gap-1.5 text-sm text-cream/70 transition-colors hover:text-burgundy dark:hover:text-gold"
+            className="inline-flex items-center gap-1.5 text-sm text-cream/70 transition-colors hover:text-burgundy dark:hover:text-hilo-texto"
           >
             Descargar la lista (CSV)
             <DownloadSimple size={14} aria-hidden="true" />
@@ -335,7 +335,7 @@ export function CitasExplorador({
                 <button
                   type="button"
                   onClick={() => setFiltro(null)}
-                  className="underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                  className="underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
                 >
                   Ver todas
                 </button>
@@ -367,7 +367,7 @@ export function CitasExplorador({
                       href={nexus(r.nexusId)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 font-medium tabular-nums text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                      className="inline-flex items-center gap-1 font-medium tabular-nums text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
                     >
                       {r.numero}
                       <ArrowSquareOut size={11} aria-hidden="true" className="text-cream/50" />
@@ -393,7 +393,7 @@ export function CitasExplorador({
                 setAbierta(false);
                 cabecera.current?.scrollIntoView({ block: "nearest" });
               }}
-              className="text-sm text-cream/70 transition-colors hover:text-burgundy dark:hover:text-gold"
+              className="text-sm text-cream/70 transition-colors hover:text-burgundy dark:hover:text-hilo-texto"
             >
               Ocultar la lista
             </button>
@@ -434,7 +434,7 @@ export function CitasExplorador({
                       aria-label={`${a.anio}: ${a.n} ${a.n === 1 ? "pronunciamiento" : "pronunciamientos"}`}
                       title={`${a.anio}: ${a.n}`}
                       onClick={() => elegirP({ tipo: "anio", valor: a.anio })}
-                      className="group flex h-full flex-1 items-end outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold disabled:cursor-default"
+                      className="group flex h-full flex-1 items-end outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo disabled:cursor-default"
                     >
                       <span
                         className={`relative block w-full transition-colors duration-300 ${
@@ -478,20 +478,20 @@ export function CitasExplorador({
                         aria-pressed={on}
                         aria-controls={listaPId}
                         onClick={() => elegirP({ tipo: "organo", valor: organo })}
-                        className="group block w-full py-2 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                        className="group block w-full py-2 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                       >
                         <span className="flex items-baseline justify-between gap-4 text-[15px] leading-snug">
                           <span
                             className={`transition-colors duration-300 ${
                               on
-                                ? "text-burgundy dark:text-gold"
-                                : "text-cream/85 group-hover:text-burgundy dark:group-hover:text-gold"
+                                ? "text-burgundy dark:text-hilo-texto"
+                                : "text-cream/85 group-hover:text-burgundy dark:group-hover:text-hilo-texto"
                             }`}
                           >
                             {organo}
                           </span>
                           <span className="tabular-nums text-cream">
-                            {filtroP?.tipo === "anio" && <span className="text-burgundy dark:text-gold">{parte} de </span>}
+                            {filtroP?.tipo === "anio" && <span className="text-burgundy dark:text-hilo-texto">{parte} de </span>}
                             {n}
                           </span>
                         </span>
@@ -521,7 +521,7 @@ export function CitasExplorador({
               aria-expanded={abiertaP}
               aria-controls={listaPId}
               onClick={() => setAbiertaP((v) => !v)}
-              className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy outline-none transition-colors hover:text-burgundy-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold dark:text-gold dark:hover:text-gold-light"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy outline-none transition-colors hover:text-burgundy-light focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo dark:text-hilo-texto dark:hover:text-hilo-texto"
             >
               {abiertaP ? "Ocultar la lista" : np === 1 ? "Ver el pronunciamiento" : `Ver los ${np} pronunciamientos`}
               <CaretDown
@@ -543,7 +543,7 @@ export function CitasExplorador({
                   <button
                     type="button"
                     onClick={() => setFiltroP(null)}
-                    className="underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                    className="underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
                   >
                     Ver todos
                   </button>
@@ -569,7 +569,7 @@ export function CitasExplorador({
                         href={p.enlace}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 font-medium tabular-nums text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                        className="inline-flex items-center gap-1 font-medium tabular-nums text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
                       >
                         {p.numero}
                         <ArrowSquareOut size={11} aria-hidden="true" className="text-cream/50" />
@@ -625,7 +625,7 @@ export function CitasExplorador({
                       href={d.enlace}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline items-center gap-1 font-medium text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                      className="inline items-center gap-1 font-medium text-cream underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
                     >
                       {d.titulo}
                       <ArrowSquareOut size={11} aria-hidden="true" className="ml-1 inline text-cream/50" />

@@ -23,7 +23,7 @@ export default function Error({
       <div className="mt-8 flex gap-4">
         <button
           onClick={reset}
-          className="rounded-full border border-gold bg-transparent px-6 py-3 text-sm font-medium text-gold transition-colors hover:bg-gold hover:text-surface"
+          className="rounded-full border border-hilo bg-transparent px-6 py-3 text-sm font-medium text-hilo-texto transition-colors hover:bg-hilo hover:text-surface"
         >
           Reintentar
         </button>

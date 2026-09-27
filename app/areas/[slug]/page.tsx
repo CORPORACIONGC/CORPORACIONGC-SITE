@@ -5868,15 +5868,15 @@ export default async function AreaDetailPage({
                         <li key={g.slug} className="relative">
                           <Link
                             href={`/articulos/${g.slug}`}
-                            className="group relative block py-4 border-b border-cream/[0.06] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                            className="group relative block py-4 border-b border-cream/[0.06] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                           >
                             <span
                               aria-hidden="true"
-                              className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-gold"
+                              className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
                             />
                             <span className="flex items-start justify-between gap-4">
                               <span className="min-w-0">
-                                <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300">
+                                <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
                                   {g.title}
                                 </span>
                                 <span className="mt-1 block text-xs text-cream/65 leading-relaxed max-w-[62ch]">
@@ -5890,7 +5890,7 @@ export default async function AreaDetailPage({
                               <ArrowRight
                                 size={14}
                                 weight="bold"
-                                className="mt-1 shrink-0 text-cream/30 group-hover:text-burgundy dark:group-hover:text-gold group-hover:translate-x-0.5 transition-all duration-300"
+                                className="mt-1 shrink-0 text-cream/30 group-hover:text-burgundy dark:group-hover:text-hilo-texto group-hover:translate-x-0.5 transition-all duration-300"
                               />
                             </span>
                           </Link>

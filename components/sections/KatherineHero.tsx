@@ -25,7 +25,7 @@ export function KatherineHero() {
               MSc. Katherine
               <br />
               González{" "}
-              <span className="text-gold">Coto</span>
+              <span className="text-hilo-texto">Coto</span>
             </h1>
           </AnimatedEntry>
 

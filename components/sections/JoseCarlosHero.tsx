@@ -27,7 +27,7 @@ export function JoseCarlosHero() {
               Lic. José Carlos
               <br />
               Solano{" "}
-              <span className="text-gold">Salas</span>
+              <span className="text-hilo-texto">Salas</span>
             </h1>
           </AnimatedEntry>
 

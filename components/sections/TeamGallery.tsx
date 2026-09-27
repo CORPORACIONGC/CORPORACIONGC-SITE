@@ -70,7 +70,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
               className="w-[68vw] max-w-[300px] shrink-0 snap-start sm:w-[42vw] md:w-[30vw] lg:w-auto lg:max-w-none"
             >
               <Link href={`/abogados/${member.slug}`} className="group block outline-none">
-                <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-gold group-focus-visible:outline-2">
+                <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-hilo group-focus-visible:outline-2">
                   <Image
                     src={member.portrait}
                     alt={`Retrato de ${member.name}`}
@@ -90,9 +90,9 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
                   <span aria-hidden="true" className="absolute inset-x-0 top-0 h-px bg-cream/10" />
                   <span
                     aria-hidden="true"
-                    className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-gold"
+                    className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-burgundy-light transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
                   />
-                  <h3 className="text-[17px] font-semibold leading-[1.3] tracking-[-0.01em] text-cream text-balance transition-colors duration-300 group-hover:text-burgundy group-focus-visible:text-burgundy dark:group-hover:text-gold dark:group-focus-visible:text-gold">
+                  <h3 className="text-[17px] font-semibold leading-[1.3] tracking-[-0.01em] text-cream text-balance transition-colors duration-300 group-hover:text-burgundy-light group-focus-visible:text-burgundy-light dark:group-hover:text-hilo-texto dark:group-focus-visible:text-hilo-texto">
                     {honorific && (
                       <span className="font-normal text-cream/65">{honorific} </span>
                     )}
@@ -106,7 +106,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
                       size={15}
                       weight="regular"
                       aria-hidden="true"
-                      className="hidden shrink-0 -translate-x-1.5 text-burgundy opacity-0 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100 dark:text-gold lg:block"
+                      className="hidden shrink-0 -translate-x-1.5 text-burgundy-light opacity-0 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100 dark:text-hilo-texto lg:block"
                     />
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
             <span
               key={m.slug}
               className={`h-px flex-1 transition-colors duration-500 ${
-                k === current ? "bg-burgundy dark:bg-gold" : "bg-cream/15"
+                k === current ? "bg-burgundy-light dark:bg-hilo" : "bg-cream/15"
               }`}
             />
           ))}

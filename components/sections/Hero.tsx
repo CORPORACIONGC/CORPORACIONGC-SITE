@@ -27,7 +27,7 @@ export function Hero() {
               Lic. Khevin
               <br />
               Sánchez{" "}
-              <span className="text-gold">Zamora</span>
+              <span className="text-hilo-texto">Zamora</span>
             </h1>
           </AnimatedEntry>
 

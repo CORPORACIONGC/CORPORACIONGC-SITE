@@ -112,7 +112,7 @@ export function FirmAbout() {
                 </div>
 
                 <div className="mt-10">
-                  <MagneticButton href="/abogados/oscar-gonzalez" variant="outline">
+                  <MagneticButton href="/abogados/oscar-gonzalez" variant="primary">
                     Ver trayectoria completa del fundador
                     <ArrowRight size={14} weight="bold" />
                   </MagneticButton>

@@ -198,7 +198,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 const linkClass =
-  "text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:decoration-burgundy dark:text-gold dark:decoration-gold/40 dark:hover:decoration-gold";
+  "text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:decoration-burgundy dark:text-hilo-texto dark:decoration-hilo/40 dark:hover:decoration-hilo";
 
 export default function SobreNosotros() {
   return (
@@ -216,7 +216,7 @@ export default function SobreNosotros() {
           <div className="mx-auto max-w-[1100px] px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
@@ -265,7 +265,7 @@ export default function SobreNosotros() {
                   <li key={s.id}>
                     <a
                       href={`#${s.id}`}
-                      className="-ml-px flex gap-3 border-l border-transparent py-1.5 pl-4 text-sm text-cream/70 transition-colors duration-300 hover:border-burgundy hover:text-cream dark:hover:border-gold"
+                      className="-ml-px flex gap-3 border-l border-transparent py-1.5 pl-4 text-sm text-cream/70 transition-colors duration-300 hover:border-burgundy hover:text-cream dark:hover:border-hilo"
                     >
                       <span className="w-6 shrink-0 tabular-nums text-cream/65">{s.n}</span>
                       {s.label}
@@ -333,7 +333,7 @@ export default function SobreNosotros() {
                 </p>
                 <Link
                   href="/abogados/oscar-gonzalez"
-                  className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+                  className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
                 >
                   Ver su trayectoria completa
                   <ArrowRight
@@ -358,7 +358,7 @@ export default function SobreNosotros() {
                     key={area.title}
                     className="group relative grid gap-2 py-6 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)] sm:gap-10"
                   >
-                    <dt className="text-[17px] font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-gold">
+                    <dt className="text-[17px] font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-hilo-texto">
                       <Link href={area.href} className="after:absolute after:inset-0">
                         {area.title}
                       </Link>
@@ -371,7 +371,7 @@ export default function SobreNosotros() {
               </dl>
               <Link
                 href="/areas"
-                className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+                className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
               >
                 Ver todas las áreas de práctica
                 <ArrowRight
@@ -398,7 +398,7 @@ export default function SobreNosotros() {
                   return (
                     <li key={a.slug}>
                       <Link href={`/abogados/${a.slug}`} className="group block outline-none">
-                        <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-gold group-focus-visible:outline-2">
+                        <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-hilo group-focus-visible:outline-2">
                           <Image
                             src={"portrait" in a && a.portrait ? a.portrait : `/images/equipo/${a.slug}.jpg`}
                             alt={`Retrato de ${a.name}`}
@@ -411,8 +411,8 @@ export default function SobreNosotros() {
                             className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/[0.06] dark:ring-white/[0.06]"
                           />
                         </div>
-                        <div className="mt-5 border-t border-cream/10 pt-4 transition-colors duration-300 group-hover:border-burgundy/60 dark:group-hover:border-gold/60">
-                          <h3 className="text-base font-semibold leading-[1.3] tracking-[-0.01em] text-cream text-balance transition-colors duration-300 group-hover:text-burgundy sm:text-[17px] dark:group-hover:text-gold">
+                        <div className="mt-5 border-t border-cream/10 pt-4 transition-colors duration-300 group-hover:border-burgundy/60 dark:group-hover:border-hilo/60">
+                          <h3 className="text-base font-semibold leading-[1.3] tracking-[-0.01em] text-cream text-balance transition-colors duration-300 group-hover:text-burgundy sm:text-[17px] dark:group-hover:text-hilo-texto">
                             {honorific && (
                               <span className="font-normal text-cream/65">{honorific} </span>
                             )}

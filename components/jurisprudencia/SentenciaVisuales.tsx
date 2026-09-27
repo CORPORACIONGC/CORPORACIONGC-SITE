@@ -71,7 +71,7 @@ export function PasajeLiteral({
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+              className="inline-flex items-center gap-1.5 underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
             >
               {citation}
               <ArrowSquareOut size={12} aria-hidden="true" />
@@ -100,7 +100,7 @@ function Punto({
       aria-hidden="true"
       className={`absolute left-0 h-[15px] w-[15px] rounded-full border ${top} ${
         final
-          ? "border-burgundy bg-burgundy dark:border-gold dark:bg-gold"
+          ? "border-burgundy bg-burgundy dark:border-hilo dark:bg-hilo"
           : "border-cream/45 bg-surface"
       }`}
     />
@@ -146,7 +146,7 @@ export function Trayectoria({
             {i < etapas.length - 1 && <Tramo cls="-bottom-8 top-[19px] lg:hidden" />}
             <Punto final={e.final} desde="lg" />
             <p
-              className={`type-label ${e.final ? "text-burgundy dark:text-gold" : "text-cream/65"}`}
+              className={`type-label ${e.final ? "text-burgundy dark:text-hilo-texto" : "text-cream/65"}`}
             >
               {e.etapa}
             </p>
@@ -188,7 +188,7 @@ export function LineaTemporal({
               <Punto final={final} />
               <p
                 className={`text-[26px] font-light leading-none tabular-nums tracking-[-0.01em] ${
-                  final ? "text-burgundy dark:text-gold" : "text-cream"
+                  final ? "text-burgundy dark:text-hilo-texto" : "text-cream"
                 }`}
               >
                 {h.anio}
@@ -197,7 +197,7 @@ export function LineaTemporal({
                 href={h.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 block text-[13px] font-medium text-cream/85 underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                className="mt-2 block text-[13px] font-medium text-cream/85 underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
               >
                 {h.numero}
               </a>
@@ -205,7 +205,7 @@ export function LineaTemporal({
                 {h.fecha}
               </p>
               {final && (
-                <p className="type-label mt-3 text-burgundy dark:text-gold">
+                <p className="type-label mt-3 text-burgundy dark:text-hilo-texto">
                   El giro
                 </p>
               )}
@@ -316,7 +316,7 @@ export function Periodo({
           />
           <span
             aria-hidden="true"
-            className="absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 translate-x-1/2 rounded-full bg-burgundy dark:bg-gold"
+            className="absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 translate-x-1/2 rounded-full bg-burgundy dark:bg-hilo"
           />
         </div>
         <p className="text-[15px] font-semibold leading-snug text-cream">
@@ -359,7 +359,7 @@ export function Recepcion({
             <Punto final={h.final} desde="nunca" />
             <p
               className={`text-[26px] font-light leading-none tabular-nums tracking-[-0.01em] ${
-                h.final ? "text-burgundy dark:text-gold" : "text-cream"
+                h.final ? "text-burgundy dark:text-hilo-texto" : "text-cream"
               }`}
             >
               {h.anio}
@@ -376,7 +376,7 @@ export function Recepcion({
                     href={e.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[13px] font-medium tabular-nums text-cream/85 underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-gold dark:hover:decoration-gold"
+                    className="text-[13px] font-medium tabular-nums text-cream/85 underline decoration-cream/20 underline-offset-4 transition-colors hover:text-burgundy hover:decoration-burgundy dark:hover:text-hilo-texto dark:hover:decoration-hilo"
                   >
                     {e.etiqueta}
                   </a>
@@ -454,7 +454,7 @@ export function Reparto({
           <div key={p.etiqueta}>
             <dt
               className={`text-[15px] font-semibold leading-snug ${
-                p.condena ? "text-burgundy dark:text-gold" : "text-cream"
+                p.condena ? "text-burgundy dark:text-hilo-texto" : "text-cream"
               }`}
             >
               {p.etiqueta} · {p.porcentaje} %

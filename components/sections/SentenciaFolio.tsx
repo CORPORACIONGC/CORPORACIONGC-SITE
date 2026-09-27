@@ -82,7 +82,7 @@ function Folio({ s }: { s: SentenciaPortada }) {
         <h3 className="mx-auto mt-2 max-w-[24ch] text-[26px] font-light leading-[1.15] tracking-[-0.012em] text-cream text-balance md:text-[30px]">
           <Link
             href={analisisHref(s)}
-            className="transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+            className="transition-colors duration-300 hover:text-burgundy-light dark:hover:text-hilo-texto"
           >
             {s.titulo}
           </Link>
@@ -140,14 +140,14 @@ function Folio({ s }: { s: SentenciaPortada }) {
             href={s.nexusUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-cream/70 transition-colors duration-300 hover:text-burgundy dark:hover:text-gold"
+            className="inline-flex items-center gap-1.5 text-sm text-cream/70 transition-colors duration-300 hover:text-burgundy-light dark:hover:text-hilo-texto"
           >
             Texto íntegro en Nexus
             <ArrowSquareOut size={13} aria-hidden="true" />
           </a>
           <Link
             href={analisisHref(s)}
-            className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors duration-300 hover:text-burgundy-light dark:text-gold dark:hover:text-gold-light"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors duration-300 hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
           >
             Leer el análisis completo
             <ArrowRight
@@ -199,12 +199,12 @@ export function SentenciaFolio({ sentencias }: { sentencias: SentenciaPortada[] 
                     onClick={() => setActiva(i)}
                     aria-current={on ? "true" : undefined}
                     aria-controls={folioId}
-                    className="group relative block w-full py-5 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                    className="group relative block w-full py-5 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                   >
                     <span aria-hidden="true" className="absolute inset-x-0 top-0 h-px bg-cream/10" />
                     <span
                       aria-hidden="true"
-                      className={`absolute inset-x-0 top-0 h-px origin-left bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] dark:bg-gold ${
+                      className={`absolute inset-x-0 top-0 h-px origin-left bg-burgundy-light transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] dark:bg-hilo ${
                         on ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                       }`}
                     />
@@ -215,8 +215,8 @@ export function SentenciaFolio({ sentencias }: { sentencias: SentenciaPortada[] 
                     <span
                       className={`mt-1.5 block text-[17px] font-semibold leading-snug tracking-[-0.01em] transition-colors duration-300 ${
                         on
-                          ? "text-burgundy dark:text-gold"
-                          : "text-cream group-hover:text-burgundy dark:group-hover:text-gold"
+                          ? "text-burgundy-light dark:text-hilo-texto"
+                          : "text-cream group-hover:text-burgundy-light dark:group-hover:text-hilo-texto"
                       }`}
                     >
                       {x.titulo}

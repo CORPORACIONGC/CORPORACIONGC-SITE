@@ -91,7 +91,7 @@ function Firma({ article, retrato = 40 }: { article: ArticlePreview; retrato?: n
 const Trazo = () => (
   <span
     aria-hidden="true"
-    className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-gold transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100"
+    className="absolute inset-x-0 -bottom-px h-[2px] origin-left scale-x-0 bg-[#A8325F] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100"
   />
 );
 const Flecha = () => (
@@ -99,7 +99,7 @@ const Flecha = () => (
     size={16}
     weight="bold"
     aria-hidden="true"
-    className="shrink-0 -translate-x-1.5 text-gold opacity-0 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100"
+    className="shrink-0 -translate-x-1.5 text-hilo-texto opacity-0 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100"
   />
 );
 
@@ -114,13 +114,13 @@ function Sumario({ articles }: { articles: ArticlePreview[] }) {
       <AnimatedEntry delay={0.15} className={lista.length ? "lg:col-span-7" : "lg:col-span-8"}>
         <Link href={`/articulos/${principal.slug}`} className="group block outline-offset-8">
           <Firma article={principal} retrato={56} />
-          <h3 className="type-title mt-8 max-w-[24ch] text-white transition-colors duration-300 group-hover:text-gold-light">
-            {principal.title}
+          <h3 className="type-title mt-8 max-w-[24ch] text-white">
+            <span className="gc-marcable">{principal.title}</span>
           </h3>
           <p className="type-lead mt-6 max-w-[58ch] text-white/75 line-clamp-3 md:line-clamp-4">
             {principal.excerpt}
           </p>
-          <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-gold transition-colors duration-300 group-hover:text-gold-light">
+          <span className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-hilo-texto transition-colors duration-300 group-hover:text-hilo-texto">
             Leer el artículo
             <ArrowRight
               size={14}
@@ -147,8 +147,8 @@ function Sumario({ articles }: { articles: ArticlePreview[] }) {
                 }`}
               >
                 <div className="min-w-0">
-                  <h3 className="type-card-title max-w-[46ch] text-white transition-colors duration-300 group-hover:text-gold-light">
-                    {a.title}
+                  <h3 className="type-card-title max-w-[46ch] text-white">
+                    <span className="gc-marcable">{a.title}</span>
                   </h3>
                   <div className="mt-4">
                     <Firma article={a} retrato={40} />
@@ -223,7 +223,7 @@ export function Publications({ articles, total }: { articles: ArticlePreview[]; 
                     >
                       <span
                         aria-hidden="true"
-                        className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-gold transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100"
+                        className="absolute inset-x-0 -bottom-px h-[2px] origin-left scale-x-0 bg-[#A8325F] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100"
                       />
                       {g.label}
                     </Link>

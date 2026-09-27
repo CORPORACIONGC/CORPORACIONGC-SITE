@@ -37,7 +37,7 @@ Litigamos, asesoramos y redactamos normativa en las materias que definen el Dere
           <AnimatedEntry delay={0.25}>
             <Link
               href="/areas"
-              className="text-sm text-cream/65 hover:text-burgundy dark:hover:text-gold transition-colors duration-300 flex items-center gap-1.5 shrink-0"
+              className="text-sm text-cream/65 hover:text-burgundy-light dark:hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5 shrink-0"
             >
               Ver todas las &aacute;reas
               <ArrowRight size={12} weight="bold" />

@@ -25,7 +25,7 @@ export function OscarHero() {
               Dr. Óscar Eduardo
               <br />
               González{" "}
-              <span className="text-gold">Camacho</span>
+              <span className="text-hilo-texto">Camacho</span>
             </h1>
           </AnimatedEntry>
 

@@ -389,7 +389,7 @@ export default async function ArticlePage({
         />
       )}
       <Navbar />
-      <main className="bg-surface min-h-[100dvh]">
+      <main className="gc-lectura bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">
           <div
             lang={lang}
@@ -399,13 +399,13 @@ export default async function ArticlePage({
                 lector no tenía cómo subir del artículo a su materia. */}
             {area ? (
               <nav aria-label="Ruta" className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-cream/50">
-                <Link href="/" className="hover:text-burgundy dark:hover:text-gold transition-colors duration-300">
+                <Link href="/" className="hover:text-burgundy dark:hover:text-hilo-texto transition-colors duration-300">
                   Inicio
                 </Link>
                 <span aria-hidden="true" className="text-cream/30">›</span>
                 <Link
                   href={`/areas/${area.slug}`}
-                  className="hover:text-burgundy dark:hover:text-gold transition-colors duration-300"
+                  className="hover:text-burgundy dark:hover:text-hilo-texto transition-colors duration-300"
                 >
                   {area.title}
                 </Link>
@@ -662,15 +662,15 @@ export default async function ArticlePage({
                     <RunningHead title="Área de práctica" />
                     <Link
                       href={`/areas/${area.slug}`}
-                      className="group relative block pb-5 mb-8 border-b border-cream/[0.08] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                      className="group relative block pb-5 mb-8 border-b border-cream/[0.08] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                     >
                       <span
                         aria-hidden="true"
-                        className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-gold"
+                        className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
                       />
                       <span className="flex items-start justify-between gap-4">
                         <span className="min-w-0">
-                          <span className="block font-display text-lg md:text-xl text-cream group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300">
+                          <span className="block font-display text-lg md:text-xl text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
                             {area.title}
                           </span>
                           <span className="mt-1 block text-sm text-cream/65 leading-relaxed max-w-[62ch]">
@@ -680,7 +680,7 @@ export default async function ArticlePage({
                         <ArrowRight
                           size={15}
                           weight="bold"
-                          className="mt-1.5 shrink-0 text-cream/30 group-hover:text-burgundy dark:group-hover:text-gold group-hover:translate-x-0.5 transition-all duration-300"
+                          className="mt-1.5 shrink-0 text-cream/30 group-hover:text-burgundy dark:group-hover:text-hilo-texto group-hover:translate-x-0.5 transition-all duration-300"
                         />
                       </span>
                     </Link>
@@ -697,13 +697,13 @@ export default async function ArticlePage({
                         <li key={h.slug}>
                           <Link
                             href={`/articulos/${h.slug}`}
-                            className="group relative block py-4 border-b border-cream/[0.06] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                            className="group relative block py-4 border-b border-cream/[0.06] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                           >
                             <span
                               aria-hidden="true"
-                              className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-gold"
+                              className="absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-burgundy transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
                             />
-                            <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-gold transition-colors duration-300">
+                            <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
                               {h.title}
                             </span>
                             <span className="mt-1 block text-[11px] text-cream/50">

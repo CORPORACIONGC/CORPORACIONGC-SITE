@@ -53,10 +53,10 @@ export function MagneticButton({
     /* Sobre fondo claro el dorado de marca no alcanza 4.5:1 como texto:
        el rótulo usa el bronce oscuro y el borde conserva el dorado. */
     outline:
-      "border-2 border-gold/60 text-[#7A5F2E] dark:text-gold px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-gold hover:bg-gold/[0.06] active:scale-[0.98]",
+      "border-2 border-burgundy/50 text-burgundy px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-burgundy hover:bg-burgundy/[0.05] dark:border-[#5A1730] dark:bg-[#3A0B1F] dark:text-white dark:hover:border-[#6B1D3A] dark:hover:bg-[#4A0E27] active:scale-[0.98]",
     /* Para secciones siempre oscuras (borgoña), en cualquier tema. */
     "outline-inverse":
-      "border-2 border-gold/60 text-gold px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-gold hover:bg-gold/[0.06] active:scale-[0.98]",
+      "bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white ring-1 ring-white/10 px-7 py-3.5 rounded-lg text-sm tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98]",
   };
 
   const isInternal = href && (href.startsWith("/") || href.startsWith("#"));

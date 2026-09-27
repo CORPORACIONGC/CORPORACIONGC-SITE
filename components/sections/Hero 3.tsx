@@ -19,7 +19,7 @@ export function Hero() {
         <div className="relative z-10 py-8 md:py-0">
           <AnimatedEntry delay={0.1}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="h-px w-8 bg-gold" />
+              <div className="h-px w-8 bg-hilo" />
               <span className="text-[11px] tracking-[0.25em] uppercase text-cream/50 font-medium">
                 Abogado Asociado · Corporación GC
               </span>
@@ -31,7 +31,7 @@ export function Hero() {
               Lic. Khevin
               <br />
               Sánchez{" "}
-              <span className="text-gold">Zamora</span>
+              <span className="text-hilo-texto">Zamora</span>
             </h1>
           </AnimatedEntry>
 

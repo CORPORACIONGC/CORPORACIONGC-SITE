@@ -24,7 +24,7 @@ export function MarianaHero() {
               Licda. Mariana
               <br />
               Montero{" "}
-              <span className="text-gold">Acuña</span>
+              <span className="text-hilo-texto">Acuña</span>
             </h1>
           </AnimatedEntry>
 

@@ -440,7 +440,7 @@ function KhevinProfile() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>
@@ -484,7 +484,7 @@ function OscarProfile() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>
@@ -530,7 +530,7 @@ function EstebanProfile() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>
@@ -573,7 +573,7 @@ function JoseCarlosProfile() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>
@@ -616,7 +616,7 @@ function KatherineProfile() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>
@@ -659,7 +659,7 @@ function MarianaProfile() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>
@@ -720,7 +720,7 @@ function BasicProfile({
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
           <Link
             href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-gold transition-colors duration-300 flex items-center gap-1.5"
+            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
           >
             <span>&larr;</span>
             <span>Volver a Corporación GC</span>

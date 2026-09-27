@@ -26,7 +26,7 @@ export function EstebanHero() {
               Lic. Esteban
               <br />
               Pérez{" "}
-              <span className="text-gold">Herrera</span>
+              <span className="text-hilo-texto">Herrera</span>
             </h1>
           </AnimatedEntry>
 

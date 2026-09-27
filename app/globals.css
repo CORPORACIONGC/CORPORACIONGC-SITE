@@ -14,13 +14,20 @@
   --scrollbar-track: #FFFFFF;
   --scrollbar-thumb: rgba(107, 29, 58, 0.15);
   --scrollbar-thumb-hover: rgba(107, 29, 58, 0.35);
-  --selection-bg: #C4A265;
+  --selection-bg: #6B1D3A;
   --selection-fg: #FFFFFF;
   --emphasis-val: #8B2252;
+  /* Burdeos y marfil (26-09-2026): el dorado salió del sitio. El burdeos
+     es la materia y el marfil la tinta. El dorado tenía dos papeles y ahora
+     cada uno tiene su token: --hilo-linea para filetes, bordes, barras y
+     trazos (burdeos), y --hilo-texto para lo que era texto dorado (burdeos
+     vivo de día, marfil pleno de noche). */
+  --hilo-linea-val: #6B1D3A;
+  --hilo-texto-val: #8B2252;
 }
 
 .dark {
-  /* Dark (nocturna) — black + burgundy + gold */
+  /* Dark (nocturna) — negro + burdeos + marfil */
   --surface-val: #0F0A0D;
   --surface-alt-val: #140F14;
   --dark-bg-val: #0F0A0D;
@@ -30,11 +37,13 @@
   --scrollbar-track: #0F0A0D;
   --scrollbar-thumb: rgba(107, 29, 58, 0.38);
   --scrollbar-thumb-hover: #6B1D3A;
-  --selection-bg: #C4A265;
-  --selection-fg: #0F0A0D;
-  /* El burdeos claro sobre negro no llega a 2.3:1: de noche el énfasis
-     de los titulares pasa al dorado (7.9:1), como en Publicaciones. */
-  --emphasis-val: #C4A265;
+  --selection-bg: #8B2252;
+  --selection-fg: #FFFFFF;
+  /* El burdeos sobre negro no llega a 2.3:1: de noche el énfasis y el
+     texto de acento pasan al marfil, y el burdeos queda en los trazos. */
+  --emphasis-val: #FFFFFF;
+  --hilo-linea-val: #9B2A5C;
+  --hilo-texto-val: #FFFFFF;
 }
 
 @theme {
@@ -42,8 +51,12 @@
   --color-burgundy: #6B1D3A;
   --color-burgundy-light: #8B2252;
   --color-burgundy-dark: #4A0E27;
-  --color-gold: #C4A265;
-  --color-gold-light: #D4B87A;
+  /* Alias heredados: cualquier text-gold o border-gold que quede en un
+     contenido antiguo resuelve al burdeos del tema. */
+  --color-gold: var(--hilo-linea-val);
+  --color-gold-light: var(--hilo-texto-val);
+  --color-hilo: var(--hilo-linea-val);
+  --color-hilo-texto: var(--hilo-texto-val);
 
   /* Semantic colors (theme-aware) */
   --color-cream: var(--cream-val);
@@ -72,7 +85,7 @@
    en ligera (300), en un solo color y un solo peso: la jerarquía la hacen el
    tamaño y el aire. Partir cada titular en dos colores y dos pesos era una
    fórmula repetida que se leía como plantilla; el énfasis quedó reducido a un
-   único gesto en todo el sitio, el subrayado en hilo dorado (gc-subrayado).
+   único gesto en todo el sitio, el subrayado burdeos (gc-subrayado).
    El nombre de la firma en el hero queda fuera de este sistema: va en DM Sans
    medio, mayúscula y espaciado, con la composición del logotipo.
    Con el eje óptico cargado, los titulares usan el diseño de 40 pt, más
@@ -153,23 +166,23 @@
 }
 
 /* Un titular, un tono: las frases que los componentes todavía envuelven en
-   un span de color (burdeos, dorado, énfasis) heredan el color y el peso del
+   un span de color (burdeos, hilo, énfasis) heredan el color y el peso del
    titular. Vale para la portada y para las páginas interiores. */
 .type-headline span,
 .type-title span,
-.font-display span:is([class*="text-burgundy"], [class*="text-gold"], [class*="text-emphasis"]) {
+.font-display span:is([class*="text-burgundy"], [class*="text-gold"], [class*="text-hilo"], [class*="text-emphasis"]) {
   color: inherit;
   font-weight: inherit;
 }
 
 /* ── El subrayado del abogado ──
-   El único énfasis del sitio: un hilo dorado bajo la frase que resume a la
+   El único énfasis del sitio: un hilo burdeos bajo la frase que resume a la
    firma, como quien subraya la línea decisiva de una sentencia. Se traza de
    izquierda a derecha una sola vez, cuando el titular entra en pantalla (en
    los navegadores con animaciones ligadas al desplazamiento); en los demás, y
    con movimiento reducido, aparece ya trazado. */
 @utility gc-subrayado {
-  background-image: linear-gradient(var(--color-gold), var(--color-gold));
+  background-image: linear-gradient(var(--color-burgundy-light), var(--color-burgundy-light));
   background-repeat: no-repeat;
   background-position: 0 94%;
   background-size: 100% max(1.5px, 0.035em);
@@ -228,13 +241,13 @@
    Solo cuatro cambios del paquete v2: el encabezado corrido en lugar del
    rótulo con filete dorado, el retiro de los filetes dorados decorativos y
    del dorado como texto sobre fondo claro, los gráficos planos y las tablas
-   editoriales. Se conservan la escala de titulares, el subrayado dorado de
-   la portada, las bandas con degradado, las cifras y el pie de fuente.
+   editoriales. Se conservan la escala de titulares, el subrayado de
+   la portada (burdeos desde el 26-09-2026), las bandas con degradado, las cifras y el pie de fuente.
    ════════════════════════════════════════════════════════════════ */
 :root {
   --rh-title-size: 17px;
   --rh-locator-size: 11px;
-  --rh-title-color: var(--color-burgundy);
+  --rh-title-color: var(--color-burgundy-light);
   --chart-1: #6B1D3A;
   --chart-2: rgba(107, 29, 58, 0.55);
   --chart-3: rgba(107, 29, 58, 0.28);
@@ -245,13 +258,13 @@
   --chart-neutral: color-mix(in oklab, var(--color-cream) 16%, transparent);
   --chart-track: color-mix(in oklab, var(--color-cream) 7%, transparent);
 }
-/* De noche el burdeos no llega a 3:1 sobre el negro: el encabezado y la
-   escalera de los gráficos pasan al dorado, como el resto del énfasis. */
+/* De noche el burdeos no llega a 3:1 sobre el negro: el título del
+   encabezado pasa al marfil y la escalera de los gráficos a burdeos claros. */
 .dark {
-  --rh-title-color: var(--color-gold);
-  --chart-1: #C4A265;
-  --chart-2: rgba(196, 162, 101, 0.55);
-  --chart-3: rgba(196, 162, 101, 0.28);
+  --rh-title-color: #FFFFFF;
+  --chart-1: #9B2A5C;
+  --chart-2: #6B1D3A;
+  --chart-3: #4A0E27;
 }
 @media (max-width: 767px) {
   :root { --rh-title-size: 15px; --rh-locator-size: 10px; }
@@ -288,7 +301,7 @@
   }
   /* Sobre bandas oscuras o burdeos dentro de una página clara. */
   .running-head--dark { border-bottom-color: rgb(255 255 255 / 0.14); }
-  .running-head--dark .running-head__title { color: var(--color-gold); }
+  .running-head--dark .running-head__title { color: #FFFFFF; }
   .running-head--dark .running-head__locator { color: rgb(255 255 255 / 0.62); }
 }
 
@@ -339,10 +352,10 @@ body {
   color: #F7F3EE;
   letter-spacing: -0.01em;
 }
-.dark .prose-article a { color: #C4A265; }
-.dark .prose-article a:hover { color: #D4B87A; }
+.dark .prose-article a { color: var(--color-hilo); }
+.dark .prose-article a:hover { color: var(--color-hilo-texto); }
 .dark .prose-article blockquote {
-  border-left: 3px solid #C4A265;
+  border-left: 3px solid var(--color-hilo);
   color: #F7F3EE80;
 }
 .dark .prose-article code {
@@ -457,7 +470,7 @@ body {
   line-height: 1.6;
 }
 .prose-article sup a[data-footnote-ref] {
-  color: #C4A265;
+  color: var(--color-hilo);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.75em;
@@ -467,7 +480,7 @@ body {
   text-decoration: underline;
 }
 .prose-article .footnotes a[data-footnote-backref] {
-  color: #C4A265;
+  color: var(--color-hilo);
   text-decoration: none;
   margin-left: 0.25rem;
   font-size: 0.85em;
@@ -476,12 +489,12 @@ body {
   text-decoration: underline;
 }
 .prose-article .footnotes .footnote-back {
-  color: #C4A265;
+  color: var(--color-hilo);
 }
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #C4A265;
+  outline: 2px solid var(--color-hilo);
   outline-offset: 2px;
 }
 
@@ -568,7 +581,7 @@ html {
 .dark .navbar-glass::after {
   background: radial-gradient(
     600px circle at var(--glare-x) var(--glare-y),
-    rgba(196, 162, 101, 0.06) 0%,
+    color-mix(in oklab, var(--color-hilo) 6%, transparent) 0%,
     transparent 50%
   );
 }
@@ -581,8 +594,8 @@ html {
   left: 0;
   height: 28px;
   border-radius: 14px;
-  background: rgba(196, 162, 101, 0.08);
-  border: 1px solid rgba(196, 162, 101, 0.12);
+  background: color-mix(in oklab, var(--color-hilo) 8%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-hilo) 12%, transparent);
   pointer-events: none;
   transition:
     transform 0.5s cubic-bezier(0.34, 1.2, 0.64, 1),
@@ -590,8 +603,8 @@ html {
     opacity 0.3s ease;
 }
 .dark .nav-active-pill {
-  background: rgba(196, 162, 101, 0.06);
-  border-color: rgba(196, 162, 101, 0.08);
+  background: color-mix(in oklab, var(--color-hilo) 6%, transparent);
+  border-color: color-mix(in oklab, var(--color-hilo) 8%, transparent);
 }
 
 /* ── Nav Link Items ── */
@@ -626,7 +639,7 @@ html {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(196, 162, 101, 0.06) 50%,
+    color-mix(in oklab, var(--color-hilo) 6%, transparent) 50%,
     transparent 100%
   );
   background-size: 200% 100%;
@@ -1189,12 +1202,12 @@ html {
   border-radius: 50%;
   background: #6B1D3A;
 }
-.dark .prose-article ul > li::before { background: #C4A265; }
+.dark .prose-article ul > li::before { background: var(--color-hilo); }
 
 /* Listas numeradas (pasos): número en color de marca y en negrita */
 .prose-article ol { padding-left: 1.6rem; }
 .prose-article ol > li::marker { color: #6B1D3A; font-weight: 700; }
-.dark .prose-article ol > li::marker { color: #C4A265; }
+.dark .prose-article ol > li::marker { color: var(--color-hilo); }
 
 /* Más aire entre ítems y para sublistas */
 .prose-article li { margin-bottom: 0.5rem; }
@@ -1209,7 +1222,7 @@ html {
   color: #1C1C1E;
 }
 .dark .prose-article blockquote {
-  background: color-mix(in oklab, #C4A265 8%, transparent);
+  background: color-mix(in oklab, var(--color-hilo) 8%, transparent);
   color: #F7F3EEcc;
 }
 
@@ -1244,7 +1257,7 @@ html {
 /* ============================================================
    Figuras de la guía de recursos de la LGAP (.gc-fig). Mismo
    lenguaje editorial que .gc-reforma: filetes finos, antetítulo
-   con línea dorada, filas numeradas, columna destacada con barra
+   con línea de acento, filas numeradas, columna destacada con barra
    burdeos y una línea de fuente al pie. Componentes en
    components/article/RecursosLgap.tsx.
    ============================================================ */
@@ -1258,7 +1271,7 @@ html {
   margin: 3.25rem 0; padding: 0; color: var(--color-cream); font-family: var(--font-body);
 }
 .dark .prose-article .gc-fig {
-  --fig-accent: var(--color-gold-light);
+  --fig-accent: var(--color-hilo-texto);
   --fig-hl-bg: color-mix(in oklab, var(--color-burgundy) 12%, transparent);
 }
 .prose-article .gc-fig :where(p) { margin: 0; max-width: none; text-align: left; }
@@ -1425,7 +1438,7 @@ html {
 .prose-article .gc-crono-marca--E {
   background: var(--color-surface); color: var(--color-emphasis); box-shadow: inset 0 0 0 1.5px var(--color-emphasis);
 }
-.dark .prose-article .gc-crono-marca--N { background: var(--color-gold); color: #0F0A0D; }
+.dark .prose-article .gc-crono-marca--N { background: var(--color-hilo); color: #FFFFFF; }
 .prose-article .gc-crono-x {
   font-size: 15px; font-weight: 500; line-height: 1; color: var(--fig-muted);
 }
@@ -1554,3 +1567,131 @@ html {
 @media (max-width: 720px) {
   .prose-article .gc-juris-item { grid-template-columns: 1fr; row-gap: 8px; }
 }
+
+/* De noche el subrayado deja de ser un hilo y pasa a ser el trazo de un
+   marcador vino detrás de las palabras. */
+.dark .gc-subrayado {
+  background-image: linear-gradient(color-mix(in oklab, #8B2252 70%, transparent), color-mix(in oklab, #8B2252 70%, transparent));
+  background-position: 0 88%;
+  background-size: 100% 0.34em;
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .dark .gc-subrayado { animation-name: gc-marcar; }
+  }
+}
+@keyframes gc-marcar {
+  from { background-size: 0% 0.34em; }
+  to { background-size: 100% 0.34em; }
+}
+
+/* Enlaces de los artículos de noche: marfil con subrayado burdeos. */
+.dark .prose-article a { color: #FFFFFF; text-decoration-color: #9B2A5C; text-decoration-thickness: 2px; }
+.dark .prose-article a:hover { color: #FFFFFF; text-decoration-color: #B8336D; }
+
+/* Bandas oscuras en ambos temas: filetes y rótulos en marfil translúcido,
+   texto de acento en marfil. */
+.gc-on-dark,
+.running-head--dark,
+[class*="bg-burgundy-dark"],
+[class*="from-burgundy-dark"],
+[class*="bg-[#3A0B1F]"] {
+  --color-hilo: rgb(247 243 238 / 0.4);
+  --color-gold: rgb(247 243 238 / 0.4);
+  --color-hilo-texto: #FFFFFF;
+  --color-gold-light: #FFFFFF;
+}
+
+/* De noche el encabezado corrido lleva el título en marfil y el filete en
+   burdeos: la marca aparece como materia, no como color de texto. */
+.dark .running-head { border-bottom-color: #8B2252; }
+.dark .running-head--dark { border-bottom-color: rgb(247 243 238 / 0.18); }
+/* El foco necesita 3:1: de noche va en marfil. */
+.dark *:focus-visible { outline-color: #FFFFFF; }
+
+/* El marcador vino al pasar el cursor: el gesto que antes hacía el dorado en
+   las filas de artículos. Una franja burdeos se dibuja detrás del título,
+   de izquierda a derecha, línea por línea. */
+.gc-marcable {
+  background-image: linear-gradient(color-mix(in oklab, #A8325F 78%, transparent), color-mix(in oklab, #A8325F 78%, transparent));
+  background-repeat: no-repeat;
+  background-position: 0 90%;
+  background-size: 0% 0.36em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .gc-marcable,
+.group:focus-visible .gc-marcable {
+  background-size: 100% 0.36em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gc-marcable { transition: none; }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   Burdeos y marfil · criterio nocturno: el texto en marfil,
+   el estado en vino. Solo en enlaces, botones de texto y años clave de
+   las cronologías, que no tienen otra marca. Las filas con filete
+   (áreas, subáreas, equipo, índices) ya marcan el estado con su trazo
+   burdeos y no llevan subrayado adicional.
+   ════════════════════════════════════════════════════════════════ */
+.dark :is(a, button, p)[class~="dark:text-hilo-texto"]:not(.type-label) {
+  text-decoration-line: underline;
+  text-decoration-color: #9B2A5C;
+  text-decoration-thickness: max(2px, 0.06em);
+  text-underline-offset: 0.24em;
+  transition: text-decoration-thickness 0.3s ease;
+}
+.dark a[class~="dark:text-hilo-texto"]:hover { text-decoration-thickness: max(3px, 0.09em); }
+
+/* Resaltados de las sentencias: de día la frase decisiva va en burdeos
+   vivo con un subrayado del mismo tono; de noche, el marcador vino. */
+mark.gc-subrayado {
+  color: #8B2252;
+  background-image: linear-gradient(#8B2252, #8B2252);
+  background-position: 0 97%;
+  background-size: 100% max(2.5px, 0.095em);
+}
+.dark mark.gc-subrayado {
+  color: #FFFFFF;
+  background-image: linear-gradient(color-mix(in oklab, #9B2A5C 80%, transparent), color-mix(in oklab, #9B2A5C 80%, transparent));
+  background-position: 0 88%;
+  background-size: 100% 0.34em;
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    mark.gc-subrayado { animation-name: gc-subrayar-marca; }
+    .dark mark.gc-subrayado { animation-name: gc-marcar; }
+  }
+}
+@keyframes gc-subrayar-marca {
+  from { background-size: 0% max(2.5px, 0.095em); }
+  to { background-size: 100% max(2.5px, 0.095em); }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   Burdeos y marfil · el burdeos en las páginas de lectura (de día)
+   Solo artículos y sentencias (<main class="gc-lectura">); el resto del
+   sitio conserva sus titulares en tinta. El burdeos entra por la
+   estructura del texto: titulares y subtítulos en el burdeos vivo de la
+   marca, separadores como un trazo corto, citas en bloque en vino.
+   Párrafos, negritas y tablas siguen en tinta. Las bandas oscuras que
+   haya dentro de la página conservan su marfil.
+   ════════════════════════════════════════════════════════════════ */
+html:not(.dark) .gc-lectura :is(
+    .type-headline, .type-title,
+    .font-display:is([class*="text-3xl"], [class*="text-4xl"], [class*="text-5xl"], [class*="text-6xl"])
+  ):not([class*="text-white"]):not(:is(.gc-on-dark, [class*="bg-burgundy-dark"], [class*="from-burgundy-dark"], [class*="bg-dark-bg"], [class*="bg-[#3A0B1F]"]) *) {
+  color: #8B2252;
+}
+html:not(.dark) .gc-lectura .prose-article :is(h2, h3) { color: #8B2252; }
+html:not(.dark) .gc-lectura .prose-article hr {
+  border-top: 0;
+  height: 2px;
+  width: 56px;
+  background: #8B2252;
+  margin: 3rem 0 2.25rem;
+}
+html:not(.dark) .gc-lectura .prose-article blockquote { color: #6B1D3A; }
+html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B2252; }

@@ -17,7 +17,7 @@ export function FirmHero() {
         {/* Left — Content */}
         <div className="relative z-10 py-8 md:py-0">
           <div className="gc-rise" style={{ animationDelay: "0.05s" }}>
-            <RunningHead title="Abogados especialistas en Derecho P&#250;blico" className="mb-7 max-w-[52ch]" />
+            <RunningHead title="Abogados especialistas en Derecho P&#250;blico" className="mb-6 max-w-[52ch] border-b-0 pb-0" />
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.12s" }}>
@@ -56,7 +56,7 @@ export function FirmHero() {
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.28s" }}>
-            <div className="mt-8 md:mt-10 pt-8 md:pt-10 border-t border-cream/10 max-w-[52ch]">
+            <div className="mt-10 md:mt-14 max-w-[52ch]">
               <p className="type-lead text-cream/85">
                 Coordinador de la comisión redactora del Código Procesal Contencioso
                 Administrativo. Magistrado de la Sala Primera de la Corte

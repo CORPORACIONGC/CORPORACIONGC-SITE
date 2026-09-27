@@ -26,9 +26,9 @@ function Logo({ c, alto, className = "" }: { c: Cliente; alto: number; className
 
 const Rotulo = () => (
   <div className="flex items-center justify-center gap-4">
-    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-r from-transparent to-gold/40" />
+    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-r from-transparent to-hilo/40" />
     <h2 className="type-label text-white/70">Han confiado en nosotros</h2>
-    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-l from-transparent to-gold/40" />
+    <span aria-hidden="true" className="h-px w-10 bg-gradient-to-l from-transparent to-hilo/40" />
   </div>
 );
 
