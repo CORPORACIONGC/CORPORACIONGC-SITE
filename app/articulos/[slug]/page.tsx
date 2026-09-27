@@ -1,3 +1,4 @@
+import type { ComponentProps, ReactElement, ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -45,6 +46,7 @@ import {
   CronologiaTribunalContencioso,
   FuentesTribunalContencioso,
 } from "@/components/article/TribunalContencioso";
+import { FuentesCpca, PlazosCpca, ReformasCpca } from "@/components/article/CpcaGuia";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -114,9 +116,46 @@ const UI = {
   },
 };
 
+/* Anclas de los subtítulos del Markdown: cada h2 y h3 recibe un id derivado
+   de su texto, para enlazar la sección y para que Google pueda mostrar
+   accesos directos («Ir a») a los apartados en el resultado. */
+function textoDe(nodo: ReactNode): string {
+  if (typeof nodo === "string" || typeof nodo === "number") return String(nodo);
+  if (Array.isArray(nodo)) return nodo.map(textoDe).join("");
+  if (nodo && typeof nodo === "object" && "props" in nodo) {
+    return textoDe((nodo as ReactElement<{ children?: ReactNode }>).props.children);
+  }
+  return "";
+}
+function anclaDe(nodo: ReactNode): string | undefined {
+  const a = textoDe(nodo)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return a || undefined;
+}
+function SubtituloH2({ children, id, ...props }: ComponentProps<"h2">) {
+  return (
+    <h2 id={id ?? anclaDe(children)} {...props}>
+      {children}
+    </h2>
+  );
+}
+function SubtituloH3({ children, id, ...props }: ComponentProps<"h3">) {
+  return (
+    <h3 id={id ?? anclaDe(children)} {...props}>
+      {children}
+    </h3>
+  );
+}
+
 /* Componentes que los artículos en Markdown pueden insertar como etiquetas
    (<ReformaCpca />, <MapaRecursosLgap />, etc.). */
 const ARTICLE_COMPONENTS = {
+  h2: SubtituloH2,
+  h3: SubtituloH3,
   ComparativaViasAmparo,
   CodigoCPCA,
   ReglamentoContratacion,
@@ -143,6 +182,9 @@ const ARTICLE_COMPONENTS = {
   RutaProcesoContencioso,
   CronologiaTribunalContencioso,
   FuentesTribunalContencioso,
+  ReformasCpca,
+  PlazosCpca,
+  FuentesCpca,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),

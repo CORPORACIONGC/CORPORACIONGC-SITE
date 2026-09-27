@@ -1,11 +1,11 @@
 "use client";
 
 import { NormaNavegable } from "./NormaNavegable";
-import { CPCA_FICHA, CPCA_GRUPOS, CPCA_INDICE, CPCA_JURISPRUDENCIA, CPCA_TITULOS } from "@/lib/cpca";
+import { CPCA_FICHA, CPCA_GRUPOS, CPCA_GUIAS, CPCA_INDICE, CPCA_JURISPRUDENCIA, CPCA_TITULOS } from "@/lib/cpca";
 
 /** El Código Procesal Contencioso-Administrativo, navegable dentro del
  *  artículo que lo explica, con las sentencias de la casa que interpretan
- *  sus artículos. */
+ *  sus artículos y las guías que los desarrollan. */
 export function CodigoCPCA() {
   return (
     <NormaNavegable
@@ -14,6 +14,7 @@ export function CodigoCPCA() {
       indice={CPCA_INDICE}
       grupos={CPCA_GRUPOS}
       votos={CPCA_JURISPRUDENCIA}
+      guias={CPCA_GUIAS}
     />
   );
 }

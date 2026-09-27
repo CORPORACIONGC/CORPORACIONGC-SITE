@@ -1726,3 +1726,7 @@ html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B225
 @media (prefers-reduced-motion: reduce) {
   .gc-tarjeta, .gc-tarjeta::before { transition: none; }
 }
+
+/* Los subtítulos de los artículos tienen ancla: al saltar a uno, que no
+   quede debajo de la barra de navegación fija. */
+.prose-article :is(h2, h3)[id] { scroll-margin-top: 6.5rem; }

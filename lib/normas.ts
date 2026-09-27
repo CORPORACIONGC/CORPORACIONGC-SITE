@@ -23,6 +23,10 @@ export type FichaNorma = {
   etiquetaBusqueda: string;
   /** Otros nombres por los que se la busca. */
   alias?: string[];
+  /** Órgano que la dictó («Asamblea Legislativa…»): entra en el marcado. */
+  emisor?: string;
+  /** Fecha, en ISO, de la versión consolidada que se publica. */
+  fechaVersion?: string;
   /** Palabras que la norma dejó de usar y el nombre que llevan hoy. Quien
    *  busca «cartel» en el Reglamento no encontraría nada sin esto. */
   sinonimos?: Record<string, { actual: string; nota: string }>;

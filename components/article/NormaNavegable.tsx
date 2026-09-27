@@ -241,6 +241,8 @@ export function NormaNavegable({
             legislationJurisdiction: "Costa Rica",
             legislationDate: ficha.fecha,
             legislationLegalForce: "InForce",
+            ...(ficha.fechaVersion && { legislationDateVersion: ficha.fechaVersion }),
+            ...(ficha.emisor && { legislationPassedBy: { "@type": "Organization", name: ficha.emisor } }),
             inLanguage: "es",
             sameAs: ficha.sinalevi,
           }),
@@ -538,7 +540,7 @@ export function NormaNavegable({
                         onClick={() =>
                           copiar(
                             `t-${art}`,
-                            `Artículo ${art}${rotulo ? `. ${rotulo}` : ""}\n\n${cuerpo?.texto ?? ""}\n\n${ficha.nombre} (${ficha.identificador})`,
+                            `${/^T[IVX]+$/.test(art) ? rotulo : `Artículo ${art}${rotulo ? `. ${rotulo}` : ""}`}\n\n${cuerpo?.texto ?? ""}\n\n${ficha.nombre} (${ficha.identificador})`,
                           )
                         }
                         className="inline-flex items-center gap-1.5 text-cream/65 transition-colors hover:text-burgundy disabled:opacity-40 dark:hover:text-hilo-texto"
