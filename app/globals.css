@@ -176,22 +176,23 @@
 }
 
 /* ── El subrayado del abogado ──
-   El único énfasis del sitio: un hilo burdeos bajo la frase que resume a la
-   firma, como quien subraya la línea decisiva de una sentencia. Se traza de
+   El único énfasis del sitio: un trazo grueso en burdeos vivo bajo la frase
+   que resume a la firma, como quien subraya con fuerza la línea decisiva de
+   una sentencia. Se distingue de los filetes del sitio por el grosor. Se traza de
    izquierda a derecha una sola vez, cuando el titular entra en pantalla (en
    los navegadores con animaciones ligadas al desplazamiento); en los demás, y
    con movimiento reducido, aparece ya trazado. */
 @utility gc-subrayado {
   background-image: linear-gradient(var(--color-burgundy-light), var(--color-burgundy-light));
   background-repeat: no-repeat;
-  background-position: 0 94%;
-  background-size: 100% max(1.5px, 0.035em);
+  background-position: 0 100%;
+  background-size: 100% max(4px, 0.085em);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 @keyframes gc-subrayar {
-  from { background-size: 0% max(1.5px, 0.035em); }
-  to { background-size: 100% max(1.5px, 0.035em); }
+  from { background-size: 0% max(4px, 0.085em); }
+  to { background-size: 100% max(4px, 0.085em); }
 }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
@@ -1568,18 +1569,12 @@ html {
   .prose-article .gc-juris-item { grid-template-columns: 1fr; row-gap: 8px; }
 }
 
-/* De noche el subrayado deja de ser un hilo y pasa a ser el trazo de un
-   marcador vino detrás de las palabras. */
+/* De noche el subrayado conserva el mismo trazo grueso, en el burdeos de
+   línea nocturno. */
 .dark .gc-subrayado {
-  background-image: linear-gradient(color-mix(in oklab, #8B2252 70%, transparent), color-mix(in oklab, #8B2252 70%, transparent));
-  background-position: 0 88%;
-  background-size: 100% 0.34em;
+  background-image: linear-gradient(#9B2A5C, #9B2A5C);
 }
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .dark .gc-subrayado { animation-name: gc-marcar; }
-  }
-}
+/* El marcador vino queda para los resaltados de las sentencias de noche. */
 @keyframes gc-marcar {
   from { background-size: 0% 0.34em; }
   to { background-size: 100% 0.34em; }

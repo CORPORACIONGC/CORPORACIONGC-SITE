@@ -147,6 +147,7 @@ export default async function SentenciaDestacadaPage({
     ["Materia", sentencia.materia],
     ["Redacta", sentencia.redactor],
   ];
+  const sintesis = sentencia.sintesisPortada;
 
   return (
     <>
@@ -205,6 +206,27 @@ export default async function SentenciaDestacadaPage({
                 </a>
               </aside>
             </div>
+
+            {/* En síntesis: el caso, el análisis y el impacto */}
+            {sintesis && (
+              <section
+                aria-label="En síntesis"
+                className="mt-16 grid border-y border-cream/10 md:mt-20 md:grid-cols-3 md:divide-x md:divide-cream/10"
+              >
+                {[
+                  ["El caso", sintesis.caso],
+                  ["El análisis", sintesis.analisis],
+                  ["El impacto", sintesis.impacto],
+                ].map(([t, x]) => (
+                  <div key={t} className="border-b border-cream/10 py-7 last:border-b-0 md:border-b-0 md:px-8 md:first:pl-0 md:last:pr-0">
+                    <h2 className="type-label text-burgundy-light dark:text-cream/65">{t}</h2>
+                    <p className="mt-3 text-[15px] leading-[1.7] text-cream/80">
+                      <ConNegritas texto={x} />
+                    </p>
+                  </div>
+                ))}
+              </section>
+            )}
           </div>
         </header>
 
