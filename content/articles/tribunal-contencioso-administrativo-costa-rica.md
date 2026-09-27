@@ -60,7 +60,7 @@ El reparto tiene una lógica. El juez tramitador conduce toda la fase escrita y 
 
 ## Cómo avanza un proceso, etapa por etapa
 
-El Código organizó el proceso alrededor de dos audiencias orales principales, la preliminar y el juicio, y todo lo que ocurre antes sirve para prepararlas. La figura 2 muestra la ruta completa, con sus plazos y sus desvíos.
+El Código organizó el proceso alrededor de dos audiencias orales principales, la preliminar y el juicio, y todo lo que ocurre antes sirve para prepararlas. La figura 2 muestra la ruta completa, con sus plazos y sus desvíos. Desde el punto de vista de quien demanda, [el proceso contencioso administrativo paso a paso](/articulos/como-demandar-al-estado-costa-rica#el-proceso-contencioso-administrativo-paso-a-paso), con la guía que desarrolla cada etapa, está en la guía sobre cómo demandar al Estado.
 
 <RutaProcesoContencioso />
 

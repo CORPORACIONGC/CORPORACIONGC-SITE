@@ -122,32 +122,32 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         title: "Análisis técnico inmediato",
         description:
-          "Evaluamos el caso en 24–48 horas para determinar la viabilidad de la medida cautelar, el tipo procedente (provisionalísima, ante causam o coetánea) y la estrategia probatoria.",
+          "Evaluamos el caso en 24–48 horas para determinar la viabilidad de la medida, su momento (antes de la demanda, durante el proceso o en ejecución), si procede una provisionalísima y la estrategia probatoria.",
       },
       {
         title: "Redacción y presentación de la solicitud",
         description:
-          "Preparamos la solicitud cautelar con la fundamentación de los presupuestos del CPCA (periculum in mora y fumus boni iuris) y la prueba que el juez necesita para resolver inmediatamente.",
+          "Preparamos la solicitud con la fundamentación de los presupuestos de los artículos 21 y 22 del CPCA (daño grave, seriedad de la pretensión y ponderación de los intereses en juego) y la prueba que el juez necesita para resolver de inmediato.",
       },
       {
-        title: "Medidas provisionalísimas en urgencia extrema",
+        title: "Medidas provisionalísimas y sin audiencia",
         description:
-          "Cuando la dilación tornaría irreparable el daño, solicitamos provisionalísimas (art. 21 CPCA) que se dictan sin audiencia previa, en cuestión de horas.",
+          "Cuando la demora haría ineficaz la tutela, solicitamos medidas provisionalísimas, que el juez adopta de manera inmediata y prima facie (artículo 23 del CPCA), o la medida sin audiencia previa que autoriza el artículo 25 en casos de extrema urgencia.",
       },
       {
-        title: "Audiencia oral ante el juez tramitador",
+        title: "Audiencia sobre la medida",
         description:
-          "Asumimos la representación en la audiencia oral del CPCA donde se decide el mantenimiento, modificación o revocatoria de la medida.",
+          "Atendemos la audiencia de hasta tres días y, cuando el juez la convoca, la audiencia oral (artículo 24), así como la posterior a una medida adoptada sin audiencia, en la que se decide mantenerla, modificarla o revocarla (artículo 25).",
       },
       {
         title: "Defensa frente a recursos de la Administración",
         description:
-          "Si la Administración recurre la medida concedida, sostenemos la defensa en segunda instancia hasta la firmeza del pronunciamiento cautelar.",
+          "Si la Administración apela la medida concedida, sostenemos su defensa ante el Tribunal de Apelación de lo Contencioso-Administrativo (artículo 30: tres días hábiles, efecto devolutivo) hasta la firmeza de lo resuelto.",
       },
       {
         title: "Coordinación con la demanda principal",
         description:
-          "Cuando la cautelar se solicita ante causam, coordinamos su otorgamiento con la presentación oportuna de la demanda dentro del plazo fijado por el tribunal.",
+          "Cuando la medida se obtiene antes de la demanda, la presentamos dentro de los quince días siguientes a la notificación del auto que la acoge (artículo 26.2), sin exponerla a la caducidad del artículo 112 ter.",
       },
     ],
     whatsappMessage:
@@ -156,22 +156,22 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         question: "¿Cuánto tarda en resolverse una medida cautelar?",
         answer:
-          "Las medidas provisionalísimas (art. 21 CPCA) pueden dictarse en cuestión de horas, sin audiencia previa a la parte contraria. Las cautelares ordinarias requieren audiencia oral, generalmente dentro de los días siguientes a la solicitud. La rapidez efectiva depende de la urgencia demostrada y del Tribunal de turno.",
+          "Las medidas provisionalísimas se adoptan de manera inmediata y prima facie una vez solicitada la cautelar (artículo 23 del CPCA). Para la medida cautelar, el juez da audiencia a las partes hasta por tres días y, si la estima necesaria, celebra una audiencia oral dentro de los tres días hábiles siguientes (artículo 24); en extrema urgencia puede adoptarla sin audiencia previa (artículo 25). La rapidez efectiva depende de la urgencia acreditada y de la carga del despacho de turno.",
       },
       {
         question: "¿Necesito tener la demanda lista para solicitar la medida?",
         answer:
-          "No. El CPCA permite solicitar medidas cautelares ante causam, antes de presentar la demanda principal. Si el juez la concede, fija un plazo para interponer la demanda dentro del cual la cautelar se mantiene. En urgencia extrema, puede solicitarse directamente una provisionalísima ante causam que se dicta de forma inmediata.",
+          "No. El artículo 19 del CPCA permite pedir la medida antes de iniciar el proceso. Si se concede, la demanda debe presentarse dentro de los quince días siguientes a la notificación del auto que la acoge, bajo pena de levantamiento y condena a los daños causados (artículo 26.2). El artículo 112 ter prevé además la caducidad de la medida si, ejecutada, no se presenta la demanda en un mes; como los tribunales discrepan sobre cuál plazo rige, lo prudente es presentarla dentro de los quince días.",
       },
       {
         question: "¿Qué pasa si la medida cautelar es rechazada?",
         answer:
-          "Procede recurso de apelación ante el órgano superior dentro de los plazos del CPCA. El rechazo cautelar no afecta el fondo del proceso principal: la demanda contencioso-administrativa puede continuar su trámite. En algunos casos también es posible plantear una nueva solicitud cautelar con presupuestos diferentes.",
+          "El auto que resuelve la medida es apelable dentro de los tres días hábiles siguientes, con efecto devolutivo (artículo 30 del CPCA); contra la resolución sobre una provisionalísima solo cabe revocatoria. El rechazo no afecta el fondo del proceso principal, que sigue su trámite, y si varían las circunstancias de hecho la medida puede solicitarse nuevamente (artículo 29.2).",
       },
       {
         question: "¿Cómo se demuestra la urgencia para una provisionalísima?",
         answer:
-          "Debe acreditarse al juez que el daño es inminente, cierto y verificable, y que cualquier dilación lo haría irreparable. La calidad técnica de la solicitud es determinante: una provisionalísima mal planteada se rechaza de plano y puede comprometer toda la estrategia cautelar posterior.",
+          "Debe acreditarse, al menos de modo indiciario, que la conducta produce o producirá un daño grave (artículo 21 del CPCA) y que la espera de la resolución cautelar lo agravaría. La provisionalísima debe guardar vínculo con el objeto del proceso y con la medida requerida (artículo 23), de modo que la calidad técnica de la solicitud es determinante desde el primer escrito.",
       },
     ],
     relatedArticleSlug: "medidas-cautelares-contra-el-estado-costa-rica",

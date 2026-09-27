@@ -472,112 +472,117 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          Las medidas cautelares en la jurisdicción contencioso-administrativa son instrumentos de
-          tutela urgente que permiten proteger los derechos del administrado mientras se resuelve
-          el proceso principal. Están reguladas en los artículos 19 a 30 del CPCA y constituyen
-          una de las innovaciones más significativas del código, pues superaron la limitación del
-          sistema anterior que solo permitía la suspensión del acto administrativo.
+          Las medidas cautelares protegen el objeto del proceso y la efectividad de la sentencia
+          mientras se tramita el litigio contra la Administración. El Código Procesal Contencioso
+          Administrativo las regula en sus artículos 19 a 30 y las abrió a cualquier medida adecuada
+          y necesaria, más allá de la sola suspensión del acto que admitía la ley de 1966. Su
+          desarrollo, con los antecedentes legislativos y la jurisprudencia, está en la guía del{" "}
+          <Link href="/articulos/que-es-el-cpca-costa-rica#art-19" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            Código Procesal Contencioso Administrativo
+          </Link>{" "}
+          y en la de{" "}
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            medidas cautelares contra el Estado
+          </Link>
+          .
         </p>
       </section>
 
-      <Instrumento titulo="Medida cautelar provisionalísima" fundamento="CPCA, art. 21">
+      <Instrumento titulo="Medida cautelar y su contenido" fundamento="CPCA, arts. 19 y 20">
         <p>
-          La medida cautelar provisionalísima es el instrumento de tutela más urgente que contempla
-          el ordenamiento contencioso-administrativo costarricense. El artículo 21 del CPCA faculta
-          al juez tramitador a dictar una medida cautelar de forma inaudita parte —sin audiencia
-          previa a la parte contraria— cuando concurra una situación de urgencia extrema que no
-          admita la demora propia del trámite ordinario de las cautelares.
+          Durante el proceso, en la fase de ejecución o antes de iniciarlo, el juez puede ordenar, a
+          instancia de parte, las medidas adecuadas y necesarias para proteger provisionalmente el
+          objeto del proceso y la efectividad de la sentencia (artículo 19). La medida puede
+          conservar el estado de cosas o tener efectos anticipativos o innovativos, e imponer de
+          forma provisional a cualquiera de las partes obligaciones de hacer, de no hacer o de dar
+          (artículo 20).
         </p>
         <p>
-          Esta medida puede dictarse incluso antes de la interposición de la demanda, cuando la
-          amenaza de daño es tan inminente que cualquier dilación podría tornar irreparable el
-          perjuicio. Una vez dictada, el juez debe convocar a las partes a una audiencia oral
-          dentro de las cuarenta y ocho horas siguientes para decidir sobre su mantenimiento,
-          modificación o revocatoria. Si no se interpone la demanda dentro del plazo que fije el
-          tribunal, la medida queda sin efecto.
+          La suspensión de la conducta impugnada, sea un acto, una licitación en curso o la
+          ejecución de un contrato, es su forma conservativa más frecuente. Cuando la medida recae
+          sobre conductas con elementos discrecionales, rige el límite del artículo 128 del Código.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Medida cautelar ante causam" fundamento="CPCA, arts. 19 a 30">
+      <Instrumento titulo="Presupuestos y ponderación" fundamento="CPCA, arts. 21 y 22">
         <p>
-          La medida cautelar ante causam permite solicitar protección jurisdiccional antes de
-          interponer la demanda principal. El CPCA faculta a cualquier persona que pretenda
-          demandar ante la jurisdicción contencioso-administrativa a solicitar la adopción de
-          medidas cautelares con carácter previo a la presentación de la demanda. El solicitante
-          debe acreditar los presupuestos de urgencia y apariencia de buen derecho propios de
-          toda medida cautelar.
+          La medida procede cuando la ejecución o permanencia de la conducta produce graves daños o
+          perjuicios, actuales o potenciales, siempre que la pretensión no sea temeraria o, en forma
+          palmaria, carente de seriedad (artículo 21). Para otorgarla o denegarla, el juez pondera,
+          conforme al principio de proporcionalidad, la eventual lesión al interés público, los daños
+          a terceros, los caracteres de instrumentalidad y provisionalidad de la medida y las
+          previsiones financieras que su ejecución exija a la Administración (artículo 22).
         </p>
         <p>
-          Si el juez concede la medida ante causam, fijará un plazo para que el solicitante
-          interponga la demanda principal. Si la demanda no se interpone dentro de dicho plazo,
-          la medida cautelar se levanta de pleno derecho y el solicitante responde por los daños
-          y perjuicios que haya causado.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Medida cautelar definitiva" fundamento="CPCA, arts. 19 y 20">
-        <p>
-          La medida cautelar definitiva se solicita dentro de un proceso contencioso-administrativo
-          ya instaurado. El artículo 19 del CPCA establece un sistema abierto de medidas cautelares:
-          el juez puede adoptar cualquier tipo de medida que considere adecuada y proporcionada
-          para garantizar provisionalmente la efectividad de la sentencia de fondo. El catálogo
-          incluye, entre otras, la suspensión de la ejecución del acto administrativo impugnado,
-          la orden de hacer o no hacer dirigida a la Administración, y cualquier medida positiva
-          o conservativa necesaria.
-        </p>
-        <p>
-          El artículo 20 del CPCA exige la concurrencia de dos presupuestos: el periculum in mora
-          (peligro de que el transcurso del proceso torne ineficaz la sentencia o cause un daño
-          grave al solicitante) y el fumus boni iuris (apariencia de que la pretensión de fondo
-          tiene visos de prosperar). El juez debe ponderar, además, que la medida no cause un
-          perjuicio al interés público evidentemente superior al daño que se busca evitar.
+          El Tribunal de Casación resumió esos requisitos en el peligro en la demora, la apariencia
+          de buen derecho y la ponderación de los intereses en juego (resolución 124-F-TC-2008), y
+          advirtió que el interés de la Administración no siempre coincide con el interés público.
+          La apariencia de buen derecho opera en forma invertida: basta comprobar que la demanda no
+          es temeraria (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125995" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">79-A-TC-2008</a>); el daño, en cambio, debe acreditarse al menos
+          de modo indiciario (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125463" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">134-A-TC-2008</a>).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Suspensión del acto administrativo" fundamento="CPCA, art. 19.1">
+      <Instrumento titulo="Medidas provisionalísimas" fundamento="CPCA, art. 23">
         <p>
-          La suspensión de los efectos del acto administrativo impugnado es la medida cautelar
-          clásica del contencioso administrativo. Consiste en la paralización temporal de la
-          eficacia del acto hasta que se dicte sentencia de fondo. Es procedente cuando la
-          ejecución del acto podría causar daños de difícil o imposible reparación. El artículo
-          19 del CPCA la incluye expresamente como una de las medidas que el juez puede dictar.
-        </p>
-        <p>
-          En materia de contratación pública, la suspensión puede recaer sobre procedimientos de
-          licitación en curso, adjudicaciones o la ejecución de contratos administrativos,
-          impidiendo que se consoliden situaciones jurídicas que podrían resultar contrarias a
-          derecho.
+          Una vez solicitada la medida cautelar, el juez puede adoptar, de oficio o a gestión de
+          parte, medidas provisionalísimas de manera inmediata y prima facie, a fin de garantizar
+          la efectividad de la que se adopte finalmente; deben guardar vínculo con el objeto del
+          proceso y con la medida requerida (artículo 23). Son un instrumento de la cautelar
+          principal (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125981" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">62-A-TC-2008</a>), y contra la resolución que las concede, las
+          deniega o las levanta solo cabe revocatoria (<a href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1396449" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">Tribunal de Apelación, 146-2026-I</a>).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Presupuestos de la tutela cautelar" fundamento="CPCA, art. 20">
+      <Instrumento titulo="Trámite y medidas sin audiencia" fundamento="CPCA, arts. 24 y 25">
         <p>
-          El artículo 20 del CPCA establece los requisitos que debe acreditar quien solicita una
-          medida cautelar. El periculum in mora exige demostrar que existe un peligro cierto de
-          que la demora del proceso principal cause un perjuicio grave o irreparable al solicitante,
-          o que haga ineficaz la sentencia estimatoria. El fumus boni iuris requiere que la
-          pretensión de fondo tenga una apariencia razonable de fundamento jurídico, sin que el
-          juez deba pronunciarse sobre el fondo del asunto.
-        </p>
-        <p>
-          Además, el juez debe realizar una ponderación de intereses: la medida no debe causar
-          al interés público un perjuicio evidentemente desproporcionado respecto del beneficio
-          que obtiene el solicitante. Esta ponderación no es equivalente a la antigua prevalencia
-          automática del interés público; el CPCA superó ese paradigma.
+          El juez da audiencia a las partes hasta por tres días y, si la estima necesaria, celebra
+          una audiencia oral en un plazo máximo de tres días hábiles (artículo 24). En casos de
+          extrema urgencia puede disponer la medida sin conceder audiencia, con caución o
+          contracautela; adoptada así, confiere audiencia por tres días, sin efectos suspensivos
+          sobre la medida, y luego resuelve mantenerla, modificarla o revocarla (artículo 25).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Contracautela" fundamento="CPCA, art. 25">
+      <Instrumento titulo="Medida anterior a la demanda" fundamento="CPCA, arts. 26 y 112 ter">
         <p>
-          El artículo 25 del CPCA faculta al juez a exigir al solicitante de la medida cautelar
-          la constitución de una garantía —contracautela— para responder por los daños y
-          perjuicios que la medida pueda causar a la parte contraria si la pretensión de fondo
-          resulta desestimada. La contracautela no es obligatoria en todos los casos: el juez
-          la dispone cuando lo considere proporcionado, atendiendo a la naturaleza de la medida
-          y a la condición de las partes.
+          La solicitud previa al proceso la conoce el juez tramitador de turno. Concedida la medida,
+          la demanda debe presentarse dentro de los quince días siguientes a la notificación del
+          auto que la acoge; de lo contrario, se ordena su levantamiento y se condena al solicitante
+          al pago de los daños y perjuicios causados (artículo 26).
+        </p>
+        <p>
+          Desde 2019, el artículo 112 ter dispone además que las medidas caducan en un mes si,
+          después de ejecutadas, no se presenta la demanda. El Tribunal de Apelación entiende que
+          esa norma reformó tácitamente el artículo 26.2 (<a href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1051033" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">234-2020-I</a>), mientras el Tribunal
+          de Casación siguió aplicando los quince días (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-1011-309373" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">249-A-TC-2021</a>). La práctica prudente es
+          presentar la demanda dentro de los quince días, que satisfacen ambas lecturas.
         </p>
       </Instrumento>
 
+      <Instrumento titulo="Contracautela" fundamento="CPCA, art. 28">
+        <p>
+          Al disponer la medida, el juez puede exigir caución o cualquier otra contracautela,
+          suficiente y proporcionada para proteger los derechos de las partes, de terceros o el
+          interés público, y la medida no se ejecuta hasta que se acredita (artículo 28, incisos 1
+          y 4). Contra el auto que resuelve la contracautela cabe apelación dentro del tercer día
+          (inciso 2), y quien pretenda el resarcimiento de los daños causados por la medida debe
+          pedirlo dentro de los dos meses siguientes a la cesación de sus efectos (inciso 5).
+        </p>
+      </Instrumento>
+
+      <Instrumento titulo="Modificación, apelación y caducidad" fundamento="CPCA, arts. 29, 30 y 112 ter">
+        <p>
+          La medida puede modificarse o suprimirse cuando varían las circunstancias de hecho que la
+          motivaron, y la que se rechazó puede reconsiderarse en el mismo supuesto (artículo 29). El
+          auto que la resuelve es apelable en tres días hábiles, con efecto devolutivo (artículo
+          30); el Código nombra como alzada al Tribunal de Casación, y desde 2010 la conoce el
+          Tribunal de Apelación de lo Contencioso-Administrativo, contra cuyas resoluciones en
+          materia cautelar no procede casación (<a href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1416985" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">Sala Primera, 1218-A-S1-2026</a>). La medida caduca en un
+          mes si no se ejecuta por culpa del solicitante, y tras tres meses de inactividad del
+          proceso que le sea imputable (artículo 112 ter).
+        </p>
+      </Instrumento>
     </>
   ),
 

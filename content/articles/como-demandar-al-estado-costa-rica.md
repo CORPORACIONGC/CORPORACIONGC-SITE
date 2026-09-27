@@ -1,6 +1,7 @@
 ---
 title: "¿Cómo demandar al Estado en Costa Rica?"
 date: "2026-03-28"
+updated: "2026-09-26"
 excerpt: "Si una institución pública le denegó un permiso, le impuso una sanción injusta o le causó un perjuicio, usted tiene derecho a demandar. En Costa Rica, el mecanismo para hacerlo es la demanda contencioso-administrativa. Esta guía le explica qué necesita saber antes de iniciar ese camino."
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Demanda contra el Estado", "Derecho Administrativo"]
 areas: ["litigio-contencioso-administrativo"]
@@ -9,28 +10,28 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Cómo Demandar al Estado en Costa Rica: Guía 2026"
-seoDescription: "Guía 2026 para demandar al Estado en Costa Rica: los plazos de su reclamo, qué puede pedir y los pasos, por quien coordinó la redacción del CPCA."
+seoTitle: "Cómo demandar al Estado en Costa Rica: el proceso paso a paso"
+seoDescription: "Los plazos, qué pedir en la demanda y cada etapa del proceso contencioso administrativo, de la medida cautelar a la ejecución de la sentencia."
 faq:
   - question: "¿A quiénes se puede demandar en la jurisdicción contencioso-administrativa?"
     answer: "Permite demandar al Estado (Gobierno Central, ministerios), instituciones autónomas (CCSS, ICE, INVU, AyA, IMAS), municipalidades, entes públicos (universidades estatales, ARESEP, SUTEL, CGR) y empresas públicas (RECOPE, INS). El principio de universalidad del control garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial."
   - question: "¿Qué se puede pedir en una demanda contencioso-administrativa?"
-    answer: "El artículo 42 del CPCA establece un catálogo amplio: declarar la disconformidad de la conducta administrativa con el ordenamiento jurídico, anular total o parcialmente el acto, reconocer o restablecer derechos, condenar a la Administración a una prestación específica (de hacer, no hacer o dar) e indemnizar daños y perjuicios. El proceso permite la reparación integral del ciudadano afectado, no solo la eliminación del acto ilegal."
+    answer: "El artículo 42 del CPCA establece un catálogo amplio: declarar la disconformidad de la conducta administrativa con el ordenamiento jurídico, anular total o parcialmente el acto, reconocer o restablecer derechos, condenar a la Administración a una prestación específica (de hacer, no hacer o dar) e indemnizar daños y perjuicios. El proceso persigue la reparación integral de la situación del afectado."
   - question: "¿Es necesario agotar la vía administrativa antes de demandar al Estado?"
-    answer: "En la mayoría de los casos no es obligatorio. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo: el administrado puede interponer recursos o acudir directamente al Tribunal Contencioso. Las excepciones principales son la contratación pública (Ley 9986) y los casos derivados de los artículos 173 y 182 de la Constitución."
+    answer: "En la mayoría de los casos no es obligatorio. El artículo 31 del CPCA establece que el agotamiento de la vía administrativa es facultativo: el administrado puede interponer recursos o acudir directamente al Tribunal Contencioso. Las excepciones son las de los artículos 173 y 182 de la Constitución: la materia municipal y la contratación administrativa."
   - question: "¿Cuál es el plazo para demandar al Estado en Costa Rica?"
     answer: "Depende del tipo de reclamo. Para impugnar conductas administrativas (actos, actuaciones materiales u omisiones), el artículo 39 del CPCA establece un plazo de caducidad de un año, contado como regla desde el día siguiente a la notificación del acto. Para reclamos puramente indemnizatorios contra la Administración (responsabilidad patrimonial del Estado), el artículo 198 de la LGAP establece una prescripción de cuatro años, contados a partir del hecho que motiva la responsabilidad, según lo ha confirmado la Sala Primera."
   - question: "¿Ante quién se presenta la demanda contencioso-administrativa?"
-    answer: "Ante el Tribunal Contencioso Administrativo, jurisdicción especializada del Poder Judicial. El proceso es oral y por audiencias: presentación, admisión y traslado, contestación, audiencia preliminar, audiencia complementaria (juicio oral), sentencia y eventual casación ante Sala Primera. Un caso puede durar entre dos y cinco años."
+    answer: "Ante el Tribunal Contencioso Administrativo y Civil de Hacienda, jurisdicción especializada del Poder Judicial. El proceso es oral y por audiencias: demanda, traslado y contestación, audiencia preliminar, juicio oral y público, sentencia, casación ante la Sala Primera o el Tribunal de Casación según el órgano del que emane la conducta, y ejecución."
   - question: "¿Necesito un abogado para demandar al Estado?"
-    answer: "Sí. A diferencia del recurso de amparo (que puede presentarse sin abogado), la demanda contencioso-administrativa requiere patrocinio letrado obligatorio. El CPCA es un código técnico con reglas procesales propias que difieren del proceso civil o penal. Un abogado sin experiencia en esta jurisdicción puede cometer errores irreversibles."
+    answer: "Sí, en la práctica es indispensable. A diferencia del recurso de amparo, que cualquier persona puede presentar sin abogado, el proceso contencioso es técnico, se litiga en audiencias orales frente a la Procuraduría o a los abogados de la institución demandada y tiene plazos de caducidad que el juez examina de oficio. Un error en el plazo, en la conducta impugnada o en la medida cautelar puede ser irreversible."
 ---
 
 Si una institución del Estado le denegó un permiso, le impuso una sanción que considera injusta, le revocó una concesión, no le respondió una solicitud o le causó un daño por su actuación u omisión, usted tiene derecho a demandar. No importa si se trata del Gobierno Central, una municipalidad, una institución autónoma o una empresa pública: en Costa Rica existe un mecanismo judicial diseñado para controlar las decisiones del poder público y proteger a los ciudadanos.
 
 Ese mecanismo es la **demanda contencioso-administrativa**, regulada por el [Código Procesal Contencioso Administrativo (CPCA)](/articulos/que-es-el-cpca-costa-rica), Ley N.° 8508 del 28 de abril de 2006, vigente desde el 1° de enero de 2008. El CPCA transformó la justicia administrativa costarricense al establecer un sistema de tutela judicial plena, donde el juez tiene amplias facultades para anular actos ilegales, restituir derechos y condenar al Estado al pago de daños y perjuicios.
 
-Esta guía está respaldada por la experiencia de Corporación GC, cuyo director —el Dr. Óscar Eduardo González Camacho— participó directamente en la redacción del CPCA durante su ejercicio como Magistrado de la Sala Primera de la Corte Suprema de Justicia.
+Esta guía la firma el Dr. Óscar Eduardo González Camacho, director de Corporación GC, que coordinó la comisión redactora del Código mientras era magistrado de la Sala Primera de la Corte Suprema de Justicia.
 
 ---
 
@@ -54,7 +55,7 @@ El CPCA superó el sistema anterior, que era predominantemente anulatorio (solo 
 
 El artículo 42 del CPCA establece un catálogo amplio de pretensiones que van mucho más allá de la simple anulación del acto. El demandante puede solicitar que se declare la disconformidad de la conducta con el ordenamiento jurídico, que se anule total o parcialmente el acto, que se le reconozcan o restablezcan sus derechos, que se condene a la Administración a una prestación específica (de hacer, no hacer o dar), y que se le indemnicen los daños y perjuicios causados. El alcance concreto de las pretensiones depende de cada caso y de la estrategia procesal que se defina con el abogado.
 
-Esta amplitud es uno de los avances más significativos del CPCA. El proceso contencioso ya no se limita a eliminar el acto ilegal — permite la reparación integral de la situación del ciudadano afectado.
+Esta amplitud es uno de los avances más significativos del CPCA: permite la reparación integral de la situación del ciudadano afectado.
 
 ---
 
@@ -66,7 +67,7 @@ El artículo 31 del CPCA establece con claridad: *"El agotamiento de la vía adm
 
 Esta fue una de las reformas más importantes del régimen contencioso. La ley de 1966 hacía del agotamiento un requisito obligatorio, y la demanda presentada sin los recursos previos era inadmisible. La Sala Constitucional anuló esa exigencia en 2006 (voto 2006-3669) y el CPCA, vigente desde 2008, la sustituyó por la regla del agotamiento facultativo. Qué recurso cabe, ante quién y en qué plazo lo explicamos en la guía sobre el [recurso de revocatoria y apelación contra un acto administrativo](/articulos/recursos-contra-acto-administrativo-revocatoria-apelacion-lgap).
 
-**¿Cuándo sí es obligatorio?** El propio artículo 31 contempla excepciones derivadas de los artículos 173 y 182 de la Constitución Política. En la práctica, la excepción más clara es la [contratación pública](/areas/contratacion-publica), donde la Ley N.° 9986 establece recursos administrativos obligatorios como presupuesto para acudir al contencioso. Las demás excepciones requieren un análisis caso por caso que debe realizar un abogado especialista.
+**¿Cuándo sí es obligatorio?** El artículo 31 exceptúa lo dispuesto en los artículos 173 y 182 de la Constitución Política: la materia municipal, donde los acuerdos deben recurrirse antes en sede administrativa, y la [contratación pública](/areas/contratacion-publica), donde la Ley N.° 9986 establece recursos administrativos previos para acudir al contencioso.
 
 En la gran mayoría de los casos — sanciones administrativas, responsabilidad patrimonial, vías de hecho, omisiones — **el administrado puede acudir directamente al Tribunal.**
 
@@ -84,33 +85,32 @@ El cómputo del plazo depende del tipo de conducta que se impugna. Como regla ge
 
 ### Los efectos continuados: un plazo que muchos creen vencido y no lo está
 
-Cuando una conducta administrativa produce **efectos continuados** — es decir, sus consecuencias persisten en el tiempo —, el plazo de caducidad de un año del artículo 39 no comienza a correr hasta que esos efectos cesan. Mientras la conducta siga produciendo efectos, el plazo no ha empezado a correr.
+Cuando se trata de un **acto absolutamente nulo** o de una **omisión** cuyos efectos persisten en el tiempo, el artículo 40 del CPCA permite impugnarlos mientras esos efectos subsistan, y el plazo de un año corre desde el día siguiente a su cese; la impugnación procede, en ese caso, para su anulación e inaplicabilidad futura. La Sala Primera ha precisado que el supuesto es propio de las relaciones jurídicas de duración y opera cuando el acto incide reiteradamente en la esfera del particular ([sentencia 1426-F-S1-2012](/jurisprudencia-destacada/caducidad-de-la-accion)).
 
 Muchas personas asumen que "ya se les pasó el plazo" sin consultar a un abogado especialista. Un análisis riguroso de la naturaleza de la conducta y de sus efectos puede revelar que la vía jurisdiccional sigue abierta.
 
 ---
 
-## ¿Ante quién se presenta la demanda?
+## El proceso contencioso administrativo paso a paso
 
-La demanda contencioso-administrativa se presenta ante el **Tribunal Contencioso Administrativo**, que es la jurisdicción especializada del Poder Judicial para conocer los conflictos entre los administrados y la Administración Pública. La [guía del Tribunal Contencioso Administrativo](/articulos/tribunal-contencioso-administrativo-costa-rica) explica cómo se organiza por dentro, dónde está y quién revisa sus sentencias.
+La demanda se presenta ante el **Tribunal Contencioso Administrativo y Civil de Hacienda**, la jurisdicción especializada del Poder Judicial para los conflictos con la Administración; la [guía del Tribunal Contencioso Administrativo](/articulos/tribunal-contencioso-administrativo-costa-rica) explica cómo se organiza por dentro. El proceso que regula el Código es oral y se concentra en audiencias. Estas son sus etapas, cada una con la guía que la desarrolla:
 
-El proceso contencioso-administrativo en Costa Rica se tramita bajo un sistema **oral y por audiencias**, con las siguientes etapas generales:
+1. **Antes de la demanda: plazo, vía y cautela.** Se verifica el plazo aplicable ([artículos 39 a 41 del CPCA](/articulos/que-es-el-cpca-costa-rica#articulos-39-40-y-41-los-plazos-para-demandar)), se decide si conviene recurrir primero en sede administrativa ([revocatoria y apelación](/articulos/recursos-contra-acto-administrativo-revocatoria-apelacion-lgap)) y, si el daño es inminente, se solicita una [medida cautelar](/articulos/medidas-cautelares-contra-el-estado-costa-rica), incluso antes de demandar; concedida, la demanda debe presentarse dentro de los quince días siguientes a la notificación del auto que la acoge (artículo 26.2).
+2. **Demanda.** Identifica las partes, expone los hechos y el derecho, formula las pretensiones y ofrece la prueba (artículo 58). Si le falta algún requisito, el juez tramitador ordena subsanarla en tres días hábiles (artículo 61). Qué se puede pedir lo desarrolla la guía del [Código Procesal Contencioso Administrativo](/articulos/que-es-el-cpca-costa-rica#articulos-42-y-43-que-se-puede-pedir-al-juez).
+3. **Traslado y contestación.** La Administración contesta en quince días hábiles si el actor aportó copia certificada del expediente administrativo, y en treinta si no lo hizo (artículo 63). Cuando se demanda al Estado sin haber agotado la vía, el jerarca supremo dispone antes de ocho días hábiles para revisar su conducta ([artículo 31.3](/articulos/que-es-el-cpca-costa-rica#articulo-31-el-agotamiento-de-la-via-administrativa-es-facultativo)).
+4. **Audiencia preliminar.** El juez tramitador sanea el proceso, resuelve las defensas previas, fija los hechos controvertidos y admite la prueba (artículo 90). Si el asunto es de puro derecho o no hay prueba que evacuar, las partes formulan ahí sus conclusiones y el expediente pasa a sentencia sin juicio (artículo 98.2). Cómo se desarrolla lo explica la [guía del Tribunal](/articulos/tribunal-contencioso-administrativo-costa-rica#como-avanza-un-proceso-etapa-por-etapa).
+5. **Juicio oral y público.** Un tribunal colegiado recibe la prueba y las conclusiones, delibera de inmediato y dicta sentencia oralmente (artículos 99 y 111); el análisis de ambas audiencias está en [audiencia preliminar y juicio oral](/articulos/que-es-el-cpca-costa-rica#articulos-90-a-111-audiencia-preliminar-y-juicio-oral).
+6. **Sentencia.** Si acoge la demanda, declara la disconformidad de la conducta, la anula, restablece la situación jurídica, condena a la Administración a una conducta o al pago de los daños y, cuando conserva un margen de discrecionalidad, fija los límites de su potestad ([artículos 122 a 128](/articulos/que-es-el-cpca-costa-rica#articulos-122-127-y-128-la-sentencia-y-la-discrecionalidad)).
+7. **Casación.** La sentencia se impugna ante la Sala Primera o el Tribunal de Casación de lo Contencioso-Administrativo, según el órgano del que emane la conducta, dentro de los quince días hábiles siguientes a la notificación a todas las partes ([artículos 134 a 140](/articulos/que-es-el-cpca-costa-rica#articulos-134-a-140-la-casacion)). El área de [casación ante la Sala Primera](/areas/casacion-sala-primera) explica cómo se prepara el recurso.
+8. **Ejecución.** Firme la sentencia, un juez ejecutor asegura su cumplimiento, con multas personales al funcionario que incumple y embargo de bienes de dominio privado de la Administración, dentro de los límites legales ([artículos 155 a 178](/articulos/que-es-el-cpca-costa-rica#articulos-155-a-178-la-ejecucion-de-las-sentencias)).
 
-1. **Presentación de la demanda** ante el Tribunal.
-2. **Admisión y traslado** al demandado (la institución pública).
-3. **Contestación** de la demanda por parte de la Administración.
-4. **Audiencia preliminar**, donde se fijan los hechos controvertidos y se admite la prueba.
-5. **Audiencia complementaria (juicio oral)**, donde se evacúa la prueba y las partes presentan sus alegatos.
-6. **Sentencia** del Tribunal.
-7. **[Recurso de casación](/areas/casacion-sala-primera)** ante la Sala Primera de la Corte Suprema de Justicia, si alguna parte impugna la sentencia.
-
-Es importante tener expectativas realistas sobre la duración del proceso. Un caso contencioso puede durar entre dos y cinco años dependiendo de la complejidad del asunto, el volumen de prueba y la carga del Tribunal. Sin embargo, el CPCA contempla [medidas cautelares](/articulos/medidas-cautelares-contra-el-estado-costa-rica) que permiten proteger los derechos del demandante mientras se espera la sentencia de fondo — incluyendo la posibilidad de solicitar medidas provisionalísimas de urgencia extrema que se resuelven en horas.
+La duración depende de la complejidad del asunto, del volumen de prueba y de la carga del Tribunal; la guía del Tribunal reúne lo que se sabe sobre [cuánto tarda un proceso](/articulos/tribunal-contencioso-administrativo-costa-rica#cuanto-tarda-un-proceso). Mientras tanto, las [medidas cautelares](/articulos/medidas-cautelares-contra-el-estado-costa-rica) protegen la situación del demandante, y las provisionalísimas se adoptan de manera inmediata y prima facie (artículo 23 del CPCA).
 
 ---
 
 ## ¿Necesito un abogado?
 
-Sí. A diferencia del recurso de amparo (que puede presentarse sin abogado), la demanda contencioso-administrativa requiere patrocinio letrado obligatorio. Y no cualquier abogado: el CPCA es un código técnico con reglas procesales propias que difieren sustancialmente del proceso civil o penal. Un abogado que no litigue regularmente en esta jurisdicción puede cometer errores que cuesten el caso.
+Sí, en la práctica es indispensable. A diferencia del recurso de amparo, que cualquier persona puede presentar sin abogado, el proceso contencioso es técnico: se litiga en audiencias orales frente a la Procuraduría General de la República o a los abogados de la institución demandada, y sus plazos de caducidad los examina el juez de oficio. El Código tiene reglas procesales propias, distintas de las del proceso civil, y quien no litiga con regularidad en esta jurisdicción puede cometer errores que cuesten el caso.
 
 Un plazo mal calculado, un recurso mal planteado o una cautelar no solicitada a tiempo pueden ser irreversibles. La elección del abogado es probablemente la decisión más importante que tomará en el proceso.
 

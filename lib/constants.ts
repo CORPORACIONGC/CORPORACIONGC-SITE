@@ -163,8 +163,8 @@ export const PRACTICE_AREA_PAGES = [
   {
     slug: "medidas-cautelares",
     title: "Medidas Cautelares",
-    subtitle: "Protección jurisdiccional urgente: provisionalísimas, ante causam y definitivas",
-    description: "Especialistas en tutela cautelar contencioso-administrativa: medidas provisionalísimas de urgencia extrema, cautelares ante causam y definitivas conforme a los artículos 19 a 30 del CPCA.",
+    subtitle: "Protección jurisdiccional urgente: provisionalísimas, antes de la demanda y durante el proceso",
+    description: "Tutela cautelar contencioso-administrativa: medidas provisionalísimas, medidas sin audiencia en extrema urgencia, cautelares anteriores a la demanda y durante el proceso, conforme a los artículos 19 a 30 del CPCA.",
     icon: "ShieldCheck" as const,
     priority: "primary" as const,
     seoTitle: "Abogados en medidas cautelares contra el Estado · Costa Rica",
