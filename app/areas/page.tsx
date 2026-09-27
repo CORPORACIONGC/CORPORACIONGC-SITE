@@ -189,7 +189,7 @@ export default function AreasPage() {
                     <Link
                       key={area.slug}
                       href={`/areas/${area.slug}`}
-                      className="group block p-6 md:p-8 rounded-xl border border-cream/[0.06] bg-cream/[0.02] hover:border-burgundy/20 transition-all duration-400"
+                      className="gc-tarjeta group block p-6 md:p-8 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
                     >
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1">
@@ -197,7 +197,7 @@ export default function AreasPage() {
                             <Icon
                               size={20}
                               weight="duotone"
-                              className="text-burgundy shrink-0"
+                              className="text-burgundy shrink-0 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-white"
                             />
                             <h2 className="font-display text-lg md:text-xl text-cream group-hover:text-emphasis transition-colors duration-300">
                               {area.title}
@@ -210,7 +210,7 @@ export default function AreasPage() {
                         <ArrowRight
                           size={18}
                           weight="bold"
-                          className="text-cream/20 group-hover:text-emphasis transition-colors duration-300 shrink-0 mt-1"
+                          className="text-cream/20 group-hover:text-emphasis group-hover:translate-x-0.5 transition-[color,transform] duration-300 shrink-0 mt-1"
                         />
                       </div>
                     </Link>
@@ -231,13 +231,13 @@ export default function AreasPage() {
                     <Link
                       key={area.slug}
                       href={`/areas/${area.slug}`}
-                      className="group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02] hover:border-burgundy/20 transition-all duration-400"
+                      className="gc-tarjeta group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
                     >
                       <div className="flex items-center gap-3 mb-3">
                         <Icon
                           size={18}
                           weight="duotone"
-                          className="text-burgundy shrink-0"
+                          className="text-burgundy shrink-0 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-white"
                         />
                         <h2 className="font-display text-base text-cream group-hover:text-emphasis transition-colors duration-300">
                           {area.title}
@@ -264,13 +264,13 @@ export default function AreasPage() {
                     <Link
                       key={area.slug}
                       href={`/areas/${area.slug}`}
-                      className="group block p-5 rounded-xl border border-cream/[0.06] bg-cream/[0.02] hover:border-burgundy/20 transition-all duration-400"
+                      className="gc-tarjeta group block p-5 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
                     >
                       <div className="flex items-center gap-3 mb-2">
                         <Icon
                           size={16}
                           weight="duotone"
-                          className="text-cream/40 group-hover:text-burgundy shrink-0 transition-colors duration-300"
+                          className="text-cream/40 group-hover:text-burgundy-light dark:group-hover:text-white shrink-0 transition-colors duration-300"
                         />
                         <h2 className="font-display text-sm text-cream/70 group-hover:text-emphasis transition-colors duration-300">
                           {area.title}

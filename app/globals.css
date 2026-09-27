@@ -1690,3 +1690,39 @@ html:not(.dark) .gc-lectura .prose-article hr {
 }
 html:not(.dark) .gc-lectura .prose-article blockquote { color: #6B1D3A; }
 html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B2252; }
+
+/* ── Tarjetas de los índices (artículos y áreas) ──
+   Al pasar el cursor o recibir el foco, un trazo burdeos recorre el borde
+   superior de izquierda a derecha, como en las filas del equipo y de las
+   áreas; el borde toma el vino y el fondo recibe un velo muy leve. El
+   título pasa al burdeos vivo de día; de noche queda en marfil y el burdeos
+   se queda en el trazo, el borde y el velo. */
+.gc-tarjeta {
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+.gc-tarjeta::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--color-burgundy-light);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.gc-tarjeta:is(:hover, :focus-visible)::before { transform: scaleX(1); }
+.gc-tarjeta:is(:hover, :focus-visible) {
+  border-color: color-mix(in oklab, #8B2252 32%, transparent);
+  background-color: color-mix(in oklab, #8B2252 3%, transparent);
+}
+.dark .gc-tarjeta::before { background: #9B2A5C; }
+.dark .gc-tarjeta:is(:hover, :focus-visible) {
+  border-color: #5A1730;
+  background-color: rgb(107 29 58 / 0.12);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gc-tarjeta, .gc-tarjeta::before { transition: none; }
+}

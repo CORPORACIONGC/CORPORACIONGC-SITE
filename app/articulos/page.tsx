@@ -113,11 +113,11 @@ export default function ArticulosPage() {
                 <Link
                   key={article.slug}
                   href={`/articulos/${article.slug}`}
-                  className="group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02] hover:border-burgundy/20 transition-all duration-400"
+                  className="gc-tarjeta group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
                 >
                   <div className="flex items-center gap-2 mb-4">
                     <div
-                      className={`p-1.5 rounded-md ${
+                      className={`p-1.5 rounded-md transition-colors duration-300 group-hover:bg-burgundy group-hover:text-white ${
                         article.type === "pdf"
                           ? "bg-burgundy/[0.08] text-burgundy"
                           : "bg-emphasis/[0.15] text-emphasis"
