@@ -136,8 +136,6 @@ export default async function AttorneyProfile({
         "Expropiaciones y justiprecio",
         "Empleo público y régimen disciplinario",
         "Regulación sectorial: telecomunicaciones, energía y mercado de valores",
-        "Regulación fintech y registro de proveedores de servicios de activos virtuales (VASP) ante SUGEF — Ley N.° 10961",
-        "Cumplimiento en prevención de legitimación de capitales (LC/FT) y regla de viaje",
         "Inteligencia artificial aplicada al derecho",
       ],
     },
@@ -163,10 +161,6 @@ export default async function AttorneyProfile({
         { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica" },
         { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica" },
         { degree: "Especialidad en Derecho Notarial y Registral", institution: "Universidad Fidélitas" },
-      ],
-      knowsAboutExtra: [
-        "Regulación fintech y registro de proveedores de servicios de activos virtuales (VASP) ante SUGEF — Ley N.° 10961",
-        "Cumplimiento en prevención de legitimación de capitales (LC/FT) y regla de viaje",
       ],
     },
     "jose-carlos-solano": {

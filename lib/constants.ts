@@ -112,10 +112,10 @@ export const OSCAR_PROFILE = {
 
 export const TEAM = [
   { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez-solo.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Coordinador de la comisión redactora del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
-  { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/khevin-sanchez.jpg", shortBio: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario. Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Regulación Fintech y Criptoactivos"], languages: ["Español"], featured: true },
+  { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/khevin-sanchez.jpg", shortBio: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario. Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
   { slug: "katherine-gonzalez", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
   { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
-  { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico", "Regulación Fintech y Criptoactivos"], languages: ["Español", "Inglés"], featured: true },
+  { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
   { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Contencioso Administrativo", "Acciones de Inconstitucionalidad", "Zona Marítimo Terrestre", "Procedimientos CGR", "Transporte y Concesiones"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
 
@@ -146,9 +146,17 @@ export const PRACTICE_AREA_PAGES = [
     description: "Corporación GC litiga ante el Tribunal Contencioso Administrativo demandas de nulidad, plena jurisdicción y responsabilidad patrimonial del Estado. Fundamentación en el CPCA (Ley N.° 8508).",
     icon: "Gavel" as const,
     priority: "primary" as const,
-    seoTitle: "Abogados contencioso-administrativos · Demandas contra el Estado",
+    /* Título medido en píxeles (603 px, en el límite de ~600; en móvil se ve
+       completo). Empieza con la búsqueda
+       exacta «abogado(s) contencioso administrativo Costa Rica», en plural
+       porque es una firma, y cierra con el rasgo que ningún competidor de
+       esa página de resultados puede usar junto al de la descripción:
+       exmagistrado de la Sala Primera que coordinó la comisión redactora
+       del CPCA. La descripción (905 px) lleva «litigio contencioso
+       administrativo» literal, la segunda búsqueda objetivo. */
+    seoTitle: "Abogados contencioso administrativo en Costa Rica · Exmagistrado",
     seoDescription:
-      "Demandas de nulidad, plena jurisdicción y responsabilidad del Estado ante el Tribunal Contencioso. Lo dirige el coordinador de la comisión redactora del CPCA.",
+      "Litigio contencioso administrativo contra el Estado, dirigido por el exmagistrado de la Sala Primera que coordinó la comisión redactora del CPCA.",
     ogShortTitle: "Demandas contra el {{em}}",
     ogEmphasis: "Estado",
   },
@@ -573,7 +581,7 @@ export const ESTEBAN_PROFILE = {
   name: "Lic. Esteban Pérez Herrera",
   role: "Abogado Asociado",
   photo: "/images/esteban-perez.jpg",
-  heroDescription: "Abogado litigante y Notario Público, especializado en Derecho Administrativo, Contencioso Administrativo, Contratación Pública, Derecho Constitucional y regulación fintech y de activos virtuales.",
+  heroDescription: "Abogado litigante y Notario Público, especializado en Derecho Administrativo, Contencioso Administrativo, Contratación Pública y Derecho Constitucional.",
   heroBio: "Más de 9 años de experiencia en litigio de alta complejidad contra el Estado. Colaboración directa con el Dr. Óscar Eduardo González Camacho, coordinador de la comisión redactora del Código Procesal Contencioso Administrativo.",
   education: [
     { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica", status: "Egresado — Tesis en desarrollo" },
@@ -591,7 +599,6 @@ export const ESTEBAN_PROFILE = {
     { title: "Derecho Constitucional", description: "Recursos de amparo, acciones de inconstitucionalidad y habeas corpus ante la Sala Constitucional." },
     { title: "Contratación Pública", description: "Asesoría y litigio en materia de licitaciones, concursos públicos y contratos administrativos." },
     { title: "Derecho Urbanístico", description: "Asesoría y litigio en regulación del uso del suelo, permisos de construcción y planificación urbana." },
-    { title: "Regulación Fintech y Activos Virtuales", description: "Inscripción de proveedores de servicios de activos virtuales (VASP) ante SUGEF bajo la Ley N.° 10961, programas de cumplimiento LC/FT, adecuación societaria y defensa ante SUGEF y CONASSIF." },
   ],
   research: {
     title: "La potestad discrecional de la administración municipal en materia urbanística",
@@ -608,7 +615,7 @@ export const ESTEBAN_PROFILE = {
 
 // ─── Perfil Individual: Khevin Sánchez ───
 
-export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario. Medidas cautelares, litigio contencioso-administrativo y casación ante la Sala Primera. Regulación fintech y registro VASP ante SUGEF. Investigador y panelista internacional en inteligencia artificial aplicada a la justicia.", url: "https://www.corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
+export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario. Medidas cautelares, litigio contencioso-administrativo y casación ante la Sala Primera. Investigador y panelista internacional en inteligencia artificial aplicada a la justicia.", url: "https://www.corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
 
 export const CONTACT = { email: "ksanchez@corporaciongc.com", phone: "+506 8451-4002", phoneRaw: "50684514002", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Cartago, Costa Rica" } as const;
 
@@ -623,7 +630,6 @@ export const PRACTICE_AREAS = [
   { title: "Litigio contencioso-administrativo", description: "Demandas de nulidad y de responsabilidad patrimonial ante el Tribunal Contencioso Administrativo. Audiencias orales y gestión integral del proceso contencioso.", icon: "Gavel" as const },
   { title: "Casación ante Sala Primera", description: "Recursos de casación por vicios procesales, violación directa e indirecta de ley y errores de hecho y de derecho en la valoración probatoria.", icon: "Scales" as const },
   { title: "Contratación pública y regulación sectorial", description: "Objeciones a carteles, impugnación de adjudicaciones y litigio en sectores regulados: telecomunicaciones, energía, mercado de valores, banca, salud y turismo, entre otros.", icon: "FileText" as const },
-  { title: "Regulación fintech y activos virtuales", description: "Inscripción de proveedores de servicios de activos virtuales (VASP) ante SUGEF bajo la Ley N.° 10961: dictamen de sujeción, adecuación societaria, tributaria y bancaria, programa de cumplimiento LC/FT y regla de viaje, y defensa en procedimientos de SUGEF y CONASSIF.", icon: "Wallet" as const },
   { title: "Expropiaciones y responsabilidad del Estado", description: "Defensa del justo precio, medidas cautelares en procesos expropiatorios y reclamaciones de responsabilidad patrimonial y daño moral contra la Administración.", icon: "Bank" as const },
   { title: "Procedimientos administrativos", description: "Recursos de revocatoria y apelación ante la Administración Pública. Procedimientos sancionatorios. Informes jurídicos a colegios profesionales.", icon: "Stamp" as const },
   { title: "Derecho Constitucional", description: "Acciones de inconstitucionalidad y recursos de amparo ante la Sala Constitucional.", icon: "ShieldCheck" as const },
@@ -717,7 +723,6 @@ export const ESTEBAN_PRACTICE_AREAS = [
   { title: "Derecho Constitucional", description: "Recursos de amparo, acciones de inconstitucionalidad y habeas corpus ante la Sala Constitucional.", icon: "ShieldCheck" as const },
   { title: "Contratación Pública", description: "Asesoría y litigio en materia de licitaciones, concursos públicos y contratos administrativos.", icon: "FileText" as const },
   { title: "Derecho Urbanístico", description: "Asesoría y litigio en regulación del uso del suelo, permisos de construcción y planificación urbana.", icon: "Buildings" as const },
-  { title: "Regulación Fintech y Activos Virtuales", description: "Inscripción de proveedores de servicios de activos virtuales (VASP) ante SUGEF bajo la Ley N.° 10961, programas de cumplimiento LC/FT, adecuación societaria y defensa ante SUGEF y CONASSIF.", icon: "Wallet" as const },
 ] as const;
 
 export const ESTEBAN_NAV_LINKS = [

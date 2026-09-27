@@ -104,8 +104,8 @@ Si una institución pública está por ejecutar un acto que le causará un daño
 
 El primer paso es buscar asesoría de un abogado con experiencia específica en medidas cautelares contencioso-administrativas. La solicitud debe prepararse con rigor técnico, prueba suficiente y una argumentación que el juez pueda resolver de forma inmediata.
 
-Corporación GC asesora y representa a personas y empresas en la [obtención de medidas cautelares](/areas/medidas-cautelares) ante el Tribunal Contencioso Administrativo. Puede [contactarnos](/contacto) para una evaluación de su caso.
+Corporación GC asesora y representa a personas y empresas en la [obtención de medidas cautelares](/areas/medidas-cautelares) ante el Tribunal Contencioso Administrativo, dentro de su práctica de [litigio contencioso-administrativo](/areas/litigio-contencioso-administrativo). Puede [contactarnos](/contacto) para una evaluación de su caso.
 
 ---
 
-*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia durante doce años (2002–2014) y participó en la redacción del Código Procesal Contencioso Administrativo, incluyendo el sistema de tutela cautelar que rige esta jurisdicción.*
+*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014 y coordinó la comisión redactora del Código Procesal Contencioso Administrativo, incluido el régimen de tutela cautelar que rige esta jurisdicción.*

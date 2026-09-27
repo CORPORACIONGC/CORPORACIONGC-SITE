@@ -120,8 +120,8 @@ Un plazo mal calculado, un recurso mal planteado o una cautelar no solicitada a 
 
 El peor error es dejar pasar el tiempo. Los plazos corren, los actos se consolidan y las pruebas se pierden. Si una institución pública le causó un perjuicio o está por causarlo, actúe antes de que la situación se vuelva irreversible.
 
-Corporación GC puede evaluar su caso y determinar la mejor ruta de acción. [Contáctenos](/contacto) para coordinar una consulta.
+El equipo de [abogados contencioso-administrativos](/areas/litigio-contencioso-administrativo) de Corporación GC puede evaluar su caso y determinar la mejor ruta de acción. [Contáctenos](/contacto) para coordinar una consulta.
 
 ---
 
-*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia durante doce años (2002–2014) y participó en la redacción del Código Procesal Contencioso Administrativo. El equipo litiga regularmente ante el Tribunal Contencioso Administrativo, la Sala Primera y la Sala Constitucional.*
+*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014 y coordinó la comisión redactora del Código Procesal Contencioso Administrativo. El equipo litiga regularmente ante el Tribunal Contencioso Administrativo, la Sala Primera y la Sala Constitucional.*

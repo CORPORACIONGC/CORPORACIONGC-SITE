@@ -5,7 +5,6 @@ import {
   ShieldCheck,
   FileText,
   Buildings,
-  Wallet,
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { ESTEBAN_PRACTICE_AREAS } from "@/lib/constants";
@@ -17,7 +16,6 @@ const iconMap: Record<string, React.ElementType> = {
   ShieldCheck,
   FileText,
   Buildings,
-  Wallet,
 };
 
 export function EstebanAbout() {

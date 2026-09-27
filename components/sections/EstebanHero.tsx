@@ -35,9 +35,8 @@ export function EstebanHero() {
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">
                 Abogado litigante y Notario Público, especializado en Derecho
-                Administrativo, Contencioso Administrativo, Contratación Pública,
-                Derecho Constitucional y regulación fintech y de activos
-                virtuales.
+                Administrativo, Contencioso Administrativo, Contratación Pública
+                y Derecho Constitucional.
               </p>
             </div>
           </AnimatedEntry>

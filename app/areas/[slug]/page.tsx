@@ -347,226 +347,124 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
     <>
       <section className="mb-12">
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-          La jurisdicción contencioso-administrativa es el mecanismo mediante el cual los
-          administrados pueden impugnar judicialmente las conductas de la Administración Pública.
-          El Código Procesal Contencioso Administrativo (CPCA, Ley N.° 8508 del 28 de abril de
-          2006) regula íntegramente este proceso y constituye el instrumento central de la práctica
-          de Corporación GC. Nuestro director, el Dr. Óscar Eduardo González Camacho, participó
-          en su redacción.
+          El Código Procesal Contencioso Administrativo organiza un proceso único, oral y por
+          audiencias, que sustituyó al régimen de la Ley Reguladora de la Jurisdicción
+          Contencioso-Administrativa de 1966, derogada por su artículo 198. Los apartados que
+          siguen reúnen las instituciones que concentran la práctica del área; su desarrollo
+          artículo por artículo, con los antecedentes legislativos y la jurisprudencia que fija su
+          alcance, está en la guía del{" "}
+          <Link href="/articulos/que-es-el-cpca-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            Código Procesal Contencioso Administrativo
+          </Link>
+          .
         </p>
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
-          El litigio contencioso-administrativo se gana o se pierde en la combinación correcta de
-          pretensiones, medidas cautelares y plazos. La elección estratégica de cada herramienta
-          procesal define la verdadera capacidad de impugnar la conducta administrativa.
+          El resultado de un proceso contencioso depende en buena medida de decisiones que se
+          adoptan antes de presentar la demanda: qué conducta se impugna, qué pretensiones se
+          acumulan, qué medida cautelar se solicita y qué plazo está corriendo.
         </p>
       </section>
 
-      <Instrumento titulo="Demanda contencioso-administrativa" fundamento="CPCA, arts. 10 a 16">
+      <Instrumento titulo="Conductas impugnables y pretensiones" fundamento="CPCA, arts. 36 y 42">
         <p>
-          La demanda contencioso-administrativa es el acto procesal mediante el cual una persona
-          física o jurídica —o incluso una entidad pública— acude ante el Tribunal Contencioso
-          Administrativo para impugnar una conducta administrativa que le causa un perjuicio. El
-          artículo 42 del CPCA establece las pretensiones que pueden formularse: declaración de
-          disconformidad de la conducta administrativa con el ordenamiento jurídico, anulación total
-          o parcial de actos administrativos, reconocimiento de situaciones jurídicas
-          individualizadas, constitución de nuevas situaciones jurídicas, y la condena a la
-          Administración al pago de daños y perjuicios.
+          La pretensión es admisible frente a los actos administrativos finales, definitivos o de
+          trámite con efecto propio, las actuaciones materiales, las conductas omisivas y
+          cualquier otra conducta sujeta al Derecho administrativo, así como respecto de las
+          relaciones jurídico-administrativas y del ejercicio de la potestad (artículo 36).
         </p>
         <p>
-          El artículo 12 del CPCA detalla los requisitos formales de la demanda, incluyendo la
-          identificación del demandante, la conducta impugnada, los hechos y fundamentos de
-          derecho, y las pretensiones concretas. La demanda puede dirigirse contra el Estado, los
-          entes públicos, las empresas públicas y los sujetos de derecho privado que ejerzan
-          función administrativa (art. 1 CPCA).
+          Frente a esa conducta, el artículo 42 permite formular cuantas pretensiones sean
+          necesarias: la declaración de disconformidad con el ordenamiento, la anulación total o
+          parcial, el reconocimiento o restablecimiento de una situación jurídica, la fijación de
+          los límites de la potestad, la condena a una conducta específica, el cese de una
+          actuación material y la indemnización de daños y perjuicios. El Código superó así el
+          esquema predominantemente anulatorio de la ley de 1966.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Proceso de plena jurisdicción" fundamento="CPCA, art. 10.1">
+      <Instrumento titulo="Legitimación y parte demandada" fundamento="CPCA, arts. 10 y 12">
         <p>
-          El proceso de plena jurisdicción permite al Tribunal no solo anular el acto administrativo
-          impugnado, sino también restablecer la situación jurídica del administrado y condenar
-          a la Administración a una prestación determinada —ya sea de hacer, no hacer o dar—,
-          incluyendo el pago de daños y perjuicios. A diferencia del proceso de pura anulación,
-          aquí el juez tiene facultades amplias para dictar sentencia condenatoria.
+          Están legitimados para demandar quienes invoquen la afectación de intereses legítimos o
+          derechos subjetivos, las entidades que representan intereses de carácter general,
+          gremial o corporativo, quienes defiendan intereses difusos y colectivos y, en los casos
+          que la ley prevé, cualquier persona por acción popular (artículo 10).
         </p>
         <p>
-          El artículo 122 del CPCA establece que la sentencia estimatoria podrá declarar la
-          disconformidad de la conducta administrativa, anular total o parcialmente el acto o
-          disposición, reconocer o restablecer una situación jurídica individualizada, fijar la
-          indemnización de daños y perjuicios, y establecer plazos para el cumplimiento de
-          obligaciones específicas.
+          Se demanda a la Administración autora de la conducta, y al Estado cuando esta proviene
+          de los Poderes Ejecutivo, Legislativo o Judicial o del Tribunal Supremo de Elecciones;
+          a los órganos con personalidad jurídica instrumental, conjuntamente con el ente al que
+          están adscritos, y a quienes derivaron derechos de la conducta impugnada (artículo 12).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Proceso de pura anulación" fundamento="CPCA, art. 10.1.a">
+      <Instrumento titulo="Plazos para demandar" fundamento="CPCA, arts. 39 a 41; LGAP, art. 198">
         <p>
-          El proceso de pura anulación tiene por objeto exclusivo obtener la declaración de
-          nulidad de un acto administrativo, una disposición de carácter general o una actuación
-          material constitutiva de vía de hecho, sin que el demandante pretenda el reconocimiento
-          de una situación jurídica individualizada ni una condena pecuniaria. Es la vía adecuada
-          cuando el interés del administrado se satisface con la sola eliminación del acto del
-          ordenamiento jurídico.
+          La demanda debe presentarse dentro del año siguiente a la notificación del acto, a su
+          única o última publicación o al cese de la actuación material (artículo 39). Los actos
+          absolutamente nulos y las omisiones pueden impugnarse mientras subsistan sus efectos
+          continuados, y hasta un año después de su cese, para su anulación e inaplicabilidad
+          futura (artículo 40).
+        </p>
+        <p>
+          En materia civil de Hacienda rige el plazo de prescripción del derecho de fondo
+          (artículo 41): el derecho de reclamar la indemnización a la Administración prescribe en
+          cuatro años, contados a partir del hecho que motiva la responsabilidad (artículo 198 de
+          la Ley General de la Administración Pública). La caducidad de la acción se examina de
+          oficio.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Demanda de responsabilidad patrimonial del Estado" fundamento="Constitución, art. 41; CPCA, art. 2">
+      <Instrumento titulo="Agotamiento de la vía administrativa" fundamento="CPCA, art. 31">
         <p>
-          El artículo 41 de la Constitución Política establece que toda persona tiene derecho a
-          obtener reparación por los daños que sufra en sus bienes, derechos o intereses. En
-          materia administrativa, el artículo 190 de la Ley General de la Administración Pública
-          dispone que la Administración responde por todos los daños causados por su funcionamiento
-          legítimo o ilegítimo, normal o anormal. La demanda de responsabilidad patrimonial se
-          interpone ante el Tribunal Contencioso Administrativo conforme al artículo 2 del CPCA,
-          que atribuye a esta jurisdicción el conocimiento de las pretensiones indemnizatorias
-          contra la Administración.
-        </p>
-        <p>
-          Esta demanda procede tanto por funcionamiento anormal (error, negligencia, ilegalidad)
-          como por funcionamiento normal cuando se produce un sacrificio especial al administrado
-          que excede las cargas ordinarias de la vida en sociedad.
+          El agotamiento es facultativo, salvo lo dispuesto en los artículos 173 y 182 de la
+          Constitución Política: la materia municipal y la contratación administrativa (artículo
+          31.1). Cuando se demanda al Estado sin haber agotado la vía, el jerarca supremo dispone
+          de ocho días hábiles para confirmar, modificar, anular, revocar o cesar la conducta, sin
+          suspensión de los procedimientos; vencido ese plazo, corre el de contestación
+          (artículo 31.3).
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Proceso ejecutivo" fundamento="CPCA, arts. 149 a 150">
+      <Instrumento titulo="Responsabilidad patrimonial de la Administración" fundamento="LGAP, arts. 190 a 198; CPCA, art. 2">
         <p>
-          El proceso ejecutivo regulado en los artículos 149 y 150 del CPCA permite la ejecución
-          forzosa de sentencias dictadas contra la Administración Pública cuando esta incumple
-          voluntariamente el fallo. Este proceso es particularmente relevante porque la ejecución
-          de condenas contra el Estado presenta desafíos específicos: el principio de
-          inembargabilidad de los bienes de dominio público, los plazos presupuestarios para el
-          pago de indemnizaciones y la posibilidad de sustitución de la obligación original cuando
-          su cumplimiento in natura resulte imposible.
+          La Administración responde por todos los daños que cause su funcionamiento legítimo o
+          ilegítimo, normal o anormal, salvo fuerza mayor, culpa de la víctima o hecho de un
+          tercero (artículo 190 de la Ley General de la Administración Pública). Por sus actos
+          lícitos y su funcionamiento normal responde cuando el daño afecta los derechos del
+          administrado en forma especial, por la pequeña proporción de afectados o por la
+          intensidad excepcional de la lesión (artículo 194).
+        </p>
+        <p>
+          El artículo 2 del CPCA atribuye a esta jurisdicción las cuestiones de responsabilidad de
+          la Administración y de sus funcionarios. El reclamo puramente indemnizatorio queda
+          sujeto a la prescripción de cuatro años del artículo 198 de la misma ley.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Legitimación y plazos" fundamento="CPCA, arts. 10.2 y 39">
+      <Instrumento titulo="Recurso de casación" fundamento="CPCA, arts. 134 a 140">
         <p>
-          Está legitimado para interponer una demanda contencioso-administrativa toda persona —
-          física o jurídica— que invoque la lesión de un derecho subjetivo o de un interés
-          legítimo (art. 10.2 CPCA). También puede accionar la Administración Pública contra
-          sus propios actos cuando pretenda su revisión en vía jurisdiccional (proceso de lesividad).
-          El plazo general de caducidad para interponer la demanda es de un año contado desde la
-          notificación del acto o desde que se tuvo conocimiento efectivo de la conducta impugnada,
-          según lo dispuesto por el artículo 39 del CPCA. En materia de responsabilidad patrimonial,
-          el plazo es también de un año desde que se produjo el daño o desde que el afectado tuvo
-          conocimiento efectivo de este.
+          Contra la sentencia procede el recurso de casación, que conoce la Sala Primera cuando la
+          conducta emana del Poder Ejecutivo, de los ministerios, de las instituciones
+          descentralizadas, incluidas las municipalidades, y de los demás órganos que enumera el
+          artículo 135, y el Tribunal de Casación de lo Contencioso-Administrativo y Civil de
+          Hacienda en los supuestos del artículo 136. Se interpone directamente ante el órgano de
+          casación dentro de los quince días hábiles siguientes a la notificación a todas las
+          partes (artículo 139), y se rechaza de plano cuando carece de fundamentación jurídica
+          o su improcedencia es clara (artículo 140).
         </p>
       </Instrumento>
 
-      {/* ── Preguntas Frecuentes ── */}
-      <section className="mt-16 pt-12 border-t border-cream/[0.06]">
-        <h2 className="font-display text-2xl md:text-3xl text-cream mb-10 tracking-tight">
-          Preguntas frecuentes sobre el litigio contencioso-administrativo
-        </h2>
-
-        <div className="space-y-10">
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cómo se demanda al Estado en Costa Rica?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Para demandar al Estado o a cualquier ente público en Costa Rica se debe interponer
-              una demanda contencioso-administrativa ante el Tribunal Contencioso Administrativo,
-              conforme al Código Procesal Contencioso Administrativo (CPCA, Ley N.° 8508). La
-              demanda debe identificar la conducta administrativa impugnada —ya sea un acto
-              administrativo, una omisión o una actuación material—, exponer los hechos y
-              fundamentos de derecho, y formular pretensiones concretas. Pueden demandarse la
-              anulación del acto, el reconocimiento de derechos, la condena al pago de daños y
-              perjuicios, y la orden de realizar o cesar una conducta. No siempre se requiere
-              agotar la vía administrativa antes de demandar. El plazo general de caducidad es
-              de un año desde la notificación del acto o desde que se tuvo conocimiento de la
-              conducta lesiva (art. 39 CPCA). Corporación GC asesora en cada etapa de este proceso.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Cuánto tiempo tengo para presentar una demanda contencioso-administrativa?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El plazo general para interponer una demanda contencioso-administrativa en Costa Rica
-              es de un año, contado desde la notificación del acto administrativo o desde que el
-              afectado tuvo conocimiento efectivo de la conducta impugnada, según el artículo 39
-              del CPCA. En materia de responsabilidad patrimonial del Estado, el plazo también es
-              de un año desde que se produjo el daño o desde que el perjudicado lo conoció. Es
-              importante no confundir este plazo con el de los recursos administrativos previos, que
-              tienen plazos más cortos. El vencimiento del plazo produce la caducidad del derecho a
-              demandar, por lo que se recomienda actuar con prontitud. Existen excepciones: cuando
-              la lesión es continuada o se trata de vías de hecho, los plazos pueden computarse de
-              forma distinta. Es fundamental contar con asesoría legal especializada para evaluar
-              la viabilidad temporal de la demanda antes de que el plazo transcurra.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué puede obtener un ciudadano en un proceso contencioso-administrativo?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              El proceso contencioso-administrativo en Costa Rica permite obtener resultados amplios
-              según el artículo 122 del CPCA. En un proceso de plena jurisdicción, el Tribunal puede:
-              declarar la disconformidad de la conducta administrativa con el ordenamiento jurídico,
-              anular total o parcialmente actos administrativos, reconocer o restablecer situaciones
-              jurídicas individualizadas, condenar a la Administración al pago de daños y perjuicios
-              (incluyendo daño moral), y ordenar a la Administración realizar una acción específica o
-              cesar una conducta. En un proceso de pura anulación, el efecto se limita a eliminar el
-              acto del ordenamiento jurídico. También pueden solicitarse medidas cautelares para
-              proteger los derechos del demandante durante el proceso. El CPCA superó el sistema
-              anterior, que era predominantemente anulatorio, para establecer una jurisdicción con
-              poderes plenos de tutela de los derechos de los administrados frente al poder público.
-            </p>
-          </div>
-
-          {/* Las dos preguntas que traía el artículo «Abogado
-              contencioso-administrativo», consolidado aquí: competían por la
-              misma consulta y ninguna de las dos páginas recibía clics. */}
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Qué tipos de casos se litigan en la jurisdicción contencioso-administrativa?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Nulidad de actos administrativos que deniegan permisos, licencias o beneficios;
-              responsabilidad patrimonial del Estado por daños causados por su funcionamiento normal
-              o anormal, incluida la omisión; contratación pública, desde la impugnación del cartel
-              hasta la anulación de una adjudicación; empleo público y procedimientos disciplinarios;
-              materia municipal, tributaria y regulatoria; y la impugnación de actuaciones materiales
-              y vías de hecho, que no requieren agotar la vía administrativa.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Por qué conviene un abogado especializado para litigar contra el Estado?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              Porque el proceso es oral y por audiencias, con plazos de caducidad que no se
-              suspenden y reglas propias de legitimación, agotamiento y prueba. Una demanda
-              presentada fuera del plazo del artículo 39 del CPCA se rechaza sin examinar el fondo,
-              por fundada que esté. A eso se suma el dominio de la jurisprudencia de la Sala Primera,
-              que fija el alcance de cada figura.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-base font-semibold text-cream/90 mb-3">
-              ¿Es necesario agotar la vía administrativa antes de demandar?
-            </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
-              No siempre. El CPCA flexibilizó sustancialmente el requisito de agotamiento de la vía
-              administrativa. Aunque en muchos casos sigue siendo necesario interponer los recursos
-              administrativos correspondientes (revocatoria, apelación) antes de acudir al Tribunal,
-              existen importantes excepciones. El agotamiento no se exige cuando se impugnan vías de
-              hecho, omisiones de la Administración o actuaciones materiales. Tampoco se requiere cuando
-              opera el silencio administrativo positivo o cuando la propia ley dispensa expresamente
-              el agotamiento. En materia de contratación pública, las reglas específicas de la Ley N.°
-              9986 determinan cuándo se entiende agotada la vía. La determinación de si el agotamiento
-              es necesario en cada caso concreto requiere un análisis jurídico especializado, pues un
-              error en este punto puede resultar en la inadmisibilidad de la demanda. Corporación GC
-              evalúa esta cuestión como parte del análisis estratégico previo a cualquier litigio.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Instrumento titulo="Ejecución de la sentencia" fundamento="CPCA, arts. 155 a 178">
+        <p>
+          La sentencia firme se ejecuta de inmediato, salvo un plazo motivado de hasta tres meses
+          (artículo 157), ante un juez ejecutor con todos los poderes y deberes necesarios para su
+          plena efectividad (artículo 155). El funcionario que incumple sin justa causa puede ser
+          multado con uno a cinco salarios base (artículo 159); la condena al pago de una suma
+          líquida produce automáticamente el compromiso presupuestario de los fondos (artículo
+          166), y son embargables, con los límites del artículo 170, los bienes de dominio privado
+          de la Administración que no estén afectos a un fin público (artículo 169).
+        </p>
+      </Instrumento>
     </>
   ),
 
@@ -5749,6 +5647,14 @@ export default async function AreaDetailPage({
               {area.subtitle}
             </p>
 
+            {/* Respuesta directa a qué es la materia: la primera frase que
+                leen Google y los buscadores con IA. */}
+            {commercial?.definicion && (
+              <p className="mt-6 text-base text-cream/75 leading-relaxed max-w-[65ch]">
+                {commercial.definicion}
+              </p>
+            )}
+
             {/* ─── COMMERCIAL LANDING (above the fold) ─── */}
             {commercial && whatsappUrl && (
               <>
@@ -5817,6 +5723,31 @@ export default async function AreaDetailPage({
                     ))}
                   </div>
                 </section>
+
+                {/* Qué distingue al abogado de la materia */}
+                {commercial.perfil && (
+                  <section className="mt-14">
+                    <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
+                      {commercial.perfil.titulo}
+                    </h2>
+                    <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mb-6">
+                      {commercial.perfil.intro}
+                    </p>
+                    <div className="border-t border-cream/[0.10]">
+                      {commercial.perfil.rasgos.map((r) => (
+                        <div key={r.titulo} className="py-6 border-b border-cream/[0.06]">
+                          <h3 className="text-sm font-semibold text-cream mb-2">{r.titulo}</h3>
+                          <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">{r.texto}</p>
+                        </div>
+                      ))}
+                    </div>
+                    {commercial.perfil.cierre && (
+                      <p className="mt-6 text-sm text-cream/70 leading-relaxed max-w-[65ch]">
+                        {commercial.perfil.cierre}
+                      </p>
+                    )}
+                  </section>
+                )}
 
                 {/* Commercial FAQ */}
                 <section className="mt-14">
