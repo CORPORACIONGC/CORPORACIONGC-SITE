@@ -107,7 +107,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
   "medidas-cautelares": {
     hookHeadline: "¿Necesita suspender un acto administrativo urgente?",
     hookSubtext:
-      "Las medidas cautelares contencioso-administrativas pueden detener una sanción, ejecución o procedimiento en cuestión de horas. Acompañamos a personas y empresas que enfrentan amenazas administrativas inminentes contra su patrimonio, su actividad o sus derechos.",
+      "Las medidas cautelares contencioso-administrativas pueden detener de inmediato una sanción, una ejecución o un procedimiento. Acompañamos a personas y empresas que enfrentan amenazas administrativas inminentes contra su patrimonio, su actividad o sus derechos.",
     scenariosTitle: "¿Cuándo aplica una medida cautelar?",
     triggerScenarios: [
       "El Estado le impuso una sanción que está por ejecutarse",
@@ -122,7 +122,7 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       {
         title: "Análisis técnico inmediato",
         description:
-          "Evaluamos el caso en 24–48 horas para determinar la viabilidad de la medida, su momento (antes de la demanda, durante el proceso o en ejecución), si procede una provisionalísima y la estrategia probatoria.",
+          "Evaluamos el caso de inmediato para determinar la viabilidad de la medida, su momento (antes de la demanda, durante el proceso o en ejecución), si procede una provisionalísima y la estrategia probatoria.",
       },
       {
         title: "Redacción y presentación de la solicitud",

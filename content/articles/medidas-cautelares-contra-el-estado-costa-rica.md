@@ -1,7 +1,8 @@
 ---
-title: "Medidas cautelares contra el Estado: cómo proteger sus derechos mientras dura el proceso"
+title: "Medidas cautelares en el proceso contencioso administrativo"
 date: "2026-03-28"
-excerpt: "Un proceso contencioso-administrativo puede durar años. Las medidas cautelares permiten proteger sus derechos desde el primer día — incluso antes de presentar la demanda. Conozca qué son, cuándo proceden y por qué pueden definir el resultado de su caso."
+updated: "2026-09-26"
+excerpt: "El Código Procesal Contencioso Administrativo permite pedir medidas cautelares antes de la demanda, durante el proceso y en la ejecución. Esta guía explica sus requisitos, la cautelar ante causam, la medida provisionalísima y la medida sin audiencia, con la jurisprudencia que las interpreta."
 tags: ["Guía práctica", "Medidas Cautelares", "CPCA", "Contencioso Administrativo", "Derecho Administrativo"]
 areas: ["medidas-cautelares"]
 type: "article"
@@ -9,102 +10,106 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Qué son las medidas cautelares y cómo se piden en Costa Rica"
-seoDescription: "Qué son las medidas cautelares contra el Estado, qué requisitos exige el CPCA, cuánto duran y cómo se piden antes o durante la demanda."
+seoTitle: "Medidas cautelares en el contencioso administrativo de Costa Rica"
+seoDescription: "Qué es una medida cautelar en el contencioso administrativo, sus requisitos, la cautelar ante causam, la provisionalísima y cuánto dura."
 faq:
-  - question: "¿Cuándo se puede solicitar una medida cautelar contra el Estado?"
-    answer: "El CPCA contempla solicitarlas en dos momentos principales: antes de presentar la demanda (ante causam, cuando la urgencia no permite esperar) y durante el proceso (en cualquier etapa mientras subsista la necesidad). La posibilidad de actuar antes de la demanda es relevante en situaciones de daño inminente, pues evita que el daño se consolide mientras se prepara el expediente completo."
-  - question: "¿Qué es una medida cautelar provisionalísima?"
-    answer: "Es el instrumento de urgencia extrema dentro del sistema cautelar del CPCA. Se dicta de forma inmediata, sin audiencia previa a la parte contraria, para situaciones donde la demora del trámite ordinario haría inútil cualquier protección posterior. Requiere demostrar que la urgencia es real, el daño inminente y la pretensión con fundamento suficiente."
-  - question: "¿Qué presupuestos debe demostrar el solicitante de una medida cautelar?"
-    answer: "Debe acreditar dos cosas: que existe un riesgo real de que la demora del proceso cause un perjuicio grave o irreparable (periculum in mora), y que su pretensión tiene fundamento razonable (fumus boni iuris). El juez no resuelve el fondo en esta etapa, pero verifica la seriedad jurídica de lo planteado."
-  - question: "¿Qué medidas puede ordenar el juez contencioso-administrativo?"
-    answer: "El sistema cautelar del CPCA es abierto: el juez puede ordenar cualquier disposición adecuada, necesaria y proporcionada para proteger el objeto del proceso. Incluye medidas que conservan el estado de las cosas (impedir la ejecución de un acto) y medidas anticipativas que regulan provisionalmente la situación del administrado."
+  - question: "¿Qué es una medida cautelar en el contencioso administrativo?"
+    answer: "Es la orden que el juez dicta antes de la sentencia para proteger, de forma provisional, el objeto del proceso y la efectividad del fallo. El Código Procesal Contencioso Administrativo la regula en los artículos 19 a 30 y permite pedirla antes del proceso, durante su trámite y en la fase de ejecución. Puede conservar el estado de cosas o tener efectos anticipativos o innovativos, e imponer a cualquiera de las partes obligaciones de hacer, de no hacer o de dar (artículo 20)."
+  - question: "¿Cuáles son los requisitos de una medida cautelar?"
+    answer: "El artículo 21 del CPCA exige que la ejecución o permanencia de la conducta impugnada produzca graves daños o perjuicios, actuales o potenciales, y que la pretensión no sea temeraria o, en forma palmaria, carente de seriedad. El artículo 22 obliga además al juez a ponderar, conforme al principio de proporcionalidad, la lesión al interés público, los daños a terceros y las previsiones financieras que la medida exija a la Administración."
+  - question: "¿Qué es una medida cautelar ante causam?"
+    answer: "Es la que se pide antes de presentar la demanda (artículo 19.2 del CPCA). La conoce el juez tramitador de turno y, si la concede, la demanda debe presentarse dentro de los quince días siguientes a la notificación del auto que la acoge; de lo contrario, la medida se levanta y el solicitante responde por los daños y perjuicios causados (artículo 26.2)."
+  - question: "¿Qué es una medida provisionalísima?"
+    answer: "Es la que el juez adopta de manera inmediata y prima facie, una vez solicitada la medida cautelar, para garantizar la efectividad de la que se adopte finalmente (artículo 23 del CPCA). Puede dictarse de oficio o a gestión de parte y debe guardar vínculo con el objeto del proceso y con la medida requerida."
+  - question: "¿Cuánto dura una medida cautelar?"
+    answer: "Rige mientras dura el proceso, salvo que el juez la modifique o la suprima porque variaron las circunstancias de hecho que la motivaron (artículo 29 del CPCA). Caduca en un mes si no se ejecuta por culpa del solicitante, en el mismo plazo si, ejecutada, no se presenta la demanda, y tras tres meses de inactividad del proceso imputable al solicitante (artículo 112 ter)."
 ---
 
-Un [proceso contencioso-administrativo](/articulos/como-demandar-al-estado-costa-rica) puede tomar años en resolverse. Mientras tanto, el acto administrativo que usted impugna sigue produciendo efectos: la sanción se ejecuta, la obra avanza, la concesión se pierde, el cobro se materializa. Si usted espera a la sentencia para obtener protección, es posible que cuando llegue ya no haya nada que proteger.
+Las medidas cautelares son las órdenes que el juez contencioso administrativo dicta antes de la sentencia para proteger, de forma provisional, el objeto del proceso y la efectividad del fallo. El [Código Procesal Contencioso Administrativo](/articulos/que-es-el-cpca-costa-rica#art-19) (Ley 8508) las regula en sus artículos 19 a 30 y permite pedirlas en tres momentos: antes de iniciar el proceso, durante su trámite y en la fase de ejecución de la sentencia (artículo 19).
 
-Para eso existen las **medidas cautelares**: órdenes judiciales que protegen sus derechos de forma provisional mientras se resuelve el fondo del caso. Son órdenes provisionales — el instrumento que garantiza que la sentencia, cuando llegue, todavía tenga algo sobre qué operar.
+Su razón de ser es el tiempo. Mientras el [proceso contencioso administrativo](/articulos/como-demandar-al-estado-costa-rica#el-proceso-contencioso-administrativo-paso-a-paso) avanza, la conducta impugnada conserva su eficacia: la sanción se ejecuta, la obra continúa, la licencia se cancela, el cobro se materializa. La tutela cautelar impide que la duración del litigio vacíe de contenido la sentencia que lo resuelva.
 
-En la jurisdicción contencioso-administrativa costarricense, las medidas cautelares están reguladas en los artículos 19 a 30 del CPCA (Ley N.° 8508).
-
----
-
-## Un sistema que va más allá de la suspensión del acto
-
-Antes de la entrada en vigencia del CPCA en 2008, la tutela cautelar en el contencioso administrativo costarricense era muy limitada. El único instrumento disponible era la suspensión del acto administrativo, y se otorgaba de forma excepcional. El ciudadano que demandaba al Estado quedaba, en la práctica, desprotegido durante todo el proceso.
-
-El CPCA cambió esto de forma radical. Introdujo un **sistema abierto de medidas cautelares** donde el juez puede dictar cualquier medida que considere adecuada y necesaria para proteger el objeto del proceso y la efectividad de la sentencia. Ya no se limita a suspender un acto — puede ordenar conductas positivas, regular situaciones provisionales y adoptar medidas anticipativas cuando la protección del derecho así lo exija.
-
-Este diseño convirtió la tutela cautelar costarricense en una de las más avanzadas de la región. La medida cautelar dejó de ser un accesorio del proceso para convertirse en una pieza central del acceso a la justicia administrativa.
+Esta guía recorre el régimen completo: el contenido de la medida, sus requisitos, la medida anterior a la demanda, la medida provisionalísima, la que se adopta sin audiencia, el trámite y su duración.
 
 ---
 
-## ¿Cuándo se puede solicitar una medida cautelar?
+## Qué es una medida cautelar en el contencioso administrativo
 
-El CPCA contempla la posibilidad de solicitar medidas cautelares en dos momentos principales:
+El artículo 19 del Código faculta al juez para ordenar, a instancia de parte, las medidas «adecuadas y necesarias para proteger y garantizar, provisionalmente, el objeto del proceso y la efectividad de la sentencia». El artículo 20 define su contenido con amplitud: la medida puede conservar el estado de cosas o tener efectos anticipativos o innovativos, mediante la regulación o satisfacción provisional de una situación fáctica o jurídica, e imponer a cualquiera de las partes obligaciones de hacer, de no hacer o de dar. Cuando recae sobre conductas con elementos discrecionales, rige el límite del artículo 128.
 
-**Antes de presentar la demanda.** Cuando la urgencia no permite esperar a la preparación completa de la demanda, se puede solicitar protección cautelar de forma anticipada (cautelar ante causam). Si el juez la otorga, fijará un plazo para interponer la demanda principal.
+Ese diseño rompió con el régimen anterior. La Ley Reguladora de la Jurisdicción Contencioso-Administrativa de 1966 disponía que la interposición de la demanda no impedía a la Administración ejecutar el acto impugnado, y solo admitía su suspensión cuando la ejecución hubiera de ocasionar «daños o perjuicios de reparación imposible o difícil» (artículo 91). El Código de 2006, vigente desde 2008, sustituyó ese instrumento único por un sistema de medidas atípicas, en el que el juez adopta la que el caso requiera.
 
-**Durante el proceso.** Una vez presentada la demanda, la medida cautelar puede solicitarse en cualquier etapa del proceso mientras subsista la necesidad de protección.
-
-La posibilidad de actuar antes de la demanda es particularmente relevante en situaciones donde el daño es inminente y la preparación del expediente completo tomaría un tiempo que el caso no permite.
+La jurisprudencia había preparado el cambio. La Sala Constitucional definió las medidas cautelares como el conjunto de potestades procesales del juez para resolver antes del fallo, con el fin de conservar las condiciones indispensables para dictar y ejecutar la resolución final (voto 7190-94), y la Sala Primera ha reiterado que la tutela cautelar forma parte de la tutela judicial efectiva, con rango de derecho fundamental ([845-C-S1-2008](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-126862)). De esa filiación derivan sus dos caracteres, que el artículo 22 nombra expresamente: la medida es instrumental, porque existe en función del proceso principal, y es provisional, porque rige mientras este se resuelve.
 
 ---
 
-## La medida provisionalísima: protección en horas
+## La tutela cautelar según el coordinador de la comisión redactora
 
-Dentro del sistema cautelar del CPCA existe un instrumento de urgencia extrema: la **medida provisionalísima**. Es la herramienta más potente que tiene el administrado para obtener protección inmediata frente a una conducta administrativa que amenaza con causar un daño grave e irreparable.
+En junio de 2024, el Colegio de Abogados y Abogadas de Costa Rica dedicó un seminario a las medidas cautelares en el contencioso administrativo. El Dr. Óscar Eduardo González Camacho, director de Corporación GC y coordinador de la comisión redactora del Código, integró la mesa sobre la eficacia de estas medidas y valoró el funcionamiento del régimen de medidas atípicas.
 
-La provisionalísima se dicta de forma inmediata, sin audiencia previa a la parte contraria. Está diseñada para situaciones donde la demora propia del trámite ordinario de las cautelares haría inútil cualquier protección posterior.
-
-No cualquier situación amerita una provisionalísima. El abogado que la solicita debe demostrar al juez, desde el primer momento, que la urgencia es real, que el daño es inminente y que la pretensión tiene fundamento suficiente. La calidad técnica de la solicitud es determinante — una provisionalísima mal planteada se rechaza y puede comprometer la estrategia cautelar posterior.
-
-Corporación GC tiene práctica regular en la obtención de este tipo de medidas.
+<SeminarioCautelares />
 
 ---
 
-## ¿Qué necesita demostrar?
+## Requisitos de la medida cautelar: daño grave, seriedad de la pretensión y ponderación
 
-Para que un juez otorgue una medida cautelar, el solicitante debe acreditar que se cumplen los presupuestos que la ley establece. En esencia, debe convencer al juez de dos cosas:
+El artículo 21 fija los presupuestos. La medida procede cuando la ejecución o permanencia de la conducta sometida a proceso produce «graves daños o perjuicios, actuales o potenciales», y siempre que la pretensión no sea «temeraria o, en forma palmaria, carente de seriedad». El Código abandonó así la exigencia de irreparabilidad de la ley de 1966: basta la gravedad del daño, que puede ser actual o futuro.
 
-1. **Que existe un riesgo real** de que la demora del proceso cause un perjuicio grave o irreparable, o que haga ineficaz la eventual sentencia favorable.
+El artículo 22 agrega el juicio de ponderación. Para otorgar o denegar la medida, el juez debe considerar el principio de proporcionalidad, la eventual lesión al interés público, los daños que la medida provoque a terceros, sus caracteres de instrumentalidad y provisionalidad, y las previsiones financieras que su ejecución exija a la Administración, de modo que no se afecte la gestión sustantiva de la entidad ni se lesione gravemente la situación de terceros.
 
-2. **Que su pretensión tiene fundamento razonable.** El juez no va a resolver el fondo del caso en esta etapa, pero necesita verificar que lo que usted plantea tiene seriedad jurídica suficiente.
-
-La forma en que se argumentan y acreditan estos presupuestos es lo que separa una solicitud exitosa de una que se rechaza. El daño debe demostrarse con la precisión que el juez necesita para tomar una decisión inmediata, muchas veces sin haber escuchado a la otra parte.
+El Tribunal de Casación de lo Contencioso-Administrativo resumió esos requisitos en tres: el peligro en la demora, la apariencia de buen derecho y la ponderación de los intereses en juego (resolución 124-F-TC-2008), y advirtió que el interés de la Administración no siempre coincide con el interés público. Sobre la apariencia de buen derecho, el mismo tribunal sostuvo que opera en forma invertida, pues basta comprobar que la demanda no es temeraria ([79-A-TC-2008](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125995)). El daño, en cambio, debe acreditarse al menos de modo indiciario ([134-A-TC-2008](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125463)). Por eso la prueba del perjuicio merece el mayor cuidado desde el primer escrito.
 
 ---
 
-## ¿Qué puede ordenar el juez?
+## La medida cautelar ante causam
 
-El sistema cautelar del CPCA es **abierto**: el juez no está limitado a un catálogo cerrado de medidas. Puede ordenar cualquier disposición que considere adecuada, necesaria y proporcionada para proteger el objeto del proceso.
+Se llama *ante causam* a la medida que se pide antes de presentar la demanda, posibilidad que el artículo 19.2 reconoce expresamente. Sirve cuando la urgencia no permite esperar a que el escrito de demanda esté listo. La solicitud la conoce el juez tramitador a quien corresponda por turno (artículo 26.1).
 
-Esto incluye tanto medidas que **conservan** el estado de las cosas (impedir que la Administración ejecute un acto mientras se resuelve la demanda), como medidas de **carácter anticipativo** que regulan provisionalmente la situación del administrado.
+La medida anticipada obliga a demandar pronto. Si se concede, la demanda debe presentarse dentro de los quince días siguientes a la notificación del auto que la acoge; de lo contrario, el juez ordena su levantamiento y condena al solicitante al pago de los daños y perjuicios causados, que se liquidan por el trámite de ejecución de sentencia (artículo 26.2).
 
-El alcance concreto de lo que se puede solicitar depende de las circunstancias de cada caso y de la creatividad y conocimiento técnico del abogado que plantea la solicitud. Este es un campo donde la experiencia en la jurisdicción marca una diferencia sustancial en los resultados.
-
----
-
-## La medida cautelar como factor estratégico
-
-La tutela cautelar no es un trámite accesorio. En muchos casos contencioso-administrativos, la medida cautelar define el curso del proceso. Una cautelar bien obtenida puede:
-
-- Cambiar la dinámica de negociación entre el administrado y la Administración.
-- Evitar que se consoliden situaciones de hecho que luego sean difíciles de revertir.
-- Proteger la actividad económica, los derechos patrimoniales o la situación personal del demandante durante los años que dure el proceso.
-
-La decisión de cuándo solicitar la cautelar, qué tipo de medida pedir, cómo argumentar los presupuestos y qué prueba aportar desde el inicio son decisiones estratégicas que inciden directamente en el resultado. Un abogado que no domine la tutela cautelar del CPCA puede dejar a su cliente desprotegido durante todo el proceso — y cuando llegue la sentencia, el daño ya estará hecho.
+La Ley 9762 de 2019 añadió el artículo 112 ter, según el cual las medidas caducan en el plazo de un mes a partir de su decreto si no se ejecutan por culpa del solicitante, y en el mismo plazo si, después de ejecutadas, no se presenta la demanda. Los tribunales discrepan sobre la relación entre ambas normas. El Tribunal de Apelación entiende que el artículo 112 ter reformó tácitamente el 26.2 ([234-2020-I](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1051033)), mientras el Tribunal de Casación siguió aplicando los quince días ([249-A-TC-2021](https://nexuspj.poder-judicial.go.cr/document/ext-1-1011-309373)). La práctica prudente es presentar la demanda dentro de los quince días, plazo que satisface ambas lecturas.
 
 ---
 
-## ¿Qué hacer si enfrenta una situación urgente?
+## La medida provisionalísima
 
-Si una institución pública está por ejecutar un acto que le causará un daño grave — o ya lo está causando —, el tiempo es el factor más crítico. Cada día que pasa sin protección cautelar es un día en que el daño se consolida.
+El artículo 23 regula la medida más rápida del sistema. Una vez solicitada la medida cautelar, el juez puede, de oficio o a gestión de parte, adoptar medidas provisionalísimas «de manera inmediata y prima facie, a fin de garantizar la efectividad de la que se adopte finalmente». Deben guardar el vínculo necesario con el objeto del proceso y con la medida cautelar requerida.
 
-El primer paso es buscar asesoría de un abogado con experiencia específica en medidas cautelares contencioso-administrativas. La solicitud debe prepararse con rigor técnico, prueba suficiente y una argumentación que el juez pueda resolver de forma inmediata.
+La provisionalísima presupone, entonces, una solicitud cautelar en trámite, y su función es cubrir el tiempo que tarda en resolverse. El Tribunal de Casación la calificó como un instrumento de la cautelar principal ([62-A-TC-2008](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125981)), y el Tribunal de Apelación ha resuelto que contra la resolución que la concede, la deniega o la levanta solo cabe revocatoria ([146-2026-I](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1396449)).
 
-Corporación GC asesora y representa a personas y empresas en la [obtención de medidas cautelares](/areas/medidas-cautelares) ante el Tribunal Contencioso Administrativo, dentro de su práctica de [litigio contencioso-administrativo](/areas/litigio-contencioso-administrativo). Puede [contactarnos](/contacto) para una evaluación de su caso.
+---
+
+## La medida sin audiencia en casos de extrema urgencia
+
+El artículo 25 permite al juez, en casos de extrema urgencia y a solicitud de parte, disponer la medida cautelar sin conceder audiencia a la contraparte, lo que la doctrina denomina medida *inaudita altera parte*.
+
+Adoptada la medida en esas condiciones, el juez da audiencia por tres días a las partes, sin efectos suspensivos sobre lo dispuesto, y luego valora los alegatos y las pruebas para mantener, modificar o revocar la medida (artículo 25.2). La diferencia con la provisionalísima es de naturaleza. La medida del artículo 25 es la cautelar misma, adoptada antes de oír a la Administración y sujeta a revisión posterior; la del artículo 23 es un puente provisional que protege la eficacia de la cautelar mientras esta se resuelve, y el juez puede dictarla de oficio.
+
+---
+
+## Trámite y audiencia de la medida cautelar
+
+Fuera del supuesto de extrema urgencia, el juez da audiencia a las partes hasta por tres días sobre la solicitud. Transcurrido ese plazo, resuelve lo procedente, salvo que estime necesaria una audiencia oral, que debe realizar en un plazo máximo de tres días hábiles (artículo 24).
+
+El auto que ordena la medida debe comunicarse en forma inmediata para lograr su pronta ejecución. Para cumplirla, el juez dispone de las regulaciones del título VIII del Código, sobre ejecución de sentencias, incluidos los recursos ordinarios en efecto devolutivo y con trámite preferente (artículo 27).
+
+---
+
+## Cuánto dura una medida cautelar: modificación, apelación y caducidad
+
+La medida rige mientras dura el proceso y se ajusta a lo que ocurra en él. Cuando varían las circunstancias de hecho que motivaron su adopción, el juez puede modificarla o suprimirla, de oficio o a instancia de parte; y cuando varían las que motivaron un rechazo, puede considerar nuevamente la procedencia de aquella u otra medida (artículo 29).
+
+El auto que resuelve la medida es apelable dentro de los tres días hábiles siguientes, con efecto devolutivo (artículo 30). El Código nombra como alzada al Tribunal de Casación de lo Contencioso-Administrativo; desde 2010 la conoce el Tribunal de Apelación de lo Contencioso-Administrativo, y contra sus resoluciones en materia cautelar no procede casación ([Sala Primera, 1218-A-S1-2026](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1416985)).
+
+La medida también puede caducar. El artículo 112 ter dispone que caduca en un mes a partir de su decreto si no se ejecuta por culpa del solicitante, en el mismo plazo si, después de ejecutada, no se presenta la demanda, y cuando transcurren tres meses de inactividad del proceso imputable al solicitante, siempre que no proceda la caducidad del proceso.
+
+---
+
+## Qué hacer ante un daño inminente de la Administración
+
+Cuando una conducta administrativa está por causar un daño grave, o ya lo está causando, la primera decisión es elegir la figura: la medida ante causam si todavía no hay demanda, la provisionalísima para cubrir el tiempo de trámite de la cautelar, o la medida sin audiencia si la urgencia no admite siquiera la audiencia de tres días. La segunda es la prueba, porque el daño debe acreditarse al menos de modo indiciario desde el primer escrito. La tercera es el calendario, porque una medida anterior a la demanda obliga a presentarla dentro de los quince días siguientes.
+
+Corporación GC asesora y representa a personas y empresas en la [solicitud de medidas cautelares](/areas/medidas-cautelares) ante el Tribunal Contencioso Administrativo, dentro de su práctica de [litigio contencioso administrativo](/areas/litigio-contencioso-administrativo). Puede [contactarnos](/contacto) para evaluar su caso.
 
 ---
 

@@ -474,113 +474,56 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
           Las medidas cautelares protegen el objeto del proceso y la efectividad de la sentencia
           mientras se tramita el litigio contra la Administración. El Código Procesal Contencioso
-          Administrativo las regula en sus artículos 19 a 30 y las abrió a cualquier medida adecuada
-          y necesaria, más allá de la sola suspensión del acto que admitía la ley de 1966. Su
-          desarrollo, con los antecedentes legislativos y la jurisprudencia, está en la guía del{" "}
-          <Link href="/articulos/que-es-el-cpca-costa-rica#art-19" className="text-emphasis hover:text-emphasis/80 transition-colors">
-            Código Procesal Contencioso Administrativo
-          </Link>{" "}
-          y en la de{" "}
+          Administrativo las regula en sus artículos 19 a 30 y permite pedirlas antes de la demanda,
+          durante el proceso y en la ejecución. Su régimen completo, con la jurisprudencia que lo
+          interpreta, está en la guía de{" "}
           <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
-            medidas cautelares contra el Estado
+            medidas cautelares en el proceso contencioso administrativo
           </Link>
           .
         </p>
       </section>
 
-      <Instrumento titulo="Medida cautelar y su contenido" fundamento="CPCA, arts. 19 y 20">
+      <Instrumento titulo="Medida anterior a la demanda" fundamento="CPCA, arts. 19.2 y 26">
         <p>
-          Durante el proceso, en la fase de ejecución o antes de iniciarlo, el juez puede ordenar, a
-          instancia de parte, las medidas adecuadas y necesarias para proteger provisionalmente el
-          objeto del proceso y la efectividad de la sentencia (artículo 19). La medida puede
-          conservar el estado de cosas o tener efectos anticipativos o innovativos, e imponer de
-          forma provisional a cualquiera de las partes obligaciones de hacer, de no hacer o de dar
-          (artículo 20).
-        </p>
-        <p>
-          La suspensión de la conducta impugnada, sea un acto, una licitación en curso o la
-          ejecución de un contrato, es su forma conservativa más frecuente. Cuando la medida recae
-          sobre conductas con elementos discrecionales, rige el límite del artículo 128 del Código.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Presupuestos y ponderación" fundamento="CPCA, arts. 21 y 22">
-        <p>
-          La medida procede cuando la ejecución o permanencia de la conducta produce graves daños o
-          perjuicios, actuales o potenciales, siempre que la pretensión no sea temeraria o, en forma
-          palmaria, carente de seriedad (artículo 21). Para otorgarla o denegarla, el juez pondera,
-          conforme al principio de proporcionalidad, la eventual lesión al interés público, los daños
-          a terceros, los caracteres de instrumentalidad y provisionalidad de la medida y las
-          previsiones financieras que su ejecución exija a la Administración (artículo 22).
-        </p>
-        <p>
-          El Tribunal de Casación resumió esos requisitos en el peligro en la demora, la apariencia
-          de buen derecho y la ponderación de los intereses en juego (resolución 124-F-TC-2008), y
-          advirtió que el interés de la Administración no siempre coincide con el interés público.
-          La apariencia de buen derecho opera en forma invertida: basta comprobar que la demanda no
-          es temeraria (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125995" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">79-A-TC-2008</a>); el daño, en cambio, debe acreditarse al menos
-          de modo indiciario (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125463" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">134-A-TC-2008</a>).
+          Permite obtener protección antes de que la demanda esté lista. Concedida la{" "}
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#la-medida-cautelar-ante-causam" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            medida ante causam
+          </Link>
+          , la demanda debe presentarse dentro de los quince días siguientes a la notificación del
+          auto que la acoge.
         </p>
       </Instrumento>
 
       <Instrumento titulo="Medidas provisionalísimas" fundamento="CPCA, art. 23">
         <p>
-          Una vez solicitada la medida cautelar, el juez puede adoptar, de oficio o a gestión de
-          parte, medidas provisionalísimas de manera inmediata y prima facie, a fin de garantizar
-          la efectividad de la que se adopte finalmente; deben guardar vínculo con el objeto del
-          proceso y con la medida requerida (artículo 23). Son un instrumento de la cautelar
-          principal (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-125981" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">62-A-TC-2008</a>), y contra la resolución que las concede, las
-          deniega o las levanta solo cabe revocatoria (<a href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1396449" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">Tribunal de Apelación, 146-2026-I</a>).
+          Mientras resuelve la solicitud cautelar, el juez puede adoptar{" "}
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#la-medida-provisionalisima" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            medidas provisionalísimas
+          </Link>{" "}
+          de manera inmediata y prima facie para garantizar la efectividad de la que adopte
+          finalmente.
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Trámite y medidas sin audiencia" fundamento="CPCA, arts. 24 y 25">
+      <Instrumento titulo="Medida sin audiencia" fundamento="CPCA, art. 25">
         <p>
-          El juez da audiencia a las partes hasta por tres días y, si la estima necesaria, celebra
-          una audiencia oral en un plazo máximo de tres días hábiles (artículo 24). En casos de
-          extrema urgencia puede disponer la medida sin conceder audiencia, con caución o
-          contracautela; adoptada así, confiere audiencia por tres días, sin efectos suspensivos
-          sobre la medida, y luego resuelve mantenerla, modificarla o revocarla (artículo 25).
+          En casos de extrema urgencia, el juez puede disponer la medida antes de oír a la
+          Administración y revisarla después de una audiencia de tres días. La guía explica{" "}
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#la-medida-sin-audiencia-en-casos-de-extrema-urgencia" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            en qué se distingue de la provisionalísima
+          </Link>
+          .
         </p>
       </Instrumento>
 
-      <Instrumento titulo="Medida anterior a la demanda" fundamento="CPCA, arts. 26 y 112 ter">
+      <Instrumento titulo="Presupuestos de la medida" fundamento="CPCA, arts. 21 y 22">
         <p>
-          La solicitud previa al proceso la conoce el juez tramitador de turno. Concedida la medida,
-          la demanda debe presentarse dentro de los quince días siguientes a la notificación del
-          auto que la acoge; de lo contrario, se ordena su levantamiento y se condena al solicitante
-          al pago de los daños y perjuicios causados (artículo 26).
-        </p>
-        <p>
-          Desde 2019, el artículo 112 ter dispone además que las medidas caducan en un mes si,
-          después de ejecutadas, no se presenta la demanda. El Tribunal de Apelación entiende que
-          esa norma reformó tácitamente el artículo 26.2 (<a href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1051033" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">234-2020-I</a>), mientras el Tribunal
-          de Casación siguió aplicando los quince días (<a href="https://nexuspj.poder-judicial.go.cr/document/ext-1-1011-309373" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">249-A-TC-2021</a>). La práctica prudente es
-          presentar la demanda dentro de los quince días, que satisfacen ambas lecturas.
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Contracautela" fundamento="CPCA, art. 28">
-        <p>
-          Al disponer la medida, el juez puede exigir caución o cualquier otra contracautela,
-          suficiente y proporcionada para proteger los derechos de las partes, de terceros o el
-          interés público, y la medida no se ejecuta hasta que se acredita (artículo 28, incisos 1
-          y 4). Contra el auto que resuelve la contracautela cabe apelación dentro del tercer día
-          (inciso 2), y quien pretenda el resarcimiento de los daños causados por la medida debe
-          pedirlo dentro de los dos meses siguientes a la cesación de sus efectos (inciso 5).
-        </p>
-      </Instrumento>
-
-      <Instrumento titulo="Modificación, apelación y caducidad" fundamento="CPCA, arts. 29, 30 y 112 ter">
-        <p>
-          La medida puede modificarse o suprimirse cuando varían las circunstancias de hecho que la
-          motivaron, y la que se rechazó puede reconsiderarse en el mismo supuesto (artículo 29). El
-          auto que la resuelve es apelable en tres días hábiles, con efecto devolutivo (artículo
-          30); el Código nombra como alzada al Tribunal de Casación, y desde 2010 la conoce el
-          Tribunal de Apelación de lo Contencioso-Administrativo, contra cuyas resoluciones en
-          materia cautelar no procede casación (<a href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1416985" target="_blank" rel="noopener noreferrer" className="text-emphasis hover:text-emphasis/80 transition-colors">Sala Primera, 1218-A-S1-2026</a>). La medida caduca en un
-          mes si no se ejecuta por culpa del solicitante, y tras tres meses de inactividad del
-          proceso que le sea imputable (artículo 112 ter).
+          La medida exige{" "}
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#requisitos-de-la-medida-cautelar-dano-grave-seriedad-de-la-pretension-y-ponderacion" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            un daño grave y una pretensión seria
+          </Link>
+          , y el juez pondera el interés público y el de terceros antes de concederla.
         </p>
       </Instrumento>
     </>

@@ -168,7 +168,7 @@ export const PRACTICE_AREA_PAGES = [
     icon: "ShieldCheck" as const,
     priority: "primary" as const,
     seoTitle: "Abogados en medidas cautelares contra el Estado · Costa Rica",
-    seoDescription: "¿Necesita suspender un acto administrativo urgente? Medidas cautelares provisionalísimas y ante causam ante el TCA. CPCA arts. 19-30. Asesoría inmediata.",
+    seoDescription: "Medidas cautelares contra el Estado ante el Tribunal Contencioso Administrativo. En casos urgentes actuamos de inmediato y con rigor técnico.",
     ogShortTitle: "{{em}} contra el Estado",
     ogEmphasis: "Medidas Cautelares",
   },

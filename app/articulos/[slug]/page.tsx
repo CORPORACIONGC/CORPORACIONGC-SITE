@@ -25,6 +25,7 @@ import { ReglamentoContratacion } from "@/components/article/ReglamentoContratac
 import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
+import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
 import {
   MapaRecursosLgap,
   PlazoTresDiasLgap,
@@ -162,6 +163,7 @@ const ARTICLE_COMPONENTS = {
   ComparativaRecursosContratacion,
   ReformaCpca,
   CapacitacionEleinmsa,
+  SeminarioCautelares,
   MapaRecursosLgap,
   PlazoTresDiasLgap,
   FlujoApelacionSubsidio,
