@@ -143,7 +143,7 @@ export const PRACTICE_AREA_PAGES = [
     slug: "litigio-contencioso-administrativo",
     title: "Litigio Contencioso Administrativo",
     subtitle: "Demandas contra el Estado y entes públicos ante el Tribunal Contencioso Administrativo",
-    description: "Corporación GC litiga ante el Tribunal Contencioso Administrativo demandas de nulidad, plena jurisdicción y responsabilidad patrimonial del Estado. Fundamentación en el CPCA (Ley N.° 8508).",
+    description: "Corporación GC litiga ante el Tribunal Contencioso Administrativo demandas de nulidad, de restablecimiento y de responsabilidad patrimonial contra el Estado y los entes públicos. Fundamentación en el CPCA (Ley N.° 8508).",
     icon: "Gavel" as const,
     priority: "primary" as const,
     /* Título medido en píxeles (603 px, en el límite de ~600; en móvil se ve
