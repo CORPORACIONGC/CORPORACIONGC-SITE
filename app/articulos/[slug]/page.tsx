@@ -33,6 +33,7 @@ import { ComparativaNulidad, ViasAnulacion, FuentesNulidad } from "@/components/
 import { RecorridoEjecucion, EmbargoEstado, FuentesEjecucion } from "@/components/article/EjecucionSentencias";
 import { MapaAgotamiento, PlazosVia, FuentesAgotamiento } from "@/components/article/AgotamientoVia";
 import { TablaPlazos, CaducidadPrescripcion, FuentesPlazos } from "@/components/article/PlazosDemandarEstado";
+import { EjemplosInactividad, RutasSilencio, RecorridoOmision, FuentesInactividad } from "@/components/article/InactividadAdministrativa";
 import { PlazosResponsabilidad } from "@/components/article/PlazosResponsabilidad";
 import {
   MapaRecursosLgap,
@@ -189,6 +190,10 @@ const ARTICLE_COMPONENTS = {
   TablaPlazos,
   CaducidadPrescripcion,
   FuentesPlazos,
+  EjemplosInactividad,
+  RutasSilencio,
+  RecorridoOmision,
+  FuentesInactividad,
   PlazosResponsabilidad,
   MapaRecursosLgap,
   PlazoTresDiasLgap,

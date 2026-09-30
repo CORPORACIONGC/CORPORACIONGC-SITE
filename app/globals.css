@@ -1545,6 +1545,7 @@ html {
   .prose-article .gc-fig-tabla--apilada tbody tr { display: block; padding: 18px 0; border-bottom: 1px solid var(--fig-rule-soft); }
   .prose-article .gc-fig-tabla--apilada tbody tr:last-child { border-bottom: 0; }
   .prose-article .gc-fig-tabla--apilada .gc-comparativa tbody td { display: block; width: auto; min-width: 0; padding: 0; border: 0; }
+  .prose-article .gc-fig-tabla--apilada .gc-comparativa tbody td.gc-recurso { width: auto; min-width: 0; }
   .prose-article .gc-fig-tabla--apilada .gc-comparativa tbody td + td { margin-top: 8px; }
   .prose-article .gc-flujo-que, .prose-article .gc-flujo-plazo, .prose-article .gc-flujo-rama { grid-column: 2 / -1; }
   .prose-article .gc-flujo-rama { margin-top: 6px; }
