@@ -29,6 +29,7 @@ import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
 import { FuentesResponsabilidadPatrimonial } from "@/components/article/FuentesResponsabilidadPatrimonial";
 import { Cita } from "@/components/article/Cita";
 import { CasosUberSeguros, ReglasUberSeguros, FuentesUberSeguros } from "@/components/article/UberSeguros";
+import { ComparativaNulidad, ViasAnulacion, FuentesNulidad } from "@/components/article/NulidadActo";
 import { PlazosResponsabilidad } from "@/components/article/PlazosResponsabilidad";
 import {
   MapaRecursosLgap,
@@ -173,6 +174,9 @@ const ARTICLE_COMPONENTS = {
   CasosUberSeguros,
   ReglasUberSeguros,
   FuentesUberSeguros,
+  ComparativaNulidad,
+  ViasAnulacion,
+  FuentesNulidad,
   PlazosResponsabilidad,
   MapaRecursosLgap,
   PlazoTresDiasLgap,
