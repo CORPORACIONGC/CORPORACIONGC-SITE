@@ -28,6 +28,7 @@ import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa"
 import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
 import { FuentesResponsabilidadPatrimonial } from "@/components/article/FuentesResponsabilidadPatrimonial";
 import { Cita } from "@/components/article/Cita";
+import { CasosUberSeguros, ReglasUberSeguros, FuentesUberSeguros } from "@/components/article/UberSeguros";
 import { PlazosResponsabilidad } from "@/components/article/PlazosResponsabilidad";
 import {
   MapaRecursosLgap,
@@ -169,6 +170,9 @@ const ARTICLE_COMPONENTS = {
   SeminarioCautelares,
   FuentesResponsabilidadPatrimonial,
   Cita,
+  CasosUberSeguros,
+  ReglasUberSeguros,
+  FuentesUberSeguros,
   PlazosResponsabilidad,
   MapaRecursosLgap,
   PlazoTresDiasLgap,
