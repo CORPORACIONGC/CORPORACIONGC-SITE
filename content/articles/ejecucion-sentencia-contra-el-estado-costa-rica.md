@@ -40,7 +40,7 @@ El Código de 2006 reconstruyó por completo esta etapa, que durante décadas fu
 
 ## Por qué la ejecución era el punto débil
 
-Bajo la ley de 1966 era frecuente que el ganador de un juicio contra la Administración tuviera la sentencia y no el pago. En su comentario de 2006 al nuevo Código, quien firma esta guía identificó las dos causas:
+Bajo la ley de 1966 era frecuente que el ganador de un juicio contra la Administración tuviera la sentencia y no el pago. En el comentario al nuevo Código que publicó la Escuela Judicial en 2006, el suscrito identificó las dos causas:
 
 <Cita fuente="Óscar Eduardo González Camacho" detalle="«La ejecución de sentencia», en El nuevo proceso contencioso-administrativo, Poder Judicial, Escuela Judicial, 2006, p. 573">
 
@@ -48,7 +48,7 @@ Bajo la ley de 1966 era frecuente que el ganador de un juicio contra la Administ
 
 </Cita>
 
-Sin mecanismos prácticos, advertía en la misma obra, lo plasmado en la sentencia terminaba convertido «en un verdadero cuento de hadas» (p. 574). El Código respondió con un principio que el entonces magistrado dejó expresamente consignado en la subcomisión legislativa que revisó el proyecto: «la ejecución no es una atribución gratuita de la Administración, sino una potestad inherente al propio juez» (acta n.º 31, del 29 de junio de 2005, folio 1568). La Constitución confiere al Poder Judicial la potestad de ejecutar sus resoluciones (artículo 153), y el Código la organiza en sus artículos 155 a 180.
+Sin mecanismos prácticos, se advertía en la misma obra, lo plasmado en la sentencia terminaba convertido «en un verdadero cuento de hadas» (p. 574). El Código respondió con un principio que el suscrito, en su condición de magistrado de la Sala Primera y coordinador de la comisión redactora del Código, dejó expresamente consignado ante la subcomisión legislativa que revisó el proyecto: «la ejecución no es una atribución gratuita de la Administración, sino una potestad inherente al propio juez» (acta n.º 31, del 29 de junio de 2005, folio 1568). La Constitución confiere al Poder Judicial la potestad de ejecutar sus resoluciones (artículo 153), y el Código la organiza en sus artículos 155 a 180.
 
 ---
 
@@ -76,7 +76,7 @@ La prueba pesa. En 2026 la Sala Primera rechazó en ejecución el daño material
 
 El Código obliga a que la condena llegue con su valor real. Si la obligación es dineraria, la sentencia se pronuncia sobre su actualización con el índice de precios al consumidor, para las obligaciones en colones, o con la tasa *prime rate*, para las obligaciones en moneda extranjera, desde que la obligación fue exigible hasta su pago efectivo; si la condena fue en abstracto, el juez ejecutor resuelve la liquidación y el reajuste (artículo 123). Si la obligación es de valor, como la de indemnizar un daño, se convierte en dinero a valor presente y el juez ejecutor la actualiza hasta el pago (artículo 124). El fundamento constitucional de la actualización se desarrolla en [Fundamento constitucional de la indexación](/jurisprudencia-destacada/indexacion-de-obligaciones-dinerarias).
 
-La demora de la Administración también cuesta. En una ejecución de un acto firme contra el Estado, la Sala Primera sostuvo que «es factible reconocer intereses cuando exista demora por parte de la Administración en la cancelación de sus obligaciones, ya que es una consecuencia lógica ante el incumplimiento estatal» (voto 526-F-S1-2011, redactado por el magistrado González Camacho). La Procuraduría comparte el criterio: intereses e indexación son formas de resarcimiento que concretan la reparación integral ([dictamen C-457-2020](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=22434&param2=1&param3=1)). La Sala Primera, eso sí, no los acumula sobre la misma suma, porque la tasa de interés ya lleva implícito el ajuste inflacionario ([1144-F-S1-2012](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-888107)).
+La demora de la Administración también cuesta. En una ejecución de un acto firme contra el Estado, la Sala Primera sostuvo que «es factible reconocer intereses cuando exista demora por parte de la Administración en la cancelación de sus obligaciones, ya que es una consecuencia lógica ante el incumplimiento estatal» (voto 526-F-S1-2011, cuya redacción correspondió al suscrito como magistrado de la Sala Primera). La Procuraduría comparte el criterio: intereses e indexación son formas de resarcimiento que concretan la reparación integral ([dictamen C-457-2020](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=22434&param2=1&param3=1)). La Sala Primera, eso sí, no los acumula sobre la misma suma, porque la tasa de interés ya lleva implícito el ajuste inflacionario ([1144-F-S1-2012](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-888107)).
 
 <RecorridoEjecucion />
 
@@ -88,7 +88,7 @@ La sentencia firme debe ejecutarse **de inmediato**. El juez puede conceder, en 
 
 Para pagar una suma líquida, el Código resolvió el viejo argumento presupuestario con una regla automática: la sentencia firme **produce, automáticamente, el compromiso presupuestario** de los fondos pertinentes para el ejercicio en que queda firme (artículo 166). El juez ejecutor certifica la sentencia al Departamento de Presupuesto Nacional, si se trata del Gobierno Central, o al jerarca supremo del ente, y esa certificación es «título suficiente y único para el pago»; el director de Presupuesto Nacional o el jerarca del ente deben incluir el contenido en el presupuesto inmediato siguiente, so pena de responsabilidad civil, penal o disciplinaria (artículo 167). En el Gobierno Central, el pago lo tramita después la unidad financiera del ministerio condenado en el sistema de administración financiera del Estado, según el procedimiento AP-01-06 del Ministerio de Hacienda.
 
-Quien firma esta guía explicó en 2006 el alcance de esa regla:
+El suscrito precisó el alcance de esa regla en el comentario de 2006:
 
 <Cita fuente="Óscar Eduardo González Camacho" detalle="«La ejecución de sentencia», en El nuevo proceso contencioso-administrativo, Poder Judicial, Escuela Judicial, 2006, p. 599">
 
@@ -104,7 +104,7 @@ La Procuraduría sostiene la misma idea desde hace décadas. El derecho del acre
 
 ## Si la Administración no cumple: multas, denuncia y sustitución
 
-El sistema funciona por grados. En la subcomisión de 2005 el entonces magistrado González Camacho lo describió así: «toda la estructura de la ejecución va sobre medidas graduales, cumpla, si no cumple pasamos a la siguiente etapa», en «una forma de embudo gradual» (acta n.º 31, folio 1555).
+El sistema funciona por grados. Ante la subcomisión, en 2005, el suscrito, en su condición de magistrado de la Sala Primera, lo describió así: «toda la estructura de la ejecución va sobre medidas graduales, cumpla, si no cumple pasamos a la siguiente etapa», en «una forma de embudo gradual» (acta n.º 31, folio 1555).
 
 **El primer escalón es personal.** Los servidores a quienes se ordena cumplir no pueden excusarse en el deber de obediencia, y su renuncia o el vencimiento de su nombramiento no los libera si ya habían recibido la orden (artículo 158). El funcionario que incumple sin justa causa un requerimiento del juez ejecutor es multado **en lo personal** con uno a cinco salarios base, previa audiencia de tres días hábiles, con intereses si no paga, y el juez puede testimoniar piezas al Ministerio Público (artículo 159). La audiencia es indispensable: la Sala Primera anuló una multa impuesta a funcionarios que no fueron parte ni recibieron audiencia personal (voto 2854-F-S1-2020), y la Sala Constitucional consideró suficiente esa audiencia de tres días ([voto 2015-003095](https://nexuspj.poder-judicial.go.cr/document/ext-1-0007-264523)). Lo recaudado por multas va a un fondo del Tribunal para atender el pago de costas (artículo 160).
 
@@ -124,7 +124,7 @@ Tampoco sirven como excusa las normas o los hechos nuevos que la propia Administ
 
 ## El embargo de bienes del Estado
 
-El Código admitió lo que durante mucho tiempo se tuvo por imposible. Al explicarlo ante la Comisión de Asuntos Jurídicos, el magistrado González Camacho lo presentó así:
+El Código admitió lo que durante mucho tiempo se tuvo por imposible. Al explicarlo ante la Comisión de Asuntos Jurídicos, el suscrito, en su condición de magistrado de la Sala Primera, lo presentó así:
 
 <Cita fuente="Comisión Permanente de Asuntos Jurídicos, sesión n.º 21" detalle="31 de agosto de 2005, intervención del magistrado Óscar González Camacho, expediente legislativo 15.134">
 
@@ -132,7 +132,7 @@ El Código admitió lo que durante mucho tiempo se tuvo por imposible. Al explic
 
 </Cita>
 
-El artículo 169 permite embargar, a petición de parte y a criterio del juez ejecutor, los bienes de dominio privado de la Administración no afectos a un fin público, la participación accionaria del ente condenado y los ingresos que perciba por transferencias de la Ley de Presupuesto, estas dos últimas hasta un veinticinco por ciento. La lista es abierta, porque la ley dice «entre otros». Los topes y la frase sobre el fin público se incorporaron en marzo de 2006, por una moción de varios diputados aprobada en la Comisión de Asuntos Jurídicos (sesión n.º 38). Esa frase, observó el autor de esta guía, no agrega ni quita nada, porque un bien afecto a un fin público es demanial y, por definición, ya no es de dominio privado; el fundamento de fondo es otro: «El Estado (en sentido lato) es persona y como tal, debe también honrar sus obligaciones» (*El nuevo proceso contencioso-administrativo*, p. 601).
+El artículo 169 permite embargar, a petición de parte y a criterio del juez ejecutor, los bienes de dominio privado de la Administración no afectos a un fin público, la participación accionaria del ente condenado y los ingresos que perciba por transferencias de la Ley de Presupuesto, estas dos últimas hasta un veinticinco por ciento. La lista es abierta, porque la ley dice «entre otros». Los topes y la frase sobre el fin público se incorporaron en marzo de 2006, por una moción de varios diputados aprobada en la Comisión de Asuntos Jurídicos (sesión n.º 38). Esa frase, como señaló el suscrito en el comentario de 2006, no agrega ni quita nada, porque un bien afecto a un fin público es demanial y, por definición, ya no es de dominio privado; el fundamento de fondo es otro: «El Estado (en sentido lato) es persona y como tal, debe también honrar sus obligaciones» (*El nuevo proceso contencioso-administrativo*, p. 601).
 
 <EmbargoEstado />
 
@@ -164,7 +164,7 @@ La Ley 10702, que rige desde el 30 de mayo de 2025, agregó al artículo 179 un 
 
 ## Los recursos durante la ejecución
 
-Contra el auto que resuelve un embargo cabe revocatoria con apelación en subsidio ante el Tribunal de Casación de lo Contencioso-Administrativo, dentro de tres días hábiles, y contra el fallo final de la ejecución cabe casación ante la Sala Primera o el Tribunal de Casación (artículo 178). Una observación técnica que el autor de esta guía formuló en 2006 sigue vigente: el artículo 178 remite para la casación al artículo 137 del Código, cuando la norma que regula la casación contra la sentencia final dictada en ejecución es el artículo 134.2 (*El nuevo proceso contencioso-administrativo*, pp. 606 y 607). El error material nunca se corrigió.
+Contra el auto que resuelve un embargo cabe revocatoria con apelación en subsidio ante el Tribunal de Casación de lo Contencioso-Administrativo, dentro de tres días hábiles, y contra el fallo final de la ejecución cabe casación ante la Sala Primera o el Tribunal de Casación (artículo 178). Una observación técnica que el suscrito formuló en el comentario de 2006 sigue vigente: el artículo 178 remite para la casación al artículo 137 del Código, cuando la norma que regula la casación contra la sentencia final dictada en ejecución es el artículo 134.2 (*El nuevo proceso contencioso-administrativo*, pp. 606 y 607). El error material nunca se corrigió.
 
 Para el cálculo de los daños que se cobran en esta etapa, véase la guía sobre la [responsabilidad patrimonial del Estado](/articulos/responsabilidad-patrimonial-del-estado-costa-rica), y para el proceso que conduce a la sentencia, [cómo demandar al Estado en Costa Rica](/articulos/como-demandar-al-estado-costa-rica).
 

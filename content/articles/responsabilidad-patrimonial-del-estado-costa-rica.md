@@ -78,7 +78,7 @@ La distinción entre ambos criterios tiene consecuencias. La licitud o ilicitud 
 
 La misma sentencia de 2005 afirmó que «la Administración Pública también es responsable por los daños y perjuicios ocasionados con su inactividad administrativa» (considerando VII). El caso era el de una comunidad que durante años pidió un puente peatonal sobre una autopista nacional, y la Sala consideró la omisión de construirlo como funcionamiento anormal y causa adecuada de la muerte de un peatón. El análisis completo del fallo está en [Responsabilidad del Estado por inactividad material](/jurisprudencia-destacada/responsabilidad-del-estado-por-omision).
 
-La línea se extendió a los deberes de fiscalización. La potestad municipal de control de obras «no se reduce a conductas formales de autorización, sino que incluyen un control sustantivo, periódico y eficaz», y su omisión hace responsable al municipio de los daños causados a terceros ([979-F-2006](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-771198), considerando IX). El control jurisdiccional de la inactividad material es el tema de la tesis doctoral del Dr. González Camacho, [*La Justicia Administrativa frente a la Inactividad Material de la Administración Pública*](/articulos/libro-justicia-administrativa) (1998).
+La línea se extendió a los deberes de fiscalización. La potestad municipal de control de obras «no se reduce a conductas formales de autorización, sino que incluyen un control sustantivo, periódico y eficaz», y su omisión hace responsable al municipio de los daños causados a terceros ([979-F-2006](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-771198), considerando IX). El control jurisdiccional de la inactividad material es el tema de la tesis doctoral del suscrito, [*La Justicia Administrativa frente a la Inactividad Material de la Administración Pública*](/articulos/libro-justicia-administrativa) (1998).
 
 ### Conducta lícita y daño especial
 
@@ -110,7 +110,7 @@ El **daño moral** tiene reconocimiento expreso: «Cabrá responsabilidad por el
 
 ### La condena en abstracto
 
-El artículo 122 del CPCA permite al tribunal condenar en abstracto al pago de daños y perjuicios cuando consta su existencia pero no su cuantía, y aun cuando no consten ni su existencia ni su cuantía, siempre que sean consecuencia de la conducta objeto de la demanda. El Dr. González Camacho redactó esa fórmula en la subcomisión que preparó el Código y explicó el problema que buscaba corregir:
+El artículo 122 del CPCA permite al tribunal condenar en abstracto al pago de daños y perjuicios cuando consta su existencia pero no su cuantía, y aun cuando no consten ni su existencia ni su cuantía, siempre que sean consecuencia de la conducta objeto de la demanda. El suscrito redactó esa fórmula en la subcomisión que preparó el Código y explicó el problema que buscaba corregir:
 
 <Cita fuente="Subcomisión del expediente legislativo 15.134" enlace="acta n.º 27 de 8 de junio de 2005" detalle="folio 1435">
 
@@ -146,7 +146,7 @@ Los dos plazos de cuatro años provienen de la Ley 7611 de 1996; la Ley 9057 con
 
 La confusión más frecuente en esta materia es aplicar a la demanda por daños el año de caducidad del artículo 39 del CPCA. Ese plazo rige la impugnación de la conducta administrativa. Para la pretensión puramente indemnizatoria, el artículo 41 del CPCA dispone que en materia civil de Hacienda el plazo para demandar es el de prescripción del derecho de fondo, que en la responsabilidad de la Administración es el del artículo 198 de la LGAP. La Sala Primera lo ha resuelto así: frente a una pretensión solo resarcitoria «no resulta aplicable la figura de la caducidad [...] sino la prescripción conforme al citado numeral 41 del CPCA» ([1778-A-S1-2021](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1060850), considerando III), y en el mismo sentido ([615-F-S1-2010](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-765501); [1261-F-S1-2011](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-766718)).
 
-Esa solución responde a la intención expresa de quienes redactaron el Código. En la subcomisión del expediente legislativo 15.134, el Dr. González Camacho explicó que la caducidad de la acción y el acto consentido operan en los supuestos en que se impugna un acto en ejercicio de potestades públicas, y que en la materia civil de Hacienda, donde incluyó la responsabilidad extracontractual, el objeto del proceso es el aspecto patrimonial. Y concluyó:
+Esa solución responde a la intención expresa de quienes redactaron el Código. En la subcomisión del expediente legislativo 15.134, el suscrito, en su condición de magistrado de la Sala Primera y coordinador de la comisión redactora, explicó que la caducidad de la acción y el acto consentido operan en los supuestos en que se impugna un acto en ejercicio de potestades públicas, y que en la materia civil de Hacienda, donde incluyó la responsabilidad extracontractual, el objeto del proceso es el aspecto patrimonial. Y concluyó:
 
 <Cita fuente="Subcomisión del expediente legislativo 15.134" enlace="acta n.º 14 de 30 de marzo de 2005" detalle="folio 949">
 
@@ -184,7 +184,7 @@ La responsabilidad de la Administración es objetiva; la de sus servidores, subj
 
 Ese cobro no es automático. La Procuraduría ha dictaminado que exige un procedimiento administrativo ordinario para determinar el grado de responsabilidad del servidor y el monto adeudado, y que no puede cobrarse en forma automática una proporción fija de lo pagado ([dictamen C-196-2008](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=15213&param2=1&param3=1)). Una póliza de responsabilidad civil contratada por el Estado tampoco libera al funcionario que actuó con dolo o culpa grave ([dictamen C-030-2025](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=24836&param2=1&param3=1)).
 
-Al presentar el ámbito del nuevo Código, el Dr. González Camacho señaló que la inclusión expresa de los funcionarios en la jurisdicción contencioso-administrativa buscaba un equilibrio: «la Administración paga. Pero, la Administración y el Estado somos todos ¿y sus funcionarios?» (subcomisión del expediente legislativo 15.134, acta n.º 5 de 3 de noviembre de 2004, folio 598). El artículo 2.b del CPCA atribuye a esta jurisdicción las cuestiones de responsabilidad patrimonial «de la Administración Pública y sus funcionarios».
+Al presentar el ámbito del nuevo Código, el suscrito señaló que la inclusión expresa de los funcionarios en la jurisdicción contencioso-administrativa buscaba un equilibrio: «la Administración paga. Pero, la Administración y el Estado somos todos ¿y sus funcionarios?» (subcomisión del expediente legislativo 15.134, acta n.º 5 de 3 de noviembre de 2004, folio 598). El artículo 2.b del CPCA atribuye a esta jurisdicción las cuestiones de responsabilidad patrimonial «de la Administración Pública y sus funcionarios».
 
 ---
 
@@ -220,7 +220,7 @@ El Código protege además la pretensión indemnizatoria frente a la rectificaci
 
 ### El pago de la condena
 
-Una sentencia favorable vale lo que valga su ejecución. En la Comisión de Asuntos Jurídicos, el Dr. González Camacho lo expresó así: «no hacemos nada con una sentencia que sea extraordinaria, que estructural y que jurídicamente sea congruente, si la satisfacción del derecho para el victorioso luego no fructifica en el plano de la realidad» (sesión n.º 19 de 23 de agosto de 2005).
+Una sentencia favorable vale lo que valga su ejecución. Ante la Comisión de Asuntos Jurídicos, el suscrito lo expresó así: «no hacemos nada con una sentencia que sea extraordinaria, que estructural y que jurídicamente sea congruente, si la satisfacción del derecho para el victorioso luego no fructifica en el plano de la realidad» (sesión n.º 19 de 23 de agosto de 2005).
 
 El Código responde con una escala de instrumentos. La sentencia firme produce automáticamente el compromiso presupuestario de los fondos para el ejercicio fiscal en que queda firme (artículo 166), y la certificación del juez ejecutor es título suficiente para el pago y obliga a incluir la partida en el presupuesto inmediato siguiente (artículo 167). En la Administración descentralizada, si la obligación no se satisface en tres meses, el juez puede pedir a la Contraloría General de la República que paralice la aprobación y modificación de sus presupuestos (artículo 168). Son embargables, con límites, los bienes de dominio privado no afectos a un fin público, ciertas participaciones accionarias y ciertas transferencias presupuestarias (artículo 169), y la Administración puede pedir que el pago se fraccione hasta en tres anualidades cuando cumplir de inmediato afectaría seriamente el interés público (artículo 172). El trámite completo se explica en [cómo se ejecuta una sentencia contra el Estado](/articulos/ejecucion-sentencia-contra-el-estado-costa-rica).
 
