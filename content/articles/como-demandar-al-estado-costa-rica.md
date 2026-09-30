@@ -87,7 +87,7 @@ El cómputo del plazo depende del tipo de conducta que se impugna. Como regla ge
 
 Cuando se trata de un **acto absolutamente nulo** o de una **omisión** cuyos efectos persisten en el tiempo, el artículo 40 del CPCA permite impugnarlos mientras esos efectos subsistan, y el plazo de un año corre desde el día siguiente a su cese; la impugnación procede, en ese caso, para su anulación e inaplicabilidad futura. La Sala Primera ha precisado que el supuesto es propio de las relaciones jurídicas de duración y opera cuando el acto incide reiteradamente en la esfera del particular ([sentencia 1426-F-S1-2012](/jurisprudencia-destacada/caducidad-de-la-accion)).
 
-Muchas personas asumen que "ya se les pasó el plazo" sin consultar a un abogado especialista. Un análisis riguroso de la naturaleza de la conducta y de sus efectos puede revelar que la vía jurisdiccional sigue abierta.
+Muchas personas asumen que "ya se les pasó el plazo" sin consultar a un abogado especialista. Un análisis riguroso de la naturaleza de la conducta y de sus efectos puede revelar que la vía jurisdiccional sigue abierta. Todos los plazos, con su cómputo y los casos especiales de contratos, tributos, derechos laborales y amparo, se reúnen en la guía sobre los [plazos para demandar al Estado](/articulos/plazos-para-demandar-al-estado-costa-rica).
 
 ---
 
