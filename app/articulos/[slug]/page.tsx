@@ -30,6 +30,7 @@ import { FuentesResponsabilidadPatrimonial } from "@/components/article/FuentesR
 import { Cita } from "@/components/article/Cita";
 import { CasosUberSeguros, ReglasUberSeguros, FuentesUberSeguros } from "@/components/article/UberSeguros";
 import { ComparativaNulidad, ViasAnulacion, FuentesNulidad } from "@/components/article/NulidadActo";
+import { RecorridoEjecucion, EmbargoEstado, FuentesEjecucion } from "@/components/article/EjecucionSentencias";
 import { PlazosResponsabilidad } from "@/components/article/PlazosResponsabilidad";
 import {
   MapaRecursosLgap,
@@ -177,6 +178,9 @@ const ARTICLE_COMPONENTS = {
   ComparativaNulidad,
   ViasAnulacion,
   FuentesNulidad,
+  RecorridoEjecucion,
+  EmbargoEstado,
+  FuentesEjecucion,
   PlazosResponsabilidad,
   MapaRecursosLgap,
   PlazoTresDiasLgap,

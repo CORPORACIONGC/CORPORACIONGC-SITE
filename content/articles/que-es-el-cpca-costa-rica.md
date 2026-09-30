@@ -193,7 +193,7 @@ La Sala Primera leyó esos poderes con amplitud desde el principio. En la senten
 
 La condena al pago de una suma líquida produce *«automáticamente, el compromiso presupuestario de los fondos pertinentes»* para el ejercicio en que el fallo queda firme (artículo 166). La Procuraduría sostiene que la falta de contenido presupuestario no condiciona la ejecución de una condena (dictamen [C-018-2023](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=23775&param2=1&param3=1)), y que la inembargabilidad del artículo 170 funciona como regla general sobre los bienes públicos, *«con prescindencia de la jurisdicción de que se trate»* (dictamen [C-270-2009](https://sinalevi.go.cr/ResultadosPronunciamiento/Informacion?param1=16053&param2=1&param3=1)). Esa protección alcanza a los fondos públicos en poder de un contratista: el Tribunal de Apelación declaró inembargables los pagos de obra vial girados a una constructora, por estar *«destinados al cumplimiento de un fin público»* ([352-2025-I](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1337353)).
 
-[Ver el artículo 155](#art-155), [el artículo 159](#art-159), [el artículo 169](#art-169) y [el artículo 170](#art-170).
+El recorrido completo, de la liquidación al embargo, se explica en la guía [cómo se ejecuta una sentencia contra el Estado](/articulos/ejecucion-sentencia-contra-el-estado-costa-rica). [Ver el artículo 155](#art-155), [el artículo 159](#art-159), [el artículo 169](#art-169) y [el artículo 170](#art-170).
 
 ### Artículos 185 a 188: extensión de la jurisprudencia a terceros
 
