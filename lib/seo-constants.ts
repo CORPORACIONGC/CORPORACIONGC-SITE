@@ -348,10 +348,10 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     role: "Abogado Asociado",
     seoTitle: "Lic. Khevin Alberto Sánchez Zamora — Abogado en Derecho Público",
     seoDescription:
-      "Abogado en Derecho Público en Costa Rica: medidas cautelares, litigio contencioso-administrativo y casación ante la Sala Primera. 3er mejor promedio, Examen de Excelencia 2025.",
+      "Abogado en Derecho Público, admitido en la Maestría en Derecho Público de la UCR. Medidas cautelares, litigio contencioso y casación.",
     ogTitle: "Lic. Khevin Alberto Sánchez Zamora — Corporación GC, CR",
     ogDescription:
-      "Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. Investigador y panelista internacional en IA aplicada a la justicia. 3er mejor promedio del Examen de Excelencia 2025.",
+      "Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. Admitido en la Maestría en Derecho Público de la UCR. Investigador y panelista internacional en IA aplicada a la justicia.",
     twitterTitle: "Lic. Khevin Alberto Sánchez Zamora · Corporación GC",
     ogImageAlt:
       "Retrato profesional del Lic. Khevin Alberto Sánchez Zamora, Abogado Asociado en Corporación GC.",
