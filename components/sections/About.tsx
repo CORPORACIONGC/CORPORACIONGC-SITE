@@ -8,9 +8,10 @@ import {
   Stamp,
   Brain,
   Bank,
+  Medal,
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { PRACTICE_AREAS, CONFERENCES } from "@/lib/constants";
+import { PRACTICE_AREAS, CONFERENCES, EDUCATION, EDUCATION_DISTINCTION } from "@/lib/constants";
 import { RunningHead } from "@/components/ui/RunningHead";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -86,25 +87,38 @@ export function About() {
                 <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
                   Formación académica
                 </div>
-                <div className="space-y-2">
-                  <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
-                    <span className="text-sm text-cream/75">
-                      Licenciatura en Derecho con mención en Derecho Tributario — Universidad de Costa Rica
-                    </span>
+                <ul className="space-y-3">
+                  {EDUCATION.map((ed) => (
+                    <li key={ed.degree} className="flex items-baseline gap-2">
+                      <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
+                      <div>
+                        <div className="text-sm text-cream/75">{ed.degree}</div>
+                        <div className="mt-0.5 text-[11px] text-cream/50">
+                          {ed.institution}
+                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">{ed.status}</span>
+                        </div>
+                        {"note" in ed && (
+                          <div className="mt-0.5 text-[10px] text-cream/40">{ed.note}</div>
+                        )}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-4 pt-4 border-t border-cream/[0.06]">
+                  <div className="flex items-start gap-3 px-3.5 py-3 rounded-lg border border-emphasis/20 bg-emphasis/[0.05]">
+                    <Medal size={18} weight="duotone" className="text-emphasis shrink-0 mt-0.5" />
+                    <div>
+                      <div className="text-[9px] tracking-[0.2em] uppercase text-emphasis/70 font-medium">
+                        Distinción
+                      </div>
+                      <div className="mt-1 text-sm text-cream/85 font-medium">
+                        {EDUCATION_DISTINCTION.title}
+                      </div>
+                      <div className="mt-0.5 text-[11px] text-cream/50 leading-relaxed">
+                        {EDUCATION_DISTINCTION.detail}
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-baseline gap-2">
-                    <div className="w-1 h-1 rounded-full bg-burgundy-light mt-1.5 shrink-0" />
-                    <span className="text-sm text-cream/75">
-                      Bachillerato en Historia — Universidad de Costa Rica
-                      <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">En curso</span>
-                      <span className="block mt-0.5 text-[10px] text-cream/40">Formación complementaria aplicada al litigio de casos con componente histórico-registral</span>
-                    </span>
-                  </div>
-                </div>
-                <div className="mt-3 text-[10px] text-cream/40">
-                  3er mejor promedio — II Convocatoria, Examen de Excelencia
-                  Académica del Colegio de Abogados y Abogadas de Costa Rica, 2025
                 </div>
               </div>
             </AnimatedEntry>

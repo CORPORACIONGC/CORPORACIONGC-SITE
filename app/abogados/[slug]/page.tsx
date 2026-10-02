@@ -115,7 +115,7 @@ export default async function AttorneyProfile({
     "khevin-sanchez": {
       carnet: "37920",
       education: [
-        { degree: "Licenciado en Derecho (énfasis en Derecho Tributario)", institution: "Universidad de Costa Rica" },
+        { degree: "Licenciatura en Derecho con mención en Derecho Tributario", institution: "Universidad de Costa Rica" },
         { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica" },
       ],
       sameAs: [

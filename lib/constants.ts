@@ -645,10 +645,21 @@ export const EXPERIENCE = [
   { role: "Meritorio — Sala Constitucional", org: "Corte Suprema de Justicia", period: "Dic. 2017 - Dic. 2018", description: "Asistencia en investigación y análisis de casos constitucionales en el despacho del Magistrado Paul Rueda Leal. Redacción de borradores de resoluciones.", highlight: false },
 ] as const;
 
+/* Formación académica del perfil de Khevin, del grado más alto al más bajo.
+   Cada entrada lleva el mismo formato: título, institución, estado y, si
+   hace falta, una nota breve. La distinción del Examen de Excelencia va
+   aparte (EDUCATION_DISTINCTION), con su propio bloque en el perfil. La admisión a la maestría consta en el resultado UCR-SEP de la
+   Comisión del Programa de Posgrado en Derecho, sesión 144-2026 (29-09-2026). */
 export const EDUCATION = [
-  { degree: "Licenciatura en Derecho con mención en Derecho Tributario", institution: "Universidad de Costa Rica", status: "completed" },
-  { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica", status: "in_progress" },
+  { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", status: "Admitido", note: "Inicia en el I semestre de 2027 (Comisión del Programa de Posgrado en Derecho, sesión 144-2026)." },
+  { degree: "Licenciatura en Derecho con mención en Derecho Tributario", institution: "Universidad de Costa Rica", status: "Concluida" },
+  { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica", status: "En curso", note: "Formación complementaria aplicada al litigio de casos con componente histórico-registral." },
 ] as const;
+
+export const EDUCATION_DISTINCTION = {
+  title: "3.er mejor promedio",
+  detail: "Examen de Excelencia Académica del Colegio de Abogados y Abogadas de Costa Rica · II convocatoria, 2025",
+} as const;
 
 export const CONFERENCES = [
   {
@@ -871,11 +882,18 @@ export const MARIANA_PROFILE = {
   photo: "/images/mariana-montero.png",
   heroDescription: "Abogada especializada en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado. Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción.",
   heroBio: "Egresada de la Maestría Profesional en Derecho Público de la Universidad de Costa Rica con Diploma de Excelencia Académica (mejor promedio del posgrado). Su práctica se concentra en el litigio contencioso-administrativo por daños derivados de la actividad sanitaria pública y privada.",
+  /* Mismo formato que la formación del perfil de Khevin: título,
+     institución, estado y, si hace falta, una nota; la distinción del
+     posgrado va aparte, en su propio bloque. */
   education: [
-    { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", period: "Egresada — Tesis en proceso", distinction: "Diploma de Excelencia Académica · Mejor promedio del posgrado" },
-    { degree: "Licenciatura en Derecho — Mención en Derechos Humanos", institution: "Universidad de Costa Rica", period: "2019 – 2022", distinction: "Aprobada con distinción" },
-    { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica", period: "2015 – 2019" },
+    { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", status: "Egresada", note: "Tesis en proceso." },
+    { degree: "Licenciatura en Derecho con mención en Derechos Humanos", institution: "Universidad de Costa Rica", status: "2019 – 2022", note: "Aprobada con distinción." },
+    { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica", status: "2015 – 2019" },
   ],
+  distinction: {
+    title: "Diploma de Excelencia Académica",
+    detail: "Mejor promedio de la Maestría Profesional en Derecho Público · Universidad de Costa Rica, 2024",
+  },
   career: [
     { role: "Abogada Asociada", org: "Corporación GC · Derecho Público", period: "2019 – Presente", description: "Ejercicio profesional en litigio contencioso-administrativo, procedimientos administrativos y asesoría en Derecho Público. Especialización en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
     { role: "Asistente Jurídica en Derecho Público", org: "Corporación GC", period: "Ago. 2018 – 2019", description: "Asistencia en litigio en sede Contencioso Administrativa y Constitucional. Redacción de escritos y manejo de expedientes.", highlight: false },
