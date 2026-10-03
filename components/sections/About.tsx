@@ -38,47 +38,58 @@ export function About() {
 
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Litigio contencioso e inteligencia
+                Derecho público en litigio,
                 <br />
-                artificial{" "}
-                <span className="text-burgundy-light">al servicio del derecho</span>
+                <span className="text-burgundy-light">del acto administrativo a la Sala Primera</span>
               </h2>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
               <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Litigo contra el Estado ante el Tribunal Contencioso
-                Administrativo, la Sala Constitucional, la Sala Primera y la
-                Contraloría General de la República. Mi práctica cruza
-                materias y sectores muy diversos: contratación administrativa,
-                expropiaciones, empleo público, régimen disciplinario,
-                responsabilidad del Estado, telecomunicaciones, energía,
-                mercado de valores, banca, salud, educación y turismo, entre
-                otros.
+                Litigo contra el Estado y los entes públicos ante el Tribunal
+                Contencioso Administrativo, la Sala Primera, la Sala
+                Constitucional y la Contraloría General de la República.
+                Atiendo el proceso contencioso en todas sus fases: medidas
+                cautelares provisionalísimas y ante causam, demandas de
+                nulidad y de responsabilidad patrimonial, audiencias
+                preliminares, juicios orales y recursos de casación.
+              </p>
+            </AnimatedEntry>
+
+            <AnimatedEntry delay={0.25}>
+              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+                En contratación pública asesoro a empresas oferentes y
+                contratistas, con recursos de objeción, apelación y
+                revocatoria ante la Contraloría y la Administración, y llevo
+                al Tribunal la impugnación cuando la vía administrativa se
+                agota. Preparo también recursos de amparo y acciones de
+                inconstitucionalidad. Mi práctica atraviesa sectores muy
+                diversos: telecomunicaciones, energía, mercado de valores,
+                salud, empleo público, expropiaciones y régimen disciplinario,
+                entre otros.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
               <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                Manejo el proceso contencioso completo: medidas cautelares
-                provisionalísimas y ante causam, demandas de nulidad y de
-                responsabilidad patrimonial, preparación de audiencias
-                orales y recursos de casación. Inicié mi carrera en la Sala
-                Constitucional, en el despacho del Magistrado Paul Rueda
-                Leal, y me formé durante siete años bajo la dirección del
-                Dr. Óscar Eduardo González Camacho, coordinador de la comisión redactora del Código
-                Procesal Contencioso Administrativo.
+                Inicié mi carrera en la Sala Constitucional, en el despacho
+                del magistrado Paul Rueda Leal. Desde 2019 trabajo al lado del
+                Dr. Óscar Eduardo González Camacho, coordinador de la comisión
+                redactora del Código Procesal Contencioso Administrativo:
+                primero como asistente legal, a partir de 2020 en el trabajo
+                de fondo de sus litigios y, desde mi incorporación en 2025,
+                como abogado asociado.
               </p>
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.35}>
               <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
-                A esa base procesal sumo una línea de investigación en
-                inteligencia artificial aplicada a la justicia, que integro
-                como infraestructura técnica del ejercicio profesional, que
-                he presentado en paneles internacionales en Bogotá y San
-                José, y que he publicado en revistas jurídicas
-                especializadas.
+                Investigo la aplicación de la inteligencia artificial a la
+                justicia y a la contratación estatal. He publicado sobre ese
+                tema y sobre organización administrativa en revistas
+                jurídicas, lo he expuesto en paneles internacionales en Bogotá
+                y San José, y lo aplico a diario como herramienta de trabajo
+                en el despacho.
               </p>
             </AnimatedEntry>
 
