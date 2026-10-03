@@ -348,7 +348,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     role: "Abogado Asociado",
     seoTitle: "Lic. Khevin Alberto Sánchez Zamora — Abogado en Derecho Público",
     seoDescription:
-      "Abogado en Derecho Público, admitido en la Maestría en Derecho Público de la UCR. Medidas cautelares, litigio contencioso y casación.",
+      "Abogado en Costa Rica: litigio contencioso, medidas cautelares, casación y contratación pública. Admitido en la Maestría en Derecho Público de la UCR.",
     ogTitle: "Lic. Khevin Alberto Sánchez Zamora — Corporación GC, CR",
     ogDescription:
       "Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. Admitido en la Maestría en Derecho Público de la UCR. Investigador y panelista internacional en IA aplicada a la justicia.",

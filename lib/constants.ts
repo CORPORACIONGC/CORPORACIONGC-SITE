@@ -615,7 +615,7 @@ export const ESTEBAN_PROFILE = {
 
 // ─── Perfil Individual: Khevin Sánchez ───
 
-export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario. Medidas cautelares, litigio contencioso-administrativo y casación ante la Sala Primera. Investigador y panelista internacional en inteligencia artificial aplicada a la justicia.", url: "https://www.corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
+export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Abogado especializado en Litigio Contencioso-Administrativo, Medidas Cautelares, Casación y Contratación Pública. Licenciado en Derecho por la UCR con el tercer mejor promedio del Examen de Excelencia Académica, e investigador en inteligencia artificial aplicada a la justicia.", url: "https://www.corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
 
 export const CONTACT = { email: "ksanchez@corporaciongc.com", phone: "+506 8451-4002", phoneRaw: "50684514002", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-zamora-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Cartago, Costa Rica" } as const;
 

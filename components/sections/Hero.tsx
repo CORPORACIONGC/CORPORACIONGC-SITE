@@ -34,11 +34,10 @@ export function Hero() {
             <div className="mt-6 flex items-center gap-3">
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[55ch]">
-                Licenciado en Derecho por la Universidad de Costa Rica, con
-                mención en Derecho Tributario, y admitido en la Maestría
-                Profesional en Derecho Público de la UCR. Litigio contra el Estado:
-                medidas cautelares, demandas contencioso-administrativas y
-                casación ante la Sala Primera. Investigador y panelista internacional en
+                Abogado especializado en Litigio Contencioso-Administrativo,
+                Medidas Cautelares, Casación y Contratación Pública.
+                Licenciado en Derecho por la UCR con el tercer mejor promedio
+                del Examen de Excelencia Académica, e investigador en
                 inteligencia artificial aplicada a la justicia.
               </p>
             </div>
