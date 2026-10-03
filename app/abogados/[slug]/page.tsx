@@ -119,7 +119,7 @@ export default async function AttorneyProfile({
         { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica" },
       ],
       sameAs: [
-        "https://www.linkedin.com/in/khevin-s%C3%A1nchez-16b047205/",
+        "https://www.linkedin.com/in/khevin-s%C3%A1nchez-zamora-16b047205/",
         "https://www.instagram.com/lic.sanchezzamora",
         "https://www.abogados.or.cr/consultaagremiados/",
       ],
