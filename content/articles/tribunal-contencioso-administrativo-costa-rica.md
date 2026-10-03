@@ -3,6 +3,7 @@ title: "Tribunal Contencioso Administrativo de Costa Rica: qué es, qué resuelv
 date: "2026-09-23"
 excerpt: "El Tribunal Contencioso Administrativo y Civil de Hacienda juzga las demandas contra el Estado, las municipalidades y el resto de las administraciones públicas de Costa Rica. Esta guía explica qué casos conoce, cómo se organiza por dentro, cómo avanza un proceso, quién revisa sus sentencias y dónde está, con las notas del propio Poder Judicial que documentaron su nacimiento en 2008."
 tags: ["Guía práctica", "Tribunal Contencioso Administrativo", "Contencioso Administrativo", "CPCA", "Derecho Administrativo"]
+sentencias: ["legitimacion-pasiva-del-organo-persona", "caducidad-de-la-accion"]
 areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "materia-municipal"]
 type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"

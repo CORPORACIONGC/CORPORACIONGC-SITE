@@ -3,6 +3,7 @@ title: "Nulidad absoluta y relativa del acto administrativo en Costa Rica"
 date: "2026-09-29"
 excerpt: "La Ley General de la Administración Pública distingue dos grados de invalidez del acto administrativo, y de esa distinción depende si el acto se presume legítimo, si puede corregirse, desde cuándo surte efecto su anulación, si la Administración puede anularlo sin ir al juez y cuánto tiempo hay para impugnarlo. Esta guía lo explica con la ley, las actas de 1970, la jurisprudencia y los dictámenes de la Procuraduría."
 tags: ["Nulidad absoluta", "Nulidad relativa", "Acto administrativo", "LGAP", "Artículo 173", "Nulidad evidente y manifiesta", "Proceso de lesividad", "Derecho administrativo"]
+sentencias: ["caducidad-de-la-accion"]
 areas: ["derecho-administrativo"]
 type: "article"
 author: "Khevin Alberto Sánchez Zamora"
@@ -166,7 +167,7 @@ La redacción final de esa norma salió de una propuesta del Dr. González en la
 
 </Cita>
 
-La clave está en qué es un efecto continuado. La Sala Primera lo define como propio de las relaciones de duración, cuando el acto incide reiteradamente en la esfera jurídica de la persona; una denegatoria que se agota en un solo momento tiene efecto instantáneo, y contra ella corre el año ordinario:
+La clave está en qué es un efecto continuado. La Sala Primera, en la [sentencia 1426-F-S1-2012](/jurisprudencia-destacada/caducidad-de-la-accion), lo define como propio de las relaciones de duración, cuando el acto incide reiteradamente en la esfera jurídica de la persona; una denegatoria que se agota en un solo momento tiene efecto instantáneo, y contra ella corre el año ordinario:
 
 <Cita fuente="Sala Primera" enlace="1426-F-S1-2012" href="https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767786" detalle="considerando IX, redacta el magistrado González Camacho">
 

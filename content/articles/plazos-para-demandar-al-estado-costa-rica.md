@@ -3,6 +3,7 @@ title: "Plazos para demandar al Estado en Costa Rica: caducidad y prescripción"
 date: "2026-09-30"
 excerpt: "Un año para impugnar un acto, cuatro para reclamar daños, cinco para los contratos, uno para los derechos laborales y dos meses para el amparo. Esta guía reúne los plazos para demandar a la Administración, explica cómo se cuentan y por qué unos se interrumpen y otros no, con la ley vigente, las actas del CPCA y la jurisprudencia."
 tags: ["Plazos", "Caducidad", "Prescripción", "Demanda contra el Estado", "CPCA", "Responsabilidad patrimonial", "Contencioso Administrativo"]
+sentencias: ["caducidad-de-la-accion", "responsabilidad-del-estado-juez"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
 author: "Khevin Alberto Sánchez Zamora"
@@ -76,13 +77,13 @@ Así quedó el artículo 41: en materia civil de Hacienda y en materia tributari
 
 El año tiene una excepción. Los actos absolutamente nulos y las conductas omisivas son impugnables mientras subsistan sus efectos continuados, pero solo para anularlos y dejarlos de aplicar hacia el futuro; el año corre desde que cesan esos efectos (artículo 40 del CPCA y artículo 175 de la LGAP). En la subcomisión legislativa, el magistrado González Camacho explicó que los actos absolutamente nulos «no son convalidables, ni subsanables», por lo que «mal hace el ordenamiento al fijar un plazo específico de caducidad»; por seguridad jurídica, el plazo anual corre una vez que cesan sus efectos (acta n.º 14, folio 941).
 
-La clave está en qué es un efecto continuado. La Sala Primera lo reserva a las relaciones de duración, cuando el acto incide reiteradamente en la esfera jurídica de la persona ([1426-F-S1-2012](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767786), redactada por el magistrado González Camacho); la ejecución de un acto instantáneo no lo vuelve continuado (105-F-TC-2020). El tema se desarrolla en la guía sobre la [nulidad absoluta y relativa del acto administrativo](/articulos/nulidad-absoluta-relativa-acto-administrativo-costa-rica).
+La clave está en qué es un efecto continuado. La Sala Primera lo reserva a las relaciones de duración, cuando el acto incide reiteradamente en la esfera jurídica de la persona ([1426-F-S1-2012](/jurisprudencia-destacada/caducidad-de-la-accion), redactada por el magistrado González Camacho); la ejecución de un acto instantáneo no lo vuelve continuado (105-F-TC-2020). El tema se desarrolla en la guía sobre la [nulidad absoluta y relativa del acto administrativo](/articulos/nulidad-absoluta-relativa-acto-administrativo-costa-rica).
 
 ---
 
 ## Los cuatro años para reclamar daños al Estado
 
-La pretensión puramente indemnizatoria se rige por la prescripción: el artículo 41 del CPCA la remite al plazo del derecho de fondo, que es el de cuatro años del artículo 198 de la LGAP ([resolución 1778-A-S1-2021](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1060850)). Cuando el daño es a una persona menor de edad, el plazo empieza a correr cuando cumple la mayoría de edad.
+La pretensión puramente indemnizatoria se rige por la prescripción: el artículo 41 del CPCA la remite al plazo del derecho de fondo, que es el de cuatro años del artículo 198 de la LGAP ([resolución 1778-A-S1-2021](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1060850)). Cuando el daño es a una persona menor de edad, el plazo empieza a correr cuando cumple la mayoría de edad. Los mismos cuatro años rigen para reclamar al Estado por la función judicial, como la prisión preventiva de quien después resulta inocente: la Sala Primera abandonó los diez años del Código Civil que aplicaba antes ([654-F-S1-2008](/jurisprudencia-destacada/responsabilidad-del-estado-juez)).
 
 **Desde cuándo corre.** La ley dice que desde el hecho que motiva la responsabilidad, pero la Sala Primera lo lee con las circunstancias de cada caso: el plazo exige el hecho lesivo y que la víctima conozca el daño, la conducta que lo causó y a quién se atribuye ([8-F-S1-2013](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767649), redactada por el magistrado González Camacho; [615-F-S1-2010](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-765501)). Si el daño proviene de una actuación continuada, corre desde que esta cesa ([1261-F-S1-2011](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-766718)); lo que define al daño continuado es el carácter constante y prolongado de la acción que lo produce ([510-F-S1-2014](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-768601)).
 

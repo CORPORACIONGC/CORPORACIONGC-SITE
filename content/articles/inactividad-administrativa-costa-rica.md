@@ -3,6 +3,7 @@ title: "Inactividad administrativa en Costa Rica: cómo demandar la omisión de 
 date: "2026-09-30"
 excerpt: "Cuando la Administración no construye la obra, no paga, no reglamenta o no resuelve, la omisión se puede llevar al juez. Esta guía explica qué es la inactividad administrativa, cómo se distingue del silencio, el requerimiento de quince días del artículo 35 del CPCA, qué puede ordenar la sentencia y cuándo la omisión obliga a indemnizar."
 tags: ["Inactividad administrativa", "Conducta omisiva", "Silencio administrativo", "Demanda contra el Estado", "CPCA", "Responsabilidad patrimonial", "Contencioso Administrativo"]
+sentencias: ["responsabilidad-del-estado-por-omision", "caducidad-de-la-accion"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"

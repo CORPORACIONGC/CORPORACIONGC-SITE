@@ -4,6 +4,7 @@ date: "2026-03-28"
 updated: "2026-09-26"
 excerpt: "Si una institución pública le denegó un permiso, le impuso una sanción injusta o le causó un perjuicio, usted tiene derecho a demandar. En Costa Rica, el mecanismo para hacerlo es la demanda contencioso-administrativa. Esta guía le explica qué necesita saber antes de iniciar ese camino."
 tags: ["Guía práctica", "Contencioso Administrativo", "CPCA", "Demanda contra el Estado", "Derecho Administrativo"]
+sentencias: ["caducidad-de-la-accion", "legitimacion-pasiva-del-organo-persona"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"

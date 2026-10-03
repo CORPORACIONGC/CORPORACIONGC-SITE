@@ -3,6 +3,7 @@ title: "Responsabilidad patrimonial del Estado en Costa Rica: cómo reclamar da�
 date: "2026-09-26"
 excerpt: "La Administración responde por los daños que causa su funcionamiento, legítimo o ilegítimo, normal o anormal. Esta guía explica el fundamento del régimen, lo que debe acreditarse, las eximentes, los daños indemnizables, la prescripción de cuatro años y las vías para reclamar, con la jurisprudencia de la Sala Primera y los dictámenes de la Procuraduría."
 tags: ["Guía práctica", "Responsabilidad Patrimonial", "Demanda contra el Estado", "LGAP", "Daños y Perjuicios", "Contencioso Administrativo"]
+sentencias: ["responsabilidad-del-estado-por-omision", "responsabilidad-del-estado-juez", "indexacion-de-obligaciones-dinerarias"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"

@@ -3,6 +3,7 @@ title: "Uber y el seguro del carro en Costa Rica: la Sala Primera confirma la ex
 date: "2026-09-29"
 excerpt: "Entre 2023 y 2026 la Sala Primera resolvió cuatro casos de carros asegurados para uso particular que sus dueños inscribieron en Uber. En todos confirmó que la aseguradora podía negar la cobertura, aunque el día del choque no se estuviera prestando el servicio. Qué dijo la Sala, qué dice la Ley Reguladora del Contrato de Seguros, qué cubre el seguro de Uber y qué conviene revisar en la póliza del auto."
 tags: ["Seguros", "Uber", "Plataformas de transporte", "Sala Primera", "Contrato de seguro", "Agravación del riesgo", "Ley 8956", "Derechos del consumidor"]
+sentencias: ["responsabilidad-bancaria-por-fraude-electronico"]
 areas: ["casacion-sala-primera"]
 type: "article"
 author: "Khevin Alberto Sánchez Zamora"

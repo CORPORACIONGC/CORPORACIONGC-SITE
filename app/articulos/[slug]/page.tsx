@@ -798,7 +798,7 @@ export default async function ArticlePage({
                 español: las guías en inglés no las llevan. */}
             {article.lang !== "en" && (
               <SentenciasRelacionadas
-                sentencias={getSentenciasPorTemas(article.tags)}
+                sentencias={getSentenciasPorTemas(article.tags, 2, article.sentencias)}
                 titulo="Sentencias comentadas sobre esta materia"
               />
             )}

@@ -260,8 +260,10 @@ export type SentenciaDestacada = {
   /** SEO */
   metaDescription: string;
   /** Título para el buscador: primero lo que la gente escribe, después el
-   *  voto y el nombre del magistrado. Si falta, se arma con el título
-   *  editorial, que es bello pero no es lo que se busca. */
+   *  voto o el nombre del magistrado, lo que quepa en los 600 px que Google
+   *  muestra. Cuando el título no cabía, Google lo cambiaba por el editorial.
+   *  Si falta, se arma con el título editorial, que es bello pero no es lo
+   *  que se busca. */
   seoTitle?: string;
   /** Áreas de práctica donde aplicamos este criterio. Enlaza la sentencia
    *  con `/areas/<slug>` en ambos sentidos: la página del área muestra la
@@ -755,7 +757,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Responsabilidad Patrimonial", "Derecho Expropiatorio"],
     metaDescription:
       "¿Se actualiza una condena en colones sin que se haya pactado? La Sala Primera dijo que sí y fijó el IPC. Voto 1016-F-2004, con los pasajes literales.",
-    seoTitle: "Indexación de deudas en Costa Rica · Voto 1016-F-2004 · Óscar González Camacho",
+    seoTitle: "Indexación de deudas en Costa Rica · Óscar González Camacho",
   },
   /* 584-F-2005. Los pasajes se copiaron del texto de Nexus, que anonimiza a
      las personas: por eso la prosa tampoco las nombra. */
@@ -1402,7 +1404,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "Derecho a la Salud", "LGAP"],
     metaDescription:
       "Cuando el Estado no actúa y el daño ocurre, responde. La Sala Primera definió el funcionamiento anormal y la eximente parcial. Voto 584-F-2005.",
-    seoTitle: "Responsabilidad del Estado por omisión · Voto 584-F-2005 · Óscar González Camacho",
+    seoTitle: "Responsabilidad del Estado por omisión · Voto 584-F-2005",
   },
   /* 34-F-S1-2011. Pasajes copiados del texto de Nexus. */
   {
@@ -1973,7 +1975,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Procedimientos Sancionatorios", "Derecho Administrativo", "LGAP"],
     metaDescription:
       "Seis meses de inercia de la Administración caducan el procedimiento, aunque lo haya abierto de oficio. Lo fijó la Sala Primera. Voto 34-F-S1-2011.",
-    seoTitle: "Caducidad del procedimiento administrativo · Voto 34-F-S1-2011 · Óscar González Camacho",
+    seoTitle: "Caducidad del procedimiento administrativo en Costa Rica",
   },
   /* 300-F-S1-2009. Pasajes copiados del texto de Nexus. */
   {
@@ -2734,7 +2736,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Responsabilidad Patrimonial", "VASP", "SUGEF", "Derecho Público"],
     metaDescription:
       "Si le vacían la cuenta por internet, el riesgo es del banco. La Sala Primera aplicó la responsabilidad objetiva a la banca electrónica. Voto 300-F-S1-2009.",
-    seoTitle: "Fraude en la banca por internet · Voto 300-F-S1-2009 · Óscar González Camacho",
+    seoTitle: "Fraude bancario en Costa Rica: cuándo responde el banco",
   },
   /* 1426-F-S1-2012. Pasajes copiados del texto de Nexus. */
   {
@@ -3296,7 +3298,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Contencioso Administrativo", "CPCA", "Derecho Administrativo"],
     metaDescription:
       "¿Un año desde cuándo? La Sala Primera separó el acto que se agota en un momento del de efectos continuados: de eso depende el plazo. Voto 1426-F-S1-2012.",
-    seoTitle: "Plazo para demandar un acto administrativo · Voto 1426-F-S1-2012 · Óscar González Camacho",
+    seoTitle: "Caducidad de la acción contencioso administrativa en Costa Rica",
   },
   /* 654-F-S1-2008. Pasajes copiados del texto de Nexus. */
   {
@@ -3951,7 +3953,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "LGAP", "Derecho Público"],
     metaDescription:
       "¿Responde el Estado por la prisión preventiva de un inocente? La Sala Primera fijó el plazo de cuatro años y exigió inocencia demostrada. Voto 654-F-S1-2008.",
-    seoTitle: "Indemnización por prisión preventiva · Voto 654-F-S1-2008 · Óscar González Camacho",
+    seoTitle: "Indemnización por prisión preventiva · Voto 654-F-S1-2008",
   },
   {
     slug: "legitimacion-pasiva-del-organo-persona",
@@ -4374,7 +4376,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "Nexus PJ · Poder Judicial de Costa Rica",
 
     metaDescription: "Voto 1360-F-S1-2010 de la Sala Primera: el órgano con personalidad jurídica instrumental es centro último y único de imputación y el Estado no responde por su competencia exclusiva. Análisis y texto oficial.",
-    seoTitle: "Personalidad jurídica instrumental y legitimación pasiva · Voto 1360-F-S1-2010 · Óscar González Camacho",
+    seoTitle: "Legitimación pasiva del órgano persona · Voto 1360-F-S1-2010",
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo", "servicio-publico"],
     temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Personalidad Jurídica Instrumental", "Responsabilidad Patrimonial"]
   }
@@ -4421,7 +4423,16 @@ export function getSentenciasPorArea(area: string): SentenciaDestacada[] {
  *  personalidad jurídica instrumental ofrecía dos fallos de caducidad y
  *  dejaba fuera el que resuelve ese punto. */
 const sinTilde = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-export function getSentenciasPorTemas(tags: string[], tope = 2): SentenciaDestacada[] {
+export function getSentenciasPorTemas(tags: string[], tope = 2, elegidas: string[] = []): SentenciaDestacada[] {
+  /* Si la guía declara sus sentencias, mandan solas: la coincidencia de
+     etiquetas no distingue la sentencia que resuelve el punto de la que solo
+     lo roza, y completaba la guía de traslado de cargos con la de prisión
+     preventiva. */
+  if (elegidas.length > 0) {
+    return elegidas
+      .map((slug) => SENTENCIAS_DESTACADAS.find((s) => s.slug === slug))
+      .filter((s): s is SentenciaDestacada => Boolean(s));
+  }
   const t = tags.map(sinTilde);
   const afines = (s: SentenciaDestacada) =>
     s.temas?.filter((tema) => t.includes(sinTilde(tema))).length ?? 0;

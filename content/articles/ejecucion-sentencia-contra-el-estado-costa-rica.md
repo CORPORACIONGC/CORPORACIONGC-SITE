@@ -3,6 +3,7 @@ title: "Cómo se ejecuta una sentencia contra el Estado en Costa Rica"
 date: "2026-09-29"
 excerpt: "Ganar el juicio es la mitad del camino: después hay que cobrar. Esta guía recorre la ejecución de sentencias contra la Administración, del juez ejecutor y la liquidación de la condena al presupuesto, las multas, la sustitución y el embargo de bienes públicos, con la reforma de 2025 sobre la ejecución de amparos."
 tags: ["Ejecución de sentencia", "Juez ejecutor", "Demanda contra el Estado", "Embargo", "CPCA", "Ley 10702", "Contencioso Administrativo", "Pago de sentencias"]
+sentencias: ["indexacion-de-obligaciones-dinerarias"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
 author: "Dr. Óscar Eduardo González Camacho"

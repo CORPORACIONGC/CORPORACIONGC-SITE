@@ -3,6 +3,7 @@ title: "Me abrieron un procedimiento administrativo sancionatorio: ¿cómo defen
 date: "2026-07-03"
 excerpt: "Si una institución pública le notificó la apertura de un procedimiento administrativo en su contra, los plazos ya están corriendo. Esta guía explica, con base en la Ley General de la Administración Pública, qué significa esa notificación, cuáles son las etapas del procedimiento, qué derechos tiene usted en cada una y por dónde pasa una defensa seria: desde la comparecencia oral hasta la impugnación de la sanción ante el Tribunal Contencioso Administrativo."
 tags: ["Guía práctica", "Procedimiento Sancionatorio", "LGAP", "Debido Proceso", "Derecho Administrativo"]
+sentencias: ["caducidad-del-procedimiento-administrativo"]
 areas: ["procedimientos-sancionatorios"]
 type: "article"
 author: "MSc. Katherine González Coto"
@@ -89,7 +90,7 @@ La experiencia en esta materia enseña que los procedimientos sancionatorios se 
 
 **La validez del procedimiento.** Solo causa nulidad la omisión de formalidades sustanciales: aquellas cuya realización correcta habría impedido o cambiado la decisión final, o cuya omisión causa indefensión (artículo 223). Citaciones defectuosas, denegatoria de prueba pertinente, negativa de acceso al expediente, imputaciones imprecisas que impiden saber de qué defenderse, uso del procedimiento sumario donde correspondía el ordinario: cada una de estas irregularidades puede acarrear la nulidad de la sanción. Identificarlas exige contrastar el expediente, pieza por pieza, contra las exigencias de la LGAP y de la jurisprudencia constitucional sobre debido proceso.
 
-**El tiempo.** El procedimiento paralizado por más de seis meses por causa imputable a la Administración que lo inició de oficio caduca y debe archivarse (artículo 340). A ello se suman los plazos de prescripción de la potestad sancionatoria, que varían según el régimen aplicable. La pregunta "¿todavía podían sancionarme?" tiene con frecuencia una respuesta favorable al administrado que nadie examinó.
+**El tiempo.** El procedimiento paralizado por más de seis meses por causa imputable a la Administración que lo inició de oficio caduca y debe archivarse (artículo 340). La caducidad opera de pleno derecho y alcanza también a los procedimientos sancionatorios, como fijó la Sala Primera al confirmar la anulación de una multa de la Superintendencia de Pensiones tras dos años de paralización ([voto 34-F-S1-2011](/jurisprudencia-destacada/caducidad-del-procedimiento-administrativo)). A ello se suman los plazos de prescripción de la potestad sancionatoria, que varían según el régimen aplicable. La pregunta "¿todavía podían sancionarme?" tiene con frecuencia una respuesta favorable al administrado que nadie examinó.
 
 **El fondo.** La sanción exige que los hechos estén probados, que encajen en una norma que los tipifique y que la medida sea proporcional. La Administración tiene el deber de verificar la verdad real (artículo 221); las sanciones construidas sobre presunciones, informes incompletos o prueba obtenida irregularmente son vulnerables.
 

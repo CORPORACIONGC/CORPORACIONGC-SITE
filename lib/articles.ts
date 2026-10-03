@@ -28,6 +28,9 @@ export type ArticleMeta = {
   /** Áreas de práctica a las que pertenece la guía. La primera es su área
    *  principal: la que aparece en las migas y en el cierre del artículo. */
   areas?: string[];
+  /** Sentencias comentadas que la guía enlaza al pie, en orden. Si no
+   *  declara ninguna, se eligen por coincidencia de etiquetas. */
+  sentencias?: string[];
   institution?: string;
   publicationType?: "tesis" | "articulo" | "ponencia" | "libro" | "ley" | "guia";
   sourceReference?: string;
@@ -71,6 +74,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     translation: data.translation as string | undefined,
     updated: data.updated as string | undefined,
     areas: (data.areas as string[]) || [],
+    sentencias: (data.sentencias as string[]) || [],
   };
 }
 

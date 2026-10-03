@@ -3,6 +3,7 @@ title: "Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuá
 date: "2026-04-20"
 excerpt: "Cinco días hábiles. Ese es el plazo para oponerse al avalúo administrativo sin perder el derecho a discutir el justo precio. Esta guía explica, con base en la Ley de Expropiaciones, qué significa una declaratoria de interés público, qué puede exigir el propietario y cómo se compone la indemnización que le corresponde."
 tags: ["Guía práctica", "Expropiación", "Derecho Expropiatorio", "Ley de Expropiaciones", "Derecho Público"]
+sentencias: ["indexacion-de-obligaciones-dinerarias"]
 areas: ["expropiaciones"]
 type: "article"
 author: "Lic. Esteban Pérez Herrera"
@@ -53,7 +54,7 @@ La **Ley de Expropiaciones de Costa Rica** le reconoce garantías concretas al c
 
 **Derecho al pago de intereses por demora.** El artículo 11 obliga a la administración a reconocer intereses al expropiado, de oficio y a la tasa legal vigente, desde la desposesión del bien hasta el pago efectivo. Si existe un depósito del avalúo administrativo, los intereses se calculan sobre la diferencia entre ese depósito y el justiprecio final.
 
-**Derecho a la indexación del valor pactado.** Si usted acepta el avalúo pero pasan más de seis meses sin que le paguen, el artículo 23 le permite solicitar que el valor se actualice conforme a los índices de inflación del Banco Central de Costa Rica.
+**Derecho a la indexación del valor pactado.** Si usted acepta el avalúo pero pasan más de seis meses sin que le paguen, el artículo 23 le permite solicitar que el valor se actualice conforme a los índices de inflación del Banco Central de Costa Rica. El fundamento de fondo es constitucional: reparar exige devolver el valor real de lo debido, como sostuvo la Sala Primera en el [voto 1016-F-2004](/jurisprudencia-destacada/indexacion-de-obligaciones-dinerarias).
 
 **Derecho a asesoría legal desde el inicio del proceso.** Nada en la ley le impide buscar acompañamiento profesional desde el momento de la notificación. De hecho, un [abogado especialista en expropiación en Costa Rica](/areas/expropiaciones) puede ayudarle a evaluar si el avalúo es justo, a preparar su oposición dentro de los plazos legales y a proteger cada componente de su indemnización.
 

@@ -3,6 +3,7 @@ title: "Agotamiento de la vía administrativa en Costa Rica: cuándo hay que rec
 date: "2026-09-29"
 excerpt: "Desde 2006 no hace falta recurrir ante la Administración antes de demandarla, salvo en materia municipal y en contratación administrativa. Esta guía explica qué significa agotar la vía, las excepciones, la materia laboral y tributaria, el amparo, el silencio administrativo, los ocho días del artículo 31 del CPCA y el efecto del reclamo sobre los plazos."
 tags: ["Agotamiento de la vía administrativa", "CPCA", "Silencio administrativo", "Jerarquía impropia", "Reclamo administrativo", "Contencioso Administrativo", "Demanda contra el Estado"]
+sentencias: ["caducidad-de-la-accion"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
 author: "Khevin Alberto Sánchez Zamora"
