@@ -6,7 +6,7 @@ tags: ["Guía práctica", "Procedimiento Sancionatorio", "LGAP", "Debido Proceso
 sentencias: ["caducidad-del-procedimiento-administrativo"]
 areas: ["procedimientos-sancionatorios"]
 type: "article"
-author: "MSc. Katherine González Coto"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
