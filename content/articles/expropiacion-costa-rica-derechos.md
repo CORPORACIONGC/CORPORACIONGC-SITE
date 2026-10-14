@@ -66,6 +66,8 @@ Cuando la administración solicita la expropiación de su bien, debe practicar u
 
 Si usted no acepta el avalúo, la administración dictará un acuerdo de expropiación conforme al artículo 27 e iniciará el proceso especial de expropiación ante el Juzgado Contencioso-Administrativo y Civil de Hacienda (artículo 28), instancia ante la cual sí es requerida la representación de un abogado especialista en expropiaciones en Costa Rica. En ese proceso judicial, un perito independiente nombrado por el juez revisará el avalúo administrativo.
 
+Los riesgos de este diseño, desde el plazo de cinco días para pronunciarse sobre el avalúo hasta la entrada en posesión sin recurso, los analiza la MSc. Katherine González Coto en su artículo sobre [el procedimiento expropiatorio tras una década de reformas y el proyecto de ley 24.669](/articulos/procedimiento-expropiatorio-reformas-proyecto-24669), publicado en la *Revista Tribuna Libre* de la Universidad Escuela Libre de Derecho.
+
 ## ¿Qué incluye la indemnización justa en una expropiación?
 
 El concepto de **justo precio** en una expropiación va más allá del simple valor de mercado del terreno. Según el artículo 22 de la Ley de Expropiaciones, la **indemnización por expropiación** debe considerar:

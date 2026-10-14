@@ -829,6 +829,13 @@ export const KATHERINE_PROFILE = {
   ],
   research: [
     {
+      title: "El procedimiento expropiatorio costarricense tras una década de reformas: balance crítico y perspectivas ante el proyecto de ley 24.669",
+      description: "Revista Tribuna Libre, Vol. 21, No. 1 — Universidad Escuela Libre de Derecho, ISSN 2953-7339, 2026, pp. 89–101. Balance de las reformas de 2014 y 2017 a la Ley de Expropiaciones, el voto 2018-013705 de la Sala Constitucional y el proyecto de ley 24.669.",
+      tags: ["Derecho Expropiatorio", "Proyecto de Ley 24.669", "Revista Tribuna Libre"],
+      pdf: "/pdfs/expropiatorio-tribuna-libre-katherine-gonzalez.pdf",
+      slug: "procedimiento-expropiatorio-reformas-proyecto-24669",
+    },
+    {
       title: "El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración",
       description: "Trabajo Final de Investigación Aplicada para optar por el grado de Maestría Profesional en Derecho Público (UCR, 2024). Analiza la responsabilidad patrimonial del Estado por daño moral indirecto a familiares y la sociedad.",
       tags: ["Responsabilidad Patrimonial", "Daño Moral", "Derecho Administrativo", "Maestría UCR"],

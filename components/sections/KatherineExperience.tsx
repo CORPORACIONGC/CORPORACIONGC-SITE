@@ -106,6 +106,13 @@ export function KatherineExperience() {
                           </span>
                         ))}
                       </div>
+                      <a
+                        href={`/articulos/${res.slug}`}
+                        className="mt-3 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
+                      >
+                        Leer la investigación completa
+                        <span aria-hidden>&rarr;</span>
+                      </a>
                     </div>
                   ))}
                 </div>
