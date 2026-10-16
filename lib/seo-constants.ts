@@ -370,12 +370,12 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
       "Abogada asociada de Corporación GC. Máster en Derecho Público (UCR), Notaria. Especialista en responsabilidad patrimonial del Estado y derecho expropiatorio.",
     ogTitle: "MSc. Katherine González Coto — Corporación GC, CR",
     ogDescription:
-      "Máster en Derecho Público por la UCR, Licenciada en Derecho y Notaria por la UELD. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio. Cuatro idiomas.",
+      "Máster en Derecho Público por la UCR, Licenciada en Derecho y Notaria por la UELD, donde es profesora. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio. Cuatro idiomas.",
     twitterTitle: "MSc. Katherine González Coto · Corporación GC",
     ogImageAlt:
       "Retrato profesional de la MSc. Katherine González Coto, Abogada Asociada en Corporación GC.",
     credential:
-      "Máster en Derecho Público (UCR), Notaria. Especialista en responsabilidad patrimonial del Estado y derecho expropiatorio.",
+      "Máster en Derecho Público (UCR), Notaria y profesora de la Universidad Escuela Libre de Derecho. Especialista en responsabilidad patrimonial del Estado y derecho expropiatorio.",
     photo: "/images/katherine-gonzalez.png",
     photoFocus: "50% 5%",
   },

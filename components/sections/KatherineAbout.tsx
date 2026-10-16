@@ -54,6 +54,15 @@ export function KatherineAbout() {
               </p>
             </AnimatedEntry>
 
+            <AnimatedEntry delay={0.35}>
+              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+                Desde 2024 soy profesora en la Universidad Escuela Libre de
+                Derecho, donde imparto Principios del Derecho Público, Teoría
+                del Estado y Derecho Procesal Administrativo, e integro
+                tribunales examinadores en las pruebas de grado.
+              </p>
+            </AnimatedEntry>
+
             <AnimatedEntry delay={0.4}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
                 <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">

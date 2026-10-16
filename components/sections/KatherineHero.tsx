@@ -34,7 +34,8 @@ export function KatherineHero() {
               <div className="w-1 h-8 bg-burgundy rounded-full" />
               <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">
                 Abogada, Notaria Pública y Máster en Derecho Público
-                por la Universidad de Costa Rica. Especialista en
+                por la Universidad de Costa Rica. Profesora en la
+                Universidad Escuela Libre de Derecho y especialista en
                 responsabilidad patrimonial del Estado y procedimiento
                 expropiatorio.
               </p>
