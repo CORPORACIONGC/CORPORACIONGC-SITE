@@ -272,6 +272,10 @@ export type SentenciaDestacada = {
   /** Etiquetas de artículos con las que se empareja, para ofrecerla al pie
    *  de los artículos que tratan la misma materia. */
   temas?: string[];
+  /** Guías que desarrollan el mismo criterio o su consecuencia práctica.
+   *  Es el enlace de vuelta que faltaba: las guías ya remiten a la sentencia.
+   *  `motivo` es la frase que explica al lector por qué seguir leyendo allí. */
+  guias?: { slug: string; motivo: string }[];
 };
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -2737,6 +2741,12 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     metaDescription:
       "Si le vacían la cuenta por internet, el riesgo es del banco. La Sala Primera aplicó la responsabilidad objetiva a la banca electrónica. Voto 300-F-S1-2009.",
     seoTitle: "Fraude bancario en Costa Rica: cuándo responde el banco",
+    guias: [
+      {
+        slug: "seguro-carro-uber-costa-rica-sala-primera",
+        motivo: "La misma Sala Primera, frente a las aseguradoras: cuándo pueden negar la cobertura del carro que su dueño inscribió en Uber.",
+      },
+    ],
   },
   /* 1426-F-S1-2012. Pasajes copiados del texto de Nexus. */
   {
@@ -3295,6 +3305,12 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767786",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "derecho-administrativo", "materia-municipal", "casacion-sala-primera"],
+    guias: [
+      {
+        slug: "plazos-para-demandar-al-estado-costa-rica",
+        motivo: "Todos los plazos para demandar a la Administración, cómo se cuentan y cuáles se interrumpen, con el acto de efectos continuados en su contexto.",
+      },
+    ],
     temas: ["Contencioso Administrativo", "CPCA", "Derecho Administrativo"],
     metaDescription:
       "¿Un año desde cuándo? La Sala Primera separó el acto que se agota en un momento del de efectos continuados: de eso depende el plazo. Voto 1426-F-S1-2012.",
@@ -4378,7 +4394,13 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     metaDescription: "Voto 1360-F-S1-2010 de la Sala Primera: el órgano con personalidad jurídica instrumental es centro último y único de imputación y el Estado no responde por su competencia exclusiva. Análisis y texto oficial.",
     seoTitle: "Legitimación pasiva del órgano persona · Voto 1360-F-S1-2010",
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo", "servicio-publico"],
-    temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Personalidad Jurídica Instrumental", "Responsabilidad Patrimonial"]
+    temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Personalidad Jurídica Instrumental", "Responsabilidad Patrimonial"],
+    guias: [
+      {
+        slug: "personalidad-juridica-instrumental",
+        motivo: "El origen, el desarrollo y los límites constitucionales de la figura que este voto aplicó a la legitimación pasiva.",
+      },
+    ]
   }
 ];
 

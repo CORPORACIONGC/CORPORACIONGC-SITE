@@ -1,7 +1,7 @@
 /* El Reglamento a la Ley General de Contratación Pública como dato: la
    ficha del decreto, sus ocho títulos y el índice de los 330 artículos con el
    rótulo oficial de cada uno. El texto íntegro vive en
-   /datos/reglamento-contratacion.json y se descarga al abrir un artículo.
+   /datos/reglamento-contratacion.json y viaja en el HTML de la página.
    Fuente: base de normativa de la firma, tomada del Sistema Costarricense
    de Información Jurídica. */
 

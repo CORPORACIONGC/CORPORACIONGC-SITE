@@ -545,6 +545,15 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           contencioso-administrativa, con dominio de la técnica casacional y los criterios
           jurisprudenciales vigentes.
         </p>
+        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+          La Sala Primera es también el tribunal de casación en materia civil y comercial, y sus
+          criterios en esos campos llegan a la vida diaria. Un ejemplo reciente es su línea sobre{" "}
+          <Link href="/articulos/seguro-carro-uber-costa-rica-sala-primera" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            la exclusión de la póliza del carro inscrito en Uber
+          </Link>
+          , en la que confirmó que la aseguradora podía negar la cobertura aunque el día del choque
+          no se estuviera prestando el servicio.
+        </p>
       </section>
 
       <Instrumento titulo="Naturaleza del recurso de casación" fundamento="CPCA, art. 134">

@@ -101,7 +101,7 @@ Hasta ahora, tanto las instituciones como los terceros (empresas, cámaras, ases
 ¿Qué significa para su empresa? Las dudas sobre cómo aplica una norma a su caso ya no tienen un canal institucional directo de respuesta. Las inquietudes deberán canalizarse:
 
 - **Dentro de cada concurso**, mediante las observaciones al pliego o los recursos administrativos correspondientes.
-- **Con asesoría legal especializada**, antes de comprometer la oferta. Vea nuestro artículo sobre [abogados de derecho administrativo en Costa Rica](/articulos/abogados-derecho-administrativo-costa-rica) para entender cuándo conviene una opinión técnica externa.
+- **Con asesoría legal especializada**, antes de comprometer la oferta. Vea [qué distingue a un abogado de derecho administrativo](/areas/derecho-administrativo) para entender cuándo conviene una opinión técnica externa.
 
 ---
 

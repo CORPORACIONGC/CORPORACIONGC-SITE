@@ -3,11 +3,11 @@
 /* Una norma por dentro: sus títulos, cada artículo con su rótulo y el texto
    íntegro al abrirlo. Se busca por número —«39»— o por palabra —«cautelar»—.
 
-   El índice completo se dibuja siempre, aunque el título elegido oculte la
-   mayor parte: así el buscador de Google recorre la norma entera sin tener
-   que pulsar nada. El texto se descarga una sola vez, al abrir el primer
-   artículo o al buscar una palabra, porque son cientos de miles de letras
-   que casi nadie leerá enteras. */
+   El índice completo y el texto de cada artículo van siempre en el HTML,
+   plegados: así el buscador de Google lee la norma entera sin tener que
+   pulsar nada, y quien busca «artículo 106 del reglamento» encuentra el
+   artículo. Solo si la página no recibe el texto desde el servidor se
+   descarga del JSON al abrir el primer artículo o al buscar una palabra. */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
@@ -76,6 +76,7 @@ export function NormaNavegable({
   votos = {},
   guias = {},
   derogados = [],
+  textosServidor,
 }: {
   ficha: FichaNorma;
   titulos: string[];
@@ -84,8 +85,10 @@ export function NormaNavegable({
   votos?: Record<string, VotoDeArticulo[]>;
   guias?: Record<string, GuiaDeArticulo>;
   derogados?: string[];
+  /** El texto íntegro, por artículo, cuando la página lo trae del servidor. */
+  textosServidor?: Record<string, ArticuloNorma>;
 }) {
-  const [textos, setTextos] = useState<Record<string, ArticuloNorma> | null>(null);
+  const [textos, setTextos] = useState<Record<string, ArticuloNorma> | null>(textosServidor ?? null);
   const [error, setError] = useState(false);
   const [busca, setBusca] = useState("");
   const [tituloActivo, setTituloActivo] = useState(0);
@@ -93,7 +96,7 @@ export function NormaNavegable({
   const [copiado, setCopiado] = useState<string | null>(null);
   const lista = useRef<HTMLDivElement>(null);
   const campo = useRef<HTMLInputElement>(null);
-  const pedido = useRef(false);
+  const pedido = useRef(Boolean(textosServidor));
 
   const listaDerogados = useMemo(() => new Set(derogados), [derogados]);
 
@@ -166,6 +169,13 @@ export function NormaNavegable({
   const aguja = plano((sinonimo?.actual ?? busca).trim());
   const buscandoPalabra = Boolean(busca.trim()) && !/^\d+$/.test(busca.trim());
 
+  /* El texto sin tildes se prepara una sola vez: normalizar cientos de miles
+     de letras en cada tecla vuelve lenta la escritura en el buscador. */
+  const textosPlanos = useMemo(() => {
+    if (!textos) return null;
+    return Object.fromEntries(Object.entries(textos).map(([a, t]) => [a, plano(t.texto ?? "")]));
+  }, [textos]);
+
   const visibles = useMemo(() => {
     if (!aguja) return new Set(indice.filter((f) => f[2] === tituloActivo).map((f) => f[0]));
     if (/^\d+$/.test(aguja)) {
@@ -175,10 +185,10 @@ export function NormaNavegable({
     }
     return new Set(
       indice
-        .filter((f) => plano(f[1]).includes(aguja) || plano(textos?.[f[0]]?.texto ?? "").includes(aguja))
+        .filter((f) => plano(f[1]).includes(aguja) || (textosPlanos?.[f[0]] ?? "").includes(aguja))
         .map((f) => f[0]),
     );
-  }, [indice, aguja, tituloActivo, textos]);
+  }, [indice, aguja, tituloActivo, textosPlanos]);
 
   /* Los capítulos del título abierto, para saltar dentro de una lista larga. */
   const capitulos = useMemo(() => {
@@ -393,7 +403,7 @@ export function NormaNavegable({
             const guia = guias[art];
             const derogado = listaDerogados.has(art) || cuerpo?.derogado;
             const contexto = busca ? grupoCorto(grupos[sec >= 0 ? sec : cap] ?? "") : "";
-            const trozo = buscandoPalabra && cuerpo?.texto ? pasaje(cuerpo.texto, aguja) : null;
+            const trozo = buscandoPalabra && !oculto && cuerpo?.texto ? pasaje(cuerpo.texto, aguja) : null;
             return (
               <li key={art} id={`art-${art}`} hidden={oculto} className="scroll-mt-32">
                 {nuevoCap && (
@@ -454,8 +464,9 @@ export function NormaNavegable({
                   />
                 </button>
 
-                {on && (
-                  <div className="gc-norma-abre pt-4 pb-6 pr-2 sm:pl-[76px]">
+                {/* El texto va siempre en el HTML, plegado; lo demás solo al abrir */}
+                {(on || cuerpo) && (
+                  <div hidden={!on} className="gc-norma-abre pt-4 pb-6 pr-2 sm:pl-[76px]">
                     {error ? (
                       <p className="max-w-[70ch] text-[15px] leading-relaxed text-cream/80">
                         El texto no está disponible en este momento.{" "}
@@ -475,7 +486,7 @@ export function NormaNavegable({
                       </p>
                     ) : cuerpo ? (
                       <p className="gc-norma-texto max-w-[70ch] whitespace-pre-line text-[15px] leading-relaxed text-cream/80">
-                        {buscandoPalabra ? resaltar(cuerpo.texto, aguja) : cuerpo.texto}
+                        {on && buscandoPalabra ? resaltar(cuerpo.texto, aguja) : cuerpo.texto}
                       </p>
                     ) : (
                       /* Mientras llega el texto, el hueco tiene la forma de lo que va a llegar */
@@ -500,13 +511,13 @@ export function NormaNavegable({
                       </ul>
                     ) : null}
 
-                    {(cuerpo?.capitulo || cuerpo?.seccion) && (
+                    {on && (cuerpo?.capitulo || cuerpo?.seccion) && (
                       <p className="mt-3 text-[13px] text-cream/65">
                         {[cuerpo.capitulo, cuerpo.seccion].filter(Boolean).join(" · ")}
                       </p>
                     )}
 
-                    {(votosArt || guia) && (
+                    {on && (votosArt || guia) && (
                       <ul role="list" className="mt-4 list-none space-y-1.5 pl-0 marker:content-none">
                         {votosArt?.map((v) => (
                           <li key={v.voto} className="text-[14px] leading-snug">
@@ -533,6 +544,7 @@ export function NormaNavegable({
                     )}
 
                     {/* Lo que hace falta para llevarse el artículo a un escrito */}
+                    {on && (
                     <p className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px]">
                       <button
                         type="button"
@@ -576,6 +588,7 @@ export function NormaNavegable({
                         <ArrowSquareOut size={11} aria-hidden="true" />
                       </a>
                     </p>
+                    )}
                   </div>
                 )}
               </li>

@@ -1,4 +1,6 @@
 import type { NextConfig } from "next";
+import fs from "node:fs";
+import path from "node:path";
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -15,6 +17,20 @@ const csp = [
   "form-action 'self'",
   "frame-ancestors 'none'",
 ].join("; ");
+
+/* Cada PDF de /pdfs tiene su ficha en /articulos, que es la que lleva el
+   menú, el área y el contacto. Search Console mostraba los PDF por encima de
+   sus fichas (208 impresiones del libro del proceso ejecutivo frente a 25 de
+   su ficha), así que cada PDF declara su ficha como canónica. La lista sale
+   del campo pdfFile de cada artículo, y no hay que mantenerla a mano. */
+const FICHAS_DE_PDF: { pdf: string; slug: string }[] = fs
+  .readdirSync(path.join(process.cwd(), "content", "articles"))
+  .filter((f) => f.endsWith(".md"))
+  .flatMap((f) => {
+    const texto = fs.readFileSync(path.join(process.cwd(), "content", "articles", f), "utf8");
+    const pdf = texto.match(/^pdfFile:\s*"?([^"\n]+\.pdf)"?\s*$/m)?.[1];
+    return pdf ? [{ pdf, slug: f.replace(/\.md$/, "") }] : [];
+  });
 
 const nextConfig: NextConfig = {
   images: {
@@ -46,6 +62,14 @@ const nextConfig: NextConfig = {
       {
         source: "/articulos/abogados-derecho-contencioso-administrativo-costa-rica",
         destination: "/areas/litigio-contencioso-administrativo",
+        permanent: true,
+      },
+      // Mismo caso con «Abogados de Derecho Administrativo»: el artículo y el
+      // área peleaban la misma consulta (en octubre, 126 impresiones y 1 clic
+      // contra 959 y 10). Su contenido útil pasó al área.
+      {
+        source: "/articulos/abogados-derecho-administrativo-costa-rica",
+        destination: "/areas/derecho-administrativo",
         permanent: true,
       },
       /* Las seis materias complementarias pasaron a una sola página. Cada
@@ -102,8 +126,15 @@ const nextConfig: NextConfig = {
             key: "Strict-Transport-Security",
             value: "max-age=63072000; includeSubDomains; preload",
           },
+          // Los PDF casi nunca cambian: una semana de caché, y revalidación
+          // en segundo plano cuando se reemplaza alguno.
+          { key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=86400" },
         ],
       },
+      ...FICHAS_DE_PDF.map(({ pdf, slug }) => ({
+        source: `/pdfs/${pdf}`,
+        headers: [{ key: "Link", value: `<https://www.corporaciongc.com/articulos/${slug}>; rel="canonical"` }],
+      })),
     ];
   },
 };

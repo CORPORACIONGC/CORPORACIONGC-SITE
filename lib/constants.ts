@@ -247,13 +247,13 @@ export const PRACTICE_AREA_PAGES = [
   },
   {
     slug: "derecho-administrativo",
-    title: "Vía Administrativa y Recursos",
-    homepageTitle: "Vía Administrativa y Recursos",
+    title: "Derecho Administrativo y Recursos",
+    homepageTitle: "Derecho Administrativo y Recursos",
     subtitle: "Procedimientos ordinarios, recursos de revocatoria y apelación ante la Administración Pública",
     description: "Representación en procedimientos administrativos ordinarios, interposición de recursos de revocatoria con apelación en subsidio y agotamiento de vía administrativa conforme a la LGAP (Ley N.° 6227, arts. 308 a 352).",
     icon: "Briefcase" as const,
     priority: "primary" as const,
-    seoTitle: "Abogados en Derecho Público y Administrativo en Costa Rica",
+    seoTitle: "Abogados de Derecho Administrativo en Costa Rica",
     seoDescription:
       "¿Un acto de la Administración lo perjudica? Nulidad, revocatoria y apelación ante la institución, y litigio si no responde. Bufete dedicado al Derecho Público.",
     ogShortTitle: "Abogados en {{em}}",
@@ -497,15 +497,18 @@ export const PRACTICE_AREA_PAGES = [
    navegación del usuario hacia materias adyacentes. Curado manualmente por
    afinidad procesal (litigio, recursos), sustantiva (sector regulado) y
    sectorial (mismo regulador o régimen). */
-/* Las áreas núcleo y las guías pilar que el pie repite en las 82 páginas.
+/* Las áreas núcleo y las guías pilar que el pie repite en todas las páginas.
    Son enlaces internos deliberados, no una lista de todo: el pie es donde
-   la autoridad del sitio se reparte de forma más pareja, y hasta ahora solo
-   repetía el menú. Los rótulos son cortos a propósito. */
+   la autoridad del sitio se reparte de forma más pareja. Los rótulos son
+   cortos a propósito. Las guías se revisan cada mes contra Search Console:
+   el 25-10-2026 entraron las de recursos LGAP y listas de espera de la CCSS
+   (32 clics cada una del 1 al 23 de octubre) en lugar de «Cómo demandar al
+   Estado» y la de expropiación (11 y 10), que ya enlazan sus áreas. */
 export const FOOTER_AREAS: { href: string; label: string }[] = [
   { href: "/areas/litigio-contencioso-administrativo", label: "Litigio contencioso-administrativo" },
   { href: "/areas/contratacion-publica", label: "Contratación pública" },
   { href: "/areas/recursos-de-amparo", label: "Recursos de amparo" },
-  { href: "/areas/derecho-administrativo", label: "Vía administrativa y recursos" },
+  { href: "/areas/derecho-administrativo", label: "Derecho administrativo y recursos" },
   { href: "/areas/expropiaciones", label: "Expropiaciones" },
   { href: "/areas/zona-maritimo-terrestre", label: "Zona marítimo terrestre" },
   { href: "/areas/procedimientos-sancionatorios", label: "Procedimientos sancionatorios" },
@@ -514,11 +517,11 @@ export const FOOTER_AREAS: { href: string; label: string }[] = [
 
 export const FOOTER_GUIAS: { href: string; label: string }[] = [
   { href: "/articulos/recurso-amparo-costa-rica", label: "Cómo presentar un recurso de amparo" },
-  { href: "/articulos/como-demandar-al-estado-costa-rica", label: "Cómo demandar al Estado" },
+  { href: "/articulos/recursos-contra-acto-administrativo-revocatoria-apelacion-lgap", label: "Revocatoria y apelación contra un acto" },
   { href: "/articulos/que-es-el-cpca-costa-rica", label: "El Código Procesal Contencioso-Administrativo" },
   { href: "/articulos/reforma-reglamento-contratacion-publica-2026-proveedores-estado", label: "El Reglamento de Contratación Pública" },
   { href: "/articulos/medidas-cautelares-contra-el-estado-costa-rica", label: "Medidas cautelares contra el Estado" },
-  { href: "/articulos/expropiacion-costa-rica-derechos", label: "Derechos del expropiado" },
+  { href: "/articulos/amparo-ccss-lista-de-espera", label: "Amparo por listas de espera de la CCSS" },
 ];
 
 export const AREA_RELATED_MAP: Record<string, readonly string[]> = {

@@ -898,6 +898,8 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
   },
 
   "derecho-administrativo": {
+    definicion:
+      "El Derecho Administrativo es la rama del Derecho Público que regula la organización y la actividad de la Administración Pública y sus relaciones con las personas: qué puede hacer la Administración, cómo debe hacerlo y qué ocurre cuando actúa contra el ordenamiento o causa un daño. En Costa Rica, la actividad administrativa se rige por la Ley General de la Administración Pública (Ley N.° 6227), según la cual la Administración solo puede realizar los actos y prestar los servicios públicos que autorice el ordenamiento jurídico (artículo 11), y su control judicial corresponde a la jurisdicción contencioso-administrativa, regulada por el Código Procesal Contencioso Administrativo (Ley N.° 8508).",
     hookHeadline: "¿Tiene un conflicto con una institución pública?",
     hookSubtext:
       "El Derecho Administrativo es el marco que rige cómo actúa la Administración Pública y cómo usted se defiende frente a ella. Todo acto administrativo debe ajustarse al ordenamiento: si le falta total o parcialmente alguno de sus elementos constitutivos, es nulo (arts. 166 y 167 de la LGAP). Usted puede impugnarlo con los recursos de revocatoria y apelación (arts. 342-352) y, como el agotamiento de la vía administrativa es facultativo (art. 31 del CPCA), también puede acudir directamente al contencioso. Un análisis técnico del acto y de los plazos define su estrategia.",
@@ -947,6 +949,11 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       "Hola, tengo un conflicto con una institución pública y necesito asesoría en derecho administrativo.",
     commercialFaq: [
       {
+        question: "¿Qué casos atiende un abogado de Derecho Administrativo en Costa Rica?",
+        answer:
+          "Los conflictos entre las personas y la Administración Pública: la impugnación de actos administrativos (la denegación de un permiso, una sanción, la revocación de una autorización o un cobro improcedente), la contratación pública, la regulación de servicios públicos ante entes como la ARESEP, el empleo público, la responsabilidad patrimonial del Estado cuando una institución causa un daño y el derecho municipal (permisos de construcción, patentes y reglamentos locales).",
+      },
+      {
         question: "¿Cuándo es nulo un acto administrativo?",
         answer:
           "Un acto es inválido cuando es sustancialmente disconforme con el ordenamiento jurídico (art. 158 de la LGAP). La nulidad es absoluta cuando faltan totalmente uno o varios de sus elementos constitutivos (art. 166) y relativa cuando uno de ellos es imperfecto (art. 167). En caso de duda sobre la gravedad del vicio, se está a la consecuencia más favorable a la conservación del acto (art. 168).",
@@ -972,6 +979,35 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
           "Cuando el acto final pueda causarle un perjuicio grave —o en procedimientos disciplinarios de gravedad—, la Administración debe seguir el procedimiento ordinario (art. 308) con comparecencia oral y privada (art. 309), acceso al expediente y derecho de defensa. La omisión de formalidades sustanciales que cause indefensión acarrea la nulidad de lo actuado (art. 223).",
       },
     ],
+    perfil: {
+      titulo: "Qué distingue a un abogado de Derecho Administrativo",
+      intro:
+        "La materia abarca la impugnación de actos, la contratación pública, la regulación de servicios públicos, el empleo público, la responsabilidad patrimonial del Estado y el derecho municipal. Cada uno de esos campos tiene reglas, plazos y criterios jurisprudenciales propios, y en todos el administrado enfrenta a un sujeto con prerrogativas especiales. La práctica descansa en cuatro competencias.",
+      rasgos: [
+        {
+          titulo: "Dominio del marco normativo completo",
+          texto:
+            "El Derecho Administrativo es un entramado de normas: la Ley General de la Administración Pública, el Código Procesal Contencioso Administrativo, la Ley General de Contratación Pública (Ley N.° 9986), la Ley de la Jurisdicción Constitucional (Ley N.° 7135) y las leyes sectoriales de cada materia, como la de la ARESEP (Ley N.° 7593) o el Código Municipal. Quien domina una sola de ellas trabaja con puntos ciegos.",
+        },
+        {
+          titulo: "Control de los plazos y de la vía",
+          texto:
+            "En esta materia un plazo vencido suele precluir, una pretensión mal planteada se rechaza y una vía equivocada puede cerrar el acceso a la reparación. La estrategia se define desde el primer acto: qué recurso interponer, ante qué órgano, dentro de qué término y si conviene agotar la vía administrativa o acudir directamente al Tribunal.",
+        },
+        {
+          titulo: "Continuidad del procedimiento al litigio",
+          texto:
+            "El trabajo consultivo (opiniones legales, revisión de actos, acompañamiento en contratación pública) y el litigio exigen destrezas distintas. Cuando el caso debe ir a juicio, conviene que el mismo equipo que preparó los recursos sostenga la posición ante el Tribunal Contencioso Administrativo, la Sala Primera o la Sala Constitucional, cuyas dinámicas y criterios solo se conocen litigando ante ellos con regularidad.",
+        },
+        {
+          titulo: "Vínculo con el desarrollo de la disciplina",
+          texto:
+            "La jurisprudencia del Tribunal Contencioso Administrativo y de la Sala Primera evoluciona de forma constante. Publicar sobre la materia, enseñarla o haber participado en su reforma legislativa da una comprensión de sus fundamentos que pesa en los casos complejos.",
+        },
+      ],
+      cierre:
+        "Corporación GC es un bufete especializado en Derecho Público, fundado y dirigido por el Dr. Óscar Eduardo González Camacho, magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014 y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo. Acompaña al administrado desde el procedimiento y los recursos ante la institución hasta el Tribunal Contencioso Administrativo, la Sala Primera y la Sala Constitucional.",
+    },
     relatedArticleSlug: "recursos-contra-acto-administrativo-revocatoria-apelacion-lgap",
     relatedArticleLabel:
       "Lea nuestra guía: recurso de revocatoria y apelación contra un acto administrativo",

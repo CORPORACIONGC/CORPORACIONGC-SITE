@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { getArticleBySlug } from "@/lib/articles";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { CitasExplorador } from "@/components/jurisprudencia/CitasExplorador";
 import { ConNegritas } from "@/components/jurisprudencia/ConNegritas";
@@ -83,6 +84,12 @@ export default async function SentenciaDestacadaPage({
   /* Las áreas de práctica donde aplicamos el criterio, en el orden en que la
      sentencia las declara. */
   const areas = (sentencia.areas ?? []).flatMap((a) => PRACTICE_AREA_PAGES.filter((p) => p.slug === a));
+
+  /* Las guías que desarrollan el criterio, con su título vigente. */
+  const guias = (sentencia.guias ?? []).flatMap((g) => {
+    const articulo = getArticleBySlug(g.slug);
+    return articulo ? [{ ...g, titulo: articulo.title }] : [];
+  });
 
   /* ── JSON-LD: Article + LegalForceStatus ── */
   const jsonLd = {
@@ -416,6 +423,29 @@ export default async function SentenciaDestacadaPage({
             </section>
           </article>
         </div>
+
+        {/* ─── Guías sobre este criterio ───
+            El enlace de vuelta hacia las guías que citan la sentencia. */}
+        {guias.length > 0 && (
+          <nav aria-label="Guías sobre este criterio" className="mx-auto max-w-[1200px] px-6 pt-16 md:px-10">
+            <div className="border-t border-cream/10 pt-10">
+              <p className="type-label text-cream/65">Guías sobre este criterio</p>
+              <ul role="list" className="mt-6 space-y-5">
+                {guias.map((g) => (
+                  <li key={g.slug} className="max-w-[65ch]">
+                    <Link
+                      href={`/articulos/${g.slug}`}
+                      className="text-base font-semibold text-cream transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
+                    >
+                      {g.titulo}
+                    </Link>
+                    <p className="mt-1 text-sm leading-relaxed text-cream/65">{g.motivo}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </nav>
+        )}
 
         {/* ─── Dónde aplicamos este criterio ───
             El enlace de vuelta hacia las áreas de práctica: cierra el

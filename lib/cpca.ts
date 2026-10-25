@@ -1,7 +1,7 @@
 /* El Código Procesal Contencioso-Administrativo como dato: la ficha de la
    ley, sus doce títulos y el índice de los 224 artículos con el rótulo de
-   cada uno. El texto íntegro vive en /datos/cpca.json y se descarga al
-   abrir el primer artículo. */
+   cada uno. El texto íntegro vive en /datos/cpca.json y viaja en el HTML
+   de la página. */
 
 import type { FichaNorma, VotoDeArticulo } from "./normas";
 

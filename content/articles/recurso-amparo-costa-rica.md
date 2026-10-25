@@ -86,7 +86,7 @@ Estos cuatro motivos son la causa más frecuente de **rechazo de plano** —es d
 
 El amparo protege los derechos fundamentales consagrados en la Constitución Política y en los instrumentos internacionales sobre derechos humanos vigentes en Costa Rica, entre ellos la Convención Americana sobre Derechos Humanos. Los derechos invocados con mayor frecuencia ante la Sala Constitucional incluyen:
 
-- **Salud y vida** (acceso a medicamentos, cirugías, tratamientos en la CCSS, listas de espera).
+- **Salud y vida** ([acceso a medicamentos](/articulos/amparo-negativa-medicamentos-ccss), cirugías, tratamientos en la CCSS, [listas de espera](/articulos/amparo-ccss-lista-de-espera)).
 - **Educación** (matrículas, becas, sanciones disciplinarias en centros educativos públicos y privados).
 - **Debido proceso y derecho de defensa** en procedimientos administrativos.
 - **Petición y pronta respuesta** (artículo 27 constitucional, frente al silencio de la Administración).
@@ -223,7 +223,7 @@ Legalmente, **no.** El amparo puede presentarlo cualquier persona sin firma de a
 
 En la práctica, sin embargo, conviene distinguir tres situaciones:
 
-**Casos sencillos y urgentes.** Una persona afectada por una lista de espera de la CCSS o por la negativa de matricular a su hijo puede presentar el amparo por sí misma siguiendo la guía oficial. En estos casos, la Sala suele actuar con criterio antiformalista y subsanar deficiencias menores del escrito.
+**Casos sencillos y urgentes.** Una persona afectada por una [lista de espera de la CCSS](/articulos/amparo-ccss-lista-de-espera) o por la negativa de matricular a su hijo puede presentar el amparo por sí misma siguiendo la guía oficial. En estos casos, la Sala suele actuar con criterio antiformalista y subsanar deficiencias menores del escrito.
 
 **Casos con componente económico significativo.** Cuando el amparo busca también una **condena en abstracto a daños y perjuicios** —que luego se ejecuta en sede contenciosa—, la calidad del planteamiento incide directamente en la liquidación posterior. Aquí la asesoría especializada empieza a tener peso.
 
