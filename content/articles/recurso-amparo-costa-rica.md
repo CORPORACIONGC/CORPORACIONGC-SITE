@@ -59,7 +59,7 @@ En la práctica, esto cubre tres grandes categorías:
 
 **Actos formales de la Administración.** Una resolución motivada que le impone una sanción, le deniega un permiso o limita un derecho.
 
-**Omisiones.** El silencio prolongado de una institución que debió contestarle, evacuar una consulta, expedir un acto o brindar un servicio. La Sala Constitucional ha resuelto que la inacción puede ser tan lesiva como la acción misma.
+**Omisiones.** El silencio prolongado de una institución que debió contestarle, evacuar una consulta, expedir un acto o brindar un servicio. La Sala Constitucional ha resuelto que la inacción puede ser tan lesiva como la acción misma: en 2019 declaró que la Caja Costarricense de Seguro Social vulneraba de forma sistemática y reiterada el derecho a la salud de las personas aseguradas y le ordenó elaborar un sistema de gestión integrado para solventar los problemas de las listas de espera ([voto 2019-005560](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-917187)).
 
 **Vías de hecho o actuaciones materiales.** Cuando la autoridad ejecuta una conducta sin un acto administrativo válido que la respalde —por ejemplo, un desalojo sin orden, la retención de un documento sin fundamento, el cierre de un establecimiento sin debido proceso—, esa conducta puede impugnarse directamente por amparo.
 
@@ -73,12 +73,13 @@ Casos típicos: hospitales privados, universidades, colegios privados, asociacio
 
 El artículo 30 de la ley excluye expresamente:
 
-- Las **leyes y demás disposiciones normativas**, salvo cuando se impugnen junto con actos de aplicación o cuando se trate de normas autoaplicativas. Para impugnar la norma en sí misma, la vía es la [**acción de inconstitucionalidad**](/areas/acciones-de-inconstitucionalidad).
+- Las **leyes y demás disposiciones normativas**, salvo cuando se impugnen junto con actos de aplicación individual o cuando se trate de normas de acción automática, obligatorias por su sola promulgación. Para impugnar la norma en sí misma, la vía es la [**acción de inconstitucionalidad**](/areas/acciones-de-inconstitucionalidad).
 - Las **resoluciones y actuaciones jurisdiccionales del Poder Judicial**.
-- Los **actos consentidos** expresamente por el agraviado.
-- Cuando ya haya cesado la lesión del derecho.
+- Los actos con que las autoridades administrativas **ejecutan resoluciones judiciales**, siempre que se ajusten a lo que el juez encomendó.
+- La acción u omisión **legítimamente consentida** por la persona agraviada.
+- Los actos o disposiciones del **Tribunal Supremo de Elecciones en materia electoral**.
 
-Estos cuatro motivos son la causa más frecuente de **rechazo de plano** —es decir, sin tramitar—, y conviene revisarlos antes de presentar el escrito.
+Estas exclusiones, junto con el plazo del artículo 35, son la causa más frecuente de **rechazo de plano** —es decir, sin tramitar—, y conviene revisarlas antes de presentar el escrito.
 
 ---
 
@@ -100,7 +101,7 @@ El amparo protege los derechos fundamentales consagrados en la Constitución Pol
 
 Si su caso involucra **libertad personal, integridad física o libertad de tránsito** —detención sin orden, restricción de movimiento, prohibición de salir del país, condiciones de privación de libertad—, la vía no es el amparo sino el **hábeas corpus**, regulado en los artículos 15 a 28 de la Ley de la Jurisdicción Constitucional.
 
-En materia de **empleo público** (despidos, sanciones disciplinarias, traslados de funcionarios), la Sala Constitucional declinó su competencia tras la sentencia 2017-017948 de 8 de noviembre de 2017, criterio reiterado en posteriores resoluciones. Con la reforma procesal laboral (Ley N.° 9343 de 25 de enero de 2016, vigente desde julio de 2017), estos asuntos se conocen en la **jurisdicción laboral**, salvo que exista un componente directo y autónomo de vulneración a un derecho fundamental no reparable por la vía ordinaria.
+En materia de **empleo público** (despidos, sanciones disciplinarias, traslados de funcionarios), la Sala Constitucional declinó su competencia tras la [sentencia 2017-017948](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-728425) de 8 de noviembre de 2017, criterio reiterado en posteriores resoluciones (por ejemplo, el [voto 2026-001080](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1364801)). Con la reforma procesal laboral (Ley N.° 9343 de 25 de enero de 2016, vigente desde julio de 2017), estos asuntos se conocen en la **jurisdicción laboral**, salvo que exista un componente directo y autónomo de vulneración a un derecho fundamental no reparable por la vía ordinaria.
 
 Para impugnar la legalidad ordinaria de un acto administrativo —sin componente de derecho fundamental—, la vía es la **demanda contencioso-administrativa** ante el Tribunal Contencioso Administrativo, no el amparo.
 
@@ -108,16 +109,15 @@ Para impugnar la legalidad ordinaria de un acto administrativo —sin componente
 
 ## ¿Cuál es el plazo para presentar un recurso de amparo?
 
-El **artículo 35 de la Ley de la Jurisdicción Constitucional** establece que el amparo puede interponerse *"en cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción"*. Cuando los efectos del acto cesen o se vuelvan irrelevantes, el plazo es de **dos meses** contados desde la cesación de esos efectos o desde el momento en que el agraviado los conoció en forma indubitable.
+El **artículo 35 de la Ley de la Jurisdicción Constitucional** establece que el amparo puede interponerse *«en cualquier tiempo mientras subsista la violación, amenaza, perturbación o restricción, y hasta dos meses después de que hayan cesado totalmente sus efectos directos respecto del perjudicado»*. La regla tiene una excepción: cuando se trate de *«derechos puramente patrimoniales u otros cuya violación pueda ser válidamente consentida»*, el plazo es de **dos meses** desde que el perjudicado *«tuvo noticia fehaciente de la violación y estuvo en posibilidad legal de interponer el recurso»*.
 
 Esta regla es la que más confusión genera, y conviene tenerla clara:
 
-| Tipo de conducta impugnada | Cómputo de los dos meses |
+| Situación | Plazo |
 |---|---|
-| Acto de efectos instantáneos (ya consumado) | Desde la notificación o conocimiento indubitable del acto |
-| Acto de efectos continuados (la lesión persiste) | El plazo no corre mientras subsista la lesión |
-| Omisión administrativa (silencio o inacción) | Mientras la omisión persista, el amparo es procedente |
-| Vía de hecho que cesó | Desde la fecha en que cesó el comportamiento lesivo |
+| La lesión persiste (acto de efectos continuados, omisión o vía de hecho en curso) | En cualquier tiempo, mientras subsista |
+| La lesión ya cesó | Hasta dos meses después de que cesaron totalmente sus efectos directos |
+| Derechos puramente patrimoniales u otros cuya violación puede consentirse válidamente | Dos meses desde la noticia fehaciente de la violación y la posibilidad legal de recurrir |
 
 *Fundamento: artículo 35 de la Ley de la Jurisdicción Constitucional.*
 
@@ -137,7 +137,7 @@ La legitimación activa en el amparo es **especialmente amplia**, una de las car
 
 Además, el recurso puede presentarse **a favor propio o a favor de otra persona**, lo que es especialmente importante en casos de personas privadas de libertad, menores de edad, adultos mayores o personas en situación de vulnerabilidad.
 
-No requiere autenticación de firma por abogado, no exige patrocinio letrado y es **gratuito**. La Sala Constitucional ha mantenido este criterio garantista de manera consistente desde su creación en 1989.
+No requiere autenticación de firma por abogado, no exige patrocinio letrado y es **gratuito**. La Sala Constitucional ha mantenido este criterio garantista de manera consistente desde su creación en 1989: *«la regla en la tramitación de los recursos de amparo es la informalidad»*, y la legitimación vicaria del artículo 33 permite tener el recurso por planteado a favor de quien resulta afectado ([voto 2020-017262](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-993947)).
 
 ---
 
@@ -211,7 +211,7 @@ Una proporción significativa de los amparos presentados por la ciudadanía es *
 
 **No identificar el derecho fundamental afectado.** Argumentar genéricamente que "se vulneraron derechos" sin precisar cuál y por qué es una causa común de rechazo.
 
-**Confundir amparo con vía contencioso-administrativa.** Cuando lo que se discute es de mera legalidad ordinaria, sin componente de derecho fundamental, la Sala remite el asunto al contencioso. Esto puede hacerle perder tiempo valioso.
+**Confundir amparo con vía contencioso-administrativa.** Cuando lo que se discute es de mera legalidad ordinaria, sin componente de derecho fundamental, la Sala remite el asunto al contencioso. Así lo hace, por ejemplo, con el reclamo por el incumplimiento de los plazos para resolver un procedimiento administrativo, que considera una *«evidente cuestión de legalidad ordinaria»* ([voto 2008-002545](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-411228)). Esto puede hacerle perder tiempo valioso.
 
 Cada uno de estos errores se evita con una **valoración previa rigurosa** del caso. Lo que parece sencillo no siempre lo es: la jurisprudencia constitucional costarricense es densa y matizada, y un amparo mal planteado puede precluir su derecho a discutir el asunto en sede más adecuada.
 
@@ -238,6 +238,12 @@ La pregunta no es solo "¿puedo presentarlo solo?" sino "¿qué riesgo asumo al 
 Una de las decisiones más importantes es elegir la vía adecuada. La siguiente comparación, basada en los textos legales aplicables, ayuda a ubicar cuándo procede cada uno.
 
 <ComparativaViasAmparo />
+
+---
+
+## Fuentes
+
+<FuentesGuia slug="recurso-amparo-costa-rica" />
 
 ---
 

@@ -38,7 +38,7 @@ Conviene aclarar primero el lenguaje: aunque coloquialmente se habla de "demanda
 
 ## ¿Por qué una lista de espera puede violar sus derechos fundamentales?
 
-El punto de partida es el artículo 21 de la Constitución Política, que contiene una de las frases más cortas y contundentes de todo el ordenamiento costarricense: *"La vida humana es inviolable."* De esa inviolabilidad la jurisprudencia constitucional ha derivado el **derecho a la salud**: una atención médica que llega demasiado tarde puede equivaler, sencillamente, a no llegar.
+El punto de partida es el artículo 21 de la Constitución Política, que contiene una de las frases más cortas y contundentes de todo el ordenamiento costarricense: *"La vida humana es inviolable."* De esa inviolabilidad la jurisprudencia constitucional ha derivado el **derecho a la salud**: desde 1992 la Sala sostiene que, aunque la Constitución no lo contempla en forma expresa, *«no se puede negar su existencia, por ser derivado directo del derecho a la vida protegido en el artículo 21 de nuestra Constitución»* ([voto 1915-92](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-88764)). Una atención médica que llega demasiado tarde puede equivaler, sencillamente, a no llegar. En 2019 la Sala declaró que la CCSS vulneraba de forma sistemática y reiterada el derecho a la salud de las personas aseguradas y le ordenó elaborar un sistema de gestión integrado para solventar los problemas de las listas de espera, con plazos de espera razonables por patología ([voto 2019-005560](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-917187)).
 
 A ese fundamento se suma el artículo 73 constitucional, que establece los seguros sociales precisamente *"a fin de proteger a éstos contra los riesgos de enfermedad, invalidez, maternidad, vejez, muerte y demás contingencias que la ley determine"*, y dispone que *"la administración y el gobierno de los seguros sociales estarán a cargo de una institución autónoma, denominada Caja Costarricense de Seguro Social."* La CCSS no presta un favor: administra un seguro al que usted contribuye de manera forzosa y que existe, por mandato constitucional, para protegerlo cuando enferma.
 
@@ -67,7 +67,7 @@ Estas son las situaciones más frecuentes y su fundamento:
 
 ### Cuándo la vía no es el amparo
 
-El amparo no es un buzón universal de quejas contra la Caja. Si su reclamo es de **mera legalidad ordinaria** —por ejemplo, una disputa sobre cotizaciones, planillas o aspectos patrimoniales sin componente directo de derecho fundamental—, la vía es la jurisdicción ordinaria, no la Sala Constitucional. La Sala rechaza de plano las gestiones manifiestamente improcedentes o infundadas (artículo 9 de la Ley N.° 7135), así que conviene plantear el caso por lo que es: una lesión actual o inminente a la salud o a la vida.
+El amparo no es un buzón universal de quejas contra la Caja. Si su reclamo es de **mera legalidad ordinaria** —por ejemplo, una disputa sobre cotizaciones, planillas o aspectos patrimoniales sin componente directo de derecho fundamental—, la vía es la jurisdicción ordinaria, no la Sala Constitucional. La Sala rechaza de plano las gestiones manifiestamente improcedentes o infundadas (artículo 9 de la Ley N.° 7135), así que conviene plantear el caso por lo que es: una lesión actual o inminente a la salud o a la vida. Lo que es una *«evidente cuestión de legalidad ordinaria»* la Sala lo rechaza de plano y lo remite a la jurisdicción contencioso-administrativa ([voto 2008-002545](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-411228)).
 
 ---
 
@@ -130,7 +130,7 @@ Presentado el recurso, la ley impone un ritmo que favorece al paciente:
 
 ### Paso 5. La sentencia: una fecha cierta para su atención
 
-Cuando lo impugnado es una omisión —el caso típico de la lista de espera—, el artículo 49 ordena exactamente lo que el paciente necesita: *"la sentencia ordenará realizarlo, para lo cual se otorgará un plazo prudencial perentorio."* En la práctica, eso se traduce en una orden a la CCSS de practicar la cirugía, la cita o el examen dentro de un plazo concreto fijado por la Sala.
+Cuando lo impugnado es una omisión —el caso típico de la lista de espera—, el artículo 49 ordena exactamente lo que el paciente necesita: *"la sentencia ordenará realizarlo, para lo cual se otorgará un plazo prudencial perentorio."* En la práctica, eso se traduce en una orden a la CCSS de practicar la cirugía, la cita o el examen dentro de un plazo concreto fijado por la Sala. Para la Sala, *«mantener en lista de espera en estado de incertidumbre a un paciente sin una fecha cierta para la realización del procedimiento conlleva una violación a su derecho a la salud»*, y según su reiterada jurisprudencia el plazo apropiado para ordenar la cirugía es de un mes; así lo dispuso para una adulta mayor de 87 años que esperaba una operación de cataratas ([voto 2021-028421](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1067008)).
 
 ---
 
@@ -166,6 +166,12 @@ Si después de ganar le vuelven a posponer la cirugía, no está empezando de ce
 **Convertir el amparo en un reclamo de mera legalidad.** Cobros, trámites administrativos sin componente de derecho fundamental o disputas patrimoniales no son materia de amparo y se exponen al rechazo de plano (artículo 9). El eje del escrito debe ser la lesión a la salud y a la vida.
 
 **Subestimar la técnica del escrito por tratarse de un trámite accesible.** Que el amparo sea de acceso directo no lo vuelve trivial: identificar con precisión el derecho lesionado, ordenar la prueba y plantear los hechos de modo que la Sala pueda dimensionar el riesgo es lo que separa un recurso acogido de uno rechazado, y de ello depende también la indemnización que se reclame después.
+
+---
+
+## Fuentes
+
+<FuentesGuia slug="amparo-ccss-lista-de-espera" />
 
 ---
 

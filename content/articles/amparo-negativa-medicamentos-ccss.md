@@ -38,7 +38,7 @@ Un médico de la Caja prescribe un medicamento. La farmacia responde que no lo e
 
 ## El fundamento: el derecho a la salud nace del derecho a la vida
 
-La Constitución costarricense no menciona expresamente un "derecho a la salud". La Sala lo construyó a partir del artículo 21, que en una sola línea declara: *"La vida humana es inviolable."* En el [voto N.° 1915-92, de 22 de julio de 1992](https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S1409-00152003000100003), la Sala fijó el criterio que repetiría durante décadas: el derecho a la salud, aunque no esté contemplado de forma expresa, *"no se puede negar su existencia, por ser derivado directo del derecho a la vida protegido en el artículo 21"*.
+La Constitución costarricense no menciona expresamente un "derecho a la salud". La Sala lo construyó a partir del artículo 21, que en una sola línea declara: *"La vida humana es inviolable."* En el [voto N.° 1915-92, de 22 de julio de 1992](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-88764), la Sala fijó el criterio que repetiría durante décadas: el derecho a la salud, aunque no esté contemplado de forma expresa, *"no se puede negar su existencia, por ser derivado directo del derecho a la vida protegido en el artículo 21"*.
 
 Ese derecho tiene un responsable institucional preciso. El artículo 73 de la Constitución establece los seguros sociales para proteger a las personas "contra los riesgos de enfermedad, invalidez, maternidad, vejez, muerte y demás contingencias que la ley determine", y encarga su administración a *"una institución autónoma, denominada Caja Costarricense de Seguro Social"*. A ello se suma la [Ley General de Salud (Ley N.° 5395)](https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=6581), cuyo artículo 1 proclama que *"la salud de la población es un bien de interés público tutelado por el Estado"*, y cuyo artículo 3 reconoce que *"todo habitante tiene derecho a las prestaciones de salud"*.
 
@@ -56,7 +56,7 @@ Ahí nace el conflicto que llega a la Sala: el médico tratante receta un medica
 
 ## Regla 1: las razones económicas no pueden vaciar el derecho a la salud
 
-El argumento más antiguo de la Administración —"no hay presupuesto", "el medicamento es muy caro"— tiene una respuesta jurisprudencial firme. En el [voto N.° 5130-94, de 7 de setiembre de 1994](https://vlex.co.cr/vid/-497286330), sobre una paciente con leucemia a la que se le negaba la quimioterapia (citarabina), la Sala declaró con lugar el amparo y sentó una frase que se ha citado por décadas: *"cualquier criterio económico que pretendiera hacer nugatorio el ejercicio de tales derechos, debe ceder en importancia"*, porque sin el derecho a la vida los demás derechos resultarían inútiles.
+El argumento más antiguo de la Administración —"no hay presupuesto", "el medicamento es muy caro"— tiene una respuesta jurisprudencial firme. En el [voto N.° 5130-94, de 7 de setiembre de 1994](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-97797), sobre una paciente con leucemia a la que se le negaba la entrega de la quimioterapia (citarabina) para aplicársela en su domicilio, la Sala declaró con lugar el amparo y sentó una frase que se ha citado por décadas: *"cualquier criterio económico que pretendiera hacer nugatorio el ejercicio de tales derechos, debe ceder en importancia"*, porque sin el derecho a la vida los demás derechos resultarían inútiles.
 
 La limitación de recursos, por sí sola, no es una justificación válida para denegar lo que la salud del paciente requiere. Es el punto de partida de todo lo demás.
 
@@ -64,7 +64,7 @@ La limitación de recursos, por sí sola, no es una justificación válida para 
 
 ## Regla 2: un medicamento fuera de la lista puede y debe entregarse (el caso fundacional)
 
-El precedente que abrió el camino es de 1997 y nació de la epidemia del VIH/sida. En el [voto N.° 5934-97, de 23 de setiembre de 1997](https://vlex.co.cr/vid/-497403102), la Sala conoció el amparo de un asegurado al que la CCSS le negaba la terapia de antirretrovirales precisamente porque, en sus palabras, *"los antirretrovirales destinados al Síndrome de Inmunodeficiencia adquirida, no se encuentran incluidos dentro de la Lista Oficial de Medicamentos de la Caja"*.
+El precedente que abrió el camino es de 1997 y nació de la epidemia del VIH/sida. En el [voto N.° 5934-97, de 23 de setiembre de 1997](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-159805), la Sala conoció el amparo de un asegurado al que la CCSS le negaba la terapia de antirretrovirales precisamente porque, en sus palabras, *"los antirretrovirales destinados al Síndrome de Inmunodeficiencia adquirida, no se encuentran incluidos dentro de la Lista Oficial de Medicamentos de la Caja"*.
 
 La Sala ordenó *"iniciar inmediatamente el suministro al actor de la terapia de combinación de antirretrovirales apropiada a su condición clínica"* y razonó que *"la prestación de efectivo auxilio médico a los enfermos de SIDA es un deber del Estado costarricense, derivado de los conceptos de justicia y solidaridad"* que impregnan al régimen de seguridad social. El mensaje quedó claro: **la no inclusión de un medicamento en la LOM no es, por sí misma, una razón válida para negarlo** cuando está en juego la vida.
 
@@ -74,11 +74,11 @@ La Sala ordenó *"iniciar inmediatamente el suministro al actor de la terapia de
 
 Aquí está el corazón técnico de la materia, y conviene entenderlo con precisión, porque es donde se ganan y se pierden los amparos.
 
-La Sala parte de que el médico tratante, por su relación directa con el paciente, tiene los mejores elementos para decidir el tratamiento. Pero ha matizado ese principio con una fórmula que repite en cada fallo. En el [voto N.° 2017-008661, de 13 de junio de 2017](https://vlex.co.cr/vid/683348793), sobre la negativa de Sertralina, lo dijo así: *"no es cierto que el criterio del médico tratante tenga el carácter de 'dogma', como si se le diera valor de prueba tasada"*. Y explicó qué hace cuando hay conflicto entre el médico y el Comité: *"este Tribunal Constitucional, cuando las circunstancias del caso lo ameritan, recurra a un tercer criterio, como la valoración del caso por la Unidad Médico Forense del Organismo de Investigación Judicial, a fin de dirimir si existe o no una vulneración al derecho a la salud"*.
+La Sala parte de que el médico tratante, por su relación directa con el paciente, tiene los mejores elementos para decidir el tratamiento. Pero ha matizado ese principio con una fórmula que repite en cada fallo. En el [voto N.° 2017-008661, de 13 de junio de 2017](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-712508), sobre la negativa de Sertralina, lo dijo así: *"no es cierto que el criterio del médico tratante tenga el carácter de 'dogma', como si se le diera valor de prueba tasada"*. Y explicó qué hace cuando hay conflicto entre el médico y el Comité: *"este Tribunal Constitucional, cuando las circunstancias del caso lo ameritan, recurra a un tercer criterio, como la valoración del caso por la Unidad Médico Forense del Organismo de Investigación Judicial, a fin de dirimir si existe o no una vulneración al derecho a la salud"*.
 
 Es decir: la Sala no decide qué medicamento es mejor —no es un tribunal médico—; busca un **tercero técnico e imparcial** que dirima. Ese tercero puede ser la Medicina Forense del OIJ o un especialista nombrado por el Colegio de Médicos.
 
-El ejemplo más nítido y reciente es el del medicamento Riociguat. En la [sentencia N.° 2019-015241, de 16 de agosto de 2019](https://salaconstitucional.poder-judicial.go.cr/index.php/sala-de-prensa/comunicados/sala-constitucional-resguarda-derecho-a-la-salud-de-asegurado-y-ordena-a-ccss-entregar-farmaco-que-esta-fuera-de-lista-oficial-de-medicamentos), un paciente con hipertensión pulmonar tenía prescrito ese fármaco por su médico del Hospital México, pero el Comité Central de Farmacoterapia lo rechazó por estar fuera de la LOM. La Sala, según su comunicado oficial, dejó sentado que *"se está en sede jurisdiccional-constitucional, y no técnico-médica"*, y por eso pidió una interconsulta —a través del Colegio de Médicos y Cirujanos— a un especialista en Neumología. El perito concluyó que la prescripción era la más adecuada y que el fármaco era *"el único que se encuentra aprobado por la literatura médica"* para esa condición. Con ese respaldo técnico, la Sala ordenó por unanimidad entregar el medicamento.
+El ejemplo más nítido y reciente es el del medicamento Riociguat. En la [sentencia N.° 2019-015241, de 16 de agosto de 2019](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-932090), un paciente con hipertensión pulmonar tenía prescrito ese fármaco por su médico del Hospital México, pero el Comité Central de Farmacoterapia lo rechazó por estar fuera de la LOM. La Sala dejó sentado que *«se está en sede jurisdiccional-constitucional, y no técnico-médica»*, y por eso pidió una interconsulta —a través del Colegio de Médicos y Cirujanos— a un especialista en Neumología. El perito concluyó que la prescripción era la más adecuada y que el fármaco era *«el único que está aprobado por la literatura médica»* para esa condición. Con ese respaldo técnico, la Sala ordenó por unanimidad entregar el medicamento.
 
 El patrón se repite: **médico tratante que prescribe + criterio técnico imparcial que lo respalda = la Sala ordena entregar el medicamento, esté o no en la LOM.**
 
@@ -88,7 +88,7 @@ El patrón se repite: **médico tratante que prescribe + criterio técnico impar
 
 Sería un error leer esta jurisprudencia como "la Sala siempre le da la razón al paciente". No es así, y conviene ser franco: el otro lado de la moneda es igual de firme.
 
-En la [sentencia N.° 2018-001346, de 30 de enero de 2018](https://vlex.co.cr/vid/704486221), una paciente con un sarcoma metastásico pedía el medicamento Pazopanib, que no estaba en la Lista Oficial. La Sala aplicó su precedente sobre el "tercer criterio" y solicitó el dictamen de la Sección Clínica Médico Forense del OIJ, que concluyó que para ese caso el fármaco *"no es el indicado dada la ausencia de justificación científica (seguridad/eficacia) que lo apoye"*. La Sala declaró **sin lugar** el amparo.
+En la [sentencia N.° 2018-001346, de 30 de enero de 2018](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-735974), una paciente con un sarcoma metastásico pedía el medicamento Pazopanib, que no estaba en la Lista Oficial. La Sala aplicó su precedente sobre el "tercer criterio" y solicitó el dictamen de la Sección Clínica Médico Forense del OIJ, que concluyó que para ese caso el fármaco *"no es el indicado dada la ausencia de justificación científica (seguridad/eficacia) que lo apoye"*. La Sala declaró **sin lugar** el amparo.
 
 La lección es importante para cualquiera que evalúe su caso: el amparo protege el derecho a la salud, no la preferencia por un medicamento concreto cuando la evidencia científica no lo respalda para esa situación clínica. La fuerza del recurso depende, en buena medida, de la solidez del sustento médico que lo acompaña.
 
@@ -96,7 +96,7 @@ La lección es importante para cualquiera que evalúe su caso: el amparo protege
 
 ## Regla 5: la CCSS no puede interrumpir un tratamiento en curso por desabastecimiento
 
-Distinto del rechazo inicial es el caso del paciente que ya venía recibiendo un medicamento y, de pronto, deja de recibirlo porque "se agotó". En la [sentencia N.° 2009-004967, de 25 de marzo de 2009](https://vlex.co.cr/vid/-499368614), sobre el imatinib (Glivec) para una leucemia mieloide crónica en el Hospital San Juan de Dios, la Sala declaró con lugar el amparo y ordenó a las autoridades hospitalarias *"planificar y programar la compra de los medicamentos LOM y no LOM con suficiente antelación para evitar el desabastecimiento"*, además de condenar a la CCSS al pago de costas, daños y perjuicios.
+Distinto del rechazo inicial es el caso del paciente que ya venía recibiendo un medicamento y, de pronto, deja de recibirlo porque "se agotó". En la [sentencia N.° 2009-004967, de 25 de marzo de 2009](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-449734), sobre el imatinib (Glivec) para una leucemia mieloide crónica en el Hospital San Juan de Dios, la Sala declaró con lugar el amparo y ordenó a las autoridades hospitalarias *"planificar y programar la compra de los medicamentos LOM y no LOM con suficiente antelación para evitar el desabastecimiento"*, además de condenar a la CCSS al pago de costas, daños y perjuicios.
 
 La continuidad del tratamiento es parte del derecho a la salud: una vez que la institución asumió el suministro de un fármaco, no puede interrumpirlo por falta de previsión administrativa.
 
@@ -104,7 +104,7 @@ La continuidad del tratamiento es parte del derecho a la salud: una vez que la i
 
 ## El mismo criterio para tratamientos y cirugías negados
 
-Aunque esta guía se centra en medicamentos, el derecho a la salud cubre toda la atención médica oportuna, y la Sala aplica el mismo razonamiento a tratamientos y cirugías. En la [sentencia N.° 2021-028421, de 28 de diciembre de 2021](https://salaconstitucional.poder-judicial.go.cr/index.php/sala-de-prensa/comunicados/sala-constitucional-ordena-a-la-ccss-operar-a-senora-de-87-anos-con-mas-de-8-meses-de-estar-en-lista-de-espera), una adulta mayor de 87 años llevaba más de ocho meses esperando una cirugía de cataratas en el Hospital Calderón Guardia. La Sala ordenó operarla en el plazo de un mes y advirtió que *"mantener a una persona enferma y de avanzada edad en estado de incertidumbre durante un lapso tan prolongado conlleva una clara violación a sus derechos fundamentales a la salud y a una vida digna"*.
+Aunque esta guía se centra en medicamentos, el derecho a la salud cubre toda la atención médica oportuna, y la Sala aplica el mismo razonamiento a tratamientos y cirugías. En la [sentencia N.° 2021-028421, de 28 de diciembre de 2021](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1067008), una adulta mayor de 87 años llevaba más de ocho meses esperando una cirugía de cataratas en el Hospital Calderón Guardia. La Sala ordenó operarla en el plazo de un mes y advirtió que *«mantener en lista de espera en estado de incertidumbre a un paciente sin una fecha cierta para la realización del procedimiento conlleva una violación a su derecho a la salud»*.
 
 Si su problema es una cirugía o una cita pospuesta más que un medicamento, puede revisar nuestra guía específica sobre el [amparo contra la CCSS por listas de espera](/articulos/amparo-ccss-lista-de-espera).
 
@@ -138,7 +138,7 @@ El cumplimiento debe ser **sin demora** (artículo 53), y la ley tiene dientes: 
 
 ## Qué decide su caso: la solidez técnica del planteamiento
 
-Si algo enseña esta línea jurisprudencial —del histórico voto de los antirretrovirales a los fallos recientes sobre medicamentos de alto costo— es que la Sala no resuelve por simpatía ni por automatismo. Resuelve sobre **el respaldo técnico del caso**: la prescripción del médico tratante, la evidencia científica que la sostiene y el criterio del tercero imparcial. Ahí se decide la diferencia entre la sentencia N.° 2019-015241, que ordenó entregar el Riociguat, y la N.° 2018-001346, que negó el Pazopanib.
+Si algo enseña esta línea jurisprudencial —del histórico voto de los antirretrovirales a los fallos recientes sobre medicamentos de alto costo— es que la Sala no resuelve por simpatía ni por automatismo. Resuelve sobre **el respaldo técnico del caso**: la prescripción del médico tratante, la evidencia científica que la sostiene y el criterio del tercero imparcial. Ahí se decide la diferencia entre la [sentencia N.° 2019-015241](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-932090), que ordenó entregar el Riociguat, y la [N.° 2018-001346](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-735974), que negó el Pazopanib.
 
 Por eso, aunque el amparo sea de acceso directo para el ciudadano, la forma de plantearlo no es indiferente. Saber qué prueba aportar, cómo articular el criterio médico, cuándo conviene pedir desde el inicio la valoración de un tercero técnico y cómo preparar —desde el primer escrito— la posterior indemnización ante el Tribunal Contencioso Administrativo son decisiones de **Derecho Público**, una materia técnica y de jurisprudencia densa. Un recurso construido por quien litiga a diario en esa sede no solo tiende a resolverse mejor: protege el derecho que está en juego cuando un tratamiento no admite esperas. De ahí que, aun cuando presentarlo no tenga costo, valga la pena que un especialista revise el caso antes de enviarlo.
 
@@ -148,27 +148,33 @@ Para conocer cómo intervenimos en estos casos, puede visitar nuestra área de [
 
 ---
 
+## Fuentes
+
+<FuentesGuia slug="amparo-negativa-medicamentos-ccss" />
+
+---
+
 ## Preguntas frecuentes
 
 ### ¿La CCSS puede negarme un medicamento solo porque no está en la Lista Oficial de Medicamentos?
 
-No de forma automática. La Sala ha ordenado entregar medicamentos fuera de la Lista Oficial cuando el médico tratante los prescribe y un criterio técnico los respalda. El caso fundacional es el [voto N.° 5934-97](https://vlex.co.cr/vid/-497403102) (antirretrovirales para el VIH), y la línea se mantiene en fallos recientes como la [sentencia N.° 2019-015241](https://salaconstitucional.poder-judicial.go.cr/index.php/sala-de-prensa/comunicados/sala-constitucional-resguarda-derecho-a-la-salud-de-asegurado-y-ordena-a-ccss-entregar-farmaco-que-esta-fuera-de-lista-oficial-de-medicamentos) (Riociguat para hipertensión pulmonar).
+No de forma automática. La Sala ha ordenado entregar medicamentos fuera de la Lista Oficial cuando el médico tratante los prescribe y un criterio técnico los respalda. El caso fundacional es el [voto N.° 5934-97](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-159805) (antirretrovirales para el VIH), y la línea se mantiene en fallos recientes como la [sentencia N.° 2019-015241](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-932090) (Riociguat para hipertensión pulmonar).
 
 ### ¿Qué pasa si el Comité Central de Farmacoterapia rechaza lo que me recetó mi médico?
 
-El criterio del médico tratante es relevante, pero la Sala ha aclarado que no es un "dogma" ni tiene valor de prueba tasada ([voto N.° 2017-008661](https://vlex.co.cr/vid/683348793)). Ante el conflicto entre el médico y el Comité, la Sala recurre a un tercer criterio imparcial —la Unidad Médico Forense del OIJ o una interconsulta a un especialista nombrado por el Colegio de Médicos— para dirimir si la negativa vulnera el derecho a la salud.
+El criterio del médico tratante es relevante, pero la Sala ha aclarado que no es un "dogma" ni tiene valor de prueba tasada ([voto N.° 2017-008661](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-712508)). Ante el conflicto entre el médico y el Comité, la Sala recurre a un tercer criterio imparcial —la Unidad Médico Forense del OIJ o una interconsulta a un especialista nombrado por el Colegio de Médicos— para dirimir si la negativa vulnera el derecho a la salud.
 
 ### ¿La CCSS puede alegar falta de presupuesto?
 
-No. Desde el [voto N.° 5130-94](https://vlex.co.cr/vid/-497286330), la Sala sostiene que "cualquier criterio económico que pretendiera hacer nugatorio el ejercicio de tales derechos, debe ceder en importancia". La limitación presupuestaria no es, por sí sola, justificación válida para denegar un medicamento necesario.
+No. Desde el [voto N.° 5130-94](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-97797), la Sala sostiene que "cualquier criterio económico que pretendiera hacer nugatorio el ejercicio de tales derechos, debe ceder en importancia". La limitación presupuestaria no es, por sí sola, justificación válida para denegar un medicamento necesario.
 
 ### ¿Siempre se gana el amparo por un medicamento?
 
-No. Si la evidencia científica no respalda el fármaco para el caso concreto, la Sala lo rechaza. En la [sentencia N.° 2018-001346](https://vlex.co.cr/vid/704486221) declaró sin lugar el recurso por el Pazopanib, porque el dictamen médico forense concluyó que no había justificación científica suficiente. El amparo protege el derecho a la salud, no la preferencia por un fármaco sin respaldo técnico.
+No. Si la evidencia científica no respalda el fármaco para el caso concreto, la Sala lo rechaza. En la [sentencia N.° 2018-001346](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-735974) declaró sin lugar el recurso por el Pazopanib, porque el dictamen médico forense concluyó que no había justificación científica suficiente. El amparo protege el derecho a la salud, no la preferencia por un fármaco sin respaldo técnico.
 
 ### ¿La CCSS puede interrumpir un tratamiento que ya venía recibiendo?
 
-No. En la [sentencia N.° 2009-004967](https://vlex.co.cr/vid/-499368614), sobre el imatinib (Glivec) para una leucemia, la Sala ordenó planificar la compra de medicamentos —de la lista oficial y fuera de ella— con antelación para evitar el desabastecimiento. Interrumpir un tratamiento en curso por falta de previsión lesiona el derecho a la salud.
+No. En la [sentencia N.° 2009-004967](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-449734), sobre el imatinib (Glivec) para una leucemia, la Sala ordenó planificar la compra de medicamentos —de la lista oficial y fuera de ella— con antelación para evitar el desabastecimiento. Interrumpir un tratamiento en curso por falta de previsión lesiona el derecho a la salud.
 
 ### ¿El medicamento debe estar recetado por un médico de la CCSS?
 
@@ -176,7 +182,7 @@ En general, sí. La prescripción debe provenir de un médico institucional y, s
 
 ### ¿El amparo también sirve para tratamientos o cirugías negadas?
 
-Sí. El mismo derecho a la salud ampara la atención médica oportuna. En la [sentencia N.° 2021-028421](https://salaconstitucional.poder-judicial.go.cr/index.php/sala-de-prensa/comunicados/sala-constitucional-ordena-a-la-ccss-operar-a-senora-de-87-anos-con-mas-de-8-meses-de-estar-en-lista-de-espera), la Sala ordenó operar de cataratas, en un mes, a una adulta mayor de 87 años con más de ocho meses en lista de espera.
+Sí. El mismo derecho a la salud ampara la atención médica oportuna. En la [sentencia N.° 2021-028421](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1067008), la Sala ordenó operar de cataratas, en un mes, a una adulta mayor de 87 años con más de ocho meses en lista de espera.
 
 ### ¿Qué ordena la Sala si gano y qué pasa si la CCSS no cumple?
 
