@@ -19,7 +19,7 @@ const jsonLdAboutPage = {
   "@id": "https://www.corporaciongc.com/sobre-nosotros#webpage",
   name: "Sobre Nosotros — Corporación GC",
   description:
-    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Seis abogados dedicados exclusivamente al Derecho Público.",
+    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Seis abogados especializados en Derecho Público.",
   url: "https://www.corporaciongc.com/sobre-nosotros",
   isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
   about: { "@id": "https://www.corporaciongc.com/#organization" },
@@ -90,7 +90,7 @@ const FICHA: [string, string][] = [
   ["Fundación", "2015"],
   ["Sede", "Barrio Dent, San José, Costa Rica"],
   ["Dirección", "Dr. Óscar Eduardo González Camacho"],
-  ["Práctica", "Exclusivamente Derecho Público"],
+  ["Práctica", "Derecho Público; otras materias de forma complementaria"],
   ["Equipo", "Seis abogados, miembros activos del Colegio de Abogados y Abogadas de Costa Rica"],
 ];
 
@@ -232,7 +232,7 @@ export default function SobreNosotros() {
             <div aria-hidden="true" className="mx-auto mt-12 h-px max-w-[880px] bg-cream/15 md:mt-14" />
 
             <p className="type-headline mx-auto mt-12 max-w-[20ch] text-center text-cream md:mt-16">
-              Un bufete dedicado exclusivamente al Derecho P&uacute;blico
+              Un bufete dedicado al Derecho P&uacute;blico
             </p>
             <p className="type-lead mx-auto mt-6 max-w-[58ch] text-center text-cream/75">
               Fundado en 2015 y dirigido por el Dr. &Oacute;scar Eduardo Gonz&aacute;lez
@@ -282,7 +282,7 @@ export default function SobreNosotros() {
               <SectionTitle>¿Qué es Corporación GC?</SectionTitle>
               <p className="type-lead max-w-[64ch] text-cream/80">
                 Corporación GC es un bufete de abogados costarricense fundado en 2015,
-                dedicado exclusivamente al Derecho Público. Con sede en Barrio Dent,
+                especializado en Derecho Público. Con sede en Barrio Dent,
                 San José, Costa Rica, la firma fue fundada y es dirigida por el
                 Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera
                 de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código
@@ -349,8 +349,8 @@ export default function SobreNosotros() {
             <section id="especialidad" className="scroll-mt-32">
               <SectionTitle>¿En qué se especializa Corporación GC?</SectionTitle>
               <p className="type-lead max-w-[64ch] text-cream/80">
-                Corporación GC se especializa exclusivamente en Derecho Público
-                costarricense. Sus áreas principales de práctica son:
+                Corporación GC se especializa en Derecho Público costarricense, que
+                concentra la práctica de la firma. Sus áreas principales son:
               </p>
               <dl className="mt-10 divide-y divide-cream/10 border-y border-cream/10">
                 {AREAS.map((area) => (
@@ -369,6 +369,15 @@ export default function SobreNosotros() {
                   </div>
                 ))}
               </dl>
+              <p className="mt-8 max-w-[64ch] text-base leading-relaxed text-cream/75">
+                El mismo equipo atiende también, de forma complementaria, asuntos de
+                derecho civil, familia, laboral privado, notariado y registro,
+                financiamiento político y comercio internacional, reunidos en{" "}
+                <Link href="/areas/otras-materias" className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30">
+                  otras materias
+                </Link>
+                .
+              </p>
               <Link
                 href="/areas"
                 className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"

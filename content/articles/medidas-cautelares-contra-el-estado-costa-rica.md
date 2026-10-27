@@ -113,4 +113,4 @@ Corporación GC asesora y representa a personas y empresas en la [solicitud de m
 
 ---
 
-*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014 y coordinó la comisión redactora del Código Procesal Contencioso Administrativo, incluido el régimen de tutela cautelar que rige esta jurisdicción.*
+*Corporación GC es un bufete de abogados costarricense especializado en Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014 y coordinó la comisión redactora del Código Procesal Contencioso Administrativo, incluido el régimen de tutela cautelar que rige esta jurisdicción.*

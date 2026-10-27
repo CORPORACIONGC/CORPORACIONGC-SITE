@@ -239,4 +239,4 @@ Corporación GC representa a personas y empresas en reclamos de responsabilidad 
 
 ---
 
-*Corporación GC es un bufete costarricense dedicado exclusivamente al Derecho Público. El Dr. Óscar Eduardo González Camacho fue magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014, período en el que redactó varias de las sentencias citadas en esta guía, y coordinó la comisión redactora del Código Procesal Contencioso Administrativo.*
+*Corporación GC es un bufete costarricense especializado en Derecho Público. El Dr. Óscar Eduardo González Camacho fue magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014, período en el que redactó varias de las sentencias citadas en esta guía, y coordinó la comisión redactora del Código Procesal Contencioso Administrativo.*

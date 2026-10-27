@@ -10,10 +10,10 @@ export const contentType = OG_CONTENT_TYPE;
 export default async function Image() {
   return renderDefaultOg({
     eyebrow: "La Firma · Desde 2015",
-    title: "Seis abogados, una sola {{em}}: Derecho Público.",
-    emphasis: "disciplina",
+    title: "Seis abogados, una {{em}}: Derecho Público.",
+    emphasis: "especialidad",
     body:
-      "Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Equipo dedicado exclusivamente al Derecho Público.",
+      "Fundado por el Dr. Óscar González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Equipo especializado en Derecho Público.",
     url: "corporaciongc.com/sobre-nosotros",
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL ?? "https://corporaciongc.com",
   });

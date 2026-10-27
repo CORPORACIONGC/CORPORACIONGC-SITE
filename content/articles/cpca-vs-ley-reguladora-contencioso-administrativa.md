@@ -149,4 +149,4 @@ Si una institución pública le causó un perjuicio, los plazos corren y el rég
 
 ---
 
-*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia durante doce años (2002–2014) y participó en la redacción del Código Procesal Contencioso Administrativo. El equipo litiga regularmente ante el Tribunal Contencioso Administrativo, la Sala Primera y la Sala Constitucional.*
+*Corporación GC es un bufete de abogados costarricense especializado en Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia durante doce años (2002–2014) y participó en la redacción del Código Procesal Contencioso Administrativo. El equipo litiga regularmente ante el Tribunal Contencioso Administrativo, la Sala Primera y la Sala Constitucional.*

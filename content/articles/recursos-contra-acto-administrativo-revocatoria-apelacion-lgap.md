@@ -252,7 +252,7 @@ Motivos de legalidad o de oportunidad (artículo 342). En legalidad, cualquier v
 
 ---
 
-*Corporación GC es un bufete de abogados costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia durante doce años (2002–2014) e integró la comisión redactora del Código Procesal Contencioso-Administrativo. El equipo atiende procedimientos administrativos y recursos ante toda la Administración Pública, y litiga regularmente ante el Tribunal Contencioso Administrativo y la Sala Primera.*
+*Corporación GC es un bufete de abogados costarricense especializado en Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia durante doce años (2002–2014) e integró la comisión redactora del Código Procesal Contencioso-Administrativo. El equipo atiende procedimientos administrativos y recursos ante toda la Administración Pública, y litiga regularmente ante el Tribunal Contencioso Administrativo y la Sala Primera.*
 
 ---
 

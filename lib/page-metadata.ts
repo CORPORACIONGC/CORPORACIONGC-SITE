@@ -55,13 +55,13 @@ export const sobreNosotrosMetadata: Metadata = {
   openGraph: og({
     title: "Quiénes somos · Corporación GC, Costa Rica",
     description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
+      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
     url: "/sobre-nosotros",
   }),
   twitter: tw({
     title: "Sobre Nosotros · Corporación GC",
     description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses dedicados exclusivamente al Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
+      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
   }),
 };
 

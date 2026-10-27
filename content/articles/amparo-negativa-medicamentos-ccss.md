@@ -184,4 +184,4 @@ La sentencia ordena la entrega del medicamento en un plazo perentorio (artículo
 
 ---
 
-*Corporación GC es un bufete costarricense dedicado exclusivamente al Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y participó en la redacción del Código Procesal Contencioso Administrativo. El equipo litiga regularmente ante la Sala Constitucional, la Sala Primera y el Tribunal Contencioso Administrativo.*
+*Corporación GC es un bufete costarricense especializado en Derecho Público. Su director, el Dr. Óscar Eduardo González Camacho, fue Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y participó en la redacción del Código Procesal Contencioso Administrativo. El equipo litiga regularmente ante la Sala Constitucional, la Sala Primera y el Tribunal Contencioso Administrativo.*
