@@ -104,6 +104,9 @@ const UI = {
     aboutOne: "Sobre el autor",
     aboutMany: "Sobre los autores",
     updated: "Revisado el",
+    alcance: (fecha: string) =>
+      `Contenido informativo, revisado al ${fecha}. Su aplicación a un caso concreto depende del expediente.`,
+    politica: "Política editorial",
     profile: "Ver perfil completo",
     whatsapp: (topic: string) =>
       `Hola, leí su artículo "${topic}" en el sitio y quisiera una consulta.`,
@@ -122,6 +125,9 @@ const UI = {
     aboutOne: "About the author",
     aboutMany: "About the authors",
     updated: "Reviewed on",
+    alcance: (fecha: string) =>
+      `Informational content, reviewed as of ${fecha}. How it applies to a specific case depends on the case file.`,
+    politica: "Editorial policy (in Spanish)",
     profile: "View full profile",
     whatsapp: (topic: string) =>
       `Hello, I read your article "${topic}" on your website and would like a consultation.`,
@@ -313,6 +319,11 @@ export default async function ArticlePage({
      Markdown (type "article"), por lo que el bloque aparece automáticamente
      al agregarla; no hay que recordar añadirlo. */
   const showCommercialCta = !isPdf;
+  /* Línea de alcance y enlace a la política editorial: en las guías y
+     análisis propios; las tesis, los libros y lo publicado en revistas
+     conservan su forma original. */
+  const muestraAlcance =
+    !isPdf && !["tesis", "libro", "ponencia"].includes(article.publicationType ?? "") && !article.sourceReference;
 
   /* Find matching team members for author bio (supports multiple coauthors) */
   const authorMembers = article.author
@@ -654,6 +665,16 @@ export default async function ArticlePage({
                   }}
                 />
               </div>
+            )}
+
+            {muestraAlcance && (
+              <p className="mt-12 border-t border-cream/[0.06] pt-5 text-xs leading-relaxed text-cream/50">
+                {t.alcance(formatDate(article.updated ?? article.date, lang))}{" "}
+                <Link href="/politica-editorial" className="underline decoration-cream/25 underline-offset-4 hover:text-emphasis">
+                  {t.politica}
+                </Link>
+                .
+              </p>
             )}
 
             {/* CTA de WhatsApp — solo en guías/artículos comerciales (ver

@@ -6,7 +6,7 @@ excerpt: "Hacienda abrió procedimientos de despido contra 36 funcionarios en te
 tags: ["Despido", "Empleo público", "Teletrabajo", "Ley Marco de Empleo Público", "Procedimiento disciplinario", "Tribunal de Servicio Civil", "Ministerio de Hacienda", "Debido proceso"]
 areas: ["empleo-publico"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"

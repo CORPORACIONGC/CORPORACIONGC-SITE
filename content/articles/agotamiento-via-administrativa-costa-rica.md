@@ -6,7 +6,7 @@ tags: ["Agotamiento de la vía administrativa", "CPCA", "Silencio administrativo
 sentencias: ["caducidad-de-la-accion"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"

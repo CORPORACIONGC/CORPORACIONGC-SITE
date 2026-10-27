@@ -6,7 +6,7 @@ tags: ["Seguros", "Uber", "Plataformas de transporte", "Sala Primera", "Contrato
 sentencias: ["responsabilidad-bancaria-por-fraude-electronico"]
 areas: ["casacion-sala-primera"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"

@@ -6,7 +6,7 @@ excerpt: "El 9 de setiembre la Sala Constitucional declaró inconstitucional la 
 tags: ["APP", "Alianzas público-privadas", "Concesión de obra pública", "Sala Constitucional", "Expediente 24.009", "Ley 7762", "ANAPP", "Infraestructura", "Consulta de constitucionalidad"]
 areas: ["alianzas-publico-privadas-infraestructura", "acciones-de-inconstitucionalidad"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"

@@ -5,7 +5,7 @@ excerpt: "El Decreto 45782, publicado el 26 de mayo de 2026, reformó 31 artícu
 tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Reforma 2026", "Decreto 45782", "PYME", "SICOP"]
 areas: ["contratacion-publica"]
 type: "article"
-author: "Esteban Pérez Herrera"
+author: "Lic. Esteban Pérez Herrera"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"

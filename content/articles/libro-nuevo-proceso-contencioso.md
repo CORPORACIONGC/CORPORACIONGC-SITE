@@ -6,7 +6,7 @@ tags: ["Contencioso Administrativo", "CPCA", "Derecho Procesal", "Reforma Jurisd
 areas: ["litigio-contencioso-administrativo"]
 type: "pdf"
 pdfFile: "libro-nuevo-proceso-contencioso.pdf"
-author: "Óscar Eduardo González Camacho y otros"
+author: "Dr. Óscar Eduardo González Camacho y otros"
 institution: "Escuela Judicial · Poder Judicial de Costa Rica / Editorial Jurídica Continental"
 publicationType: "libro"
 seoTitle: "El Nuevo Proceso Contencioso Administrativo · CR"

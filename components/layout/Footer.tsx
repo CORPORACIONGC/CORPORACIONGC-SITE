@@ -164,12 +164,20 @@ export function Footer() {
             © {new Date().getFullYear()} Corporación GC. Todos los
             derechos reservados.
           </div>
-          <Link
-            href="/politica-de-privacidad"
-            className="text-xs text-cream/40 hover:text-cream transition-colors duration-300"
-          >
-            Política de Privacidad
-          </Link>
+          <div className="flex items-center gap-5">
+            <Link
+              href="/politica-editorial"
+              className="text-xs text-cream/40 hover:text-cream transition-colors duration-300"
+            >
+              Política editorial
+            </Link>
+            <Link
+              href="/politica-de-privacidad"
+              className="text-xs text-cream/40 hover:text-cream transition-colors duration-300"
+            >
+              Política de Privacidad
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

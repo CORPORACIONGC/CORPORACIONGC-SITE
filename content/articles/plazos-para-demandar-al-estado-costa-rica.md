@@ -7,7 +7,7 @@ tags: ["Plazos", "Caducidad", "Prescripción", "Demanda contra el Estado", "CPCA
 sentencias: ["caducidad-de-la-accion", "responsabilidad-del-estado-juez"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"

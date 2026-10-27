@@ -6,7 +6,7 @@ tags: ["Nulidad absoluta", "Nulidad relativa", "Acto administrativo", "LGAP", "A
 sentencias: ["caducidad-de-la-accion"]
 areas: ["derecho-administrativo"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"

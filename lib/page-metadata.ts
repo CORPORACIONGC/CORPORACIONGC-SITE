@@ -121,6 +121,21 @@ export const abogadosMetadata: Metadata = {
   twitter: tw({ title: "Abogados de Corporación GC", description: ABOGADOS_DESCRIPCION }),
 };
 
+/* Política editorial (/politica-editorial). */
+export const editorialMetadata: Metadata = {
+  title: { absolute: "Política editorial de las guías · Corporación GC" },
+  description:
+    "Cómo escribe y revisa Corporación GC sus guías de Derecho Público: autoría, revisión del Dr. González Camacho, fuentes oficiales, fechas y corrección de errores.",
+  alternates: { canonical: "/politica-editorial" },
+  openGraph: og({
+    title: "Política editorial · Corporación GC",
+    description:
+      "Cómo escribe y revisa Corporación GC sus guías de Derecho Público: autoría, revisión, fuentes oficiales, fechas y corrección de errores.",
+    url: "/politica-editorial",
+  }),
+  twitter: tw({ title: "Política editorial · Corporación GC", description: "Autoría, revisión, fuentes y corrección de errores de las guías de Corporación GC." }),
+};
+
 export const jurisprudenciaMetadata: Metadata = {
   title: { absolute: "Sentencias del Dr. Óscar González Camacho · Sala Primera" },
   description:
