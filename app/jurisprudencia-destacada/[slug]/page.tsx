@@ -98,11 +98,13 @@ export default async function SentenciaDestacadaPage({
     "@id": `${FIRM.url}/jurisprudencia-destacada/${slug}#article`,
     headline: `${sentencia.titulo} — ${sentencia.numero}`,
     description: sentencia.metaDescription,
+    /* El comentario es de la firma; el magistrado redactó la sentencia, y
+       así figura en isBasedOn. */
     author: {
-      "@type": "Person",
-      "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
-      name: "Dr. Óscar Eduardo González Camacho",
-      url: `${FIRM.url}/abogados/oscar-gonzalez`,
+      "@type": "Organization",
+      "@id": `${FIRM.url}/#organization`,
+      name: "Corporación GC",
+      url: FIRM.url,
     },
     publisher: {
       "@id": `${FIRM.url}/#organization`,
@@ -128,6 +130,16 @@ export default async function SentenciaDestacadaPage({
       name: `${sentencia.numero}, ${sentencia.tribunal}`,
       dateCreated: sentencia.fechaISO,
       url: nexusUrl(sentencia.nexusId),
+      ...(sentencia.redactor.includes("González Camacho")
+        ? {
+            author: {
+              "@type": "Person",
+              "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
+              name: "Dr. Óscar Eduardo González Camacho",
+              url: `${FIRM.url}/abogados/oscar-gonzalez`,
+            },
+          }
+        : {}),
     },
     citation: [...(sentencia.precedentes ?? []), ...(sentencia.citadaPor ?? [])].flatMap((p) =>
       p.nexusId ? [nexusUrl(p.nexusId)] : [],
@@ -199,6 +211,13 @@ export default async function SentenciaDestacadaPage({
                 <p className="type-label text-burgundy-light dark:text-hilo-texto">
                   {[sentencia.estado && ETIQUETA_ESTADO[sentencia.estado], sentencia.area].filter(Boolean).join(" · ")}
                 </p>
+                {sentencia.estado && sentencia.estadoVerificado && (
+                  <p className="mt-2 text-xs text-cream/55">
+                    Estado del criterio verificado el{" "}
+                    <time dateTime={sentencia.estadoVerificado}>{formatDate(sentencia.estadoVerificado)}</time>{" "}
+                    contra las resoluciones que la citan.
+                  </p>
+                )}
                 <h1 className="type-headline mt-5 max-w-[18ch] text-cream">{sentencia.titulo}</h1>
                 {sentencia.subtitulo && (
                   <p className="type-lead mt-6 max-w-[56ch] text-cream/75">{sentencia.subtitulo}</p>
@@ -434,7 +453,7 @@ export default async function SentenciaDestacadaPage({
                   <ArrowRight size={14} weight="bold" aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 </Link>
                 <p className="mt-6 text-xs text-cream/55">
-                  Comentario publicado el <time dateTime={sentencia.publicado}>{formatDate(sentencia.publicado)}</time>
+                  Comentario de Corporación GC, publicado el <time dateTime={sentencia.publicado}>{formatDate(sentencia.publicado)}</time>
                   {sentencia.actualizado > sentencia.publicado && (
                     <>
                       {" "}· revisado el <time dateTime={sentencia.actualizado}>{formatDate(sentencia.actualizado)}</time>

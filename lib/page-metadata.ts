@@ -284,7 +284,7 @@ export function buildJurisprudenciaMetadata(
       url: `/jurisprudencia-destacada/${slug}`,
       publishedTime: sentencia.publicado,
       modifiedTime: sentencia.actualizado,
-      authors: [sentencia.redactor],
+      authors: ["Corporación GC"],
       section: "Jurisprudencia · Derecho Público",
       tags: [
         sentencia.materia,

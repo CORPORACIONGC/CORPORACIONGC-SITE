@@ -193,6 +193,9 @@ export function getArticlesByAuthor(authorSubstring: string): ArticleMeta[] {
   );
 }
 
+/* En Costa Rica se escribe «setiembre», como en los textos del sitio. */
+const setiembre = (s: string) => s.replace("septiembre", "setiembre");
+
 export function formatDate(dateStr: string, lang: "es" | "en" = "es"): string {
   const locale = lang === "en" ? "en-US" : "es-CR";
   try {
@@ -207,20 +210,20 @@ export function formatDate(dateStr: string, lang: "es" | "en" = "es"): string {
     if (isoDayMatch) {
       const [, year, month, day] = isoDayMatch;
       const d = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
-      return d.toLocaleDateString(locale, {
+      return setiembre(d.toLocaleDateString(locale, {
         year: "numeric",
         month: "long",
         day: "numeric",
         timeZone: "UTC",
-      });
+      }));
     }
 
     const d = new Date(dateStr);
-    return d.toLocaleDateString(locale, {
+    return setiembre(d.toLocaleDateString(locale, {
       year: "numeric",
       month: "long",
       day: "numeric",
-    });
+    }));
   } catch {
     return dateStr;
   }

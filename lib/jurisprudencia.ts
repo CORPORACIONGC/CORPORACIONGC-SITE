@@ -175,6 +175,10 @@ export type SentenciaDestacada = {
    *  norma y el año que lo cambiaron. La etiqueta sale de
    *  `ETIQUETA_ESTADO`, nunca se escribe a mano. */
   estado?: EstadoCriterio;
+  /** Fecha en que se comprobó el estado contra los fallos posteriores
+   *  (AAAA-MM-DD): el corte de la lista de resoluciones que la citan. Se
+   *  muestra junto a la etiqueta, porque «vigente» vale a una fecha. */
+  estadoVerificado?: string;
 
   /** Headline editorial */
   titulo: string;
@@ -306,6 +310,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     materia: "Indexación de obligaciones dinerarias",
 
     estado: "ley",
+
+    estadoVerificado: "2026-09-19",
 
     titulo: "Fundamento constitucional de la indexación",
     subtitulo:
@@ -788,6 +794,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Administrativo",
     materia: "Responsabilidad patrimonial de la Administración",
     estado: "vigente",
+    estadoVerificado: "2026-09-19",
     titulo: "Responsabilidad del Estado por inactividad material",
     subtitulo: "La Sala Primera ordenó el régimen de responsabilidad objetiva de la Administración, definió el funcionamiento anormal y reconoció que la inactividad del Estado también genera el deber de indemnizar.",
     pullQuote: {
@@ -1436,6 +1443,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Administrativo",
     materia: "Caducidad del procedimiento administrativo",
     estado: "matizado",
+    estadoVerificado: "2026-09-19",
     titulo: "Caducidad en los procedimientos iniciados de oficio",
     subtitulo: "La Sala Primera extendió la caducidad a los procedimientos que la Administración inicia de oficio, incluidos los sancionatorios, y fijó cómo opera: de pleno derecho, sin extinguir la competencia y como garantía de seguridad jurídica.",
     pullQuote: {
@@ -2009,6 +2017,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho del Consumidor",
     materia: "Responsabilidad bancaria por fraude electrónico",
     estado: "ley",
+    estadoVerificado: "2026-09-19",
     titulo: "Responsabilidad objetiva en la banca por internet",
     subtitulo: "La Sala Primera aplicó a la banca por internet la responsabilidad objetiva de la Ley del Consumidor: el banco responde por la seguridad del servicio completo, incluido el mecanismo que identifica al cliente, y solo se libera si prueba una causa eximente.",
     pullQuote: {
@@ -2778,6 +2787,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Administrativo",
     materia: "Caducidad de la acción y actos de efectos continuados",
     estado: "vigente",
+    estadoVerificado: "2026-09-19",
     titulo: "Delimitación del acto de efectos continuados",
     subtitulo: "La Sala Primera definió cuándo un acto administrativo tiene efectos continuados: las consecuencias que se derivan de una situación ya definida dejan el plazo para demandar donde estaba, y la caducidad la examina el juez de oficio.",
     pullQuote: {
@@ -3348,6 +3358,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     area: "Derecho Administrativo",
     materia: "Responsabilidad del Estado por la función jurisdiccional",
     estado: "vigente",
+    estadoVerificado: "2026-09-19",
     titulo: "Indemnización por prisión preventiva del absuelto",
     subtitulo: "La Sala Primera sostuvo que la responsabilidad del Estado por su función jurisdiccional nace de la Constitución y no espera a que una ley la desarrolle, y fijó cuándo la prisión preventiva de quien después resulta inocente debe indemnizarse.",
     pullQuote: {
@@ -4006,6 +4017,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     materia: "Personalidad jurídica instrumental",
 
     estado: "variado",
+
+    estadoVerificado: "2026-09-20",
 
     titulo: "Legitimación pasiva del órgano con personalidad instrumental",
     subtitulo: "La Sala Primera fijó que el órgano con personalidad jurídica instrumental es el centro último y único de imputación de sus actos: cuando el daño nace de su competencia exclusiva, la condena no alcanza al Estado. En el mismo fallo delimitó las potestades oficiosas del juez contencioso y la naturaleza del plazo para dictar sentencia.",
