@@ -172,17 +172,28 @@ export function CalendarioNotificacion() {
           ],
         },
         {
-          titulo: "Transmisión un jueves: el ejemplo de la Corte Plena",
-          meses: [[2026, 10]],
-          marcas: { "2026-10-22": "envio", "2026-10-23": "notificado", "2026-10-24": "inhabil", "2026-10-25": "inhabil", "2026-10-26": "inicio" },
+          titulo: "Transmisión un jueves: el ejemplo de la Corte Plena, aplicado en el voto 191-F-TC-2022",
+          meses: [[2016, 10]],
+          marcas: { "2016-10-06": "envio", "2016-10-07": "notificado", "2016-10-08": "inhabil", "2016-10-09": "inhabil", "2016-10-10": "inicio" },
           pasos: [
-            "Jueves 22 de octubre de 2026: se transmite la notificación, a cualquier hora, incluso de noche.",
-            "Viernes 23: la parte se tiene por notificada.",
-            "Lunes 26: empieza a correr el plazo, el día hábil siguiente a la notificación.",
+            "Jueves 6 de octubre de 2016: el acto se transmite por fax, a cualquier hora, incluso de noche.",
+            "Viernes 7: la persona se tiene por notificada.",
+            "Lunes 10: empieza a correr el año, que vence el martes 10 de octubre de 2017.",
+          ],
+        },
+        {
+          titulo: "Con un feriado en medio: el caso del voto 90-F-TC-2021",
+          meses: [[2017, 4], [2017, 5]],
+          marcas: { "2017-04-27": "envio", "2017-04-28": "notificado", "2017-04-29": "inhabil", "2017-04-30": "inhabil", "2017-05-01": "inhabil", "2017-05-02": "inicio" },
+          pasos: [
+            "Jueves 27 de abril de 2017: el acto se transmite por correo electrónico.",
+            "Viernes 28: la persona se tiene por notificada.",
+            "Sábado 29, domingo 30 y lunes 1 de mayo, feriado: días inhábiles.",
+            "Martes 2 de mayo: empieza a correr el año, que vence el 2 de mayo de 2018.",
           ],
         },
       ]}
-      fuente="Ley de Notificaciones Judiciales, artículo 38; Corte Plena, sesión 6-11, artículo XXV (Circular 042-2011); Tribunal de Casación Contencioso-Administrativo, sentencia 70-F-TC-2022. El segundo escenario usa fechas ilustrativas."
+      fuente="Ley de Notificaciones Judiciales, artículo 38; Corte Plena, sesión 6-11, artículo XXV (Circular 042-2011); Tribunal de Casación Contencioso-Administrativo, sentencias 70-F-TC-2022, 191-F-TC-2022 y 90-F-TC-2021."
     />
   );
 }

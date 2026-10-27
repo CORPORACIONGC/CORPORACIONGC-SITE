@@ -14,14 +14,14 @@ type Fila = { que: string; plazo: string; tipo: string; desde: string; norma: st
 const FILAS: Fila[] = [
   { que: "Impugnar un acto administrativo", plazo: "Un año", tipo: "Caducidad", desde: "Desde el día siguiente a la notificación, o a la única o última publicación.", norma: "CPCA, art. 39.1.a-b" },
   { que: "Impugnar una actuación material", plazo: "Un año", tipo: "Caducidad", desde: "Desde el día siguiente al cese de sus efectos.", norma: "CPCA, art. 39.1.c" },
-  { que: "Impugnar un acto que se recurrió en sede administrativa", plazo: "Un año", tipo: "Caducidad", desde: "Desde la notificación de la resolución expresa del recurso.", norma: "CPCA, arts. 31.7 y 39" },
+  { que: "Impugnar un acto que se recurrió en sede administrativa", plazo: "Un año", tipo: "Caducidad", desde: "Desde el día siguiente a la notificación de la resolución expresa del recurso.", norma: "CPCA, arts. 31.7 y 39" },
   { que: "Impugnar un acto absolutamente nulo de efectos continuados", plazo: "Mientras subsistan sus efectos", tipo: "Caducidad", desde: "El año corre desde que cesan; la anulación vale solo hacia el futuro.", norma: "CPCA, art. 40; LGAP, art. 175" },
   { que: "Reclamar daños y perjuicios a la Administración", plazo: "Cuatro años", tipo: "Prescripción", desde: "Desde el hecho que motiva la responsabilidad, conocido por la víctima; si el daño es a una persona menor de edad, desde su mayoría de edad.", norma: "CPCA, art. 41; LGAP, art. 198" },
   { que: "Reclamar extremos de un contrato con la Administración", plazo: "Cinco años", tipo: "Prescripción", desde: "Desde el acaecimiento del hecho; diez años por vicios ocultos de una obra pública, desde su entrega definitiva.", norma: "Ley General de Contratación Pública, art. 107" },
-  { que: "Discutir un tributo", plazo: "El de prescripción del tributo", tipo: "Prescripción", desde: "Cuatro años para que la Administración determine y cobre (diez en supuestos agravados); cuatro para pedir la devolución de lo pagado.", norma: "CPCA, art. 41.2; CNPT, arts. 43 y 51" },
+  { que: "Discutir un tributo", plazo: "El de prescripción del tributo", tipo: "Prescripción", desde: "Cuatro años para que la Administración determine y cobre (diez en supuestos agravados, solo a su favor); cuatro para que el contribuyente discuta la determinación o pida la devolución.", norma: "CPCA, art. 41.2; CNPT, arts. 43 y 51" },
   { que: "Reclamar derechos laborales al Estado", plazo: "Un año", tipo: "Prescripción", desde: "Desde la extinción de la relación de servicio; no corre mientras se trabaje para el mismo patrono.", norma: "Código de Trabajo, art. 413" },
-  { que: "Presentar un recurso de amparo", plazo: "Mientras subsista la violación y dos meses más", tipo: "Plazo de interposición", desde: "Dos meses desde el cese de sus efectos; si el derecho es patrimonial o consentible, dos meses desde la noticia fehaciente.", norma: "Ley de la Jurisdicción Constitucional, art. 35" },
-  { que: "Demanda de lesividad de la Administración", plazo: "Un año", tipo: "Caducidad", desde: "Declaratoria de lesividad dentro del año del acto (o mientras perduren sus efectos si la nulidad es absoluta); demanda dentro del año siguiente a la firmeza de esa declaratoria.", norma: "CPCA, arts. 34 y 39.1.e" },
+  { que: "Presentar un recurso de amparo", plazo: "Mientras subsista la violación y dos meses más", tipo: "Plazo de interposición", desde: "Dos meses desde el cese total de sus efectos directos; si el derecho es patrimonial o consentible, dos meses desde la noticia fehaciente y la posibilidad legal de recurrir.", norma: "Ley de la Jurisdicción Constitucional, art. 35" },
+  { que: "Demanda de lesividad de la Administración", plazo: "Un año", tipo: "Caducidad", desde: "Declaratoria de lesividad dentro del año siguiente al dictado del acto (o mientras perduren sus efectos si la nulidad es absoluta; sin plazo si se tutelan bienes de dominio público); demanda dentro del año siguiente a la firmeza de esa declaratoria.", norma: "CPCA, arts. 34 y 39.1.e" },
 ];
 
 export function TablaPlazos() {
@@ -120,7 +120,7 @@ export function CaducidadPrescripcion() {
         </div>
       </div>
       <p className="gc-fig-source">
-        <span>Fuente:</span> Tribunal de Casación Contencioso-Administrativo, sentencia 249-F-TC-2021; Sala Primera,
+        <span>Fuente:</span> Tribunal de Casación Contencioso-Administrativo, resolución 249-A-TC-2021; Sala Primera,
         votos 1426-F-S1-2012, 1261-F-S1-2011 y 2077-F-S1-2020.
       </p>
     </figure>
@@ -152,21 +152,24 @@ const JURISPRUDENCIA: Criterio[] = [
   { numero: "Voto 1261-F-S1-2011", organo: S1, fecha: "27-09-2011", tema: "Daño continuado", criterio: "En el acto lesivo continuado, la prescripción corre desde su cese; la caducidad alcanza solo a la nulidad.", href: NEXUS("sen-1-0004-766718") },
   { numero: "Voto 1426-F-S1-2012", organo: S1, fecha: "23-10-2012", tema: "Efectos continuados", criterio: "Define el acto de efectos continuados; la caducidad se examina de oficio.", href: NEXUS("sen-1-0004-767786"), gc: true },
   { numero: "Voto 8-F-S1-2013", organo: S1, fecha: "17-01-2013", tema: "Inicio del plazo", criterio: "El inicio del art. 198 exige el hecho lesivo y su conocimiento; la sentencia penal firme puede fijarlo.", href: NEXUS("sen-1-0004-767649"), gc: true },
-  { numero: "Voto 972-F-S1-2014", organo: S1, fecha: "24-07-2014", tema: "Materia tributaria", criterio: "La discusión tributaria se rige por la prescripción del CNPT y no por el año del art. 39.", href: NEXUS("sen-1-0004-768813") },
   { numero: "Voto 510-F-S1-2014", organo: S1, fecha: "10-04-2014", tema: "Daño continuado", criterio: "El daño continuado depende de la acción que lo produce, no de la permanencia de la lesión.", href: NEXUS("sen-1-0004-768601") },
+  { numero: "Voto 972-F-S1-2014", organo: S1, fecha: "24-07-2014", tema: "Materia tributaria", criterio: "La discusión tributaria se rige por la prescripción del CNPT y no por el año del art. 39.", href: NEXUS("sen-1-0004-768813") },
   { numero: "Voto 27-F-S1-2018", organo: S1, fecha: "18-01-2018", tema: "Reglamentos", criterio: "Un reglamento se impugna dentro del año posterior a su publicación; después, solo sus actos de aplicación.", href: NEXUS("sen-1-0004-952466") },
   { numero: "Sentencia 105-F-TC-2020", organo: TC, fecha: "09-07-2020", tema: "Actuaciones materiales", criterio: "Un proceso penal paralelo no suspende la caducidad; la ejecución de un acto instantáneo no lo vuelve continuado.", href: NEXUS("sen-1-1011-999186") },
   { numero: "Voto 2077-F-S1-2020", organo: S1, fecha: "23-07-2020", tema: "Caducidad de oficio", criterio: "La caducidad puede declararse de oficio; la prescripción es renunciable.", href: NEXUS("sen-1-0004-1016452") },
+  { numero: "Sentencia 90-F-TC-2021", organo: TC, fecha: "11-05-2021", tema: "Cómputo", criterio: "Notificado un viernes y feriado el lunes, el año corre desde el martes siguiente (art. 38 de la Ley 8687).", href: NEXUS("ext-1-1011-301928") },
   { numero: "Resolución 1778-A-S1-2021", organo: S1, fecha: "12-10-2021", tema: "Pretensión indemnizatoria", criterio: "La pretensión solo resarcitoria se rige por la prescripción (art. 41 CPCA y 198 LGAP), no por la caducidad.", href: NEXUS("sen-1-0004-1060850") },
-  { numero: "Sentencia 249-F-TC-2021", organo: TC, fecha: "16-12-2021", tema: "Cautelar y caducidad", criterio: "La cautelar anticipada no detiene el año del art. 39; la caducidad no admite interrupción ni suspensión.", href: NEXUS("sen-1-1011-1073421") },
+  { numero: "Resolución 249-A-TC-2021", organo: TC, fecha: "16-12-2021", tema: "Cautelar y caducidad", criterio: "Rechaza de plano el recurso y explica que la cautelar anticipada no detiene el año del art. 39 y que la caducidad no admite interrupción ni suspensión.", href: NEXUS("sen-1-1011-1073421") },
   { numero: "Sentencia 70-F-TC-2022", organo: TC, fecha: "22-03-2022", tema: "Cómputo", criterio: "El año arranca el día hábil siguiente a la notificación del acto.", href: NEXUS("sen-1-1011-1101973") },
-  { numero: "Voto 2022-002031", organo: "Sala Segunda", fecha: "27-07-2022", tema: "Materia laboral", criterio: "Los reclamos laborales contra el Estado prescriben en un año desde la extinción del contrato; no se aplica la caducidad del CPCA.", href: NEXUS("sen-1-0005-1105907") },
+  { numero: "Voto 2022-002031", organo: "Sala Segunda", fecha: "27-07-2022", tema: "Materia laboral", criterio: "Los reclamos laborales contra una institución pública prescriben en un año desde la extinción del contrato; la caducidad del CPCA no se aplica.", href: NEXUS("sen-1-0005-1105907") },
   { numero: "Sentencia 167-F-TC-2022", organo: TC, fecha: "12-08-2022", tema: "Cómputo", criterio: "El año corre de fecha a fecha y, si vence en día inhábil, se prorroga al siguiente hábil.", href: NEXUS("sen-1-1011-1141729") },
-  { numero: "Voto 2022-002827", organo: "Sala Segunda", fecha: "07-10-2022", tema: "Estado como patrono único", criterio: "Una interrupción de más de un mes entre nombramientos hace correr la prescripción.", href: NEXUS("sen-1-0005-1120711") },
+  { numero: "Sentencia 191-F-TC-2022", organo: TC, fecha: "08-09-2022", tema: "Cómputo", criterio: "Fax recibido un jueves: notificado el viernes, el año corre desde el lunes (art. 38 de la Ley 8687 y Circular 042-2011).", href: NEXUS("sen-1-1011-1141752") },
+  { numero: "Voto 2022-002827", organo: "Sala Segunda", fecha: "07-10-2022", tema: "Estado como patrono único", criterio: "Por mayoría: una interrupción de más de un mes entre nombramientos hace correr la prescripción.", href: NEXUS("sen-1-0005-1120711") },
+  { numero: "Voto 515-F-S1-2024", organo: S1, fecha: "17-05-2024", tema: "Cómputo", criterio: "Aplica el art. 38 de la Ley 8687 a la notificación electrónica de un acto administrativo.", href: NEXUS("sen-1-0004-1229516") },
   { numero: "Sentencia 181-F-TC-2024", organo: TC, fecha: "12-12-2024", tema: "Cómputo", criterio: "Los plazos por años se cuentan según el calendario, de fecha a fecha (art. 30.5 del CPC y art. 15 del Código Civil).", href: NEXUS("sen-1-1011-1271250") },
   { numero: "Voto 36-F-S1-2025", organo: S1, fecha: "16-01-2025", tema: "Contratos", criterio: "El cobro derivado de un contrato administrativo prescribe en cinco años.", href: NEXUS("sen-1-0004-1273368") },
-  { numero: "Voto 2026-003645", organo: "Sala Constitucional", fecha: "30-01-2026", tema: "Amparo", criterio: "Superados los dos meses del art. 35 LJC, el amparo es extemporáneo.", href: NEXUS("sen-1-0007-1369958") },
-  { numero: "Voto 1050-S1-2026", organo: S1, fecha: "22-07-2026", tema: "Honorarios", criterio: "Los honorarios profesionales prescriben en tres años; una demanda ante una vía incompetente no interrumpe.", href: NEXUS("sen-1-0004-1416782") },
+  { numero: "Voto 2026-003645", organo: "Sala Constitucional", fecha: "30-01-2026", tema: "Amparo", criterio: "Superados los dos meses del art. 35 LJC, la actuación se tiene por tácitamente consentida y el amparo se declara sin lugar.", href: NEXUS("sen-1-0007-1369958") },
+  { numero: "Voto 1050-S1-2026", organo: S1, fecha: "22-07-2026", tema: "Honorarios", criterio: "Por mayoría: los honorarios profesionales prescriben en tres años (art. 869.2 del Código Civil); una demanda ante una vía incompetente no interrumpe.", href: NEXUS("sen-1-0004-1416782") },
 ];
 
 const ANTECEDENTES: Fuente[] = [
