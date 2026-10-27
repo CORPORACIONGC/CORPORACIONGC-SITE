@@ -1,17 +1,16 @@
 ---
-title: "Reglamento a la Ley General de Contratación Pública (Decreto 43808-H): texto vigente"
+title: "Reglamento a la Ley General de Contratación Pública (Decreto 43808-H): texto vigente y comentado"
 date: "2026-06-05"
 updated: "2026-10-26"
 excerpt: "El texto completo y actualizado del Reglamento a la Ley 9986, con la reforma de mayo de 2026 y buscador por artículo o palabra. Incluye su historia, desde la consulta pública de 2022, y cómo han aplicado la Contraloría y los tribunales sus artículos más discutidos."
 tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Texto vigente", "Decreto 45782", "Contraloría", "SICOP"]
 areas: ["contratacion-publica"]
 type: "article"
-author: "Esteban Pérez Herrera"
-authorVisible: true
+author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Reglamento a la Ley General de Contratación Pública vigente"
-seoDescription: "Texto completo y actualizado del Reglamento a la Ley 9986, con la reforma de mayo de 2026, buscador por artículo o palabra y nota de cada reforma."
+seoTitle: "Reglamento a la Ley General de Contratación Pública, comentado"
+seoDescription: "Texto vigente del Reglamento a la Ley 9986, con la reforma de 2026 y buscador, su historia y cómo lo aplican la Contraloría y los tribunales."
 faq:
   - question: "¿Qué número tiene el Reglamento a la Ley General de Contratación Pública y desde cuándo rige?"
     answer: "Es el Decreto Ejecutivo 43808-H, dado el 22 de noviembre de 2022 y publicado en el Alcance 258 a La Gaceta 229 del 30 de noviembre de 2022. Su artículo 328 lo hace regir desde la entrada en vigencia de la Ley 9986, es decir, desde el 1.º de diciembre de 2022. Derogó el Reglamento a la Ley de Contratación Administrativa, Decreto 33411-H."
