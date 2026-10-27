@@ -1,163 +1,166 @@
 ---
-title: "Reglamento a la Ley General de Contratación Pública: texto vigente y la reforma de 2026"
+title: "Reglamento a la Ley General de Contratación Pública (Decreto 43808-H): texto vigente"
 date: "2026-06-05"
-excerpt: "El articulado vigente del Reglamento, con buscador, y los cinco cambios que la reforma de 2026 introdujo en precios, subsanación y subcontratación."
-tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Reforma 2026", "Decreto 45782", "PYME", "SICOP"]
+updated: "2026-10-26"
+excerpt: "El texto completo y actualizado del Reglamento a la Ley 9986, con la reforma de mayo de 2026 y buscador por artículo o palabra. Incluye su historia, desde la consulta pública de 2022, y cómo han aplicado la Contraloría y los tribunales sus artículos más discutidos."
+tags: ["Contratación Pública", "Reglamento", "Ley 9986", "Decreto 43808-H", "Texto vigente", "Decreto 45782", "Contraloría", "SICOP"]
 areas: ["contratacion-publica"]
 type: "article"
 author: "Esteban Pérez Herrera"
 authorVisible: true
 institution: "Corporación GC"
-publicationType: "articulo"
-seoTitle: "Reglamento a la Ley General de Contratación Pública (2026)"
-seoDescription: "Los 330 artículos del Reglamento a la Ley 9986, con buscador por número o palabra, y los cinco cambios de la reforma de 2026 para quien le vende al Estado."
+publicationType: "guia"
+seoTitle: "Reglamento a la Ley General de Contratación Pública vigente"
+seoDescription: "Texto completo y actualizado del Reglamento a la Ley 9986, con la reforma de mayo de 2026, buscador por artículo o palabra y nota de cada reforma."
 faq:
-  - question: "¿Qué es la subsanación de ofertas en SICOP?"
-    answer: "Es el mecanismo que permite corregir defectos de una oferta después de presentada en el sistema digital unificado (SICOP): certificaciones faltantes, declaraciones incompletas o documentos desactualizados. Con la reforma, la Administración puede excepcionalmente formular una segunda solicitud de subsanación, y la omisión del desglose del precio es subsanable si resulta verificable con los documentos de la oferta."
-  - question: "¿Cuánto puede subcontratar una empresa en un contrato público en Costa Rica?"
-    answer: "Hasta el cincuenta por ciento (50%) del monto total del contrato, sin que puedan subcontratarse las prestaciones esenciales que determinaron la selección del contratista. Tras la reforma, los contratos de aprovisionamiento (compras de bienes o servicios necesarios para ejecutar lo pactado) no cuentan como subcontratación."
-  - question: "¿Qué beneficios tiene ser PYME para contratar con el Estado en Costa Rica?"
-    answer: "Las PYMES registradas ante el MEIC reciben puntaje adicional en caso de empate (5 puntos en industria, 5 en servicios o agropecuaria, 2 en comercio), pueden beneficiarse del criterio de desarrollo regional de hasta un 10% y de reservas de mercado exclusivas. Desde la reforma, las cooperativas con características PYME acceden a los mismos beneficios."
-  - question: "¿Las empresas pueden seguir consultando a la Dirección de Contratación Pública sobre cómo aplicar el Reglamento?"
-    answer: "No. La reforma 2026 restringió esa vía. En adelante, solo la Administración Pública puede plantear consultas técnico-jurídicas a la Dirección de Contratación Pública del Ministerio de Hacienda. Las dudas del sector privado deberán canalizarse dentro de cada concurso o resolverse con apoyo de un abogado de derecho administrativo antes de comprometer la oferta."
+  - question: "¿Qué número tiene el Reglamento a la Ley General de Contratación Pública y desde cuándo rige?"
+    answer: "Es el Decreto Ejecutivo 43808-H, dado el 22 de noviembre de 2022 y publicado en el Alcance 258 a La Gaceta 229 del 30 de noviembre de 2022. Su artículo 328 lo hace regir desde la entrada en vigencia de la Ley 9986, es decir, desde el 1.º de diciembre de 2022. Derogó el Reglamento a la Ley de Contratación Administrativa, Decreto 33411-H."
+  - question: "¿Qué reformas ha tenido el Reglamento?"
+    answer: "Tres decretos lo han reformado: el 44745-H (Alcance 186 a La Gaceta 217 del 19 de noviembre de 2024), que cambió doce artículos y el Transitorio IV; el 45763-H-MIDEPLAN-MICITT, Reglamento de compra pública innovadora (Alcance 60 a La Gaceta 92 del 21 de mayo de 2026), que agregó el artículo 59 bis, reformó el 60 y derogó los artículos 61 a 71; y el 45782-H-MIDEPLAN-MICITT (Alcance 62 a La Gaceta 95 del 26 de mayo de 2026), que reformó 31 artículos y agregó el 59 ter. La Ley 10524 cambió además el nombre de la Dirección de Crédito Público en seis artículos."
+  - question: "¿La reforma de mayo de 2026 se aplica a una licitación que ya estaba en curso?"
+    answer: "No, según la Contraloría. La División de Contratación Pública ha resuelto que el texto reformado por el Decreto 45782 rige solo para los concursos cuya decisión inicial se dictó a partir del 26 de mayo de 2026; los iniciados antes se resuelven con el texto anterior hasta su conclusión (resoluciones R-DCP-SICOP-01319-2026 y R-DCP-SICOP-01535-2026)."
+  - question: "¿Dónde se consulta el texto oficial del Reglamento?"
+    answer: "La fuente oficial consolidada es el Sistema Costarricense de Información Normativa (SINALEVI), de la Procuraduría General de la República. Corporación GC publica en esta página el texto vigente completo, con buscador por número y por palabra y la nota de cada reforma en el artículo que la recibió."
+  - question: "¿Qué defectos de una oferta se pueden subsanar según el Reglamento?"
+    answer: "El artículo 134 permite subsanar los defectos que no otorguen ventaja indebida, mediante una prevención única y, excepcionalmente, una segunda cuando sea imprescindible para el análisis. El artículo 135 enumera, entre otros, los aspectos formales, las certificaciones sobre hechos que existían al ofertar, la documentación técnica o financiera complementaria y la omisión del desglose de la estructura de precios cuando es verificable con la oferta. Lo prevenido y no atendido a tiempo caduca."
 ---
 
-La reforma al Reglamento de Contratación Pública de Costa Rica ya es una realidad. El [Decreto Ejecutivo N.° 45782](https://www.imprentanacional.go.cr/pub/2026/05/26/ALCA62_26_05_2026.pdf), publicado en La Gaceta el **26 de mayo de 2026**, modifica **31 artículos** del Reglamento de la Ley General de Contratación Pública.
+El **Reglamento a la Ley General de Contratación Pública** es el Decreto Ejecutivo **43808-H**, dado el 22 de noviembre de 2022 y publicado en el [Alcance 258 a La Gaceta 229 del 30 de noviembre de 2022](https://www.imprentanacional.go.cr/pub/2022/11/30/ALCA258_30_11_2022.pdf). Rige desde el 1.º de diciembre de 2022, junto con la Ley 9986, y desarrolla todo el sistema de compras del Estado: los procedimientos, el pliego de condiciones, las ofertas, los recursos de objeción y apelación, la ejecución de los contratos y el sistema digital unificado (SICOP).
 
-Si su empresa participa en licitaciones públicas, hay **cinco cambios** que afectan directamente la forma en que prepara sus ofertas, defiende sus precios y estructura sus subcontratos. En este artículo se los explicamos sin tecnicismos.
+Abajo está su **texto vigente completo**, con las reformas de 2024 y de mayo de 2026 incorporadas y la nota de cada una en el artículo que la recibió. Se puede buscar por número —«135» lleva a los aspectos subsanables de una oferta— o por palabra. Después del articulado se cuenta cómo nació el Reglamento y qué han dicho la Contraloría General de la República y los tribunales sobre sus artículos más discutidos. Los cambios de la reforma de 2026, explicados para quien le vende al Estado, están en [la reforma de 2026 al Reglamento](/articulos/reforma-reglamento-contratacion-publica-decreto-45782).
 
-> Esta guía está respaldada por la práctica de Corporación GC en contratación administrativa, contencioso-administrativo y casación ante la Sala Primera. Si necesita asesoría puntual antes de presentar una oferta o impugnar una adjudicación, vea nuestra área de [contratación pública](/areas/contratacion-publica).
+<div id="articulado-vigente" />
 
----
+## Texto vigente del Reglamento
 
-## 1. El precio de su oferta: las reglas del juego ahora están en el pliego
-
-Hasta ahora, uno de los momentos más inciertos de cualquier licitación era el **análisis de razonabilidad del precio**: la Administración comparaba su oferta contra un precio de referencia generado por el sistema, sin obligación expresa de revelarlo en el pliego. Si su precio se salía de ciertos rangos, su oferta podía rechazarse sin que usted hubiera tenido oportunidad real de explicarse.
-
-La reforma cambia ese escenario en tres frentes:
-
-1. **Transparencia obligatoria.** El precio de referencia y las **bandas de tolerancia** (los valores máximos y mínimos dentro de los cuales un precio se considera aceptable) ahora deben estar expresamente consignados en el pliego de condiciones. Antes de cotizar, usted ya sabe contra qué lo van a comparar. Además, el banco de precios que alimenta esos cálculos se construirá con los precios efectivamente **adjudicados** en los últimos doce meses, no con simples precios ofertados, lo que da referencias más realistas.
-
-2. **Carga nueva sobre el oferente.** Si usted decide cotizar **por encima o por debajo** de las bandas conociéndolas, debe presentar la justificación **desde la propia oferta**. Ya no es válido esperar a que la Administración pregunte. Quien cotiza fuera de los rangos sin explicar por qué, parte con desventaja.
-
-3. **Una sola oportunidad para defenderse.** Cuando la Administración indaga un precio por considerarlo ruinoso (demasiado bajo para ser creíble) o excesivo, el oferente debe aportar en ese momento **toda la información y los documentos** que justifican su precio. Lo que no presente en esa única oportunidad, no podrá alegarlo después. La buena noticia: la Administración ya no puede exigirle el presupuesto detallado en esa indagatoria; pero si usted lo aporta voluntariamente, está obligada a considerarlo.
-
-> **Qué hacer en la práctica.** Documente su estructura de costos **antes** de ofertar, no después. Si su estrategia comercial implica precios agresivos, prepare desde ya el expediente que los respalda: contratos con proveedores, economías de escala demostrables, registros contables. En el nuevo esquema, el precio se defiende **una sola vez y por escrito**.
-
----
-
-## 2. Subsanación de ofertas: más oportunidades de salvarlas, pero plazos menos predecibles
-
-La subsanación es el mecanismo que permite corregir defectos de una oferta después de presentada: una certificación que faltó, una declaración incompleta o un documento desactualizado. En el régimen anterior, la Administración hacía una única prevención consolidada y lo que quedara fuera de ella ya no se podía corregir.
-
-La reforma introduce **dos cambios favorables** para los oferentes:
-
-- **Segunda solicitud de subsanación o aclaración.** Cuando resulte imprescindible para el adecuado análisis de las ofertas, la Administración podrá hacer una segunda prevención. Es una norma **excepcional**, no una regla, pero significa que más ofertas con defectos corregibles van a sobrevivir al análisis.
-
-- **Subsanación del desglose del precio.** La omisión del desglose de la estructura del precio (un motivo clásico de exclusión) ahora es expresamente subsanable, siempre que la información sea verificable a partir de los documentos presentados con la oferta y no le otorgue una ventaja indebida.
-
-La contracara: **la previsibilidad de los plazos**. Antes, el reglamento fijaba plazos máximos según el tipo de licitación; ahora el plazo para atender una prevención lo define la Administración en cada caso, según la naturaleza y complejidad de lo solicitado, y puede prorrogarse mediante acto motivado.
-
-> **Qué hacer en la práctica.** Monitoree el expediente electrónico **todos los días** en [SICOP](https://www.sicop.go.cr). Un plazo corto mal atendido sigue teniendo la misma consecuencia de siempre: la caducidad de su derecho a subsanar.
-
----
-
-## 3. Subcontratación: más flexibilidad para estructurar su oferta
-
-Si su empresa ejecuta contratos públicos apoyándose en subcontratistas, esta parte de la reforma le interesa especialmente. Hay **tres novedades de peso**:
-
-1. **Los contratos de aprovisionamiento quedan fuera del concepto de subcontratación.** Las compras de bienes o servicios que usted necesita para ejecutar lo pactado (insumos, materiales, servicios accesorios) ya no se cuentan como subcontratación. Esto libera espacio dentro del **límite legal del 50%** del monto del contrato que la ley permite subcontratar, y elimina discusiones frecuentes sobre si un proveedor de insumos debía contarse como subcontratista.
-
-2. **Reemplazo de subcontratista en cualquier momento.** El adjudicatario ahora puede sustituir a un subcontratista durante la ejecución, con el visto bueno de la Administración y previa verificación de que el sustituto cumple los mismos requisitos. Antes no existía regla expresa y el cambio de un subcontratista problemático podía convertirse en un limbo jurídico.
-
-3. **Sin exclusión automática por subcontratista compartido.** Cuando un mismo subcontratista aparece en varias ofertas sin que el pliego lo permitiera, la consecuencia ya no es la exclusión automática de todas las ofertas involucradas. En escenarios excepcionales, urgentes o de riesgo para el interés público, la Administración puede continuar el concurso y adjudicar a la oferta mejor calificada. Para sectores donde los especialistas son pocos (laboratorios, mantenimiento de equipo médico, obras especializadas), esto reduce un riesgo que castigaba a oferentes de buena fe.
-
----
-
-## 4. PYMES y cooperativas: nuevas ventajas para venderle al Estado
-
-Dos noticias para las empresas de menor tamaño:
-
-**Nuevo orden del desempate.** Cuando dos o más ofertas obtienen la misma puntuación, la Administración debe aplicar **primero** el puntaje adicional por condición PYME, luego los mecanismos de desempate que prevea el pliego y, solo si el empate persiste, el sorteo público. El puntaje PYME es:
-
-- **5 puntos** para industria
-- **5 puntos** para servicios o agropecuaria
-- **2 puntos** para comercio
-
-Antes la redacción generaba dudas sobre el momento en que entraba el beneficio PYME; ahora es el primer filtro.
-
-**Entrada formal de las cooperativas.** Conforme a la **Ley N.° 10659**, las cooperativas que compartan las características de una PYME acceden a los mismos beneficios: fomento, puntaje adicional, criterios de desempate y puntaje por ser subcontratadas. La condición se acredita según los lineamientos del Ministerio de Economía, Industria y Comercio.
-
-> **Qué hacer en la práctica.** Si su empresa o cooperativa califica, registre y mantenga vigente su condición ante el **MEIC** antes de ofertar. El beneficio no opera de oficio: la condición debe estar acreditada al momento del concurso, y en mercados competidos esos 2 a 5 puntos deciden adjudicaciones.
-
----
-
-## 5. Una puerta que se cierra: las empresas ya no pueden consultar directamente a la Dirección de Contratación Pública
-
-Este cambio pasó casi inadvertido, pero afecta a todo el sector privado.
-
-Hasta ahora, tanto las instituciones como los terceros (empresas, cámaras, asesores) podían plantear consultas técnico-jurídicas a la **Dirección de Contratación Pública del Ministerio de Hacienda**, el órgano que orienta la aplicación de la ley. La reforma restringe esa vía: **en adelante, solo la Administración puede consultar**.
-
-¿Qué significa para su empresa? Las dudas sobre cómo aplica una norma a su caso ya no tienen un canal institucional directo de respuesta. Las inquietudes deberán canalizarse:
-
-- **Dentro de cada concurso**, mediante las observaciones al pliego o los recursos administrativos correspondientes.
-- **Con asesoría legal especializada**, antes de comprometer la oferta. Vea [qué distingue a un abogado de derecho administrativo](/areas/derecho-administrativo) para entender cuándo conviene una opinión técnica externa.
-
----
-
-## En resumen
-
-| Tema | Antes | Con la reforma |
-|---|---|---|
-| **Precio de referencia y bandas** | No siempre publicados en el pliego | Obligatorios en el pliego |
-| **Justificación de precio fuera de banda** | Cuando la Administración preguntaba | Desde la propia oferta |
-| **Subsanación** | Una sola prevención consolidada | Posibilidad excepcional de segunda solicitud |
-| **Desglose del precio omitido** | Causal de exclusión | Subsanable si es verificable |
-| **Aprovisionamiento** | Contaba como subcontratación | Fuera del concepto |
-| **Reemplazo de subcontratista** | Sin regla expresa | Permitido con visto bueno |
-| **Subcontratista compartido** | Exclusión automática | Análisis caso por caso |
-| **Puntaje PYME en desempate** | Posición ambigua | Primer filtro |
-| **Cooperativas con perfil PYME** | Sin acceso uniforme | Mismos beneficios que PYME |
-| **Consulta de privados a la DCoP** | Permitida | Solo la Administración |
-
----
-
-## Articulado vigente del Reglamento
-
-Esta es la versión vigente del Reglamento, ya con la reforma de mayo de 2026 incorporada. Busque por número —escriba «135» y verá qué defectos de una oferta se pueden subsanar— o por palabra —«precio», «subcontratación», «objeción»—. Cada artículo trae su rótulo oficial y, cuando la ha tenido, la nota de la reforma que lo cambió.
-
-El buscador entiende además el vocabulario anterior. La Ley 9986 rebautizó buena parte de la materia, de modo que quien escriba «cartel» encontrará el pliego de condiciones, quien escriba «licitación abreviada» encontrará la licitación menor y quien escriba «SICOP» encontrará el sistema digital unificado.
+El buscador entiende también el vocabulario anterior a la Ley 9986: quien escriba «cartel» encontrará el pliego de condiciones, «licitación abreviada» lleva a la licitación menor y «SICOP» al sistema digital unificado. Los artículos 61 a 71 figuran como derogados desde el 21 de mayo de 2026, cuando la compra pública innovadora pasó a un reglamento propio.
 
 <ReglamentoContratacion />
 
 ---
 
-<CapacitacionEleinmsa />
+## Qué versión se aplica a cada concurso
 
-## Preguntas frecuentes
+Antes de leer un artículo reformado conviene saber si rige para el concurso que interesa. El Decreto 45782 no trae disposiciones transitorias y entró a regir con su publicación, el 26 de mayo de 2026. La División de Contratación Pública de la Contraloría ha resuelto, en forma reiterada, que sus cambios alcanzan solo a los concursos cuya **decisión inicial** se dictó desde esa fecha. En la resolución [R-DCP-SICOP-01319-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026011970.pdf), del 24 de julio de 2026, lo explicó así: los concursos iniciados antes *«se regirán por la versión vigente a ese momento del RLGCP y no por la normativa actual, en el entendido que los pliegos de condiciones y las ofertas se prepararon partiendo de la aplicación de la normativa vigente al momento de su publicación y que por eso sería contrario a la seguridad jurídica que en forma posterior se cambiaran las reglas aplicables»*. La [R-DCP-SICOP-01535-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026014389.pdf), del 28 de agosto, lo repitió: *«la normativa actualizada solamente regula los concursos iniciados a partir del 26 de mayo de 2026»*.
 
-### ¿Qué es la subsanación de ofertas en SICOP?
-
-Es el mecanismo que permite **corregir defectos** de una oferta después de presentada en el sistema digital unificado (SICOP): certificaciones faltantes, declaraciones incompletas o documentos desactualizados. Con la reforma, la Administración puede **excepcionalmente** formular una segunda solicitud de subsanación, y la omisión del desglose del precio es subsanable si resulta verificable con los documentos de la oferta.
-
-### ¿Cuánto puede subcontratar una empresa en un contrato público en Costa Rica?
-
-Hasta el **cincuenta por ciento (50%)** del monto total del contrato, sin que puedan subcontratarse las prestaciones esenciales que determinaron la selección del contratista. Tras la reforma, los contratos de **aprovisionamiento** (compras de bienes o servicios necesarios para ejecutar lo pactado) no cuentan como subcontratación.
-
-### ¿Qué beneficios tiene ser PYME para contratar con el Estado en Costa Rica?
-
-Las PYMES registradas ante el MEIC reciben:
-
-- **Puntaje adicional en caso de empate:** 5 puntos en industria, 5 en servicios o agropecuaria, 2 en comercio.
-- **Criterio de desarrollo regional** de hasta un 10%.
-- **Reservas de mercado** exclusivas.
-
-Desde la reforma, las **cooperativas** con características PYME acceden a los mismos beneficios.
-
-### ¿Las empresas pueden seguir consultando a la Dirección de Contratación Pública?
-
-**No.** La reforma 2026 restringió esa vía. En adelante, solo la Administración Pública puede plantear consultas técnico-jurídicas a la Dirección de Contratación Pública del Ministerio de Hacienda. Las dudas del sector privado deberán canalizarse dentro de cada concurso o resolverse con apoyo de un abogado de derecho administrativo antes de comprometer la oferta.
+La regla tiene una consecuencia práctica. Durante un buen tiempo convivirán dos versiones del Reglamento: la de los concursos anteriores a mayo y la reformada. Cada artículo de esta página trae la nota de la reforma que lo cambió, de modo que se puede saber si el texto que se lee es el que aplica.
 
 ---
 
-📌 **Lea también:** [Mi negocio está en una propiedad expropiada en Costa Rica: ¿qué puedo reclamar además del terreno?](/articulos/negocio-propiedad-expropiada-costa-rica)
+## Historia del Reglamento
+
+### Lo que la Ley 9986 dejó al reglamento
+
+La Ley General de Contratación Pública se publicó en el [Alcance 109 a La Gaceta 103 del 31 de mayo de 2021](https://www.imprentanacional.go.cr/pub/2021/05/31/ALCA109_31_05_2021.pdf) y entró a regir dieciocho meses después, el 1.º de diciembre de 2022. Su artículo 136 contiene la habilitación, sin plazo: *«El Poder Ejecutivo deberá reglamentar la presente ley.»* Su artículo 5 ubica el Reglamento en el inciso f) de la jerarquía de fuentes, por debajo de la Constitución, los tratados, la propia ley, la Ley General de la Administración Pública y las demás leyes, y por encima de los otros decretos, la normativa técnica y el pliego.
+
+El plazo existió en el camino. El proyecto de 2019 (expediente 21.546) ordenaba reglamentar *«dentro de los dieciocho meses siguientes a su publicación»* (artículo 252); el texto sustitutivo aprobado el 16 de diciembre de 2019 lo redujo a *«un plazo no mayor de doce meses»* (artículo 166), y el texto dictaminado el 26 de junio de 2020 lo suprimió. Las actas consultadas no registran por qué. Sí registran lo que se esperaba del reglamento: ante la comisión especial, el 17 de octubre de 2019, el gerente de la División de Contratación Administrativa de la Contraloría, Allan Ugalde Rojas, ligó los dieciocho meses de espera de la ley a tener listo *«un reglamento de contratación con todos los complementos que requiere esta legislación, debidamente emitidos»*. En 2022, el Ministerio de Hacienda sostuvo ante la propia Contraloría que la ley *«no estableció un plazo legal para la emisión del reglamento»* y que había tiempo para que rigiera en la misma fecha que la ley ([informe DFOE-FIP-IF-00007-2022](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2022/SIGYD_D/SIGYD_D_2022008373.pdf), p. 14). Así ocurrió, con un día de margen.
+
+### Consulta pública y publicación en 2022
+
+El borrador se sometió a consulta pública con el aviso del [Alcance 70 a La Gaceta 67 del 7 de abril de 2022](https://www.imprentanacional.go.cr/pub/2022/04/07/ALCA70_07_04_2022.pdf) (p. 66), por diez días hábiles conforme al artículo 361 de la Ley General de la Administración Pública; las observaciones se recibieron hasta el 28 de abril. Aquel texto tenía 333 artículos y un solo transitorio, fijaba su vigencia para el 1.º de diciembre de 2022 y llevaba previstas las firmas del gobierno anterior. El texto que finalmente se firmó el 22 de noviembre de 2022, por el presidente Rodrigo Chaves Robles y el ministro de Hacienda Nogui Acosta Jaén, tiene 328 artículos y nueve transitorios, y remite su vigencia a la de la ley. Según su considerando VIII, la consulta *«enriqueció su contenido»*. No se han localizado la matriz de observaciones ni oficios de la Contraloría o de la Procuraduría sobre el borrador.
+
+El decreto se publicó en el Alcance 258 a La Gaceta 229, cuya firma digital registra las 19:36 del 30 de noviembre de 2022: el texto circuló la noche anterior a su entrada en vigencia. En el mismo Alcance salió el Decreto 43807-H, del modelo tarifario del sistema digital unificado. El artículo 327 derogó el Reglamento a la Ley de Contratación Administrativa, Decreto 33411-H, de 2006. Sus considerandos declaran el propósito de *«una contratación pública más ágil, eficiente, transparente y oportuna»* y de *«reunificar el sistema de compras públicas y simplificarlo, mediante la utilización de procedimientos realizados en un único sistema digital»*.
+
+### Las reformas
+
+Las tres reformas del Reglamento se tramitaron con consulta pública previa y con la aprobación de la Autoridad de Contratación Pública, que los artículos 128 y 129 de la ley encargan de aprobar las mejoras regulatorias que propone la Dirección de Contratación Pública del Ministerio de Hacienda.
+
+- **Decreto 44745-H**, del 9 de octubre de 2024, publicado en el [Alcance 186 a La Gaceta 217 del 19 de noviembre de 2024](https://www.imprentanacional.go.cr/pub/2024/11/19/ALCA186_19_11_2024.pdf). Reformó los artículos 6, 26, 36, 55, 96, 151, 166, 168, 170, 239, 276 y 325 y el Transitorio IV, *«a un año de la entrada en vigencia»* y con base en la experiencia de las instituciones. Entre sus razones destaca la del artículo 36: el texto original tenía por notificado al proveedor el día hábil siguiente, lo que *«está ampliando por reglamento un día adicional a todos [los] plazos»*. Dos fe de erratas de enero de 2025 corrigieron después los artículos 166, 168 y 239 y el Transitorio IV.
+- **Decreto 45763-H-MIDEPLAN-MICITT**, Reglamento de compra pública innovadora, del 9 de marzo de 2026, publicado en el [Alcance 60 a La Gaceta 92 del 21 de mayo de 2026](https://www.imprentanacional.go.cr/pub/2026/05/21/ALCA60_21_05_2026.pdf). Llevó esa materia a un reglamento propio: agregó el artículo 59 bis, reformó el 60 y derogó los artículos 61 a 71. Su considerando XI ubica la consulta pública en «La Gaceta N.º 105» del 19 de agosto de 2025; la Gaceta de ese día es la [N.º 153](https://www.imprentanacional.go.cr/pub/2025/08/19/COMP_19_08_2025.pdf), donde está el aviso (p. 98).
+- **Decreto 45782-H-MIDEPLAN-MICITT**, del 8 de abril de 2026, publicado en el [Alcance 62 a La Gaceta 95 del 26 de mayo de 2026](https://www.imprentanacional.go.cr/pub/2026/05/26/ALCA62_26_05_2026.pdf). Es la reforma mayor: 31 artículos, la adición del 59 ter sobre mejores tecnologías en obra pública (Ley 10654) y la derogación del Reglamento para la utilización del SICOP, Decreto 41438-H. Se consultó desde [La Gaceta 180 del 26 de setiembre de 2025](https://www.imprentanacional.go.cr/pub/2025/09/26/COMP_26_09_2025.pdf) y recibió *«observaciones por parte de dieciocho participantes»*. La consulta dejó huella: el texto final agregó los artículos 78 y 236, que no estaban en el proyecto, y desistió de reformar el 255. Su considerando 3 lo presenta como parte de *«un proceso continuo de mejora regulatoria, basado en la experiencia práctica de las Administraciones»*. También incorporó las leyes que equipararon a las cooperativas con las pymes (Ley 10659) y las exclusiones de las Leyes 10466 y 10522.
+
+A esas reformas se suma la Ley 10524, de 2024, cuyo artículo 4 ordena leer «Dirección General de Gestión de Deuda Pública» donde los artículos 146, 172, 178, 207, 208 y 209 dicen «Dirección de Crédito Público».
+
+---
+
+## Artículos clave: lo que han dicho la Contraloría y los tribunales
+
+El Reglamento tiene casi cuatro años y su interpretación la ha construido, sobre todo, la División de Contratación Pública de la Contraloría, que conoce de los recursos de objeción y de apelación. Los tribunales han tenido pocos casos, y en ellos se han ocupado de su validez y de su ámbito más que del detalle de sus artículos. Lo que sigue reúne los criterios de mayor alcance sobre los artículos que más se discuten, con la advertencia de la versión del Reglamento que aplicó cada resolución.
+
+<div id="comentario-44" />
+
+### Artículos 44 y 106: razonabilidad del precio y precio inaceptable
+
+El artículo 44 obliga a la Administración a determinar, en la planificación, la razonabilidad del precio con un sondeo o estudio de mercado. Ese estudio fija el **precio de referencia** y las **bandas de tolerancia**, que desde la reforma de 2026 deben constar *«expresamente consignado[s] en el pliego de condiciones»*. Dentro de las bandas, el precio se presume razonable; fuera de ellas se abre la indagatoria del artículo 106, que define el precio inaceptable, sea ruinoso o excesivo. La reforma agregó tres reglas: el banco de precios se alimenta de precios **adjudicados** de los últimos doce meses; el oferente que cotiza fuera de las bandas conociéndolas debe justificarlo **en su oferta**, y en la indagatoria la Administración no puede exigir el presupuesto detallado, aunque debe considerarlo si el oferente lo aporta. El considerando 12 del Decreto 45782 explica que se buscaba *«generar mayor seguridad jurídica y certeza»* e incorporar *«una excepción para considerar ofertas recibidas como insumo complementario»*.
+
+La Contraloría ha fijado un criterio estable sobre la carga de la prueba. Un precio fuera de las bandas **se presume** excesivo o ruinoso, y es el oferente quien debe desvirtuarlo con documentos. En la resolución [R-DCP-SICOP-01473-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026013944.pdf), del 20 de agosto de 2026, sobre una licitación del CONAVI, declaró sin lugar cuarenta recursos y sostuvo que *«en la indagatoria del precio no basta con el decir y la explicación del oferente, sino que la razonabilidad de su precio debe necesariamente quedar acreditada a través de medios probatorios»*. Rechazó además dos argumentos frecuentes: que todas las ofertas superen la banda *«no demuestra por sí mismo que el precio sea razonable; solo evidencia un comportamiento convergente de los competidores»*, y que los precios de otras licitaciones solo sirven cuando se acredita *«la equivalencia absoluta en cada una de las condiciones y requerimientos jurídicos y técnicos»*. Lo que no se aportó en la indagatoria tampoco puede traerse después: en la apelación *«no pueden brindarse argumentos o información nueva»*. La [R-DCP-SICOP-01754-2025](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2025/SIGYD_D/SIGYD_D_2025020323.pdf) describió el mismo fenómeno desde el otro lado: *«Ante esta presunción, la carga de la prueba se invierte»*, y el competidor que alega un precio ruinoso *«no puede limitarse a señalar la desviación»*.
+
+El estudio de mercado, a su vez, se discute en la objeción al pliego o no se discute. La Contraloría lo considera consolidado con el pliego, y en la [R-DCP-SICOP-01908-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026018471.pdf), del 20 de octubre de 2026, el primer pliego hecho conforme al artículo 44 reformado que llegó a su conocimiento, rechazó de plano la objeción a un precio de referencia porque *«era imprescindible que la impugnante aportara su propio estudio de mercado o prueba idónea»*. Quedan abiertas dos cuestiones del texto nuevo: la Contraloría todavía no ha aplicado a un concurso posterior a mayo de 2026 la posibilidad de nutrir el estudio con las ofertas recibidas, que la [R-DCP-SICOP-01535-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026014389.pdf) declaró inaplicable a los concursos anteriores; y la tesis de la [R-DCP-SICOP-01716-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026015940.pdf), que permitió integrar después unas bandas omitidas en el pliego, se dictó expresamente bajo el texto anterior. No se localizaron sentencias judiciales que interpreten estos artículos del Reglamento vigente. [Ver el artículo 44](#art-44) y [el artículo 106](#art-106).
+
+<div id="comentario-134" />
+
+### Artículos 134 y 135: subsanación de ofertas
+
+El artículo 134 permite subsanar los defectos de una oferta *«siempre y cuando con ello no se otorgue una ventaja indebida»*, mediante una **prevención única** que consolida todo lo que debe corregirse o aclararse. Desde la reforma de 2026 admite que, *«Excepcionalmente, cuando resulte imprescindible para el adecuado análisis de las ofertas»*, la Administración haga una segunda solicitud. El plazo para atenderla ya no está tasado: lo fija la Administración según la complejidad de lo pedido y puede prorrogarlo una vez. Lo que no se atiende a tiempo caduca. El artículo 135 enumera lo subsanable, y la reforma aclaró su inciso g): la omisión del desglose de la estructura de precios se subsana *«de forma que sea verificable a partir de los documentos presentados en la oferta»*.
+
+La segunda prevención no nació en 2026. La Contraloría ya la admitía bajo el texto original, que hablaba de una única solicitud: en la [R-DCP-SICOP-01070-2024](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2024/SIGYD_D/SIGYD_D_2024014196.pdf) dijo que, cuando la Administración omitió requerir algo en la primera, *«en aras de lograr la efectiva satisfacción del interés público, nada obsta para que se realice un nuevo requerimiento»*. La reforma llevó ese criterio al texto, y su considerando 21 lo atribuye a *«la realidad de las instituciones durante el proceso de análisis de ofertas»*. La misma resolución fijó el límite recursivo: *«en fase recursiva, no pueden ser subsanados aspectos que previamente hayan sido prevenidos por la Administración en su oportunidad procesal»*.
+
+La línea que separa la subsanación de la ventaja indebida es la **trazabilidad**. En la [R-DCP-SICOP-01587-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026014875.pdf) la Contraloría negó que un oferente incorporara, después de conocer la calificación, documentos para ganar puntaje *«sin ninguna trazabilidad que acredite que se trataba de documentación que constaba desde antes de la apertura de ofertas»*. En la [R-DCP-SICOP-00989-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026008889.pdf), en cambio, aceptó que se aclarara una referencia de producto que *«estaba indicada desde la oferta»*, y anuló la exclusión de otra oferta porque *«la Administración no explicó cuál es la trascendencia del incumplimiento»*: aunque la caducidad opere, descalificar exige motivar por qué el defecto importa. Aún no hay resoluciones que precisen cuándo una segunda prevención es *imprescindible* en un concurso regido por el texto reformado. [Ver el artículo 134](#art-134) y [el artículo 135](#art-135).
+
+<div id="comentario-133" />
+
+### Artículo 133: subcontratación
+
+Es el artículo que más cambió en 2026. Define la subcontratación como el contrato por el que el contratista encomienda a un tercero *«la realización de una parte esencial del objeto del contrato»*, con dos límites: el 50 % del monto total y las prestaciones esenciales que determinaron la selección del contratista. Deja fuera los **contratos de aprovisionamiento**, permite **reemplazar** a un subcontratista durante la ejecución con el visto bueno de la Administración y regula de otra forma el caso del mismo subcontratista ofrecido en varias ofertas sin que el pliego lo permita: tras indagar, la Administración puede, *«en un escenario excepcional, urgente o de riesgo que comprometa la satisfacción del interés público»*, continuar con la oferta mejor calificada.
+
+La exclusión del aprovisionamiento recoge un criterio previo de la Contraloría. En la [R-DCP-SICOP-01501-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026014268.pdf) negó que un taller de mantenimiento fuera un subcontrato no declarado, porque *«si la ejecución a través de un tercero no implica la transferencia de la ejecución sustantiva, se considera un medio instrumental y no una subcontratación»*. Sobre cómo se cuenta el 50 %, la [R-DCP-SICOP-01352-2025](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2025/SIGYD_D/SIGYD_D_2025015967.pdf) no resolvió si se mide en forma global o por prestación; resolvió algo más útil para el oferente: sea cual sea el método, la oferta es inelegible si no permite determinar *«de manera objetiva y precisa»* qué actividades asume cada subcontratista. La [R-DCP-SICOP-01426-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026013552.pdf) leyó el segundo límite como un tope del *«50% de las prestaciones esenciales»*; la letra del artículo no lo dice con esa claridad, y la resolución aplicó el texto reformado a un concurso de 2025, en contra de la regla temporal fijada en la 01319-2026. Para el subcontratista repetido, la solución anterior, que conservaba la oferta con la que el subcontratista manifestara continuar, rige solo para los concursos anteriores a la reforma ([R-DCP-SICOP-01319-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026011970.pdf)). No hay todavía criterio sobre el régimen nuevo de duplicidad ni sobre el reemplazo en ejecución. [Ver el artículo 133](#art-133).
+
+<div id="comentario-97" />
+
+### Artículo 97: desempate y puntaje pyme
+
+Cuando dos o más ofertas empatan, la Administración debe revisar primero si son pymes y sumarles 5 puntos a las de industria, 5 a las de servicio o agropecuarias y 2 a las de comercio; luego aplica los mecanismos de desempate del pliego y, si el empate persiste, el sorteo público. El texto original ponía primero las reglas del pliego, y la Contraloría ya había corregido ese orden por interpretación: en la [R-DCP-SICOP-01501-2025](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2025/SIGYD_D/SIGYD_D_2025017811.pdf) dijo que *«la condición PYME debe ser el primer criterio de desempate cuando exista igualdad en las ofertas, siempre y cuando la empresa haya demostrado su condición»*. La reforma lo escribió así.
+
+Con el texto reformado, la [R-DCP-SICOP-01518-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026014386.pdf), sobre un pliego de JAPDEVA, ordenó *«acudir primeramente a un desempate por Pyme y posteriormente»* a los mecanismos del pliego, entre los que la Administración puede valorar la Ley de Asociaciones Cooperativas, y la [R-DCP-SICOP-01860-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026017433.pdf) obligó al INVU a incorporar el puntaje pyme a su pliego. Queda por ver si sobrevive la tesis anterior según la cual la Administración elige qué categoría pyme puntúa; el texto vigente manda otorgar el puntaje *«según el siguiente detalle»*. En sede constitucional, la Sala rechazó de plano un amparo que pretendía la inconstitucionalidad del puntaje pyme del artículo 73 (voto [2025-024084](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1324642)), porque esa pretensión se plantea por acción de inconstitucionalidad. [Ver el artículo 97](#art-97).
+
+<div id="comentario-309" />
+
+### Artículo 309: quién responde las consultas
+
+La interpretación de la Ley 9986 y su Reglamento corresponde a la **Dirección de Contratación Pública** del Ministerio de Hacienda, cuyos criterios vinculan a la Administración Central y de los que la descentralizada solo puede apartarse con acto motivado. La reforma de 2026 precisó que esa vía es para *«las consultas de la Administración»*; su considerando 28 la describe como asesoramiento técnico-jurídico a *«los sujetos que desarrollan actividad de contratación pública al amparo de la Ley General de Contratación Pública»*. Las empresas, por tanto, plantean sus dudas dentro de cada concurso, por las aclaraciones al pliego y los recursos.
+
+La Contraloría se apartó de esa materia desde que rige la ley. En el oficio [13624-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026016859.pdf), del 8 de octubre de 2026, rechazó una consulta sobre las bandas de tolerancia del artículo 44 porque *«este Órgano Contralor ya no cuenta con la potestad de atender asuntos vinculados con la aplicación técnica u orientación normativa en materia de contratación pública»*, y en el oficio [06106-2024](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2024/SIGYD_D/SIGYD_D_2024007157.pdf) reconoció que la Dirección es *«la encargada de emitir criterio en relación con todos los temas que desarrolla la nueva Ley General de Contratación Pública y su Reglamento»*, salvo lo asignado a la Procuraduría. Conserva su función consultiva propia sobre la Hacienda Pública, que es lo que recoge el último párrafo del artículo. [Ver el artículo 309](#art-309).
+
+### Lo que han resuelto los tribunales
+
+La Sala Constitucional se pronunció por el fondo sobre el Reglamento una sola vez. En el voto [2026-025493](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1408870), del 8 de julio de 2026, declaró sin lugar la acción de asociaciones de atención a personas adultas mayores contra los artículos 1 y 25, que las someten a los procedimientos de la ley y al sistema digital unificado: la incorporación de esos sujetos privados *«resulta acorde al Derecho de la Constitución»* porque administran recursos públicos para un fin público, y lo relativo a *«uso, exoneración, tarifas, capacitaciones sobre el uso del SICOP»* es materia de legalidad. Antes, en el voto [2024-022483](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1253541), había declarado inconstitucional el artículo 135 inciso c) de la Ley 9986 y los artículos 1, 2 y 68 a 70 en su aplicación al ICE, cuyo régimen especial de la Ley 8660 revivió: para el ICE, la ley y su Reglamento rigen *«en lo no previsto y en lo que no se oponga a la Ley nro. 8660 y su reglamento»*.
+
+La única impugnación directa de artículos del Reglamento que ha avanzado en la jurisdicción contenciosa es la de la Cámara Costarricense de la Construcción contra los párrafos de los artículos 108 y 175 que excluyen del reajuste los riesgos incorporados al precio y las obras a suma alzada. El Tribunal Contencioso Administrativo negó la medida cautelar (resolución [2024-002990](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1232590)) porque decidir si una norma reglamentaria contradice la ley exige un proceso de conocimiento, y el Tribunal de Apelación lo confirmó por mayoría (voto [289-2024-II](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1240966)). No consta sentencia de fondo, y ambos párrafos siguen en el texto vigente. La demanda del INS contra el artículo 170 terminó por satisfacción extraprocesal cuando el Decreto 44745-H lo reformó ([2025-001672](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1280897)).
+
+En amparo, la Sala remite a la vía de legalidad los conflictos de un concurso, sea la adjudicación, el puntaje o los plazos para recurrir, con una salvedad: la confidencialidad de partes de una oferta declarada sin motivación, que impide a los demás oferentes conocerla para recurrir. En el voto [2023-017191](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1186789) acogió parcialmente un amparo por esa razón, con apoyo en el artículo 30 del Reglamento; en el [2026-027885](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1410971) advirtió que *«no toda discrepancia relacionada con el manejo de la información dentro de un procedimiento licitatorio configura, por sí misma, una violación al derecho fundamental de acceso a la información»*. Y en materia municipal, el Tribunal Contencioso, como jerarca impropio, rechaza de plano las apelaciones contra actos de contratación, porque el artículo 164 del Código Municipal las somete al régimen recursivo de la Ley 9986 ([2026-002927](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1401858)).
+
+---
+
+## Antes de presentar una oferta
+
+El texto del Reglamento dice qué se exige; la oportunidad para cuestionarlo es corta. Las bandas de tolerancia, el sistema de evaluación y los requisitos de admisibilidad solo se discuten por objeción al pliego, y lo que no se objeta queda consolidado. Si su empresa va a ofertar en un concurso importante, el área de [contratación pública](/areas/contratacion-publica) de Corporación GC puede revisar el pliego antes de la apertura, preparar la justificación del precio que exige el artículo 44 y presentar la [objeción](/articulos/recurso-objecion-cartel-costa-rica) a tiempo.
+
+---
+
+<CapacitacionEleinmsa />
+
+## Fuentes
+
+Texto del Reglamento: [Decreto 43808-H en SINALEVI](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=98344&param2=151216&param3=1), versión vigente al 26 de octubre de 2026, y sus publicaciones en el [Alcance 258 a La Gaceta 229 de 2022](https://www.imprentanacional.go.cr/pub/2022/11/30/ALCA258_30_11_2022.pdf), el [Alcance 186 a La Gaceta 217 de 2024](https://www.imprentanacional.go.cr/pub/2024/11/19/ALCA186_19_11_2024.pdf), el [Alcance 60 a La Gaceta 92 de 2026](https://www.imprentanacional.go.cr/pub/2026/05/21/ALCA60_21_05_2026.pdf) y el [Alcance 62 a La Gaceta 95 de 2026](https://www.imprentanacional.go.cr/pub/2026/05/26/ALCA62_26_05_2026.pdf). Antecedentes: [Ley 9986, Alcance 109 a La Gaceta 103 de 2021](https://www.imprentanacional.go.cr/pub/2021/05/31/ALCA109_31_05_2021.pdf); proyecto de ley del expediente 21.546 en el [Alcance 192 de 2019](https://www.imprentanacional.go.cr/pub/2019/08/29/ALCA192_29_08_2019.pdf), y actas de la Comisión Especial que lo dictaminó; avisos de consulta pública en el [Alcance 70 a La Gaceta 67 de 2022](https://www.imprentanacional.go.cr/pub/2022/04/07/ALCA70_07_04_2022.pdf), [La Gaceta 94 de 2024](https://www.imprentanacional.go.cr/pub/2024/05/27/COMP_27_05_2024.pdf) y [La Gaceta 180 de 2025](https://www.imprentanacional.go.cr/pub/2025/09/26/COMP_26_09_2025.pdf); Contraloría General de la República, [informe DFOE-FIP-IF-00007-2022](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2022/SIGYD_D/SIGYD_D_2022008373.pdf). Las resoluciones de la División de Contratación Pública y las sentencias se enlazan donde se citan. Cotejo al 26 de octubre de 2026.
+
+## Preguntas frecuentes
+
+### ¿Qué número tiene el Reglamento a la Ley General de Contratación Pública y desde cuándo rige?
+
+Es el **Decreto Ejecutivo 43808-H**, dado el 22 de noviembre de 2022 y publicado en el Alcance 258 a La Gaceta 229 del 30 de noviembre de 2022. Su artículo 328 lo hace regir desde la entrada en vigencia de la Ley 9986, es decir, desde el **1.º de diciembre de 2022**. Derogó el Reglamento a la Ley de Contratación Administrativa, Decreto 33411-H.
+
+### ¿Qué reformas ha tenido el Reglamento?
+
+Tres decretos: el **44745-H** (Alcance 186 a La Gaceta 217 del 19 de noviembre de 2024), que cambió doce artículos y el Transitorio IV; el **45763-H-MIDEPLAN-MICITT**, Reglamento de compra pública innovadora (Alcance 60 a La Gaceta 92 del 21 de mayo de 2026), que agregó el artículo 59 bis, reformó el 60 y derogó los artículos 61 a 71; y el **45782-H-MIDEPLAN-MICITT** (Alcance 62 a La Gaceta 95 del 26 de mayo de 2026), que reformó 31 artículos y agregó el 59 ter. La Ley 10524 cambió además el nombre de la Dirección de Crédito Público en seis artículos.
+
+### ¿La reforma de mayo de 2026 se aplica a una licitación que ya estaba en curso?
+
+No, según la Contraloría. La División de Contratación Pública ha resuelto que el texto reformado por el Decreto 45782 rige solo para los concursos cuya **decisión inicial** se dictó a partir del 26 de mayo de 2026; los iniciados antes se resuelven con el texto anterior hasta su conclusión (resoluciones R-DCP-SICOP-01319-2026 y R-DCP-SICOP-01535-2026).
+
+### ¿Dónde se consulta el texto oficial del Reglamento?
+
+La fuente oficial consolidada es el **SINALEVI**, de la Procuraduría General de la República. Corporación GC publica en esta página el [texto vigente completo](#articulado-vigente), con buscador por número y por palabra y la nota de cada reforma en el artículo que la recibió.
+
+### ¿Qué defectos de una oferta se pueden subsanar según el Reglamento?
+
+El artículo 134 permite subsanar los defectos que no otorguen ventaja indebida, mediante una prevención única y, excepcionalmente, una segunda cuando sea imprescindible para el análisis. El artículo 135 enumera, entre otros, los aspectos formales, las certificaciones sobre hechos que existían al ofertar, la documentación técnica o financiera complementaria y la omisión del desglose de la estructura de precios cuando es verificable con la oferta. Lo prevenido y no atendido a tiempo **caduca**.

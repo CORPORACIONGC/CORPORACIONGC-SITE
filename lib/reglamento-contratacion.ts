@@ -12,7 +12,7 @@ export const REGLAMENTO_FICHA: FichaNorma = {
   identificador: "Decreto Ejecutivo 43808-H",
   tipo: "Reglamento",
   fecha: "2022-11-22",
-  version: "Texto vigente tras la reforma del Decreto 45782, publicada el 26 de mayo de 2026",
+  version: "Texto vigente con las reformas de los Decretos 44745-H (2024), 45763 y 45782 (mayo de 2026)",
   articulos: 330,
   datos: "/datos/reglamento-contratacion.json",
   sinalevi:
@@ -247,6 +247,15 @@ export const REGLAMENTO_DEROGADOS: string[] = ["61", "62", "63", "64", "65", "66
 
 /** Guías de la casa que explican lo que un artículo regula. */
 export const REGLAMENTO_GUIAS: Record<string, { href: string; texto: string }> = {
+  /* Los artículos que comenta esta misma guía remiten a su comentario, con
+     los criterios de la Contraloría y de los tribunales. */
+  "44": { href: "#comentario-44", texto: "Cómo lo aplica la Contraloría" },
+  "97": { href: "#comentario-97", texto: "Cómo lo aplica la Contraloría" },
+  "106": { href: "#comentario-44", texto: "Cómo lo aplica la Contraloría" },
+  "133": { href: "#comentario-133", texto: "Cómo lo aplica la Contraloría" },
+  "134": { href: "#comentario-134", texto: "Cómo lo aplica la Contraloría" },
+  "135": { href: "#comentario-134", texto: "Cómo lo aplica la Contraloría" },
+  "309": { href: "#comentario-309", texto: "Cómo lo aplica la Contraloría" },
   "107": { href: "/articulos/reajuste-precios-obra-publica-costa-rica", texto: "Cómo se pide el reajuste de precios" },
   "108": { href: "/articulos/reajuste-precios-obra-publica-costa-rica", texto: "Cómo se pide el reajuste de precios" },
   "109": { href: "/articulos/reajuste-precios-obra-publica-costa-rica", texto: "Cómo se pide el reajuste de precios" },
