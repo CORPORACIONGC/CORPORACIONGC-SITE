@@ -41,6 +41,9 @@ export function FirmHero() {
           </div>
 
           {/* Mobile-only: full editorial photo (LCP en móvil — solo transform, sin opacidad) */}
+          {/* Las dos fotos se precargan, pero cada `sizes` vale 0px en el rango
+              donde su versión está oculta: el navegador baja allí la variante
+              más pequeña y la imagen grande solo una vez, la que se ve. */}
           <div className="md:hidden gc-slide-x">
             <div className="mt-6 w-full overflow-hidden relative">
               <Image
@@ -50,7 +53,7 @@ export function FirmHero() {
                 height={1024}
                 priority
                 quality={90}
-                sizes="100vw"
+                sizes="(min-width: 768px) 0px, 100vw"
                 className="w-full h-auto"
               />
               {/* Burgundy tint overlay */}

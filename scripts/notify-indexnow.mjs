@@ -1,13 +1,18 @@
 /**
  * IndexNow notifier — se ejecuta automáticamente como `postbuild` en Vercel.
  *
- * Notifica a Bing/Yandex (y por extensión a Bing Copilot, ChatGPT search,
- * DuckDuckGo) de todas las URLs públicas del sitio para que las indexen
- * en horas en lugar de días/semanas.
+ * Avisa a Bing/Yandex (y por extensión a Bing Copilot, ChatGPT search y
+ * DuckDuckGo) de las URL que cambiaron, para que las rastreen en horas.
+ *
+ * La lista sale del sitemap que acaba de compilar Next (app/sitemap.ts), de
+ * modo que nunca anuncia direcciones retiradas ni olvida las nuevas. Solo se
+ * envían las URL cuyo `lastmod` cae dentro de los últimos días: el protocolo
+ * pide avisar lo que cambió, no todo el sitio en cada despliegue.
  *
  * Solo corre en deploys de producción de Vercel (`VERCEL_ENV=production`).
  * En local y en deploys de preview no hace nada — para forzar manualmente:
  *   INDEXNOW_FORCE=1 node scripts/notify-indexnow.mjs
+ *   INDEXNOW_DIAS=30 amplía la ventana (por omisión, 2 días).
  *
  * No falla el build si IndexNow devuelve error: solo lo loggea.
  */
@@ -21,13 +26,13 @@ import {
 } from "../lib/indexnow.mjs";
 
 const HOST = INDEXNOW_HOST;
-const BASE = `https://${HOST}`;
 const KEY = INDEXNOW_KEY;
-const KEY_LOCATION = `${BASE}/${KEY}.txt`;
+const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const ENDPOINT = INDEXNOW_ENDPOINT;
 
 const VERCEL_ENV = process.env.VERCEL_ENV;
 const FORCE = process.env.INDEXNOW_FORCE === "1";
+const DIAS = Number(process.env.INDEXNOW_DIAS ?? 2);
 
 if (VERCEL_ENV !== "production" && !FORCE) {
   console.log(
@@ -36,87 +41,33 @@ if (VERCEL_ENV !== "production" && !FORCE) {
   process.exit(0);
 }
 
-/* ── Páginas estáticas raíz ────────────────────────────────────────────── */
-const STATIC_PAGES = [
-  "/",
-  "/articulos",
-  "/sobre-nosotros",
-  "/areas",
-  "/jurisprudencia-destacada",
-];
-
-/* ── Áreas de práctica ──────────────────────────────────────────────────
-   Sincronizar con lib/constants.ts → PRACTICE_AREA_PAGES si se añaden áreas. */
-const PRACTICE_AREA_SLUGS = [
-  "litigio-contencioso-administrativo",
-  "medidas-cautelares",
-  "casacion-sala-primera",
-  "contratacion-publica",
-  "recursos-de-amparo",
-  "acciones-de-inconstitucionalidad",
-  "asesoria-regulatoria",
-  "informes-juridicos-dictamenes",
-  "derecho-administrativo",
-  "procedimientos-sancionatorios",
-  "empleo-publico",
-  "servicio-publico",
-  "materia-municipal",
-  "dominio-publico",
-  "zona-maritimo-terrestre",
-  "derecho-urbanistico",
-  "materia-presupuestaria",
-  "comercio-internacional",
-  "compliance-publico-anticorrupcion",
-  "gobierno-digital-inteligencia-artificial-datos",
-  "defensa-regulatoria-sectorial",
-  "regulacion-ambiental-mercados-carbono",
-  "alianzas-publico-privadas-infraestructura",
-  "regulacion-fintech-criptoactivos",
-  "derecho-electoral-financiamiento-politico",
-  "telecomunicaciones-espectro-5g",
-  "energia-renovable-transicion-energetica",
-  "derecho-civil",
-  "derecho-de-familia",
-  "derecho-laboral",
-  "derecho-notarial",
-];
-
-/* ── Abogados ───────────────────────────────────────────────────────────
-   Sincronizar con lib/constants.ts → TEAM si se añaden o quitan miembros. */
-const ATTORNEY_SLUGS = [
-  "oscar-gonzalez",
-  "khevin-sanchez",
-  "katherine-gonzalez",
-  "mariana-montero",
-  "esteban-perez",
-  "jose-carlos-solano",
-];
-
-/* ── Sentencias destacadas ──────────────────────────────────────────────
-   Sincronizar con lib/jurisprudencia.ts si se añaden sentencias. */
-const SENTENCIA_SLUGS = ["indexacion-de-obligaciones-dinerarias"];
-
-/* ── Artículos: lectura dinámica desde content/articles/*.md ──────────── */
-const articlesDir = path.join(process.cwd(), "content", "articles");
-let articleSlugs = [];
+const SITEMAP = path.join(process.cwd(), ".next", "server", "app", "sitemap.xml.body");
+let xml;
 try {
-  const files = await fs.readdir(articlesDir);
-  articleSlugs = files
-    .filter((f) => f.endsWith(".md"))
-    .map((f) => f.replace(/\.md$/, ""));
+  xml = await fs.readFile(SITEMAP, "utf8");
 } catch (err) {
-  console.warn(`[indexnow] no se pudo leer ${articlesDir}: ${err.message}`);
+  console.warn(`[indexnow] no se encontró el sitemap compilado (${err.message}); no se avisa nada`);
+  process.exit(0);
 }
 
-const urls = [
-  ...STATIC_PAGES.map((p) => `${BASE}${p}`),
-  ...PRACTICE_AREA_SLUGS.map((s) => `${BASE}/areas/${s}`),
-  ...ATTORNEY_SLUGS.map((s) => `${BASE}/abogados/${s}`),
-  ...SENTENCIA_SLUGS.map((s) => `${BASE}/jurisprudencia-destacada/${s}`),
-  ...articleSlugs.map((s) => `${BASE}/articulos/${s}`),
-];
+/* Por días enteros: el lastmod es una fecha sin hora (medianoche UTC). */
+const hoy = new Date();
+const desde = Date.UTC(hoy.getUTCFullYear(), hoy.getUTCMonth(), hoy.getUTCDate() - DIAS);
+const urls = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)]
+  .map(([, bloque]) => ({
+    loc: bloque.match(/<loc>([^<]+)<\/loc>/)?.[1],
+    lastmod: bloque.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1],
+  }))
+  .filter((u) => u.loc && u.lastmod && Date.parse(u.lastmod) >= desde)
+  .map((u) => u.loc);
 
-console.log(`[indexnow] notificando ${urls.length} URLs a ${ENDPOINT}`);
+if (urls.length === 0) {
+  console.log(`[indexnow] ninguna URL cambió en los últimos ${DIAS} días; no se avisa nada`);
+  process.exit(0);
+}
+
+console.log(`[indexnow] notificando ${urls.length} URL cambiadas a ${ENDPOINT}`);
+for (const u of urls) console.log(`[indexnow]   ${u}`);
 
 try {
   const response = await fetch(ENDPOINT, {

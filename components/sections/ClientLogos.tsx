@@ -6,8 +6,10 @@ type Cliente = (typeof CLIENTES)[number];
 
 /* Un logo a su tamaño óptico. Los archivos son blancos sobre transparente
    (algunos traen un fondo negro que el modo de mezcla «screen» vuelve
-   invisible sobre el borgoña). Carga inmediata: la banda está justo debajo
-   del hero y la cinta mueve los logos hacia la pantalla. */
+   invisible sobre el borgoña). Carga diferida: con carga inmediata, Next los
+   precargaba los veinte y competían con la foto del hero, que es la imagen
+   LCP. El margen del navegador para la carga diferida los trae antes de
+   que la cinta los acerque a la pantalla. */
 function Logo({ c, alto, className = "" }: { c: Cliente; alto: number; className?: string }) {
   const t = tamanoOptico(c.ratio, c.densidad, alto);
   return (
@@ -17,7 +19,7 @@ function Logo({ c, alto, className = "" }: { c: Cliente; alto: number; className
       title={c.name}
       width={t.width * 2}
       height={t.height * 2}
-      loading="eager"
+      loading="lazy"
       className={`mix-blend-screen ${className}`}
       style={{ width: t.width, height: t.height }}
     />

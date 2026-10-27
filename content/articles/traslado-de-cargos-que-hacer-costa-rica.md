@@ -66,7 +66,7 @@ Cada uno de estos elementos es, a la vez, un requisito de validez. Un traslado c
 | Descargos en el procedimiento de despido de empleo público | 15 días desde el traslado | Ley 10159, art. 21 |
 | Recurrir el acto final que imponga la sanción | 3 días desde la última comunicación | LGAP, art. 346 |
 
-Dos advertencias sobre esta tabla. Primera: los regímenes sectoriales —Contraloría, colegios profesionales, entes reguladores— tienen reglas y plazos propios; el traslado debe indicar cuáles aplican, y verificar que sean los correctos forma parte de la revisión de validez. Segunda: el plazo de quince días de la citación es un **mínimo a su favor**; si la Administración lo citó con menos anticipación, ese defecto compromete la validez de la comparecencia.
+Dos advertencias sobre esta tabla. Primera: los regímenes sectoriales —Contraloría, colegios profesionales, [entes reguladores](/areas/defensa-regulatoria-sectorial)— tienen reglas y plazos propios; el traslado debe indicar cuáles aplican, y verificar que sean los correctos forma parte de la revisión de validez. Segunda: el plazo de quince días de la citación es un **mínimo a su favor**; si la Administración lo citó con menos anticipación, ese defecto compromete la validez de la comparecencia.
 
 ## Qué conviene hacer desde el primer día
 

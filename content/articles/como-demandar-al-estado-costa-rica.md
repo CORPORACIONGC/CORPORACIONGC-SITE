@@ -43,7 +43,7 @@ La jurisdicción contencioso-administrativa tiene un alcance amplio. El artícul
 - **El Estado** (Gobierno Central, ministerios)
 - **Instituciones autónomas** (CCSS, ICE, INVU, AyA, IMAS)
 - **Municipalidades** (cualquiera de los 82 cantones)
-- **Entes públicos** (universidades estatales, ARESEP, SUTEL, CGR)
+- **Entes públicos** (universidades estatales, [ARESEP](/areas/servicio-publico), [SUTEL](/areas/telecomunicaciones-espectro-5g), CGR)
 - **Empresas públicas** (RECOPE, INS, Correos de Costa Rica)
 
 La jurisdicción no se limita a entes públicos. El CPCA también cubre conductas regidas por el Derecho público aunque provengan de personas privadas. El principio de universalidad del control, consagrado en el artículo 49 de la Constitución Política, garantiza que toda conducta sujeta al Derecho Administrativo puede ser sometida al escrutinio judicial.

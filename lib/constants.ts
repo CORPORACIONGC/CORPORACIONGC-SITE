@@ -528,6 +528,19 @@ export const FOOTER_GUIAS: { href: string; label: string }[] = [
   { href: "/articulos/amparo-ccss-lista-de-espera", label: "Amparo por listas de espera de la CCSS" },
 ];
 
+/* Las guías más consultadas, en orden, para la fila fija de /articulos.
+   Se revisa cada mes contra Search Console, igual que FOOTER_GUIAS. Al
+   25-10-2026, clics del 1 al 23 de octubre: Reglamento 76, amparo 69,
+   Uber 47, recursos LGAP 32, listas de espera 32, cautelares 24. */
+export const GUIAS_MAS_CONSULTADAS: string[] = [
+  "reforma-reglamento-contratacion-publica-2026-proveedores-estado",
+  "recurso-amparo-costa-rica",
+  "seguro-carro-uber-costa-rica-sala-primera",
+  "recursos-contra-acto-administrativo-revocatoria-apelacion-lgap",
+  "amparo-ccss-lista-de-espera",
+  "medidas-cautelares-contra-el-estado-costa-rica",
+];
+
 export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
   // ─── Núcleo litigioso ───
   "litigio-contencioso-administrativo": ["medidas-cautelares", "casacion-sala-primera", "derecho-administrativo", "procedimientos-sancionatorios"],

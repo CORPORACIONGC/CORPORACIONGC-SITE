@@ -176,7 +176,7 @@ La inactividad formal consiste en no dictar un acto o una norma: no iniciar, tra
 
 ### ¿Cuáles son ejemplos de inactividad administrativa?
 
-Los tribunales costarricenses han condenado, entre otras, la omisión de una municipalidad de construir aceras o de hacer cumplir ese deber a los propietarios, la de otra municipalidad de dictar su reglamento de cánones de la zona marítimo terrestre, la del Poder Ejecutivo de reglamentar la prueba psicológica de la Ley de Tránsito, la de la CCSS de actualizar perfiles de puesto y la del Estado de pagar cuotas obrero-patronales. La falta de mantenimiento de un puente o de una vía y la demora en una cirugía han dado lugar, además, a indemnizaciones.
+Los tribunales costarricenses han condenado, entre otras, la omisión de una municipalidad de construir aceras o de hacer cumplir ese deber a los propietarios, la de otra municipalidad de dictar su reglamento de cánones de la [zona marítimo terrestre](/areas/zona-maritimo-terrestre), la del Poder Ejecutivo de reglamentar la prueba psicológica de la Ley de Tránsito, la de la CCSS de actualizar perfiles de puesto y la del Estado de pagar cuotas obrero-patronales. La falta de mantenimiento de un puente o de una vía y la demora en una cirugía han dado lugar, además, a indemnizaciones.
 
 ### ¿Qué hacer cuando la Administración no responde?
 

@@ -6,9 +6,11 @@
    Registral, ARESEP y el Poder Judicial en sede administrativa) y, al final,
    los trabajos académicos que la citan, cada uno enlazado a su fuente
    oficial. Cada año y
-   cada despacho es un botón que abre la lista filtrada; la lista está
-   siempre en el HTML (oculta hasta que se abre) y se descarga en CSV, así
-   cualquier cifra del gráfico se puede comprobar una por una en Nexus.
+   cada despacho es un botón que abre la lista filtrada. El HTML lleva solo
+   las primeras resoluciones (oculta hasta que se abre); el resto se dibuja
+   al pedirlo, porque las listas íntegras llevaban algunas fichas a más de
+   un megabyte y once mil etiquetas. La lista completa se descarga en CSV,
+   así cualquier cifra del gráfico se puede comprobar una por una en Nexus.
    Las dos vistas están enlazadas: al elegir un despacho, cada año marca en
    burdeos la parte que le corresponde, y al elegir un año, cada despacho. */
 
@@ -73,6 +75,7 @@ export function CitasExplorador({
 }) {
   const [filtro, setFiltro] = useState<Filtro>(null);
   const [abierta, setAbierta] = useState(false);
+  const [completa, setCompleta] = useState(false);
   const [abiertaP, setAbiertaP] = useState(false);
   const [filtroP, setFiltroP] = useState<FiltroP>(null);
   const listaId = useId();
@@ -154,6 +157,9 @@ export function CitasExplorador({
         : r.grupo === filtro.valor,
   );
   const etiqueta = !filtro ? "" : filtro.tipo === "anio" ? String(filtro.valor) : filtro.valor;
+  /* Sin filtro y sin pedirla entera, la lista muestra las primeras. */
+  const PRIMERAS = 25;
+  const mostradas = filtro || completa ? visibles : visibles.slice(0, PRIMERAS);
 
   const elegir = (f: NonNullable<Filtro>) => {
     const mismo = filtro?.tipo === f.tipo && filtro.valor === f.valor;
@@ -341,7 +347,10 @@ export function CitasExplorador({
                 </button>
               </>
             ) : (
-              <span>Las {total} resoluciones, en orden cronológico.</span>
+              <span>
+                {completa ? `Las ${total} resoluciones` : `Las primeras ${Math.min(PRIMERAS, total)} de ${total} resoluciones`}, en
+                orden cronológico.
+              </span>
             )}
           </p>
 
@@ -353,7 +362,7 @@ export function CitasExplorador({
             ))}
           </div>
           <ol role="list" className="divide-y divide-cream/10 border-y border-cream/10">
-            {visibles.map((r) => (
+            {mostradas.map((r) => (
               <li
                 key={`${r.despacho}-${r.numero}-${r.fecha}`}
                 className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-4 gap-y-0.5 py-3 text-[15px] leading-snug md:grid-cols-[96px_112px_minmax(0,1fr)_148px] md:gap-5"
@@ -386,6 +395,18 @@ export function CitasExplorador({
               </li>
             ))}
           </ol>
+          {mostradas.length < visibles.length && (
+            <p className="mt-4">
+              <button
+                type="button"
+                onClick={() => setCompleta(true)}
+                className="inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
+              >
+                Ver las {visibles.length - mostradas.length} restantes
+                <CaretDown size={13} weight="bold" aria-hidden="true" />
+              </button>
+            </p>
+          )}
           <p className="mt-4">
             <button
               type="button"

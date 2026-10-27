@@ -83,21 +83,23 @@ export const areasMetadata: Metadata = {
 };
 
 export const articulosMetadata: Metadata = {
-  // La plantilla del layout añade "· Corporación GC"; no duplicar la marca aquí.
-  title: "Publicaciones Académicas",
+  /* Título absoluto: con la marca de la plantilla pasaría de 60 caracteres.
+     El hub es la página con más autoridad interna del sitio y se titulaba
+     «Publicaciones Académicas», que describía mal un listado de guías. */
+  title: { absolute: "Guías y análisis de Derecho Público en Costa Rica" },
   description:
-    "Artículos académicos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público por los abogados de Corporación GC.",
+    "Guías prácticas y publicaciones del equipo de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo en Costa Rica.",
   alternates: { canonical: "/articulos" },
   openGraph: og({
-    title: "Publicaciones Académicas · Corporación GC, CR",
+    title: "Guías y análisis de Derecho Público · Corporación GC",
     description:
-      "Artículos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público escritas por los abogados de Corporación GC. Doctrina jurídica costarricense.",
+      "Guías prácticas y publicaciones del equipo de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo en Costa Rica.",
     url: "/articulos",
   }),
   twitter: tw({
-    title: "Publicaciones Académicas · Corporación GC",
+    title: "Guías y análisis de Derecho Público · Corporación GC",
     description:
-      "Artículos, tesis y publicaciones especializadas en Derecho Administrativo, Contencioso Administrativo y Derecho Público escritas por los abogados de Corporación GC. Doctrina jurídica costarricense.",
+      "Guías prácticas y publicaciones del equipo de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo en Costa Rica.",
   }),
 };
 

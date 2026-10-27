@@ -89,7 +89,7 @@ El artículo 119 enumera un amplio catálogo de causales que pueden derivar en l
 - Poner en peligro la vida o la seguridad de las personas.
 - Sufrir una resolución contractual en sede jurisdiccional con condena firme.
 
-Estas causales cubren desde faltas de integridad en la fase del concurso hasta incumplimientos graves durante la ejecución. Las más severas —entre ellas la información falsa, las dádivas, el abandono del contrato o la condena firme por resolución contractual— son las que habilitan la inhabilitación calificada de 2 a 10 años ante toda la Administración.
+Estas causales cubren desde [faltas de integridad](/areas/compliance-publico-anticorrupcion) en la fase del concurso hasta incumplimientos graves durante la ejecución. Las más severas —entre ellas la información falsa, las dádivas, el abandono del contrato o la condena firme por resolución contractual— son las que habilitan la inhabilitación calificada de 2 a 10 años ante toda la Administración.
 
 La ley fija además un plazo de prescripción: **la responsabilidad de los particulares prescribe en 5 años** desde el hecho. Y para graduar la sanción dentro del rango legal, el artículo 120 ordena valorar el impacto negativo en el servicio o interés público, la reiteración de conducta sancionada dentro de los dos años siguientes a la firmeza de la última sanción, y la comisión de varias faltas en un mismo concurso.
 
