@@ -10,7 +10,7 @@ author: "Lic. Esteban Pérez Herrera"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 seoTitle: "Discrecionalidad Municipal en Urbanismo · CR"
-seoDescription: "Tesis del Lic. Esteban Pérez Herrera sobre los límites de la discrecionalidad municipal en regulación urbanística costarricense, planes reguladores y control judicial."
+seoDescription: "Tesis de Esteban Pérez Herrera sobre los límites de la discrecionalidad municipal en la regulación urbanística, los planes reguladores y su control judicial."
 ---
 
 Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad de Costa Rica.
@@ -66,5 +66,7 @@ Las conclusiones confirman la hipótesis de que el marco normativo urbanístico 
 La concurrencia institucional se refleja en la intervención de múltiples órganos y entes públicos en la regulación urbanística —municipalidades, el Instituto Nacional de Vivienda y Urbanismo, el Ministerio de Ambiente, la Secretaría Técnica Nacional Ambiental, entre otros—, cuyas competencias no siempre están delimitadas con precisión, generando conflictos de competencia y decisiones contradictorias. La heterogeneidad regulatoria entre municipios produce un panorama en el que los derechos y obligaciones de los propietarios varían significativamente de un cantón a otro, lo que plantea interrogantes sobre la igualdad ante la ley y la coherencia del ordenamiento territorial a nivel nacional.
 
 El autor señala que la necesidad de replantear el marco normativo no implica eliminar la discrecionalidad municipal en materia urbanística, pues esta resulta indispensable para que los gobiernos locales puedan adaptar la regulación territorial a las particularidades geográficas, sociales, económicas y ambientales de cada cantón. Lo que se requiere, según las conclusiones de la investigación, es el establecimiento de mecanismos normativos e institucionales que garanticen que el ejercicio de esa discrecionalidad se realice de manera transparente, motivada y sujeta a controles efectivos que prevengan la arbitrariedad y aseguren la protección de los derechos fundamentales de los administrados.
+
+Para quien enfrenta hoy una municipalidad que no resuelve un permiso de construcción, la guía sobre el [silencio positivo en los permisos municipales](/articulos/silencio-positivo-permiso-municipal) explica cuándo la solicitud se tiene por aprobada y cuáles son sus límites.
 
 **Palabras clave:** discrecionalidad administrativa, planificación urbanística, ordenamiento territorial, plan regulador, municipal, derecho urbanístico.

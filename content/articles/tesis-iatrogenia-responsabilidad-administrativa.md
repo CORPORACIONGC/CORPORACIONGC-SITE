@@ -10,7 +10,7 @@ author: "Licda. Mariana Montero Acuña"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 seoTitle: "Iatrogenia y Responsabilidad Administrativa · CR"
-seoDescription: "Tesis de la Licda. Mariana Montero Acuña sobre la iatrogenia médica como responsabilidad patrimonial del Estado costarricense: criterios de imputación y malpraxis. UCR, 2022."
+seoDescription: "Tesis de Mariana Montero Acuña sobre la iatrogenia médica como responsabilidad patrimonial del Estado: criterios de imputación y malpraxis. UCR, 2022."
 ---
 
 **Referencia:** Montero Acuña, Mariana. *La iatrogenia en la responsabilidad administrativa: una aproximación a los verdaderos criterios de aplicación en el ordenamiento jurídico costarricense*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, mayo 2022. Aprobada con distinción.
@@ -62,5 +62,7 @@ La tesis concluye que el criterio de imputación mayormente compatible con la ia
 Se introduce además el concepto de «iatrogenia negativa impuesta» como un nuevo enfoque que permite una aplicación más justa y técnicamente precisa de la figura en los procesos contencioso-administrativos. Este concepto constituye una contribución original de la autora al Derecho Administrativo sanitario y propone una categoría que distingue aquellos supuestos en los que el daño iatrogénico se produce como consecuencia de condiciones impuestas por la propia organización del servicio de salud —tales como la falta de recursos, la sobrecarga laboral de los profesionales o las deficiencias infraestructurales de los centros médicos— de aquellos otros supuestos en los que el daño obedece a factores inherentes a la condición del paciente o a la naturaleza del procedimiento médico.
 
 Esta distinción permite una imputación más precisa de la responsabilidad administrativa, pues reconoce que en muchos casos la iatrogenia no es atribuible a la conducta individual del profesional de salud, sino a las condiciones estructurales del sistema sanitario público. De este modo, la propuesta de la autora contribuye a una distribución más equitativa de las cargas derivadas de los daños iatrogénicos entre la Administración Pública, los profesionales de salud y los pacientes, fortaleciendo simultáneamente la protección del derecho fundamental a la salud y la seguridad jurídica en el ámbito del Derecho Administrativo sanitario costarricense.
+
+Cómo se reclama hoy al Estado un daño causado en la atención médica pública, con sus plazos y requisitos, lo explica la guía sobre la [responsabilidad patrimonial del Estado](/articulos/responsabilidad-patrimonial-del-estado-costa-rica).
 
 **Palabras clave:** iatrogenia; responsabilidad administrativa; malpraxis médica; derecho a la salud; responsabilidad patrimonial; Administración Pública; eximentes de responsabilidad; funcionamiento anormal; derecho administrativo costarricense.

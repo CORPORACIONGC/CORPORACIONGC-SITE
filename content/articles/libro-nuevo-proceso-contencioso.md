@@ -10,7 +10,7 @@ author: "Óscar Eduardo González Camacho y otros"
 institution: "Escuela Judicial · Poder Judicial de Costa Rica / Editorial Jurídica Continental"
 publicationType: "libro"
 seoTitle: "El Nuevo Proceso Contencioso Administrativo · CR"
-seoDescription: "Obra colectiva sobre la implementación del CPCA (Ley N.° 8508): bases constitucionales, tutela cautelar, sentencia, casación y ejecución. Escuela Judicial / Jurídica Continental, 2006."
+seoDescription: "Obra colectiva sobre la implementación del CPCA (Ley 8508): bases constitucionales, tutela cautelar, sentencia, casación y ejecución. Escuela Judicial, 2006."
 ---
 
 Obra publicada por la Escuela Judicial del Poder Judicial de Costa Rica y Editorial Jurídica Continental (2006).
@@ -92,3 +92,5 @@ El **Capítulo XVI** desarrolla el proceso de extensión y adaptación de la jur
 ### Significado de la obra
 
 La obra representa una contribución fundamental al Derecho Procesal Administrativo costarricense. Concebida desde la perspectiva de quienes participaron en la redacción del código y en su posterior aplicación desde la magistratura y la judicatura, convergen en ella la visión sobre la intención y los objetivos de la reforma con el conocimiento práctico derivado de su implementación. El tratado se erige así como una guía interpretativa de primer orden para la comprensión y aplicación del CPCA, contribuyendo decisivamente a la consolidación del nuevo modelo de justicia administrativa en Costa Rica.
+
+El texto vigente del Código, con sus artículos clave, sus antecedentes legislativos y la tabla de plazos, está en la guía del [Código Procesal Contencioso Administrativo](/articulos/que-es-el-cpca-costa-rica).

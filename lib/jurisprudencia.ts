@@ -4412,7 +4412,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-502506",
     fuenteNombre: "Nexus PJ · Poder Judicial de Costa Rica",
 
-    metaDescription: "Legitimación pasiva: el órgano con personalidad jurídica instrumental es centro último y único de imputación, y el Estado no responde por su competencia exclusiva. Voto 1360-F-S1-2010 de la Sala Primera.",
+    metaDescription: "Legitimación pasiva del órgano persona: es centro último de imputación y el Estado no responde por su competencia exclusiva. Voto 1360-F-S1-2010.",
     seoTitle: "Legitimación pasiva del órgano persona · Voto 1360-F-S1-2010",
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo", "servicio-publico"],
     temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Personalidad Jurídica Instrumental", "Responsabilidad Patrimonial"],

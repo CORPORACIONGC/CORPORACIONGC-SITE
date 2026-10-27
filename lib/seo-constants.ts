@@ -51,7 +51,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Impugnación de leyes, decretos y reglamentos contrarios a la Constitución.",
     seoTitle: "Acción de Inconstitucionalidad · Sala IV, Costa Rica",
     seoDescription:
-      "Impugnación de leyes, decretos y reglamentos contrarios a la Constitución ante la Sala Constitucional. Bufete dirigido por especialista en Derecho Constitucional formado en España. Ley N.° 7135.",
+      "Impugnación de leyes, decretos y reglamentos contrarios a la Constitución ante la Sala Constitucional (Ley N.° 7135). Bufete dirigido por un exmagistrado.",
     ogShortTitle: "Acción de {{em}}",
     ogEmphasis: "inconstitucionalidad",
   },
@@ -181,7 +181,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Cumplimiento PRODHAB, gobierno digital y regulación de IA en la Administración.",
     seoTitle: "IA, Gobierno Digital y Protección de Datos · Costa Rica",
     seoDescription:
-      "Cumplimiento de PRODHAB (Ley N.° 8968), gobierno digital (Ley N.° 9943) y regulación de IA en la Administración. Gobernanza algorítmica, transparencia y defensa en sanciones. Corporación GC.",
+      "PRODHAB (Ley 8968), gobierno digital (Ley 9943) e IA en la Administración: gobernanza algorítmica, transparencia y defensa en procedimientos sancionatorios.",
     ogShortTitle: "IA, gobierno digital y {{em}}",
     ogEmphasis: "datos",
   },
@@ -201,7 +201,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Defensa ante SETENA, MINAE y SINAC; estructuración de créditos de carbono.",
     seoTitle: "Litigio Ambiental y Mercados de Carbono · CR",
     seoDescription:
-      "Defensa ante SETENA, MINAE y SINAC, evaluación de impacto ambiental y estructuración de créditos de carbono (UCC, FONAFIFO). Cumplimiento del CBAM europeo. Litigio ambiental ante TCA y Sala IV.",
+      "Defensa ante SETENA, MINAE y SINAC, evaluación de impacto ambiental y créditos de carbono (UCC, FONAFIFO). Cumplimiento del CBAM y litigio ambiental.",
     ogShortTitle: "Litigio ambiental y mercados de {{em}}",
     ogEmphasis: "carbono",
   },
@@ -221,7 +221,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Registro VASP ante SUGEF (Ley N.° 10961), cumplimiento LC/FT y defensa ante SUGEF y CONASSIF.",
     seoTitle: "Registro VASP y Regulación Fintech · Costa Rica",
     seoDescription:
-      "Registro VASP ante SUGEF bajo la Ley 10961, cumplimiento LC/FT y regla de viaje, adecuación societaria y defensa ante SUGEF y CONASSIF para fintechs, exchanges y custodios.",
+      "Registro VASP ante SUGEF (Ley 10961), cumplimiento LC/FT y regla de viaje, adecuación societaria y defensa ante SUGEF y CONASSIF para fintechs y exchanges.",
     ogShortTitle: "Regulación {{em}} y cripto",
     ogEmphasis: "fintech",
   },
@@ -241,7 +241,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Asesoría a concesionarios de espectro, operadores de torres y satelitales.",
     seoTitle: "Telecomunicaciones, Espectro y 5G · Costa Rica",
     seoDescription:
-      "Asesoría a concesionarios de espectro, operadores de torres y satelitales tras la subasta 5G de 2025. Cumplimiento ante SUTEL y MICITT, permisos municipales y compartición de infraestructura.",
+      "Concesionarios de espectro, torres y satélites tras la subasta 5G de 2025: cumplimiento ante SUTEL y MICITT, permisos municipales y compartición.",
     ogShortTitle: "Telecomunicaciones, espectro y {{em}}",
     ogEmphasis: "5G",
   },
@@ -251,7 +251,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
       "Permisos, contratos PPA con ICE y regulación tarifaria ante ARESEP.",
     seoTitle: "Energía Renovable y PPA con ICE · Costa Rica",
     seoDescription:
-      "Asesoría a generadores privados en permisos, contratos PPA con ICE, regulación tarifaria ante ARESEP y disputas de despacho. Hidrógeno verde, almacenamiento y Mercado Eléctrico Regional (SIEPAC).",
+      "Generadores privados en Costa Rica: permisos, contratos PPA con el ICE, tarifas ante ARESEP y disputas de despacho. Hidrógeno verde, almacenamiento y SIEPAC.",
     ogShortTitle: "Energía renovable y {{em}}",
     ogEmphasis: "PPA con ICE",
   },
@@ -346,7 +346,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     name: "Lic. Khevin Alberto Sánchez Zamora",
     initials: "KS",
     role: "Abogado Asociado",
-    seoTitle: "Lic. Khevin Alberto Sánchez Zamora — Abogado en Derecho Público",
+    seoTitle: "Lic. Khevin Sánchez Zamora · Abogado en Derecho Público",
     seoDescription:
       "Abogado en Costa Rica: litigio contencioso, medidas cautelares, casación y contratación pública. Admitido en la Maestría en Derecho Público de la UCR.",
     ogTitle: "Lic. Khevin Alberto Sánchez Zamora — Corporación GC, CR",
@@ -385,7 +385,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     role: "Abogada Asociada",
     seoTitle: "Licda. Mariana Montero · Abogada Asociada",
     seoDescription:
-      "Abogada asociada de Corporación GC. Licenciada en Derecho con mención en Derechos Humanos por la UCR. Especialista en malpraxis médica y responsabilidad del Estado.",
+      "Abogada asociada de Corporación GC, licenciada en Derecho con mención en Derechos Humanos (UCR). Especialista en malpraxis médica y responsabilidad del Estado.",
     ogTitle: "Licda. Mariana Montero Acuña — Corporación GC, CR",
     ogDescription:
       "Licenciada en Derecho con mención en Derechos Humanos (UCR, con distinción). Egresada de la Maestría en Derecho Público. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial.",

@@ -231,8 +231,7 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
           >
             {additional.slice(0, 3).map((s) => (
               <StaggerItem key={s.slug}>
-                <Link
-                  href={`/jurisprudencia-destacada/${s.slug}`}
+                <div
                   className="group relative block h-full p-6 rounded-xl border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.03] shadow-[0_18px_40px_-18px_rgba(107,29,58,0.25),0_4px_12px_-4px_rgba(107,29,58,0.12)] dark:shadow-[0_12px_30px_-15px_rgba(0,0,0,0.4)] hover:border-burgundy/25 dark:hover:border-hilo/25 hover:shadow-[0_28px_60px_-18px_rgba(107,29,58,0.35),0_8px_18px_-4px_rgba(107,29,58,0.18)] hover:-translate-y-0.5 transition-all duration-400 overflow-hidden"
                 >
                   {/* Top hairline gleam */}
@@ -253,12 +252,14 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
                     </span>
                   </div>
                   <h4 className="type-card-title text-cream group-hover:text-burgundy-light dark:group-hover:text-hilo-texto transition-colors duration-300 mb-2">
-                    {s.titulo}
+                    <Link href={`/jurisprudencia-destacada/${s.slug}`} className="after:absolute after:inset-0 after:content-['']">
+                      {s.titulo}
+                    </Link>
                   </h4>
                   <p className="text-[13px] text-cream/65">
                     {s.materia}
                   </p>
-                </Link>
+                </div>
               </StaggerItem>
             ))}
           </StaggerContainer>

@@ -69,6 +69,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <link rel="alternate" type="application/rss+xml" title="Corporación GC · Guías y análisis" href="/feed.xml" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"){document.documentElement.classList.add("dark");return}if(t==="light")return;if(window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches){document.documentElement.classList.add("dark")}else{var h=new Date().getHours();if(h>=18||h<6)document.documentElement.classList.add("dark")}}catch(e){document.documentElement.classList.add("dark")}})()`,

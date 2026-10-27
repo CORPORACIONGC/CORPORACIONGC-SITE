@@ -10,7 +10,7 @@ author: "MSc. Katherine González Coto"
 institution: "Universidad Escuela Libre de Derecho"
 publicationType: "tesis"
 seoTitle: "Procedimiento Expropiatorio en Costa Rica · Tesis"
-seoDescription: "Tesis de licenciatura de Katherine González Coto sobre el procedimiento expropiatorio costarricense, con las reformas de las leyes N.° 9286 (2014) y N.° 9462 (2017) a la Ley N.° 7495."
+seoDescription: "Tesis de Katherine González Coto sobre el procedimiento expropiatorio y las reformas de las leyes 9286 (2014) y 9462 (2017) a la Ley 7495."
 ---
 
 Tesis de grado para optar por el título de Licenciatura en Derecho, Universidad Escuela Libre de Derecho.
@@ -78,5 +78,7 @@ La determinación del justo precio es frecuentemente el punto de mayor controver
 Las conclusiones confirman la hipótesis de que el procedimiento expropiatorio costarricense, pese a las reformas recientes, requiere ajustes adicionales para cumplir cabalmente su doble finalidad: satisfacer el interés público que justifica la expropiación y garantizar al propietario una indemnización justa, oportuna y completa.
 
 La investigación propone la integración de los supuestos no contemplados en el régimen procedimental actual, la clarificación de los plazos máximos del procedimiento en sede administrativa y la mejora de los mecanismos de valoración pericial para reducir las discrepancias entre avalúos administrativos y judiciales. La tesis constituye un instrumento de consulta para los operadores jurídicos que intervienen en procedimientos expropiatorios, tanto desde la perspectiva de la Administración expropiante como del propietario afectado.
+
+Los derechos del propietario frente a una expropiación en curso, paso a paso, están en la guía sobre los [derechos del expropiado en Costa Rica](/articulos/expropiacion-costa-rica-derechos).
 
 **Palabras clave:** Expropiación, Procedimiento Administrativo, Justo Precio, Avalúo, Ley 7495, Reforma Legal, Derecho de Propiedad, Interés Público.

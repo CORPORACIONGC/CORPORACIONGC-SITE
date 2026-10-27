@@ -10,7 +10,7 @@ author: "Lic. José Carlos Solano Salas"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 seoTitle: "Control Jurisdiccional de los Actos de Gobierno · CR"
-seoDescription: "Tesis del Lic. José Carlos Solano sobre el Acto de Gobierno como especie del acto administrativo, su evolución histórica y el control jurisdiccional en el Derecho Público CR."
+seoDescription: "Tesis de José Carlos Solano sobre el acto de gobierno como especie del acto administrativo, su evolución histórica y su control jurisdiccional."
 ---
 
 Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad de Costa Rica.
@@ -18,6 +18,8 @@ Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad d
 **Director:** Dr. Óscar Eduardo González Camacho
 
 **Referencia:** Solano Salas, Jose Carlos. *El control jurisdiccional del Acto de Gobierno*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, San José, Costa Rica, 2023. x y 168.
+
+En la práctica, qué conductas del Estado pueden llevarse ante el juez y cómo se hace lo explica la guía sobre [cómo demandar al Estado en Costa Rica](/articulos/como-demandar-al-estado-costa-rica).
 
 **Palabras clave:** Acto de Gobierno, Acto Administrativo, derecho procesal contencioso, control de legalidad, daños y perjuicios.
 

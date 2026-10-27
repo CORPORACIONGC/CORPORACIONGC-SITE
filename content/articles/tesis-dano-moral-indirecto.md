@@ -10,7 +10,7 @@ author: "MSc. Katherine González Coto"
 institution: "Universidad de Costa Rica"
 publicationType: "tesis"
 seoTitle: "Daño Moral Indirecto y Responsabilidad Estatal · CR"
-seoDescription: "Tesis de maestría de Katherine González Coto sobre el reconocimiento del daño moral indirecto familiar y social como responsabilidad patrimonial del Estado costarricense. UCR."
+seoDescription: "Tesis de maestría de Katherine González Coto sobre el daño moral indirecto, familiar y social, como responsabilidad patrimonial del Estado. UCR."
 ---
 
 Trabajo Final de Investigación Aplicada para optar por el grado y título de Maestría Profesional en Derecho Público, Universidad de Costa Rica.
@@ -71,5 +71,7 @@ La investigación analiza los criterios que la jurisprudencia costarricense ha d
 ## Metodología y alcance de la investigación
 
 La investigación emplea una metodología cualitativa que integra análisis doctrinal, estudio jurisprudencial y examen normativo. Se revisa la doctrina nacional e internacional sobre el daño moral indirecto, se analizan resoluciones judiciales del Tribunal Contencioso Administrativo y de la Sala Primera de la Corte Suprema de Justicia, y se examina el marco normativo vigente —particularmente la Ley General de la Administración Pública y el Código Procesal Contencioso Administrativo— para determinar la viabilidad y los alcances del reconocimiento del daño moral indirecto como categoría autónoma dentro de la responsabilidad patrimonial del Estado costarricense.
+
+La vía para reclamar esos daños al Estado, con sus plazos y requisitos, se explica en la guía sobre la [responsabilidad patrimonial del Estado en Costa Rica](/articulos/responsabilidad-patrimonial-del-estado-costa-rica).
 
 **Palabras clave:** Daño Moral Indirecto, Responsabilidad Patrimonial, Administración Pública, Vínculo Jurídico, Daño Moral Colectivo, Interés Colectivo, Derecho Público.

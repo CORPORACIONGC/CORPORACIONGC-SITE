@@ -10,7 +10,7 @@ author: "Dr. Óscar Eduardo González Camacho"
 institution: "Escuela Judicial del Poder Judicial"
 publicationType: "libro"
 seoTitle: "Consideraciones sobre el Proceso Ejecutivo · CR"
-seoDescription: "Tratado del Dr. Óscar González Camacho sobre el proceso ejecutivo en materia civil de hacienda: títulos ejecutivos, presupuestos de liquidez, demanda y cobro judicial. 1995."
+seoDescription: "Tratado del Dr. Óscar González Camacho sobre el proceso ejecutivo en materia civil de hacienda: títulos ejecutivos, liquidez, demanda y cobro. 1995."
 ---
 
 Obra publicada por la Escuela Judicial del Poder Judicial de Costa Rica (1995).
@@ -74,3 +74,5 @@ La obra concluye con anexos de notable utilidad práctica que incluyen un esquem
 ### Significado de la obra
 
 La obra constituye una referencia indispensable para la práctica del cobro judicial en la jurisdicción contencioso-administrativa y civil de hacienda costarricense, combinando rigor doctrinal con utilidad práctica inmediata para el litigante. Su valor perdurable radica en la claridad con que sistematiza una materia de considerable complejidad técnica y en la perspectiva práctica que ofrece, nacida de la experiencia directa del autor en el ejercicio de la función jurisdiccional. La clasificación de títulos ejecutivos y el análisis de los requisitos de la demanda contenidos en esta obra han servido como referencia permanente para la práctica forense en la jurisdicción civil de hacienda costarricense.
+
+Para el cumplimiento forzoso de las sentencias contra la Administración en el proceso contencioso vigente, véase la guía sobre la [ejecución de sentencias contra el Estado](/articulos/ejecucion-sentencia-contra-el-estado-costa-rica).

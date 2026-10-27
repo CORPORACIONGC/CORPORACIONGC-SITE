@@ -60,10 +60,8 @@ const SECCIONES: { titulo: string; area: string; areas: string[] }[] = [
 
 function Tarjeta({ article }: { article: ArticleMeta }) {
   return (
-    <Link
-      href={`/articulos/${article.slug}`}
-      className="gc-tarjeta group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
-    >
+    /* El enlace es el título; su ::after cubre la tarjeta entera. */
+    <div className="gc-tarjeta group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02]">
       <div className="flex items-center gap-2 mb-4">
         <div
           className={`p-1.5 rounded-md transition-colors duration-300 group-hover:bg-burgundy group-hover:text-white ${
@@ -89,7 +87,9 @@ function Tarjeta({ article }: { article: ArticleMeta }) {
       </div>
 
       <h3 className="font-display text-lg font-semibold tracking-tight text-cream group-hover:text-emphasis transition-colors duration-300">
-        {article.title}
+        <Link href={`/articulos/${article.slug}`} className="after:absolute after:inset-0 after:content-['']">
+          {article.title}
+        </Link>
       </h3>
 
       {article.author && (
@@ -120,7 +120,7 @@ function Tarjeta({ article }: { article: ArticleMeta }) {
           ))}
         </div>
       )}
-    </Link>
+    </div>
   );
 }
 

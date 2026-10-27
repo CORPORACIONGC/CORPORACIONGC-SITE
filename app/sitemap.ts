@@ -36,6 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             languages: {
               [article.lang ?? "es"]: `${baseUrl}/articulos/${article.slug}`,
               [article.lang === "en" ? "es" : "en"]: `${baseUrl}/articulos/${article.translation}`,
+              // x-default apunta a la versión en español, como en la página.
+              "x-default": `${baseUrl}/articulos/${article.lang === "en" ? article.translation : article.slug}`,
             },
           },
         }
@@ -77,6 +79,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-05-20"),
       changeFrequency: "yearly",
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/abogados`,
+      lastModified: new Date(TEAM.map((m) => fechaPerfil(m.slug) ?? "2026-03-28").sort().pop() ?? "2026-03-28"),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/sobre-nosotros`,

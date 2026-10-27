@@ -18,7 +18,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Google-Extended", allow: "/" },
       // Block AI training-only crawlers (no search benefit, only scraping)
       { userAgent: "CCBot", disallow: "/" },
-      { userAgent: "anthropic-ai", disallow: "/" },
       { userAgent: "cohere-ai", disallow: "/" },
       { userAgent: "Bytespider", disallow: "/" },
       { userAgent: "Meta-ExternalAgent", disallow: "/" },

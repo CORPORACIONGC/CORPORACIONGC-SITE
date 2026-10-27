@@ -12,7 +12,7 @@ publicationType: "articulo"
 sourceReference: "Revista Estudiantil Hermenéutica, Edición XXVI (No. 26), Facultad de Derecho, Universidad de Costa Rica, junio 2025, pp. 75–144."
 sourceUrl: "https://drive.google.com/file/d/1iif6vJbNBQB3q6aK-HLA3-Tfd6WvslNo/view?usp=sharing"
 seoTitle: "IA en la Contratación Pública · Costa Rica"
-seoDescription: "Estudio jurídico sobre la implementación de inteligencia artificial en la contratación pública costarricense bajo la Ley N.° 9986. Hermenéutica UCR, edición XXVI, 2025."
+seoDescription: "Estudio sobre la inteligencia artificial en la contratación pública costarricense bajo la Ley 9986. Revista Hermenéutica (UCR), edición XXVI, 2025."
 ---
 
 **Referencia:** Sánchez Zamora, Khevin y Montero Acuña, Mariana. «Administración Pública aumentada: bases normativas y técnicas para la implementación de inteligencia artificial en la contratación estatal costarricense». *Revista Estudiantil Hermenéutica*, Edición XXVI, No. 26, Facultad de Derecho, Universidad de Costa Rica, junio 2025, pp. 75–144.
@@ -52,5 +52,7 @@ Las recomendaciones incluyen desarrollar proyectos piloto controlados, elaborar 
 ### Conclusión
 
 Se concluye que la implementación de IA en la contratación pública costarricense es jurídicamente viable, técnicamente factible y deseable desde la perspectiva de modernización administrativa, representando una oportunidad para colocar a Costa Rica a la vanguardia regional en gestión pública innovadora y transparente. Esta conclusión se fundamenta en la convergencia de tres factores determinantes: primero, la existencia de un marco legal que no solo no prohíbe sino que promueve la incorporación de tecnologías avanzadas en los procesos de contratación; segundo, la disponibilidad de tecnologías de IA cuyas capacidades se alinean con las necesidades identificadas en el sistema de compras públicas; y tercero, la existencia de una voluntad institucional de modernización que, canalizada adecuadamente, puede traducirse en mejoras sustanciales en la transparencia, la competitividad y la eficiencia de la contratación estatal. La investigación subraya que esta implementación debe ser gradual, supervisada y sujeta a evaluación continua, para asegurar que los beneficios prometidos se materialicen sin comprometer los principios fundamentales que rigen la actividad contractual del Estado.
+
+El marco que rige hoy esas compras, con la reforma de 2026, está en la guía del [Reglamento a la Ley General de Contratación Pública](/articulos/reforma-reglamento-contratacion-publica-2026-proveedores-estado).
 
 **Palabras clave:** inteligencia artificial; contratación pública; administración pública; transparencia administrativa; eficiencia gubernamental; SICOP; digitalización estatal; derecho administrativo; transformación digital.

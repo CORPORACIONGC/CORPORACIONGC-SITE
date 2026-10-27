@@ -10,6 +10,7 @@
 // a `twitter:card=summary`. Los helpers `og()` y `tw()` garantizan esos valores.
 
 import type { Metadata } from "next";
+import { PRACTICE_AREA_PAGES } from "./constants";
 
 const SITE_NAME = "Corporación GC";
 const LOCALE = "es_CR";
@@ -65,20 +66,21 @@ export const sobreNosotrosMetadata: Metadata = {
 };
 
 export const areasMetadata: Metadata = {
-  title: "Áreas de Práctica · Derecho Público y Administrativo",
+  /* Absolutos: con el sufijo de la plantilla, Google los cortaba. */
+  title: { absolute: "Áreas de práctica en Derecho Público · Costa Rica" },
   description:
-    "32 áreas en Derecho Público: contencioso-administrativo, medidas cautelares, casación ante Sala Primera, amparo, contratación pública y más. Costa Rica.",
+    `${PRACTICE_AREA_PAGES.length} áreas en Derecho Público: contencioso-administrativo, medidas cautelares, casación ante Sala Primera, amparo, contratación pública y más. Costa Rica.`,
   alternates: { canonical: "/areas" },
   openGraph: og({
     title: "Áreas de Práctica · Corporación GC, Costa Rica",
     description:
-      "32 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
+      `${PRACTICE_AREA_PAGES.length} áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.`,
     url: "/areas",
   }),
   twitter: tw({
     title: "Áreas de Práctica · Corporación GC",
     description:
-      "32 áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.",
+      `${PRACTICE_AREA_PAGES.length} áreas en Derecho Público y Administrativo: litigio contencioso, medidas cautelares, casación ante Sala Primera, recursos de amparo, contratación pública, ZMT y más. Atendemos en todo Costa Rica.`,
   }),
 };
 
@@ -88,26 +90,41 @@ export const articulosMetadata: Metadata = {
      «Publicaciones Académicas», que describía mal un listado de guías. */
   title: { absolute: "Guías y análisis de Derecho Público en Costa Rica" },
   description:
-    "Guías prácticas y publicaciones del equipo de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo en Costa Rica.",
+    "Guías prácticas y publicaciones de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo.",
   alternates: { canonical: "/articulos" },
   openGraph: og({
     title: "Guías y análisis de Derecho Público · Corporación GC",
     description:
-      "Guías prácticas y publicaciones del equipo de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo en Costa Rica.",
+      "Guías prácticas y publicaciones de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo.",
     url: "/articulos",
   }),
   twitter: tw({
     title: "Guías y análisis de Derecho Público · Corporación GC",
     description:
-      "Guías prácticas y publicaciones del equipo de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo en Costa Rica.",
+      "Guías prácticas y publicaciones de Corporación GC sobre contencioso-administrativo, contratación pública, amparo y procedimiento administrativo.",
   }),
 };
 
+/* Índice del equipo (/abogados). */
+export const ABOGADOS_DESCRIPCION =
+  "Los abogados de Corporación GC: el Dr. Óscar González Camacho, exmagistrado de la Sala Primera, y el equipo que litiga con él en Derecho Público en Costa Rica.";
+
+export const abogadosMetadata: Metadata = {
+  title: { absolute: "Abogados de Corporación GC · Derecho Público en Costa Rica" },
+  description: ABOGADOS_DESCRIPCION,
+  alternates: { canonical: "/abogados" },
+  openGraph: og({
+    title: "Abogados de Corporación GC · Derecho Público en Costa Rica",
+    description: ABOGADOS_DESCRIPCION,
+    url: "/abogados",
+  }),
+  twitter: tw({ title: "Abogados de Corporación GC", description: ABOGADOS_DESCRIPCION }),
+};
+
 export const jurisprudenciaMetadata: Metadata = {
-  title:
-    "Jurisprudencia Destacada · Sentencias del Dr. Óscar González Camacho",
+  title: { absolute: "Sentencias del Dr. Óscar González Camacho · Sala Primera" },
   description:
-    "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
+    "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho en la Sala Primera (2002–2014): análisis, pasajes literales y texto íntegro en Nexus.",
   alternates: { canonical: "/jurisprudencia-destacada" },
   openGraph: og({
     title: "Jurisprudencia Destacada · Corporación GC, Costa Rica",
@@ -123,11 +140,10 @@ export const jurisprudenciaMetadata: Metadata = {
 };
 
 export const contactoMetadata: Metadata = {
-  // El layout aplica la plantilla "%s · Corporación GC"; el título no debe
-  // repetir la marca para evitar "Contacto · Corporación GC · Corporación GC".
-  title: "Contacto",
+  // Absoluto: «Contacto · Corporación GC» desaprovechaba el espacio del título.
+  title: { absolute: "Contacto · Corporación GC, abogados de Derecho Público" },
   description:
-    "Contacte a Corporación GC, bufete especialista en Derecho Público y litigio contencioso-administrativo en Costa Rica. Escríbanos por formulario, WhatsApp, correo o teléfono y le orientamos sobre su caso.",
+    "Contacte a Corporación GC, bufete de Derecho Público y litigio contencioso-administrativo en Costa Rica, por formulario, WhatsApp, correo o teléfono.",
   alternates: { canonical: "/contacto" },
   openGraph: og({
     title: "Contacto · Corporación GC, Costa Rica",
@@ -173,7 +189,6 @@ import { ATTORNEYS } from "./seo-constants";
    entradas) — eso causaba que /areas/zona-maritimo-terrestre,
    /areas/litigio-contencioso-administrativo y /areas/medidas-cautelares
    heredaran la metadata genérica de la home en lugar de su propia. */
-import { PRACTICE_AREA_PAGES } from "./constants";
 
 export async function generateAreaMetadata(
   { params }: { params: Promise<{ slug: string }> }
@@ -209,7 +224,9 @@ export async function generateAttorneyMetadata(
   if (!a) return {};
 
   return {
-    title: a.seoTitle,
+    /* Sin el sufijo de marca cuando no cabe: el nombre va primero y el corte
+       se llevaba solo la marca. */
+    title: `${a.seoTitle} · Corporación GC`.length > 60 ? { absolute: a.seoTitle } : a.seoTitle,
     description: a.seoDescription,
     openGraph: og({
       title: a.ogTitle,

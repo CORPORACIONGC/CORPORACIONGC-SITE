@@ -10,7 +10,7 @@ author: "Dr. Óscar Eduardo González Camacho"
 institution: "Universidad de Alcalá de Henares, España"
 publicationType: "libro"
 seoTitle: "Justicia Administrativa frente a la Inactividad · CR"
-seoDescription: "Tesis doctoral del Dr. Óscar González Camacho (Universidad de Alcalá, Cum Laude) sobre el control jurisdiccional de la inactividad material y la tutela judicial efectiva."
+seoDescription: "Tesis doctoral del Dr. Óscar González Camacho (Universidad de Alcalá) sobre el control jurisdiccional de la inactividad material de la Administración."
 ---
 
 Tesis Doctoral presentada por Óscar Eduardo González Camacho para la colación del Grado de Doctor en Derecho, bajo la dirección del Profesor Dr. D. Miguel Sánchez Morón, Universidad de Alcalá, Facultad de Derecho (1998). Calificación: Sobresaliente Cum Laude.
@@ -68,3 +68,5 @@ Esta perspectiva comparada enriquece la propuesta de un modelo de control judici
 La obra trasciende el ámbito académico para convertirse en un instrumento de transformación institucional: sus postulados fundamentales fueron incorporados directamente en la legislación procesal costarricense, consolidando un modelo de justicia administrativa de avanzada en América Latina. El Código Procesal Contencioso Administrativo de Costa Rica recogió las propuestas centrales de la tesis: la ampliación del objeto del proceso a toda conducta administrativa, el fortalecimiento de los poderes del juez con posibilidad de condena directa, la regulación de medidas cautelares positivas sin limitación de contenido y el establecimiento de mecanismos de ejecución forzosa de sentencias.
 
 La publicación de la tesis doctoral como obra en tres tomos por Editorial Investigaciones Jurídicas (2002) permitió su difusión en el ámbito académico y profesional costarricense, donde se convirtió en referencia obligada para la comprensión del nuevo modelo de justicia administrativa. La influencia de la obra se extiende más allá de las fronteras costarricenses, siendo citada en estudios académicos de diversos países latinoamericanos como ejemplo de la construcción dogmática de un modelo de control judicial pleno de la Administración Pública adaptado a las necesidades del Estado Social y Democrático de Derecho contemporáneo.
+
+La aplicación de esa tesis en el proceso vigente, con el requerimiento previo del artículo 35 del CPCA y lo que puede ordenar la sentencia, se explica en la guía sobre la [inactividad administrativa](/articulos/inactividad-administrativa-costa-rica).

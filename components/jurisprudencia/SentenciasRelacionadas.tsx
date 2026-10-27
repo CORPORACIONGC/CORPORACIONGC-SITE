@@ -24,17 +24,19 @@ export function SentenciasRelacionadas({
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {sentencias.map((s) => (
           <li key={s.slug}>
-            <Link
-              href={`/jurisprudencia-destacada/${s.slug}`}
-              className="group flex h-full items-start justify-between gap-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02] hover:border-burgundy/25 hover:bg-cream/[0.04] transition-all duration-300"
-            >
+            {/* El enlace es el título; su ::after cubre la tarjeta entera. Así
+                el texto del ancla es el título y no toda la ficha. */}
+            <div className="group relative flex h-full items-start justify-between gap-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02] hover:border-burgundy/25 hover:bg-cream/[0.04] focus-within:border-burgundy/25 transition-all duration-300">
               <div className="min-w-0">
                 <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40">
                   {s.numero.replace("Resolución N° ", "")} · {s.fechaCorta}
                 </div>
-                <div className="mt-2 text-sm font-semibold text-cream group-hover:text-emphasis transition-colors duration-300">
+                <Link
+                  href={`/jurisprudencia-destacada/${s.slug}`}
+                  className="mt-2 block text-sm font-semibold text-cream group-hover:text-emphasis transition-colors duration-300 after:absolute after:inset-0 after:content-['']"
+                >
                   {s.titulo}
-                </div>
+                </Link>
                 <div className="mt-1 text-xs text-cream/50 leading-relaxed line-clamp-2">{s.materia}</div>
               </div>
               <ArrowRight
@@ -42,7 +44,7 @@ export function SentenciasRelacionadas({
                 weight="bold"
                 className="mt-1 text-cream/30 group-hover:text-emphasis group-hover:translate-x-0.5 transition-all duration-300 shrink-0"
               />
-            </Link>
+            </div>
           </li>
         ))}
       </ul>

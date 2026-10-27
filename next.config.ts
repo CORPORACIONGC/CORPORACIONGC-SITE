@@ -85,6 +85,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/areas/comercio-internacional", destination: "/areas/otras-materias#comercio", permanent: true },
+      /* Variantes mal escritas que Search Console registró con impresiones
+         en setiembre (enlaces externos o generados); todas daban 404. */
+      { source: "/articulos/recurso-amparo-costarricense", destination: "/articulos/recurso-amparo-costa-rica", permanent: true },
+      { source: "/articulos/recurso-amparo-costarica", destination: "/articulos/recurso-amparo-costa-rica", permanent: true },
+      { source: "/articulos/que-es-the-cpca-costa-rica", destination: "/articulos/que-es-el-cpca-costa-rica", permanent: true },
+      { source: "/articulos/que-es-cpca-costa-rica", destination: "/articulos/que-es-el-cpca-costa-rica", permanent: true },
+      { source: "/articulos/sanciones-suppliers-contratacion-publica-ley-9986", destination: "/articulos/sanciones-a-proveedores-contratacion-publica-ley-9986", permanent: true },
+      { source: "/articulos/silencio-positivo-permiso-municipales", destination: "/articulos/silencio-positivo-permiso-municipal", permanent: true },
+      { source: "/articulos/traslado-de-cargos-que-costa-rica", destination: "/articulos/traslado-de-cargos-que-hacer-costa-rica", permanent: true },
+      { source: "/articulos/medidas-cautelares-contra-estado-costa-rica", destination: "/articulos/medidas-cautelares-contra-el-estado-costa-rica", permanent: true },
+      { source: "/areas/casacion-sala-perfil", destination: "/areas/casacion-sala-primera", permanent: true },
+      { source: "/areas/zona-mar%C3%ADtimo-terrestre", destination: "/areas/zona-maritimo-terrestre", permanent: true },
       // Search Console conserva esta ruta del sitio anterior entre sus 404.
       // El artículo existe, con otra carpeta.
       {
@@ -114,7 +126,17 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: csp,
           },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+          /* Vercel servía el HTML con «*»; el sitio no expone nada a otros
+             orígenes, así que solo se admite el propio. */
+          { key: "Access-Control-Allow-Origin", value: "https://www.corporaciongc.com" },
         ],
+      },
+      /* Los JSON y CSV de /datos se descargan desde las fichas, pero no
+         deben competir en el índice de Google (que sí indexa CSV). */
+      {
+        source: "/datos/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
       {
         source: "/pdfs/:path*",

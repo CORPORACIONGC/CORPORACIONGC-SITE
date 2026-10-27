@@ -162,13 +162,13 @@ export default function AreasPage() {
             <RunningHead title="Áreas de práctica" />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-              Lo que{" "}
-              <span className="text-burgundy">hacemos</span>
+              Áreas de práctica en{" "}
+              <span className="text-burgundy">Derecho Público</span>
             </h1>
 
             <div className="mt-8 text-sm text-cream/55 leading-relaxed max-w-[65ch] space-y-4">
               <p>
-                Corporación GC es un bufete costarricense dedicado exclusivamente al
+                Corporación GC es un bufete costarricense especializado en
                 Derecho Público. Cada área de práctica refleja una competencia
                 específica de nuestro equipo: desde la interposición de demandas ante
                 el Tribunal Contencioso Administrativo hasta la defensa en

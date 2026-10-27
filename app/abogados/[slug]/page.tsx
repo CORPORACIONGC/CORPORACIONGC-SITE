@@ -281,7 +281,7 @@ export default async function AttorneyProfile({
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Inicio", item: FIRM.url },
-      { "@type": "ListItem", position: 2, name: "Equipo", item: `${FIRM.url}/#equipo` },
+      { "@type": "ListItem", position: 2, name: "Equipo", item: `${FIRM.url}/abogados` },
       { "@type": "ListItem", position: 3, name: member.name, item: `${FIRM.url}/abogados/${member.slug}` },
     ],
   };

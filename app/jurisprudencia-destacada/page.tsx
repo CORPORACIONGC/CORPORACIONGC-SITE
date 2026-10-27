@@ -38,7 +38,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
     "@type": "CollectionPage",
     name: "Jurisprudencia Destacada | Corporación GC",
     description:
-      "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho como Magistrado de la Sala Primera de la Corte Suprema (2002–2014). Análisis, pasajes literales y enlace al texto íntegro en Nexus.",
+      "Sentencias redactadas por el Dr. Óscar Eduardo González Camacho en la Sala Primera (2002–2014): análisis, pasajes literales y texto íntegro en Nexus.",
     url: `${FIRM.url}/jurisprudencia-destacada`,
     isPartOf: { "@id": `${FIRM.url}/#website` },
     about: {
@@ -158,10 +158,8 @@ export default function JurisprudenciaDestacadaIndexPage() {
             >
               {sentencias.map((s) => (
                 <StaggerItem key={s.slug}>
-                  <Link
-                    href={`/jurisprudencia-destacada/${s.slug}`}
-                    className="group flex flex-col h-full p-7 md:p-8 rounded-2xl border border-cream/[0.08] bg-cream/[0.02] hover:border-emphasis/30 hover:bg-cream/[0.035] transition-all duration-400"
-                  >
+                  {/* El enlace es el título; su ::after cubre la tarjeta. */}
+                  <div className="group relative flex flex-col h-full p-7 md:p-8 rounded-2xl border border-cream/[0.08] bg-cream/[0.02] hover:border-emphasis/30 hover:bg-cream/[0.035] focus-within:border-emphasis/30 transition-all duration-400">
                     {/* Top meta row */}
                     <div className="flex items-center gap-3 mb-6">
                       {s.estado && (
@@ -180,7 +178,9 @@ export default function JurisprudenciaDestacadaIndexPage() {
 
                     {/* Title */}
                     <h2 className="font-display text-2xl md:text-[28px] tracking-tight leading-[1.1] text-cream group-hover:text-emphasis transition-colors duration-300 mb-3">
-                      {s.titulo}
+                      <Link href={`/jurisprudencia-destacada/${s.slug}`} className="after:absolute after:inset-0 after:content-['']">
+                        {s.titulo}
+                      </Link>
                     </h2>
 
                     {/* Materia */}
@@ -209,7 +209,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                         />
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </StaggerItem>
               ))}
             </StaggerContainer>

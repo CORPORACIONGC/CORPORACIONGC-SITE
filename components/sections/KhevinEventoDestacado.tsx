@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
-import { MagneticButton } from "@/components/ui/MagneticButton";
 import { MapPin, Microphone, GlobeHemisphereWest } from "@phosphor-icons/react/dist/ssr";
 import { RunningHead } from "@/components/ui/RunningHead";
 
@@ -83,16 +82,8 @@ export function KhevinEventoDestacado() {
                   </p>
                 </div>
 
-                {/* Link */}
-                <div className="flex flex-wrap items-center gap-4 mb-8">
-                  <MagneticButton
-                    href="https://www.globalsummitlh2025.com/en"
-                    variant="outline"
-                  >
-                    <GlobeHemisphereWest size={16} weight="duotone" />
-                    Ver sitio del evento
-                  </MagneticButton>
-                </div>
+                {/* El sitio del evento (globalsummitlh2025.com) dejó de existir;
+                    el botón que lo enlazaba se retiró el 26-10-2026. */}
 
                 {/* Organizer */}
                 <p className="text-[11px] text-cream/25 tracking-wide">

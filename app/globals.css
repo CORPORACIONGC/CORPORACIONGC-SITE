@@ -1729,13 +1729,13 @@ html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B225
   transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
 }
-.gc-tarjeta:is(:hover, :focus-visible)::before { transform: scaleX(1); }
-.gc-tarjeta:is(:hover, :focus-visible) {
+.gc-tarjeta:is(:hover, :focus-visible, :focus-within)::before { transform: scaleX(1); }
+.gc-tarjeta:is(:hover, :focus-visible, :focus-within) {
   border-color: color-mix(in oklab, #8B2252 32%, transparent);
   background-color: color-mix(in oklab, #8B2252 3%, transparent);
 }
 .dark .gc-tarjeta::before { background: #9B2A5C; }
-.dark .gc-tarjeta:is(:hover, :focus-visible) {
+.dark .gc-tarjeta:is(:hover, :focus-visible, :focus-within) {
   border-color: #5A1730;
   background-color: rgb(107 29 58 / 0.12);
 }

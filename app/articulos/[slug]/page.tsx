@@ -463,6 +463,12 @@ export default async function ArticlePage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
         />
       )}
+      {/* El <html lang> lo fija el layout raíz, que es uno solo para todo el
+          sitio. En la guía inglesa se corrige al cargar, antes de pintar:
+          Bing pesa más ese atributo que el hreflang. */}
+      {lang === "en" && (
+        <script dangerouslySetInnerHTML={{ __html: 'document.documentElement.lang="en"' }} />
+      )}
       <Navbar />
       <main className="gc-lectura bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">

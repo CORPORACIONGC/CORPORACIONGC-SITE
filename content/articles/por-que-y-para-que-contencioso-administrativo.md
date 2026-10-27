@@ -44,3 +44,5 @@ Señala que la tutela judicial efectiva no se agota en el libre acceso a los tri
 ### Significado de la obra
 
 El ensayo trasciende el análisis dogmático para erigirse en un llamado urgente a la reflexión sobre la dirección que ha tomado la jurisdicción contencioso-administrativa en Costa Rica. Escrito con la autoridad de quien co-redactó el CPCA y lo aplicó desde la magistratura, el texto reivindica los valores originales que inspiraron la reforma: la protección plena del ciudadano frente al poder público, la universalidad del control jurisdiccional y la efectividad real de la tutela judicial. Su publicación en la obra conmemorativa de los veinte años del CPCA le confiere un carácter de balance institucional de particular relevancia para el Derecho Público costarricense.
+
+Cómo se lleva hoy un conflicto con la Administración ante esa jurisdicción lo explica la guía sobre [cómo demandar al Estado en Costa Rica](/articulos/como-demandar-al-estado-costa-rica).

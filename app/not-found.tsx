@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+
+/* Sin esto, la 404 heredaba el título de la portada. */
+export const metadata: Metadata = {
+  title: "Página no encontrada",
+  robots: { index: false },
+};
 
 export default function NotFound() {
   return (

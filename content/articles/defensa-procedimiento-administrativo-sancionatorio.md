@@ -11,7 +11,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Procedimiento Sancionatorio: Cómo Defenderse (Guía 2026)"
-seoDescription: "¿Le abrieron un procedimiento administrativo sancionatorio en Costa Rica? Guía de defensa: plazos de la LGAP, sus derechos, nulidades y cómo impugnar la sanción."
+seoDescription: "¿Le abrieron un procedimiento sancionatorio en Costa Rica? Guía de defensa: plazos de la LGAP, sus derechos, nulidades y cómo impugnar la sanción."
 faq:
   - question: "¿Qué es un procedimiento administrativo sancionatorio?"
     answer: "Es el trámite formal que la Administración Pública debe seguir, conforme a la Ley General de la Administración Pública, antes de imponer una sanción: una multa, la suspensión o cancelación de un permiso, una clausura o, en materia disciplinaria, la suspensión o destitución de un servidor. Su eje es una comparecencia oral y privada donde se recibe la prueba, y su omisión o tramitación defectuosa puede anular la sanción."
