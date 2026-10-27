@@ -36,7 +36,7 @@ En la práctica, esto quiere decir que una institución del Estado ha determinad
 
 ### ¿Qué pasa si ignora la notificación?
 
-No responder tiene consecuencias directas, pues el artículo 25 de la Ley de Expropiaciones establece que, una vez notificado el avalúo administrativo, usted tiene un plazo de cinco días hábiles para manifestar su conformidad o disconformidad con el precio. Si guarda silencio, la ley lo interpreta como una aceptación tácita. Y una vez aceptado el avalúo (expresa o tácitamente) este queda firme y no podrá oponerse en etapas posteriores.
+No responder tiene consecuencias directas, pues el artículo 25 de la Ley de Expropiaciones establece que, una vez notificado el avalúo administrativo, usted tiene un plazo de cinco días hábiles para manifestar su conformidad o disconformidad con el precio. Si guarda silencio, la ley lo interpreta como una aceptación tácita. Una vez aceptado el avalúo, expresa o tácitamente, queda firme y no cabe oposición posterior en el procedimiento administrativo; la aceptación expresa impide además oponerse en la vía judicial.
 
 Dicho de forma directa: ignorar la notificación puede costarle la posibilidad de discutir el valor de su propiedad.
 
@@ -46,13 +46,13 @@ Además, según el artículo 20 de la ley, la declaratoria de interés público 
 
 La **Ley de Expropiaciones de Costa Rica** le reconoce garantías concretas al ciudadano involucrado en este proceso. Conocerlas es el primer paso para proteger su patrimonio:
 
-**Derecho a una indemnización que represente el justo precio.** El artículo 1 de la Ley de Expropiaciones es claro al establecer que toda expropiación requiere el pago previo de una indemnización que represente el precio justo de lo expropiado. No se trata de un precio arbitrario, sino de uno que refleje el valor real del bien según criterios técnicos definidos en el artículo 22.
+**Derecho a una indemnización que represente el justo precio.** El artículo 1 de la Ley de Expropiaciones es claro al establecer que toda expropiación requiere el pago previo de una indemnización que represente el precio justo de lo expropiado. No se trata de un precio arbitrario, sino de uno que refleje el valor real del bien según criterios técnicos definidos en el artículo 22. La Sala Primera ha definido esa indemnización como integral: comprende el valor real del bien o derecho expropiado y el daño consecuente, emergente y lucro cesante, de modo que el patrimonio del expropiado quede indemne ([sentencia 550-F-2007](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-115700)).
 
 **Derecho a oponerse al avalúo administrativo.** Si usted considera que el monto ofrecido por la institución no refleja el valor real de su propiedad, puede manifestar su disconformidad dentro del plazo de cinco días hábiles establecido en el artículo 25. Esa oposición abre la puerta al proceso judicial para que un perito independiente revise la valoración.
 
 **Derecho a la revisión judicial del avalúo.** Según el artículo 29, en el proceso especial de expropiación ante el Juzgado Contencioso-Administrativo y Civil de Hacienda, se discutirán los asuntos relacionados con la revisión del avalúo administrativo para fijar la indemnización definitiva.
 
-**Derecho al pago de intereses por demora.** El artículo 11 obliga a la administración a reconocer intereses al expropiado, de oficio y a la tasa legal vigente, desde la desposesión del bien hasta el pago efectivo. Si existe un depósito del avalúo administrativo, los intereses se calculan sobre la diferencia entre ese depósito y el justiprecio final.
+**Derecho al pago de intereses por demora.** El artículo 11 obliga a la administración a reconocer intereses al expropiado, de oficio y a la tasa legal vigente, desde la desposesión del bien hasta el pago efectivo. Si existe un depósito del avalúo administrativo, los intereses se calculan sobre la diferencia entre ese depósito y el justiprecio final. Así lo aplica el Tribunal de Apelación de lo Contencioso Administrativo, que condena a pagar intereses a la tasa legal sobre esa diferencia ([voto 133-2014](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-623621); [voto 52-2023](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1142467)).
 
 **Derecho a la indexación del valor pactado.** Si usted acepta el avalúo pero pasan más de seis meses sin que le paguen, el artículo 23 le permite solicitar que el valor se actualice conforme a los índices de inflación del Banco Central de Costa Rica. El fundamento de fondo es constitucional: reparar exige devolver el valor real de lo debido, como sostuvo la Sala Primera en el [voto 1016-F-2004](/jurisprudencia-destacada/indexacion-de-obligaciones-dinerarias).
 
@@ -74,9 +74,9 @@ El concepto de **justo precio** en una expropiación va más allá del simple va
 
 **Valor del bien expropiado.** El avalúo debe incluir la descripción topográfica del terreno, el estado y uso actual de las construcciones, el uso del terreno, el precio de propiedades colindantes y ventas recientes en la zona, y cualquier otro elemento susceptible de valoración.
 
-**Daño al remanente en expropiaciones parciales.** Si el Estado expropia solo una parte de su propiedad y lo que queda resulta inadecuado para su uso o explotación racional, el artículo 17 le permite exigir la expropiación de la totalidad del inmueble.
+**Daño al remanente en expropiaciones parciales.** Si el Estado expropia solo una parte de su propiedad y lo que queda resulta inadecuado para su uso o explotación racional, el artículo 17 le permite exigir la expropiación de la totalidad del inmueble. El Tribunal de Apelación anuló una sentencia en la que ni el avalúo administrativo ni el peritaje judicial explicaban por qué no había daño al remanente, y ordenó a la Administración determinar si el resto del inmueble era un sobrante inadecuado en los términos de ese artículo ([voto 61-2014](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-623668)).
 
-**Derechos comerciales y licencias.** El artículo 22 inciso e) indica que deben valorarse las licencias o derechos comerciales que procedan conforme a la ley, incluidos costos de producción, impuestos y seguros. Esto es especialmente relevante si su propiedad alberga un negocio activo: vea nuestra guía sobre [qué puede reclamar un negocio en una propiedad expropiada](/articulos/negocio-propiedad-expropiada-costa-rica), donde explicamos el lucro cesante y el daño al remanente.
+**Derechos comerciales y licencias.** El artículo 22 inciso e) indica que deben valorarse las licencias o derechos comerciales que procedan conforme a la ley, incluidos costos de producción, impuestos y seguros. Esto es especialmente relevante si su propiedad alberga un negocio activo: vea nuestra guía sobre [qué puede reclamar un negocio en una propiedad expropiada](/articulos/negocio-propiedad-expropiada-costa-rica), donde explicamos el lucro cesante y el daño al remanente. La Sala Constitucional, al rechazar la acción contra los artículos 30 y 32 de la ley, recordó que la inconformidad sobre el monto de los derechos comerciales de los establecimientos ubicados en el inmueble se discute en el proceso judicial ([voto 2021-27046](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1062912)).
 
 **Concesiones y permisos de explotación.** El inciso f) contempla la valoración de permisos y concesiones vigentes, incluyendo costos de producción y cargas sociales.
 
@@ -86,6 +86,10 @@ El concepto de **justo precio** en una expropiación va más allá del simple va
 
 En resumen, la indemnización no se limita al valor del metro cuadrado, sino que abarca todo el impacto patrimonial que la expropiación genera en su esfera económica.
 
+## Fuentes
+
+<FuentesGuia slug="expropiacion-costa-rica-derechos" />
+
 ## Preguntas frecuentes sobre la expropiación en Costa Rica
 
 ### ¿Cuánto tiempo tengo para responder a la notificación del avalúo?
@@ -94,11 +98,11 @@ El artículo 25 de la Ley de Expropiaciones le concede un plazo de cinco días h
 
 ### ¿Puedo quedarme en mi propiedad durante el proceso?
 
-Depende de la etapa. Una vez que la administración deposita el monto del avalúo ante el Juzgado, el artículo 30 le concede quince días hábiles para desalojar. Cuando se trata de vivienda familiar, ese plazo se extiende a dos meses. Si no desaloja voluntariamente, el juez puede ordenar el desalojo con auxilio de la fuerza pública.
+Depende de la etapa. Una vez que la administración deposita el monto del avalúo ante el Juzgado, el artículo 30 le concede quince días hábiles para desalojar. Cuando se trata de vivienda familiar, ese plazo se extiende a dos meses. Si no desaloja voluntariamente, el juez puede ordenar el desalojo con auxilio de la fuerza pública. La Sala Constitucional descartó que esos plazos de quince días y dos meses fueran irrazonables o discriminatorios ([voto 2021-27046](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1062912)).
 
 ### ¿El Estado puede entrar a mi propiedad antes de pagar?
 
-No. La Administración solo puede entrar en posesión del bien una vez que haya depositado el monto del avalúo administrativo ante el Juzgado Contencioso-Administrativo y Civil de Hacienda. El artículo 28 establece ese depósito como requisito indispensable y previo a la entrada en posesión. Sin depósito, no hay posesión legítima.
+No. La Administración solo puede entrar en posesión del bien una vez que haya depositado el monto del avalúo administrativo ante el Juzgado Contencioso-Administrativo y Civil de Hacienda. El artículo 28 establece ese depósito como requisito indispensable y previo a la entrada en posesión. Sin depósito, no hay posesión legítima. La Sala Constitucional consideró proporcionada esa entrada en posesión porque el propietario puede disponer, a la vez, del dinero depositado a su nombre ([voto 2021-27046](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1062912)).
 
 ### ¿Qué pasa si el proyecto no se ejecuta después de la expropiación?
 

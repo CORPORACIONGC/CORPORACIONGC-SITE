@@ -49,7 +49,7 @@ Dos consecuencias prácticas se desprenden de esa norma. La primera: la apertura
 
 ## El acto de apertura: la pieza que define todo el caso
 
-El procedimiento inicia con un acto de apertura —conocido en la práctica como **traslado de cargos**— que debe comunicarle con precisión los hechos que se le atribuyen, la normativa presuntamente infringida y las posibles consecuencias. Esa imputación delimita el objeto del procedimiento: la Administración no puede sancionarlo después por hechos distintos de los que le trasladó.
+El procedimiento inicia con un acto de apertura —conocido en la práctica como **traslado de cargos**— que debe comunicarle con precisión los hechos que se le atribuyen, la normativa presuntamente infringida y las posibles consecuencias. Esa imputación delimita el objeto del procedimiento: la Administración no puede sancionarlo después por hechos distintos de los que le trasladó. Para la Sala Constitucional, la intimación es la garantía de que en el pronunciamiento de fondo existirá *«una congruencia entre lo intimado y lo resuelto»* ([voto 2020-004541](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-965340)).
 
 La lectura técnica de ese documento es el primer acto de la defensa. De su contenido depende qué prueba conviene ofrecer, qué vicios existen desde el origen y si el órgano que instruye es competente. Dedicamos una guía completa a ese momento: [me llegó un traslado de cargos: qué significa y qué hacer](/articulos/traslado-de-cargos-que-hacer-costa-rica).
 
@@ -88,7 +88,7 @@ La LGAP le reconoce, como parte del procedimiento, un conjunto de derechos que l
 
 La experiencia en esta materia enseña que los procedimientos sancionatorios se ganan —o se pierden— en cuatro planos distintos, que una defensa completa examina en paralelo:
 
-**La validez del procedimiento.** Solo causa nulidad la omisión de formalidades sustanciales: aquellas cuya realización correcta habría impedido o cambiado la decisión final, o cuya omisión causa indefensión (artículo 223). Citaciones defectuosas, denegatoria de prueba pertinente, negativa de acceso al expediente, imputaciones imprecisas que impiden saber de qué defenderse, uso del procedimiento sumario donde correspondía el ordinario: cada una de estas irregularidades puede acarrear la nulidad de la sanción. Identificarlas exige contrastar el expediente, pieza por pieza, contra las exigencias de la LGAP y de la jurisprudencia constitucional sobre debido proceso.
+**La validez del procedimiento.** Solo causa nulidad la omisión de formalidades sustanciales: aquellas cuya realización correcta habría impedido o cambiado la decisión final, o cuya omisión causa indefensión (artículo 223). Citaciones defectuosas, denegatoria de prueba pertinente, negativa de acceso al expediente, imputaciones imprecisas que impiden saber de qué defenderse, uso del procedimiento sumario donde correspondía el ordinario: cada una de estas irregularidades puede acarrear la nulidad de la sanción. Identificarlas exige contrastar el expediente, pieza por pieza, contra las exigencias de la LGAP y de la jurisprudencia constitucional sobre debido proceso, que desde el [voto 15-90](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-84812) exige notificar al interesado el carácter y los fines del procedimiento, darle acceso a los antecedentes administrativos y permitirle hacerse asesorar por abogado, y que anula el traslado de cargos con una imputación genérica ([voto 2020-004541](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-965340)).
 
 **El tiempo.** El procedimiento paralizado por más de seis meses por causa imputable a la Administración que lo inició de oficio caduca y debe archivarse (artículo 340). La caducidad opera de pleno derecho y alcanza también a los procedimientos sancionatorios, como fijó la Sala Primera al confirmar la anulación de una multa de la [Superintendencia de Pensiones](/areas/defensa-regulatoria-sectorial) tras dos años de paralización ([voto 34-F-S1-2011](/jurisprudencia-destacada/caducidad-del-procedimiento-administrativo)). A ello se suman los plazos de prescripción de la potestad sancionatoria, que varían según el régimen aplicable. La pregunta "¿todavía podían sancionarme?" tiene con frecuencia una respuesta favorable al administrado que nadie examinó.
 
@@ -131,3 +131,7 @@ Esa doble condición define el enfoque de la firma: cada procedimiento se defien
 Los plazos de esta materia corren desde la notificación y son breves: quince días para preparar la comparecencia, tres días para recurrir la sanción, un año para demandar. Cada etapa que pasa sin defensa técnica consolida la posición de la Administración.
 
 Si le notificaron la apertura de un procedimiento, una citación a comparecencia o un acto final sancionatorio, [contáctenos](/#contacto). La evaluación temprana del expediente permite saber, antes de que los plazos venzan, qué tan sólido es el caso en su contra y qué defensas están disponibles.
+
+## Fuentes
+
+<FuentesGuia slug="defensa-procedimiento-administrativo-sancionatorio" />

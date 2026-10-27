@@ -64,9 +64,9 @@ Esta amplitud es uno de los avances más significativos del CPCA: permite la rep
 
 Aquí existe una confusión generalizada que conviene aclarar. **En la mayoría de los casos, no es obligatorio agotar la vía administrativa antes de demandar.**
 
-El artículo 31 del CPCA establece con claridad: *"El agotamiento de la vía administrativa será facultativo."* Esto significa que el administrado puede optar por interponer los recursos administrativos (revocatoria, apelación) o puede acudir directamente al Tribunal Contencioso Administrativo sin pasar por esa etapa.
+El artículo 31 del CPCA establece con claridad: *"El agotamiento de la vía administrativa será facultativo, salvo para lo dispuesto en los artículos 173 y 182 de la Constitución Política."* Esto significa que el administrado puede optar por interponer los recursos administrativos (revocatoria, apelación) o puede acudir directamente al Tribunal Contencioso Administrativo sin pasar por esa etapa.
 
-Esta fue una de las reformas más importantes del régimen contencioso. La ley de 1966 hacía del agotamiento un requisito obligatorio, y la demanda presentada sin los recursos previos era inadmisible. La Sala Constitucional anuló esa exigencia en 2006 (voto 2006-3669) y el CPCA, vigente desde 2008, la sustituyó por la regla del agotamiento facultativo. Qué recurso cabe, ante quién y en qué plazo lo explicamos en la guía sobre el [recurso de revocatoria y apelación contra un acto administrativo](/articulos/recursos-contra-acto-administrativo-revocatoria-apelacion-lgap).
+Esta fue una de las reformas más importantes del régimen contencioso. La ley de 1966 hacía del agotamiento un requisito obligatorio, y la demanda presentada sin los recursos previos era inadmisible. La Sala Constitucional anuló esa exigencia en 2006 ([voto 2006-3669](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-337671)) y el CPCA, vigente desde 2008, la sustituyó por la regla del agotamiento facultativo. Qué recurso cabe, ante quién y en qué plazo lo explicamos en la guía sobre el [recurso de revocatoria y apelación contra un acto administrativo](/articulos/recursos-contra-acto-administrativo-revocatoria-apelacion-lgap).
 
 **¿Cuándo sí es obligatorio?** El artículo 31 exceptúa lo dispuesto en los artículos 173 y 182 de la Constitución Política: la materia municipal, donde los acuerdos deben recurrirse antes en sede administrativa, y la [contratación pública](/areas/contratacion-publica), donde la Ley N.° 9986 establece recursos administrativos previos para acudir al contencioso.
 
@@ -82,7 +82,7 @@ Depende de lo que usted vaya a pedir. La ley establece dos plazos distintos seg�
 
 El cómputo del plazo depende del tipo de conducta que se impugna. Como regla general, el año se cuenta desde el día siguiente a la notificación del acto. Para actuaciones materiales, se cuenta desde el día siguiente a la **cesación de sus efectos** — una distinción fundamental y a menudo pasada por alto. La ley contempla reglas específicas según la naturaleza de la conducta impugnada, por lo que el cálculo del plazo debe evaluarse caso por caso con asesoría especializada.
 
-**Para reclamar una indemnización a la Administración** — la llamada **responsabilidad patrimonial del Estado** — rige un plazo mayor. El artículo 198 de la Ley General de la Administración Pública dispone que *"el derecho de reclamar la indemnización a la Administración prescribirá en cuatro años, contados a partir del hecho que motiva la responsabilidad"*. La Sala Primera ha confirmado que a las demandas puramente indemnizatorias les aplica esta prescripción de **cuatro años**, y que la caducidad anual del artículo 39 queda reservada para la impugnación de conductas administrativas (resolución N.° 1778-2021, entre otras). El régimen completo, con el cómputo y la interrupción de ese plazo, se explica en la guía sobre [la responsabilidad patrimonial del Estado](/articulos/responsabilidad-patrimonial-del-estado-costa-rica).
+**Para reclamar una indemnización a la Administración** — la llamada **responsabilidad patrimonial del Estado** — rige un plazo mayor. El artículo 198 de la Ley General de la Administración Pública dispone que *"el derecho de reclamar la indemnización a la Administración prescribirá en cuatro años, contados a partir del hecho que motiva la responsabilidad"*. La Sala Primera ha confirmado que a las demandas puramente indemnizatorias les aplica esta prescripción de **cuatro años**, y que la caducidad anual del artículo 39 queda reservada para la impugnación de conductas administrativas ([resolución 1778-A-S1-2021](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-1060850), entre otras). El régimen completo, con el cómputo y la interrupción de ese plazo, se explica en la guía sobre [la responsabilidad patrimonial del Estado](/articulos/responsabilidad-patrimonial-del-estado-costa-rica).
 
 ### Los efectos continuados: un plazo que muchos creen vencido y no lo está
 
@@ -122,6 +122,12 @@ Un plazo mal calculado, un recurso mal planteado o una cautelar no solicitada a 
 El peor error es dejar pasar el tiempo. Los plazos corren, los actos se consolidan y las pruebas se pierden. Si una institución pública le causó un perjuicio o está por causarlo, actúe antes de que la situación se vuelva irreversible.
 
 El equipo de [abogados contencioso-administrativos](/areas/litigio-contencioso-administrativo) de Corporación GC puede evaluar su caso y determinar la mejor ruta de acción. [Contáctenos](/contacto) para coordinar una consulta.
+
+---
+
+## Fuentes
+
+<FuentesGuia slug="como-demandar-al-estado-costa-rica" />
 
 ---
 

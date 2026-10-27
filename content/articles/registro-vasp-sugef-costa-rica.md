@@ -5,8 +5,7 @@ excerpt: "La Ley 10961 obliga a los proveedores de servicios de activos virtuale
 tags: ["VASP", "SUGEF", "Ley 10961", "Criptoactivos", "Activos Virtuales", "PSAV", "Cumplimiento", "Ley 7786", "CONASSIF", "Regla de Viaje"]
 areas: ["regulacion-fintech-criptoactivos"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
-authorVisible: true
+author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "articulo"
 translation: "costa-rica-vasp-registration-sugef"
@@ -127,6 +126,10 @@ Por eso el orden correcto del proyecto empieza por un **diagnóstico de sujeció
 | ¿Cuándo abre el trámite? | Cuando el CONASSIF emita el reglamento, aún pendiente |
 | ¿Qué pasa si no me inscribo? | Multas de hasta cien salarios base, publicación de la sanción y exclusión del sistema financiero |
 | ¿Qué puedo hacer hoy? | Diagnóstico de sujeción y preparación del expediente, para presentarlo el día en que la ventana abra |
+
+## Fuentes
+
+<FuentesGuia slug="registro-vasp-sugef-costa-rica" />
 
 ---
 

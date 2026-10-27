@@ -34,7 +34,7 @@ El artículo 22 de la Ley de Expropiaciones es el corazón de la indemnización.
 
 El inciso e) del artículo 22 obliga a valorar las licencias o derechos comerciales que procedan conforme a la ley, incluyendo costos de producción, impuestos y seguros. Esto abarca la patente municipal, los permisos sanitarios, la licencia de bebidas alcohólicas si corresponde, y cualquier autorización sectorial vigente que permita operar. Esos permisos tienen un valor real: son difíciles de obtener, generan ingresos y en muchos casos no son libremente transferibles a otro local.
 
-En la práctica, cuando hay actividad comercial activa sobre un inmueble expropiado, el derecho comercial puede dar lugar a un avalúo y un expediente independiente del que corresponde al terreno y las construcciones. Eso significa que los plazos y las etapas de cada expediente pueden avanzar de forma desincronizada y que el expropiado que no está atento puede enfrentar la entrada en posesión del inmueble antes de que el componente comercial haya sido siquiera valorado.
+En la práctica, cuando hay actividad comercial activa sobre un inmueble expropiado, el derecho comercial puede dar lugar a un avalúo y un expediente independiente del que corresponde al terreno y las construcciones. Eso significa que los plazos y las etapas de cada expediente pueden avanzar de forma desincronizada y que el expropiado que no está atento puede enfrentar la entrada en posesión del inmueble antes de que el componente comercial haya sido siquiera valorado. Así ocurrió en un caso que llegó al Tribunal de Apelación de lo Contencioso Administrativo: el Juzgado puso al Estado en posesión del inmueble mientras la indemnización por derechos comerciales se tramitaba en paralelo y en expediente separado, y el Tribunal confirmó esa resolución ([voto 498-2020](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-294342)).
 
 ### Inquilinatos y arrendamientos
 
@@ -42,15 +42,15 @@ El artículo 22 también ordena valorar los inquilinatos y arrendamientos. Si us
 
 ### Cualquier otro elemento susceptible de indemnización
 
-El inciso i) del artículo 22 funciona como una cláusula abierta: permite incluir daños y perjuicios adicionales que no estén enumerados expresamente. Esta disposición, leída junto con la garantía constitucional del artículo 45 de la Constitución Política y los criterios reiterados de la Sala Primera de la Corte Suprema de Justicia, da cobertura al **lucro cesante** y al **daño emergente** derivado del cierre forzado de la actividad.
+El inciso i) del artículo 22 funciona como una cláusula abierta: permite incluir daños y perjuicios adicionales que no estén enumerados expresamente. Esta disposición, leída junto con la garantía constitucional del artículo 45 de la Constitución Política y los criterios reiterados de la Sala Primera de la Corte Suprema de Justicia ([sentencia 550-F-2007](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-115700)), da cobertura al **lucro cesante** y al **daño emergente** derivado del cierre forzado de la actividad.
 
 ## El lucro cesante: lo que el negocio deja de ganar mientras usted repone lo perdido
 
 Este es el componente que más frecuentemente se omite en los avalúos del Estado, y el que más impacto puede tener en negocios activos.
 
-La doctrina consolidada de la Sala Primera y los criterios del Tribunal de Apelaciones Contencioso Administrativo son claros: la indemnización expropiatoria no se limita al valor objetivo del bien. Debe comprender también los daños consecuentes del despojo —incluyendo el lucro cesante— con el fin de mantener económicamente incólume el patrimonio del expropiado. La idea central es que la expropiación es una técnica de conversión de derechos: usted no pierde valor, sino que ese valor se le restituye en dinero.
+La doctrina consolidada de la Sala Primera y los criterios del Tribunal de Apelaciones Contencioso Administrativo son claros: la indemnización expropiatoria no se limita al valor objetivo del bien. Debe comprender también los daños consecuentes del despojo —incluyendo el lucro cesante— con el fin de mantener económicamente incólume el patrimonio del expropiado (Sala Primera, [sentencia 550-F-2007](https://nexuspj.poder-judicial.go.cr/document/ext-1-0034-115700); Tribunal de Apelación, [voto 133-2014](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-623621)). La idea central es que la expropiación es una técnica de conversión de derechos: usted no pierde valor, sino que ese valor se le restituye en dinero.
 
-En la práctica, el Tribunal de Apelaciones ha reconocido y cuantificado el lucro cesante en casos donde el inmueble expropiado generaba ingresos activos. El período indemnizable no se fija arbitrariamente: corresponde al tiempo razonable y demostrable que requiere el expropiado para reponer la fuente de ingresos, incluyendo el tiempo de compra del nuevo bien, elaboración de planos, tramitología ante las instituciones competentes, construcción y puesta en operación.
+En la práctica, el Tribunal de Apelaciones ha reconocido y cuantificado el lucro cesante en casos donde el inmueble expropiado generaba ingresos activos ([voto 546-2020](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1010931)). El período indemnizable no se fija arbitrariamente: corresponde al tiempo razonable y demostrable que requiere el expropiado para reponer la fuente de ingresos, incluyendo el tiempo de compra del nuevo bien, elaboración de planos, tramitología ante las instituciones competentes, construcción y puesta en operación.
 
 Hay dos límites importantes que conviene tener claros. Primero, el lucro cesante cubre la interrupción del ingreso durante la reposición del bien, no es una capitalización indefinida de rentas futuras. Segundo, para que prospere, debe estar sustentado con prueba documental sólida: contratos, registros contables, declaraciones tributarias. Un reclamo sin respaldo técnico y documental, aunque sea legítimo en su fundamento legal, no sobrevivirá el proceso judicial.
 
@@ -62,7 +62,7 @@ El problema es que esa fracción expropiada puede dejar inservible lo que queda.
 
 El **artículo 17** de la Ley de Expropiaciones reconoce esta situación, de modo que si la parte del inmueble que no se expropia resulta inadecuada para su uso o explotación racional, el propietario puede exigir que el Estado expropie la totalidad. La ley incluso precisa que, en terrenos urbanos, se consideran sobrantes inadecuados aquellos que, a raíz de la expropiación parcial, queden con frente, fondo o superficie inferiores a lo que permiten las normas urbanísticas.
 
-Un punto crítico que los precedentes del Tribunal de Apelaciones confirman con claridad es que el daño al remanente no se presume, sino que debe probarse en el proceso. De modo que si el único sustento del reclamo son las manifestaciones del abogado o del propio propietario, sin un peritaje que lo respalde, el Tribunal lo rechazará aunque el daño parezca evidente a simple vista.
+Un punto crítico que los precedentes del Tribunal de Apelaciones confirman con claridad es que el daño al remanente no se presume, sino que debe probarse en el proceso, y debe ser real y permanente ([voto 59-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1075352)). De modo que si el único sustento del reclamo son las manifestaciones del abogado o del propio propietario, sin un peritaje que lo respalde, el Tribunal lo rechazará aunque el daño parezca evidente a simple vista ([voto 42-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1075340)).
 
 ## Por qué la oposición al avalúo es la decisión más importante del proceso
 
@@ -70,7 +70,7 @@ La Ley de Expropiaciones establece un mecanismo preciso para proteger al propiet
 
 Ese perito judicial no trabaja para la administración ni para el expropiado, trabaja para el juez, y si se aparta del avalúo administrativo, la ley le exige explicar de forma detallada y técnica las razones por las que considera que el valor es distinto. Es en ese espacio —el proceso judicial con peritaje independiente— donde la indemnización puede ajustarse para reflejar no solo el terreno y las construcciones, sino todos los componentes que la ley reconoce: los derechos comerciales, el lucro cesante, el daño al remanente.
 
-Pero ese mecanismo tiene una condición que los criterios del Tribunal de Apelaciones ilustran con consistencia, pues la calidad técnica del peritaje importa tanto como el fundamento jurídico del reclamo. Un dictamen pericial que no explica su metodología, que usa comparables inadecuados o que cuantifica daños sin respaldo documental no sobrevive el escrutinio judicial, aunque el derecho que invoca sea perfectamente válido. El Tribunal ha descartado peritajes judiciales por ausencia de memoria de cálculo, por referencias fuera de zona, y por ajustes de valor sin sustento técnico, confirmando en esos casos el avalúo administrativo original.
+Pero ese mecanismo tiene una condición que los criterios del Tribunal de Apelaciones ilustran con consistencia, pues la calidad técnica del peritaje importa tanto como el fundamento jurídico del reclamo. Un dictamen pericial que no explica su metodología, que usa comparables inadecuados o que cuantifica daños sin respaldo documental no sobrevive el escrutinio judicial, aunque el derecho que invoca sea perfectamente válido. El Tribunal ha descartado peritajes judiciales por ausencia de memoria de cálculo o de metodología ([voto 133-2014](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-623621); [voto 546-2020](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1010931)), por referencias fuera de zona y por ajustes de valor sin sustento técnico, y en alguno de esos casos confirmó el avalúo administrativo original ([voto 212-2015](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-640569)).
 
 Lo anterior no significa que el avalúo del Estado siempre sea correcto; significa que cuestionarlo con éxito requiere hacerlo bien: con una estrategia clara sobre qué componentes reclamar, con la documentación necesaria para sustentarlos, y con un peritaje que cumpla los estándares metodológicos que la ley y la jurisprudencia exigen.
 
@@ -83,6 +83,10 @@ Cuando hay una actividad comercial activa en la propiedad expropiada, la indemni
 La ley le da las herramientas para reclamarlo, pero esas herramientas tienen un plazo de uso: **cinco días hábiles desde la notificación del avalúo** para activar la discusión judicial. Y como muestran los criterios del Tribunal de Apelaciones, incluso quienes parecen tener razón en el fondo pueden perder si el reclamo no está técnica y documentalmente bien construido desde el inicio.
 
 Si ya recibió la notificación o anticipa que su propiedad podría verse afectada por un proyecto de obra pública, este es el momento de buscar [asesoría especializada en expropiaciones](/areas/expropiaciones).
+
+## Fuentes
+
+<FuentesGuia slug="negocio-propiedad-expropiada-costa-rica" />
 
 > 📌 Lea también: [Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuáles son mis derechos?](/articulos/expropiacion-costa-rica-derechos)
 

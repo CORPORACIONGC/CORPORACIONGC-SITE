@@ -41,13 +41,13 @@ Esta guía explica qué es exactamente un traslado de cargos, qué debe contener
 
 El traslado de cargos es el acto con que la Administración le comunica los hechos que se le atribuyen, las normas presuntamente infringidas y las consecuencias que podrían seguirse, convocándolo a ejercer su defensa. En el procedimiento ordinario de la Ley General de la Administración Pública (LGAP, artículos 308 a 319), cumple esa función el acto de apertura y la citación a la comparecencia oral; en los regímenes disciplinarios —empleo público, colegios profesionales, Contraloría General— recibe nombres similares: traslado de cargos, relación de hechos, intimación.
 
-Su importancia es doble. Primero, **delimita el objeto del procedimiento**: la sanción final solo puede fundarse en los hechos intimados; sancionar por hechos distintos violenta el debido proceso. Segundo, **activa los plazos**: desde su notificación corren los términos para examinar el expediente, recurrir el acto de apertura, preparar la prueba y comparecer.
+Su importancia es doble. Primero, **delimita el objeto del procedimiento**: la sanción final solo puede fundarse en los hechos intimados; sancionar por hechos distintos violenta el debido proceso, porque la intimación garantiza, en palabras de la Sala Constitucional, *«una congruencia entre lo intimado y lo resuelto»* ([voto 2020-004541](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-965340)). Segundo, **activa los plazos**: desde su notificación corren los términos para examinar el expediente, recurrir el acto de apertura, preparar la prueba y comparecer.
 
 ## Qué debe contener para ser válido
 
-El derecho de defensa exige saber, con precisión, de qué defenderse. Por eso la jurisprudencia constitucional —construida sobre los artículos 39 y 41 de la Constitución Política— exige que la imputación sea **precisa y circunstanciada**. Un traslado de cargos válido debe comunicar:
+El derecho de defensa exige saber, con precisión, de qué defenderse. Por eso la jurisprudencia constitucional —construida sobre los artículos 39 y 41 de la Constitución Política desde el [voto 15-90](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-84812)— exige que la imputación sea **precisa y circunstanciada** ([voto 2020-004541](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-965340)). Un traslado de cargos válido debe comunicar:
 
-- **Los hechos atribuidos**, individualizados en tiempo, modo y lugar. Fórmulas genéricas del tipo "incumplimiento de deberes" sin descripción de conductas concretas resultan insuficientes.
+- **Los hechos atribuidos**, individualizados en tiempo, modo y lugar. Fórmulas genéricas del tipo "incumplimiento de deberes" sin descripción de conductas concretas resultan insuficientes: en ese voto la Sala anuló un traslado que comunicaba una *«imputación genérica»* sin indicar *«la situación, modo, lugar y tiempo»* de los hechos.
 - **La normativa presuntamente infringida**, es decir, la calificación jurídica de esos hechos.
 - **Las posibles consecuencias**: qué sanciones podría acarrear el procedimiento.
 - **El órgano director** que instruye, con indicación de su competencia y de su integración.
@@ -101,3 +101,7 @@ Cuando el traslado de cargos amenaza un puesto en el sector público —minister
 En [Corporación GC](/areas/procedimientos-sancionatorios) defendemos a personas, servidores públicos y empresas desde la notificación del traslado de cargos hasta la comparecencia, los recursos y, cuando es necesario, el litigio contencioso-administrativo. La práctica es dirigida por el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo.
 
 El momento de consultar es ahora, mientras los plazos del traslado siguen abiertos: la mayor parte del valor de una defensa técnica se concentra en lo que se hace —y en lo que se evita hacer— durante esos primeros quince días. [Escríbanos](/#contacto) y evaluamos su caso con el documento a la vista.
+
+## Fuentes
+
+<FuentesGuia slug="traslado-de-cargos-que-hacer-costa-rica" />

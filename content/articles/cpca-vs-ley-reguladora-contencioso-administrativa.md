@@ -64,7 +64,7 @@ El CPCA lo amplió a **un año** (artículo 39), con reglas de cómputo según e
 
 Históricamente, la Ley Reguladora exigía **agotar la vía administrativa** como requisito para admitir la acción (artículo 31 original). En la práctica, esto obligaba a recorrer todos los recursos administrativos antes de poder ir a juicio.
 
-Ese requisito fue **anulado por la Sala Constitucional en 2006** (voto N.° 3669-2006), que declaró inconstitucionales los párrafos que lo imponían. El CPCA consolidó el cambio y lo dejó expreso en su artículo 31: *"El agotamiento de la vía administrativa será facultativo, salvo para lo dispuesto en los artículos 173 y 182 de la Constitución Política."* Hoy, como regla, se puede acudir directamente a la justicia.
+Ese requisito fue **anulado por la Sala Constitucional en 2006** ([voto N.° 3669-2006](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-337671)), que declaró inconstitucionales los párrafos que lo imponían. El CPCA consolidó el cambio y lo dejó expreso en su artículo 31: *"El agotamiento de la vía administrativa será facultativo, salvo para lo dispuesto en los artículos 173 y 182 de la Constitución Política."* Hoy, como regla, se puede acudir directamente a la justicia.
 
 ---
 
@@ -146,6 +146,12 @@ Y para los casos actuales —regidos por el CPCA—, la diferencia la marca liti
 ## ¿Tiene un conflicto con el Estado?
 
 Si una institución pública le causó un perjuicio, los plazos corren y el régimen aplicable importa. [Contáctenos](/contacto) para evaluar su caso y definir la mejor ruta de acción bajo el CPCA.
+
+---
+
+## Fuentes
+
+<FuentesGuia slug="cpca-vs-ley-reguladora-contencioso-administrativa" />
 
 ---
 

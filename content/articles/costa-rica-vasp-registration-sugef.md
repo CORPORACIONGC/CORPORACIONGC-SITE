@@ -5,8 +5,7 @@ excerpt: "Costa Rica's Law 10961 requires Virtual Asset Service Providers to reg
 tags: ["VASP", "SUGEF", "Law 10961", "Crypto Regulation", "Virtual Assets", "Costa Rica", "AML Compliance", "CONASSIF", "Travel Rule"]
 areas: ["regulacion-fintech-criptoactivos"]
 type: "article"
-author: "Khevin Alberto Sánchez Zamora"
-authorVisible: true
+author: "Corporación GC"
 institution: "Corporación GC"
 publicationType: "articulo"
 lang: "en"
@@ -128,6 +127,10 @@ That is why a serious project starts with a **scope and feasibility diagnostic**
 | When does the filing open? | Once CONASSIF issues the regulation, still pending |
 | What if I don't register? | Fines of up to one hundred base salaries, published sanctions, and exclusion from the financial system |
 | What can I do today? | Scope diagnostic and preparation of the file, to submit it the day the window opens |
+
+## Sources
+
+<FuentesGuia slug="costa-rica-vasp-registration-sugef" lang="en" />
 
 ---
 

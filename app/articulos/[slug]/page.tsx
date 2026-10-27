@@ -25,6 +25,7 @@ import { ReglamentoContratacion } from "@/components/article/ReglamentoContratac
 import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
+import { FuentesGuia } from "@/components/article/FuentesGuia";
 import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
 import { FuentesResponsabilidadPatrimonial } from "@/components/article/FuentesResponsabilidadPatrimonial";
 import { Cita } from "@/components/article/Cita";
@@ -172,6 +173,7 @@ const ARTICLE_COMPONENTS = {
   ComparativaRecursosContratacion,
   ReformaCpca,
   CapacitacionEleinmsa,
+  FuentesGuia,
   SeminarioCautelares,
   FuentesResponsabilidadPatrimonial,
   Cita,
