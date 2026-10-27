@@ -36,6 +36,7 @@ import { MarianaAbout } from "@/components/sections/MarianaAbout";
 import { MarianaExperience } from "@/components/sections/MarianaExperience";
 import { MarianaContact } from "@/components/sections/MarianaContact";
 import { getArticlesByAuthor } from "@/lib/articles";
+import { fechaPerfil } from "@/lib/fechas";
 import {
   TEAM,
   FIRM,
@@ -270,7 +271,7 @@ export default async function AttorneyProfile({
     mainEntity: { "@id": `${FIRM.url}/abogados/${member.slug}#person` },
     isPartOf: { "@id": `${FIRM.url}/#website` },
     dateCreated: "2025-01-01",
-    dateModified: "2026-07-07",
+    dateModified: fechaPerfil(member.slug),
     inLanguage: "es-CR",
   };
 

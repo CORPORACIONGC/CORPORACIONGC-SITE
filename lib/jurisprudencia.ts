@@ -154,6 +154,13 @@ export type SentenciaDestacada = {
   fecha: string; // "26 de noviembre de 2004"
   fechaCorta: string; // "26 Nov 2004"
   fechaISO: string; // "2004-11-26"
+  /** Fecha en que se publicó el comentario en el sitio (`datePublished`).
+   *  La fecha del fallo es `fechaISO`. */
+  publicado: string;
+  /** Fecha del último cambio del comentario (`dateModified` y `lastmod`).
+   *  Se actualiza a mano cada vez que se edita la ficha: todas comparten
+   *  este archivo y git no distingue cuál cambió. */
+  actualizado: string;
   hora?: string;
   expediente: string;
   tribunal: string;
@@ -289,6 +296,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "26 de noviembre de 2004",
     fechaCorta: "26 Nov 2004",
     fechaISO: "2004-11-26",
+    publicado: "2026-05-07",
+    actualizado: "2026-10-03",
     hora: "9:30 horas",
     expediente: "95-000223-181-CI",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -771,6 +780,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "11 de agosto de 2005",
     fechaCorta: "11 Ago 2005",
     fechaISO: "2005-08-11",
+    publicado: "2026-09-19",
+    actualizado: "2026-10-03",
     hora: "10:40 horas",
     expediente: "97-000736-0163-CA",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -1417,6 +1428,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "20 de enero de 2011",
     fechaCorta: "20 Ene 2011",
     fechaISO: "2011-01-20",
+    publicado: "2026-09-19",
+    actualizado: "2026-10-03",
     hora: "8:00 horas",
     expediente: "09-000644-1027-CA",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -1988,6 +2001,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "26 de marzo de 2009",
     fechaCorta: "26 Mar 2009",
     fechaISO: "2009-03-26",
+    publicado: "2026-09-19",
+    actualizado: "2026-10-25",
     hora: "11:25 horas",
     expediente: "08-000123-0161-CA",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -2755,6 +2770,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "23 de octubre de 2012",
     fechaCorta: "23 Oct 2012",
     fechaISO: "2012-10-23",
+    publicado: "2026-09-19",
+    actualizado: "2026-10-26",
     hora: "10:10 horas",
     expediente: "11-002378-1027-CA",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -3314,7 +3331,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     temas: ["Contencioso Administrativo", "CPCA", "Derecho Administrativo"],
     metaDescription:
       "¿Un año desde cuándo? La Sala Primera separó el acto que se agota en un momento del de efectos continuados: de eso depende el plazo. Voto 1426-F-S1-2012.",
-    seoTitle: "Caducidad de la acción contencioso administrativa en Costa Rica",
+    seoTitle: "Caducidad y acto de efectos continuados · Voto 1426-F-S1-2012",
   },
   /* 654-F-S1-2008. Pasajes copiados del texto de Nexus. */
   {
@@ -3323,6 +3340,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "26 de setiembre de 2008",
     fechaCorta: "26 Set 2008",
     fechaISO: "2008-09-26",
+    publicado: "2026-09-19",
+    actualizado: "2026-10-03",
     hora: "10:45 horas",
     expediente: "02-000605-0163-CA",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -3977,6 +3996,8 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fecha: "11 de noviembre de 2010",
     fechaCorta: "11 Nov 2010",
     fechaISO: "2010-11-11",
+    publicado: "2026-09-20",
+    actualizado: "2026-10-26",
     hora: "10:25 horas",
     expediente: "08-000223-0161-CA",
     tribunal: "Sala Primera de la Corte Suprema de Justicia",
@@ -4391,7 +4412,7 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-502506",
     fuenteNombre: "Nexus PJ · Poder Judicial de Costa Rica",
 
-    metaDescription: "Voto 1360-F-S1-2010 de la Sala Primera: el órgano con personalidad jurídica instrumental es centro último y único de imputación y el Estado no responde por su competencia exclusiva. Análisis y texto oficial.",
+    metaDescription: "Legitimación pasiva: el órgano con personalidad jurídica instrumental es centro último y único de imputación, y el Estado no responde por su competencia exclusiva. Voto 1360-F-S1-2010 de la Sala Primera.",
     seoTitle: "Legitimación pasiva del órgano persona · Voto 1360-F-S1-2010",
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo", "servicio-publico"],
     temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Personalidad Jurídica Instrumental", "Responsabilidad Patrimonial"],

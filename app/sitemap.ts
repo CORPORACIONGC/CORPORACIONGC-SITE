@@ -2,29 +2,27 @@ import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/articles";
 import { getAllSentencias } from "@/lib/jurisprudencia";
 import { TEAM, PRACTICE_AREA_PAGES } from "@/lib/constants";
+import { fechaPerfil } from "@/lib/fechas";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.corporaciongc.com";
   const articles = getAllArticles();
   const sentencias = getAllSentencias();
 
-  const sentenciasLastUpdated = new Date("2026-05-07");
+  /* Cada sentencia declara la fecha de la última revisión de su comentario;
+     el índice toma la más reciente. */
+  const sentenciasLastUpdated = new Date(sentencias.map((s) => s.actualizado).sort().pop() ?? "2026-05-07");
   const sentenciaUrls = sentencias.map((s) => ({
     url: `${baseUrl}/jurisprudencia-destacada/${s.slug}`,
-    lastModified: sentenciasLastUpdated,
+    lastModified: new Date(s.actualizado),
     changeFrequency: "yearly" as const,
     priority: 0.7,
   }));
 
-  // Fecha del artículo más reciente — refleja la última actualización real del sitio
-  const mostRecentArticleDate =
-    articles.length > 0
-      ? new Date(
-          articles.reduce((latest, a) =>
-            new Date(a.date) > new Date(latest.date) ? a : latest
-          ).date
-        )
-      : new Date("2026-03-28");
+  // El cambio más reciente entre los artículos: publicación o revisión
+  const mostRecentArticleDate = new Date(
+    articles.map((a) => a.updated ?? a.date).sort().pop() ?? "2026-03-28",
+  );
 
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/articulos/${article.slug}`,
@@ -44,17 +42,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       : {}),
   }));
 
-  // Fecha real de última actualización de perfiles (no new Date())
-  const teamLastUpdated = new Date("2026-03-28");
-
   /* Fecha de la última revisión de las páginas de área. Se actualiza a mano
      cuando se reescriben sus textos: el 20-09-2026 se rehicieron los títulos
      y las descripciones de las treinta y dos. */
   const areasLastUpdated = new Date("2026-09-20");
+  /* Las áreas reescritas después de esa revisión general. */
+  const AREAS_REVISADAS: Record<string, string> = {
+    "derecho-administrativo": "2026-10-25",
+    "casacion-sala-primera": "2026-10-25",
+  };
 
   const teamUrls = TEAM.map((member) => ({
     url: `${baseUrl}/abogados/${member.slug}`,
-    lastModified: teamLastUpdated,
+    lastModified: new Date(fechaPerfil(member.slug) ?? "2026-03-28"),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -98,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
        jerarquizar el descubrimiento. */
     ...PRACTICE_AREA_PAGES.map((area) => ({
       url: `${baseUrl}/areas/${area.slug}`,
-      lastModified: areasLastUpdated,
+      lastModified: AREAS_REVISADAS[area.slug] ? new Date(AREAS_REVISADAS[area.slug]) : areasLastUpdated,
       changeFrequency: "monthly" as const,
       priority:
         area.priority === "primary"

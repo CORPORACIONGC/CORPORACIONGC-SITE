@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import fechas from "./fechas-modificacion.json";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
@@ -21,9 +22,10 @@ export type ArticleMeta = {
   /** Si es false, el autor NO se muestra en la página (byline + bio ocultos)
       pero SÍ se emite en el JSON-LD (señal de autoría para SEO/E-E-A-T). */
   authorVisible?: boolean;
-  /** Fecha de la última revisión de fondo, cuando hubo una posterior a la
-   *  publicación. Alimenta «Actualizado el…», el `dateModified` y el
-   *  `lastModified` del sitemap. */
+  /** Fecha del último cambio, cuando es posterior a la publicación. Es la
+   *  más reciente entre el `updated` del frontmatter y el último commit del
+   *  archivo (lib/fechas-modificacion.json, que arma el prebuild). Alimenta
+   *  «Revisado el…», el `dateModified` y el `lastModified` del sitemap. */
   updated?: string;
   /** Áreas de práctica a las que pertenece la guía. La primera es su área
    *  principal: la que aparece en las migas y en el cierre del artículo. */
@@ -52,6 +54,14 @@ export type Article = ArticleMeta & {
   content: string;
 };
 
+const FECHAS_GIT: Record<string, string> = fechas.articulos;
+
+/** La fecha de cambio más reciente, si es posterior a la de publicación. */
+function fechaModificacion(slug: string, publicado: string, declarada?: string): string | undefined {
+  const fecha = [declarada, FECHAS_GIT[slug]].filter(Boolean).sort().pop();
+  return fecha && fecha > publicado ? fecha : undefined;
+}
+
 function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
   return {
     slug,
@@ -72,7 +82,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     faq: data.faq as ArticleFAQ[] | undefined,
     lang: data.lang === "en" ? "en" : "es",
     translation: data.translation as string | undefined,
-    updated: data.updated as string | undefined,
+    updated: fechaModificacion(slug, data.date as string, data.updated as string | undefined),
     areas: (data.areas as string[]) || [],
     sentencias: (data.sentencias as string[]) || [],
   };

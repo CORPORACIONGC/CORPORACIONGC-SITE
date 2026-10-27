@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import {
   Scales,
   Gavel,
@@ -155,7 +156,13 @@ export function JoseCarlosAbout() {
                         </div>
                         <div>
                           <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                            {area.title}
+                            {"href" in area ? (
+                              <Link href={area.href} className="underline decoration-cream/25 underline-offset-4 transition-colors duration-300 hover:text-burgundy hover:decoration-burgundy/40 dark:hover:text-hilo-texto">
+                                {area.title}
+                              </Link>
+                            ) : (
+                              area.title
+                            )}
                           </h3>
                           <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">
                             {area.description}

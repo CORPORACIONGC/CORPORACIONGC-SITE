@@ -225,24 +225,6 @@ export async function generateAttorneyMetadata(
  *   const sentencia = getSentenciaBySlug(slug);
  *   return buildJurisprudenciaMetadata(sentencia, slug);
  */
-const _MESES_ES_ISO: Record<string, string> = {
-  enero: "01", febrero: "02", marzo: "03", abril: "04",
-  mayo: "05", junio: "06", julio: "07", agosto: "08",
-  septiembre: "09", octubre: "10", noviembre: "11", diciembre: "12",
-};
-
-function spanishDateToISO(spanishDate: string): string | undefined {
-  const m = spanishDate
-    .toLowerCase()
-    .match(/(\d+)\s+de\s+([a-záéíóú]+)\s+de\s+(\d+)/);
-  if (!m) return undefined;
-  const day = m[1].padStart(2, "0");
-  const month = _MESES_ES_ISO[m[2]];
-  const year = m[3];
-  if (!month) return undefined;
-  return `${year}-${month}-${day}`;
-}
-
 export function buildJurisprudenciaMetadata(
   sentencia:
     | {
@@ -253,6 +235,8 @@ export function buildJurisprudenciaMetadata(
         materia: string;
         fecha: string;
         fechaCorta: string;
+        publicado: string;
+        actualizado: string;
         tribunal: string;
         redactor: string;
       }
@@ -269,7 +253,6 @@ export function buildJurisprudenciaMetadata(
      gente escribe en Google. Sin él, se arma con el título editorial. */
   const seoTitle = sentencia.seoTitle ?? `${sentencia.titulo} · ${numeroCorto} · Óscar González Camacho`;
   const ogTitle = `${sentencia.titulo} | ${sentencia.numero} | Corporación GC`;
-  const publishedTime = spanishDateToISO(sentencia.fecha);
 
   return {
     title: { absolute: seoTitle },
@@ -280,7 +263,8 @@ export function buildJurisprudenciaMetadata(
       description: sentencia.metaDescription,
       type: "article",
       url: `/jurisprudencia-destacada/${slug}`,
-      ...(publishedTime ? { publishedTime } : {}),
+      publishedTime: sentencia.publicado,
+      modifiedTime: sentencia.actualizado,
       authors: [sentencia.redactor],
       section: "Jurisprudencia · Derecho Público",
       tags: [
@@ -309,6 +293,7 @@ export function buildArticleMetadata(
     excerpt: string;
     author: string;
     date: string; // ISO 8601
+    updated?: string;
     seoTitle?: string;
     seoDescription?: string;
   } | null,
@@ -334,6 +319,7 @@ export function buildArticleMetadata(
       type: "article",
       url: `/articulos/${slug}`,
       publishedTime: article.date,
+      ...(article.updated ? { modifiedTime: article.updated } : {}),
       authors: [article.author],
       section: "Derecho Público",
     }),

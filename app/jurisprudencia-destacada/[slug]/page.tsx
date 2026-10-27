@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { getArticleBySlug } from "@/lib/articles";
+import { formatDate, getArticleBySlug } from "@/lib/articles";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { CitasExplorador } from "@/components/jurisprudencia/CitasExplorador";
 import { ConNegritas } from "@/components/jurisprudencia/ConNegritas";
@@ -102,19 +102,33 @@ export default async function SentenciaDestacadaPage({
       "@type": "Person",
       "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
       name: "Dr. Óscar Eduardo González Camacho",
+      url: `${FIRM.url}/abogados/oscar-gonzalez`,
     },
     publisher: {
       "@id": `${FIRM.url}/#organization`,
     },
     inLanguage: "es-CR",
     isPartOf: { "@id": `${FIRM.url}/#website` },
-    datePublished: sentencia.fechaISO,
+    /* Las fechas son del comentario; la del fallo va en isBasedOn. */
+    datePublished: sentencia.publicado,
+    dateModified: sentencia.actualizado,
+    image: {
+      "@type": "ImageObject",
+      url: `${FIRM.url}/jurisprudencia-destacada/${slug}/opengraph-image/default`,
+      width: 1200,
+      height: 630,
+    },
     about: {
       "@type": "Thing",
       name: sentencia.materia,
     },
     /* El texto íntegro vive en Nexus PJ; el análisis se basa en él. */
-    isBasedOn: nexusUrl(sentencia.nexusId),
+    isBasedOn: {
+      "@type": "CreativeWork",
+      name: `${sentencia.numero}, ${sentencia.tribunal}`,
+      dateCreated: sentencia.fechaISO,
+      url: nexusUrl(sentencia.nexusId),
+    },
     citation: [...(sentencia.precedentes ?? []), ...(sentencia.citadaPor ?? [])].flatMap((p) =>
       p.nexusId ? [nexusUrl(p.nexusId)] : [],
     ),
@@ -419,6 +433,14 @@ export default async function SentenciaDestacadaPage({
                   Ver su trayectoria
                   <ArrowRight size={14} weight="bold" aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 </Link>
+                <p className="mt-6 text-xs text-cream/55">
+                  Comentario publicado el <time dateTime={sentencia.publicado}>{formatDate(sentencia.publicado)}</time>
+                  {sentencia.actualizado > sentencia.publicado && (
+                    <>
+                      {" "}· revisado el <time dateTime={sentencia.actualizado}>{formatDate(sentencia.actualizado)}</time>
+                    </>
+                  )}
+                </p>
               </div>
             </section>
           </article>

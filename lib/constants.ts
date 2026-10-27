@@ -110,13 +110,17 @@ export const OSCAR_PROFILE = {
   languages: ["Español", "Francés"],
 } as const;
 
+/* `actualizado` es la fecha del último cambio del perfil (se pone a mano al
+   editarlo) y `autor`, la clave con que se buscan sus publicaciones. La fecha
+   que ven Google y el sitemap es la más reciente entre `actualizado` y la de
+   su última publicación (lib/fechas.ts). */
 export const TEAM = [
-  { slug: "oscar-gonzalez", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez-solo.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Coordinador de la comisión redactora del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
-  { slug: "khevin-sanchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/khevin-sanchez.jpg", shortBio: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario, y admitido en la Maestría Profesional en Derecho Público (UCR). Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
-  { slug: "katherine-gonzalez", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD, donde es profesora. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
-  { slug: "mariana-montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
-  { slug: "esteban-perez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
-  { slug: "jose-carlos-solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Contencioso Administrativo", "Acciones de Inconstitucionalidad", "Zona Marítimo Terrestre", "Procedimientos CGR", "Transporte y Concesiones"], languages: ["Español", "Inglés", "Alemán"], featured: true },
+  { slug: "oscar-gonzalez", actualizado: "2026-09-25", autor: "González Camacho", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez-solo.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Coordinador de la comisión redactora del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
+  { slug: "khevin-sanchez", actualizado: "2026-10-02", autor: "Sánchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/khevin-sanchez.jpg", shortBio: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario, y admitido en la Maestría Profesional en Derecho Público (UCR). Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
+  { slug: "katherine-gonzalez", actualizado: "2026-10-15", autor: "González Coto", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD, donde es profesora. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
+  { slug: "mariana-montero", actualizado: "2026-10-02", autor: "Montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
+  { slug: "esteban-perez", actualizado: "2026-09-26", autor: "Pérez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
+  { slug: "jose-carlos-solano", actualizado: "2026-09-20", autor: "Solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Contencioso Administrativo", "Acciones de Inconstitucionalidad", "Zona Marítimo Terrestre", "Procedimientos CGR", "Transporte y Concesiones"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
 
 
@@ -541,12 +545,12 @@ export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
   // ─── Procedimiento administrativo y empleo ───
   "derecho-administrativo": ["litigio-contencioso-administrativo", "procedimientos-sancionatorios", "empleo-publico", "recursos-de-amparo"],
   "procedimientos-sancionatorios": ["derecho-administrativo", "empleo-publico", "defensa-regulatoria-sectorial", "litigio-contencioso-administrativo"],
-  "empleo-publico": ["procedimientos-sancionatorios", "derecho-administrativo", "litigio-contencioso-administrativo", "recursos-de-amparo"],
+  "empleo-publico": ["procedimientos-sancionatorios", "derecho-administrativo", "recursos-de-amparo", "otras-materias"],
 
   // ─── Especializadas ───
   "servicio-publico": ["defensa-regulatoria-sectorial", "telecomunicaciones-espectro-5g", "energia-renovable-transicion-energetica", "litigio-contencioso-administrativo"],
-  "materia-municipal": ["derecho-urbanistico", "dominio-publico", "zona-maritimo-terrestre", "litigio-contencioso-administrativo"],
-  "dominio-publico": ["zona-maritimo-terrestre", "materia-municipal", "derecho-urbanistico", "litigio-contencioso-administrativo"],
+  "materia-municipal": ["derecho-urbanistico", "dominio-publico", "zona-maritimo-terrestre", "otras-materias"],
+  "dominio-publico": ["zona-maritimo-terrestre", "materia-municipal", "derecho-urbanistico", "otras-materias"],
   "zona-maritimo-terrestre": ["dominio-publico", "derecho-urbanistico", "materia-municipal", "regulacion-ambiental-mercados-carbono"],
   "derecho-urbanistico": ["materia-municipal", "zona-maritimo-terrestre", "dominio-publico", "expropiaciones"],
   "expropiaciones": ["litigio-contencioso-administrativo", "dominio-publico", "zona-maritimo-terrestre", "medidas-cautelares"],
@@ -562,6 +566,11 @@ export const AREA_RELATED_MAP: Record<string, readonly string[]> = {
   "energia-renovable-transicion-energetica": ["regulacion-ambiental-mercados-carbono", "servicio-publico", "alianzas-publico-privadas-infraestructura", "asesoria-regulatoria"],
 
   // ─── Cobertura complementaria ───
+  /* «Otras materias» quedó casi huérfana tras la fusión del 20-09: solo la
+     enlazaba /areas. La enlazan las áreas con las que comparte clientela
+     (el laboral privado con el empleo público; notariado y registro con
+     el dominio público y lo municipal), y ella devuelve los enlaces. */
+  "otras-materias": ["empleo-publico", "dominio-publico", "materia-municipal", "litigio-contencioso-administrativo"],
 };
 
 export type RelatedArea = {
@@ -799,7 +808,7 @@ export const JOSE_CARLOS_PRACTICE_AREAS = [
   { title: "Zona Marítimo Terrestre", description: "Asesoría y litigio en concesiones, permisos de uso y regulación de la zona pública y restringida del litoral.", icon: "Scales" as const },
   { title: "Procedimientos Disciplinarios CGR", description: "Defensa en procedimientos administrativos sancionatorios ante la Contraloría General de la República.", icon: "Bank" as const },
   { title: "Transporte Público y Concesiones", description: "Asesoría en régimen concesional de servicios públicos, transporte y permisos de operación.", icon: "Buildings" as const },
-  { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const },
+  { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const, href: "/areas/otras-materias#notarial" },
 ] as const;
 
 export const JOSE_CARLOS_NAV_LINKS = [
@@ -872,7 +881,7 @@ export const KATHERINE_CONTACT = {
 export const KATHERINE_PRACTICE_AREAS = [
   { title: "Derecho Administrativo", description: "Defensa y asesoría en procedimientos ante la Administración Pública, recursos ordinarios y extraordinarios.", icon: "Scales" as const },
   { title: "Derecho Público", description: "Asesoría integral en materias de Derecho Público, incluyendo responsabilidad patrimonial del Estado.", icon: "ShieldCheck" as const },
-  { title: "Derecho Notarial", description: "Asesoría notarial, autenticaciones, protocolizaciones y constitución de sociedades.", icon: "FileText" as const },
+  { title: "Derecho Notarial", description: "Asesoría notarial, autenticaciones, protocolizaciones y constitución de sociedades.", icon: "FileText" as const, href: "/areas/otras-materias#notarial" },
   { title: "Derecho Expropiatorio", description: "Asesoría y litigio en procedimientos expropiatorios, avalúos y determinación del justo precio.", icon: "Buildings" as const },
 ] as const;
 
