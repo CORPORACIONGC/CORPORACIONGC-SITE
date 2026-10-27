@@ -1746,3 +1746,52 @@ html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B225
 /* Los subtítulos de los artículos tienen ancla: al saltar a uno, que no
    quede debajo de la barra de navegación fija. */
 .prose-article :is(h2, h3)[id] { scroll-margin-top: 6.5rem; }
+
+/* ============================================================
+   Calendarios del cómputo de plazos (components/article/
+   CalendarioPlazos.tsx). Meses en cuadrícula de lunes a domingo;
+   los hitos van en burdeos y los días inhábiles en gris.
+   ============================================================ */
+.prose-article .gc-cal-leyenda {
+  display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 18px; font-size: 12.5px; color: var(--fig-text);
+}
+.prose-article .gc-cal-leyenda li { display: inline-flex; align-items: center; gap: 8px; }
+.prose-article .gc-cal-muestra { display: inline-block; width: 16px; height: 16px; border-radius: 4px; }
+.prose-article .gc-cal-escenario { padding: 18px 0 6px; border-top: 1px solid var(--fig-rule); }
+.prose-article .gc-cal-meses { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-top: 10px; }
+.prose-article .gc-cal-mes { flex: 0 1 252px; min-width: 0; }
+.prose-article .gc-cal-mes-titulo {
+  margin-bottom: 8px; font-size: 13px; font-weight: 600; text-transform: capitalize; color: var(--color-cream);
+}
+.prose-article .gc-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.prose-article .gc-cal-dow {
+  padding-bottom: 4px; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-align: center; color: var(--fig-muted);
+}
+.prose-article .gc-cal-dia {
+  position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 1;
+  border-radius: 5px; font-size: 12.5px; font-variant-numeric: tabular-nums; color: var(--fig-text);
+  background: color-mix(in oklab, var(--color-cream) 4%, transparent);
+}
+.prose-article .gc-cal-dia--finde { color: var(--fig-muted); background: transparent; }
+.prose-article .gc-cal-dia--inhabil {
+  color: var(--fig-muted);
+  background: repeating-linear-gradient(135deg, color-mix(in oklab, var(--color-cream) 10%, transparent) 0 3px, transparent 3px 6px);
+}
+.prose-article .gc-cal-dia--envio { outline: 1.5px dashed var(--fig-accent); outline-offset: -2px; color: var(--color-cream); }
+.prose-article .gc-cal-dia--notificado { box-shadow: inset 0 0 0 2px var(--fig-accent); color: var(--color-cream); font-weight: 600; }
+.prose-article .gc-cal-dia--inicio { background: var(--chart-2); color: #fff; font-weight: 600; }
+.prose-article .gc-cal-dia--corre { background: color-mix(in oklab, var(--chart-1) 14%, transparent); color: var(--color-cream); }
+.prose-article .gc-cal-dia--vence,
+.prose-article .gc-cal-dia--prorroga { background: var(--chart-1); color: #fff; font-weight: 700; }
+.prose-article .gc-cal-dia--prorroga { box-shadow: inset 0 0 0 2px #fff; }
+.prose-article .gc-cal-n {
+  position: absolute; top: 1px; right: 3px; font-size: 8.5px; font-weight: 600; line-height: 1; opacity: 0.85;
+}
+.prose-article .gc-cal-pasos { margin-top: 14px; counter-reset: paso; }
+.prose-article .gc-cal-pasos li {
+  position: relative; padding: 4px 0 4px 26px; font-size: 0.92rem; line-height: 1.55; color: var(--fig-text);
+}
+.prose-article .gc-cal-pasos li::before {
+  content: counter(paso); counter-increment: paso; display: block; position: absolute; left: 0; top: 5px;
+  font-size: 11px; font-weight: 600; color: var(--fig-accent); font-variant-numeric: tabular-nums;
+}

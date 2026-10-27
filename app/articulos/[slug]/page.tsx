@@ -26,6 +26,7 @@ import { ComparativaRecursosContratacion } from "@/components/article/Comparativ
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { FuentesGuia } from "@/components/article/FuentesGuia";
+import { CalendarioAnioCaducidad, CalendarioNotificacion } from "@/components/article/CalendarioPlazos";
 import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
 import { FuentesResponsabilidadPatrimonial } from "@/components/article/FuentesResponsabilidadPatrimonial";
 import { Cita } from "@/components/article/Cita";
@@ -174,6 +175,8 @@ const ARTICLE_COMPONENTS = {
   ReformaCpca,
   CapacitacionEleinmsa,
   FuentesGuia,
+  CalendarioNotificacion,
+  CalendarioAnioCaducidad,
   SeminarioCautelares,
   FuentesResponsabilidadPatrimonial,
   Cita,

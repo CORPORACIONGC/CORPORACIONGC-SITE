@@ -138,6 +138,9 @@ const NORMAS: Fuente[] = [
   { titulo: "Código de Trabajo", detalle: "Art. 413 (Reforma Procesal Laboral, Ley N.° 9343)" },
   { titulo: "Ley de la Jurisdicción Constitucional", detalle: "Ley N.° 7135, art. 35" },
   { titulo: "Código Procesal Civil", detalle: "Ley N.° 9342, art. 30.5" },
+  { titulo: "Ley de Notificaciones Judiciales", detalle: "Ley N.° 8687, art. 38", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=64786&param2=143667&param3=1" },
+  { titulo: "Código Civil", detalle: "Art. 15" },
+  { titulo: "Corte Plena, Circular 042-2011", detalle: "Aplicación del artículo 38 de la Ley de Notificaciones Judiciales (sesión 6-11, artículo XXV)" },
 ];
 
 const S1 = "Sala Primera";
@@ -160,6 +163,7 @@ const JURISPRUDENCIA: Criterio[] = [
   { numero: "Voto 2022-002031", organo: "Sala Segunda", fecha: "27-07-2022", tema: "Materia laboral", criterio: "Los reclamos laborales contra el Estado prescriben en un año desde la extinción del contrato; no se aplica la caducidad del CPCA.", href: NEXUS("sen-1-0005-1105907") },
   { numero: "Sentencia 167-F-TC-2022", organo: TC, fecha: "12-08-2022", tema: "Cómputo", criterio: "El año corre de fecha a fecha y, si vence en día inhábil, se prorroga al siguiente hábil.", href: NEXUS("sen-1-1011-1141729") },
   { numero: "Voto 2022-002827", organo: "Sala Segunda", fecha: "07-10-2022", tema: "Estado como patrono único", criterio: "Una interrupción de más de un mes entre nombramientos hace correr la prescripción.", href: NEXUS("sen-1-0005-1120711") },
+  { numero: "Sentencia 181-F-TC-2024", organo: TC, fecha: "12-12-2024", tema: "Cómputo", criterio: "Los plazos por años se cuentan según el calendario, de fecha a fecha (art. 30.5 del CPC y art. 15 del Código Civil).", href: NEXUS("sen-1-1011-1271250") },
   { numero: "Voto 36-F-S1-2025", organo: S1, fecha: "16-01-2025", tema: "Contratos", criterio: "El cobro derivado de un contrato administrativo prescribe en cinco años.", href: NEXUS("sen-1-0004-1273368") },
   { numero: "Voto 2026-003645", organo: "Sala Constitucional", fecha: "30-01-2026", tema: "Amparo", criterio: "Superados los dos meses del art. 35 LJC, el amparo es extemporáneo.", href: NEXUS("sen-1-0007-1369958") },
   { numero: "Voto 1050-S1-2026", organo: S1, fecha: "22-07-2026", tema: "Honorarios", criterio: "Los honorarios profesionales prescriben en tres años; una demanda ante una vía incompetente no interrumpe.", href: NEXUS("sen-1-0004-1416782") },

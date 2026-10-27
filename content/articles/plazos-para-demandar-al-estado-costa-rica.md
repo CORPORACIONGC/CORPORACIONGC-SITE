@@ -1,6 +1,7 @@
 ---
 title: "Plazos para demandar al Estado en Costa Rica: caducidad y prescripción"
 date: "2026-09-30"
+updated: "2026-10-27"
 excerpt: "Un año para impugnar un acto, cuatro para reclamar daños, cinco para los contratos, uno para los derechos laborales y dos meses para el amparo. Esta guía reúne los plazos para demandar a la Administración, explica cómo se cuentan y por qué unos se interrumpen y otros no, con la ley vigente, las actas del CPCA y la jurisprudencia."
 tags: ["Plazos", "Caducidad", "Prescripción", "Demanda contra el Estado", "CPCA", "Responsabilidad patrimonial", "Contencioso Administrativo"]
 sentencias: ["caducidad-de-la-accion", "responsabilidad-del-estado-juez"]
@@ -63,7 +64,13 @@ Así quedó el artículo 41: en materia civil de Hacienda y en materia tributari
 
 **Desde cuándo corre.** El artículo 39.1 fija el punto de partida según la conducta: desde el día siguiente a la notificación del acto; si debe publicarse, desde el día siguiente a la única o última publicación; si es una actuación material, desde el día siguiente al cese de sus efectos; si se impugna un silencio positivo que favorece a otro, desde que se ejecuta el acto en contra del tercero; y en la lesividad, desde la firmeza del acto que la declara.
 
-**Cómo se cuenta.** El año se cuenta según el calendario, de fecha a fecha, y si el último día es inhábil se prorroga al siguiente día hábil ([Tribunal de Casación, 167-F-TC-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1141729)). Arranca el día hábil siguiente a aquel en que el acto se tuvo por notificado: en un caso, un acto enviado por correo un viernes se tuvo por notificado el lunes, y el año empezó a correr el martes ([70-F-TC-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1101973)). La regla general del artículo 30.5 del Código Procesal Civil apunta en el mismo sentido.
+**Cómo se cuenta.** Primero hay que fijar cuándo quedó notificado el acto. Si se comunicó por correo electrónico, fax o casillero, el artículo 38 de la [Ley de Notificaciones Judiciales](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=64786&param2=143667&param3=1) dispone que *«la persona quedará notificada al día "hábil" siguiente de la transmisión o del depósito respectivo»* y que *«todo plazo empieza a correr a partir del día siguiente hábil de la notificación a todas las partes»*. El Tribunal de Casación lo aplicó a un acto transmitido por correo un viernes: se tuvo por notificado el lunes y el año empezó a correr el martes ([70-F-TC-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1101973)). La figura 3 muestra ese caso y el ejemplo con que la Corte Plena explicó la norma en la Circular 042-2011.
+
+<CalendarioNotificacion />
+
+Después, el año se cuenta según el calendario, de fecha a fecha: vence en la misma fecha del año siguiente a aquella en que empezó a correr, y si ese día es inhábil se prorroga al siguiente día hábil (artículo 30.5 del Código Procesal Civil, aplicable por el artículo 220 del CPCA; [167-F-TC-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1141729) y [181-F-TC-2024](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1271250)). La figura 4 lo muestra con las fechas del caso resuelto en 2022.
+
+<CalendarioAnioCaducidad />
 
 **Los reglamentos.** Una disposición general se impugna directamente dentro del año siguiente a su publicación, porque los actos de alcance general no tienen efectos continuados ([27-F-S1-2018](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-952466)). Vencido ese año, queda la vía indirecta: impugnar el acto concreto que aplica el reglamento y pedir con él la nulidad de las normas que le dan fundamento (artículo 37.3 del CPCA).
 
