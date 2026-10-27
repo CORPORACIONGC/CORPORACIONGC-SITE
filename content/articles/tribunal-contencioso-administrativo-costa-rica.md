@@ -1,6 +1,7 @@
 ---
 title: "Tribunal Contencioso Administrativo de Costa Rica: qué es, qué resuelve y cómo funciona"
 date: "2026-09-23"
+updated: "2026-10-27"
 excerpt: "El Tribunal Contencioso Administrativo y Civil de Hacienda juzga las demandas contra el Estado, las municipalidades y el resto de las administraciones públicas de Costa Rica. Esta guía explica qué casos conoce, cómo se organiza por dentro, cómo avanza un proceso, quién revisa sus sentencias y dónde está, con las notas del propio Poder Judicial que documentaron su nacimiento en 2008."
 tags: ["Guía práctica", "Tribunal Contencioso Administrativo", "Contencioso Administrativo", "CPCA", "Derecho Administrativo"]
 sentencias: ["legitimacion-pasiva-del-organo-persona", "caducidad-de-la-accion"]
@@ -10,8 +11,8 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Tribunal Contencioso Administrativo: qué es y cómo funciona"
-seoDescription: "Qué resuelve el Tribunal Contencioso Administrativo, cómo avanza una demanda y sus plazos, quién revisa sus fallos, y su dirección y teléfono en Goicoechea."
+seoTitle: "Tribunal Contencioso Administrativo: dirección, teléfono y guía"
+seoDescription: "Dirección en Calle Blancos, teléfono 2545-0099, correo y consulta de expedientes del Tribunal Contencioso Administrativo, y cómo avanza una demanda."
 faq:
   - question: "¿Qué es el Tribunal Contencioso Administrativo?"
     answer: "Es el órgano del Poder Judicial que juzga las demandas contra el Estado, las municipalidades, las instituciones autónomas y las demás administraciones públicas de Costa Rica. Su nombre oficial es Tribunal Contencioso Administrativo y Civil de Hacienda, tiene su sede en Calle Blancos de Goicoechea y funciona desde el 1 de enero de 2008 con el Código Procesal Contencioso-Administrativo (Ley N.° 8508), que sustituyó el juicio escrito por un proceso oral y por audiencias."
@@ -30,6 +31,15 @@ faq:
 ---
 
 > **En síntesis.** El **Tribunal Contencioso Administrativo y Civil de Hacienda** es el órgano del Poder Judicial que juzga las demandas contra el Estado, las municipalidades, las instituciones autónomas y el resto de las administraciones públicas de Costa Rica. Tiene su sede en Calle Blancos de Goicoechea y trabaja desde el 1 de enero de 2008 con el **Código Procesal Contencioso-Administrativo** (Ley N.° 8508), que cambió el juicio escrito por un proceso oral y por audiencias. Dentro del Tribunal, un **juez tramitador** prepara el caso, un **tribunal de juicio** colegiado recibe la prueba y dicta la sentencia, y un **juez ejecutor** la hace cumplir. La sentencia se revisa en casación ante la **Sala Primera** o el **Tribunal de Casación**, según quién haya dictado la conducta impugnada.
+
+> **Datos del Tribunal Contencioso Administrativo y Civil de Hacienda**
+>
+> - **Dirección:** Goicoechea, Calle Blancos, 50 metros al oeste del Banco Nacional, frente a Café Dorado.
+> - **Teléfono:** 2545-0099, extensiones 01-2707 y 01-2599.
+> - **Correo:** [tproca-sgdoc@poder-judicial.go.cr](mailto:tproca-sgdoc@poder-judicial.go.cr)
+> - **Expedientes:** se consultan en el [Sistema de Gestión en Línea](https://pjenlinea.poder-judicial.go.cr/SistemaGestionEnLineaPJ/publica/wfpDefaultPublico.aspx) del Poder Judicial, con usuario y contraseña o con firma digital.
+>
+> Datos tomados del pie de las resoluciones que el Tribunal notificó en 2026 (voto [5350-2026](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1423788)). Confírmelos en la resolución más reciente de su expediente antes de acudir o de enviar un escrito.
 
 Cuando una institución pública niega un permiso, cancela una concesión, impone una multa, adjudica mal una licitación o causa un daño, la discusión suele terminar en el mismo edificio de Calle Blancos. Pocas personas saben, sin embargo, cómo trabaja por dentro el Tribunal que la decide: quién recibe la demanda, quién dicta la sentencia, qué se puede apelar y ante quién. Esta guía lo explica con el texto vigente del Código, con resoluciones de 2026 y con las notas de prensa del propio Poder Judicial que documentaron el nacimiento del Tribunal. En Corporación GC litigamos con regularidad en esta jurisdicción, y nuestro director, el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), coordinó la comisión que redactó el Código.
 
@@ -99,7 +109,7 @@ El contraste con el sistema anterior fue grande al principio. En el informe del 
 
 Hasta 2007, los despachos de la jurisdicción funcionaban en el edificio de los tribunales del Segundo Circuito Judicial de San José, en Goicoechea. El Tribunal creado por el Código se instaló en Calle Blancos, en el antiguo edificio Motorola, frente a Café Dorado, y ahí sigue.
 
-Según el pie de las resoluciones que notificó en 2026, el Tribunal Contencioso Administrativo y Civil de Hacienda está en Goicoechea, Calle Blancos, 50 metros al oeste del Banco Nacional y frente a Café Dorado. Su teléfono es el **2545-0099**, con las extensiones 01-2707 y 01-2599, y su correo electrónico es [tproca-sgdoc@poder-judicial.go.cr](mailto:tproca-sgdoc@poder-judicial.go.cr) (voto [5350-2026](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1423788)). El Poder Judicial puede cambiar esos datos sin aviso, así que conviene confirmarlos en la resolución más reciente del expediente antes de enviar un escrito o de acudir a la sede.
+Según el pie de las resoluciones que notificó en 2026, el Tribunal Contencioso Administrativo y Civil de Hacienda está en Goicoechea, Calle Blancos, 50 metros al oeste del Banco Nacional y frente a Café Dorado. Su teléfono es el **2545-0099**, con las extensiones 01-2707 y 01-2599, y su correo electrónico es [tproca-sgdoc@poder-judicial.go.cr](mailto:tproca-sgdoc@poder-judicial.go.cr) (voto [5350-2026](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1423788)). Los expedientes se consultan en el [Sistema de Gestión en Línea](https://pjenlinea.poder-judicial.go.cr/SistemaGestionEnLineaPJ/publica/wfpDefaultPublico.aspx) del Poder Judicial, con las credenciales que se tramitan una sola vez en cualquier despacho judicial o con firma digital. El Poder Judicial puede cambiar esos datos sin aviso, así que conviene confirmarlos en la resolución más reciente del expediente antes de enviar un escrito o de acudir a la sede.
 
 ## Cómo nació el Tribunal: la reforma de 2006 y la apertura de 2008
 

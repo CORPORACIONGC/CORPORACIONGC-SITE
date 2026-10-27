@@ -10,8 +10,8 @@ author: "Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Plazos para demandar al Estado en Costa Rica"
-seoDescription: "Un año para impugnar un acto, cuatro para reclamar daños y otros plazos: cómo se cuentan y la diferencia entre caducidad y prescripción."
+seoTitle: "Plazos para demandar al Estado en Costa Rica: tabla y cómputo"
+seoDescription: "Tabla completa de los plazos para demandar al Estado, cómo se cuentan día a día, las excepciones y los fallos de 2026 de la Sala Primera y la Sala IV."
 faq:
   - question: "¿Cuánto tiempo tengo para demandar al Estado en Costa Rica?"
     answer: "Depende de lo que se pida. Para impugnar un acto administrativo el plazo es de un año desde su notificación o publicación (artículo 39 del CPCA). Para reclamar daños y perjuicios a la Administración, cuatro años desde el hecho que motiva la responsabilidad (artículo 198 de la LGAP). Para los reclamos derivados de un contrato público, cinco años (artículo 107 de la Ley General de Contratación Pública)."
