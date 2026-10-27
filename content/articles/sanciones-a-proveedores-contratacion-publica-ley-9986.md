@@ -133,6 +133,10 @@ La mejor defensa es la que se construye antes de que llegue la notificación de 
 
 Prevenir cuesta mucho menos que revertir una inhabilitación ya inscrita en SICOP. Ordene la casa contractual antes de que el Estado toque la puerta.
 
+## Fuentes
+
+<FuentesGuia slug="sanciones-a-proveedores-contratacion-publica-ley-9986" />
+
 ## Preguntas frecuentes
 
 ### ¿Cuáles son las sanciones que puede recibir un proveedor del Estado?

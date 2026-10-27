@@ -38,7 +38,7 @@ Cuando la Contraloría resuelve el fondo de la apelación, esa resolución **ago
 
 Esto conecta con una regla del proceso contencioso. Por norma general, el agotamiento de la vía administrativa es **facultativo** en Costa Rica (artículo 31.1 del Código Procesal Contencioso-Administrativo). Pero en contratación administrativa la Constitución exige agotarla primero, y por eso la ley dispone que la resolución de la apelación o la objeción sea la que cierra la etapa administrativa. Cumplido ese paso, la vía judicial queda abierta.
 
-En otras palabras: la Contraloría actúa como órgano de control administrativo, y su decisión puede ser revisada por los jueces. La Sala Constitucional lo confirmó desde temprano, al reconocer que la Contraloría es "un órgano de relevancia constitucional, auxiliar de la Asamblea Legislativa" ([Voto n.º 00998-1998](https://vlex.co.cr/vid/497723798)), dentro del marco de principios constitucionales de la contratación que esa misma sentencia fijó.
+En otras palabras: la Contraloría actúa como órgano de control administrativo, y su decisión puede ser revisada por los jueces. La Sala Constitucional lo confirmó desde temprano, al reconocer que la Contraloría es *«un órgano de relevancia constitucional, auxiliar de la Asamblea Legislativa»* ([Voto n.º 00998-1998](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-114246)), dentro del marco de principios constitucionales de la contratación que esa misma sentencia fijó.
 
 > **Qué hacer en la práctica:** guarde la resolución de la Contraloría con su fecha de notificación. Ese documento es la prueba de que la vía administrativa quedó agotada y marca el punto de partida de su plazo para demandar.
 
@@ -87,17 +87,21 @@ Para las situaciones de extrema urgencia existe la **medida provisionalísima** 
 
 Aquí está la razón de fondo por la que el tiempo importa tanto. Si cuando llega la sentencia el contrato **ya fue ejecutado o está en ejecución**, el Tribunal ya no puede deshacerlo. La sentencia favorable, en ese escenario, solo puede reconocer el pago de **daños y perjuicios** a su favor (artículo 98 de la Ley General de Contratación Pública).
 
-Los tribunales lo han aplicado con claridad. El Tribunal Contencioso Administrativo, al resolver un caso contra RECOPE, recordó que "si la contratación cuya adjudicación se impugna ha sido ejecutada o se encuentra en curso de ejecución, la sentencia favorable al accionante solo podrá reconocer el pago de los daños y perjuicios causados" ([Sentencia n.º 1199-2020](https://vlex.co.cr/vid/sentencia-n-1199-2020-847713850)). Esa resolución aplicó el artículo 90 de la anterior Ley de Contratación Administrativa; la regla es la misma que hoy recoge, sin cambios, el artículo 98 de la Ley General de Contratación Pública.
+Los tribunales lo han aplicado con claridad. El Tribunal Contencioso Administrativo, al resolver un caso contra RECOPE, recordó que *«si la contratación cuya adjudicación se impugna ha sido ejecutada o se encuentra en curso de ejecución, la sentencia favorable al accionante solo podrá reconocer el pago de los daños y perjuicios causados»* ([resolución n.º 1199-2020](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-987313)). Esa resolución aplicó el artículo 90 de la anterior Ley de Contratación Administrativa; la regla es la misma que hoy recoge, sin cambios, el artículo 98 de la Ley General de Contratación Pública.
 
 Esto tiene una consecuencia práctica: la nulidad "pura" (deshacer la adjudicación y readjudicar) solo es posible si se actúa a tiempo, antes de que el contrato se ejecute. Cuando ya se ejecutó, el reclamo se transforma en dinero. Es exactamente lo que evita una medida cautelar oportuna.
 
 ## El control judicial de las adjudicaciones es real
 
-En la práctica, los tribunales costarricenses anulan adjudicaciones cuando encuentran vicios. La Sala Primera de la Corte confirmó en casación la **nulidad de una adjudicación** del Instituto Nacional de Aprendizaje, porque una empresa estaba impedida de participar por un conflicto de intereses ([Voto n.º 01096-F-S1-2011](https://vlex.co.cr/vid/499597050)) —una sentencia de la que fue ponente el Dr. Óscar González Camacho, hoy director de Corporación GC.
+En la práctica, los tribunales costarricenses anulan adjudicaciones cuando encuentran vicios. La Sala Primera de la Corte confirmó en casación la **nulidad de una adjudicación** del Instituto Nacional de Aprendizaje, porque una empresa estaba impedida de participar por un conflicto de intereses ([Voto n.º 01096-F-S1-2011](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-766755)) —una sentencia de la que fue ponente el Dr. Óscar González Camacho, hoy director de Corporación GC.
 
 Esto confirma dos cosas. Primera: la jurisdicción contencioso-administrativa efectivamente anula adjudicaciones ilegales. Segunda: por encima del Tribunal Contencioso está la **Sala Primera**, que revisa las sentencias en casación. Nuestro despacho litiga en ambos niveles; puede conocer nuestro trabajo en [casación ante la Sala Primera](/areas/casacion-sala-primera).
 
 Litigar la anulación de una adjudicación exige dominar tanto la Ley General de Contratación Pública como el Código Procesal Contencioso-Administrativo —código cuya comisión redactora coordinó el Dr. González Camacho—, y ese es precisamente el terreno de nuestro equipo.
+
+## Fuentes
+
+<FuentesGuia slug="anular-adjudicacion-tribunal-contencioso-administrativo" />
 
 ## Preguntas frecuentes
 

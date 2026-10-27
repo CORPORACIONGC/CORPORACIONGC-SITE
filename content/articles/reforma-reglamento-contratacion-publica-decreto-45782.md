@@ -128,6 +128,10 @@ Los artículos reformados se pueden leer íntegros, con la nota de cada reforma,
 
 Si va a presentar una oferta y quiere que revisemos el pliego antes de comprometerla, vea nuestra área de [contratación pública](/areas/contratacion-publica).
 
+## Fuentes
+
+<FuentesGuia slug="reforma-reglamento-contratacion-publica-decreto-45782" />
+
 ---
 
 ## Preguntas frecuentes

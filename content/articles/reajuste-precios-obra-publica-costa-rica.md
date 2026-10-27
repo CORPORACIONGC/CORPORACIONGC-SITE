@@ -38,7 +38,7 @@ El artículo 43 de la Ley General de Contratación Pública (Ley N.° 9986) es c
 
 El propio artículo 41 dispone que el precio sea cierto y definitivo, pero de inmediato agrega "sin perjuicio de eventuales reajustes o revisiones regulados en el artículo 43". La misma ley admite, entonces, que un precio "definitivo" se mueva cuando los costos se mueven por causas ajenas a las partes.
 
-Un punto que conviene fijar desde el inicio: el derecho protegido es el equilibrio económico, amparado por los principios constitucionales que rigen la contratación administrativa. Subsiste aunque el cartel guarde silencio y aun cuando una cláusula intente negarlo; una cláusula que lo elimine o lo limite es inaplicable. Es un derecho del contratista que no queda librado a la buena voluntad de la Administración.
+Un punto que conviene fijar desde el inicio: el derecho protegido es el equilibrio económico, amparado por los principios constitucionales que rigen la contratación administrativa. Subsiste aunque el cartel guarde silencio y aun cuando una cláusula intente negarlo; una cláusula que lo elimine o lo limite es inaplicable. Es un derecho del contratista que no queda librado a la buena voluntad de la Administración. La Sala Constitucional lo explicó en el [voto 1998-06432](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-82618): los reajustes *«no son de carácter contractual, de tal forma que las partes puedan libremente pactarlos o no, sino que están reconocidos en todo contrato que se celebre con el Estado (en sentido lato)»*, y *«ni la ley, ni el reglamento, pueden vaciar de contenido ese derecho; a lo sumo, se podría regular su reconocimiento señalando límites, que deben ser razonables y proporcionados a los fines que se persiguen»*.
 
 ## Qué protege el reajuste y qué deja fuera
 
@@ -52,26 +52,32 @@ El detalle técnico del reajuste lo fija el reglamento, y desde 2025 rige uno nu
 
 Ese reglamento contiene, en su **artículo 25**, la fórmula matemática con la que se cuantifica el reajuste, y ordena que la variación se mida con **índices de precios oficiales** publicados por el INEC y el Banco Central de Costa Rica (artículos 9 a 11). Es un cálculo técnico, sujeto a reglas estrictas, en el que pequeñas imprecisiones bastan para que la Administración rechace la gestión. Trabajar con el reglamento vigente, en lugar del derogado de 2006, es la base para que un reclamo tenga sustento.
 
-## Cuándo procede: causas ajenas y extraordinarias
+## Cuándo procede: reajuste por índices o reclamo por desequilibrio
 
-Aquí una advertencia importante. No cualquier variación de costos abre la puerta al reajuste. El derecho nace cuando el desequilibrio proviene de causas **ajenas al contratista y de carácter extraordinario**, como el hecho del príncipe (una medida de la propia Administración que incide en la economía del contrato), la teoría de la imprevisión (una circunstancia extraordinaria e imprevisible) o la fuerza mayor. El riesgo ordinario del negocio y lo que era previsible al ofertar corren por cuenta del contratista.
+Conviene distinguir dos vías. El reajuste de precios en obra pública es ordinario: el artículo 43 manda a la Administración reajustar los precios, *«aumentándolos o disminuyéndolos cuando varíen los costos, directos o indirectos, estrictamente relacionados con la obra, por circunstancias ajenas a la responsabilidad de las partes»*, con fórmulas basadas en índices oficiales. Basta que el costo varíe por causas que ninguna de las partes controla, como el alza de los insumos que miden esos índices.
 
-Dónde queda exactamente esa frontera —qué se tiene por previsible y qué por extraordinario— es una valoración jurídica que decide muchos casos. Un reclamo mal encuadrado se pierde y desgasta credibilidad para el que sí procede.
+Lo extraordinario corresponde al reclamo por desequilibrio económico, que el mismo artículo deja a salvo: el pliego fija cómo se reajustan los precios *«sin perjuicio de reclamo particular de las partes ante situación de desequilibrio económico»*. Ahí entran el hecho del príncipe (una medida de la propia Administración que incide en la economía del contrato), la teoría de la imprevisión (una circunstancia extraordinaria e imprevisible) o la fuerza mayor, cuando su efecto excede lo que compensa la fórmula. El riesgo ordinario del negocio y lo que era previsible al ofertar siguen por cuenta del contratista.
+
+Elegir la vía y encuadrar en ella cada rubro es una valoración jurídica que decide muchos casos. Un reclamo mal encuadrado se pierde y desgasta credibilidad para el que sí procede.
 
 ## Plazos y cómo se reclama
 
 Dos reglas de tiempo y forma marcan el resultado:
 
-- **El reajuste se reclama a petición de parte.** Es el contratista quien debe pedirlo y sustentarlo ante la Administración. La indexación, que es otra figura, la reconoce el juez de oficio sobre montos ya adeudados.
+- **El reajuste se reclama a petición de parte.** Es el contratista quien debe pedirlo y sustentarlo ante la Administración. La Sala Primera lo precisó en la [sentencia 1577-F-S1-2013](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-888390): *«el reajuste no procede oficiosamente; se trata, en lo que atañe al contratista, de un derecho disponible, de manera que siendo él el interesado en proteger su patrimonio, es quien ha de solicitarlo a la Administración, acreditando fehacientemente el presupuesto: la variación de los costos»*. La indexación, que es otra figura, la reconoce el juez de oficio sobre montos ya adeudados.
 - **El plazo es de cinco años.** Los aspectos patrimoniales del contrato, incluido el reajuste, prescriben en cinco años contados desde el evento que rompió el equilibrio. Es un plazo amplio, pero corre, y la prueba se degrada con el tiempo.
 
 Y si el cartel no trae fórmula, el derecho se mantiene, aunque la ruta para acreditarlo cambia. Lo determinante es la estrategia, que se define desde el análisis del cartel, antes de ofertar.
 
 ## El reajuste se decide desde la oferta
 
-La lección de fondo: el reajuste no se improvisa durante la ejecución; queda determinado desde la oferta. Un cartel aceptado sin objetar, o un precio mal planteado, puede cerrar la puerta al reajuste antes de que la obra empiece. Y si la Administración ya denegó uno que procedía, el camino siguiente es el litigio.
+La lección de fondo: el reajuste no se improvisa durante la ejecución; queda determinado desde la oferta. Un cartel aceptado sin objetar, o un precio mal planteado, puede cerrar la puerta al reajuste antes de que la obra empiece. La objeción sirve para corregirlo a tiempo: la Contraloría declaró con lugar la de un potencial oferente contra un pliego que omitía toda regulación del reajuste y ordenó a la Administración incorporar la cláusula de reajuste o revisión de precios, con base en el artículo 43 de la Ley 9986 ([R-DCP-SICOP-01010-2025](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2025/SIGYD_D/SIGYD_D_2025012841.pdf)). Y si la Administración ya denegó uno que procedía, el camino siguiente es el litigio.
 
 Recuerde que en contratación pública el agotamiento de la vía administrativa tiene reglas propias según el tipo de procedimiento, y definir la vía correcta es parte del acompañamiento. Nuestra guía sobre [cómo objetar el cartel](/articulos/recurso-objecion-cartel-costa-rica) y la de [los recursos en contratación pública](/articulos/recursos-contratacion-publica-objecion-apelacion-revocatoria) explican esos plazos y esas vías; y si el reclamo llega a los tribunales, la de [cómo demandar al Estado](/articulos/como-demandar-al-estado-costa-rica) detalla ese camino.
+
+## Fuentes
+
+<FuentesGuia slug="reajuste-precios-obra-publica-costa-rica" />
 
 ## Preguntas frecuentes
 

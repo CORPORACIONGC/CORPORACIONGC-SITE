@@ -115,6 +115,10 @@ Un punto que conviene tener claro desde el inicio: las sanciones del régimen so
 
 Por eso una defensa bien planteada abarca el conjunto de riesgos, más allá del procedimiento sancionatorio en sí mismo. Si además la sanción incluye una condena patrimonial, o si la conducta puede tener consecuencias penales, la estrategia debe coordinarse en todos los frentes desde el primer día.
 
+## Fuentes
+
+<FuentesGuia slug="defensa-inhabilitacion-proveedor-estado-costa-rica" />
+
 ## Preguntas frecuentes
 
 ### ¿Qué diferencia hay entre inhabilitación simple y calificada?
