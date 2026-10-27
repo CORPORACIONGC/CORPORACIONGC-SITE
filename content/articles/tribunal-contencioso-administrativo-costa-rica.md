@@ -11,8 +11,8 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Tribunal Contencioso Administrativo: dirección, teléfono y guía"
-seoDescription: "Dirección en Calle Blancos, teléfono 2545-0099, correo y consulta de expedientes del Tribunal Contencioso Administrativo, y cómo avanza una demanda."
+seoTitle: "Tribunal Contencioso Administrativo: guía completa y contacto"
+seoDescription: "Qué resuelve, cómo avanza una demanda, cautelares, casación y plazos, con dirección en Calle Blancos, teléfono 2545-0099 y consulta de expedientes."
 faq:
   - question: "¿Qué es el Tribunal Contencioso Administrativo?"
     answer: "Es el órgano del Poder Judicial que juzga las demandas contra el Estado, las municipalidades, las instituciones autónomas y las demás administraciones públicas de Costa Rica. Su nombre oficial es Tribunal Contencioso Administrativo y Civil de Hacienda, tiene su sede en Calle Blancos de Goicoechea y funciona desde el 1 de enero de 2008 con el Código Procesal Contencioso-Administrativo (Ley N.° 8508), que sustituyó el juicio escrito por un proceso oral y por audiencias."
