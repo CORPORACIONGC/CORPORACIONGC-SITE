@@ -21,12 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // El cambio más reciente entre los artículos: publicación o revisión
   const mostRecentArticleDate = new Date(
-    articles.map((a) => a.updated ?? a.date).sort().pop() ?? "2026-03-28",
+    articles.map((a) => a.cambiado ?? a.date).sort().pop() ?? "2026-03-28",
   );
 
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/articulos/${article.slug}`,
-    lastModified: new Date(article.updated ?? article.date),
+    lastModified: new Date(article.cambiado ?? article.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
     // Guías con versión en otro idioma: cada URL declara las dos (hreflang).

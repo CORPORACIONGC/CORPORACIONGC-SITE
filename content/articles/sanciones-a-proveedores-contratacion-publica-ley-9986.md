@@ -1,6 +1,7 @@
 ---
 title: "Sanciones a proveedores del Estado: guía del régimen sancionatorio (Ley 9986)"
 date: "2026-07-03"
+updated: "2026-10-27"
 excerpt: "Multas, cláusula penal e inhabilitación: entienda a qué se expone su empresa como proveedor del Estado bajo la Ley 9986 y cómo prevenir que lo saquen de las contrataciones públicas."
 tags: ["Sanciones", "Proveedores del Estado", "Inhabilitación", "Multas", "Contratación Pública", "Procedimientos Sancionatorios", "Ley 9986"]
 areas: ["contratacion-publica", "procedimientos-sancionatorios"]

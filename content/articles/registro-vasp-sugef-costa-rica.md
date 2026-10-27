@@ -1,6 +1,7 @@
 ---
 title: "Registro VASP ante SUGEF en Costa Rica: lo que la Ley 10961 exige y lo que está en juego"
 date: "2026-09-18"
+updated: "2026-10-27"
 excerpt: "La Ley 10961 obliga a los proveedores de servicios de activos virtuales a inscribirse ante SUGEF desde el 19 de setiembre de 2026. Quién queda cubierto, qué sanciones trae, por qué el registro es la llave del sistema bancario y por qué el trámite se gana antes de que abra la ventana."
 tags: ["VASP", "SUGEF", "Ley 10961", "Criptoactivos", "Activos Virtuales", "PSAV", "Cumplimiento", "Ley 7786", "CONASSIF", "Regla de Viaje"]
 areas: ["regulacion-fintech-criptoactivos"]
@@ -15,7 +16,7 @@ faq:
   - question: "¿Existe una licencia cripto en Costa Rica?"
     answer: "La Ley 10961 creó un registro obligatorio ante SUGEF con supervisión antilavado, y el propio artículo 15 quater dispone que la inscripción «no representa una autorización de operación». Quien le ofrezca una «licencia cripto costarricense» le está vendiendo una figura que la legislación vigente desconoce. Lo que existe es la inscripción como proveedor de servicios de activos virtuales, y en la práctica resulta decisiva: sin ella, ningún banco ni sujeto supervisado puede mantener relaciones comerciales con la empresa."
   - question: "¿Cuándo abre el registro VASP ante SUGEF?"
-    answer: "La Ley 10961 rige desde el 19 de setiembre de 2026. El reglamento del CONASSIF, que definirá la plataforma, los formularios y los requisitos del trámite, seguía sin publicarse ni someterse a consulta al 18 de setiembre de 2026, y hasta que se publique la ventana de inscripción permanece cerrada. La estrategia correcta es tener el expediente completo y presentarlo el día en que SUGEF habilite el trámite."
+    answer: "La Ley 10961 rige desde el 19 de setiembre de 2026. El reglamento del CONASSIF, que definirá la plataforma, los formularios y los requisitos del trámite, seguía sin publicarse ni someterse a consulta al 27 de octubre de 2026, y hasta que se publique la ventana de inscripción permanece cerrada. La estrategia correcta es tener el expediente completo y presentarlo el día en que SUGEF habilite el trámite."
   - question: "¿Quién debe inscribirse como proveedor de servicios de activos virtuales?"
     answer: "Toda persona física o jurídica que, como negocio, realice para sí o para terceros alguna de estas actividades: intercambio entre activos virtuales y monedas de curso legal o entre activos virtuales; transferencias de activos virtuales; custodia, depósito, administración o control de activos virtuales; o servicios financieros relacionados con su emisión, comercialización, oferta o venta. Cubre exchanges, custodios, procesadores de pagos cripto y plataformas de emisión de tokens. El criterio de conexión es operar en territorio costarricense, con independencia del domicilio legal."
   - question: "¿Una empresa extranjera puede registrarse como VASP en Costa Rica?"
@@ -34,6 +35,8 @@ faq:
 
 Costa Rica ya tiene reglas para los proveedores de servicios de activos virtuales, y traen fecha de vencimiento. La **[Ley N.° 10961](https://www.imprentanacional.go.cr/pub/2026/06/19/ALCA78_19_06_2026.pdf)**, publicada en el Alcance 78 a La Gaceta del **19 de junio de 2026**, incorporó a los **VASP** (*Virtual Asset Service Providers*, o **PSAV**, proveedores de servicios de activos virtuales) al régimen antilavado de la Ley 7786 y les impuso, por primera vez, la obligación de **inscribirse ante la SUGEF**. La ley **rige desde el 19 de setiembre de 2026**.
 
+> **Verificado el 27 de octubre de 2026.** El reglamento del CONASSIF sigue sin publicarse y sin someterse a consulta. El artículo 4 de la Ley 10961 otorgó «un plazo de hasta tres meses para la debida reglamentación de esta ley», sin decir desde cuándo se cuenta: si se cuenta desde la publicación, venció el 19 de setiembre, el mismo día en que la ley entró en vigor; si se cuenta desde la vigencia, vence el 19 de diciembre de 2026. En la fecha de esta verificación, el registro de publicaciones del CONASSIF no incluye ninguna norma sobre activos virtuales y la única propuesta en consulta de la SUGEF es el Acuerdo SUGEF 1-26, sobre estimaciones crediticias. Lo demás de esta guía sigue vigente.
+
 > **Actualización del 18 de setiembre de 2026.** La Ley 10961 entra en vigor el 19 de setiembre: su texto dispone que «rige tres meses a partir de su publicación». Su artículo 4 otorgó «un plazo de hasta tres meses para la debida reglamentación», y a la fecha de esta actualización el reglamento del CONASSIF no ha sido publicado ni figura entre las normas en consulta de la SUGEF. La ley no trae un régimen transitorio para quien ya opera: la obligación de inscribirse existe desde la entrada en vigor, mientras el procedimiento para cumplirla, los umbrales de debida diligencia y el canon de supervisión esperan el reglamento. En este intervalo conviene tener documentada la actividad y la estructura de la empresa, el diagnóstico de sujeción y el programa de cumplimiento, para responder a los requerimientos de bancos y demás sujetos supervisados y presentar el expediente el día en que la SUGEF habilite el trámite. Actualizaremos esta guía el día en que el reglamento se publique o se someta a consulta.
 
 Si su empresa intercambia, transfiere, custodia o comercializa activos virtuales en el mercado costarricense —o si es una plataforma internacional con clientes aquí—, este artículo le explica qué aprobó exactamente el legislador, quién queda cubierto, qué sanciones trae y por qué las decisiones que importan se toman **antes** de que la ventana de inscripción abra.
@@ -45,7 +48,7 @@ Si su empresa intercambia, transfiere, custodia o comercializa activos virtuales
 - La Ley 10961 adicionó el **artículo 15 quater** a la Ley 7786: los VASP son ahora **sujetos obligados** del régimen antilavado.
 - Deben **inscribirse ante SUGEF**. La inscripción «**no representa una autorización de operación**»: el modelo costarricense es un registro con supervisión, sin licencia.
 - Sin inscripción, **ningún banco ni sujeto supervisado puede mantener relaciones comerciales** con la empresa. El registro funciona como llave de acceso al sistema financiero.
-- La ley rige desde el **19 de setiembre de 2026** y el **reglamento del CONASSIF seguía pendiente al 18 de setiembre**: todavía no hay formulario, plataforma ni ventana de inscripción.
+- La ley rige desde el **19 de setiembre de 2026** y el **reglamento del CONASSIF seguía pendiente al 27 de octubre**: todavía no hay formulario, plataforma ni ventana de inscripción.
 - Las multas llegan al **50 % del monto de la transacción** y a **cien salarios base**, y las sanciones firmes se publican.
 - El proyecto se gana en la preparación: el diagnóstico de sujeción y la adecuación de la estructura pueden y deben ejecutarse **hoy**, para presentar el expediente el día en que la ventana abra.
 
@@ -79,10 +82,10 @@ Dos precisiones separan un dictamen serio de una lectura apresurada. La condici�
 |---|---|---|
 | Publicación de la Ley 10961 | 19 de junio de 2026 | Cumplido |
 | Entrada en vigencia | **19 de setiembre de 2026** | En vigor |
-| Reglamento del CONASSIF | Plazo de hasta tres meses | **Pendiente; sin publicación ni consulta pública al 18 de setiembre de 2026** |
+| Reglamento del CONASSIF | Plazo de hasta tres meses | **Pendiente; sin publicación ni consulta pública al 27 de octubre de 2026** |
 | Apertura de la ventana de inscripción | Depende del reglamento | Sin fecha |
 
-El dato decisivo a hoy es el tercero: **el reglamento del CONASSIF no ha sido publicado ni consta en consulta pública**. Lo verificamos el 1 y el 18 de setiembre de 2026 en el registro de normativa en consulta de SUGEF, donde solo figuran propuestas ajenas a los activos virtuales. Ese reglamento definirá los umbrales, las categorías de sujeto inscrito, la plataforma tecnológica y los requisitos documentales. Sin él no hay formulario ni ventana de inscripción, y por eso **ninguna firma puede garantizar hoy, con seriedad, una fecha de inscripción**. Quien se lo prometa está cotizando un trámite que todavía no existe.
+El dato decisivo a hoy es el tercero: **el reglamento del CONASSIF no ha sido publicado ni consta en consulta pública**. Lo verificamos el 1 y el 18 de setiembre y el 27 de octubre de 2026 en el registro de normativa en consulta de SUGEF, donde solo figuran propuestas ajenas a los activos virtuales. Ese reglamento definirá los umbrales, las categorías de sujeto inscrito, la plataforma tecnológica y los requisitos documentales. Sin él no hay formulario ni ventana de inscripción, y por eso **ninguna firma puede garantizar hoy, con seriedad, una fecha de inscripción**. Quien se lo prometa está cotizando un trámite que todavía no existe.
 
 Lo que sí se puede prometer —y es donde se decidirá quién opera sin fricciones bancarias y quién queda haciendo fila— es **tener el expediente completo**, listo para presentarse el día en que SUGEF habilite el trámite.
 
@@ -139,4 +142,4 @@ En Corporación GC asesoramos a proveedores de servicios de activos virtuales �
 
 > **¿Su empresa presta servicios con activos virtuales?** [Escríbanos](/contacto) o visite el área de [regulación fintech y criptoactivos](/areas/regulacion-fintech-criptoactivos). Con la ley en vigor desde el 19 de setiembre, la evaluación de sujeción conviene hacerla ya.
 
-*Este artículo describe el marco vigente al 18 de setiembre de 2026. El reglamento del CONASSIF se encuentra pendiente de emisión; los requisitos operativos del trámite pueden variar con su publicación. Actualizaremos esta guía el día en que el reglamento se publique.*
+*Este artículo describe el marco vigente al 27 de octubre de 2026. El reglamento del CONASSIF se encuentra pendiente de emisión; los requisitos operativos del trámite pueden variar con su publicación. Actualizaremos esta guía el día en que el reglamento se publique.*

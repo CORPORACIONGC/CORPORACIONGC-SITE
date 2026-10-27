@@ -22,11 +22,17 @@ export type ArticleMeta = {
   /** Si es false, el autor NO se muestra en la página (byline + bio ocultos)
       pero SÍ se emite en el JSON-LD (señal de autoría para SEO/E-E-A-T). */
   authorVisible?: boolean;
-  /** Fecha del último cambio, cuando es posterior a la publicación. Es la
-   *  más reciente entre el `updated` del frontmatter y el último commit del
-   *  archivo (lib/fechas-modificacion.json, que arma el prebuild). Alimenta
-   *  «Revisado el…», el `dateModified` y el `lastModified` del sitemap. */
+  /** Fecha de la última revisión de fondo, declarada a mano en el
+   *  frontmatter (`updated`) cuando alguien revisó el contenido. Es la que
+   *  se muestra como «Revisado el» y la que va en `dateModified`. Un cambio
+   *  de enlaces, de pie o de formato no la mueve. Las guías comerciales se
+   *  revisan cada trimestre (scripts/revision-trimestral.mjs). */
   updated?: string;
+  /** Fecha del último cambio de cualquier tipo: la más reciente entre
+   *  `updated` y el último commit del archivo (lib/fechas-modificacion.json,
+   *  que arma el prebuild). Solo alimenta el `lastmod` del sitemap y el aviso
+   *  a IndexNow, que sirven para que los buscadores vuelvan a rastrear. */
+  cambiado?: string;
   /** Áreas de práctica a las que pertenece la guía. La primera es su área
    *  principal: la que aparece en las migas y en el cierre del artículo. */
   areas?: string[];
@@ -56,9 +62,8 @@ export type Article = ArticleMeta & {
 
 const FECHAS_GIT: Record<string, string> = fechas.articulos;
 
-/** La fecha de cambio más reciente, si es posterior a la de publicación. */
-function fechaModificacion(slug: string, publicado: string, declarada?: string): string | undefined {
-  const fecha = [declarada, FECHAS_GIT[slug]].filter(Boolean).sort().pop();
+/** La fecha, solo si es posterior a la de publicación. */
+function posterior(fecha: string | undefined, publicado: string): string | undefined {
   return fecha && fecha > publicado ? fecha : undefined;
 }
 
@@ -82,7 +87,11 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     faq: data.faq as ArticleFAQ[] | undefined,
     lang: data.lang === "en" ? "en" : "es",
     translation: data.translation as string | undefined,
-    updated: fechaModificacion(slug, data.date as string, data.updated as string | undefined),
+    updated: posterior(data.updated as string | undefined, data.date as string),
+    cambiado: posterior(
+      [data.updated as string | undefined, FECHAS_GIT[slug]].filter(Boolean).sort().pop(),
+      data.date as string,
+    ),
     areas: (data.areas as string[]) || [],
     sentencias: (data.sentencias as string[]) || [],
   };

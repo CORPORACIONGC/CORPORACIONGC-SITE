@@ -1,6 +1,7 @@
 ---
 title: "Despidos en Hacienda por teletrabajo: el procedimiento, los plazos y las preguntas que deciden cada caso"
 date: "2026-09-18"
+updated: "2026-10-27"
 excerpt: "Hacienda abrió procedimientos de despido contra 36 funcionarios en teletrabajo. Cómo es hoy el procedimiento de despido de la Ley Marco de Empleo Público, qué plazos corren para cada parte, qué preguntas deciden cada caso y qué hacer si recibió una notificación."
 tags: ["Despido", "Empleo público", "Teletrabajo", "Ley Marco de Empleo Público", "Procedimiento disciplinario", "Tribunal de Servicio Civil", "Ministerio de Hacienda", "Debido proceso"]
 areas: ["empleo-publico"]
@@ -29,6 +30,8 @@ faq:
   - question: "¿Qué pasa si el Tribunal de Servicio Civil revoca el despido?"
     answer: "El Tribunal dicta un nuevo fallo y resuelve si procede la restitución de la persona en su puesto, con pleno goce de sus derechos y el pago de los salarios caídos. También puede considerar que la falta existe y sustituir el despido por una amonestación, una advertencia escrita o una suspensión sin goce de salario de hasta un mes (artículo 22 de la Ley 10159)."
 ---
+
+> **Verificado el 27 de octubre de 2026.** Desde el anuncio del 10 de setiembre, el Ministerio de Hacienda no ha informado públicamente cómo avanzan los procedimientos, y la prensa no registra resoluciones finales. El artículo 21 inciso a) de la Ley Marco de Empleo Público da dos meses desde el nombramiento del órgano director para dictar el acto final: si los órganos se nombraron en la semana del anuncio, ese plazo se cumple a inicios de noviembre. Lo que explica esta guía sobre el procedimiento, los plazos y la defensa sigue vigente.
 
 > **En síntesis.** El 10 de setiembre de 2026 el Ministerio de Hacienda anunció procedimientos de despido contra 36 funcionarios a quienes atribuye haber instalado, sin autorización, un programa que simulaba el movimiento del mouse durante el teletrabajo, y les retiró esa modalidad mientras se resuelven. Desde marzo de 2023, el despido de un servidor del Poder Ejecutivo se tramita por el procedimiento especial de los artículos 21 y 22 de la **Ley Marco de Empleo Público**: el jerarca nombra un órgano director, este formula cargos y convoca a una comparecencia oral y privada, el jerarca resuelve y la apelación va al **Tribunal de Servicio Civil**. La ley fija **plazos cortos** para las dos partes, la carga de probar la falta recae en la Administración, y el resultado depende de cómo se califique la conducta y de lo que la prueba acredite respecto de cada persona. Nadie ha sido declarado responsable: los procedimientos están en su primera etapa.
 

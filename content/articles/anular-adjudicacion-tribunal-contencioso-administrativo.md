@@ -1,6 +1,7 @@
 ---
 title: "Cómo anular una adjudicación en el Tribunal Contencioso Administrativo (después de la Contraloría)"
 date: "2026-07-02"
+updated: "2026-10-27"
 excerpt: "La Contraloría rechazó su apelación y el contrato se adjudicó a otro. Todavía tiene un año para llevar el caso al Tribunal Contencioso, anular la adjudicación y reclamar daños y perjuicios."
 tags: ["Litigio contencioso", "TCA", "Contratación Pública", "Medidas cautelares", "Adjudicación", "Contraloría", "CPCA"]
 areas: ["contratacion-publica", "litigio-contencioso-administrativo", "medidas-cautelares"]

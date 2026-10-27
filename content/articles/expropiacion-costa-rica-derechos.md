@@ -1,6 +1,7 @@
 ---
 title: "Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuáles son mis derechos?"
 date: "2026-04-20"
+updated: "2026-10-27"
 excerpt: "Cinco días hábiles. Ese es el plazo para oponerse al avalúo administrativo sin perder el derecho a discutir el justo precio. Esta guía explica, con base en la Ley de Expropiaciones, qué significa una declaratoria de interés público, qué puede exigir el propietario y cómo se compone la indemnización que le corresponde."
 tags: ["Guía práctica", "Expropiación", "Derecho Expropiatorio", "Ley de Expropiaciones", "Derecho Público"]
 sentencias: ["indexacion-de-obligaciones-dinerarias"]

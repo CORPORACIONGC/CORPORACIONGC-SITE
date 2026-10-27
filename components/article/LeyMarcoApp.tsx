@@ -120,10 +120,10 @@ const FILAS: Fila[] = [
   {
     norma: "Art. 9, párrafo final",
     regula: "Permitía incluir en la tarifa o precio público los pagos y las inversiones del contrato.",
-    resultado: "Inconstitucional",
-    parametro: "Eficacia y eficiencia, Constitución art. 182.",
-    fuente: "La Nación",
-    inconstitucional: true,
+    resultado: "No inconstitucional",
+    parametro: "La resolución 2026-036043, del 23 de setiembre, corrigió el error material de la parte dispositiva, que había omitido el «no».",
+    fuente: "Por tanto",
+    inconstitucional: false,
   },
   {
     norma: "Arts. 21 b) y 40 d)",
@@ -429,6 +429,7 @@ const JURISPRUDENCIA: Criterio[] = [
   { numero: "Voto 2024-21375", organo: "Sala Constitucional", fecha: "29-07-2024", tema: "Competencias de la Contraloría", criterio: "Las competencias de la Contraloría forman una reserva constitucional indisponible para el legislador cuando busca rebajarlas o suprimirlas.", href: NEXUS(NEXUS_IDS["2024-21375"]) },
   { numero: "Voto 2025-27397", organo: "Sala Constitucional", fecha: "27-08-2025", tema: "Multas en concesiones", criterio: "Validó la multa fija del artículo 50 de la Ley 7762, porque se impone tras un procedimiento previo con defensa.", href: NEXUS(NEXUS_IDS["2025-27397"]) },
   { numero: "Voto 2026-16432", organo: "Sala Constitucional", fecha: "07-05-2026", tema: "Consulta inevacuable", criterio: "La consulta sin motivos precisos y circunstanciados es inadmisible y no se evacua.", href: NEXUS(NEXUS_IDS["2026-16432"]) },
+  { numero: "Voto 2026-036043", organo: "Sala Constitucional", fecha: "23-09-2026", tema: "Corrección del voto 2026-034680", criterio: "Corrige de oficio dos errores materiales de la parte dispositiva: el párrafo final del artículo 9 no es inconstitucional y la norma contraria a la reserva de ley es el artículo 12 inciso c).", href: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1425863" },
 ];
 
 const ADMINISTRATIVOS: Criterio[] = [

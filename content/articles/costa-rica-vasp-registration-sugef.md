@@ -1,6 +1,7 @@
 ---
 title: "Costa Rica VASP Registration with SUGEF: What Law 10961 Requires and What Is at Stake"
 date: "2026-09-18"
+updated: "2026-10-27"
 excerpt: "Costa Rica's Law 10961 requires Virtual Asset Service Providers to register with SUGEF from 19 September 2026. Who is covered, the penalties, why registration is the key to the banking system, and why the filing is won before the window opens."
 tags: ["VASP", "SUGEF", "Law 10961", "Crypto Regulation", "Virtual Assets", "Costa Rica", "AML Compliance", "CONASSIF", "Travel Rule"]
 areas: ["regulacion-fintech-criptoactivos"]
@@ -16,7 +17,7 @@ faq:
   - question: "Is there a crypto license in Costa Rica?"
     answer: "No licensing regime exists. Law 10961 created a mandatory registration with SUGEF under AML supervision, and Article 15 quater states expressly that registration 'does not represent an authorisation to operate'. Any provider offering a Costa Rican 'crypto license' is selling a legal figure that current legislation does not contemplate. What exists is VASP registration — and it is commercially decisive: without it, no bank or supervised entity may maintain commercial relationships with the company."
   - question: "When does the Costa Rica VASP registration window open?"
-    answer: "Law 10961 enters into force on 19 September 2026. The implementing regulation from CONASSIF, which will define the filing platform, forms and documentary requirements, had not been published or put to public consultation as of 18 September 2026, and until it is published there is no registration window. The sound strategy is to have a complete file ready and submit it the day SUGEF opens the process."
+    answer: "Law 10961 enters into force on 19 September 2026. The implementing regulation from CONASSIF, which will define the filing platform, forms and documentary requirements, had not been published or put to public consultation as of 27 October 2026, and until it is published there is no registration window. The sound strategy is to have a complete file ready and submit it the day SUGEF opens the process."
   - question: "Who must register as a VASP in Costa Rica?"
     answer: "Any natural or legal person who, as a business, performs for itself or for third parties any of the following: exchange between virtual assets and fiat currency or between virtual assets; transfers of virtual assets; custody, deposit, administration or control of virtual assets; or financial services related to the issuance, marketing, offer or sale of virtual assets. This covers exchanges, custodians, crypto payment processors and token issuance platforms. The connecting factor is operating in Costa Rican territory, regardless of legal domicile."
   - question: "Can a foreign company register as a VASP in Costa Rica?"
@@ -35,6 +36,8 @@ faq:
 
 Costa Rica now has rules for virtual asset businesses — and they come with a deadline. **[Law No. 10961](https://www.imprentanacional.go.cr/pub/2026/06/19/ALCA78_19_06_2026.pdf)**, published in the Official Gazette on **19 June 2026**, brought **Virtual Asset Service Providers (VASPs)** into the AML/CFT regime of Law 7786 and requires them, for the first time, to **register with SUGEF**, the General Superintendency of Financial Entities. The law **applies from 19 September 2026**.
 
+> **Verified on 27 October 2026.** The CONASSIF regulation has still not been published or put to public consultation. Article 4 of Law 10961 granted «a term of up to three months» for the regulation of the law without saying when that term starts: counted from publication, it lapsed on 19 September, the day the law took effect; counted from entry into force, it runs until 19 December 2026. As of this check, the CONASSIF publication register lists no rule on virtual assets, and the only draft under consultation at SUGEF is Acuerdo SUGEF 1-26, on credit loss provisions. The rest of this guide remains current.
+
 > **Update of 18 September 2026.** Law 10961 enters into force on 19 September: its text provides that it takes effect three months after publication. Its Article 4 granted a term of up to three months for its regulation, and as of this update the CONASSIF regulation has not been published and does not appear among SUGEF's regulations under public consultation. The law contains no transitional regime for businesses already operating: the registration obligation exists from the date of entry into force, while the filing procedure, the due diligence thresholds and the supervision levy await the regulation. In the meantime, keep the activity and the corporate structure documented, together with the scope diagnostic and the compliance programme, so you can answer requests from banks and other supervised entities and file the day SUGEF opens the process. We will update this guide the day the regulation is published or put to consultation.
 
 If your company exchanges, transfers, holds in custody or markets virtual assets in or into Costa Rica — or if you are an international platform with local customers — this article explains exactly what was enacted, who is covered, the penalties, and why the decisions that matter are taken **before** the registration window opens.
@@ -46,7 +49,7 @@ If your company exchanges, transfers, holds in custody or markets virtual assets
 - Law 10961 added **Article 15 quater** to Law 7786: VASPs are now **obliged subjects** under the AML regime.
 - They must **register with SUGEF**. Registration "**does not represent an authorisation to operate**": the Costa Rican model is a registration with supervision, without a licence.
 - Without registration, **no bank or supervised entity may maintain commercial relationships** with the company. The registration works as the key to the financial system.
-- The law applies from **19 September 2026** and the **CONASSIF implementing regulation was still pending as of 18 September**: there is no form, platform or registration window yet.
+- The law applies from **19 September 2026** and the **CONASSIF implementing regulation was still pending as of 27 October**: there is no form, platform or registration window yet.
 - Fines reach **50% of the transaction amount** and **one hundred base salaries**, and final sanctions are published.
 - The project is won in the preparation: the scope diagnostic and the adequacy of the structure can and should be executed **today**, so the file is submitted the day the window opens.
 
@@ -80,10 +83,10 @@ Two points separate a serious scope opinion from a hasty reading. The "as a busi
 |---|---|---|
 | Publication of Law 10961 | 19 June 2026 | Done |
 | Entry into force | **19 September 2026** | In force |
-| CONASSIF implementing regulation | Up to three months | **Pending; not published or under consultation as of 18 September 2026** |
+| CONASSIF implementing regulation | Up to three months | **Pending; not published or under consultation as of 27 October 2026** |
 | Opening of the registration window | Depends on the regulation | No date yet |
 
-The decisive fact today is the third row: **the CONASSIF regulation has not been published, and no public consultation draft is on record**. We verified this on 1 and 18 September 2026 against SUGEF's register of regulations under consultation, which lists only proposals unrelated to virtual assets. That regulation will define thresholds, categories of registered subject, the filing platform and the documentary checklist. Until it exists there is no form and no registration window — which is why **no firm can honestly guarantee a registration date today**. Whoever promises one is quoting a procedure that does not yet exist.
+The decisive fact today is the third row: **the CONASSIF regulation has not been published, and no public consultation draft is on record**. We verified this on 1 and 18 September and 27 October 2026 against SUGEF's register of regulations under consultation, which lists only proposals unrelated to virtual assets. That regulation will define thresholds, categories of registered subject, the filing platform and the documentary checklist. Until it exists there is no form and no registration window — which is why **no firm can honestly guarantee a registration date today**. Whoever promises one is quoting a procedure that does not yet exist.
 
 What can be promised — and it is where the difference will be made between operating smoothly and queuing behind the market — is **having a complete file**, ready for submission the day SUGEF opens the process.
 
@@ -140,4 +143,4 @@ Corporación GC advises local and international virtual asset businesses across 
 
 > **Does your company provide virtual asset services in or into Costa Rica?** [Contact us](/contacto) or visit our [fintech and crypto regulatory practice](/areas/regulacion-fintech-criptoactivos). With the law in force since 19 September, the scope assessment is best done now.
 
-*This article describes the framework in force as of 18 September 2026. The CONASSIF implementing regulation is pending; the operational requirements of the filing may change once it is published. We will update this guide the day the regulation is issued.*
+*This article describes the framework in force as of 27 October 2026. The CONASSIF implementing regulation is pending; the operational requirements of the filing may change once it is published. We will update this guide the day the regulation is issued.*

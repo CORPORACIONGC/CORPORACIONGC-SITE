@@ -1,6 +1,7 @@
 ---
 title: "CPCA vs. la antigua Ley Reguladora: los cambios que transformaron la justicia contra el Estado"
 date: "2026-05-21"
+updated: "2026-10-27"
 excerpt: "El CPCA (Ley N.° 8508) derogó por completo la antigua Ley Reguladora de la Jurisdicción Contencioso-Administrativa (Ley N.° 3667 de 1966). No fue un cambio de nombre: cambió la filosofía. Comparamos ambas leyes artículo por artículo, con base en su texto literal."
 tags: ["Contencioso Administrativo", "CPCA", "Ley 8508", "Ley Reguladora", "Derecho Administrativo"]
 areas: ["litigio-contencioso-administrativo"]
