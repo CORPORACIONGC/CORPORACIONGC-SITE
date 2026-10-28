@@ -10,7 +10,6 @@ import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-va
 import { fuentes as f_cpca_vs_ley_reguladora_contencioso_administrativa } from "./cpca-vs-ley-reguladora-contencioso-administrativa";
 import { fuentes as f_defensa_inhabilitacion_proveedor_estado_costa_rica } from "./defensa-inhabilitacion-proveedor-estado-costa-rica";
 import { fuentes as f_defensa_procedimiento_administrativo_sancionatorio } from "./defensa-procedimiento-administrativo-sancionatorio";
-import { fuentes as f_demanda_mala_praxis_ccss } from "./demanda-mala-praxis-ccss";
 import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-peticion-costa-rica";
 import { fuentes as f_despido_funcionario_publico_costa_rica } from "./despido-funcionario-publico-costa-rica";
 import { fuentes as f_expropiacion_costa_rica_derechos } from "./expropiacion-costa-rica-derechos";
@@ -41,7 +40,6 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "cpca-vs-ley-reguladora-contencioso-administrativa": f_cpca_vs_ley_reguladora_contencioso_administrativa,
   "defensa-inhabilitacion-proveedor-estado-costa-rica": f_defensa_inhabilitacion_proveedor_estado_costa_rica,
   "defensa-procedimiento-administrativo-sancionatorio": f_defensa_procedimiento_administrativo_sancionatorio,
-  "demanda-mala-praxis-ccss": f_demanda_mala_praxis_ccss,
   "derecho-de-peticion-costa-rica": f_derecho_de_peticion_costa_rica,
   "despido-funcionario-publico-costa-rica": f_despido_funcionario_publico_costa_rica,
   "expropiacion-costa-rica-derechos": f_expropiacion_costa_rica_derechos,

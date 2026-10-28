@@ -5,7 +5,7 @@ excerpt: "Toda persona puede pedir a una institución pública y tiene derecho a
 tags: ["Derecho de petición", "Ley 9097", "Recurso de amparo", "Sala Constitucional", "Pronta respuesta", "Artículo 27 de la Constitución"]
 areas: ["recursos-de-amparo"]
 type: "article"
-author: "Licda. Mariana Montero Acuña"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
