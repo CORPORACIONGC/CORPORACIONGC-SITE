@@ -15,6 +15,7 @@ import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./le
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
 import { fuentes as f_reajuste_precios_obra_publica_costa_rica } from "./reajuste-precios-obra-publica-costa-rica";
 import { fuentes as f_recurso_amparo_costa_rica } from "./recurso-amparo-costa-rica";
+import { fuentes as f_recurso_casacion_contencioso_administrativo_costa_rica } from "./recurso-casacion-contencioso-administrativo-costa-rica";
 import { fuentes as f_reforma_reglamento_contratacion_publica_decreto_45782 } from "./reforma-reglamento-contratacion-publica-decreto-45782";
 import { fuentes as f_registro_vasp_sugef_costa_rica } from "./registro-vasp-sugef-costa-rica";
 import { fuentes as f_sanciones_a_proveedores_contratacion_publica_ley_9986 } from "./sanciones-a-proveedores-contratacion-publica-ley-9986";
@@ -37,6 +38,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
   "reajuste-precios-obra-publica-costa-rica": f_reajuste_precios_obra_publica_costa_rica,
   "recurso-amparo-costa-rica": f_recurso_amparo_costa_rica,
+  "recurso-casacion-contencioso-administrativo-costa-rica": f_recurso_casacion_contencioso_administrativo_costa_rica,
   "reforma-reglamento-contratacion-publica-decreto-45782": f_reforma_reglamento_contratacion_publica_decreto_45782,
   "registro-vasp-sugef-costa-rica": f_registro_vasp_sugef_costa_rica,
   "sanciones-a-proveedores-contratacion-publica-ley-9986": f_sanciones_a_proveedores_contratacion_publica_ley_9986,
