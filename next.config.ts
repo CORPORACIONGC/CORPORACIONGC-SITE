@@ -75,6 +75,8 @@ const nextConfig: NextConfig = {
       /* Las seis materias complementarias pasaron a una sola página. Cada
          dirección antigua lleva a su sección dentro de ella, para que quien
          tenga el enlace guardado caiga donde esperaba. */
+      /* José Carlos Solano dejó la firma; su perfil lleva al equipo. */
+      { source: "/abogados/jose-carlos-solano", destination: "/abogados", permanent: true },
       { source: "/areas/derecho-civil", destination: "/areas/otras-materias#civil", permanent: true },
       { source: "/areas/derecho-de-familia", destination: "/areas/otras-materias#familia", permanent: true },
       { source: "/areas/derecho-laboral", destination: "/areas/otras-materias#laboral", permanent: true },

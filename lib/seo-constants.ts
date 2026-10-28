@@ -416,25 +416,6 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
     photoFocus: "50% 0%",
     photoTransform: { extendTopRatio: 0.15 },
   },
-  "jose-carlos-solano": {
-    name: "Lic. José Carlos Solano Salas",
-    initials: "JS",
-    role: "Abogado Asociado",
-    seoTitle: "Lic. José Carlos Solano · Abogado Asociado",
-    seoDescription:
-      "Abogado asociado de Corporación GC. Excelencia Académica UCR. Especialista en Derecho Notarial y Registral, ZMT y procedimientos ante la Contraloría (CGR).",
-    ogTitle: "Lic. José Carlos Solano Salas — Corporación GC",
-    ogDescription:
-      "Licenciado en Derecho con Excelencia Académica (UCR). Especialista en Derecho Notarial y Registral, Zona Marítimo Terrestre y procedimientos ante la CGR. Aceptado en la Goethe-Universität Frankfurt.",
-    twitterTitle: "Lic. José Carlos Solano Salas · Corporación GC",
-    ogImageAlt:
-      "Retrato profesional del Lic. José Carlos Solano Salas, Abogado Asociado en Corporación GC.",
-    credential:
-      "Excelencia Académica UCR. Especialista en Derecho Notarial y Registral, ZMT y procedimientos ante la CGR.",
-    photo: "/images/jose-carlos-solano.jpeg",
-    photoFocus: "50% 0%",
-    photoTransform: { extendTopRatio: 0.15 },
-  },
 };
 
 /**

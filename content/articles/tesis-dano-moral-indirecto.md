@@ -18,7 +18,7 @@ Trabajo Final de Investigación Aplicada para optar por el grado y título de Ma
 **Director:** Dr. Roberto Garita Navarro
 **Lectores:** Dr. Hubert Fernández Argüello, Dr. Rafael González Ballar
 
-**Referencia:** González Coto, Katherine Tatiana. *El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración*. Tesis de Maestría Profesional en Derecho Público, Sistema de Estudios de Posgrado, Universidad de Costa Rica, San José, Costa Rica, 2024.
+**Referencia:** González Coto, Katherine Tatiana. *El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración*. Tesis de Maestría Profesional en Derecho Público, Sistema de Estudios de Posgrado, Universidad de Costa Rica, San José, Costa Rica, 2024. [Registro en el repositorio de la UCR](https://hdl.handle.net/10669/102175).
 
 ---
 

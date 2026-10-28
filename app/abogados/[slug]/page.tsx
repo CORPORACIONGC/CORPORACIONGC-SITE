@@ -23,10 +23,6 @@ import { EstebanHero } from "@/components/sections/EstebanHero";
 import { EstebanAbout } from "@/components/sections/EstebanAbout";
 import { EstebanExperience } from "@/components/sections/EstebanExperience";
 import { EstebanContact } from "@/components/sections/EstebanContact";
-import { JoseCarlosHero } from "@/components/sections/JoseCarlosHero";
-import { JoseCarlosAbout } from "@/components/sections/JoseCarlosAbout";
-import { JoseCarlosExperience } from "@/components/sections/JoseCarlosExperience";
-import { JoseCarlosContact } from "@/components/sections/JoseCarlosContact";
 import { KatherineHero } from "@/components/sections/KatherineHero";
 import { KatherineAbout } from "@/components/sections/KatherineAbout";
 import { KatherineExperience } from "@/components/sections/KatherineExperience";
@@ -43,8 +39,6 @@ import {
   OSCAR_NAV_LINKS,
   ESTEBAN_PROFILE,
   ESTEBAN_NAV_LINKS,
-  JOSE_CARLOS_PROFILE,
-  JOSE_CARLOS_NAV_LINKS,
   KATHERINE_PROFILE,
   KATHERINE_NAV_LINKS,
   MARIANA_PROFILE,
@@ -107,6 +101,7 @@ export default async function AttorneyProfile({
       sameAs: [
         "https://www.linkedin.com/in/%C3%B3scar-eduardo-gonz%C3%A1lez-camacho-0b65a2187/",
         "https://derecho.ucr.ac.cr/docentes/gonzalez-camacho-oscar",
+        "https://dialnet.unirioja.es/servlet/autor?codigo=4641054",
         "https://www.abogados.or.cr/consultaagremiados/",
       ],
       /* Variantes con que se busca su nombre, con y sin tilde y con el
@@ -147,6 +142,11 @@ export default async function AttorneyProfile({
         { degree: "Licenciatura en Derecho", institution: "Universidad Escuela Libre de Derecho" },
         { degree: "Notariado Público", institution: "Universidad Escuela Libre de Derecho" },
       ],
+      /* Su tesis de maestría en el repositorio institucional de la UCR. */
+      sameAs: [
+        "https://hdl.handle.net/10669/102175",
+        "https://www.abogados.or.cr/consultaagremiados/",
+      ],
     },
     "mariana-montero": {
       carnet: "33716",
@@ -154,6 +154,10 @@ export default async function AttorneyProfile({
         { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", distinction: "Diploma de Excelencia Académica — Mejor promedio del posgrado" },
         { degree: "Licenciatura en Derecho — Mención en Derechos Humanos", institution: "Universidad de Costa Rica", distinction: "Aprobada con distinción" },
         { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica" },
+      ],
+      sameAs: [
+        "https://hdl.handle.net/10669/96806",
+        "https://www.abogados.or.cr/consultaagremiados/",
       ],
     },
     "esteban-perez": {
@@ -163,13 +167,10 @@ export default async function AttorneyProfile({
         { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica" },
         { degree: "Especialidad en Derecho Notarial y Registral", institution: "Universidad Fidélitas" },
       ],
-    },
-    "jose-carlos-solano": {
-      carnet: "34724",
-      education: [
-        { degree: "Especialista en Derecho Notarial y Registral", institution: "Universidad La Salle de Costa Rica", distinction: "Con honores" },
-        { degree: "Licenciado en Derecho (énfasis en Derecho Tributario)", institution: "Universidad de Costa Rica", distinction: "Con honores — Promedio superior a 9/10" },
-        { degree: "Estudios parciales en Filosofía", institution: "Universidad de Costa Rica" },
+      sameAs: [
+        "https://cr.linkedin.com/in/esteban-p%C3%A9rez-herrera-contencioso",
+        "https://hdl.handle.net/10669/94871",
+        "https://www.abogados.or.cr/consultaagremiados/",
       ],
     },
   };
@@ -399,7 +400,6 @@ export default async function AttorneyProfile({
     );
   }
   if (member.slug === "esteban-perez") return <>{schemaScripts}<EstebanProfile /></>;
-  if (member.slug === "jose-carlos-solano") return <>{schemaScripts}<JoseCarlosProfile /></>;
   if (member.slug === "katherine-gonzalez") return <>{schemaScripts}<KatherineProfile /></>;
   if (member.slug === "mariana-montero") return <>{schemaScripts}<MarianaProfile /></>;
 
@@ -541,49 +541,6 @@ function EstebanProfile() {
           <EstebanExperience />
           <Publications articles={articles} />
           <EstebanContact />
-        </main>
-        <Footer />
-      </div>
-    </>
-  );
-}
-
-// ─── José Carlos's Full Profile ───
-
-function JoseCarlosProfile() {
-  const articles = getArticlesByAuthor("Solano")
-    .filter((a) => a.lang !== "en")
-    .map((a) => ({
-      slug: a.slug,
-      title: a.title,
-      excerpt: a.excerpt,
-      date: a.date,
-      author: a.authorVisible === false ? undefined : a.author,
-      minutos: a.minutos ?? 1,
-    }));
-
-  return (
-    <>
-      <div className="fixed top-0 left-0 right-0 z-50 bg-burgundy-dark">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center h-8">
-          <Link
-            href="/"
-            className="text-[10px] tracking-[0.15em] uppercase text-white/60 hover:text-hilo-texto transition-colors duration-300 flex items-center gap-1.5"
-          >
-            <span>&larr;</span>
-            <span>Volver a Corporación GC</span>
-          </Link>
-        </div>
-      </div>
-      <div className="pt-8">
-        <Navbar navLinks={JOSE_CARLOS_NAV_LINKS} topOffset />
-        <main>
-          <JoseCarlosHero />
-          <Credentials credentials={JOSE_CARLOS_PROFILE.credentials} />
-          <JoseCarlosAbout />
-          <JoseCarlosExperience />
-          <Publications articles={articles} />
-          <JoseCarlosContact />
         </main>
         <Footer />
       </div>

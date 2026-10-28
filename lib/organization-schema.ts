@@ -77,7 +77,7 @@ export const ORGANIZATION_SCHEMA = {
     worksFor: { "@id": "https://www.corporaciongc.com/#organization" },
   },
   foundingDate: "2015",
-  numberOfEmployees: { "@type": "QuantitativeValue", value: 6 },
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 5 },
   employee: [
     {
       "@type": "Person",
@@ -106,13 +106,6 @@ export const ORGANIZATION_SCHEMA = {
       jobTitle: "Abogado Asociado y Notario Público",
       url: "https://www.corporaciongc.com/abogados/esteban-perez",
       memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34399" },
-    },
-    {
-      "@type": "Person",
-      name: "Lic. José Carlos Solano Salas",
-      jobTitle: "Abogado Asociado",
-      url: "https://www.corporaciongc.com/abogados/jose-carlos-solano",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34724" },
     },
   ],
   knowsAbout: [

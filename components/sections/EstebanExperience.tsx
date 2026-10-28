@@ -96,6 +96,14 @@ export function EstebanExperience() {
                 <p className="mt-2 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
                   {ESTEBAN_PROFILE.research.description}
                 </p>
+                <a
+                  href={ESTEBAN_PROFILE.research.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-block text-xs text-emphasis underline decoration-emphasis/30 underline-offset-4 hover:decoration-emphasis"
+                >
+                  Ver el registro en el repositorio de la UCR
+                </a>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {ESTEBAN_PROFILE.research.tags.map((tag, i) => (
                     <span

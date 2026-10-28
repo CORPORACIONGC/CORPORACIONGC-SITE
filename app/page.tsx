@@ -121,20 +121,13 @@ const jsonLdSiteNavigation = {
     {
       "@type": "SiteNavigationElement",
       position: 7,
-      name: "Lic. José Carlos Solano Salas",
-      description: "Abogado Asociado — Especialista en Derecho Constitucional y Tributario",
-      url: "https://www.corporaciongc.com/abogados/jose-carlos-solano",
-    },
-    {
-      "@type": "SiteNavigationElement",
-      position: 8,
       name: "Publicaciones Académicas",
       description: "Artículos, tesis y publicaciones en Derecho Público",
       url: "https://www.corporaciongc.com/articulos",
     },
     {
       "@type": "SiteNavigationElement",
-      position: 9,
+      position: 8,
       name: "Sobre Nosotros",
       description: "Bufete fundado en 2015 por el Dr. González Camacho",
       url: "https://www.corporaciongc.com/sobre-nosotros",

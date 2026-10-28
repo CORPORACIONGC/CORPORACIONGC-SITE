@@ -19,19 +19,21 @@ const jsonLdAboutPage = {
   "@id": "https://www.corporaciongc.com/sobre-nosotros#webpage",
   name: "Sobre Nosotros — Corporación GC",
   description:
-    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Seis abogados especializados en Derecho Público.",
+    "Corporación GC es un bufete de abogados costarricense fundado en 2015 por el Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera y coordinador de la comisión redactora del CPCA. Cinco abogados especializados en Derecho Público.",
   url: "https://www.corporaciongc.com/sobre-nosotros",
   isPartOf: { "@id": "https://www.corporaciongc.com/#website" },
   about: { "@id": "https://www.corporaciongc.com/#organization" },
   mainEntity: { "@id": "https://www.corporaciongc.com/#organization" },
   inLanguage: "es-CR",
   datePublished: "2025-01-01",
-  dateModified: "2026-09-19",
+  dateModified: "2026-10-27",
   publisher: { "@id": "https://www.corporaciongc.com/#organization" },
   significantLink: [
     "https://www.corporaciongc.com/abogados/oscar-gonzalez",
     "https://www.corporaciongc.com/areas",
     "https://www.corporaciongc.com/articulos",
+    "https://www.corporaciongc.com/politica-editorial",
+    "https://www.corporaciongc.com/jurisprudencia-destacada",
   ],
   speakable: {
     "@type": "SpeakableSpecification",
@@ -80,18 +82,80 @@ export const metadata: Metadata = {
 const SECCIONES = [
   { id: "la-firma", n: "I", label: "La firma" },
   { id: "fundador", n: "II", label: "El fundador" },
-  { id: "especialidad", n: "III", label: "Especialidad" },
-  { id: "abogados", n: "IV", label: "Los abogados" },
-  { id: "clientes", n: "V", label: "Clientes" },
-  { id: "contacto", n: "VI", label: "Contacto" },
+  { id: "trayectoria", n: "III", label: "Trayectoria" },
+  { id: "especialidad", n: "IV", label: "Especialidad" },
+  { id: "asuntos", n: "V", label: "Asuntos" },
+  { id: "abogados", n: "VI", label: "Los abogados" },
+  { id: "publicaciones", n: "VII", label: "Publicaciones" },
+  { id: "clientes", n: "VIII", label: "Clientes" },
+  { id: "contacto", n: "IX", label: "Contacto" },
 ] as const;
+
+/* Hitos tomados de las trayectorias publicadas en los perfiles de cada
+   abogado; si cambia una fecha allá, se corrige aquí. */
+const TRAYECTORIA: [string, string][] = [
+  ["2015", "El Dr. Óscar Eduardo González Camacho funda la firma, tras doce años como magistrado de la Sala Primera de la Corte Suprema de Justicia."],
+  ["2016", "Katherine González Coto se incorpora como asistente legal."],
+  ["2018", "Ingresan como asistentes jurídicos Esteban Pérez Herrera y Mariana Montero Acuña, que venían de la Sala Constitucional y de la Procuraduría General de la República."],
+  ["2019", "Katherine González Coto y Mariana Montero Acuña pasan a abogadas asociadas, y Khevin Sánchez Zamora entra como asistente legal del director."],
+  ["2023", "Esteban Pérez Herrera se incorpora como abogado asociado."],
+  ["2024", "Katherine González Coto concluye la Maestría en Derecho Público de la Universidad de Costa Rica y comienza a enseñar en la Universidad Escuela Libre de Derecho."],
+  ["2025", "Khevin Sánchez Zamora se incorpora como abogado asociado."],
+  ["2026", "La firma estrena su sitio con una biblioteca pública de guías jurídicas, enlaza a sus fuentes oficiales y publica su política editorial."],
+];
+
+/* Tipos de asunto que la firma ha llevado, descritos sin clientes ni
+   expedientes. Solo asuntos de la oficina. */
+const ASUNTOS = [
+  {
+    tipo: "Nulidad de reglamentos y decretos",
+    desc: "Demandas contra reglamentos y decretos del Poder Ejecutivo que afectan a empresas y productores de sectores regulados, con sus medidas cautelares.",
+  },
+  {
+    tipo: "Contratación pública",
+    desc: "Recursos de apelación ante la Contraloría General de la República contra adjudicaciones de licitaciones mayores, y asesoría a consorcios durante el concurso y la ejecución del contrato.",
+  },
+  {
+    tipo: "Equilibrio económico de contratos",
+    desc: "Reclamos de contratistas de obra pública frente a instituciones autónomas por desequilibrio económico y reajuste de precios.",
+  },
+  {
+    tipo: "Procedimientos sancionatorios",
+    desc: "Defensa de funcionarios y de empresas ante la Contraloría General de la República, las superintendencias del sistema financiero y la Comisión Nacional del Consumidor, y la impugnación judicial de esas sanciones.",
+  },
+  {
+    tipo: "Empleo público",
+    desc: "Medidas cautelares de servidores públicos contra acuerdos que alteran sus condiciones de trabajo, y defensa en procedimientos disciplinarios y de despido.",
+  },
+  {
+    tipo: "Seguridad social y salud",
+    desc: "Reclamos de responsabilidad patrimonial y de pensiones frente a la Caja Costarricense de Seguro Social, y ejecución de sentencias de amparo.",
+  },
+  {
+    tipo: "Gobierno local",
+    desc: "Uso de suelo, patentes comerciales, publicidad exterior, impuesto sobre bienes inmuebles y zona marítimo terrestre ante las municipalidades.",
+  },
+  {
+    tipo: "Casación y consultoría",
+    desc: "Recursos de casación ante la Sala Primera, y dictámenes y consultoría jurídica externa para instituciones autónomas y colegios profesionales.",
+  },
+];
+
+const PUBLICACIONES = [
+  { href: "/articulos/libro-justicia-administrativa", titulo: "La Justicia Administrativa frente a la Inactividad Material de la Administración Pública", autor: "Dr. Óscar Eduardo González Camacho, 1998" },
+  { href: "/articulos/libro-nuevo-proceso-contencioso", titulo: "El Nuevo Proceso Contencioso Administrativo", autor: "Dr. Óscar Eduardo González Camacho y otros, 2006" },
+  { href: "/articulos/libro-proceso-ejecutivo", titulo: "Consideraciones Prácticas en torno al Proceso Ejecutivo", autor: "Dr. Óscar Eduardo González Camacho, 1995" },
+  { href: "/articulos/tesis-dano-moral-indirecto", titulo: "El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración", autor: "MSc. Katherine González Coto" },
+  { href: "/articulos/tesis-iatrogenia-responsabilidad-administrativa", titulo: "La iatrogenia en la responsabilidad administrativa", autor: "Licda. Mariana Montero Acuña" },
+  { href: "/articulos/tesis-ia-justicia", titulo: "Sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia", autor: "Lic. Khevin Alberto Sánchez Zamora" },
+];
 
 const FICHA: [string, string][] = [
   ["Fundación", "2015"],
   ["Sede", "Barrio Dent, San José, Costa Rica"],
   ["Dirección", "Dr. Óscar Eduardo González Camacho"],
   ["Práctica", "Derecho Público; otras materias de forma complementaria"],
-  ["Equipo", "Seis abogados, miembros activos del Colegio de Abogados y Abogadas de Costa Rica"],
+  ["Equipo", "Cinco abogados, miembros activos del Colegio de Abogados y Abogadas de Costa Rica"],
 ];
 
 const AREAS = [
@@ -170,13 +234,6 @@ const ABOGADOS = [
     role: "Abogado Asociado",
     desc: "Admitido en la Maestría en Derecho Público (UCR). Amplia experiencia en medidas cautelares y litigio contencioso-administrativo. Investigador en IA aplicada a la justicia.",
     carnet: "37920",
-  },
-  {
-    slug: "jose-carlos-solano",
-    name: "Lic. José Carlos Solano Salas",
-    role: "Abogado Asociado",
-    desc: "Derecho Constitucional y Tributario. Graduado con honores, UCR.",
-    carnet: "34724",
   },
 ];
 
@@ -287,7 +344,7 @@ export default function SobreNosotros() {
                 Dr. Óscar Eduardo González Camacho, ex-Magistrado de la Sala Primera
                 de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código
                 Procesal Contencioso Administrativo (Ley N.° 8508 del 28 de abril de
-                2006). El bufete cuenta con seis abogados especializados en litigio
+                2006). El bufete cuenta con cinco abogados especializados en litigio
                 contencioso-administrativo, medidas cautelares, recursos de casación
                 ante Sala Primera, Derecho Constitucional, Contratación Pública y
                 asesoría regulatoria a instituciones del Estado.
@@ -345,7 +402,28 @@ export default function SobreNosotros() {
               </div>
             </section>
 
-            {/* III · Especialidad */}
+            {/* III · Trayectoria */}
+            <section id="trayectoria" className="scroll-mt-32">
+              <SectionTitle>¿Cómo ha crecido Corporación GC desde 2015?</SectionTitle>
+              <p className="type-lead max-w-[64ch] text-cream/80">
+                La firma creció formando a su propio equipo: cuatro de sus cinco abogados
+                entraron como asistentes y se hicieron asociados dentro de ella, junto al
+                director.
+              </p>
+              <dl className="mt-10 divide-y divide-cream/10 border-y border-cream/10">
+                {TRAYECTORIA.map(([anio, hito]) => (
+                  <div
+                    key={anio}
+                    className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[110px_minmax(0,1fr)] sm:gap-8 md:py-5"
+                  >
+                    <dt className="pt-0.5 text-[17px] font-semibold tabular-nums text-cream">{anio}</dt>
+                    <dd className="text-base leading-relaxed text-cream/80">{hito}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+
+            {/* IV · Especialidad */}
             <section id="especialidad" className="scroll-mt-32">
               <SectionTitle>¿En qué se especializa Corporación GC?</SectionTitle>
               <p className="type-lead max-w-[64ch] text-cream/80">
@@ -391,11 +469,34 @@ export default function SobreNosotros() {
               </Link>
             </section>
 
-            {/* IV · Los abogados */}
+            {/* V · Asuntos representativos */}
+            <section id="asuntos" className="scroll-mt-32">
+              <SectionTitle>¿Qué asuntos lleva Corporación GC?</SectionTitle>
+              <p className="type-lead max-w-[64ch] text-cream/80">
+                Estos son los tipos de asunto que la firma ha llevado en los últimos años.
+                Por el deber de confidencialidad se describen por su materia, sin
+                identificar a los clientes ni los expedientes.
+              </p>
+              <dl className="mt-10 divide-y divide-cream/10 border-y border-cream/10">
+                {ASUNTOS.map((a) => (
+                  <div
+                    key={a.tipo}
+                    className="grid gap-2 py-6 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)] sm:gap-10"
+                  >
+                    <dt className="text-[17px] font-semibold leading-snug tracking-[-0.01em] text-cream">
+                      {a.tipo}
+                    </dt>
+                    <dd className="text-base leading-relaxed text-cream/75">{a.desc}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+
+            {/* VI · Los abogados */}
             <section id="abogados" className="scroll-mt-32">
               <SectionTitle>¿Quiénes son los abogados de Corporación GC?</SectionTitle>
               <p className="type-lead max-w-[64ch] text-cream/80">
-                El equipo está compuesto por seis abogados, todos miembros activos del
+                El equipo está compuesto por cinco abogados, todos miembros activos del
                 Colegio de Abogados y Abogadas de Costa Rica.
               </p>
               <ul
@@ -442,7 +543,40 @@ export default function SobreNosotros() {
               </ul>
             </section>
 
-            {/* V · Clientes */}
+            {/* VII · Publicaciones */}
+            <section id="publicaciones" className="scroll-mt-32">
+              <SectionTitle>¿Qué publica Corporación GC?</SectionTitle>
+              <p className="type-lead max-w-[64ch] text-cream/80">
+                El equipo escribe las{" "}
+                <Link href="/articulos" className={linkClass}>
+                  guías jurídicas
+                </Link>{" "}
+                del sitio y el director las revisa, con las reglas de su{" "}
+                <Link href="/politica-editorial" className={linkClass}>
+                  política editorial
+                </Link>
+                . La firma también publica la{" "}
+                <Link href="/jurisprudencia-destacada" className={linkClass}>
+                  jurisprudencia destacada
+                </Link>{" "}
+                del Dr. González Camacho como magistrado, y estos libros y tesis de sus
+                abogados:
+              </p>
+              <ul role="list" className="mt-10 divide-y divide-cream/10 border-y border-cream/10">
+                {PUBLICACIONES.map((p) => (
+                  <li key={p.href} className="py-4">
+                    <Link href={p.href} className="group block">
+                      <span className="text-base font-medium leading-snug text-cream transition-colors duration-300 group-hover:text-burgundy dark:group-hover:text-hilo-texto">
+                        {p.titulo}
+                      </span>
+                      <span className="mt-1 block text-[13px] text-cream/65">{p.autor}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            {/* VIII · Clientes */}
             <section id="clientes" className="scroll-mt-32">
               <SectionTitle>¿Qué clientes atiende Corporación GC?</SectionTitle>
               <p className="type-lead max-w-[64ch] text-cream/80">
@@ -491,7 +625,7 @@ export default function SobreNosotros() {
               </div>
             </section>
 
-            {/* VI · Contacto */}
+            {/* IX · Contacto */}
             <section id="contacto" className="scroll-mt-32">
               <SectionTitle>Contacto</SectionTitle>
               <dl className="divide-y divide-cream/10 border-y border-cream/10">

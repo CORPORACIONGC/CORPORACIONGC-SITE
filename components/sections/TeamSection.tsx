@@ -6,8 +6,8 @@ import { TEAM } from "@/lib/constants";
 import { RunningHead } from "@/components/ui/RunningHead";
 
 // Exclude founder — he has his own dedicated section in La Firma
-// Explicit surname order: González, Montero, Pérez, Sánchez, Solano
-const surnameOrder = ["katherine-gonzalez", "mariana-montero", "esteban-perez", "khevin-sanchez", "jose-carlos-solano"] as const;
+// Explicit surname order: González, Montero, Pérez, Sánchez
+const surnameOrder = ["katherine-gonzalez", "mariana-montero", "esteban-perez", "khevin-sanchez"] as const;
 const teamMembers: TeamGalleryMember[] = TEAM
   .filter((m) => m.slug !== "oscar-gonzalez")
   .map((m) => ({

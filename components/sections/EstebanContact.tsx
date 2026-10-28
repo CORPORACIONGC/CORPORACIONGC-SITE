@@ -5,6 +5,7 @@ import {
   Phone,
   WhatsappLogo,
   MapPin,
+  LinkedinLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
@@ -24,6 +25,12 @@ const contactItems = [
     label: "Teléfono",
     value: ESTEBAN_CONTACT.phone,
     href: `tel:+${ESTEBAN_CONTACT.phoneRaw}`,
+  },
+  {
+    icon: LinkedinLogo,
+    label: "LinkedIn",
+    value: "Esteban Pérez Herrera",
+    href: ESTEBAN_CONTACT.linkedin,
   },
 ];
 

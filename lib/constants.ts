@@ -120,7 +120,6 @@ export const TEAM = [
   { slug: "katherine-gonzalez", actualizado: "2026-10-15", autor: "González Coto", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD, donde es profesora. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
   { slug: "mariana-montero", actualizado: "2026-10-02", autor: "Montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
   { slug: "esteban-perez", actualizado: "2026-09-26", autor: "Pérez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
-  { slug: "jose-carlos-solano", actualizado: "2026-09-20", autor: "Solano", name: "Lic. José Carlos Solano Salas", role: "Abogado Asociado", photo: "/images/jose-carlos-solano.jpeg", shortBio: "Licenciado en Derecho con Excelencia Académica por la UCR. Especialista en Derecho Notarial y Registral. Aceptado en la Maestría en Teoría del Derecho de la Goethe-Universität Frankfurt.", areas: ["Contencioso Administrativo", "Acciones de Inconstitucionalidad", "Zona Marítimo Terrestre", "Procedimientos CGR", "Transporte y Concesiones"], languages: ["Español", "Inglés", "Alemán"], featured: true },
 ] as const;
 
 
@@ -626,7 +625,9 @@ export const ESTEBAN_PROFILE = {
     { title: "Derecho Urbanístico", description: "Asesoría y litigio en regulación del uso del suelo, permisos de construcción y planificación urbana." },
   ],
   research: {
-    title: "La potestad discrecional de la administración municipal en materia urbanística",
+    title: "La potestad discrecional de la administración municipal en la regulación urbanística",
+    /* Registro de la tesis en el repositorio institucional de la UCR. */
+    href: "https://hdl.handle.net/10669/94871",
     description: "Trabajo Final de Graduación para la obtención de la Licenciatura en Derecho (UCR) que analiza los alcances y límites de la discrecionalidad administrativa de los gobiernos locales en la regulación urbanística costarricense.",
     tags: ["Derecho Urbanístico", "Derecho Municipal", "Discrecionalidad Administrativa", "Trabajo Final de Graduación"],
   },
@@ -747,6 +748,7 @@ export const OSCAR_NAV_LINKS = [
 
 export const ESTEBAN_CONTACT = {
   email: "eperez@corporaciongc.com",
+  linkedin: "https://cr.linkedin.com/in/esteban-p%C3%A9rez-herrera-contencioso",
   phone: "+506 8662-2169",
   phoneRaw: "50686622169",
   location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
@@ -761,70 +763,6 @@ export const ESTEBAN_PRACTICE_AREAS = [
 ] as const;
 
 export const ESTEBAN_NAV_LINKS = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Perfil", href: "#perfil" },
-  { label: "Trayectoria", href: "#trayectoria" },
-  { label: "Artículos", href: "/articulos" },
-  { label: "Contacto", href: "#contacto" },
-] as const;
-
-// ─── Perfil Individual: José Carlos Solano ───
-
-export const JOSE_CARLOS_PROFILE = {
-  name: "Lic. José Carlos Solano Salas",
-  role: "Abogado Asociado",
-  photo: "/images/jose-carlos-solano.jpeg",
-  heroDescription: "Abogado y Notario Público, especializado en Derecho Público, Derecho Constitucional, Litigio Contencioso-Administrativo y Derecho Notarial y Registral.",
-  heroBio: "Licenciado en Derecho con mención en Derecho Tributario por la Universidad de Costa Rica, graduado con honores. Especialista en Derecho Notarial y Registral. Más de 8 años de experiencia en Corporación GC en litigio judicial y administrativo de alta complejidad. Aceptado en la Maestría en Teoría del Derecho de la Johann Wolfgang Goethe-Universität Frankfurt am Main, Alemania.",
-  education: [
-    { degree: "Maestría en Teoría del Derecho", institution: "Goethe-Universität Frankfurt am Main, Alemania", status: "Aceptado — Inicio octubre 2026" },
-    { degree: "Especialista en Derecho Notarial y Registral", institution: "Universidad La Salle de Costa Rica", distinction: "Con honores" },
-    { degree: "Licenciado en Derecho (énfasis en Derecho Tributario)", institution: "Universidad de Costa Rica", distinction: "Con honores — Promedio superior a 9/10" },
-    { degree: "Estudios parciales en Filosofía", institution: "Universidad de Costa Rica" },
-  ],
-  career: [
-    { role: "Abogado Asociado", org: "Corporación GC", period: "Jul. 2022 – Presente", description: "Litigio judicial contencioso-administrativo, procesos ordinarios civiles, procedimientos administrativos, acciones de inconstitucionalidad y recursos de amparo. Elaboración de dictámenes jurídicos especializados para administraciones públicas y sujetos privados. Colaboración directa con el Dr. Óscar Eduardo González Camacho.", highlight: true },
-    { role: "Asistente Legal", org: "Corporación GC", period: "Mar. 2018 – Jul. 2022", description: "Apoyo en litigio contencioso-administrativo, procedimientos ante la Contraloría General de la República, procedimientos sancionatorios, procesos de Hacienda relacionados con Zona Marítimo Terrestre, e impugnación de actos administrativos.", highlight: false },
-    { role: "Asistente Jurídico", org: "BSA Consultores", period: "Ago. 2017 – Ene. 2018", description: "Redacción y preparación de escritos judiciales y presentaciones ante tribunales. Apoyo en asesoría municipal. Investigación jurídica en Derecho Público y Administrativo.", highlight: false },
-  ],
-  practiceAreas: [
-    { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
-    { title: "Acciones de Inconstitucionalidad", description: "Planteamiento y defensa de acciones ante la Sala Constitucional para la impugnación de normas contrarias a la Constitución.", icon: "ShieldCheck" as const },
-    { title: "Zona Marítimo Terrestre", description: "Asesoría y litigio en concesiones, permisos de uso y regulación de la zona pública y restringida del litoral.", icon: "Scales" as const },
-    { title: "Procedimientos Disciplinarios CGR", description: "Defensa en procedimientos administrativos sancionatorios ante la Contraloría General de la República.", icon: "Bank" as const },
-    { title: "Transporte Público y Concesiones", description: "Asesoría en régimen concesional de servicios públicos, transporte y permisos de operación.", icon: "Buildings" as const },
-    { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const },
-  ],
-  research: {
-    title: "El control jurisdiccional de los actos de gobierno",
-    description: "Trabajo Final de Graduación para la Licenciatura en Derecho (UCR) que analiza el concepto del Acto de Gobierno como especie del acto administrativo, su evolución histórica desde la jurisprudencia del Consejo de Estado francés, y la viabilidad de su control jurisdiccional a la luz de los principios garantistas del Derecho Público contemporáneo.",
-    tags: ["Acto de Gobierno", "Derecho Administrativo", "Control Jurisdiccional", "Trabajo Final de Graduación"],
-  },
-  credentials: [
-    { metric: "8+", label: "Años de experiencia en litigio", detail: "Desde agosto de 2017" },
-    { metric: "UCR", label: "Egresado con honores", detail: "Promedio superior a 9/10" },
-    { metric: "Frankfurt", label: "Maestría en Teoría del Derecho", detail: "Goethe-Universität · 2026" },
-  ],
-  languages: ["Español", "Inglés", "Alemán"],
-} as const;
-
-export const JOSE_CARLOS_CONTACT = {
-  email: "jsolano@corporaciongc.com",
-  phone: "+506 8202-6959",
-  phoneRaw: "50682026959",
-  location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
-} as const;
-
-export const JOSE_CARLOS_PRACTICE_AREAS = [
-  { title: "Contencioso Administrativo", description: "Litigio estratégico ante el Tribunal Contencioso Administrativo en demandas contra el Estado.", icon: "Gavel" as const },
-  { title: "Acciones de Inconstitucionalidad", description: "Planteamiento y defensa de acciones ante la Sala Constitucional para la impugnación de normas contrarias a la Constitución.", icon: "ShieldCheck" as const },
-  { title: "Zona Marítimo Terrestre", description: "Asesoría y litigio en concesiones, permisos de uso y regulación de la zona pública y restringida del litoral.", icon: "Scales" as const },
-  { title: "Procedimientos Disciplinarios CGR", description: "Defensa en procedimientos administrativos sancionatorios ante la Contraloría General de la República.", icon: "Bank" as const },
-  { title: "Transporte Público y Concesiones", description: "Asesoría en régimen concesional de servicios públicos, transporte y permisos de operación.", icon: "Buildings" as const },
-  { title: "Derecho Notarial y Registral", description: "Servicios notariales y gestión registral de instrumentos públicos y privados.", icon: "Stamp" as const, href: "/areas/otras-materias#notarial" },
-] as const;
-
-export const JOSE_CARLOS_NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Perfil", href: "#perfil" },
   { label: "Trayectoria", href: "#trayectoria" },

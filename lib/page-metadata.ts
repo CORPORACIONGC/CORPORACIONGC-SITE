@@ -50,18 +50,18 @@ export const sobreNosotrosMetadata: Metadata = {
   // marca para evitar "Sobre Nosotros · Corporación GC · Corporación GC".
   title: "Sobre Nosotros",
   description:
-    "Fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA. Seis abogados en Derecho Público.",
+    "Fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA. Cinco abogados en Derecho Público.",
   alternates: { canonical: "/sobre-nosotros" },
   openGraph: og({
     title: "Quiénes somos · Corporación GC, Costa Rica",
     description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
+      "Conocé al equipo detrás de Corporación GC: cinco abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
     url: "/sobre-nosotros",
   }),
   twitter: tw({
     title: "Sobre Nosotros · Corporación GC",
     description:
-      "Conocé al equipo detrás de Corporación GC: seis abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
+      "Conocé al equipo detrás de Corporación GC: cinco abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
   }),
 };
 

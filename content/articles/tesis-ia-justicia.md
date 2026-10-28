@@ -17,7 +17,7 @@ Trabajo Final de Graduación para la Licenciatura en Derecho de la Universidad d
 
 **Director:** Dr. Óscar Eduardo González Camacho
 
-**Referencia:** Sánchez Zamora, Khevin. *Hacia la implementación de sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia costarricense: un análisis desde el marco normativo de la Unión Europea*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, San José, Costa Rica, 2025.
+**Referencia:** Sánchez Zamora, Khevin. *Hacia la implementación de sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia costarricense: un análisis desde el marco normativo de la Unión Europea*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, San José, Costa Rica, 2025. [Ficha en el catálogo del SIBDI de la UCR](https://primo-tc-na01.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ucr_aleph000772343&context=L&vid=SIBDI&lang=es_ES), signatura TFG 51247.
 
 ---
 
