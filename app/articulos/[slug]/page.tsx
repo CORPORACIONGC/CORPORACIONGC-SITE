@@ -22,6 +22,8 @@ import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmparo";
 import { CodigoCPCA } from "@/components/article/CodigoCPCA";
 import { IrAlArticulado } from "@/components/article/IrAlArticulado";
+import { CodigoLGAP } from "@/components/article/CodigoLGAP";
+import { PlazosLgap, ReformasLgap } from "@/components/article/LgapGuia";
 import { ReglamentoContratacion } from "@/components/article/ReglamentoContratacion";
 import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
 import { ReformaCpca } from "@/components/article/ReformaCpca";
@@ -176,6 +178,9 @@ const ARTICLE_COMPONENTS = {
   h2: SubtituloH2,
   h3: SubtituloH3,
   IrAlArticulado,
+  CodigoLGAP,
+  PlazosLgap,
+  ReformasLgap,
   ComparativaViasAmparo,
   CodigoCPCA,
   ReglamentoContratacion,
