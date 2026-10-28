@@ -5,6 +5,7 @@ import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
 import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } from "./anular-adjudicacion-tribunal-contencioso-administrativo";
 import { fuentes as f_como_demandar_al_estado_costa_rica } from "./como-demandar-al-estado-costa-rica";
+import { fuentes as f_compra_publica_innovadora_costa_rica } from "./compra-publica-innovadora-costa-rica";
 import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-vasp-registration-sugef";
 import { fuentes as f_cpca_vs_ley_reguladora_contencioso_administrativa } from "./cpca-vs-ley-reguladora-contencioso-administrativa";
 import { fuentes as f_defensa_inhabilitacion_proveedor_estado_costa_rica } from "./defensa-inhabilitacion-proveedor-estado-costa-rica";
@@ -29,6 +30,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
   "anular-adjudicacion-tribunal-contencioso-administrativo": f_anular_adjudicacion_tribunal_contencioso_administrativo,
   "como-demandar-al-estado-costa-rica": f_como_demandar_al_estado_costa_rica,
+  "compra-publica-innovadora-costa-rica": f_compra_publica_innovadora_costa_rica,
   "costa-rica-vasp-registration-sugef": f_costa_rica_vasp_registration_sugef,
   "cpca-vs-ley-reguladora-contencioso-administrativa": f_cpca_vs_ley_reguladora_contencioso_administrativa,
   "defensa-inhabilitacion-proveedor-estado-costa-rica": f_defensa_inhabilitacion_proveedor_estado_costa_rica,
