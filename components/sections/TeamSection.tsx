@@ -41,13 +41,9 @@ export function TeamSection() {
 
           <AnimatedEntry delay={0.1}>
             <p className="type-body text-cream/75 max-w-[56ch]">
-              El Dr. Gonz&#225;lez Camacho form&#243; a cada abogado de
-              esta firma &mdash; todos desde sus primeros a&#241;os de
-              carrera &mdash; con la disciplina y el rigor que veintiocho
-              a&#241;os de judicatura le exigieron. Hoy trabaja con ellos
-              directamente en cada caso. Eso se traduce en un est&#225;ndar
-              que no depende de qui&#233;n lleve el caso &mdash; porque
-              todos lo llevan con &#233;l.
+              Un equipo formado por el Dr. Gonz&#225;lez Camacho desde sus
+              primeros a&#241;os de ejercicio, que trabaja con &#233;l en cada
+              caso.
             </p>
           </AnimatedEntry>
         </div>
