@@ -1385,6 +1385,47 @@ html {
 .prose-article .gc-fig-trio p { color: var(--fig-text); }
 .prose-article .gc-fig-step-a .gc-fig-note { margin-top: 12px; font-size: 13.5px; }
 
+/* Calculadora de plazos (components/article/CalculadoraLesividad.tsx) */
+.prose-article .gc-calc-form {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px;
+  border-top: 1px solid var(--fig-rule);
+}
+.prose-article .gc-calc-campo { margin: 0; padding: 16px 0; border: 0; border-bottom: 1px solid var(--fig-rule-soft); min-width: 0; }
+.prose-article .gc-calc-campo legend { float: left; width: 100%; padding: 0; }
+.prose-article .gc-calc input[type="date"] {
+  display: block; width: 100%; max-width: 260px; margin-top: 4px; padding: 6px 0;
+  background: transparent; border: 0; border-bottom: 1px solid var(--rule-strong);
+  font: inherit; font-size: 15px; color: var(--color-cream); color-scheme: light; font-variant-numeric: tabular-nums;
+}
+.dark .prose-article .gc-calc input[type="date"] { color-scheme: dark; }
+.prose-article .gc-calc input[type="date"]:focus { outline: none; border-bottom-color: var(--color-burgundy); }
+.prose-article .gc-calc-opciones { clear: both; display: flex; flex-wrap: wrap; gap: 6px 22px; padding-top: 4px; }
+.prose-article .gc-calc-opciones label,
+.prose-article .gc-calc-check { display: inline-flex; align-items: center; gap: 8px; font-size: 14.5px; color: var(--fig-text); cursor: pointer; }
+.prose-article .gc-calc input[type="radio"],
+.prose-article .gc-calc input[type="checkbox"] { accent-color: var(--color-burgundy); width: 15px; height: 15px; margin: 0; }
+.prose-article .gc-calc-sub { margin-top: 12px; }
+.prose-article .gc-calc-resultado { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; margin-top: 8px; }
+.prose-article .gc-calc-resultado section { padding: 20px 0 4px; border-top: 2px solid var(--color-burgundy); }
+.prose-article .gc-calc-resultado section p { font-size: 14.5px; line-height: 1.65; color: var(--fig-text); }
+.prose-article .gc-calc-resultado section p + p { margin-top: 10px; }
+.prose-article .gc-calc-resultado strong { color: var(--color-cream); font-weight: 600; }
+.prose-article .gc-calc-resultado .gc-fig-plazo { white-space: normal; }
+.prose-article .gc-calc-paso {
+  margin: 6px 0 8px; font-family: var(--font-display); font-size: 17px; font-weight: 500;
+  letter-spacing: -0.015em; color: var(--color-cream);
+}
+.prose-article .gc-calc-resultado .gc-calc-vacio { color: var(--fig-muted); }
+.prose-article .gc-calc-estado {
+  display: inline-block; margin-left: 2px; font-size: 12.5px; font-weight: 600; letter-spacing: 0.01em;
+  color: var(--fig-muted);
+}
+.prose-article .gc-calc-estado--ok { color: var(--fig-accent); }
+@media (max-width: 767px) {
+  .prose-article .gc-calc-form,
+  .prose-article .gc-calc-resultado { grid-template-columns: 1fr; }
+}
+
 /* Figuras 2 y 6 · tablas sobre .gc-comparativa */
 .prose-article .gc-fig-tabla .gc-comparativa { margin: 0; }
 .prose-article .gc-fig-tabla .gc-table-wrap { margin: 0; }
