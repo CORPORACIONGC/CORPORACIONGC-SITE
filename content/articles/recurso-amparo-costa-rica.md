@@ -6,7 +6,7 @@ excerpt: "El recurso de amparo es la herramienta constitucional más rápida par
 tags: ["Guía práctica", "Recurso de Amparo", "Sala Constitucional", "Derechos Fundamentales", "Derecho Constitucional"]
 areas: ["recursos-de-amparo"]
 type: "article"
-author: "Licda. Mariana Montero Acuña"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
