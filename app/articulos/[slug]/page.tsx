@@ -23,6 +23,8 @@ import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmpar
 import { CodigoCPCA } from "@/components/article/CodigoCPCA";
 import { IrAlArticulado } from "@/components/article/IrAlArticulado";
 import { CodigoLGAP } from "@/components/article/CodigoLGAP";
+import { CodigoLey6043 } from "@/components/article/CodigoLey6043";
+import { LeyesConexas6043, PlazosLey6043, ReformasLey6043 } from "@/components/article/Ley6043Guia";
 import { PlazosLgap, ReformasLgap } from "@/components/article/LgapGuia";
 import { ReglamentoContratacion } from "@/components/article/ReglamentoContratacion";
 import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
@@ -179,6 +181,10 @@ const ARTICLE_COMPONENTS = {
   h3: SubtituloH3,
   IrAlArticulado,
   CodigoLGAP,
+  CodigoLey6043,
+  ReformasLey6043,
+  PlazosLey6043,
+  LeyesConexas6043,
   PlazosLgap,
   ReformasLgap,
   ComparativaViasAmparo,
