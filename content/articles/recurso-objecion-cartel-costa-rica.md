@@ -26,11 +26,11 @@ faq:
     answer: "Solo si la modificación es sustancial: una variación fundamental del objeto, un cambio en los factores o pesos de evaluación, o una alteración relevante de los riesgos. Contra ajustes menores no cabe objeción. Además, por la vía de la objeción no puede impugnarse lo que ya precluyó ni lo que corresponde discutir en otra etapa."
 ---
 
-> Esta guía forma parte de nuestra práctica en [contratación pública](/areas/contratacion-publica). Si un cartel contiene una cláusula que lo deja fuera del concurso, la objeción es la herramienta para corregirla a tiempo; escríbanos antes de que venza el plazo.
-
 Usted revisa el cartel de un concurso al que quiere presentarse y encuentra una cláusula que lo excluye: exige una marca específica, una experiencia que ningún oferente razonable tendría, o un sistema de evaluación diseñado a la medida de un competidor. La reacción instintiva es esperar, presentar la oferta igual y reclamar después. Es el error más caro. El momento de pelear esa cláusula es ahora, con el **recurso de objeción al cartel**, y el reloj corre en días hábiles.
 
 Esta guía explica, en términos prácticos, qué es la objeción, quién puede presentarla, cuáles son los plazos exactos bajo la Ley General de Contratación Pública (Ley N.° 9986), qué efecto tiene sobre el concurso y qué prueba exige la Contraloría para tumbar una cláusula.
+
+> Esta guía forma parte de nuestra práctica en [contratación pública](/areas/contratacion-publica). Si un cartel contiene una cláusula que lo deja fuera del concurso, la objeción es la herramienta para corregirla a tiempo; escríbanos antes de que venza el plazo.
 
 ## Qué es la objeción y para qué sirve
 

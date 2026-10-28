@@ -27,11 +27,11 @@ faq:
     answer: "Son figuras distintas. El reajuste responde a la variación de los costos del contrato; el reclamo de daños cubre hechos ajenos a esa variación, como el pago tardío; y la indexación actualiza a valor presente un monto ya reconocido y pagado con retraso. Encuadrar mal la pretensión debilita el reclamo, por lo que conviene identificar bien cuál corresponde."
 ---
 
-> **Qué hacer en la práctica:** si es contratista de obra pública y sus costos subieron después de ofertar, tiene derecho a que la Administración le reajuste el precio, aun cuando el cartel no traiga fórmula. Nuestra área de [contratación pública](/areas/contratacion-publica) acompaña a los constructores desde el análisis del cartel hasta el cobro del reajuste o su litigio cuando lo deniegan.
-
 Un contratista firma una obra a un precio calculado con los costos de hoy. La obra dura dos años. En ese lapso el acero sube, el salario de sus operarios se ajusta por decreto y el diésel de su maquinaria se dispara. El precio que ofertó ya no cubre la obra. La pregunta que llega a nuestra firma casi siempre es la misma: ¿tengo que absorber esa pérdida o el Estado debe pagarme la diferencia?
 
 La respuesta la da el **derecho al mantenimiento del equilibrio económico del contrato**. Esta guía explica qué protege ese derecho, cuándo procede, en qué plazos se reclama y por qué, en la práctica, se decide mucho antes de la primera factura.
+
+> **Qué hacer en la práctica:** si es contratista de obra pública y sus costos subieron después de ofertar, tiene derecho a que la Administración le reajuste el precio, aun cuando el cartel no traiga fórmula. Nuestra área de [contratación pública](/areas/contratacion-publica) acompaña a los constructores desde el análisis del cartel hasta el cobro del reajuste o su litigio cuando lo deniegan.
 
 ## El equilibrio económico: el derecho que protege su contrato
 

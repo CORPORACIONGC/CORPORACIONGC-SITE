@@ -27,11 +27,11 @@ faq:
     answer: "En un registro único y público. El artículo 123 obliga a la Dirección de Contratación Pública a llevar un registro actualizado de sanciones a particulares, disponible para consulta pública en el sistema digital unificado (SICOP). Ese módulo muestra el sujeto sancionado, la entidad que impuso la sanción, la causal y el plazo. La información queda visible durante todo el tiempo que dure la inhabilitación."
 ---
 
-> **Qué hacer en la práctica:** si su empresa contrata con el Estado, conozca de antemano a qué se expone. Una sanción puede costarle desde un porcentaje del precio del contrato hasta la salida completa de las contrataciones públicas por años. Si ya recibió una notificación de cargos o teme una inhabilitación, no deje correr los plazos: revise nuestra [guía de defensa ante inhabilitación](/articulos/defensa-inhabilitacion-proveedor-estado-costa-rica) y conozca nuestra área de [procedimientos sancionatorios](/areas/procedimientos-sancionatorios).
-
 Contratar con el Estado abre una fuente estable de ingresos, y también somete a la empresa a un régimen de disciplina que no existe en el mundo privado. La Ley General de Contratación Pública (Ley N.° 9986) faculta a la Administración para castigar al proveedor que ejecuta mal, se atrasa, presenta información falsa o abandona un contrato. Las consecuencias van desde un descuento sobre el pago hasta la prohibición de contratar con el Estado durante años.
 
 Esta guía ordena todo el panorama. Explica los dos grandes tipos de consecuencia que puede sufrir un proveedor, aclara una confusión frecuente sobre el desaparecido apercibimiento, describe las causales y el procedimiento, y cierra con recomendaciones concretas para que su empresa no llegue nunca a la lista pública de sancionados.
+
+> **Qué hacer en la práctica:** si su empresa contrata con el Estado, conozca de antemano a qué se expone. Una sanción puede costarle desde un porcentaje del precio del contrato hasta la salida completa de las contrataciones públicas por años. Si ya recibió una notificación de cargos o teme una inhabilitación, no deje correr los plazos: revise nuestra [guía de defensa ante inhabilitación](/articulos/defensa-inhabilitacion-proveedor-estado-costa-rica) y conozca nuestra área de [procedimientos sancionatorios](/areas/procedimientos-sancionatorios).
 
 ## Dos cosas distintas: sanciones económicas del contrato e inhabilitación
 

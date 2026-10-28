@@ -24,7 +24,7 @@ faq:
   - question: "¿Puedo presentar el amparo a nombre de un familiar enfermo?"
     answer: "Sí. El artículo 33 de la Ley de la Jurisdicción Constitucional dispone que cualquier persona puede interponer el recurso, lo que incluye el amparo a favor de otra persona sin necesidad de poder. Es frecuente que hijos, padres o cónyuges lo presenten por el paciente que no está en condiciones de hacerlo."
   - question: "¿Cuánto tarda la Sala Constitucional en resolver un amparo contra la CCSS?"
-    answer: "No existe plazo legal específico, pero el artículo 39 de la Ley de la Jurisdicción Constitucional ordena sustanciar el amparo en forma privilegiada, posponiendo cualquier asunto de naturaleza diferente salvo el hábeas corpus. En amparos sencillos sobre listas de espera, la sentencia suele dictarse en uno a tres meses."
+    answer: "No existe plazo legal específico, pero el artículo 39 de la Ley de la Jurisdicción Constitucional ordena sustanciar el amparo en forma privilegiada, posponiendo cualquier asunto de naturaleza diferente salvo el hábeas corpus, y el artículo 44 le da a la CCSS de uno a tres días para rendir su informe. La duración real depende de la complejidad del caso y de la carga de trabajo de la Sala."
   - question: "¿Qué obtengo si gano el amparo?"
     answer: "Dos cosas. Primero, una orden concreta: cuando lo impugnado es una omisión, el artículo 49 de la Ley de la Jurisdicción Constitucional dispone que la sentencia ordenará realizar el acto en un plazo prudencial perentorio; en la práctica, una fecha cierta para su cirugía, cita o examen. Segundo, una condena en abstracto a la indemnización de daños y perjuicios y al pago de costas (artículo 51), cuya liquidación se hace después en la jurisdicción contencioso-administrativa."
   - question: "¿Y si la CCSS incumple la sentencia o me vuelve a posponer la cirugía?"
@@ -200,7 +200,7 @@ Sí. El artículo 33 dispone que cualquier persona puede interponer el recurso, 
 
 ### ¿Cuánto tarda la Sala Constitucional en resolver un amparo contra la CCSS?
 
-No existe plazo legal específico, pero el artículo 39 ordena sustanciar el amparo **en forma privilegiada**, posponiendo cualquier asunto de naturaleza diferente salvo el hábeas corpus, con plazos perentorios e improrrogables. En amparos sencillos sobre listas de espera, la sentencia suele dictarse en uno a tres meses.
+No existe plazo legal específico, pero el artículo 39 ordena sustanciar el amparo **en forma privilegiada**, posponiendo cualquier asunto de naturaleza diferente salvo el hábeas corpus, con plazos perentorios e improrrogables, y el artículo 44 le da a la CCSS de uno a tres días para rendir su informe. La duración real depende de la complejidad del caso y de la carga de trabajo de la Sala.
 
 ### ¿Qué obtengo si gano el amparo?
 

@@ -27,11 +27,11 @@ faq:
     answer: "La responsabilidad de los particulares por las causales de sanción prescribe en cinco años, contados desde el hecho que la origina. Si la Administración pretende sancionarlo por conductas ocurridas fuera de ese plazo, la prescripción es una defensa que puede y debe alegar. Verificar las fechas con precisión es uno de los primeros pasos de una defensa bien planteada."
 ---
 
-> Si le abrieron un procedimiento sancionatorio o ya lo inhabilitaron para contratar con el Estado, este artículo es para usted. En [Corporación GC](/areas/procedimientos-sancionatorios) defendemos a proveedores frente a la Administración y la Contraloría; aquí lo que está en juego es su permanencia en el mercado estatal, mucho más que una multa. Si busca primero el panorama completo del sistema, vea la guía del [régimen sancionatorio a proveedores](/articulos/sanciones-a-proveedores-contratacion-publica-ley-9986).
-
 Una inhabilitación es, para muchas empresas, la sanción más grave que existe en la contratación pública. Equivale a la orden de que usted deje de venderle al Estado durante un plazo que puede llegar a diez años. Para un proveedor cuyo giro depende de los concursos públicos, esa sanción llega a cerrar la operación.
 
 La buena noticia es que la inhabilitación no cae del cielo. Es el resultado de un procedimiento reglado, con plazos, con derecho de defensa y con recursos. Y como todo procedimiento reglado, puede combatirse cuando la Administración se equivoca, cuando los hechos no encajan en la causal, o cuando la sanción es desproporcionada. Esta guía le explica qué está en juego y cómo defenderse, con base en el régimen sancionatorio de la Ley General de Contratación Pública (Ley N.° 9986), artículos 118 a 123.
+
+> Si le abrieron un procedimiento sancionatorio o ya lo inhabilitaron para contratar con el Estado, este artículo es para usted. En [Corporación GC](/areas/procedimientos-sancionatorios) defendemos a proveedores frente a la Administración y la Contraloría; aquí lo que está en juego es su permanencia en el mercado estatal, mucho más que una multa. Si busca primero el panorama completo del sistema, vea la guía del [régimen sancionatorio a proveedores](/articulos/sanciones-a-proveedores-contratacion-publica-ley-9986).
 
 ## Qué está realmente en juego: dos tipos de inhabilitación
 

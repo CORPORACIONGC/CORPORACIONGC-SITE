@@ -27,11 +27,11 @@ faq:
     answer: "Si la contratación ya fue ejecutada o está en ejecución, la sentencia favorable no deshace el contrato, pero sí reconoce el pago de daños y perjuicios a su favor. Así lo establece el artículo 98 de la Ley General de Contratación Pública. Por eso es clave pedir a tiempo la medida cautelar de suspensión: para evitar que el contrato avance y su reclamo quede reducido a dinero."
 ---
 
-> Esta guía forma parte de nuestro trabajo en [litigio contencioso administrativo](/areas/litigio-contencioso-administrativo) y [contratación pública](/areas/contratacion-publica). Si la Contraloría rechazó su apelación, el caso no termina ahí: el Tribunal Contencioso Administrativo puede anular la adjudicación.
-
 Usted presentó su apelación ante la Contraloría General de la República, defendió su oferta y confió en el resultado. Pero la Contraloría declaró sin lugar el recurso, o lo rechazó en la etapa de admisibilidad, y el contrato quedó en manos de otro oferente. Aunque parezca el punto final del caso, todavía queda abierta una etapa decisiva: la vía judicial.
 
 La resolución de la Contraloría funciona, precisamente, como la puerta que abre el camino a los tribunales. En esta guía le explicamos por qué el caso no termina en la Contraloría, qué se impugna, cuánto tiempo tiene y qué le puede pedir al Tribunal Contencioso Administrativo.
+
+> Esta guía forma parte de nuestro trabajo en [litigio contencioso administrativo](/areas/litigio-contencioso-administrativo) y [contratación pública](/areas/contratacion-publica). Si la Contraloría rechazó su apelación, el caso no termina ahí: el Tribunal Contencioso Administrativo puede anular la adjudicación.
 
 ## Por qué el caso no termina en la Contraloría
 

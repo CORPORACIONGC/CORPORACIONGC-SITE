@@ -14,7 +14,7 @@ seoTitle: "Recurso de amparo en Costa Rica: cómo presentarlo en línea"
 seoDescription: "Cómo presentar un recurso de amparo ante la Sala IV: en línea, gratis y sin papel. Plazo, requisitos, qué pedir y los errores que lo hacen inadmisible."
 faq:
   - question: "¿Cuánto tarda la Sala Constitucional en resolver un amparo?"
-    answer: "No existe plazo legal específico. En amparos sencillos sobre listas de espera, derecho de petición o sanciones evidentes, la sentencia suele dictarse en uno a tres meses. En casos con prueba, audiencia o múltiples partes, el trámite puede extenderse a seis u ocho meses. Casi siempre es más rápido que la vía contencioso-administrativa."
+    answer: "La ley no fija un plazo para dictar sentencia. Lo que sí regula es el trámite: el artículo 39 de la Ley de la Jurisdicción Constitucional ordena sustanciar el amparo en forma privilegiada, posponiendo cualquier asunto de naturaleza diferente salvo el hábeas corpus, con plazos perentorios e improrrogables, y el artículo 44 le da a la autoridad recurrida de uno a tres días para rendir su informe. La duración real depende de la complejidad del caso y de la carga de trabajo de la Sala."
   - question: "¿Qué pasa si la autoridad incumple la sentencia de amparo?"
     answer: "El artículo 71 de la Ley de la Jurisdicción Constitucional califica como delito de desobediencia el incumplimiento doloso de las órdenes que la Sala dicta en sentencia. La pena es de tres meses a dos años de prisión, y además la Sala puede ordenar medidas adicionales para forzar el cumplimiento."
   - question: "¿El amparo procede contra una resolución de la Caja Costarricense de Seguro Social?"
@@ -48,7 +48,7 @@ A diferencia de la [demanda contencioso-administrativa](/areas/litigio-contencio
 - **Sumariedad.** El procedimiento está diseñado para resolverse en plazos cortos y sin las dilaciones del proceso ordinario.
 - **Preferencia.** La Sala Constitucional debe darle preferencia sobre cualquier otro asunto, salvo el hábeas corpus.
 
-Esta combinación hace que el amparo sea, en la práctica, **la vía más eficaz para detener o revertir una vulneración de derechos fundamentales en curso.** Si su problema requiere una respuesta rápida porque el daño se está produciendo o es inminente, el amparo suele ser la herramienta adecuada antes que la jurisdicción contencioso-administrativa.
+Esta combinación hace que el amparo sea, en la práctica, **la vía más eficaz para detener o revertir una vulneración de derechos fundamentales en curso.** Si el daño se está produciendo o es inminente, el amparo suele ser la herramienta adecuada antes que la jurisdicción contencioso-administrativa.
 
 ---
 
@@ -252,7 +252,7 @@ Una de las decisiones más importantes es elegir la vía adecuada. La siguiente 
 
 ### ¿Cuánto tarda la Sala Constitucional en resolver un amparo?
 
-No existe un plazo legal específico. En amparos sencillos sobre listas de espera, derecho de petición o sanciones evidentes, la sentencia suele dictarse en uno a tres meses. En casos con prueba, audiencia o múltiples partes, el trámite puede extenderse a seis u ocho meses. Dada la sumariedad del proceso, casi siempre es más rápido que la vía contencioso-administrativa.
+La ley no fija un plazo para dictar sentencia. Lo que sí regula es el trámite: el artículo 39 de la Ley de la Jurisdicción Constitucional ordena sustanciar el amparo **en forma privilegiada**, posponiendo cualquier asunto de naturaleza diferente salvo el hábeas corpus, con plazos perentorios e improrrogables, y el artículo 44 le da a la autoridad recurrida de uno a tres días para rendir su informe. La duración real depende de la complejidad del caso y de la carga de trabajo de la Sala.
 
 ### ¿Qué pasa si la autoridad incumple la sentencia de amparo?
 
@@ -290,7 +290,7 @@ Sí, y es hoy la vía más utilizada. Se hace por la plataforma *Gestión en Lí
 
 ## Si está considerando presentar un recurso de amparo
 
-El amparo es probablemente la herramienta más poderosa que ofrece el ordenamiento costarricense para defender derechos fundamentales con rapidez. Pero también es **una vía que premia la precisión técnica**: un escrito bien armado puede frenar un acto en cuestión de días, mientras que uno mal planteado puede precluir la posibilidad de discutir el asunto en otra sede.
+El amparo es probablemente la herramienta más poderosa que ofrece el ordenamiento costarricense para defender derechos fundamentales, con un trámite preferente sobre cualquier otro asunto salvo el hábeas corpus. Pero también es **una vía que premia la precisión técnica**: un escrito bien armado llega a curso y, con él, a la suspensión del acto impugnado que prevé el artículo 41, mientras que uno mal planteado puede precluir la posibilidad de discutir el asunto en otra sede.
 
 Si tiene claro el derecho violado, los hechos son concretos y los efectos del acto siguen vigentes, presentar el amparo por sí mismo es perfectamente viable. Si el caso involucra estrategia procesal, prueba compleja, indemnización futura o riesgo de cosa juzgada constitucional, la asesoría especializada paga su costo.
 
