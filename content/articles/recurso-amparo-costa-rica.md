@@ -91,7 +91,7 @@ El amparo protege los derechos fundamentales consagrados en la Constitución Pol
 - **Salud y vida** ([acceso a medicamentos](/articulos/amparo-negativa-medicamentos-ccss), cirugías, tratamientos en la CCSS, [listas de espera](/articulos/amparo-ccss-lista-de-espera)).
 - **Educación** (matrículas, becas, sanciones disciplinarias en centros educativos públicos y privados).
 - **Debido proceso y derecho de defensa** en procedimientos administrativos.
-- **Petición y pronta respuesta** (artículo 27 constitucional, frente al silencio de la Administración).
+- **Petición y pronta respuesta** (artículo 27 constitucional, frente al silencio de la Administración). Los diez días hábiles para responder y qué peticiones cubre la Ley 9097 están en la guía del [derecho de petición](/articulos/derecho-de-peticion-costa-rica).
 - **Igualdad y no discriminación.**
 - **Protección de datos personales y autodeterminación informativa.**
 - **Medio ambiente sano y ecológicamente equilibrado.**

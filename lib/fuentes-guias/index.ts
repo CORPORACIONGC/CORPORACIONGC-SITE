@@ -9,6 +9,7 @@ import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-va
 import { fuentes as f_cpca_vs_ley_reguladora_contencioso_administrativa } from "./cpca-vs-ley-reguladora-contencioso-administrativa";
 import { fuentes as f_defensa_inhabilitacion_proveedor_estado_costa_rica } from "./defensa-inhabilitacion-proveedor-estado-costa-rica";
 import { fuentes as f_defensa_procedimiento_administrativo_sancionatorio } from "./defensa-procedimiento-administrativo-sancionatorio";
+import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-peticion-costa-rica";
 import { fuentes as f_expropiacion_costa_rica_derechos } from "./expropiacion-costa-rica-derechos";
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
 import { fuentes as f_reajuste_precios_obra_publica_costa_rica } from "./reajuste-precios-obra-publica-costa-rica";
@@ -29,6 +30,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "cpca-vs-ley-reguladora-contencioso-administrativa": f_cpca_vs_ley_reguladora_contencioso_administrativa,
   "defensa-inhabilitacion-proveedor-estado-costa-rica": f_defensa_inhabilitacion_proveedor_estado_costa_rica,
   "defensa-procedimiento-administrativo-sancionatorio": f_defensa_procedimiento_administrativo_sancionatorio,
+  "derecho-de-peticion-costa-rica": f_derecho_de_peticion_costa_rica,
   "expropiacion-costa-rica-derechos": f_expropiacion_costa_rica_derechos,
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
   "reajuste-precios-obra-publica-costa-rica": f_reajuste_precios_obra_publica_costa_rica,
