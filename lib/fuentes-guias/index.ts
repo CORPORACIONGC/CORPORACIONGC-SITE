@@ -1,5 +1,6 @@
 /* Generado por scripts/indice-fuentes-guias.mjs: no se edita a mano. */
 import type { FuentesDeGuia } from "./tipos";
+import { fuentes as f_accion_de_inconstitucionalidad_costa_rica } from "./accion-de-inconstitucionalidad-costa-rica";
 import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de-espera";
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
 import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } from "./anular-adjudicacion-tribunal-contencioso-administrativo";
@@ -19,6 +20,7 @@ import { fuentes as f_silencio_positivo_permiso_municipal } from "./silencio-pos
 import { fuentes as f_traslado_de_cargos_que_hacer_costa_rica } from "./traslado-de-cargos-que-hacer-costa-rica";
 
 export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
+  "accion-de-inconstitucionalidad-costa-rica": f_accion_de_inconstitucionalidad_costa_rica,
   "amparo-ccss-lista-de-espera": f_amparo_ccss_lista_de_espera,
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
   "anular-adjudicacion-tribunal-contencioso-administrativo": f_anular_adjudicacion_tribunal_contencioso_administrativo,
