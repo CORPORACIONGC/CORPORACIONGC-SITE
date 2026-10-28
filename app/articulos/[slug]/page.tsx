@@ -400,25 +400,26 @@ export default async function ArticlePage({
                 url: "https://www.corporaciongc.com",
                 logo: "https://www.corporaciongc.com/images/logo-gc.png",
               }
-            : {
-                "@type": "Person",
-                /* El mismo identificador que usa la página del abogado, para
-                   que Google entienda que quien firma es esa persona y no un
-                   homónimo. */
-                ...(authorMember
-                  ? { "@id": `https://www.corporaciongc.com/abogados/${authorMember.slug}#person` }
-                  : {}),
-                name: article.author,
-                ...(authorMember ? { url: `https://www.corporaciongc.com/abogados/${authorMember.slug}` } : {}),
-                ...(article.institution
-                  ? {
-                      affiliation: {
-                        "@type": "Organization",
-                        name: article.institution,
-                      },
-                    }
-                  : {}),
-              },
+            : (() => {
+                /* Una persona por firmante: con dos autores, cada uno lleva el
+                   identificador de su página, para que Google no los funda en
+                   uno solo. */
+                const personas = article.author!.split(/,\s*(?=(?:Dr|Dra|Lic|Licda|MSc)\.)/).map((nombre) => {
+                  const miembro = authorMembers.find((m) =>
+                    nombre.toLowerCase().includes(m.name.replace(/^(Dr\.\s|Lic\.\s|Licda\.\s|MSc\.\s)/, "").split(" ")[0].toLowerCase())
+                  );
+                  return {
+                    "@type": "Person",
+                    ...(miembro ? { "@id": `https://www.corporaciongc.com/abogados/${miembro.slug}#person` } : {}),
+                    name: nombre.trim(),
+                    ...(miembro ? { url: `https://www.corporaciongc.com/abogados/${miembro.slug}` } : {}),
+                    ...(article.institution
+                      ? { affiliation: { "@type": "Organization", name: article.institution } }
+                      : {}),
+                  };
+                });
+                return personas.length === 1 ? personas[0] : personas;
+              })(),
         }
       : {}),
     publisher: {
