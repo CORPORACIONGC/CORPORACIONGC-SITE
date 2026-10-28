@@ -60,7 +60,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
         ref={scroller}
         role="list"
         aria-label="Abogados de Corporación GC"
-        className="-mx-6 flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-2 gc-scrollbar-none md:-mx-10 md:scroll-px-10 md:gap-5 md:px-10 lg:mx-0 lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0"
+        className="-mx-6 flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-2 gc-scrollbar-none md:-mx-10 md:scroll-px-10 md:gap-5 md:px-10 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0"
       >
         {members.map((member) => {
           const { honorific, rest } = splitName(member.name);
@@ -76,7 +76,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
                     alt={`Retrato de ${member.name}`}
                     fill
                     loading="lazy"
-                    sizes="(min-width: 1400px) 250px, (min-width: 1024px) 18vw, (min-width: 768px) 30vw, (min-width: 640px) 42vw, 68vw"
+                    sizes="(min-width: 1400px) 330px, (min-width: 1024px) 23vw, (min-width: 768px) 30vw, (min-width: 640px) 42vw, 68vw"
                     className="object-cover saturate-[0.9] transition-[filter] duration-500 ease-out group-hover:saturate-100 group-focus-visible:saturate-100"
                   />
                   <span
