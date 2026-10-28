@@ -31,7 +31,7 @@ export function TeamSection() {
         <AnimatedEntry>
           <RunningHead title="Equipo" />
         </AnimatedEntry>
-        <div className="mb-12 md:mb-16 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-end lg:gap-20">
+        <div className="mb-12 md:mb-16">
           <AnimatedEntry>
             <h2 className="type-headline text-cream max-w-[14ch]">
               El equipo detr&#225;s{" "}
@@ -40,7 +40,7 @@ export function TeamSection() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.1}>
-            <p className="type-body text-cream/75 max-w-[56ch]">
+            <p className="type-lead mt-6 max-w-[44ch] text-cream/75 md:mt-8">
               Un equipo formado por el Dr. Gonz&#225;lez Camacho desde sus
               primeros a&#241;os de ejercicio, que trabaja con &#233;l en cada
               caso.
