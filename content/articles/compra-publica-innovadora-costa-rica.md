@@ -5,7 +5,7 @@ excerpt: "La compra pública innovadora permite al Estado contratar una solució
 tags: ["Compra pública innovadora", "Decreto 45763", "Ley 9986", "Contratación Pública", "Propiedad intelectual", "SICOP"]
 areas: ["contratacion-publica"]
 type: "article"
-author: "Lic. Esteban Pérez Herrera, Lic. Khevin Alberto Sánchez Zamora"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
