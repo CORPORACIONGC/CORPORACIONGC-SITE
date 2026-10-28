@@ -2,7 +2,7 @@
 title: "CPCA de Costa Rica: texto vigente, artículos clave y jurisprudencia"
 date: "2026-05-21"
 updated: "2026-09-26"
-excerpt: "El Código Procesal Contencioso-Administrativo (Ley N.° 8508) rige desde 2008 el control judicial de la Administración Pública en Costa Rica. Esta guía publica su texto vigente, cotejado con SINALEVI y con buscador, y explica sus artículos clave con los antecedentes legislativos del expediente 15.134 y la jurisprudencia de la Sala Primera, el Tribunal de Casación, el Tribunal Contencioso Administrativo y la Sala Constitucional."
+excerpt: "Texto vigente del Código Procesal Contencioso-Administrativo (Ley N.° 8508), cotejado con SINALEVI y con buscador, y sus artículos clave explicados con los antecedentes del expediente 15.134 y la jurisprudencia."
 tags: ["Contencioso Administrativo", "CPCA", "Ley 8508", "Texto vigente", "Jurisprudencia", "Sala Primera", "Derecho Administrativo"]
 areas: ["litigio-contencioso-administrativo", "casacion-sala-primera"]
 type: "article"
@@ -11,6 +11,8 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Código Procesal Contencioso Administrativo (CPCA) vigente"
+articulado: "Ir al texto vigente del CPCA"
+articuladoAccesos: "31:Agotamiento de la vía|39:Plazo para demandar|21:Requisitos de la cautelar|26:Cautelar antes del proceso|90:Audiencia preliminar|139:Plazo de la casación"
 seoDescription: "Texto vigente de la Ley 8508, cotejado con SINALEVI, con buscador. Plazos, cautelares y casación del CPCA de Costa Rica y su jurisprudencia."
 faq:
   - question: "¿Qué es el CPCA?"
@@ -32,6 +34,8 @@ faq:
 ---
 
 El **Código Procesal Contencioso-Administrativo (CPCA)** es la **Ley N.° 8508 de 28 de abril de 2006**, publicada en el Alcance N.° 38 a La Gaceta N.° 120 del 22 de junio de 2006 y **vigente desde el 1.° de enero de 2008** por disposición de su artículo 222. Regula el proceso con el que los tribunales controlan la legalidad de toda conducta de la Administración Pública sujeta al Derecho administrativo, deciden sobre su responsabilidad patrimonial y hacen cumplir lo resuelto. Su artículo 198 derogó la Ley Reguladora de la Jurisdicción Contencioso-Administrativa, Ley N.° 3667 de 12 de marzo de 1966.
+
+Su **texto vigente completo** está en esta página, en el [articulado vigente](#articulado-vigente), cotejado con SINALEVI y con buscador por número de artículo o por palabra.
 
 La guía integra tres materiales. El primero es el **texto íntegro vigente** del Código, con sus 224 artículos y sus cinco disposiciones transitorias, cotejado palabra por palabra con el texto consolidado de SINALEVI al 25 de setiembre de 2026 y dotado de un buscador por número y por término. El segundo es un comentario de los **preceptos de mayor incidencia en el litigio**, construido sobre los **antecedentes legislativos** del expediente 15.134 y sobre la **jurisprudencia** de la Sala Primera, del Tribunal de Casación de lo Contencioso-Administrativo, del Tribunal Contencioso Administrativo y de la Sala Constitucional. El tercero es una sistematización de los **plazos procesales** que condicionan la suerte de un proceso.
 

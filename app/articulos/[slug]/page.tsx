@@ -21,6 +21,7 @@ import { WhatsAppFloat } from "@/components/article/WhatsAppFloat";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmparo";
 import { CodigoCPCA } from "@/components/article/CodigoCPCA";
+import { IrAlArticulado } from "@/components/article/IrAlArticulado";
 import { ReglamentoContratacion } from "@/components/article/ReglamentoContratacion";
 import { ComparativaRecursosContratacion } from "@/components/article/ComparativaRecursosContratacion";
 import { ReformaCpca } from "@/components/article/ReformaCpca";
@@ -174,6 +175,7 @@ function SubtituloH3({ children, id, ...props }: ComponentProps<"h3">) {
 const ARTICLE_COMPONENTS = {
   h2: SubtituloH2,
   h3: SubtituloH3,
+  IrAlArticulado,
   ComparativaViasAmparo,
   CodigoCPCA,
   ReglamentoContratacion,
@@ -588,6 +590,12 @@ export default async function ArticlePage({
               <p className="text-base text-cream/50 leading-relaxed max-w-[60ch] mb-10">
                 {article.excerpt}
               </p>
+            )}
+
+            {article.articulado && (
+              <div className="-mt-4 mb-10">
+                <IrAlArticulado etiqueta={article.articulado} articulos={article.articuladoAccesos} />
+              </div>
             )}
 
             {/* Byline visible — autoridad académica del autor para E-E-A-T y

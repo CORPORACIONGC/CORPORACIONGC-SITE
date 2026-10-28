@@ -45,6 +45,11 @@ export type ArticleMeta = {
   sourceUrl?: string;
   seoTitle?: string;
   seoDescription?: string;
+  /** En las guías que publican una norma completa, el rótulo del botón
+      que lleva al articulado desde el encabezado, y los artículos más
+      consultados como «39:Plazo para demandar|90:Audiencia preliminar». */
+  articulado?: string;
+  articuladoAccesos?: string;
   faq?: ArticleFAQ[];
   /** Idioma del artículo ("es" por omisión). Las guías en inglés declaran
       "en": la plantilla, el JSON-LD y el hreflang se ajustan a ese idioma. */
@@ -84,6 +89,8 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     sourceUrl: data.sourceUrl as string | undefined,
     seoTitle: data.seoTitle as string | undefined,
     seoDescription: data.seoDescription as string | undefined,
+    articulado: data.articulado as string | undefined,
+    articuladoAccesos: data.articuladoAccesos as string | undefined,
     faq: data.faq as ArticleFAQ[] | undefined,
     lang: data.lang === "en" ? "en" : "es",
     translation: data.translation as string | undefined,
