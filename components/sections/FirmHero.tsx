@@ -79,7 +79,7 @@ export function FirmHero() {
           <div className="gc-rise" style={{ animationDelay: "0.36s" }}>
             <p className="mt-4 type-body text-cream/65 max-w-[52ch]">
               El Dr. Gonz&#225;lez Camacho dirige y trabaja personalmente
-              en cada caso junto a un equipo de cinco abogados formados
+              en cada caso junto a un equipo de cuatro abogados formados
               en Derecho P&#250;blico bajo su
               supervisi&#243;n directa. Conocimiento de autor y un equipo
               entrenado para ejecutarlo.
