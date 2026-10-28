@@ -77,12 +77,6 @@ export const fuentes: FuentesDeGuia = {
   ],
   otros: [
     {
-      titulo: "Estudio de sentencias",
-      items: [
-        { titulo: "Corporación GC, base de jurisprudencia", detalle: "231 sentencias de fondo de la Sala Primera en procesos de lesividad, 2008 a octubre de 2026, leídas y clasificadas una por una; excluye 89 sentencias de procesos en que intervino la firma" },
-      ],
-    },
-    {
       titulo: "Antecedentes legislativos",
       items: [
         { titulo: "LGAP, Comisión de Gobierno y Administración, sesión n.º 103", detalle: "Abril de 1970, expediente 4118, folio 381 · Piza Escalante y la nulidad absoluta no manifiesta" },
