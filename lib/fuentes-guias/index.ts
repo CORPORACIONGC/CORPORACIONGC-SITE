@@ -10,8 +10,14 @@ import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-va
 import { fuentes as f_cpca_vs_ley_reguladora_contencioso_administrativa } from "./cpca-vs-ley-reguladora-contencioso-administrativa";
 import { fuentes as f_defensa_inhabilitacion_proveedor_estado_costa_rica } from "./defensa-inhabilitacion-proveedor-estado-costa-rica";
 import { fuentes as f_defensa_procedimiento_administrativo_sancionatorio } from "./defensa-procedimiento-administrativo-sancionatorio";
+import { fuentes as f_demanda_mala_praxis_ccss } from "./demanda-mala-praxis-ccss";
 import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-peticion-costa-rica";
+import { fuentes as f_despido_funcionario_publico_costa_rica } from "./despido-funcionario-publico-costa-rica";
 import { fuentes as f_expropiacion_costa_rica_derechos } from "./expropiacion-costa-rica-derechos";
+import { fuentes as f_impugnar_avaluo_municipal_bienes_inmuebles } from "./impugnar-avaluo-municipal-bienes-inmuebles";
+import { fuentes as f_ley_10554_acceso_informacion_publica } from "./ley-10554-acceso-informacion-publica";
+import { fuentes as f_ley_10777_docentes_interinos_mep } from "./ley-10777-docentes-interinos-mep";
+import { fuentes as f_ley_10889_fraude_bancario_costa_rica } from "./ley-10889-fraude-bancario-costa-rica";
 import { fuentes as f_ley_6043_zona_maritimo_terrestre_costa_rica } from "./ley-6043-zona-maritimo-terrestre-costa-rica";
 import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./ley-general-administracion-publica-costa-rica";
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
@@ -35,8 +41,14 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "cpca-vs-ley-reguladora-contencioso-administrativa": f_cpca_vs_ley_reguladora_contencioso_administrativa,
   "defensa-inhabilitacion-proveedor-estado-costa-rica": f_defensa_inhabilitacion_proveedor_estado_costa_rica,
   "defensa-procedimiento-administrativo-sancionatorio": f_defensa_procedimiento_administrativo_sancionatorio,
+  "demanda-mala-praxis-ccss": f_demanda_mala_praxis_ccss,
   "derecho-de-peticion-costa-rica": f_derecho_de_peticion_costa_rica,
+  "despido-funcionario-publico-costa-rica": f_despido_funcionario_publico_costa_rica,
   "expropiacion-costa-rica-derechos": f_expropiacion_costa_rica_derechos,
+  "impugnar-avaluo-municipal-bienes-inmuebles": f_impugnar_avaluo_municipal_bienes_inmuebles,
+  "ley-10554-acceso-informacion-publica": f_ley_10554_acceso_informacion_publica,
+  "ley-10777-docentes-interinos-mep": f_ley_10777_docentes_interinos_mep,
+  "ley-10889-fraude-bancario-costa-rica": f_ley_10889_fraude_bancario_costa_rica,
   "ley-6043-zona-maritimo-terrestre-costa-rica": f_ley_6043_zona_maritimo_terrestre_costa_rica,
   "ley-general-administracion-publica-costa-rica": f_ley_general_administracion_publica_costa_rica,
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
