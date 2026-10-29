@@ -97,10 +97,11 @@ const TRAYECTORIA: [string, string][] = [
   ["2015", "El Dr. Óscar Eduardo González Camacho funda la firma, tras doce años como magistrado de la Sala Primera de la Corte Suprema de Justicia."],
   ["2016", "Katherine González Coto se incorpora como asistente legal."],
   ["2018", "Ingresan como asistentes jurídicos Esteban Pérez Herrera y Mariana Montero Acuña, que venían de la Sala Constitucional y de la Procuraduría General de la República."],
-  ["2019", "Katherine González Coto y Mariana Montero Acuña pasan a abogadas asociadas, y Khevin Sánchez Zamora entra como asistente legal del director."],
-  ["2023", "Esteban Pérez Herrera se incorpora como abogado asociado."],
+  ["2019", "Katherine González Coto defiende su tesis de licenciatura y pasa a abogada asociada. Khevin Sánchez Zamora entra como asistente legal del director."],
+  ["2022", "Mariana Montero Acuña defiende su tesis de licenciatura en la Universidad de Costa Rica, aprobada con distinción, y pasa a abogada asociada."],
+  ["2023", "Esteban Pérez Herrera pasa a abogado asociado."],
   ["2024", "Katherine González Coto concluye la Maestría en Derecho Público de la Universidad de Costa Rica y comienza a enseñar en la Universidad Escuela Libre de Derecho."],
-  ["2025", "Khevin Sánchez Zamora se incorpora como abogado asociado."],
+  ["2025", "Khevin Sánchez Zamora pasa a abogado asociado."],
   ["2026", "La firma estrena su sitio con una biblioteca pública de guías jurídicas, enlaza a sus fuentes oficiales y publica su política editorial."],
 ];
 
@@ -408,7 +409,7 @@ export default function SobreNosotros() {
               <p className="type-lead max-w-[64ch] text-cream/80">
                 La firma creció formando a su propio equipo: cuatro de sus cinco abogados
                 entraron como asistentes y se hicieron asociados dentro de ella, junto al
-                director.
+                director, después de defender su tesis.
               </p>
               <dl className="mt-10 divide-y divide-cream/10 border-y border-cream/10">
                 {TRAYECTORIA.map(([anio, hito]) => (
