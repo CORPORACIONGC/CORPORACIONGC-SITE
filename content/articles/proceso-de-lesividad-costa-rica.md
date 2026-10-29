@@ -6,7 +6,7 @@ tags: ["Proceso de lesividad", "Declaratoria de lesividad", "CPCA", "Artículo 3
 sentencias: ["caducidad-de-la-accion"]
 areas: ["litigio-contencioso-administrativo", "derecho-administrativo"]
 type: "article"
-author: "Lic. Khevin Alberto Sánchez Zamora"
+author: "Lic. Esteban Pérez Herrera"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
