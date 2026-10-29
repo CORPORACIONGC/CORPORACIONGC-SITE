@@ -31,7 +31,6 @@ import { ComparativaRecursosContratacion } from "@/components/article/Comparativ
 import { ReformaCpca } from "@/components/article/ReformaCpca";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { FuentesGuia } from "@/components/article/FuentesGuia";
-import { CalculadoraLesividad } from "@/components/article/CalculadoraLesividad";
 import { QuienDeclaraLesividad, LesividadAntesYAhora } from "@/components/article/LesividadGuia";
 import { CalendarioAnioCaducidad, CalendarioNotificacion } from "@/components/article/CalendarioPlazos";
 import { SeminarioCautelares } from "@/components/article/SeminarioCautelares";
@@ -196,7 +195,6 @@ const ARTICLE_COMPONENTS = {
   ReformaCpca,
   CapacitacionEleinmsa,
   FuentesGuia,
-  CalculadoraLesividad,
   QuienDeclaraLesividad,
   LesividadAntesYAhora,
   CalendarioNotificacion,

@@ -1,7 +1,7 @@
 ---
 title: "Proceso de lesividad en Costa Rica: plazos, requisitos y trámite"
 date: "2026-10-28"
-excerpt: "Cuándo puede la Administración pedir al juez que anule un acto que reconoció derechos, quién debe declararlo lesivo, los dos plazos de un año del Código Procesal Contencioso-Administrativo, qué pasa con lo ya pagado y cómo lo resuelven la Sala Primera y el Tribunal de Casación, con una calculadora de plazos."
+excerpt: "Cuándo puede la Administración pedir al juez que anule un acto que reconoció derechos, quién debe declararlo lesivo, los dos plazos de un año del Código Procesal Contencioso-Administrativo, qué pasa con lo ya pagado y cómo lo resuelven la Sala Primera y el Tribunal de Casación."
 tags: ["Proceso de lesividad", "Declaratoria de lesividad", "CPCA", "Artículo 34", "Intangibilidad de los actos propios", "Nulidad del acto administrativo", "Derecho administrativo"]
 sentencias: ["caducidad-de-la-accion"]
 areas: ["litigio-contencioso-administrativo", "derecho-administrativo"]
@@ -11,7 +11,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Proceso de lesividad en Costa Rica: plazos y requisitos"
-seoDescription: "Qué es la lesividad, quién la declara, los plazos del artículo 34 del CPCA, sus efectos y lo que resuelve la Sala Primera, con calculadora de plazos."
+seoDescription: "Qué es la lesividad, quién la declara, los plazos del artículo 34 del CPCA, sus efectos y lo que resuelven la Sala Primera y la Procuraduría."
 faq:
   - question: "¿Qué es el proceso de lesividad en Costa Rica?"
     answer: "Es el proceso contencioso-administrativo en que la Administración demanda la nulidad de un acto propio que reconoció derechos a una persona. Antes de demandar, el superior jerárquico supremo debe declarar el acto lesivo a los intereses públicos, económicos o de otra naturaleza en una resolución fundada (artículos 10.5 y 34 del Código Procesal Contencioso-Administrativo). Es la vía obligada cuando la nulidad no es absoluta, evidente y manifiesta, porque en ese caso la Administración no puede anular el acto por sí misma."
@@ -37,7 +37,7 @@ El **proceso de lesividad** es el juicio en que la Administración demanda la nu
 
 La figura pertenece al derecho administrativo. El «principio de lesividad» del derecho penal, que exige que el delito afecte un bien jurídico, es otra institución.
 
-Esta guía explica cuándo procede, quién debe declarar la lesividad, los dos plazos de un año que la rigen, qué ocurre con lo que el administrado ya recibió y cómo resuelven estos procesos la Sala Primera y el Tribunal de Casación, con una calculadora de plazos.
+Esta guía explica cuándo procede, quién debe declarar la lesividad, los dos plazos de un año que la rigen, qué ocurre con lo que el administrado ya recibió y cómo resuelven estos procesos la Sala Primera y el Tribunal de Casación.
 
 ---
 
@@ -110,8 +110,6 @@ El primero es para **declarar** el acto lesivo: un año, *«contado a partir del
 El segundo es para **demandar**: un año desde el día siguiente a la firmeza del acto que declara la lesividad (artículo 39.1.e). Se cuenta de fecha a fecha, según el calendario: el Tribunal de Casación resolvió que un año que empezó a correr el 4 de abril vencía el 4 de abril siguiente ([181-F-TC-2024](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1271250)), y si el último día es inhábil se prorroga al siguiente hábil ([167-F-TC-2022](https://nexuspj.poder-judicial.go.cr/document/sen-1-1011-1141729)).
 
 Los dos son plazos de **caducidad**: no se interrumpen y el juez puede declararlos de oficio. En la sentencia [2026-001527](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1387035), el Tribunal Contencioso declaró inadmisible una demanda de lesividad porque la declaratoria se había dictado fuera del año. Las reglas generales de la caducidad en el contencioso están en nuestra guía de [plazos para demandar al Estado](/articulos/plazos-para-demandar-al-estado-costa-rica).
-
-<CalculadoraLesividad />
 
 ### La excepción de la nulidad absoluta de efectos continuados
 
