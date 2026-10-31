@@ -84,7 +84,9 @@ export default async function AttorneyProfile({
   const enrichmentMap: Record<string, {
     honorificPrefix?: string;
     carnet: string;
-    education: { degree: string; institution: string; distinction?: string }[];
+    /* conferido: false para un grado en curso (egresado, tesis pendiente):
+       queda en alumniOf y no se declara como credencial. */
+    education: { degree: string; institution: string; distinction?: string; conferido?: boolean }[];
     sameAs?: string[];
     alternateName?: string[];
     award?: string[];
@@ -151,7 +153,7 @@ export default async function AttorneyProfile({
     "mariana-montero": {
       carnet: "33716",
       education: [
-        { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", distinction: "Diploma de Excelencia Académica — Mejor promedio del posgrado" },
+        { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", distinction: "Diploma de Excelencia Académica — Mejor promedio del posgrado", conferido: false },
         { degree: "Licenciatura en Derecho — Mención en Derechos Humanos", institution: "Universidad de Costa Rica", distinction: "Aprobada con distinción" },
         { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica" },
       ],
@@ -163,7 +165,7 @@ export default async function AttorneyProfile({
     "esteban-perez": {
       carnet: "34399",
       education: [
-        { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica" },
+        { degree: "Maestría en Derecho Público", institution: "Universidad de Costa Rica", conferido: false },
         { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica" },
         { degree: "Especialidad en Derecho Notarial y Registral", institution: "Universidad Fidélitas" },
       ],
@@ -233,6 +235,7 @@ export default async function AttorneyProfile({
         : []),
       /* Credenciales académicas (Doctorado, Maestría, Licenciatura). */
       ...enrichment.education
+        .filter((ed) => ed.conferido !== false)
         .filter((ed) => ed.distinction || ed.degree.startsWith("Doctor") || ed.degree.startsWith("Maestría") || ed.degree.startsWith("Licenci"))
         .map((ed) => ({
           "@type": "EducationalOccupationalCredential",

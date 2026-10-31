@@ -14,7 +14,7 @@ export const FIRM_CONTACT = {
   phone: "+506 8662-2169",
   phoneRaw: "50686622169",
   location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501",
-  hours: "Lunes a Viernes, 9:00 am – 6:00 pm",
+  hours: "Lunes a viernes, 9:00 a. m. – 5:00 p. m.",
   mapsEmbed:
     "https://maps.google.com/maps?q=Ofident,+Barrio+Dent,+Montes+de+Oca,+San+Jos%C3%A9,+Costa+Rica&t=&z=17&ie=UTF8&iwloc=B&output=embed",
   whatsappMessage:

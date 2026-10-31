@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FirmContact } from "@/components/sections/FirmContact";
 import { FIRM } from "@/lib/constants";
+import { ORGANIZATION_SCHEMA } from "@/lib/organization-schema";
 import { contactoMetadata } from "@/lib/page-metadata";
 import { RunningHead } from "@/components/ui/RunningHead";
 
@@ -51,7 +52,10 @@ export default function ContactoPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([jsonLdContactPage, jsonLdBreadcrumb]),
+          /* La organización va completa aquí: Google no resuelve el @id
+             entre páginas, y esta es la que más debe confirmar dirección,
+             teléfono y horario. */
+          __html: JSON.stringify([jsonLdContactPage, jsonLdBreadcrumb, ORGANIZATION_SCHEMA]),
         }}
       />
       <Navbar />

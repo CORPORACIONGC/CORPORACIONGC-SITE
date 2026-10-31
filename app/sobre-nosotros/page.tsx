@@ -691,7 +691,7 @@ export default function SobreNosotros() {
                 <div className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[170px_minmax(0,1fr)] sm:gap-8">
                   <dt className="type-label pt-1 text-cream/65">Horario</dt>
                   <dd className="text-base leading-relaxed text-cream/85">
-                    Lunes a Viernes, 9:00 am – 6:00 pm
+                    Lunes a viernes, 9:00 a. m. – 5:00 p. m.
                   </dd>
                 </div>
                 <div className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[170px_minmax(0,1fr)] sm:gap-8">
