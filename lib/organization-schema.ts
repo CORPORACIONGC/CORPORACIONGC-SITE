@@ -6,7 +6,7 @@
 // revés. Esta constante fusiona ambos y se inyecta idéntica en las dos páginas
 // para no emitir nodos contradictorios con el mismo @id.
 
-import { FIRM, PRACTICE_AREA_PAGES } from "./constants";
+import { PRACTICE_AREA_PAGES } from "./constants";
 
 export const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
@@ -14,10 +14,20 @@ export const ORGANIZATION_SCHEMA = {
   "@id": "https://www.corporaciongc.com/#organization",
   name: "Corporación GC",
   alternateName: ["Bufete Corporación GC", "Corporación González Camacho"],
-  description: FIRM.description,
+  description:
+    "Bufete costarricense de Derecho Público y litigio contencioso-administrativo, fundado en 2015 por el Dr. Óscar Eduardo González Camacho, exmagistrado de la Sala Primera y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo.",
   url: "https://www.corporaciongc.com",
-  logo: "https://www.corporaciongc.com/images/logo-gc.png",
-  image: "https://www.corporaciongc.com/images/logo-gc.png",
+  logo: {
+    "@type": "ImageObject",
+    "@id": "https://www.corporaciongc.com/#logo",
+    url: "https://www.corporaciongc.com/images/logo-gc.png",
+    width: 492,
+    height: 466,
+  },
+  image: [
+    "https://www.corporaciongc.com/images/logo-gc.png",
+    "https://www.corporaciongc.com/images/equipo/oscar-gonzalez-oficina.jpg",
+  ],
   telephone: "+50686622169",
   email: "info@corporaciongc.com",
   priceRange: "$$",
@@ -123,6 +133,7 @@ export const ORGANIZATION_SCHEMA = {
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+50686622169",
+    email: "info@corporaciongc.com",
     contactType: "customer service",
     availableLanguage: ["es"],
     areaServed: "CR",

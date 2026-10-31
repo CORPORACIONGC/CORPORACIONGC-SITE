@@ -192,10 +192,12 @@ export default async function AttorneyProfile({
     memberOf: {
       "@type": "Organization",
       name: "Colegio de Abogados y Abogadas de Costa Rica",
-      ...(enrichment.carnet ? { identifier: enrichment.carnet } : {}),
+      url: "https://www.abogados.or.cr",
     },
     /* Una universidad por institución, sin repetir la UCR por cada título. */
-    alumniOf: [...new Set(enrichment.education.map((ed) => ed.institution))].map((name) => ({
+    /* La institución con su nombre oficial: «Universidad de Alcalá», igual que
+       en la tesis (sourceOrganization), para que el grafo no vea dos. */
+    alumniOf: [...new Set(enrichment.education.map((ed) => ed.institution.replace(/^Universidad de Alcalá.*$/, "Universidad de Alcalá")))].map((name) => ({
       "@type": "CollegeOrUniversity",
       name,
     })),
@@ -208,7 +210,7 @@ export default async function AttorneyProfile({
             "@type": "PropertyValue",
             propertyID: "CAACR",
             name: "Carnet del Colegio de Abogados y Abogadas de Costa Rica",
-            value: `CAACR ${enrichment.carnet}`,
+            value: enrichment.carnet,
           },
         }
       : {}),

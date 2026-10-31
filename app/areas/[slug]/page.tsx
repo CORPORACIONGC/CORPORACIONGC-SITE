@@ -5518,12 +5518,17 @@ export default async function AreaDetailPage({
       "@id": "https://www.corporaciongc.com/#organization",
       name: "Corporación GC",
       url: "https://www.corporaciongc.com",
+      telephone: "+50686622169",
     },
     areaServed: {
       "@type": "Country",
       name: "Costa Rica",
     },
     serviceType: area.title,
+    audience: {
+      "@type": "Audience",
+      audienceType: "Personas y empresas frente a la Administración Pública",
+    },
   };
 
   const jsonLdFaq = commercial && commercial.commercialFaq.length > 0 ? {

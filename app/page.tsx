@@ -60,7 +60,10 @@ const jsonLdWebSite = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "https://www.corporaciongc.com/#website",
-  name: "Corporaci\u00f3n GC \u2014 Abogados Especialistas en Derecho P\u00fablico",
+  /* Google toma de aquí el nombre del sitio que muestra sobre cada
+     resultado: corto y estable, la marca. */
+  name: "Corporaci\u00f3n GC",
+  alternateName: ["Bufete Corporaci\u00f3n GC", "corporaciongc.com"],
   url: "https://www.corporaciongc.com",
   publisher: { "@id": "https://www.corporaciongc.com/#organization" },
   inLanguage: "es-CR",

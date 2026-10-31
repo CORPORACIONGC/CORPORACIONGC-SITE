@@ -27,6 +27,9 @@ export const OBRAS_OSCAR: Record<string, Record<string, unknown>> = {
     inLanguage: "es",
     url: pagina("libro-justicia-administrativa"),
     sameAs: "https://dialnet.unirioja.es/servlet/tesis?codigo=183910",
+    description:
+      "Tesis doctoral sobre el control jurisdiccional de la inactividad material de la Administración Pública y los poderes del juez para garantizar la tutela judicial efectiva.",
+    image: `${pagina("libro-justicia-administrativa")}/opengraph-image/default`,
     /* La tesis se publicó en Costa Rica en tres tomos con dos ISBN. */
     workExample: [
       {

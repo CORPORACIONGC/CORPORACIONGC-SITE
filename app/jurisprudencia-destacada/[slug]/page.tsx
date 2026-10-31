@@ -91,6 +91,7 @@ export default async function SentenciaDestacadaPage({
     return articulo ? [{ ...g, titulo: articulo.title }] : [];
   });
 
+  const conZona = (d: string) => (d.includes("T") ? d : `${d}T08:00:00-06:00`);
   const resolucionId = `${FIRM.url}/jurisprudencia-destacada/${slug}#resolucion`;
   const redactaOscar = sentencia.redactor.includes("González Camacho");
   const jsonLdResolucion = {
@@ -125,20 +126,31 @@ export default async function SentenciaDestacadaPage({
     description: sentencia.metaDescription,
     /* El comentario es de la firma; el magistrado redactó la sentencia, y
        así figura en isBasedOn. */
+    url: `${FIRM.url}/jurisprudencia-destacada/${slug}`,
+    mainEntityOfPage: `${FIRM.url}/jurisprudencia-destacada/${slug}`,
     author: {
-      "@type": "Organization",
+      "@type": "LegalService",
       "@id": `${FIRM.url}/#organization`,
       name: "Corporación GC",
       url: FIRM.url,
     },
     publisher: {
+      "@type": "LegalService",
       "@id": `${FIRM.url}/#organization`,
+      name: "Corporación GC",
+      logo: {
+        "@type": "ImageObject",
+        "@id": `${FIRM.url}/#logo`,
+        url: `${FIRM.url}/images/logo-gc.png`,
+        width: 492,
+        height: 466,
+      },
     },
     inLanguage: "es-CR",
     isPartOf: { "@id": `${FIRM.url}/#website` },
     /* Las fechas son del comentario; la del fallo va en isBasedOn. */
-    datePublished: sentencia.publicado,
-    dateModified: sentencia.actualizado,
+    datePublished: conZona(sentencia.publicado),
+    dateModified: conZona(sentencia.actualizado),
     image: {
       "@type": "ImageObject",
       url: `${FIRM.url}/jurisprudencia-destacada/${slug}/opengraph-image/default`,
