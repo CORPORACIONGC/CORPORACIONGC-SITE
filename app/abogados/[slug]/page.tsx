@@ -45,7 +45,7 @@ import {
   MARIANA_NAV_LINKS,
 } from "@/lib/constants";
 import { generateAttorneyMetadata } from "@/lib/page-metadata";
-import { splitHonorific } from "@/lib/seo-constants";
+import { splitHonorific, codigoIdioma } from "@/lib/seo-constants";
 import { RunningHead } from "@/components/ui/RunningHead";
 
 // Generate static params for all team members.
@@ -105,7 +105,6 @@ export default async function AttorneyProfile({
         "https://www.linkedin.com/in/%C3%B3scar-eduardo-gonz%C3%A1lez-camacho-0b65a2187/",
         "https://derecho.ucr.ac.cr/docentes/gonzalez-camacho-oscar",
         "https://dialnet.unirioja.es/servlet/autor?codigo=4641054",
-        "https://www.abogados.or.cr/consultaagremiados/",
       ],
       /* Variantes con que se busca su nombre, con y sin tilde y con el
          segundo nombre. */
@@ -120,7 +119,6 @@ export default async function AttorneyProfile({
       sameAs: [
         "https://www.linkedin.com/in/khevin-s%C3%A1nchez-zamora-16b047205/",
         "https://www.instagram.com/lic.sanchezzamora",
-        "https://www.abogados.or.cr/consultaagremiados/",
       ],
       /* "Kevin" es la grafía con la que muchos usuarios lo buscan;
          alternateName permite que Google asocie ambas variantes. */
@@ -148,7 +146,6 @@ export default async function AttorneyProfile({
       /* Su tesis de maestría en el repositorio institucional de la UCR. */
       sameAs: [
         "https://hdl.handle.net/10669/102175",
-        "https://www.abogados.or.cr/consultaagremiados/",
       ],
     },
     "mariana-montero": {
@@ -160,7 +157,6 @@ export default async function AttorneyProfile({
       ],
       sameAs: [
         "https://hdl.handle.net/10669/96806",
-        "https://www.abogados.or.cr/consultaagremiados/",
       ],
     },
     "esteban-perez": {
@@ -173,7 +169,6 @@ export default async function AttorneyProfile({
       sameAs: [
         "https://cr.linkedin.com/in/esteban-p%C3%A9rez-herrera-contencioso",
         "https://hdl.handle.net/10669/94871",
-        "https://www.abogados.or.cr/consultaagremiados/",
       ],
     },
   };
@@ -192,15 +187,16 @@ export default async function AttorneyProfile({
     description: member.shortBio,
     worksFor: { "@type": "LegalService", "@id": `${FIRM.url}/#organization`, name: "Corporación GC", url: FIRM.url },
     knowsAbout: [...member.areas, ...(enrichment.knowsAboutExtra ?? [])],
-    knowsLanguage: member.languages?.map((l: string) => l) ?? ["Español"],
+    knowsLanguage: (member.languages ?? ["Español"]).map((l: string) => codigoIdioma(l)),
     memberOf: {
       "@type": "Organization",
       name: "Colegio de Abogados y Abogadas de Costa Rica",
       ...(enrichment.carnet ? { identifier: enrichment.carnet } : {}),
     },
-    alumniOf: enrichment.education.map((ed) => ({
+    /* Una universidad por institución, sin repetir la UCR por cada título. */
+    alumniOf: [...new Set(enrichment.education.map((ed) => ed.institution))].map((name) => ({
       "@type": "CollegeOrUniversity",
-      name: ed.institution,
+      name,
     })),
     /* Identifier público del abogado: el carnet ante el Colegio. Se expone
        como PropertyValue (formato schema.org para IDs profesionales) para
@@ -363,12 +359,13 @@ export default async function AttorneyProfile({
       "@type": "Event",
       name: "CPCA 20 Años: Balance, transformaciones y desafíos de la justicia administrativa",
       startDate: "2026-03-25",
+      endDate: "2026-03-25",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       eventStatus: "https://schema.org/EventScheduled",
       location: {
         "@type": "Place",
         name: "Colegio de Abogados y Abogadas de Costa Rica",
-        address: { "@type": "PostalAddress", addressCountry: "CR" },
+        address: { "@type": "PostalAddress", addressLocality: "Zapote", addressRegion: "San José", addressCountry: "CR" },
       },
       organizer: [
         { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica" },

@@ -55,8 +55,8 @@ export function SeminarioCautelares() {
               "Seminario del Colegio de Abogados y Abogadas de Costa Rica sobre medidas cautelares en el contencioso administrativo, con la intervención del Dr. Óscar Eduardo González Camacho en la mesa sobre el impacto y la eficacia de la tutela cautelar.",
             thumbnailUrl: `https://i.ytimg.com/vi/${VIDEO_ID}/hqdefault.jpg`,
             uploadDate: "2024-06-17",
-            contentUrl: `https://www.youtube.com/watch?v=${VIDEO_ID}`,
             embedUrl: `https://www.youtube.com/embed/${VIDEO_ID}`,
+            duration: "PT2H8M14S",
             publisher: {
               "@type": "Organization",
               name: "Colegio de Abogados y Abogadas de Costa Rica",

@@ -106,6 +106,10 @@ const VIDEOS: Video[] = [
    primero lo último que dijo. */
 const EN_ORDEN = [...VIDEOS].sort((a, b) => b.fecha.localeCompare(a.fecha));
 
+/* Duración de cada video en YouTube (ISO 8601), tomada del propio video el
+   31-10-2026. */
+const DURACION: Record<string, string> = {"K5YjYwaqAGU": "PT32M0S", "95hHm6MiLOQ": "PT33M22S", "o5TwVynhOY8": "PT1H17M34S", "LrT-ofnCZoE": "PT2H8M14S", "704meiyKlOY": "PT31M10S", "nREXX_oROBY": "PT1H44M52S", "0ZKzZrXZiKY": "PT1H46M35S", "nEXbbcEQoP8": "PT1H21M27S", "uyj9G96ib4s": "PT25M40S"};
+
 export function OscarConferencias() {
   return (
     <section className="relative bg-surface py-24 md:py-32">
@@ -166,13 +170,13 @@ export function OscarConferencias() {
               description: video.description,
               thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
               uploadDate: video.fecha,
-              contentUrl: `https://www.youtube.com/watch?v=${video.id}`,
               embedUrl: `https://www.youtube.com/embed/${video.id}`,
+              duration: DURACION[video.id],
               publisher: {
                 "@type": "Organization",
                 name: video.organizer,
               },
-              performer: {
+              contributor: {
                 "@type": "Person",
                 name: "Óscar Eduardo González Camacho",
                 honorificPrefix: "Dr.",

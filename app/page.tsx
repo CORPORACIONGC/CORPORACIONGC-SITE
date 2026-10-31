@@ -135,18 +135,6 @@ const jsonLdSiteNavigation = {
   ],
 };
 
-const jsonLdBreadcrumb = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Inicio",
-      item: "https://www.corporaciongc.com",
-    },
-  ],
-};
 
 export default function Home() {
   /* La portada muestra solo los artículos en español: las guías en inglés
@@ -170,7 +158,6 @@ export default function Home() {
           __html: JSON.stringify([
             jsonLdOrganization,
             jsonLdWebSite,
-            jsonLdBreadcrumb,
             jsonLdSiteNavigation,
           ]),
         }}

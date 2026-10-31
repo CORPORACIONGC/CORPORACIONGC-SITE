@@ -7,6 +7,7 @@ import { Credentials } from "@/components/sections/Credentials";
 import { AsistenteHero, AsistenteAbout, AsistenteExperience, AsistenteContact } from "@/components/sections/AsistentePerfil";
 import { FIRM } from "@/lib/constants";
 import { ASISTENTES } from "@/lib/asistentes";
+import { codigoIdioma } from "@/lib/seo-constants";
 
 /* Perfil de un asistente legal, con el mismo formato que el de los
    abogados (portada, credenciales, perfil, trayectoria y contacto). */
@@ -61,7 +62,7 @@ export default async function AsistentePage({ params }: { params: Promise<{ slug
         image: `${FIRM.url}${a.portrait}`,
         worksFor: { "@type": "LegalService", "@id": `${FIRM.url}/#organization`, name: "Corporación GC", url: FIRM.url },
         alumniOf: { "@type": "CollegeOrUniversity", name: "Universidad de Costa Rica" },
-        knowsLanguage: a.languages.map((l) => l.replace(/\s*\(.*\)$/, "")),
+        knowsLanguage: a.languages.map((l) => codigoIdioma(l)),
       },
     },
     {

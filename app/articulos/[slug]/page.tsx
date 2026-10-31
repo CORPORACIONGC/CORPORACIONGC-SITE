@@ -373,7 +373,11 @@ export default async function ArticlePage({
      Article, más apropiado para contenido no académico (mejor comprensión
      por Google e IA). */
   const SCHOLARLY_TYPES = ["tesis", "libro", "ponencia"];
-  const articleSchemaType = SCHOLARLY_TYPES.includes(article.publicationType ?? "")
+  /* La tesis doctoral se declara como Thesis (abajo); la página que la
+     presenta es un Article de la firma. */
+  const esTesisDoctoral = slug === "libro-justicia-administrativa";
+  const conZona = (d: string) => (d.includes("T") ? d : `${d}T08:00:00-06:00`);
+  const articleSchemaType = !esTesisDoctoral && SCHOLARLY_TYPES.includes(article.publicationType ?? "")
     ? "ScholarlyArticle"
     : "Article";
   const jsonLd = {
@@ -381,8 +385,29 @@ export default async function ArticlePage({
     "@type": articleSchemaType,
     headline: article.title,
     description: article.excerpt,
-    datePublished: article.date,
-    dateModified: article.updated ?? article.date,
+    datePublished: conZona(article.date),
+    dateModified: conZona(article.updated ?? article.date),
+    ...(esTesisDoctoral
+      ? {
+          about: {
+            "@type": "Thesis",
+            "@id": `https://www.corporaciongc.com/articulos/${slug}#tesis`,
+            name: "La justicia administrativa frente a la inactividad material de la Administración Pública",
+            inSupportOf: "Doctor en Derecho",
+            author: {
+              "@type": "Person",
+              "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
+              name: "Óscar Eduardo González Camacho",
+              honorificPrefix: "Dr.",
+            },
+            sourceOrganization: { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá" },
+            datePublished: "1998",
+            inLanguage: "es",
+            url: `https://www.corporaciongc.com/articulos/${slug}`,
+            sameAs: "https://dialnet.unirioja.es/servlet/tesis?codigo=183910",
+          },
+        }
+      : {}),
     url: `https://www.corporaciongc.com/articulos/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -418,7 +443,12 @@ export default async function ArticlePage({
                     ...splitHonorific(nombre),
                     ...(miembro ? { url: `https://www.corporaciongc.com/abogados/${miembro.slug}` } : {}),
                     ...(article.institution
-                      ? { affiliation: { "@type": "Organization", name: article.institution } }
+                      ? {
+                          affiliation:
+                            article.institution === "Corporación GC"
+                              ? { "@id": "https://www.corporaciongc.com/#organization" }
+                              : { "@type": "Organization", name: article.institution },
+                        }
                       : {}),
                   };
                 });
@@ -438,7 +468,7 @@ export default async function ArticlePage({
         height: 466,
       },
     },
-    inLanguage: lang,
+    inLanguage: lang === "en" ? "en" : "es-CR",
     ...(article.translation
       ? {
           [lang === "en" ? "translationOfWork" : "workTranslation"]: {

@@ -193,13 +193,13 @@ export function OscarEventoDestacado() {
             description: EVENT_VIDEO_DESCRIPTION,
             thumbnailUrl: `https://i.ytimg.com/vi/${EVENT_VIDEO_ID}/hqdefault.jpg`,
             uploadDate: "2026-03-25",
-            contentUrl: `https://www.youtube.com/watch?v=${EVENT_VIDEO_ID}`,
             embedUrl: `https://www.youtube.com/embed/${EVENT_VIDEO_ID}`,
+            duration: "PT1H15M28S",
             publisher: {
               "@type": "Organization",
               name: "Colegio de Abogados y Abogadas de Costa Rica",
             },
-            performer: {
+            contributor: {
               "@type": "Person",
               name: "Óscar Eduardo González Camacho",
               honorificPrefix: "Dr.",

@@ -443,3 +443,10 @@ export function splitHonorific(full: string): { name: string; honorificPrefix?: 
   const m = t.match(/^(Dra?\.|Lic(?:da)?\.|MSc\.)\s+/);
   return m ? { name: t.slice(m[0].length), honorificPrefix: m[1] } : { name: t };
 }
+
+/* Código BCP 47 del idioma para knowsLanguage («Inglés: C1» → «en»). */
+export function codigoIdioma(nombre: string): string {
+  const n = nombre.toLowerCase();
+  const tabla: [string, string][] = [["español", "es"], ["inglés", "en"], ["francés", "fr"], ["italiano", "it"], ["alemán", "de"], ["portugués", "pt"]];
+  return tabla.find(([k]) => n.startsWith(k))?.[1] ?? nombre;
+}

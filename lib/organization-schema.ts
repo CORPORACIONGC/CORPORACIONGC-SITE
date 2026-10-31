@@ -18,7 +18,7 @@ export const ORGANIZATION_SCHEMA = {
   url: "https://www.corporaciongc.com",
   logo: "https://www.corporaciongc.com/images/logo-gc.png",
   image: "https://www.corporaciongc.com/images/logo-gc.png",
-  telephone: "+506 8662-2169",
+  telephone: "+50686622169",
   email: "info@corporaciongc.com",
   priceRange: "$$",
   currenciesAccepted: "CRC, USD",
@@ -104,53 +104,25 @@ export const ORGANIZATION_SCHEMA = {
     opens: "09:00",
     closes: "17:00",
   },
+  /* Cada oferta apunta al Service de su página de área. */
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Servicios Jurídicos",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Litigio Contencioso-Administrativo",
-          description:
-            "Representación ante el Tribunal Contencioso Administrativo, Sala Primera y Sala Constitucional.",
-        },
+    itemListElement: PRACTICE_AREA_PAGES.filter((a) => a.slug !== "otras-materias").map((a) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        "@id": `https://www.corporaciongc.com/areas/${a.slug}#service`,
+        name: a.title,
+        url: `https://www.corporaciongc.com/areas/${a.slug}`,
       },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Derecho Constitucional",
-          description:
-            "Recursos de amparo, acciones de inconstitucionalidad y habeas corpus.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Contratación Pública",
-          description:
-            "Asesoría y litigio en licitaciones, concursos públicos y contratos administrativos.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Derecho Administrativo",
-          description:
-            "Defensa y asesoría en procedimientos ante la Administración Pública.",
-        },
-      },
-    ],
+    })),
   },
   hasMap:
     "https://maps.google.com/?cid=2879986279070957327",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+506 8662-2169",
+    telephone: "+50686622169",
     contactType: "customer service",
     availableLanguage: ["es"],
     areaServed: "CR",

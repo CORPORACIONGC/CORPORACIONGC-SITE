@@ -5509,6 +5509,7 @@ export default async function AreaDetailPage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `https://www.corporaciongc.com/areas/${area.slug}#service`,
     name: area.title,
     description: area.description,
     url: `https://www.corporaciongc.com/areas/${area.slug}`,
@@ -5522,7 +5523,7 @@ export default async function AreaDetailPage({
       "@type": "Country",
       name: "Costa Rica",
     },
-    serviceType: `Abogados especializados en ${area.title} en Costa Rica`,
+    serviceType: area.title,
   };
 
   const jsonLdFaq = commercial && commercial.commercialFaq.length > 0 ? {
