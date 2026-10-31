@@ -91,6 +91,31 @@ export default async function SentenciaDestacadaPage({
     return articulo ? [{ ...g, titulo: articulo.title }] : [];
   });
 
+  const resolucionId = `${FIRM.url}/jurisprudencia-destacada/${slug}#resolucion`;
+  const redactaOscar = sentencia.redactor.includes("González Camacho");
+  const jsonLdResolucion = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": resolucionId,
+    name: `${sentencia.numero} de la ${sentencia.tribunal}`,
+    alternateName: sentencia.numero.replace(/^Resolución N° /, "Voto "),
+    identifier: sentencia.numero.replace(/^Resolución N° /, ""),
+    dateCreated: sentencia.fechaISO,
+    inLanguage: "es",
+    creator: { "@type": "GovernmentOrganization", name: sentencia.tribunal },
+    author: redactaOscar
+      ? {
+          "@type": "Person",
+          "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
+          name: "Óscar Eduardo González Camacho",
+          honorificPrefix: "Dr.",
+          url: `${FIRM.url}/abogados/oscar-gonzalez`,
+        }
+      : { "@type": "Person", name: sentencia.redactor.replace(/^Magistrad[oa] /, "") },
+    url: nexusUrl(sentencia.nexusId),
+    about: `${sentencia.materia} (expediente ${sentencia.expediente})`,
+  };
+
   /* ── JSON-LD: Article + LegalForceStatus ── */
   const jsonLd = {
     "@context": "https://schema.org",
@@ -120,28 +145,13 @@ export default async function SentenciaDestacadaPage({
       width: 1200,
       height: 630,
     },
-    about: {
-      "@type": "Thing",
-      name: sentencia.materia,
-    },
-    /* El texto íntegro vive en Nexus PJ; el análisis se basa en él. */
-    isBasedOn: {
-      "@type": "CreativeWork",
-      name: `${sentencia.numero}, ${sentencia.tribunal}`,
-      dateCreated: sentencia.fechaISO,
-      url: nexusUrl(sentencia.nexusId),
-      ...(sentencia.redactor.includes("González Camacho")
-        ? {
-            author: {
-              "@type": "Person",
-              "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
-              name: "Óscar Eduardo González Camacho",
-              honorificPrefix: "Dr.",
-              url: `${FIRM.url}/abogados/oscar-gonzalez`,
-            },
-          }
-        : {}),
-    },
+    /* La resolución es un nodo propio (#resolucion): una obra del tribunal
+       con su magistrado redactor como autor, y el comentario de la firma
+       trata de ella y se basa en ella. Así cada voto que redactó don Óscar
+       queda en el grafo a su nombre, con el texto íntegro en Nexus. */
+    about: { "@id": resolucionId },
+    isBasedOn: { "@id": resolucionId },
+    mentions: { "@type": "Thing", name: sentencia.materia },
     citation: [...(sentencia.precedentes ?? []), ...(sentencia.citadaPor ?? [])].flatMap((p) =>
       p.nexusId ? [nexusUrl(p.nexusId)] : [],
     ),
@@ -188,6 +198,10 @@ export default async function SentenciaDestacadaPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdResolucion) }}
       />
       <script
         type="application/ld+json"

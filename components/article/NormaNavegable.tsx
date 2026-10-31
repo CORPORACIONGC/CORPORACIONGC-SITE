@@ -12,7 +12,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowSquareOut, CaretDown, Check, Copy, MagnifyingGlass } from "@phosphor-icons/react";
-import type { ArticuloNorma, FichaNorma, GuiaDeArticulo, VotoDeArticulo } from "@/lib/normas";
+import { legislacionSchema, type ArticuloNorma, type FichaNorma, type GuiaDeArticulo, type VotoDeArticulo } from "@/lib/normas";
 
 /** Fila del índice: artículo, rótulo, título, capítulo y sección. Los dos
  *  últimos valen −1 cuando la norma no los distingue. */
@@ -241,22 +241,7 @@ export function NormaNavegable({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Legislation",
-            "@id": `https://www.corporaciongc.com/#legislacion-${ficha.identificador.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
-            name: ficha.nombre,
-            alternateName: ficha.alias ?? [ficha.identificador],
-            legislationIdentifier: ficha.identificador,
-            legislationType: ficha.tipo,
-            legislationJurisdiction: { "@type": "Country", name: "Costa Rica" },
-            legislationDate: ficha.fecha,
-            legislationLegalForce: "https://schema.org/InForce",
-            ...(ficha.fechaVersion && { legislationDateVersion: ficha.fechaVersion }),
-            ...(ficha.emisor && { legislationPassedBy: { "@type": "GovernmentOrganization", name: ficha.emisor } }),
-            inLanguage: "es",
-            sameAs: ficha.sinalevi,
-          }),
+          __html: JSON.stringify({ "@context": "https://schema.org", ...legislacionSchema(ficha) }),
         }}
       />
 

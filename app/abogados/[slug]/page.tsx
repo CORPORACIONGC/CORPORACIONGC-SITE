@@ -1,3 +1,4 @@
+import { OBRAS_OSCAR } from "@/lib/obras-oscar";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -284,11 +285,18 @@ export default async function AttorneyProfile({
     ],
   };
 
+  /* Las obras del Director (tesis, libros, capítulo) van en su perfil con el
+     mismo @id que en la página de cada obra; cada una lo nombra autor, que es
+     la dirección en que schema.org une una obra con su Person. */
+  const obrasDelPerfil = member.slug === "oscar-gonzalez"
+    ? Object.values(OBRAS_OSCAR).map((obra) => ({ "@context": "https://schema.org", ...obra }))
+    : [];
+
   const schemaScripts = (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify([jsonLdPerson, jsonLdProfilePage, jsonLdBreadcrumb]),
+        __html: JSON.stringify([jsonLdPerson, jsonLdProfilePage, jsonLdBreadcrumb, ...obrasDelPerfil]),
       }}
     />
   );

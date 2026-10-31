@@ -1,3 +1,6 @@
+import { OBRAS_OSCAR } from "@/lib/obras-oscar";
+import { NORMA_DE_GUIA } from "@/lib/normas-de-guias";
+import { legislacionSchema } from "@/lib/normas";
 import type { ComponentProps, ReactElement, ReactNode } from "react";
 import { splitHonorific } from "@/lib/seo-constants";
 import Link from "next/link";
@@ -373,62 +376,8 @@ export default async function ArticlePage({
      Article, más apropiado para contenido no académico (mejor comprensión
      por Google e IA). */
   const SCHOLARLY_TYPES = ["tesis", "libro", "ponencia"];
-  /* Las obras de don Óscar que el sitio presenta (tesis, libros, capítulo)
-     se declaran con su tipo propio, su editorial y su ISBN (catálogo SIBDI y
-     Tirant lo Blanch); la página que las presenta es un Article de la firma. */
-  const OSCAR = {
-    "@type": "Person",
-    "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
-    name: "Óscar Eduardo González Camacho",
-    honorificPrefix: "Dr.",
-  };
-  const OBRAS: Record<string, Record<string, unknown>> = {
-    "libro-justicia-administrativa": {
-      "@type": "Thesis",
-      "@id": `https://www.corporaciongc.com/articulos/${slug}#tesis`,
-      name: "La justicia administrativa frente a la inactividad material de la Administración Pública",
-      inSupportOf: "Doctor en Derecho",
-      author: OSCAR,
-      sourceOrganization: { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá" },
-      datePublished: "1998",
-      inLanguage: "es",
-      url: `https://www.corporaciongc.com/articulos/${slug}`,
-      sameAs: "https://dialnet.unirioja.es/servlet/tesis?codigo=183910",
-      workExample: {
-        "@type": "Book",
-        name: "La justicia administrativa",
-        author: OSCAR,
-        isbn: ["9977132585", "9977132777"],
-        publisher: { "@type": "Organization", name: "Editorial Investigaciones Jurídicas" },
-      },
-    },
-    "libro-nuevo-proceso-contencioso": {
-      "@type": "Book",
-      "@id": `https://www.corporaciongc.com/articulos/${slug}#libro`,
-      name: "El nuevo proceso contencioso-administrativo",
-      author: OSCAR,
-      isbn: "9968770418",
-      publisher: { "@type": "GovernmentOrganization", name: "Poder Judicial de Costa Rica" },
-      datePublished: "2006",
-      inLanguage: "es",
-    },
-    "por-que-y-para-que-contencioso-administrativo": {
-      "@type": "Chapter",
-      "@id": `https://www.corporaciongc.com/articulos/${slug}#capitulo`,
-      name: "El por qué y para qué del contencioso administrativo",
-      author: OSCAR,
-      inLanguage: "es",
-      isPartOf: {
-        "@type": "Book",
-        name: "CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa",
-        isbn: "9791370214753",
-        datePublished: "2026",
-        publisher: { "@type": "Organization", name: "Editorial Tirant lo Blanch" },
-        url: "https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753",
-      },
-    },
-  };
-  const obra = OBRAS[slug];
+  const obra = OBRAS_OSCAR[slug];
+  const norma = NORMA_DE_GUIA[slug];
   const conZona = (d: string) => (d.includes("T") ? d : `${d}T08:00:00-06:00`);
   const articleSchemaType = !obra && SCHOLARLY_TYPES.includes(article.publicationType ?? "")
     ? "ScholarlyArticle"
@@ -440,7 +389,9 @@ export default async function ArticlePage({
     description: article.excerpt,
     datePublished: conZona(article.date),
     dateModified: conZona(article.updated ?? article.date),
-    ...(obra ? { about: obra } : {}),
+    /* La obra de don Óscar que la página presenta, o la ley sobre la que
+       gira la guía, con el mismo @id que en el resto del sitio. */
+    ...(obra ? { about: obra } : norma ? { about: legislacionSchema(norma) } : {}),
     url: `https://www.corporaciongc.com/articulos/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",

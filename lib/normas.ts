@@ -48,3 +48,28 @@ export type VotoDeArticulo = { slug: string; voto: string; sobre: string };
 
 /** Una guía de la casa que explica lo que un artículo regula. */
 export type GuiaDeArticulo = { href: string; texto: string };
+
+/** Lo que el marcado `Legislation` necesita de una norma: la ficha completa
+ *  de las que el sitio publica íntegras, o solo esto para las que una guía
+ *  explica sin reproducir. */
+export type NormaSchema = Pick<FichaNorma, "nombre" | "identificador" | "tipo" | "fecha" | "sinalevi" | "alias" | "emisor" | "fechaVersion">;
+
+/** El nodo `Legislation` de una norma, con un @id estable que comparten la
+ *  página que la reproduce y las guías que tratan de ella (`about`). */
+export function legislacionSchema(ficha: NormaSchema): Record<string, unknown> {
+  return {
+    "@type": "Legislation",
+    "@id": `https://www.corporaciongc.com/#legislacion-${ficha.identificador.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+    name: ficha.nombre,
+    alternateName: ficha.alias ?? [ficha.identificador],
+    legislationIdentifier: ficha.identificador,
+    legislationType: ficha.tipo,
+    legislationJurisdiction: { "@type": "Country", name: "Costa Rica" },
+    legislationDate: ficha.fecha,
+    legislationLegalForce: "https://schema.org/InForce",
+    ...(ficha.fechaVersion && { legislationDateVersion: ficha.fechaVersion }),
+    ...(ficha.emisor && { legislationPassedBy: { "@type": "GovernmentOrganization", name: ficha.emisor } }),
+    inLanguage: "es",
+    sameAs: ficha.sinalevi,
+  };
+}
