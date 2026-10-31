@@ -5607,7 +5607,7 @@ export default async function AreaDetailPage({
             <RunningHead title={area.priority === "primary" ? "Área principal" : "Área de práctica"} />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-4">
-              {area.title}
+              {("h1" in area && area.h1) || area.title}
             </h1>
             <p className="text-sm text-cream/45 leading-relaxed max-w-[55ch]">
               {area.subtitle}
@@ -5711,6 +5711,25 @@ export default async function AreaDetailPage({
                       <p className="mt-6 text-sm text-cream/70 leading-relaxed max-w-[65ch]">
                         {commercial.perfil.cierre}
                       </p>
+                    )}
+                    {commercial.perfil.cierreFuente && (
+                      <figure className="mt-6 border-l-2 border-emphasis/60 pl-5">
+                        <blockquote className="text-sm text-cream/75 leading-relaxed max-w-[58ch]">
+                          «{commercial.perfil.cierreFuente.cita}
+                          <strong className="font-semibold text-cream">{commercial.perfil.cierreFuente.destacado}</strong>
+                          {commercial.perfil.cierreFuente.resto}».
+                        </blockquote>
+                        <figcaption className="mt-3 text-xs text-cream/65 leading-relaxed">
+                          <a
+                            href={commercial.perfil.cierreFuente.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
+                          >
+                            {commercial.perfil.cierreFuente.fuente}
+                          </a>
+                        </figcaption>
+                      </figure>
                     )}
                   </section>
                 )}

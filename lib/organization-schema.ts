@@ -135,7 +135,7 @@ export const ORGANIZATION_SCHEMA = {
     telephone: "+50686622169",
     email: "info@corporaciongc.com",
     contactType: "customer service",
-    availableLanguage: ["es"],
+    availableLanguage: ["es", "en"],
     areaServed: "CR",
   },
   /* sameAs afirma identidad: solo perfiles de la propia firma. Va vacío hasta

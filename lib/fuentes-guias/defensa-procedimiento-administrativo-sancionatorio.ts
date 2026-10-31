@@ -13,5 +13,8 @@ export const fuentes: FuentesDeGuia = {
     { numero: "Voto 34-F-S1-2011", organo: S1, fecha: "20-01-2011", tema: "Caducidad del procedimiento", criterio: "La caducidad del art. 340 LGAP se extiende por integración a los procedimientos iniciados de oficio y opera de pleno derecho; confirma la anulación de una multa de la SUPEN.", href: NEXUS("sen-1-0004-766063"), gc: true },
     { numero: "Voto 2020-004541", organo: SC, fecha: "06-03-2020", tema: "Intimación e imputación", criterio: "El traslado debe comunicar una relación precisa y circunstanciada de los hechos y sus consecuencias, y garantiza la congruencia entre lo intimado y lo resuelto; anula un traslado con imputación genérica.", href: NEXUS("sen-1-0007-965340") },
   ],
+  procuraduria: [
+    { titulo: "Manual de Procedimiento Administrativo", detalle: "Procuraduría General de la República, 2006 (Arguedas Chen Apuy, Brenes Esquivel, Vincenti Rojas y Bonilla Herrera), ISBN 9968-44-007-8: expediente, órgano director, intimación e imputación, audiencia oral, acto final, recursos y caducidad del procedimiento sancionador", href: "https://www.pgr.go.cr/wp-content/uploads/2026/02/Manual-de-Procedimiento-web.pdf" },
+  ],
   pie: "Textos normativos: SINALEVI. Jurisprudencia: Nexus del Poder Judicial. Cotejo al 26 de octubre de 2026.",
 };

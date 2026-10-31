@@ -20,6 +20,9 @@ export type CommercialLanding = {
     intro: string;
     rasgos: { titulo: string; texto: string }[];
     cierre?: string;
+    /** La fuente oficial de lo que el cierre afirma del Director, citada
+     *  textualmente, para que la página lo pruebe y no solo lo diga. */
+    cierreFuente?: { cita: string; destacado: string; resto: string; fuente: string; href: string };
   };
   /** Retirados el 20-09-2026: el área listaba una sola guía elegida a mano
    *  y ahí se quedaba la autoridad. Ahora lista todo su cluster, que sale
@@ -1007,6 +1010,13 @@ export const AREA_COMMERCIAL: Record<string, CommercialLanding> = {
       ],
       cierre:
         "Corporación GC es un bufete especializado en Derecho Público, fundado y dirigido por el Dr. Óscar Eduardo González Camacho, magistrado de la Sala Primera de la Corte Suprema de Justicia entre 2002 y 2014 y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo. Acompaña al administrado desde el procedimiento y los recursos ante la institución hasta el Tribunal Contencioso Administrativo, la Sala Primera y la Sala Constitucional.",
+      cierreFuente: {
+        cita: "Para la redacción de dicho código la Corte Suprema de Justicia integró una comisión redactora ",
+        destacado: "coordinada por el magistrado Oscar González Camacho",
+        resto: ", integrante de la Sala Primera…",
+        fuente: "Actualidad Judicial N.º 35, Poder Judicial de Costa Rica",
+        href: "https://actualidadjudicial.poder-judicial.go.cr/vol35/noticias_judiciales/notjud01.htm",
+      },
     },
     relatedArticleSlug: "recursos-contra-acto-administrativo-revocatoria-apelacion-lgap",
     relatedArticleLabel:

@@ -251,6 +251,9 @@ export const PRACTICE_AREA_PAGES = [
   {
     slug: "derecho-administrativo",
     title: "Derecho Administrativo y Recursos",
+    /* El H1 lleva la consulta comercial («abogado derecho administrativo»);
+       el menú y las tarjetas conservan el nombre corto del área. */
+    h1: "Abogados de Derecho Administrativo y Recursos",
     homepageTitle: "Derecho Administrativo y Recursos",
     subtitle: "Procedimientos ordinarios, recursos de revocatoria y apelación ante la Administración Pública",
     description: "Representación en procedimientos administrativos ordinarios, interposición de recursos de revocatoria con apelación en subsidio y agotamiento de vía administrativa conforme a la LGAP (Ley N.° 6227, arts. 308 a 352).",

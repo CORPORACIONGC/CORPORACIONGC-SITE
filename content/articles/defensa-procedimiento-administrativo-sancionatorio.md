@@ -11,7 +11,7 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Procedimiento Sancionatorio: Cómo Defenderse (Guía 2026)"
+seoTitle: "Procedimiento Administrativo Sancionatorio: Cómo Defenderse"
 seoDescription: "¿Le abrieron un procedimiento sancionatorio en Costa Rica? Guía de defensa: plazos de la LGAP, sus derechos, nulidades y cómo impugnar la sanción."
 faq:
   - question: "¿Qué es un procedimiento administrativo sancionatorio?"
@@ -70,6 +70,8 @@ El procedimiento ordinario de la LGAP gira alrededor de una **comparecencia oral
 | Caducidad del procedimiento paralizado | 6 meses de paralización | Art. 340 |
 
 Tres precisiones sobre esta tabla. Los quince días de la citación son su período de preparación: en ese lapso se estudia el expediente, se define la teoría del caso y se reúne la prueba. El plazo de tres días para recurrir el acto final es fatal y sorprende a la mayoría de las personas; vencido, el acto queda firme en sede administrativa. Y los plazos que la propia Administración incumple —los dos meses para concluir, los seis meses de paralización— tienen consecuencias jurídicas que una defensa técnica sabe hacer valer.
+
+La Procuraduría General de la República recorre estas mismas etapas, desde el expediente y el órgano director hasta el acto final, en su [Manual de Procedimiento Administrativo](https://www.pgr.go.cr/wp-content/uploads/2026/02/Manual-de-Procedimiento-web.pdf), publicado en 2006 y disponible en su sitio. Sus apartados sobre el expediente, el órgano director, la intimación e imputación, la audiencia oral y la caducidad del procedimiento sirven para medir si la institución instruyó el caso como debía.
 
 ## Sus derechos durante el procedimiento
 
