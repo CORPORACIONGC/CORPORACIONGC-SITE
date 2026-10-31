@@ -6,7 +6,7 @@
 // revés. Esta constante fusiona ambos y se inyecta idéntica en las dos páginas
 // para no emitir nodos contradictorios con el mismo @id.
 
-import { FIRM } from "./constants";
+import { FIRM, PRACTICE_AREA_PAGES } from "./constants";
 
 export const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
@@ -42,90 +42,62 @@ export const ORGANIZATION_SCHEMA = {
     latitude: 9.9365568,
     longitude: -84.0606924,
   },
+  /* Las personas se unen a su perfil por el @id; el nodo completo vive en
+     /abogados/<slug>. Aquí solo se repite lo que no puede contradecirlo. */
   founder: {
     "@type": "Person",
     "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
-    name: "Dr. Óscar Eduardo González Camacho",
-    jobTitle: "Fundador y Director",
+    name: "Óscar Eduardo González Camacho",
     honorificPrefix: "Dr.",
-    description:
-      "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014). Coordinador de la comisión redactora del Código Procesal Contencioso Administrativo (Ley N.° 8508). Coordinador de la Jurisdicción Contencioso-Administrativa por nueve años. Doctor en Derecho por la Universidad de Alcalá de Henares, Sobresaliente Cum Laude.",
-    alumniOf: [
-      { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá de Henares" },
-      { "@type": "CollegeOrUniversity", name: "Universidad de Costa Rica" },
-    ],
-    hasCredential: [
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "degree",
-        name: "Doctor en Derecho",
-        recognizedBy: {
-          "@type": "CollegeOrUniversity",
-          name: "Universidad de Alcalá de Henares",
-        },
-      },
-    ],
-    memberOf: {
-      "@type": "Organization",
-      name: "Colegio de Abogados y Abogadas de Costa Rica",
-      identifier: "3191",
-    },
-    knowsAbout: [
-      "Derecho Administrativo",
-      "Contencioso Administrativo",
-      "Derecho Constitucional",
-      "Derecho Público",
-    ],
-    worksFor: { "@id": "https://www.corporaciongc.com/#organization" },
+    url: "https://www.corporaciongc.com/abogados/oscar-gonzalez",
   },
   foundingDate: "2015",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 5 },
   employee: [
     {
       "@type": "Person",
-      name: "Lic. Khevin Alberto Sánchez Zamora",
+      "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
+      name: "Óscar Eduardo González Camacho",
+      honorificPrefix: "Dr.",
+      jobTitle: "Fundador y Director",
+      url: "https://www.corporaciongc.com/abogados/oscar-gonzalez",
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.corporaciongc.com/abogados/khevin-sanchez#person",
+      name: "Khevin Alberto Sánchez Zamora",
+      honorificPrefix: "Lic.",
       jobTitle: "Abogado Asociado",
       url: "https://www.corporaciongc.com/abogados/khevin-sanchez",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "37920" },
     },
     {
       "@type": "Person",
-      name: "MSc. Katherine González Coto",
+      "@id": "https://www.corporaciongc.com/abogados/katherine-gonzalez#person",
+      name: "Katherine González Coto",
+      honorificPrefix: "MSc.",
       jobTitle: "Abogada Asociada",
       url: "https://www.corporaciongc.com/abogados/katherine-gonzalez",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "30256" },
     },
     {
       "@type": "Person",
-      name: "Licda. Mariana Montero Acuña",
+      "@id": "https://www.corporaciongc.com/abogados/mariana-montero#person",
+      name: "Mariana Montero Acuña",
+      honorificPrefix: "Licda.",
       jobTitle: "Abogada Asociada",
       url: "https://www.corporaciongc.com/abogados/mariana-montero",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "33716" },
     },
     {
       "@type": "Person",
-      name: "Lic. Esteban Pérez Herrera",
+      "@id": "https://www.corporaciongc.com/abogados/esteban-perez#person",
+      name: "Esteban Pérez Herrera",
+      honorificPrefix: "Lic.",
       jobTitle: "Abogado Asociado y Notario Público",
       url: "https://www.corporaciongc.com/abogados/esteban-perez",
-      memberOf: { "@type": "Organization", name: "Colegio de Abogados y Abogadas de Costa Rica", identifier: "34399" },
     },
   ],
-  knowsAbout: [
-    "Derecho Administrativo",
-    "Contencioso Administrativo",
-    "Derecho Constitucional",
-    "Contratación Pública",
-    "Derecho Público",
-    "Derecho Inmobiliario",
-    "Derecho Corporativo",
-    "Derecho Tributario",
-    "Derecho Ambiental",
-    "Derecho Laboral",
-    "Propiedad Intelectual",
-    "Derecho Civil",
-    "Regulación Fintech y Criptoactivos",
-    "Registro de proveedores de servicios de activos virtuales (VASP) ante SUGEF — Ley N.° 10961",
-  ],
+  /* Las materias son las áreas publicadas en /areas (sin «Otras materias»),
+     más el Derecho Público que las agrupa. */
+  knowsAbout: ["Derecho Público", ...PRACTICE_AREA_PAGES.filter((a) => a.slug !== "otras-materias").map((a) => a.title)],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

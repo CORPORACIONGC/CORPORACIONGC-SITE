@@ -45,6 +45,7 @@ import {
   MARIANA_NAV_LINKS,
 } from "@/lib/constants";
 import { generateAttorneyMetadata } from "@/lib/page-metadata";
+import { splitHonorific } from "@/lib/seo-constants";
 import { RunningHead } from "@/components/ui/RunningHead";
 
 // Generate static params for all team members.
@@ -184,12 +185,12 @@ export default async function AttorneyProfile({
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${FIRM.url}/abogados/${member.slug}#person`,
-    name: member.name,
+    ...splitHonorific(member.name),
     jobTitle: member.role,
     url: `${FIRM.url}/abogados/${member.slug}`,
     image: `${FIRM.url}${member.photo}`,
     description: member.shortBio,
-    worksFor: { "@id": `${FIRM.url}/#organization` },
+    worksFor: { "@type": "LegalService", "@id": `${FIRM.url}/#organization`, name: "Corporación GC", url: FIRM.url },
     knowsAbout: [...member.areas, ...(enrichment.knowsAboutExtra ?? [])],
     knowsLanguage: member.languages?.map((l: string) => l) ?? ["Español"],
     memberOf: {
@@ -252,9 +253,6 @@ export default async function AttorneyProfile({
     },
   };
 
-  if (enrichment.honorificPrefix) {
-    jsonLdPerson.honorificPrefix = enrichment.honorificPrefix;
-  }
   if (enrichment.sameAs && enrichment.sameAs.length > 0) {
     jsonLdPerson.sameAs = enrichment.sameAs;
   }
@@ -307,7 +305,7 @@ export default async function AttorneyProfile({
       startDate: "2025-10-23",
       endDate: "2025-10-23",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      eventStatus: "https://schema.org/EventCompleted",
+      eventStatus: "https://schema.org/EventScheduled",
       location: {
         "@type": "Place",
         name: "Universidad Javeriana",
@@ -319,7 +317,8 @@ export default async function AttorneyProfile({
       ],
       performer: {
         "@type": "Person",
-        name: "Lic. Khevin Alberto Sánchez Zamora",
+        name: "Khevin Alberto Sánchez Zamora",
+        honorificPrefix: "Lic.",
         "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
       },
       description: "Primera edición suramericana del Global Summit Legal Hackers. Panel: IA en el Derecho — Más allá de la Eficiencia, la Urgencia de un Marco Ético. Panelistas: Khevin Sánchez, Ángela Villate (VillateLab), Jimena Mora (Microsoft), Nicolás Castañeda (Keralty).",
@@ -331,7 +330,7 @@ export default async function AttorneyProfile({
       startDate: "2024-12-06",
       endDate: "2024-12-06",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      eventStatus: "https://schema.org/EventCompleted",
+      eventStatus: "https://schema.org/EventScheduled",
       location: {
         "@type": "Place",
         name: "Colegio de Abogados y Abogadas de Costa Rica",
@@ -344,7 +343,8 @@ export default async function AttorneyProfile({
       ],
       performer: {
         "@type": "Person",
-        name: "Lic. Khevin Alberto Sánchez Zamora",
+        name: "Khevin Alberto Sánchez Zamora",
+        honorificPrefix: "Lic.",
         "@id": `${FIRM.url}/abogados/khevin-sanchez#person`,
       },
       description: "Panel: ¿Cómo llevar el cumplimiento ético de inteligencia artificial a la práctica y la automatización? Perspectiva de riesgos y ciencia de datos. Panelistas: Khevin Sánchez, Katherine Romero C., Raúl Trejos.",
@@ -377,7 +377,8 @@ export default async function AttorneyProfile({
       ],
       performer: {
         "@type": "Person",
-        name: "Dr. Óscar Eduardo González Camacho",
+        name: "Óscar Eduardo González Camacho",
+        honorificPrefix: "Dr.",
         "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
       },
       description: "Evento conmemorativo de los 20 años del Código Procesal Contencioso Administrativo de Costa Rica. Mesa II: El futuro del proceso contencioso administrativo — Innovación y desafíos regionales. Capítulo presentado: «El por qué y para qué del contencioso administrativo» (Editorial Tirant lo Blanch, 2026).",

@@ -201,7 +201,8 @@ export function OscarEventoDestacado() {
             },
             performer: {
               "@type": "Person",
-              name: "Dr. Óscar Eduardo González Camacho",
+              name: "Óscar Eduardo González Camacho",
+              honorificPrefix: "Dr.",
               "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
             },
           }),

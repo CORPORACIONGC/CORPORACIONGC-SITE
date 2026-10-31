@@ -5513,7 +5513,10 @@ export default async function AreaDetailPage({
     description: area.description,
     url: `https://www.corporaciongc.com/areas/${area.slug}`,
     provider: {
+      "@type": "LegalService",
       "@id": "https://www.corporaciongc.com/#organization",
+      name: "Corporación GC",
+      url: "https://www.corporaciongc.com",
     },
     areaServed: {
       "@type": "Country",

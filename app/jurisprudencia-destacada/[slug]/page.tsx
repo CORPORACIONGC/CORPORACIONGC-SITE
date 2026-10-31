@@ -135,7 +135,8 @@ export default async function SentenciaDestacadaPage({
             author: {
               "@type": "Person",
               "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
-              name: "Dr. Óscar Eduardo González Camacho",
+              name: "Óscar Eduardo González Camacho",
+              honorificPrefix: "Dr.",
               url: `${FIRM.url}/abogados/oscar-gonzalez`,
             },
           }

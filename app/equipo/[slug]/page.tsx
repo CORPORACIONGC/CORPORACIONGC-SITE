@@ -59,7 +59,7 @@ export default async function AsistentePage({ params }: { params: Promise<{ slug
         name: a.name,
         jobTitle: a.role,
         image: `${FIRM.url}${a.portrait}`,
-        worksFor: { "@type": "LegalService", "@id": `${FIRM.url}/#organization`, name: "Corporación GC" },
+        worksFor: { "@type": "LegalService", "@id": `${FIRM.url}/#organization`, name: "Corporación GC", url: FIRM.url },
         alumniOf: { "@type": "CollegeOrUniversity", name: "Universidad de Costa Rica" },
         knowsLanguage: a.languages.map((l) => l.replace(/\s*\(.*\)$/, "")),
       },

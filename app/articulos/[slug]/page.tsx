@@ -1,4 +1,5 @@
 import type { ComponentProps, ReactElement, ReactNode } from "react";
+import { splitHonorific } from "@/lib/seo-constants";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -414,7 +415,7 @@ export default async function ArticlePage({
                   return {
                     "@type": "Person",
                     ...(miembro ? { "@id": `https://www.corporaciongc.com/abogados/${miembro.slug}#person` } : {}),
-                    name: nombre.trim(),
+                    ...splitHonorific(nombre),
                     ...(miembro ? { url: `https://www.corporaciongc.com/abogados/${miembro.slug}` } : {}),
                     ...(article.institution
                       ? { affiliation: { "@type": "Organization", name: article.institution } }

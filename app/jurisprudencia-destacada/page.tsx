@@ -44,7 +44,8 @@ export default function JurisprudenciaDestacadaIndexPage() {
     about: {
       "@type": "Person",
       "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
-      name: "Dr. Óscar Eduardo González Camacho",
+      name: "Óscar Eduardo González Camacho",
+      honorificPrefix: "Dr.",
       jobTitle:
         "Ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia",
     },

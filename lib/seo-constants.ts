@@ -434,3 +434,12 @@ export function authorInitials(name: string): string {
     .map((p) => p[0]?.toUpperCase() ?? "")
     .join("");
 }
+
+/* Separa el tratamiento del nombre para el marcado: name va sin tratamiento
+   y el tratamiento en honorificPrefix, para que la misma persona tenga un
+   solo nombre en todas las páginas que comparten su @id. */
+export function splitHonorific(full: string): { name: string; honorificPrefix?: string } {
+  const t = full.trim();
+  const m = t.match(/^(Dra?\.|Lic(?:da)?\.|MSc\.)\s+/);
+  return m ? { name: t.slice(m[0].length), honorificPrefix: m[1] } : { name: t };
+}

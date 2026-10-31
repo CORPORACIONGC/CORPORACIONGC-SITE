@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { FIRM, TEAM } from "@/lib/constants";
+import { splitHonorific } from "@/lib/seo-constants";
 import { ASISTENTES } from "@/lib/asistentes";
 import { abogadosMetadata, ABOGADOS_DESCRIPCION as DESCRIPCION } from "@/lib/page-metadata";
 
@@ -36,7 +37,7 @@ export default function AbogadosPage() {
         itemListElement: TEAM.map((m, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          item: { "@id": `${FIRM.url}/abogados/${m.slug}#person`, name: m.name, url: `${FIRM.url}/abogados/${m.slug}` },
+          item: { "@id": `${FIRM.url}/abogados/${m.slug}#person`, ...splitHonorific(m.name), url: `${FIRM.url}/abogados/${m.slug}` },
         })),
       },
     },
