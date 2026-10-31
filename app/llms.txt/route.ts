@@ -27,7 +27,7 @@ export function GET() {
 - Fundación: 2015
 - Director: Dr. Óscar Eduardo González Camacho
 - Abogados: ${TEAM.length}
-- Ubicación: OFIDENT, Barrio Dent, Montes de Oca, San José, Costa Rica
+- Ubicación: Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501, Costa Rica
 - Teléfono: +506 8662-2169
 - Email: info@corporaciongc.com
 - Sitio web: ${BASE}

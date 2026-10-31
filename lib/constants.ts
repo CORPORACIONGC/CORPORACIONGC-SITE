@@ -13,7 +13,7 @@ export const FIRM_CONTACT = {
   email: "info@corporaciongc.com",
   phone: "+506 8662-2169",
   phoneRaw: "50686622169",
-  location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
+  location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501",
   hours: "Lunes a Viernes, 9:00 am – 6:00 pm",
   mapsEmbed:
     "https://maps.google.com/maps?q=Ofident,+Barrio+Dent,+Montes+de+Oca,+San+Jos%C3%A9,+Costa+Rica&t=&z=17&ie=UTF8&iwloc=B&output=embed",
@@ -727,7 +727,7 @@ export const OSCAR_CONTACT = {
   email: "ogonzalez@corporaciongc.com",
   phone: "+506 8662-2169",
   phoneRaw: "50686622169",
-  location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
+  location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501",
 } as const;
 
 export const OSCAR_PRACTICE_AREAS = [
@@ -751,7 +751,7 @@ export const ESTEBAN_CONTACT = {
   linkedin: "https://cr.linkedin.com/in/esteban-p%C3%A9rez-herrera-contencioso",
   phone: "+506 8662-2169",
   phoneRaw: "50686622169",
-  location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
+  location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501",
 } as const;
 
 export const ESTEBAN_PRACTICE_AREAS = [
@@ -826,7 +826,7 @@ export const KATHERINE_CONTACT = {
   email: "kgonzalez@corporaciongc.com",
   phone: "+506 8662-2169",
   phoneRaw: "50686622169",
-  location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
+  location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501",
 } as const;
 
 export const KATHERINE_PRACTICE_AREAS = [
@@ -902,7 +902,7 @@ export const MARIANA_CONTACT = {
   email: "mmontero@corporaciongc.com",
   phone: "+506 7201-7710",
   phoneRaw: "50672017710",
-  location: "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San José, Costa Rica",
+  location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501",
 } as const;
 
 export const MARIANA_PRACTICE_AREAS = [

@@ -30,15 +30,17 @@ export const ORGANIZATION_SCHEMA = {
   address: {
     "@type": "PostalAddress",
     streetAddress:
-      "200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent",
-    addressLocality: "San José",
+      "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent",
+    addressLocality: "San Pedro, Montes de Oca",
     addressRegion: "San José",
+    postalCode: "11501",
     addressCountry: "CR",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "9.9355",
-    longitude: "-84.0512",
+    /* Pin de la ficha verificada de Google (Maps, 31-10-2026). */
+    latitude: 9.9365568,
+    longitude: -84.0606924,
   },
   founder: {
     "@type": "Person",
@@ -173,7 +175,7 @@ export const ORGANIZATION_SCHEMA = {
     ],
   },
   hasMap:
-    "https://maps.google.com/?q=Centro+Cultural+Norteamericano,+Barrio+Dent,+San+Jos%C3%A9,+Costa+Rica",
+    "https://maps.google.com/?cid=2879986279070957327",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+506 8662-2169",
@@ -181,8 +183,6 @@ export const ORGANIZATION_SCHEMA = {
     availableLanguage: ["es"],
     areaServed: "CR",
   },
-  sameAs: [
-    "https://www.abogados.or.cr/consultaagremiados/",
-    "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=57436",
-  ],
+  /* sameAs afirma identidad: solo perfiles de la propia firma. Va vacío hasta
+     que la página de empresa en LinkedIn esté administrada por la firma. */
 };
