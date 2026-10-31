@@ -373,11 +373,64 @@ export default async function ArticlePage({
      Article, más apropiado para contenido no académico (mejor comprensión
      por Google e IA). */
   const SCHOLARLY_TYPES = ["tesis", "libro", "ponencia"];
-  /* La tesis doctoral se declara como Thesis (abajo); la página que la
-     presenta es un Article de la firma. */
-  const esTesisDoctoral = slug === "libro-justicia-administrativa";
+  /* Las obras de don Óscar que el sitio presenta (tesis, libros, capítulo)
+     se declaran con su tipo propio, su editorial y su ISBN (catálogo SIBDI y
+     Tirant lo Blanch); la página que las presenta es un Article de la firma. */
+  const OSCAR = {
+    "@type": "Person",
+    "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
+    name: "Óscar Eduardo González Camacho",
+    honorificPrefix: "Dr.",
+  };
+  const OBRAS: Record<string, Record<string, unknown>> = {
+    "libro-justicia-administrativa": {
+      "@type": "Thesis",
+      "@id": `https://www.corporaciongc.com/articulos/${slug}#tesis`,
+      name: "La justicia administrativa frente a la inactividad material de la Administración Pública",
+      inSupportOf: "Doctor en Derecho",
+      author: OSCAR,
+      sourceOrganization: { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá" },
+      datePublished: "1998",
+      inLanguage: "es",
+      url: `https://www.corporaciongc.com/articulos/${slug}`,
+      sameAs: "https://dialnet.unirioja.es/servlet/tesis?codigo=183910",
+      workExample: {
+        "@type": "Book",
+        name: "La justicia administrativa",
+        author: OSCAR,
+        isbn: ["9977132585", "9977132777"],
+        publisher: { "@type": "Organization", name: "Editorial Investigaciones Jurídicas" },
+      },
+    },
+    "libro-nuevo-proceso-contencioso": {
+      "@type": "Book",
+      "@id": `https://www.corporaciongc.com/articulos/${slug}#libro`,
+      name: "El nuevo proceso contencioso-administrativo",
+      author: OSCAR,
+      isbn: "9968770418",
+      publisher: { "@type": "GovernmentOrganization", name: "Poder Judicial de Costa Rica" },
+      datePublished: "2006",
+      inLanguage: "es",
+    },
+    "por-que-y-para-que-contencioso-administrativo": {
+      "@type": "Chapter",
+      "@id": `https://www.corporaciongc.com/articulos/${slug}#capitulo`,
+      name: "El por qué y para qué del contencioso administrativo",
+      author: OSCAR,
+      inLanguage: "es",
+      isPartOf: {
+        "@type": "Book",
+        name: "CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa",
+        isbn: "9791370214753",
+        datePublished: "2026",
+        publisher: { "@type": "Organization", name: "Editorial Tirant lo Blanch" },
+        url: "https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753",
+      },
+    },
+  };
+  const obra = OBRAS[slug];
   const conZona = (d: string) => (d.includes("T") ? d : `${d}T08:00:00-06:00`);
-  const articleSchemaType = !esTesisDoctoral && SCHOLARLY_TYPES.includes(article.publicationType ?? "")
+  const articleSchemaType = !obra && SCHOLARLY_TYPES.includes(article.publicationType ?? "")
     ? "ScholarlyArticle"
     : "Article";
   const jsonLd = {
@@ -387,27 +440,7 @@ export default async function ArticlePage({
     description: article.excerpt,
     datePublished: conZona(article.date),
     dateModified: conZona(article.updated ?? article.date),
-    ...(esTesisDoctoral
-      ? {
-          about: {
-            "@type": "Thesis",
-            "@id": `https://www.corporaciongc.com/articulos/${slug}#tesis`,
-            name: "La justicia administrativa frente a la inactividad material de la Administración Pública",
-            inSupportOf: "Doctor en Derecho",
-            author: {
-              "@type": "Person",
-              "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
-              name: "Óscar Eduardo González Camacho",
-              honorificPrefix: "Dr.",
-            },
-            sourceOrganization: { "@type": "CollegeOrUniversity", name: "Universidad de Alcalá" },
-            datePublished: "1998",
-            inLanguage: "es",
-            url: `https://www.corporaciongc.com/articulos/${slug}`,
-            sameAs: "https://dialnet.unirioja.es/servlet/tesis?codigo=183910",
-          },
-        }
-      : {}),
+    ...(obra ? { about: obra } : {}),
     url: `https://www.corporaciongc.com/articulos/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -719,6 +752,28 @@ export default async function ArticlePage({
                   }}
                 />
               </div>
+            )}
+
+            {/* Las preguntas frecuentes se muestran tal como van en el marcado
+                FAQPage: las directrices piden que el marcado refleje lo que la
+                página muestra. */}
+            {article.faq && article.faq.length > 0 && (
+              <section aria-labelledby="preguntas-frecuentes" className="mt-14">
+                <h2 id="preguntas-frecuentes" className="font-display text-xl md:text-2xl tracking-tight text-cream">
+                  {lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"}
+                </h2>
+                <div className="mt-6 divide-y divide-cream/10 border-y border-cream/10">
+                  {article.faq.map((item) => (
+                    <details key={item.question} className="group py-1">
+                      <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-4 text-[15px] font-semibold leading-snug text-cream transition-colors hover:text-emphasis [&::-webkit-details-marker]:hidden">
+                        <span>{item.question}</span>
+                        <span aria-hidden="true" className="mt-0.5 shrink-0 text-cream/45 transition-transform duration-300 group-open:rotate-45">+</span>
+                      </summary>
+                      <p className="pb-5 pr-8 text-[15px] leading-relaxed text-cream/70 max-w-[68ch]">{item.answer}</p>
+                    </details>
+                  ))}
+                </div>
+              </section>
             )}
 
             {muestraAlcance && (

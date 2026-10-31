@@ -13,7 +13,7 @@ export const ORGANIZATION_SCHEMA = {
   "@type": "LegalService",
   "@id": "https://www.corporaciongc.com/#organization",
   name: "Corporación GC",
-  alternateName: "Corporación González Camacho",
+  alternateName: ["Bufete Corporación GC", "Corporación González Camacho"],
   description: FIRM.description,
   url: "https://www.corporaciongc.com",
   logo: "https://www.corporaciongc.com/images/logo-gc.png",

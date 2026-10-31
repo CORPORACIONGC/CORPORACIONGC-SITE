@@ -325,7 +325,7 @@ const OBRAS: Fuente[] = [
   },
   {
     titulo: "El nuevo proceso contencioso-administrativo",
-    detalle: "Óscar Eduardo González Camacho y otros. Escuela Judicial y Editorial Jurídica Continental, 2006",
+    detalle: "Óscar Eduardo González Camacho y otros. Poder Judicial de Costa Rica, 2006",
     href: "/articulos/libro-nuevo-proceso-contencioso",
   },
 ];
