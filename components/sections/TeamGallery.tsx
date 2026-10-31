@@ -29,7 +29,17 @@ function splitName(name: string) {
    indicador marca la posición. El nombre vive debajo de la foto, nunca sobre
    ella; al pasar el cursor, el filete que lo encabeza se traza de izquierda a
    derecha, como el subrayado dorado de La firma. */
-export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
+export function TeamGallery({
+  members,
+  basePath = "/abogados",
+  label = "Abogados de Corporación GC",
+}: {
+  members: TeamGalleryMember[];
+  /* Ruta de los perfiles: /abogados para los abogados, /equipo para los
+     asistentes legales. */
+  basePath?: string;
+  label?: string;
+}) {
   const scroller = useRef<HTMLUListElement>(null);
   const [current, setCurrent] = useState(0);
 
@@ -59,7 +69,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
       <ul
         ref={scroller}
         role="list"
-        aria-label="Abogados de Corporación GC"
+        aria-label={label}
         className="-mx-6 flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-2 gc-scrollbar-none md:-mx-10 md:scroll-px-10 md:gap-5 md:px-10 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0"
       >
         {members.map((member) => {
@@ -69,7 +79,7 @@ export function TeamGallery({ members }: { members: TeamGalleryMember[] }) {
               key={member.slug}
               className="w-[68vw] max-w-[300px] shrink-0 snap-start sm:w-[42vw] md:w-[30vw] lg:w-auto lg:max-w-none"
             >
-              <Link href={`/abogados/${member.slug}`} className="group block outline-none">
+              <Link href={`${basePath}/${member.slug}`} className="group block outline-none">
                 <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-hilo group-focus-visible:outline-2">
                   <Image
                     src={member.portrait}

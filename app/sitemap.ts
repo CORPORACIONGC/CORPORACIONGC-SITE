@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/articles";
 import { getAllSentencias } from "@/lib/jurisprudencia";
 import { TEAM, PRACTICE_AREA_PAGES } from "@/lib/constants";
+import { ASISTENTES } from "@/lib/asistentes";
 import { fechaPerfil } from "@/lib/fechas";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -59,6 +60,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(fechaPerfil(member.slug) ?? "2026-03-28"),
     changeFrequency: "monthly" as const,
     priority: 0.8,
+  }));
+
+  const asistentesUrls = ASISTENTES.map((a) => ({
+    url: `${baseUrl}/equipo/${a.slug}`,
+    lastModified: new Date(a.actualizado),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
   }));
 
   return [
@@ -129,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...sentenciaUrls,
     ...teamUrls,
+    ...asistentesUrls,
     ...articleUrls,
   ];
 }
