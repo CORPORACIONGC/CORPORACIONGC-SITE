@@ -90,7 +90,7 @@ export const ASISTENTES: Asistente[] = [
     bio: [
       "Asistente legal de Corporación GC desde junio de 2026: análisis jurídico en materia jurídico-administrativa, asesoría y acompañamiento legal a clientes, y redacción de demandas, contestaciones, recursos y otros escritos.",
       "Cursa el cuarto año de la Licenciatura en Derecho en la Universidad de Costa Rica, con un promedio ponderado de 9,22, después de un primer año de Economía con promedio de 9,01. En 2026 ganó, como investigador y líder de su equipo, el primer lugar de la XXIV edición de la Competencia VCGM de Procedimiento ante la Corte Penal Internacional, en Ciudad de México.",
-      "Es asistente científico de la Revista Digital de Ciencias Penales de la Universidad de Costa Rica y fue asistente del Instituto de Investigaciones Jurídicas. Habla español, inglés y alemán, y tiene la doble nacionalidad alemana y costarricense.",
+      "Es asistente científico de la Revista Digital de Ciencias Penales de la Universidad de Costa Rica y fue asistente del Instituto de Investigaciones Jurídicas. Habla español, inglés y alemán.",
     ],
     credentials: [
       { metric: "1.er", label: "Lugar, Competencia VCGM ante la Corte Penal Internacional", detail: "XXIV edición · Ciudad de México, 2026" },
@@ -113,8 +113,6 @@ export const ASISTENTES: Asistente[] = [
       { role: "Asistente científico", org: "Revista Digital de Ciencias Penales, Universidad de Costa Rica", period: "Mar. 2026 – Presente", place: "San José, Costa Rica", description: ["Revisión de artículos académicos profesionales."] },
       { role: "Asistente", org: "Instituto de Investigaciones Jurídicas, Universidad de Costa Rica", period: "Mar. 2025 – Mar. 2026", place: "San José, Costa Rica", description: ["Coordinación de proyectos académicos."] },
       { role: "Pasantía como asistente legal", org: "Bufete Legal NCC Parajeles", period: "Jul. – Ago. 2023", place: "San José, Costa Rica" },
-      { role: "Instructor de snowboard", org: "Skischule Thomas Sprenzel (escuela de esquí)", period: "Temporadas 22/23, 23/24 y 25/26", place: "Garmisch, Alemania" },
-      { role: "Pasantía como asistente administrativo", org: "MidAmerican Homes (empresa de bienes raíces)", period: "Jun. – Jul. 2019", place: "Detroit, Míchigan, Estados Unidos" },
     ],
     education: [
       { degree: "Licenciatura en Derecho", institution: "Universidad de Costa Rica", period: "2023 – en curso", note: "Cuarto año de la carrera · promedio ponderado 9,22" },
@@ -125,8 +123,6 @@ export const ASISTENTES: Asistente[] = [
       { title: "Primer lugar, Competencia VCGM de Procedimiento ante la Corte Penal Internacional, XXIV edición", detail: "Ciudad de México, 2026 · Investigador y líder del equipo" },
     ],
     languages: ["Español: lengua materna", "Inglés: bilingüe (IB Diploma en inglés; dos años de colegio en Estados Unidos)", "Alemán: C1 (Deutsches Sprachdiplom DSD II)"],
-    skills: ["Trabajo en equipo", "Comunicación asertiva", "Pensamiento crítico", "Flexibilidad"],
-    extras: ["Doble nacionalidad: alemana y costarricense", "Intereses: derecho, filosofía, fotografía y deporte", "Vehículo propio"],
     contact: { email: "freiwaldmathias@gmail.com", phone: "+506 7011-7470", phoneRaw: "50670117470", location: "Escazú, San José, Costa Rica" },
   },
 ];

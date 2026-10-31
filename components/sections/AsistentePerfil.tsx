@@ -48,10 +48,6 @@ export function AsistenteHero({ a }: { a: Asistente }) {
             </div>
           </AnimatedEntry>
 
-          <AnimatedEntry delay={0.5}>
-            <div className="mt-3 text-[11px] text-cream/35 tracking-wide">En Corporación GC desde {a.since.toLowerCase()}</div>
-          </AnimatedEntry>
-
           <AnimatedEntry delay={0.65}>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <MagneticButton href="#contacto" variant="primary">
@@ -170,7 +166,7 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
             </AnimatedEntry>
             <AnimatedEntry delay={0.2}>
               <p className="mt-5 text-sm text-cream/50 leading-relaxed max-w-[35ch]">
-                {a.study}. En Corporación GC desde {a.since.toLowerCase()}.
+                {a.study}.
               </p>
             </AnimatedEntry>
           </div>
