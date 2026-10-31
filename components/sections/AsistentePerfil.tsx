@@ -244,8 +244,8 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
 
 export function AsistenteContact({ a }: { a: Asistente }) {
   const items = [
-    { icon: Envelope, label: "Email", value: a.contact.email, href: `mailto:${a.contact.email}` },
-    { icon: Phone, label: "Teléfono", value: a.contact.phone, href: `tel:+${a.contact.phoneRaw}` },
+    { icon: Envelope, label: "Email", value: FIRM_CONTACT.email, href: `mailto:${FIRM_CONTACT.email}` },
+    { icon: Phone, label: "Teléfono", value: FIRM_CONTACT.phone, href: `tel:+${FIRM_CONTACT.phoneRaw}` },
   ];
   return (
     <section id="contacto" className="relative bg-dark-bg py-24 md:py-32 overflow-hidden">
@@ -259,9 +259,9 @@ export function AsistenteContact({ a }: { a: Asistente }) {
             </AnimatedEntry>
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Datos de
+                Contacto con
                 <br />
-                <span className="text-burgundy-light">contacto</span>
+                <span className="text-burgundy-light">la firma</span>
               </h2>
             </AnimatedEntry>
             <StaggerContainer className="mt-10 space-y-4" stagger={0.06}>
@@ -269,7 +269,7 @@ export function AsistenteContact({ a }: { a: Asistente }) {
                 <StaggerItem key={item.label}>
                   <TrackedContactLink
                     href={item.href}
-                    contactTarget={a.slug}
+                    contactTarget="general"
                     className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
                   >
                     <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
@@ -290,7 +290,7 @@ export function AsistenteContact({ a }: { a: Asistente }) {
               <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
                   <MapPin size={16} weight="duotone" className="text-emphasis" />
-                  <span className="text-xs text-cream/50">{a.contact.location}</span>
+                  <span className="text-xs text-cream/50">{FIRM_CONTACT.location}</span>
                 </div>
                 <h3 className="font-display text-xl font-semibold text-cream tracking-tight mb-3">Consultas jurídicas</h3>
                 <p className="text-xs text-cream/45 leading-relaxed mb-8">

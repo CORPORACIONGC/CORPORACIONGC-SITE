@@ -1,6 +1,6 @@
 /* Asistentes legales de Corporación GC: estudiantes de Derecho que trabajan
    con el equipo. Todo sale de sus currículos (31-10-2026) y de lo que
-   confirmó cada uno. Sus perfiles viven en /equipo/<slug>, aparte de
+   confirmó cada uno, sin sus datos personales de contacto. Sus perfiles viven en /equipo/<slug>, aparte de
    /abogados, porque todavía no son abogados, y tienen el mismo formato que
    los de los abogados. */
 
@@ -25,7 +25,6 @@ export type Asistente = {
   languages: string[];
   skills?: string[];
   extras?: string[];
-  contact: { email: string; phone: string; phoneRaw: string; location: string };
 };
 
 export const ASISTENTES: Asistente[] = [
@@ -74,7 +73,6 @@ export const ASISTENTES: Asistente[] = [
       { title: "Grupo de litigio en favor del Parque Nacional Marino Las Baulas", detail: "Programa de voluntariado de la Universidad de Costa Rica · I semestre de 2026" },
     ],
     languages: ["Español: nativo", "Inglés: C1"],
-    contact: { email: "edelangton@gmail.com", phone: "+506 8479-9573", phoneRaw: "50684799573", location: "San José, Costa Rica" },
   },
   {
     slug: "mathias-freiwald",
@@ -123,6 +121,5 @@ export const ASISTENTES: Asistente[] = [
       { title: "Primer lugar, Competencia VCGM de Procedimiento ante la Corte Penal Internacional, XXIV edición", detail: "Ciudad de México, 2026 · Investigador y líder del equipo" },
     ],
     languages: ["Español: lengua materna", "Inglés: bilingüe (IB Diploma en inglés; dos años de colegio en Estados Unidos)", "Alemán: C1 (Deutsches Sprachdiplom DSD II)"],
-    contact: { email: "freiwaldmathias@gmail.com", phone: "+506 7011-7470", phoneRaw: "50670117470", location: "Escazú, San José, Costa Rica" },
   },
 ];

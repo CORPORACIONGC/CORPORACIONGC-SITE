@@ -1,5 +1,6 @@
 import { getAllArticles } from "@/lib/articles";
 import { PRACTICE_AREA_PAGES, TEAM } from "@/lib/constants";
+import { ASISTENTES } from "@/lib/asistentes";
 
 /* llms.txt, armado con los mismos datos que las páginas. Era un archivo fijo
    en public/ y se había desfasado: URL sin www que redirigían, «Derecho
@@ -39,6 +40,10 @@ ${PRACTICE_AREA_PAGES.map((a) => `- [${a.title}](${BASE}/areas/${a.slug}): ${lin
 ## Equipo
 
 ${TEAM.map((m) => `- [${m.name}](${BASE}/abogados/${m.slug}) — ${m.role}. ${linea(m.shortBio)}`).join("\n")}
+
+### Asistentes legales
+
+${ASISTENTES.map((a) => `- [${a.name}](${BASE}/equipo/${a.slug}) — ${a.role}. ${a.study}.`).join("\n")}
 
 ## Guías y publicaciones
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ASISTENTES } from "@/lib/asistentes";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr";
@@ -541,6 +542,40 @@ export default function SobreNosotros() {
                     </li>
                   );
                 })}
+              </ul>
+
+              <h3 className="mt-20 font-display text-2xl tracking-tight text-cream md:text-3xl">Asistentes legales</h3>
+              <p className="type-lead mt-4 max-w-[64ch] text-cream/80">
+                Estudiantes de Derecho de la Universidad de Costa Rica que apoyan a los abogados de la firma en
+                la investigación jurídica, el análisis de los expedientes y la preparación de los escritos.
+              </p>
+              <ul role="list" className="mt-12 grid grid-cols-2 gap-x-4 gap-y-12 sm:gap-x-6 xl:grid-cols-3">
+                {ASISTENTES.map((a) => (
+                  <li key={a.slug}>
+                    <Link href={`/equipo/${a.slug}`} className="group block outline-none">
+                      <div className="relative aspect-[4/5] overflow-hidden bg-cream/[0.04] outline-offset-4 outline-hilo group-focus-visible:outline-2">
+                        <Image
+                          src={a.portrait}
+                          alt={`Retrato de ${a.name}`}
+                          fill
+                          sizes="(min-width: 1280px) 240px, (min-width: 640px) 34vw, 45vw"
+                          className="object-cover saturate-[0.9] transition-[filter] duration-500 ease-out group-hover:saturate-100 group-focus-visible:saturate-100"
+                        />
+                        <span
+                          aria-hidden="true"
+                          className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/[0.06] dark:ring-white/[0.06]"
+                        />
+                      </div>
+                      <div className="mt-5 border-t border-cream/10 pt-4 transition-colors duration-300 group-hover:border-burgundy/60 dark:group-hover:border-hilo/60">
+                        <h4 className="text-base font-semibold leading-[1.3] tracking-[-0.01em] text-cream text-balance transition-colors duration-300 group-hover:text-burgundy sm:text-[17px] dark:group-hover:text-hilo-texto">
+                          {a.short}
+                        </h4>
+                        <p className="mt-1 text-[13px] leading-snug text-cream/65">{a.role}</p>
+                        <p className="mt-3 text-[13px] leading-relaxed text-cream/75 sm:text-[14px]">{a.study}</p>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </section>
 

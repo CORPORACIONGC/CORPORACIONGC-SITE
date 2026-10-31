@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { FIRM, TEAM } from "@/lib/constants";
+import { ASISTENTES } from "@/lib/asistentes";
 import { abogadosMetadata, ABOGADOS_DESCRIPCION as DESCRIPCION } from "@/lib/page-metadata";
 
 /* El índice del equipo. Antes no existía: la miga «Equipo» de los perfiles
@@ -98,6 +99,39 @@ export default function AbogadosPage() {
                       </span>
                       <span className="mt-1 block text-xs uppercase tracking-wider text-cream/45">{m.role}</span>
                       <span className="mt-3 block max-w-[65ch] text-sm leading-relaxed text-cream/60">{m.shortBio}</span>
+                    </span>
+                    <ArrowRight
+                      size={16}
+                      weight="bold"
+                      aria-hidden="true"
+                      className="hidden text-cream/35 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-emphasis sm:block"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="mt-20 font-display text-2xl md:text-3xl tracking-tight text-cream">Asistentes legales</h2>
+            <p className="mt-4 text-sm text-cream/55 leading-relaxed max-w-[65ch]">
+              Estudiantes de Derecho de la Universidad de Costa Rica que apoyan a los abogados de la firma en la
+              investigación jurídica, el análisis de los expedientes y la preparación de los escritos.
+            </p>
+            <ul role="list" className="mt-8 divide-y divide-cream/10 border-y border-cream/10">
+              {ASISTENTES.map((a) => (
+                <li key={a.slug}>
+                  <Link
+                    href={`/equipo/${a.slug}`}
+                    className="group grid grid-cols-[72px_minmax(0,1fr)] gap-5 py-7 sm:grid-cols-[96px_minmax(0,1fr)_auto] sm:items-center sm:gap-7"
+                  >
+                    <span className="relative block aspect-[4/5] overflow-hidden bg-cream/[0.04]">
+                      <Image src={a.portrait} alt={`Retrato de ${a.name}`} fill sizes="96px" loading="lazy" className="object-cover saturate-[0.9]" />
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block font-display text-lg md:text-xl tracking-tight text-cream transition-colors duration-300 group-hover:text-emphasis">
+                        {a.name}
+                      </span>
+                      <span className="mt-1 block text-xs uppercase tracking-wider text-cream/45">{a.role}</span>
+                      <span className="mt-3 block max-w-[65ch] text-sm leading-relaxed text-cream/60">{a.heroDescription}</span>
                     </span>
                     <ArrowRight
                       size={16}
