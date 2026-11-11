@@ -17,6 +17,7 @@ import { fuentes as f_impugnar_avaluo_municipal_bienes_inmuebles } from "./impug
 import { fuentes as f_ley_10554_acceso_informacion_publica } from "./ley-10554-acceso-informacion-publica";
 import { fuentes as f_ley_10777_docentes_interinos_mep } from "./ley-10777-docentes-interinos-mep";
 import { fuentes as f_ley_10889_fraude_bancario_costa_rica } from "./ley-10889-fraude-bancario-costa-rica";
+import { fuentes as f_ley_10971_responsabilidad_laboral_contratistas_estado } from "./ley-10971-responsabilidad-laboral-contratistas-estado";
 import { fuentes as f_ley_6043_zona_maritimo_terrestre_costa_rica } from "./ley-6043-zona-maritimo-terrestre-costa-rica";
 import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./ley-general-administracion-publica-costa-rica";
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
@@ -48,6 +49,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "ley-10554-acceso-informacion-publica": f_ley_10554_acceso_informacion_publica,
   "ley-10777-docentes-interinos-mep": f_ley_10777_docentes_interinos_mep,
   "ley-10889-fraude-bancario-costa-rica": f_ley_10889_fraude_bancario_costa_rica,
+  "ley-10971-responsabilidad-laboral-contratistas-estado": f_ley_10971_responsabilidad_laboral_contratistas_estado,
   "ley-6043-zona-maritimo-terrestre-costa-rica": f_ley_6043_zona_maritimo_terrestre_costa_rica,
   "ley-general-administracion-publica-costa-rica": f_ley_general_administracion_publica_costa_rica,
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
