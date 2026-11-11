@@ -89,7 +89,7 @@ export function LeadForm() {
 
       {/* Name */}
       <div>
-        <label htmlFor="lf-name" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
+        <label htmlFor="lf-name" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
           Nombre completo *
         </label>
         <input
@@ -101,7 +101,7 @@ export function LeadForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
           placeholder="Su nombre"
         />
       </div>
@@ -109,7 +109,7 @@ export function LeadForm() {
       {/* Email + Phone row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="lf-email" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
+          <label htmlFor="lf-email" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
             Correo electrónico *
           </label>
           <input
@@ -122,12 +122,12 @@ export function LeadForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
             placeholder="correo@ejemplo.com"
           />
         </div>
         <div>
-          <label htmlFor="lf-phone" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
+          <label htmlFor="lf-phone" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
             Teléfono
           </label>
           <input
@@ -139,7 +139,7 @@ export function LeadForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
             placeholder="+506 0000-0000"
           />
         </div>
@@ -147,7 +147,7 @@ export function LeadForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="lf-message" className="text-[13px] font-medium text-cream/70 mb-1.5 block">
+        <label htmlFor="lf-message" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
           Describa brevemente su consulta *
         </label>
         <textarea
@@ -158,7 +158,7 @@ export function LeadForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-cream/[0.06] border border-cream/[0.10] text-sm text-cream placeholder:text-cream/25 focus:border-hilo/40 focus:ring-1 focus:ring-hilo/20 transition-all duration-300 outline-none resize-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none resize-none disabled:opacity-50"
           placeholder="Tipo de caso, contexto general, urgencia..."
         />
       </div>
@@ -211,7 +211,7 @@ export function LeadForm() {
         contactTarget="lead-form-whatsapp"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-cream/15 bg-cream/[0.04] text-cream text-sm font-medium tracking-wide hover:border-emphasis/40 hover:bg-cream/[0.07] active:scale-[0.97] transition-all duration-300"
+        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-cream/20 bg-surface text-cream text-sm font-medium tracking-wide hover:border-cream/40 active:scale-[0.97] transition-colors duration-300"
       >
         <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
         Prefiero escribir por WhatsApp

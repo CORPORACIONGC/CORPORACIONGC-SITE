@@ -1,11 +1,8 @@
-import Image from "next/image";
 import {
   Envelope,
   Phone,
-  WhatsappLogo,
   MapPin,
   Clock,
-  ArrowRight,
 } from "@phosphor-icons/react/dist/ssr";
 import {
   AnimatedEntry,
@@ -46,8 +43,6 @@ const contactItems = [
 ];
 
 export function FirmContact({ showHeading = true }: { showHeading?: boolean } = {}) {
-  const whatsappUrl = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(FIRM_CONTACT.whatsappMessage)}`;
-
   return (
     <section
       id="contacto"
@@ -84,19 +79,19 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
               </>
             )}
 
-            <StaggerContainer className={`${showHeading ? "mt-10 " : ""}space-y-4`} stagger={0.06}>
+            {/* Los datos de contacto van como filas con filete, igual que las
+                listas del resto del sitio: sin cajas ni fondos. */}
+            <StaggerContainer className={`${showHeading ? "mt-10 " : ""}border-t border-cream/[0.12]`} stagger={0.06}>
               {contactItems.map((item, i) => {
-                const cardClassName = "group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400";
+                const cardClassName = "group flex items-start gap-4 border-b border-cream/[0.08] py-4";
                 const inner = (
                   <>
-                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
-                      <item.icon size={20} weight="duotone" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-cream/65">
+                    <item.icon size={20} weight="regular" className="mt-0.5 shrink-0 text-cream/55 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-hilo-texto" />
+                    <div className="min-w-0">
+                      <div className="text-[13px] text-cream/65">
                         {item.label}
                       </div>
-                      <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">
+                      <div className={`mt-0.5 text-[15px] md:text-base leading-snug text-cream/[0.88] transition-colors duration-300 ${item.href ? "group-hover:text-burgundy dark:group-hover:text-hilo-texto" : ""}`}>
                         {item.value}
                       </div>
                     </div>
@@ -126,11 +121,11 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
           {/* Right — Lead Form Card */}
           <div className="flex items-start lg:items-center">
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
-              <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
+              <div className="p-7 md:p-10 rounded-xl bg-surface border border-cream/[0.12]">
                 <h3 className="text-xl font-semibold text-cream tracking-[-0.01em] mb-2">
                   Solicite una consulta
                 </h3>
-                <p className="text-sm text-cream/65 leading-relaxed mb-8">
+                <p className="text-[15px] text-cream/[0.72] leading-relaxed mb-8">
                   Complete el formulario y le contactaremos a la brevedad para
                   coordinar una reunión.
                 </p>
@@ -144,27 +139,6 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
         {/* ─── Google Maps ─── */}
         <AnimatedEntry delay={0.2} className="mt-16">
           <GoogleMap />
-        </AnimatedEntry>
-
-        {/* ─── WhatsApp secondary + GC branding ─── */}
-        <AnimatedEntry delay={0.3}>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-cream/[0.08]">
-            {/* WhatsApp secondary CTA */}
-            <TrackedContactLink
-              href={whatsappUrl}
-              contactTarget="firm"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2.5 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
-            >
-              <WhatsappLogo size={18} weight="fill" className="text-cream/55 group-hover:text-emphasis transition-colors duration-300" />
-              <span>
-                ¿Prefiere WhatsApp? Escríbanos directamente
-              </span>
-              <ArrowRight size={12} weight="bold" className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-            </TrackedContactLink>
-
-          </div>
         </AnimatedEntry>
       </div>
     </section>

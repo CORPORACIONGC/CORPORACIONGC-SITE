@@ -61,7 +61,7 @@ export function MarianaHero() {
         {/* Right — Photo */}
         <AnimatedEntry delay={0.3} direction="right" className="relative">
           <div className="relative md:h-[75vh] max-h-[700px] flex items-center justify-center">
-            <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+            <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] overflow-hidden">
               <Image
                 src="/images/mariana-montero.png"
                 alt="Licda. Mariana Montero Acuña"

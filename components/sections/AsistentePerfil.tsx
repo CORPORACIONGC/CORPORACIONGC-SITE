@@ -62,7 +62,7 @@ export function AsistenteHero({ a }: { a: Asistente }) {
 
         <AnimatedEntry delay={0.3} direction="right" className="relative">
           <div className="relative md:h-[75vh] max-h-[700px] flex items-center justify-center">
-            <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] rounded-[1.5rem] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.5)]">
+            <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] overflow-hidden">
               <Image src={a.portrait} alt={a.name} width={768} height={1024} priority className="w-full h-full object-cover object-top" />
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface to-transparent" />
             </div>

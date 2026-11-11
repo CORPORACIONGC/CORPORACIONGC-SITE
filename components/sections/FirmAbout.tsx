@@ -24,7 +24,7 @@ export function FirmAbout() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
               <div className="space-y-6">
                 <p className="type-lead text-cream/80 max-w-[58ch]">
-                  El Dr. &#211;scar Eduardo Gonz&#225;lez Camacho recorri&#243; cada eslab&#243;n de la jurisdicci&#243;n contencioso-administrativa costarricense. Juzg&#243; en primera instancia. Resolvi&#243; apelaciones como Juez Superior del Tribunal. Defini&#243; jurisprudencia como Magistrado de la Sala Primera durante doce a&#241;os. Coordin&#243; la jurisdicci&#243;n por nueve a&#241;os. Co-redact&#243; el C&#243;digo Procesal que la rige.
+                  El Dr. &#211;scar Eduardo Gonz&#225;lez Camacho recorri&#243; cada eslab&#243;n de la jurisdicci&#243;n contencioso-administrativa costarricense. Juzg&#243; en primera instancia. Resolvi&#243; apelaciones como Juez Superior del Tribunal. Defini&#243; jurisprudencia como Magistrado de la Sala Primera durante doce a&#241;os. Coordin&#243; la jurisdicci&#243;n por nueve a&#241;os y la redacci&#243;n del C&#243;digo Procesal que la rige.
                 </p>
                 {/* Bloque definicional para IA — visualmente oculto, semánticamente presente en el DOM */}
                 <p className="sr-only">

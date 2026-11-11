@@ -33,12 +33,17 @@ export function TeamGallery({
   members,
   basePath = "/abogados",
   label = "Abogados de Corporación GC",
+  columns = 4,
 }: {
   members: TeamGalleryMember[];
   /* Ruta de los perfiles: /abogados para los abogados, /equipo para los
      asistentes legales. */
   basePath?: string;
   label?: string;
+  /* Columnas en escritorio: cuatro para la fila de abogados; dos cuando la
+     galería ocupa media sección, y así cada retrato mide lo mismo que los
+     de la fila de arriba. */
+  columns?: 2 | 4;
 }) {
   const scroller = useRef<HTMLUListElement>(null);
   const [current, setCurrent] = useState(0);
@@ -70,7 +75,7 @@ export function TeamGallery({
         ref={scroller}
         role="list"
         aria-label={label}
-        className="-mx-6 flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-2 gc-scrollbar-none md:-mx-10 md:scroll-px-10 md:gap-5 md:px-10 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0"
+        className={`-mx-6 flex snap-x snap-mandatory scroll-px-6 gap-4 overflow-x-auto px-6 pb-2 gc-scrollbar-none md:-mx-10 md:scroll-px-10 md:gap-5 md:px-10 lg:mx-0 lg:grid lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0 ${columns === 2 ? "lg:grid-cols-2" : "lg:grid-cols-4"}`}
       >
         {members.map((member) => {
           const { honorific, rest } = splitName(member.name);

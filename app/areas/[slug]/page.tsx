@@ -21,6 +21,8 @@ import {
   WhatsappLogo,
   Warning,
   CheckCircle,
+  Phone,
+  EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr";
 import { RunningHead } from "@/components/ui/RunningHead";
 
@@ -75,7 +77,7 @@ function Instrumento({
         </h3>
         <LegalRef>{fundamento}</LegalRef>
       </div>
-      <div className="text-sm text-cream/60 leading-relaxed space-y-3">
+      <div className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] space-y-3">
         {children}
       </div>
     </div>
@@ -89,14 +91,14 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "otras-materias": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La especialidad de la casa es el Derecho Público: la defensa frente al Estado, el
           contencioso-administrativo y la casación. Junto a ella, el mismo equipo atiende seis
           materias que llegan de la mano de los mismos clientes, porque un conflicto con la
           Administración casi nunca viene solo. Cada una se aborda con el rigor técnico de un
           despacho que litiga ante la Sala Primera.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Si su asunto es de una de estas materias, escríbanos igual: le diremos con franqueza si
           es un caso para nosotros o si le conviene un especialista, y en ese caso a quién.
         </p>
@@ -229,7 +231,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "expropiaciones": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La expropiación forzosa es la privación de la propiedad o de derechos patrimoniales
           legítimos por causa de interés público legalmente comprobado, mediante el pago previo
           de una indemnización que represente el precio justo de lo expropiado (artículo 1 de la
@@ -242,7 +244,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           </Link>
           .
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados especialistas en expropiaciones en Costa Rica, en Corporación GC
           defendemos al propietario y al titular de derechos en todas las etapas: desde la
           oposición al avalúo administrativo hasta la fijación del justo precio y la indemnización
@@ -346,7 +348,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "litigio-contencioso-administrativo": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El Código Procesal Contencioso Administrativo organiza un proceso único, oral y por
           audiencias, que sustituyó al régimen de la Ley Reguladora de la Jurisdicción
           Contencioso-Administrativa de 1966, derogada por su artículo 198. Los apartados que
@@ -358,7 +360,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           </Link>
           .
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           El resultado de un proceso contencioso depende en buena medida de decisiones que se
           adoptan antes de presentar la demanda: qué conducta se impugna, qué pretensiones se
           acumulan, qué medida cautelar se solicita y qué plazo está corriendo.
@@ -471,7 +473,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "medidas-cautelares": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Las medidas cautelares protegen el objeto del proceso y la efectividad de la sentencia
           mientras se tramita el litigio contra la Administración. El Código Procesal Contencioso
           Administrativo las regula en sus artículos 19 a 30 y permite pedirlas antes de la demanda,
@@ -532,20 +534,20 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "casacion-sala-primera": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El recurso de casación contencioso-administrativo es el medio de impugnación
           extraordinario que permite llevar ante la Sala Primera de la Corte Suprema de Justicia
           las sentencias dictadas por el Tribunal Contencioso Administrativo. Está regulado en
           los artículos 134 a 152 del CPCA y constituye la última instancia jurisdiccional en la
           vía ordinaria.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           El Dr. Óscar Eduardo González Camacho fue Magistrado de la Sala Primera durante doce
           años (2002–2014). Corporación GC concentra una práctica relevante en casación
           contencioso-administrativa, con dominio de la técnica casacional y los criterios
           jurisprudenciales vigentes.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           La Sala Primera es también el tribunal de casación en materia civil y comercial, y sus
           criterios en esos campos llegan a la vida diaria. Un ejemplo reciente es su línea sobre{" "}
           <Link href="/articulos/seguro-carro-uber-costa-rica-sala-primera" className="text-emphasis hover:text-emphasis/80 transition-colors">
@@ -634,7 +636,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "asesoria-regulatoria": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Municipalidades, colegios profesionales, instituciones autónomas y ministerios nos
           consultan constantemente para que les ayudemos a redactar reglamentos, reformar
           cuerpos normativos completos y emitir dictámenes sobre la conformidad jurídica de un
@@ -646,7 +648,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           tratados y la ley, y reconoce expresamente los reglamentos autónomos del Poder
           Ejecutivo y de los entes descentralizados.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           En Corporación GC redactamos el reglamento de principio a fin, acompañamos el
           proceso de aprobación —consulta pública, audiencia a entidades, publicación— y, si
           después es impugnado, lo defendemos. Conocer qué hace caer un reglamento ante la
@@ -799,7 +801,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Puede una municipalidad o un colegio profesional contratar a un despacho privado para que le redacte un reglamento?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí. La redacción de un reglamento es una asistencia técnica especializada que se
               contrata bajo el régimen de la Ley General de Contratación Pública (Ley N.° 9986).
               El acto formal de aprobación —el acuerdo del Concejo Municipal en el caso del
@@ -815,7 +817,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cuánto tiempo dura el trámite de consulta pública obligatoria de un proyecto de reglamento?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El artículo 361 de la LGAP establece el procedimiento general. Se concede audiencia
               a las entidades descentralizadas afectadas y, separadamente, a las entidades
               representativas de intereses de carácter general o corporativo afectados, las
@@ -832,7 +834,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué materias NO puede regular un reglamento autónomo —ni municipal ni de un colegio profesional?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Dos límites técnicos derivados de la LGAP cierran la puerta. Primero, el artículo
               19 reserva a la ley el régimen jurídico de los derechos constitucionales y prohíbe
               expresamente los reglamentos autónomos en esa materia. Segundo, el artículo 124
@@ -849,7 +851,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se redacta un reglamento que resista una impugnación judicial?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Hay cuatro frentes técnicos que decidir bien en la fase de diseño. El primero,
               competencia: identificar con precisión el órgano que legalmente puede dictar la
               norma y la fuente de su potestad (ejecutiva, autónoma, municipal o de colegio
@@ -872,7 +874,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "informes-juridicos-dictamenes": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Municipalidades, instituciones autónomas, empresas públicas, ministerios y colegios
           profesionales nos consultan permanentemente para que les emitamos dictámenes jurídicos
           externos sobre la legalidad de actos, contratos, reglamentos y procedimientos de alto
@@ -883,7 +885,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           institucional para reducir el riesgo de nulidad, las contingencias patrimoniales y
           la responsabilidad personal de los jerarcas.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en dictámenes jurídicos en Costa Rica, en Corporación GC complementamos a
           la asesoría legal interna del ente y a la consulta vinculante de la Procuraduría
           General de la República con un análisis externo, rápido y especializado. Lo que nos
@@ -1033,7 +1035,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cuándo conviene encargar un dictamen externo si la institución ya tiene asesoría jurídica interna?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El dictamen externo no sustituye a la asesoría jurídica interna; la complementa
               cuando la decisión es de alto impacto, cuando hay riesgo de responsabilidad personal
               del jerarca, cuando un órgano de control —Contraloría, Defensoría, Asamblea
@@ -1050,7 +1052,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué diferencia hay entre nuestro dictamen externo y un dictamen vinculante de la Procuraduría General de la República?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Procuraduría General es el órgano superior consultivo técnico-jurídico de la
               Administración Pública y sus dictámenes son de acatamiento obligatorio para la
               Administración consultante, conforme a su Ley Orgánica. Es la primera opción para
@@ -1069,7 +1071,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿El dictamen externo sirve como respaldo si después la Contraloría o un juez cuestionan la decisión?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, y este es uno de los usos centrales del dictamen externo. Aunque no es
               vinculante, el dictamen incorporado al expediente administrativo refuerza la
               motivación del acto y ayuda a romper la imputación de culpa grave del artículo
@@ -1087,7 +1089,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Pueden las municipalidades, las instituciones autónomas y los entes descentralizados contratar dictámenes externos?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí. La contratación de asesoría profesional especializada es un servicio que se
               adquiere bajo el régimen de la Ley General de Contratación Pública (Ley N.° 9986),
               en alguna de sus modalidades según el monto y el objeto. Cuando se trata de un
@@ -1107,7 +1109,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "contratacion-publica": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La contratación pública comprende todos los procedimientos mediante los cuales las
           instituciones del Estado adquieren bienes, contratan servicios o ejecutan obras públicas.
           La Ley General de Contratación Pública (Ley N.° 9986) y su Reglamento regulan estos
@@ -1115,7 +1117,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           oferentes y terceros interesados cuestionar las decisiones administrativas en cada fase
           del proceso de contratación.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados especializados en contratación pública en Costa Rica, en Corporación GC
           asesoramos a entidades públicas y empresas privadas en todas las fases del ciclo de
           contratación: desde la formulación de ofertas y la participación en procedimientos de
@@ -1229,7 +1231,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-4">
           Quién atiende estos casos
         </h2>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Los recursos en contratación pública se litigan ante la Contraloría General de la
           República y la propia Administración a través de SICOP, y su fase judicial ante el
           Tribunal Contencioso Administrativo y la Sala Primera de la Corte Suprema de Justicia.
@@ -1251,7 +1253,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "derecho-administrativo": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El Derecho Administrativo regula la organización y el funcionamiento de la Administración
           Pública, así como las relaciones entre esta y los administrados. La Ley General de la
           Administración Pública (LGAP, Ley N.° 6227 del 2 de mayo de 1978) es el cuerpo
@@ -1260,7 +1262,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           y los recursos que pueden interponer los administrados cuando consideren que sus derechos
           han sido afectados.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en derecho administrativo en Costa Rica, en Corporación GC representamos a
           personas físicas, empresas y entes públicos en procedimientos administrativos ante la
           Administración centralizada y descentralizada, y en la preparación de la vía
@@ -1365,7 +1367,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "derecho-notarial": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El Derecho Notarial regula la función del notario público como depositario de la fe
           pública: el profesional autorizado por el Estado para dar autenticidad y certeza
           jurídica a los actos y contratos que las personas celebran. En Costa Rica, el Código
@@ -1373,7 +1375,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           la función notarial, los requisitos de los instrumentos públicos y el régimen
           disciplinario de los notarios.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Corporación GC cuenta con notarios públicos activos que brindan servicios notariales
           completos, con especial fortaleza en actos vinculados al Derecho Público: protocolización
           de acuerdos de órganos colegiados, constitución de fundaciones y asociaciones de interés
@@ -1506,7 +1508,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué requisitos debe cumplir una escritura pública en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Los artículos 99 a 117 del Código Notarial (Ley N.° 7764) regulan los requisitos formales
               de la escritura pública. Debe contener un encabezamiento con el número de escritura, la
               hora, fecha y lugar del otorgamiento; la comparecencia con la identificación plena de los
@@ -1526,7 +1528,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué trámites notariales se necesitan para comprar un inmueble en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La compraventa de bienes inmuebles debe formalizarse en escritura pública conforme al
               artículo 99 del Código Notarial y a los artículos 1049 a 1082 del Código Civil. El notario
               realiza un estudio registral para verificar la titularidad del bien en el Registro Público,
@@ -1546,7 +1548,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es la protocolización de documentos y cuándo se necesita?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La protocolización es el acto notarial mediante el cual se incorpora al protocolo del
               notario un documento que originalmente no fue otorgado como escritura pública. Los artículos
               118 a 122 del Código Notarial regulan este acto y establecen sus requisitos formales. Se
@@ -1569,13 +1571,13 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "recursos-de-amparo": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El recurso de amparo es la garantía constitucional que protege los derechos
           fundamentales frente a la autoridad pública o sujetos privados en posición de
           poder. Se tramita ante la Sala Constitucional bajo un procedimiento sumario y
           preferente, regulado en la Ley de la Jurisdicción Constitucional (Ley N.° 7135).
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en recursos de amparo en Costa Rica, en Corporación GC representamos
           a personas físicas y jurídicas en la interposición y litigio del amparo, así como
           en la posterior ejecución e indemnización en vía contencioso-administrativa.{" "}
@@ -1636,14 +1638,14 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "acciones-de-inconstitucionalidad": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La acción de inconstitucionalidad es el instrumento mediante el cual se solicita a la
           Sala Constitucional la declaración de inconstitucionalidad de leyes, decretos
           ejecutivos, reglamentos, disposiciones de alcance general y actos sujetos al derecho
           público que vulneren normas o principios constitucionales. La Ley de la Jurisdicción
           Constitucional (Ley N.° 7135) regula esta acción en sus artículos 73 a 95.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Corporación GC asesora y representa a personas físicas y jurídicas en la interposición
           de acciones de inconstitucionalidad, tanto por vía incidental —derivada de un asunto
           pendiente de resolución judicial o administrativa— como por legitimación directa en
@@ -1733,7 +1735,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "procedimientos-sancionatorios": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Los procedimientos sancionatorios administrativos son los procesos mediante los cuales
           la Administración Pública investiga, determina y sanciona conductas contrarias al
           ordenamiento jurídico cometidas por administrados o por sus propios servidores. La Ley
@@ -1742,7 +1744,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           326, mientras que los artículos 39 y 41 de la Constitución Política garantizan el debido
           proceso y la defensa efectiva.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en procedimientos administrativos sancionatorios en Costa Rica, en
           Corporación GC asesoramos y representamos a personas físicas y jurídicas sometidas a
           estos procedimientos, garantizando el respeto de las garantías constitucionales del
@@ -1845,7 +1847,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-4">
           Guías de defensa para el administrado
         </h2>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Hemos preparado guías prácticas, escritas desde la perspectiva de quien recibe el
           procedimiento, que explican los plazos, los derechos y las vías de impugnación de esta
           materia:{" "}
@@ -1868,7 +1870,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-4">
           Quién atiende estos casos
         </h2>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La validez de una sanción administrativa se decide, en última instancia, ante la
           jurisdicción contencioso-administrativa. El equipo de Corporación GC es dirigido por el{" "}
           <Link href="/abogados/oscar-gonzalez" className="text-emphasis hover:text-emphasis/80 transition-colors">
@@ -1887,7 +1889,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "empleo-publico": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El empleo público en Costa Rica es una relación de derecho público —no un contrato
           laboral común— y goza de una garantía constitucional de estabilidad: el servidor solo
           puede ser removido por una causal de despido justificado o por reducción forzosa de
@@ -1896,7 +1898,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           unificó el régimen y reguló el procedimiento de despido— y, supletoriamente, la Ley
           General de la Administración Pública y el Código de Trabajo.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en empleo público en Costa Rica, en Corporación GC representamos a
           servidores públicos frente a despidos, suspensiones y sanciones, y asesoramos a
           instituciones del Estado en la tramitación correcta de sus procedimientos. Los plazos
@@ -2014,7 +2016,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Pueden despedir a un servidor público en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, pero solo con causa legal y procedimiento previo. El artículo 192 de la
               Constitución Política y el artículo 37 del Estatuto de Servicio Civil garantizan la
               estabilidad: el servidor nombrado por idoneidad comprobada solo puede ser removido por
@@ -2030,7 +2032,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué procedimiento debe seguir la Administración para despedir a un funcionario?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El artículo 21 de la Ley N.° 10159 establece un único procedimiento administrativo
               especial de despido que debe concluir en dos meses. El jerarca nombra un órgano
               director que formula los cargos por escrito y da traslado al servidor por quince días
@@ -2047,7 +2049,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es el Tribunal de Servicio Civil y puede ordenar la reinstalación?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El Tribunal de Servicio Civil conoce, en alzada, la apelación contra el despido de los
               servidores cubiertos por el Estatuto de Servicio Civil. Conforme al artículo 22 de la
               Ley N.° 10159, la apelación se le remite en ambos efectos y su resolución agota la vía
@@ -2062,7 +2064,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Ante qué jurisdicción se impugna un despido en el sector público?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Depende del contenido de la pretensión. Tras la Reforma Procesal Laboral, el artículo
               420 del Código de Trabajo atribuye a la jurisdicción laboral las impugnaciones
               relativas al empleo público según su contenido material y el régimen jurídico
@@ -2083,7 +2085,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "servicio-publico": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La regulación de los servicios públicos costarricenses se articula a través de dos cuerpos
           normativos centrales: la Ley de la Autoridad Reguladora de los Servicios Públicos
           (Ley N.° 7593) y la Ley General de Telecomunicaciones (Ley N.° 8642). La ARESEP fija
@@ -2093,7 +2095,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           específicamente de regular, supervisar, vigilar y controlar el ordenamiento jurídico de
           las telecomunicaciones (art. 6, inciso 27, de la Ley 8642).
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados ante ARESEP y SUTEL en Costa Rica, en Corporación GC representamos a
           prestadores de servicios públicos —cooperativas de electrificación, operadores de
           telecomunicaciones, concesionarios de transporte y otros— en solicitudes tarifarias,
@@ -2220,7 +2222,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se fijan las tarifas de los servicios públicos en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Las tarifas las fija la ARESEP bajo el principio de servicio al costo (arts. 3.b y 31
               de la Ley 7593): deben contemplar únicamente los costos necesarios para prestar el
               servicio y permitir una retribución competitiva, sin atentar contra el equilibrio
@@ -2241,7 +2243,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué recursos existen contra una resolución de ARESEP o SUTEL?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Contra las resoluciones del Regulador General proceden la revocatoria y la apelación;
               la Junta Directiva de la ARESEP las resuelve en alzada y agota la vía administrativa
               (art. 53, incisos b y k, de la Ley 7593). La Ley 7593 no fija plazos especiales, por
@@ -2260,7 +2262,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué sanciones puede imponer ARESEP o SUTEL a un prestador?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               En servicios regulados por la ARESEP, el artículo 38 de la Ley 7593 prevé multas de
               cinco a diez veces el valor del daño causado —o de cinco a veinte salarios base cuando
               no se pueda estimar— por conductas como el cobro de precios distintos de los
@@ -2283,7 +2285,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "materia-municipal": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El derecho municipal se sustenta en la autonomía que la Constitución Política reconoce a
           las municipalidades en sus artículos 168 a 175 y que desarrolla el Código Municipal
           (Ley N.° 7794). La municipalidad es una persona jurídica estatal, con patrimonio propio y
@@ -2291,7 +2293,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           los intereses y servicios de su cantón, fija las tasas y los precios de sus servicios y
           propone sus tributos a la Asamblea Legislativa.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en derecho municipal en Costa Rica, en Corporación GC impugnamos los actos y
           acuerdos municipales que lesionan a vecinos y empresas —patentes denegadas, cobros de
           tributos, clausuras, acuerdos del Concejo— y asesoramos a las propias municipalidades. La
@@ -2409,7 +2411,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se impugna una decisión de la municipalidad en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Depende del órgano que la dictó. Contra los acuerdos del Concejo Municipal caben
               revocatoria —ante el propio Concejo— y apelación —ante el Tribunal Contencioso-
               Administrativo, que actúa como jerarca impropio—, dentro del quinto día (arts. 162 y 165
@@ -2427,7 +2429,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué pasa si me deniegan o suspenden la patente comercial?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Para ejercer una actividad lucrativa se requiere la licencia municipal, que se obtiene
               pagando el impuesto de patente (art. 88 del Código Municipal). La municipalidad debe
               resolver la solicitud en treinta días naturales; si no responde y los requisitos están
@@ -2444,7 +2446,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué alcance tiene la autonomía municipal frente al Gobierno Central?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La autonomía municipal tiene rango constitucional. El artículo 170 de la Constitución
               reconoce a las corporaciones municipales como autónomas, y el artículo 4 del Código
               Municipal (Ley N.° 7794) la concreta en autonomía política, administrativa y financiera:
@@ -2464,7 +2466,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "dominio-publico": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El régimen demanial costarricense se construye sobre dos artículos del Código Civil. El
           artículo 261 define como «cosas públicas» tanto las que por ley están destinadas de modo
           permanente a un servicio de utilidad general como aquellas «de que todos pueden aprovecharse
@@ -2473,7 +2475,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           inalienabilidad, imprescriptibilidad e inembargabilidad—. Solo una desafectación legal puede
           devolverlas al tráfico jurídico privado.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en dominio público en Costa Rica, en Corporación GC defendemos a
           concesionarios, permisionarios y administrados frente a revocatorias y caducidades de
           concesiones, desalojos administrativos y denegatorias de permisos de uso sobre bienes del
@@ -2598,7 +2600,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es una «cosa pública» y por qué no puede venderse ni embargarse?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El artículo 261 del Código Civil define las cosas públicas como las que «por ley, están
               destinadas de modo permanente a cualquier servicio de utilidad general» y aquellas «de
               que todos pueden aprovecharse por estar entregadas al uso público»: plazas, calles,
@@ -2616,7 +2618,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué diferencia hay entre una concesión y un permiso de uso?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El permiso de uso es un título precario regulado por el artículo 154 de la LGAP: la
               Administración puede revocarlo por razones de oportunidad o conveniencia «sin
               responsabilidad», aunque la propia norma exige que la revocación «no sea intempestiva
@@ -2634,7 +2636,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Puede la Administración desalojar a quien ocupa un bien demanial sin permiso?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, en virtud de la autotutela administrativa, pero con debido proceso. El procedimiento
               ordinario de los artículos 308 y 309 de la LGAP exige notificación, traslado de cargos,
               comparecencia oral y privada y derecho de defensa; su omisión causa nulidad. La orden de
@@ -2655,7 +2657,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "zona-maritimo-terrestre": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La zona marítimo terrestre (ZMT) constituye un régimen especial de
           dominio público regulado por la Ley sobre la Zona Marítimo Terrestre
           (Ley N.° 6043 del 2 de marzo de 1977) y su Reglamento. La ZMT
@@ -2667,7 +2669,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           imprescriptibles, y su uso por particulares requiere concesión otorgada
           conforme a los procedimientos que la Ley 6043 establece.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           La práctica en materia de ZMT comprende la obtención y defensa de
           concesiones, la impugnación de sanciones administrativas y la
           intervención ante los órganos competentes —municipalidades, ICT e
@@ -2786,7 +2788,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es la zona marítimo terrestre y qué restricciones tiene?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La zona marítimo terrestre (ZMT) es una franja de doscientos metros de ancho a lo largo
               de los litorales atlántico y pacífico de Costa Rica, medida horizontalmente a partir de
               la línea de la pleamar ordinaria, conforme a los artículos 1 a 9 de la Ley N.° 6043. Se
@@ -2807,7 +2809,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se obtiene una concesión en la zona restringida de la ZMT?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Las concesiones en la zona restringida están reguladas en los artículos 38 a 56 de la Ley
               6043. El artículo 39 establece que las concesiones se otorgan por acuerdo del Concejo
               Municipal, previo cumplimiento de los requisitos legales y con la aprobación del Instituto
@@ -2827,7 +2829,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué consecuencias tiene construir sin permiso en la zona marítimo terrestre?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Los artículos 57 a 65 de la Ley 6043 establecen un régimen sancionatorio severo para las
               construcciones y ocupaciones ilegales en la ZMT. El artículo 57 dispone que quien
               construya, realice obras o se instale sin la debida autorización será sancionado con la
@@ -2851,7 +2853,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "derecho-urbanistico": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El derecho urbanístico regula la planificación del territorio y el control del desarrollo
           urbano. Sus fuentes principales son la Ley de Planificación Urbana (Ley N.° 4240) y la Ley
           de Construcciones (Ley N.° 833), que cada municipalidad aplica a través de su plan regulador
@@ -2859,7 +2861,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           competencia de los gobiernos municipales para planificar y controlar el desarrollo urbano de
           su cantón (art. 15), en desarrollo del artículo 169 de la Constitución Política.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en derecho urbanístico en Costa Rica, en Corporación GC defendemos a
           propietarios y desarrolladores frente a denegatorias de permisos de construcción, negativas
           de uso del suelo, clausuras, restricciones de zonificación y cargas en fraccionamientos y
@@ -2981,7 +2983,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es un plan regulador y cómo afecta mi propiedad?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El plan regulador es el instrumento de planificación local que define la zonificación y
               los usos del suelo del cantón —residencial, comercial, industrial, de protección— junto
               con alturas, lotes, retiros y densidades (arts. 16 y 24 de la Ley de Planificación Urbana,
@@ -2999,7 +3001,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué hago si la municipalidad me deniega un permiso de construcción o un uso del suelo?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La denegatoria debe ser motivada y ajustarse a las causales legales (art. 58 de la Ley de
               Planificación Urbana; art. 74 de la Ley de Construcciones, Ley N.° 833). Se impugna con los
               recursos del Código Municipal: revocatoria y apelación dentro del quinto día, que se elevan
@@ -3017,7 +3019,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Pueden restringir o reservar mi terreno para uso público sin pagarme?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El artículo 45 de la Constitución protege la propiedad: solo puede privarse de ella por
               interés público legalmente comprobado y previa indemnización. Al urbanizar o fraccionar
               fuera del cuadrante hay un deber de ceder gratuitamente áreas de uso público —entre un 5%
@@ -3037,7 +3039,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "materia-presupuestaria": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La materia presupuestaria y de hacienda pública se articula sobre tres cuerpos normativos:
           la Constitución Política (arts. 176 a 187 y 183-184), la Ley Orgánica de la Contraloría
           General de la República (Ley N.° 7428) y la Ley de Administración Financiera de la
@@ -3046,7 +3048,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Ley 7428); sus criterios y disposiciones son de acatamiento obligatorio para los sujetos
           pasivos y prevalecen sobre cualquier disposición en contrario (art. 12).
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados ante la Contraloría en Costa Rica, en Corporación GC defendemos a
           funcionarios, jerarcas, regidores, instituciones y contratistas frente a procedimientos
           sancionatorios, improbaciones presupuestarias, negativas de refrendo, declaratorias de
@@ -3181,7 +3183,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué pasa si la Contraloría me improba el presupuesto o me niega un refrendo?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               En la improbación, rige el presupuesto del año inmediato anterior; si la improbación es
               parcial, el del año anterior rige solamente en cuanto a lo improbado, hasta que se
               corrijan las deficiencias (art. 18 de la Ley 7428). En el refrendo, la Contraloría tiene
@@ -3198,7 +3200,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cuáles son las sanciones que puede imponer la Contraloría a un funcionario?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Contraloría no impone la sanción directamente: la recomienda al órgano competente con
               criterio técnico vinculante, y este debe cumplirla en el plazo que ella fije (art. 68 de
               la Ley 7428). El catálogo de sanciones está en el artículo 113 de la Ley 8131: amonestación
@@ -3216,7 +3218,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se impugna un acto de la Contraloría?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Depende del acto. Los actos definitivos que lesionen derechos subjetivos o intereses
               legítimos están sujetos al régimen común de impugnación: LGAP en sede administrativa y
               CPCA en sede judicial (art. 33 de la Ley 7428). Pero el artículo 34 exceptúa expresamente
@@ -3237,7 +3239,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "comercio-internacional": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El comercio internacional en Costa Rica se rige por un marco normativo
           que incluye la Ley de Creación del Ministerio de Comercio Exterior y de la
           Promotora del Comercio Exterior de Costa Rica (Ley N.° 7638 del
@@ -3249,7 +3251,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           tratados multilaterales de la Organización Mundial del Comercio (OMC) y
           los tratados de libre comercio (TLC) suscritos por el país.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           La práctica en comercio internacional abarca las investigaciones por
           prácticas desleales de comercio, las medidas de defensa comercial, la
           solución de controversias ante organismos internacionales y la
@@ -3375,7 +3377,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es una investigación antidumping y cómo se inicia en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Las investigaciones antidumping tienen por objeto determinar si las importaciones de un
               producto se realizan a precios inferiores a su valor normal en el país de origen (dumping)
               y si dicha práctica causa daño importante a la producción nacional. La Ley N.° 7638
@@ -3395,7 +3397,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué son las medidas de salvaguardia y cuándo se aplican?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Las medidas de salvaguardia son instrumentos de defensa comercial que permiten restringir
               temporalmente las importaciones de un producto cuando estas se incrementan en cantidades
               tales que causan o amenazan causar un daño grave a la producción nacional. La Ley de
@@ -3416,7 +3418,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se resuelven las disputas comerciales internacionales en que participa Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Las controversias comerciales internacionales se canalizan a través de mecanismos
               institucionales establecidos en los acuerdos multilaterales y bilaterales. El Entendimiento
               relativo a las Normas y Procedimientos por los que se rige la Solución de Diferencias de
@@ -3439,7 +3441,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "derecho-civil": (
   <>
     <section className="mb-12">
-      <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+      <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
         El Derecho Civil regula las relaciones jurídicas entre particulares: obligaciones,
         contratos, responsabilidad por daños, derechos reales, sucesiones y familia patrimonial.
         En Costa Rica, el Código Civil (Ley N.° 63 del 28 de septiembre de 1887) y el Código
@@ -3447,7 +3449,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         central. La Ley 9342 instauró un sistema procesal oral e inmediato que transformó la
         litigación civil en el país.
       </p>
-      <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+      <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
         Si bien el núcleo de Corporación GC es el Derecho Público, la firma brinda cobertura
         en materia civil para clientes que requieren un acompañamiento jurídico integral. A
         continuación se describen los principales instrumentos procesales que se emplean en
@@ -3573,7 +3575,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo funciona una demanda por responsabilidad civil en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La responsabilidad civil en Costa Rica se fundamenta en el Código Civil. La responsabilidad
               contractual surge del incumplimiento de una obligación pactada (arts. 1022 y ss.), mientras
               que la extracontractual o aquiliana nace de un hecho ilícito que causa daño sin vínculo
@@ -3593,7 +3595,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué es el proceso monitorio y cómo sirve para cobrar deudas judicialmente?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El proceso monitorio es el instrumento procesal diseñado para el cobro de obligaciones
               dinerarias líquidas, exigibles y de plazo vencido, regulado en los artículos 100 a 107
               de la Ley 9342 (Código Procesal Civil). El acreedor presenta la demanda acompañada del
@@ -3613,7 +3615,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se tramita un proceso sucesorio en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El proceso sucesorio regula la transmisión del patrimonio de una persona fallecida a sus
               herederos y legatarios. El Código Civil (arts. 520 a 635) distingue entre sucesión
               testamentaria, cuando existe testamento válido, y sucesión legítima o intestada, cuando
@@ -3639,7 +3641,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 "derecho-de-familia": (
   <>
     <section className="mb-12">
-      <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+      <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
         El Derecho de Familia regula las relaciones jurídicas que nacen del matrimonio, la
         unión de hecho, la filiación, la patria potestad y la obligación alimentaria. En Costa
         Rica, el Código de Familia (Ley N.° 5476 del 21 de diciembre de 1973) y la Ley de
@@ -3647,7 +3649,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         marco normativo principal. La Ley contra la Violencia Doméstica (Ley N.° 7586 del 10
         de abril de 1996) complementa la protección en situaciones de violencia intrafamiliar.
       </p>
-      <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+      <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
         Aunque la especialidad central de Corporación GC es el Derecho Público, la firma
         ofrece representación en materia de familia para clientes que necesitan un
         acompañamiento jurídico integral. A continuación se detallan los principales
@@ -3775,7 +3777,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cuáles son las causales de divorcio en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El Código de Familia regula la disolución del vínculo matrimonial en los artículos 48 a
               65. Existen dos vías principales. El divorcio por mutuo consentimiento (art. 48.7) procede
               cuando ambos cónyuges acuerdan la separación y presentan un convenio que regula la guarda
@@ -3795,7 +3797,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se fija una pensión alimentaria y qué pasa si no se paga?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Ley de Pensiones Alimentarias (Ley N.° 7654) regula la obligación alimentaria como un
               deber recíproco entre cónyuges, ascendientes y descendientes. El artículo 1 define los
               alimentos como las prestaciones para satisfacer necesidades de sustento, habitación,
@@ -3816,7 +3818,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se determina la guarda de los hijos menores cuando los padres se separan?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Los artículos 140 a 159 del Código de Familia regulan la patria potestad, la guarda, la
               crianza y la educación de los hijos menores. La patria potestad corresponde a ambos
               progenitores conjuntamente (art. 140) y comprende la custodia del menor, su representación
@@ -3841,7 +3843,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
 "derecho-laboral": (
   <>
     <section className="mb-12">
-      <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+      <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
         El Derecho Laboral regula las relaciones entre empleadores y trabajadores, la
         resolución de conflictos individuales y colectivos de trabajo, y la protección de los
         derechos laborales fundamentales. En Costa Rica, el Código de Trabajo (Ley N.° 2 del
@@ -3850,7 +3852,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         Ley 9343 instauró un proceso oral, concentrado y por audiencias que modernizó la
         jurisdicción laboral.
       </p>
-      <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+      <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
         Si bien la especialidad principal de Corporación GC es el Derecho Público, la firma
         ofrece representación en litigios laborales para clientes que requieren cobertura
         jurídica integral, con énfasis en empleo público y en las interfaces entre la
@@ -3981,7 +3983,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué derechos tiene un trabajador despedido sin justa causa en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El despido sin justa causa genera el derecho del trabajador al pago de varias prestaciones
               conforme al Código de Trabajo. El preaviso (art. 28) corresponde según la antigüedad del
               trabajador; el auxilio de cesantía (art. 29) se calcula con base en el promedio salarial
@@ -4002,7 +4004,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo funciona el proceso laboral oral en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Ley N.° 9343 de Reforma Procesal Laboral transformó el proceso laboral de un sistema
               escrito a uno oral, concentrado y por audiencias. Los artículos 422 a 457 del Código de
               Trabajo reformado regulan el proceso ordinario. Los principios rectores son oralidad,
@@ -4023,7 +4025,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué protección existe contra la discriminación laboral en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Ley N.° 9343 de Reforma Procesal Laboral incorporó un procedimiento especial de tutela
               contra actos discriminatorios en el ámbito laboral, regulado en los artículos 404 a 410
               del Código de Trabajo reformado. El artículo 404 prohíbe toda discriminación por razones
@@ -4052,7 +4054,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "compliance-publico-anticorrupcion": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública (Ley
           N.° 8422) construyó en Costa Rica un régimen articulado en tres planos: un régimen
           preventivo (prohibiciones, incompatibilidades, declaración jurada de bienes), un
@@ -4065,7 +4067,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           prescripción; y la Ley N.° 10373 (2023, OCDE) incorporó todo un capítulo nuevo de
           medidas cautelares inmediatas, decomiso y destino del dinero decomisado.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados anticorrupción en Costa Rica, en Corporación GC asesoramos a funcionarios
           públicos sujetos a declaración jurada e incompatibilidades, a empresas y consorcios que
           contratan con el Estado, y a quienes resultan investigados o denunciados —en sede
@@ -4250,7 +4252,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Quiénes están obligados a presentar la declaración jurada de bienes ante la Contraloría?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El artículo 21 de la Ley 8422 obliga a un universo amplio: presidente y
               vicepresidentes, diputados, ministros y viceministros, magistrados, jueces y
               fiscales, contralor y subcontralor, defensor, procurador general, regulador
@@ -4269,7 +4271,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Puede la Contraloría obligar a un funcionario a declarar aun sin estar en la lista del artículo 21?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí. El artículo 23 de la Ley 8422 autoriza a la Contraloría —y al Ministerio
               Público, por medio del fiscal general— a exigir, por orden singular y en cualquier
               momento, la declaración jurada a todo funcionario público que administre o custodie
@@ -4282,7 +4284,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Pueden congelar las cuentas y bienes de una empresa o un funcionario antes del juicio?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí. Desde la Ley N.° 10373 de 2023, el artículo 67 de la Ley 8422 obliga a las
               entidades financieras y al Registro Nacional —cuando la UIF lo comunica
               formalmente— a congelar o inmovilizar de inmediato productos financieros, dinero,
@@ -4298,7 +4300,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿En qué se diferencia el procedimiento ante la CGR del procedimiento penal?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El procedimiento ante la CGR es administrativo: declara responsabilidad
               administrativa con sanciones del artículo 39 (amonestación, suspensión de quince a
               treinta días, separación del cargo o cancelación de credencial), aplica el régimen
@@ -4320,7 +4322,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "gobierno-digital-inteligencia-artificial-datos": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La transformación digital del Estado costarricense y la implementación de inteligencia
           artificial en la administración pública plantean desafíos jurídicos sin precedentes en
           materia de legalidad, debido proceso y protección de datos personales. La Estrategia
@@ -4329,7 +4331,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           legislativo, configuran un marco regulatorio emergente que requiere asesoría jurídica
           especializada.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Corporación GC es la única firma en Costa Rica que combina experiencia profunda en
           derecho administrativo constitucional con especialización en gobernanza de IA,
           transparencia algorítmica y cumplimiento de protección de datos en el sector público.
@@ -4411,7 +4413,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Puede una institución pública tomar decisiones automatizadas con IA?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, pero debe cumplir con los principios constitucionales de legalidad (art. 11 CP),
               debido proceso (art. 39 CP) y motivación del acto administrativo (art. 136 LGAP).
               Esto implica que la decisión algorítmica debe ser explicable, impugnable y no
@@ -4425,7 +4427,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué sanciones impone PRODHAB por incumplimiento?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La PRODHAB puede imponer sanciones que incluyen apercibimiento, suspensión de
               operaciones de tratamiento de datos y multas conforme a la Ley N.° 8968. Los
               procedimientos sancionatorios de PRODHAB son procedimientos administrativos
@@ -4441,7 +4443,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "defensa-regulatoria-sectorial": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Las autoridades reguladoras económicas del país ejercen potestades sancionatorias y de
           intervención sobre amplios sectores de la actividad económica. Cada una se rige por su
           propia ley orgánica y por un régimen disciplinario propio, con tipos de infracción,
@@ -4453,7 +4455,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           la Ley General de Salud (Ley 5395), el Servicio Nacional de Salud Animal (Senasa, Ley
           8495) y el Servicio Fitosanitario del Estado (SFE, Ley 7664).
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en defensa regulatoria sectorial, en Corporación GC representamos a
           empresas y a sus directivos en cada fase del procedimiento sancionatorio: respuesta al
           traslado de cargos, evacuación de la prueba, alegatos finales, recursos administrativos,
@@ -4608,7 +4610,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo es realmente el procedimiento sancionatorio ante una superintendencia financiera?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Comienza con un acto de apertura del procedimiento donde la Superintendencia
               traslada los cargos al investigado, le otorga un plazo para defenderse, ofrecer
               prueba y acceder al expediente. Aplican supletoriamente las reglas del libro
@@ -4625,7 +4627,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué pasa si la Coprocom investiga a mi empresa por un acuerdo con competidores?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Si los hechos investigados configuran alguno de los supuestos del artículo 11 de
               la Ley 7472 —fijación concertada de precios, limitación de producción, división
               del mercado, coordinación en licitaciones, abstención coordinada de comprar o
@@ -4643,7 +4645,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Pueden sancionar directamente a los directivos de mi empresa, además de la sociedad?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, y es una de las características más subestimadas del régimen regulatorio
               costarricense. El artículo 155 bis de la Ley 7558 permite sancionar a miembros del
               órgano de dirección, gerente, subgerentes, representantes legales y auditor interno
@@ -4660,7 +4662,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿La sanción del regulador pone fin al asunto o se puede llevar al contencioso?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La sanción firme del regulador agota la vía administrativa, pero se impugna ante
               la jurisdicción contencioso-administrativa con las pretensiones del artículo 42 del
               CPCA (anulación, restablecimiento de la situación jurídica, indemnización por daños
@@ -4682,7 +4684,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "regulacion-ambiental-mercados-carbono": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El derecho ambiental administrativo costarricense se sustenta en el artículo 50 de la
           Constitución Política, que reconoce el derecho a un ambiente sano y ecológicamente
           equilibrado, la Ley Orgánica del Ambiente (Ley N.° 7554) y la Ley Forestal
@@ -4690,7 +4692,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           y la evaluación de impacto ambiental ante SETENA se ha convertido en un procedimiento
           administrativo de alta complejidad.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Paralelamente, el Plan Nacional de Descarbonización 2019-2050 y los mercados de carbono
           administrados por FONAFIFO abren oportunidades para empresas que buscan estructurar
           créditos de carbono y cumplir con el Mecanismo de Ajuste en Frontera por Carbono (CBAM)
@@ -4770,7 +4772,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué hago si SETENA deniega la viabilidad ambiental de mi proyecto?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La resolución denegatoria de SETENA es un acto administrativo impugnable.
               Puede interponerse un recurso de revocatoria con apelación en subsidio en vía
               administrativa, y si se confirma la denegatoria, una demanda contencioso-administrativa
@@ -4788,7 +4790,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "alianzas-publico-privadas-infraestructura": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Costa Rica vive un momento de transición en infraestructura. La Ley General de Concesión
           de Obras Públicas con Servicios Públicos (Ley N.° 7762 de 1998, reformada por las leyes
           N.° 8643 de 2008 y N.° 9701 de 2019) sigue siendo el régimen vigente para los contratos
@@ -4804,7 +4806,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           </Link>
           .
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Como abogados en concesiones y APP en Costa Rica, en Corporación GC asesoramos a
           concesionarios, consorcios, inversionistas y al sector público en la estructuración de
           proyectos, el refrendo de contratos, la objeción de carteles, la apelación de
@@ -4941,7 +4943,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿La Ley 7762 sigue vigente o ya rige la nueva Ley Marco APP?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Ley 7762 sigue siendo el régimen vigente. El expediente 24.009 (Ley Marco APP) se
               aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la
               Sala Constitucional, que el 9 de setiembre de 2026 declaró inconstitucionales, entre
@@ -4959,7 +4961,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cómo se impugnan los actos del CNC, MOPT o CGR que afectan un contrato de concesión vigente?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Se impugnan en sede contencioso-administrativa contra los actos del Consejo Nacional
               de Concesiones, del MOPT o de la Contraloría que afecten el contrato o su ejecución.
               La demanda se rige por el CPCA: pretensiones del artículo 42 —anulación,
@@ -4975,7 +4977,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué cambiaría si se aprueba la Ley Marco APP?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               En los términos del texto consultado, tres cambios estructurales: (i) crea la Agencia
               Nacional de Asociaciones Público-Privadas (ANAPP), con personalidad jurídica
               instrumental, que sustituye al Consejo Nacional de Concesiones y cuya creación la Sala
@@ -4997,7 +4999,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "regulacion-fintech-criptoactivos": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Costa Rica ya regula a los proveedores de servicios de activos virtuales. La Ley
           N.° 10961, publicada en el Alcance 78 a La Gaceta del 19 de junio de 2026, adicionó el
           artículo 15 quater a la Ley N.° 7786 y obliga a los VASP —exchanges, custodios,
@@ -5009,7 +5011,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           SUGEF y CONASSIF son procedimientos administrativos regidos por la Ley General de la
           Administración Pública, territorio natural de Corporación GC.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Publicamos una guía completa del trámite, en{" "}
           <Link href="/articulos/registro-vasp-sugef-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
             español
@@ -5134,7 +5136,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Existe una licencia cripto en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La Ley N.° 10961 creó un registro obligatorio ante SUGEF con supervisión antilavado,
               y el propio artículo 15 quater dispone que la inscripción «no representa una
               autorización de operación». La ley dejó fuera la regulación prudencial, la conducta
@@ -5149,7 +5151,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Cuándo abre el registro y qué puede hacerse mientras tanto?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               La ley rige desde el 19 de setiembre de 2026. El reglamento del CONASSIF, que
               definirá la plataforma, los formularios, los umbrales y los requisitos documentales,
               sigue pendiente de emisión, y al 18 de setiembre de 2026 el registro de normativa en
@@ -5164,7 +5166,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Una empresa extranjera puede inscribirse como VASP en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, mediante una sociedad costarricense. El proyecto exige resolver desde el inicio
               varios requisitos que solo se ven desde la práctica local —la representación, la
               relación bancaria y la coherencia del perfil de la sociedad ante las autoridades
@@ -5176,7 +5178,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué pasa si mi empresa presta estos servicios sin inscribirse?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               El artículo 81 reformado sanciona la negativa a inscribirse con multa de dos a cien
               salarios base, y los fallos de registro en operaciones iguales o superiores a
               US$10.000 con multa del 5 % al 50 % del monto de la transacción. Las sanciones
@@ -5193,7 +5195,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "derecho-electoral-financiamiento-politico": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El derecho electoral costarricense está regulado por el Código Electoral (Ley N.° 8765),
           la nueva Ley de Fortalecimiento del Financiamiento Político (Ley N.° 10755, septiembre
           2025) y la jurisdicción exclusiva del Tribunal Supremo de Elecciones (TSE) como tribunal
@@ -5201,7 +5203,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           que participaron en las elecciones de febrero 2026 y las próximas elecciones municipales
           en febrero 2028, la demanda de asesoría electoral es creciente.
         </p>
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mt-4">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Corporación GC es la primera firma en Costa Rica con práctica dedicada al derecho
           electoral desde la perspectiva del derecho público constitucional.
         </p>
@@ -5274,7 +5276,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Puede mi partido político obtener la contribución estatal?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, conforme al artículo 96 constitucional, los partidos que superen el 4% de los
               votos válidos emitidos tienen derecho a la contribución estatal (0.19% del PIB).
               La liquidación debe presentarse ante el TSE con documentación contable completa de
@@ -5290,7 +5292,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "telecomunicaciones-espectro-5g": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           El sector de telecomunicaciones costarricense atraviesa una transformación histórica
           con la subasta 5G de enero 2025 (bandas 700, 2300, 3500, 26 y 28 GHz), que adjudicó
           espectro a 7 operadores con $310M en inversión comprometida y obligación de desplegar
@@ -5369,7 +5371,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Qué pasa si un concesionario 5G no cumple con las obligaciones de despliegue?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               SUTEL puede iniciar un procedimiento sancionatorio por incumplimiento de condiciones
               de concesión conforme a la Ley N.° 8642. Las sanciones pueden incluir multas,
               reducción del plazo de concesión o revocatoria en casos graves. El procedimiento
@@ -5387,7 +5389,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
   "energia-renovable-transicion-energetica": (
     <>
       <section className="mb-12">
-        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           Costa Rica genera más del 98% de su electricidad con fuentes renovables, pero el marco
           regulatorio de generación privada, comercialización de energía y transición energética
           plantea desafíos jurídicos complejos. Con $539 millones en proyectos renovables ICE
@@ -5466,7 +5468,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
             <h3 className="text-base font-semibold text-cream/90 mb-3">
               ¿Puedo generar y vender energía renovable como empresa privada en Costa Rica?
             </h3>
-            <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+            <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
               Sí, conforme a la Ley N.° 7200 de Generación Autónoma o Paralela, empresas privadas
               pueden generar electricidad con fuentes renovables y vender excedentes al ICE bajo
               contratos de compra de energía (PPA). Existen límites de capacidad establecidos por
@@ -5504,6 +5506,22 @@ export default async function AreaDetailPage({
   const sentencias = getSentenciasPorArea(slug);
   /* Todo el cluster del área, no una sola guía elegida a mano. */
   const guias = getArticlesByArea(slug);
+
+  /* El lateral de escritorio: WhatsApp con el mensaje del área (o el general
+     de la firma) y el índice de los apartados que la página sí tiene. */
+  const whatsappAside = whatsappUrl ?? `https://wa.me/${FIRM_CONTACT.phoneRaw}`;
+  const indice = [
+    ...(commercial
+      ? [
+          { id: "cuando", rotulo: "Cuándo necesita un abogado" },
+          { id: "que-hacemos", rotulo: "Qué hacemos en estos casos" },
+          ...(commercial.perfil ? [{ id: "perfil", rotulo: "Qué distingue al abogado de la materia" }] : []),
+          { id: "preguntas", rotulo: "Preguntas prácticas" },
+          ...(guias.length > 0 ? [{ id: "guias", rotulo: "Guías sobre esta materia" }] : []),
+          { id: "analisis", rotulo: "Análisis jurídico detallado" },
+        ]
+      : []),
+  ];
 
   /* JSON-LD Service schema */
   const jsonLd = {
@@ -5589,9 +5607,10 @@ export default async function AreaDetailPage({
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
-          <div className="max-w-[800px] mx-auto px-6 md:px-10">
+          <div className="max-w-[1240px] mx-auto px-6 md:px-10 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-x-20 xl:gap-x-28">
+          <div className="min-w-0 max-w-[760px]">
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-xs text-cream/35 mb-8">
+            <div className="flex items-center gap-2 text-xs text-cream/55 mb-8">
               <Link href="/" className="hover:text-emphasis transition-colors">
                 Inicio
               </Link>
@@ -5600,7 +5619,7 @@ export default async function AreaDetailPage({
                 Áreas
               </Link>
               <span>/</span>
-              <span className="text-cream/55">{area.title}</span>
+              <span className="text-cream/75">{area.title}</span>
             </div>
 
             {/* Header */}
@@ -5609,14 +5628,14 @@ export default async function AreaDetailPage({
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-4">
               {("h1" in area && area.h1) || area.title}
             </h1>
-            <p className="text-sm text-cream/45 leading-relaxed max-w-[55ch]">
+            <p className="text-base text-cream/65 leading-relaxed max-w-[55ch]">
               {area.subtitle}
             </p>
 
             {/* Respuesta directa a qué es la materia: la primera frase que
                 leen Google y los buscadores con IA. */}
             {commercial?.definicion && (
-              <p className="mt-6 text-base text-cream/75 leading-relaxed max-w-[65ch]">
+              <p className="mt-7 text-[17px] md:text-lg text-cream/[0.82] leading-[1.65] max-w-[62ch]">
                 {commercial.definicion}
               </p>
             )}
@@ -5625,7 +5644,7 @@ export default async function AreaDetailPage({
             {commercial && whatsappUrl && (
               <>
                 {/* Hook + WhatsApp CTA */}
-                <div className="mt-12 p-7 md:p-9 rounded-2xl border border-burgundy/25 bg-gradient-to-b from-burgundy/[0.07] to-burgundy/[0.02]">
+                <div className="mt-12 p-7 md:p-9 rounded-xl border border-burgundy/20 bg-burgundy/[0.045] dark:bg-burgundy/[0.16]">
                   <div className="flex items-center gap-2 mb-3">
                     <Warning size={16} weight="duotone" className="text-burgundy-light" />
                     <span className="text-[10px] tracking-[0.25em] uppercase text-burgundy-light font-medium">
@@ -5635,7 +5654,7 @@ export default async function AreaDetailPage({
                   <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight leading-tight mb-3 max-w-[40ch]">
                     {commercial.hookHeadline}
                   </h2>
-                  <p className="text-sm text-cream/65 leading-relaxed max-w-[60ch] mb-6">
+                  <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[60ch] mb-7">
                     {commercial.hookSubtext}
                   </p>
                   <MagneticButton
@@ -5649,42 +5668,39 @@ export default async function AreaDetailPage({
                 </div>
 
                 {/* Trigger scenarios */}
-                <section className="mt-14">
+                <section id="cuando" className="mt-16 scroll-mt-28">
                   <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
                     {commercial.scenariosTitle}
                   </h2>
-                  <p className="text-xs text-cream/45 mb-6 max-w-[60ch]">
+                  <p className="text-sm text-cream/65 mb-6 max-w-[60ch]">
                     Si su situación corresponde a alguno de estos escenarios, el tiempo es crítico.
                   </p>
-                  <ul className="space-y-3">
+                  <ul role="list" className="border-t border-cream/[0.12]">
                     {commercial.triggerScenarios.map((scenario, i) => (
                       <li
                         key={i}
-                        className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.02]"
+                        className="flex items-start gap-3.5 border-b border-cream/[0.08] py-3.5"
                       >
-                        <CheckCircle size={18} weight="duotone" className="text-emphasis mt-0.5 shrink-0" />
-                        <span className="text-sm text-cream/75 leading-relaxed">{scenario}</span>
+                        <CheckCircle size={18} weight="regular" className="text-emphasis mt-[3px] shrink-0" />
+                        <span className="text-[15px] md:text-base text-cream/[0.85] leading-snug">{scenario}</span>
                       </li>
                     ))}
                   </ul>
                 </section>
 
                 {/* What we do */}
-                <section className="mt-14">
+                <section id="que-hacemos" className="mt-16 scroll-mt-28">
                   <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
                     Qué hace Corporación GC en estos casos
                   </h2>
-                  <p className="text-xs text-cream/45 mb-6 max-w-[60ch]">
+                  <p className="text-sm text-cream/65 mb-6 max-w-[60ch]">
                     Acompañamos su caso en cada etapa, con el rigor técnico que exige la materia.
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10">
                     {commercial.services.map((service, i) => (
-                      <div
-                        key={i}
-                        className="p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02]"
-                      >
-                        <h3 className="text-sm font-semibold text-cream mb-2">{service.title}</h3>
-                        <p className="text-xs text-cream/55 leading-relaxed">{service.description}</p>
+                      <div key={i} className="border-t border-cream/[0.12] py-5">
+                        <h3 className="text-[15px] md:text-base font-semibold text-cream leading-snug mb-2">{service.title}</h3>
+                        <p className="text-sm text-cream/[0.72] leading-relaxed">{service.description}</p>
                       </div>
                     ))}
                   </div>
@@ -5692,34 +5708,34 @@ export default async function AreaDetailPage({
 
                 {/* Qué distingue al abogado de la materia */}
                 {commercial.perfil && (
-                  <section className="mt-14">
-                    <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
+                  <section id="perfil" className="mt-16 scroll-mt-28">
+                    <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-3">
                       {commercial.perfil.titulo}
                     </h2>
-                    <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch] mb-6">
+                    <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mb-6">
                       {commercial.perfil.intro}
                     </p>
-                    <div className="border-t border-cream/[0.10]">
+                    <div className="border-t border-cream/[0.12]">
                       {commercial.perfil.rasgos.map((r) => (
-                        <div key={r.titulo} className="py-6 border-b border-cream/[0.06]">
-                          <h3 className="text-sm font-semibold text-cream mb-2">{r.titulo}</h3>
-                          <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">{r.texto}</p>
+                        <div key={r.titulo} className="py-6 border-b border-cream/[0.08]">
+                          <h3 className="text-[15px] md:text-base font-semibold text-cream mb-2">{r.titulo}</h3>
+                          <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">{r.texto}</p>
                         </div>
                       ))}
                     </div>
                     {commercial.perfil.cierre && (
-                      <p className="mt-6 text-sm text-cream/70 leading-relaxed max-w-[65ch]">
+                      <p className="mt-7 text-[15px] md:text-base text-cream/[0.82] leading-[1.7] max-w-[65ch]">
                         {commercial.perfil.cierre}
                       </p>
                     )}
                     {commercial.perfil.cierreFuente && (
-                      <figure className="mt-6 border-l-2 border-emphasis/60 pl-5">
-                        <blockquote className="text-sm text-cream/75 leading-relaxed max-w-[58ch]">
+                      <figure className="mt-7 border-t border-cream/[0.12] pt-6">
+                        <blockquote className="text-[17px] md:text-lg font-light text-cream/[0.85] leading-[1.6] max-w-[56ch]">
                           «{commercial.perfil.cierreFuente.cita}
                           <strong className="font-semibold text-cream">{commercial.perfil.cierreFuente.destacado}</strong>
                           {commercial.perfil.cierreFuente.resto}».
                         </blockquote>
-                        <figcaption className="mt-3 text-xs text-cream/65 leading-relaxed">
+                        <figcaption className="mt-3 text-sm text-cream/65 leading-relaxed">
                           <a
                             href={commercial.perfil.cierreFuente.href}
                             target="_blank"
@@ -5735,15 +5751,15 @@ export default async function AreaDetailPage({
                 )}
 
                 {/* Commercial FAQ */}
-                <section className="mt-14">
-                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-8">
+                <section id="preguntas" className="mt-16 scroll-mt-28">
+                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-6">
                     Preguntas prácticas
                   </h2>
-                  <div className="space-y-6">
+                  <div className="border-t border-cream/[0.12]">
                     {commercial.commercialFaq.map((item, i) => (
-                      <div key={i} className="pb-6 border-b border-cream/[0.06] last:border-b-0">
-                        <h3 className="text-sm font-semibold text-cream mb-2">{item.question}</h3>
-                        <p className="text-sm text-cream/60 leading-relaxed max-w-[65ch]">
+                      <div key={i} className="py-6 border-b border-cream/[0.08]">
+                        <h3 className="text-[15px] md:text-base font-semibold text-cream leading-snug mb-2">{item.question}</h3>
+                        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
                           {item.answer}
                         </p>
                       </div>
@@ -5752,8 +5768,8 @@ export default async function AreaDetailPage({
                 </section>
 
                 {/* Secondary WhatsApp CTA */}
-                <div className="mt-14 p-7 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] text-center">
-                  <p className="text-sm text-cream/70 mb-4 max-w-[50ch] mx-auto">
+                <div className="mt-12 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between lg:hidden">
+                  <p className="text-[15px] text-cream/[0.82] leading-snug max-w-[38ch]">
                     ¿Su situación es urgente? Escríbanos por WhatsApp para coordinar una evaluación inmediata.
                   </p>
                   <MagneticButton
@@ -5770,21 +5786,21 @@ export default async function AreaDetailPage({
                     filas del equipo y de las áreas. Sustituye al enlace único
                     que cada área elegía a mano: ahí se quedaba la autoridad. */}
                 {guias.length > 0 && (
-                  <section className="mt-14">
+                  <section id="guias" className="mt-16 scroll-mt-28">
                     <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
                       Guías sobre esta materia
                     </h2>
-                    <p className="text-sm text-cream/60 leading-relaxed max-w-[60ch] mb-6">
+                    <p className="text-sm text-cream/65 max-w-[60ch] mb-6">
                       {guias.length === 1
                         ? "La guía que la casa ha publicado sobre esta materia."
                         : `Las ${guias.length} guías que la casa ha publicado sobre esta materia.`}
                     </p>
-                    <ul role="list" className="border-t border-cream/[0.08]">
+                    <ul role="list" className="border-t border-cream/[0.12]">
                       {guias.map((g) => (
                         <li key={g.slug} className="relative">
                           <Link
                             href={`/articulos/${g.slug}`}
-                            className="group relative block py-4 border-b border-cream/[0.06] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
+                            className="group relative block py-5 border-b border-cream/[0.08] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                           >
                             <span
                               aria-hidden="true"
@@ -5792,13 +5808,13 @@ export default async function AreaDetailPage({
                             />
                             <span className="flex items-start justify-between gap-4">
                               <span className="min-w-0">
-                                <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
+                                <span className="block text-[15px] md:text-base font-semibold leading-snug text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
                                   {g.title}
                                 </span>
-                                <span className="mt-1 block text-xs text-cream/65 leading-relaxed max-w-[62ch]">
+                                <span className="mt-1.5 block text-sm text-cream/[0.72] leading-relaxed max-w-[62ch]">
                                   {g.excerpt}
                                 </span>
-                                <span className="mt-1.5 block text-[11px] text-cream/50">
+                                <span className="mt-2 block text-xs text-cream/60">
                                   {publicationTypeLabel(g.publicationType)}
                                   {g.minutos ? ` · ${g.minutos} min de lectura` : ""}
                                 </span>
@@ -5817,34 +5833,27 @@ export default async function AreaDetailPage({
                 )}
 
                 {/* Divider before legal depth content */}
-                <div className="mt-16 pt-10 border-t border-cream/[0.08]">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="h-px w-8 bg-cream/20" />
-                    <span className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium">
-                      Análisis Jurídico Detallado
-                    </span>
-                  </div>
+                <div id="analisis" className="mt-20 scroll-mt-28">
+                  <RunningHead title="Análisis jurídico detallado" />
                 </div>
               </>
             )}
-
-            <div className="h-px bg-cream/[0.06] mt-10 mb-2" />
 
             {/* Content (legal depth) */}
             {content}
 
             {/* CTA */}
-            <div className="mt-16 p-8 rounded-xl border border-burgundy/15 bg-burgundy/[0.04]">
-              <p className="font-display text-lg text-cream mb-2">
+            <div className="mt-16 p-7 md:p-9 rounded-xl border border-burgundy/20 bg-burgundy/[0.045] dark:bg-burgundy/[0.16]">
+              <p className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
                 ¿Necesita asistencia en {area.title.toLowerCase()}?
               </p>
-              <p className="text-sm text-cream/50 mb-6 max-w-[50ch]">
+              <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] mb-7 max-w-[50ch]">
                 Nuestro equipo puede evaluar su caso y orientarle sobre las vías
                 procesales disponibles.
               </p>
               <Link
                 href="/#contacto"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm tracking-wide font-medium hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-burgundy/20"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm tracking-wide font-medium hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98] transition-colors duration-300"
               >
                 Contactar a Corporación GC
               </Link>
@@ -5870,18 +5879,18 @@ export default async function AreaDetailPage({
                 <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-8 max-w-[50ch]">
                   Materias afines a {area.title.toLowerCase()}
                 </h2>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <ul role="list" className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10">
                   {relatedAreas.map((r) => (
                     <li key={r.slug}>
                       <Link
                         href={`/areas/${r.slug}`}
-                        className="group flex items-start justify-between gap-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02] hover:border-burgundy/25 hover:bg-cream/[0.04] transition-all duration-300"
+                        className="group flex h-full items-start justify-between gap-4 border-t border-cream/[0.12] py-5 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
                       >
                         <div className="min-w-0">
-                          <div className="text-sm font-semibold text-cream group-hover:text-emphasis transition-colors duration-300">
+                          <div className="text-[15px] md:text-base font-semibold leading-snug text-cream group-hover:text-emphasis transition-colors duration-300">
                             {r.title}
                           </div>
-                          <div className="mt-1 text-xs text-cream/50 leading-relaxed line-clamp-2">
+                          <div className="mt-1.5 text-sm text-cream/[0.72] leading-relaxed line-clamp-2">
                             {r.subtitle}
                           </div>
                         </div>
@@ -5897,7 +5906,7 @@ export default async function AreaDetailPage({
                 <div className="mt-6">
                   <Link
                     href="/areas"
-                    className="inline-flex items-center gap-1.5 text-xs text-cream/45 hover:text-emphasis transition-colors duration-300"
+                    className="inline-flex items-center gap-1.5 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
                   >
                     Ver todas las áreas de práctica
                     <ArrowRight size={12} weight="bold" />
@@ -5910,12 +5919,60 @@ export default async function AreaDetailPage({
             <div className="mt-10 pt-8 border-t border-cream/[0.06] flex items-center justify-between">
               <Link
                 href="/areas"
-                className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
               >
                 <ArrowLeft size={14} weight="regular" />
                 Todas las áreas
               </Link>
             </div>
+          </div>
+
+          {/* Lateral de escritorio: el camino al contacto queda a la vista
+              mientras se lee, y un índice lleva a cada apartado. En móvil lo
+              cubren el gancho de arriba y el botón flotante. */}
+          <aside className="hidden lg:block" aria-label="Contacto e índice de la página">
+            <div className="sticky top-28">
+              <h2 className="text-base font-semibold text-cream">Hable con la firma</h2>
+              <p className="mt-2 text-sm text-cream/[0.72] leading-relaxed">
+                Cuéntenos su caso por WhatsApp. Atendemos de lunes a viernes, de 9:00 a. m. a 5:00 p. m.
+              </p>
+              <div className="mt-5">
+                <MagneticButton href={whatsappAside} variant="outline" contactTarget={`area-${slug}-lateral`}>
+                  <WhatsappLogo size={18} weight="fill" />
+                  Escribir por WhatsApp
+                </MagneticButton>
+              </div>
+              <ul role="list" className="mt-6 border-t border-cream/[0.12] text-sm">
+                <li className="border-b border-cream/[0.08]">
+                  <a href={`tel:+${FIRM_CONTACT.phoneRaw}`} className="group flex items-center gap-3 py-3 text-cream/[0.82] hover:text-emphasis transition-colors duration-300">
+                    <Phone size={16} className="shrink-0 text-cream/50 group-hover:text-emphasis transition-colors duration-300" />
+                    <span className="tabular-nums">{FIRM_CONTACT.phone}</span>
+                  </a>
+                </li>
+                <li className="border-b border-cream/[0.08]">
+                  <a href={`mailto:${FIRM_CONTACT.email}`} className="group flex items-center gap-3 py-3 text-cream/[0.82] hover:text-emphasis transition-colors duration-300">
+                    <EnvelopeSimple size={16} className="shrink-0 text-cream/50 group-hover:text-emphasis transition-colors duration-300" />
+                    {FIRM_CONTACT.email}
+                  </a>
+                </li>
+              </ul>
+
+              {indice.length > 1 && (
+                <nav aria-label="En esta página" className="mt-10">
+                  <h2 className="text-xs font-medium uppercase tracking-[0.18em] text-cream/60">En esta página</h2>
+                  <ul role="list" className="mt-3 text-sm">
+                    {indice.map((it) => (
+                      <li key={it.id}>
+                        <a href={`#${it.id}`} className="block py-1.5 text-cream/[0.72] hover:text-emphasis transition-colors duration-300">
+                          {it.rotulo}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              )}
+            </div>
+          </aside>
           </div>
         </div>
       </main>
