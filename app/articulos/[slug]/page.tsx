@@ -255,6 +255,21 @@ const ARTICLE_COMPONENTS = {
 // evitando que Google los archive como "rastreada, sin indexar".
 export const dynamicParams = false;
 
+
+/* Medición de noviembre de 2026. Estas dos páginas perdieron cerca del 80 %
+   de sus impresiones desde el 31 de octubre, mientras las otras dos normas
+   navegables (LGAP y Ley 6043) se mantuvieron. Se devuelven al estado que
+   tenían el 30 de octubre y se mide diez días (hasta el 20-11-2026). Si
+   recuperan, los cambios vuelven de uno en uno, con una semana entre cada
+   uno. No retirar esta lista sin leer antes el corte de datos. */
+const ESTADO_30_OCT = new Set([
+  "que-es-el-cpca-costa-rica",
+  "reforma-reglamento-contratacion-publica-2026-proveedores-estado",
+]);
+
+/* Guías cuyo texto ya incluye un apartado de preguntas frecuentes. */
+const CON_PREGUNTAS_PROPIAS = /^#{2,3}\s+(Preguntas|Frequently asked|FAQ)/im;
+
 export async function generateStaticParams() {
   const articles = getAllArticles();
   return articles.map((a) => ({ slug: a.slug }));
@@ -378,7 +393,11 @@ export default async function ArticlePage({
   const SCHOLARLY_TYPES = ["tesis", "libro", "ponencia"];
   const obra = OBRAS_OSCAR[slug];
   const norma = NORMA_DE_GUIA[slug];
-  const conZona = (d: string) => (d.includes("T") ? d : `${d}T08:00:00-06:00`);
+  /* Las páginas de ESTADO_30_OCT llevan el marcado tal como salía el 30 de
+     octubre: fechas sin zona, autor con el nombre entero, afiliación por
+     nombre, idioma «es» y sin preguntas visibles al pie. */
+  const congelada = ESTADO_30_OCT.has(slug);
+  const conZona = (d: string) => (congelada || d.includes("T") ? d : `${d}T08:00:00-06:00`);
   const articleSchemaType = !obra && SCHOLARLY_TYPES.includes(article.publicationType ?? "")
     ? "ScholarlyArticle"
     : "Article";
@@ -424,12 +443,12 @@ export default async function ArticlePage({
                   return {
                     "@type": "Person",
                     ...(miembro ? { "@id": `https://www.corporaciongc.com/abogados/${miembro.slug}#person` } : {}),
-                    ...splitHonorific(nombre),
+                    ...(congelada ? { name: nombre.trim() } : splitHonorific(nombre)),
                     ...(miembro ? { url: `https://www.corporaciongc.com/abogados/${miembro.slug}` } : {}),
                     ...(article.institution
                       ? {
                           affiliation:
-                            article.institution === "Corporación GC"
+                            article.institution === "Corporación GC" && !congelada
                               ? { "@id": "https://www.corporaciongc.com/#organization" }
                               : { "@type": "Organization", name: article.institution },
                         }
@@ -452,7 +471,7 @@ export default async function ArticlePage({
         height: 466,
       },
     },
-    inLanguage: lang === "en" ? "en" : "es-CR",
+    inLanguage: congelada ? lang : lang === "en" ? "en" : "es-CR",
     ...(article.translation
       ? {
           [lang === "en" ? "translationOfWork" : "workTranslation"]: {
@@ -707,8 +726,9 @@ export default async function ArticlePage({
 
             {/* Las preguntas frecuentes se muestran tal como van en el marcado
                 FAQPage: las directrices piden que el marcado refleje lo que la
-                página muestra. */}
-            {article.faq && article.faq.length > 0 && (
+                página muestra. Si el cuerpo ya trae su propio apartado de
+                preguntas, no se repiten aquí. */}
+            {article.faq && article.faq.length > 0 && !congelada && !CON_PREGUNTAS_PROPIAS.test(article.content) && (
               <section aria-labelledby="preguntas-frecuentes" className="mt-14">
                 <h2 id="preguntas-frecuentes" className="font-display text-xl md:text-2xl tracking-tight text-cream">
                   {lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"}

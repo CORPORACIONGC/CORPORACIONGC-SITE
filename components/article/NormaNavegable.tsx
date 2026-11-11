@@ -77,6 +77,7 @@ export function NormaNavegable({
   guias = {},
   derogados = [],
   textosServidor,
+  marcadoAnterior = false,
 }: {
   ficha: FichaNorma;
   titulos: string[];
@@ -87,6 +88,11 @@ export function NormaNavegable({
   derogados?: string[];
   /** El texto íntegro, por artículo, cuando la página lo trae del servidor. */
   textosServidor?: Record<string, ArticuloNorma>;
+  /** Emite el nodo `Legislation` tal como salía el 30-10-2026 (sin @id ni
+   *  tipos anidados). Lo usan el CPCA y el Reglamento mientras dura la
+   *  medición de noviembre de 2026; ver ESTADO_30_OCT en la página de
+   *  artículos. */
+  marcadoAnterior?: boolean;
 }) {
   const [textos, setTextos] = useState<Record<string, ArticuloNorma> | null>(textosServidor ?? null);
   const [error, setError] = useState(false);
@@ -241,7 +247,25 @@ export function NormaNavegable({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({ "@context": "https://schema.org", ...legislacionSchema(ficha) }),
+          __html: JSON.stringify(
+            marcadoAnterior
+              ? {
+                  "@context": "https://schema.org",
+                  "@type": "Legislation",
+                  name: ficha.nombre,
+                  alternateName: ficha.alias ?? [ficha.identificador],
+                  legislationIdentifier: ficha.identificador,
+                  legislationType: ficha.tipo,
+                  legislationJurisdiction: "Costa Rica",
+                  legislationDate: ficha.fecha,
+                  legislationLegalForce: "InForce",
+                  ...(ficha.fechaVersion && { legislationDateVersion: ficha.fechaVersion }),
+                  ...(ficha.emisor && { legislationPassedBy: { "@type": "Organization", name: ficha.emisor } }),
+                  inLanguage: "es",
+                  sameAs: ficha.sinalevi,
+                }
+              : { "@context": "https://schema.org", ...legislacionSchema(ficha) },
+          ),
         }}
       />
 

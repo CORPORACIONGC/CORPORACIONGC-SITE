@@ -1,5 +1,5 @@
 ---
-title: "Código Procesal Contencioso Administrativo (CPCA) de Costa Rica: texto vigente, artículos clave y jurisprudencia"
+title: "CPCA de Costa Rica: texto vigente, artículos clave y jurisprudencia"
 date: "2026-05-21"
 updated: "2026-09-26"
 excerpt: "Texto vigente del Código Procesal Contencioso-Administrativo (Ley N.° 8508), cotejado con SINALEVI y con buscador, y sus artículos clave explicados con los antecedentes del expediente 15.134 y la jurisprudencia."

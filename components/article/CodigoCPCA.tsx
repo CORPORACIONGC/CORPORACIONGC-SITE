@@ -23,6 +23,7 @@ export function CodigoCPCA() {
       votos={CPCA_JURISPRUDENCIA}
       guias={CPCA_GUIAS}
       textosServidor={TEXTOS}
+      marcadoAnterior
     />
   );
 }

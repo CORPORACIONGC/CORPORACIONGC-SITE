@@ -30,6 +30,7 @@ export function ReglamentoContratacion() {
       guias={REGLAMENTO_GUIAS}
       derogados={REGLAMENTO_DEROGADOS}
       textosServidor={TEXTOS}
+      marcadoAnterior
     />
   );
 }
