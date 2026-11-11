@@ -11,10 +11,11 @@ export const fuentes: FuentesDeGuia = {
     {
       titulo: "Official documents",
       items: [
+        { titulo: "CONASSIF, draft amendment to SUGEF Agreement 13-19 (public consultation)", detalle: "Article 9 of session 2053-2026, 28 September 2026; Supplement 134 to La Gaceta, 5 October 2026 (Imprenta Nacional)", href: "https://www.imprentanacional.go.cr/pub/2026/10/05/ALCA134_05_10_2026.pdf" },
         { titulo: "Law No. 10961 in La Gaceta", detalle: "Supplement 78 to La Gaceta, 19 June 2026 (Imprenta Nacional)", href: "https://www.imprentanacional.go.cr/pub/2026/06/19/ALCA78_19_06_2026.pdf" },
         { titulo: "National Registry, Directive D.P.J-002-2025", detalle: "Registry application of Law No. 10597: the resident agent is inadmissible in filings first submitted from 4 June 2025 (item 7)", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=104484&param2=152131&param3=1" },
       ],
     },
   ],
-  pie: "Statutory texts: SINALEVI and Imprenta Nacional. No case law on Art. 15 quater of Law 7786 was found. The CONASSIF regulation was not found in SINALEVI at the close of the review. Reviewed as of 26 October 2026.",
+  pie: "Statutory texts: SINALEVI and Imprenta Nacional. No case law on Art. 15 quater of Law 7786 was found. The amendment to SUGEF Agreement 13-19 has not been adopted and there is no proposal on the registration procedure at the close of the review. Reviewed as of 10 November 2026.",
 };

@@ -242,13 +242,13 @@ const PASOS: { quien: string; que: string; cuando: string; rama?: { cuando: stri
   },
   {
     quien: "Presidencia de la Asamblea",
-    que: "Comunica la opinión al Plenario y, como hay objeciones, remite el expediente a la Comisión sobre Consultas de Constitucionalidad.",
-    cuando: "De inmediato, al ser notificada",
+    que: "Comunicó la opinión al Plenario y, como hay objeciones, remitió el expediente a la Comisión sobre Consultas de Constitucionalidad.",
+    cuando: "9 de noviembre de 2026",
   },
   {
     quien: "Comisión sobre Consultas de Constitucionalidad",
     que: "Puede pedir aclaración o adición a la Sala y dictamina. Sus cambios deben limitarse a lo que resulte de la opinión de la Sala.",
-    cuando: "En el plazo que fije la Presidencia, prorrogable",
+    cuando: "Desde el 9 de noviembre de 2026, en el plazo que fije la Presidencia, prorrogable",
   },
   {
     quien: "Plenario",
@@ -391,6 +391,11 @@ const DOCUMENTOS: Fuente[] = [
     titulo: "Consulta facultativa de constitucionalidad",
     detalle: "Escrito de veinte diputados, presentado el 21 de mayo de 2026 (copia publicada por Delfino)",
     href: "https://d1qqtien6gys07.cloudfront.net/wp-content/uploads/2026/06/24.009-Consulta-Facultativa-de-Constitucionalidad-Asociaciones-Publico-Privadas.pdf",
+  },
+  {
+    titulo: "Trámite del expediente 24.009 en el Sistema de Información Legislativa",
+    detalle: "Lectura de la opinión consultiva en el Plenario y remisión a la Comisión sobre Consultas de Constitucionalidad, 9 de noviembre de 2026 (consulta por número de expediente)",
+    href: "https://consultassil3.asamblea.go.cr/frmConsultaProyectos.aspx",
   },
   {
     titulo: "Ficha del expediente 24.009",

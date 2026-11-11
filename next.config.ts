@@ -75,6 +75,16 @@ const nextConfig: NextConfig = {
       /* Las seis materias complementarias pasaron a una sola página. Cada
          dirección antigua lleva a su sección dentro de ella, para que quien
          tenga el enlace guardado caiga donde esperaba. */
+      /* La guía de mala praxis contra la CCSS estuvo publicada ocho horas
+         el 28-10-2026 y Google alcanzó a indexarla (10 clics hasta el 9-11).
+         Mientras no vuelva, su dirección lleva a la guía de responsabilidad
+         patrimonial del Estado, que es el régimen que la sustenta. Es
+         temporal para que la dirección pueda recuperarse si se republica. */
+      {
+        source: "/articulos/demanda-mala-praxis-ccss",
+        destination: "/articulos/responsabilidad-patrimonial-del-estado-costa-rica",
+        permanent: false,
+      },
       /* José Carlos Solano dejó la firma; su perfil lleva al equipo. */
       { source: "/abogados/jose-carlos-solano", destination: "/abogados", permanent: true },
       { source: "/areas/derecho-civil", destination: "/areas/otras-materias#civil", permanent: true },

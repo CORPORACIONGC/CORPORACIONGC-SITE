@@ -1,7 +1,7 @@
 ---
 title: "Me inhabilitaron como proveedor del Estado: cómo defenderse de la sanción (Ley 9986)"
 date: "2026-07-02"
-updated: "2026-10-27"
+updated: "2026-11-10"
 excerpt: "Una inhabilitación puede sacarlo del mercado estatal por hasta diez años. Le explicamos qué está en juego, las diferencias entre inhabilitación simple y calificada, y cómo defenderse en el procedimiento sancionatorio de la Ley 9986."
 tags: ["Guía práctica", "Procedimientos Sancionatorios", "Contratación Pública", "Inhabilitación", "Defensa del Proveedor", "Ley 9986"]
 areas: ["procedimientos-sancionatorios", "contratacion-publica"]
@@ -56,7 +56,7 @@ Como se ve, la clasificación de la causal es decisiva. Una parte importante de 
 
 ## Las causales del artículo 119: por qué lo pueden sancionar
 
-El artículo 119 enumera las conductas que habilitan una sanción, en una lista extensa que va del inciso a al t. No todas tienen el mismo peso ni la misma gravedad. Entre las más relevantes en la práctica están:
+El artículo 119 enumera las conductas que habilitan una sanción, en una lista extensa que va del inciso a al u desde la reforma de la Ley 10971, vigente desde el 8 de octubre de 2026. No todas tienen el mismo peso ni la misma gravedad. Entre las más relevantes en la práctica están:
 
 - Obtener ilegalmente información que le dé ventaja en el concurso (inciso a).
 - Dejar sin efecto su propuesta sin justa causa (inciso b).
@@ -72,9 +72,18 @@ El artículo 119 enumera las conductas que habilitan una sanción, en una lista 
 - No suscribir el contrato siendo adjudicatario (inciso ñ).
 - Suministrar objetos, servicios u obras de inferior calidad (inciso p).
 - Subcontratar con personas distintas al listado autorizado (inciso q).
-- Resolución contractual declarada en sede jurisdiccional con condena firme (inciso r).
+- Incumplir la legislación laboral *«en cuanto al pago de salarios, aguinaldo, jornada laboral, entre otras»*, o no pagar la póliza de riesgos del trabajo ante el INS ni las contribuciones a la CCSS, el INA, el Fodesaf y el IMAS (inciso r, introducido por la Ley 10971).
+- Resolución contractual declarada en sede jurisdiccional con condena firme (inciso s; era el inciso r hasta el 7 de octubre de 2026).
 
 Conviene saber que ciertas causales, además de la sanción, producen la exclusión de la oferta y la resolución del contrato. Un mismo hecho puede desencadenar varios efectos a la vez, y la estrategia de defensa debe contemplarlos todos.
+
+### Qué cambió con la Ley 10971
+
+La [Ley N.° 10971](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=108035&param2=152661&param3=1), Ley de Responsabilidad Laboral de los Contratistas con el Estado, se publicó en el Alcance 136 a La Gaceta N.° 190 del 8 de octubre de 2026 y rige desde ese día. Hizo tres cambios en el régimen sancionatorio. Introdujo un inciso r) nuevo en el artículo 119, sobre incumplimientos laborales y de seguridad social. Corrió una letra los incisos que seguían: la resolución contractual en sede jurisdiccional pasó del r) al s), las invitaciones a funcionarios del s) al t), y la participación en los hechos del artículo 125 del t) al u). Y agregó el inciso r) a la lista del párrafo final del artículo 119, de modo que el incumplimiento laboral *«debidamente acreditado»* genera también la exclusión de la oferta y la resolución del contrato si se detecta durante la ejecución.
+
+El artículo 118 no se reformó. Su inciso b) sigue reservando la inhabilitación calificada para los incisos a), c), d), e), f), g), h), j), k), l), m), n) y r) del artículo 119, y por su letra esa remisión recae ahora en la causal laboral, mientras que la resolución contractual con condena firme quedó en el inciso s), que el artículo 118 no menciona. Quien reciba un traslado de cargos por hechos de estas fechas debe revisar con qué inciso se le imputa y qué texto estaba vigente cuando ocurrieron.
+
+La misma ley amplió el artículo 14 inciso f): oferentes y contratistas deben cumplir, además de la seguridad social, las obligaciones laborales con sus trabajadores, la póliza de riesgos del trabajo y los impuestos nacionales. Su transitorio único da seis meses a la CCSS, al Fodesaf y al INS, hasta el 8 de abril de 2027, para ajustar los sistemas con que se acredita el cumplimiento de las obligaciones de seguridad social.
 
 > **Qué hacer en la práctica:** lea con lupa la causal que le imputan y confróntela con los hechos reales. Muchas veces la Administración encuadra una conducta en una causal más grave de la que corresponde, o pretende sancionar un incumplimiento que en realidad tenía justa causa. Documentar esa justa causa —una orden de la propia institución, un caso fortuito, un atraso ajeno a usted— suele ser el corazón de la defensa.
 

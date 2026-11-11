@@ -1,7 +1,7 @@
 ---
 title: "Sanciones a proveedores del Estado: guía del régimen sancionatorio (Ley 9986)"
 date: "2026-07-03"
-updated: "2026-10-27"
+updated: "2026-11-10"
 excerpt: "Multas, cláusula penal e inhabilitación: entienda a qué se expone su empresa como proveedor del Estado bajo la Ley 9986 y cómo prevenir que lo saquen de las contrataciones públicas."
 tags: ["Sanciones", "Proveedores del Estado", "Inhabilitación", "Multas", "Contratación Pública", "Procedimientos Sancionatorios", "Ley 9986"]
 areas: ["contratacion-publica", "procedimientos-sancionatorios"]
@@ -88,9 +88,12 @@ El artículo 119 enumera un amplio catálogo de causales que pueden derivar en l
 - No suscribir el contrato siendo adjudicatario.
 - Entregar objetos, servicios u obras de inferior calidad a la contratada.
 - Poner en peligro la vida o la seguridad de las personas.
-- Sufrir una resolución contractual en sede jurisdiccional con condena firme.
+- Incumplir la legislación laboral o no pagar la póliza de riesgos del trabajo ni las contribuciones a la CCSS, el INA, el Fodesaf y el IMAS (inciso r, introducido por la Ley 10971).
+- Sufrir una resolución contractual en sede jurisdiccional con condena firme (inciso s desde el 8 de octubre de 2026).
 
-Estas causales cubren desde [faltas de integridad](/areas/compliance-publico-anticorrupcion) en la fase del concurso hasta incumplimientos graves durante la ejecución. Las más severas —entre ellas la información falsa, las dádivas, el abandono del contrato o la condena firme por resolución contractual— son las que habilitan la inhabilitación calificada de 2 a 10 años ante toda la Administración.
+Estas causales cubren desde [faltas de integridad](/areas/compliance-publico-anticorrupcion) en la fase del concurso hasta incumplimientos graves durante la ejecución. Las más severas —entre ellas la información falsa, las dádivas, el abandono del contrato y, desde la Ley 10971, el incumplimiento laboral— son las que el artículo 118 inciso b) reserva para la inhabilitación calificada de 2 a 10 años ante toda la Administración.
+
+La [Ley N.° 10971](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=108035&param2=152661&param3=1), publicada en el Alcance 136 a La Gaceta N.° 190 del 8 de octubre de 2026 y vigente desde ese día, introdujo el inciso r) sobre incumplimientos laborales y de seguridad social y corrió una letra los tres que seguían, de modo que la resolución contractual con condena firme es hoy el inciso s). El artículo 118 no se reformó: su inciso b) sigue remitiendo a los incisos a), c), d), e), f), g), h), j), k), l), m), n) y r), y por su letra esa remisión recae ahora en la causal laboral. La misma ley agregó el inciso r) a los que generan la exclusión de la oferta y la resolución del contrato cuando la violación está *«debidamente acreditada»*, y amplió el artículo 14 inciso f) para exigir a oferentes y contratistas el cumplimiento de las obligaciones laborales, la póliza de riesgos del trabajo y los impuestos nacionales. La CCSS, el Fodesaf y el INS tienen hasta el 8 de abril de 2027 para ajustar los sistemas con que se acredita el cumplimiento de las obligaciones de seguridad social.
 
 La ley fija además un plazo de prescripción: **la responsabilidad de los particulares prescribe en 5 años** desde el hecho. Y para graduar la sanción dentro del rango legal, el artículo 120 ordena valorar el impacto negativo en el servicio o interés público, la reiteración de conducta sancionada dentro de los dos años siguientes a la firmeza de la última sanción, y la comisión de varias faltas en un mismo concurso.
 

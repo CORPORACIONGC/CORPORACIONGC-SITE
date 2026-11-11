@@ -11,10 +11,11 @@ export const fuentes: FuentesDeGuia = {
     {
       titulo: "Documentos oficiales",
       items: [
+        { titulo: "CONASSIF, proyecto de reforma del Acuerdo SUGEF 13-19 (consulta pública)", detalle: "Artículo 9 de la sesión 2053-2026, de 28 de setiembre de 2026; Alcance 134 a La Gaceta, 5 de octubre de 2026 (Imprenta Nacional)", href: "https://www.imprentanacional.go.cr/pub/2026/10/05/ALCA134_05_10_2026.pdf" },
         { titulo: "Ley N.° 10961 en La Gaceta", detalle: "Alcance 78 a La Gaceta, 19 de junio de 2026 (Imprenta Nacional)", href: "https://www.imprentanacional.go.cr/pub/2026/06/19/ALCA78_19_06_2026.pdf" },
         { titulo: "Registro Nacional, Directriz D.P.J-002-2025", detalle: "Aplicación registral de la Ley N.° 10597: el agente residente es improcedente en los documentos presentados por primera vez desde el 4 de junio de 2025 (punto 7.°)", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=104484&param2=152131&param3=1" },
       ],
     },
   ],
-  pie: "Textos normativos: SINALEVI e Imprenta Nacional. No se localizó jurisprudencia sobre el art. 15 quater de la Ley 7786. No se localizó en SINALEVI el reglamento del CONASSIF al cierre del cotejo. Cotejo al 26 de octubre de 2026.",
+  pie: "Textos normativos: SINALEVI e Imprenta Nacional. No se localizó jurisprudencia sobre el art. 15 quater de la Ley 7786. La reforma del Acuerdo SUGEF 13-19 no consta aprobada y no hay propuesta sobre el trámite de inscripción al cierre del cotejo. Cotejo al 10 de noviembre de 2026.",
 };

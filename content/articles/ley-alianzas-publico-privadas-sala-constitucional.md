@@ -1,7 +1,7 @@
 ---
 title: "La Sala Constitucional y la Ley Marco de APP: qué artículos cayeron y qué pasa ahora con los proyectos de infraestructura"
 date: "2026-09-18"
-updated: "2026-10-27"
+updated: "2026-11-10"
 excerpt: "El 9 de setiembre la Sala Constitucional declaró inconstitucional la agencia con la que el proyecto de Ley Marco de las Asociaciones Público Privadas (expediente 24.009) pretendía sustituir al Consejo Nacional de Concesiones, y otras normas sobre la Contraloría, el empleo, las tarifas y la iniciativa privada. Qué cayó, qué se sostuvo, qué sigue en la Asamblea y qué rige hoy."
 tags: ["APP", "Alianzas público-privadas", "Concesión de obra pública", "Sala Constitucional", "Expediente 24.009", "Ley 7762", "ANAPP", "Infraestructura", "Consulta de constitucionalidad"]
 areas: ["alianzas-publico-privadas-infraestructura", "acciones-de-inconstitucionalidad"]
@@ -14,7 +14,7 @@ seoTitle: "Ley de alianzas público-privadas: qué declaró la Sala IV"
 seoDescription: "La Sala IV declaró inconstitucional la ANAPP y otras normas del proyecto de Ley Marco de APP (exp. 24.009). Qué cayó, qué sigue y qué rige hoy."
 faq:
   - question: "¿La Ley Marco de las Asociaciones Público Privadas ya es ley en Costa Rica?"
-    answer: "Todavía es un proyecto. El expediente 24.009 se aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la Sala Constitucional, que evacuó la consulta el 9 de setiembre de 2026 con el voto 2026-034680. El proyecto vuelve ahora a la Asamblea Legislativa, que debe decidir si lo corrige antes del segundo debate. Mientras tanto rige la Ley 7762 de concesión de obra pública."
+    answer: "Todavía es un proyecto. El expediente 24.009 se aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la Sala Constitucional, que evacuó la consulta el 9 de setiembre de 2026 con el voto 2026-034680. La opinión se leyó en el Plenario el 9 de noviembre de 2026 y el expediente pasó a la Comisión sobre Consultas de Constitucionalidad; la Asamblea debe decidir si lo corrige antes del segundo debate. Mientras tanto rige la Ley 7762 de concesión de obra pública."
   - question: "¿Qué declaró inconstitucional la Sala sobre el proyecto de APP?"
     answer: "Por mayoría, los artículos que crean y organizan la Agencia Nacional de Asociaciones Público-Privadas (ANAPP), por infringir la autonomía que protegen los artículos 188 y 189 de la Constitución. También la exención de la agencia frente a controles de la Contraloría y las normas que sacaban a su personal del régimen de empleo público. Según la prensa, cayeron además normas sobre tarifas y multas de la Aresep, la ventaja en la evaluación para el proponente de una iniciativa privada y la intervención de la agencia en proyectos de entes con autonomía, como municipalidades, universidades y la CCSS. Las normas ambientales consultadas se sostuvieron."
   - question: "¿El dictamen de la Sala obliga a la Asamblea a cambiar el proyecto?"
@@ -30,6 +30,8 @@ faq:
   - question: "¿Dónde puedo leer el voto 2026-034680?"
     answer: "Al 27 de octubre de 2026 el texto íntegro no se había incorporado a la base de jurisprudencia que consultamos. La parte dispositiva se conoce por la resolución 2026-036043 del 23 de setiembre, que la transcribió y corrigió dos errores materiales. Cuando esté disponible, aparecerá en Nexus, el buscador de jurisprudencia del Poder Judicial, y este análisis se actualizará con su enlace."
 ---
+
+> **Actualización del 10 de noviembre de 2026.** La opinión consultiva de la Sala se leyó en el Plenario el 9 de noviembre de 2026 y, ese mismo día, el expediente 24.009 se remitió a la Comisión sobre Consultas de Constitucionalidad, según el registro de trámite del Sistema de Información Legislativa. El proyecto sigue aprobado en primer debate: empieza ahora la etapa en que la Comisión dictamina qué se corrige.
 
 > **Verificado el 27 de octubre de 2026.** El expediente 24.009 sigue aprobado en primer debate y no registra trámite en el Plenario después de la opinión de la Sala. El 23 de setiembre la Sala corrigió dos errores materiales de su parte dispositiva (voto [2026-036043](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-1425863)): el párrafo final del artículo 9 **no** es inconstitucional, y la norma contraria a la reserva de ley es el artículo 12 inciso c). Este análisis ya incorpora esas correcciones.
 
@@ -109,6 +111,8 @@ Hay un precedente de ese escenario. En 1993 la Sala objetó por el fondo una nor
 
 El [Reglamento de la Asamblea](https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=46479) fija el trámite en su artículo 146. El Presidente comunica la opinión al Plenario y, como hay objeciones, remite el expediente a la Comisión sobre Consultas de Constitucionalidad por el plazo que fije; la Comisión puede pedir aclaración a la Sala y dictamina; el Plenario conoce ese dictamen, y si el texto se modifica el proyecto vuelve al primer lugar del capítulo de Primeros Debates. La Comisión tiene un límite: puede hacer los cambios que resulten de la opinión de la Sala, pero *«lo que no puede hacer es extenderse más allá de lo resuelto»* (voto [2010-12026](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-482113)). Rediseñar la agencia es la tarea central, porque la Sala objetó tanto su configuración como su intervención en entes autónomos.
 
+Ese trámite ya empezó. El registro de la Asamblea consigna la lectura de la opinión consultiva en el Plenario el 9 de noviembre de 2026 y la remisión del expediente a la Comisión sobre Consultas de Constitucionalidad ese mismo día, dos meses después del voto. Al 10 de noviembre no consta dictamen de la Comisión.
+
 ## Qué rige hoy para los proyectos de infraestructura
 
 Hoy rige la [Ley General de Concesión de Obras Públicas con Servicios Públicos (Ley 7762)](https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=30464), y el Consejo Nacional de Concesiones es la entidad técnica competente cuando el proyecto corresponde al Poder Ejecutivo (artículo 5.2). Los entes descentralizados, las empresas públicas y las municipalidades pueden convenir con el Consejo el procedimiento de selección y la ejecución del contrato (artículo 5.3, reformado por la Ley 9701). Nada de eso cambia con el voto de la Sala. La Sala revisó ese diseño antes de que la ley se aprobara y no encontró vicios en las normas consultadas (voto [2318-98](https://nexuspj.poder-judicial.go.cr/document/sen-1-0007-84637)).
@@ -127,7 +131,7 @@ El régimen de asociaciones público-privadas define quién estructura los proye
 
 ### ¿La Ley Marco de las Asociaciones Público Privadas ya es ley en Costa Rica?
 
-Todavía es un proyecto. El expediente 24.009 se aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la Sala Constitucional, que evacuó la consulta el 9 de setiembre de 2026 con el voto 2026-034680. El proyecto vuelve ahora a la Asamblea Legislativa, que debe decidir si lo corrige antes del segundo debate. Mientras tanto rige la Ley 7762.
+Todavía es un proyecto. El expediente 24.009 se aprobó en primer debate el 18 de mayo de 2026 y veinte diputados lo consultaron a la Sala Constitucional, que evacuó la consulta el 9 de setiembre de 2026 con el voto 2026-034680. La opinión se leyó en el Plenario el 9 de noviembre de 2026 y el expediente pasó a la Comisión sobre Consultas de Constitucionalidad; la Asamblea debe decidir si lo corrige antes del segundo debate. Mientras tanto rige la Ley 7762.
 
 ### ¿Qué declaró inconstitucional la Sala?
 

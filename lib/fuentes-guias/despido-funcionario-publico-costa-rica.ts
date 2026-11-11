@@ -15,8 +15,13 @@ export const fuentes: FuentesDeGuia = {
     {
       titulo: "Ley Marco de Empleo Público",
       detalle:
-        "Ley N.° 10159 de 08-03-2022, Alcance 50 a La Gaceta N.° 46 de 09-03-2022, rige desde marzo de 2023; arts. 2, 3, 4 a), 21, 22, 49 D) y 50, y Transitorio III",
+        "Ley N.° 10159 de 08-03-2022, Alcance 50 a La Gaceta N.° 46 de 09-03-2022, rige desde marzo de 2023; arts. 2, 3, 4 a), 20 e), 21, 22, 49 D) y 50, y Transitorio III",
       href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=96521&param2=145804&param3=1",
+    },
+    {
+      titulo: "Circular MIDEPLAN-DM-CIRC-0016-2026",
+      detalle: "Ministerio de Planificación Nacional y Política Económica y Dirección General de Servicio Civil, 28-08-2026: disposiciones generales para aplicar el inciso e) del art. 20 de la Ley Marco de Empleo Público (ceses por reducción forzosa)",
+      href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=107893&param2=152440&param3=1",
     },
     {
       titulo: "Estatuto de Servicio Civil",
@@ -87,5 +92,5 @@ export const fuentes: FuentesDeGuia = {
       ],
     },
   ],
-  pie: "Textos normativos: SINALEVI, versión vigente al 28 de octubre de 2026. Jurisprudencia: Nexus del Poder Judicial. Antecedentes: Sistema de Información Legislativa. Cotejo al 28 de octubre de 2026.",
+  pie: "Textos normativos: SINALEVI, versión vigente al 28 de octubre de 2026. Jurisprudencia: Nexus del Poder Judicial. Antecedentes: Sistema de Información Legislativa. Cotejo al 28 de octubre de 2026; la reducción forzosa, al 10 de noviembre de 2026.",
 };
