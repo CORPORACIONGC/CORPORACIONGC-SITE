@@ -239,7 +239,7 @@ export default async function SentenciaDestacadaPage({
                   {[sentencia.estado && ETIQUETA_ESTADO[sentencia.estado], sentencia.area].filter(Boolean).join(" · ")}
                 </p>
                 {sentencia.estado && sentencia.estadoVerificado && (
-                  <p className="mt-2 text-xs text-cream/55">
+                  <p className="mt-2 text-xs text-cream/65">
                     Estado del criterio verificado el{" "}
                     <time dateTime={sentencia.estadoVerificado}>{formatDate(sentencia.estadoVerificado)}</time>{" "}
                     contra las resoluciones que la citan.
@@ -479,7 +479,7 @@ export default async function SentenciaDestacadaPage({
                   Ver su trayectoria
                   <ArrowRight size={14} weight="bold" aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 </Link>
-                <p className="mt-6 text-xs text-cream/55">
+                <p className="mt-6 text-xs text-cream/65">
                   Comentario de Corporación GC, publicado el <time dateTime={sentencia.publicado}>{formatDate(sentencia.publicado)}</time>
                   {sentencia.actualizado > sentencia.publicado && (
                     <>

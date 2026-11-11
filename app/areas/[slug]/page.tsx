@@ -5610,7 +5610,7 @@ export default async function AreaDetailPage({
           <div className="max-w-[1240px] mx-auto px-6 md:px-10 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-x-20 xl:gap-x-28">
           <div className="min-w-0 max-w-[760px]">
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-xs text-cream/55 mb-8">
+            <div className="flex items-center gap-2 text-xs text-cream/65 mb-8">
               <Link href="/" className="hover:text-emphasis transition-colors">
                 Inicio
               </Link>
@@ -5814,7 +5814,7 @@ export default async function AreaDetailPage({
                                 <span className="mt-1.5 block text-sm text-cream/[0.72] leading-relaxed max-w-[62ch]">
                                   {g.excerpt}
                                 </span>
-                                <span className="mt-2 block text-xs text-cream/60">
+                                <span className="mt-2 block text-xs text-cream/65">
                                   {publicationTypeLabel(g.publicationType)}
                                   {g.minutos ? ` · ${g.minutos} min de lectura` : ""}
                                 </span>
@@ -5959,7 +5959,7 @@ export default async function AreaDetailPage({
 
               {indice.length > 1 && (
                 <nav aria-label="En esta página" className="mt-10">
-                  <h2 className="text-xs font-medium uppercase tracking-[0.18em] text-cream/60">En esta página</h2>
+                  <h2 className="text-xs font-medium uppercase tracking-[0.18em] text-cream/65">En esta página</h2>
                   <ul role="list" className="mt-3 text-sm">
                     {indice.map((it) => (
                       <li key={it.id}>

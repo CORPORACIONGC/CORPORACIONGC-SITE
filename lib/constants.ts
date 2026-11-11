@@ -29,6 +29,7 @@ export const FIRM_NAV_LINKS = [
   { label: "Equipo", href: "#equipo", pageHref: "/abogados" },
   { label: "Áreas", href: "/areas" },
   { label: "Artículos", href: "/articulos" },
+  { label: "Jurisprudencia", href: "/jurisprudencia-destacada" },
   { label: "Contacto", href: "#contacto", pageHref: "/contacto" },
 ] as const;
 

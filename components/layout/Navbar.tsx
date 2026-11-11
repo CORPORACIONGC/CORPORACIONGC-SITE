@@ -4,9 +4,12 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { List, X } from "@phosphor-icons/react";
+import { List, Phone, WhatsappLogo, X } from "@phosphor-icons/react";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { FIRM_NAV_LINKS } from "@/lib/constants";
+import { FIRM_CONTACT, FIRM_NAV_LINKS } from "@/lib/constants";
+import { trackContactFromHref } from "@/lib/analytics";
+
+const WHATSAPP_MENU = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(FIRM_CONTACT.whatsappMessage)}`;
 
 export function Navbar({
   navLinks = FIRM_NAV_LINKS,
@@ -25,7 +28,13 @@ export function Navbar({
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
 
+  /* «Contacto» sale de la fila de enlaces y va como botón, en la barra de
+     escritorio y en la del teléfono: es la acción que el sitio busca. */
+  const contacto = navLinks.find((l) => /^contact/i.test(l.label));
+
   const navRef = useRef<HTMLElement>(null);
+  const botonMenu = useRef<HTMLButtonElement>(null);
+  const panel = useRef<HTMLDivElement>(null);
   const linksRef = useRef<HTMLDivElement>(null);
   const linkEls = useRef<(HTMLElement | null)[]>([]);
   const [pill, setPill] = useState({ x: 0, w: 0, show: false });
@@ -42,6 +51,40 @@ export function Navbar({
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
+  /* ── Menú del teléfono: al abrir, el foco entra al panel y no sale de él;
+     Escape lo cierra y devuelve el foco al botón que lo abrió. ── */
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const caja = panel.current;
+    const boton = botonMenu.current;
+    const enfocables = () =>
+      Array.from(caja?.querySelectorAll<HTMLElement>("a[href], button:not([disabled])") ?? []);
+    enfocables()[0]?.focus();
+    const tecla = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMobileOpen(false);
+        return;
+      }
+      if (e.key !== "Tab") return;
+      const lista = enfocables();
+      if (lista.length === 0) return;
+      const primero = lista[0];
+      const ultimo = lista[lista.length - 1];
+      if (e.shiftKey && document.activeElement === primero) {
+        e.preventDefault();
+        ultimo.focus();
+      } else if (!e.shiftKey && document.activeElement === ultimo) {
+        e.preventDefault();
+        primero.focus();
+      }
+    };
+    document.addEventListener("keydown", tecla);
+    return () => {
+      document.removeEventListener("keydown", tecla);
+      boton?.focus();
     };
   }, [mobileOpen]);
 
@@ -141,7 +184,7 @@ export function Navbar({
               <div className="text-[13px] font-semibold tracking-[0.22em] text-cream leading-none">
                 CORPORACIÓN GC
               </div>
-              <div className="text-[9px] tracking-[0.3em] text-cream/55 mt-1 font-light">
+              <div className="text-[9px] tracking-[0.3em] text-cream/65 mt-1 font-light">
                 ABOGADOS
               </div>
             </div>
@@ -150,20 +193,20 @@ export function Navbar({
           {/* Desktop links + toggle */}
           <div
             ref={linksRef}
-            className="hidden md:flex items-center gap-8 relative"
+            className="hidden lg:flex items-center gap-5 xl:gap-7 relative"
           >
             {navLinks.map((link, i) =>
-              hrefOf(link).startsWith("/") ? (
+              link === contacto ? null : hrefOf(link).startsWith("/") ? (
                 <Link
                   key={link.href}
                   href={hrefOf(link)}
                   ref={(el: HTMLAnchorElement | null) => {
                     linkEls.current[i] = el;
                   }}
-                  className={`nav-link-item text-[11px] tracking-[0.14em] uppercase transition-colors duration-300 ${
+                  className={`nav-link-item text-xs tracking-[0.12em] uppercase transition-colors duration-300 ${
                     activeIndex === i
                       ? "text-cream font-medium"
-                      : "text-cream/55 hover:text-cream/80"
+                      : "text-cream/70 hover:text-cream"
                   }`}
                 >
                   {link.label}
@@ -183,10 +226,10 @@ export function Navbar({
                     if (el) el.scrollIntoView({ behavior: "smooth" });
                     window.history.replaceState(null, "", link.href);
                   }}
-                  className={`nav-link-item text-[11px] tracking-[0.14em] uppercase transition-colors duration-300 ${
+                  className={`nav-link-item text-xs tracking-[0.12em] uppercase transition-colors duration-300 ${
                     activeIndex === i
                       ? "text-cream font-medium"
-                      : "text-cream/55 hover:text-cream/80"
+                      : "text-cream/70 hover:text-cream"
                   }`}
                 >
                   {link.label}
@@ -194,16 +237,22 @@ export function Navbar({
               )
             )}
 
+            {contacto && <BotonContacto link={contacto} href={hrefOf(contacto)} />}
+
             <ThemeToggle />
           </div>
 
-          {/* Mobile: theme toggle + menu */}
-          <div className="flex md:hidden items-center gap-2">
+          {/* Teléfono y tableta: contacto, tema y menú */}
+          <div className="flex lg:hidden items-center gap-1">
+            {contacto && <BotonContacto link={contacto} href={hrefOf(contacto)} />}
             <ThemeToggle />
             <button
+              ref={botonMenu}
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-cream/70 hover:text-emphasis transition-colors nav-tactile"
-              aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
+              className="flex h-11 w-11 items-center justify-center text-cream/75 hover:text-emphasis transition-colors nav-tactile"
+              aria-label="Menú"
+              aria-expanded={mobileOpen}
+              aria-controls="menu-movil"
             >
               {mobileOpen ? (
                 <X size={22} weight="light" />
@@ -215,9 +264,16 @@ export function Navbar({
         </div>
       </nav>
 
-      {/* Mobile panel — CSS transitions instead of Framer Motion */}
+      {/* Mobile panel — CSS transitions instead of Framer Motion. Cerrado
+          queda inerte: ni el teclado ni el lector de pantalla entran en él. */}
       <div
-        className="fixed inset-0 z-50 bg-surface transition-all duration-350 ease-[cubic-bezier(0.16,1,0.3,1)]"
+        ref={panel}
+        id="menu-movil"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menú"
+        inert={!mobileOpen}
+        className="fixed inset-0 z-50 flex flex-col bg-surface transition-all duration-350 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden"
         style={{
           opacity: mobileOpen ? 1 : 0,
           transform: mobileOpen ? "translateX(0)" : "translateX(100%)",
@@ -234,13 +290,13 @@ export function Navbar({
           />
           <button
             onClick={() => setMobileOpen(false)}
-            className="p-2 text-cream/70 nav-tactile"
+            className="-mr-2 flex h-11 w-11 items-center justify-center text-cream/75 nav-tactile"
             aria-label="Cerrar menú"
           >
             <X size={22} weight="light" />
           </button>
         </div>
-        <div className="flex flex-col items-start gap-1 px-6 pt-8">
+        <div className="flex flex-col items-start gap-1 overflow-y-auto px-6 pt-6">
           {navLinks.map((link, i) => (
             <a
               key={link.href}
@@ -256,7 +312,7 @@ export function Navbar({
                   }, 400);
                 }
               }}
-              className="font-display text-2xl font-light tracking-wide text-cream py-3 border-b border-cream/5 w-full nav-tactile transition-all duration-400"
+              className="font-display text-2xl font-light tracking-wide text-cream py-3 border-b border-cream/10 w-full nav-tactile transition-all duration-400"
               style={{
                 opacity: mobileOpen ? 1 : 0,
                 transform: mobileOpen ? "translateX(0)" : "translateX(24px)",
@@ -267,12 +323,65 @@ export function Navbar({
             </a>
           ))}
         </div>
-        <div className="absolute bottom-12 left-6 right-6">
-          <div className="text-xs tracking-[0.2em] text-cream/30 uppercase">
-            Corporación GC
-          </div>
+        {/* El menú termina en las dos vías directas: escribir o llamar. */}
+        <div className="mt-auto flex flex-col gap-3 px-6 pb-8 pt-6">
+          <a
+            href={WHATSAPP_MENU}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackContactFromHref(WHATSAPP_MENU, "menu-movil")}
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-burgundy px-6 text-sm font-medium tracking-wide text-white transition-colors duration-300 hover:bg-burgundy-light active:scale-[0.98]"
+          >
+            <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+            Escribir por WhatsApp
+          </a>
+          <a
+            href={`tel:+${FIRM_CONTACT.phoneRaw}`}
+            onClick={() => trackContactFromHref(`tel:+${FIRM_CONTACT.phoneRaw}`, "menu-movil")}
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-cream/25 px-6 text-sm font-medium tracking-wide text-cream transition-colors duration-300 hover:border-cream/50"
+          >
+            <Phone size={17} weight="regular" aria-hidden="true" />
+            {FIRM_CONTACT.phone}
+          </a>
+          <p className="text-center text-xs text-cream/65">{FIRM_CONTACT.hours}</p>
         </div>
       </div>
     </>
+  );
+}
+
+/* «Contacto» como botón de la barra: contorno burdeos de día y pieza vino de
+   noche, igual que el botón de contorno del resto del sitio. En la portada
+   baja al formulario; en las demás páginas abre /contacto. */
+function BotonContacto({
+  link,
+  href,
+}: {
+  link: { label: string; href: string };
+  href: string;
+}) {
+  const clase =
+    "nav-tactile inline-flex min-h-9 items-center rounded-lg border border-burgundy/50 px-3.5 text-xs font-medium uppercase tracking-[0.12em] text-burgundy transition-colors duration-300 hover:border-burgundy hover:bg-burgundy/[0.05] dark:border-[#5A1730] dark:bg-[#3A0B1F] dark:text-white dark:hover:border-[#6B1D3A] dark:hover:bg-[#4A0E27]";
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} className={clase}>
+        {link.label}
+      </Link>
+    );
+  }
+  return (
+    <a
+      href={href}
+      onClick={(e) => {
+        const destino = document.getElementById(href.slice(1));
+        if (!destino) return;
+        e.preventDefault();
+        destino.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", href);
+      }}
+      className={clase}
+    >
+      {link.label}
+    </a>
   );
 }

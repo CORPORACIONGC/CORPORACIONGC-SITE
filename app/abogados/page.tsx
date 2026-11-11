@@ -60,7 +60,7 @@ export default function AbogadosPage() {
           <div className="max-w-[1000px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
@@ -72,7 +72,7 @@ export default function AbogadosPage() {
               Abogados de{" "}
               <span className="text-burgundy">Corporación GC</span>
             </h1>
-            <p className="mt-6 text-sm text-cream/55 leading-relaxed max-w-[65ch]">
+            <p className="mt-6 text-sm text-cream/65 leading-relaxed max-w-[65ch]">
               El Dr. Óscar Eduardo González Camacho dirige la firma y trabaja cada caso con un equipo
               formado en Derecho Público bajo su supervisión directa.
             </p>
@@ -98,8 +98,8 @@ export default function AbogadosPage() {
                       <span className="block font-display text-lg md:text-xl tracking-tight text-cream transition-colors duration-300 group-hover:text-emphasis">
                         {m.name}
                       </span>
-                      <span className="mt-1 block text-xs uppercase tracking-wider text-cream/45">{m.role}</span>
-                      <span className="mt-3 block max-w-[65ch] text-sm leading-relaxed text-cream/60">{m.shortBio}</span>
+                      <span className="mt-1 block text-xs uppercase tracking-wider text-cream/65">{m.role}</span>
+                      <span className="mt-3 block max-w-[65ch] text-sm leading-relaxed text-cream/65">{m.shortBio}</span>
                     </span>
                     <ArrowRight
                       size={16}
@@ -113,7 +113,7 @@ export default function AbogadosPage() {
             </ul>
 
             <h2 className="mt-20 font-display text-2xl md:text-3xl tracking-tight text-cream">Asistentes legales</h2>
-            <p className="mt-4 text-sm text-cream/55 leading-relaxed max-w-[65ch]">
+            <p className="mt-4 text-sm text-cream/65 leading-relaxed max-w-[65ch]">
               Estudiantes de Derecho de la Universidad de Costa Rica que apoyan a los abogados de la firma en la
               investigación jurídica, el análisis de los expedientes y la preparación de los escritos.
             </p>
@@ -131,8 +131,8 @@ export default function AbogadosPage() {
                       <span className="block font-display text-lg md:text-xl tracking-tight text-cream transition-colors duration-300 group-hover:text-emphasis">
                         {a.name}
                       </span>
-                      <span className="mt-1 block text-xs uppercase tracking-wider text-cream/45">{a.role}</span>
-                      <span className="mt-3 block max-w-[65ch] text-sm leading-relaxed text-cream/60">{a.heroDescription}</span>
+                      <span className="mt-1 block text-xs uppercase tracking-wider text-cream/65">{a.role}</span>
+                      <span className="mt-3 block max-w-[65ch] text-sm leading-relaxed text-cream/65">{a.heroDescription}</span>
                     </span>
                     <ArrowRight
                       size={16}

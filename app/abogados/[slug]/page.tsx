@@ -717,7 +717,7 @@ function BasicProfile({
                     {member.areas.map((area) => (
                       <span
                         key={area}
-                        className="px-3 py-1 rounded-lg text-xs tracking-wide bg-cream/[0.08] text-cream/60 border border-cream/[0.08]"
+                        className="px-3 py-1 rounded-lg text-xs tracking-wide bg-cream/[0.08] text-cream/65 border border-cream/[0.08]"
                       >
                         {area}
                       </span>
@@ -725,7 +725,7 @@ function BasicProfile({
                   </div>
 
                   {/* Languages */}
-                  <div className="text-xs text-cream/40">
+                  <div className="text-xs text-cream/65">
                     Idiomas: {member.languages.join(", ")}
                   </div>
                 </div>

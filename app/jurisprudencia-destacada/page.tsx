@@ -104,7 +104,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10 relative z-10">
             <Link
               href="/abogados/oscar-gonzalez"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-10"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-10"
             >
               <ArrowLeft size={14} weight="regular" />
               Perfil del Dr. Óscar González
@@ -121,7 +121,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="text-lg text-cream/60 leading-relaxed max-w-[60ch] mb-3">
+              <p className="text-lg text-cream/65 leading-relaxed max-w-[60ch] mb-3">
                 Selección de fallos redactados por el Dr. Óscar Eduardo González
                 Camacho durante su gestión como Magistrado de la Sala Primera
                 (2002–2014). Cada sentencia con pasajes literales verificados,
@@ -133,7 +133,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                 etiqueta es adorno, y antes lo era: cinco de las seis
                 sentencias decían «Sentencia de Referencia». */}
             <AnimatedEntry delay={0.25}>
-              <p className="text-sm text-cream/45 leading-relaxed max-w-[68ch]">
+              <p className="text-sm text-cream/65 leading-relaxed max-w-[68ch]">
                 Cada ficha lleva el estado de su criterio, comprobado contra
                 los fallos posteriores que la citan.{" "}
                 <span className="text-cream/70">Recogida en la ley</span>{" "}
@@ -172,7 +172,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                           {ETIQUETA_ESTADO[s.estado]}
                         </span>
                       )}
-                      <span className="text-[9px] tracking-[0.2em] uppercase text-cream/40 ml-auto">
+                      <span className="text-[9px] tracking-[0.2em] uppercase text-cream/65 ml-auto">
                         {s.fechaCorta}
                       </span>
                     </div>
@@ -185,7 +185,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                     </h2>
 
                     {/* Materia */}
-                    <p className="text-xs tracking-wider uppercase text-cream/45 mb-5">
+                    <p className="text-xs tracking-wider uppercase text-cream/65 mb-5">
                       {s.materia}
                     </p>
 
@@ -198,10 +198,10 @@ export default function JurisprudenciaDestacadaIndexPage() {
 
                     {/* Bottom row */}
                     <div className="mt-auto pt-4 border-t border-cream/[0.06] flex items-center justify-between">
-                      <div className="text-[10px] font-mono text-cream/40">
+                      <div className="text-[10px] font-mono text-cream/65">
                         {s.numero}
                       </div>
-                      <div className="inline-flex items-center gap-1.5 text-xs text-cream/55 group-hover:text-emphasis transition-colors duration-300">
+                      <div className="inline-flex items-center gap-1.5 text-xs text-cream/65 group-hover:text-emphasis transition-colors duration-300">
                         Leer
                         <ArrowRight
                           size={12}
@@ -218,7 +218,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
             {/* Note about more coming */}
             {sentencias.length < 8 && (
               <AnimatedEntry delay={0.3}>
-                <div className="mt-10 text-center text-xs text-cream/35 italic">
+                <div className="mt-10 text-center text-xs text-cream/65 italic">
                   Selección en preparación. Próximamente se publicarán más
                   sentencias verificadas.
                 </div>

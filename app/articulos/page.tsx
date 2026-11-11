@@ -10,12 +10,8 @@ import {
 import { GUIAS_MAS_CONSULTADAS } from "@/lib/constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import {
-  FilePdf,
-  Article,
-  ArrowLeft,
-  User,
-} from "@phosphor-icons/react/dist/ssr";
+import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import { IndiceArticulos, type PiezaIndice } from "@/components/sections/IndiceArticulos";
 import { articulosMetadata } from "@/lib/page-metadata";
 import { RunningHead } from "@/components/ui/RunningHead";
 
@@ -58,70 +54,20 @@ const SECCIONES: { titulo: string; area: string; areas: string[] }[] = [
   },
 ];
 
-function Tarjeta({ article }: { article: ArticleMeta }) {
-  return (
-    /* El enlace es el título; su ::after cubre la tarjeta entera. */
-    <div className="gc-tarjeta group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02]">
-      <div className="flex items-center gap-2 mb-4">
-        <div
-          className={`p-1.5 rounded-md transition-colors duration-300 group-hover:bg-burgundy group-hover:text-white ${
-            article.type === "pdf"
-              ? "bg-burgundy/[0.08] text-burgundy"
-              : "bg-emphasis/[0.15] text-emphasis"
-          }`}
-        >
-          {article.type === "pdf" ? (
-            <FilePdf size={14} weight="duotone" />
-          ) : (
-            <Article size={14} weight="duotone" />
-          )}
-        </div>
-        {article.publicationType && (
-          <span className="text-[9px] tracking-wider uppercase text-cream/40 font-medium">
-            {publicationTypeLabel(article.publicationType)}
-          </span>
-        )}
-        <span className="text-[10px] text-cream/20 ml-auto">
-          {formatDate(article.date)}
-        </span>
-      </div>
-
-      <h3 className="font-display text-lg font-semibold tracking-tight text-cream group-hover:text-emphasis transition-colors duration-300">
-        <Link href={`/articulos/${article.slug}`} className="after:absolute after:inset-0 after:content-['']">
-          {article.title}
-        </Link>
-      </h3>
-
-      {article.author && (
-        <div className="mt-2 flex items-center gap-1.5 text-[11px] text-cream/40">
-          <User size={11} weight="regular" />
-          <span>{article.author}</span>
-          {article.institution && (
-            <span className="text-cream/25">
-              · {article.institution}
-            </span>
-          )}
-        </div>
-      )}
-
-      <p className="mt-2 text-xs text-cream/45 leading-relaxed line-clamp-3">
-        {article.excerpt}
-      </p>
-
-      {article.tags.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-1.5">
-          {article.tags.map((tag) => (
-            <span
-              key={tag}
-              className="px-2 py-0.5 rounded text-[9px] tracking-wide bg-cream/[0.06] text-cream/40"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+/** Lo que el índice necesita de cada pieza, ya formateado en el servidor. */
+function piezaDe(a: ArticleMeta): PiezaIndice {
+  return {
+    slug: a.slug,
+    title: a.title,
+    excerpt: a.excerpt,
+    esPdf: a.type === "pdf",
+    rotulo: a.publicationType ? publicationTypeLabel(a.publicationType, a.lang === "en" ? "en" : "es") : undefined,
+    fecha: formatDate(a.date, a.lang === "en" ? "en" : "es"),
+    author: a.author,
+    institution: a.institution,
+    minutos: a.minutos,
+    tags: a.tags,
+  };
 }
 
 export default function ArticulosPage() {
@@ -171,11 +117,11 @@ export default function ArticulosPage() {
       <Navbar />
       <main className="bg-surface min-h-[100dvh]">
         {/* Header */}
-        <div className="pt-28 md:pt-36 pb-12 md:pb-16">
+        <div className="pt-28 md:pt-36 pb-6 md:pb-8">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 py-2 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-6"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
@@ -187,11 +133,33 @@ export default function ArticulosPage() {
               Guías y{" "}
               <span className="text-burgundy">análisis de Derecho Público</span>
             </h1>
-            <p className="mt-4 text-sm text-cream/45 leading-relaxed max-w-[65ch]">
+            <p className="mt-4 text-base text-cream/80 leading-relaxed max-w-[62ch]">
               Guías prácticas para quien enfrenta a la Administración y
               publicaciones académicas del equipo, ordenadas por materia.
             </p>
-            <div className="mt-8 text-sm text-cream/55 leading-relaxed max-w-[65ch] space-y-4">
+          </div>
+        </div>
+
+        <IndiceArticulos
+          masConsultadas={masConsultadas.map((a) => ({ slug: a.slug, title: a.title }))}
+          secciones={[
+            ...secciones.map((sec) => ({
+              id: `sec-${sec.area}`,
+              titulo: sec.titulo,
+              areaHref: `/areas/${sec.area}`,
+              piezas: sec.piezas.map(piezaDe),
+            })),
+            ...(otras.length > 0 ? [{ id: "sec-otras", titulo: "Otras publicaciones", piezas: otras.map(piezaDe) }] : []),
+            ...(enIngles.length > 0
+              ? [{ id: "sec-en", titulo: "In English", lang: "en" as const, piezas: enIngles.map(piezaDe) }]
+              : []),
+          ]}
+        />
+
+        {/* La presentación de la sección va al pie: quien llega busca una
+            guía, y el buscador y las materias deben quedar a la vista. */}
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 pb-24 md:pb-32">
+          <div className="border-t border-cream/10 pt-10 text-[15px] text-cream/75 leading-relaxed max-w-[65ch] space-y-4">
               <p>
                 Corporación GC es un bufete de abogados costarricense
                 especializado en Derecho Público. Desde su fundación en 2015,
@@ -213,79 +181,7 @@ export default function ArticulosPage() {
                 Cada publicación refleja el enfoque de la firma: litigar desde
                 el conocimiento profundo de la materia.
               </p>
-            </div>
           </div>
-        </div>
-
-        <div className="max-w-[1400px] mx-auto px-6 md:px-10 pb-24 md:pb-32 space-y-16 md:space-y-20">
-          {/* Las más consultadas: se revisa cada mes contra Search Console,
-              igual que las guías del pie (lib/constants.ts). */}
-          {masConsultadas.length > 0 && (
-            <section aria-labelledby="mas-consultadas">
-              <h2 id="mas-consultadas" className="font-display text-xl md:text-2xl tracking-tight text-cream mb-6">
-                Guías más consultadas
-              </h2>
-              <ol role="list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 border-t border-cream/10">
-                {masConsultadas.map((a, i) => (
-                  <li key={a.slug} className="border-b border-cream/10">
-                    <Link href={`/articulos/${a.slug}`} className="group flex items-baseline gap-4 py-4">
-                      <span className="w-6 shrink-0 text-sm tabular-nums text-cream/35">{String(i + 1).padStart(2, "0")}</span>
-                      <span className="text-[15px] leading-snug text-cream/85 transition-colors duration-300 group-hover:text-emphasis">
-                        {a.title}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ol>
-            </section>
-          )}
-
-          {secciones.map((sec) => (
-            <section key={sec.titulo} aria-labelledby={`sec-${sec.area}`}>
-              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 mb-6">
-                <h2 id={`sec-${sec.area}`} className="font-display text-xl md:text-2xl tracking-tight text-cream">
-                  {sec.titulo}
-                </h2>
-                <Link
-                  href={`/areas/${sec.area}`}
-                  className="text-sm text-cream/55 hover:text-emphasis transition-colors duration-300"
-                >
-                  Ver el área →
-                </Link>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {sec.piezas.map((article) => (
-                  <Tarjeta key={article.slug} article={article} />
-                ))}
-              </div>
-            </section>
-          ))}
-
-          {otras.length > 0 && (
-            <section aria-labelledby="sec-otras">
-              <h2 id="sec-otras" className="font-display text-xl md:text-2xl tracking-tight text-cream mb-6">
-                Otras publicaciones
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {otras.map((article) => (
-                  <Tarjeta key={article.slug} article={article} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          {enIngles.length > 0 && (
-            <section aria-labelledby="sec-en" lang="en">
-              <h2 id="sec-en" className="font-display text-xl md:text-2xl tracking-tight text-cream mb-6">
-                In English
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {enIngles.map((article) => (
-                  <Tarjeta key={article.slug} article={article} />
-                ))}
-              </div>
-            </section>
-          )}
         </div>
       </main>
       <Footer />

@@ -147,7 +147,7 @@ export function OscarConferencias() {
                   <h3 className="font-display text-lg text-cream">
                     {video.title}
                   </h3>
-                  <p className="mt-2 text-sm text-cream/55 leading-relaxed">
+                  <p className="mt-2 text-sm text-cream/65 leading-relaxed">
                     {video.description}
                   </p>
                 </div>

@@ -37,7 +37,7 @@ export function MarianaAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Licenciada en Derecho con mención en Derechos Humanos por la
                 Universidad de Costa Rica. Egresada de la Maestría Profesional
                 en Derecho Público (UCR) con Diploma de Excelencia Académica
@@ -48,7 +48,7 @@ export function MarianaAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Ejerzo como Abogada con énfasis en malpraxis médica, iatrogenia
                 y responsabilidad patrimonial del Estado. He sido panelista en
                 televisión nacional sobre derechos de los pacientes y ponente
@@ -58,7 +58,7 @@ export function MarianaAbout() {
 
             <AnimatedEntry delay={0.4}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Formación académica
                 </div>
                 <ul className="space-y-3">
@@ -67,12 +67,12 @@ export function MarianaAbout() {
                       <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                       <div>
                         <div className="text-sm text-cream/75">{ed.degree}</div>
-                        <div className="mt-0.5 text-[11px] text-cream/50">
+                        <div className="mt-0.5 text-[11px] text-cream/65">
                           {ed.institution}
                           <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">{ed.status}</span>
                         </div>
                         {"note" in ed && (
-                          <div className="mt-0.5 text-[10px] text-cream/40">{ed.note}</div>
+                          <div className="mt-0.5 text-[10px] text-cream/65">{ed.note}</div>
                         )}
                       </div>
                     </li>
@@ -88,7 +88,7 @@ export function MarianaAbout() {
                       <div className="mt-1 text-sm text-cream/85 font-medium">
                         {MARIANA_PROFILE.distinction.title}
                       </div>
-                      <div className="mt-0.5 text-[11px] text-cream/50 leading-relaxed">
+                      <div className="mt-0.5 text-[11px] text-cream/65 leading-relaxed">
                         {MARIANA_PROFILE.distinction.detail}
                       </div>
                     </div>
@@ -98,7 +98,7 @@ export function MarianaAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.5}>
-              <div className="mt-4 text-xs text-cream/40">
+              <div className="mt-4 text-xs text-cream/65">
                 Idiomas: Español, Inglés, Francés
               </div>
             </AnimatedEntry>
@@ -124,7 +124,7 @@ export function MarianaAbout() {
                           <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                             {area.title}
                           </h3>
-                          <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">
+                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
                             {area.description}
                           </p>
                         </div>

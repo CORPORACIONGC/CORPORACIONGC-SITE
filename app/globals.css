@@ -482,10 +482,16 @@ body {
   color: var(--color-hilo);
 }
 
-/* Focus styles for accessibility */
+/* Foco del teclado. De día va en tinta y separado tres píxeles: el burdeos
+   se confundía con el borde de los botones de contorno y con el relleno de
+   los principales. De noche y sobre las bandas burdeos va en marfil. */
 *:focus-visible {
-  outline: 2px solid var(--color-hilo);
-  outline-offset: 2px;
+  outline: 2px solid var(--cream-val);
+  outline-offset: 3px;
+}
+:is(.gc-on-dark, .running-head--dark, [class*="bg-burgundy-dark"], [class*="from-burgundy-dark"], [class*="bg-[#3A0B1F]"])
+  *:focus-visible {
+  outline-color: #FFFFFF;
 }
 
 /* Compensate for fixed navbar on hash navigation */

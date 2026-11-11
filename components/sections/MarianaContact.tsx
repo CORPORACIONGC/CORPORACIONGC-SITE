@@ -50,7 +50,7 @@ export function MarianaContact() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/55 leading-relaxed max-w-[50ch]">
+              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[50ch]">
                 Atiendo consultas jurídicas en malpraxis médica, responsabilidad
                 sanitaria, Derecho Administrativo y Contencioso Administrativo.
                 Cuénteme su situación y buscaremos juntos la mejor estrategia legal.
@@ -65,11 +65,11 @@ export function MarianaContact() {
                     contactTarget="mariana"
                     className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
                   >
-                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
+                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/65 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
                       <item.icon size={20} weight="duotone" />
                     </div>
                     <div>
-                      <div className="text-[10px] tracking-wider uppercase text-cream/40">
+                      <div className="text-[10px] tracking-wider uppercase text-cream/65">
                         {item.label}
                       </div>
                       <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">
@@ -88,7 +88,7 @@ export function MarianaContact() {
               <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
                   <MapPin size={16} weight="duotone" className="text-emphasis" />
-                  <span className="text-xs text-cream/50">
+                  <span className="text-xs text-cream/65">
                     {MARIANA_CONTACT.location}
                   </span>
                 </div>
@@ -96,7 +96,7 @@ export function MarianaContact() {
                 <h3 className="font-display text-xl font-semibold text-cream tracking-tight mb-3">
                   Consulta directa vía WhatsApp
                 </h3>
-                <p className="text-xs text-cream/45 leading-relaxed mb-8">
+                <p className="text-xs text-cream/65 leading-relaxed mb-8">
                   Envíe un mensaje con los detalles de su consulta
                   jurídica y le responderé a la brevedad.
                 </p>
@@ -120,10 +120,10 @@ export function MarianaContact() {
                     className="h-8 w-auto opacity-60 dark:opacity-90 dark:brightness-0 dark:invert"
                   />
                   <div>
-                    <div className="text-[10px] text-cream/40 tracking-wide">
+                    <div className="text-[10px] text-cream/65 tracking-wide">
                       Abogada asociada de
                     </div>
-                    <div className="text-xs text-cream/60 font-medium">
+                    <div className="text-xs text-cream/65 font-medium">
                       Corporación GC
                     </div>
                   </div>

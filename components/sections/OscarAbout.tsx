@@ -41,7 +41,7 @@ export function OscarAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Con más de 38 años de trayectoria ininterrumpida en el Derecho
                 Público, el Dr. Óscar Eduardo González Camacho fue Magistrado de la Sala
                 Primera de la Corte Suprema de Justicia durante 12 años y
@@ -52,7 +52,7 @@ export function OscarAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Doctor en Derecho por la Universidad de Alcalá de Henares con
                 la calificación Sobresaliente Cum Laude. Desde 2015 dirige
                 Corporación GC como uno de los abogados litigantes de mayor
@@ -119,7 +119,7 @@ export function OscarAbout() {
                       <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                       <span className="text-sm text-cream/75">
                         {edu.degree} — {edu.institution}
-                        <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/40">
+                        <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/65">
                           {edu.period}
                         </span>
                         {"distinction" in edu && edu.distinction && (
@@ -155,7 +155,7 @@ export function OscarAbout() {
                           <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                             {area.title}
                           </h3>
-                          <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">
+                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
                             {area.description}
                           </p>
                         </div>
@@ -169,7 +169,7 @@ export function OscarAbout() {
             {/* Teaching */}
             <AnimatedEntry delay={0.4}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Docencia
                 </div>
                 <div className="space-y-3">
@@ -180,8 +180,8 @@ export function OscarAbout() {
                         <span className="text-sm text-cream/75 font-medium">
                           {item.role}
                         </span>
-                        <span className="text-sm text-cream/50"> — {item.institution}</span>
-                        <p className="text-xs text-cream/45 leading-relaxed mt-0.5">
+                        <span className="text-sm text-cream/65"> — {item.institution}</span>
+                        <p className="text-xs text-cream/65 leading-relaxed mt-0.5">
                           {item.detail}
                         </p>
                       </div>
@@ -194,7 +194,7 @@ export function OscarAbout() {
             {/* Publications */}
             <AnimatedEntry delay={0.5}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Publicaciones y obras
                 </div>
                 <div className="space-y-3">
@@ -208,7 +208,7 @@ export function OscarAbout() {
                             <ArrowUpRight size={12} weight="bold" className="inline ml-1 opacity-0 group-hover/pub:opacity-100 transition-opacity duration-300" />
                           )}
                         </span>
-                        <p className="text-xs text-cream/45 leading-relaxed mt-0.5">
+                        <p className="text-xs text-cream/65 leading-relaxed mt-0.5">
                           {pub.detail}
                         </p>
                       </>

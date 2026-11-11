@@ -13,7 +13,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
     <div className="space-y-4">
       {/* Controls */}
       <div className="flex items-center justify-between">
-        <span className="text-xs text-cream/40 tracking-wider uppercase">
+        <span className="text-xs text-cream/65 tracking-wider uppercase">
           Documento PDF
         </span>
         <div className="flex items-center gap-2">
@@ -21,7 +21,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
             href={pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/60 hover:text-emphasis hover:border-emphasis/30 transition-all duration-300"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/65 hover:text-emphasis hover:border-emphasis/30 transition-all duration-300"
           >
             <ArrowSquareOut size={14} weight="regular" />
             Abrir
@@ -29,7 +29,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
           <a
             href={pdfUrl}
             download
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/60 hover:text-emphasis hover:border-emphasis/30 transition-all duration-300"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-cream/[0.10] text-xs text-cream/65 hover:text-emphasis hover:border-emphasis/30 transition-all duration-300"
           >
             <DownloadSimple size={14} weight="regular" />
             Descargar
@@ -44,10 +44,10 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
           weight="duotone"
           className="mx-auto text-burgundy mb-4"
         />
-        <p className="text-sm text-cream/60 mb-2 font-medium">
+        <p className="text-sm text-cream/65 mb-2 font-medium">
           Documento completo disponible
         </p>
-        <p className="text-xs text-cream/40 leading-relaxed mb-6 max-w-[35ch] mx-auto">
+        <p className="text-xs text-cream/65 leading-relaxed mb-6 max-w-[35ch] mx-auto">
           Para una mejor experiencia de lectura, descargue el documento o ábralo
           en una nueva pestaña.
         </p>
@@ -64,7 +64,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
           <a
             href={pdfUrl}
             download
-            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-cream/[0.10] text-cream/60 text-sm active:scale-[0.98] transition-all duration-300"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-cream/[0.10] text-cream/65 text-sm active:scale-[0.98] transition-all duration-300"
           >
             <DownloadSimple size={16} weight="regular" />
             Descargar

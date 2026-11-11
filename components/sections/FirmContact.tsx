@@ -86,7 +86,7 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
                 const cardClassName = "group flex items-start gap-4 border-b border-cream/[0.08] py-4";
                 const inner = (
                   <>
-                    <item.icon size={20} weight="regular" className="mt-0.5 shrink-0 text-cream/55 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-hilo-texto" />
+                    <item.icon size={20} weight="regular" className="mt-0.5 shrink-0 text-cream/65 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-hilo-texto" />
                     <div className="min-w-0">
                       <div className="text-[13px] text-cream/65">
                         {item.label}
@@ -122,9 +122,15 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
           <div className="flex items-start lg:items-center">
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
               <div className="p-7 md:p-10 rounded-xl bg-surface border border-cream/[0.12]">
-                <h3 className="text-xl font-semibold text-cream tracking-[-0.01em] mb-2">
-                  Solicite una consulta
-                </h3>
+                {showHeading ? (
+                  <h3 className="text-xl font-semibold text-cream tracking-[-0.01em] mb-2">
+                    Solicite una consulta
+                  </h3>
+                ) : (
+                  <h2 className="text-xl font-semibold text-cream tracking-[-0.01em] mb-2">
+                    Solicite una consulta
+                  </h2>
+                )}
                 <p className="text-[15px] text-cream/[0.72] leading-relaxed mb-8">
                   Complete el formulario y le contactaremos a la brevedad para
                   coordinar una reunión.

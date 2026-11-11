@@ -26,7 +26,7 @@ export function OscarExperience() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/50 leading-relaxed max-w-[35ch]">
+              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[35ch]">
                 Desde el juzgado de primera instancia hasta la Corte Suprema,
                 una trayectoria que define la jurisdicción contenciosa
                 costarricense.
@@ -62,7 +62,7 @@ export function OscarExperience() {
                       <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                         {exp.role}
                       </h3>
-                      <span className="text-[10px] tracking-wider text-cream/35 uppercase shrink-0">
+                      <span className="text-[10px] tracking-wider text-cream/65 uppercase shrink-0">
                         {exp.period}
                       </span>
                     </div>
@@ -71,7 +71,7 @@ export function OscarExperience() {
                       {exp.org}
                     </div>
 
-                    <p className="text-xs text-cream/50 leading-relaxed max-w-[60ch]">
+                    <p className="text-xs text-cream/65 leading-relaxed max-w-[60ch]">
                       {exp.description}
                     </p>
 
@@ -88,21 +88,21 @@ export function OscarExperience() {
             {/* Conferences highlight */}
             <StaggerItem>
               <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Conferencias internacionales
                 </div>
                 <p className="text-sm text-cream/75 leading-relaxed max-w-[55ch]">
                   {OSCAR_PROFILE.conferences}
                 </p>
 
-                <div className="mt-4 text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-2">
+                <div className="mt-4 text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-2">
                   Idiomas
                 </div>
                 <div className="flex items-center gap-3">
                   {OSCAR_PROFILE.languages.map((lang, i) => (
                     <span
                       key={i}
-                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-cream/[0.06] text-cream/60 text-[10px] tracking-wide font-medium"
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-cream/[0.06] text-cream/65 text-[10px] tracking-wide font-medium"
                     >
                       {lang}
                     </span>

@@ -185,7 +185,7 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
             <blockquote className="font-display text-[1.35rem] lg:text-[1.6rem] italic leading-[1.25] tracking-tight text-cream/90">
               El derecho es el equilibrio, no la f&oacute;rmula.
             </blockquote>
-            <figcaption className="mt-2.5 text-[10px] uppercase tracking-[0.2em] text-cream/35">
+            <figcaption className="mt-2.5 text-[10px] uppercase tracking-[0.2em] text-cream/65">
               Idea central de la ponencia
             </figcaption>
           </figure>
@@ -219,7 +219,7 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
                 <p className="text-[12.5px] lg:text-[13.5px] leading-snug">
                   <span className="font-medium text-cream/90">{p.name}</span>
                   <br />
-                  <span className="text-cream/45">{p.role}</span>
+                  <span className="text-cream/65">{p.role}</span>
                 </p>
               </div>
             ))}
@@ -227,7 +227,7 @@ function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
         )}
 
         {card.footnote && (
-          <p className="mt-auto pt-5 text-[11px] tracking-wide text-cream/35">{card.footnote}</p>
+          <p className="mt-auto pt-5 text-[11px] tracking-wide text-cream/65">{card.footnote}</p>
         )}
       </div>
     </div>
@@ -330,8 +330,8 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
           </h3>
         </div>
         <div className="mt-5 lg:mt-0 lg:max-w-[42%] lg:text-right">
-          <p className="text-[13px] uppercase tracking-[0.12em] text-cream/40">{deck.meta}</p>
-          <p className="mt-3 text-[14px] leading-relaxed text-cream/55">{deck.blurb}</p>
+          <p className="text-[13px] uppercase tracking-[0.12em] text-cream/65">{deck.meta}</p>
+          <p className="mt-3 text-[14px] leading-relaxed text-cream/65">{deck.blurb}</p>
         </div>
       </div>
 
@@ -401,7 +401,7 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
           <span className="text-xl font-semibold leading-none text-cream tabular-nums">
             {pad(frontIndex + 1)}
           </span>
-          <span className="text-[13px] text-cream/35 tabular-nums">/ {pad(total)}</span>
+          <span className="text-[13px] text-cream/65 tabular-nums">/ {pad(total)}</span>
         </div>
 
         <div className="flex items-center gap-5">
@@ -425,7 +425,7 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
               onClick={prev}
               disabled={animating}
               aria-label="Tarjeta anterior"
-              className="grid h-11 w-11 place-items-center rounded-full border border-cream/[0.14] text-cream/60 transition-all duration-300 hover:border-emphasis/45 hover:text-emphasis active:scale-[0.94] disabled:opacity-40"
+              className="grid h-11 w-11 place-items-center rounded-full border border-cream/[0.14] text-cream/65 transition-all duration-300 hover:border-emphasis/45 hover:text-emphasis active:scale-[0.94] disabled:opacity-40"
             >
               <CaretLeft size={16} weight="bold" />
             </button>
@@ -443,7 +443,7 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
         </div>
       </div>
 
-      <p className="mx-auto mt-5 max-w-[1000px] text-[11px] tracking-wide text-cream/30">
+      <p className="mx-auto mt-5 max-w-[1000px] text-[11px] tracking-wide text-cream/65">
         Deslizá las tarjetas o usá las flechas.
       </p>
     </div>
@@ -471,10 +471,10 @@ export function OscarCapacitacionEleinmsa() {
         </AnimatedEntry>
 
         <AnimatedEntry delay={0.15}>
-          <p className="mb-16 max-w-[62ch] text-[15px] md:text-base leading-relaxed text-cream/55">
+          <p className="mb-16 max-w-[62ch] text-[15px] md:text-base leading-relaxed text-cream/65">
             Corporaci&oacute;n GC capacit&oacute; al equipo de{" "}
             <span className="font-medium text-cream/80">ELEINMSA</span>{" "}
-            <span className="text-cream/45">(Electr&oacute;nica Industrial y M&eacute;dica S.A.)</span>{" "}
+            <span className="text-cream/65">(Electr&oacute;nica Industrial y M&eacute;dica S.A.)</span>{" "}
             sobre el equilibrio econ&oacute;mico de los contratos p&uacute;blicos y el reajuste de
             precios en la contrataci&oacute;n administrativa. La primera sesi&oacute;n se
             imparti&oacute; el <span className="text-cream/80">13 de junio de 2026</span>.

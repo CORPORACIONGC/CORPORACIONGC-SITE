@@ -38,7 +38,7 @@ export default function PoliticaEditorial() {
           <div className="max-w-[800px] mx-auto px-6 md:px-10">
             <Link
               href="/articulos"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Guías y publicaciones
@@ -51,7 +51,7 @@ export default function PoliticaEditorial() {
             </h1>
 
             <article className="prose-legal space-y-8 text-sm text-cream/70 leading-relaxed">
-              <p className="text-cream/50 text-xs">Última actualización: 27 de octubre de 2026</p>
+              <p className="text-cream/65 text-xs">Última actualización: 27 de octubre de 2026</p>
 
               <section>
                 <h2 className="font-display text-lg text-cream mb-3">1. Quién escribe y quién revisa</h2>

@@ -45,7 +45,7 @@ export function About() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Litigo contra el Estado y los entes públicos ante el Tribunal
                 Contencioso Administrativo, la Sala Primera, la Sala
                 Constitucional y la Contraloría General de la República.
@@ -57,7 +57,7 @@ export function About() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.25}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 En contratación pública asesoro a empresas oferentes y
                 contratistas, con recursos de objeción, apelación y
                 revocatoria ante la Contraloría y la Administración, y llevo
@@ -71,7 +71,7 @@ export function About() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Inicié mi carrera en la Sala Constitucional, en el despacho
                 del magistrado Paul Rueda Leal. Desde 2019 trabajo al lado del
                 Dr. Óscar Eduardo González Camacho, coordinador de la comisión
@@ -83,7 +83,7 @@ export function About() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.35}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Investigo la aplicación de la inteligencia artificial a la
                 justicia y a la contratación estatal. He publicado sobre ese
                 tema y sobre organización administrativa en revistas
@@ -95,7 +95,7 @@ export function About() {
 
             <AnimatedEntry delay={0.4}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Formación académica
                 </div>
                 <ul className="space-y-3">
@@ -104,12 +104,12 @@ export function About() {
                       <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
                       <div>
                         <div className="text-sm text-cream/75">{ed.degree}</div>
-                        <div className="mt-0.5 text-[11px] text-cream/50">
+                        <div className="mt-0.5 text-[11px] text-cream/65">
                           {ed.institution}
                           <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">{ed.status}</span>
                         </div>
                         {"note" in ed && (
-                          <div className="mt-0.5 text-[10px] text-cream/40">{ed.note}</div>
+                          <div className="mt-0.5 text-[10px] text-cream/65">{ed.note}</div>
                         )}
                       </div>
                     </li>
@@ -125,7 +125,7 @@ export function About() {
                       <div className="mt-1 text-sm text-cream/85 font-medium">
                         {EDUCATION_DISTINCTION.title}
                       </div>
-                      <div className="mt-0.5 text-[11px] text-cream/50 leading-relaxed">
+                      <div className="mt-0.5 text-[11px] text-cream/65 leading-relaxed">
                         {EDUCATION_DISTINCTION.detail}
                       </div>
                     </div>
@@ -137,7 +137,7 @@ export function About() {
             {/* Investigación & IA */}
             <AnimatedEntry delay={0.5}>
               <div className="mt-6 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Investigación en IA y Derecho
                 </div>
                 <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
@@ -145,13 +145,13 @@ export function About() {
                   basados en inteligencia artificial en la administración de
                   justicia costarricense
                 </h3>
-                <p className="mt-2 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                <p className="mt-2 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
                   Trabajo Final de Graduación que analiza la integración de
                   inteligencia artificial en el ámbito judicial desde el marco
                   normativo de la Unión Europea (EU AI Act), proponiendo una
                   hoja de ruta para su adopción segura en Costa Rica.
                 </p>
-                <div className="mt-2 text-[10px] text-cream/35">
+                <div className="mt-2 text-[10px] text-cream/65">
                   Director: Dr. Óscar Eduardo González Camacho — UCR, 2025
                 </div>
                 <a
@@ -162,14 +162,14 @@ export function About() {
                   <span aria-hidden>&rarr;</span>
                 </a>
                 <div className="mt-4 pt-4 border-t border-cream/[0.06]">
-                  <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-2">
+                  <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-2">
                     Publicaciones académicas
                   </div>
                   <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
                     La personalidad jurídica instrumental como técnica de
                     organización administrativa
                   </h3>
-                  <p className="mt-1.5 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                  <p className="mt-1.5 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
                     Revista El Foro, N.° 32 — Colegio de Abogados y Abogadas
                     de Costa Rica, ISSN 2215-6771, pp. 7–22.
                   </p>
@@ -185,7 +185,7 @@ export function About() {
                       Administración Pública aumentada: inteligencia artificial
                       en la contratación estatal costarricense
                     </h3>
-                    <p className="mt-1.5 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                    <p className="mt-1.5 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
                       Revista Estudiantil Hermenéutica, Ed. XXVI — Facultad de
                       Derecho, Universidad de Costa Rica, 2025, pp. 75–144.
                       Coautoría con la Licda. Mariana Montero Acuña.
@@ -205,7 +205,7 @@ export function About() {
             {/* Conferencias */}
             <AnimatedEntry delay={0.6}>
               <div className="mt-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Conferencias y paneles internacionales
                 </div>
                 <div className="space-y-4">
@@ -215,7 +215,7 @@ export function About() {
                         <span className="px-2 py-0.5 rounded-md bg-burgundy/[0.2] text-burgundy-light text-[9px] tracking-wide font-medium uppercase">
                           {conf.role}
                         </span>
-                        <span className="text-[10px] text-cream/35 tracking-wide">
+                        <span className="text-[10px] text-cream/65 tracking-wide">
                           {conf.date}
                         </span>
                       </div>
@@ -225,7 +225,7 @@ export function About() {
                       <p className="mt-1 text-xs text-emphasis/80 font-medium leading-relaxed max-w-[55ch]">
                         {conf.panel}
                       </p>
-                      <div className="mt-1 text-[10px] text-cream/40">
+                      <div className="mt-1 text-[10px] text-cream/65">
                         {conf.location}
                       </div>
                       {i < CONFERENCES.length - 1 && (
@@ -258,7 +258,7 @@ export function About() {
                           <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                             {area.title}
                           </h3>
-                          <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">
+                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
                             {area.description}
                           </p>
                         </div>

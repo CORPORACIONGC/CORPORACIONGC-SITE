@@ -41,7 +41,7 @@ export function MarianaHero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.5}>
-            <div className="mt-3 text-[11px] text-cream/35 tracking-wide">
+            <div className="mt-3 text-[11px] text-cream/65 tracking-wide">
               Carnet CAACR 33716
             </div>
           </AnimatedEntry>

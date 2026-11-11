@@ -60,7 +60,7 @@ export function OscarHero() {
           </AnimatedEntry>
 
           <AnimatedEntry delay={0.5}>
-            <div className="mt-4 text-[11px] text-cream/35 tracking-wide">
+            <div className="mt-4 text-[11px] text-cream/65 tracking-wide">
               Carnet CAACR 3191
             </div>
           </AnimatedEntry>

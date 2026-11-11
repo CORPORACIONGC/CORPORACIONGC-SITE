@@ -39,7 +39,7 @@ export function KhevinEventoDestacado() {
 
               {/* Event info */}
               <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center">
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/40 font-medium mb-5">
+                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-5">
                   23 de octubre, 2025
                 </span>
 
@@ -50,7 +50,7 @@ export function KhevinEventoDestacado() {
                 <div className="space-y-2.5 mb-8">
                   <div className="flex items-start gap-2.5">
                     <Microphone size={14} weight="duotone" className="text-cream/30 shrink-0 mt-0.5" />
-                    <p className="text-[13px] text-cream/55 leading-relaxed">
+                    <p className="text-[13px] text-cream/65 leading-relaxed">
                       <span className="text-cream/70 font-medium">Panel</span>{" "}
                       &mdash; IA en el Derecho: M&aacute;s all&aacute; de la Eficiencia, la Urgencia de un Marco &Eacute;tico
                     </p>
@@ -58,14 +58,14 @@ export function KhevinEventoDestacado() {
 
                   <div className="flex items-start gap-2.5">
                     <MapPin size={14} weight="duotone" className="text-cream/30 shrink-0 mt-0.5" />
-                    <p className="text-[13px] text-cream/55 leading-relaxed">
+                    <p className="text-[13px] text-cream/65 leading-relaxed">
                       Universidad Javeriana, Bogot&aacute;, Colombia
                     </p>
                   </div>
 
                   <div className="flex items-start gap-2.5">
                     <GlobeHemisphereWest size={14} weight="duotone" className="text-cream/30 shrink-0 mt-0.5" />
-                    <p className="text-[13px] text-cream/55 leading-relaxed">
+                    <p className="text-[13px] text-cream/65 leading-relaxed">
                       Primera edici&oacute;n suramericana del summit global
                     </p>
                   </div>
@@ -77,7 +77,7 @@ export function KhevinEventoDestacado() {
                   <p className="text-[13px] text-cream/65 leading-relaxed italic">
                     &Eacute;tica, gobernanza de datos e inteligencia artificial aplicada al ejercicio del Derecho en Latinoam&eacute;rica
                   </p>
-                  <p className="text-[11px] text-cream/35 mt-2 leading-relaxed">
+                  <p className="text-[11px] text-cream/65 mt-2 leading-relaxed">
                     Junto a Jimena Mora (Microsoft), &Aacute;ngela Villate (VillateLab) y Nicol&aacute;s Casta&ntilde;eda (Keralty)
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export function KhevinEventoDestacado() {
                     el botón que lo enlazaba se retiró el 26-10-2026. */}
 
                 {/* Organizer */}
-                <p className="text-[11px] text-cream/25 tracking-wide">
+                <p className="text-[11px] text-cream/65 tracking-wide">
                   Legal Hackers Bogot&aacute; &middot; Universidad Javeriana
                 </p>
               </div>

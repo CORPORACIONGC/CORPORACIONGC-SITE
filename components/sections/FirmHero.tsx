@@ -32,7 +32,7 @@ export function FirmHero() {
           <div className="gc-rise" style={{ animationDelay: "0.2s" }}>
             {/* Firma editorial: la fórmula arriba, pequeña y gris; el nombre del
                 director en su propia línea, más grande y en tinta plena. */}
-            <p className="mt-4 text-[11px] tracking-[0.2em] uppercase text-cream/55 font-medium">
+            <p className="mt-4 text-[11px] tracking-[0.2em] uppercase text-cream/65 font-medium">
               Fundado y dirigido por el
             </p>
             <p className="mt-1.5 text-[13px] tracking-[0.08em] sm:text-sm sm:tracking-[0.14em] md:text-base uppercase text-cream font-semibold">
@@ -63,8 +63,19 @@ export function FirmHero() {
             </div>
           </div>
 
+          {/* En el teléfono los dos botones van bajo el retrato, dentro de la
+              primera pantalla; en escritorio siguen al pie del texto. */}
+          <div className="mt-5 grid grid-cols-2 gap-3 md:hidden">
+            <MagneticButton href="#contacto" variant="primary" fullWidth className="px-3!">
+              Agendar consulta
+            </MagneticButton>
+            <MagneticButton href="#la-firma" variant="outline" fullWidth className="px-3!">
+              Conocer la firma
+            </MagneticButton>
+          </div>
+
           <div className="gc-rise" style={{ animationDelay: "0.28s" }}>
-            <div className="mt-10 md:mt-14 max-w-[52ch]">
+            <div className="mt-8 md:mt-14 max-w-[52ch]">
               <p className="type-lead text-cream/85">
                 Coordinador de la comisión redactora del Código Procesal Contencioso
                 Administrativo. Magistrado de la Sala Primera de la Corte
@@ -87,7 +98,7 @@ export function FirmHero() {
           </div>
 
           <div className="gc-rise" style={{ animationDelay: "0.44s" }}>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 hidden flex-wrap items-center gap-4 md:flex">
               <MagneticButton href="#contacto" variant="primary">
                 Agendar consulta
               </MagneticButton>

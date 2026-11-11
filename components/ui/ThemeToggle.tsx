@@ -30,7 +30,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
   return (
     <button
       onClick={toggle}
-      className={`p-2 text-cream/40 hover:text-cream/80 transition-colors duration-300 ${className}`}
+      className={`p-2 text-cream/65 hover:text-cream/80 transition-colors duration-300 ${className}`}
       aria-label={dark ? "Cambiar a modo diurno" : "Cambiar a modo nocturno"}
     >
       <span

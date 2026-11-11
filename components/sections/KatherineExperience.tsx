@@ -25,7 +25,7 @@ export function KatherineExperience() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/50 leading-relaxed max-w-[35ch]">
+              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[35ch]">
                 Desde la asistencia legal hasta el litigio y la investigación
                 académica en Derecho Público.
               </p>
@@ -58,7 +58,7 @@ export function KatherineExperience() {
                       <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                         {exp.role}
                       </h3>
-                      <span className="text-[10px] tracking-wider text-cream/35 uppercase shrink-0">
+                      <span className="text-[10px] tracking-wider text-cream/65 uppercase shrink-0">
                         {exp.period}
                       </span>
                     </div>
@@ -67,7 +67,7 @@ export function KatherineExperience() {
                       {exp.org}
                     </div>
 
-                    <p className="text-xs text-cream/50 leading-relaxed max-w-[60ch]">
+                    <p className="text-xs text-cream/65 leading-relaxed max-w-[60ch]">
                       {exp.description}
                     </p>
 
@@ -84,7 +84,7 @@ export function KatherineExperience() {
             {/* Research highlights */}
             <StaggerItem>
               <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-4">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-4">
                   Investigación académica
                 </div>
                 <div className="space-y-6">
@@ -93,14 +93,14 @@ export function KatherineExperience() {
                       <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
                         {res.title}
                       </h3>
-                      <p className="mt-2 text-xs text-cream/50 leading-relaxed max-w-[55ch]">
+                      <p className="mt-2 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
                         {res.description}
                       </p>
                       <div className="mt-3 flex flex-wrap items-center gap-2">
                         {res.tags.map((tag, j) => (
                           <span
                             key={j}
-                            className="px-2.5 py-1 rounded-md bg-cream/[0.05] text-cream/45 text-[10px] tracking-wide"
+                            className="px-2.5 py-1 rounded-md bg-cream/[0.05] text-cream/65 text-[10px] tracking-wide"
                           >
                             {tag}
                           </span>

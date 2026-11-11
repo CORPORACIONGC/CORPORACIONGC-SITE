@@ -28,7 +28,7 @@ export function SentenciasRelacionadas({
                 el texto del ancla es el título y no toda la ficha. */}
             <div className="group relative flex h-full items-start justify-between gap-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.02] hover:border-burgundy/25 hover:bg-cream/[0.04] focus-within:border-burgundy/25 transition-all duration-300">
               <div className="min-w-0">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65">
                   {s.numero.replace("Resolución N° ", "")} · {s.fechaCorta}
                 </div>
                 <Link
@@ -37,7 +37,7 @@ export function SentenciasRelacionadas({
                 >
                   {s.titulo}
                 </Link>
-                <div className="mt-1 text-xs text-cream/50 leading-relaxed line-clamp-2">{s.materia}</div>
+                <div className="mt-1 text-xs text-cream/65 leading-relaxed line-clamp-2">{s.materia}</div>
               </div>
               <ArrowRight
                 size={14}
@@ -51,7 +51,7 @@ export function SentenciasRelacionadas({
       <div className="mt-6">
         <Link
           href="/jurisprudencia-destacada"
-          className="inline-flex items-center gap-1.5 text-xs text-cream/45 hover:text-emphasis transition-colors duration-300"
+          className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300"
         >
           Ver todas las sentencias comentadas
           <ArrowRight size={12} weight="bold" />

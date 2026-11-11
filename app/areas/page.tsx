@@ -153,7 +153,7 @@ export default function AreasPage() {
           <div className="max-w-[1000px] mx-auto px-6 md:px-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 mb-8"
+              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-8"
             >
               <ArrowLeft size={14} weight="regular" />
               Volver al inicio
@@ -166,7 +166,7 @@ export default function AreasPage() {
               <span className="text-burgundy">Derecho Público</span>
             </h1>
 
-            <div className="mt-8 text-sm text-cream/55 leading-relaxed max-w-[65ch] space-y-4">
+            <div className="mt-8 text-sm text-cream/65 leading-relaxed max-w-[65ch] space-y-4">
               <p>
                 Corporación GC es un bufete costarricense especializado en
                 Derecho Público. Cada área de práctica refleja una competencia
@@ -179,7 +179,7 @@ export default function AreasPage() {
 
             {/* Primary Areas */}
             <div className="mt-16">
-              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-6">
+              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-6">
                 Áreas Principales
               </div>
               <div className="grid grid-cols-1 gap-4">
@@ -203,7 +203,7 @@ export default function AreasPage() {
                               {area.title}
                             </h2>
                           </div>
-                          <p className="text-sm text-cream/50 leading-relaxed max-w-[55ch]">
+                          <p className="text-sm text-cream/65 leading-relaxed max-w-[55ch]">
                             {area.subtitle}
                           </p>
                         </div>
@@ -221,7 +221,7 @@ export default function AreasPage() {
 
             {/* Specialized Areas */}
             <div className="mt-12">
-              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-6">
+              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-6">
                 Áreas Especializadas
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -243,7 +243,7 @@ export default function AreasPage() {
                           {area.title}
                         </h2>
                       </div>
-                      <p className="text-xs text-cream/45 leading-relaxed">
+                      <p className="text-xs text-cream/65 leading-relaxed">
                         {area.subtitle}
                       </p>
                     </Link>
@@ -254,7 +254,7 @@ export default function AreasPage() {
 
             {/* Complementary Areas */}
             <div className="mt-12">
-              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-6">
+              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-6">
                 Cobertura Complementaria
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -270,13 +270,13 @@ export default function AreasPage() {
                         <Icon
                           size={16}
                           weight="duotone"
-                          className="text-cream/40 group-hover:text-burgundy-light dark:group-hover:text-white shrink-0 transition-colors duration-300"
+                          className="text-cream/65 group-hover:text-burgundy-light dark:group-hover:text-white shrink-0 transition-colors duration-300"
                         />
                         <h2 className="font-display text-sm text-cream/70 group-hover:text-emphasis transition-colors duration-300">
                           {area.title}
                         </h2>
                       </div>
-                      <p className="text-xs text-cream/35 leading-relaxed">
+                      <p className="text-xs text-cream/65 leading-relaxed">
                         {area.subtitle}
                       </p>
                     </Link>
@@ -290,7 +290,7 @@ export default function AreasPage() {
               <p className="font-display text-lg text-cream mb-2">
                 ¿Necesita asesoría en Derecho Público?
               </p>
-              <p className="text-sm text-cream/50 mb-6 max-w-[45ch] mx-auto">
+              <p className="text-sm text-cream/65 mb-6 max-w-[45ch] mx-auto">
                 Coordine una consulta con nuestro equipo para evaluar su caso.
               </p>
               <Link

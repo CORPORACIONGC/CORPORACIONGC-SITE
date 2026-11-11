@@ -37,7 +37,7 @@ export function KatherineAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Licenciada en Derecho y Notaria Pública por la Universidad
                 Escuela Libre de Derecho, con Maestría Profesional en Derecho
                 Público por la Universidad de Costa Rica. Mi práctica se
@@ -47,7 +47,7 @@ export function KatherineAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Ejerzo como Abogada y Notaria Pública con énfasis en litigio
                 contencioso-administrativo, procedimientos expropiatorios y
                 responsabilidad patrimonial del Estado. Domino cuatro idiomas:
@@ -56,7 +56,7 @@ export function KatherineAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.35}>
-              <p className="mt-4 text-base text-cream/60 leading-relaxed max-w-[58ch]">
+              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
                 Desde 2024 soy profesora en la Universidad Escuela Libre de
                 Derecho, donde imparto Principios del Derecho Público, Teoría
                 del Estado y Derecho Procesal Administrativo, e integro
@@ -66,7 +66,7 @@ export function KatherineAbout() {
 
             <AnimatedEntry delay={0.4}>
               <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">
+                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
                   Formación académica
                 </div>
                 <div className="space-y-2">
@@ -76,7 +76,7 @@ export function KatherineAbout() {
                       <span className="text-sm text-cream/75">
                         {edu.degree} — {edu.institution}
                         {edu.period && (
-                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/40">
+                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/65">
                             {edu.period}
                           </span>
                         )}
@@ -88,7 +88,7 @@ export function KatherineAbout() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.5}>
-              <div className="mt-4 text-xs text-cream/40">
+              <div className="mt-4 text-xs text-cream/65">
                 Idiomas: Español, Inglés, Francés, Italiano
               </div>
             </AnimatedEntry>
@@ -120,7 +120,7 @@ export function KatherineAbout() {
                               area.title
                             )}
                           </h3>
-                          <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">
+                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
                             {area.description}
                           </p>
                         </div>

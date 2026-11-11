@@ -30,7 +30,7 @@ export function Footer() {
                 <div className="text-[13px] font-semibold tracking-[0.22em] text-cream leading-none">
                   CORPORACIÓN GC
                 </div>
-                <div className="text-[9px] tracking-[0.3em] text-cream/55 mt-1 font-light">
+                <div className="text-[9px] tracking-[0.3em] text-cream/65 mt-1 font-light">
                   ABOGADOS · DERECHO PÚBLICO
                 </div>
               </div>
@@ -107,7 +107,7 @@ export function Footer() {
                 <span className="text-sm text-cream/65">{FIRM_CONTACT.email}</span>
               </div>
             </div>
-            <div className="mt-4 text-xs text-cream/55">
+            <div className="mt-4 text-xs text-cream/65">
               {FIRM_CONTACT.hours}
             </div>
           </div>
@@ -151,7 +151,7 @@ export function Footer() {
 
         {/* Colegio affiliation */}
         <div className="mt-12 pt-6 border-t border-cream/[0.06]">
-          <p className="text-[11px] text-cream/55 leading-relaxed max-w-[70ch]">
+          <p className="text-[11px] text-cream/65 leading-relaxed max-w-[70ch]">
             Todos los abogados de Corporación GC son miembros activos del
             Colegio de Abogados y Abogadas de Costa Rica. La información
             contenida en este sitio no constituye asesoría legal.
@@ -160,20 +160,20 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="mt-6 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="text-xs text-cream/55">
+          <div className="text-xs text-cream/65">
             © {new Date().getFullYear()} Corporación GC. Todos los
             derechos reservados.
           </div>
           <div className="flex items-center gap-5">
             <Link
               href="/politica-editorial"
-              className="text-xs text-cream/40 hover:text-cream transition-colors duration-300"
+              className="text-xs text-cream/65 hover:text-cream transition-colors duration-300"
             >
               Política editorial
             </Link>
             <Link
               href="/politica-de-privacidad"
-              className="text-xs text-cream/40 hover:text-cream transition-colors duration-300"
+              className="text-xs text-cream/65 hover:text-cream transition-colors duration-300"
             >
               Política de Privacidad
             </Link>

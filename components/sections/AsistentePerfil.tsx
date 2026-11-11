@@ -82,7 +82,7 @@ function Tarjeta({ icon: Icon, title, detail }: { icon: React.ElementType; title
         </div>
         <div>
           <h3 className="text-sm font-semibold text-cream/90 tracking-tight">{title}</h3>
-          <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">{detail}</p>
+          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">{detail}</p>
         </div>
       </div>
     </div>
@@ -165,7 +165,7 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
               </h2>
             </AnimatedEntry>
             <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/50 leading-relaxed max-w-[35ch]">
+              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[35ch]">
                 {a.study}.
               </p>
             </AnimatedEntry>
@@ -180,16 +180,16 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
                     <div className={`absolute left-[7px] top-7 w-[9px] h-[9px] rounded-full border-2 ${exp.highlight ? "border-emphasis bg-emphasis" : "border-cream/25 bg-surface"}`} />
                     <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
                       <h3 className="text-sm font-semibold text-cream/90 tracking-tight">{exp.role}</h3>
-                      <span className="text-[10px] tracking-wider text-cream/35 uppercase shrink-0">{exp.period}</span>
+                      <span className="text-[10px] tracking-wider text-cream/65 uppercase shrink-0">{exp.period}</span>
                     </div>
                     <div className="text-xs text-emphasis font-medium mb-2">
                       {exp.org}
-                      {exp.place && <span className="font-normal text-cream/40"> · {exp.place}</span>}
+                      {exp.place && <span className="font-normal text-cream/65"> · {exp.place}</span>}
                     </div>
                     {exp.description && (
                       <ul className="space-y-1">
                         {exp.description.map((d) => (
-                          <li key={d} className="text-xs text-cream/50 leading-relaxed max-w-[60ch]">
+                          <li key={d} className="text-xs text-cream/65 leading-relaxed max-w-[60ch]">
                             {d}
                           </li>
                         ))}
@@ -210,10 +210,10 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
                 <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
                   {a.skills && (
                     <>
-                      <div className="text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">Habilidades</div>
+                      <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">Habilidades</div>
                       <div className="flex flex-wrap gap-2">
                         {a.skills.map((s) => (
-                          <span key={s} className="px-2.5 py-1 rounded-md bg-cream/[0.05] text-cream/55 text-[11px] tracking-wide">
+                          <span key={s} className="px-2.5 py-1 rounded-md bg-cream/[0.05] text-cream/65 text-[11px] tracking-wide">
                             {s}
                           </span>
                         ))}
@@ -222,10 +222,10 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
                   )}
                   {a.extras && (
                     <>
-                      <div className="mt-6 text-[10px] tracking-[0.2em] uppercase text-cream/40 mb-3">Datos adicionales</div>
+                      <div className="mt-6 text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">Datos adicionales</div>
                       <ul className="space-y-1">
                         {a.extras.map((x) => (
-                          <li key={x} className="text-xs text-cream/55 leading-relaxed">
+                          <li key={x} className="text-xs text-cream/65 leading-relaxed">
                             {x}
                           </li>
                         ))}
@@ -272,11 +272,11 @@ export function AsistenteContact({ a }: { a: Asistente }) {
                     contactTarget="general"
                     className="group flex items-center gap-4 p-4 rounded-xl border border-cream/[0.08] hover:border-burgundy/20 transition-all duration-400"
                   >
-                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/60 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
+                    <div className="p-2.5 rounded-lg bg-cream/[0.06] text-cream/65 group-hover:text-burgundy-light group-hover:bg-burgundy/[0.12] transition-all duration-300">
                       <item.icon size={20} weight="duotone" />
                     </div>
                     <div>
-                      <div className="text-[10px] tracking-wider uppercase text-cream/40">{item.label}</div>
+                      <div className="text-[10px] tracking-wider uppercase text-cream/65">{item.label}</div>
                       <div className="text-sm text-cream/75 group-hover:text-cream transition-colors duration-300">{item.value}</div>
                     </div>
                   </TrackedContactLink>
@@ -290,10 +290,10 @@ export function AsistenteContact({ a }: { a: Asistente }) {
               <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
                   <MapPin size={16} weight="duotone" className="text-emphasis" />
-                  <span className="text-xs text-cream/50">{FIRM_CONTACT.location}</span>
+                  <span className="text-xs text-cream/65">{FIRM_CONTACT.location}</span>
                 </div>
                 <h3 className="font-display text-xl font-semibold text-cream tracking-tight mb-3">Consultas jurídicas</h3>
-                <p className="text-xs text-cream/45 leading-relaxed mb-8">
+                <p className="text-xs text-cream/65 leading-relaxed mb-8">
                   Las consultas sobre un caso las atienden los abogados de la firma. Escríbanos por WhatsApp y le
                   responderemos a la brevedad.
                 </p>
@@ -315,8 +315,8 @@ export function AsistenteContact({ a }: { a: Asistente }) {
                     className="h-8 w-auto opacity-60 dark:opacity-90 dark:brightness-0 dark:invert"
                   />
                   <div>
-                    <div className="text-[10px] text-cream/40 tracking-wide">{a.role} de</div>
-                    <div className="text-xs text-cream/60 font-medium">Corporación GC</div>
+                    <div className="text-[10px] text-cream/65 tracking-wide">{a.role} de</div>
+                    <div className="text-xs text-cream/65 font-medium">Corporación GC</div>
                   </div>
                 </div>
               </div>

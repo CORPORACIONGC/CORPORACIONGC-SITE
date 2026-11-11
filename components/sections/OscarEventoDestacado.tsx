@@ -94,7 +94,7 @@ export function OscarEventoDestacado() {
 
               {/* Event info */}
               <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center">
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/40 font-medium mb-5">
+                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-5">
                   25 de marzo, 2026
                 </span>
 
@@ -105,7 +105,7 @@ export function OscarEventoDestacado() {
                 <div className="space-y-2.5 mb-8">
                   <div className="flex items-start gap-2.5">
                     <Microphone size={14} weight="duotone" className="text-cream/30 shrink-0 mt-0.5" />
-                    <p className="text-[13px] text-cream/55 leading-relaxed">
+                    <p className="text-[13px] text-cream/65 leading-relaxed">
                       <span className="text-cream/70 font-medium">Mesa II</span>{" "}
                       &mdash; El futuro del proceso contencioso administrativo
                     </p>
@@ -113,7 +113,7 @@ export function OscarEventoDestacado() {
 
                   <div className="flex items-start gap-2.5">
                     <MapPin size={14} weight="duotone" className="text-cream/30 shrink-0 mt-0.5" />
-                    <p className="text-[13px] text-cream/55 leading-relaxed">
+                    <p className="text-[13px] text-cream/65 leading-relaxed">
                       Colegio de Abogados y Abogadas de Costa Rica
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export function OscarEventoDestacado() {
                   <p className="text-[13px] text-cream/65 leading-relaxed italic">
                     &ldquo;El por qu&eacute; y para qu&eacute; del contencioso administrativo&rdquo;
                   </p>
-                  <p className="text-[11px] text-cream/35 mt-2 leading-relaxed">
+                  <p className="text-[11px] text-cream/65 mt-2 leading-relaxed">
                     En: <em>CPCA, 20 a&ntilde;os despu&eacute;s</em> &mdash; Tirant lo Blanch, 2026
                   </p>
                 </div>
@@ -148,7 +148,7 @@ export function OscarEventoDestacado() {
                 </div>
 
                 {/* Co-organizers */}
-                <p className="text-[11px] text-cream/25 tracking-wide">
+                <p className="text-[11px] text-cream/65 tracking-wide">
                   Tirant Editorial &middot; Universidad Escuela Libre de Derecho
                 </p>
               </div>
@@ -167,14 +167,14 @@ export function OscarEventoDestacado() {
                   weight="duotone"
                   className="text-burgundy-light shrink-0"
                 />
-                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/40 font-medium">
+                <span className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium">
                   Grabaci&oacute;n oficial &middot; Colegio de Abogados
                 </span>
               </div>
               <h3 className="font-display text-lg md:text-xl text-cream mb-2 leading-snug">
                 {EVENT_VIDEO_TITLE}
               </h3>
-              <p className="text-[13px] text-cream/55 leading-relaxed">
+              <p className="text-[13px] text-cream/65 leading-relaxed">
                 {EVENT_VIDEO_DESCRIPTION}
               </p>
             </div>

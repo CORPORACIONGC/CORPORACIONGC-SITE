@@ -18,7 +18,7 @@ export default function Error({
         Algo salió mal. Por favor, intenta de nuevo.
       </p>
       {error.message && (
-        <p className="mt-2 max-w-md text-sm text-cream/50">{error.message}</p>
+        <p className="mt-2 max-w-md text-sm text-cream/65">{error.message}</p>
       )}
       <div className="mt-8 flex gap-4">
         <button

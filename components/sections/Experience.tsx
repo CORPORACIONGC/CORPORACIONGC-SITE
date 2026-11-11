@@ -26,7 +26,7 @@ export function Experience() {
             </AnimatedEntry>
 
             <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/50 leading-relaxed max-w-[35ch]">
+              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[35ch]">
                 Desde la Sala Constitucional hasta el litigio privado de alto
                 nivel, un recorrido construido con rigor y dedicación.
               </p>
@@ -61,7 +61,7 @@ export function Experience() {
                       <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                         {exp.role}
                       </h3>
-                      <span className="text-[10px] tracking-wider text-cream/35 uppercase shrink-0">
+                      <span className="text-[10px] tracking-wider text-cream/65 uppercase shrink-0">
                         {exp.period}
                       </span>
                     </div>
@@ -70,7 +70,7 @@ export function Experience() {
                       {exp.org}
                     </div>
 
-                    <p className="text-xs text-cream/50 leading-relaxed max-w-[60ch]">
+                    <p className="text-xs text-cream/65 leading-relaxed max-w-[60ch]">
                       {exp.description}
                     </p>
 

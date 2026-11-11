@@ -11,6 +11,7 @@ export function MagneticButton({
   variant = "primary",
   onClick,
   contactTarget,
+  fullWidth = false,
 }: {
   children: React.ReactNode;
   href?: string;
@@ -18,6 +19,8 @@ export function MagneticButton({
   variant?: "primary" | "secondary" | "outline" | "outline-inverse";
   onClick?: () => void;
   contactTarget?: string;
+  /** Ocupa todo el ancho de su celda, con el rótulo centrado. */
+  fullWidth?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -61,14 +64,14 @@ export function MagneticButton({
 
   const isInternal = href && (href.startsWith("/") || href.startsWith("#"));
   const isExternal = href && !isInternal;
-  const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;
+  const combinedClassName = `${baseStyles} ${variants[variant]} ${fullWidth ? "w-full justify-center" : ""} ${className}`;
 
   return (
     <div
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="inline-block"
+      className={fullWidth ? "block" : "inline-block"}
       style={{ transition: "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)" }}
     >
       {isInternal ? (

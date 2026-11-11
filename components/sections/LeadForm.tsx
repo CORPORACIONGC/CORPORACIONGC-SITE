@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import {
   PaperPlaneTilt,
   CircleNotch,
@@ -23,6 +23,13 @@ export function LeadForm() {
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+  const aviso = useRef<HTMLDivElement>(null);
+
+  /* El resultado se anuncia: al enviarse, el foco pasa al aviso de éxito,
+     que reemplaza al formulario; el de error se lee solo (role="alert"). */
+  useEffect(() => {
+    if (state === "success") aviso.current?.focus();
+  }, [state]);
 
   /* Alternativa de contacto por WhatsApp (canal preferido por la mayoría de
      consultantes). Mensaje genérico pre-rellenado; mismo número del bufete. */
@@ -53,14 +60,20 @@ export function LeadForm() {
 
   if (state === "success") {
     return (
-      <div className="flex flex-col items-center justify-center py-12 text-center">
+      <div
+        ref={aviso}
+        role="status"
+        aria-live="polite"
+        tabIndex={-1}
+        className="flex flex-col items-center justify-center py-12 text-center outline-none"
+      >
         <div className="p-3 rounded-full bg-emphasis/[0.12] mb-4">
-          <CheckCircle size={32} weight="duotone" className="text-emphasis" />
+          <CheckCircle size={32} weight="duotone" className="text-emphasis" aria-hidden="true" />
         </div>
-        <h4 className="text-base font-semibold text-cream mb-2">
+        <p className="text-base font-semibold text-cream mb-2">
           Mensaje enviado
-        </h4>
-        <p className="text-xs text-cream/65 leading-relaxed max-w-[30ch]">
+        </p>
+        <p className="text-sm text-cream/75 leading-relaxed max-w-[32ch]">
           Revisaremos su consulta y le contactaremos a la brevedad.
         </p>
       </div>
@@ -73,6 +86,7 @@ export function LeadForm() {
       /* El primer tecleo en el formulario ya es intención de contacto; el
          envío puede no llegar y esa intención se perdía. */
       onInput={() => trackFormStart("lead_form")}
+      aria-busy={state === "submitting"}
       className="space-y-4"
     >
       {/* Honeypot — invisible para humanos, los bots lo llenan */}
@@ -101,7 +115,7 @@ export function LeadForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
           placeholder="Su nombre"
         />
       </div>
@@ -122,7 +136,7 @@ export function LeadForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
             placeholder="correo@ejemplo.com"
           />
         </div>
@@ -139,7 +153,7 @@ export function LeadForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
             placeholder="+506 0000-0000"
           />
         </div>
@@ -158,16 +172,16 @@ export function LeadForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/50 hover:border-cream/35 focus:border-burgundy/70 focus:ring-2 focus:ring-burgundy/15 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none resize-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none resize-none disabled:opacity-50"
           placeholder="Tipo de caso, contexto general, urgencia..."
         />
       </div>
 
       {/* Error message */}
       {state === "error" && (
-        <div className="flex items-center gap-2 p-3 rounded-lg bg-burgundy/[0.08] border border-burgundy/20">
-          <WarningCircle size={16} className="text-burgundy-light shrink-0" />
-          <p className="text-xs text-cream/65">
+        <div role="alert" className="flex items-start gap-2 p-3 rounded-lg bg-burgundy/[0.08] border border-burgundy/20">
+          <WarningCircle size={16} aria-hidden="true" className="mt-0.5 text-burgundy-light shrink-0" />
+          <p className="text-sm text-cream/80">
             {errorMsg} Intente de nuevo o escríbanos a{" "}
             <a
               href={`mailto:${FIRM_CONTACT.email}`}

@@ -88,7 +88,7 @@ export function EstebanAbout() {
                           <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
                             {area.title}
                           </h3>
-                          <p className="mt-1.5 text-xs text-cream/50 leading-relaxed">
+                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
                             {area.description}
                           </p>
                         </div>

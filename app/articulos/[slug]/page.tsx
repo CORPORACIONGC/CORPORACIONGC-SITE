@@ -90,6 +90,8 @@ import { buildArticleMetadata } from "@/lib/page-metadata";
 import { getSentenciasPorTemas } from "@/lib/jurisprudencia";
 import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRelacionadas";
 import { RunningHead } from "@/components/ui/RunningHead";
+import { IndiceGuia } from "@/components/article/IndiceGuia";
+import { apartadosDe, corteIntermedio } from "@/lib/indice-guia";
 
 /* Credencial mostrada bajo el byline cuando el "autor" es la firma misma
    (artículos institucionales). Refleja la autoridad del director del bufete
@@ -354,6 +356,49 @@ export default async function ArticlePage({
      Markdown (type "article"), por lo que el bloque aparece automáticamente
      al agregarla; no hay que recordar añadirlo. */
   const showCommercialCta = !isPdf;
+
+  /* Índice de la guía y llamada intermedia al contacto. El índice sale de
+     los subtítulos de segundo nivel; la llamada se inserta al comienzo del
+     apartado más cercano al 38 % del texto, para que quien tiene un plazo
+     corriendo no deba llegar al final de la página. Las dos páginas en
+     medición (ESTADO_30_OCT) quedan fuera para no alterar su HTML. */
+  const enMedicion = ESTADO_30_OCT.has(slug);
+  const apartados = isPdf || enMedicion ? [] : apartadosDe(article.content);
+  const preguntasAlPie =
+    !!article.faq && article.faq.length > 0 && !enMedicion && !CON_PREGUNTAS_PROPIAS.test(article.content);
+  const indice = [
+    ...apartados.map(({ id, titulo }) => ({ id, titulo })),
+    ...(preguntasAlPie
+      ? [{ id: "preguntas-frecuentes", titulo: lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes" }]
+      : []),
+  ];
+  const conIndice = apartados.length >= 4;
+  const corte = showCommercialCta && !enMedicion ? corteIntermedio(article.content, apartados) : -1;
+  const fuente =
+    corte >= 0
+      ? `${article.content.slice(0, corte)}\n<LlamadaIntermedia />\n\n${article.content.slice(corte)}`
+      : article.content;
+  const componentes = {
+    ...ARTICLE_COMPONENTS,
+    LlamadaIntermedia: () => (
+      <aside
+        aria-label={lang === "en" ? "Contact" : "Contacto"}
+        className="not-prose my-12 flex flex-col gap-4 border-y border-cream/[0.12] py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8"
+      >
+        <div className="text-[17px] font-semibold leading-snug tracking-tight text-cream">{t.ctaTitle}</div>
+        <TrackedContactLink
+          href={whatsappUrl}
+          contactTarget="article-cta-medio"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex shrink-0 items-center justify-center gap-2 self-start rounded-lg border-2 border-burgundy/50 px-5 py-3 text-sm font-medium tracking-wide text-burgundy! no-underline! transition-colors duration-300 hover:border-burgundy hover:bg-burgundy/[0.05] active:scale-[0.98] sm:self-auto dark:border-[#5A1730] dark:bg-[#3A0B1F] dark:text-white! dark:hover:border-[#6B1D3A] dark:hover:bg-[#4A0E27]"
+        >
+          <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+          {t.ctaButton}
+        </TrackedContactLink>
+      </aside>
+    ),
+  };
   /* Línea de alcance y enlace a la política editorial: en las guías y
      análisis propios; las tesis, los libros y lo publicado en revistas
      conservan su forma original. */
@@ -546,7 +591,7 @@ export default async function ArticlePage({
             {/* Migas visibles. Antes solo existían en el marcado, y el
                 lector no tenía cómo subir del artículo a su materia. */}
             {area ? (
-              <nav aria-label="Ruta" className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-cream/50">
+              <nav aria-label="Ruta" className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-cream/65">
                 <Link href="/" className="hover:text-burgundy dark:hover:text-hilo-texto transition-colors duration-300">
                   Inicio
                 </Link>
@@ -565,7 +610,7 @@ export default async function ArticlePage({
             {/* Back */}
             <Link
               href="/articulos"
-              className={`inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300 ${area ? "mb-8" : "mb-10"}`}
+              className={`inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 ${area ? "mb-8" : "mb-10"}`}
             >
               <ArrowLeft size={14} weight="regular" />
               {t.back}
@@ -575,12 +620,12 @@ export default async function ArticlePage({
             <div className="flex flex-wrap items-center gap-3 mb-6">
               {/* Publication type badge */}
               {article.publicationType && (
-                <span className="px-2.5 py-1 rounded-md text-[9px] tracking-wider uppercase font-medium bg-burgundy/[0.10] text-burgundy dark:text-burgundy-light">
+                <span className="px-2.5 py-1 rounded-md text-[11px] tracking-wider uppercase font-medium bg-burgundy/[0.10] text-burgundy dark:text-burgundy-light">
                   {publicationTypeLabel(article.publicationType, lang)}
                 </span>
               )}
 
-              <div className="flex items-center gap-1.5 text-xs text-cream/35">
+              <div className="flex items-center gap-1.5 text-xs text-cream/65">
                 <CalendarBlank size={13} weight="regular" />
                 <time dateTime={article.date}>{formatDate(article.date, lang)}</time>
               </div>
@@ -589,14 +634,17 @@ export default async function ArticlePage({
                   fecha de actualización igual a la de publicación no dice
                   nada y Google la descuenta. */}
               {article.updated && article.updated !== article.date && (
-                <div className="flex items-center gap-1.5 text-xs text-cream/35">
+                <div className="flex items-center gap-1.5 text-xs text-cream/65">
                   <ArrowsClockwise size={13} weight="regular" />
                   {t.updated}{" "}
                   <time dateTime={article.updated}>{formatDate(article.updated, lang)}</time>
                 </div>
               )}
 
-              {article.tags.length > 0 && (
+              {/* Las etiquetas de tema van al cierre, para que el título y la
+                  respuesta entren antes en la pantalla del teléfono. Las dos
+                  páginas en medición las conservan arriba. */}
+              {enMedicion && article.tags.length > 0 && (
                 <div className="flex items-start gap-1.5 min-w-0">
                   <Tag
                     size={13}
@@ -607,7 +655,7 @@ export default async function ArticlePage({
                     {article.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 rounded text-[9px] tracking-wide bg-cream/[0.06] text-cream/40"
+                        className="px-2 py-0.5 rounded text-[9px] tracking-wide bg-cream/[0.06] text-cream/65"
                       >
                         {tag}
                       </span>
@@ -636,7 +684,7 @@ export default async function ArticlePage({
             </h1>
 
             {article.excerpt && (
-              <p className="text-base text-cream/50 leading-relaxed max-w-[60ch] mb-10">
+              <p className="text-base text-cream/80 leading-relaxed max-w-[60ch] mb-10">
                 {article.excerpt}
               </p>
             )}
@@ -653,14 +701,14 @@ export default async function ArticlePage({
                 institucional usa ORG_AUTHOR_CREDENTIAL. */}
             {article.author && article.authorVisible !== false && (
               <div className="mb-10">
-                <div className="text-[10px] tracking-[0.3em] uppercase text-emphasis/60 font-medium mb-2">
+                <div className="text-[11px] tracking-[0.3em] uppercase text-cream/65 font-medium mb-2">
                   {t.by}
                 </div>
                 <div className="text-base md:text-lg font-medium text-cream tracking-tight">
                   {article.author}
                 </div>
                 {authorCredential && (
-                  <div lang="es" className="mt-1.5 text-sm text-cream/55 leading-relaxed max-w-[60ch]">
+                  <div lang="es" className="mt-1.5 text-sm text-cream/65 leading-relaxed max-w-[60ch]">
                     {authorCredential}
                   </div>
                 )}
@@ -671,8 +719,8 @@ export default async function ArticlePage({
             {article.sourceReference && (
               <div className="flex items-start gap-3 p-4 rounded-lg border border-cream/[0.08] bg-cream/[0.03] mb-10">
                 <BookOpen size={16} weight="regular" className="text-emphasis/60 shrink-0 mt-0.5" />
-                <div className="text-xs text-cream/50 leading-relaxed">
-                  <span className="text-cream/60 font-medium">{t.publishedIn}</span>
+                <div className="text-xs text-cream/65 leading-relaxed">
+                  <span className="text-cream/65 font-medium">{t.publishedIn}</span>
                   {article.sourceReference}
                   {article.sourceUrl && (
                     <>
@@ -692,7 +740,13 @@ export default async function ArticlePage({
               </div>
             )}
 
-            <div className="h-px bg-cream/[0.06] mb-10" />
+            <div className={`h-px bg-cream/[0.06] mb-10 ${conIndice ? "hidden xl:block" : ""}`} />
+
+            {/* El cuerpo y las preguntas comparten un marco: el índice se
+                ancla a él, pegado bajo la barra en pantallas angostas y fijo
+                en el margen izquierdo desde 1280 px. */}
+            <div className={conIndice ? "gc-con-indice relative" : undefined}>
+            {conIndice && <IndiceGuia items={indice} lang={lang === "en" ? "en" : "es"} />}
 
             {/* Content */}
             {isPdf && article.content.trim() && (
@@ -713,8 +767,8 @@ export default async function ArticlePage({
             ) : (
               <div className="prose-article">
                 <MDXRemote
-                  source={article.content}
-                  components={ARTICLE_COMPONENTS}
+                  source={fuente}
+                  components={corte >= 0 ? componentes : ARTICLE_COMPONENTS}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],
@@ -728,9 +782,9 @@ export default async function ArticlePage({
                 FAQPage: las directrices piden que el marcado refleje lo que la
                 página muestra. Si el cuerpo ya trae su propio apartado de
                 preguntas, no se repiten aquí. */}
-            {article.faq && article.faq.length > 0 && !congelada && !CON_PREGUNTAS_PROPIAS.test(article.content) && (
+            {article.faq && preguntasAlPie && (
               <section aria-labelledby="preguntas-frecuentes" className="mt-14">
-                <h2 id="preguntas-frecuentes" className="font-display text-xl md:text-2xl tracking-tight text-cream">
+                <h2 id="preguntas-frecuentes" className="scroll-mt-32 font-display text-xl md:text-2xl tracking-tight text-cream">
                   {lang === "en" ? "Frequently asked questions" : "Preguntas frecuentes"}
                 </h2>
                 <div className="mt-6 divide-y divide-cream/10 border-y border-cream/10">
@@ -746,9 +800,17 @@ export default async function ArticlePage({
                 </div>
               </section>
             )}
+            </div>
+
+            {!enMedicion && article.tags.length > 0 && (
+              <p className="mt-10 text-[13px] leading-relaxed text-cream/65">
+                <span className="font-medium text-cream/80">{lang === "en" ? "Topics" : "Temas"}:</span>{" "}
+                {article.tags.join(" · ")}
+              </p>
+            )}
 
             {muestraAlcance && (
-              <p className="mt-12 border-t border-cream/[0.06] pt-5 text-xs leading-relaxed text-cream/50">
+              <p className="mt-12 border-t border-cream/[0.06] pt-5 text-xs leading-relaxed text-cream/65">
                 {t.alcance(formatDate(article.updated ?? article.date, lang))}{" "}
                 <Link href="/politica-editorial" className="underline decoration-cream/25 underline-offset-4 hover:text-emphasis">
                   {t.politica}
@@ -773,7 +835,7 @@ export default async function ArticlePage({
                   <h2 className="font-display text-xl md:text-2xl font-semibold tracking-tight text-cream leading-snug">
                     {t.ctaTitle}
                   </h2>
-                  <p className="mt-2.5 text-sm text-cream/60 leading-relaxed max-w-[54ch]">
+                  <p className="mt-2.5 text-sm text-cream/65 leading-relaxed max-w-[54ch]">
                     {t.ctaText}
                   </p>
                   <TrackedContactLink
@@ -794,7 +856,7 @@ export default async function ArticlePage({
             {/* About the Author(s) */}
             {authorMembers.length > 0 && article.authorVisible !== false && (
               <div className="mt-16 pt-8 border-t border-cream/[0.06]">
-                <div className="text-[10px] tracking-[0.25em] uppercase text-cream/35 font-medium mb-5">
+                <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-5">
                   {authorMembers.length > 1 ? t.aboutMany : t.aboutOne}
                 </div>
                 <div className="space-y-6">
@@ -816,13 +878,13 @@ export default async function ArticlePage({
                         >
                           {member.name}
                         </Link>
-                        <p lang="es" className="text-xs text-cream/40 mt-0.5">
+                        <p lang="es" className="text-xs text-cream/65 mt-0.5">
                           {member.role} · Corporación GC
                         </p>
                         {/* En el artículo, la ficha del autor lleva su
                             credencial —la misma línea que va bajo la firma—,
                             no la biografía larga del equipo. */}
-                        <p lang="es" className="text-xs text-cream/55 leading-relaxed mt-2 max-w-[50ch]">
+                        <p lang="es" className="text-xs text-cream/65 leading-relaxed mt-2 max-w-[50ch]">
                           {ATTORNEYS[member.slug]?.credential ?? member.shortBio}
                         </p>
                         <Link
@@ -893,7 +955,7 @@ export default async function ArticlePage({
                             <span className="block text-sm font-semibold text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
                               {h.title}
                             </span>
-                            <span className="mt-1 block text-[11px] text-cream/50">
+                            <span className="mt-1 block text-[11px] text-cream/65">
                               {publicationTypeLabel(h.publicationType, lang)}
                               {h.minutos ? ` · ${h.minutos} min` : ""}
                             </span>
@@ -919,7 +981,7 @@ export default async function ArticlePage({
             <div className="mt-10 pt-8 border-t border-cream/[0.06]">
               <Link
                 href="/articulos"
-                className="inline-flex items-center gap-1.5 text-xs text-cream/40 hover:text-emphasis transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300"
               >
                 <ArrowLeft size={14} weight="regular" />
                 {t.backBottom}
