@@ -5,7 +5,7 @@ excerpt: "Desde el 8 de octubre de 2026, quien le vende al Estado puede perder l
 tags: ["Ley 10971", "Contratación Pública", "Ley 9986", "Obligaciones laborales", "Inhabilitación", "Seguridad social", "Proveedores del Estado", "Procedimientos Sancionatorios"]
 areas: ["contratacion-publica", "procedimientos-sancionatorios"]
 type: "article"
-author: "Lic. Esteban Pérez Herrera"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
