@@ -12,10 +12,14 @@ export function LiteYouTube({
   id,
   title,
   start,
+  miniaturaHd = false,
 }: {
   id: string;
   title: string;
   start?: number;
+  /** Usa la miniatura de alta definición (16:9, sin franjas negras). Solo
+   *  para videos que la tienen: no todos los de YouTube la publican. */
+  miniaturaHd?: boolean;
 }) {
   const [active, setActive] = useState(false);
 
@@ -46,7 +50,7 @@ export function LiteYouTube({
       style={{ paddingBottom: "56.25%" }}
     >
       <img
-        src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+        src={`https://i.ytimg.com/vi/${id}/${miniaturaHd ? "maxresdefault" : "hqdefault"}.jpg`}
         alt={title}
         loading="lazy"
         referrerPolicy="no-referrer"

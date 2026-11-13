@@ -28,6 +28,7 @@ import { KatherineHero } from "@/components/sections/KatherineHero";
 import { KatherineAbout } from "@/components/sections/KatherineAbout";
 import { KatherineExperience } from "@/components/sections/KatherineExperience";
 import { KatherineContact } from "@/components/sections/KatherineContact";
+import { KatherineDivulgacion } from "@/components/sections/KatherineDivulgacion";
 import { MarianaHero } from "@/components/sections/MarianaHero";
 import { MarianaAbout } from "@/components/sections/MarianaAbout";
 import { MarianaExperience } from "@/components/sections/MarianaExperience";
@@ -593,6 +594,7 @@ function KatherineProfile() {
           <Credentials credentials={KATHERINE_PROFILE.credentials} />
           <KatherineAbout />
           <KatherineExperience />
+          <KatherineDivulgacion />
           <Publications articles={articles} />
           <KatherineContact />
         </main>
