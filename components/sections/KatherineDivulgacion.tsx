@@ -20,7 +20,7 @@ const EPISODIO = {
   duracion: "PT33M46S",
   minutos: 34,
   resumen:
-    "Conversación sobre las expropiaciones en Costa Rica y la tensión entre la celeridad del procedimiento y las garantías de la persona propietaria. El episodio repasa tres exigencias de todo procedimiento expropiatorio: que se le comunique la motivación del interés público sobre su inmueble, que se notifique correctamente a quienes resultan afectados y que se le dé la oportunidad de obtener un justo precio.",
+    "La MSc. Katherine González Coto, abogada asociada de Corporación GC y profesora de la Universidad Escuela Libre de Derecho, fue la invitada de este episodio. Conversó sobre las expropiaciones en Costa Rica y la tensión entre la celeridad del procedimiento y las garantías de la persona propietaria, y repasó tres exigencias de todo procedimiento expropiatorio: que se le comunique la motivación del interés público sobre su inmueble, que se notifique correctamente a quienes resultan afectados y que se le dé la oportunidad de obtener un justo precio.",
 };
 
 const enlace =
@@ -60,7 +60,7 @@ export function KatherineDivulgacion() {
               </div>
 
               <p className="mt-7 text-[13px] text-cream/70 tabular-nums">
-                {EPISODIO.organizador} · <time dateTime={EPISODIO.fecha.slice(0, 10)}>{EPISODIO.fechaVisible}</time> ·{" "}
+                Invitada: MSc. Katherine González Coto · {EPISODIO.organizador} · <time dateTime={EPISODIO.fecha.slice(0, 10)}>{EPISODIO.fechaVisible}</time> ·{" "}
                 {EPISODIO.minutos} min
               </p>
 
