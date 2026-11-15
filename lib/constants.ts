@@ -647,7 +647,7 @@ export const ESTEBAN_PROFILE = {
 
 export const SITE = { name: "Lic. Khevin Alberto Sánchez Zamora", title: "Lic. Khevin Alberto Sánchez Zamora | Abogado Asociado · Corporación GC", description: "Abogado especializado en Litigio Contencioso-Administrativo, Medidas Cautelares, Casación y Contratación Pública. Licenciado en Derecho por la UCR con el tercer mejor promedio del Examen de Excelencia Académica, e investigador en inteligencia artificial aplicada a la justicia.", url: "https://www.corporaciongc.com", locale: "es_CR", carnet: "37920" } as const;
 
-export const CONTACT = { email: "ksanchez@corporaciongc.com", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-zamora-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Cartago, Costa Rica" } as const;
+export const CONTACT = { email: "ksanchez@corporaciongc.com", linkedin: "https://www.linkedin.com/in/khevin-s%C3%A1nchez-zamora-16b047205/", instagram: "https://www.instagram.com/lic.sanchezzamora", instagramHandle: "@lic.sanchezzamora", location: "Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501" } as const;
 
 export const CREDENTIALS = [
   { metric: "8+", label: "Años de experiencia en Derecho Público", detail: "Desde diciembre de 2017, Sala Constitucional" },
