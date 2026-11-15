@@ -2,7 +2,6 @@
 import Image from "next/image";
 import {
   Envelope,
-  Phone,
   WhatsappLogo,
   LinkedinLogo,
   InstagramLogo,
@@ -11,7 +10,7 @@ import {
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, FIRM_CONTACT } from "@/lib/constants";
 import { RunningHead } from "@/components/ui/RunningHead";
 
 const contactItems = [
@@ -20,12 +19,6 @@ const contactItems = [
     label: "Email",
     value: CONTACT.email,
     href: `mailto:${CONTACT.email}`,
-  },
-  {
-    icon: Phone,
-    label: "Teléfono",
-    value: CONTACT.phone,
-    href: `tel:+${CONTACT.phoneRaw}`,
   },
   {
     icon: LinkedinLogo,
@@ -121,11 +114,13 @@ export function Contact() {
                 </h3>
                 <p className="text-xs text-cream/65 leading-relaxed mb-8">
                   Envíe un mensaje con los detalles de su consulta
-                  jurídica y le responderé a la brevedad.
+                  jurídica y le responderemos a la brevedad.
                 </p>
 
                 <MagneticButton
-                  href={`https://wa.me/${CONTACT.phoneRaw}?text=Hola%20Lic.%20S%C3%A1nchez%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica.`}
+                  /* Al número de la firma: el perfil no publica el teléfono
+                     personal del Lic. Sánchez (retirado el 15-11-2026). */
+                  href={`https://wa.me/${FIRM_CONTACT.phoneRaw}?text=Hola%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica%20con%20el%20Lic.%20Khevin%20S%C3%A1nchez.`}
                   variant="primary"
                   className="w-full justify-center"
                   contactTarget="khevin"
