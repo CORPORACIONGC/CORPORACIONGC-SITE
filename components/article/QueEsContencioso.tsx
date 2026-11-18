@@ -370,7 +370,7 @@ export function ViasFrenteAdministracion() {
 
 /* ── Figura 5. Cronología ─────────────────────────────────────────────── */
 
-const HITOS: { fecha: string; que: string; fuente: { texto: string; href?: string } }[] = [
+const HITOS: { fecha: string; que: React.ReactNode; fuente: { texto: string; href?: string } }[] = [
   {
     fecha: "Antes de 1949",
     que: "Los tribunales podían condenar al Estado a pagar daños, pero no anular sus actos. No existía una jurisdicción contencioso-administrativa propiamente dicha.",
@@ -378,7 +378,12 @@ const HITOS: { fecha: string; que: string; fuente: { texto: string; href?: strin
   },
   {
     fecha: "1949",
-    que: "La Constituyente crea la jurisdicción en el artículo 49 y la confía al Poder Judicial. El texto original solo permitía revisar lo actuado «en uso de facultades regladas».",
+    que: (
+      <>
+        La Constituyente crea la jurisdicción en el artículo 49 y la confía al Poder Judicial. El texto original solo
+        permitía revisar lo actuado <em>«en uso de facultades regladas»</em>.
+      </>
+    ),
     fuente: { texto: "Actas 109 a 113 y 179", href: SINALEVI(871, 928) },
   },
   {

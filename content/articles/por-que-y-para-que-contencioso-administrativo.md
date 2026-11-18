@@ -52,11 +52,11 @@ La definición no es sencilla, y los constituyentes de 1949 lo sabían. Fernando
 
 El artículo 49 de la Constitución Política es la base de todo el sistema. Su texto vigente dice así:
 
-> «Establécese la jurisdicción contencioso - administrativa como atribución del Poder Judicial, con el objeto de garantizar la legalidad de la función administrativa del Estado, de sus instituciones y de toda otra entidad de derecho público.
+> *«Establécese la jurisdicción contencioso - administrativa como atribución del Poder Judicial, con el objeto de garantizar la legalidad de la función administrativa del Estado, de sus instituciones y de toda otra entidad de derecho público.*
 >
-> La desviación de poder será motivo de impugnación de los actos administrativos.
+> *La desviación de poder será motivo de impugnación de los actos administrativos.*
 >
-> La ley protegerá, al menos, los derechos subjetivos y los intereses legítimos de los administrados.»
+> *La ley protegerá, al menos, los derechos subjetivos y los intereses legítimos de los administrados.»*
 
 Tres ideas salen de ese texto. La primera es que **juzga el Poder Judicial**, un tribunal independiente de la Administración. La segunda es que el juez controla **toda la función administrativa**, de cualquier institución pública. La tercera es que la ley debe proteger, **como mínimo**, los derechos y los intereses legítimos de las personas.
 

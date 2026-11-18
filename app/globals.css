@@ -1230,8 +1230,6 @@ html {
 }
 .prose-article blockquote p { margin-bottom: 0.9rem; }
 .prose-article blockquote p:last-child { margin-bottom: 0; }
-/* Citas en línea (*«…»* en el Markdown): redonda, sin cursiva. */
-.prose-article .gc-cita-linea { font-style: normal; }
 /* Las citas en bloque no se justifican ni parten palabras. */
 .prose-article blockquote p {
   text-align: left;

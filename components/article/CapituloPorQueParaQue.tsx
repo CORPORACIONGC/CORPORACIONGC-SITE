@@ -52,7 +52,7 @@ export function CapituloPorQueParaQue() {
           <p className="mt-4 text-[13px] leading-relaxed text-cream/65">
             En <em>CPCA, 20 años después: perspectivas críticas sobre la justicia administrativa</em>, dirigida por Alex
             Rojas Ortega (San José: Tirant lo Blanch, Colección Monografías Maior, 2026). ISBN 9791370214753. Presentado en
-            la Mesa II de «CPCA 20 años: balance, transformaciones y desafíos de la justicia administrativa», Colegio de
+            la Mesa II de <em>«CPCA 20 años: balance, transformaciones y desafíos de la justicia administrativa»</em>, Colegio de
             Abogados y Abogadas de Costa Rica, 25 de marzo de 2026.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
