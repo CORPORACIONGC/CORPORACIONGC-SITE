@@ -30,7 +30,7 @@ faq:
     answer: "Es la apelación contra los acuerdos municipales que la Constitución envía a un tribunal del Poder Judicial cuando la municipalidad no los revoca ni los reforma (artículo 173). El Código asigna ese conocimiento al Tribunal Contencioso Administrativo (artículos 189 y 190), que actúa como contralor no jerárquico de legalidad y resuelve definitivamente."
 ---
 
-> **En síntesis.** El **Tribunal Contencioso Administrativo y Civil de Hacienda** es el órgano del Poder Judicial que juzga las demandas contra el Estado, las municipalidades, las instituciones autónomas y el resto de las administraciones públicas de Costa Rica. Tiene su sede en Calle Blancos de Goicoechea y trabaja desde el 1 de enero de 2008 con el **Código Procesal Contencioso-Administrativo** (Ley N.° 8508), que cambió el juicio escrito por un proceso oral y por audiencias. Dentro del Tribunal, un **juez tramitador** prepara el caso, un **tribunal de juicio** colegiado recibe la prueba y dicta la sentencia, y un **juez ejecutor** la hace cumplir. La sentencia se revisa en casación ante la **Sala Primera** o el **Tribunal de Casación**, según quién haya dictado la conducta impugnada.
+Cuando una institución pública niega un permiso, cancela una concesión, impone una multa, adjudica mal una licitación o causa un daño, la discusión suele terminar en el mismo edificio de Calle Blancos. Pocas personas saben, sin embargo, cómo trabaja por dentro el Tribunal que la decide: quién recibe la demanda, quién dicta la sentencia, qué se puede apelar y ante quién. Esta guía lo explica con el texto vigente del Código, con resoluciones de 2026 y con las notas de prensa del propio Poder Judicial que documentaron el nacimiento del Tribunal. En Corporación GC litigamos con regularidad en esta jurisdicción, y nuestro director, el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), coordinó la comisión que redactó el Código.
 
 > **Datos del Tribunal Contencioso Administrativo y Civil de Hacienda**
 >
@@ -40,8 +40,6 @@ faq:
 > - **Expedientes:** se consultan en el [Sistema de Gestión en Línea](https://pjenlinea.poder-judicial.go.cr/SistemaGestionEnLineaPJ/publica/wfpDefaultPublico.aspx) del Poder Judicial, con usuario y contraseña o con firma digital.
 >
 > Datos tomados del pie de las resoluciones que el Tribunal notificó en 2026 (voto [5350-2026](https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-1423788)). Confírmelos en la resolución más reciente de su expediente antes de acudir o de enviar un escrito.
-
-Cuando una institución pública niega un permiso, cancela una concesión, impone una multa, adjudica mal una licitación o causa un daño, la discusión suele terminar en el mismo edificio de Calle Blancos. Pocas personas saben, sin embargo, cómo trabaja por dentro el Tribunal que la decide: quién recibe la demanda, quién dicta la sentencia, qué se puede apelar y ante quién. Esta guía lo explica con el texto vigente del Código, con resoluciones de 2026 y con las notas de prensa del propio Poder Judicial que documentaron el nacimiento del Tribunal. En Corporación GC litigamos con regularidad en esta jurisdicción, y nuestro director, el [Dr. Óscar Eduardo González Camacho](/abogados/oscar-gonzalez), coordinó la comisión que redactó el Código.
 
 ## Qué es el Tribunal Contencioso Administrativo
 

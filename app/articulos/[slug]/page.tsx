@@ -77,6 +77,7 @@ import {
   CronologiaContencioso,
 } from "@/components/article/QueEsContencioso";
 import { CapituloPorQueParaQue } from "@/components/article/CapituloPorQueParaQue";
+import { PreguntaFrecuente, ListaPreguntas, preguntasDesplegables } from "@/components/article/PreguntaFrecuente";
 import { CronologiaPsav, CambiosReforma1319, ConsultaVsFinal1319, PendientesPsav } from "@/components/article/ReformaSugef1319";
 import {
   ProcedimientoDespido10159,
@@ -270,6 +271,8 @@ const ARTICLE_COMPONENTS = {
   CambiosReforma1319,
   ConsultaVsFinal1319,
   PendientesPsav,
+  PreguntaFrecuente,
+  ListaPreguntas,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
@@ -393,10 +396,13 @@ export default async function ArticlePage({
   ];
   const conIndice = apartados.length >= 4;
   const corte = showCommercialCta && !enMedicion ? corteIntermedio(article.content, apartados) : -1;
-  const fuente =
+  const conLlamada =
     corte >= 0
       ? `${article.content.slice(0, corte)}\n<LlamadaIntermedia />\n\n${article.content.slice(corte)}`
       : article.content;
+  /* Las preguntas frecuentes escritas en el cuerpo se muestran desplegables,
+     igual que las del pie. Las páginas en medición conservan su HTML. */
+  const fuente = enMedicion ? conLlamada : preguntasDesplegables(conLlamada);
   const componentes = {
     ...ARTICLE_COMPONENTS,
     LlamadaIntermedia: () => (
