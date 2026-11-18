@@ -79,6 +79,7 @@ import {
 import { CapituloPorQueParaQue } from "@/components/article/CapituloPorQueParaQue";
 import { PreguntaFrecuente, ListaPreguntas, preguntasDesplegables } from "@/components/article/PreguntaFrecuente";
 import { CronologiaPsav, CambiosReforma1319, ConsultaVsFinal1319, PendientesPsav } from "@/components/article/ReformaSugef1319";
+import { CalendarioCierre20262027, CalendarioPlazoDiasCierre, CalendarioVencimientoCierre } from "@/components/article/CierreColectivo";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -268,6 +269,9 @@ const ARTICLE_COMPONENTS = {
   CronologiaContencioso,
   CapituloPorQueParaQue,
   CronologiaPsav,
+  CalendarioCierre20262027,
+  CalendarioPlazoDiasCierre,
+  CalendarioVencimientoCierre,
   CambiosReforma1319,
   ConsultaVsFinal1319,
   PendientesPsav,

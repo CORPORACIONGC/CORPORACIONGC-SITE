@@ -4,6 +4,7 @@ import { fuentes as f_accion_de_inconstitucionalidad_costa_rica } from "./accion
 import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de-espera";
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
 import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } from "./anular-adjudicacion-tribunal-contencioso-administrativo";
+import { fuentes as f_cierre_colectivo_poder_judicial_2026_2027_plazos } from "./cierre-colectivo-poder-judicial-2026-2027-plazos";
 import { fuentes as f_como_demandar_al_estado_costa_rica } from "./como-demandar-al-estado-costa-rica";
 import { fuentes as f_compra_publica_innovadora_costa_rica } from "./compra-publica-innovadora-costa-rica";
 import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-vasp-registration-sugef";
@@ -38,6 +39,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "amparo-ccss-lista-de-espera": f_amparo_ccss_lista_de_espera,
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
   "anular-adjudicacion-tribunal-contencioso-administrativo": f_anular_adjudicacion_tribunal_contencioso_administrativo,
+  "cierre-colectivo-poder-judicial-2026-2027-plazos": f_cierre_colectivo_poder_judicial_2026_2027_plazos,
   "como-demandar-al-estado-costa-rica": f_como_demandar_al_estado_costa_rica,
   "compra-publica-innovadora-costa-rica": f_compra_publica_innovadora_costa_rica,
   "costa-rica-vasp-registration-sugef": f_costa_rica_vasp_registration_sugef,

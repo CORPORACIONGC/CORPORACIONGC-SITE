@@ -6,13 +6,14 @@
 
 import { RunningHead } from "@/components/ui/RunningHead";
 
-export type Marca = "envio" | "notificado" | "inicio" | "corre" | "vence" | "inhabil" | "prorroga";
+export type Marca = "envio" | "notificado" | "inicio" | "corre" | "ultimo" | "vence" | "inhabil" | "prorroga";
 
 const ROTULO: Record<Marca, string> = {
   envio: "Transmisión",
   notificado: "Queda notificada",
   inicio: "Empieza el plazo",
   corre: "Día del plazo",
+  ultimo: "Último día del plazo",
   vence: "Vencimiento de fecha a fecha",
   inhabil: "Inhábil",
   prorroga: "Vencimiento prorrogado",
