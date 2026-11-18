@@ -27,6 +27,7 @@ import { fuentes as f_proceso_de_lesividad_costa_rica } from "./proceso-de-lesiv
 import { fuentes as f_reajuste_precios_obra_publica_costa_rica } from "./reajuste-precios-obra-publica-costa-rica";
 import { fuentes as f_recurso_amparo_costa_rica } from "./recurso-amparo-costa-rica";
 import { fuentes as f_recurso_casacion_contencioso_administrativo_costa_rica } from "./recurso-casacion-contencioso-administrativo-costa-rica";
+import { fuentes as f_reduccion_forzosa_despido_por_reestructuracion_sector_publico } from "./reduccion-forzosa-despido-por-reestructuracion-sector-publico";
 import { fuentes as f_reforma_acuerdo_sugef_13_19_activos_virtuales } from "./reforma-acuerdo-sugef-13-19-activos-virtuales";
 import { fuentes as f_reforma_reglamento_contratacion_publica_decreto_45782 } from "./reforma-reglamento-contratacion-publica-decreto-45782";
 import { fuentes as f_registro_vasp_sugef_costa_rica } from "./registro-vasp-sugef-costa-rica";
@@ -62,6 +63,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "reajuste-precios-obra-publica-costa-rica": f_reajuste_precios_obra_publica_costa_rica,
   "recurso-amparo-costa-rica": f_recurso_amparo_costa_rica,
   "recurso-casacion-contencioso-administrativo-costa-rica": f_recurso_casacion_contencioso_administrativo_costa_rica,
+  "reduccion-forzosa-despido-por-reestructuracion-sector-publico": f_reduccion_forzosa_despido_por_reestructuracion_sector_publico,
   "reforma-acuerdo-sugef-13-19-activos-virtuales": f_reforma_acuerdo_sugef_13_19_activos_virtuales,
   "reforma-reglamento-contratacion-publica-decreto-45782": f_reforma_reglamento_contratacion_publica_decreto_45782,
   "registro-vasp-sugef-costa-rica": f_registro_vasp_sugef_costa_rica,
