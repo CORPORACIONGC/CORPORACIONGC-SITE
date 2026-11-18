@@ -5006,8 +5006,9 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           procesadores de pagos cripto y plataformas de emisión— a inscribirse ante la SUGEF y a
           aplicar el régimen de prevención de legitimación de capitales, financiamiento del
           terrorismo y proliferación bajo un enfoque basado en riesgos. La ley rige desde el 19
-          de setiembre de 2026; el reglamento del CONASSIF, que fijará umbrales, categorías y
-          requisitos documentales del trámite, seguía sin publicarse al 18 de setiembre de 2026. Los procedimientos de
+          de setiembre de 2026, y la reforma del Acuerdo SUGEF 13-19, que fija las obligaciones de
+          prevención, rige desde el 11 de noviembre de 2026; el trámite de inscripción todavía no
+          tiene norma. Los procedimientos de
           SUGEF y CONASSIF son procedimientos administrativos regidos por la Ley General de la
           Administración Pública, territorio natural de Corporación GC.
         </p>
@@ -5044,8 +5045,8 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           el expediente y lo presentamos el día en que SUGEF habilite el trámite conforme al
           reglamento del CONASSIF. Como referencia del ritmo previsible, en el procedimiento
           vigente para los demás sujetos inscritos (Acuerdo SUGEF 11-18) la Superintendencia
-          verifica los requisitos en un máximo de diez días hábiles y previene por diez días
-          hábiles prorrogables una vez.
+          resuelve en un máximo de 40 días naturales desde la recepción de los documentos, o de
+          hasta 60 si el trámite es complejo.
         </p>
       </Instrumento>
 
@@ -5152,11 +5153,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
               ¿Cuándo abre el registro y qué puede hacerse mientras tanto?
             </h3>
             <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
-              La ley rige desde el 19 de setiembre de 2026. El reglamento del CONASSIF, que
-              definirá la plataforma, los formularios, los umbrales y los requisitos documentales,
-              sigue pendiente de emisión, y al 18 de setiembre de 2026 el registro de normativa en
-              consulta de SUGEF tampoco incluía ninguna propuesta sobre el artículo 15 quater.
-              Hasta entonces la ventana permanece cerrada. Lo que sí puede ejecutarse hoy, porque
+              La ley rige desde el 19 de setiembre de 2026, y las obligaciones de prevención tienen
+              reglamento desde el 11 de noviembre de 2026 (reforma del Acuerdo SUGEF 13-19). La
+              norma que definirá la plataforma, los formularios y los requisitos documentales de la
+              inscripción sigue pendiente: la SUGEF la dejó para una reforma posterior del Acuerdo
+              11-18. Hasta entonces la ventana permanece cerrada. Lo que sí puede ejecutarse hoy, porque
               depende de la ley ya publicada: el dictamen de sujeción, la adecuación societaria y
               tributaria, la firma digital, la estrategia bancaria y el programa de cumplimiento,
               para presentar el expediente el día en que el trámite se habilite.

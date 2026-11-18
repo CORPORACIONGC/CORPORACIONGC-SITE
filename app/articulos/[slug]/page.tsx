@@ -77,6 +77,7 @@ import {
   CronologiaContencioso,
 } from "@/components/article/QueEsContencioso";
 import { CapituloPorQueParaQue } from "@/components/article/CapituloPorQueParaQue";
+import { CronologiaPsav, CambiosReforma1319, ConsultaVsFinal1319, PendientesPsav } from "@/components/article/ReformaSugef1319";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -265,6 +266,10 @@ const ARTICLE_COMPONENTS = {
   ViasFrenteAdministracion,
   CronologiaContencioso,
   CapituloPorQueParaQue,
+  CronologiaPsav,
+  CambiosReforma1319,
+  ConsultaVsFinal1319,
+  PendientesPsav,
 };
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
