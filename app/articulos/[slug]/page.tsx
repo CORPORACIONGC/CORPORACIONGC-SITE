@@ -70,6 +70,14 @@ import {
 } from "@/components/article/TribunalContencioso";
 import { FuentesCpca, PlazosCpca, ReformasCpca } from "@/components/article/CpcaGuia";
 import {
+  ConductasContencioso,
+  QuienPuedeDemandar,
+  MomentosProcesoContencioso,
+  ViasFrenteAdministracion,
+  CronologiaContencioso,
+} from "@/components/article/QueEsContencioso";
+import { CapituloPorQueParaQue } from "@/components/article/CapituloPorQueParaQue";
+import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
   PreguntasExpedienteDespido,
@@ -166,6 +174,20 @@ function anclaDe(nodo: ReactNode): string | undefined {
     .replace(/^-+|-+$/g, "");
   return a || undefined;
 }
+/* Las citas literales que el Markdown escribe como *«…»* se muestran en
+   redonda, con sus comillas: la cursiva queda para títulos de obras y
+   términos extranjeros (regla del sistema de diseño: citas sin cursiva). */
+function Enfasis({ children, ...props }: ComponentProps<"em">) {
+  const inicio = textoDe(children).trimStart().charAt(0);
+  if (inicio === "«" || inicio === "“") {
+    return (
+      <span className="gc-cita-linea" {...props}>
+        {children}
+      </span>
+    );
+  }
+  return <em {...props}>{children}</em>;
+}
 function SubtituloH2({ children, id, ...props }: ComponentProps<"h2">) {
   return (
     <h2 id={id ?? anclaDe(children)} {...props}>
@@ -186,6 +208,7 @@ function SubtituloH3({ children, id, ...props }: ComponentProps<"h3">) {
 const ARTICLE_COMPONENTS = {
   h2: SubtituloH2,
   h3: SubtituloH3,
+  em: Enfasis,
   IrAlArticulado,
   CodigoLGAP,
   CodigoLey6043,
@@ -251,7 +274,18 @@ const ARTICLE_COMPONENTS = {
   ReformasCpca,
   PlazosCpca,
   FuentesCpca,
+  ConductasContencioso,
+  QuienPuedeDemandar,
+  MomentosProcesoContencioso,
+  ViasFrenteAdministracion,
+  CronologiaContencioso,
+  CapituloPorQueParaQue,
 };
+
+/* Las páginas en medición (ESTADO_30_OCT) conservan su HTML del 30 de
+   octubre: sin la sustitución de la cursiva de las citas. */
+const { em: _em, ...COMPONENTES_EN_MEDICION } = ARTICLE_COMPONENTS;
+void _em;
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
 // evitando que Google los archive como "rastreada, sin indexar".
@@ -455,7 +489,16 @@ export default async function ArticlePage({
     dateModified: conZona(article.updated ?? article.date),
     /* La obra de don Óscar que la página presenta, o la ley sobre la que
        gira la guía, con el mismo @id que en el resto del sitio. */
-    ...(obra ? { about: obra } : norma ? { about: legislacionSchema(norma) } : {}),
+    /* Cuando la obra va incrustada en una guía (el capítulo de 2026 dentro
+       de la guía sobre qué es lo contencioso), la guía la cita como fuente
+       en vez de declararse sobre ella. */
+    ...(obra
+      ? isPdf
+        ? { about: obra }
+        : { citation: obra }
+      : norma
+        ? { about: legislacionSchema(norma) }
+        : {}),
     url: `https://www.corporaciongc.com/articulos/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -768,7 +811,7 @@ export default async function ArticlePage({
               <div className="prose-article">
                 <MDXRemote
                   source={fuente}
-                  components={corte >= 0 ? componentes : ARTICLE_COMPONENTS}
+                  components={corte >= 0 ? componentes : enMedicion ? COMPONENTES_EN_MEDICION : ARTICLE_COMPONENTS}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],

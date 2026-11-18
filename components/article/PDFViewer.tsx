@@ -75,7 +75,7 @@ export function PDFViewer({ pdfFile }: { pdfFile: string }) {
       {/* Desktop PDF viewer — uses iframe for reliable browser rendering */}
       <div className="hidden md:block rounded-xl overflow-hidden border border-cream/[0.08] bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
         <iframe
-          src={`${pdfUrl}#view=Fit`}
+          src={`${pdfUrl}#view=FitH&navpanes=0`}
           className="w-full h-[80vh] min-h-[600px]"
           title="Visor de PDF"
         />

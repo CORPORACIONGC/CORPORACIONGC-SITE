@@ -133,7 +133,7 @@ export function OscarEventoDestacado() {
                 {/* Links */}
                 <div className="flex flex-wrap items-center gap-4 mb-8">
                   <MagneticButton
-                    href="/articulos/por-que-y-para-que-contencioso-administrativo"
+                    href="/articulos/por-que-y-para-que-contencioso-administrativo#capitulo"
                     variant="primary"
                   >
                     Leer cap&iacute;tulo

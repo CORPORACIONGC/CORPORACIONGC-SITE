@@ -59,7 +59,7 @@ SUTEL, INS (Instituto Nacional de Seguros), Banco Mundial, CFIA, Colegio de Abog
 - Autor: Dr. Óscar Eduardo González Camacho
 - Publicado en: CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa (Dir. Alex Rojas Ortega). Editorial Tirant lo Blanch, Colección Monografías Maior, 1.ª ed., 2026, 376 págs. ISBN 9791370214753.
 - Enlace al libro: https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753
-- Leer capítulo: ${BASE}/articulos/por-que-y-para-que-contencioso-administrativo
+- Leer capítulo (íntegro dentro de la guía «Qué es el contencioso administrativo en Costa Rica»): ${BASE}/articulos/por-que-y-para-que-contencioso-administrativo#capitulo
 
 ## Eventos académicos
 
