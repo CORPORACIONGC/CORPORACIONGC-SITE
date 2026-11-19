@@ -24,6 +24,7 @@ import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./le
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
 import { fuentes as f_por_que_y_para_que_contencioso_administrativo } from "./por-que-y-para-que-contencioso-administrativo";
 import { fuentes as f_proceso_de_lesividad_costa_rica } from "./proceso-de-lesividad-costa-rica";
+import { fuentes as f_proceso_de_puro_derecho_contencioso_administrativo } from "./proceso-de-puro-derecho-contencioso-administrativo";
 import { fuentes as f_reajuste_precios_obra_publica_costa_rica } from "./reajuste-precios-obra-publica-costa-rica";
 import { fuentes as f_recurso_amparo_costa_rica } from "./recurso-amparo-costa-rica";
 import { fuentes as f_recurso_casacion_contencioso_administrativo_costa_rica } from "./recurso-casacion-contencioso-administrativo-costa-rica";
@@ -60,6 +61,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
   "por-que-y-para-que-contencioso-administrativo": f_por_que_y_para_que_contencioso_administrativo,
   "proceso-de-lesividad-costa-rica": f_proceso_de_lesividad_costa_rica,
+  "proceso-de-puro-derecho-contencioso-administrativo": f_proceso_de_puro_derecho_contencioso_administrativo,
   "reajuste-precios-obra-publica-costa-rica": f_reajuste_precios_obra_publica_costa_rica,
   "recurso-amparo-costa-rica": f_recurso_amparo_costa_rica,
   "recurso-casacion-contencioso-administrativo-costa-rica": f_recurso_casacion_contencioso_administrativo_costa_rica,

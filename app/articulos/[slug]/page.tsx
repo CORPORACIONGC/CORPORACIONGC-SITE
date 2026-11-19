@@ -81,6 +81,7 @@ import { PreguntaFrecuente, ListaPreguntas, preguntasDesplegables } from "@/comp
 import { CronologiaPsav, CambiosReforma1319, ConsultaVsFinal1319, PendientesPsav } from "@/components/article/ReformaSugef1319";
 import { CalendarioCierre20262027, CalendarioPlazoDiasCierre, CalendarioVencimientoCierre } from "@/components/article/CierreColectivo";
 import { DosNormasReduccion, RecorridoReduccion, PagoReduccion } from "@/components/article/ReduccionForzosa";
+import { RecorridoPuroDerecho, PlazosSentenciaPuroDerecho, RezagoPuroDerecho } from "@/components/article/PuroDerecho";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -272,6 +273,9 @@ const ARTICLE_COMPONENTS = {
   CronologiaPsav,
   CalendarioCierre20262027,
   DosNormasReduccion,
+  RecorridoPuroDerecho,
+  PlazosSentenciaPuroDerecho,
+  RezagoPuroDerecho,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
