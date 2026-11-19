@@ -57,7 +57,7 @@ Costa Rica's General Public Procurement Law (Law 9986) excludes public loans fro
 
 Two practical consequences follow. First, **each contract needs CABEI's no-objection**, from the bidding documents to the award and the contract (loan 2341, section 9.10). CABEI gave its no-objection to these bidding documents on 12 October 2026, while stressing that the technical and legal criteria are CONAVI's responsibility. Second, the tender runs on a **platform of its own**, CONAVI's tender portal, outside SICOP, Costa Rica's unified e-procurement system, and bids are submitted there electronically.
 
-There is a detail of nomenclature that a careful bidder should know. The law and the loan agreement name the CABEI policy *“for the Procurement of Goods, Works, Services and Consultancies”*, which CABEI applies to operations approved before April 2025; the loan was approved in November 2024. The bidding documents, however, cite the newer *“Procurement Policy for Operations Financed by CABEI”* of April 2025 and copy its complaints regime. On the points that matter most, both versions coincide: complaints go to the borrower, the term is ten business days and the procedure is suspended while a complaint is pending.
+The bidding documents apply the complaints regime of CABEI's current procurement rules: complaints go to the borrower, the term is ten business days and the procedure is suspended while a complaint is pending.
 
 Costa Rica's courts have long accepted this kind of arrangement. In 1990 the Constitutional Chamber held that a loan agreement may exclude certain national laws for its subject matter, that the lender's procurement rules may apply first and national law in a supplementary way, and that only rules of public order prevail against them (vote 1027-90). The same vote noted that admitting contractors from the lender's member countries on equal terms with Costa Ricans reflects the constitutional principle of equality.
 
@@ -73,7 +73,7 @@ Other eligibility rules worth noting:
 - **Sanctions lists.** Firms listed by the UN Security Council, the European Union, the World Bank, OFAC, HM Treasury or CABEI's own List of Prohibited Counterparties are ineligible, as are those convicted of prohibited practices (BDS 5.3).
 - **State-owned enterprises** may bid only if they are legally and financially autonomous and operate under commercial law (ITB 5.9).
 - **Conflicts of interest** include common control between bidders, links with the firms that prepared the designs and family ties with the borrower's staff (ITB 5.5).
-- **Origin of subcontractors and goods.** The Particular Conditions require subcontractors, materials and equipment to originate in the *“eligible countries”* defined in the loan agreements (PCC 8.1), while the Bid Data Sheet opens the tender to any country. The published loan agreements do not list those countries, so the point is a natural candidate for the clarification process.
+- **Origin of subcontractors and goods.** The Particular Conditions add origin rules for subcontractors, materials and equipment tied to the loan agreements (PCC 8.1).
 
 ## Qualification requirements
 
@@ -126,9 +126,9 @@ The bidding documents set out a **complaints procedure** before CONAVI (ITB 48):
 - CONAVI must resolve each complaint **within ten business days** (BDS 48.5) and suspends the procedure until it does; when there are several lots, only the affected lot is suspended.
 - **CABEI does not decide complaints.** It must be informed of each one and its solution, and it reserves the right not to finance a contract if the solution is late or does not serve the interests of the operation (ITB 48.8).
 
-The bidding documents designate **no second instance**. CABEI's 2024 rules require the borrower, when national law excludes these procedures, to name in the bidding documents the authority of the executing agency that will decide, *“with no further appeal”*, the complaints that a bidder wants taken to another instance; the published documents do not.
+The bidding documents designate **no second instance** for complaints.
 
-The role of the Comptroller General is the most delicate point of the framework, and the honest answer is that it has not yet been tested. The press reported in March 2026 that the CGR had stated it would not hear objections or appeals under this law. At the same time, since 2024 the CGR has held a firm line on loans from CABEI and other lenders: a loan law that wants to depart from the national remedies *“must necessarily regulate the special remedies regime to be observed, including the rules on standing, time limits, procedure inherent to due process and the right of defence, and the competent instances”* (resolution R-DCP-00030-2024, our translation), and, where it does not, the CGR hears objections and appeals for tenders above the threshold of a major tender (R-DCP-00058-2024 and R-DCP-00021-2026). Law 10899 goes further than the loan laws the CGR examined, since it names the remedies and sends them to CABEI's rules, but it does not itself regulate standing, time limits or instances. As of 19 November 2026 no CGR resolution has applied that criterion to Law 10899.
+The role of the Comptroller General under this law is still an open question. The press reported in March 2026 that the CGR had stated it would not hear objections or appeals in this tender. Since 2024, however, the CGR has set out its own criterion on when a loan law takes these challenges away from it, in procedures financed by CABEI and other lenders (resolution R-DCP-00030-2024), and as of 19 November 2026 no resolution has applied that criterion to Law 10899.
 
 Two points of history explain why bidders familiar with this corridor may expect something else. When the San José–San Ramón trust managed by the Bank of Costa Rica tendered the first urgent works in 2018 and 2019 under its own regulation, objections went to the CGR, which declared itself competent by virtue of its oversight role (R-DCA-0058-2019). And in the 2019 Inter-American Development Bank tender for the Barranca–Limonal section of the same Route 1, the loan law itself assigned objections and appeals to the CGR, which heard them (R-DCA-0813-2019). The courts, in turn, have reviewed awards in tenders financed by multilateral lenders, because public funds are involved, although we found no case in which an injunction against such a tender was granted (Contentious-Administrative Court, votes 627-2018 and 441-2024).
 
@@ -171,15 +171,7 @@ The San José–San Ramón widening has been attempted for more than two decades
 
 ## Points to raise during the clarification period
 
-Without entering into the strategy of any bid, the published documents leave several points that any bidder would want clarified before 1 April 2027:
-
-1. The **dates** in BDS 8.1 and 25.1, which read 2026 and *“11:59”*.
-2. The **name of the disputes body**: DAAB in the Bid Data Sheet, committee of experts in the Particular Conditions.
-3. The **term to provide the performance security**: twenty days from the final award (BDS 51.2) or 28 days from the letter of acceptance (ITB 50.1). The Bid Data Sheet prevails.
-4. The **origin of subcontractors and goods** (PCC 8.1) against the openness of BDS 5.1.
-5. The **second instance** for complaints, which CABEI's rules expect the bidding documents to designate.
-6. The **CABEI policy version** that governs the procedure.
-7. The opening of the **Data Room**, which CONAVI has said may lead it to adjust the deadlines.
+The published bidding documents contain inconsistencies in dates, time limits, origin rules and the naming of the disputes body that a bidder will want clarified before the clarification period closes on 1 April 2027. CONAVI has also said that the opening of the Data Room, where the technical appendices sit, may lead it to adjust the deadlines.
 
 > **Preparing a bid for the San José–San Ramón corridor?** Corporación GC is a Costa Rican firm specialised in public procurement and administrative law, led by Dr. Óscar González Camacho, former justice of the Supreme Court's First Chamber, who coordinated the committee that drafted Costa Rica's Contentious-Administrative Procedure Code. We work alongside bidders from the bidding documents to the signed contract: review of the documents and their risks, clarification requests and complaints before CONAVI, the structure of the consortium and its Costa Rican registrations, and the defence of the bid before the Comptroller General and the courts. [Contact us](/contacto) or visit our [public procurement practice](/areas/contratacion-publica). The clarification period closes on 1 April 2027.
 

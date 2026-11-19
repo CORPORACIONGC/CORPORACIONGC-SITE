@@ -53,7 +53,7 @@ La Ley 9986 excluye de su alcance los empréstitos públicos y dispone que las c
 
 Cada contratación necesita la **no objeción del BCIE** (contrato 2341, sección 9.10), que el Banco dio a este pliego el 12 de octubre de 2026. El procedimiento corre en el **portal de licitaciones de CONAVI**, fuera de SICOP, y ahí se presentan las ofertas. Las compras que CONAVI pague con fondos de contrapartida, en cambio, siguen la licitación reducida de la Ley 9986 (artículo 7, último párrafo).
 
-Hay un matiz de nomenclatura. La ley y el contrato de préstamo nombran la política del BCIE *«para la Obtención de Bienes, Obras, Servicios y Consultorías»*, que el Banco aplica a las operaciones aprobadas antes de abril de 2025; el pliego cita la *«Política de Adquisiciones para Operaciones financiadas por el BCIE»*, de 2025, y copia su régimen de quejas. En lo esencial coinciden: la queja se presenta al prestatario, en diez días hábiles, con efecto suspensivo.
+El pliego aplica el régimen de quejas de las normas de adquisiciones vigentes del BCIE: la queja se presenta al prestatario, en diez días hábiles, con efecto suspensivo.
 
 La Sala Constitucional ha admitido desde 1990 que un contrato de préstamo excepcione la aplicación de leyes nacionales en su materia, que las normas de licitación del banco rijan en primer lugar y que la ley nacional se aplique de forma supletoria, con el límite de las normas de orden público (voto 1027-90).
 
@@ -88,9 +88,9 @@ En una licitación mayor ordinaria, el pliego se objeta ante la Contraloría Gen
 
 <ReclamosSanJoseSanRamon lang="es" />
 
-Contra el pliego, la queja debe presentarse *«al menos diez (10) días hábiles antes de que finalice el plazo para la presentación de Ofertas»*. Contra la decisión comunicada en la notificación de la intención de adjudicar, *«en un plazo máximo de diez (10) días hábiles»* desde su comunicación (IAO 48.2). CONAVI resuelve en diez días hábiles (DDL 48.5) y suspende el procedimiento mientras tanto. El BCIE no resuelve las quejas: se reserva el derecho de no financiar si la solución no se concreta a tiempo o no responde a los intereses de la operación (IAO 48.8). El pliego publicado **no designa una segunda instancia**, aunque las normas del BCIE de 2024 piden designar en los documentos base la autoridad del organismo ejecutor que resolverá *«con carácter inapelable»* cuando el oferente quiera pasar a otra instancia.
+Contra el pliego, la queja debe presentarse *«al menos diez (10) días hábiles antes de que finalice el plazo para la presentación de Ofertas»*. Contra la decisión comunicada en la notificación de la intención de adjudicar, *«en un plazo máximo de diez (10) días hábiles»* desde su comunicación (IAO 48.2). CONAVI resuelve en diez días hábiles (DDL 48.5) y suspende el procedimiento mientras tanto. El BCIE no resuelve las quejas: se reserva el derecho de no financiar si la solución no se concreta a tiempo o no responde a los intereses de la operación (IAO 48.8). El pliego publicado **no designa una segunda instancia** para las quejas.
 
-El papel de la Contraloría es el punto más delicado. La prensa informó en marzo de 2026 que el órgano contralor no conocería objeciones ni apelaciones bajo esta ley. Pero desde 2024 la Contraloría sostiene que una ley de empréstito que quiera apartarse del régimen recursivo nacional *«debe necesariamente regular el régimen recursivo especial que debe ser observado; contemplando las reglas de legitimación, plazos, pautas de tramitación propias del debido proceso y derecho defensa, instancias competentes»* (resolución R-DCP-00030-2024), y que, si no lo hace, ella conoce de las objeciones y apelaciones en los concursos que alcanzan el umbral de licitación mayor (R-DCP-00058-2024 y R-DCP-00021-2026, sobre la Ley 10456). La Ley 10899 va más allá que las leyes examinadas en esas resoluciones, porque nombra los recursos y los remite a la normativa del BCIE, pero no regula por sí misma la legitimación, los plazos ni las instancias. Al 19 de noviembre de 2026 no hay una resolución de la Contraloría que aplique ese criterio a la Ley 10899.
+El papel de la Contraloría frente a esta ley sigue siendo una pregunta abierta. La prensa informó en marzo de 2026 que el órgano contralor no conocería objeciones ni apelaciones en esta licitación. Desde 2024, sin embargo, la Contraloría tiene un criterio propio sobre cuándo una ley de empréstito la deja fuera de esos recursos en los procedimientos financiados por el BCIE y otros bancos (resolución R-DCP-00030-2024), y al 19 de noviembre de 2026 ninguna resolución lo ha aplicado a la Ley 10899.
 
 La historia del propio corredor ilustra el cambio. En el fideicomiso con el Banco de Costa Rica, la Contraloría se declaró competente para conocer las objeciones contra la precalificación de las obras impostergables, en virtud del principio de control (R-DCA-0058-2019). Y en la licitación del BID para el tramo Barranca–Limonal de la misma Ruta 1, la propia ley del préstamo le asignó las objeciones y apelaciones (R-DCA-0813-2019).
 
@@ -113,15 +113,7 @@ Los expedientes de SICOP muestran el mercado. En 2019, la licitación del BID pa
 
 ## Puntos que conviene aclarar antes del 1 de abril de 2027
 
-Sin entrar en la estrategia de ninguna oferta, el pliego publicado deja varios puntos que cualquier oferente querrá ver aclarados:
-
-1. Las **fechas** de los DDL 8.1 y 25.1.
-2. El **nombre del órgano de controversias**: «DAAB» en los DDL y «Comité de Expertos» en las CPC.
-3. El **plazo para rendir la garantía de cumplimiento**: veinte días desde la adjudicación en firme (DDL 51.2) o 28 desde la Carta de Aceptación (IAO 50.1).
-4. El **origen de subcontratistas y bienes** que exige la CPC 8.1, frente a la apertura del DDL 5.1.
-5. La **segunda instancia** de las quejas.
-6. La **versión de la política del BCIE** aplicable.
-7. La **habilitación del Data Room**, que CONAVI anunció que podría llevar a ajustar los plazos.
+El pliego publicado tiene inconsistencias de fechas, de plazos, de reglas de origen y en el nombre del órgano de controversias que cualquier oferente querrá ver aclaradas antes de que cierre el periodo de aclaraciones, el 1 de abril de 2027. CONAVI anunció además que la habilitación del Data Room, donde están los apéndices técnicos, podría llevarlo a ajustar los plazos.
 
 > **¿Prepara una oferta para el corredor San José–San Ramón?** Corporación GC es una firma costarricense especializada en contratación pública y derecho administrativo, dirigida por el Dr. Óscar González Camacho, exmagistrado de la Sala Primera, quien coordinó la comisión redactora del Código Procesal Contencioso-Administrativo. Acompañamos a los oferentes desde el pliego hasta la firma del contrato: revisión del pliego y de sus riesgos, solicitudes de aclaración y quejas ante CONAVI, estructura del consorcio y sus inscripciones en Costa Rica, y defensa de la oferta ante la Contraloría y los tribunales. [Escríbanos](/contacto) o visite el área de [contratación pública](/areas/contratacion-publica). El periodo de aclaraciones cierra el 1 de abril de 2027.
 
