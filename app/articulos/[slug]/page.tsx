@@ -82,6 +82,7 @@ import { CronologiaPsav, CambiosReforma1319, ConsultaVsFinal1319, PendientesPsav
 import { CalendarioCierre20262027, CalendarioPlazoDiasCierre, CalendarioVencimientoCierre } from "@/components/article/CierreColectivo";
 import { DosNormasReduccion, RecorridoReduccion, PagoReduccion } from "@/components/article/ReduccionForzosa";
 import { RecorridoPuroDerecho, PlazosSentenciaPuroDerecho, RezagoPuroDerecho } from "@/components/article/PuroDerecho";
+import { LineasSanJoseSanRamon, CalendarioSanJoseSanRamon, ReclamosSanJoseSanRamon, DineroSanJoseSanRamon } from "@/components/article/SanJoseSanRamon";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -276,6 +277,10 @@ const ARTICLE_COMPONENTS = {
   RecorridoPuroDerecho,
   PlazosSentenciaPuroDerecho,
   RezagoPuroDerecho,
+  LineasSanJoseSanRamon,
+  CalendarioSanJoseSanRamon,
+  ReclamosSanJoseSanRamon,
+  DineroSanJoseSanRamon,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
