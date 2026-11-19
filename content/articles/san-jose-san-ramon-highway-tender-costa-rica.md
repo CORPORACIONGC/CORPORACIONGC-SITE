@@ -13,6 +13,9 @@ lang: "en"
 translation: "licitacion-corredor-vial-san-jose-san-ramon"
 seoTitle: "San José–San Ramón Highway Tender: Guide for Foreign Bidders"
 seoDescription: "How to bid for Costa Rica's San José–San Ramón highway tender: CABEI rules under Law 10899, lots, deadlines, securities, complaints and local requirements."
+cta:
+  titulo: "Bidding for the San José–San Ramón corridor? Talk to specialists"
+  texto: "Corporación GC specialises in Costa Rican public procurement and administrative law. We review the bidding documents and their risks, prepare clarification requests and complaints before CONAVI, structure the consortium and its local registrations, and defend the bid before the Comptroller General and the courts. Message us on WhatsApp for a first assessment: the clarification period closes on 1 April 2027."
 faq:
   - question: "Can foreign companies bid for the San José–San Ramón highway tender?"
     answer: "Yes. The bidding documents state that the tender is not restricted to bidders of any particular origin and that national or international bidders from any country may take part. Bidders from CABEI member countries enjoy a preference: if a bidder from a non-member country wins on points, a member-country bidder within 15% of that score is invited to match it. Joint ventures may have up to three members, jointly and severally liable."
@@ -178,7 +181,9 @@ Without entering into the strategy of any bid, the published documents leave sev
 6. The **CABEI policy version** that governs the procedure.
 7. The opening of the **Data Room**, which CONAVI has said may lead it to adjust the deadlines.
 
-Corporación GC's [public procurement practice](/areas/contratacion-publica) advises on tenders run under Costa Rican law and under the rules of multilateral lenders. The national regime for challenges is explained in our guides to the [objection to the bidding documents](/articulos/recurso-objecion-cartel-costa-rica) and the [appeal of an award before the CGR](/articulos/recurso-apelacion-adjudicacion-cgr-costa-rica).
+> **Preparing a bid for the San José–San Ramón corridor?** Corporación GC is a Costa Rican firm specialised in public procurement and administrative law, led by Dr. Óscar González Camacho, former justice of the Supreme Court's First Chamber, who coordinated the committee that drafted Costa Rica's Contentious-Administrative Procedure Code. We work alongside bidders from the bidding documents to the signed contract: review of the documents and their risks, clarification requests and complaints before CONAVI, the structure of the consortium and its Costa Rican registrations, and the defence of the bid before the Comptroller General and the courts. [Contact us](/contacto) or visit our [public procurement practice](/areas/contratacion-publica). The clarification period closes on 1 April 2027.
+
+The national regime for challenges is explained in our guides to the [objection to the bidding documents](/articulos/recurso-objecion-cartel-costa-rica) and the [appeal of an award before the CGR](/articulos/recurso-apelacion-adjudicacion-cgr-costa-rica).
 
 *This guide describes the legal framework as of 19 November 2026 and is not advice on a specific bid. The bidding documents of tender CRI-2026-2341-34907-O prevail over any summary. Quotations from Costa Rican documents are our translation from the Spanish original.*
 

@@ -56,6 +56,9 @@ export type ArticleMeta = {
   lang?: "es" | "en";
   /** Slug de la versión del mismo artículo en el otro idioma, si existe. */
   translation?: string;
+  /** Llamado final propio de la guía: sustituye el título y el texto
+      genéricos del recuadro de contacto que cierra el artículo. */
+  cta?: { titulo?: string; texto?: string };
   /** Minutos de lectura, a 220 palabras por minuto. Lo calcula
       getAllArticles a partir del cuerpo del artículo. */
   minutos?: number;
@@ -94,6 +97,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     faq: data.faq as ArticleFAQ[] | undefined,
     lang: data.lang === "en" ? "en" : "es",
     translation: data.translation as string | undefined,
+    cta: data.cta as { titulo?: string; texto?: string } | undefined,
     updated: posterior(data.updated as string | undefined, data.date as string),
     cambiado: posterior(
       [data.updated as string | undefined, FECHAS_GIT[slug]].filter(Boolean).sort().pop(),

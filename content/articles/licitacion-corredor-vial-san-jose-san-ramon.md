@@ -13,6 +13,9 @@ lang: "es"
 translation: "san-jose-san-ramon-highway-tender-costa-rica"
 seoTitle: "Licitación corredor San José–San Ramón: guía para ofertar"
 seoDescription: "Licitación de CONAVI para ampliar el corredor San José–San Ramón: reglas del BCIE por la Ley 10899, líneas, plazos, garantías, quejas y papel de la Contraloría."
+cta:
+  titulo: "¿Va a ofertar en el corredor San José–San Ramón? Hable con especialistas"
+  texto: "Corporación GC está especializada en contratación pública y derecho administrativo. Revisamos el pliego y sus riesgos, preparamos las aclaraciones y las quejas ante CONAVI, estructuramos el consorcio y sus inscripciones en Costa Rica, y defendemos la oferta ante la Contraloría y los tribunales. Escríbanos por WhatsApp para una primera valoración: el periodo de aclaraciones cierra el 1 de abril de 2027."
 faq:
   - question: "¿Qué se licita en el corredor San José–San Ramón?"
     answer: "El diseño, la construcción, el equipamiento y el mantenimiento, llave en mano, de la ampliación de la Ruta Nacional 1 entre La Sabana y San Ramón y de la Radial Río Segundo, en dos líneas: la Línea 1 (US$324.460.256) y la Línea 2 (US$362.914.045). El plazo es de 72 meses: 12 de diseño, 48 de construcción y 12 de corrección de defectos. Es el procedimiento CRI-2026-2341-34907-O del Consejo Nacional de Vialidad (CONAVI), publicado el 21 de octubre de 2026."
@@ -120,7 +123,9 @@ Sin entrar en la estrategia de ninguna oferta, el pliego publicado deja varios p
 6. La **versión de la política del BCIE** aplicable.
 7. La **habilitación del Data Room**, que CONAVI anunció que podría llevar a ajustar los plazos.
 
-El área de [contratación pública](/areas/contratacion-publica) de Corporación GC asesora en licitaciones regidas por la ley costarricense y por las normas de los bancos multilaterales. El régimen recursivo nacional se explica en nuestras guías sobre el [recurso de objeción al pliego](/articulos/recurso-objecion-cartel-costa-rica) y la [apelación de la adjudicación ante la Contraloría](/articulos/recurso-apelacion-adjudicacion-cgr-costa-rica).
+> **¿Prepara una oferta para el corredor San José–San Ramón?** Corporación GC es una firma costarricense especializada en contratación pública y derecho administrativo, dirigida por el Dr. Óscar González Camacho, exmagistrado de la Sala Primera, quien coordinó la comisión redactora del Código Procesal Contencioso-Administrativo. Acompañamos a los oferentes desde el pliego hasta la firma del contrato: revisión del pliego y de sus riesgos, solicitudes de aclaración y quejas ante CONAVI, estructura del consorcio y sus inscripciones en Costa Rica, y defensa de la oferta ante la Contraloría y los tribunales. [Escríbanos](/contacto) o visite el área de [contratación pública](/areas/contratacion-publica). El periodo de aclaraciones cierra el 1 de abril de 2027.
+
+El régimen recursivo nacional se explica en nuestras guías sobre el [recurso de objeción al pliego](/articulos/recurso-objecion-cartel-costa-rica) y la [apelación de la adjudicación ante la Contraloría](/articulos/recurso-apelacion-adjudicacion-cgr-costa-rica).
 
 *Esta guía describe el marco legal vigente al 19 de noviembre de 2026 y no constituye asesoría para una oferta concreta. El pliego del procedimiento CRI-2026-2341-34907-O prevalece sobre cualquier resumen.*
 

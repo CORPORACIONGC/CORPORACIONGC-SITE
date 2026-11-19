@@ -427,7 +427,7 @@ export default async function ArticlePage({
         aria-label={lang === "en" ? "Contact" : "Contacto"}
         className="not-prose my-12 flex flex-col gap-4 border-y border-cream/[0.12] py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8"
       >
-        <div className="text-[17px] font-semibold leading-snug tracking-tight text-cream">{t.ctaTitle}</div>
+        <div className="text-[17px] font-semibold leading-snug tracking-tight text-cream">{article.cta?.titulo ?? t.ctaTitle}</div>
         <TrackedContactLink
           href={whatsappUrl}
           contactTarget="article-cta-medio"
@@ -884,10 +884,10 @@ export default async function ArticlePage({
                     {t.ctaKicker}
                   </div>
                   <h2 className="font-display text-xl md:text-2xl font-semibold tracking-tight text-cream leading-snug">
-                    {t.ctaTitle}
+                    {article.cta?.titulo ?? t.ctaTitle}
                   </h2>
                   <p className="mt-2.5 text-sm text-cream/65 leading-relaxed max-w-[54ch]">
-                    {t.ctaText}
+                    {article.cta?.texto ?? t.ctaText}
                   </p>
                   <TrackedContactLink
                     href={whatsappUrl}
