@@ -87,6 +87,7 @@ import { ReglamentosSantaAna, ZonasSantaAna, CalendarioSantaAna } from "@/compon
 import { PrediosSanRamon, EtapasExpropiacionSanRamon } from "@/components/article/ExpropiacionesSanRamon";
 import { UmbralesVigentes, EvolucionUmbrales, ProcedimientosUmbrales } from "@/components/article/UmbralesContratacion";
 import { CalculadoraUmbral } from "@/components/article/CalculadoraUmbral";
+import { CalendarioPresupuesto2027, AlcanceOpinionSala } from "@/components/article/PresupuestoSala2027";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -294,6 +295,8 @@ const ARTICLE_COMPONENTS = {
   EvolucionUmbrales,
   ProcedimientosUmbrales,
   CalculadoraUmbral,
+  CalendarioPresupuesto2027,
+  AlcanceOpinionSala,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
