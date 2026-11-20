@@ -84,6 +84,7 @@ import { DosNormasReduccion, RecorridoReduccion, PagoReduccion } from "@/compone
 import { RecorridoPuroDerecho, PlazosSentenciaPuroDerecho, RezagoPuroDerecho } from "@/components/article/PuroDerecho";
 import { LineasSanJoseSanRamon, CalendarioSanJoseSanRamon, ReclamosSanJoseSanRamon, DineroSanJoseSanRamon } from "@/components/article/SanJoseSanRamon";
 import { ReglamentosSantaAna, ZonasSantaAna, CalendarioSantaAna } from "@/components/article/PlanReguladorSantaAna";
+import { PrediosSanRamon, EtapasExpropiacionSanRamon } from "@/components/article/ExpropiacionesSanRamon";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -285,6 +286,8 @@ const ARTICLE_COMPONENTS = {
   ReglamentosSantaAna,
   ZonasSantaAna,
   CalendarioSantaAna,
+  PrediosSanRamon,
+  EtapasExpropiacionSanRamon,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,

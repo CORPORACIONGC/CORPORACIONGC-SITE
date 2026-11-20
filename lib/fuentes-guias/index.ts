@@ -14,6 +14,7 @@ import { fuentes as f_defensa_procedimiento_administrativo_sancionatorio } from 
 import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-peticion-costa-rica";
 import { fuentes as f_despido_funcionario_publico_costa_rica } from "./despido-funcionario-publico-costa-rica";
 import { fuentes as f_expropiacion_costa_rica_derechos } from "./expropiacion-costa-rica-derechos";
+import { fuentes as f_expropiaciones_corredor_san_jose_san_ramon } from "./expropiaciones-corredor-san-jose-san-ramon";
 import { fuentes as f_impugnar_avaluo_municipal_bienes_inmuebles } from "./impugnar-avaluo-municipal-bienes-inmuebles";
 import { fuentes as f_ley_10554_acceso_informacion_publica } from "./ley-10554-acceso-informacion-publica";
 import { fuentes as f_ley_10777_docentes_interinos_mep } from "./ley-10777-docentes-interinos-mep";
@@ -54,6 +55,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "derecho-de-peticion-costa-rica": f_derecho_de_peticion_costa_rica,
   "despido-funcionario-publico-costa-rica": f_despido_funcionario_publico_costa_rica,
   "expropiacion-costa-rica-derechos": f_expropiacion_costa_rica_derechos,
+  "expropiaciones-corredor-san-jose-san-ramon": f_expropiaciones_corredor_san_jose_san_ramon,
   "impugnar-avaluo-municipal-bienes-inmuebles": f_impugnar_avaluo_municipal_bienes_inmuebles,
   "ley-10554-acceso-informacion-publica": f_ley_10554_acceso_informacion_publica,
   "ley-10777-docentes-interinos-mep": f_ley_10777_docentes_interinos_mep,
