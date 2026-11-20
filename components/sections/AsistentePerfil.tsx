@@ -15,6 +15,7 @@ import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { FIRM_CONTACT } from "@/lib/constants";
 import type { Asistente } from "@/lib/asistentes";
+import { PerfilHero } from "@/components/sections/PerfilHero";
 
 /* Perfil de un asistente legal con el mismo formato que el de los abogados
    (EstebanHero, EstebanAbout, EstebanExperience y EstebanContact), con menos
@@ -24,52 +25,15 @@ import type { Asistente } from "@/lib/asistentes";
 export function AsistenteHero({ a }: { a: Asistente }) {
   const [l1, l2, l3] = a.nameLines;
   return (
-    <section id="inicio" className="relative min-h-[100dvh] bg-surface overflow-hidden">
-      <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-burgundy/[0.08] to-transparent pointer-events-none hidden dark:block" />
-
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-28 md:pt-0 md:min-h-[100dvh] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-        <div className="relative z-10 py-8 md:py-0">
-          <AnimatedEntry delay={0.1}>
-            <RunningHead title={a.role} />
-          </AnimatedEntry>
-
-          <AnimatedEntry delay={0.2}>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none text-cream">
-              {l1}
-              <br />
-              {l2} <span className="text-hilo-texto">{l3}</span>
-            </h1>
-          </AnimatedEntry>
-
-          <AnimatedEntry delay={0.35}>
-            <div className="mt-6 flex items-center gap-3">
-              <div className="w-1 h-8 bg-burgundy rounded-full" />
-              <p className="text-base md:text-lg text-cream/65 leading-relaxed max-w-[50ch]">{a.heroDescription}</p>
-            </div>
-          </AnimatedEntry>
-
-          <AnimatedEntry delay={0.65}>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <MagneticButton href="#contacto" variant="primary">
-                Contactar
-              </MagneticButton>
-              <MagneticButton href="/#equipo" variant="outline">
-                El equipo
-              </MagneticButton>
-            </div>
-          </AnimatedEntry>
-        </div>
-
-        <AnimatedEntry delay={0.3} direction="right" className="relative">
-          <div className="relative md:h-[75vh] max-h-[700px] flex items-center justify-center">
-            <div className="relative w-[80%] md:w-[85%] mx-auto aspect-[3/4] overflow-hidden">
-              <Image src={a.portrait} alt={a.name} width={768} height={1024} priority className="w-full h-full object-cover object-top" />
-              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-surface to-transparent" />
-            </div>
-          </div>
-        </AnimatedEntry>
-      </div>
-    </section>
+    <PerfilHero
+      cargo={a.role}
+      nombre={[l1, `${l2} ${l3}`]}
+      secundario={{ href: "/#equipo", rotulo: "El equipo" }}
+      /* El retrato del equipo ya viene recortado a busto (4:5): va entero. */
+      foto={{ src: a.portrait, alt: a.name, ancho: 4, alto: 5, hasta: 1, x: "50%" }}
+    >
+      {a.heroDescription}
+    </PerfilHero>
   );
 }
 
