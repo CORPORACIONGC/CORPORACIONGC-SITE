@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <PerfilHero
       cargo="Abogado Asociado"
-      nombre={["Lic. Khevin", "Sánchez Zamora"]}
+      nombre={["Lic. Khevin Alberto", "Sánchez Zamora"]}
       carne="Carnet CAACR 37920"
       secundario={{ href: "/articulos", rotulo: "Artículos" }}
       foto={{
