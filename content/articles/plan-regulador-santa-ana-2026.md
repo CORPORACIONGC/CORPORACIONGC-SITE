@@ -143,6 +143,9 @@ Quien tiene una propiedad o un proyecto en Santa Ana puede empezar por cuatro pa
 2. **Pedir un certificado de uso de suelo nuevo** antes de comprar, vender, construir o abrir un negocio, en lugar de confiar en uno emitido con el plan de 1991.
 3. **Revisar el vencimiento de las licencias vigentes** y, si un proyecto se inscribió en el registro del Transitorio II, el plazo para pedir el permiso, que corre hasta la segunda quincena de abril de 2027.
 4. **Si el plan lo perjudica, decidir antes de octubre de 2027** si se impugna de forma directa, porque después solo quedará la vía indirecta, ligada a un acto concreto.
+5. **Hacer revisar el caso por un especialista en derecho urbanístico** antes de comprar, vender, construir, presentar un recurso o dejar que corra un plazo. La respuesta para cada finca depende de su zona, de sus permisos y de lo que se tramitó antes del 5 de octubre, y un error en la vía o en el plazo puede cerrar la posibilidad de discutir el plan.
+
+En Corporación GC revisamos la zona y las restricciones que el plan asigna a su propiedad, el estado de sus permisos, certificados y proyectos, y las vías para impugnar el plan o el acto que lo aplica. Escríbanos por WhatsApp al [+506 8662-2169](https://wa.me/50686622169), al correo [info@corporaciongc.com](mailto:info@corporaciongc.com) o por el [formulario de contacto](/contacto) para una primera valoración, o conozca el área de [derecho urbanístico](/areas/derecho-urbanistico).
 
 Para los permisos que la Municipalidad no resuelve a tiempo está la guía sobre [el silencio positivo en los permisos municipales](/articulos/silencio-positivo-permiso-municipal), y sobre el margen de las municipalidades en esta materia, la de [la potestad discrecional en la regulación urbanística](/articulos/potestad-discrecional-municipalidades-urbanismo).
 
