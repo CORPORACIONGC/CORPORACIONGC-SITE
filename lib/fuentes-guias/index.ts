@@ -39,6 +39,7 @@ import { fuentes as f_san_jose_san_ramon_highway_tender_costa_rica } from "./san
 import { fuentes as f_sanciones_a_proveedores_contratacion_publica_ley_9986 } from "./sanciones-a-proveedores-contratacion-publica-ley-9986";
 import { fuentes as f_silencio_positivo_permiso_municipal } from "./silencio-positivo-permiso-municipal";
 import { fuentes as f_traslado_de_cargos_que_hacer_costa_rica } from "./traslado-de-cargos-que-hacer-costa-rica";
+import { fuentes as f_umbrales_contratacion_publica_costa_rica } from "./umbrales-contratacion-publica-costa-rica";
 
 export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "accion-de-inconstitucionalidad-costa-rica": f_accion_de_inconstitucionalidad_costa_rica,
@@ -80,4 +81,5 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "sanciones-a-proveedores-contratacion-publica-ley-9986": f_sanciones_a_proveedores_contratacion_publica_ley_9986,
   "silencio-positivo-permiso-municipal": f_silencio_positivo_permiso_municipal,
   "traslado-de-cargos-que-hacer-costa-rica": f_traslado_de_cargos_que_hacer_costa_rica,
+  "umbrales-contratacion-publica-costa-rica": f_umbrales_contratacion_publica_costa_rica,
 };

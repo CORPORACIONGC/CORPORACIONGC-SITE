@@ -85,6 +85,8 @@ import { RecorridoPuroDerecho, PlazosSentenciaPuroDerecho, RezagoPuroDerecho } f
 import { LineasSanJoseSanRamon, CalendarioSanJoseSanRamon, ReclamosSanJoseSanRamon, DineroSanJoseSanRamon } from "@/components/article/SanJoseSanRamon";
 import { ReglamentosSantaAna, ZonasSantaAna, CalendarioSantaAna } from "@/components/article/PlanReguladorSantaAna";
 import { PrediosSanRamon, EtapasExpropiacionSanRamon } from "@/components/article/ExpropiacionesSanRamon";
+import { UmbralesVigentes, EvolucionUmbrales, ProcedimientosUmbrales } from "@/components/article/UmbralesContratacion";
+import { CalculadoraUmbral } from "@/components/article/CalculadoraUmbral";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -288,6 +290,10 @@ const ARTICLE_COMPONENTS = {
   CalendarioSantaAna,
   PrediosSanRamon,
   EtapasExpropiacionSanRamon,
+  UmbralesVigentes,
+  EvolucionUmbrales,
+  ProcedimientosUmbrales,
+  CalculadoraUmbral,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
