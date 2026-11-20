@@ -78,7 +78,7 @@ export function CalendarioPresupuesto2027() {
 const ALCANCE: { caso: string; ejemplo: string; efecto: string }[] = [
   {
     caso: "Vicio en el trámite",
-    ejemplo: "Que se omitiera la consulta obligatoria a la Corte del artículo 167 de la Constitución.",
+    ejemplo: "Que se omitiera la consulta obligatoria a la Corte del artículo 167 de la Constitución. Por esa omisión la Sala anuló una norma del presupuesto 2021 sobre plazas vacantes del Poder Judicial.",
     efecto: "Vincula a la Asamblea. Si llega antes de la votación final, el vicio debe corregirse en el trámite.",
   },
   {
@@ -125,7 +125,7 @@ export function AlcanceOpinionSala() {
         </div>
       </div>
       <FigSource>
-        Ley de la Jurisdicción Constitucional, arts. 98, 100 y 101; Sala Constitucional, votos 2015-001240 y 2025-000380.
+        Ley de la Jurisdicción Constitucional, arts. 98, 100 y 101; Sala Constitucional, votos 2015-001240, 2024-001729 y 2025-000380.
       </FigSource>
     </figure>
   );
