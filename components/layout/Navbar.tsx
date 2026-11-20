@@ -350,9 +350,10 @@ export function Navbar({
   );
 }
 
-/* «Contacto» como botón de la barra: contorno burdeos de día y pieza vino de
-   noche, igual que el botón de contorno del resto del sitio. En la portada
-   baja al formulario; en las demás páginas abre /contacto. */
+/* «Contacto» en la barra (19-11-2026): un enlace más, sin caja, que se
+   distingue de los otros por el subrayado burdeos de 2 px y la tinta plena.
+   Antes era un botón de contorno; al estar en todas las páginas pesaba
+   demasiado. En la portada baja al formulario; en las demás abre /contacto. */
 function BotonContacto({
   link,
   href,
@@ -361,7 +362,7 @@ function BotonContacto({
   href: string;
 }) {
   const clase =
-    "nav-tactile inline-flex min-h-9 items-center rounded-lg border border-burgundy/50 px-3.5 text-xs font-medium uppercase tracking-[0.12em] text-burgundy transition-colors duration-300 hover:border-burgundy hover:bg-burgundy/[0.05] dark:border-[#5A1730] dark:bg-[#3A0B1F] dark:text-white dark:hover:border-[#6B1D3A] dark:hover:bg-[#4A0E27]";
+    "nav-tactile inline-flex h-9 items-center justify-center whitespace-nowrap border-b-2 border-burgundy-light px-0.5 text-xs font-medium uppercase tracking-[0.12em] text-cream transition-colors duration-300 hover:text-burgundy-light dark:border-[#9B2A5C] dark:text-white dark:hover:border-white dark:hover:text-white lg:ml-1";
   if (href.startsWith("/")) {
     return (
       <Link href={href} className={clase}>
