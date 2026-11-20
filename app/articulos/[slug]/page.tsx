@@ -83,6 +83,7 @@ import { CalendarioCierre20262027, CalendarioPlazoDiasCierre, CalendarioVencimie
 import { DosNormasReduccion, RecorridoReduccion, PagoReduccion } from "@/components/article/ReduccionForzosa";
 import { RecorridoPuroDerecho, PlazosSentenciaPuroDerecho, RezagoPuroDerecho } from "@/components/article/PuroDerecho";
 import { LineasSanJoseSanRamon, CalendarioSanJoseSanRamon, ReclamosSanJoseSanRamon, DineroSanJoseSanRamon } from "@/components/article/SanJoseSanRamon";
+import { ReglamentosSantaAna, ZonasSantaAna, CalendarioSantaAna } from "@/components/article/PlanReguladorSantaAna";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -281,6 +282,9 @@ const ARTICLE_COMPONENTS = {
   CalendarioSanJoseSanRamon,
   ReclamosSanJoseSanRamon,
   DineroSanJoseSanRamon,
+  ReglamentosSantaAna,
+  ZonasSantaAna,
+  CalendarioSantaAna,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
