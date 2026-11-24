@@ -11,7 +11,7 @@ export const fuentes: FuentesDeGuia = {
     {
       titulo: "Ley General de Contratación Pública (Ley 9986)",
       detalle:
-        "Versión 15 de SINALEVI, con la reforma de la Ley 10971; arts. 3 e), 14 c) y f), 29, 50, 63 l), 86, 87, 97, 98, 99 y 119 r) y párrafo final",
+        "Versión 15 de SINALEVI, con la reforma de la Ley 10971; arts. 8 e), 14 c) y f), 29, 50, 63 l), 86, 87, 97, 98, 99 y 119 r) y párrafo final",
       href: SINALEVI(94469, 152662),
     },
     {

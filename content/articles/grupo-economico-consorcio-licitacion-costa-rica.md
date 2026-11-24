@@ -74,7 +74,7 @@ El criterio tiene tres límites.
 
 **El pliego puede exigir un consorcio si lo justifica.** En la [R-DCP-SICOP-00966-2026](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2026/SIGYD_D/SIGYD_D_2026008697.pdf), sobre equipo de laboratorio del Instituto Nacional de Aprendizaje, el pliego solo aceptaba la experiencia de casas matrices o subsidiarias si participaban en consorcio. La Contraloría había ordenado motivar esa exigencia y, ya incorporado el oficio técnico, que se apoyaba en *«la naturaleza técnica especializada del objeto, el principio de personalidad jurídica independiente, la mitigación de riesgos durante la ejecución contractual y la idoneidad del consorcio como único mecanismo legalmente habilitado para garantizar la responsabilidad solidaria»*, rechazó la nueva objeción por falta de fundamentación.
 
-La empresa simplemente *relacionada*, sin un vínculo que encaje en los supuestos del grupo, no puede usar la experiencia ajena por esta vía; para sumar capacidades le queda el consorcio. Y cuando el pliego calla sobre los grupos, la Contraloría ha pedido a la Administración regularlo *«por seguridad jurídica y mayor claridad»* ([R-DCA-SICOP-01182-2023](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2023/SIGYD_D/SIGYD_D_2023016336.pdf)).
+La empresa simplemente *relacionada*, sin un vínculo que encaje en los supuestos del grupo, no puede usar la experiencia ajena por esta vía; para sumar capacidades le queda el consorcio. Y cuando el pliego calla sobre los grupos, la Contraloría ha pedido a la Administración valorar regularlo *«por seguridad jurídica y mayor claridad»* ([R-DCA-SICOP-01182-2023](https://cgrfiles.cgr.go.cr/publico/docs_cgr/2023/SIGYD_D/SIGYD_D_2023016336.pdf)).
 
 ## La oferta en consorcio: requisitos y acuerdo consorcial
 
