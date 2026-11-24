@@ -15,8 +15,10 @@ import { fuentes as f_defensa_inhabilitacion_proveedor_estado_costa_rica } from 
 import { fuentes as f_defensa_procedimiento_administrativo_sancionatorio } from "./defensa-procedimiento-administrativo-sancionatorio";
 import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-peticion-costa-rica";
 import { fuentes as f_despido_funcionario_publico_costa_rica } from "./despido-funcionario-publico-costa-rica";
+import { fuentes as f_exclusion_oferta_subsanacion_licitacion_costa_rica } from "./exclusion-oferta-subsanacion-licitacion-costa-rica";
 import { fuentes as f_expropiacion_costa_rica_derechos } from "./expropiacion-costa-rica-derechos";
 import { fuentes as f_expropiaciones_corredor_san_jose_san_ramon } from "./expropiaciones-corredor-san-jose-san-ramon";
+import { fuentes as f_funcionario_publico_demandado_quien_paga_defensa_ley_10987 } from "./funcionario-publico-demandado-quien-paga-defensa-ley-10987";
 import { fuentes as f_grupo_economico_consorcio_licitacion_costa_rica } from "./grupo-economico-consorcio-licitacion-costa-rica";
 import { fuentes as f_impugnar_avaluo_municipal_bienes_inmuebles } from "./impugnar-avaluo-municipal-bienes-inmuebles";
 import { fuentes as f_juzgado_contencioso_administrativo_tribunal_apelacion_costa_rica } from "./juzgado-contencioso-administrativo-tribunal-apelacion-costa-rica";
@@ -66,8 +68,10 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "defensa-procedimiento-administrativo-sancionatorio": f_defensa_procedimiento_administrativo_sancionatorio,
   "derecho-de-peticion-costa-rica": f_derecho_de_peticion_costa_rica,
   "despido-funcionario-publico-costa-rica": f_despido_funcionario_publico_costa_rica,
+  "exclusion-oferta-subsanacion-licitacion-costa-rica": f_exclusion_oferta_subsanacion_licitacion_costa_rica,
   "expropiacion-costa-rica-derechos": f_expropiacion_costa_rica_derechos,
   "expropiaciones-corredor-san-jose-san-ramon": f_expropiaciones_corredor_san_jose_san_ramon,
+  "funcionario-publico-demandado-quien-paga-defensa-ley-10987": f_funcionario_publico_demandado_quien_paga_defensa_ley_10987,
   "grupo-economico-consorcio-licitacion-costa-rica": f_grupo_economico_consorcio_licitacion_costa_rica,
   "impugnar-avaluo-municipal-bienes-inmuebles": f_impugnar_avaluo_municipal_bienes_inmuebles,
   "juzgado-contencioso-administrativo-tribunal-apelacion-costa-rica": f_juzgado_contencioso_administrativo_tribunal_apelacion_costa_rica,
