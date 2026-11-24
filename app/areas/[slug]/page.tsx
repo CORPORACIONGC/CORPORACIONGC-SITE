@@ -1124,6 +1124,20 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           licitación hasta la impugnación de adjudicaciones y la defensa en procedimientos de
           resolución contractual.
         </p>
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
+          El procedimiento, y con él el recurso y el plazo, depende del monto estimado frente a los{" "}
+          <Link href="/articulos/umbrales-contratacion-publica-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            umbrales de contratación pública
+          </Link>{" "}
+          que la Contraloría actualiza cada año.{" "}
+          <span lang="en">
+            For foreign contractors:{" "}
+            <Link href="/articulos/san-jose-san-ramon-highway-tender-costa-rica" hrefLang="en" className="text-emphasis hover:text-emphasis/80 transition-colors">
+              bidding for the San José–San Ramón highway
+            </Link>
+            , our English guide to the CABEI-financed tender.
+          </span>
+        </p>
       </section>
 
       <Instrumento titulo="Recurso de objeción al pliego de condiciones" fundamento="Ley 9986, arts. 95-96">
@@ -3055,6 +3069,14 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           nulidad, cancelaciones de credencial y resoluciones de reintegro. Conocer el filtro de
           la CGR es decisivo: sus criterios son vinculantes y prevalecen sobre cualquier disposición
           en contrario, y sus actos solo se impugnan en sede contencioso-administrativa.
+        </p>
+        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
+          El presupuesto de la República tiene además su propio trámite legislativo y su propio
+          control de constitucionalidad: la guía del{" "}
+          <Link href="/articulos/presupuesto-2027-costa-rica-sala-constitucional" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            presupuesto 2027 y la consulta a la Sala Constitucional
+          </Link>{" "}
+          explica cómo se combinan la consulta y el plazo del 30 de noviembre.
         </p>
       </section>
 

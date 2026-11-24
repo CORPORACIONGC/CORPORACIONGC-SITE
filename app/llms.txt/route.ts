@@ -1,5 +1,6 @@
 import { getAllArticles } from "@/lib/articles";
-import { PRACTICE_AREA_PAGES, TEAM } from "@/lib/constants";
+import { FIRM_CONTACT, PRACTICE_AREA_PAGES, TEAM } from "@/lib/constants";
+import { getAllSentencias } from "@/lib/jurisprudencia";
 import { ASISTENTES } from "@/lib/asistentes";
 
 /* llms.txt, armado con los mismos datos que las páginas. Era un archivo fijo
@@ -15,10 +16,15 @@ export function GET() {
   const guias = getAllArticles().filter((a) => a.lang !== "en");
   const enIngles = getAllArticles().filter((a) => a.lang === "en");
   const linea = (s: string) => s.replace(/\s+/g, " ").trim();
+  const sentencias = getAllSentencias();
+  /* Fecha del build: la página es estática y se regenera en cada despliegue. */
+  const actualizado = new Date().toISOString().slice(0, 10);
 
   const texto = `# Corporación GC — Bufete de Abogados en Derecho Público
 
 > Corporación GC es un bufete de abogados costarricense fundado en 2015 y especializado en Derecho Público. Lo fundó y lo dirige el Dr. Óscar Eduardo González Camacho, magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014) y coordinador de la comisión redactora del Código Procesal Contencioso Administrativo (Ley N.° 8508). Su equipo litiga contra el Estado y asesora en contencioso-administrativo, medidas cautelares, casación, amparo, contratación pública y procedimiento administrativo.
+
+Actualizado: ${actualizado}
 
 ## Datos de la firma
 
@@ -30,6 +36,7 @@ export function GET() {
 - Ubicación: Edificio Ofident, 200 m norte y 25 m este del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San José, 11501, Costa Rica
 - Teléfono: +506 8662-2169
 - Email: info@corporaciongc.com
+- Horario: ${FIRM_CONTACT.hours}
 - Sitio web: ${BASE}
 - Idioma: Español
 
@@ -49,6 +56,10 @@ ${ASISTENTES.map((a) => `- [${a.name}](${BASE}/equipo/${a.slug}) — ${a.role}. 
 
 ${guias.map((a) => `- [${linea(a.title)}](${BASE}/articulos/${a.slug})`).join("\n")}
 ${enIngles.length ? `\n### In English\n\n${enIngles.map((a) => `- [${linea(a.title)}](${BASE}/articulos/${a.slug})`).join("\n")}\n` : ""}
+## Sentencias comentadas (Sala Primera)
+
+${sentencias.map((x) => `- [${x.numero}: ${linea(x.titulo)}](${BASE}/jurisprudencia-destacada/${x.slug})${x.subtitulo ? `: ${linea(x.subtitulo)}` : ""}`).join("\n")}
+
 ## Clientes destacados
 
 SUTEL, INS (Instituto Nacional de Seguros), Banco Mundial, CFIA, Colegio de Abogados y Abogadas de Costa Rica, Colegio de Médicos y Cirujanos, Municipalidad de San Carlos, El Viejo, Taboga, ELEINMSA, Gas Z, Grupo Orosí, Mercasa.
@@ -68,12 +79,13 @@ SUTEL, INS (Instituto Nacional de Seguros), Banco Mundial, CFIA, Colegio de Abog
 
 ## Páginas principales
 
-- Inicio: ${BASE}
-- Áreas de práctica: ${BASE}/areas
-- Equipo: ${BASE}/abogados
-- Guías y publicaciones: ${BASE}/articulos
-- Sentencias comentadas: ${BASE}/jurisprudencia-destacada
-- Contacto: ${BASE}/contacto
+- [Inicio](${BASE})
+- [Áreas de práctica](${BASE}/areas)
+- [Equipo](${BASE}/abogados)
+- [Guías y publicaciones](${BASE}/articulos)
+- [Sentencias comentadas](${BASE}/jurisprudencia-destacada)
+- [La firma](${BASE}/sobre-nosotros)
+- [Contacto](${BASE}/contacto)
 
 ## Licencia de citación
 

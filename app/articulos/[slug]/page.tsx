@@ -1,4 +1,5 @@
 import { OBRAS_OSCAR } from "@/lib/obras-oscar";
+import { OBRAS_EQUIPO } from "@/lib/obras-equipo";
 import { NORMA_DE_GUIA } from "@/lib/normas-de-guias";
 import { legislacionSchema } from "@/lib/normas";
 import type { ComponentProps, ReactElement, ReactNode } from "react";
@@ -22,6 +23,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { PDFViewer } from "@/components/article/PDFViewer";
 import { WhatsAppFloat } from "@/components/article/WhatsAppFloat";
+import { IdiomaDocumento } from "@/components/article/IdiomaDocumento";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { ComparativaViasAmparo } from "@/components/article/ComparativaViasAmparo";
 import { CodigoCPCA } from "@/components/article/CodigoCPCA";
@@ -77,7 +79,7 @@ import {
   CronologiaContencioso,
 } from "@/components/article/QueEsContencioso";
 import { CapituloPorQueParaQue } from "@/components/article/CapituloPorQueParaQue";
-import { PreguntaFrecuente, ListaPreguntas, preguntasDesplegables } from "@/components/article/PreguntaFrecuente";
+import { PreguntaFrecuente, ListaPreguntas, preguntasDesplegables, preguntasDelCuerpo } from "@/components/article/PreguntaFrecuente";
 import { CronologiaPsav, CambiosReforma1319, ConsultaVsFinal1319, PendientesPsav } from "@/components/article/ReformaSugef1319";
 import { CalendarioCierre20262027, CalendarioPlazoDiasCierre, CalendarioVencimientoCierre } from "@/components/article/CierreColectivo";
 import { DosNormasReduccion, RecorridoReduccion, PagoReduccion } from "@/components/article/ReduccionForzosa";
@@ -351,10 +353,14 @@ export async function generateMetadata({
           title: article.title,
           excerpt: article.excerpt,
           author: article.author ?? "Corporación GC",
-          date: article.date,
+          /* Las mismas fechas que el JSON-LD: en las fichas de obras, la de
+             su publicación en el sitio y no la de la obra. */
+          date: article.publicadoEnSitio ?? article.date,
+          updated: [article.updated, article.publicadoEnSitio ?? article.date].filter((f): f is string => Boolean(f)).sort().pop(),
           seoTitle: article.seoTitle,
           seoDescription: article.seoDescription,
           ogTitle: article.ogTitle,
+          congelada: ESTADO_30_OCT.has(slug),
         }
       : null,
     slug
@@ -501,7 +507,12 @@ export default async function ArticlePage({
      Article, más apropiado para contenido no académico (mejor comprensión
      por Google e IA). */
   const SCHOLARLY_TYPES = ["tesis", "libro", "ponencia"];
-  const obra = OBRAS_OSCAR[slug];
+  /* Las obras del Director y las tesis del equipo: la página es un Article
+     de la firma sobre la obra, con la fecha en que la ficha se publicó en el
+     sitio, y la obra va en `about` con su tipo propio (M-S1). */
+  const obra = OBRAS_OSCAR[slug] ?? OBRAS_EQUIPO[slug];
+  const fechaSitio = article.publicadoEnSitio ?? article.date;
+  const fechaCambio = [article.updated, fechaSitio].filter((f): f is string => Boolean(f)).sort().pop() ?? fechaSitio;
   const norma = NORMA_DE_GUIA[slug];
   /* Las páginas de ESTADO_30_OCT llevan el marcado tal como salía el 30 de
      octubre: fechas sin zona, autor con el nombre entero, afiliación por
@@ -516,8 +527,8 @@ export default async function ArticlePage({
     "@type": articleSchemaType,
     headline: article.title,
     description: article.excerpt,
-    datePublished: conZona(article.date),
-    dateModified: conZona(article.updated ?? article.date),
+    datePublished: conZona(fechaSitio),
+    dateModified: conZona(fechaCambio),
     /* La obra de don Óscar que la página presenta, o la ley sobre la que
        gira la guía, con el mismo @id que en el resto del sitio. */
     /* Cuando la obra va incrustada en una guía (el capítulo de 2026 dentro
@@ -545,7 +556,9 @@ export default async function ArticlePage({
       ? {
           author: isOrgAuthor
             ? {
-                "@type": "Organization",
+                /* Un solo tipo para #organization en todo el sitio (B-S3);
+                   las páginas en medición conservan el del 30-10. */
+                "@type": congelada ? "Organization" : "LegalService",
                 "@id": "https://www.corporaciongc.com/#organization",
                 name: "Corporación GC",
                 url: "https://www.corporaciongc.com",
@@ -579,7 +592,7 @@ export default async function ArticlePage({
         }
       : {}),
     publisher: {
-      "@type": "Organization",
+      "@type": congelada ? "Organization" : "LegalService",
       "@id": "https://www.corporaciongc.com/#organization",
       name: "Corporación GC",
       url: "https://www.corporaciongc.com",
@@ -619,11 +632,17 @@ export default async function ArticlePage({
     ],
   };
 
-  const jsonLdFaq = article.faq && article.faq.length > 0 ? {
+  /* El FAQPage dice lo que la página muestra: si la guía trae su propio
+     apartado de preguntas, sale de ese apartado; si no, del frontmatter, que
+     la plantilla pinta al pie. Las páginas en medición conservan el marcado
+     del frontmatter (M-S5). */
+  const delCuerpo = !enMedicion && CON_PREGUNTAS_PROPIAS.test(article.content) ? preguntasDelCuerpo(article.content) : [];
+  const preguntasMarcado = delCuerpo.length > 0 ? delCuerpo : (article.faq ?? []);
+  const jsonLdFaq = preguntasMarcado.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": `https://www.corporaciongc.com/articulos/${slug}#faq`,
-    mainEntity: article.faq.map((item) => ({
+    mainEntity: preguntasMarcado.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -1066,6 +1085,7 @@ export default async function ArticlePage({
       </main>
       <Footer />
       <WhatsAppFloat href={whatsappUrl} />
+      {article.lang === "en" && <IdiomaDocumento lang="en" />}
     </>
   );
 }

@@ -47,8 +47,9 @@ export default function PoliticaDePrivacidad() {
                   1. Responsable del tratamiento
                 </h2>
                 <p>
-                  Corporación GC, con domicilio en 200 m norte y 25 m este del Centro Cultural
-                  Norteamericano, Barrio Dent, San José, Costa Rica, es
+                  Corporación GC, con domicilio en el Edificio Ofident, 200 m norte y 25 m este
+                  del Centro Cultural Norteamericano, Barrio Dent, San Pedro de Montes de Oca, San
+                  José, Costa Rica, es
                   responsable del tratamiento de los datos personales recabados a
                   través de este sitio web. Para cualquier consulta relacionada
                   con la protección de sus datos puede escribirnos a{" "}

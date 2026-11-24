@@ -1,6 +1,8 @@
 ---
 title: "El control jurisdiccional de los actos de gobierno"
 date: "2023-03-01"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-03-13"
 excerpt: "Trabajo Final de Graduación que analiza el concepto del Acto de Gobierno como especie del acto administrativo, su evolución histórica y la viabilidad de su control jurisdiccional en el Derecho Público costarricense."
 tags: ["Acto de Gobierno", "Derecho Administrativo", "Control Jurisdiccional", "Derecho Constitucional"]
 areas: ["litigio-contencioso-administrativo", "derecho-administrativo"]

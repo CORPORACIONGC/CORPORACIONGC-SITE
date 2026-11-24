@@ -1,6 +1,8 @@
 ---
 title: "La iatrogenia en la responsabilidad administrativa: una aproximación a los verdaderos criterios de aplicación en el ordenamiento jurídico costarricense"
 date: "2022-05-01"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-03-19"
 excerpt: "Tesis de Licenciatura que determina si la iatrogenia negativa puede categorizarse como una conducta lícita y normal con resultado anormal, descartándola como eximente de responsabilidad para la Administración Pública en casos de malpraxis médica, proponiendo una nueva clasificación de la figura y sus criterios de imputación en el Derecho Administrativo costarricense."
 tags: ["Iatrogenia", "Responsabilidad Administrativa", "Malpraxis Médica", "Derecho a la Salud", "Derecho Administrativo", "Responsabilidad Patrimonial"]
 areas: ["litigio-contencioso-administrativo"]
@@ -13,7 +15,7 @@ seoTitle: "Iatrogenia y Responsabilidad Administrativa · CR"
 seoDescription: "Tesis de Mariana Montero Acuña sobre la iatrogenia médica como responsabilidad patrimonial del Estado: criterios de imputación y malpraxis. UCR, 2022."
 ---
 
-**Referencia:** Montero Acuña, Mariana. *La iatrogenia en la responsabilidad administrativa: una aproximación a los verdaderos criterios de aplicación en el ordenamiento jurídico costarricense*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, mayo 2022. Aprobada con distinción. [Registro en el repositorio de la UCR](https://hdl.handle.net/10669/96806).
+**Referencia:** Montero Acuña, Mariana. *La iatrogenia en la responsabilidad administrativa: una aproximación a los verdaderos criterios de aplicación en el ordenamiento jurídico costarricense*. Tesis de Licenciatura en Derecho, Facultad de Derecho, Universidad de Costa Rica, mayo 2022. Aprobada con distinción. [Registro en el repositorio de la UCR](https://kerwa.ucr.ac.cr/handle/10669/96806).
 
 ---
 

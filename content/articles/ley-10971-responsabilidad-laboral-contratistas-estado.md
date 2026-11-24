@@ -84,7 +84,7 @@ El parámetro con que los tribunales medirán esa redacción ya existe. La Sala 
 
 Una misma falta puede producir tres efectos, que se tramitan por cauces distintos.
 
-**La exclusión de la oferta.** Si el incumplimiento se acredita durante el concurso, el párrafo final del artículo 119 ordena excluir la oferta del procedimiento.
+**La exclusión de la oferta.** Si el incumplimiento se acredita durante el concurso, el párrafo final del artículo 119 ordena excluir la oferta del procedimiento. La exclusión se discute con el recurso contra el acto final, que es la apelación ante la Contraloría o la revocatoria ante la propia Administración según el tipo de procedimiento, y este depende del monto estimado frente a los [umbrales de contratación pública](/articulos/umbrales-contratacion-publica-costa-rica) del año.
 
 **La resolución del contrato.** Si se detecta durante la ejecución, el mismo párrafo ordena resolver el contrato. La resolución se rige por los artículos 113 y 114 de la Ley 9986. El primero la autoriza *«por motivo de incumplimiento grave imputable al contratista»*; el segundo fija el procedimiento: orden de suspensión del contrato, audiencia de diez días hábiles, prueba y recursos de revocatoria y apelación en cinco días hábiles. Firme la resolución, se ejecuta la garantía de cumplimiento.
 

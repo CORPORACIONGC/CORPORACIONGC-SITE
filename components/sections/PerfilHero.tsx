@@ -162,6 +162,7 @@ export function PerfilHero({
               style={{ fontSize: `min(var(--tope), calc(var(--ancho) / ${divisor}))`, lineHeight: 1 }}
             >
               {nombre[0]}
+              {" "}
               <br />
               {nombre[1]}
             </h1>

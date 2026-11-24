@@ -1,7 +1,7 @@
 ---
 title: "Acción de inconstitucionalidad en Costa Rica: requisitos, asunto previo y trámite"
 date: "2026-10-28"
-excerpt: "Quién puede presentar una acción de inconstitucionalidad ante la Sala Constitucional, qué es el asunto previo del artículo 75, qué debe llevar el escrito, cuánto duran las etapas que fija la ley y qué efectos tiene la sentencia, con el texto vigente de la Ley de la Jurisdicción Constitucional y la jurisprudencia de la Sala."
+excerpt: "La acción de inconstitucionalidad es el proceso con el que se pide a la Sala Constitucional que anule una norma o un acto sujeto al Derecho Público porque contradice la Constitución. Quién puede presentarla, qué es el asunto previo del artículo 75, qué debe llevar el escrito, cuánto duran las etapas que fija la ley y qué efectos tiene la sentencia."
 tags: ["Acción de inconstitucionalidad", "Sala Constitucional", "Ley de la Jurisdicción Constitucional", "Asunto previo", "Intereses difusos", "Derecho Constitucional"]
 areas: ["acciones-de-inconstitucionalidad"]
 type: "article"
@@ -163,7 +163,7 @@ En 2010 el expediente 17.743 propuso suprimir la acción por intereses difusos y
 
 El [recurso de amparo](/articulos/recurso-amparo-costa-rica) protege a una persona frente a un acto, una omisión o una amenaza concreta contra sus derechos fundamentales, y la Sala ordena restablecerlos. La acción ataca la norma misma y, si prospera, la elimina para todos. Las dos vías se tocan: el artículo 73 deja la acción contra actos subjetivos para los casos que no admiten amparo ni hábeas corpus, y un amparo pendiente puede servir de asunto previo de una acción cuando la norma impugnada decide su resultado.
 
-La **consulta de constitucionalidad** es otro instrumento. La consulta legislativa (artículos 96 a 101) se hace sobre proyectos de ley antes de su aprobación definitiva, y la consulta judicial (artículos 102 a 108) la formula un juez que tiene dudas sobre la constitucionalidad de una norma que debe aplicar.
+La **consulta de constitucionalidad** es otro instrumento. La consulta legislativa (artículos 96 a 101) se hace sobre proyectos de ley antes de su aprobación definitiva (un ejemplo reciente es la del [presupuesto 2027](/articulos/presupuesto-2027-costa-rica-sala-constitucional), que la Sala recibió con el plazo constitucional del 30 de noviembre encima), y la consulta judicial (artículos 102 a 108) la formula un juez que tiene dudas sobre la constitucionalidad de una norma que debe aplicar.
 
 ---
 

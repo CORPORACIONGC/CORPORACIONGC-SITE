@@ -282,17 +282,16 @@ export default function SobreNosotros() {
             </Link>
 
             <div className="mt-12 flex justify-center md:mt-16">
-              <Membrete
-                as="h1"
-                srSuffix="Abogados especialistas en Derecho Administrativo y Contencioso Administrativo en Costa Rica"
-              />
+              {/* El H1 de esta página es su titular; el de la portada es el
+                  nombre de la firma (B-T5). */}
+              <Membrete />
             </div>
 
             <div aria-hidden="true" className="mx-auto mt-12 h-px max-w-[880px] bg-cream/15 md:mt-14" />
 
-            <p className="type-headline mx-auto mt-12 max-w-[20ch] text-center text-cream md:mt-16">
+            <h1 className="type-headline mx-auto mt-12 max-w-[20ch] text-center text-cream md:mt-16">
               Un bufete dedicado al Derecho P&uacute;blico
-            </p>
+            </h1>
             <p className="type-lead mx-auto mt-6 max-w-[58ch] text-center text-cream/75">
               Fundado en 2015 y dirigido por el Dr. &Oacute;scar Eduardo Gonz&aacute;lez
               Camacho, ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia y

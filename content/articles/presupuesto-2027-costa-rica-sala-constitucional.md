@@ -1,7 +1,7 @@
 ---
 title: "Presupuesto 2027: la consulta a la Sala Constitucional y el plazo del 30 de noviembre"
 date: "2026-11-19"
-excerpt: "Qué consultaron la Corte y los diputados sobre el presupuesto 2027, qué ordenó la Sala Constitucional el 9 de noviembre, por qué el 29 de noviembre es el día del segundo debate, qué parte de la opinión de la Sala obliga a la Asamblea y qué ocurre si la ley se aprueba antes de que la Sala responda."
+excerpt: "El presupuesto 2027 se aprobó en primer debate el 5 de noviembre, y la Sala Constitucional ordenó no votarlo en segundo debate antes del 29, cuando la Constitución exige aprobarlo antes del 30. Qué consultaron la Corte y los diputados, qué parte de la opinión de la Sala obliga a la Asamblea y qué ocurre si la ley se aprueba antes de que la Sala responda."
 tags: ["Presupuesto 2027", "Sala Constitucional", "Consulta de constitucionalidad", "Asamblea Legislativa", "Poder Judicial", "FEES", "Artículo 178"]
 areas: ["materia-presupuestaria", "derecho-administrativo"]
 type: "article"

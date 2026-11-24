@@ -47,17 +47,23 @@ export default async function AsistentePage({ params }: { params: Promise<{ slug
   if (!a) return notFound();
 
   const url = `${FIRM.url}/equipo/${a.slug}`;
+  const description = `${a.name}, ${a.role.toLowerCase()} de Corporación GC desde ${a.since.toLowerCase()}. ${a.study}.`;
   const jsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "ProfilePage",
       "@id": `${url}#page`,
       url,
+      name: `${a.name} · Corporación GC`,
+      /* Los perfiles de asistentes se publicaron el 31-10-2026 (M-S4). */
+      dateCreated: "2026-10-31",
       dateModified: a.actualizado,
       mainEntity: {
         "@type": "Person",
         "@id": `${url}#person`,
         name: a.name,
+        url,
+        description,
         jobTitle: a.role,
         image: `${FIRM.url}${a.portrait}`,
         worksFor: { "@type": "LegalService", "@id": `${FIRM.url}/#organization`, name: "Corporación GC", url: FIRM.url },

@@ -169,7 +169,8 @@ export function OscarConferencias() {
               name: video.title,
               description: video.description,
               thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
-              uploadDate: video.fecha,
+              /* Con zona horaria, como pide Google (B-S2). */
+              uploadDate: video.fecha.includes("T") ? video.fecha : `${video.fecha}T08:00:00-06:00`,
               embedUrl: `https://www.youtube.com/embed/${video.id}`,
               duration: DURACION[video.id],
               publisher: {

@@ -1,6 +1,8 @@
 ---
 title: "La Justicia Administrativa frente a la Inactividad Material de la Administración Pública"
 date: "1998-01-01"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-03-19"
 excerpt: "Tesis doctoral que aborda el control jurisdiccional de la inactividad material de la Administración Pública, proponiendo la ampliación del objeto del proceso contencioso-administrativo y el fortalecimiento de los poderes del juez para garantizar la tutela judicial efectiva del ciudadano."
 tags: ["Justicia Administrativa", "Inactividad Administrativa", "Tesis Doctoral", "Derecho Comparado"]
 areas: ["litigio-contencioso-administrativo"]

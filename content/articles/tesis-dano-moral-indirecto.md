@@ -1,6 +1,8 @@
 ---
 title: "El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración"
 date: "2024-01-15"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-03-17"
 excerpt: "Trabajo Final de Investigación Aplicada que examina el régimen jurídico del daño moral indirecto, entendido como el perjuicio sufrido por personas colateralmente afectadas por un daño directo infligido a un tercero, y su reconocimiento como responsabilidad patrimonial del Estado."
 tags: ["Responsabilidad Patrimonial", "Daño Moral Indirecto", "Derecho Administrativo", "Derecho Público"]
 areas: ["litigio-contencioso-administrativo"]
@@ -18,7 +20,7 @@ Trabajo Final de Investigación Aplicada para optar por el grado y título de Ma
 **Director:** Dr. Roberto Garita Navarro
 **Lectores:** Dr. Hubert Fernández Argüello, Dr. Rafael González Ballar
 
-**Referencia:** González Coto, Katherine Tatiana. *El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración*. Tesis de Maestría Profesional en Derecho Público, Sistema de Estudios de Posgrado, Universidad de Costa Rica, San José, Costa Rica, 2024. [Registro en el repositorio de la UCR](https://hdl.handle.net/10669/102175).
+**Referencia:** González Coto, Katherine Tatiana. *El daño moral indirecto familiar y social como responsabilidad patrimonial de la Administración*. Tesis de Maestría Profesional en Derecho Público, Sistema de Estudios de Posgrado, Universidad de Costa Rica, San José, Costa Rica, 2024. [Registro en el repositorio de la UCR](https://kerwa.ucr.ac.cr/handle/10669/102175).
 
 ---
 

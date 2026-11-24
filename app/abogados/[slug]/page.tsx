@@ -1,4 +1,5 @@
 import { OBRAS_OSCAR } from "@/lib/obras-oscar";
+import { obrasDe } from "@/lib/obras-equipo";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -107,6 +108,7 @@ export default async function AttorneyProfile({
         "https://www.linkedin.com/in/%C3%B3scar-eduardo-gonz%C3%A1lez-camacho-0b65a2187/",
         "https://derecho.ucr.ac.cr/docentes/gonzalez-camacho-oscar",
         "https://dialnet.unirioja.es/servlet/autor?codigo=4641054",
+        "https://editorial.tirant.com/cr/autorList/gonzalez-camacho-oscar-eduardo-996300",
       ],
       /* Variantes con que se busca su nombre, con y sin tilde y con el
          segundo nombre. */
@@ -145,10 +147,6 @@ export default async function AttorneyProfile({
         { degree: "Licenciatura en Derecho", institution: "Universidad Escuela Libre de Derecho" },
         { degree: "Notariado Público", institution: "Universidad Escuela Libre de Derecho" },
       ],
-      /* Su tesis de maestría en el repositorio institucional de la UCR. */
-      sameAs: [
-        "https://hdl.handle.net/10669/102175",
-      ],
     },
     "mariana-montero": {
       carnet: "33716",
@@ -156,9 +154,6 @@ export default async function AttorneyProfile({
         { degree: "Maestría Profesional en Derecho Público", institution: "Universidad de Costa Rica", distinction: "Diploma de Excelencia Académica — Mejor promedio del posgrado", conferido: false },
         { degree: "Licenciatura en Derecho — Mención en Derechos Humanos", institution: "Universidad de Costa Rica", distinction: "Aprobada con distinción" },
         { degree: "Bachillerato en Derecho", institution: "Universidad de Costa Rica" },
-      ],
-      sameAs: [
-        "https://hdl.handle.net/10669/96806",
       ],
     },
     "esteban-perez": {
@@ -170,7 +165,6 @@ export default async function AttorneyProfile({
       ],
       sameAs: [
         "https://cr.linkedin.com/in/esteban-p%C3%A9rez-herrera-contencioso",
-        "https://hdl.handle.net/10669/94871",
       ],
     },
   };
@@ -291,9 +285,11 @@ export default async function AttorneyProfile({
   /* Las obras del Director (tesis, libros, capítulo) van en su perfil con el
      mismo @id que en la página de cada obra; cada una lo nombra autor, que es
      la dirección en que schema.org une una obra con su Person. */
-  const obrasDelPerfil = member.slug === "oscar-gonzalez"
-    ? Object.values(OBRAS_OSCAR).map((obra) => ({ "@context": "https://schema.org", ...obra }))
-    : [];
+  /* Las tesis del equipo, igual: el registro de cada tesis va en su nodo
+     Thesis y no en el sameAs de la persona, que solo lleva perfiles (M-S2). */
+  const obrasDelPerfil = (
+    member.slug === "oscar-gonzalez" ? Object.values(OBRAS_OSCAR) : obrasDe(member.slug)
+  ).map((obra) => ({ "@context": "https://schema.org", ...obra }));
 
   const schemaScripts = (
     <script
@@ -309,6 +305,7 @@ export default async function AttorneyProfile({
       "@context": "https://schema.org",
       "@type": "Event",
       name: "Global Summit Legal Hackers 2025",
+      image: `${FIRM.url}/images/khevin-legal-hackers-bogota.jpeg`,
       startDate: "2025-10-23",
       endDate: "2025-10-23",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
@@ -369,6 +366,7 @@ export default async function AttorneyProfile({
       "@context": "https://schema.org",
       "@type": "Event",
       name: "CPCA 20 Años: Balance, transformaciones y desafíos de la justicia administrativa",
+      image: `${FIRM.url}/images/oscar-cpca-20-anos.jpg`,
       startDate: "2026-03-25",
       endDate: "2026-03-25",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",

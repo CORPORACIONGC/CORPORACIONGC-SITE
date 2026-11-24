@@ -12,7 +12,7 @@ const csp = [
   "font-src 'self'",
   "frame-src 'self' https://maps.google.com https://www.google.com https://www.youtube.com https://youtube.com",
   `connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://*.analytics.google.com${isDev ? " ws://localhost:* http://localhost:*" : ""}`,
-  "object-src 'self'",
+  "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'none'",
@@ -46,6 +46,13 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         has: [{ type: "host", value: "corporaciongc.com" }],
         destination: "https://www.corporaciongc.com/:path*",
+        permanent: true,
+      },
+      /* /equipo solo tiene perfiles (/equipo/[slug]); quien recorta la
+         dirección de un perfil llega al directorio del equipo (M-T2). */
+      {
+        source: "/equipo",
+        destination: "/abogados",
         permanent: true,
       },
       // URL corrupta detectada en auditoría SEO: Y29udHJhdG es base64 truncado

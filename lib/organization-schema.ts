@@ -7,6 +7,7 @@
 // para no emitir nodos contradictorios con el mismo @id.
 
 import { PRACTICE_AREA_PAGES } from "./constants";
+import { ASISTENTES } from "./asistentes";
 
 export const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
@@ -62,7 +63,9 @@ export const ORGANIZATION_SCHEMA = {
     url: "https://www.corporaciongc.com/abogados/oscar-gonzalez",
   },
   foundingDate: "2015",
-  numberOfEmployees: { "@type": "QuantitativeValue", value: 5 },
+  /* Las siete personas que el sitio presenta: cinco abogados y los
+     asistentes legales (M-S4). */
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 5 + ASISTENTES.length },
   employee: [
     {
       "@type": "Person",
@@ -104,6 +107,13 @@ export const ORGANIZATION_SCHEMA = {
       jobTitle: "Abogado Asociado y Notario Público",
       url: "https://www.corporaciongc.com/abogados/esteban-perez",
     },
+    ...ASISTENTES.map((a) => ({
+      "@type": "Person",
+      "@id": `https://www.corporaciongc.com/equipo/${a.slug}#person`,
+      name: a.name,
+      jobTitle: "Asistente legal",
+      url: `https://www.corporaciongc.com/equipo/${a.slug}`,
+    })),
   ],
   /* Las materias son las áreas publicadas en /areas (sin «Otras materias»),
      más el Derecho Público que las agrupa. */

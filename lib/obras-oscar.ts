@@ -48,6 +48,16 @@ export const OBRAS_OSCAR: Record<string, Record<string, unknown>> = {
       },
     ],
   },
+  "libro-proceso-ejecutivo": {
+    "@type": "Book",
+    "@id": `${pagina("libro-proceso-ejecutivo")}#libro`,
+    name: "Consideraciones prácticas en torno al proceso ejecutivo",
+    author: OSCAR,
+    publisher: { "@type": "GovernmentOrganization", name: "Escuela Judicial del Poder Judicial" },
+    datePublished: "1995",
+    inLanguage: "es",
+    url: pagina("libro-proceso-ejecutivo"),
+  },
   "libro-nuevo-proceso-contencioso": {
     "@type": "Book",
     "@id": `${pagina("libro-nuevo-proceso-contencioso")}#libro`,
@@ -66,6 +76,12 @@ export const OBRAS_OSCAR: Record<string, Record<string, unknown>> = {
     author: OSCAR,
     inLanguage: "es",
     url: pagina("por-que-y-para-que-contencioso-administrativo"),
+    /* El PDF del capítulo, que declara esta guía como canónica (M-T5). */
+    encoding: {
+      "@type": "MediaObject",
+      contentUrl: "https://www.corporaciongc.com/pdfs/por-que-y-para-que-contencioso-administrativo.pdf",
+      encodingFormat: "application/pdf",
+    },
     isPartOf: {
       "@type": "Book",
       name: "CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa",

@@ -10,8 +10,8 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Medidas cautelares en el contencioso administrativo de Costa Rica"
-seoDescription: "Qué es una medida cautelar en el contencioso administrativo, sus requisitos, la cautelar ante causam, la provisionalísima y cuánto dura."
+seoTitle: "Medidas cautelares en Costa Rica: qué son y cómo se piden"
+seoDescription: "Qué es una medida cautelar contra el Estado, qué exige el juez para concederla, la provisionalísima, la cautelar anterior a la demanda y cuánto dura."
 faq:
   - question: "¿Qué es una medida cautelar en el contencioso administrativo?"
     answer: "Es la orden que el juez dicta antes de la sentencia para proteger, de forma provisional, el objeto del proceso y la efectividad del fallo. El Código Procesal Contencioso Administrativo la regula en los artículos 19 a 30 y permite pedirla antes del proceso, durante su trámite y en la fase de ejecución. Puede conservar el estado de cosas o tener efectos anticipativos o innovativos, e imponer a cualquiera de las partes obligaciones de hacer, de no hacer o de dar (artículo 20)."

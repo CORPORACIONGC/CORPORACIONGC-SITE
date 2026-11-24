@@ -1,7 +1,7 @@
 ---
 title: "Proceso de puro derecho: qué es, cuánto tarda y qué propone el proyecto que reforma el artículo 98 del CPCA"
 date: "2026-11-18"
-excerpt: "Qué es un proceso de puro derecho en el contencioso administrativo costarricense, quién lo declara y cómo se impugna esa decisión, qué plazo tiene el Tribunal para sentenciar, por qué en 2024 y 2025 tardó en promedio sesenta meses, qué dispuso la Corte con el Tribunal de Apelación y qué propone el proyecto de ley 25.815."
+excerpt: "Un proceso de puro derecho es el contencioso administrativo que pasa a sentencia sin juicio oral, porque no queda prueba que evacuar (artículo 98.2 del CPCA). Quién lo declara y cómo se impugna, qué plazo tiene el Tribunal para sentenciar, por qué en 2024 y 2025 tardó en promedio sesenta meses, qué dispuso la Corte con el Tribunal de Apelación y qué propone el proyecto de ley 25.815."
 tags: ["Puro derecho", "Contencioso Administrativo", "CPCA", "Artículo 98", "Audiencia preliminar", "Tribunal Contencioso Administrativo", "Proyecto de ley 25.815", "Justicia pronta"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"

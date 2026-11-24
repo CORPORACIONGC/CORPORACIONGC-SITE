@@ -135,16 +135,27 @@
       "articulos": [
         "umbrales-contratacion-publica-costa-rica"
       ]
+    },
+    {
+      "fecha": "2026-11-24",
+      "cambio": "Marcado de las guías: FAQPage desde las preguntas visibles, #organization como LegalService, autor y fecha de modificación en la cabecera, obras en `about` con su tipo (informe 23-11, M-S y B-T8)",
+      "articulos": "todos",
+      "excepto": [
+        "que-es-el-cpca-costa-rica",
+        "reforma-reglamento-contratacion-publica-2026-proveedores-estado"
+      ]
     }
   ],
   "areas": {
     "*": "2026-11-10",
-    "regulacion-fintech-criptoactivos": "2026-11-18"
+    "regulacion-fintech-criptoactivos": "2026-11-18",
+    "contratacion-publica": "2026-11-24",
+    "materia-presupuestaria": "2026-11-24"
   },
   "paginas": {
-    "/areas": "2026-11-10",
+    "/areas": "2026-11-24",
     "/contacto": "2026-11-10",
-    "/sobre-nosotros": "2026-10-31",
-    "/politica-editorial": "2026-11-10"
+    "/sobre-nosotros": "2026-11-24",
+    "/politica-editorial": "2026-11-24"
   }
 }

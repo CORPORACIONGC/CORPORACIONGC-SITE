@@ -23,14 +23,16 @@ import type { NextRequest } from "next/server";
 
 const TRACKING_PARAMS = new Set([
   "gclid", "gbraid", "wbraid", "fbclid", "msclkid", "dclid", "yclid", "ttclid",
-  "li_fat_id", "twclid", "igshid", "mc_cid", "mc_eid", "_gl", "gad_source", "gclsrc",
+  "li_fat_id", "twclid", "igshid", "igsh", "mibextid", "mc_cid", "mc_eid", "_gl", "gad_source", "gclsrc",
 ]);
 
 // Parámetros internos de Next.js que jamás deben provocar redirección.
 const NEXT_INTERNAL = new Set(["_rsc"]);
 
+/* En minúsculas: «?UTM_SOURCE=x» también es seguimiento. */
 function isTracking(key: string): boolean {
-  return key.startsWith("utm_") || TRACKING_PARAMS.has(key);
+  const k = key.toLowerCase();
+  return k.startsWith("utm_") || TRACKING_PARAMS.has(k);
 }
 
 export function proxy(req: NextRequest) {

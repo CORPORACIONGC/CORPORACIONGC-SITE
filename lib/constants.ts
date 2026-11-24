@@ -631,7 +631,7 @@ export const ESTEBAN_PROFILE = {
   research: {
     title: "La potestad discrecional de la administración municipal en la regulación urbanística",
     /* Registro de la tesis en el repositorio institucional de la UCR. */
-    href: "https://hdl.handle.net/10669/94871",
+    href: "https://kerwa.ucr.ac.cr/handle/10669/94871",
     description: "Trabajo Final de Graduación para la obtención de la Licenciatura en Derecho (UCR) que analiza los alcances y límites de la discrecionalidad administrativa de los gobiernos locales en la regulación urbanística costarricense.",
     tags: ["Derecho Urbanístico", "Derecho Municipal", "Discrecionalidad Administrativa", "Trabajo Final de Graduación"],
   },

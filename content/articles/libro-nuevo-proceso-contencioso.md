@@ -1,6 +1,8 @@
 ---
 title: "El Nuevo Proceso Contencioso Administrativo"
 date: "2006-01-01"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-03-19"
 excerpt: "Obra colectiva que analiza en profundidad la implementación del Código Procesal Contencioso Administrativo (Ley N.° 8508), abordando desde las bases constitucionales de la reforma hasta la tutela cautelar, la sentencia, los recursos de casación y la ejecución de los fallos."
 tags: ["Contencioso Administrativo", "CPCA", "Derecho Procesal", "Reforma Jurisdiccional"]
 areas: ["litigio-contencioso-administrativo"]

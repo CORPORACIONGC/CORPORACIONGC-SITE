@@ -1,6 +1,8 @@
 ---
 title: "La potestad discrecional de la Administración Municipal en la regulación urbanística"
 date: "2022-12-13"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-03-04"
 excerpt: "Trabajo Final de Graduación que examina los alcances y límites de la discrecionalidad administrativa municipal en la regulación urbanística costarricense, abordando el marco normativo disperso, el rol de los planes reguladores y el control judicial de la actividad urbanística local."
 tags: ["Discrecionalidad Administrativa", "Derecho Urbanístico", "Derecho Municipal", "Plan Regulador", "Ordenamiento Territorial", "Trabajo Final de Graduación"]
 areas: ["derecho-urbanistico", "materia-municipal"]
@@ -58,6 +60,8 @@ El **Título III** conecta los dos ejes anteriores al valorar la competencia urb
 Los focos de discrecionalidad que emergen en la planificación son analizados individualmente: la determinación del área a regular, que implica decidir qué zonas del cantón serán objeto de planificación urbanística y cuáles quedarán fuera del ámbito de regulación del plan; el contenido del plan regulador, que comprende las decisiones sobre los objetivos, las políticas y las normas específicas que regirán el desarrollo urbano del cantón; la zonificación, que constituye una de las decisiones discrecionales más trascendentes al clasificar el territorio en zonas con usos permitidos y prohibidos; los criterios de fraccionamiento, urbanización y construcción, que establecen las condiciones bajo las cuales se pueden subdividir terrenos, desarrollar proyectos urbanísticos y edificar construcciones; la reserva de bienes demaniales, que determina qué áreas del cantón serán destinadas a fines públicos como parques, vías, áreas verdes y equipamiento comunal; y la gestión del riesgo, que incorpora consideraciones de vulnerabilidad territorial frente a amenazas naturales en las decisiones de planificación urbanística.
 
 Se incluye una reseña jurisprudencial del control judicial ejercido por la Sala Constitucional y el Tribunal Contencioso Administrativo sobre las disposiciones de planificación y los actos de ejecución urbanística. Este análisis jurisprudencial revela cómo los tribunales han ido construyendo criterios de control que permiten verificar la razonabilidad y proporcionalidad de las decisiones urbanísticas municipales, sin sustituir a la Administración en el ejercicio de sus potestades discrecionales. Se examinan los casos en que los tribunales han anulado disposiciones de planes reguladores por considerarlas arbitrarias o desproporcionadas, así como aquellos en que han confirmado la validez de decisiones urbanísticas controvertidas al verificar su conformidad con los principios de juridicidad.
+
+*Esos focos de discrecionalidad se ven en concreto en el [nuevo Plan Regulador de Santa Ana](/articulos/plan-regulador-santa-ana-2026), que en 2026 rehízo las zonas, las alturas y los tamaños de lote del cantón.*
 
 ### Conclusiones
 

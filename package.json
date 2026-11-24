@@ -6,7 +6,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/fechas-modificacion.mjs",
     "build": "next build",
-    "postbuild": "node scripts/verificar-peso-html.mjs && node scripts/notify-indexnow.mjs",
+    "postbuild": "node scripts/verificar-peso-html.mjs && node scripts/lang-html.mjs && node scripts/notify-indexnow.mjs",
     "start": "next start",
     "lint": "eslint"
   },

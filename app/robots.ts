@@ -16,7 +16,12 @@ export default function robots(): MetadataRoute.Robots {
       // Google-Extended: permitido para que Gemini (Google) pueda citar el
       // sitio. No afecta el ranking ni los AI Overviews (usan Googlebot).
       { userAgent: "Google-Extended", allow: "/" },
-      // Block AI training-only crawlers (no search benefit, only scraping)
+      /* Se bloquean los rastreadores que alimentan conjuntos de datos o
+         modelos sin un buscador o asistente que cite y enlace la fuente
+         (Common Crawl, Cohere, ByteDance, Meta). GPTBot y ClaudeBot, que
+         también entrenan, se permiten arriba porque sus empresas operan
+         asistentes que citan el sitio. CCBot queda bloqueado hasta que se
+         decida si conviene estar en Common Crawl (informe 23-11, G1). */
       { userAgent: "CCBot", disallow: "/" },
       { userAgent: "cohere-ai", disallow: "/" },
       { userAgent: "Bytespider", disallow: "/" },

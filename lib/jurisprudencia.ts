@@ -773,6 +773,16 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
 
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "expropiaciones"],
+    guias: [
+      {
+        slug: "ejecucion-sentencia-contra-el-estado-costa-rica",
+        motivo: "Cómo se cobra una condena al Estado y cómo se actualizan las sumas que debe pagar.",
+      },
+      {
+        slug: "responsabilidad-patrimonial-del-estado-costa-rica",
+        motivo: "Qué daños indemniza el Estado y cómo se actualiza la condena dineraria.",
+      },
+    ],
     temas: ["Derecho Administrativo", "Contencioso Administrativo", "CPCA", "Responsabilidad Patrimonial", "Derecho Expropiatorio"],
     metaDescription:
       "¿Se actualiza una condena en colones sin que se haya pactado? La Sala Primera dijo que sí y fijó el IPC. Voto 1016-F-2004, con los pasajes literales.",
@@ -1423,6 +1433,12 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-315154",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "derecho-administrativo", "servicio-publico", "casacion-sala-primera"],
+    guias: [
+      {
+        slug: "responsabilidad-patrimonial-del-estado-costa-rica",
+        motivo: "El régimen completo de la responsabilidad del Estado: títulos de imputación, eximentes, daños y plazo para reclamar.",
+      },
+    ],
     temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "Derecho a la Salud", "LGAP"],
     metaDescription:
       "Cuando el Estado no actúa y el daño ocurre, responde. La Sala Primera definió el funcionamiento anormal y la eximente parcial. Voto 584-F-2005.",
@@ -1997,6 +2013,12 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0034-509623",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["procedimientos-sancionatorios", "derecho-administrativo", "empleo-publico", "defensa-regulatoria-sectorial"],
+    guias: [
+      {
+        slug: "defensa-procedimiento-administrativo-sancionatorio",
+        motivo: "La defensa en el procedimiento sancionatorio, con los plazos del artículo 261 y la caducidad del procedimiento paralizado.",
+      },
+    ],
     temas: ["Procedimientos Sancionatorios", "Derecho Administrativo", "LGAP"],
     metaDescription:
       "Seis meses de inercia de la Administración caducan el procedimiento, aunque lo haya abierto de oficio. Lo fijó la Sala Primera. Voto 34-F-S1-2011.",
@@ -3996,6 +4018,12 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     fuenteUrl: "https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-764867",
     fuenteNombre: "NEXUS-PJ — Poder Judicial",
     areas: ["litigio-contencioso-administrativo", "casacion-sala-primera", "derecho-administrativo"],
+    guias: [
+      {
+        slug: "responsabilidad-patrimonial-del-estado-costa-rica",
+        motivo: "La responsabilidad del Estado en su conjunto, con el Estado-juez y la prisión preventiva entre los supuestos especiales.",
+      },
+    ],
     temas: ["Responsabilidad Patrimonial", "Derecho Administrativo", "LGAP", "Derecho Público"],
     metaDescription:
       "¿Responde el Estado por la prisión preventiva de un inocente? La Sala Primera fijó el plazo de cuatro años y exigió inocencia demostrada. Voto 654-F-S1-2008.",

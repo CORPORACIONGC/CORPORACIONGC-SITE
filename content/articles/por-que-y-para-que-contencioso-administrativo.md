@@ -5,6 +5,8 @@ excerpt: "El contencioso administrativo es el proceso judicial con el que una pe
 tags: ["Contencioso Administrativo", "Guía práctica", "CPCA", "Artículo 49 de la Constitución", "Legitimación", "Tutela Judicial Efectiva", "Tribunal Contencioso Administrativo", "Derecho Administrativo"]
 areas: ["litigio-contencioso-administrativo"]
 type: "article"
+# El PDF del capítulo declara esta guía como canónica (next.config.ts, FICHAS_DE_PDF).
+pdfFile: "por-que-y-para-que-contencioso-administrativo.pdf"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"

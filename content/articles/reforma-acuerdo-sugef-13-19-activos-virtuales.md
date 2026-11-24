@@ -10,7 +10,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Acuerdo SUGEF 13-19: la reforma para activos virtuales (PSAV)"
-seoDescription: "La reforma del Acuerdo SUGEF 13-19 para proveedores de activos virtuales rige desde el 11-11-2026: umbral de US$1.000, regla de viaje, seis meses de adecuación y qué falta."
+seoDescription: "La reforma del Acuerdo SUGEF 13-19 para activos virtuales rige desde el 11-11-2026: umbral de US$1.000, regla de viaje, seis meses de adecuación y qué falta."
 faq:
   - question: "¿Qué es el Acuerdo SUGEF 13-19?"
     answer: "Es el reglamento del CONASSIF para la prevención de la legitimación de capitales, el financiamiento al terrorismo y el financiamiento de la proliferación de armas de destrucción masiva que se aplica a los sujetos obligados de los artículos 15 y 15 bis de la Ley 7786: casinos, casas de empeño, remesadoras, inmobiliarias, abogados y contadores en ciertas actividades, entre otros. Desde la reforma publicada el 11 de noviembre de 2026 se aplica también a los proveedores de servicios de activos virtuales del artículo 15 quater."

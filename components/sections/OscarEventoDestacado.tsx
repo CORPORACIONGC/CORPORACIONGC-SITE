@@ -192,7 +192,7 @@ export function OscarEventoDestacado() {
             name: EVENT_VIDEO_TITLE,
             description: EVENT_VIDEO_DESCRIPTION,
             thumbnailUrl: `https://i.ytimg.com/vi/${EVENT_VIDEO_ID}/hqdefault.jpg`,
-            uploadDate: "2026-03-25",
+            uploadDate: "2026-03-25T08:00:00-06:00",
             embedUrl: `https://www.youtube.com/embed/${EVENT_VIDEO_ID}`,
             duration: "PT1H15M28S",
             publisher: {

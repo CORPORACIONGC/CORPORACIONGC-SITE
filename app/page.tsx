@@ -124,14 +124,14 @@ const jsonLdSiteNavigation = {
     {
       "@type": "SiteNavigationElement",
       position: 7,
-      name: "Publicaciones Académicas",
-      description: "Artículos, tesis y publicaciones en Derecho Público",
+      name: "Guías y análisis de Derecho Público",
+      description: "Guías prácticas, artículos, tesis y publicaciones en Derecho Público",
       url: "https://www.corporaciongc.com/articulos",
     },
     {
       "@type": "SiteNavigationElement",
       position: 8,
-      name: "Sobre Nosotros",
+      name: "La Firma",
       description: "Bufete fundado en 2015 por el Dr. González Camacho",
       url: "https://www.corporaciongc.com/sobre-nosotros",
     },

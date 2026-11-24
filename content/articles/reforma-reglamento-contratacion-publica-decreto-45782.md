@@ -9,7 +9,7 @@ author: "Lic. Esteban Pérez Herrera"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Reforma 2026 al Reglamento de Contratación Pública (Decreto 45782)"
+seoTitle: "Reforma 2026 al Reglamento de Contratación Pública"
 seoDescription: "Los cinco cambios del Decreto 45782 para quien le vende al Estado: precio y bandas, segunda subsanación, subcontratación, PYMES y cooperativas, y consultas."
 faq:
   - question: "¿Qué es la subsanación de ofertas en SICOP?"

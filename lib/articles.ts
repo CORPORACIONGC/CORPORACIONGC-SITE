@@ -18,6 +18,9 @@ export type ArticleMeta = {
   tags: string[];
   type: "article" | "pdf";
   pdfFile?: string;
+  /** En las fichas de obras (tesis y libros), la fecha en que la ficha se
+   *  publicó en el sitio; `date` es la de la obra. La usa el JSON-LD. */
+  publicadoEnSitio?: string;
   author?: string;
   /** Si es false, el autor NO se muestra en la página (byline + bio ocultos)
       pero SÍ se emite en el JSON-LD (señal de autoría para SEO/E-E-A-T). */
@@ -99,6 +102,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     tags: (data.tags as string[]) || [],
     type: (data.type as "article" | "pdf") || "article",
     pdfFile: data.pdfFile as string | undefined,
+    publicadoEnSitio: data.publicadoEnSitio as string | undefined,
     author: data.author as string | undefined,
     authorVisible: data.authorVisible as boolean | undefined,
     institution: data.institution as string | undefined,

@@ -1,6 +1,8 @@
 ---
 title: "Hacia la implementación de sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia costarricense"
 date: "2025-06-20"
+# Fecha en que la ficha se publicó en el sitio (JSON-LD); `date` es la de la obra.
+publicadoEnSitio: "2026-02-26"
 excerpt: "Trabajo Final de Graduación que analiza la integración de inteligencia artificial en el ámbito judicial desde el marco normativo de la Unión Europea (EU AI Act), proponiendo una hoja de ruta para su adopción segura en Costa Rica."
 tags: ["Inteligencia Artificial", "Justicia Digital", "EU AI Act", "Trabajo Final de Graduación"]
 areas: ["gobierno-digital-inteligencia-artificial-datos"]

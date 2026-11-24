@@ -439,7 +439,9 @@ export function authorInitials(name: string): string {
    y el tratamiento en honorificPrefix, para que la misma persona tenga un
    solo nombre en todas las páginas que comparten su @id. */
 export function splitHonorific(full: string): { name: string; honorificPrefix?: string } {
-  const t = full.trim();
+  /* «… y otros» describe la obra colectiva, no a la persona: bajo el @id del
+     autor solo va su nombre (B-S1). */
+  const t = full.trim().replace(/\s+y otros$/i, "");
   const m = t.match(/^(Dra?\.|Lic(?:da)?\.|MSc\.)\s+/);
   return m ? { name: t.slice(m[0].length), honorificPrefix: m[1] } : { name: t };
 }

@@ -9,7 +9,7 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Recurso de casación contencioso administrativo en Costa Rica"
+seoTitle: "Recurso de casación en Costa Rica: plazo y requisitos (CPCA)"
 seoDescription: "Qué sentencias admiten casación, Sala Primera o Tribunal de Casación, el plazo de 15 días, los motivos, el rechazo de plano y los efectos del fallo."
 faq:
   - question: "¿Qué resoluciones admiten recurso de casación en el proceso contencioso-administrativo?"

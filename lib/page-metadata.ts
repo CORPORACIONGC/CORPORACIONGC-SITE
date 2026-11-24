@@ -48,7 +48,7 @@ export const homeMetadata: Metadata = {
 export const sobreNosotrosMetadata: Metadata = {
   // El layout aplica la plantilla "%s · Corporación GC"; el título no repite la
   // marca para evitar "Sobre Nosotros · Corporación GC · Corporación GC".
-  title: "Sobre Nosotros",
+  title: "La firma: abogados en Derecho Público",
   description:
     "Fundado en 2015 por el Dr. Óscar González Camacho, ex-Magistrado y coordinador de la comisión redactora del CPCA. Cinco abogados en Derecho Público.",
   alternates: { canonical: "/sobre-nosotros" },
@@ -59,7 +59,7 @@ export const sobreNosotrosMetadata: Metadata = {
     url: "/sobre-nosotros",
   }),
   twitter: tw({
-    title: "Sobre Nosotros · Corporación GC",
+    title: "La firma · Corporación GC",
     description:
       "Conocé al equipo detrás de Corporación GC: cinco abogados costarricenses especializados en Derecho Público, dirigidos por un ex-Magistrado de la Corte Suprema y coordinador de la comisión redactora del CPCA.",
   }),
@@ -125,7 +125,7 @@ export const abogadosMetadata: Metadata = {
 export const editorialMetadata: Metadata = {
   title: { absolute: "Política editorial de las guías · Corporación GC" },
   description:
-    "Cómo escribe y revisa Corporación GC sus guías de Derecho Público: autoría, revisión del Dr. González Camacho, fuentes oficiales, fechas y corrección de errores.",
+    "Cómo escribe y revisa Corporación GC sus guías de Derecho Público: autoría, revisión del Dr. González Camacho, fuentes oficiales, fechas y correcciones.",
   alternates: { canonical: "/politica-editorial" },
   openGraph: og({
     title: "Política editorial · Corporación GC",
@@ -332,6 +332,9 @@ export function buildArticleMetadata(
     seoDescription?: string;
     /** Título propio para las tarjetas al compartir; va sin sufijo de marca. */
     ogTitle?: string;
+    /** Las páginas en medición (ESTADO_30_OCT) conservan la cabecera del
+     *  30-10: sin autor propio ni fecha de modificación. */
+    congelada?: boolean;
   } | null,
   slug: string
 ): Metadata {
@@ -349,13 +352,16 @@ export function buildArticleMetadata(
   return {
     title: withSuffix.length > 60 ? { absolute: title } : title,
     description,
+    /* La guía la firma una persona: el <meta name="author"> la nombra a ella
+       y no a la firma que declara el layout (B-T8). */
+    ...(article.congelada ? {} : { authors: [{ name: article.author }] }),
     openGraph: og({
       title: article.ogTitle ?? `${title} · Corporación GC`,
       description,
       type: "article",
       url: `/articulos/${slug}`,
       publishedTime: article.date,
-      ...(article.updated ? { modifiedTime: article.updated } : {}),
+      ...(article.updated && !article.congelada ? { modifiedTime: article.updated } : {}),
       authors: [article.author],
       section: "Derecho Público",
     }),

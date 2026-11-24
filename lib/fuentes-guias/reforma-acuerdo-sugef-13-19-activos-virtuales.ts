@@ -31,9 +31,9 @@ export const fuentes: FuentesDeGuia = {
       href: GACETA("2026/06/19/ALCA78_19_06_2026.pdf"),
     },
     {
-      titulo: "Acuerdo SUGEF 13-19 (versión anterior a la reforma)",
-      detalle: "Versión 6, del 24-05-2024, publicada en el portal de normativa vigente de la SUGEF",
-      href: "https://www.sugef.fi.cr/normativa/normativa_vigente/SUGEF%2013-19%20(v6%2024%20de%20mayo%202024).pdf",
+      titulo: "Acuerdo SUGEF 13-19 (texto integrado con la reforma)",
+      detalle: "Versión 7, del 11-11-2026, publicada en el portal de normativa vigente de la SUGEF, que retiró la versión 6",
+      href: "https://www.sugef.fi.cr/normativa/normativa_vigente/SUGEF%2013-19%20(v7%2011%20de%20noviembre%20de%202026).pdf",
     },
     {
       titulo: "Reforma del Acuerdo SUGEF 11-18 (inscripción y registro de OSFL)",

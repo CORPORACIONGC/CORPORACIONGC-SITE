@@ -93,3 +93,57 @@ export function preguntasDesplegables(md: string): string {
   cerrarLista();
   return salida.join("\n");
 }
+
+/** Las preguntas que la guía muestra en su apartado «## Preguntas
+ *  frecuentes», con la respuesta en texto plano, para el FAQPage: el marcado
+ *  tiene que decir lo mismo que la página (informe 23-11, M-S5). Recorre el
+ *  Markdown con las mismas reglas que preguntasDesplegables. */
+export function preguntasDelCuerpo(md: string): { question: string; answer: string }[] {
+  const plano = (t: string) =>
+    t
+      .replace(/<[^>]+>/g, "")
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/(\*\*|__)(.+?)\1/g, "$2")
+      .replace(/(\*|_)(.+?)\1/g, "$2")
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/^\s*>\s?/gm, "")
+      .replace(/^\s*[-*+]\s+/gm, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  const salida: { question: string; answer: string }[] = [];
+  let enApartado = false;
+  let enCodigo = false;
+  let actual: { question: string; lineas: string[] } | null = null;
+  const cerrar = () => {
+    if (actual) {
+      const answer = plano(actual.lineas.join("\n"));
+      if (answer) salida.push({ question: plano(actual.question), answer });
+      actual = null;
+    }
+  };
+  for (const linea of md.split("\n")) {
+    if (/^\s*(```|~~~)/.test(linea)) enCodigo = !enCodigo;
+    if (enCodigo) continue;
+    if (/^##\s/.test(linea)) {
+      cerrar();
+      enApartado = /^##\s+(Preguntas|Frequently asked|FAQ)/i.test(linea);
+      continue;
+    }
+    if (!enApartado) continue;
+    if (actual && (linea.trim() === "---" || linea.trimStart().startsWith("📌"))) {
+      cerrar();
+      enApartado = false;
+      continue;
+    }
+    const pregunta = /^###\s+(.+?)\s*$/.exec(linea);
+    if (pregunta) {
+      cerrar();
+      actual = { question: pregunta[1], lineas: [] };
+      continue;
+    }
+    if (actual) actual.lineas.push(linea);
+  }
+  cerrar();
+  return salida;
+}

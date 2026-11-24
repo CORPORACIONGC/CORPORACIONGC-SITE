@@ -1,7 +1,7 @@
 ---
 title: "Umbrales de contratación pública 2027 en Costa Rica: montos vigentes, cálculo y actualización"
 date: "2026-11-19"
-excerpt: "Los umbrales de la Ley General de Contratación Pública que rigen en 2026 para la licitación mayor, menor y reducida, cuándo y cómo fijará la Contraloría los de 2027, qué entidades aplican el régimen ordinario o el diferenciado, qué cambia según el procedimiento, cómo se estima el monto y qué reglas propias tienen los sujetos privados, la CCSS y el ICE. Con calculadora."
+excerpt: "Los umbrales de contratación pública son los montos del artículo 36 de la Ley 9986 que deciden si una compra va por licitación mayor, menor o reducida, y la Contraloría los actualiza cada diciembre. Los montos que rigen en 2026, cuándo se fijarán los de 2027, el régimen ordinario y el diferenciado, cómo se estima el monto y las reglas propias de los sujetos privados, la CCSS y el ICE. Con calculadora."
 tags: ["Umbrales de contratación", "Contratación pública", "Ley 9986", "Licitación mayor", "Licitación menor", "Licitación reducida", "Contraloría General de la República", "2027"]
 areas: ["contratacion-publica"]
 type: "article"

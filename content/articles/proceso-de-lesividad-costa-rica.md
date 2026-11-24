@@ -10,8 +10,8 @@ author: "Lic. Esteban Pérez Herrera"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Proceso de lesividad en Costa Rica: plazos y requisitos"
-seoDescription: "Qué es la lesividad, quién la declara, los plazos del artículo 34 del CPCA, sus efectos y lo que resuelven la Sala Primera y la Procuraduría."
+seoTitle: "Lesividad: qué es y cómo es el proceso en Costa Rica"
+seoDescription: "Qué es la lesividad: la vía con que la Administración pide anular un acto propio que dio derechos. Quién la declara, el plazo del CPCA y sus efectos."
 faq:
   - question: "¿Qué es el proceso de lesividad en Costa Rica?"
     answer: "Es el proceso contencioso-administrativo en que la Administración demanda la nulidad de un acto propio que reconoció derechos a una persona. Antes de demandar, el superior jerárquico supremo debe declarar el acto lesivo a los intereses públicos, económicos o de otra naturaleza en una resolución fundada (artículos 10.5 y 34 del Código Procesal Contencioso-Administrativo). Es la vía obligada cuando la nulidad no es absoluta, evidente y manifiesta, porque en ese caso la Administración no puede anular el acto por sí misma."

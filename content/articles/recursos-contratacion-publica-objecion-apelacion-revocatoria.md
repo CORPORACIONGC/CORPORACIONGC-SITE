@@ -40,7 +40,7 @@ En contratación pública **no existe libertad para escoger el recurso**. El art
 
 1. **¿Qué quiere impugnar?** Si es el **pliego de condiciones (cartel)**, el recurso es la **objeción**. Si es el **acto final** (la adjudicación, o la declaratoria de desierto o infructuoso), el recurso es la **apelación o la revocatoria**.
 
-2. **¿Qué tipo de procedimiento es?** Si es una **licitación mayor**, la apelación se presenta ante la **Contraloría General de la República (CGR)**. Si es una **licitación menor, una subasta inversa electrónica o una nueva adjudicación**, corresponde la **revocatoria** ante la propia Administración.
+2. **¿Qué tipo de procedimiento es?** Si es una **licitación mayor**, la apelación se presenta ante la **Contraloría General de la República (CGR)**. Si es una **licitación menor, una subasta inversa electrónica o una nueva adjudicación**, corresponde la **revocatoria** ante la propia Administración. El tipo de procedimiento lo fija el monto estimado de la contratación frente a los umbrales que la Contraloría actualiza cada año; los montos vigentes, y una calculadora, están en la guía de [umbrales de contratación pública](/articulos/umbrales-contratacion-publica-costa-rica).
 
 Todos los recursos se presentan **en el sistema digital unificado (SICOP)**, usando el formulario electrónico dispuesto al efecto — presentarlo por otro medio es causal de rechazo de plano (art. 87 de la Ley y art. 244 del Reglamento). Los plazos corren en **días hábiles**, a partir del día hábil siguiente a la notificación de todas las partes, y el día del vencimiento son hábiles **todas las horas** del día.
 

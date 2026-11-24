@@ -2,7 +2,7 @@
 title: "Despido de un funcionario público en Costa Rica: procedimiento, plazos y Tribunal de Servicio Civil"
 date: "2026-10-28"
 updated: "2026-11-10"
-excerpt: "Cómo se despide hoy a un servidor público en Costa Rica: qué causas lo permiten, el procedimiento de la Ley Marco de Empleo Público y sus plazos, la prescripción de la falta, lo que decide el Tribunal de Servicio Civil, las reglas de las municipalidades y las demás instituciones, y la vía judicial que viene después."
+excerpt: "A un servidor público solo se le puede despedir por una causa justificada y tras un procedimiento con debido proceso, que desde 2023 es, en la mayoría de las instituciones, el de la Ley Marco de Empleo Público. Las causas, los plazos, la prescripción de la falta, el Tribunal de Servicio Civil, las municipalidades y la vía judicial que viene después."
 tags: ["Despido", "Empleo público", "Ley Marco de Empleo Público", "Tribunal de Servicio Civil", "Estatuto de Servicio Civil", "Prescripción", "Procedimiento disciplinario", "Debido proceso"]
 areas: ["empleo-publico"]
 type: "article"

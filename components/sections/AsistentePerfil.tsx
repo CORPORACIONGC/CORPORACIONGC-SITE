@@ -65,6 +65,7 @@ export function AsistenteAbout({ a }: { a: Asistente }) {
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
                 Formación en Derecho.
+                {" "}
                 <br />
                 <span className="text-burgundy-light">Trabajo junto al equipo.</span>
               </h2>
@@ -124,6 +125,7 @@ export function AsistenteExperience({ a }: { a: Asistente }) {
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
                 Experiencia
+                {" "}
                 <br />
                 <span className="text-burgundy-light">y formación</span>
               </h2>
@@ -224,6 +226,7 @@ export function AsistenteContact({ a }: { a: Asistente }) {
             <AnimatedEntry delay={0.1}>
               <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
                 Contacto con
+                {" "}
                 <br />
                 <span className="text-burgundy-light">la firma</span>
               </h2>
