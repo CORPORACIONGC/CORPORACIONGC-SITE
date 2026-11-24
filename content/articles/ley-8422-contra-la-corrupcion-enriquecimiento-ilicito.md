@@ -19,7 +19,7 @@ faq:
   - question: "¿Qué pasa si no presento la declaración jurada a tiempo?"
     answer: "La Contraloría previene una única vez al omiso para que la presente en 15 días hábiles. Si no lo hace sin justificación, incurre en la falta del artículo 38, inciso i), que se sanciona según su gravedad con amonestación publicada, suspensión de 15 a 30 días sin goce de salario o separación del cargo. Además, quien tenga una declaración pendiente no puede asumir otro cargo que obligue a declarar (artículo 36)."
   - question: "¿Qué funcionarios no pueden ejercer su profesión de forma privada?"
-    answer: "Los que enumera el artículo 14: entre otros, los miembros de los Supremos Poderes, ministros y viceministros, presidentes ejecutivos, gerentes y directores administrativos de las instituciones descentralizadas, superintendentes, alcaldías e intendencias, auditores y subauditores internos, y titulares de proveeduría. Quedan exceptuadas la docencia universitaria fuera de la jornada y la atención de los asuntos propios o de familiares cercanos. La compensación es del 15 % para bachilleres y del 30 % para licenciados o posgrados (artículo 15)."
+    answer: "Los que enumera el artículo 14: entre otros, el presidente y los vicepresidentes, los magistrados, los ministros y viceministros, presidentes ejecutivos, gerentes y directores administrativos de las instituciones descentralizadas, superintendentes, alcaldías e intendencias, auditores y subauditores internos, y titulares de proveeduría. Quedan exceptuadas la docencia universitaria fuera de la jornada y la atención de los asuntos propios o de familiares cercanos. La compensación es del 15 % para bachilleres y del 30 % para licenciados o posgrados (artículo 15)."
   - question: "¿Quién impone las sanciones de la Ley 8422?"
     answer: "El órgano con potestad disciplinaria de cada entidad. La Contraloría también puede tramitar el procedimiento y requerir en forma vinculante la sanción cuando el caso versa sobre la Hacienda Pública (artículo 40). Si el infractor es diputado, regidor, alcalde, magistrado, ministro u otro alto cargo de los que nombra el artículo 43, la Contraloría informa al órgano que corresponde para que sancione."
   - question: "¿En cuánto tiempo prescribe la responsabilidad administrativa por la Ley 8422?"
@@ -28,7 +28,7 @@ faq:
     answer: "Prisión de tres a seis años (artículo 45). La falsedad en la declaración jurada se castiga con seis meses a un año de prisión (artículo 46). Desde la Ley 10691 de 2025, los delitos de la Ley 8422 prescriben a los treinta años de consumado el hecho."
 ---
 
-La **Ley 8422 contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública**, de 6 de octubre de 2004, obliga a todo servidor público, y a quienes administran fondos públicos desde una empresa o entidad privada, a actuar con probidad, a declarar su patrimonio ante la Contraloría General de la República cuando el cargo lo exige y a respetar un régimen de prohibiciones e incompatibilidades. Quien lo infringe puede ser amonestado, suspendido o separado del cargo, y algunas conductas son delito. La ley se ha reformado nueve veces desde 2018; la más reciente, la Ley 10949 de 2026, amplió la lista de quienes deben declarar bienes a todo el personal policial, a los jueces y a los fiscales.
+La **Ley 8422 contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública**, de 6 de octubre de 2004, obliga a todo servidor público, y a quienes administran fondos públicos desde una empresa o entidad privada, a actuar con probidad, a declarar su patrimonio ante la Contraloría General de la República cuando el cargo lo exige y a respetar un régimen de prohibiciones e incompatibilidades. Quien lo infringe puede ser amonestado, suspendido o separado del cargo, y algunas conductas son delito. La ley se ha reformado nueve veces desde 2018; la más reciente, la Ley 10949 de 2026, amplió la lista de quienes deben declarar bienes a todo el personal del Organismo de Investigación Judicial y de los cuerpos policiales que enumera.
 
 Esta guía recorre el texto vigente de la ley y de su reglamento, el Decreto Ejecutivo 32333-MP-J, con los criterios de la Contraloría, de la Procuraduría y de la Sala Constitucional que fijan su alcance.
 
@@ -143,13 +143,13 @@ El enriquecimiento ilícito castiga a quien, *«aprovechando ilegítimamente el 
 |---|---|---|
 | 9635 | 2018 | Compensación por prohibición del 15 % y el 30 % (art. 15) |
 | 9699 | 2019 | Derogó las sanciones a personas jurídicas del art. 44 bis |
-| 10224 | 2022 | Sumó alcaldías, intendencias y titulares de proveeduría a la prohibición (art. 14) |
+| 10224 | 2022 | Sumó las intendencias municipales a la prohibición (art. 14) |
 | 10225 | 2022 | Notificación al Plenario legislativo (art. 8 bis) |
 | 10373 | 2023 | Soborno transnacional, comiso y nuevo capítulo de medidas sobre bienes (arts. 55, 61 bis, 62 y 63 a 71) |
 | 10437 | 2024 | Confidencialidad reforzada del denunciante (art. 8) |
 | 10523 | 2024 | Cruce anual con el registro de beneficiarios finales (art. 34) |
 | 10691 | 2025 | Prescripción de treinta años para los delitos (art. 62) |
-| 10949 | 2026 | Declaran todo el personal policial y del OIJ, los jueces y los fiscales (art. 21) |
+| 10949 | 2026 | Declaran todo el personal del OIJ y de los cuerpos policiales que enumera (art. 21) |
 
 ## Qué conviene tener en orden
 

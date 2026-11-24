@@ -26,8 +26,8 @@ export const fuentes: FuentesDeGuia = {
     },
   ],
   jurisprudencia: [
-    { numero: "Voto 2018-013705", organo: "Sala Constitucional", fecha: "23-08-2018", tema: "Apelación en la expropiación", criterio: "La reforma de 2014 a los arts. 40 a 43 de la Ley de Expropiaciones es inconstitucional por su trámite; recupera vigencia el art. 215 del CPCA.", href: NEXUS("sen-1-0007-859695") },
-    { numero: "Voto 2017-000640", organo: "Sala Constitucional", fecha: "19-01-2017", tema: "Capitales emergentes", criterio: "No es inconstitucional que el Juzgado Contencioso conozca los procesos de capitales emergentes de la Ley 8754.", href: NEXUS("sen-1-0007-708290") },
+    { numero: "Voto 2018-013705", organo: "Sala Constitucional", fecha: "23-08-2018", tema: "Apelación en la expropiación", criterio: "La reforma de 2014 a los arts. 40 a 43 de la Ley de Expropiaciones es inconstitucional por su trámite; recupera vigencia el art. 215 del CPCA.", href: NEXUS("ext-1-0007-259344") },
+    { numero: "Voto 2017-000640", organo: "Sala Constitucional", fecha: "19-01-2017", tema: "Capitales emergentes", criterio: "No es inconstitucional que el Juzgado Contencioso conozca los procesos de capitales emergentes de la Ley 8754.", href: NEXUS("ext-1-0007-262051") },
     { numero: "Voto 730-A-S1-2018", organo: S1, fecha: "16-08-2018", tema: "Autos apelables", criterio: "Cinco autos admiten apelación: caución, medida cautelar, archivo por demanda defectuosa, integración de la litis y embargo; el plazo corre desde la notificación a todas las partes.", href: NEXUS("sen-1-0004-892979") },
     { numero: "Voto 1860-C-S1-2022", organo: S1, fecha: "04-08-2022", tema: "Desahucio con el Estado", criterio: "El arrendamiento de un bien en zona pública es materia civil, excluida de la jurisdicción contencioso-administrativa.", href: NEXUS("sen-1-0004-1105559") },
     { numero: "Voto 1510-C-S1-2026", organo: S1, fecha: "09-10-2026", tema: "Información posesoria", criterio: "La sola colindancia con una propiedad del Estado no da interés público: la información posesoria es civil.", href: NEXUS("sen-1-0004-1432063") },

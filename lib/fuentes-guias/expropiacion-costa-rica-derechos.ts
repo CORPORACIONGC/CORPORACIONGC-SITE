@@ -9,7 +9,7 @@ export const fuentes: FuentesDeGuia = {
     { titulo: "Constitución Política", detalle: "Art. 45", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=871&param2=147492&param3=1" },
     { titulo: "Ley de Expropiaciones", detalle: "Ley N.° 7495, arts. 1, 4, 11, 16, 17, 18, 20 a 25, 27 a 30, 35 y 39" },
     { titulo: "Reforma integral de la Ley de Expropiaciones", detalle: "Ley N.° 9286, de 11 de noviembre de 2014", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=78853&param2=143151&param3=1" },
-    { titulo: "Reforma de la Ley de Expropiaciones y de la Ley de Notificaciones Judiciales", detalle: "Ley N.° 9462, de 11 de julio de 2017 (arts. 18, 22, 25 y 30)", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=84458&param2=108957&param3=1" },
+    { titulo: "Reforma de la Ley de Expropiaciones y de la Ley de Notificaciones Judiciales", detalle: "Ley N.° 9462, de 11 de julio de 2017 (arts. 18, 22, 25, 30, 32 y 57)", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=84458&param2=108957&param3=1" },
   ],
   jurisprudencia: [
     { numero: "Sentencia 1016-F-2004", organo: S1, fecha: "26-11-2004", tema: "Indexación", criterio: "Admite la indexación extraconvencional de las obligaciones dinerarias, cuando la parte la pide, por aplicación directa de la Constitución Política.", href: NEXUS("sen-1-0034-292363"), gc: true },

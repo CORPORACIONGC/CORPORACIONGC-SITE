@@ -79,7 +79,7 @@ export const fuentes: FuentesDeGuia = {
       titulo: "Publicación y trámite legislativo",
       items: [
         { titulo: "Ley 10987 en La Gaceta", detalle: "Alcance 153 a La Gaceta 218, 17-11-2026 (Imprenta Nacional)", href: "https://www.imprentanacional.go.cr/pub/2026/11/17/ALCA153_17_11_2026.pdf" },
-        { titulo: "Expediente legislativo 25.311", detalle: "Presentado por el Poder Ejecutivo el 19-11-2025; dictamen de la Comisión de Asuntos Jurídicos el 24-06-2026; segundo debate el 15-10-2026 (Sistema de Información Legislativa)" },
+        { titulo: "Expediente legislativo 25.311", detalle: "Segundo debate el 15-10-2026 (Sistema de Información Legislativa)" },
       ],
     },
   ],

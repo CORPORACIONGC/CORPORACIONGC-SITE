@@ -27,7 +27,7 @@ export const fuentes: FuentesDeGuia = {
     },
     {
       titulo: "Leyes 10373 (2023), 10523 (2024), 10691 (2025) y 10949 (2026)",
-      detalle: "Reformas a la Ley 8422 sobre comiso, beneficiarios finales, prescripción penal de treinta años y declarantes policiales y judiciales",
+      detalle: "Reformas a la Ley 8422 sobre comiso, beneficiarios finales, prescripción penal de treinta años y declarantes policiales y del OIJ",
     },
   ],
   jurisprudencia: [

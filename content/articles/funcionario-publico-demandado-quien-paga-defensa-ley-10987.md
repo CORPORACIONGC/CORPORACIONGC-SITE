@@ -1,7 +1,7 @@
 ---
 title: "Funcionario público demandado o denunciado: quién paga su defensa y qué cubre la Ley 10987"
 date: "2026-11-24"
-excerpt: "Por regla general, el servidor público paga su propio abogado: ninguna norma autoriza a la Administración a costear la defensa de sus funcionarios, salvo la Procuraduría en causas penales y, desde el 17 de noviembre de 2026, la póliza de la Ley 10987 para policías. Responsabilidad personal, acción de regreso, criterios de la Contraloría y alcance de la nueva póliza."
+excerpt: "Por regla general, el servidor público paga su propio abogado: ninguna norma autoriza a la Administración a costear la defensa de sus funcionarios, salvo la Procuraduría en causas penales, el apoyo legal policial y, desde el 17 de noviembre de 2026, la póliza de la Ley 10987 para policías. Responsabilidad personal, acción de regreso, criterios de la Contraloría y alcance de la nueva póliza."
 tags: ["Ley 10987", "Responsabilidad del funcionario público", "Acción de regreso", "Ley General de Policía", "Póliza de responsabilidad", "Procuraduría General de la República", "Contraloría General de la República", "Defensa legal"]
 areas: ["empleo-publico", "litigio-contencioso-administrativo"]
 type: "article"
@@ -90,7 +90,7 @@ La Procuraduría coincide en el punto de partida. En el dictamen [C-030-2025](ht
 
 ## La Ley 10987: póliza para policías demandados o denunciados
 
-La [Ley 10987](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=108311&param2=153101&param3=1) es la norma habilitante que la Contraloría echaba de menos, limitada a la policía. Nació del expediente legislativo 25.311, presentado por el Poder Ejecutivo el 19 de noviembre de 2025; se aprobó en segundo debate el 15 de octubre de 2026, se sancionó el 9 de noviembre y se publicó en el [Alcance 153 a La Gaceta 218](https://www.imprentanacional.go.cr/pub/2026/11/17/ALCA153_17_11_2026.pdf), del 17 de noviembre de 2026. Su único artículo adiciona un inciso k) al artículo 79 de la Ley General de Policía, que ya reconocía a los policías un seguro de vida y otro de riesgos profesionales (inciso h).
+La [Ley 10987](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=108311&param2=153101&param3=1) es la norma habilitante que la Contraloría echaba de menos, limitada a la policía. Nació del expediente legislativo 25.311; se aprobó en segundo debate el 15 de octubre de 2026, se sancionó el 9 de noviembre y se publicó en el [Alcance 153 a La Gaceta 218](https://www.imprentanacional.go.cr/pub/2026/11/17/ALCA153_17_11_2026.pdf), del 17 de noviembre de 2026. Su único artículo adiciona un inciso k) al artículo 79 de la Ley General de Policía, que ya reconocía a los policías un seguro de vida y otro de riesgos profesionales (inciso h).
 
 ### Qué cubre
 
