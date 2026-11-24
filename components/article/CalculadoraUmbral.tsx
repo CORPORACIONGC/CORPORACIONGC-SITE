@@ -5,9 +5,12 @@
    (lib/umbrales.ts) y el régimen de recursos de la Ley 9986. Es orientativa:
    no reemplaza la estimación del art. 35 ni el análisis de excepciones. */
 
-import { useMemo, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { RunningHead } from "@/components/ui/RunningHead";
-import { UMBRALES, VIGENTE, colones, type Objeto, type Regimen } from "@/lib/umbrales";
+import { UMBRALES, VIGENTE, NOMBRE_OBJETO, NOMBRE_REGIMEN, colones, type Objeto, type Regimen } from "@/lib/umbrales";
+import { FIRM_CONTACT } from "@/lib/constants";
+import { trackContactFromHref } from "@/lib/analytics";
+import { WhatsappLogo } from "@phosphor-icons/react";
 
 const RESULTADO = {
   mayor: {
@@ -27,18 +30,123 @@ const RESULTADO = {
   },
 } as const;
 
-function aNumero(texto: string): number {
-  const limpio = texto.replace(/[^\d,]/g, "").replace(",", ".");
-  const n = Number.parseFloat(limpio);
-  return Number.isFinite(n) ? n : 0;
+/* Lectura del monto. El punto separa miles, como en las resoluciones de la
+   Contraloría. La coma o el punto valen como decimal solo si les siguen una o
+   dos cifras al final; tres cifras tras un separador son siempre miles. Una
+   entrada con letras o con una agrupación que no cuadra no da resultado. */
+type Lectura = { estado: "vacio" } | { estado: "invalido" } | { estado: "ok"; valor: number };
+
+const soloDigitos = (t: string) => t.replace(/\D/g, "");
+const agrupar = (d: string) => (d.replace(/^0+(?=\d)/, "") || "").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const limpiar = (t: string) => t.replace(/[\s¢₡]/g, "");
+
+/* Devuelve las cifras de la parte entera si es un número sin separadores o
+   agrupado de tres en tres con un único separador; si no, null. */
+function enteroValido(e: string): string | null {
+  if (/^\d+$/.test(e)) return e;
+  if (/^\d{1,3}(\.\d{3})+$/.test(e) || /^\d{1,3}(,\d{3})+$/.test(e)) return soloDigitos(e);
+  return null;
+}
+
+function leerMonto(texto: string): Lectura {
+  const t = limpiar(texto);
+  if (!t) return { estado: "vacio" };
+  if (/[^\d.,]/.test(t)) return { estado: "invalido" };
+  const cuerpo = t.replace(/[.,]$/, ""); // separador final: todavía se está escribiendo
+  if (!cuerpo) return { estado: "vacio" };
+  const m = cuerpo.match(/^(.*?)[.,](\d{1,2})$/);
+  const entero = enteroValido(m ? m[1] || "0" : cuerpo);
+  if (entero === null) return { estado: "invalido" };
+  const valor = Number(entero + (m ? "." + m[2] : ""));
+  return valor > 0 ? { estado: "ok", valor } : { estado: "vacio" };
+}
+
+/* Formato mientras se escribe: agrupa los miles con punto y, si hay decimales
+   tras una parte entera de cuatro cifras o más, los separa con coma. Lo que no
+   se puede leer se deja como se escribió, para no adivinar. */
+function formatearAlEscribir(raw: string): string {
+  const t = limpiar(raw);
+  if (!t) return "";
+  if (/[^\d.,]/.test(t)) return raw;
+  if (/[.,]$/.test(t)) {
+    const d = enteroValido(t.slice(0, -1));
+    return d === null ? raw : agrupar(d) + t.slice(-1);
+  }
+  const m = t.match(/^(.*?)([.,])(\d{1,2})$/);
+  if (m) {
+    const d = m[1] === "" ? "0" : enteroValido(m[1]);
+    if (d === null) return raw;
+    const sep = m[2] === "." && d.length >= 4 ? "," : m[2];
+    return agrupar(d) + sep + m[3];
+  }
+  return agrupar(soloDigitos(t));
+}
+
+/* Formato al borrar: si el valor anterior no tenía decimales, todos sus
+   puntos eran de miles y se reagrupan las cifras que quedan. */
+function formatearAlBorrar(raw: string, previo: string): string {
+  if (/[^\d.,\s¢₡]/.test(raw)) return raw;
+  const p = limpiar(previo).replace(/[.,]$/, "");
+  const conDecimales = /[.,]\d{1,2}$/.test(p) && leerMonto(previo).estado === "ok";
+  if (!conDecimales) return agrupar(soloDigitos(raw));
+  const sep = p[p.search(/[.,]\d{1,2}$/)];
+  const i = raw.lastIndexOf(sep);
+  if (i === -1) return agrupar(soloDigitos(raw));
+  return agrupar(soloDigitos(raw.slice(0, i)) || "0") + sep + soloDigitos(raw.slice(i + 1));
+}
+
+/* Posición del cursor después de reformatear: tras la misma cantidad de
+   cifras que tenía delante, y tras el separador si el usuario acaba de
+   escribir uno. */
+function cursorTras(nuevo: string, cifras: number, trasSeparador: boolean): number {
+  let pos = 0;
+  let vistas = 0;
+  while (pos < nuevo.length && vistas < cifras) {
+    if (/\d/.test(nuevo[pos])) vistas++;
+    pos++;
+  }
+  if (trasSeparador && /[.,]/.test(nuevo[pos] ?? "")) pos++;
+  return pos;
 }
 
 export function CalculadoraUmbral() {
   const [regimen, setRegimen] = useState<Regimen>("ordinario");
   const [objeto, setObjeto] = useState<Objeto>("bienesServicios");
   const [monto, setMonto] = useState("");
+  const campo = useRef<HTMLInputElement>(null);
+  const cursor = useRef<number | null>(null);
   const u = UMBRALES[VIGENTE];
-  const n = aNumero(monto);
+  const lectura = leerMonto(monto);
+  const n = lectura.estado === "ok" ? lectura.valor : 0;
+
+  useLayoutEffect(() => {
+    const el = campo.current;
+    if (cursor.current !== null && el && document.activeElement === el) {
+      el.setSelectionRange(cursor.current, cursor.current);
+    }
+    cursor.current = null;
+  }, [monto]);
+
+  function alCambiar(e: React.ChangeEvent<HTMLInputElement>) {
+    let raw = e.target.value;
+    let pos = e.target.selectionStart ?? raw.length;
+    const tipoEntrada = (e.nativeEvent as InputEvent).inputType ?? "";
+    const borrado = tipoEntrada.startsWith("delete");
+    /* Borrar un punto de miles no cambia nada al reagrupar: se borra la cifra
+       contigua, que es lo que se pretendía. */
+    if (borrado && soloDigitos(raw) === soloDigitos(monto) && monto[pos] === ".") {
+      if (tipoEntrada === "deleteContentBackward" && pos > 0) {
+        raw = raw.slice(0, pos - 1) + raw.slice(pos);
+        pos -= 1;
+      } else if (tipoEntrada === "deleteContentForward") {
+        raw = raw.slice(0, pos) + raw.slice(pos + 1);
+      }
+    }
+    const nuevo = borrado ? formatearAlBorrar(raw, monto) : formatearAlEscribir(raw);
+    cursor.current =
+      nuevo === raw ? pos : cursorTras(nuevo, soloDigitos(raw.slice(0, pos)).length, /[.,]/.test(raw[pos - 1] ?? ""));
+    setMonto(nuevo);
+  }
 
   const tipo = useMemo(() => {
     if (!n) return null;
@@ -47,6 +155,13 @@ export function CalculadoraUmbral() {
     if (n >= p.reducida) return "menor" as const;
     return "reducida" as const;
   }, [n, regimen, objeto, u]);
+
+  const montoTexto = colones(n, n % 1 !== 0);
+  const whatsapp = tipo
+    ? `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(
+        `Hola, usé la calculadora de umbrales de contratación pública de Corporación GC. ${NOMBRE_REGIMEN[regimen]}, ${NOMBRE_OBJETO[objeto].toLowerCase()}, monto estimado ${montoTexto}: corresponde una ${RESULTADO[tipo].nombre.toLowerCase()}. Quisiera consultar sobre ofertar o impugnar este procedimiento.`
+      )}`
+    : "";
 
   const privados = u.privados[objeto];
   const boton = (activo: boolean) =>
@@ -86,26 +201,47 @@ export function CalculadoraUmbral() {
         <label className="flex items-center gap-3 border-b border-cream/15 pb-2">
           <span className="shrink-0 text-[15px] text-cream/65">¢</span>
           <input
+            ref={campo}
             inputMode="decimal"
+            autoComplete="off"
+            maxLength={24}
             value={monto}
-            onChange={(e) => setMonto(e.target.value)}
+            onChange={alCambiar}
+            aria-invalid={lectura.estado === "invalido"}
+            aria-describedby="calculadora-umbral-resultado"
             placeholder="Monto estimado, por ejemplo 150.000.000"
             aria-label="Monto estimado de la contratación en colones"
-            className="w-full bg-transparent py-1.5 text-[16px] text-cream placeholder:text-cream/55 focus:outline-none"
+            className="w-full bg-transparent py-1.5 text-[16px] tabular-nums text-cream placeholder:text-cream/55 focus:outline-none"
           />
         </label>
       </div>
 
-      <div aria-live="polite" className="mt-5 min-h-[96px]">
+      <div id="calculadora-umbral-resultado" aria-live="polite" className="mt-5 min-h-[96px]">
         {tipo ? (
-          <div className="border-l-0">
-            <p className="text-[19px] font-semibold tracking-tight text-burgundy dark:text-cream">{RESULTADO[tipo].nombre}</p>
+          <div>
+            <p className="text-[15px] font-semibold tabular-nums text-cream">Monto considerado: {montoTexto}</p>
+            <p className="mt-2 text-[19px] font-semibold tracking-tight text-burgundy dark:text-cream">{RESULTADO[tipo].nombre}</p>
             <p className="mt-1 text-[14.5px] leading-relaxed text-cream/80">{RESULTADO[tipo].detalle}</p>
             <p className="mt-3 text-[13px] leading-relaxed text-cream/65">
-              Monto considerado: {colones(n)}. Un sujeto privado que administre fondos públicos aplicaría la ley a este monto{" "}
+              Un sujeto privado que administre fondos públicos aplicaría la ley a este monto{" "}
               {n > privados ? "porque supera" : "solo si superara"} {colones(privados, true)}.
             </p>
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-t border-cream/15 pt-3">
+              <p className="text-[14px] text-cream/80">¿Va a ofertar o a impugnar este procedimiento?</p>
+              <a
+                href={whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackContactFromHref(whatsapp, "calculadora-umbral")}
+                className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-burgundy underline decoration-burgundy/35 underline-offset-4 hover:decoration-burgundy dark:text-cream dark:decoration-cream/35"
+              >
+                <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+                Escribir por WhatsApp
+              </a>
+            </div>
           </div>
+        ) : lectura.estado === "invalido" ? (
+          <p className="text-[14.5px] text-cream">Escriba el monto en colones, por ejemplo 150.000.000</p>
         ) : (
           <p className="text-[14.5px] text-cream/65">El resultado aparece al escribir un monto.</p>
         )}

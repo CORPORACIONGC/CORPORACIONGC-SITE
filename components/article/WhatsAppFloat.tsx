@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { trackContactFromHref } from "@/lib/analytics";
 
-/* Botón flotante de WhatsApp para los artículos. Aparece tras un pequeño
-   scroll para no competir con el encabezado, y registra el clic como
-   whatsapp_click (vía trackContactFromHref). */
+/* Acceso a WhatsApp en todas las páginas, visible desde el primer cuadro.
+   En el teléfono es una barra inferior de 48 px, «Consultar por WhatsApp»,
+   que se retira al bajar (para no tapar la lectura) y vuelve al subir. En
+   escritorio es una píldora fija abajo a la derecha. Fondo burdeos macizo,
+   sin degradado. El clic se registra como whatsapp_click. */
 export function WhatsAppFloat({
   href,
   contactTarget = "article-float",
@@ -14,32 +16,66 @@ export function WhatsAppFloat({
   href: string;
   contactTarget?: string;
 }) {
-  const [visible, setVisible] = useState(false);
+  const [oculta, setOculta] = useState(false);
+  const ultimo = useRef(0);
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
-    onScroll();
+    let pendiente = false;
+    ultimo.current = window.scrollY;
+    const revisar = () => {
+      pendiente = false;
+      const y = window.scrollY;
+      const delta = y - ultimo.current;
+      if (y < 80) setOculta(false);
+      else if (delta > 8) setOculta(true);
+      else if (delta < -8) setOculta(false);
+      if (Math.abs(delta) > 8 || y < 80) ultimo.current = y;
+    };
+    const onScroll = () => {
+      if (!pendiente) {
+        pendiente = true;
+        requestAnimationFrame(revisar);
+      }
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const registrar = () => trackContactFromHref(href, contactTarget);
+
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => trackContactFromHref(href, contactTarget)}
-      aria-label="Escríbanos por WhatsApp"
-      className={`fixed bottom-5 right-5 z-40 inline-flex items-center gap-2.5 rounded-full bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white shadow-lg shadow-black/30 p-4 md:py-3.5 md:px-5 hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] hover:scale-[1.04] active:scale-95 transition-all duration-300 ${
-        visible
-          ? "opacity-100 translate-y-0 pointer-events-auto"
-          : "opacity-0 translate-y-4 pointer-events-none"
-      }`}
-    >
-      <WhatsappLogo size={26} weight="fill" className="shrink-0" />
-      <span className="hidden md:inline text-sm font-semibold tracking-tight pr-0.5">
-        Escríbanos
-      </span>
-    </a>
+    <>
+      {/* Teléfono: barra inferior */}
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={registrar}
+        className={`md:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col bg-burgundy text-white shadow-[0_-6px_18px_-6px_rgba(107,29,58,0.45)] pb-[env(safe-area-inset-bottom)] transition-transform duration-300 ease-out motion-reduce:transition-none active:bg-burgundy-dark ${
+          oculta ? "translate-y-full" : "translate-y-0"
+        }`}
+      >
+        <span className="flex h-12 items-center justify-center gap-2 text-[15px] font-semibold tracking-tight">
+          <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
+          Consultar por WhatsApp
+        </span>
+      </a>
+
+      {/* Escritorio: píldora */}
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={registrar}
+        aria-label="Escríbanos por WhatsApp"
+        className="hidden md:inline-flex fixed bottom-5 right-5 z-40 items-center gap-2.5 rounded-full bg-burgundy py-3.5 px-5 text-white shadow-lg shadow-[rgba(107,29,58,0.35)] hover:bg-burgundy-light active:scale-[0.98] transition-colors duration-200"
+      >
+        <WhatsappLogo size={26} weight="fill" aria-hidden="true" className="shrink-0" />
+        <span className="text-sm font-semibold tracking-tight pr-0.5">Escríbanos</span>
+      </a>
+
+      {/* Reserva al final de la página para que la barra no tape el pie */}
+      <div aria-hidden="true" className="md:hidden h-[calc(3rem+env(safe-area-inset-bottom))]" />
+    </>
   );
 }

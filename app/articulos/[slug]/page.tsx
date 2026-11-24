@@ -1064,8 +1064,8 @@ export default async function ArticlePage({
           </div>
         </div>
       </main>
-      <WhatsAppFloat href={whatsappUrl} />
       <Footer />
+      <WhatsAppFloat href={whatsappUrl} />
     </>
   );
 }
