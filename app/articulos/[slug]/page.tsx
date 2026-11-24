@@ -713,7 +713,8 @@ export default async function ArticlePage({
             <div className="flex flex-wrap items-center gap-3 mb-6">
               {/* Publication type badge */}
               {article.publicationType && (
-                <span className="px-2.5 py-1 rounded-md text-[11px] tracking-wider uppercase font-medium bg-burgundy/[0.10] text-burgundy dark:text-burgundy-light">
+                /* De noche, en marfil (D-13); las páginas en medición conservan su HTML. */
+                <span className={`px-2.5 py-1 rounded-md text-[11px] tracking-wider uppercase font-medium bg-burgundy/[0.10] text-burgundy ${enMedicion ? "dark:text-burgundy-light" : "dark:text-hilo-texto"}`}>
                   {publicationTypeLabel(article.publicationType, lang)}
                 </span>
               )}
@@ -982,7 +983,7 @@ export default async function ArticlePage({
                         </p>
                         <Link
                           href={`/abogados/${member.slug}`}
-                          className="inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-emphasis transition-colors duration-300 mt-3"
+                          className={`inline-flex items-center gap-1 text-[11px] text-burgundy hover:text-emphasis transition-colors duration-300 mt-3 ${enMedicion ? "" : "dark:text-hilo-texto"}`}
                         >
                           {t.profile}
                           <ArrowSquareOut size={11} weight="bold" />

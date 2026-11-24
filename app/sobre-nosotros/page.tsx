@@ -9,7 +9,8 @@ import { Footer } from "@/components/layout/Footer";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Membrete } from "@/components/ui/Membrete";
-import { CLIENTES, tamanoOptico } from "@/lib/constants";
+import { CLIENTES, FIRM_CONTACT, tamanoOptico } from "@/lib/constants";
+import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 import { sobreNosotrosMetadata } from "@/lib/page-metadata";
 
 /* ── SEO: Structured Data (JSON-LD) ── */
@@ -492,6 +493,31 @@ export default function SobreNosotros() {
                 ))}
               </dl>
             </section>
+
+            {/* Llamada después de los asuntos (D-14): quien reconoce su caso en
+                la lista tiene la salida a la vista. */}
+            <div className="-mt-4 flex flex-col gap-4 border-b border-cream/10 pb-10 sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-[17px] font-semibold leading-snug text-cream">¿Tiene un asunto de esta clase?</p>
+              <div className="flex flex-wrap gap-3">
+                <TrackedContactLink
+                  href={`https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(FIRM_CONTACT.whatsappMessage)}`}
+                  contactTarget="sobre-nosotros-asuntos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-burgundy px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-burgundy-light active:scale-[0.98]"
+                >
+                  <WhatsappLogo size={20} weight="fill" aria-hidden="true" />
+                  Escribir por WhatsApp
+                </TrackedContactLink>
+                <Link
+                  href="/contacto"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-cream/20 px-5 py-3 text-[15px] font-medium text-cream transition-colors hover:border-cream/40"
+                >
+                  Ir a contacto
+                  <ArrowRight size={14} weight="bold" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
 
             {/* VI · Los abogados */}
             <section id="abogados" className="scroll-mt-32">

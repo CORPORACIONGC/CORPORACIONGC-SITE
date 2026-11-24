@@ -1,3 +1,4 @@
+import type React from "react";
 import {
   Envelope,
   Phone,
@@ -42,43 +43,12 @@ const contactItems = [
   },
 ];
 
-export function FirmContact({ showHeading = true }: { showHeading?: boolean } = {}) {
-  return (
-    <section
-      id="contacto"
-      className="relative bg-dark-bg py-24 md:py-32 overflow-hidden"
-    >
-      <div className="absolute top-0 inset-x-0 h-px bg-cream/[0.08]" />
-
-      {/* Subtle glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-burgundy/[0.04] blur-[120px] pointer-events-none hidden dark:block" />
-
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
-        {/* ─── Top: Info + Lead Form ─── */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — Info */}
-          <div>
-            {showHeading && (
-              <>
-                <AnimatedEntry>
-                  <RunningHead title="Contacto" />
-                  <h2 className="type-headline text-cream">
-                    Hablemos sobre
-                    <br />
-                    <span className="text-emphasis">su caso</span>
-                  </h2>
-                </AnimatedEntry>
-
-                <AnimatedEntry delay={0.2}>
-                  <p className="mt-6 type-body text-cream/70 max-w-[50ch]">
-                    Ofrecemos asesoría y representación jurídica de primer nivel
-                    en todas las ramas del Derecho Público. Cuéntenos su
-                    situación y buscaremos juntos la mejor estrategia legal.
-                  </p>
-                </AnimatedEntry>
-              </>
-            )}
-
+export function FirmContact({
+  showHeading = true,
+  encabezado,
+}: { showHeading?: boolean; encabezado?: React.ReactNode } = {}) {
+  const datos = (
+    <>
             {/* Los datos de contacto van como filas con filete, igual que las
                 listas del resto del sitio: sin cajas ni fondos. */}
             <StaggerContainer className={`${showHeading ? "mt-10 " : ""}border-t border-cream/[0.12]`} stagger={0.06}>
@@ -116,10 +86,10 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
                 );
               })}
             </StaggerContainer>
-          </div>
+    </>
+  );
 
-          {/* Right — Lead Form Card */}
-          <div className="flex items-start lg:items-center">
+  const formulario = (
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
               <div className="p-7 md:p-10 rounded-xl bg-surface border border-cream/[0.12]">
                 {showHeading ? (
@@ -139,6 +109,70 @@ export function FirmContact({ showHeading = true }: { showHeading?: boolean } = 
                 <LeadForm />
               </div>
             </AnimatedEntry>
+  );
+
+  /* /contacto (D-04): el titular y WhatsApp arriba a la izquierda, el
+     formulario a la derecha desde la primera pantalla y los datos debajo
+     del titular. En el teléfono: titular, formulario y datos. */
+  if (encabezado) {
+    return (
+      <section id="contacto" className="relative bg-dark-bg pt-28 pb-24 md:pt-32 md:pb-32 overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
+          <div className="grid grid-cols-1 gap-x-20 gap-y-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="lg:col-start-1 lg:row-start-1">{encabezado}</div>
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2">{formulario}</div>
+            <div className="lg:col-start-1 lg:row-start-2">{datos}</div>
+          </div>
+          <AnimatedEntry delay={0.2} className="mt-16">
+            <GoogleMap />
+          </AnimatedEntry>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section
+      id="contacto"
+      className="relative bg-dark-bg py-24 md:py-32 overflow-hidden"
+    >
+      <div className="absolute top-0 inset-x-0 h-px bg-cream/[0.08]" />
+
+      {/* Subtle glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-burgundy/[0.04] blur-[120px] pointer-events-none hidden dark:block" />
+
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 relative z-10">
+        {/* ─── Top: Info + Lead Form ─── */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
+          {/* Left — Info */}
+          <div>
+            {showHeading && (
+              <>
+                <AnimatedEntry>
+                  <RunningHead title="Contacto" />
+                  <h2 className="type-headline text-cream">
+                    Hablemos sobre
+                    <br />
+                    <span className="text-emphasis">su caso</span>
+                  </h2>
+                </AnimatedEntry>
+
+                <AnimatedEntry delay={0.2}>
+                  <p className="mt-6 type-body text-cream/70 max-w-[50ch]">
+                    Ofrecemos asesoría y representación jurídica de primer nivel
+                    en todas las ramas del Derecho Público. Cuéntenos su
+                    situación y buscaremos juntos la mejor estrategia legal.
+                  </p>
+                </AnimatedEntry>
+              </>
+            )}
+
+            {datos}
+          </div>
+
+          {/* Right — Lead Form Card */}
+          <div className="flex items-start lg:items-center">
+            {formulario}
           </div>
         </div>
 

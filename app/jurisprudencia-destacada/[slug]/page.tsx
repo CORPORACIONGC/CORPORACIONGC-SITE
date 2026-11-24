@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
+import { ArrowLeft, ArrowRight, ArrowSquareOut, WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
+import { FIRM_CONTACT } from "@/lib/constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { formatDate, getArticleBySlug } from "@/lib/articles";
@@ -548,6 +550,31 @@ export default async function SentenciaDestacadaPage({
             </div>
           </nav>
         )}
+
+        {/* ─── Llamada al cierre (D-14): el lector que terminó la sentencia
+            puede escribir con el número del voto ya en el mensaje. ─── */}
+        <div className="mx-auto max-w-[1200px] px-6 pt-14 md:px-10">
+          <div className="flex flex-col gap-5 rounded-xl border border-cream/10 bg-cream/[0.02] p-6 md:flex-row md:items-center md:justify-between md:p-8">
+            <div className="max-w-[56ch]">
+              <p className="text-lg font-semibold tracking-[-0.01em] text-cream">¿Su caso se parece a este?</p>
+              <p className="mt-1.5 text-[15px] leading-relaxed text-cream/75">
+                Escríbanos y cuéntenos su situación. El mensaje sale con el número de esta resolución.
+              </p>
+            </div>
+            <TrackedContactLink
+              href={`https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(
+                `Hola, leí en el sitio de Corporación GC el comentario de la ${sentencia.numero.replace(/^Resolución N° /, "resolución ")} y quisiera consultar un caso parecido.`,
+              )}`}
+              contactTarget="sentencia-cierre"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-burgundy px-5 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-burgundy-light active:scale-[0.98]"
+            >
+              <WhatsappLogo size={20} weight="fill" aria-hidden="true" />
+              Escribir por WhatsApp
+            </TrackedContactLink>
+          </div>
+        </div>
 
         {/* ─── Navegación final ─── */}
         <div className="mx-auto max-w-[1200px] px-6 pb-20 pt-16 md:px-10">

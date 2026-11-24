@@ -198,7 +198,7 @@ export function CalculadoraUmbral() {
             Obra pública
           </button>
         </div>
-        <label className="flex items-center gap-3 border-b border-cream/15 pb-2">
+        <label className="gc-campo-filete flex items-center gap-3 border-b border-cream/15 pb-2">
           <span className="shrink-0 text-[15px] text-cream/65">¢</span>
           <input
             ref={campo}

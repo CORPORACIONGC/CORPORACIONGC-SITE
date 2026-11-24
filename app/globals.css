@@ -1313,7 +1313,7 @@ html {
 .prose-article .gc-fig {
   --fig-rule: color-mix(in oklab, var(--color-cream) 12%, transparent);
   --fig-rule-soft: color-mix(in oklab, var(--color-cream) 7%, transparent);
-  --fig-muted: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  --fig-muted: color-mix(in oklab, var(--color-cream) 65%, transparent);
   --fig-text: color-mix(in oklab, var(--color-cream) 78%, transparent);
   --fig-accent: var(--color-burgundy-light);
   --fig-hl-bg: color-mix(in oklab, var(--color-burgundy) 4%, transparent);
@@ -1835,3 +1835,12 @@ html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B225
   content: counter(paso); counter-increment: paso; display: block; position: absolute; left: 0; top: 5px;
   font-size: 11px; font-weight: 600; color: var(--fig-accent); font-variant-numeric: tabular-nums;
 }
+
+/* Campos de filete (buscador de publicaciones, calculadora): el foco engrosa
+   el filete a 2 px en tinta y no dibuja caja (informe 23-11, D-24). */
+.gc-campo-filete { transition: box-shadow 0.15s ease, border-color 0.15s ease; }
+.gc-campo-filete:focus-within {
+  border-bottom-color: var(--cream-val);
+  box-shadow: 0 1px 0 0 var(--cream-val);
+}
+.gc-campo-filete input:focus-visible { outline: none; }

@@ -52,7 +52,7 @@ export async function generateMetadata({
 /* ─── Componente para citar artículos legales ─── */
 function LegalRef({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] tracking-wide bg-burgundy/[0.08] text-burgundy dark:text-burgundy-light font-medium">
+    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] tracking-wide bg-burgundy/[0.08] text-burgundy dark:text-hilo-texto font-medium">
       <BookOpen size={12} weight="duotone" className="shrink-0" />
       {children}
     </span>
@@ -5669,8 +5669,8 @@ export default async function AreaDetailPage({
                 {/* Hook + WhatsApp CTA */}
                 <div className="mt-12 p-7 md:p-9 rounded-xl border border-burgundy/20 bg-burgundy/[0.045] dark:bg-burgundy/[0.16]">
                   <div className="flex items-center gap-2 mb-3">
-                    <Warning size={16} weight="duotone" className="text-burgundy-light" />
-                    <span className="text-[10px] tracking-[0.25em] uppercase text-burgundy-light font-medium">
+                    <Warning size={16} weight="duotone" className="text-burgundy-light dark:text-hilo-texto" />
+                    <span className="text-[10px] tracking-[0.25em] uppercase text-burgundy-light dark:text-hilo-texto font-medium">
                       Consulta Urgente
                     </span>
                   </div>

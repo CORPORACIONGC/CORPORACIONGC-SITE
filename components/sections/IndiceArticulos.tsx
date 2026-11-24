@@ -94,6 +94,8 @@ export function IndiceArticulos({
       secciones.flatMap((sec) =>
         sec.piezas.map((p) => ({
           pieza: p,
+          titulo: plano(p.title),
+          resumen: plano([p.excerpt, p.rotulo ?? "", p.tags.join(" ")].join(" ")),
           texto: plano([p.title, p.excerpt, p.author ?? "", p.rotulo ?? "", p.tags.join(" "), sec.titulo].join(" ")),
         })),
       ),
@@ -102,14 +104,25 @@ export function IndiceArticulos({
 
   const terminos = plano(busca).split(/\s+/).filter(Boolean);
   const buscando = terminos.length > 0;
+  /* Orden por pertinencia (D-24): pesa más el término que está en el título,
+     luego el que está en el resumen o las etiquetas; a igual puntaje se
+     conserva el orden de las secciones, que va por fecha. */
   const hallados = buscando
-    ? corpus.filter((c) => terminos.every((t) => c.texto.includes(t))).map((c) => c.pieza)
+    ? corpus
+        .filter((c) => terminos.every((t) => c.texto.includes(t)))
+        .map((c, i) => ({
+          c,
+          i,
+          puntos: terminos.reduce((n, t) => n + (c.titulo.includes(t) ? 3 : c.resumen.includes(t) ? 2 : 1), 0),
+        }))
+        .sort((a, b) => b.puntos - a.puntos || a.i - b.i)
+        .map(({ c }) => c.pieza)
     : [];
 
   return (
     <div className="mx-auto max-w-[1400px] px-6 pb-24 md:px-10 md:pb-32">
       <div className="sticky top-16 z-20 -mx-1 bg-surface px-1 pt-3 md:top-20">
-        <div className="flex items-center gap-3 border-b border-cream/20 pb-2">
+        <div className="gc-campo-filete flex items-center gap-3 border-b border-cream/20 pb-2">
           <MagnifyingGlass size={18} aria-hidden="true" className="shrink-0 text-cream/65" />
           <input
             type="search"
