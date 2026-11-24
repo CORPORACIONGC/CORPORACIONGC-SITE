@@ -103,7 +103,7 @@ La culpa de la víctima y el hecho de un tercero pueden operar de forma parcial.
 
 ## Qué daños se indemnizan
 
-El artículo 196 de la LGAP fija el estándar común: el daño alegado «habrá de ser efectivo, evaluable e individualizable en relación con una persona o grupo». Sobre esa base se indemnizan dos grandes categorías.
+El artículo 196 de la LGAP fija el estándar común: el daño alegado «habrá de ser efectivo, evaluable e individualizable en relación con una persona o grupo». Sobre esa base se indemnizan dos grandes categorías. Un rubro con reglas propias es la oportunidad frustrada, que la Sala Primera indemniza con un porcentaje prudencial y que se explica en la guía sobre la [pérdida de chance](/articulos/perdida-de-chance-responsabilidad-del-estado-costa-rica).
 
 El **daño material** comprende el daño emergente y el lucro cesante. El lucro cesante se excluye cuando la responsabilidad nace de una conducta lícita (artículo 194.2) y, en los demás casos, debe probarse. El Código Procesal Contencioso Administrativo permite diferir su comprobación a la etapa de ejecución, pero no la dispensa: la nueva legislación «difiere la temporalidad de la comprobación, pero no la exime» ([7-F-S1-2013](https://nexuspj.poder-judicial.go.cr/document/sen-1-0004-767716), considerando III).
 

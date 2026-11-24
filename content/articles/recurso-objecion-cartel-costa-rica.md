@@ -44,7 +44,7 @@ La distinción es determinante por una razón: la **preclusión**. El artículo 
 
 La legitimación es amplia. El artículo 95 de la Ley 9986 reconoce como legitimado a **todo potencial oferente**, así como a cualquier organización legalmente constituida para velar por los intereses de la comunidad donde se ejecute la contratación.
 
-El Reglamento (artículo 253) precisa el alcance de "potencial oferente" en sentido amplio: puede serlo quien participaría de forma individual, en consorcio o como subcontratista. Y añade un punto valioso para el recurrente: la simple interposición del recurso presume el interés en participar. Es decir, no tiene que demostrar de antemano que iba a ofertar; el hecho de objetar lo presume.
+El Reglamento (artículo 253) precisa el alcance de "potencial oferente" en sentido amplio: puede serlo quien participaría de forma individual, en consorcio o como subcontratista. Y añade un punto valioso para el recurrente: la simple interposición del recurso presume el interés en participar. Es decir, no tiene que demostrar de antemano que iba a ofertar; el hecho de objetar lo presume. Las reglas para ofertar en consorcio o con la experiencia de una empresa del mismo grupo se explican en la guía sobre el [grupo económico y el consorcio en las licitaciones](/articulos/grupo-economico-consorcio-licitacion-costa-rica).
 
 La excepción son las organizaciones comunales: estas sí deben acreditar la afectación concreta a los intereses que representan.
 
