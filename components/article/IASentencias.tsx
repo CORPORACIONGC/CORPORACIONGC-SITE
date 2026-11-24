@@ -2,8 +2,9 @@
    artificial en las resoluciones judiciales. Mismo lenguaje editorial que las
    demás guías (.gc-fig de app/globals.css). Datos cotejados el 23-11-2026:
    circular 31-2026 del Consejo Superior (SINALEVI y acta 12-2026, art. LIII);
-   constancias de uso en los votos de la base GC (sentencias hasta fines de
-   octubre de 2026); marco comparado leído en sus fuentes oficiales. */
+   constancias de uso leídas en las resoluciones publicadas hasta fines de
+   octubre de 2026 (conteos propios); actas del Consejo Superior y de la
+   Corte Plena. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
 
@@ -32,7 +33,7 @@ function conCursivas(t: string): React.ReactNode {
   return t.split(/(«[^»]+»)/g).map((parte, i) => (parte.startsWith("«") ? <em key={i}>{parte}</em> : parte));
 }
 
-/* ── Figura 1. Qué permite, exige y prohíbe la circular 31-2026 ───────── */
+/* ── Figura 3. Qué permite, exige y prohíbe la circular 31-2026 ───────── */
 
 const CIRCULAR: { tema: string; regla: string; lineamiento: string }[] = [
   { tema: "Qué permite", regla: "Usar IA generativa como apoyo: resúmenes de textos voluminosos, corrección de estilo, estructuración de ideas. No excluye ninguna tarea en particular.", lineamiento: "3.6 y disposición general" },
@@ -48,7 +49,7 @@ export function CircularIA() {
     <figure className="gc-fig gc-fig-tabla gc-fig-tabla--apilada" aria-labelledby="fig-circular-ia">
       <FigHead
         id="fig-circular-ia"
-        n={1}
+        n={3}
         kicker="La regla"
         title="La circular 31-2026 permite usar la IA generativa y pone la responsabilidad en quien firma"
         lead="Reglas y lineamientos éticos del Consejo Superior para las personas servidoras judiciales, vigentes desde el 26 de febrero de 2026."
@@ -82,7 +83,7 @@ export function CircularIA() {
   );
 }
 
-/* ── Figura 2. Cómo lo declaran los tribunales ────────────────────────── */
+/* ── Figura 5. Cómo lo declaran los tribunales ────────────────────────── */
 
 const DECLARACIONES: { tribunal: string; votos: string; herramienta: string; uso: string; hl?: boolean }[] = [
   { tribunal: "Sala Primera", votos: "20 votos, del 4 de junio al 29 de octubre", herramienta: "ChatGPT 5.2, 5.5 y 5.6; NotebookLM PRO; Gemini 3.5 Flash; Gemini gratuito", uso: "Resumen del recurso de casación y revisión de redacción; en algunos votos, también revisión de documentos del expediente y análisis de posturas jurídicas", hl: true },
@@ -97,9 +98,9 @@ export function DeclaracionesIA() {
     <figure className="gc-fig gc-fig-tabla gc-fig-tabla--apilada" aria-labelledby="fig-declaraciones-ia">
       <FigHead
         id="fig-declaraciones-ia"
-        n={2}
+        n={5}
         kicker="La práctica"
-        title="Desde la circular, varios tribunales declaran en sus resoluciones para qué usaron la IA"
+        title="Al menos 87 resoluciones de cinco tribunales declaran para qué usaron la IA"
         lead="Constancias de uso propio en resoluciones de 2026. La fila marcada es la de la Sala Primera, la única cámara de casación donde la práctica está extendida."
       />
       <div className="gc-comparativa">
@@ -133,58 +134,189 @@ export function DeclaracionesIA() {
   );
 }
 
-/* ── Figura 3. El marco comparado ─────────────────────────────────────── */
+/* ── Barra horizontal a escala ────────────────────────────────────────── */
 
-const COMPARADO: { donde: string; norma: string; href: string; declarar: string; anulacion: string }[] = [
-  { donde: "Costa Rica", norma: "Circular 31-2026 del Consejo Superior (2026)", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=106387&param2=149838&param3=1", declarar: "Obligatorio: herramienta, modelo, fecha y uso", anulacion: "Sin precedente que anule una sentencia por el uso de IA" },
-  { donde: "Colombia", norma: "Corte Constitucional, T-323 de 2024; Acuerdo PCSJA24-12243 (2024)", href: "https://www.corteconstitucional.gov.co/relatoria/2024/T-323-24.htm", declarar: "Obligatorio, con herramienta, fecha e instrucciones usadas", anulacion: "La T-323 declaró un uso indebido por falta de transparencia y no anuló el fallo" },
-  { donde: "Unión Europea", norma: "Reglamento de IA 2024/1689; Reglamento 2026/1744", href: "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32024R1689", declarar: "La IA para la justicia es de alto riesgo; las obligaciones se aplazaron al 2 de diciembre de 2027", anulacion: "—" },
-  { donde: "España", norma: "CGPJ, Instrucción 2/2026", href: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205", declarar: "Solo herramientas institucionales; nunca datos judiciales en herramientas externas", anulacion: "El incumplimiento puede acarrear responsabilidad disciplinaria" },
-  { donde: "Brasil", norma: "CNJ, Resolución 615/2025", href: "https://atos.cnj.jus.br/atos/detalhar/6001", declarar: "A criterio del juez; el sistema del tribunal registra el uso", anulacion: "Prohíbe usar la IA como instrumento autónomo de decisión" },
-  { donde: "Reino Unido", norma: "Guía judicial sobre IA (octubre de 2025)", href: "https://www.judiciary.uk/guidance-and-resources/artificial-intelligence-ai-judicial-guidance-october-2025/", declarar: "No se exige en general; el juez responde personalmente de lo que firma", anulacion: "—" },
-  { donde: "Argentina (Chubut)", norma: "Superior Tribunal de Justicia (marzo de 2026)", href: "https://www.pensamientopenal.com.ar/index.php/fallos/91880-superior-tribunal-justicia-chubut-incidencia-ia-resoluciones-judiciales", declarar: "—", anulacion: "Revocó la nulidad de una condena: se controla la fundamentación escrita, no la herramienta" },
+function Barra({ valor, max, fuerte }: { valor: number; max: number; fuerte?: boolean }) {
+  return (
+    <span style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      <span aria-hidden="true" style={{ flex: "1 1 auto", maxWidth: 180, height: 14, borderRadius: 8, background: "var(--chart-track)" }}>
+        {valor > 0 && (
+          <span
+            style={{
+              display: "block",
+              height: "100%",
+              width: `${Math.max(3, Math.round((valor / max) * 100))}%`,
+              borderRadius: 8,
+              background: fuerte ? "var(--chart-1)" : "var(--chart-2)",
+            }}
+          />
+        )}
+      </span>
+      <b style={{ fontVariantNumeric: "tabular-nums", minWidth: 24, textAlign: "right" }}>{valor}</b>
+    </span>
+  );
+}
+
+/* ── Figura 1. Resoluciones con constancia, por mes ───────────────────── */
+
+const MESES: { mes: string; sala: number; todos: number }[] = [
+  { mes: "Marzo", sala: 0, todos: 4 },
+  { mes: "Abril", sala: 0, todos: 4 },
+  { mes: "Mayo", sala: 0, todos: 6 },
+  { mes: "Junio", sala: 3, todos: 7 },
+  { mes: "Julio", sala: 0, todos: 8 },
+  { mes: "Agosto", sala: 2, todos: 13 },
+  { mes: "Setiembre", sala: 6, todos: 35 },
+  { mes: "Octubre", sala: 9, todos: 10 },
 ];
 
-export function ComparadoIA() {
+export function ConstanciasPorMes() {
   return (
-    <figure className="gc-fig gc-fig-tabla gc-fig-tabla--apilada" aria-labelledby="fig-comparado-ia">
+    <figure className="gc-fig gc-fig-tabla gc-fig-tabla--apilada" aria-labelledby="fig-constancias-mes">
       <FigHead
-        id="fig-comparado-ia"
-        n={3}
-        kicker="Fuera del país"
-        title="Todos exigen supervisión humana; difieren en si declarar es obligatorio y en qué pasa con la sentencia"
+        id="fig-constancias-mes"
+        n={1}
+        kicker="La curva"
+        title="En la Sala Primera, de 3 votos con constancia en junio a 9 en octubre"
+        lead="Resoluciones de 2026 que declaran el uso de inteligencia artificial, por mes de dictado. La circular rige desde el 26 de febrero."
       />
       <div className="gc-comparativa">
         <div className="gc-table-wrap">
           <table>
             <thead>
               <tr>
-                <th scope="col">Dónde</th>
-                <th scope="col">Norma o precedente</th>
-                <th scope="col">Declarar el uso</th>
-                <th scope="col">Efecto sobre la resolución</th>
+                <th scope="col">Mes</th>
+                <th scope="col">Sala Primera</th>
+                <th scope="col">Todos los tribunales</th>
               </tr>
             </thead>
             <tbody>
-              {COMPARADO.map((c) => (
-                <tr key={c.donde}>
-                  <td className="gc-recurso">{c.donde}</td>
-                  <td data-label="Norma o precedente">
-                    <a href={c.href} target="_blank" rel="noopener noreferrer">
-                      {c.norma}
-                    </a>
+              {MESES.map((m) => (
+                <tr key={m.mes}>
+                  <td className="gc-recurso">{m.mes}</td>
+                  <td data-label="Sala Primera">
+                    <Barra valor={m.sala} max={9} fuerte={m.sala === 9} />
                   </td>
-                  <td data-label="Declarar el uso">{c.declarar}</td>
-                  <td data-label="Efecto sobre la resolución">{c.anulacion}</td>
+                  <td data-label="Todos los tribunales">
+                    <Barra valor={m.todos} max={35} fuerte={m.todos === 35} />
+                  </td>
+                </tr>
+              ))}
+              <tr>
+                <td className="gc-recurso">Total</td>
+                <td data-label="Sala Primera">
+                  <b style={{ fontVariantNumeric: "tabular-nums" }}>20</b>
+                </td>
+                <td data-label="Todos los tribunales">
+                  <b style={{ fontVariantNumeric: "tabular-nums" }}>87</b>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p className="gc-fig-note">
+        Cada columna tiene su propia escala. Los conteos son un mínimo: solo incluyen las resoluciones publicadas hasta fines de octubre de 2026.
+      </p>
+      <FigSource>Constancias leídas en el texto de cada resolución publicada en Nexus del Poder Judicial; conteo propio.</FigSource>
+    </figure>
+  );
+}
+
+/* ── Figura 2. Herramientas declaradas ────────────────────────────────── */
+
+const HERRAMIENTAS: { nombre: string; sala: number; todos: number }[] = [
+  { nombre: "Microsoft 365 Copilot", sala: 0, todos: 64 },
+  { nombre: "ChatGPT", sala: 8, todos: 10 },
+  { nombre: "Gemini", sala: 8, todos: 8 },
+  { nombre: "NotebookLM", sala: 4, todos: 4 },
+  { nombre: "Sin identificar", sala: 0, todos: 1 },
+];
+
+export function HerramientasIA() {
+  return (
+    <figure className="gc-fig gc-fig-tabla gc-fig-tabla--apilada" aria-labelledby="fig-herramientas-ia">
+      <FigHead
+        id="fig-herramientas-ia"
+        n={2}
+        kicker="Las herramientas"
+        title="La Sala Primera usa ChatGPT, Gemini y NotebookLM; los demás tribunales, casi siempre Copilot"
+        lead="Herramienta declarada en cada resolución. En la Sala Primera, los ocho votos con Gemini se reparten entre Gemini 3.5 Flash y la versión gratuita, cuatro y cuatro."
+      />
+      <div className="gc-comparativa">
+        <div className="gc-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Herramienta</th>
+                <th scope="col">Sala Primera (20 votos)</th>
+                <th scope="col">Todos los tribunales (87)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {HERRAMIENTAS.map((h) => (
+                <tr key={h.nombre}>
+                  <td className="gc-recurso">{h.nombre}</td>
+                  <td data-label="Sala Primera (20 votos)">
+                    <Barra valor={h.sala} max={8} fuerte={h.sala === 8} />
+                  </td>
+                  <td data-label="Todos los tribunales (87)">
+                    <Barra valor={h.todos} max={64} fuerte={h.todos === 64} />
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </div>
-      <FigSource>
-        Textos oficiales de cada norma y precedente; el caso de Chubut, según la reseña de Pensamiento Penal, porque la publicación oficial no estaba disponible. El detalle y los enlaces están en el bloque de fuentes.
-      </FigSource>
+      <p className="gc-fig-note">
+        Cada columna tiene su propia escala. Copilot es la herramienta asociada a las cuentas institucionales de Microsoft del Poder Judicial.
+      </p>
+      <FigSource>Constancias de las resoluciones publicadas en Nexus, marzo a octubre de 2026; conteo propio.</FigSource>
+    </figure>
+  );
+}
+
+/* ── Figura 4. Cronología ─────────────────────────────────────────────── */
+
+const HITOS: { quien: string; que: string; plazo: string; hl?: boolean }[] = [
+  { quien: "Consejo Superior", que: "Autoriza el inicio del uso regulado de la inteligencia artificial generativa en la institución.", plazo: "6 de noviembre de 2025 · sesión 102-2025" },
+  { quien: "Consejo Superior", que: "Aprueba la circular 31-2026, que se publica el 26 de febrero.", plazo: "12 de febrero de 2026 · sesión 12-2026", hl: true },
+  { quien: "Tribunal de Apelación de Trabajo de San José", que: "Primeras sentencias con la nota de uso de Copilot.", plazo: "12 de marzo de 2026" },
+  { quien: "Corte Plena", que: "Un magistrado de la Sala Primera explica que sus letrados usan ChatGPT para armar los proyectos de resolución.", plazo: "25 de mayo de 2026 · sesión 23-2026" },
+  { quien: "Sala Primera", que: "Primer voto con constancia de uso de ChatGPT.", plazo: "4 de junio de 2026 · voto 704", hl: true },
+  { quien: "Consejo Superior", que: "Mantiene el deber de declarar el uso y adjudica 270 licencias de Gemini Enterprise por US$104.055,15.", plazo: "28 de julio de 2026 · sesión 63-2026" },
+  { quien: "Auditoría Interna", que: "Constata que solo existen los lineamientos de la circular; el Consejo ordena formalizar una política institucional.", plazo: "13 de agosto de 2026 · sesión 68-2026" },
+  { quien: "Sala Primera y Sala Tercera", que: "La Sala Primera dicta nueve votos con constancia en el mes y la Sala Tercera, el primero.", plazo: "Octubre de 2026" },
+];
+
+export function CronologiaIA() {
+  return (
+    <figure className="gc-fig gc-fig-flujo" aria-labelledby="fig-cronologia-ia">
+      <FigHead
+        id="fig-cronologia-ia"
+        n={4}
+        kicker="La cronología"
+        title="Un año de reglas: de la autorización a la práctica"
+        lead="Las filas marcadas son la circular y el primer voto de la Sala Primera que la aplica."
+      />
+      <ol className="gc-flujo">
+        <li className="gc-flujo-cab" aria-hidden="true">
+          <span />
+          <span>Quién</span>
+          <span>Qué ocurre</span>
+          <span>Fecha</span>
+        </li>
+        {HITOS.map((h, i) => (
+          <li key={i} className={`gc-flujo-paso${h.hl ? " gc-fig-hl" : ""}`}>
+            <span className="gc-fig-num">{String(i + 1).padStart(2, "0")}</span>
+            <span className="gc-flujo-quien">{h.quien}</span>
+            <span className="gc-flujo-que">{h.que}</span>
+            <span className="gc-flujo-plazo">{h.plazo}</span>
+          </li>
+        ))}
+      </ol>
+      <FigSource>Actas del Consejo Superior y de la Corte Plena y resoluciones publicadas en Nexus del Poder Judicial.</FigSource>
     </figure>
   );
 }

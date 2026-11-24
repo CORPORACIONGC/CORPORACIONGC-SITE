@@ -1,7 +1,7 @@
 ---
 title: "La Sala Primera ya redacta con inteligencia artificial: qué declaran sus sentencias"
 date: "2026-11-23"
-excerpt: "La Sala Primera declara en sus votos que usa ChatGPT, Gemini y NotebookLM para resumir los recursos de casación. Qué permite y qué exige la circular 31-2026 del Poder Judicial, cómo lo declaran los tribunales, qué ha pasado con los abogados que citaron jurisprudencia inventada por la IA y cómo lo regulan otros países."
+excerpt: "La Sala Primera declara en al menos veinte votos que usa ChatGPT, Gemini y NotebookLM para resumir los recursos de casación. Los datos de esas constancias, lo que exige la circular 31-2026 del Poder Judicial, cómo la aplican otros tribunales, qué ha pasado con los abogados que citaron jurisprudencia inventada y cómo tratan los jueces la prueba hecha con inteligencia artificial."
 tags: ["Inteligencia artificial", "ChatGPT", "Sala Primera", "Circular 31-2026", "Poder Judicial", "Motivación de la sentencia", "Casación"]
 areas: ["gobierno-digital-inteligencia-artificial-datos", "casacion-sala-primera"]
 type: "article"
@@ -11,26 +11,28 @@ institution: "Corporación GC"
 publicationType: "articulo"
 seoTitle: "Jueces y ChatGPT: la Sala Primera ya usa inteligencia artificial"
 ogTitle: "La Sala Primera ya redacta con inteligencia artificial: qué declaran sus sentencias"
-seoDescription: "La Sala Primera declara el uso de ChatGPT y Gemini en sus votos. Qué permite la circular 31-2026, qué debe declarar el juez y qué pasa con las citas inventadas."
+seoDescription: "La Sala Primera declara el uso de ChatGPT y Gemini en 20 votos. Los datos, lo que exige la circular 31-2026 y qué pasa con las citas inventadas por la IA."
 cta:
   titulo: "¿Su caso está en casación o le preocupa cómo se fundamentó un fallo? Hable con especialistas"
   texto: "Corporación GC está especializada en derecho público y en casación ante la Sala Primera, y estudia desde hace años el uso de la inteligencia artificial en la justicia. Revisamos la sentencia, su fundamentación y las constancias de uso de herramientas, y le explicamos qué vías existen y en qué plazo. Escríbanos por WhatsApp para una primera valoración."
 faq:
   - question: "¿La Sala Primera usa ChatGPT para resolver los casos?"
-    answer: "Según las constancias de sus propios votos, la Sala usa ChatGPT, NotebookLM y Gemini como apoyo para redactar el resumen del recurso de casación y revisar la redacción, y en algunos votos también para revisar documentos del expediente y posturas jurídicas. Todas las constancias afirman que el análisis y la decisión fueron humanos y que el texto generado se revisó por completo. Entre junio y octubre de 2026 hay al menos veinte votos con esa constancia."
+    answer: "Según las constancias de sus propios votos, la Sala usa ChatGPT, NotebookLM y Gemini como apoyo para redactar el resumen del recurso de casación y, en algunos votos, para revisar la redacción, los documentos del expediente y las posturas jurídicas. Ninguna constancia le atribuye la decisión a la herramienta. Entre junio y octubre de 2026 hay al menos veinte votos con esa constancia, catorce de ellos en procesos contencioso-administrativos."
+  - question: "¿Cuántas sentencias declaran el uso de inteligencia artificial en Costa Rica?"
+    answer: "Al menos 87 resoluciones dictadas entre marzo y octubre de 2026: 57 del Tribunal de Apelación de Trabajo de San José, 20 de la Sala Primera, 6 del Tribunal de Apelación Civil y Trabajo de Alajuela, 3 de un tribunal de apelación penal de San José y 1 de la Sala Tercera. Microsoft 365 Copilot es la herramienta declarada en 64 de ellas. Es un conteo propio sobre lo publicado y representa un mínimo."
   - question: "¿Está permitido que un juez use inteligencia artificial en Costa Rica?"
     answer: "Sí. La circular 31-2026 del Consejo Superior, vigente desde el 26 de febrero de 2026, autoriza a las personas servidoras judiciales a usar herramientas de IA generativa como apoyo. La responsabilidad sobre la resolución recae exclusivamente en quien la firma, quien debe verificar toda cita y no puede delegar en la herramienta las funciones esenciales del cargo."
   - question: "¿El juez debe avisar que usó inteligencia artificial?"
-    answer: "Sí. El lineamiento 3.9 de la circular obliga a dejar constancia en el expediente, el documento o la decisión del nombre de la herramienta, su modelo y empresa, la fecha de uso y para qué se empleó, con una nota al final del documento o en el expediente."
+    answer: "Sí. El lineamiento 3.9 de la circular obliga a dejar constancia en el expediente, el documento o la decisión del nombre de la herramienta, su modelo y empresa, la fecha de uso y para qué se empleó, con una nota al final del documento o en el expediente. En julio de 2026 el Consejo Superior mantuvo ese deber."
   - question: "¿Se puede anular una sentencia porque el juez usó ChatGPT?"
-    answer: "No hay en Costa Rica una resolución que haya anulado una sentencia por esa causa. Lo que el ordenamiento controla es la sentencia misma: la falta de motivación es causal de casación (artículo 137, inciso d, del CPCA), con independencia de cómo se redactó. Fuera del país, la Corte Constitucional de Colombia declaró un uso indebido en la sentencia T-323 de 2024 sin anular el fallo, y en Argentina un tribunal superior revocó en 2026 una nulidad decretada por esa razón."
+    answer: "No hay en Costa Rica una resolución que haya anulado una sentencia por esa causa. Lo que el ordenamiento controla es la sentencia misma: la falta de motivación es causal de casación (artículo 137, inciso d, del CPCA), con independencia de la herramienta con que se redactó. La circular dispone que los errores cometidos al usar estas herramientas tienen las mismas consecuencias que en cualquier otra labor."
   - question: "¿Qué pasa si un abogado cita jurisprudencia inventada por la IA?"
-    answer: "Varios tribunales han hecho llamados de atención a abogados por citar votos inexistentes o normas derogadas, y en 2026 dos despachos remitieron el caso al Colegio de Abogados y Abogadas. Hasta octubre de 2026 no consta una sanción disciplinaria impuesta por esa causa. La circular no rige para los abogados, pero los tribunales recuerdan su deber de litigar con lealtad y verificar las fuentes."
-  - question: "¿Hay una ley de inteligencia artificial en Costa Rica?"
-    answer: "No. Hay varios proyectos en la Asamblea Legislativa (expedientes 23.771, 23.919 y 24.484, dictaminados y en el orden del día del Plenario) y una Estrategia Nacional de IA del MICITT de 2024, que no vincula al Poder Judicial. Dentro del Poder Judicial, la circular 31-2026 es la única norma vigente sobre el uso de la IA generativa; la Auditoría pidió en agosto de 2026 formalizar una política institucional."
+    answer: "Al menos ocho resoluciones han advertido a abogados por citar votos inexistentes o normas derogadas, y en 2026 dos despachos remitieron el caso al Colegio de Abogados y Abogadas. Hasta octubre de 2026 no consta una sanción disciplinaria impuesta por esa causa. La circular no rige para los abogados, pero los tribunales recuerdan su deber de litigar con lealtad y verificar las fuentes."
+  - question: "¿Se puede presentar como prueba una respuesta de ChatGPT?"
+    answer: "Los tribunales la han tratado con reserva. Un tribunal de apelación penal calificó las respuestas de un chat de inteligencia artificial aportadas con un recurso como material no sometido al contradictorio, y el Tribunal Agrario exigió que un peritaje hecho con esas herramientas explique cómo se validaron los resultados."
 ---
 
-El 15 de octubre de 2026 la Sala Primera resolvió un recurso de casación sobre costas y, al pie del fallo, dejó escrito que para elaborarlo había usado ChatGPT. No fue la primera vez. Desde junio, la Sala declara en sus votos que usa ChatGPT, NotebookLM o Gemini para resumir los recursos y revisar la redacción, y lo hace porque una circular del Poder Judicial la obliga a decirlo. Este artículo explica qué permite y qué exige esa circular, cómo la están cumpliendo los tribunales, qué ha pasado con los abogados que citaron jurisprudencia inventada por la inteligencia artificial y cómo lo regulan otros países. Describe el marco vigente al 23 de noviembre de 2026.
+El 15 de octubre de 2026 la Sala Primera resolvió un recurso de casación sobre costas y, al pie del fallo, dejó escrito que para elaborarlo había usado ChatGPT. No fue un caso aislado: entre junio y octubre hay **al menos veinte votos** de la Sala con una constancia de ese tipo, y **87 resoluciones** en todo el Poder Judicial. Lo hacen porque una circular los obliga a decirlo. Este artículo reúne los datos de esas constancias y explica qué permite y qué exige la circular, cómo la aplican los tribunales, qué ha pasado con los abogados que citaron jurisprudencia inventada por la inteligencia artificial y cómo tratan los jueces la prueba hecha con estas herramientas. Describe la situación al 23 de noviembre de 2026, con resoluciones publicadas hasta fines de octubre.
 
 El autor estudió el tema en su trabajo final de graduación, [sobre sistemas automatizados de decisión en la administración de justicia costarricense](/articulos/tesis-ia-justicia), y en un estudio sobre [la inteligencia artificial en la contratación estatal](/articulos/hermeneutica-ia-contratacion-publica).
 
@@ -42,13 +44,29 @@ El voto 001606-F-S1-2026 resolvió un recurso de casación en un proceso contenc
 
 La constancia dice cuatro cosas: qué herramienta y qué versión se usó, cuándo, para qué tarea concreta, y que la decisión y su fundamento siguen siendo de la Sala. Es exactamente lo que exige la circular 31-2026.
 
-El voto no es una excepción. Entre el 4 de junio y el 29 de octubre de 2026 hay **al menos veinte votos de la Sala Primera** con una constancia de este tipo, redactados por cuatro de sus cinco integrantes, con fórmulas distintas:
+## Los veinte votos, en cifras
 
-- **ChatGPT, solo para el resumen del recurso.** Es la fórmula del magistrado Rivas Loáiciga (votos 704, 851, 856, 1606, 1632 y 1686 de 2026) y la del voto 1732 de la magistrada Rojas Morales. El voto 856 es útil para ver el alcance: la Sala casó la sentencia por falta de fundamentación y atribuyó a la herramienta solo el resumen del recurso, no ese análisis.
-- **NotebookLM o Gemini, con un uso más amplio.** En los votos del magistrado Leiva Poveda la constancia, que invoca expresamente la circular, incluye la síntesis de agravios, la revisión de documentos del expediente *«para confirmar la correspondencia lógica entre lo indicado en la resolución y el contenido de aquellos»* y, en varios votos, el *«análisis de posturas jurídicas discutidas y aplicables»*.
+El primer voto de la Sala Primera con constancia es del 4 de junio de 2026. Desde entonces la práctica creció, y en octubre ya fueron nueve.
+
+<ConstanciasPorMes />
+
+De la lectura de los veinte votos salen cinco datos:
+
+- **Cuatro de los cinco integrantes de la Sala** han redactado votos con constancia.
+- **Catorce de los veinte son de procesos contencioso-administrativos**; cinco son civiles y uno, agrario.
+- **Tres herramientas**: ChatGPT en ocho votos, Gemini en ocho y NotebookLM en cuatro.
+- **La tarea común es el resumen del recurso de casación**, presente en los veinte. Dos votos suman la revisión de redacción y ortografía, y los que usan NotebookLM o Gemini 3.5 Flash incluyen la revisión de documentos del expediente y de posturas jurídicas.
+- **La herramienta se usa al inicio del trabajo.** En los quince votos que indican la fecha de uso, pasan en mediana 76 días entre esa fecha y la del fallo, con un rango de 2 a 140.
+
+<HerramientasIA />
+
+Las constancias siguen tres fórmulas, según quien redacta:
+
+- **ChatGPT, solo para el resumen del recurso.** Es la fórmula del magistrado Rivas Loáiciga (votos 704, 851, 856, 1606, 1632 y 1686 de 2026) y la del voto 1732 de la magistrada Rojas Morales, que precisa que el uso *«no implicó delegación alguna de la función jurisdiccional, del análisis jurídico, de la valoración de los agravios ni de la responsabilidad intelectual sobre el contenido final de la resolución»*. El voto 856 es útil para ver el alcance: la Sala casó la sentencia por falta de fundamentación y atribuyó a la herramienta solo el resumen del recurso.
+- **NotebookLM o Gemini, con un uso más amplio.** En los votos del magistrado Leiva Poveda la constancia, que invoca expresamente la circular, incluye la síntesis de agravios, la revisión de documentos del expediente *«para confirmar la correspondencia lógica entre lo indicado en la resolución y el contenido de aquellos»* y, en varios votos, el *«análisis de posturas jurídicas discutidas y aplicables»*. Cierra así: *«ninguna de esas funciones conllevó una sustitución del análisis y la decisión humana»*.
 - **Gemini gratuito, con la conservación de actividad desactivada.** En los votos del magistrado Zamora Campos la constancia va en el resultando y aclara que, en lo demás, no se usó inteligencia artificial.
 
-La práctica tiene antecedente en la Corte Plena. En la sesión 23-2026, del 25 de mayo, el magistrado Rivas explicó que los letrados de su oficina usan ChatGPT para el *«armado de la resolución, no la decisión»*, y que así pasaron de cuatro a diez o quince proyectos, que después revisan los cinco magistrados.
+La práctica tiene antecedente en la Corte Plena. En la sesión 23-2026, del 25 de mayo, el magistrado Rivas explicó que los letrados de su oficina usan ChatGPT para *«el armado de la resolución, no la decisión»*, y que con ese apoyo pasaron de cuatro proyectos a diez o quince, que después revisan los cinco magistrados.
 
 ## Qué dice la circular 31-2026
 
@@ -62,48 +80,60 @@ En protección de datos, la circular prohíbe ingresar información sensible, co
 
 La regla que explica las constancias es la 3.9: las personas servidoras judiciales deben informar expresamente el uso de IA generativa para el apoyo sustantivo de sus labores, en especial cuando incide en decisiones, y hacer explícito en el expediente, documento o decisión *«el nombre de la herramienta usada, modelo y empresa proveedora; fecha en que fue usada; además, explicarán para qué fue empleada»*. La circular trae incluso un modelo de nota, que es el que siguen los votos de la Sala Primera.
 
-En julio de 2026 el Consejo Superior se negó a eliminar ese deber de declarar. La Dirección de Tecnología sostuvo que no busca desincentivar el uso, sino *«garantizar la transparencia, la trazabilidad y la rendición de cuentas»*.
+## De la autorización a la práctica
 
-## Lo que todavía no existe
+<CronologiaIA />
 
-La circular es, hasta hoy, la única norma del Poder Judicial sobre el uso de la IA generativa. No es un reglamento ni un acuerdo de Corte Plena. En la misma sesión de mayo, un magistrado reconoció que la política institucional *«se pasó a una circular»* por falta de recursos, y en agosto de 2026 la Auditoría Interna constató que *«solamente existen estos lineamientos a nivel institucional»*; el Consejo Superior ordenó formalizar de inmediato una política de inteligencia artificial generativa. Tampoco hay ley: los proyectos de los expedientes 23.771, 23.919 y 24.484 están dictaminados y esperan en el orden del día del Plenario, y la Estrategia Nacional de IA del MICITT no vincula al Poder Judicial.
+La circular es, hasta hoy, la única norma del Poder Judicial sobre el uso de la IA generativa. No es un reglamento ni un acuerdo de Corte Plena. En la sesión de mayo, un magistrado reconoció que la política institucional *«se pasó a una circular»* por falta de recursos, y en agosto de 2026 la Auditoría Interna constató que *«solamente existen estos lineamientos a nivel institucional»*; el Consejo Superior ordenó formalizar una política de inteligencia artificial generativa.
+
+Tres decisiones de 2026 completan el cuadro. En julio, el Consejo Superior se negó a eliminar el deber de declarar el uso: la Dirección de Tecnología sostuvo que su fin es *«garantizar la transparencia, la trazabilidad y la rendición de cuentas»*, y que la circular se aplica a cualquier herramienta, gratuita o de pago. En la misma sesión adjudicó **270 licencias anuales de Gemini Enterprise por US$104.055,15**. Y en setiembre conoció una advertencia interna sobre los riesgos de cargar documentos institucionales en plataformas de terceros, que trasladó a la Presidencia de la Corte.
+
+Tampoco hay ley: los proyectos de los expedientes 23.771, 23.919 y 24.484 están dictaminados y esperan en el orden del día del Plenario, y la Estrategia Nacional de IA del MICITT no vincula al Poder Judicial.
 
 ## Cómo lo declaran los demás tribunales
 
-La Sala Primera es la única cámara de casación donde la práctica está extendida, pero no la única que la aplica.
+La Sala Primera es la única cámara de casación donde la práctica está extendida, pero el mayor número de constancias está en otro tribunal.
 
 <DeclaracionesIA />
 
-El Tribunal de Apelación de Trabajo de San José incluye la misma nota en decenas de sentencias desde marzo: usa Microsoft 365 Copilot para *«reorganizar y sintetizar los argumentos expuestos por la parte apelante»*, *«sin introducir criterios jurídicos, valoraciones probatorias, ni conclusiones de carácter sustantivo»*, y deja constancia de que no ingresó datos personales del expediente. La Sala Tercera declaró en octubre su primer uso, para el resumen de un recurso. El uso más amplio está en un tribunal de apelación penal, que en un caso sobre demandas SLAPP usó ChatGPT para buscar derecho comparado y apoyar *«algunos segmentos dogmáticos y abstractos de la redacción»*, y aclaró que no lo empleó para determinar hechos, valorar prueba ni interpretar normas.
+El Tribunal de Apelación de Trabajo de San José incluye la misma nota en 57 sentencias desde marzo: usa Microsoft 365 Copilot para *«reorganizar y sintetizar los argumentos expuestos por la parte apelante»*, *«sin introducir criterios jurídicos, valoraciones probatorias, ni conclusiones de carácter sustantivo»*, y deja constancia de que no ingresó datos personales del expediente. Sumadas las del tribunal de Alajuela y la de la Sala Tercera, **Copilot aparece en 64 de las 87 resoluciones**: fuera de la Sala Primera, lo habitual es la herramienta de las cuentas institucionales.
 
-Hay también dos resoluciones que reprochan el uso por la persona juzgadora. En una, un tribunal de apelación penal constató que el juez usó la IA y la calculadora del teléfono para calcular la pena durante la audiencia; calificó el episodio como una improvisación; rechazó el reclamo sobre la deliberación, aunque dio la razón a la defensa en que ese aumento de pena no era aplicable. En otra, anterior a la circular, el tribunal de alzada de pensiones alimentarias reprochó que la jueza ampliara un dictamen médico con información obtenida por IA sin advertirlo a las partes.
+La Sala Tercera declaró su primer uso el 29 de octubre, para el resumen de un recurso, con esta precisión: *«La decisión plasmada en los siguientes considerandos fue producto de una ponderación estrictamente humana y en su construcción lingüística no se empleó asistencia adicional de la inteligencia artificial.»* El uso más amplio está en un tribunal de apelación penal, que en un caso sobre demandas SLAPP usó ChatGPT para buscar derecho comparado y apoyar *«algunos segmentos dogmáticos y abstractos de la redacción»*, y aclaró que no lo empleó para determinar hechos, valorar prueba ni interpretar normas.
+
+Entre los tribunales de lo contencioso administrativo no hay todavía resoluciones con constancia. El Tribunal de Apelación de lo Contencioso sí se ha referido al tema: en al menos cinco resoluciones de 2026 repite que *«a partir del avance de la inteligencia artificial, los tratadistas realizan sus mayores esfuerzos para sostener que el derecho en general y el procesal en particular no puede verse nunca como una actividad mecánica, lo que obliga a la presencia humana para realizar valoraciones»*.
+
+La declaración tampoco se limita a las sentencias. La Auditoría Interna del Poder Judicial la incluye en sus informes; una auditoría consignó que en la Sala Segunda *«el análisis jurisprudencial incluye la elaboración de resúmenes del fallo, incluso con el apoyo de herramientas de inteligencia artificial generativa, cuyo resultado es posteriormente revisado por la persona analista»*; y la Procuraduría General de la República anotó en una opinión jurídica de 2025 que su *«análisis comparativo fue hecho con ayuda de herramientas de inteligencia artificial»*.
+
+Hay también dos resoluciones que examinan el uso por la persona juzgadora. En una, un tribunal de apelación penal constató que el juez usó la IA y la calculadora del teléfono para calcular la pena durante la audiencia; calificó el episodio como una improvisación y rechazó el reclamo sobre la deliberación, aunque dio la razón a la defensa en que ese aumento de pena no era aplicable. En otra, anterior a la circular, el tribunal de alzada de pensiones alimentarias reprochó que se ampliara un dictamen médico con información obtenida por IA sin advertirlo a las partes.
 
 ## Del lado de los abogados
 
-Los tribunales ya se encuentran recursos escritos con inteligencia artificial que citan votos inexistentes, atribuyen criterios que la Sala nunca sostuvo o invocan normas derogadas. La respuesta ha ido subiendo de tono:
+Los tribunales ya se encuentran recursos escritos con inteligencia artificial que citan votos inexistentes, atribuyen criterios que la Sala nunca sostuvo o invocan normas derogadas. **Al menos ocho resoluciones**, de octubre de 2025 a agosto de 2026, lo han advertido, y la respuesta ha ido subiendo de tono:
 
 - **Llamados de atención.** El Tribunal de Apelación de Sentencia Penal de Cartago (sentencia 592-2025) describió el fenómeno de la *«alucinación»* y recordó a los abogados su deber de litigar con lealtad, probidad y buena fe, *«para evitar acciones que podrían ser interpretadas como tendientes a inducir a error a las autoridades judiciales»*. Lo mismo hicieron un tribunal de apelación penal de San José, un tribunal civil y el Tribunal Agrario en 2026.
 - **Remisión al Colegio de Abogados.** El Tribunal de Familia ordenó en 2026 enviar testimonio a la Fiscalía del Colegio de Abogados y Abogadas por invocar un texto normativo que no existe, y luego explicó que *«litigar con datos falsos claramente evidencia mala fe»*. Un juzgado de apelaciones de pensiones remitió otro caso a la Junta Directiva del Colegio para que estudie la regulación ética del tema, con una tesis propia: usar IA para un acto procesal exigiría el consentimiento previo del cliente y podría incidir en el cobro de honorarios.
 - **El criterio intermedio.** Un tribunal civil de San José sostuvo que usar IA *«no es prohibido»*, pero que debe hacerse con responsabilidad y que se recomienda indicarlo.
 
+Dos resoluciones recientes muestran hacia dónde va la práctica. Un tribunal de apelación penal usó Copilot para valorar si un recurso había sido escrito con IA y concluyó: *«Aunque no existe una norma procesal que limite el empleo de aplicaciones de IA como apoyo, sí debe convocarse a las partes para que los recursos sean sintéticos y puntuales en sus reclamaciones, a efecto de exponer claramente sus argumentos.»* Y un juzgado de apelaciones de pensiones incluyó, entre los criterios para fijar honorarios, *«si se litigó mediante el uso de inteligencia artificial o no»*.
+
 Hasta octubre de 2026 no consta una sanción disciplinaria a un abogado por citas inventadas con IA, ni una condena en costas o una multa por esa causa. La circular 31-2026 no rige para los abogados; para ellos rigen el deber de lealtad procesal y el código de ética profesional.
+
+## La inteligencia artificial como prueba
+
+El tercer frente es probatorio, y los tribunales lo tratan con reserva en las dos direcciones.
+
+Cuando una parte aporta lo que le respondió un chat, el valor es escaso. Un tribunal de apelación penal de San José calificó los informes de búsqueda de un modelo de IA adjuntos a un recurso como *«material no sometido al contradictorio (respuestas de un chat de inteligencia artificial)»*. Cuando el que usa la herramienta es un perito, se le exige método: el Tribunal Agrario reprochó que se aceptara un peritaje elaborado con herramientas de IA *«sin que el dictamen explicara el procedimiento seguido para validar los resultados obtenidos mediante dichas herramientas»*.
+
+En sentido inverso, alegar que un audio o un video fue fabricado con IA tampoco basta. En un caso de 2026, la Sala Tercera constató que la sentencia había rechazado esa alegación *«por tratarse de una mera suposición sin sustento»*. Y la Sala Constitucional anuló la expulsión de una estudiante a quien un programa le atribuyó un porcentaje de texto generado por IA, porque el resultado de un detector, *«el cual es susceptible de falsos positivos»*, no sustituye la prueba técnica ni el derecho de defensa.
 
 ## ¿Puede anularse una sentencia por el uso de la IA?
 
-No hay en Costa Rica una resolución que haya anulado una sentencia porque el juez usó inteligencia artificial, ni que haya dicho que el incumplimiento de la circular produce por sí mismo la nulidad. La circular es un lineamiento interno, cuyo incumplimiento se traduce, según su texto, en las mismas responsabilidades que existen para cualquier otra labor.
+No hay en Costa Rica una resolución que haya anulado una sentencia porque el juez usó inteligencia artificial, ni que haya dicho que el incumplimiento de la circular produce por sí mismo la nulidad. La circular es un lineamiento interno, y su texto dispone que, si se comete un error o una falta al usar estas herramientas, *«se aplicarán las mismas consecuencias y responsabilidades que ya existen en la normativa interna para cualquier otra labor»* (3.10).
 
-Lo que el ordenamiento sí controla es el resultado. La sentencia tiene que estar motivada, y la falta de motivación es causal de casación por razones procesales (artículo 137, inciso d, del CPCA); la indefensión y la inobservancia de las reglas de redacción del fallo en sus elementos esenciales también lo son. Esas causales miran lo que la sentencia dice y cómo lo fundamenta, con independencia de la herramienta con que se redactó.
-
-El derecho comparado apunta en la misma dirección. La Corte Constitucional de Colombia declaró en la [sentencia T-323 de 2024](https://www.corteconstitucional.gov.co/relatoria/2024/T-323-24.htm) un uso indebido de ChatGPT por falta de transparencia, pero no anuló el fallo porque el juez había decidido antes de usar la herramienta. En Argentina, el [Superior Tribunal de Justicia de Chubut](https://www.pensamientopenal.com.ar/index.php/fallos/91880-superior-tribunal-justicia-chubut-incidencia-ia-resoluciones-judiciales) revocó en marzo de 2026 la [nulidad](https://pensamientopenal.com.ar/fallos/91822-chubut-anulan-fallo-delegacion-jurisdiccional-ia) de una condena que una cámara había decretado por haberse usado IA, con el argumento de que se controla la fundamentación escrita.
-
-## Cómo lo regulan otros países
-
-<ComparadoIA />
-
-Todas las normas coinciden en lo esencial: supervisión humana, responsabilidad indelegable de quien firma, verificación de las citas y protección de los datos. Difieren en dos puntos. Declarar el uso es obligatorio en Costa Rica y en Colombia, donde lo exige el [Acuerdo PCSJA24-12243](https://www.ramajudicial.gov.co/documents/164295699/174277484/PCSJA24-12243.-USO-Y-APROVECHAMIENTO-DE-IA-EN-LA-RAMA-JUDICIAL.pdf/fbd6903d-d7b5-f9bd-faff-03f1087d6714?t=1753313841933) del Consejo Superior de la Judicatura; queda a criterio del juez en Brasil, según la [Resolución 615/2025 del CNJ](https://atos.cnj.jus.br/atos/detalhar/6001); y no se exige en general en el Reino Unido, cuya [guía judicial de octubre de 2025](https://www.judiciary.uk/guidance-and-resources/artificial-intelligence-ai-judicial-guidance-october-2025/) hace al juez personalmente responsable de lo que firma. En España, la [Instrucción 2/2026 del Consejo General del Poder Judicial](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205) solo admite herramientas institucionales. Y en Europa, aunque el [Reglamento (UE) 2024/1689 de inteligencia artificial](https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32024R1689) clasifica como de alto riesgo los sistemas que asisten a la administración de justicia, el [Reglamento (UE) 2026/1744](https://publications.europa.eu/resource/celex/32026R1744) aplazó sus obligaciones hasta el 2 de diciembre de 2027. Los estándares de referencia son la [Carta ética europea de la CEPEJ](https://rm.coe.int/ethical-charter-en-for-publication-4-december-2018/16808f699c) y las [directrices de la UNESCO para cortes y tribunales](https://unesdoc.unesco.org/ark:/48223/pf0000396582).
+Lo que el ordenamiento sí controla es el resultado. La sentencia tiene que estar motivada, y la falta de motivación es causal de casación por razones procesales (artículo 137, inciso d, del CPCA); la indefensión y la inobservancia de las reglas de redacción del fallo en sus elementos esenciales también lo son. Esas causales miran lo que la sentencia dice y cómo lo fundamenta, con independencia de la herramienta con que se redactó. Las dos resoluciones que examinaron el uso de la IA por una persona juzgadora siguieron esa lógica: valoraron el efecto sobre la decisión y sobre el derecho de defensa.
 
 ## Qué conviene hacer ahora
 
-Para quien litiga, la constancia de uso es ahora parte del fallo y conviene leerla: dice qué tarea hizo la herramienta y permite contrastar el resumen del recurso con el recurso presentado. Para quien escribe, el estándar que los tribunales exigen a los abogados es el mismo que la circular exige a los jueces: verificar cada cita, cada norma y cada voto antes de firmar. Y para las instituciones públicas que empiezan a usar estas herramientas en sus actos administrativos, la circular es hoy el modelo más cercano de transparencia y de protección de datos. Si una resolución que lo afecta parece mal fundamentada, conviene asesorarse con especialistas en derecho público para valorar a tiempo las vías que correspondan.
+Para quien litiga, la constancia de uso es ahora parte del fallo y conviene leerla: dice qué tarea hizo la herramienta y permite contrastar el resumen del recurso con el recurso presentado. Para quien escribe, el estándar que los tribunales exigen a los abogados es el mismo que la circular exige a los jueces: verificar cada cita, cada norma y cada voto antes de firmar, y no presentar como prueba lo que respondió un chat. Y para las instituciones públicas que empiezan a usar estas herramientas en sus actos administrativos, la circular es hoy el modelo más cercano de transparencia y de protección de datos. Si una resolución que lo afecta parece mal fundamentada, conviene asesorarse con especialistas en derecho público para valorar a tiempo las vías que correspondan.
 
 <FuentesGuia slug="sala-primera-chatgpt-inteligencia-artificial-sentencias" />
