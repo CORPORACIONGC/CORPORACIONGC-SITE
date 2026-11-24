@@ -1,5 +1,6 @@
 /* Generado por scripts/indice-fuentes-guias.mjs: no se edita a mano. */
 import type { FuentesDeGuia } from "./tipos";
+import { fuentes as f_acceso_publico_playas_costa_rica } from "./acceso-publico-playas-costa-rica";
 import { fuentes as f_accion_de_inconstitucionalidad_costa_rica } from "./accion-de-inconstitucionalidad-costa-rica";
 import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de-espera";
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
@@ -11,7 +12,6 @@ import { fuentes as f_como_demandar_al_estado_costa_rica } from "./como-demandar
 import { fuentes as f_compra_publica_innovadora_costa_rica } from "./compra-publica-innovadora-costa-rica";
 import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-vasp-registration-sugef";
 import { fuentes as f_cpca_vs_ley_reguladora_contencioso_administrativa } from "./cpca-vs-ley-reguladora-contencioso-administrativa";
-import { fuentes as f_defensa_inhabilitacion_proveedor_estado_costa_rica } from "./defensa-inhabilitacion-proveedor-estado-costa-rica";
 import { fuentes as f_defensa_procedimiento_administrativo_sancionatorio } from "./defensa-procedimiento-administrativo-sancionatorio";
 import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-peticion-costa-rica";
 import { fuentes as f_despido_funcionario_publico_costa_rica } from "./despido-funcionario-publico-costa-rica";
@@ -54,6 +54,7 @@ import { fuentes as f_traslado_de_cargos_que_hacer_costa_rica } from "./traslado
 import { fuentes as f_umbrales_contratacion_publica_costa_rica } from "./umbrales-contratacion-publica-costa-rica";
 
 export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
+  "acceso-publico-playas-costa-rica": f_acceso_publico_playas_costa_rica,
   "accion-de-inconstitucionalidad-costa-rica": f_accion_de_inconstitucionalidad_costa_rica,
   "amparo-ccss-lista-de-espera": f_amparo_ccss_lista_de_espera,
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
@@ -65,7 +66,6 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "compra-publica-innovadora-costa-rica": f_compra_publica_innovadora_costa_rica,
   "costa-rica-vasp-registration-sugef": f_costa_rica_vasp_registration_sugef,
   "cpca-vs-ley-reguladora-contencioso-administrativa": f_cpca_vs_ley_reguladora_contencioso_administrativa,
-  "defensa-inhabilitacion-proveedor-estado-costa-rica": f_defensa_inhabilitacion_proveedor_estado_costa_rica,
   "defensa-procedimiento-administrativo-sancionatorio": f_defensa_procedimiento_administrativo_sancionatorio,
   "derecho-de-peticion-costa-rica": f_derecho_de_peticion_costa_rica,
   "despido-funcionario-publico-costa-rica": f_despido_funcionario_publico_costa_rica,

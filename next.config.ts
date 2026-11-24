@@ -48,6 +48,13 @@ const nextConfig: NextConfig = {
         destination: "https://www.corporaciongc.com/:path*",
         permanent: true,
       },
+      /* La guía de defensa frente a la inhabilitación se fusionó en la de
+         sanciones a proveedores (informe 23-11, C-42). */
+      {
+        source: "/articulos/defensa-inhabilitacion-proveedor-estado-costa-rica",
+        destination: "/articulos/sanciones-a-proveedores-contratacion-publica-ley-9986",
+        permanent: true,
+      },
       /* /equipo solo tiene perfiles (/equipo/[slug]); quien recorta la
          dirección de un perfil llega al directorio del equipo (M-T2). */
       {
