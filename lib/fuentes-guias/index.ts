@@ -41,6 +41,7 @@ import { fuentes as f_proceso_de_puro_derecho_contencioso_administrativo } from 
 import { fuentes as f_reajuste_precios_obra_publica_costa_rica } from "./reajuste-precios-obra-publica-costa-rica";
 import { fuentes as f_recurso_amparo_costa_rica } from "./recurso-amparo-costa-rica";
 import { fuentes as f_recurso_casacion_contencioso_administrativo_costa_rica } from "./recurso-casacion-contencioso-administrativo-costa-rica";
+import { fuentes as f_recurso_objecion_cartel_costa_rica } from "./recurso-objecion-cartel-costa-rica";
 import { fuentes as f_reduccion_forzosa_despido_por_reestructuracion_sector_publico } from "./reduccion-forzosa-despido-por-reestructuracion-sector-publico";
 import { fuentes as f_reforma_acuerdo_sugef_13_19_activos_virtuales } from "./reforma-acuerdo-sugef-13-19-activos-virtuales";
 import { fuentes as f_reforma_reglamento_contratacion_publica_decreto_45782 } from "./reforma-reglamento-contratacion-publica-decreto-45782";
@@ -48,6 +49,7 @@ import { fuentes as f_registro_vasp_sugef_costa_rica } from "./registro-vasp-sug
 import { fuentes as f_sala_primera_chatgpt_inteligencia_artificial_sentencias } from "./sala-primera-chatgpt-inteligencia-artificial-sentencias";
 import { fuentes as f_san_jose_san_ramon_highway_tender_costa_rica } from "./san-jose-san-ramon-highway-tender-costa-rica";
 import { fuentes as f_sanciones_a_proveedores_contratacion_publica_ley_9986 } from "./sanciones-a-proveedores-contratacion-publica-ley-9986";
+import { fuentes as f_sanciones_disciplinarias_funcionario_publico_costa_rica } from "./sanciones-disciplinarias-funcionario-publico-costa-rica";
 import { fuentes as f_silencio_positivo_permiso_municipal } from "./silencio-positivo-permiso-municipal";
 import { fuentes as f_traslado_de_cargos_que_hacer_costa_rica } from "./traslado-de-cargos-que-hacer-costa-rica";
 import { fuentes as f_umbrales_contratacion_publica_costa_rica } from "./umbrales-contratacion-publica-costa-rica";
@@ -94,6 +96,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "reajuste-precios-obra-publica-costa-rica": f_reajuste_precios_obra_publica_costa_rica,
   "recurso-amparo-costa-rica": f_recurso_amparo_costa_rica,
   "recurso-casacion-contencioso-administrativo-costa-rica": f_recurso_casacion_contencioso_administrativo_costa_rica,
+  "recurso-objecion-cartel-costa-rica": f_recurso_objecion_cartel_costa_rica,
   "reduccion-forzosa-despido-por-reestructuracion-sector-publico": f_reduccion_forzosa_despido_por_reestructuracion_sector_publico,
   "reforma-acuerdo-sugef-13-19-activos-virtuales": f_reforma_acuerdo_sugef_13_19_activos_virtuales,
   "reforma-reglamento-contratacion-publica-decreto-45782": f_reforma_reglamento_contratacion_publica_decreto_45782,
@@ -101,6 +104,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "sala-primera-chatgpt-inteligencia-artificial-sentencias": f_sala_primera_chatgpt_inteligencia_artificial_sentencias,
   "san-jose-san-ramon-highway-tender-costa-rica": f_san_jose_san_ramon_highway_tender_costa_rica,
   "sanciones-a-proveedores-contratacion-publica-ley-9986": f_sanciones_a_proveedores_contratacion_publica_ley_9986,
+  "sanciones-disciplinarias-funcionario-publico-costa-rica": f_sanciones_disciplinarias_funcionario_publico_costa_rica,
   "silencio-positivo-permiso-municipal": f_silencio_positivo_permiso_municipal,
   "traslado-de-cargos-que-hacer-costa-rica": f_traslado_de_cargos_que_hacer_costa_rica,
   "umbrales-contratacion-publica-costa-rica": f_umbrales_contratacion_publica_costa_rica,
