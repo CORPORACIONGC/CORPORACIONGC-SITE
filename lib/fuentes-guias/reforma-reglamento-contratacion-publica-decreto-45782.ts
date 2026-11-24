@@ -30,7 +30,7 @@ export const fuentes: FuentesDeGuia = {
     },
     {
       titulo: "Ley N.° 10659, Reforma Ley General de Contratación Pública",
-      detalle: "10-03-2025: equipara a las cooperativas con características PYME (considerando 15 del Decreto 45782)",
+      detalle: "10-03-2025: equipara a las cooperativas con características PYME (reforma, entre otros, el art. 40)",
       href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=104197&param2=145497&param3=1",
     },
   ],
@@ -114,14 +114,14 @@ export const fuentes: FuentesDeGuia = {
       fecha: "08-10-2026",
       tema: "Consultas sobre la aplicación de la Ley 9986",
       criterio:
-        "Rechaza una consulta sobre las bandas de tolerancia: desde la Ley 9986 la Contraloría no atiende la aplicación técnica u orientación normativa en contratación pública, materia consultiva de la Dirección de Contratación Pública (art. 129 de la ley y 309 del Reglamento).",
+        "Rechaza una consulta sobre las bandas de tolerancia: desde la Ley 9986 la Contraloría no atiende la aplicación técnica u orientación normativa en contratación pública, materia consultiva de la Dirección de Contratación Pública (art. 129 de la ley).",
       href: CGR(2026, "2026016859"),
     },
     {
       numero: "R-DCP-SICOP-01908-2026",
       organo: DCP,
       fecha: "20-10-2026",
-      tema: "Primer pliego con el art. 44 reformado",
+      tema: "Pliego con el art. 44 reformado",
       criterio:
         "En la objeción a un pliego cuyo estudio de mercado se hizo con el art. 44 reformado, rechaza de plano el reclamo contra el precio de referencia: impugnarlo exige aportar un estudio de mercado propio o prueba idónea, y la mera inconformidad no basta.",
       href: CGR(2026, "2026018471"),
