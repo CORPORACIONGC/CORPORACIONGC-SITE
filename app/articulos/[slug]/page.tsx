@@ -817,7 +817,7 @@ export default async function ArticlePage({
                 ancla a él, pegado bajo la barra en pantallas angostas y fijo
                 en el margen izquierdo desde 1280 px. */}
             <div className={conIndice ? "gc-con-indice relative" : undefined}>
-            {conIndice && <IndiceGuia items={indice} lang={lang === "en" ? "en" : "es"} />}
+            {conIndice && <IndiceGuia items={indice} lang={lang === "en" ? "en" : "es"} esArticulo={article.publicationType === "articulo"} />}
 
             {/* Content */}
             {isPdf && article.content.trim() && (
@@ -1010,7 +1010,7 @@ export default async function ArticlePage({
                 {hermanas.length > 0 && (
                   <>
                     <h2 className="font-display text-lg md:text-xl text-cream tracking-tight mb-5">
-                      {lang === "en" ? "Related guides" : "Otras guías de esta materia"}
+                      {lang === "en" ? "Related guides" : article.publicationType === "articulo" ? "Otras publicaciones de esta materia" : "Otras guías de esta materia"}
                     </h2>
                     <ul role="list" className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
                       {hermanas.map((h) => (

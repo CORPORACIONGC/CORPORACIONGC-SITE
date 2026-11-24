@@ -11,9 +11,12 @@ import { CaretDown } from "@phosphor-icons/react";
 export function IndiceGuia({
   items,
   lang = "es",
+  esArticulo = false,
 }: {
   items: { id: string; titulo: string }[];
   lang?: "es" | "en";
+  /** Rótulo «En este artículo» para piezas que no son guía práctica. */
+  esArticulo?: boolean;
 }) {
   const [activo, setActivo] = useState(-1);
   const [abierto, setAbierto] = useState(false);
@@ -63,7 +66,7 @@ export function IndiceGuia({
     };
   }, [abierto]);
 
-  const rotulo = lang === "en" ? "In this guide" : "En esta guía";
+  const rotulo = lang === "en" ? (esArticulo ? "In this article" : "In this guide") : esArticulo ? "En este artículo" : "En esta guía";
   const cuenta =
     activo >= 0
       ? `${activo + 1} ${lang === "en" ? "of" : "de"} ${items.length}`

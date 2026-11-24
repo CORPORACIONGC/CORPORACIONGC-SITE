@@ -8,7 +8,7 @@ type: "article"
 author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
-publicationType: "guia"
+publicationType: "articulo"
 seoTitle: "Sala Primera y ChatGPT: la IA en las sentencias de Costa Rica"
 seoDescription: "La Sala Primera declara el uso de ChatGPT y Gemini en sus votos. Qué permite la circular 31-2026, qué debe declarar el juez y qué pasa con las citas inventadas."
 cta:
@@ -29,7 +29,7 @@ faq:
     answer: "No. Hay varios proyectos en la Asamblea Legislativa (expedientes 23.771, 23.919 y 24.484, dictaminados y en el orden del día del Plenario) y una Estrategia Nacional de IA del MICITT de 2024, que no vincula al Poder Judicial. Dentro del Poder Judicial, la circular 31-2026 es la única norma vigente sobre el uso de la IA generativa; la Auditoría pidió en agosto de 2026 formalizar una política institucional."
 ---
 
-El 15 de octubre de 2026 la Sala Primera resolvió un recurso de casación sobre costas y, al pie del fallo, dejó escrito que para elaborarlo había usado ChatGPT. No fue la primera vez. Desde junio, la Sala declara en sus votos que usa ChatGPT, NotebookLM o Gemini para resumir los recursos y revisar la redacción, y lo hace porque una circular del Poder Judicial la obliga a decirlo. Esta guía explica qué permite y qué exige esa circular, cómo la están cumpliendo los tribunales, qué ha pasado con los abogados que citaron jurisprudencia inventada por la inteligencia artificial y cómo lo regulan otros países. Describe el marco vigente al 23 de noviembre de 2026.
+El 15 de octubre de 2026 la Sala Primera resolvió un recurso de casación sobre costas y, al pie del fallo, dejó escrito que para elaborarlo había usado ChatGPT. No fue la primera vez. Desde junio, la Sala declara en sus votos que usa ChatGPT, NotebookLM o Gemini para resumir los recursos y revisar la redacción, y lo hace porque una circular del Poder Judicial la obliga a decirlo. Este artículo explica qué permite y qué exige esa circular, cómo la están cumpliendo los tribunales, qué ha pasado con los abogados que citaron jurisprudencia inventada por la inteligencia artificial y cómo lo regulan otros países. Describe el marco vigente al 23 de noviembre de 2026.
 
 El autor estudió el tema en su trabajo final de graduación, [sobre sistemas automatizados de decisión en la administración de justicia costarricense](/articulos/tesis-ia-justicia), y en un estudio sobre [la inteligencia artificial en la contratación estatal](/articulos/hermeneutica-ia-contratacion-publica).
 

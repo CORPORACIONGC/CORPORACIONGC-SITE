@@ -1,4 +1,4 @@
-/* Figuras de la guía sobre la Sala Primera y el uso de ChatGPT e inteligencia
+/* Figuras del artículo sobre la Sala Primera y el uso de ChatGPT e inteligencia
    artificial en las resoluciones judiciales. Mismo lenguaje editorial que las
    demás guías (.gc-fig de app/globals.css). Datos cotejados el 23-11-2026:
    circular 31-2026 del Consejo Superior (SINALEVI y acta 12-2026, art. LIII);
