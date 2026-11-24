@@ -21,6 +21,7 @@ import { fuentes as f_grupo_economico_consorcio_licitacion_costa_rica } from "./
 import { fuentes as f_impugnar_avaluo_municipal_bienes_inmuebles } from "./impugnar-avaluo-municipal-bienes-inmuebles";
 import { fuentes as f_juzgado_contencioso_administrativo_tribunal_apelacion_costa_rica } from "./juzgado-contencioso-administrativo-tribunal-apelacion-costa-rica";
 import { fuentes as f_ley_10554_acceso_informacion_publica } from "./ley-10554-acceso-informacion-publica";
+import { fuentes as f_ley_10654_innovacion_obra_publica_bim_costa_rica } from "./ley-10654-innovacion-obra-publica-bim-costa-rica";
 import { fuentes as f_ley_10777_docentes_interinos_mep } from "./ley-10777-docentes-interinos-mep";
 import { fuentes as f_ley_10889_fraude_bancario_costa_rica } from "./ley-10889-fraude-bancario-costa-rica";
 import { fuentes as f_ley_10971_responsabilidad_laboral_contratistas_estado } from "./ley-10971-responsabilidad-laboral-contratistas-estado";
@@ -71,6 +72,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "impugnar-avaluo-municipal-bienes-inmuebles": f_impugnar_avaluo_municipal_bienes_inmuebles,
   "juzgado-contencioso-administrativo-tribunal-apelacion-costa-rica": f_juzgado_contencioso_administrativo_tribunal_apelacion_costa_rica,
   "ley-10554-acceso-informacion-publica": f_ley_10554_acceso_informacion_publica,
+  "ley-10654-innovacion-obra-publica-bim-costa-rica": f_ley_10654_innovacion_obra_publica_bim_costa_rica,
   "ley-10777-docentes-interinos-mep": f_ley_10777_docentes_interinos_mep,
   "ley-10889-fraude-bancario-costa-rica": f_ley_10889_fraude_bancario_costa_rica,
   "ley-10971-responsabilidad-laboral-contratistas-estado": f_ley_10971_responsabilidad_laboral_contratistas_estado,
