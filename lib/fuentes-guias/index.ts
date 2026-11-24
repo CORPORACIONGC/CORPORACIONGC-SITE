@@ -26,6 +26,7 @@ import { fuentes as f_licitacion_corredor_vial_san_jose_san_ramon } from "./lici
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
 import { fuentes as f_plan_regulador_santa_ana_2026 } from "./plan-regulador-santa-ana-2026";
 import { fuentes as f_presupuesto_2027_costa_rica_sala_constitucional } from "./presupuesto-2027-costa-rica-sala-constitucional";
+import { fuentes as f_sala_primera_chatgpt_inteligencia_artificial_sentencias } from "./sala-primera-chatgpt-inteligencia-artificial-sentencias";
 import { fuentes as f_por_que_y_para_que_contencioso_administrativo } from "./por-que-y-para-que-contencioso-administrativo";
 import { fuentes as f_proceso_de_lesividad_costa_rica } from "./proceso-de-lesividad-costa-rica";
 import { fuentes as f_proceso_de_puro_derecho_contencioso_administrativo } from "./proceso-de-puro-derecho-contencioso-administrativo";
@@ -69,6 +70,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
   "plan-regulador-santa-ana-2026": f_plan_regulador_santa_ana_2026,
   "presupuesto-2027-costa-rica-sala-constitucional": f_presupuesto_2027_costa_rica_sala_constitucional,
+  "sala-primera-chatgpt-inteligencia-artificial-sentencias": f_sala_primera_chatgpt_inteligencia_artificial_sentencias,
   "por-que-y-para-que-contencioso-administrativo": f_por_que_y_para_que_contencioso_administrativo,
   "proceso-de-lesividad-costa-rica": f_proceso_de_lesividad_costa_rica,
   "proceso-de-puro-derecho-contencioso-administrativo": f_proceso_de_puro_derecho_contencioso_administrativo,

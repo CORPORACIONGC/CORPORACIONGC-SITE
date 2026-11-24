@@ -88,6 +88,7 @@ import { PrediosSanRamon, EtapasExpropiacionSanRamon } from "@/components/articl
 import { UmbralesVigentes, EvolucionUmbrales, ProcedimientosUmbrales } from "@/components/article/UmbralesContratacion";
 import { CalculadoraUmbral } from "@/components/article/CalculadoraUmbral";
 import { CalendarioPresupuesto2027, AlcanceOpinionSala } from "@/components/article/PresupuestoSala2027";
+import { CircularIA, DeclaracionesIA, ComparadoIA } from "@/components/article/IASentencias";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -297,6 +298,9 @@ const ARTICLE_COMPONENTS = {
   CalculadoraUmbral,
   CalendarioPresupuesto2027,
   AlcanceOpinionSala,
+  CircularIA,
+  DeclaracionesIA,
+  ComparadoIA,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
