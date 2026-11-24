@@ -52,7 +52,7 @@ La jurisdicción no se limita a entes públicos. El CPCA también cubre conducta
 
 ## ¿Qué se puede pedir en la demanda?
 
-El CPCA superó el sistema anterior, que era predominantemente anulatorio (solo permitía pedir que se eliminara el acto ilegal). Hoy, las pretensiones que puede formular un demandante son amplias y están diseñadas para dar una tutela judicial completa.
+El CPCA superó el sistema anterior, que era predominantemente anulatorio (solo permitía pedir que se eliminara el acto ilegal). Hoy, las pretensiones que puede formular un demandante son amplias y están diseñadas para dar una tutela judicial completa. Las controversias patrimoniales de un contrato con el Estado pueden resolverse también por arbitraje, si se pactó; sus reglas se explican en la guía sobre el [arbitraje con el Estado](/articulos/arbitraje-con-el-estado-costa-rica).
 
 El artículo 42 del CPCA establece un catálogo amplio de pretensiones que van mucho más allá de la simple anulación del acto. El demandante puede solicitar que se declare la disconformidad de la conducta con el ordenamiento jurídico, que se anule total o parcialmente el acto, que se le reconozcan o restablezcan sus derechos, que se condene a la Administración a una prestación específica (de hacer, no hacer o dar), y que se le indemnicen los daños y perjuicios causados. El alcance concreto de las pretensiones depende de cada caso y de la estrategia procesal que se defina con el abogado.
 

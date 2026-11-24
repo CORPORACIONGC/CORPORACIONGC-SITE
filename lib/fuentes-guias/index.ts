@@ -5,6 +5,7 @@ import { fuentes as f_accion_de_inconstitucionalidad_costa_rica } from "./accion
 import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de-espera";
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
 import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } from "./anular-adjudicacion-tribunal-contencioso-administrativo";
+import { fuentes as f_arbitraje_con_el_estado_costa_rica } from "./arbitraje-con-el-estado-costa-rica";
 import { fuentes as f_cierre_colectivo_poder_judicial_2026_2027_plazos } from "./cierre-colectivo-poder-judicial-2026-2027-plazos";
 import { fuentes as f_cierre_ministerio_gobernacion_ministerio_vivienda_leyes_10983_10981 } from "./cierre-ministerio-gobernacion-ministerio-vivienda-leyes-10983-10981";
 import { fuentes as f_clausura_municipal_negocio_licencia_comercial_costa_rica } from "./clausura-municipal-negocio-licencia-comercial-costa-rica";
@@ -59,6 +60,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "amparo-ccss-lista-de-espera": f_amparo_ccss_lista_de_espera,
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
   "anular-adjudicacion-tribunal-contencioso-administrativo": f_anular_adjudicacion_tribunal_contencioso_administrativo,
+  "arbitraje-con-el-estado-costa-rica": f_arbitraje_con_el_estado_costa_rica,
   "cierre-colectivo-poder-judicial-2026-2027-plazos": f_cierre_colectivo_poder_judicial_2026_2027_plazos,
   "cierre-ministerio-gobernacion-ministerio-vivienda-leyes-10983-10981": f_cierre_ministerio_gobernacion_ministerio_vivienda_leyes_10983_10981,
   "clausura-municipal-negocio-licencia-comercial-costa-rica": f_clausura_municipal_negocio_licencia_comercial_costa_rica,
