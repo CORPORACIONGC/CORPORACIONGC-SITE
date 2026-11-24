@@ -5,6 +5,7 @@ import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
 import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } from "./anular-adjudicacion-tribunal-contencioso-administrativo";
 import { fuentes as f_cierre_colectivo_poder_judicial_2026_2027_plazos } from "./cierre-colectivo-poder-judicial-2026-2027-plazos";
+import { fuentes as f_clausura_municipal_negocio_licencia_comercial_costa_rica } from "./clausura-municipal-negocio-licencia-comercial-costa-rica";
 import { fuentes as f_como_demandar_al_estado_costa_rica } from "./como-demandar-al-estado-costa-rica";
 import { fuentes as f_compra_publica_innovadora_costa_rica } from "./compra-publica-innovadora-costa-rica";
 import { fuentes as f_costa_rica_vasp_registration_sugef } from "./costa-rica-vasp-registration-sugef";
@@ -15,6 +16,7 @@ import { fuentes as f_derecho_de_peticion_costa_rica } from "./derecho-de-petici
 import { fuentes as f_despido_funcionario_publico_costa_rica } from "./despido-funcionario-publico-costa-rica";
 import { fuentes as f_expropiacion_costa_rica_derechos } from "./expropiacion-costa-rica-derechos";
 import { fuentes as f_expropiaciones_corredor_san_jose_san_ramon } from "./expropiaciones-corredor-san-jose-san-ramon";
+import { fuentes as f_grupo_economico_consorcio_licitacion_costa_rica } from "./grupo-economico-consorcio-licitacion-costa-rica";
 import { fuentes as f_impugnar_avaluo_municipal_bienes_inmuebles } from "./impugnar-avaluo-municipal-bienes-inmuebles";
 import { fuentes as f_juzgado_contencioso_administrativo_tribunal_apelacion_costa_rica } from "./juzgado-contencioso-administrativo-tribunal-apelacion-costa-rica";
 import { fuentes as f_ley_10554_acceso_informacion_publica } from "./ley-10554-acceso-informacion-publica";
@@ -26,6 +28,7 @@ import { fuentes as f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito } fr
 import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./ley-general-administracion-publica-costa-rica";
 import { fuentes as f_licitacion_corredor_vial_san_jose_san_ramon } from "./licitacion-corredor-vial-san-jose-san-ramon";
 import { fuentes as f_negocio_propiedad_expropiada_costa_rica } from "./negocio-propiedad-expropiada-costa-rica";
+import { fuentes as f_perdida_de_chance_responsabilidad_del_estado_costa_rica } from "./perdida-de-chance-responsabilidad-del-estado-costa-rica";
 import { fuentes as f_plan_regulador_santa_ana_2026 } from "./plan-regulador-santa-ana-2026";
 import { fuentes as f_por_que_y_para_que_contencioso_administrativo } from "./por-que-y-para-que-contencioso-administrativo";
 import { fuentes as f_presupuesto_2027_costa_rica_sala_constitucional } from "./presupuesto-2027-costa-rica-sala-constitucional";
@@ -51,6 +54,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
   "anular-adjudicacion-tribunal-contencioso-administrativo": f_anular_adjudicacion_tribunal_contencioso_administrativo,
   "cierre-colectivo-poder-judicial-2026-2027-plazos": f_cierre_colectivo_poder_judicial_2026_2027_plazos,
+  "clausura-municipal-negocio-licencia-comercial-costa-rica": f_clausura_municipal_negocio_licencia_comercial_costa_rica,
   "como-demandar-al-estado-costa-rica": f_como_demandar_al_estado_costa_rica,
   "compra-publica-innovadora-costa-rica": f_compra_publica_innovadora_costa_rica,
   "costa-rica-vasp-registration-sugef": f_costa_rica_vasp_registration_sugef,
@@ -61,6 +65,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "despido-funcionario-publico-costa-rica": f_despido_funcionario_publico_costa_rica,
   "expropiacion-costa-rica-derechos": f_expropiacion_costa_rica_derechos,
   "expropiaciones-corredor-san-jose-san-ramon": f_expropiaciones_corredor_san_jose_san_ramon,
+  "grupo-economico-consorcio-licitacion-costa-rica": f_grupo_economico_consorcio_licitacion_costa_rica,
   "impugnar-avaluo-municipal-bienes-inmuebles": f_impugnar_avaluo_municipal_bienes_inmuebles,
   "juzgado-contencioso-administrativo-tribunal-apelacion-costa-rica": f_juzgado_contencioso_administrativo_tribunal_apelacion_costa_rica,
   "ley-10554-acceso-informacion-publica": f_ley_10554_acceso_informacion_publica,
@@ -72,6 +77,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "ley-general-administracion-publica-costa-rica": f_ley_general_administracion_publica_costa_rica,
   "licitacion-corredor-vial-san-jose-san-ramon": f_licitacion_corredor_vial_san_jose_san_ramon,
   "negocio-propiedad-expropiada-costa-rica": f_negocio_propiedad_expropiada_costa_rica,
+  "perdida-de-chance-responsabilidad-del-estado-costa-rica": f_perdida_de_chance_responsabilidad_del_estado_costa_rica,
   "plan-regulador-santa-ana-2026": f_plan_regulador_santa_ana_2026,
   "por-que-y-para-que-contencioso-administrativo": f_por_que_y_para_que_contencioso_administrativo,
   "presupuesto-2027-costa-rica-sala-constitucional": f_presupuesto_2027_costa_rica_sala_constitucional,
