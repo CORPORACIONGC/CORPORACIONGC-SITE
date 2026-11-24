@@ -5,6 +5,11 @@
 import { FUENTES_GUIAS } from "@/lib/fuentes-guias";
 import type { Criterio, Fuente } from "@/lib/fuentes-guias/tipos";
 
+/* Lo entrecomillado va en cursiva, como en el texto de las guías. */
+function conCursivas(t: string): React.ReactNode {
+  return t.split(/(«[^»]+»)/g).map((parte, i) => (parte.startsWith("«") ? <em key={i}>{parte}</em> : parte));
+}
+
 const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 
 function Grupo({ titulo, items }: { titulo: string; items?: Fuente[] }) {
@@ -25,7 +30,7 @@ function Grupo({ titulo, items }: { titulo: string; items?: Fuente[] }) {
                   f.titulo
                 )}
               </b>
-              <span className="gc-juris-org">{f.detalle}</span>
+              <span className="gc-juris-org">{conCursivas(f.detalle)}</span>
             </span>
           </li>
         ))}
@@ -53,7 +58,7 @@ function Resoluciones({ titulo, items }: { titulo: string; items?: Criterio[] })
             </span>
             <span className="gc-juris-criterio">
               <span className="gc-juris-tema">{c.tema}</span>
-              {c.criterio}
+              {conCursivas(c.criterio)}
               {c.gc && <span className="gc-juris-redacta">Redactó el magistrado González Camacho.</span>}
             </span>
           </li>

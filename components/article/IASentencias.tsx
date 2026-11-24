@@ -27,6 +27,11 @@ function FigSource({ children }: { children: React.ReactNode }) {
   );
 }
 
+/* Lo entrecomillado va en cursiva, como en el texto de las guías. */
+function conCursivas(t: string): React.ReactNode {
+  return t.split(/(«[^»]+»)/g).map((parte, i) => (parte.startsWith("«") ? <em key={i}>{parte}</em> : parte));
+}
+
 /* ── Figura 1. Qué permite, exige y prohíbe la circular 31-2026 ───────── */
 
 const CIRCULAR: { tema: string; regla: string; lineamiento: string }[] = [
@@ -62,7 +67,7 @@ export function CircularIA() {
               {CIRCULAR.map((c) => (
                 <tr key={c.tema}>
                   <td className="gc-recurso">{c.tema}</td>
-                  <td data-label="Qué dispone">{c.regla}</td>
+                  <td data-label="Qué dispone">{conCursivas(c.regla)}</td>
                   <td data-label="Lineamiento">{c.lineamiento}</td>
                 </tr>
               ))}
@@ -114,7 +119,7 @@ export function DeclaracionesIA() {
                   <td className="gc-recurso">{d.tribunal}</td>
                   <td data-label="Resoluciones con constancia">{d.votos}</td>
                   <td data-label="Herramienta declarada">{d.herramienta}</td>
-                  <td data-label="Uso declarado">{d.uso}</td>
+                  <td data-label="Uso declarado">{conCursivas(d.uso)}</td>
                 </tr>
               ))}
             </tbody>
@@ -130,14 +135,14 @@ export function DeclaracionesIA() {
 
 /* ── Figura 3. El marco comparado ─────────────────────────────────────── */
 
-const COMPARADO: { donde: string; norma: string; declarar: string; anulacion: string }[] = [
-  { donde: "Costa Rica", norma: "Circular 31-2026 del Consejo Superior (2026)", declarar: "Obligatorio: herramienta, modelo, fecha y uso", anulacion: "Sin precedente que anule una sentencia por el uso de IA" },
-  { donde: "Colombia", norma: "Corte Constitucional, T-323 de 2024; Acuerdo PCSJA24-12243 (2024)", declarar: "Obligatorio, con herramienta, fecha e instrucciones usadas", anulacion: "La T-323 declaró un uso indebido por falta de transparencia y no anuló el fallo" },
-  { donde: "Unión Europea", norma: "Reglamento de IA 2024/1689; Reglamento 2026/1744", declarar: "La IA para la justicia es de alto riesgo; las obligaciones se aplazaron al 2 de diciembre de 2027", anulacion: "—" },
-  { donde: "España", norma: "CGPJ, Instrucción 2/2026", declarar: "Solo herramientas institucionales; nunca datos judiciales en herramientas externas", anulacion: "El incumplimiento puede acarrear responsabilidad disciplinaria" },
-  { donde: "Brasil", norma: "CNJ, Resolución 615/2025", declarar: "A criterio del juez; el sistema del tribunal registra el uso", anulacion: "Prohíbe usar la IA como instrumento autónomo de decisión" },
-  { donde: "Reino Unido", norma: "Guía judicial sobre IA (octubre de 2025)", declarar: "No se exige en general; el juez responde personalmente de lo que firma", anulacion: "—" },
-  { donde: "Argentina (Chubut)", norma: "Superior Tribunal de Justicia (marzo de 2026)", declarar: "—", anulacion: "Revocó la nulidad de una condena: se controla la fundamentación escrita, no la herramienta" },
+const COMPARADO: { donde: string; norma: string; href: string; declarar: string; anulacion: string }[] = [
+  { donde: "Costa Rica", norma: "Circular 31-2026 del Consejo Superior (2026)", href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=106387&param2=149838&param3=1", declarar: "Obligatorio: herramienta, modelo, fecha y uso", anulacion: "Sin precedente que anule una sentencia por el uso de IA" },
+  { donde: "Colombia", norma: "Corte Constitucional, T-323 de 2024; Acuerdo PCSJA24-12243 (2024)", href: "https://www.corteconstitucional.gov.co/relatoria/2024/T-323-24.htm", declarar: "Obligatorio, con herramienta, fecha e instrucciones usadas", anulacion: "La T-323 declaró un uso indebido por falta de transparencia y no anuló el fallo" },
+  { donde: "Unión Europea", norma: "Reglamento de IA 2024/1689; Reglamento 2026/1744", href: "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32024R1689", declarar: "La IA para la justicia es de alto riesgo; las obligaciones se aplazaron al 2 de diciembre de 2027", anulacion: "—" },
+  { donde: "España", norma: "CGPJ, Instrucción 2/2026", href: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205", declarar: "Solo herramientas institucionales; nunca datos judiciales en herramientas externas", anulacion: "El incumplimiento puede acarrear responsabilidad disciplinaria" },
+  { donde: "Brasil", norma: "CNJ, Resolución 615/2025", href: "https://atos.cnj.jus.br/atos/detalhar/6001", declarar: "A criterio del juez; el sistema del tribunal registra el uso", anulacion: "Prohíbe usar la IA como instrumento autónomo de decisión" },
+  { donde: "Reino Unido", norma: "Guía judicial sobre IA (octubre de 2025)", href: "https://www.judiciary.uk/guidance-and-resources/artificial-intelligence-ai-judicial-guidance-october-2025/", declarar: "No se exige en general; el juez responde personalmente de lo que firma", anulacion: "—" },
+  { donde: "Argentina (Chubut)", norma: "Superior Tribunal de Justicia (marzo de 2026)", href: "https://www.pensamientopenal.com.ar/index.php/fallos/91880-superior-tribunal-justicia-chubut-incidencia-ia-resoluciones-judiciales", declarar: "—", anulacion: "Revocó la nulidad de una condena: se controla la fundamentación escrita, no la herramienta" },
 ];
 
 export function ComparadoIA() {
@@ -164,7 +169,11 @@ export function ComparadoIA() {
               {COMPARADO.map((c) => (
                 <tr key={c.donde}>
                   <td className="gc-recurso">{c.donde}</td>
-                  <td data-label="Norma o precedente">{c.norma}</td>
+                  <td data-label="Norma o precedente">
+                    <a href={c.href} target="_blank" rel="noopener noreferrer">
+                      {c.norma}
+                    </a>
+                  </td>
                   <td data-label="Declarar el uso">{c.declarar}</td>
                   <td data-label="Efecto sobre la resolución">{c.anulacion}</td>
                 </tr>
