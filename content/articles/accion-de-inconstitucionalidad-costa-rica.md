@@ -163,7 +163,7 @@ En 2010 el expediente 17.743 propuso suprimir la acción por intereses difusos y
 
 El [recurso de amparo](/articulos/recurso-amparo-costa-rica) protege a una persona frente a un acto, una omisión o una amenaza concreta contra sus derechos fundamentales, y la Sala ordena restablecerlos. La acción ataca la norma misma y, si prospera, la elimina para todos. Las dos vías se tocan: el artículo 73 deja la acción contra actos subjetivos para los casos que no admiten amparo ni hábeas corpus, y un amparo pendiente puede servir de asunto previo de una acción cuando la norma impugnada decide su resultado.
 
-La **consulta de constitucionalidad** es otro instrumento. La consulta legislativa (artículos 96 a 101) se hace sobre proyectos de ley antes de su aprobación definitiva (un ejemplo reciente es la del [presupuesto 2027](/articulos/presupuesto-2027-costa-rica-sala-constitucional), que la Sala recibió con el plazo constitucional del 30 de noviembre encima), y la consulta judicial (artículos 102 a 108) la formula un juez que tiene dudas sobre la constitucionalidad de una norma que debe aplicar.
+La **consulta de constitucionalidad** es otro instrumento. La consulta legislativa (artículos 96 a 101) se hace sobre proyectos de ley antes de su aprobación definitiva (ejemplos recientes son la del [presupuesto 2027](/articulos/presupuesto-2027-costa-rica-sala-constitucional), que la Sala recibió con el plazo constitucional del 30 de noviembre encima, y la del [proyecto de ley de asociaciones público-privadas](/articulos/ley-alianzas-publico-privadas-sala-constitucional)), y la consulta judicial (artículos 102 a 108) la formula un juez que tiene dudas sobre la constitucionalidad de una norma que debe aplicar.
 
 ---
 

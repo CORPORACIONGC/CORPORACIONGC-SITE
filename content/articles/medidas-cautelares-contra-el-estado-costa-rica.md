@@ -27,7 +27,7 @@ faq:
 
 Las medidas cautelares son las órdenes que el juez contencioso administrativo dicta antes de la sentencia para proteger, de forma provisional, el objeto del proceso y la efectividad del fallo. El [Código Procesal Contencioso Administrativo](/articulos/que-es-el-cpca-costa-rica#art-19) (Ley 8508) las regula en sus artículos 19 a 30 y permite pedirlas en tres momentos: antes de iniciar el proceso, durante su trámite y en la fase de ejecución de la sentencia (artículo 19).
 
-Su razón de ser es el tiempo. Mientras el [proceso contencioso administrativo](/articulos/como-demandar-al-estado-costa-rica#el-proceso-contencioso-administrativo-paso-a-paso) avanza, la conducta impugnada conserva su eficacia: la sanción se ejecuta, la obra continúa, la licencia se cancela, el cobro se materializa. La tutela cautelar impide que la duración del litigio vacíe de contenido la sentencia que lo resuelva.
+Su razón de ser es el tiempo. Mientras el [proceso contencioso administrativo](/articulos/como-demandar-al-estado-costa-rica#el-proceso-contencioso-administrativo-paso-a-paso) avanza, la conducta impugnada conserva su eficacia: la sanción se ejecuta, la obra continúa, la licencia se cancela, el cobro se materializa. La tutela cautelar impide que la duración del litigio vacíe de contenido la sentencia que lo resuelva. El proceso del que forman parte, con su finalidad y sus etapas, se explica en la guía sobre [qué es el contencioso administrativo](/articulos/por-que-y-para-que-contencioso-administrativo).
 
 Esta guía recorre el régimen completo: el contenido de la medida, sus requisitos, la medida anterior a la demanda, la medida provisionalísima, la que se adopta sin audiencia, el trámite y su duración.
 

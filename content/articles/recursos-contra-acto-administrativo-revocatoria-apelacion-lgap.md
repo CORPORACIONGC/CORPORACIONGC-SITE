@@ -10,7 +10,7 @@ author: "Dr. Óscar Eduardo González Camacho"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
-seoTitle: "Recurso de revocatoria y apelación en subsidio: plazos LGAP"
+seoTitle: "Recurso de revocatoria y apelación en subsidio: plazos"
 seoDescription: "Contra el acto final caben revocatoria y apelación en subsidio en 3 días hábiles (art. 346 LGAP). Cómo se cuenta el plazo, ante quién y cuándo ir al juez."
 faq:
   - question: "¿Qué recursos existen contra un acto administrativo en Costa Rica?"

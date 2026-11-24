@@ -11,7 +11,7 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Traslado de Cargos: Qué Hacer y Plazos (Guía 2026)"
+seoTitle: "Traslado de cargos: qué hacer y en qué plazo responder"
 seoDescription: "¿Le llegó un traslado de cargos en Costa Rica? Qué significa, qué debe contener para ser válido y qué hacer con los plazos corriendo. Guía de defensa (LGAP)."
 faq:
   - question: "¿Qué es un traslado de cargos?"

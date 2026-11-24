@@ -29,6 +29,20 @@ faq:
 
 Al recibir una notificación de declaratoria de interés público sobre su propiedad, es normal sentir incertidumbre y preocupación. Sin embargo, una expropiación en Costa Rica no significa que usted pierde el control de su situación, pues la ley le otorga derechos concretos que puede ejercer desde este momento. En esta guía se explica, paso a paso, qué significa esa notificación, cuáles son los derechos del expropiado en Costa Rica, qué plazos debe respetar y cómo proteger su patrimonio.
 
+## La Ley de Expropiaciones (Ley N.° 7495), en una ficha
+
+La expropiación en Costa Rica se rige por la **Ley de Expropiaciones, Ley N.° 7495**. El texto que hoy rige es el de su reforma integral de 2014, con los cambios posteriores que resume esta ficha.
+
+| Dato | Detalle |
+|---|---|
+| Número y nombre | Ley N.° 7495, Ley de Expropiaciones |
+| Fecha de la ley | 3 de mayo de 1995 |
+| Texto vigente | Reforma integral de la Ley N.° 9286, de 11 de noviembre de 2014, publicada en La Gaceta N.° 24 del 4 de febrero de 2015 |
+| Última reforma legal | Ley N.° 9462, de 11 de julio de 2017, que modificó los artículos 18, 22, 25, 30, 32 y 57 |
+| Anulación parcial | La Sala Constitucional, en la resolución N.° 13705-2018, de 23 de agosto de 2018, anuló la reforma de 2014 en los artículos 40 a 45 y 47 por vicios en su trámite; esos artículos recobraron el texto de la Ley N.° 7757 (artículo 40) y del artículo 215 del Código Procesal Contencioso-Administrativo, y el 42 quedó derogado |
+| Estructura | Cinco capítulos y un transitorio: I, disposiciones generales (artículos 1 a 17); II, procedimiento administrativo, con la declaratoria de interés público y el avalúo (18 a 26); III, el proceso especial de expropiación ante el juzgado (27 a 48); IV, modalidades de indemnización, con la reubicación y la ocupación temporal (49 a 56); V, disposiciones finales, con las responsabilidades y la prescripción (57 a 61) |
+| Texto oficial | [Ley de Expropiaciones en el SINALEVI](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=24321&param2=119048&param3=1) |
+
 ## ¿Qué significa que le notifiquen una declaratoria de interés público?
 
 La **declaratoria de interés público** es el primer paso formal del **proceso de expropiación en Costa Rica**. Según el artículo 18 de la Ley de Expropiaciones (Ley N.° 7495, reformada por las leyes N.° 9286 y N.° 9462), para expropiar un bien es indispensable un acto motivado mediante el cual el bien se declare de interés público. Ese acto debe ser firmado por el ministro del ramo correspondiente (cuando se trata de un ministerio) o por el jerarca del ente expropiador cuando se trata de una entidad descentralizada (Universidades, Municipalidades, CCSS, ICE, INS y otros).

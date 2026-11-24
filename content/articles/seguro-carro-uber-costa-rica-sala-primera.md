@@ -39,7 +39,7 @@ Tres de esas sentencias son de 2026: dos del 19 de febrero y una del 30 de abril
 
 ## Cuatro casos, un mismo resultado
 
-La Sala Primera conoce el [recurso de casación](/areas/casacion-sala-primera) en materia civil. En estos cuatro asuntos, los asegurados recurrieron sentencias de los tribunales colegiados de primera instancia civil que habían rechazado sus demandas contra la aseguradora. Los casos siguieron un patrón parecido: una persona compra un carro con crédito prendario, el banco la incluye en una póliza colectiva de automóviles, el formulario de inclusión consigna uso particular o personal, el carro termina inscrito en Uber, ocurre un accidente y la aseguradora declina el reclamo.
+La Sala Primera conoce el [recurso de casación](/areas/casacion-sala-primera) en materia civil. En estos cuatro asuntos, los asegurados recurrieron sentencias de los tribunales colegiados de primera instancia civil que habían rechazado sus demandas contra la aseguradora. Los casos siguieron un patrón parecido: una persona compra un carro con crédito prendario, el banco la incluye en una póliza colectiva de automóviles, el formulario de inclusión consigna uso particular o personal, el carro termina inscrito en Uber, ocurre un accidente y la aseguradora declina el reclamo. La misma Sala ha resuelto los reclamos de clientes contra los bancos por fraudes electrónicos, una materia que desde 2026 rige la [Ley 10889](/articulos/ley-10889-fraude-bancario-costa-rica).
 
 <CasosUberSeguros />
 

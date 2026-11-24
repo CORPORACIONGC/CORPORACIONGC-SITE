@@ -19,7 +19,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
     title: "Casación ante Sala Primera",
     description:
       "Recurso ante la Sala Primera dirigido por el ex-Magistrado de la propia Sala y coordinador de la comisión redactora del CPCA.",
-    seoTitle: "Recurso de Casación ante Sala Primera · Costa Rica",
+    seoTitle: "Abogados para recurso de casación ante la Sala Primera",
     seoDescription:
       "¿Perdió en el TCA y necesita casación? Recurso ante la Sala Primera, dirigido por un ex-Magistrado de esa Sala que coordinó la redacción del CPCA. Vicios de sentencia, técnica casacional, arts. 134-148.",
     ogShortTitle: "Recurso de Casación ante la {{em}}",
@@ -49,7 +49,7 @@ export const PRACTICE_AREA_PAGES: Record<string, PracticeAreaSeo> = {
     title: "Acciones de inconstitucionalidad",
     description:
       "Impugnación de leyes, decretos y reglamentos contrarios a la Constitución.",
-    seoTitle: "Acción de Inconstitucionalidad · Sala IV, Costa Rica",
+    seoTitle: "Abogados para acción de inconstitucionalidad en Costa Rica",
     seoDescription:
       "Impugnación de leyes, decretos y reglamentos contrarios a la Constitución ante la Sala Constitucional (Ley N.° 7135). Bufete dirigido por un exmagistrado.",
     ogShortTitle: "Acción de {{em}}",

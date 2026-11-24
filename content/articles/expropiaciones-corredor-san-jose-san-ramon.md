@@ -10,7 +10,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Expropiación San José–San Ramón: etapas y derechos"
-seoDescription: "Expropiaciones de la ruta San José–San Ramón: 503 predios pendientes, quién expropia, avalúo, cinco días para oponerse, desalojo, justo precio, reasentamiento."
+seoDescription: "Expropiaciones de la ruta San José–San Ramón: 503 predios pendientes, quién expropia, avalúo, 5 días para oponerse, desalojo, justo precio, reasentamiento."
 cta:
   titulo: "¿Su propiedad está en el trazado del corredor San José–San Ramón? Hable con especialistas"
   texto: "Corporación GC está especializada en derecho público y expropiaciones. Revisamos la declaratoria y la anotación sobre su finca, el avalúo y lo que debió incluir, la situación del remanente, del negocio o de los inquilinos, y lo acompañamos en la vía administrativa y en el proceso especial de expropiación. Escríbanos por WhatsApp para una primera valoración: el plazo para oponerse al avalúo es de cinco días hábiles."

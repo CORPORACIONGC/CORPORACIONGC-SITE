@@ -10,7 +10,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
 seoTitle: "Plan Regulador de Santa Ana 2026: qué cambió y cuándo rige"
-seoDescription: "El nuevo Plan Regulador de Santa Ana rige desde el 5 de octubre de 2026: siete reglamentos, zonas y alturas, permisos en trámite, uso de suelo e impugnación."
+seoDescription: "El Plan Regulador de Santa Ana rige desde el 5 de octubre de 2026: siete reglamentos, zonas y alturas, permisos en trámite, uso de suelo e impugnación."
 cta:
   titulo: "¿El nuevo plan cambió lo que puede hacer en su propiedad de Santa Ana? Hable con especialistas"
   texto: "Corporación GC está especializada en derecho público y urbanístico. Revisamos la zona y las restricciones que el plan le asigna a su finca, la situación de sus permisos, certificados y proyectos en trámite, y las vías para impugnar el plan o el acto que lo aplica. Escríbanos por WhatsApp para una primera valoración: el plazo para impugnar el plan de forma directa vence a inicios de octubre de 2027."

@@ -2789,6 +2789,10 @@ export const SENTENCIAS_DESTACADAS: SentenciaDestacada[] = [
     seoTitle: "Fraude bancario en Costa Rica: cuándo responde el banco",
     guias: [
       {
+        slug: "ley-10889-fraude-bancario-costa-rica",
+        motivo: "La Ley 10889 de 2026: el banco responde sin culpa, el reclamo paso a paso y lo que la Sala resolvió antes de la ley.",
+      },
+      {
         slug: "seguro-carro-uber-costa-rica-sala-primera",
         motivo: "La misma Sala Primera, frente a las aseguradoras: cuándo pueden negar la cobertura del carro que su dueño inscribió en Uber.",
       },

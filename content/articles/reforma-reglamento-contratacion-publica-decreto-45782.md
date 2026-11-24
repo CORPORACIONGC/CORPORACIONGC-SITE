@@ -44,6 +44,8 @@ La reforma cambia ese escenario en tres frentes:
 
 > **Qué hacer en la práctica.** Documente su estructura de costos **antes** de ofertar, no después. Si su estrategia comercial implica precios agresivos, prepare desde ya el expediente que los respalda: contratos con proveedores, economías de escala demostrables, registros contables. En el nuevo esquema, el precio se defiende **una sola vez y por escrito**.
 
+Firmado el contrato, el precio no queda congelado: en la obra pública, su equilibrio frente al alza de los costos se mantiene con el [reajuste de precios](/articulos/reajuste-precios-obra-publica-costa-rica).
+
 ---
 
 ## 2. Subsanación de ofertas: más oportunidades de salvarlas, pero plazos menos predecibles
