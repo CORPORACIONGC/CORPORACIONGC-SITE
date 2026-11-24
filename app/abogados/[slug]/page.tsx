@@ -387,17 +387,18 @@ export default async function AttorneyProfile({
         honorificPrefix: "Dr.",
         "@id": `${FIRM.url}/abogados/oscar-gonzalez#person`,
       },
-      description: "Evento conmemorativo de los 20 años del Código Procesal Contencioso Administrativo de Costa Rica. Mesa II: El futuro del proceso contencioso administrativo — Innovación y desafíos regionales. Capítulo presentado: «El por qué y para qué del contencioso administrativo» (Editorial Tirant lo Blanch, 2026).",
-      workPerformed: {
-        "@type": "ScholarlyArticle",
-        name: "El por qué y para qué del contencioso administrativo",
-        url: `${FIRM.url}/articulos/por-que-y-para-que-contencioso-administrativo`,
-        isPartOf: {
-          "@type": "Book",
-          name: "CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa",
-          isbn: "9791370214753",
-          publisher: { "@type": "Organization", name: "Editorial Tirant lo Blanch" },
-          url: "https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753",
+      description: "Evento conmemorativo de los 20 años del Código Procesal Contencioso Administrativo de Costa Rica. El Dr. Óscar Eduardo González Camacho fue el primer expositor de la Mesa II, «El futuro del proceso contencioso administrativo: innovación y desafíos regionales». En el mismo acto se presentó la obra «CPCA, 20 años después» (Editorial Tirant lo Blanch, 2026), que recoge su capítulo «El por qué y para qué del contencioso administrativo».",
+      workFeatured: {
+        "@type": "Book",
+        name: "CPCA, 20 años después: Perspectivas críticas sobre la justicia administrativa",
+        isbn: "9791370214753",
+        publisher: { "@type": "Organization", name: "Editorial Tirant lo Blanch" },
+        url: "https://editorial.tirant.com/cr/libro/cpca-20-anos-despues-perspectivas-criticas-sobre-la-justicia-administrativa-alex-rojas-ortega-9791370214753",
+        hasPart: {
+          "@type": "ScholarlyArticle",
+          name: "El por qué y para qué del contencioso administrativo",
+          author: { "@id": `${FIRM.url}/abogados/oscar-gonzalez#person` },
+          url: `${FIRM.url}/articulos/por-que-y-para-que-contencioso-administrativo`,
         },
       },
     };

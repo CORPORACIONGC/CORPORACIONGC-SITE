@@ -75,7 +75,7 @@ SUTEL, INS (Instituto Nacional de Seguros), Banco Mundial, CFIA, Colegio de Abog
 ## Eventos académicos
 
 - Global Summit Legal Hackers 2025 (23 de octubre de 2025, Universidad Javeriana, Bogotá): el Lic. Khevin Alberto Sánchez Zamora fue panelista en «IA en el Derecho: Más allá de la Eficiencia, la Urgencia de un Marco Ético».
-- CPCA 20 años: balance, transformaciones y desafíos de la justicia administrativa (25 de marzo de 2026, Colegio de Abogados y Abogadas de Costa Rica): el Dr. Óscar Eduardo González Camacho presentó «El por qué y para qué del contencioso administrativo» en la Mesa II.
+- CPCA 20 años: balance, transformaciones y desafíos de la justicia administrativa (25 de marzo de 2026, Colegio de Abogados y Abogadas de Costa Rica): el Dr. Óscar Eduardo González Camacho fue el primer expositor de la Mesa II, «El futuro del proceso contencioso administrativo: innovación y desafíos regionales». En el mismo acto se presentó la obra de Tirant lo Blanch que recoge su capítulo «El por qué y para qué del contencioso administrativo».
 
 ## Páginas principales
 

@@ -10,11 +10,19 @@ import { RunningHead } from "@/components/ui/RunningHead";
 const EVENT_VIDEO_ID = "NA4SYDhNtQ0";
 const EVENT_VIDEO_TITLE =
   "CPCA 20 Años — Mesa II: El futuro del proceso contencioso administrativo";
+/* Corregida el 24-11-2026 con la transcripción del video y el programa
+   oficial: el Director abrió la Mesa II; la obra de Tirant, que recoge su
+   capítulo, se presentó en un bloque aparte del mismo acto. */
 const EVENT_VIDEO_DESCRIPTION =
-  "Grabación oficial de la Mesa II del evento conmemorativo del CPCA 20 Años, en la que el Dr. Óscar Eduardo González Camacho presentó el capítulo «El por qué y para qué del contencioso administrativo» (Editorial Tirant lo Blanch, 2026).";
+  "Grabación oficial de la Mesa II, «El futuro del proceso contencioso administrativo: innovación y desafíos regionales», moderada por el Lic. Daniel Trejos Avilés. El Dr. Óscar Eduardo González Camacho fue el primer expositor, con la Licda. Godelieve López Salas, el Dr. Alex Rojas Ortega y la MSc. Eida Barrantes Román.";
+/* Tramo de su intervención en el video, en segundos. */
+const INTERVENCION: [number, number] = [100, 1570];
+/* Paráfrasis hecha sobre la transcripción completa del audio; sin citas. */
+const RESUMEN =
+  "El Dr. González Camacho enumera primero los ajustes que a su juicio requieren el Código Procesal Contencioso-Administrativo y la jurisdicción: la creación de un tribunal de casación y de tribunales contenciosos regionales, la especialización del tribunal por secciones, la resolución de ciertos asuntos por jueces unipersonales y la regulación de la apelación, la casación, el amparo de legalidad y la ejecución de actos firmes y favorables. Sostiene que los institutos de fondo del Código (legitimación, objeto, cautelares, oralidad y ejecución) siguen bien diseñados. Dedica el resto de su intervención a la formación de las personas juzgadoras. Reconoce factores externos, como las deficiencias de los litigantes, la carga de trabajo y decisiones administrativas de la Corte Plena que considera dañinas para la jurisdicción. Atribuye la baja proporción de fallos favorables a los administrados a una capacitación débil en derecho público, a la poca experiencia de algunos jueces, a su permeabilidad frente a presiones externas y a un conservadurismo favorable a la Administración, y aclara que no propone acoger toda demanda o cautelar. Afirma que el juez crea derecho, que el proceso no debe impedir dar la razón a quien la tiene y describe el perfil del juez cautelar; concluye que sin tutela cautelar efectiva la tutela judicial efectiva pierde sentido y el Estado de derecho queda en riesgo.";
 
 /* ── Lite YouTube embed — shows thumbnail, loads iframe on click ── */
-function LiteYouTube({ id, title }: { id: string; title: string }) {
+function LiteYouTube({ id, title, start }: { id: string; title: string; start?: number }) {
   const [active, setActive] = useState(false);
   const activate = useCallback(() => setActive(true), []);
 
@@ -23,7 +31,7 @@ function LiteYouTube({ id, title }: { id: string; title: string }) {
       <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
         <iframe
           className="absolute inset-0 w-full h-full"
-          src={`https://www.youtube.com/embed/${id}?autoplay=1`}
+          src={`https://www.youtube.com/embed/${id}?autoplay=1${start ? `&start=${start}` : ""}`}
           title={title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
@@ -82,7 +90,7 @@ export function OscarEventoDestacado() {
               <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden">
                 <Image
                   src="/images/oscar-cpca-podio.png"
-                  alt="Dr. Óscar Eduardo González Camacho — Ponencia en CPCA 20 Años, Colegio de Abogados"
+                  alt="Dr. Óscar Eduardo González Camacho en la Mesa II de CPCA 20 Años, Colegio de Abogados"
                   width={1200}
                   height={800}
                   className="w-full h-full object-cover object-[50%_20%]"
@@ -122,6 +130,9 @@ export function OscarEventoDestacado() {
                 {/* Article presented */}
                 <div className="mb-8 pl-4 relative">
                   <div className="absolute left-0 top-0 bottom-0 w-px bg-cream/15" />
+                  <p className="text-[11px] text-cream/65 mb-2 leading-relaxed">
+                    Su cap&iacute;tulo en la obra presentada esa noche:
+                  </p>
                   <p className="text-[13px] text-cream/65 leading-relaxed italic">
                     &ldquo;El por qu&eacute; y para qu&eacute; del contencioso administrativo&rdquo;
                   </p>
@@ -159,7 +170,7 @@ export function OscarEventoDestacado() {
         {/* Video recording of the event */}
         <AnimatedEntry delay={0.3}>
           <div className="mt-6 rounded-2xl bg-cream/[0.025] shadow-[0_8px_30px_-16px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.03)] overflow-hidden backdrop-blur-sm">
-            <LiteYouTube id={EVENT_VIDEO_ID} title={EVENT_VIDEO_TITLE} />
+            <LiteYouTube id={EVENT_VIDEO_ID} title={EVENT_VIDEO_TITLE} start={INTERVENCION[0]} />
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-2 mb-3">
                 <VideoCamera
@@ -177,6 +188,14 @@ export function OscarEventoDestacado() {
               <p className="text-[13px] text-cream/65 leading-relaxed">
                 {EVENT_VIDEO_DESCRIPTION}
               </p>
+              <details className="group mt-4 border-t border-cream/[0.06] pt-4">
+                <summary className="cursor-pointer list-none text-[13px] font-medium text-cream/85 hover:text-cream transition-colors [&::-webkit-details-marker]:hidden">
+                  Resumen de su intervenci&oacute;n
+                  <span className="ml-1.5 font-normal text-cream/65">(1:40&ndash;26:10)</span>
+                  <span aria-hidden="true" className="ml-1.5 inline-block text-burgundy-light transition-transform group-open:rotate-90">&rsaquo;</span>
+                </summary>
+                <p className="mt-3 max-w-[75ch] text-sm text-cream/75 leading-relaxed">{RESUMEN}</p>
+              </details>
             </div>
           </div>
         </AnimatedEntry>
@@ -190,7 +209,7 @@ export function OscarEventoDestacado() {
             "@context": "https://schema.org",
             "@type": "VideoObject",
             name: EVENT_VIDEO_TITLE,
-            description: EVENT_VIDEO_DESCRIPTION,
+            description: `${EVENT_VIDEO_DESCRIPTION} ${RESUMEN}`,
             thumbnailUrl: `https://i.ytimg.com/vi/${EVENT_VIDEO_ID}/hqdefault.jpg`,
             uploadDate: "2026-03-25T08:00:00-06:00",
             embedUrl: `https://www.youtube.com/embed/${EVENT_VIDEO_ID}`,
@@ -204,6 +223,13 @@ export function OscarEventoDestacado() {
               name: "Óscar Eduardo González Camacho",
               honorificPrefix: "Dr.",
               "@id": "https://www.corporaciongc.com/abogados/oscar-gonzalez#person",
+            },
+            hasPart: {
+              "@type": "Clip",
+              name: "Intervención del Dr. Óscar Eduardo González Camacho",
+              startOffset: INTERVENCION[0],
+              endOffset: INTERVENCION[1],
+              url: `https://www.youtube.com/watch?v=${EVENT_VIDEO_ID}&t=${INTERVENCION[0]}`,
             },
           }),
         }}
