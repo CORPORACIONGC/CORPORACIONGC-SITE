@@ -46,5 +46,7 @@ for (const nombre of fs.readdirSync(DIR).filter((f) => f.endsWith(".md")).sort()
   articulos[slug] = guardada && guardada > fecha ? guardada : fecha;
 }
 
-fs.writeFileSync(SALIDA, JSON.stringify({ articulos }, null, 2) + "\n");
+/* Solo «articulos» sale del historial; lo demás (cambios de plantilla,
+   áreas y páginas institucionales) se anota a mano y se conserva. */
+fs.writeFileSync(SALIDA, JSON.stringify({ ...previo, articulos }, null, 2) + "\n");
 console.log(`fechas-modificacion: ${Object.keys(articulos).length} artículos${bordes.size ? " (clon corto)" : ""}`);

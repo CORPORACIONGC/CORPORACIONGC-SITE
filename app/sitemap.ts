@@ -4,6 +4,7 @@ import { getAllSentencias } from "@/lib/jurisprudencia";
 import { TEAM, PRACTICE_AREA_PAGES } from "@/lib/constants";
 import { ASISTENTES } from "@/lib/asistentes";
 import { fechaPerfil } from "@/lib/fechas";
+import fechas from "@/lib/fechas-modificacion.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.corporaciongc.com";
@@ -45,15 +46,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       : {}),
   }));
 
-  /* Fecha de la última revisión de las páginas de área. Se actualiza a mano
-     cuando se reescriben sus textos: el 20-09-2026 se rehicieron los títulos
-     y las descripciones de las treinta y dos. */
-  const areasLastUpdated = new Date("2026-09-20");
-  /* Las áreas reescritas después de esa revisión general. */
-  const AREAS_REVISADAS: Record<string, string> = {
-    "derecho-administrativo": "2026-10-25",
-    "casacion-sala-primera": "2026-10-25",
-  };
+  /* Áreas y páginas institucionales: la fecha de su última revisión se anota
+     a mano en lib/fechas-modificacion.json, en el mismo commit del cambio.
+     «*» vale para las áreas sin fecha propia. */
+  const AREAS: Record<string, string> = fechas.areas;
+  const PAGINAS: Record<string, string> = fechas.paginas;
+  const fechaArea = (slug: string) => new Date(AREAS[slug] ?? AREAS["*"]);
+  const fechaPagina = (ruta: string, respaldo: string) => new Date(PAGINAS[ruta] ?? respaldo);
 
   const teamUrls = TEAM.map((member) => ({
     url: `${baseUrl}/abogados/${member.slug}`,
@@ -84,7 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/contacto`,
-      lastModified: new Date("2026-05-20"),
+      lastModified: fechaPagina("/contacto", "2026-05-20"),
       changeFrequency: "yearly",
       priority: 0.9,
     },
@@ -96,13 +95,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/politica-editorial`,
-      lastModified: new Date("2026-10-27"),
+      lastModified: fechaPagina("/politica-editorial", "2026-10-27"),
       changeFrequency: "yearly",
       priority: 0.4,
     },
     {
       url: `${baseUrl}/sobre-nosotros`,
-      lastModified: new Date("2026-03-28"),
+      lastModified: fechaPagina("/sobre-nosotros", "2026-03-28"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
@@ -110,7 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
        deba competir en la Búsqueda y se llevaba autoridad interna. */
     {
       url: `${baseUrl}/areas`,
-      lastModified: areasLastUpdated,
+      lastModified: fechaPagina("/areas", AREAS["*"]),
       changeFrequency: "monthly",
       priority: 0.8,
     },
@@ -120,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
        jerarquizar el descubrimiento. */
     ...PRACTICE_AREA_PAGES.map((area) => ({
       url: `${baseUrl}/areas/${area.slug}`,
-      lastModified: AREAS_REVISADAS[area.slug] ? new Date(AREAS_REVISADAS[area.slug]) : areasLastUpdated,
+      lastModified: fechaArea(area.slug),
       changeFrequency: "monthly" as const,
       priority:
         area.priority === "primary"

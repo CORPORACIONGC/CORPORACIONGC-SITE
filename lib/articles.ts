@@ -29,8 +29,8 @@ export type ArticleMeta = {
    *  revisan cada trimestre (scripts/revision-trimestral.mjs). */
   updated?: string;
   /** Fecha del último cambio de cualquier tipo: la más reciente entre
-   *  `updated` y el último commit del archivo (lib/fechas-modificacion.json,
-   *  que arma el prebuild). Solo alimenta el `lastmod` del sitemap y el aviso
+   *  `updated`, el último commit del archivo (lib/fechas-modificacion.json,
+   *  que arma el prebuild) y el último cambio de plantilla anotado allí. Solo alimenta el `lastmod` del sitemap y el aviso
    *  a IndexNow, que sirven para que los buscadores vuelvan a rastrear. */
   cambiado?: string;
   /** Áreas de práctica a las que pertenece la guía. La primera es su área
@@ -72,6 +72,19 @@ export type Article = ArticleMeta & {
 
 const FECHAS_GIT: Record<string, string> = fechas.articulos;
 
+type CambioDePlantilla = { fecha: string; articulos: "todos" | string[]; excepto?: string[] };
+
+/** La fecha del último cambio de plantilla que alteró el HTML o el marcado
+ *  del artículo sin tocar su Markdown; se anota a mano en
+ *  lib/fechas-modificacion.json, en el mismo commit del cambio. */
+function fechaPlantilla(slug: string): string | undefined {
+  return (fechas.plantilla as CambioDePlantilla[])
+    .filter((c) => (c.articulos === "todos" ? !c.excepto?.includes(slug) : c.articulos.includes(slug)))
+    .map((c) => c.fecha)
+    .sort()
+    .pop();
+}
+
 /** La fecha, solo si es posterior a la de publicación. */
 function posterior(fecha: string | undefined, publicado: string): string | undefined {
   return fecha && fecha > publicado ? fecha : undefined;
@@ -103,7 +116,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     cta: data.cta as { titulo?: string; texto?: string } | undefined,
     updated: posterior(data.updated as string | undefined, data.date as string),
     cambiado: posterior(
-      [data.updated as string | undefined, FECHAS_GIT[slug]].filter(Boolean).sort().pop(),
+      [data.updated as string | undefined, FECHAS_GIT[slug], fechaPlantilla(slug)].filter(Boolean).sort().pop(),
       data.date as string,
     ),
     areas: (data.areas as string[]) || [],
