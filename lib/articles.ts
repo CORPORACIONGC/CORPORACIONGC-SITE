@@ -44,6 +44,8 @@ export type ArticleMeta = {
   sourceReference?: string;
   sourceUrl?: string;
   seoTitle?: string;
+  /** Título para las tarjetas al compartir (LinkedIn, WhatsApp). Si falta, se usa seoTitle. */
+  ogTitle?: string;
   seoDescription?: string;
   /** En las guías que publican una norma completa, el rótulo del botón
       que lleva al articulado desde el encabezado, y los artículos más
@@ -91,6 +93,7 @@ function extractMeta(data: Record<string, unknown>, slug: string): ArticleMeta {
     sourceReference: data.sourceReference as string | undefined,
     sourceUrl: data.sourceUrl as string | undefined,
     seoTitle: data.seoTitle as string | undefined,
+    ogTitle: data.ogTitle as string | undefined,
     seoDescription: data.seoDescription as string | undefined,
     articulado: data.articulado as string | undefined,
     articuladoAccesos: data.articuladoAccesos as string | undefined,

@@ -352,6 +352,7 @@ export async function generateMetadata({
           date: article.date,
           seoTitle: article.seoTitle,
           seoDescription: article.seoDescription,
+          ogTitle: article.ogTitle,
         }
       : null,
     slug

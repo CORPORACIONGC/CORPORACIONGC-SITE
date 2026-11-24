@@ -330,6 +330,8 @@ export function buildArticleMetadata(
     updated?: string;
     seoTitle?: string;
     seoDescription?: string;
+    /** Título propio para las tarjetas al compartir; va sin sufijo de marca. */
+    ogTitle?: string;
   } | null,
   slug: string
 ): Metadata {
@@ -348,7 +350,7 @@ export function buildArticleMetadata(
     title: withSuffix.length > 60 ? { absolute: title } : title,
     description,
     openGraph: og({
-      title: `${title} · Corporación GC`,
+      title: article.ogTitle ?? `${title} · Corporación GC`,
       description,
       type: "article",
       url: `/articulos/${slug}`,
@@ -357,6 +359,6 @@ export function buildArticleMetadata(
       authors: [article.author],
       section: "Derecho Público",
     }),
-    twitter: tw({ title, description }),
+    twitter: tw({ title: article.ogTitle ?? title, description }),
   };
 }

@@ -10,6 +10,7 @@ authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
 seoTitle: "Jueces y ChatGPT: la Sala Primera ya usa inteligencia artificial"
+ogTitle: "La Sala Primera ya redacta con inteligencia artificial: qué declaran sus sentencias"
 seoDescription: "La Sala Primera declara el uso de ChatGPT y Gemini en sus votos. Qué permite la circular 31-2026, qué debe declarar el juez y qué pasa con las citas inventadas."
 cta:
   titulo: "¿Su caso está en casación o le preocupa cómo se fundamentó un fallo? Hable con especialistas"
