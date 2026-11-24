@@ -10,8 +10,13 @@ export const fuentes: FuentesDeGuia = {
   normas: [
     {
       titulo: "Decreto Ejecutivo N.° 45782-H-MIDEPLAN-MICITT",
-      detalle: "Reforma 31 artículos del Reglamento, entre ellos el 44 (razonabilidad del precio), 72 a 74 (PYMES y cooperativas), 97 (desempate), 106 (precio inaceptable), 133 (subcontratación), 134 y 135 (subsanación) y 309 (materia consultiva). Alcance 62 a La Gaceta 95 del 26-05-2026",
+      detalle: "Reforma 31 artículos del Reglamento, entre ellos el 44 (razonabilidad del precio), 56 (estudio de mercado para criterios estratégicos), 72 a 74 (PYMES y cooperativas), 90 (contenido del pliego), 97 (desempate), 106 (precio inaceptable), 133 (subcontratación), 134 y 135 (subsanación) y 309 (materia consultiva); adiciona el art. 59 ter y deroga el Decreto 41438-H. Dado el 08-04-2026; Alcance 62 a La Gaceta 95 del 26-05-2026",
       href: "https://www.imprentanacional.go.cr/pub/2026/05/26/ALCA62_26_05_2026.pdf",
+    },
+    {
+      titulo: "Decreto Ejecutivo N.° 45782 en el SINALEVI",
+      detalle: "Texto del decreto; art. 5: rige desde su publicación, sin transitorios",
+      href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=107160&param2=151215&param3=1",
     },
     {
       titulo: "Reglamento a la Ley General de Contratación Pública",
@@ -20,12 +25,13 @@ export const fuentes: FuentesDeGuia = {
     },
     {
       titulo: "Ley General de Contratación Pública",
-      detalle: "Ley N.° 9986, arts. 34 (estudio de mercado), 40 (puntaje adicional a pymes y cooperativas en caso de empate), 49 (subcontratación hasta el 50 %), 50 (subsanación) y 129 (Dirección de Contratación Pública). Alcance 109 a La Gaceta 103 del 31-05-2021",
-      href: "https://www.imprentanacional.go.cr/pub/2021/05/31/ALCA109_31_05_2021.pdf",
+      detalle: "Ley N.° 9986, arts. 34 (estudio de mercado), 40 (puntaje adicional a pymes y cooperativas en caso de empate), 49 (subcontratación hasta el 50 %), 50 (subsanación) y 129 (Dirección de Contratación Pública). Texto vigente, versión 15 del SINALEVI",
+      href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=94469&param2=152662&param3=1",
     },
     {
       titulo: "Ley N.° 10659, Reforma Ley General de Contratación Pública",
       detalle: "10-03-2025: equipara a las cooperativas con características PYME (considerando 15 del Decreto 45782)",
+      href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=104197&param2=145497&param3=1",
     },
   ],
   jurisprudencia: [],
@@ -120,6 +126,15 @@ export const fuentes: FuentesDeGuia = {
         "En la objeción a un pliego cuyo estudio de mercado se hizo con el art. 44 reformado, rechaza de plano el reclamo contra el precio de referencia: impugnarlo exige aportar un estudio de mercado propio o prueba idónea, y la mera inconformidad no basta.",
       href: CGR(2026, "2026018471"),
     },
+    {
+      numero: "R-DCP-SICOP-01938-2026",
+      organo: DCP,
+      fecha: "26-10-2026",
+      tema: "Prevención clara",
+      criterio:
+        "Anula la adjudicación de una partida de una compra del INA y ordena readjudicarla a la apelante, excluida por defectos que la Administración no le precisó en la prevención.",
+      href: CGR(2026, "2026018773"),
+    },
   ],
-  pie: "Textos normativos: La Gaceta (Imprenta Nacional) y SINALEVI. Resoluciones y oficios: cgrfiles.cgr.go.cr, fecha de la resolución en SICOP. Todas aplican la Ley 9986 y su Reglamento. Cotejo al 26 de octubre de 2026.",
+  pie: "Textos normativos: La Gaceta (Imprenta Nacional) y SINALEVI; el texto anterior de cada artículo, cotejado con la versión del Reglamento de marzo de 2026. Resoluciones y oficios: cgrfiles.cgr.go.cr, fecha de la resolución en SICOP. Todas aplican la Ley 9986 y su Reglamento. Corte: 24 de noviembre de 2026.",
 };
