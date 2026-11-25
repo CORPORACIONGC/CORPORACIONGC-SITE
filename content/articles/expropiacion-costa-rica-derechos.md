@@ -1,7 +1,7 @@
 ---
 title: "Me notificaron una expropiación en Costa Rica: ¿qué debo hacer y cuáles son mis derechos?"
 date: "2026-04-20"
-updated: "2026-10-27"
+updated: "2026-11-25"
 excerpt: "Cinco días hábiles. Ese es el plazo para oponerse al avalúo administrativo sin perder el derecho a discutir el justo precio. Esta guía explica, con base en la Ley de Expropiaciones, qué significa una declaratoria de interés público, qué puede exigir el propietario y cómo se compone la indemnización que le corresponde."
 tags: ["Guía práctica", "Expropiación", "Derecho Expropiatorio", "Ley de Expropiaciones", "Derecho Público"]
 sentencias: ["indexacion-de-obligaciones-dinerarias"]
@@ -26,6 +26,8 @@ faq:
   - question: "¿Cuánto tiempo dura el proceso de expropiación en Costa Rica?"
     answer: "La ley establece plazos específicos: un mes para el avalúo administrativo (artículo 21), cinco días para la respuesta del propietario (artículo 25), un mes para el dictamen pericial en sede judicial (artículo 35) y quince días para la sentencia (artículo 39). En la práctica, el proceso puede extenderse varios meses o años dependiendo de la complejidad y las apelaciones."
 ---
+
+Quien recibe la notificación de una declaratoria de interés público sobre su propiedad tiene derecho a que el Estado le pague un justo precio antes de tomarla, y a discutir el avalúo administrativo: dispone de **cinco días hábiles** desde que se le notifica para manifestar su conformidad o disconformidad (artículo 25 de la Ley de Expropiaciones, Ley N.° 7495). Su oposición abre el proceso judicial, en el que un perito independiente revisa la valoración.
 
 Al recibir una notificación de declaratoria de interés público sobre su propiedad, es normal sentir incertidumbre y preocupación. Sin embargo, una expropiación en Costa Rica no significa que usted pierde el control de su situación, pues la ley le otorga derechos concretos que puede ejercer desde este momento. En esta guía se explica, paso a paso, qué significa esa notificación, cuáles son los derechos del expropiado en Costa Rica, qué plazos debe respetar y cómo proteger su patrimonio.
 

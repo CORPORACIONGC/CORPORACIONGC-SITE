@@ -5,7 +5,7 @@ excerpt: "Desde el 1 de noviembre de 2024 toda institución pública debe entreg
 tags: ["Acceso a la información pública", "Ley 10554", "Transparencia", "Recurso de amparo", "Sala Constitucional", "Artículo 30 de la Constitución", "Secreto de Estado"]
 areas: ["recursos-de-amparo", "derecho-administrativo"]
 type: "article"
-author: "Corporación GC"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"

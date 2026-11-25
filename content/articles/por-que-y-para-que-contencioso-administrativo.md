@@ -68,7 +68,7 @@ La Sala volvió sobre el artículo en 2010 y lo resumió en una fórmula que los
 
 ## La ley del contencioso administrativo: el CPCA
 
-La ley que regula el contencioso administrativo en Costa Rica es el **Código Procesal Contencioso-Administrativo**, Ley N.° 8508, de 28 de abril de 2006, que rige desde el 1 de enero de 2008 (artículo 222). Se le conoce por su sigla, CPCA, y su texto vigente está en [SINALEVI](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1) y, con buscador por artículo, en nuestra [guía del CPCA](/articulos/que-es-el-cpca-costa-rica).
+La ley que regula el contencioso administrativo en Costa Rica es el **Código Procesal Contencioso-Administrativo**, Ley N.° 8508, de 28 de abril de 2006, que rige desde el 1 de enero de 2008 (artículo 222). Se le conoce por su sigla, CPCA, y su texto vigente está en [SINALEVI](https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1), y sus artículos clave se comentan en nuestra [guía del CPCA](/articulos/que-es-el-cpca-costa-rica).
 
 El Código derogó la Ley Reguladora de la Jurisdicción Contencioso-Administrativa, N.° 3667, de 1966 (artículo 198). Esa ley antigua sigue aplicándose a los procesos que empezaron antes de 2008, en todos sus trámites y recursos (Transitorio IV). Para lo que el Código no regula se aplican los principios del Derecho público y procesal, y en la práctica el Código Procesal Civil de forma supletoria (artículo 220).
 

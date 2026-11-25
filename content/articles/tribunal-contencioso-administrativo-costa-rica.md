@@ -119,7 +119,7 @@ El Tribunal abrió en enero de 2008. El antiguo Juzgado Contencioso Administrati
 
 <CronologiaTribunalContencioso />
 
-La comparación artículo por artículo entre ambas leyes está en [CPCA frente a la antigua Ley Reguladora](/articulos/cpca-vs-ley-reguladora-contencioso-administrativa), y la obra colectiva de 2006 que explicó el Código a los jueces está disponible en [El Nuevo Proceso Contencioso Administrativo](/articulos/libro-nuevo-proceso-contencioso). El texto vigente del Código, con buscador por artículo, está en nuestra [guía del CPCA](/articulos/que-es-el-cpca-costa-rica).
+La comparación artículo por artículo entre ambas leyes está en [CPCA frente a la antigua Ley Reguladora](/articulos/cpca-vs-ley-reguladora-contencioso-administrativa), y la obra colectiva de 2006 que explicó el Código a los jueces está disponible en [El Nuevo Proceso Contencioso Administrativo](/articulos/libro-nuevo-proceso-contencioso). Los artículos clave del Código se comentan en nuestra [guía del CPCA](/articulos/que-es-el-cpca-costa-rica).
 
 ## Qué revisar antes de demandar ante el Tribunal
 

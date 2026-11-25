@@ -5,7 +5,7 @@ excerpt: "La Ley 10777 obliga al MEP a estudiar en un máximo de 3 meses el nomb
 tags: ["Ley 10777", "Docentes interinos", "MEP", "Nombramiento en propiedad", "Estatuto de Servicio Civil", "Carrera docente", "Empleo público"]
 areas: ["empleo-publico"]
 type: "article"
-author: "Corporación GC"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"

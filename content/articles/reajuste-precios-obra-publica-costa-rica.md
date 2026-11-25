@@ -1,7 +1,7 @@
 ---
 title: "Reajuste de precios en obra pública: cómo cobrar el equilibrio económico de su contrato"
 date: "2026-07-03"
-updated: "2026-10-27"
+updated: "2026-11-25"
 excerpt: "Sus costos subieron y la Administración no le paga la diferencia. El reajuste de precios protege un derecho que subsiste aunque el cartel calle. Vea qué protege, cuándo procede y en qué plazo se reclama."
 tags: ["Reajuste de precios", "Equilibrio económico", "Obra pública", "Decreto 44937", "Contratación Pública", "Ley 9986", "Guía práctica"]
 areas: ["contratacion-publica"]
@@ -26,6 +26,8 @@ faq:
   - question: "¿En qué se diferencian el reajuste, el reclamo de daños y la indexación?"
     answer: "Son figuras distintas. El reajuste responde a la variación de los costos del contrato; el reclamo de daños cubre hechos ajenos a esa variación, como el pago tardío; y la indexación actualiza a valor presente un monto ya reconocido y pagado con retraso. Encuadrar mal la pretensión debilita el reclamo, por lo que conviene identificar bien cuál corresponde."
 ---
+
+El contratista de obra pública tiene derecho a que la Administración le reajuste el precio cuando sus costos suben por causas ajenas a las partes durante la ejecución, aun cuando el cartel no traiga fórmula de reajuste. Lo garantiza el artículo 43 de la Ley General de Contratación Pública (Ley N.° 9986), que reconoce al contratista y a la Administración el derecho al mantenimiento del equilibrio económico del contrato, y lo respalda la jurisprudencia de la Sala Constitucional.
 
 Un contratista firma una obra a un precio calculado con los costos de hoy. La obra dura dos años. En ese lapso el acero sube, el salario de sus operarios se ajusta por decreto y el diésel de su maquinaria se dispara. El precio que ofertó ya no cubre la obra. La pregunta que llega a nuestra firma casi siempre es la misma: ¿tengo que absorber esa pérdida o el Estado debe pagarme la diferencia?
 

@@ -97,7 +97,7 @@ const nextConfig: NextConfig = {
       {
         source: "/articulos/demanda-mala-praxis-ccss",
         destination: "/articulos/responsabilidad-patrimonial-del-estado-costa-rica",
-        permanent: false,
+        permanent: true,
       },
       /* José Carlos Solano dejó la firma; su perfil lleva al equipo. */
       { source: "/abogados/jose-carlos-solano", destination: "/abogados", permanent: true },

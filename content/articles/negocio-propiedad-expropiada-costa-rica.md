@@ -1,7 +1,7 @@
 ---
 title: "Mi negocio está en una propiedad expropiada en Costa Rica: ¿qué puedo reclamar además del terreno?"
 date: "2026-05-17"
-updated: "2026-10-27"
+updated: "2026-11-25"
 excerpt: "Cuando hay un negocio activo sobre una propiedad expropiada, la indemnización no se limita al valor del terreno y las construcciones. La Ley N.° 7495 reconoce derechos comerciales, lucro cesante y daño al remanente — pero el plazo de oposición al avalúo administrativo exige actuar con rapidez y respaldo técnico."
 tags: ["Guía práctica", "Expropiación", "Lucro Cesante", "Derecho Expropiatorio", "Derecho Público"]
 areas: ["expropiaciones"]
@@ -12,6 +12,8 @@ publicationType: "guia"
 seoTitle: "Negocio en Propiedad Expropiada: Qué Reclamar · CR"
 seoDescription: "Si su negocio opera en una propiedad expropiada en Costa Rica, la Ley N.° 7495 reconoce derechos comerciales, lucro cesante y daño al remanente. Guía completa."
 ---
+
+Cuando en la propiedad que el Estado expropia funciona un negocio, la indemnización debe incluir, además del terreno y las construcciones, todos los bienes y derechos susceptibles de valoración, entre ellos las licencias y los derechos comerciales, valorados de forma independiente (artículo 22 de la Ley de Expropiaciones, Ley N.° 7495), y la jurisprudencia cubre también el lucro cesante por el cierre de la actividad. Para reclamar lo que el avalúo administrativo omita, hay que oponerse a él dentro de los cinco días hábiles siguientes a su notificación (artículo 25).
 
 Si usted opera un local comercial, una empresa o cualquier actividad productiva en la propiedad que el Estado pretende expropiar, aceptar el avalúo sin cuestionarlo puede significar dejar sobre la mesa la parte más valiosa de su indemnización. La ley le reconoce derechos que van mucho más allá del metro cuadrado, y en este artículo se explica exactamente cuáles son.
 

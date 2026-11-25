@@ -1,7 +1,7 @@
 ---
 title: "Cómo anular una adjudicación en el Tribunal Contencioso Administrativo (después de la Contraloría)"
 date: "2026-07-02"
-updated: "2026-10-27"
+updated: "2026-11-25"
 excerpt: "La Contraloría rechazó su apelación y el contrato se adjudicó a otro. Todavía tiene un año para llevar el caso al Tribunal Contencioso, anular la adjudicación y reclamar daños y perjuicios."
 tags: ["Litigio contencioso", "TCA", "Contratación Pública", "Medidas cautelares", "Adjudicación", "Contraloría", "CPCA"]
 areas: ["contratacion-publica", "litigio-contencioso-administrativo", "medidas-cautelares"]
@@ -26,6 +26,8 @@ faq:
   - question: "¿Y si el contrato ya se ejecutó cuando gano el juicio?"
     answer: "Si la contratación ya fue ejecutada o está en ejecución, la sentencia favorable no deshace el contrato, pero sí reconoce el pago de daños y perjuicios a su favor. Así lo establece el artículo 98 de la Ley General de Contratación Pública. Por eso es clave pedir a tiempo la medida cautelar de suspensión: para evitar que el contrato avance y su reclamo quede reducido a dinero."
 ---
+
+Cuando la Contraloría General de la República rechaza la apelación contra una adjudicación o la declara sin lugar, el oferente todavía puede pedir al Tribunal Contencioso Administrativo que anule la adjudicación y le reconozca los daños y perjuicios. La resolución de la Contraloría agota la vía administrativa (artículos 96 y 98 de la Ley General de Contratación Pública), y la demanda puede presentarse dentro del año siguiente a la notificación del acto (artículo 39 del Código Procesal Contencioso-Administrativo).
 
 Usted presentó su apelación ante la Contraloría General de la República, defendió su oferta y confió en el resultado. Pero la Contraloría declaró sin lugar el recurso, o lo rechazó en la etapa de admisibilidad, y el contrato quedó en manos de otro oferente. Aunque parezca el punto final del caso, todavía queda abierta una etapa decisiva: la vía judicial.
 

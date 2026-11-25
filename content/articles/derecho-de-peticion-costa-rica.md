@@ -9,7 +9,7 @@ author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: true
 institution: "Corporación GC"
 publicationType: "guia"
-seoTitle: "Derecho de petición en Costa Rica: plazo de 10 días y amparo"
+seoTitle: "Ley 9097 de derecho de petición: 10 días para responder"
 seoDescription: "La Ley 9097 obliga a responder en 10 días hábiles. Qué peticiones cubre, cómo presentarlas, qué debe tener la respuesta y el amparo si no contestan."
 faq:
   - question: "¿Qué es el derecho de petición en Costa Rica?"

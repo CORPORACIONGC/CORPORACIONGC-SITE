@@ -1,7 +1,7 @@
 ---
 title: "Silencio positivo: cómo obtener el permiso municipal cuando la municipalidad no responde"
 date: "2026-06-13"
-updated: "2026-10-27"
+updated: "2026-11-25"
 excerpt: "Si pidió un permiso de construcción y la municipalidad dejó vencer el plazo sin contestar, el silencio positivo puede tener su solicitud por aprobada. Esta guía explica, con base en la Ley General de la Administración Pública y la Ley 8220, cómo opera el silencio positivo, el procedimiento de la declaración jurada, y —sobre todo— los límites que la ley y la Sala Constitucional le imponen: no procede en materia ambiental, sobre bienes de dominio público ni para obtener lo que la ley prohíbe."
 tags: ["Guía práctica", "Silencio positivo", "Derecho Municipal", "Derecho Urbanístico", "Permiso de construcción"]
 areas: ["materia-municipal", "derecho-urbanistico"]
@@ -28,6 +28,8 @@ faq:
   - question: "¿Qué hago si la municipalidad desconoce el silencio positivo ya operado?"
     answer: "El silencio positivo opera de pleno derecho y, una vez acaecido, la municipalidad no puede dictar un acto denegatorio (artículo 331 de la Ley General de la Administración Pública). Para revertirlo, la Administración debe acudir al procedimiento de nulidad del artículo 173 de esa ley o a un proceso de lesividad. Si hay discrepancia sobre si el silencio operó, la Sala Constitucional ha dicho que es 'un problema de legalidad y no de constitucionalidad', que se ventila ante la jurisdicción contencioso-administrativa."
 ---
+
+Si la municipalidad deja pasar el plazo legal sin resolver una solicitud de permiso de construcción que reunía todos los requisitos, la solicitud se tiene por aprobada por **silencio positivo**. Así lo disponen los artículos 330 y 331 de la Ley General de la Administración Pública, que fijan un plazo de un mes desde que se recibe la solicitud completa, y el artículo 7 de la Ley 8220, que permite hacerlo valer con una declaración jurada. La regla tiene límites: no opera en materia ambiental, de salud pública ni sobre bienes de dominio público.
 
 Usted presentó la solicitud de permiso de construcción ante la municipalidad, reunió todos los requisitos y pagó lo que correspondía. Pasaron las semanas, el plazo legal venció y la respuesta nunca llegó. La obra está detenida y el proyecto, parado, por una oficina que no contesta. Para esa situación el ordenamiento costarricense tiene una respuesta poderosa: el **silencio positivo**, la regla por la cual, vencido el plazo sin que la Administración se pronuncie, la solicitud **se tiene por aprobada**.
 

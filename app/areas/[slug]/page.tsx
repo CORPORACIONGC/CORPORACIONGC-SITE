@@ -489,7 +489,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <Instrumento titulo="Medida anterior a la demanda" fundamento="CPCA, arts. 19.2 y 26">
         <p>
           Permite obtener protección antes de que la demanda esté lista. Concedida la{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#la-medida-cautelar-ante-causam" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-es-la-medida-cautelar-ante-causam" className="text-emphasis hover:text-emphasis/80 transition-colors">
             medida ante causam
           </Link>
           , la demanda debe presentarse dentro de los quince días siguientes a la notificación del
@@ -500,7 +500,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <Instrumento titulo="Medidas provisionalísimas" fundamento="CPCA, art. 23">
         <p>
           Mientras resuelve la solicitud cautelar, el juez puede adoptar{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#la-medida-provisionalisima" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-es-la-medida-provisionalisima" className="text-emphasis hover:text-emphasis/80 transition-colors">
             medidas provisionalísimas
           </Link>{" "}
           de manera inmediata y prima facie para garantizar la efectividad de la que adopte
@@ -512,7 +512,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p>
           En casos de extrema urgencia, el juez puede disponer la medida antes de oír a la
           Administración y revisarla después de una audiencia de tres días. La guía explica{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#la-medida-sin-audiencia-en-casos-de-extrema-urgencia" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#cuando-se-dicta-una-medida-sin-audiencia-previa" className="text-emphasis hover:text-emphasis/80 transition-colors">
             en qué se distingue de la provisionalísima
           </Link>
           .
@@ -522,7 +522,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <Instrumento titulo="Presupuestos de la medida" fundamento="CPCA, arts. 21 y 22">
         <p>
           La medida exige{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#requisitos-de-la-medida-cautelar-dano-grave-seriedad-de-la-pretension-y-ponderacion" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-requisitos-exige-el-juez-para-conceder-una-medida-cautelar" className="text-emphasis hover:text-emphasis/80 transition-colors">
             un daño grave y una pretensión seria
           </Link>
           , y el juez pondera el interés público y el de terceros antes de concederla.

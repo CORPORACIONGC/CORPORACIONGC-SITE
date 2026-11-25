@@ -5,7 +5,7 @@ excerpt: "Texto vigente de la Ley 6043, con buscador, y lo esencial de la zona p
 tags: ["Ley 6043", "Zona marítimo terrestre", "Zona pública", "Zona restringida", "Concesiones", "Canon", "Texto vigente", "Derecho Administrativo"]
 areas: ["zona-maritimo-terrestre"]
 type: "article"
-author: "Corporación GC"
+author: "Lic. Khevin Alberto Sánchez Zamora"
 authorVisible: false
 institution: "Corporación GC"
 publicationType: "guia"
