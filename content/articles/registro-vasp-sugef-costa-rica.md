@@ -6,7 +6,8 @@ excerpt: "La Ley 10961 obliga a los proveedores de servicios de activos virtuale
 tags: ["VASP", "SUGEF", "Ley 10961", "Criptoactivos", "Activos Virtuales", "PSAV", "Cumplimiento", "Ley 7786", "CONASSIF", "Regla de Viaje"]
 areas: ["regulacion-fintech-criptoactivos"]
 type: "article"
-author: "Corporación GC"
+author: "Lic. Khevin Alberto Sánchez Zamora"
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
 translation: "costa-rica-vasp-registration-sugef"

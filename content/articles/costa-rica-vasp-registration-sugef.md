@@ -6,7 +6,8 @@ excerpt: "Costa Rica's Law 10961 requires Virtual Asset Service Providers to reg
 tags: ["VASP", "SUGEF", "Law 10961", "Crypto Regulation", "Virtual Assets", "Costa Rica", "AML Compliance", "CONASSIF", "Travel Rule"]
 areas: ["regulacion-fintech-criptoactivos"]
 type: "article"
-author: "Corporación GC"
+author: "Lic. Khevin Alberto Sánchez Zamora"
+authorVisible: true
 institution: "Corporación GC"
 publicationType: "articulo"
 lang: "en"
