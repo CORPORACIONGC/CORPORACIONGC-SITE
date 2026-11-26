@@ -89,8 +89,9 @@ export function CitaRelato({ children, pie }: { children: React.ReactNode; pie: 
    Latina y el Caribe, para los perfiles de quienes estudiaron o enseñan
    allí. Se actualiza aquí una vez al año, cuando QS publica la edición
    nueva (la de 2027 salió en octubre de 2026). El enlace lleva a la ficha
-   de la UCR en QS, donde se ve la posición. Va después de «Universidad de
-   Costa Rica,» en el texto. */
+   de la UCR en QS, donde se ve la posición (puesto 17 de América Latina y
+   el Caribe en 2027). En el texto solo se lee «la mejor ubicada de
+   Centroamérica», después de «Universidad de Costa Rica,». */
 export const QS_UCR = {
   url: "https://www.topuniversities.com/universities/universidad-de-costa-rica",
   puesto: 17,
@@ -99,11 +100,8 @@ export const QS_UCR = {
 
 export function RankingUcr() {
   return (
-    <>
-      la mejor ubicada de Centroamérica en el ranking QS de América Latina y el Caribe, con el{" "}
-      <a href={QS_UCR.url} target="_blank" rel="noopener noreferrer" className={enlaceRelato}>
-        puesto {QS_UCR.puesto} en la edición {QS_UCR.edicion}
-      </a>
-    </>
+    <a href={QS_UCR.url} target="_blank" rel="noopener noreferrer" className={enlaceRelato}>
+      la mejor ubicada de Centroamérica
+    </a>
   );
 }
