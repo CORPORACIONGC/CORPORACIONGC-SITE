@@ -25,6 +25,14 @@ export const fuentes: FuentesDeGuia = {
   ],
   otros: [
     {
+      titulo: "Opinión de la Sala del 20 de noviembre de 2026 (texto íntegro sin publicar al 25-11)",
+      items: [
+        { titulo: "Sala Constitucional, voto 2026-045630, expediente 26-039748-0007-CO", detalle: "Consulta de la Corte Suprema de Justicia: vicios de procedimiento (arts. 167 y 177 de la Constitución) en las normas de ejecución 9, 10, 11 y 12 del art. 7 del proyecto; notificado a la Asamblea el 23-11-2026" },
+        { titulo: "Sala Constitucional, voto 2026-045631, expediente 26-040155-0007-CO", detalle: "Consulta de diputados del Frente Amplio y del PLN: la moción 16 de Hacendarios, que rebajó ₡8.048.128.252 del FEES, infringe el art. 85 de la Constitución; notificado el 20-11-2026" },
+        { titulo: "Consulta de diputados del PLN, expediente 26-039736-0007-CO", detalle: "Sobre las mismas cuatro normas; en trámite según la prensa al 20-11-2026" },
+      ],
+    },
+    {
       titulo: "Antecedentes y doctrina",
       items: [
         { titulo: "Asamblea Nacional Constituyente de 1949, acta n.º 163", detalle: "Sesión del 7 de octubre de 1949: se desechan la moción Social Demócrata, la del diputado Arroyo y la segunda parte de la del diputado Chacón Jinesta, y se aprueba el texto del actual art. 178" },
@@ -42,9 +50,13 @@ export const fuentes: FuentesDeGuia = {
       items: [
         { titulo: "CRHoy, «¿Qué está pasando con el Presupuesto Nacional para 2027?»", detalle: "10-11-2026: consultas, medidas cautelares y trámite del expediente", href: "https://crhoy.com/nacionales/que-esta-pasando-con-el-presupuesto-nacional-para-2027/" },
         { titulo: "Surcos Digital, las cuatro normas cuestionadas por la Corte", detalle: "Contenido de la consulta y número del expediente de la Sala", href: "https://surcosdigital.com/presupuesto-2027-las-cuatro-normas-que-segun-la-corte-pondrian-al-poder-judicial-bajo-control-politico-legislativo" },
+        { titulo: "Delfino.cr, «Presupuesto 2027: Sala IV declara inconstitucionales restricciones al Poder Judicial y recorte de ₡8048 millones al FEES»", detalle: "20-11-2026: números de voto y de expediente, normas 9 a 12, montos y tercera consulta en trámite", href: "https://delfino.cr/2026/11/presupuesto-2027-sala-iv-declara-inconstitucionales-restricciones-al-poder-judicial-y-recorte-de-8048-millones-al-fees" },
+        { titulo: "Semanario Universidad, «Presupuesto de 2027 tuvo vicios de procedimiento»", detalle: "20-11-2026: los tres vicios de procedimiento y los expedientes de la Sala", href: "https://semanariouniversidad.com/pais/presupuesto-de-2027-tuvo-vicios-de-procedimiento-se-ordena-eliminar-restricciones-a-poder-judicial-y-rebaja-a-fees/" },
+        { titulo: "La Nación, notificación de las opiniones a la Asamblea", detalle: "23-11-2026: fechas y horas de notificación", href: "https://www.nacion.com/politica/sala-constitucional-ya-notifico-a-diputados/I62O77M3CRGOXJBZ5NJKE63W5I/story/" },
+        { titulo: "El Observador, envío a la Comisión de Consultas de Constitucionalidad", detalle: "24-11-2026: fundamento en el art. 85 y texto del por tanto sobre la moción 16", href: "https://observador.cr/presupuesto-2027-es-enviado-a-comision-de-constitucionalidad-para-eliminar-articulos-inconstitucionales-se-votara-el-domingo/" },
         { titulo: "Infobae, posición del Poder Ejecutivo", detalle: "19-11-2026: la presidenta de la República espera la resolución de la Sala", href: "https://www.infobae.com/costa-rica/2026/11/20/presidenta-de-costa-rica-defiende-restricciones-sobre-usd-67-millones-del-poder-judicial-y-descarta-negociar-por-buena-voluntad/" },
       ],
     },
   ],
-  pie: "Normas cotejadas el 19-11-2026 con la base local de normativa (textos de SINALEVI): Constitución, Ley 7135 y Reglamento de la Asamblea con su numeración posterior a la reforma de 2019. Votos de la Sala leídos íntegros en Nexus y Globalex; acta 163 de la Constituyente y artículo de Sancho leídos en las bases locales de antecedentes y doctrina. Los hechos de octubre y noviembre de 2026 provienen del SIL y de la prensa citada; las resoluciones del 9 de noviembre no estaban publicadas en Nexus a esa fecha.",
+  pie: "Actualizada el 25-11-2026 con la opinión de la Sala del 20 de noviembre, tomada de la prensa citada porque el texto íntegro de los votos no estaba publicado en Nexus ni la Sala había emitido comunicado; el trámite del expediente 25.754 y el artículo 146 del Reglamento se verificaron ese día en el SIL y en la base local de normativa. Normas cotejadas el 19-11-2026 con la base local de normativa (textos de SINALEVI): Constitución, Ley 7135 y Reglamento de la Asamblea con su numeración posterior a la reforma de 2019. Votos de la Sala leídos íntegros en Nexus y Globalex; acta 163 de la Constituyente y artículo de Sancho leídos en las bases locales de antecedentes y doctrina. Los hechos de octubre y noviembre de 2026 provienen del SIL y de la prensa citada; las resoluciones del 9 de noviembre no estaban publicadas en Nexus a esa fecha.",
 };

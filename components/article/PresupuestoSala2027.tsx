@@ -32,12 +32,13 @@ function FigSource({ children }: { children: React.ReactNode }) {
 const PASOS: { quien: string; que: string; plazo: string; hl?: boolean }[] = [
   { quien: "Poder Ejecutivo", que: "Presenta el proyecto de presupuesto ordinario y extraordinario para 2027 (expediente 25.754).", plazo: "1 de setiembre · Constitución, art. 178" },
   { quien: "Comisión de Hacendarios", que: "Vota el proyecto y emite dictamen afirmativo de mayoría y negativo de minoría.", plazo: "20 de octubre · Reglamento, art. 204" },
-  { quien: "Corte Plena y diputados", que: "Tres consultas a la Sala: la de la Corte y la de diputados del PLN sobre las normas que condicionan fondos y plazas del Poder Judicial; la de diputados del Frente Amplio sobre el recorte al FEES.", plazo: "22 de octubre y días siguientes · LJC, art. 96" },
+  { quien: "Corte Plena y diputados", que: "Tres consultas a la Sala: la de la Corte y la de diputados del PLN sobre las normas que condicionan fondos y plazas del Poder Judicial; la de diputados del Frente Amplio y del PLN sobre el recorte al FEES.", plazo: "22 de octubre y días siguientes · LJC, art. 96" },
   { quien: "Plenario", que: "Aprueba el proyecto en primer debate por 31 votos contra 23. El mismo día el Directorio envía el expediente a la Sala.", plazo: "5 de noviembre" },
-  { quien: "Sala Constitucional", que: "Dos resoluciones ordenan no discutir ni votar el segundo debate antes del 29 de noviembre.", plazo: "9 de noviembre", hl: true },
+  { quien: "Sala Constitucional", que: "Dos resoluciones ordenan no discutir ni votar el segundo debate antes del 29 de noviembre.", plazo: "9 de noviembre" },
+  { quien: "Sala Constitucional", que: "Votos 2026-045630 y 2026-045631: vicios de procedimiento en las normas 9 a 12 del Poder Judicial y en la moción 16 que rebajó el FEES. Ordena eliminarlas; si no, se tienen por excluidas.", plazo: "20 de noviembre · LJC, art. 101", hl: true },
+  { quien: "Plenario", que: "Lee la opinión consultiva y envía el expediente a la Comisión de Consultas de Constitucionalidad.", plazo: "24 de noviembre · Reglamento, art. 146" },
   { quien: "Plenario", que: "Último día para el segundo debate. Se sesiona aunque sea domingo; si a las 23:30 no ha terminado la discusión, se vota sin más.", plazo: "29 de noviembre · Reglamento, art. 205.3", hl: true },
   { quien: "Constitución", que: "La ley de presupuesto debe estar definitivamente aprobada antes de esta fecha.", plazo: "30 de noviembre · art. 178" },
-  { quien: "Sala Constitucional", que: "Vence el mes para evacuar la consulta, contado desde que recibió el expediente.", plazo: "Inicios de diciembre · LJC, art. 101" },
 ];
 
 export function CalendarioPresupuesto2027() {
@@ -47,8 +48,8 @@ export function CalendarioPresupuesto2027() {
         id="fig-calendario-presupuesto-2027"
         n={1}
         kicker="El calendario"
-        title="El plazo de la Sala para opinar termina después del plazo de la Asamblea para votar"
-        lead="Las filas marcadas son las dos fechas que definen el desenlace: la orden de la Sala y el último día para el segundo debate."
+        title="La Sala respondió antes del segundo debate"
+        lead="Las filas marcadas son las dos fechas que definen el desenlace: la opinión de la Sala y el último día para el segundo debate."
       />
       <ol className="gc-flujo">
         <li className="gc-flujo-cab" aria-hidden="true">
@@ -67,7 +68,7 @@ export function CalendarioPresupuesto2027() {
         ))}
       </ol>
       <FigSource>
-        Constitución Política, art. 178; Reglamento de la Asamblea Legislativa, arts. 204 y 205; Ley de la Jurisdicción Constitucional, arts. 96, 98, 100 y 101; trámite del expediente 25.754 en el SIL y resoluciones de la Sala del 9 de noviembre de 2026 (expediente 26-039748-0007-CO), según la prensa. La fecha de recibo del expediente en la Sala es la que informó la prensa; la resolución de fondo la fijará con exactitud.
+        Constitución Política, art. 178; Reglamento de la Asamblea Legislativa, arts. 146, 204 y 205; Ley de la Jurisdicción Constitucional, arts. 96, 98, 100 y 101; trámite del expediente 25.754 en el SIL, consultado el 25 de noviembre de 2026; resoluciones de la Sala del 9 de noviembre y votos 2026-045630 (expediente 26-039748-0007-CO) y 2026-045631 (expediente 26-040155-0007-CO) del 20 de noviembre, según la prensa, porque su texto íntegro aún no está publicado.
       </FigSource>
     </figure>
   );
@@ -78,12 +79,12 @@ export function CalendarioPresupuesto2027() {
 const ALCANCE: { caso: string; ejemplo: string; efecto: string }[] = [
   {
     caso: "Vicio en el trámite",
-    ejemplo: "Que se omitiera la consulta obligatoria a la Corte del artículo 167 de la Constitución. Por esa omisión la Sala anuló una norma del presupuesto 2021 sobre plazas vacantes del Poder Judicial.",
+    ejemplo: "Que se omitiera la consulta obligatoria a la Corte del artículo 167 de la Constitución, o que se introdujeran normas atípicas por el trámite del presupuesto del artículo 177. Así lo resolvió la Sala el 20 de noviembre sobre las normas 9 a 12 del presupuesto 2027.",
     efecto: "Vincula a la Asamblea. Si llega antes de la votación final, el vicio debe corregirse en el trámite.",
   },
   {
     caso: "Vicio de fondo",
-    ejemplo: "Normas de ejecución ajenas a la materia presupuestaria (normas atípicas) o un recorte que roce el artículo 85 sobre el FEES.",
+    ejemplo: "Que el contenido de una norma choque con una regla constitucional de fondo. En las consultas del presupuesto 2027 la Sala no examinó esos reproches, porque los vicios de procedimiento bastaban.",
     efecto: "No vincula. La Asamblea decide si enmienda el texto; la opinión no impide votarlo.",
   },
   {
