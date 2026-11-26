@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
+import { RelatoPerfil, RankingUcr, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
 /* Perfil de Mariana en prosa (D-06, 25-11-2026), solo con datos que el
    sitio ya publicaba en MARIANA_PROFILE y MARIANA_PRACTICE_AREAS. Sustituye
@@ -66,7 +66,8 @@ export function MarianaAbout() {
           titulo: "Su formación",
           contenido: (
             <p>
-              Mariana Montero estudió Derecho en la Universidad de Costa Rica, donde obtuvo el
+              Mariana Montero estudió Derecho en la Universidad de Costa Rica, <RankingUcr />.
+              Allí obtuvo el
               bachillerato (2015-2019) y la licenciatura con mención en Derechos Humanos
               (2019-2022), aprobada con distinción. En la misma universidad es egresada de la
               Maestría Profesional en Derecho Público, y en 2024 la UCR le otorgó el Diploma de

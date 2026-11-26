@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
+import { RelatoPerfil, RankingUcr, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
 /* Perfil de Esteban Pérez en prosa (D-06, 25-11-2026), solo con datos que
    el sitio ya publicaba en ESTEBAN_PROFILE y ESTEBAN_PRACTICE_AREAS.
@@ -84,7 +84,7 @@ export function EstebanAbout() {
           titulo: "Su formación",
           contenido: (
             <p>
-              Es licenciado en Derecho por la Universidad de Costa Rica. Cursó la especialidad en Derecho Notarial y Registral en la Universidad Fidélitas y es
+              Es licenciado en Derecho por la Universidad de Costa Rica, <RankingUcr />. Cursó la especialidad en Derecho Notarial y Registral en la Universidad Fidélitas y es
               egresado de la Maestría en Derecho Público de la UCR, donde tiene la tesis en
               desarrollo. Habla español e inglés.
             </p>

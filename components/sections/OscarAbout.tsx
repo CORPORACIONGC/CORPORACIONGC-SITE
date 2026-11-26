@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RelatoPerfil, CitaRelato, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
+import { RelatoPerfil, CitaRelato, RankingUcr, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
 /* Perfil del Director en prosa (D-06, 25-11-2026), solo con datos que el
    sitio ya publicaba en OSCAR_PROFILE. Precisiones de la verificación del
@@ -85,8 +85,9 @@ export function OscarAbout() {
                 Enseña derecho público, constitucional y administrativo en la licenciatura, la
                 maestría y el doctorado de la Universidad de Costa Rica y de la Universidad
                 Escuela Libre de Derecho. La Escuela Libre lo nombró catedrático, la máxima
-                distinción que otorga por trayectoria docente. En la UCR es profesor asociado,
-                enseña en el posgrado desde 2000 y ha coordinado la Maestría en Derecho Público.
+                distinción que otorga por trayectoria docente. En la Universidad de Costa Rica,{" "}
+                <RankingUcr />, es profesor asociado, enseña en el posgrado desde 2000 y ha
+                coordinado la Maestría en Derecho Público.
               </p>
               <p>
                 Fue instructor de la Escuela Judicial del Poder Judicial, donde formó a jueces y

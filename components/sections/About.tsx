@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
+import { RelatoPerfil, RankingUcr, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 import { CONFERENCES } from "@/lib/constants";
 
 /* Perfil de Khevin Sánchez en prosa (D-06, 25-11-2026), en tercera persona
@@ -94,8 +94,8 @@ export function About() {
           titulo: "Formación",
           contenido: (
             <p>
-              Es licenciado en Derecho por la Universidad de Costa Rica, con mención en Derecho
-              Tributario, y en la II convocatoria de 2025 del Examen de Excelencia Académica del
+              Es licenciado en Derecho, con mención en Derecho Tributario, por la Universidad de
+              Costa Rica, <RankingUcr />. En la II convocatoria de 2025 del Examen de Excelencia Académica del
               Colegio de Abogados y Abogadas de Costa Rica obtuvo el tercer mejor promedio. La
               Comisión del Programa de Posgrado en Derecho de la UCR lo admitió en la Maestría
               Profesional en Derecho Público (sesión 144-2026), que empieza en el I semestre de

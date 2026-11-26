@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
+import { RelatoPerfil, RankingUcr, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
 /* Perfil de Katherine en prosa (D-06, 25-11-2026), solo con datos que el
    sitio ya publicaba en KATHERINE_PROFILE y KATHERINE_PRACTICE_AREAS.
@@ -79,7 +79,7 @@ export function KatherineAbout() {
               Katherine González estudió Derecho en la Universidad Escuela Libre de Derecho, donde cursó el
               bachillerato de 2013 a 2016, la licenciatura de 2015 a 2019 y el notariado público
               de 2017 a 2020. De 2020 a 2024 hizo la Maestría Profesional en Derecho Público en la
-              Universidad de Costa Rica. Es, así, máster en Derecho Público por la Universidad de
+              Universidad de Costa Rica, <RankingUcr />. Es, así, máster en Derecho Público por la Universidad de
               Costa Rica desde 2024 y notaria pública formada en la Escuela Libre de Derecho, y
               habla cuatro idiomas: español, inglés, francés e italiano.
             </p>
