@@ -31,6 +31,11 @@ export const fuentes: FuentesDeGuia = {
       href: GACETA("2026/06/19/ALCA78_19_06_2026.pdf"),
     },
     {
+      titulo: "Constitución Política",
+      detalle: "Art. 129: las leyes surten efectos desde el día que ellas designen",
+      href: SINALEVI(871, 147492),
+    },
+    {
       titulo: "Acuerdo SUGEF 13-19 (texto integrado con la reforma)",
       detalle: "Versión 7, del 11-11-2026, publicada en el portal de normativa vigente de la SUGEF, que retiró la versión 6",
       href: "https://www.sugef.fi.cr/normativa/normativa_vigente/SUGEF%2013-19%20(v7%2011%20de%20noviembre%20de%202026).pdf",
@@ -38,7 +43,7 @@ export const fuentes: FuentesDeGuia = {
     {
       titulo: "Reforma del Acuerdo SUGEF 11-18 (inscripción y registro de OSFL)",
       detalle:
-        "CONASSIF, artículo 8 del acta de la sesión 2062-2026, del 02-11-2026; Alcance 148 a La Gaceta 212 del 09-11-2026. Su resolución motivada, en el Alcance 149, responde en la pág. 468 que el art. 15 quater «será considerado en otra reforma»",
+        "CONASSIF, artículo 8 del acta de la sesión 2062-2026, del 02-11-2026; Alcance 148 a La Gaceta 212 del 09-11-2026, pág. 349. Su resolución motivada, con la matriz de observaciones, se publicó en el Alcance 149 a La Gaceta 214 del 11-11-2026 (págs. 427 y siguientes) y responde en la pág. 468 que el art. 15 quater «será considerado en otra reforma». La SUGEF publica el texto integrado como versión 12, del 02-11-2026",
       href: GACETA("2026/11/09/ALCA148_09_11_2026.pdf"),
     },
   ],
@@ -48,6 +53,7 @@ export const fuentes: FuentesDeGuia = {
     { numero: "Voto 16596-2024", organo: SC, fecha: "14-06-2024", tema: "Denegatoria de cuenta", criterio: "Parcialmente con lugar solo por falta de motivación: el banco puede denegar la apertura, pero con causa legítima, objetiva y razonable que debe comunicar al solicitante.", href: NEXUS("sen-1-0007-1297998") },
     { numero: "Voto 16616-2025", organo: SC, fecha: "30-05-2025", tema: "Justificación de fondos", criterio: "Rechazo de plano: la Sala no funge como contralora de las relaciones contractuales entre banco y cliente; el reclamo va a la vía ordinaria.", href: NEXUS("sen-1-0007-1300352") },
     { numero: "Voto 17459-2026", organo: SC, fecha: "15-05-2026", tema: "Bloqueo por venta P2P", criterio: "Rechazo de plano: el bloqueo y la justificación de fondos se enmarcan en la relación comercial y no son materia de amparo.", href: NEXUS("sen-1-0007-1393376") },
+    { numero: "Voto 38722-2026", organo: SC, fecha: "08-10-2026", tema: "Bloqueo tras venta de activos virtuales", criterio: "Sin lugar: el banco restringió la cuenta que recibió fondos de una estafa informática como pago de una venta de activos virtuales; el bloqueo mientras se investiga el origen ilícito no exige el aviso motivado que sí requiere el cierre.", href: NEXUS("sen-1-0007-1434066") },
   ],
   procuraduria: [
     { titulo: "Opinión jurídica OJ-090-2025", detalle: "05-06-2025: proyecto que incorporó el art. 15 quater a la Ley 7786 para atender la Recomendación 15 del GAFI; lo estima viable (no vinculante)", href: PGR(24995) },
@@ -71,5 +77,5 @@ export const fuentes: FuentesDeGuia = {
       ],
     },
   ],
-  pie: "Textos normativos: La Gaceta (Imprenta Nacional), SINALEVI y portal de normativa de la SUGEF. Jurisprudencia: Nexus del Poder Judicial. Pronunciamientos: Procuraduría General de la República. Estándares: GAFI y GAFILAT. Verificación del estado de la inscripción (normativa en consulta, comunicados y circulares de la SUGEF) al 18 de noviembre de 2026.",
+  pie: "Textos normativos: La Gaceta (Imprenta Nacional), SINALEVI y portal de normativa de la SUGEF. Jurisprudencia: Nexus del Poder Judicial. Pronunciamientos: Procuraduría General de la República. Estándares: GAFI y GAFILAT. Verificación del estado de la inscripción (La Gaceta y sus alcances del 11 al 26 de noviembre; normativa vigente, normativa en consulta, comunicados y circulares de la SUGEF) al 26 de noviembre de 2026. Las fechas de vencimiento de la adecuación y del plazo del art. 4 de la Ley 10961 son cálculo propio.",
 };

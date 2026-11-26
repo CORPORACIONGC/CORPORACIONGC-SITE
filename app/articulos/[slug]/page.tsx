@@ -94,6 +94,7 @@ import { CalendarioPresupuesto2027, AlcanceOpinionSala } from "@/components/arti
 import { CircularIA, DeclaracionesIA, ConstanciasPorMes, HerramientasIA, CronologiaIA } from "@/components/article/IASentencias";
 import { EstructuraCiudadGobierno, CambiosCiudadGobierno } from "@/components/article/CiudadGobierno";
 import { PlazosBuzonHacendario, CambiosBuzonHacendario } from "@/components/article/BuzonHacendario";
+import { Art81Comparado, SancionesDirectores, OsflTresTextos } from "@/components/article/Ley7786Reforma25129";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -313,6 +314,9 @@ const ARTICLE_COMPONENTS = {
   CambiosCiudadGobierno,
   PlazosBuzonHacendario,
   CambiosBuzonHacendario,
+  Art81Comparado,
+  SancionesDirectores,
+  OsflTresTextos,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,

@@ -3,7 +3,8 @@
    Fuentes: texto consultado (CONASSIF, sesión 2053-2026, art. 9, Alcance
    134 a La Gaceta 187 del 05-10-2026) y texto aprobado (CONASSIF, sesión
    2064-2026, art. 12, del 09-11-2026, Alcance 149 a La Gaceta 214 del
-   11-11-2026, págs. 545 a 555), cotejados el 18-11-2026. */
+   11-11-2026, págs. 545 a 555), cotejados el 18-11-2026; estado de la
+   inscripción y fechas revisados el 26-11-2026. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
 
@@ -41,7 +42,8 @@ const HITOS: { fecha: string; que: string; fuente: { texto: string; href: string
   { fecha: "05-10-2026", que: "El CONASSIF somete a consulta pública, por diez días hábiles, la reforma del Acuerdo SUGEF 13-19.", fuente: { texto: "Alcance 134", href: ALCANCE_134 } },
   { fecha: "09-11-2026", que: "El CONASSIF aprueba el texto definitivo «por unanimidad y en firme». El mismo día se publica la reforma del Acuerdo SUGEF 11-18, sin los proveedores de activos virtuales.", fuente: { texto: "Alcance 148", href: ALCANCE_148 } },
   { fecha: "11-11-2026", que: "Se publica la reforma del 13-19 y entra en vigor. Empieza a correr el plazo de seis meses de adecuación.", fuente: { texto: "Alcance 149", href: ALCANCE_149 } },
-  { fecha: "Mayo de 2027", que: "Vence la adecuación: seis meses contados desde el día siguiente a la entrada en vigor.", fuente: { texto: "Transitorio único", href: ALCANCE_149 } },
+  { fecha: "19-12-2026", que: "Vence el plazo de reglamentación del artículo 4 si se cuenta desde la vigencia de la ley; contado desde la publicación, venció el 19-09-2026. Cálculo propio.", fuente: { texto: "Ley 10961, art. 4", href: ALCANCE_78 } },
+  { fecha: "11-05-2027", que: "Vence la adecuación: seis meses contados desde el día siguiente a la entrada en vigor (12-05-2027 si se computa de fecha a fecha). Cálculo propio.", fuente: { texto: "Transitorio único", href: ALCANCE_149 } },
 ];
 
 export function CronologiaPsav() {
@@ -74,7 +76,7 @@ export function CronologiaPsav() {
           </li>
         ))}
       </ol>
-      <FigSource>La Gaceta (Imprenta Nacional), alcances 78, 134, 148 y 149 de 2026.</FigSource>
+      <FigSource>La Gaceta (Imprenta Nacional), alcances 78, 134, 148 y 149 de 2026. Las fechas del 19-12-2026 y el 11-05-2027 son cálculo propio.</FigSource>
     </figure>
   );
 }
@@ -199,14 +201,13 @@ export function ConsultaVsFinal1319() {
 /* ── Figura 4. Lo que falta ────────────────────────────────────────────── */
 
 const PENDIENTES: { que: string; estado: string }[] = [
-  { que: "La regla del trámite de inscripción", estado: "El Acuerdo SUGEF 11-18 se reformó el 2 de noviembre sin los proveedores de activos virtuales. La SUGEF respondió en la consulta que el artículo 15 quater «será considerado en otra reforma»." },
-  { que: "Plataforma, formularios y fecha de apertura", estado: "Sin anuncio de la SUGEF al 18 de noviembre de 2026." },
+  { que: "La regla del trámite de inscripción", estado: "El Acuerdo SUGEF 11-18 se reformó el 2 de noviembre sin los proveedores de activos virtuales. La SUGEF respondió en la consulta que el artículo 15 quater «será considerado en otra reforma». Sin propuesta en consulta al 26 de noviembre de 2026." },
+  { que: "Plataforma, formularios y fecha de apertura", estado: "Sin anuncio de la SUGEF al 26 de noviembre de 2026." },
   { que: "Los lineamientos generales", estado: "El artículo 5 reformado remite a ellos; no se han emitido para estos proveedores." },
   { que: "El canon de supervisión", estado: "La ley obliga a contribuir al costo de la supervisión; ninguna norma fija todavía el monto." },
   { que: "Antecedentes de socios y beneficiarios finales", estado: "La ley ordena a la SUGEF establecer medidas para comprobarlos; la reforma no las incluye." },
   { que: "Registro único y listas publicadas", estado: "Previstos en el artículo 15 quater, sin desarrollo reglamentario." },
-  { que: "La matriz de observaciones de la consulta", estado: "No publicada ni localizada al 18 de noviembre de 2026." },
-  { que: "El texto consolidado en el sitio de la SUGEF", estado: "Sigue publicada la versión 6 del 13-19, de 2024." },
+  { que: "La matriz de observaciones de la consulta", estado: "No publicada ni localizada al 26 de noviembre de 2026." },
 ];
 
 export function PendientesPsav() {
@@ -217,7 +218,7 @@ export function PendientesPsav() {
         n={4}
         kicker="Lo que falta"
         title="Las piezas que el régimen todavía no tiene"
-        lead="Verificado el 18 de noviembre de 2026 en La Gaceta y en el portal de normativa, comunicados y circulares de la SUGEF."
+        lead="Verificado el 26 de noviembre de 2026 en La Gaceta y sus alcances y en el portal de normativa, comunicados y circulares de la SUGEF."
       />
       <div className="gc-comparativa">
         <div className="gc-table-wrap">
