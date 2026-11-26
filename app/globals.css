@@ -787,7 +787,7 @@ html {
 }
 .prose-article .gc-comparativa .gc-table-sub {
   font-family: var(--font-body); font-size: 11.5px; letter-spacing: 0.01em;
-  color: color-mix(in oklab, var(--color-cream) 50%, transparent); margin: 0 0 24px;
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent); margin: 0 0 24px;
 }
 .prose-article .gc-comparativa .gc-table-wrap {
   margin: 0 0 40px; border-top: 1px solid color-mix(in oklab, var(--color-cream) 10%, transparent);
@@ -801,7 +801,7 @@ html {
 .prose-article .gc-comparativa thead th {
   text-align: left; vertical-align: bottom; font-size: 11px; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase;
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
   padding: 18px 16px; border-bottom: 1px solid var(--rule-strong);
   background: transparent; white-space: nowrap;
 }
@@ -830,13 +830,13 @@ html {
   line-height: 1; white-space: nowrap;
 }
 .prose-article .gc-comparativa .gc-flag::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
-.prose-article .gc-comparativa .gc-flag--si { background: color-mix(in oklab, var(--color-burgundy) 14%, transparent); color: var(--color-burgundy-light); }
+.prose-article .gc-comparativa .gc-flag--si { background: color-mix(in oklab, var(--color-burgundy) 14%, transparent); color: var(--color-hilo-texto); }
 .prose-article .gc-comparativa .gc-flag--no { background: color-mix(in oklab, var(--color-cream) 7%, transparent); color: color-mix(in oklab, var(--color-cream) 68%, transparent); }
 .prose-article .gc-comparativa .gc-refs { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .prose-article .gc-comparativa .gc-ref {
   display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px;
   border-radius: 6px; background: color-mix(in oklab, var(--color-burgundy) 18%, transparent);
-  color: var(--color-burgundy-light); font-size: 11px; font-weight: 500;
+  color: var(--color-hilo-texto); font-size: 11px; font-weight: 500;
   letter-spacing: 0.01em; line-height: 1; white-space: nowrap;
 }
 .prose-article .gc-comparativa .gc-ref svg {
@@ -844,7 +844,7 @@ html {
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0;
 }
 .prose-article .gc-comparativa .gc-acronyms {
-  font-size: 12.5px; line-height: 1.7; color: color-mix(in oklab, var(--color-cream) 50%, transparent);
+  font-size: 12.5px; line-height: 1.7; color: color-mix(in oklab, var(--color-cream) 65%, transparent);
   padding: 20px 0 0; border-top: 1px dashed color-mix(in oklab, var(--color-cream) 12%, transparent);
   max-width: 65ch; margin: 0 0 32px;
 }
@@ -860,7 +860,7 @@ html {
   line-height: 1.45; letter-spacing: -0.02em;
   color: color-mix(in oklab, var(--color-cream) 92%, transparent); max-width: 60ch;
 }
-.prose-article .gc-comparativa .gc-closing p em { font-style: normal; color: var(--color-burgundy-light); }
+.prose-article .gc-comparativa .gc-closing p em { font-style: normal; color: var(--color-hilo-texto); }
 @media (max-width: 640px) {
   .prose-article .gc-comparativa .gc-table-wrap { margin-inline: -24px; padding-inline: 24px; }
 }
@@ -891,7 +891,7 @@ html {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
   padding: 14px 16px;
   border-bottom: 1px solid var(--rule-strong);
   white-space: nowrap;
@@ -930,7 +930,7 @@ html {
   font-size: 10px; font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
   margin-bottom: 14px;
 }
 .prose-article .gc-reforma .running-head { margin-bottom: 18px; }
@@ -946,7 +946,7 @@ html {
 }
 .prose-article .gc-reforma h2 em {
   font-style: normal;
-  color: var(--color-burgundy-light);
+  color: var(--color-hilo-texto);
 }
 .prose-article .gc-reforma .gc-lead {
   font-size: 1.0625rem;
@@ -969,7 +969,7 @@ html {
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
 }
 .prose-article .gc-reforma .gc-col-h:first-child { padding-left: 0; }
 .prose-article .gc-reforma .gc-col-h:last-child  { padding-right: 0; }
@@ -983,7 +983,7 @@ html {
   line-height: 1;
   margin-bottom: 6px;
 }
-.prose-article .gc-reforma .gc-col-h--new .gc-year { color: var(--color-burgundy-light); }
+.prose-article .gc-reforma .gc-col-h--new .gc-year { color: var(--color-hilo-texto); }
 .prose-article .gc-reforma .gc-col-h .gc-cite {
   display: inline-block;
   font-family: var(--font-body);
@@ -991,7 +991,7 @@ html {
   font-weight: 400;
   letter-spacing: 0.02em;
   text-transform: none;
-  color: color-mix(in oklab, var(--color-cream) 50%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
   margin-top: 4px;
 }
 .prose-article .gc-reforma .gc-row {
@@ -1030,7 +1030,7 @@ html {
   width: 18px;
 }
 .prose-article .gc-reforma .gc-old {
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
 }
 .prose-article .gc-reforma .gc-new {
   color: color-mix(in oklab, var(--color-cream) 90%, transparent);
@@ -1051,7 +1051,7 @@ html {
   padding: 2px 8px;
   border-radius: 6px;
   background: color-mix(in oklab, var(--color-burgundy) 18%, transparent);
-  color: var(--color-burgundy-light);
+  color: var(--color-hilo-texto);
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -1084,7 +1084,7 @@ html {
 }
 .prose-article .gc-reforma .gc-closing p em {
   font-style: normal;
-  color: var(--color-burgundy-light);
+  color: var(--color-hilo-texto);
 }
 @media (max-width: 720px) {
   .prose-article .gc-reforma .gc-lead { font-size: 1rem; margin-bottom: 28px; }
@@ -1120,7 +1120,7 @@ html {
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: color-mix(in oklab, var(--color-cream) 50%, transparent);
+    color: color-mix(in oklab, var(--color-cream) 65%, transparent);
     padding-top: 3px;
   }
   .prose-article .gc-reforma .gc-new {
@@ -1129,7 +1129,7 @@ html {
     border-radius: 0 6px 6px 0;
     margin-top: 8px;
   }
-  .prose-article .gc-reforma .gc-new::before { color: var(--color-burgundy-light); }
+  .prose-article .gc-reforma .gc-new::before { color: var(--color-hilo-texto); }
 }
 
 /* ============================================================
@@ -1261,7 +1261,7 @@ html {
   font-size: 0.8125rem;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
 }
 .prose-article .gc-cita figcaption a {
   color: inherit;
@@ -1278,7 +1278,7 @@ html {
 /* Tablas Markdown legibles también en modo claro
    (el estilo base usa tonos crema, pensados para modo oscuro) */
 .prose-article > table thead th {
-  color: color-mix(in oklab, #1C1C1E 55%, transparent);
+  color: rgb(28 28 30 / 0.65); /* #1C1C1E al 65 %, escrito explícito: el compilador resolvía mal la mezcla */
   border-bottom-color: var(--rule-strong);
 }
 .prose-article > table tbody td {
@@ -1291,7 +1291,7 @@ html {
   font-weight: 600;
 }
 .dark .prose-article > table thead th {
-  color: color-mix(in oklab, var(--color-cream) 55%, transparent);
+  color: color-mix(in oklab, var(--color-cream) 65%, transparent);
   border-bottom-color: var(--rule-strong);
 }
 .dark .prose-article > table tbody td {
@@ -1818,7 +1818,8 @@ html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B225
 }
 .prose-article .gc-cal-dia--envio { outline: 1.5px dashed var(--fig-accent); outline-offset: -2px; color: var(--color-cream); }
 .prose-article .gc-cal-dia--notificado { box-shadow: inset 0 0 0 2px var(--fig-accent); color: var(--color-cream); font-weight: 600; }
-.prose-article .gc-cal-dia--inicio { background: var(--chart-2); color: #fff; font-weight: 600; }
+/* Inicio: burdeos al 75 % (más claro que el vencimiento, pero con 5,6:1 para el número en blanco). */
+.prose-article .gc-cal-dia--inicio { background: rgb(107 29 58 / 0.75); color: #fff; font-weight: 600; }
 .prose-article .gc-cal-dia--corre { background: color-mix(in oklab, var(--chart-1) 14%, transparent); color: var(--color-cream); }
 .prose-article .gc-cal-dia--ultimo,
 .prose-article .gc-cal-dia--vence,
