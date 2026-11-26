@@ -119,7 +119,16 @@ export function trackCalculadora(regimen: string, objeto: string, procedimiento:
    artículo de la reforma del reglamento convertía, cuando sus 65 «eventos
    clave» eran descargas y sus contactos, ninguno. Los eventos por canal se
    siguen enviando para no partir la serie histórica. */
+let ultimoContacto = 0;
+
+/** Si un componente acaba de medir un contacto (en este mismo clic). Lo usa
+ *  la red de seguridad de <Analitica> para no contar dos veces. */
+export function contactoRecienMedido(): boolean {
+  return Date.now() - ultimoContacto < 400;
+}
+
 function trackContacto(canal: ContactKind | "formulario", target?: string) {
+  ultimoContacto = Date.now();
   safeSend("contacto", {
     canal,
     contact_target: target ?? "unknown",

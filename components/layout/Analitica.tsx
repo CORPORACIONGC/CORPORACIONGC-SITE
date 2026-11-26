@@ -2,7 +2,13 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { trackEnlaceInterno, trackLectura, trackPaginaVista } from "@/lib/analytics";
+import {
+  contactoRecienMedido,
+  trackContactFromHref,
+  trackEnlaceInterno,
+  trackLectura,
+  trackPaginaVista,
+} from "@/lib/analytics";
 
 /* Medición de cada página (25-11-2026), montada una vez en el layout:
    1. La página vista, con el contexto de la página nueva, al cargar y en
@@ -12,7 +18,8 @@ import { trackEnlaceInterno, trackLectura, trackPaginaVista } from "@/lib/analyt
       (el texto de la guía o, si no hay, el contenido principal), una vez
       por umbral y por página.
    3. Los clics en enlaces a otras páginas del sitio, con la zona donde
-      estaba el enlace. */
+      estaba el enlace.
+   4. Los clics de contacto que ningún componente midió. */
 
 const UMBRALES = [25, 50, 75, 100];
 
@@ -85,6 +92,24 @@ export function Analitica() {
     };
     document.addEventListener("click", alHacerClic, { capture: true });
     return () => document.removeEventListener("click", alHacerClic, { capture: true });
+  }, []);
+
+  /* 4. Red de seguridad de los contactos. Casi todos los enlaces de correo,
+     teléfono y WhatsApp miden su clic en su propio componente; los que no
+     (un <a> suelto en una página) se miden aquí, con la zona como origen.
+     Se espera a que terminen los manejadores del clic y, si alguno ya midió
+     el contacto, no se cuenta otra vez. */
+  useEffect(() => {
+    const alHacerClic = (e: MouseEvent) => {
+      const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+      const href = a?.getAttribute("href") ?? "";
+      if (!a || !/^(mailto:|tel:|https:\/\/(wa\.me|api\.whatsapp\.com)\/)/.test(href)) return;
+      window.setTimeout(() => {
+        if (!contactoRecienMedido()) trackContactFromHref(href, `${zonaDe(a)}-sin-medir`);
+      }, 0);
+    };
+    document.addEventListener("click", alHacerClic);
+    return () => document.removeEventListener("click", alHacerClic);
   }, []);
 
   return null;
