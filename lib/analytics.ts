@@ -1,4 +1,19 @@
-import { sendGAEvent } from "@next/third-parties/google";
+/* Los eventos van a la cola `dataLayer` de Google Analytics, que el layout
+   define al cargar la página; `gtag.js` la procesa cuando llega, aunque
+   llegue después del evento. gtag exige que cada entrada sea el objeto
+   `arguments` de una llamada, no un arreglo. */
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+  }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars -- la firma documenta la llamada; se lee con `arguments`
+function gtag(..._args: unknown[]) {
+  window.dataLayer = window.dataLayer || [];
+  // eslint-disable-next-line prefer-rest-params
+  window.dataLayer.push(arguments);
+}
 
 export type ContactKind = "whatsapp" | "phone" | "email";
 
@@ -7,7 +22,7 @@ type EventParams = Record<string, string | number | boolean | undefined>;
 function safeSend(name: string, params: EventParams) {
   if (typeof window === "undefined") return;
   try {
-    sendGAEvent("event", name, {
+    gtag("event", name, {
       page_path: window.location.pathname,
       ...params,
     });

@@ -22,8 +22,8 @@ export function Footer() {
               <Image
                 src="/images/logo-gc.png"
                 alt="Corporación GC"
-                width={48}
-                height={48}
+                width={42}
+                height={40}
                 className="h-10 w-auto dark:brightness-0 dark:invert"
               />
               <div>

@@ -176,8 +176,8 @@ export function Navbar({
             <Image
               src="/images/logo-gc.png"
               alt="Corporación GC"
-              width={40}
-              height={40}
+              width={38}
+              height={36}
               className="h-9 w-auto dark:brightness-0 dark:invert"
             />
             <div className="hidden sm:block">
@@ -284,8 +284,8 @@ export function Navbar({
           <Image
             src="/images/logo-gc.png"
             alt="Corporación GC"
-            width={36}
-            height={36}
+            width={34}
+            height={32}
             className="h-8 w-auto dark:brightness-0 dark:invert"
           />
           <button

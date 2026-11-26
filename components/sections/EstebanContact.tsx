@@ -132,8 +132,8 @@ export function EstebanContact() {
                   <Image
                     src="/images/logo-gc.png"
                     alt="Corporación GC"
-                    width={40}
-                    height={40}
+                    width={34}
+                    height={32}
                     className="h-8 w-auto opacity-60 dark:opacity-90 dark:brightness-0 dark:invert"
                   />
                   <div>
