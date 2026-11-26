@@ -34,6 +34,7 @@ import { fuentes as f_ley_6043_zona_maritimo_terrestre_costa_rica } from "./ley-
 import { fuentes as f_ley_65_de_1888_zona_inalienable_resolucion_r_732_2026_minae } from "./ley-65-de-1888-zona-inalienable-resolucion-r-732-2026-minae";
 import { fuentes as f_ley_7786_reforma_sanciones_personales_expediente_25129 } from "./ley-7786-reforma-sanciones-personales-expediente-25129";
 import { fuentes as f_control_previo_contraloria_proyectos_25692_25901 } from "./control-previo-contraloria-proyectos-25692-25901";
+import { fuentes as f_convencion_colectiva_municipalidad_desamparados_sala_constitucional } from "./convencion-colectiva-municipalidad-desamparados-sala-constitucional";
 import { fuentes as f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito } from "./ley-8422-contra-la-corrupcion-enriquecimiento-ilicito";
 import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./ley-general-administracion-publica-costa-rica";
 import { fuentes as f_licitacion_corredor_vial_san_jose_san_ramon } from "./licitacion-corredor-vial-san-jose-san-ramon";
@@ -99,6 +100,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "ley-65-de-1888-zona-inalienable-resolucion-r-732-2026-minae": f_ley_65_de_1888_zona_inalienable_resolucion_r_732_2026_minae,
   "ley-7786-reforma-sanciones-personales-expediente-25129": f_ley_7786_reforma_sanciones_personales_expediente_25129,
   "control-previo-contraloria-proyectos-25692-25901": f_control_previo_contraloria_proyectos_25692_25901,
+  "convencion-colectiva-municipalidad-desamparados-sala-constitucional": f_convencion_colectiva_municipalidad_desamparados_sala_constitucional,
   "ley-8422-contra-la-corrupcion-enriquecimiento-ilicito": f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito,
   "ley-general-administracion-publica-costa-rica": f_ley_general_administracion_publica_costa_rica,
   "licitacion-corredor-vial-san-jose-san-ramon": f_licitacion_corredor_vial_san_jose_san_ramon,

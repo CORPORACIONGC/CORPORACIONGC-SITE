@@ -97,6 +97,7 @@ import { PlazosBuzonHacendario, CambiosBuzonHacendario } from "@/components/arti
 import { PasosAfectacionLey65 } from "@/components/article/ZonaInalienableLey65";
 import { Art81Comparado, SancionesDirectores, OsflTresTextos } from "@/components/article/Ley7786Reforma25129";
 import { Art184Comparado, Articulo12TresTextos } from "@/components/article/ControlContraloria";
+import { LineaCesantiaConvenciones, ConvencionesMunicipalesSala } from "@/components/article/ConvencionesMunicipales";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -322,6 +323,8 @@ const ARTICLE_COMPONENTS = {
   OsflTresTextos,
   Art184Comparado,
   Articulo12TresTextos,
+  LineaCesantiaConvenciones,
+  ConvencionesMunicipalesSala,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
