@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { MagneticButton } from "@/components/ui/MagneticButton";
 import { CapacitacionEleinmsa } from "@/components/article/CapacitacionEleinmsa";
 import { PRACTICE_AREA_PAGES, FIRM, FIRM_CONTACT, getRelatedAreas } from "@/lib/constants";
 import { getSentenciasPorArea } from "@/lib/jurisprudencia";
@@ -14,17 +13,15 @@ import { generateAreaMetadata } from "@/lib/page-metadata";
 import {
   ArrowLeft,
   ArrowRight,
-  Scales,
-  Gavel,
-  ShieldCheck,
   BookOpen,
-  WhatsappLogo,
-  Warning,
   CheckCircle,
   Phone,
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr";
 import { RunningHead } from "@/components/ui/RunningHead";
+import { Migas } from "@/components/layout/Migas";
+import { AccionesLlamada, LlamadaArea, enlaceWhatsApp } from "@/components/areas/LlamadaArea";
+import { SignoPliegue, plegarSecciones } from "@/components/areas/AnalisisPlegable";
 
 // Slugs inexistentes devuelven un 404 real (no un soft-404 con estado 200),
 // evitando que Google los archive como "rastreada, sin indexar".
@@ -59,7 +56,11 @@ function LegalRef({ children }: { children: React.ReactNode }) {
   );
 }
 
-/* ─── Bloque de instrumento procesal ─── */
+/* ─── Bloque de instrumento procesal ───
+   Cada instrumento es una subsección del «Análisis jurídico detallado» y se
+   pliega con <details> (D-02, 25-11-2026): el lector ve la lista de
+   instrumentos con su fundamento y abre el que le interesa. El texto queda
+   en el HTML aunque esté plegado, así que los buscadores lo siguen leyendo. */
 function Instrumento({
   titulo,
   fundamento,
@@ -70,17 +71,22 @@ function Instrumento({
   children: React.ReactNode;
 }) {
   return (
-    <div className="py-8 border-b border-cream/[0.06] last:border-b-0">
-      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
-        <h3 className="font-display text-base md:text-lg text-cream font-medium">
+    <details className="group/sub border-t border-cream/[0.08]">
+      <summary className="grid cursor-pointer list-none grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 py-6 sm:grid-cols-[minmax(0,1fr)_auto_auto] [&::-webkit-details-marker]:hidden">
+        <h3 className="col-start-1 row-start-1 font-display text-base md:text-lg text-cream font-medium leading-snug transition-colors duration-300 group-hover/sub:text-emphasis">
           {titulo}
         </h3>
-        <LegalRef>{fundamento}</LegalRef>
-      </div>
-      <div className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] space-y-3">
+        <span className="col-start-1 row-start-2 mt-2 sm:col-start-2 sm:row-start-1 sm:mt-0">
+          <LegalRef>{fundamento}</LegalRef>
+        </span>
+        <span className="col-start-2 row-start-1 sm:col-start-3">
+          <SignoPliegue />
+        </span>
+      </summary>
+      <div className="pb-8 text-[15px] md:text-base text-cream/[0.78] leading-[1.7] space-y-3">
         {children}
       </div>
-    </div>
+    </details>
   );
 }
 
@@ -5521,18 +5527,16 @@ export default async function AreaDetailPage({
   if (!content) notFound();
 
   const commercial = AREA_COMMERCIAL[slug];
-  const whatsappUrl = commercial
-    ? `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(commercial.whatsappMessage)}`
-    : null;
+  /* Un solo enlace de WhatsApp para toda la página: con el mensaje del área
+     si lo tiene, o con el general de la firma (D-12). */
+  const whatsappUrl = enlaceWhatsApp(commercial?.whatsappMessage);
 
   const relatedAreas = getRelatedAreas(slug);
   const sentencias = getSentenciasPorArea(slug);
   /* Todo el cluster del área, no una sola guía elegida a mano. */
   const guias = getArticlesByArea(slug);
 
-  /* El lateral de escritorio: WhatsApp con el mensaje del área (o el general
-     de la firma) y el índice de los apartados que la página sí tiene. */
-  const whatsappAside = whatsappUrl ?? `https://wa.me/${FIRM_CONTACT.phoneRaw}`;
+  /* El índice del lateral de escritorio: los apartados que la página sí tiene. */
   const indice = [
     ...(commercial
       ? [
@@ -5632,64 +5636,46 @@ export default async function AreaDetailPage({
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
           <div className="max-w-[1240px] mx-auto px-6 md:px-10 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-x-20 xl:gap-x-28">
           <div className="min-w-0 max-w-[760px]">
-            {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-xs text-cream/65 mb-8">
-              <Link href="/" className="hover:text-emphasis transition-colors">
-                Inicio
-              </Link>
-              <span>/</span>
-              <Link href="/areas" className="hover:text-emphasis transition-colors">
-                Áreas
-              </Link>
-              <span>/</span>
-              <span className="text-cream/75">{area.title}</span>
-            </div>
+            {/* Migas: el mismo patrón de regreso de guías e índices (D-22). */}
+            <Migas
+              className="mb-8"
+              items={[
+                { label: "Inicio", href: "/" },
+                { label: "Áreas", href: "/areas" },
+                { label: area.title },
+              ]}
+            />
 
             {/* Header */}
             <RunningHead title={area.priority === "primary" ? "Área principal" : "Área de práctica"} />
 
-            <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream mb-4">
+            <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
               {("h1" in area && area.h1) || area.title}
             </h1>
-            <p className="text-base text-cream/65 leading-relaxed max-w-[55ch]">
-              {area.subtitle}
+
+            {/* Entrada (D-02 y D-26, 25-11-2026): dos frases que dicen qué
+                resuelve la firma en la materia y quién la dirige, y debajo la
+                llamada. Sustituye a la definición de manual y a la caja
+                «Consulta urgente». La primera frase es el subtítulo del área;
+                la segunda, el dato de dirección que la firma publica en todo
+                el sitio. Nada se escribe a mano por área. */}
+            <p className="mt-5 text-[17px] md:text-lg text-cream/[0.85] leading-[1.6] max-w-[60ch]">
+              {area.subtitle.replace(/\.$/, "")}. Dirige la firma el{" "}
+              <Link
+                href="/abogados/oscar-gonzalez"
+                className="text-cream underline decoration-cream/30 underline-offset-4 transition-colors duration-300 hover:text-emphasis hover:decoration-current"
+              >
+                Dr. Óscar González Camacho
+              </Link>
+              , exmagistrado de la Sala Primera y coordinador de la comisión redactora del CPCA.
             </p>
+            {/* En escritorio la llamada vive en el lateral fijo, a la misma
+                altura: un solo botón a la vista (D-26). */}
+            <AccionesLlamada whatsapp={whatsappUrl} contactTarget={`area-${slug}`} className="mt-6 lg:hidden" />
 
-            {/* Respuesta directa a qué es la materia: la primera frase que
-                leen Google y los buscadores con IA. */}
-            {commercial?.definicion && (
-              <p className="mt-7 text-[17px] md:text-lg text-cream/[0.82] leading-[1.65] max-w-[62ch]">
-                {commercial.definicion}
-              </p>
-            )}
-
-            {/* ─── COMMERCIAL LANDING (above the fold) ─── */}
-            {commercial && whatsappUrl && (
+            {/* ─── COMMERCIAL LANDING ─── */}
+            {commercial && (
               <>
-                {/* Hook + WhatsApp CTA */}
-                <div className="mt-12 p-7 md:p-9 rounded-xl border border-burgundy/20 bg-burgundy/[0.045] dark:bg-burgundy/[0.16]">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Warning size={16} weight="duotone" className="text-burgundy-light dark:text-hilo-texto" />
-                    <span className="text-[10px] tracking-[0.25em] uppercase text-burgundy-light dark:text-hilo-texto font-medium">
-                      Consulta Urgente
-                    </span>
-                  </div>
-                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight leading-tight mb-3 max-w-[40ch]">
-                    {commercial.hookHeadline}
-                  </h2>
-                  <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[60ch] mb-7">
-                    {commercial.hookSubtext}
-                  </p>
-                  <MagneticButton
-                    href={whatsappUrl}
-                    variant="primary"
-                    contactTarget={`area-${slug}`}
-                  >
-                    <WhatsappLogo size={18} weight="fill" />
-                    Escribir por WhatsApp
-                  </MagneticButton>
-                </div>
-
                 {/* Trigger scenarios */}
                 <section id="cuando" className="mt-16 scroll-mt-28">
                   <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
@@ -5773,37 +5759,38 @@ export default async function AreaDetailPage({
                   </section>
                 )}
 
-                {/* Commercial FAQ */}
+                {/* Preguntas prácticas: el acordeón de las guías (el mismo marcado del
+                    pie de app/articulos/[slug]/page.tsx). El texto queda en el
+                    HTML aunque esté plegado y coincide con el FAQPage. */}
                 <section id="preguntas" className="mt-16 scroll-mt-28">
-                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight mb-6">
+                  <h2 className="font-display text-xl md:text-2xl text-cream tracking-tight">
                     Preguntas prácticas
                   </h2>
-                  <div className="border-t border-cream/[0.12]">
-                    {commercial.commercialFaq.map((item, i) => (
-                      <div key={i} className="py-6 border-b border-cream/[0.08]">
-                        <h3 className="text-[15px] md:text-base font-semibold text-cream leading-snug mb-2">{item.question}</h3>
-                        <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
+                  <div className="mt-6 divide-y divide-cream/10 border-y border-cream/10">
+                    {commercial.commercialFaq.map((item) => (
+                      <details key={item.question} className="group py-1">
+                        <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-4 transition-colors hover:text-emphasis [&::-webkit-details-marker]:hidden">
+                          <h3 className="text-[15px] md:text-base font-semibold leading-snug text-cream transition-colors group-hover:text-emphasis">
+                            {item.question}
+                          </h3>
+                          <span aria-hidden="true" className="mt-0.5 shrink-0 text-cream/45 transition-transform duration-300 group-open:rotate-45">+</span>
+                        </summary>
+                        <p className="pb-5 pr-8 text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
                           {item.answer}
                         </p>
-                      </div>
+                      </details>
                     ))}
                   </div>
                 </section>
 
-                {/* Secondary WhatsApp CTA */}
-                <div className="mt-12 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between lg:hidden">
-                  <p className="text-[15px] text-cream/[0.82] leading-snug max-w-[38ch]">
-                    ¿Su situación es urgente? Escríbanos por WhatsApp para coordinar una evaluación inmediata.
-                  </p>
-                  <MagneticButton
-                    href={whatsappUrl}
-                    variant="primary"
-                    contactTarget={`area-${slug}-secondary`}
-                  >
-                    <WhatsappLogo size={18} weight="fill" />
-                    Coordinar consulta
-                  </MagneticButton>
-                </div>
+                {/* Llamada intermedia, en el mismo patrón que la de entrada y la
+                    de cierre. En escritorio la cubre el lateral fijo. */}
+                <LlamadaArea
+                  className="mt-12 lg:hidden"
+                  titulo={commercial.hookHeadline}
+                  whatsapp={whatsappUrl}
+                  contactTarget={`area-${slug}-secondary`}
+                />
 
                 {/* Todas las guías de la materia, con el mismo trazo de las
                     filas del equipo y de las áreas. Sustituye al enlace único
@@ -5834,7 +5821,9 @@ export default async function AreaDetailPage({
                                 <span className="block text-[15px] md:text-base font-semibold leading-snug text-cream group-hover:text-burgundy dark:group-hover:text-hilo-texto transition-colors duration-300">
                                   {g.title}
                                 </span>
-                                <span className="mt-1.5 block text-sm text-cream/[0.72] leading-relaxed max-w-[62ch]">
+                                {/* En el teléfono, el extracto en dos líneas: con nueve
+                                    guías completas la lista ocupaba siete pantallas. */}
+                                <span className="mt-1.5 text-sm text-cream/[0.72] leading-relaxed max-w-[62ch] line-clamp-2 md:line-clamp-none">
                                   {g.excerpt}
                                 </span>
                                 <span className="mt-2 block text-xs text-cream/65">
@@ -5855,32 +5844,42 @@ export default async function AreaDetailPage({
                   </section>
                 )}
 
-                {/* Divider before legal depth content */}
+                {/* Análisis jurídico detallado */}
                 <div id="analisis" className="mt-20 scroll-mt-28">
                   <RunningHead title="Análisis jurídico detallado" />
+                </div>
+
+                {/* Apertura del análisis, abierta: la definición de la materia
+                    (antes abría la página) y el planteamiento jurídico que
+                    acompañaba a la caja «Consulta urgente». */}
+                <div className="mb-10 space-y-4">
+                  {commercial.definicion && (
+                    <p className="text-[15px] md:text-base text-cream/[0.82] leading-[1.7] max-w-[65ch]">
+                      {commercial.definicion}
+                    </p>
+                  )}
+                  <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
+                    {commercial.hookSubtext}
+                  </p>
                 </div>
               </>
             )}
 
-            {/* Content (legal depth) */}
-            {content}
-
-            {/* CTA */}
-            <div className="mt-16 p-7 md:p-9 rounded-xl border border-burgundy/20 bg-burgundy/[0.045] dark:bg-burgundy/[0.16]">
-              <p className="font-display text-xl md:text-2xl text-cream tracking-tight mb-2">
-                ¿Necesita asistencia en {area.title.toLowerCase()}?
-              </p>
-              <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] mb-7 max-w-[50ch]">
-                Nuestro equipo puede evaluar su caso y orientarle sobre las vías
-                procesales disponibles.
-              </p>
-              <Link
-                href="/#contacto"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm tracking-wide font-medium hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98] transition-colors duration-300"
-              >
-                Contactar a Corporación GC
-              </Link>
+            {/* Contenido del análisis, plegado por subsección: cada fila lleva
+                su filete superior y el bloque cierra con uno inferior. */}
+            <div className="border-b border-cream/[0.08]">
+              {plegarSecciones(content)}
             </div>
+
+            {/* Llamada de cierre, en el mismo patrón. En escritorio la cubre el
+                lateral fijo, que sigue a la vista hasta el final. */}
+            <LlamadaArea
+              className="mt-16 lg:hidden"
+              titulo={`¿Necesita asistencia en ${area.title.toLowerCase()}?`}
+              texto="Nuestro equipo puede evaluar su caso y orientarle sobre las vías procesales disponibles."
+              whatsapp={whatsappUrl}
+              contactTarget={`area-${slug}-cierre`}
+            />
 
             {/* Sentencias de la firma en esta materia: enlace interno hacia
                 las páginas de jurisprudencia, que son la pieza más citable
@@ -5926,10 +5925,10 @@ export default async function AreaDetailPage({
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6">
+                <div className="mt-4">
                   <Link
                     href="/areas"
-                    className="inline-flex items-center gap-1.5 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
+                    className="inline-flex items-center gap-1.5 py-3 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
                   >
                     Ver todas las áreas de práctica
                     <ArrowRight size={12} weight="bold" />
@@ -5939,10 +5938,10 @@ export default async function AreaDetailPage({
             )}
 
             {/* Bottom nav */}
-            <div className="mt-10 pt-8 border-t border-cream/[0.06] flex items-center justify-between">
+            <div className="mt-10 pt-5 border-t border-cream/[0.06] flex items-center justify-between">
               <Link
                 href="/areas"
-                className="inline-flex items-center gap-1.5 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
+                className="inline-flex items-center gap-1.5 py-3 text-sm text-cream/65 hover:text-emphasis transition-colors duration-300"
               >
                 <ArrowLeft size={14} weight="regular" />
                 Todas las áreas
@@ -5959,12 +5958,9 @@ export default async function AreaDetailPage({
               <p className="mt-2 text-sm text-cream/[0.72] leading-relaxed">
                 Cuéntenos su caso por WhatsApp. Atendemos de lunes a viernes, de 9:00 a. m. a 5:00 p. m.
               </p>
-              <div className="mt-5">
-                <MagneticButton href={whatsappAside} variant="outline" contactTarget={`area-${slug}-lateral`}>
-                  <WhatsappLogo size={18} weight="fill" />
-                  Escribir por WhatsApp
-                </MagneticButton>
-              </div>
+              {/* El mismo botón macizo y el mismo rótulo que la entrada y las
+                  llamadas del texto (D-26): una sola pieza para una sola acción. */}
+              <AccionesLlamada whatsapp={whatsappUrl} contactTarget={`area-${slug}-lateral`} className="mt-5" />
               <ul role="list" className="mt-6 border-t border-cream/[0.12] text-sm">
                 <li className="border-b border-cream/[0.08]">
                   <a href={`tel:+${FIRM_CONTACT.phoneRaw}`} className="group flex items-center gap-3 py-3 text-cream/[0.82] hover:text-emphasis transition-colors duration-300">
@@ -5986,7 +5982,7 @@ export default async function AreaDetailPage({
                   <ul role="list" className="mt-3 text-sm">
                     {indice.map((it) => (
                       <li key={it.id}>
-                        <a href={`#${it.id}`} className="block py-1.5 text-cream/[0.72] hover:text-emphasis transition-colors duration-300">
+                        <a href={`#${it.id}`} className="block py-2 text-cream/[0.72] hover:text-emphasis transition-colors duration-300">
                           {it.rotulo}
                         </a>
                       </li>

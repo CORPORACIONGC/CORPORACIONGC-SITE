@@ -2,46 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { PRACTICE_AREA_PAGES, FIRM_NAV_LINKS } from "@/lib/constants";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Gavel,
-  ShieldCheck,
-  Shield,
-  Scales,
-  FileText,
-  Stamp,
-  BookOpen,
-  Briefcase,
-  Bank,
-  Handshake,
-  Warning,
-  IdentificationBadge,
-  Lightning,
-  Buildings,
-  MapPin,
-  Waves,
-  HouseSimple,
-  CurrencyCircleDollar,
-  Globe,
-  UsersThree,
-  Heart,
-  Wrench,
-  Robot,
-  Flag,
-  WifiHigh,
-  SolarPanel,
-  Leaf,
-  Certificate,
-  ShieldWarning,
-  Recycle,
-  Factory,
-  Wallet,
-} from "@phosphor-icons/react/dist/ssr";
-
+import { PRACTICE_AREA_PAGES } from "@/lib/constants";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { areasMetadata } from "@/lib/page-metadata";
 import { RunningHead } from "@/components/ui/RunningHead";
+import { Migas } from "@/components/layout/Migas";
+import { FUERA_DEL_NUCLEO, groupAreas } from "@/components/areas/grupos";
+import { LlamadaArea, enlaceWhatsApp } from "@/components/areas/LlamadaArea";
 
 export const metadata: Metadata = {
   ...areasMetadata,
@@ -99,45 +66,23 @@ const jsonLdBreadcrumb = {
   ],
 };
 
-const iconMap = {
-  Gavel,
-  ShieldCheck,
-  Shield,
-  Scales,
-  FileText,
-  Stamp,
-  BookOpen,
-  Briefcase,
-  Bank,
-  Handshake,
-  Warning,
-  IdentificationBadge,
-  Lightning,
-  Buildings,
-  MapPin,
-  Waves,
-  HouseSimple,
-  CurrencyCircleDollar,
-  Globe,
-  UsersThree,
-  Heart,
-  Wrench,
-  Robot,
-  Flag,
-  WifiHigh,
-  SolarPanel,
-  Leaf,
-  Certificate,
-  ShieldWarning,
-  Recycle,
-  Factory,
-  Wallet,
-} as const;
+/* Índice en secciones (D-21, 25-11-2026). Las tarjetas con icono, de una en
+   una, ocupaban seis pantallas en escritorio y diez en el teléfono. Ahora el
+   índice reutiliza los grupos del explorador de la portada
+   (components/areas/grupos.ts) como secciones y presenta cada área como una
+   fila con filete, en dos columnas, con el mismo trazo al pasar el cursor
+   que las filas del explorador. Lo que queda fuera del núcleo en Derecho
+   Público va al final, como cobertura complementaria. */
+const GRUPO_COMPLEMENTARIO = "Cobertura complementaria";
 
 export default function AreasPage() {
-  const primary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "primary");
-  const specialized = PRACTICE_AREA_PAGES.filter((a) => a.priority === "specialized");
-  const complementary = PRACTICE_AREA_PAGES.filter((a) => a.priority === "complementary");
+  const grupos = [
+    ...groupAreas(PRACTICE_AREA_PAGES),
+    {
+      title: GRUPO_COMPLEMENTARIO,
+      items: PRACTICE_AREA_PAGES.filter((a) => FUERA_DEL_NUCLEO.has(a.slug)),
+    },
+  ].filter((g) => g.items.length > 0);
 
   return (
     <>
@@ -151,155 +96,81 @@ export default function AreasPage() {
       <main id="contenido" className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
           <div className="max-w-[1000px] mx-auto px-6 md:px-10">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-8"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Volver al inicio
-            </Link>
+            {/* Migas, con los mismos rótulos del BreadcrumbList (D-22). */}
+            <Migas
+              className="mb-8"
+              items={[
+                { label: "Inicio", href: "/" },
+                { label: "Áreas de Práctica" },
+              ]}
+            />
 
             <RunningHead title="Áreas de práctica" />
 
             <h1 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-              Áreas de práctica en{" "}
-              <span className="text-burgundy">Derecho Público</span>
+              Áreas de práctica en Derecho Público
             </h1>
 
-            <div className="mt-8 text-sm text-cream/65 leading-relaxed max-w-[65ch] space-y-4">
-              <p>
-                Corporación GC es un bufete costarricense especializado en
-                Derecho Público. Cada área de práctica refleja una competencia
-                específica de nuestro equipo: desde la interposición de demandas ante
-                el Tribunal Contencioso Administrativo hasta la defensa en
-                procedimientos administrativos y la impugnación de sentencias ante la
-                Sala Primera de la Corte Suprema de Justicia.
-              </p>
-            </div>
+            <p className="mt-6 text-base text-cream/[0.78] leading-[1.7] max-w-[62ch]">
+              Corporación GC es un bufete costarricense especializado en
+              Derecho Público. Cada área de práctica refleja una competencia
+              específica de nuestro equipo: desde la interposición de demandas ante
+              el Tribunal Contencioso Administrativo hasta la defensa en
+              procedimientos administrativos y la impugnación de sentencias ante la
+              Sala Primera de la Corte Suprema de Justicia.
+            </p>
 
-            {/* Primary Areas */}
-            <div className="mt-16">
-              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-6">
-                Áreas Principales
-              </div>
-              <div className="grid grid-cols-1 gap-4">
-                {primary.map((area) => {
-                  const Icon = iconMap[area.icon as keyof typeof iconMap] || Scales;
-                  return (
-                    <Link
-                      key={area.slug}
-                      href={`/areas/${area.slug}`}
-                      className="gc-tarjeta group block p-6 md:p-8 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-3">
-                            <Icon
-                              size={20}
-                              weight="duotone"
-                              className="text-burgundy shrink-0 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-white"
-                            />
-                            <h2 className="font-display text-lg md:text-xl text-cream group-hover:text-emphasis transition-colors duration-300">
+            {grupos.map((g, gi) => {
+              const idGrupo = `grupo-${gi + 1}`;
+              return (
+                <section key={g.title} aria-labelledby={idGrupo} className="mt-14 md:mt-16">
+                  <h2
+                    id={idGrupo}
+                    className="font-display text-xl md:text-2xl text-cream tracking-tight"
+                  >
+                    {g.title}
+                  </h2>
+                  <ul role="list" className="mt-5 grid gap-x-10 sm:grid-cols-2">
+                    {g.items.map((area) => (
+                      <li key={area.slug}>
+                        <Link
+                          href={`/areas/${area.slug}`}
+                          className="group relative flex h-full flex-col border-t border-cream/[0.12] py-4 sm:py-5 outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="absolute inset-x-0 -top-px h-px origin-left scale-x-0 bg-burgundy-light transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
+                          />
+                          <div className="flex items-start justify-between gap-4">
+                            <h3 className="text-base font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-hilo-texto">
                               {area.title}
-                            </h2>
+                            </h3>
+                            <ArrowRight
+                              size={15}
+                              aria-hidden="true"
+                              className="mt-1 shrink-0 text-cream/30 transition-[color,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0.5 group-hover:text-burgundy-light group-focus-visible:text-burgundy-light dark:group-hover:text-hilo-texto"
+                            />
                           </div>
-                          <p className="text-sm text-cream/65 leading-relaxed max-w-[55ch]">
+                          <span className="mt-1.5 block text-sm leading-relaxed text-cream/[0.72]">
                             {area.subtitle}
-                          </p>
-                        </div>
-                        <ArrowRight
-                          size={18}
-                          weight="bold"
-                          className="text-cream/20 group-hover:text-emphasis group-hover:translate-x-0.5 transition-[color,transform] duration-300 shrink-0 mt-1"
-                        />
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              );
+            })}
 
-            {/* Specialized Areas */}
-            <div className="mt-12">
-              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-6">
-                Áreas Especializadas
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {specialized.map((area) => {
-                  const Icon = iconMap[area.icon as keyof typeof iconMap] || Scales;
-                  return (
-                    <Link
-                      key={area.slug}
-                      href={`/areas/${area.slug}`}
-                      className="gc-tarjeta group block p-6 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
-                    >
-                      <div className="flex items-center gap-3 mb-3">
-                        <Icon
-                          size={18}
-                          weight="duotone"
-                          className="text-burgundy shrink-0 transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-white"
-                        />
-                        <h2 className="font-display text-base text-cream group-hover:text-emphasis transition-colors duration-300">
-                          {area.title}
-                        </h2>
-                      </div>
-                      <p className="text-xs text-cream/65 leading-relaxed">
-                        {area.subtitle}
-                      </p>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Complementary Areas */}
-            <div className="mt-12">
-              <div className="text-[10px] tracking-[0.25em] uppercase text-cream/65 font-medium mb-6">
-                Cobertura Complementaria
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {complementary.map((area) => {
-                  const Icon = iconMap[area.icon as keyof typeof iconMap] || Scales;
-                  return (
-                    <Link
-                      key={area.slug}
-                      href={`/areas/${area.slug}`}
-                      className="gc-tarjeta group block p-5 rounded-xl border border-cream/[0.06] bg-cream/[0.02]"
-                    >
-                      <div className="flex items-center gap-3 mb-2">
-                        <Icon
-                          size={16}
-                          weight="duotone"
-                          className="text-cream/65 group-hover:text-burgundy-light dark:group-hover:text-white shrink-0 transition-colors duration-300"
-                        />
-                        <h2 className="font-display text-sm text-cream/70 group-hover:text-emphasis transition-colors duration-300">
-                          {area.title}
-                        </h2>
-                      </div>
-                      <p className="text-xs text-cream/65 leading-relaxed">
-                        {area.subtitle}
-                      </p>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-16 p-8 rounded-xl border border-burgundy/15 bg-burgundy/[0.04] text-center">
-              <p className="font-display text-lg text-cream mb-2">
-                ¿Necesita asesoría en Derecho Público?
-              </p>
-              <p className="text-sm text-cream/65 mb-6 max-w-[45ch] mx-auto">
-                Coordine una consulta con nuestro equipo para evaluar su caso.
-              </p>
-              <Link
-                href="/#contacto"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm tracking-wide font-medium hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-burgundy/20"
-              >
-                Contactar
-              </Link>
-            </div>
+            {/* Llamada: el mismo patrón y los mismos dos rótulos que las
+                páginas de área (D-12). */}
+            <LlamadaArea
+              className="mt-16"
+              titulo="¿Necesita asesoría en Derecho Público?"
+              texto="Cuéntenos su caso para que nuestro equipo lo evalúe."
+              whatsapp={enlaceWhatsApp()}
+              contactTarget="areas-indice"
+            />
           </div>
         </div>
       </main>

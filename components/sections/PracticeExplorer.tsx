@@ -14,6 +14,7 @@
 import { useId, useRef, useState, type KeyboardEvent } from "react";
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react";
+import { groupAreas } from "@/components/areas/grupos";
 
 export type PracticeAreaLite = {
   slug: string;
@@ -22,86 +23,8 @@ export type PracticeAreaLite = {
   priority: "primary" | "specialized" | "complementary";
 };
 
-/* Grupos por materia. Un área nueva que no figure en ninguno cae en el grupo
-   que corresponde a su prioridad, para que nunca desaparezca de la portada.
-   Ningún grupo pasa de ocho áreas (cuatro filas): los paneles se apilan en
-   la misma celda y la sección mide lo que el grupo más largo, así que un
-   grupo de nueve dejaba un hueco bajo el grupo de Litigio, que se abre por
-   defecto con siete. */
-const GROUPS: { title: string; slugs: string[] }[] = [
-  {
-    title: "Litigio y tribunales",
-    slugs: [
-      "litigio-contencioso-administrativo",
-      "medidas-cautelares",
-      "casacion-sala-primera",
-      "recursos-de-amparo",
-      "acciones-de-inconstitucionalidad",
-      "derecho-administrativo",
-      "expropiaciones",
-    ],
-  },
-  {
-    title: "Administración pública",
-    slugs: [
-      "contratacion-publica",
-      "procedimientos-sancionatorios",
-      "empleo-publico",
-      "informes-juridicos-dictamenes",
-      "asesoria-regulatoria",
-      "materia-presupuestaria",
-      "compliance-publico-anticorrupcion",
-    ],
-  },
-  {
-    title: "Sectores regulados",
-    slugs: [
-      "servicio-publico",
-      "telecomunicaciones-espectro-5g",
-      "energia-renovable-transicion-energetica",
-      "regulacion-fintech-criptoactivos",
-      "regulacion-ambiental-mercados-carbono",
-      "defensa-regulatoria-sectorial",
-      "gobierno-digital-inteligencia-artificial-datos",
-    ],
-  },
-  {
-    title: "Territorio y bienes públicos",
-    slugs: [
-      "dominio-publico",
-      "zona-maritimo-terrestre",
-      "derecho-urbanistico",
-      "materia-municipal",
-      "alianzas-publico-privadas-infraestructura",
-    ],
-  },
-];
-
-/* «Otras materias» no entra en el explorador. Esta sección presenta el
-   núcleo en Derecho Público y esa página reúne justamente lo que no lo es;
-   como grupo propio dejaba el panel casi vacío. Vive en el hub de áreas. */
-const FUERA_DEL_NUCLEO = new Set(["otras-materias"]);
-
-function groupAreas(areas: PracticeAreaLite[]) {
-  const nucleo = areas.filter((a) => !FUERA_DEL_NUCLEO.has(a.slug));
-  const bySlug = new Map(nucleo.map((a) => [a.slug, a]));
-  const used = new Set<string>();
-  const groups = GROUPS.map((g) => ({
-    title: g.title,
-    items: g.slugs.flatMap((s) => {
-      used.add(s);
-      const a = bySlug.get(s);
-      return a ? [a] : [];
-    }),
-  }));
-  /* Un área nueva debe asignarse a su grupo en GROUPS; si no, cae en
-     Administración pública, que es el cajón menos equivocado. */
-  for (const a of nucleo) {
-    if (used.has(a.slug)) continue;
-    groups[a.priority === "specialized" ? 2 : 1].items.push(a);
-  }
-  return groups;
-}
+/* Los grupos de práctica y el reparto viven en components/areas/grupos.ts,
+   que comparte este explorador con el índice /areas. */
 
 export function PracticeExplorer({ areas }: { areas: PracticeAreaLite[] }) {
   const groups = groupAreas(areas);
