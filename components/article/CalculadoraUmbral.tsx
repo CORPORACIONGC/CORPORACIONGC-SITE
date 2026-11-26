@@ -9,7 +9,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { UMBRALES, VIGENTE, NOMBRE_OBJETO, NOMBRE_REGIMEN, colones, type Objeto, type Regimen } from "@/lib/umbrales";
 import { FIRM_CONTACT } from "@/lib/constants";
-import { trackContactFromHref } from "@/lib/analytics";
+import { trackCalculadora, trackContactFromHref } from "@/lib/analytics";
 import { WhatsappLogo } from "@phosphor-icons/react";
 
 const RESULTADO = {
@@ -177,6 +177,21 @@ export function CalculadoraUmbral() {
     const t = setTimeout(() => setAnuncio(textoAnuncio), 700);
     return () => clearTimeout(t);
   }, [textoAnuncio]);
+
+  /* Medición: el procedimiento que resultó, cuando el monto se asienta, una
+     vez por combinación de régimen, objeto y procedimiento. El monto no se
+     envía. */
+  const ultimoResultado = useRef("");
+  useEffect(() => {
+    if (!tipo) return;
+    const clave = `${regimen}|${objeto}|${tipo}`;
+    const t = setTimeout(() => {
+      if (clave === ultimoResultado.current) return;
+      ultimoResultado.current = clave;
+      trackCalculadora(regimen, objeto, RESULTADO[tipo].nombre);
+    }, 1500);
+    return () => clearTimeout(t);
+  }, [regimen, objeto, tipo]);
 
   const privados = u.privados[objeto];
   const boton = (activo: boolean) =>

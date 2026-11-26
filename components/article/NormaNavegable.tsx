@@ -12,6 +12,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowSquareOut, CaretDown, Check, Copy, MagnifyingGlass } from "@phosphor-icons/react";
+import { trackBusquedaNorma } from "@/lib/analytics";
 import { legislacionSchema, type ArticuloNorma, type FichaNorma, type GuiaDeArticulo, type VotoDeArticulo } from "@/lib/normas";
 
 /** Fila del índice: artículo, rótulo, título, capítulo y sección. Los dos
@@ -213,6 +214,21 @@ export function NormaNavegable({
         .map((f) => f[0]),
     );
   }, [indice, aguja, tituloActivo, textosPlanos]);
+
+  /* Medición (25-11-2026): qué se busca y cuántos artículos devuelve, cuando
+     el texto se asienta (1,2 s sin teclear). Una búsqueda sin resultados
+     señala un tema que la norma no trae con esa palabra. */
+  const ultimaBusqueda = useRef("");
+  useEffect(() => {
+    const termino = busca.trim();
+    if (termino.length < 2) return;
+    const t = window.setTimeout(() => {
+      if (termino === ultimaBusqueda.current) return;
+      ultimaBusqueda.current = termino;
+      trackBusquedaNorma(ficha.nombre, termino, visibles.size);
+    }, 1200);
+    return () => window.clearTimeout(t);
+  }, [busca, ficha.nombre, visibles.size]);
 
   /* Los capítulos del título abierto, para saltar dentro de una lista larga. */
   const capitulos = useMemo(() => {

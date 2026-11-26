@@ -5,6 +5,8 @@
 declare global {
   interface Window {
     dataLayer?: unknown[];
+    /** Contexto que declara la página abierta (components/layout/DatosPagina). */
+    __gcPagina?: ContextoDeclarado;
   }
 }
 
@@ -19,16 +21,96 @@ export type ContactKind = "whatsapp" | "phone" | "email";
 
 type EventParams = Record<string, string | number | boolean | undefined>;
 
+/* Contexto de cada página (25-11-2026). Todo evento sale con el tipo de
+   página (content_group, que GA4 muestra como «Grupo de contenido»), el área
+   de práctica y, en las guías, el autor y el tipo de publicación. Con eso se
+   responde qué área o qué autor trae consultas. El tipo y el área de las
+   páginas de área salen de la ruta; el área y el autor de las guías y las
+   sentencias los declara la propia página con <DatosPagina>. Las dos guías
+   congeladas del experimento no lo declaran y quedan solo con el tipo. */
+export type ContextoDeclarado = {
+  ruta: string;
+  tipo?: string;
+  area?: string;
+  autor?: string;
+  publicacion?: string;
+};
+
+const TIPOS_POR_RUTA: [RegExp, string][] = [
+  [/^\/$/, "Portada"],
+  [/^\/articulos\/[^/]+/, "Guía"],
+  [/^\/areas\/[^/]+/, "Área"],
+  [/^\/(abogados|equipo)\/[^/]+/, "Perfil"],
+  [/^\/jurisprudencia-destacada\/[^/]+/, "Sentencia"],
+  [/^\/(articulos|areas|abogados|jurisprudencia-destacada)\/?$/, "Listado"],
+  [/^\/contacto\/?$/, "Contacto"],
+];
+
+export function contextoPagina(): EventParams {
+  if (typeof window === "undefined") return {};
+  const ruta = window.location.pathname;
+  const d = window.__gcPagina?.ruta === ruta ? window.__gcPagina : undefined;
+  const tipo = d?.tipo ?? TIPOS_POR_RUTA.find(([re]) => re.test(ruta))?.[1] ?? "Institucional";
+  const area = d?.area ?? ruta.match(/^\/areas\/([^/]+)/)?.[1];
+  return {
+    content_group: tipo,
+    area_practica: area,
+    autor_pagina: d?.autor,
+    tipo_publicacion: d?.publicacion,
+  };
+}
+
 function safeSend(name: string, params: EventParams) {
   if (typeof window === "undefined") return;
   try {
     gtag("event", name, {
       page_path: window.location.pathname,
+      ...contextoPagina(),
       ...params,
     });
   } catch {
     // Never let analytics break the UI.
   }
+}
+
+/* Página vista enviada por el sitio (25-11-2026). La configuración de GA4
+   lleva send_page_view: false y la medición mejorada no cuenta los cambios
+   de página del historial: así cada vista sale una sola vez y con el
+   contexto de la página nueva, también al navegar dentro del sitio. */
+export function trackPaginaVista(referente?: string) {
+  if (typeof window === "undefined") return;
+  try {
+    gtag("event", "page_view", {
+      page_location: window.location.href,
+      page_title: document.title,
+      ...(referente ? { page_referrer: referente } : {}),
+      ...contextoPagina(),
+    });
+  } catch {
+    // La medición nunca rompe la página.
+  }
+}
+
+/** Hasta dónde leyó: 25, 50, 75 o 100 % del cuerpo de la página. */
+export function trackLectura(porcentaje: number) {
+  safeSend("lectura", { porcentaje_lectura: porcentaje });
+}
+
+/** Clic en un enlace a otra página del sitio, con su destino y la zona de
+ *  la página donde estaba (cuerpo, menú, pie u otra). */
+export function trackEnlaceInterno(destino: string, ubicacion: string) {
+  safeSend("enlace_interno", { destino_enlace: destino, ubicacion_enlace: ubicacion });
+}
+
+/** Búsqueda en el buscador de una norma navegable, cuando el texto se
+ *  asienta: qué se buscó, en qué norma y cuántos artículos devolvió. */
+export function trackBusquedaNorma(norma: string, termino: string, resultados: number) {
+  safeSend("busqueda_norma", { norma, termino_busqueda: termino.slice(0, 100), resultados });
+}
+
+/** Resultado de la calculadora de umbrales de contratación. */
+export function trackCalculadora(regimen: string, objeto: string, procedimiento: string) {
+  safeSend("calculadora_umbral", { regimen, objeto_contratacion: objeto, procedimiento });
 }
 
 /* Un solo evento reúne los cuatro caminos por los que alguien escribe:
@@ -105,6 +187,7 @@ export function trackWebVital(m: MetricaWeb) {
       metric_delta: m.delta,
       metric_rating: m.rating ?? "unknown",
       page_path: window.location.pathname,
+      ...contextoPagina(),
       non_interaction: true,
     });
   } catch {

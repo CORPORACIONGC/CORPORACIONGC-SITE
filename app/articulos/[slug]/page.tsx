@@ -1,4 +1,5 @@
 import { OBRAS_OSCAR } from "@/lib/obras-oscar";
+import { DatosPagina } from "@/components/layout/DatosPagina";
 import { OBRAS_EQUIPO } from "@/lib/obras-equipo";
 import { NORMA_DE_GUIA } from "@/lib/normas-de-guias";
 import { legislacionSchema } from "@/lib/normas";
@@ -327,6 +328,17 @@ export const dynamicParams = false;
    tenían el 30 de octubre y se mide diez días (hasta el 20-11-2026). Si
    recuperan, los cambios vuelven de uno en uno, con una semana entre cada
    uno. No retirar esta lista sin leer antes el corte de datos. */
+/* Tipo de página para la medición (content_group de GA4). */
+const TIPO_PUBLICACION: Record<string, string> = {
+  guia: "Guía",
+  articulo: "Artículo",
+  tesis: "Tesis",
+  libro: "Libro",
+  ponencia: "Ponencia",
+  ley: "Ley",
+  pdf: "Documento",
+};
+
 const ESTADO_30_OCT = new Set([
   "que-es-el-cpca-costa-rica",
   "reforma-reglamento-contratacion-publica-2026-proveedores-estado",
@@ -677,6 +689,14 @@ export default async function ArticlePage({
       <Navbar />
       {/* Las dos guías del experimento no cambian su HTML hasta el 09-12. */}
       <main id={enMedicion ? undefined : "contenido"} className="gc-lectura bg-surface min-h-[100dvh]">
+        {!enMedicion && (
+          <DatosPagina
+            tipo={TIPO_PUBLICACION[article.publicationType ?? (article.type === "pdf" ? "pdf" : "guia")] ?? "Guía"}
+            area={article.areas?.[0]}
+            autor={article.author}
+            publicacion={article.publicationType}
+          />
+        )}
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">
           <div
             lang={lang}

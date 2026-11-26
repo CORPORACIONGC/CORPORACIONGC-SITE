@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { DatosPagina } from "@/components/layout/DatosPagina";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -224,6 +225,10 @@ export default async function SentenciaDestacadaPage({
       <Navbar />
 
       <main id="contenido" className="gc-lectura min-h-[100dvh] bg-surface">
+        <DatosPagina
+          tipo="Sentencia"
+          area={sentencia.areas?.[0]}
+        />
         {/* ─── Portada del documento: título y ficha de la resolución ─── */}
         <header className="pt-28 md:pt-36">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10">

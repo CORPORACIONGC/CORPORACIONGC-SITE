@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import Script from "next/script";
 import { GlobalWhatsAppFloat } from "@/components/layout/GlobalWhatsAppFloat";
 import { WebVitals } from "@/components/layout/WebVitals";
+import { Analitica } from "@/components/layout/Analitica";
 import "./globals.css";
 
 const GA_ID = "G-EL3CCTV95K";
@@ -110,14 +111,16 @@ export default function RootLayout({
         {children}
         <GlobalWhatsAppFloat />
         <WebVitals />
+        <Analitica />
         {/* Google Analytics (25-11-2026): la cola `dataLayer` y la
             configuración se definen enseguida, y `gtag.js` (179 KB) se baja
             cuando la página ya terminó de cargar, sin precarga en el
             <head>: así no compite con el CSS ni con la imagen principal.
             Lo que se registre antes queda en la cola y se envía al
-            llegar el guion. */}
+            llegar el guion. La página vista la envía <Analitica>, con el
+            contexto de cada página (send_page_view: false). */}
         <Script id="ga-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_ID}');`}
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_ID}',{send_page_view:false});`}
         </Script>
         <Script id="ga" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
       </body>
