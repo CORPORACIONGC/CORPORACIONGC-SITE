@@ -673,13 +673,13 @@ html {
 .animate-marquee-lenta {
   animation: marquee 80s linear infinite;
 }
-/* Pausa al pasar el cursor, al recibir el foco o con el botón «Pausar la
-   cinta» (B6, 25-11-2026). Va aquí y no en clases de Tailwind porque la
-   regla de arriba, fuera de las capas, le ganaba a cualquier utilidad: la
-   pausa al pasar el cursor nunca llegó a funcionar. */
+/* Pausa al pasar el cursor o al recibir el foco (B6, 25-11-2026; el botón
+   «Pausar la cinta» se quitó ese mismo día a pedido de Khevin). Va aquí y no
+   en clases de Tailwind porque la regla de arriba, fuera de las capas, le
+   ganaba a cualquier utilidad: la pausa al pasar el cursor nunca llegó a
+   funcionar. */
 .group\/cinta:hover .animate-marquee-lenta,
-.group\/cinta:focus-within .animate-marquee-lenta,
-[data-pausada="true"] .animate-marquee-lenta {
+.group\/cinta:focus-within .animate-marquee-lenta {
   animation-play-state: paused;
 }
 @media (prefers-reduced-motion: reduce) {

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
-import { PausaCinta } from "@/components/sections/PausaCinta";
 import { CLIENTES, tamanoOptico } from "@/lib/constants";
 
 type Cliente = (typeof CLIENTES)[number];
@@ -45,7 +44,7 @@ function Cinta() {
       </AnimatedEntry>
       {/* Los bordes se desvanecen con una máscara, no con franjas del color de
           fondo: así no aparecen rectángulos si el fondo cambia de tono. */}
-      <PausaCinta className="group/cinta relative mt-10 [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] md:mt-12 motion-reduce:[mask-image:none]">
+      <div className="group/cinta relative mt-10 [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] md:mt-12 motion-reduce:[mask-image:none]">
         {/* El pr igual al gap cierra el ciclo: el translateX(-50%) cae justo
             en el inicio de la copia. Con movimiento reducido, la cinta se
             detiene y los logos se reparten en filas centradas. */}
@@ -65,7 +64,7 @@ function Cinta() {
             </li>
           ))}
         </ul>
-      </PausaCinta>
+      </div>
     </div>
   );
 }
