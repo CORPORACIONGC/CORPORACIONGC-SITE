@@ -20,6 +20,16 @@ export const fuentes: FuentesDeGuia = {
       href: "https://www.imprentanacional.go.cr/pub/2024/11/01/ALCA178_01_11_2024.pdf",
     },
     {
+      titulo: "Reglamento a la Ley N.° 10554",
+      detalle: "Decreto Ejecutivo N.° 45993-MP de 26-10-2026, Alcance N.° 151 a La Gaceta N.° 216 de 13-11-2026; rige desde su publicación (art. 41)",
+      href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=108273&param2=153046&param3=1",
+    },
+    {
+      titulo: "Transparencia y Acceso a la Información Pública",
+      detalle: "Decreto Ejecutivo N.° 40200-MP-MEIC-MC de 27-04-2017, art. 5 (origen de la prórroga de un mes). Derogado por el art. 40 del Decreto 45993-MP",
+      href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=84166&param2=108486&param3=1",
+    },
+    {
       titulo: "Ley de Regulación del Derecho de Petición",
       detalle: "Ley N.° 9097, arts. 3, 4, 6 y 11 (comparación con la Ley 10554)",
       href: "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=74427&param2=91901&param3=1",
@@ -52,6 +62,7 @@ export const fuentes: FuentesDeGuia = {
     { numero: "Voto 2026-010108", organo: SC, fecha: "20-03-2026", tema: "Prórroga razonable", criterio: "Declaró sin lugar el amparo: la ampliación de hasta un mes, comunicada antes del recurso para anonimizar información sensible, se ajusta a la ley.", href: NEXUS("sen-1-0007-1378268") },
     { numero: "Voto 2026-011637", organo: SC, fecha: "27-03-2026", tema: "Falta de reglamento", criterio: "La omisión de reglamentar la Ley 10554 lesiona el derecho de acceso; ordenó al ministro de la Presidencia emitir el reglamento en dos meses.", href: NEXUS("sen-1-0007-1386823") },
     { numero: "Resolución 2026-025496", organo: SC, fecha: "08-07-2026", tema: "Falta de reglamento", criterio: "A petición del ministro, amplió por dos meses, contados desde el 14-07-2026, el plazo para emitir el reglamento.", href: NEXUS("sen-1-0007-1412437") },
+    { numero: "Resolución 2026-037010", organo: SC, fecha: "29-09-2026", tema: "Falta de reglamento", criterio: "Concedió una segunda ampliación de dos meses, contados desde el 14-09-2026, para emitir el reglamento.", href: NEXUS("sen-1-0007-1432752") },
     { numero: "Voto 2026-014483", organo: SC, fecha: "24-04-2026", tema: "Canal oficial", criterio: "Declaró sin lugar el amparo: la solicitud se envió a correos que no eran el canal oficial de recepción.", href: NEXUS("sen-1-0007-1384385") },
     { numero: "Voto 2026-022460", organo: SC, fecha: "19-06-2026", tema: "Plazo ampliado vencido", criterio: "Vencido el plazo ampliado sin entregar la información, hay lesión de los arts. 27 y 30 de la Constitución.", href: NEXUS("sen-1-0007-1406657") },
     { numero: "Voto 2026-022685", organo: SC, fecha: "19-06-2026", tema: "Firma digital", criterio: "La solicitud electrónica no puede supeditarse, como regla general, a la firma digital cuando es posible identificar razonablemente a la persona.", href: NEXUS("sen-1-0007-1406876") },
@@ -78,5 +89,5 @@ export const fuentes: FuentesDeGuia = {
       ],
     },
   ],
-  pie: "Textos normativos: SINALEVI, versión vigente al 28 de octubre de 2026, y La Gaceta. Jurisprudencia: Nexus del Poder Judicial. Antecedentes: Sistema de Información Legislativa. Cotejo al 28 de octubre de 2026.",
+  pie: "Textos normativos: SINALEVI, versión vigente al 28 de octubre de 2026, y La Gaceta. Jurisprudencia: Nexus del Poder Judicial. Antecedentes: Sistema de Información Legislativa. Cotejo al 28 de octubre de 2026; reglamento (Decreto 45993-MP) y resoluciones sobre su emisión, cotejados el 25 de noviembre de 2026.",
 };

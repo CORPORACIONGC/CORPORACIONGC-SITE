@@ -8,6 +8,7 @@ import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } 
 import { fuentes as f_arbitraje_con_el_estado_costa_rica } from "./arbitraje-con-el-estado-costa-rica";
 import { fuentes as f_cierre_colectivo_poder_judicial_2026_2027_plazos } from "./cierre-colectivo-poder-judicial-2026-2027-plazos";
 import { fuentes as f_cierre_ministerio_gobernacion_ministerio_vivienda_leyes_10983_10981 } from "./cierre-ministerio-gobernacion-ministerio-vivienda-leyes-10983-10981";
+import { fuentes as f_ciudad_gobierno_bcie_proyecto_ley_25725 } from "./ciudad-gobierno-bcie-proyecto-ley-25725";
 import { fuentes as f_clausura_municipal_negocio_licencia_comercial_costa_rica } from "./clausura-municipal-negocio-licencia-comercial-costa-rica";
 import { fuentes as f_como_demandar_al_estado_costa_rica } from "./como-demandar-al-estado-costa-rica";
 import { fuentes as f_compra_publica_innovadora_costa_rica } from "./compra-publica-innovadora-costa-rica";
@@ -49,10 +50,12 @@ import { fuentes as f_reduccion_forzosa_despido_por_reestructuracion_sector_publ
 import { fuentes as f_reforma_acuerdo_sugef_13_19_activos_virtuales } from "./reforma-acuerdo-sugef-13-19-activos-virtuales";
 import { fuentes as f_reforma_reglamento_contratacion_publica_decreto_45782 } from "./reforma-reglamento-contratacion-publica-decreto-45782";
 import { fuentes as f_registro_vasp_sugef_costa_rica } from "./registro-vasp-sugef-costa-rica";
+import { fuentes as f_reglamento_ley_10554_decreto_45993_mp } from "./reglamento-ley-10554-decreto-45993-mp";
 import { fuentes as f_sala_primera_chatgpt_inteligencia_artificial_sentencias } from "./sala-primera-chatgpt-inteligencia-artificial-sentencias";
 import { fuentes as f_san_jose_san_ramon_highway_tender_costa_rica } from "./san-jose-san-ramon-highway-tender-costa-rica";
 import { fuentes as f_sanciones_a_proveedores_contratacion_publica_ley_9986 } from "./sanciones-a-proveedores-contratacion-publica-ley-9986";
 import { fuentes as f_sanciones_disciplinarias_funcionario_publico_costa_rica } from "./sanciones-disciplinarias-funcionario-publico-costa-rica";
+import { fuentes as f_secreto_de_estado_compras_seguridad_decretos_45870_45962 } from "./secreto-de-estado-compras-seguridad-decretos-45870-45962";
 import { fuentes as f_silencio_positivo_permiso_municipal } from "./silencio-positivo-permiso-municipal";
 import { fuentes as f_traslado_de_cargos_que_hacer_costa_rica } from "./traslado-de-cargos-que-hacer-costa-rica";
 import { fuentes as f_umbrales_contratacion_publica_costa_rica } from "./umbrales-contratacion-publica-costa-rica";
@@ -66,6 +69,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "arbitraje-con-el-estado-costa-rica": f_arbitraje_con_el_estado_costa_rica,
   "cierre-colectivo-poder-judicial-2026-2027-plazos": f_cierre_colectivo_poder_judicial_2026_2027_plazos,
   "cierre-ministerio-gobernacion-ministerio-vivienda-leyes-10983-10981": f_cierre_ministerio_gobernacion_ministerio_vivienda_leyes_10983_10981,
+  "ciudad-gobierno-bcie-proyecto-ley-25725": f_ciudad_gobierno_bcie_proyecto_ley_25725,
   "clausura-municipal-negocio-licencia-comercial-costa-rica": f_clausura_municipal_negocio_licencia_comercial_costa_rica,
   "como-demandar-al-estado-costa-rica": f_como_demandar_al_estado_costa_rica,
   "compra-publica-innovadora-costa-rica": f_compra_publica_innovadora_costa_rica,
@@ -107,10 +111,12 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "reforma-acuerdo-sugef-13-19-activos-virtuales": f_reforma_acuerdo_sugef_13_19_activos_virtuales,
   "reforma-reglamento-contratacion-publica-decreto-45782": f_reforma_reglamento_contratacion_publica_decreto_45782,
   "registro-vasp-sugef-costa-rica": f_registro_vasp_sugef_costa_rica,
+  "reglamento-ley-10554-decreto-45993-mp": f_reglamento_ley_10554_decreto_45993_mp,
   "sala-primera-chatgpt-inteligencia-artificial-sentencias": f_sala_primera_chatgpt_inteligencia_artificial_sentencias,
   "san-jose-san-ramon-highway-tender-costa-rica": f_san_jose_san_ramon_highway_tender_costa_rica,
   "sanciones-a-proveedores-contratacion-publica-ley-9986": f_sanciones_a_proveedores_contratacion_publica_ley_9986,
   "sanciones-disciplinarias-funcionario-publico-costa-rica": f_sanciones_disciplinarias_funcionario_publico_costa_rica,
+  "secreto-de-estado-compras-seguridad-decretos-45870-45962": f_secreto_de_estado_compras_seguridad_decretos_45870_45962,
   "silencio-positivo-permiso-municipal": f_silencio_positivo_permiso_municipal,
   "traslado-de-cargos-que-hacer-costa-rica": f_traslado_de_cargos_que_hacer_costa_rica,
   "umbrales-contratacion-publica-costa-rica": f_umbrales_contratacion_publica_costa_rica,

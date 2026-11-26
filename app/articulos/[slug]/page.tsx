@@ -92,6 +92,7 @@ import { UmbralesVigentes, EvolucionUmbrales, ProcedimientosUmbrales } from "@/c
 import { CalculadoraUmbral } from "@/components/article/CalculadoraUmbral";
 import { CalendarioPresupuesto2027, AlcanceOpinionSala } from "@/components/article/PresupuestoSala2027";
 import { CircularIA, DeclaracionesIA, ConstanciasPorMes, HerramientasIA, CronologiaIA } from "@/components/article/IASentencias";
+import { EstructuraCiudadGobierno, CambiosCiudadGobierno } from "@/components/article/CiudadGobierno";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -307,6 +308,8 @@ const ARTICLE_COMPONENTS = {
   ConstanciasPorMes,
   HerramientasIA,
   CronologiaIA,
+  EstructuraCiudadGobierno,
+  CambiosCiudadGobierno,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
