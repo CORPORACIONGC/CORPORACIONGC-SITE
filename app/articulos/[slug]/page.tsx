@@ -675,7 +675,8 @@ export default async function ArticlePage({
         <script dangerouslySetInnerHTML={{ __html: 'document.documentElement.lang="en"' }} />
       )}
       <Navbar />
-      <main className="gc-lectura bg-surface min-h-[100dvh]">
+      {/* Las dos guías del experimento no cambian su HTML hasta el 09-12. */}
+      <main id={enMedicion ? undefined : "contenido"} className="gc-lectura bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">
           <div
             lang={lang}

@@ -74,3 +74,40 @@ export function trackFormStart(formName: string) {
 export function trackFormSubmit(formName: string) {
   safeSend("form_submit", { form_name: formName });
 }
+
+/* Métricas de carga y respuesta medidas en el navegador de cada visitante
+   (25-11-2026). CrUX solo publica datos del dominio entero; con esto GA4
+   tiene LCP, INP, CLS y FCP por página. Se envía un evento por métrica con
+   el nombre de la métrica: «value» en milisegundos (CLS multiplicado por
+   mil, la convención de Google), y «metric_rating» con la calificación de
+   Google (good, needs-improvement o poor). No cuenta como interacción, para
+   no alterar la tasa de interacción de las sesiones. */
+export type MetricaWeb = {
+  name: string;
+  value: number;
+  delta: number;
+  id: string;
+  rating?: string;
+};
+
+const METRICAS = new Set(["LCP", "INP", "CLS", "FCP"]);
+
+export function trackWebVital(m: MetricaWeb) {
+  if (typeof window === "undefined" || !METRICAS.has(m.name)) return;
+  /* Solo el sitio publicado: las cifras de la vista previa local (con la
+     compilación en desarrollo) falsearían los promedios. */
+  if (!/(^|\.)corporaciongc\.com$/.test(window.location.hostname)) return;
+  try {
+    gtag("event", m.name, {
+      value: Math.round(m.name === "CLS" ? m.delta * 1000 : m.delta),
+      metric_id: m.id,
+      metric_value: m.value,
+      metric_delta: m.delta,
+      metric_rating: m.rating ?? "unknown",
+      page_path: window.location.pathname,
+      non_interaction: true,
+    });
+  } catch {
+    // La medición nunca rompe la página.
+  }
+}

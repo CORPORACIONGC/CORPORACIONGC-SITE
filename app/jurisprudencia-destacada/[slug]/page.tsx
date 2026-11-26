@@ -223,7 +223,7 @@ export default async function SentenciaDestacadaPage({
       />
       <Navbar />
 
-      <main className="gc-lectura min-h-[100dvh] bg-surface">
+      <main id="contenido" className="gc-lectura min-h-[100dvh] bg-surface">
         {/* ─── Portada del documento: título y ficha de la resolución ─── */}
         <header className="pt-28 md:pt-36">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10">

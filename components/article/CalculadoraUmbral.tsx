@@ -5,7 +5,7 @@
    (lib/umbrales.ts) y el régimen de recursos de la Ley 9986. Es orientativa:
    no reemplaza la estimación del art. 35 ni el análisis de excepciones. */
 
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { UMBRALES, VIGENTE, NOMBRE_OBJETO, NOMBRE_REGIMEN, colones, type Objeto, type Regimen } from "@/lib/umbrales";
 import { FIRM_CONTACT } from "@/lib/constants";
@@ -163,6 +163,21 @@ export function CalculadoraUmbral() {
       )}`
     : "";
 
+  /* El lector de pantalla oye el resultado cuando el monto se asienta, no en
+     cada cifra: el aviso se arma 700 ms después del último cambio y solo
+     dice el procedimiento y el monto. El resultado visible se actualiza al
+     instante. */
+  const [anuncio, setAnuncio] = useState("");
+  const textoAnuncio = tipo
+    ? `${RESULTADO[tipo].nombre} para ${montoTexto}.`
+    : lectura.estado === "invalido"
+      ? "Escriba el monto en colones, por ejemplo 150.000.000."
+      : "";
+  useEffect(() => {
+    const t = setTimeout(() => setAnuncio(textoAnuncio), 700);
+    return () => clearTimeout(t);
+  }, [textoAnuncio]);
+
   const privados = u.privados[objeto];
   const boton = (activo: boolean) =>
     `rounded-lg border px-3 py-2 text-[13.5px] font-medium transition-colors ${
@@ -198,7 +213,7 @@ export function CalculadoraUmbral() {
             Obra pública
           </button>
         </div>
-        <label className="gc-campo-filete flex items-center gap-3 border-b border-cream/15 pb-2">
+        <label className="gc-campo-filete flex items-center gap-3 border-b border-cream/50 pb-2">
           <span className="shrink-0 text-[15px] text-cream/65">¢</span>
           <input
             ref={campo}
@@ -216,7 +231,11 @@ export function CalculadoraUmbral() {
         </label>
       </div>
 
-      <div id="calculadora-umbral-resultado" aria-live="polite" className="mt-5 min-h-[96px]">
+      <p className="sr-only" aria-live="polite" aria-atomic="true">
+        {anuncio}
+      </p>
+
+      <div id="calculadora-umbral-resultado" className="mt-5 min-h-[96px]">
         {tipo ? (
           <div>
             <p className="text-[15px] font-semibold tabular-nums text-cream">Monto considerado: {montoTexto}</p>

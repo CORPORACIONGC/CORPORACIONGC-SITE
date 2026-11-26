@@ -455,7 +455,7 @@ function KhevinProfile() {
       </div>
       <div className="pt-8">
         <Navbar navLinks={profileNavLinks} topOffset />
-        <main>
+        <main id="contenido">
           <Hero />
           <Credentials />
           <About />
@@ -499,7 +499,7 @@ function OscarProfile() {
       </div>
       <div className="pt-8">
         <Navbar navLinks={OSCAR_NAV_LINKS} topOffset />
-        <main>
+        <main id="contenido">
           <OscarHero />
           <OscarAbout />
           <OscarExperience />
@@ -545,7 +545,7 @@ function EstebanProfile() {
       </div>
       <div className="pt-8">
         <Navbar navLinks={ESTEBAN_NAV_LINKS} topOffset />
-        <main>
+        <main id="contenido">
           <EstebanHero />
           <Credentials credentials={ESTEBAN_PROFILE.credentials} />
           <EstebanAbout />
@@ -588,7 +588,7 @@ function KatherineProfile() {
       </div>
       <div className="pt-8">
         <Navbar navLinks={KATHERINE_NAV_LINKS} topOffset />
-        <main>
+        <main id="contenido">
           <KatherineHero />
           <Credentials credentials={KATHERINE_PROFILE.credentials} />
           <KatherineAbout />
@@ -632,7 +632,7 @@ function MarianaProfile() {
       </div>
       <div className="pt-8">
         <Navbar navLinks={MARIANA_NAV_LINKS} topOffset />
-        <main>
+        <main id="contenido">
           <MarianaHero />
           <Credentials credentials={MARIANA_PROFILE.credentials} />
           <MarianaAbout />
@@ -693,7 +693,7 @@ function BasicProfile({
       </div>
       <div className="pt-8">
         <Navbar navLinks={[{ label: "Inicio", href: "/" }]} topOffset />
-        <main>
+        <main id="contenido">
           <section className="relative min-h-[70dvh] bg-surface overflow-hidden flex items-center">
             <div className="absolute top-0 right-0 w-[60%] h-full bg-gradient-to-l from-burgundy/[0.08] to-transparent pointer-events-none hidden dark:block" />
 

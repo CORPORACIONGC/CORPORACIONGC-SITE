@@ -55,7 +55,7 @@ export default function AbogadosPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navbar />
-      <main className="bg-surface min-h-[100dvh]">
+      <main id="contenido" className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
           <div className="max-w-[1000px] mx-auto px-6 md:px-10">
             <Link

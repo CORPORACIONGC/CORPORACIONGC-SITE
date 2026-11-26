@@ -19,7 +19,7 @@ export default function PoliticaDePrivacidad() {
   return (
     <>
       <Navbar />
-      <main className="bg-surface min-h-[100dvh]">
+      <main id="contenido" className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="max-w-[800px] mx-auto px-6 md:px-10">
             <Link

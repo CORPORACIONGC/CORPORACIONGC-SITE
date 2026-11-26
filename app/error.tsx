@@ -10,7 +10,7 @@ export default function Error({
   reset: () => void;
 }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-surface px-4 text-center">
+    <main id="contenido" className="flex min-h-screen flex-col items-center justify-center bg-surface px-4 text-center">
       <h1 className="font-display text-5xl font-bold text-burgundy sm:text-6xl">
         Error
       </h1>

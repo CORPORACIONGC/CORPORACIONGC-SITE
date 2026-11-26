@@ -115,7 +115,7 @@ export function LeadForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
           placeholder="Su nombre"
         />
       </div>
@@ -136,7 +136,7 @@ export function LeadForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
             placeholder="correo@ejemplo.com"
           />
         </div>
@@ -153,7 +153,7 @@ export function LeadForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
             placeholder="+506 0000-0000"
           />
         </div>
@@ -172,7 +172,7 @@ export function LeadForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/20 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/35 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none resize-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none resize-none disabled:opacity-50"
           placeholder="Tipo de caso, contexto general, urgencia..."
         />
       </div>

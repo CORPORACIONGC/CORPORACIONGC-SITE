@@ -52,7 +52,7 @@ export default function NotFound() {
   return (
     <>
       <Navbar />
-      <main className="min-h-[100dvh] bg-surface">
+      <main id="contenido" className="min-h-[100dvh] bg-surface">
         <div className="mx-auto max-w-[1100px] px-6 pb-24 pt-32 md:px-10 md:pb-32 md:pt-44">
           <h1 className="type-headline text-cream">Esta página no existe</h1>
           <p className="type-lead mt-5 max-w-[56ch] text-cream/80">

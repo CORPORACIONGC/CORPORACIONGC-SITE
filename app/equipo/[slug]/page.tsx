@@ -98,7 +98,7 @@ export default async function AsistentePage({ params }: { params: Promise<{ slug
       </div>
       <div className="pt-8">
         <Navbar navLinks={NAV} topOffset />
-        <main>
+        <main id="contenido">
           <AsistenteHero a={a} />
           <Credentials credentials={a.credentials} />
           <AsistenteAbout a={a} />

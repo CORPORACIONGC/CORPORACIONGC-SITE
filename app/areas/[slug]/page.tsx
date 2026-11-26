@@ -239,7 +239,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           procedimiento combina una fase administrativa —declaratoria de interés público, avalúo
           y oposición— y una fase judicial ante el Juzgado Contencioso-Administrativo y Civil de
           Hacienda.{" "}
-          <Link href="/articulos/expropiacion-costa-rica-derechos" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/expropiacion-costa-rica-derechos" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             Si ya le notificaron, aquí explicamos el proceso y los plazos paso a paso
           </Link>
           .
@@ -355,7 +355,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           siguen reúnen las instituciones que concentran la práctica del área; su desarrollo
           artículo por artículo, con los antecedentes legislativos y la jurisprudencia que fija su
           alcance, está en la guía del{" "}
-          <Link href="/articulos/que-es-el-cpca-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/que-es-el-cpca-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             Código Procesal Contencioso Administrativo
           </Link>
           .
@@ -479,7 +479,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Administrativo las regula en sus artículos 19 a 30 y permite pedirlas antes de la demanda,
           durante el proceso y en la ejecución. Su régimen completo, con la jurisprudencia que lo
           interpreta, está en la guía de{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             medidas cautelares en el proceso contencioso administrativo
           </Link>
           .
@@ -489,7 +489,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <Instrumento titulo="Medida anterior a la demanda" fundamento="CPCA, arts. 19.2 y 26">
         <p>
           Permite obtener protección antes de que la demanda esté lista. Concedida la{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-es-la-medida-cautelar-ante-causam" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-es-la-medida-cautelar-ante-causam" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             medida ante causam
           </Link>
           , la demanda debe presentarse dentro de los quince días siguientes a la notificación del
@@ -500,7 +500,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <Instrumento titulo="Medidas provisionalísimas" fundamento="CPCA, art. 23">
         <p>
           Mientras resuelve la solicitud cautelar, el juez puede adoptar{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-es-la-medida-provisionalisima" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-es-la-medida-provisionalisima" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             medidas provisionalísimas
           </Link>{" "}
           de manera inmediata y prima facie para garantizar la efectividad de la que adopte
@@ -512,7 +512,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p>
           En casos de extrema urgencia, el juez puede disponer la medida antes de oír a la
           Administración y revisarla después de una audiencia de tres días. La guía explica{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#cuando-se-dicta-una-medida-sin-audiencia-previa" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#cuando-se-dicta-una-medida-sin-audiencia-previa" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             en qué se distingue de la provisionalísima
           </Link>
           .
@@ -522,7 +522,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
       <Instrumento titulo="Presupuestos de la medida" fundamento="CPCA, arts. 21 y 22">
         <p>
           La medida exige{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-requisitos-exige-el-juez-para-conceder-una-medida-cautelar" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica#que-requisitos-exige-el-juez-para-conceder-una-medida-cautelar" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             un daño grave y una pretensión seria
           </Link>
           , y el juez pondera el interés público y el de terceros antes de concederla.
@@ -550,7 +550,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           La Sala Primera es también el tribunal de casación en materia civil y comercial, y sus
           criterios en esos campos llegan a la vida diaria. Un ejemplo reciente es su línea sobre{" "}
-          <Link href="/articulos/seguro-carro-uber-costa-rica-sala-primera" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/seguro-carro-uber-costa-rica-sala-primera" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             la exclusión de la póliza del carro inscrito en Uber
           </Link>
           , en la que confirmó que la aseguradora podía negar la cobertura aunque el día del choque
@@ -1126,13 +1126,13 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           El procedimiento, y con él el recurso y el plazo, depende del monto estimado frente a los{" "}
-          <Link href="/articulos/umbrales-contratacion-publica-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/umbrales-contratacion-publica-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             umbrales de contratación pública
           </Link>{" "}
           que la Contraloría actualiza cada año.{" "}
           <span lang="en">
             For foreign contractors:{" "}
-            <Link href="/articulos/san-jose-san-ramon-highway-tender-costa-rica" hrefLang="en" className="text-emphasis hover:text-emphasis/80 transition-colors">
+            <Link href="/articulos/san-jose-san-ramon-highway-tender-costa-rica" hrefLang="en" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
               bidding for the San José–San Ramón highway
             </Link>
             , our English guide to the CABEI-financed tender.
@@ -1215,7 +1215,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           vía administrativa (arts. 96 y 98 de la Ley N.° 9986). Ese no es el final del camino:
           la adjudicación —o la resolución de la propia Contraloría— puede impugnarse ante la
           Jurisdicción Contencioso-Administrativa, donde además cabe solicitar{" "}
-          <Link href="/areas/medidas-cautelares" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/areas/medidas-cautelares" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             medidas cautelares
           </Link>{" "}
           para suspender el acto y reclamar los daños y perjuicios causados al oferente
@@ -1226,15 +1226,15 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           firma: nuestro director fue coordinador de la comisión redactora del Código Procesal Contencioso Administrativo
           y ex-Magistrado de la Sala Primera, la sala que conoce en casación las sentencias del
           Tribunal Contencioso. Vea nuestras áreas de{" "}
-          <Link href="/areas/litigio-contencioso-administrativo" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/areas/litigio-contencioso-administrativo" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             litigio contencioso-administrativo
           </Link>{" "}
           y{" "}
-          <Link href="/areas/casacion-sala-primera" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/areas/casacion-sala-primera" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             casación ante la Sala Primera
           </Link>
           , o la guía{" "}
-          <Link href="/articulos/como-demandar-al-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/como-demandar-al-estado-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             ¿cómo demandar al Estado en Costa Rica?
           </Link>
           .
@@ -1250,7 +1250,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           República y la propia Administración a través de SICOP, y su fase judicial ante el
           Tribunal Contencioso Administrativo y la Sala Primera de la Corte Suprema de Justicia.
           El equipo de Corporación GC es dirigido por el{" "}
-          <Link href="/abogados/oscar-gonzalez" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/abogados/oscar-gonzalez" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             Dr. Óscar Eduardo González Camacho
           </Link>
           , ex-Magistrado de la Sala Primera (2002–2014), coordinador de la comisión redactora del Código Procesal
@@ -1865,15 +1865,15 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           Hemos preparado guías prácticas, escritas desde la perspectiva de quien recibe el
           procedimiento, que explican los plazos, los derechos y las vías de impugnación de esta
           materia:{" "}
-          <Link href="/articulos/defensa-procedimiento-administrativo-sancionatorio" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/defensa-procedimiento-administrativo-sancionatorio" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             me abrieron un procedimiento administrativo sancionatorio: ¿cómo defenderse?
           </Link>{" "}
           (la guía madre del tema),{" "}
-          <Link href="/articulos/traslado-de-cargos-que-hacer-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/traslado-de-cargos-que-hacer-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             me llegó un traslado de cargos: qué significa, plazos y qué hacer
           </Link>{" "}
           (el momento inicial, donde más defensas se ganan y se pierden) y{" "}
-          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/medidas-cautelares-contra-el-estado-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             medidas cautelares contra el Estado
           </Link>{" "}
           (cómo suspender una sanción, multa o clausura mientras se litiga su validez).
@@ -1887,7 +1887,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch]">
           La validez de una sanción administrativa se decide, en última instancia, ante la
           jurisdicción contencioso-administrativa. El equipo de Corporación GC es dirigido por el{" "}
-          <Link href="/abogados/oscar-gonzalez" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/abogados/oscar-gonzalez" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             Dr. Óscar Eduardo González Camacho
           </Link>
           , ex-Magistrado de la Sala Primera de la Corte Suprema de Justicia (2002–2014),
@@ -3073,7 +3073,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           El presupuesto de la República tiene además su propio trámite legislativo y su propio
           control de constitucionalidad: la guía del{" "}
-          <Link href="/articulos/presupuesto-2027-costa-rica-sala-constitucional" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/presupuesto-2027-costa-rica-sala-constitucional" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             presupuesto 2027 y la consulta a la Sala Constitucional
           </Link>{" "}
           explica cómo se combinan la consulta y el plazo del 30 de noviembre.
@@ -4823,7 +4823,7 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
           por una Agencia Nacional de Asociaciones Público-Privadas (ANAPP). El 9 de setiembre de
           2026 la Sala Constitucional declaró inconstitucional esa agencia, junto con otras normas
           del proyecto, y el texto volvió a la Asamblea. Analizamos el voto norma por norma en{" "}
-          <Link href="/articulos/ley-alianzas-publico-privadas-sala-constitucional" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/ley-alianzas-publico-privadas-sala-constitucional" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             qué declaró la Sala sobre la Ley Marco de APP
           </Link>
           .
@@ -5036,11 +5036,11 @@ const AREA_CONTENT: Record<string, React.ReactNode> = {
         </p>
         <p className="text-[15px] md:text-base text-cream/[0.78] leading-[1.7] max-w-[65ch] mt-4">
           Publicamos una guía completa del trámite, en{" "}
-          <Link href="/articulos/registro-vasp-sugef-costa-rica" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/registro-vasp-sugef-costa-rica" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             español
           </Link>{" "}
           y en{" "}
-          <Link href="/articulos/costa-rica-vasp-registration-sugef" className="text-emphasis hover:text-emphasis/80 transition-colors">
+          <Link href="/articulos/costa-rica-vasp-registration-sugef" className="text-emphasis underline decoration-emphasis/40 underline-offset-4 transition-colors hover:decoration-emphasis">
             inglés
           </Link>
           , construida sobre el texto publicado de la ley y sobre asesorías en curso a plataformas
@@ -5628,7 +5628,7 @@ export default async function AreaDetailPage({
         />
       )}
       <Navbar />
-      <main className="bg-surface min-h-[100dvh]">
+      <main id="contenido" className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
           <div className="max-w-[1240px] mx-auto px-6 md:px-10 lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-x-20 xl:gap-x-28">
           <div className="min-w-0 max-w-[760px]">

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
 import Script from "next/script";
 import { GlobalWhatsAppFloat } from "@/components/layout/GlobalWhatsAppFloat";
+import { WebVitals } from "@/components/layout/WebVitals";
 import "./globals.css";
 
 const GA_ID = "G-EL3CCTV95K";
@@ -98,8 +99,17 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        {/* Primer Tab de cada página: lleva al contenido sin recorrer la
+            cabecera (WCAG 2.4.1). Invisible hasta recibir el foco. */}
+        <a
+          href="#contenido"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-burgundy focus:px-4 focus:py-3 focus:text-sm focus:font-medium focus:text-white focus:outline-2 focus:outline-offset-2 focus:outline-white"
+        >
+          Saltar al contenido
+        </a>
         {children}
         <GlobalWhatsAppFloat />
+        <WebVitals />
         {/* Google Analytics (25-11-2026): la cola `dataLayer` y la
             configuración se definen enseguida, y `gtag.js` (179 KB) se baja
             cuando la página ya terminó de cargar, sin precarga en el

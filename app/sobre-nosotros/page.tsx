@@ -270,7 +270,7 @@ export default function SobreNosotros() {
         }}
       />
       <Navbar />
-      <main className="min-h-[100dvh] bg-surface">
+      <main id="contenido" className="min-h-[100dvh] bg-surface">
         {/* ── Membrete ── */}
         <header className="pt-28 md:pt-36">
           <div className="mx-auto max-w-[1100px] px-6 md:px-10">

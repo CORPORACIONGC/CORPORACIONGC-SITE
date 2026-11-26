@@ -115,7 +115,7 @@ export default function ArticulosPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdCollection) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }} />
       <Navbar />
-      <main className="bg-surface min-h-[100dvh]">
+      <main id="contenido" className="bg-surface min-h-[100dvh]">
         {/* Header */}
         <div className="pt-28 md:pt-36 pb-6 md:pb-8">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10">

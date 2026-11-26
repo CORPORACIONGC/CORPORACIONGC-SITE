@@ -95,7 +95,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
       />
       <Navbar />
 
-      <main className="bg-surface min-h-[100dvh]">
+      <main id="contenido" className="bg-surface min-h-[100dvh]">
         {/* ─── HERO ─── */}
         <section className="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-20">
           <div className="absolute top-20 inset-x-0 h-px bg-cream/[0.08]" />

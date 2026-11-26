@@ -60,7 +60,7 @@ export default function ContactoPage() {
         }}
       />
       <Navbar />
-      <main className="bg-dark-bg min-h-[100dvh]">
+      <main id="contenido" className="bg-dark-bg min-h-[100dvh]">
         <FirmContact
           showHeading={false}
           encabezado={
