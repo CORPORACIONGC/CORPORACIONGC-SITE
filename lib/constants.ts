@@ -118,8 +118,8 @@ export const OSCAR_PROFILE = {
 export const TEAM = [
   { slug: "oscar-gonzalez", actualizado: "2026-11-24", autor: "González Camacho", name: "Dr. Óscar Eduardo González Camacho", role: "Fundador y Director", photo: "/images/oscar-gonzalez-solo.png", shortBio: "Ex-Magistrado de la Corte Suprema de Justicia. Coordinador de la comisión redactora del CPCA. Más de 38 años de trayectoria en Derecho Público.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional"], languages: ["Español", "Francés"], featured: true },
   { slug: "khevin-sanchez", actualizado: "2026-10-02", autor: "Sánchez", name: "Lic. Khevin Alberto Sánchez Zamora", role: "Abogado Asociado", photo: "/images/khevin-sanchez.jpg", shortBio: "Licenciado en Derecho por la UCR, con mención en Derecho Tributario, y admitido en la Maestría Profesional en Derecho Público (UCR). Litigio contra el Estado: medidas cautelares, demandas contencioso-administrativas y casación. 3er mejor promedio, Examen de Excelencia del Colegio de Abogados, 2025.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública"], languages: ["Español"], featured: true },
-  { slug: "katherine-gonzalez", actualizado: "2026-11-13", autor: "González Coto", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.png", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD, donde es profesora. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
-  { slug: "mariana-montero", actualizado: "2026-10-28", autor: "Montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.png", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
+  { slug: "katherine-gonzalez", actualizado: "2026-11-13", autor: "González Coto", name: "MSc. Katherine González Coto", role: "Abogada Asociada", photo: "/images/katherine-gonzalez.jpg", shortBio: "Máster en Derecho Público por la UCR. Licenciada en Derecho y Notaria Pública por la UELD, donde es profesora. Investigadora en responsabilidad patrimonial de la Administración y derecho expropiatorio.", areas: ["Derecho Administrativo", "Derecho Público", "Derecho Notarial", "Derecho Expropiatorio"], languages: ["Español", "Inglés", "Francés", "Italiano"], featured: true },
+  { slug: "mariana-montero", actualizado: "2026-10-28", autor: "Montero", name: "Licda. Mariana Montero Acuña", role: "Abogada Asociada", photo: "/images/mariana-montero.jpg", shortBio: "Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción. Egresada de la Maestría en Derecho Público, UCR. Especialista en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.", areas: ["Malpraxis Médica e Iatrogenia", "Derecho a la Salud", "Contencioso Administrativo", "Responsabilidad Patrimonial"], languages: ["Español", "Inglés", "Francés"], featured: true },
   { slug: "esteban-perez", actualizado: "2026-09-26", autor: "Pérez", name: "Lic. Esteban Pérez Herrera", role: "Abogado Asociado", photo: "/images/esteban-perez.jpg", shortBio: "Abogado litigante y Notario Público. Más de 9 años de experiencia en litigio contencioso-administrativo. Maestrando en Derecho Público, UCR.", areas: ["Derecho Administrativo", "Contencioso Administrativo", "Derecho Constitucional", "Contratación Pública", "Derecho Urbanístico"], languages: ["Español", "Inglés"], featured: true },
 ] as const;
 
@@ -779,7 +779,7 @@ export const ESTEBAN_NAV_LINKS = [
 export const KATHERINE_PROFILE = {
   name: "MSc. Katherine González Coto",
   role: "Abogada Asociada",
-  photo: "/images/katherine-gonzalez.png",
+  photo: "/images/katherine-gonzalez.jpg",
   heroDescription: "Abogada y Notaria Pública especializada en Derecho Administrativo, Derecho Público y Derecho Expropiatorio.",
   heroBio: "Máster en Derecho Público por la Universidad de Costa Rica y profesora en la Universidad Escuela Libre de Derecho. Investigadora en responsabilidad patrimonial de la Administración y procedimiento expropiatorio costarricense.",
   education: [
@@ -854,7 +854,7 @@ export const KATHERINE_NAV_LINKS = [
 export const MARIANA_PROFILE = {
   name: "Licda. Mariana Montero Acuña",
   role: "Abogada Asociada",
-  photo: "/images/mariana-montero.png",
+  photo: "/images/mariana-montero.jpg",
   heroDescription: "Abogada especializada en malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado. Licenciada en Derecho con mención en Derechos Humanos por la UCR, aprobada con distinción.",
   heroBio: "Egresada de la Maestría Profesional en Derecho Público de la Universidad de Costa Rica con Diploma de Excelencia Académica (mejor promedio del posgrado). Su práctica se concentra en el litigio contencioso-administrativo por daños derivados de la actividad sanitaria pública y privada.",
   /* Mismo formato que la formación del perfil de Khevin: título,

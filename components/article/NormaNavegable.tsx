@@ -19,9 +19,27 @@ import { legislacionSchema, type ArticuloNorma, type FichaNorma, type GuiaDeArti
 export type FilaNorma = [string, string, number, number?, number?];
 
 /** Quita las tildes conservando una letra por letra, de modo que la posición
- *  de una coincidencia en el texto sin tildes sirva también en el original. */
-const plano = (s: string) =>
-  Array.from(s, (c) => c.normalize("NFD")[0].toLowerCase()).join("");
+ *  de una coincidencia en el texto sin tildes sirva también en el original.
+ *  Una sola pasada sin arreglos intermedios (B7, informe 23-11): las letras
+ *  ASCII solo se pasan a minúscula y las demás se normalizan una vez por
+ *  letra distinta y se recuerdan. El resultado es idéntico al de antes. */
+const PLANAS = new Map<string, string>();
+const plano = (s: string) => {
+  let r = "";
+  for (const c of s) {
+    if (c.charCodeAt(0) < 128) {
+      r += c.toLowerCase();
+      continue;
+    }
+    let p = PLANAS.get(c);
+    if (p === undefined) {
+      p = c.normalize("NFD")[0].toLowerCase();
+      PLANAS.set(c, p);
+    }
+    r += p;
+  }
+  return r;
+};
 
 const tituloCorto = (t: string) => {
   const n = t.replace(/^T[íi]tulo\s+[IVXL]+\s*·\s*/, "");

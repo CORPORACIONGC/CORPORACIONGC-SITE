@@ -10,7 +10,7 @@ export function MarianaHero() {
       carne="Carnet CAACR 33716"
       secundario={{ href: "#perfil", rotulo: "Ver perfil" }}
       foto={{
-        src: "/images/mariana-montero.png",
+        src: "/images/mariana-montero.jpg",
         alt: "Licda. Mariana Montero Acuña",
         ancho: 1024,
         alto: 1536,

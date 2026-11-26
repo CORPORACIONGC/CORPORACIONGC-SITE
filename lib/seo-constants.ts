@@ -376,7 +376,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
       "Retrato profesional de la MSc. Katherine González Coto, Abogada Asociada en Corporación GC.",
     credential:
       "Máster en Derecho Público (UCR), Notaria y profesora de la Universidad Escuela Libre de Derecho. Especialista en responsabilidad patrimonial del Estado y derecho expropiatorio.",
-    photo: "/images/katherine-gonzalez.png",
+    photo: "/images/katherine-gonzalez.jpg",
     photoFocus: "50% 5%",
   },
   "mariana-montero": {
@@ -394,7 +394,7 @@ export const ATTORNEYS: Record<string, AttorneySeo> = {
       "Retrato profesional de la Licda. Mariana Montero Acuña, Abogada Asociada en Corporación GC.",
     credential:
       "Licenciada en Derecho con mención en Derechos Humanos (UCR). Especialista en malpraxis médica y responsabilidad del Estado.",
-    photo: "/images/mariana-montero.png",
+    photo: "/images/mariana-montero.jpg",
     photoFocus: "50% 5%",
   },
   "esteban-perez": {

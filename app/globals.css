@@ -669,9 +669,21 @@ html {
   100% { transform: translateX(-50%); }
 }
 /* Cinta de clientes: 80 s por vuelta, para que cada logo se alcance a leer.
-   La pausa al pasar el cursor la pone el componente. */
+   Sus pausas van justo debajo. */
 .animate-marquee-lenta {
   animation: marquee 80s linear infinite;
+}
+/* Pausa al pasar el cursor, al recibir el foco o con el botón «Pausar la
+   cinta» (B6, 25-11-2026). Va aquí y no en clases de Tailwind porque la
+   regla de arriba, fuera de las capas, le ganaba a cualquier utilidad: la
+   pausa al pasar el cursor nunca llegó a funcionar. */
+.group\/cinta:hover .animate-marquee-lenta,
+.group\/cinta:focus-within .animate-marquee-lenta,
+[data-pausada="true"] .animate-marquee-lenta {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-lenta { animation: none; }
 }
 
 /* Theme toggle icon animation */

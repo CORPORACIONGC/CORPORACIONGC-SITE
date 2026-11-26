@@ -10,7 +10,7 @@ export function KatherineHero() {
       carne="Carnet CAACR 30256"
       secundario={{ href: "#perfil", rotulo: "Ver perfil" }}
       foto={{
-        src: "/images/katherine-gonzalez.png",
+        src: "/images/katherine-gonzalez.jpg",
         alt: "MSc. Katherine González Coto",
         ancho: 2016,
         alto: 2122,

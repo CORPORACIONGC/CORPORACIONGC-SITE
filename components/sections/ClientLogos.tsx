@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
+import { PausaCinta } from "@/components/sections/PausaCinta";
 import { CLIENTES, tamanoOptico } from "@/lib/constants";
 
 type Cliente = (typeof CLIENTES)[number];
@@ -17,8 +18,8 @@ function Logo({ c, alto, className = "" }: { c: Cliente; alto: number; className
       src={c.src}
       alt={c.name}
       title={c.name}
-      width={t.width * 2}
-      height={t.height * 2}
+      width={t.width}
+      height={t.height}
       loading="lazy"
       className={`mix-blend-screen ${className}`}
       style={{ width: t.width, height: t.height }}
@@ -44,14 +45,14 @@ function Cinta() {
       </AnimatedEntry>
       {/* Los bordes se desvanecen con una máscara, no con franjas del color de
           fondo: así no aparecen rectángulos si el fondo cambia de tono. */}
-      <div className="group/cinta relative mt-10 [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] md:mt-12 motion-reduce:[mask-image:none]">
+      <PausaCinta className="group/cinta relative mt-10 [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] md:mt-12 motion-reduce:[mask-image:none]">
         {/* El pr igual al gap cierra el ciclo: el translateX(-50%) cae justo
             en el inicio de la copia. Con movimiento reducido, la cinta se
             detiene y los logos se reparten en filas centradas. */}
         <ul
           role="list"
           aria-label="Clientes"
-          className="animate-marquee-lenta flex w-max items-center gap-14 pr-14 group-hover/cinta:[animation-play-state:paused] group-focus-within/cinta:[animation-play-state:paused] md:gap-20 md:pr-20 motion-reduce:mx-auto motion-reduce:grid motion-reduce:w-auto motion-reduce:max-w-[1400px] motion-reduce:grid-cols-3 motion-reduce:justify-items-center motion-reduce:gap-y-10 motion-reduce:px-6 motion-reduce:pr-6 motion-reduce:[animation:none] md:motion-reduce:grid-cols-6 md:motion-reduce:px-10"
+          className="animate-marquee-lenta flex w-max items-center gap-14 pr-14 md:gap-20 md:pr-20 motion-reduce:mx-auto motion-reduce:grid motion-reduce:w-auto motion-reduce:max-w-[1400px] motion-reduce:grid-cols-3 motion-reduce:justify-items-center motion-reduce:gap-y-10 motion-reduce:px-6 motion-reduce:pr-6 motion-reduce:[animation:none] md:motion-reduce:grid-cols-6 md:motion-reduce:px-10"
         >
           {CLIENTES.map((c) => (
             <li key={c.name} className="flex shrink-0 items-center opacity-75 transition-opacity duration-500 hover:opacity-100">
@@ -64,7 +65,7 @@ function Cinta() {
             </li>
           ))}
         </ul>
-      </div>
+      </PausaCinta>
     </div>
   );
 }

@@ -82,11 +82,14 @@ export function FirmHero() {
 
             <div className="gc-rise" style={{ animationDelay: "0.12s" }}>
               {/* Misma composición del logotipo: DM Sans en mayúsculas
-                  espaciadas, siempre en una sola línea. En pantallas más
-                  angostas que un teléfono el cuerpo baja con el ancho en vez
-                  de partirse; en escritorio puede salirse de la columna del
-                  texto, porque a esa altura la foto ya está desvanecida. */}
-              <h1 className="whitespace-nowrap font-body text-[length:min(2rem,8.6vw)] font-medium uppercase leading-none tracking-[0.08em] text-[#F7F3EE] sm:text-4xl md:text-6xl lg:text-[length:min(4.5rem,calc(50vw/9.9))]">
+                  espaciadas, siempre en una sola línea. El cuerpo se calcula
+                  para que el nombre quepa en su columna: «Corporación GC»
+                  mide 9,53 veces su cuerpo con este espaciado (medido el
+                  25-11-2026), y se divide entre 10 para dejar margen. En el
+                  teléfono la columna es la pantalla menos 3 rem de margen;
+                  en escritorio, min(46vw, 640px). Antes se salía de la
+                  columna hasta 46 px sobre la foto. */}
+              <h1 className="whitespace-nowrap font-body text-[length:min(2rem,calc((100vw-3rem)/10))] font-medium uppercase leading-none tracking-[0.08em] text-[#F7F3EE] sm:text-4xl md:text-6xl lg:text-[length:min(4.5rem,calc(min(46vw,640px)/10))]">
                 Corporaci&#243;n GC
                 <span className="sr-only"> — Abogados Especialistas en Derecho Administrativo y Contencioso Administrativo en Costa Rica</span>
               </h1>

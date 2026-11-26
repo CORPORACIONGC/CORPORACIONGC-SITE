@@ -5,7 +5,7 @@ import { useRef, useEffect, useState, createContext, useContext } from "react";
 // Context for StaggerContainer → StaggerItem communication.
 // Using context (instead of cloneElement on direct children) lets
 // StaggerItem work even when nested inside wrapper divs.
-const StaggerCtx = createContext<{ isVisible: boolean; stagger: number; counter: { n: number } } | null>(null);
+const StaggerCtx = createContext<{ isVisible: boolean; stagger: number; counter: { n: number }; inmediato: boolean } | null>(null);
 
 /**
  * CSS-based replacement for Framer Motion AnimatedEntry.
@@ -26,6 +26,15 @@ export function AnimatedEntry({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
+  /* Si algo de adentro recibe el foco antes de que el bloque entre en
+     pantalla (quien navega con Tab), se muestra al instante y sin
+     transición: nunca hay un elemento enfocado e invisible (WCAG 2.4.7). */
+  const [porFoco, setPorFoco] = useState(false);
+  const alEnfocar = () => {
+    if (isInView) return;
+    setPorFoco(true);
+    setIsInView(true);
+  };
 
   useEffect(() => {
     const el = ref.current;
@@ -55,10 +64,13 @@ export function AnimatedEntry({
       ref={ref}
       className={className}
       suppressHydrationWarning
+      onFocus={alEnfocar}
       style={{
         opacity: isInView ? 1 : 0,
         transform: isInView ? "translate(0, 0)" : offsets[direction],
-        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
+        transition: porFoco
+          ? "none"
+          : `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
         willChange: isInView ? "auto" : "opacity, transform",
       }}
     >
@@ -85,6 +97,13 @@ export function StaggerContainer({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
+  /* Igual que AnimatedEntry: el foco muestra los elementos al instante. */
+  const [porFoco, setPorFoco] = useState(false);
+  const alEnfocar = () => {
+    if (isInView) return;
+    setPorFoco(true);
+    setIsInView(true);
+  };
 
   useEffect(() => {
     const el = ref.current;
@@ -108,8 +127,8 @@ export function StaggerContainer({
   const counter = { n: 0 };
 
   return (
-    <StaggerCtx.Provider value={{ isVisible: isInView, stagger, counter }}>
-      <div ref={ref} className={className} role={role}>
+    <StaggerCtx.Provider value={{ isVisible: isInView, stagger, counter, inmediato: porFoco }}>
+      <div ref={ref} className={className} role={role} onFocus={alEnfocar}>
         {children}
       </div>
     </StaggerCtx.Provider>
@@ -144,7 +163,9 @@ export function StaggerItem({
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(24px)",
-        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
+        transition: ctx?.inmediato
+          ? "none"
+          : `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
         willChange: isVisible ? "auto" : "opacity, transform",
       }}
     >

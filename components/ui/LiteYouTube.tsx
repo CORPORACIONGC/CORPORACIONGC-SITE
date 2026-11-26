@@ -6,6 +6,7 @@
    segundo dado, para llevar al lector directo a la intervención que importa. */
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import { Play } from "@phosphor-icons/react";
 
 export function LiteYouTube({
@@ -49,13 +50,25 @@ export function LiteYouTube({
       className="relative w-full cursor-pointer group bg-neutral-900"
       style={{ paddingBottom: "56.25%" }}
     >
-      <img
-        src={`https://i.ytimg.com/vi/${id}/${miniaturaHd ? "maxresdefault" : "hqdefault"}.jpg`}
-        alt={title}
-        loading="lazy"
-        referrerPolicy="no-referrer"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      {miniaturaHd ? (
+        /* La de alta definición (1.280 px, unos 190 KB) pasa por /_next/image
+           y llega en AVIF o WebP al ancho en que se muestra. */
+        <Image
+          src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+          alt={title}
+          fill
+          sizes="(min-width: 860px) 820px, 100vw"
+          className="object-cover"
+        />
+      ) : (
+        <img
+          src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+          alt={title}
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      )}
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors duration-300" />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-14 h-14 rounded-full bg-white/95 group-hover:scale-110 transition-all duration-300 flex items-center justify-center shadow-xl">

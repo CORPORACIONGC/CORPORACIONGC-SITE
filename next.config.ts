@@ -39,6 +39,14 @@ const nextConfig: NextConfig = {
     // Next 16 exige declarar las calidades permitidas. 90 = foto del fundador
     // en máxima nitidez; 75 se mantiene como valor por defecto del resto.
     qualities: [75, 90],
+    /* 31 días de caché para las imágenes optimizadas (B5, informe 23-11):
+       sin esto /_next/image respondía max-age=0 y cada visita repetida
+       revalidaba cada foto. Si se cambia una imagen, se publica con otro
+       nombre de archivo. */
+    minimumCacheTTL: 2678400,
+    /* Miniaturas de YouTube servidas por /_next/image (B2): la de alta
+       definición pesa 190 KB tal cual y se entrega al tamaño en que se ve. */
+    remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com", pathname: "/vi/**" }],
   },
   async redirects() {
     return [

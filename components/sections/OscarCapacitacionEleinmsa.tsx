@@ -405,17 +405,25 @@ function CardDeck({ deck, flip }: { deck: Deck; flip: boolean }) {
         </div>
 
         <div className="flex items-center gap-5">
-          <div className="flex items-center gap-1.5">
+          {/* Cada punto es una raya de 3 px, pero el botón mide 24 px de alto
+              y al menos 24 de ancho para que se pueda pulsar (WCAG 2.5.8). */}
+          <div className="flex items-center">
             {deck.cards.map((c, i) => (
               <button
                 key={c.id}
                 type="button"
                 onClick={() => jumpTo(c.id)}
                 aria-label={`Ir a la tarjeta ${i + 1}`}
-                className={`h-[3px] rounded-full transition-all duration-500 ${
-                  i === frontIndex ? "w-9 bg-emphasis" : "w-4 bg-cream/20 hover:bg-cream/40"
-                }`}
-              />
+                aria-current={i === frontIndex ? "true" : undefined}
+                className="group/punto flex h-6 min-w-6 items-center justify-center px-1"
+              >
+                <span
+                  aria-hidden="true"
+                  className={`block h-[3px] rounded-full transition-all duration-500 ${
+                    i === frontIndex ? "w-9 bg-emphasis" : "w-4 bg-cream/20 group-hover/punto:bg-cream/40"
+                  }`}
+                />
+              </button>
             ))}
           </div>
 
