@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Migas } from "@/components/layout/Migas";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { FIRM, TEAM } from "@/lib/constants";
 import { splitHonorific } from "@/lib/seo-constants";
@@ -58,13 +59,8 @@ export default function AbogadosPage() {
       <main id="contenido" className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-32">
           <div className="max-w-[1000px] mx-auto px-6 md:px-10">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-8"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Volver al inicio
-            </Link>
+            {/* Las migas repiten el BreadcrumbList de arriba (D-22). */}
+            <Migas items={[{ label: "Inicio", href: "/" }, { label: "Equipo" }]} className="mb-8" />
 
             <RunningHead title="Equipo" />
 

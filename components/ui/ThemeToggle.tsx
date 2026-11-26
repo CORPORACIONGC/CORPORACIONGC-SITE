@@ -25,12 +25,16 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
     }
   };
 
-  if (!mounted) return <div className={`w-8 h-8 ${className}`} />;
+  /* El hueco mide lo mismo que el botón, para que la barra no salte al
+     montarse. */
+  if (!mounted) return <div className={`h-11 w-11 ${className}`} />;
 
   return (
     <button
       onClick={toggle}
-      className={`p-2 text-cream/65 hover:text-cream/80 transition-colors duration-300 ${className}`}
+      /* Área táctil de 44 × 44 px (D-15) con el icono en 16 px: el relleno
+         agranda el blanco, no el dibujo. */
+      className={`flex h-11 w-11 items-center justify-center text-cream/65 hover:text-cream/80 transition-colors duration-300 nav-tactile ${className}`}
       aria-label={dark ? "Cambiar a modo diurno" : "Cambiar a modo nocturno"}
     >
       <span

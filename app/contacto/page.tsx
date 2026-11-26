@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowLeft, WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Migas } from "@/components/layout/Migas";
 import { FirmContact } from "@/components/sections/FirmContact";
 import { FIRM, FIRM_CONTACT } from "@/lib/constants";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
@@ -65,13 +65,8 @@ export default function ContactoPage() {
           showHeading={false}
           encabezado={
             <>
-              <Link
-                href="/"
-                className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-6"
-              >
-                <ArrowLeft size={14} weight="regular" />
-                Volver al inicio
-              </Link>
+              {/* Las migas repiten el BreadcrumbList de arriba (D-22). */}
+              <Migas items={[{ label: "Inicio", href: "/" }, { label: "Contacto" }]} className="mb-6" />
 
               <RunningHead title="Contacto" />
 

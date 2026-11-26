@@ -177,9 +177,12 @@ export function Publications({ articles, total }: { articles: ArticlePreview[]; 
   const rotulo = total ? `Ver los ${total} artículos` : "Ver todos los artículos";
 
   return (
+    /* #articulos es el destino de «Sus artículos» en la barra de los
+       perfiles (D-20); scroll-mt deja el titular bajo la barra fija. */
     <section
+      id="articulos"
       aria-labelledby="articulos-titulo"
-      className="gc-on-dark relative overflow-hidden bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#1E0610] py-24 md:py-32"
+      className="gc-on-dark relative scroll-mt-24 overflow-hidden bg-gradient-to-b from-burgundy-dark via-[#3A0B1F] to-[#1E0610] py-24 md:py-32"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <AnimatedEntry>
@@ -214,12 +217,15 @@ export function Publications({ articles, total }: { articles: ArticlePreview[]; 
               className="mt-14 border-t border-white/[0.10] pt-8 md:mt-16"
             >
               <div className="type-label mb-5 text-white/65">Guías más consultadas</div>
-              <ul role="list" className="grid grid-cols-1 gap-x-10 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Cada fila mide 44 px de alto como mínimo (D-15): el relleno
+                  agranda el blanco táctil y el hueco entre filas se recorta
+                  para que la lista no se alargue. */}
+              <ul role="list" className="grid grid-cols-1 gap-x-10 gap-y-1 sm:grid-cols-2 lg:grid-cols-3">
                 {FOOTER_GUIAS.map((g) => (
                   <li key={g.href}>
                     <Link
                       href={g.href}
-                      className="group relative block py-1 text-sm text-white/80 transition-colors duration-300 hover:text-white"
+                      className="group relative flex min-h-11 items-center py-2.5 text-sm leading-snug text-white/80 transition-colors duration-300 hover:text-white"
                     >
                       <span
                         aria-hidden="true"

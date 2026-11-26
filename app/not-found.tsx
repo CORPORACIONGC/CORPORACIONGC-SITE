@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Migas } from "@/components/layout/Migas";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { FIRM_CONTACT, FOOTER_GUIAS } from "@/lib/constants";
 
@@ -54,6 +55,9 @@ export default function NotFound() {
       <Navbar />
       <main id="contenido" className="min-h-[100dvh] bg-surface">
         <div className="mx-auto max-w-[1100px] px-6 pb-24 pt-32 md:px-10 md:pb-32 md:pt-44">
+          {/* Migas (D-22): la 404 no lleva BreadcrumbList en JSON-LD porque
+              no se indexa; el regreso visible es el mismo de las demás. */}
+          <Migas items={[{ label: "Inicio", href: "/" }, { label: "Página no encontrada" }]} className="mb-8" />
           <h1 className="type-headline text-cream">Esta página no existe</h1>
           <p className="type-lead mt-5 max-w-[56ch] text-cream/80">
             La dirección cambió o se escribió con un error (código 404). Puede seguir por
@@ -64,8 +68,10 @@ export default function NotFound() {
             <MagneticButton href={WHATSAPP} variant="primary" contactTarget="404">
               Escribir por WhatsApp
             </MagneticButton>
-            <MagneticButton href="/" variant="outline">
-              Volver al inicio
+            {/* D-12: las dos únicas llamadas del sitio. El regreso a la
+                portada queda en las migas y en el logotipo. */}
+            <MagneticButton href="/contacto" variant="outline">
+              Enviar una consulta
             </MagneticButton>
           </div>
 

@@ -23,13 +23,13 @@ export default function Error({
       <div className="mt-8 flex gap-4">
         <button
           onClick={reset}
-          className="rounded-full border border-hilo bg-transparent px-6 py-3 text-sm font-medium text-hilo-texto transition-colors hover:bg-hilo hover:text-surface"
+          className="rounded-lg border border-hilo bg-transparent px-6 py-3 text-sm font-medium text-hilo-texto transition-colors hover:bg-hilo hover:text-surface"
         >
           Reintentar
         </button>
         <Link
           href="/"
-          className="rounded-full border border-cream/20 bg-transparent px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-cream/10"
+          className="rounded-lg border border-cream/20 bg-transparent px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-cream/10"
         >
           Volver al inicio
         </Link>

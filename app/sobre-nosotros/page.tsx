@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { ASISTENTES } from "@/lib/asistentes";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { ORGANIZATION_SCHEMA } from "@/lib/organization-schema";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Migas } from "@/components/layout/Migas";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Membrete } from "@/components/ui/Membrete";
@@ -60,7 +61,7 @@ const jsonLdBreadcrumb = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Sobre Nosotros",
+      name: "Sobre nosotros",
       item: "https://www.corporaciongc.com/sobre-nosotros",
     },
   ],
@@ -274,13 +275,8 @@ export default function SobreNosotros() {
         {/* ── Membrete ── */}
         <header className="pt-28 md:pt-36">
           <div className="mx-auto max-w-[1100px] px-6 md:px-10">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Volver al inicio
-            </Link>
+            {/* Las migas repiten el BreadcrumbList de arriba (D-22). */}
+            <Migas items={[{ label: "Inicio", href: "/" }, { label: "Sobre nosotros" }]} />
 
             <div className="mt-12 flex justify-center md:mt-16">
               {/* El H1 de esta página es su titular; el de la portada es el
@@ -513,7 +509,7 @@ export default function SobreNosotros() {
                   href="/contacto"
                   className="inline-flex items-center gap-1.5 rounded-lg border border-cream/20 px-5 py-3 text-[15px] font-medium text-cream transition-colors hover:border-cream/40"
                 >
-                  Ir a contacto
+                  Enviar una consulta
                   <ArrowRight size={14} weight="bold" aria-hidden="true" />
                 </Link>
               </div>
@@ -730,7 +726,7 @@ export default function SobreNosotros() {
               </dl>
               <div className="mt-10">
                 <MagneticButton href="/contacto" variant="primary">
-                  Agendar consulta
+                  Enviar una consulta
                 </MagneticButton>
               </div>
             </section>

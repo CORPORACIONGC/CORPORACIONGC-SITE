@@ -85,6 +85,9 @@ export function Footer() {
                   </a>
                 )
               )}
+              <Link href="/buscar" className="text-sm text-cream/65 hover:text-cream transition-colors duration-300">
+                Buscar en el sitio
+              </Link>
             </div>
           </div>
 

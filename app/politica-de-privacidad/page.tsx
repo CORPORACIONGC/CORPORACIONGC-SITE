@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Migas } from "@/components/layout/Migas";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 import { FIRM } from "@/lib/constants";
 
 import { privacidadMetadata } from "@/lib/page-metadata";
@@ -22,13 +21,7 @@ export default function PoliticaDePrivacidad() {
       <main id="contenido" className="bg-surface min-h-[100dvh]">
         <div className="pt-28 md:pt-36 pb-20 md:pb-28">
           <div className="max-w-[800px] mx-auto px-6 md:px-10">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-8"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Volver al inicio
-            </Link>
+            <Migas items={[{ label: "Inicio", href: "/" }, { label: "Política de privacidad" }]} className="mb-8" />
 
             <RunningHead title="Aviso legal" />
 

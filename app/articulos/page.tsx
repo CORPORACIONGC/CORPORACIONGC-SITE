@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   getAllArticles,
   getPrimaryArea,
@@ -10,7 +9,7 @@ import {
 import { GUIAS_MAS_CONSULTADAS } from "@/lib/constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import { Migas } from "@/components/layout/Migas";
 import { IndiceArticulos, type PiezaIndice } from "@/components/sections/IndiceArticulos";
 import { articulosMetadata } from "@/lib/page-metadata";
 import { RunningHead } from "@/components/ui/RunningHead";
@@ -119,13 +118,8 @@ export default function ArticulosPage() {
         {/* Header */}
         <div className="pt-28 md:pt-36 pb-6 md:pb-8">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 py-2 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-6"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Volver al inicio
-            </Link>
+            {/* Las migas repiten el BreadcrumbList de arriba (D-22). */}
+            <Migas items={[{ label: "Inicio", href: "/" }, { label: "Guías y publicaciones" }]} className="mb-6" />
 
             <RunningHead title="Guías y publicaciones" />
 

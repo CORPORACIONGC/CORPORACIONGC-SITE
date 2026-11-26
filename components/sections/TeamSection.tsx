@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
@@ -60,44 +61,61 @@ export function TeamSection() {
           <TeamGallery members={teamMembers} />
         </AnimatedEntry>
 
-        {/* Asistentes legales: el mismo titular y la misma tarjeta que los
-            abogados. En escritorio el texto ocupa la mitad izquierda y los
-            dos retratos la derecha, alineados con las columnas de arriba,
-            para que la fila quede completa. */}
-        <div className="mt-20 border-t border-cream/10 pt-16 md:mt-28 md:pt-24 lg:grid lg:grid-cols-2 lg:items-start lg:gap-6">
-          <div className="mb-12 md:mb-16 lg:mb-0 lg:pr-10">
-            <AnimatedEntry>
-              <h3 className="type-headline text-cream max-w-[12ch]">
-                Nuestros asistentes{" "}
-                <span className="text-emphasis">legales</span>
-              </h3>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <p className="type-lead mt-6 max-w-[40ch] text-cream/75 md:mt-8">
-                Estudiantes de Derecho de la Universidad de Costa Rica que apoyan
-                a los abogados de la firma en la investigaci&#243;n jur&#237;dica,
-                el an&#225;lisis de los expedientes y la preparaci&#243;n de los
-                escritos.
-              </p>
-            </AnimatedEntry>
-          </div>
-
-          <AnimatedEntry delay={0.2}>
-            <TeamGallery members={assistantMembers} basePath="/equipo" label="Asistentes legales de Corporación GC" columns={2} />
+        {/* Asistentes legales (D-10, 25-11-2026): sin segundo titular. Van
+            como dos firmas pequeñas bajo la fila de los abogados (retrato de
+            56 px, nombre y cargo), y el cargo es la única diferencia. En la
+            misma línea, a la derecha en escritorio, el enlace al equipo
+            completo. Antes llevaban su propio titular y media fila de
+            retratos grandes, y la sección se leía como dos equipos. En
+            escritorio la línea usa las cuatro columnas de la fila de arriba:
+            cada firma arranca bajo un retrato. */}
+        <div className="mt-12 flex flex-col gap-6 border-t border-cream/10 pt-8 md:mt-14 lg:grid lg:grid-cols-4 lg:items-center lg:gap-6">
+          <AnimatedEntry delay={0.25} className="lg:col-span-2">
+            <ul
+              role="list"
+              aria-label="Asistentes legales de Corporación GC"
+              className="flex flex-col gap-5 sm:flex-row sm:gap-12 lg:grid lg:grid-cols-2 lg:gap-6"
+            >
+              {assistantMembers.map((a) => (
+                <li key={a.slug}>
+                  <Link href={`/equipo/${a.slug}`} className="group flex items-center gap-4 outline-offset-4">
+                    <span className="relative block h-[70px] w-14 shrink-0 overflow-hidden bg-cream/[0.04]">
+                      <Image
+                        src={a.portrait}
+                        alt=""
+                        fill
+                        loading="lazy"
+                        sizes="56px"
+                        className="object-cover saturate-[0.9] transition-[filter] duration-500 ease-out group-hover:saturate-100 group-focus-visible:saturate-100"
+                      />
+                      <span
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/[0.06] dark:ring-white/[0.06]"
+                      />
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block text-[15px] font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy-light group-focus-visible:text-burgundy-light dark:group-hover:text-hilo-texto dark:group-focus-visible:text-hilo-texto">
+                        {a.name}
+                      </span>
+                      <span className="mt-0.5 block text-[13px] leading-snug text-cream/65">{a.role}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </AnimatedEntry>
-        </div>
 
-        {/* Reseñas, carnés y el fundador están en Sobre nosotros */}
-        <div className="mt-10 flex lg:mt-14 lg:justify-end">
+          {/* Reseñas, carnés y el fundador están en Sobre nosotros. py-3 le
+              da 44 px de alto táctil (D-15). */}
           <Link
             href="/sobre-nosotros#abogados"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
+            className="group inline-flex items-center gap-2 self-start py-3 text-sm font-medium text-burgundy transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto lg:col-start-4 lg:justify-self-end"
           >
             Conozca al equipo completo
             <ArrowRight
               size={14}
               weight="bold"
+              aria-hidden="true"
               className="transition-transform duration-300 group-hover:translate-x-0.5"
             />
           </Link>
