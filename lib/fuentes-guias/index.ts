@@ -36,6 +36,7 @@ import { fuentes as f_ley_7786_reforma_sanciones_personales_expediente_25129 } f
 import { fuentes as f_control_previo_contraloria_proyectos_25692_25901 } from "./control-previo-contraloria-proyectos-25692-25901";
 import { fuentes as f_convencion_colectiva_municipalidad_desamparados_sala_constitucional } from "./convencion-colectiva-municipalidad-desamparados-sala-constitucional";
 import { fuentes as f_sancion_alcalde_concejo_municipal_accion_inconstitucionalidad } from "./sancion-alcalde-concejo-municipal-accion-inconstitucionalidad";
+import { fuentes as f_plan_regulador_montes_de_oca_audiencia_publica } from "./plan-regulador-montes-de-oca-audiencia-publica";
 import { fuentes as f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito } from "./ley-8422-contra-la-corrupcion-enriquecimiento-ilicito";
 import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./ley-general-administracion-publica-costa-rica";
 import { fuentes as f_licitacion_corredor_vial_san_jose_san_ramon } from "./licitacion-corredor-vial-san-jose-san-ramon";
@@ -103,6 +104,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "control-previo-contraloria-proyectos-25692-25901": f_control_previo_contraloria_proyectos_25692_25901,
   "convencion-colectiva-municipalidad-desamparados-sala-constitucional": f_convencion_colectiva_municipalidad_desamparados_sala_constitucional,
   "sancion-alcalde-concejo-municipal-accion-inconstitucionalidad": f_sancion_alcalde_concejo_municipal_accion_inconstitucionalidad,
+  "plan-regulador-montes-de-oca-audiencia-publica": f_plan_regulador_montes_de_oca_audiencia_publica,
   "ley-8422-contra-la-corrupcion-enriquecimiento-ilicito": f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito,
   "ley-general-administracion-publica-costa-rica": f_ley_general_administracion_publica_costa_rica,
   "licitacion-corredor-vial-san-jose-san-ramon": f_licitacion_corredor_vial_san_jose_san_ramon,

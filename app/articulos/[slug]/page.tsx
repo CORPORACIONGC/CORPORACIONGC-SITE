@@ -99,6 +99,7 @@ import { Art81Comparado, SancionesDirectores, OsflTresTextos } from "@/component
 import { Art184Comparado, Articulo12TresTextos } from "@/components/article/ControlContraloria";
 import { LineaCesantiaConvenciones, ConvencionesMunicipalesSala } from "@/components/article/ConvencionesMunicipales";
 import { ViasSancionAlcalde, LineaSancionAlcalde } from "@/components/article/SancionAlcalde";
+import { EtapasPlanRegulador, ReglamentosAudienciaComparados } from "@/components/article/PlanReguladorMontesDeOca";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -328,6 +329,8 @@ const ARTICLE_COMPONENTS = {
   ConvencionesMunicipalesSala,
   ViasSancionAlcalde,
   LineaSancionAlcalde,
+  EtapasPlanRegulador,
+  ReglamentosAudienciaComparados,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
