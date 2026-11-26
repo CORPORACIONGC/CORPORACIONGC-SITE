@@ -60,6 +60,7 @@ export function proxy(req: NextRequest) {
 export const config = {
   // Excluye internos de Next, API, archivos con extensión (sitemap.xml,
   // robots.txt, imágenes, etc.) y las imágenes sociales generadas, cuya URL
-  // lleva un ?hash de versión que no debe provocar el 308.
-  matcher: ["/((?!_next/|api/|.*opengraph-image|.*twitter-image|.*\\..*).*)"],
+  // lleva un ?hash de versión que no debe provocar el 308. /buscar queda fuera
+  // porque lee ?q= (es noindex y no está en el sitemap).
+  matcher: ["/((?!_next/|api/|buscar|.*opengraph-image|.*twitter-image|.*\\..*).*)"],
 };

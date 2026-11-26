@@ -84,7 +84,7 @@ export function OscarEventoDestacado() {
         </AnimatedEntry>
 
         <AnimatedEntry delay={0.2}>
-          <div className="rounded-2xl bg-cream/[0.025] shadow-[0_8px_30px_-16px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.03)] overflow-hidden backdrop-blur-sm">
+          <div className="rounded-xl bg-cream/[0.025] shadow-[0_8px_30px_-16px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.03)] overflow-hidden backdrop-blur-sm">
             <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-0">
               {/* Photo */}
               <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden">
@@ -169,7 +169,7 @@ export function OscarEventoDestacado() {
 
         {/* Video recording of the event */}
         <AnimatedEntry delay={0.3}>
-          <div className="mt-6 rounded-2xl bg-cream/[0.025] shadow-[0_8px_30px_-16px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.03)] overflow-hidden backdrop-blur-sm">
+          <div className="mt-6 rounded-xl bg-cream/[0.025] shadow-[0_8px_30px_-16px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.03)] overflow-hidden backdrop-blur-sm">
             <LiteYouTube id={EVENT_VIDEO_ID} title={EVENT_VIDEO_TITLE} start={INTERVENCION[0]} />
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-2 mb-3">

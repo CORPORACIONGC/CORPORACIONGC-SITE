@@ -1,25 +1,88 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  Quotes,
-  Scales,
-} from "@phosphor-icons/react/dist/ssr";
-import {
-  AnimatedEntry,
-  StaggerContainer,
-  StaggerItem,
-} from "@/components/ui/AnimatedEntry";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import {
-  ESTADO_ESTILO,
   ETIQUETA_ESTADO,
   fragmentosLiterales,
   getAllSentencias,
   nexusUrl,
+  type SentenciaDestacada,
 } from "@/lib/jurisprudencia";
 import { SentenciaFolio, type SentenciaPortada } from "@/components/sections/SentenciaFolio";
 import { RunningHead } from "@/components/ui/RunningHead";
 
+/* ── Filas del índice de sentencias ──
+   El mismo marcado de las filas que acompañan al folio de la portada
+   (components/sections/SentenciaFolio.tsx): un filete fino arriba que se
+   traza en burdeos al pasar el cursor o recibir el foco, el año y el estado
+   del criterio en 13 px, el título en 17 px semibold y el número de la
+   resolución. Allí cada fila es un botón que cambia la hoja; aquí es un
+   enlace a la ficha. Lo usan el perfil del Director y el índice
+   /jurisprudencia-destacada (D-08, 25-11-2026), sin tarjetas ni pastillas. */
+
+export type FilaSentencia = {
+  slug: string;
+  anio: string;
+  estado?: string;
+  titulo: string;
+  numero: string;
+  /** Materia, solo en el índice completo, donde la fila tiene todo el ancho. */
+  materia?: string;
+};
+
+export function filaDe(s: SentenciaDestacada, conMateria = false): FilaSentencia {
+  return {
+    slug: s.slug,
+    anio: s.fecha.slice(-4),
+    estado: s.estado ? ETIQUETA_ESTADO[s.estado] : undefined,
+    titulo: s.titulo,
+    numero: s.numero,
+    materia: conMateria ? s.materia : undefined,
+  };
+}
+
+export function FilasSentencias({
+  sentencias,
+  etiqueta,
+  columnas = "",
+  nivelTitulo = "h3",
+}: {
+  sentencias: FilaSentencia[];
+  etiqueta: string;
+  /** Clases de columnas de la cuadrícula; por omisión, una sola columna. */
+  columnas?: string;
+  nivelTitulo?: "h2" | "h3";
+}) {
+  const Titulo = nivelTitulo;
+  return (
+    <ul role="list" aria-label={etiqueta} className={`grid gap-x-8 border-b border-cream/10 ${columnas}`}>
+      {sentencias.map((x) => (
+        <li key={x.slug}>
+          <Link
+            href={`/jurisprudencia-destacada/${x.slug}`}
+            className="group relative block w-full py-5 text-left outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hilo"
+          >
+            <span aria-hidden="true" className="absolute inset-x-0 top-0 h-px bg-cream/10" />
+            <span
+              aria-hidden="true"
+              className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 bg-burgundy-light transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100 group-focus-visible:scale-x-100 dark:bg-hilo"
+            />
+            <span className="block text-[13px] tabular-nums text-cream/65">
+              {x.anio}
+              {x.estado ? ` · ${x.estado}` : ""}
+            </span>
+            <Titulo className="mt-1.5 block text-[17px] font-semibold leading-snug tracking-[-0.01em] text-cream transition-colors duration-300 group-hover:text-burgundy-light dark:group-hover:text-hilo-texto">
+              {x.titulo}
+            </Titulo>
+            {x.materia && <span className="mt-1 block text-sm leading-relaxed text-cream/70">{x.materia}</span>}
+            <span className="mt-1 block text-[13px] text-cream/65">{x.numero}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 type Props = {
   /**
@@ -32,9 +95,6 @@ type Props = {
 export function JurisprudenciaDestacada({ variant = "home" }: Props) {
   const sentencias = getAllSentencias();
   if (sentencias.length === 0) return null;
-
-  const featured = sentencias[0];
-  const additional = sentencias.slice(1);
 
   /* Solo lo que el folio de la portada muestra de cada sentencia: el
      componente corre en el cliente y no debe cargar el análisis completo. */
@@ -116,156 +176,17 @@ export function JurisprudenciaDestacada({ variant = "home" }: Props) {
             <SentenciaFolio sentencias={portadas} />
           </AnimatedEntry>
         ) : (
-          <>
-        {/* ── Featured sentencia card (editorial glass) ── */}
-        <AnimatedEntry delay={0.3}>
-          <Link
-            href={`/jurisprudencia-destacada/${featured.slug}`}
-            className="group block relative rounded-2xl md:rounded-3xl overflow-hidden border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.04] shadow-[0_30px_80px_-25px_rgba(107,29,58,0.35),0_8px_24px_-8px_rgba(107,29,58,0.18)] dark:shadow-[0_24px_60px_-22px_rgba(0,0,0,0.5)] hover:border-burgundy/25 dark:hover:border-hilo/35 hover:shadow-[0_40px_100px_-25px_rgba(107,29,58,0.45),0_12px_30px_-8px_rgba(107,29,58,0.25)] dark:hover:shadow-[0_30px_80px_-22px_rgba(0,0,0,0.6)] transition-all duration-500"
-          >
-            {/* Inner glass tint — subtle warm wash */}
-            <div className="absolute inset-0 bg-gradient-to-br from-hilo/[0.04] via-transparent to-burgundy/[0.05] pointer-events-none" />
-
-            {/* Top edge highlight (glass gleam) */}
-            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/15 dark:via-white/30 to-transparent pointer-events-none" />
-
-            <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_0.95fr]">
-              {/* Left: meta + title + intro */}
-              <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-between">
-                <div>
-                  {/* Top meta */}
-                  <div className="flex flex-wrap items-center gap-3 mb-7">
-                    {featured.estado && (
-                      <span
-                        className={`px-3 py-1 rounded-md text-[11px] tracking-[0.14em] uppercase font-semibold border ${
-                          ESTADO_ESTILO[featured.estado]
-                        }`}
-                      >
-                        {ETIQUETA_ESTADO[featured.estado]}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="type-title text-cream group-hover:text-burgundy-light dark:group-hover:text-hilo-texto transition-colors duration-500 mb-4">
-                    {featured.titulo}
-                  </h3>
-
-                  {/* Materia */}
-                  <p className="text-sm text-cream/65 mb-7">
-                    {featured.materia}
-                  </p>
-
-                  {/* Subtitle/intro */}
-                  {featured.subtitulo && (
-                    <p className="text-base text-cream/80 leading-relaxed max-w-[50ch]">
-                      {featured.subtitulo}
-                    </p>
-                  )}
-                </div>
-
-                {/* Bottom: resolution + CTA */}
-                <div className="mt-10 pt-6 border-t border-burgundy/15 dark:border-white/[0.10] flex items-center justify-between gap-3">
-                  <div className="text-sm font-medium tabular-nums text-cream/85">
-                    {featured.numero}
-                  </div>
-                  <div className="inline-flex items-center gap-2 text-sm font-medium text-burgundy dark:text-hilo-texto/90 group-hover:text-burgundy-dark dark:group-hover:text-hilo-texto transition-colors duration-300">
-                    Leer la sentencia
-                    <ArrowRight
-                      size={14}
-                      weight="bold"
-                      className="-translate-x-1 group-hover:translate-x-0 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Right: pull quote — glass panel with burgundy / gold tint */}
-              <div className="relative p-8 md:p-12 lg:p-14 lg:border-l border-burgundy/15 dark:border-white/[0.08] flex items-center bg-gradient-to-br from-burgundy/[0.06] via-transparent to-hilo/[0.05]">
-                <div className="relative">
-                  <Quotes
-                    size={42}
-                    weight="fill"
-                    className="absolute -top-3 -left-1 text-burgundy/30 dark:text-[#9B2A5C]"
-                  />
-                  <blockquote className="relative pl-12 pt-2">
-                    <p className="type-quote text-cream">
-                      {featured.pullQuote.texto}
-                    </p>
-                    {featured.pullQuote.citation && (
-                      <footer className="mt-7 flex items-center gap-3">
-                        <div className="h-px w-7 bg-burgundy/40 dark:bg-hilo/40" />
-                        <cite className="not-italic type-label text-burgundy/85 dark:text-hilo-texto/80">
-                          {featured.pullQuote.citation}
-                        </cite>
-                      </footer>
-                    )}
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom attribution row */}
-            <div className="relative border-t border-burgundy/15 dark:border-white/[0.10] px-8 md:px-12 lg:px-14 py-4 flex items-center gap-3">
-              <Scales
-                size={14}
-                weight="duotone"
-                className="text-burgundy/65 dark:text-hilo-texto/65 shrink-0"
-              />
-              <span className="text-[13px] text-cream/65">
-                Redactado por el{" "}
-                <span className="text-cream font-medium">
-                  Dr. Óscar Eduardo González Camacho
-                </span>
-                <span className="text-cream/65"> · {featured.tribunal}</span>
-              </span>
-            </div>
-          </Link>
-        </AnimatedEntry>
-
-        {/* ── Additional sentencias (mini glass cards) ── */}
-        {additional.length > 0 && (
-          <StaggerContainer
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5"
-            stagger={0.08}
-          >
-            {additional.slice(0, 3).map((s) => (
-              <StaggerItem key={s.slug}>
-                <div
-                  className="group relative block h-full p-6 rounded-xl border border-burgundy/[0.08] dark:border-white/[0.08] bg-white dark:bg-white/[0.03] shadow-[0_18px_40px_-18px_rgba(107,29,58,0.25),0_4px_12px_-4px_rgba(107,29,58,0.12)] dark:shadow-[0_12px_30px_-15px_rgba(0,0,0,0.4)] hover:border-burgundy/25 dark:hover:border-hilo/25 hover:shadow-[0_28px_60px_-18px_rgba(107,29,58,0.35),0_8px_18px_-4px_rgba(107,29,58,0.18)] hover:-translate-y-0.5 transition-all duration-400 overflow-hidden"
-                >
-                  {/* Top hairline gleam */}
-                  <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-burgundy/15 dark:via-white/20 to-transparent pointer-events-none" />
-
-                  <div className="flex items-center gap-3 mb-4">
-                    {s.estado && (
-                      <span
-                        className={`px-2 py-0.5 rounded text-[11px] tracking-[0.12em] uppercase font-semibold border ${
-                          ESTADO_ESTILO[s.estado]
-                        }`}
-                      >
-                        {ETIQUETA_ESTADO[s.estado]}
-                      </span>
-                    )}
-                    <span className="text-[11px] text-cream/65 ml-auto tabular-nums">
-                      {s.fechaCorta}
-                    </span>
-                  </div>
-                  <h4 className="type-card-title text-cream group-hover:text-burgundy-light dark:group-hover:text-hilo-texto transition-colors duration-300 mb-2">
-                    <Link href={`/jurisprudencia-destacada/${s.slug}`} className="after:absolute after:inset-0 after:content-['']">
-                      {s.titulo}
-                    </Link>
-                  </h4>
-                  <p className="text-[13px] text-cream/65">
-                    {s.materia}
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerContainer>
-        )}
-
-          </>
+          /* Perfil (D-08, 25-11-2026): las mismas filas del índice que
+             acompaña al folio de la portada. El papel queda reservado para
+             la sentencia destacada de la portada. */
+          <AnimatedEntry delay={0.3}>
+            <FilasSentencias
+              sentencias={sentencias.map((s) => filaDe(s))}
+              etiqueta="Sentencias redactadas por el Dr. González Camacho"
+              columnas="md:grid-cols-2"
+              nivelTitulo="h3"
+            />
+          </AnimatedEntry>
         )}
       </div>
 

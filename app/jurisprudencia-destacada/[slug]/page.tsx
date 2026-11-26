@@ -232,13 +232,21 @@ export default async function SentenciaDestacadaPage({
         {/* ─── Portada del documento: título y ficha de la resolución ─── */}
         <header className="pt-28 md:pt-36">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10">
-            <Link
-              href="/jurisprudencia-destacada"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Jurisprudencia destacada
-            </Link>
+            {/* Migas (D-22): el mismo patrón de las guías y las áreas. */}
+            <nav aria-label="Ruta" className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-cream/65">
+              <Link href="/" className="transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto">
+                Inicio
+              </Link>
+              <span aria-hidden="true" className="text-cream/30">›</span>
+              <Link
+                href="/jurisprudencia-destacada"
+                className="transition-colors duration-300 hover:text-burgundy dark:hover:text-hilo-texto"
+              >
+                Jurisprudencia destacada
+              </Link>
+              <span aria-hidden="true" className="text-cream/30">›</span>
+              <span aria-current="page" className="text-cream/75">{sentencia.titulo}</span>
+            </nav>
 
             <div className="mt-10 grid gap-12 lg:mt-14 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-20">
               <div>
@@ -595,7 +603,7 @@ export default async function SentenciaDestacadaPage({
               href="/contacto"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-burgundy transition-colors duration-300 hover:text-burgundy-light dark:text-hilo-texto dark:hover:text-hilo-texto"
             >
-              Consultar un caso
+              Enviar una consulta
               <ArrowRight size={14} weight="bold" />
             </Link>
           </div>

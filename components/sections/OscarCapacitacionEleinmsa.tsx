@@ -124,7 +124,7 @@ const pad = (n: number) => String(n).padStart(2, "0");
 function CardFace({ card, flip }: { card: CardData; flip: boolean }) {
   return (
     <div
-      className={`relative flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-cream/[0.09] bg-surface-alt ${
+      className={`relative flex h-full flex-col overflow-hidden rounded-xl border border-cream/[0.09] bg-surface-alt ${
         flip ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
       style={{

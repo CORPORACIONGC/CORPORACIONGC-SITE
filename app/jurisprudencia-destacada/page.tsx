@@ -1,23 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Scales,
-  Quotes,
-} from "@phosphor-icons/react/dist/ssr";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import {
-  AnimatedEntry,
-  StaggerContainer,
-  StaggerItem,
-} from "@/components/ui/AnimatedEntry";
-import {
-  ESTADO_ESTILO,
-  ETIQUETA_ESTADO,
-  getAllSentencias,
-} from "@/lib/jurisprudencia";
+import { AnimatedEntry } from "@/components/ui/AnimatedEntry";
+import { getAllSentencias } from "@/lib/jurisprudencia";
+import { FilasSentencias, filaDe } from "@/components/sections/JurisprudenciaDestacada";
 import { FIRM } from "@/lib/constants";
 import { jurisprudenciaMetadata } from "@/lib/page-metadata";
 import { RunningHead } from "@/components/ui/RunningHead";
@@ -102,13 +89,14 @@ export default function JurisprudenciaDestacadaIndexPage() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-burgundy/[0.04] blur-[140px] pointer-events-none hidden dark:block" />
 
           <div className="max-w-[1100px] mx-auto px-6 md:px-10 relative z-10">
-            <Link
-              href="/abogados/oscar-gonzalez"
-              className="inline-flex items-center gap-1.5 text-xs text-cream/65 hover:text-emphasis transition-colors duration-300 mb-10"
-            >
-              <ArrowLeft size={14} weight="regular" />
-              Perfil del Dr. Óscar González
-            </Link>
+            {/* Migas (D-22): el mismo patrón de las guías y las áreas. */}
+            <nav aria-label="Ruta" className="mb-10 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-cream/65">
+              <Link href="/" className="hover:text-burgundy dark:hover:text-hilo-texto transition-colors duration-300">
+                Inicio
+              </Link>
+              <span aria-hidden="true" className="text-cream/30">›</span>
+              <span aria-current="page" className="text-cream/75">Jurisprudencia destacada</span>
+            </nav>
 
             <AnimatedEntry>
               <RunningHead title="Jurisprudencia destacada" />
@@ -122,8 +110,14 @@ export default function JurisprudenciaDestacadaIndexPage() {
 
             <AnimatedEntry delay={0.2}>
               <p className="text-lg text-cream/65 leading-relaxed max-w-[60ch] mb-3">
-                Selección de fallos redactados por el Dr. Óscar Eduardo González
-                Camacho durante su gestión como Magistrado de la Sala Primera
+                Selección de fallos redactados por el{" "}
+                <Link
+                  href="/abogados/oscar-gonzalez"
+                  className="text-cream/85 underline decoration-cream/30 underline-offset-4 transition-colors duration-300 hover:text-emphasis hover:decoration-current"
+                >
+                  Dr. Óscar Eduardo González Camacho
+                </Link>{" "}
+                durante su gestión como Magistrado de la Sala Primera
                 (2002–2014). Cada sentencia con pasajes literales verificados,
                 análisis doctrinal y enlace a su texto íntegro en Nexus.
               </p>
@@ -134,7 +128,7 @@ export default function JurisprudenciaDestacadaIndexPage() {
                 sentencias decían «Sentencia de Referencia». */}
             <AnimatedEntry delay={0.25}>
               <p className="text-sm text-cream/65 leading-relaxed max-w-[68ch]">
-                Cada ficha lleva el estado de su criterio, comprobado contra
+                Cada sentencia lleva el estado de su criterio, comprobado contra
                 los fallos posteriores que la citan.{" "}
                 <span className="text-cream/70">Recogida en la ley</span>{" "}
                 cuando el legislador convirtió la regla en norma escrita;{" "}
@@ -153,67 +147,17 @@ export default function JurisprudenciaDestacadaIndexPage() {
         {/* ─── INDEX OF SENTENCIAS ─── */}
         <section className="relative pb-24 md:pb-32">
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
-            <StaggerContainer
-              className="grid grid-cols-1 md:grid-cols-2 gap-5"
-              stagger={0.08}
-            >
-              {sentencias.map((s) => (
-                <StaggerItem key={s.slug}>
-                  {/* El enlace es el título; su ::after cubre la tarjeta. */}
-                  <div className="group relative flex flex-col h-full p-7 md:p-8 rounded-2xl border border-cream/[0.08] bg-cream/[0.02] hover:border-emphasis/30 hover:bg-cream/[0.035] focus-within:border-emphasis/30 transition-all duration-400">
-                    {/* Top meta row */}
-                    <div className="flex items-center gap-3 mb-6">
-                      {s.estado && (
-                        <span
-                          className={`px-2.5 py-1 rounded-md text-[9px] tracking-[0.2em] uppercase font-medium border ${
-                            ESTADO_ESTILO[s.estado]
-                          }`}
-                        >
-                          {ETIQUETA_ESTADO[s.estado]}
-                        </span>
-                      )}
-                      <span className="text-[9px] tracking-[0.2em] uppercase text-cream/65 ml-auto">
-                        {s.fechaCorta}
-                      </span>
-                    </div>
-
-                    {/* Title */}
-                    <h2 className="font-display text-2xl md:text-[28px] tracking-tight leading-[1.1] text-cream group-hover:text-emphasis transition-colors duration-300 mb-3">
-                      <Link href={`/jurisprudencia-destacada/${s.slug}`} className="after:absolute after:inset-0 after:content-['']">
-                        {s.titulo}
-                      </Link>
-                    </h2>
-
-                    {/* Materia */}
-                    <p className="text-xs tracking-wider uppercase text-cream/65 mb-5">
-                      {s.materia}
-                    </p>
-
-                    {/* Quote excerpt */}
-                    <div className="relative pl-4 border-l border-emphasis/25 mb-6">
-                      <p className="text-sm italic text-cream/65 leading-relaxed line-clamp-4">
-                        «{s.pullQuote.texto}»
-                      </p>
-                    </div>
-
-                    {/* Bottom row */}
-                    <div className="mt-auto pt-4 border-t border-cream/[0.06] flex items-center justify-between">
-                      <div className="text-[10px] font-mono text-cream/65">
-                        {s.numero}
-                      </div>
-                      <div className="inline-flex items-center gap-1.5 text-xs text-cream/65 group-hover:text-emphasis transition-colors duration-300">
-                        Leer
-                        <ArrowRight
-                          size={12}
-                          weight="bold"
-                          className="-translate-x-1 group-hover:translate-x-0 transition-transform duration-300"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
+            {/* D-08 (25-11-2026): las filas del índice que acompaña al folio
+                de la portada, con la materia debajo del título porque aquí
+                la fila tiene todo el ancho. Sin tarjetas ni pastillas: el
+                papel queda para la sentencia destacada de la portada. */}
+            <AnimatedEntry delay={0.1}>
+              <FilasSentencias
+                sentencias={sentencias.map((s) => filaDe(s, true))}
+                etiqueta="Sentencias destacadas"
+                nivelTitulo="h2"
+              />
+            </AnimatedEntry>
 
             {/* Note about more coming */}
             {sentencias.length < 8 && (
