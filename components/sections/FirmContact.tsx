@@ -4,6 +4,7 @@ import {
   Phone,
   MapPin,
   Clock,
+  ArrowRight,
 } from "@phosphor-icons/react/dist/ssr";
 import {
   AnimatedEntry,
@@ -101,9 +102,23 @@ export function FirmContact({
                     Solicite una consulta
                   </h2>
                 )}
-                <p className="text-[15px] text-cream/[0.72] leading-relaxed mb-8">
+                <p className="text-[15px] text-cream/[0.72] leading-relaxed">
                   Complete el formulario y le contactaremos a la brevedad para
                   coordinar una reunión.
+                </p>
+
+                {/* Vía rotulada para instituciones públicas (OD-04): el ancla
+                    abre el formulario con el tipo institucional ya elegido
+                    (LeadForm escucha #propuesta-institucional). */}
+                <p className="mt-3 mb-8 text-[15px] leading-relaxed text-cream/[0.72]">
+                  ¿Representa a una institución pública?{" "}
+                  <a
+                    href="#propuesta-institucional"
+                    className="inline-flex items-center gap-1 font-medium text-cream underline decoration-burgundy/60 decoration-2 underline-offset-4 transition-colors duration-200 hover:decoration-burgundy dark:decoration-[#9B2A5C] dark:hover:decoration-white"
+                  >
+                    Solicitar una propuesta
+                    <ArrowRight size={14} weight="bold" aria-hidden="true" />
+                  </a>
                 </p>
 
                 <LeadForm />

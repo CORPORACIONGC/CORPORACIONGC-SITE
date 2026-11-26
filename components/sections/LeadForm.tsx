@@ -15,15 +15,48 @@ import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
+/* Vía para instituciones públicas (OD-04, 25-11-2026). La asesora legal de
+   una institución que evalúa a quién contratar no encontraba un camino
+   propio para pedir una propuesta. El formulario ofrece dos tipos de
+   consulta; el institucional pide además el nombre de la institución y
+   cambia los rótulos y el texto de ayuda. No promete servicios, plazos ni
+   cifras. El enlace «Solicitar una propuesta» de la sección de contacto
+   (y cualquier enlace a #propuesta-institucional) llega con esta opción
+   ya elegida. */
+type TipoConsulta = "caso" | "institucion";
+
+const ANCLA_INSTITUCIONAL = "propuesta-institucional";
+
+const OPCIONES: { valor: TipoConsulta; rotulo: string; detalle: string }[] = [
+  { valor: "caso", rotulo: "Consulta sobre un caso", detalle: "Persona o empresa" },
+  { valor: "institucion", rotulo: "Soy una institución pública", detalle: "Solicitar una propuesta" },
+];
+
+/* Mensajes de WhatsApp del contexto: el genérico de la firma y, en la vía
+   institucional, uno que ya dice quién escribe y qué pide. */
+const whatsappDe = (mensaje: string) =>
+  `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(mensaje)}`;
+const WHATSAPP_GENERAL = whatsappDe(FIRM_CONTACT.whatsappMessage);
+const WHATSAPP_INSTITUCION = whatsappDe(
+  "Hola, escribo en nombre de una institución pública y me gustaría solicitar una propuesta a Corporación GC."
+);
+
+const CAMPO =
+  "w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50";
+const ROTULO = "text-sm font-medium text-cream/[0.82] mb-1.5 block";
+
 export function LeadForm() {
   const [state, setState] = useState<FormState>("idle");
+  const [tipo, setTipo] = useState<TipoConsulta>("caso");
   const [name, setName] = useState("");
+  const [institucion, setInstitucion] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const aviso = useRef<HTMLDivElement>(null);
+  const esInstitucion = tipo === "institucion";
 
   /* El resultado se anuncia: al enviarse, el foco pasa al aviso de éxito,
      que reemplaza al formulario; el de error se lee solo (role="alert"). */
@@ -31,22 +64,50 @@ export function LeadForm() {
     if (state === "success") aviso.current?.focus();
   }, [state]);
 
+  /* Quien llega por el enlace institucional (#propuesta-institucional)
+     encuentra la opción ya elegida. Va por ancla y no por parámetro porque
+     proxy.ts redirige toda URL con parámetros a su versión limpia. */
+  useEffect(() => {
+    const revisar = () => {
+      if (window.location.hash === `#${ANCLA_INSTITUCIONAL}`) setTipo("institucion");
+    };
+    /* Un segundo clic en el mismo enlace no cambia el ancla: se escucha
+       también el clic, por si la persona había vuelto a la otra opción. */
+    const alClic = (e: MouseEvent) => {
+      const enlace = (e.target as Element | null)?.closest?.("a[href]");
+      if (enlace?.getAttribute("href")?.endsWith(`#${ANCLA_INSTITUCIONAL}`)) setTipo("institucion");
+    };
+    revisar();
+    window.addEventListener("hashchange", revisar);
+    document.addEventListener("click", alClic);
+    return () => {
+      window.removeEventListener("hashchange", revisar);
+      document.removeEventListener("click", alClic);
+    };
+  }, []);
+
   /* Alternativa de contacto por WhatsApp (canal preferido por la mayoría de
-     consultantes). Mensaje genérico pre-rellenado; mismo número del bufete. */
-  const whatsappUrl = `https://wa.me/${FIRM_CONTACT.phoneRaw}?text=${encodeURIComponent(
-    FIRM_CONTACT.whatsappMessage
-  )}`;
+     consultantes), con el mensaje del tipo de consulta elegido. */
+  const whatsappUrl = esInstitucion ? WHATSAPP_INSTITUCION : WHATSAPP_GENERAL;
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setState("submitting");
     setErrorMsg("");
 
+    /* La acción del servidor recibe un solo campo de texto: el tipo y la
+       institución van al principio del mensaje, en líneas propias. */
+    const cuerpo = esInstitucion
+      ? `Tipo de consulta: institución pública, solicitud de propuesta\nInstitución: ${institucion.trim()}\n\n${message}`
+      : message;
+
     try {
-      const result = await sendContactEmail({ name, email, phone, message, honeypot });
+      const result = await sendContactEmail({ name, email, phone, message: cuerpo, honeypot });
 
       if (result.success) {
-        trackFormSubmit("lead_form");
+        /* La vía institucional se mide aparte; la general conserva su
+           nombre para no partir la serie. */
+        trackFormSubmit(esInstitucion ? "lead_form_institucion" : "lead_form");
         setState("success");
       } else {
         setErrorMsg(result.error || "No se pudo enviar el mensaje.");
@@ -71,10 +132,12 @@ export function LeadForm() {
           <CheckCircle size={32} weight="duotone" className="text-emphasis" aria-hidden="true" />
         </div>
         <p className="text-base font-semibold text-cream mb-2">
-          Mensaje enviado
+          {esInstitucion ? "Solicitud enviada" : "Mensaje enviado"}
         </p>
         <p className="text-sm text-cream/75 leading-relaxed max-w-[32ch]">
-          Revisaremos su consulta y le contactaremos a la brevedad.
+          {esInstitucion
+            ? "Revisaremos la solicitud de la institución y le contactaremos a la brevedad."
+            : "Revisaremos su consulta y le contactaremos a la brevedad."}
         </p>
       </div>
     );
@@ -101,10 +164,72 @@ export function LeadForm() {
         />
       </div>
 
+      {/* Tipo de consulta: dos opciones del mismo peso. La institucional es
+          la vía rotulada para instituciones públicas (OD-04). */}
+      <fieldset id={ANCLA_INSTITUCIONAL} className="scroll-mt-28">
+        <legend className={ROTULO}>Tipo de consulta</legend>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {OPCIONES.map((o) => {
+            const elegida = tipo === o.valor;
+            return (
+              <label
+                key={o.valor}
+                className={`flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 transition-colors duration-200 ${
+                  elegida
+                    ? "border-burgundy bg-burgundy/[0.04] dark:border-hilo dark:bg-white/[0.04]"
+                    : "border-cream/50 hover:border-cream/70"
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="tipo"
+                  value={o.valor}
+                  checked={elegida}
+                  onChange={() => setTipo(o.valor)}
+                  disabled={state === "submitting"}
+                  className="mt-1 size-4 shrink-0 accent-burgundy dark:accent-[#9B2A5C]"
+                />
+                <span className="min-w-0">
+                  <span className="block text-[15px] font-medium leading-snug text-cream">{o.rotulo}</span>
+                  <span className="mt-0.5 block text-[13px] leading-snug text-cream/65">{o.detalle}</span>
+                </span>
+              </label>
+            );
+          })}
+        </div>
+        <p className="mt-2 text-[13px] leading-relaxed text-cream/65" aria-live="polite">
+          {esInstitucion
+            ? "Indique la institución y describa qué necesita; si ya lo tiene definido, mencione el plazo y el procedimiento de contratación. Con eso la firma podrá preparar la propuesta."
+            : "Cuéntenos el tipo de caso, el contexto general y si hay un plazo corriendo."}
+        </p>
+      </fieldset>
+
+      {/* Institución (solo en la vía institucional) */}
+      {esInstitucion && (
+        <div>
+          <label htmlFor="lf-institucion" className={ROTULO}>
+            Institución *
+          </label>
+          <input
+            id="lf-institucion"
+            name="institucion"
+            type="text"
+            required
+            autoComplete="organization"
+            maxLength={200}
+            value={institucion}
+            onChange={(e) => setInstitucion(e.target.value)}
+            disabled={state === "submitting"}
+            className={CAMPO}
+            placeholder="Nombre de la institución"
+          />
+        </div>
+      )}
+
       {/* Name */}
       <div>
-        <label htmlFor="lf-name" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
-          Nombre completo *
+        <label htmlFor="lf-name" className={ROTULO}>
+          {esInstitucion ? "Nombre y cargo *" : "Nombre completo *"}
         </label>
         <input
           id="lf-name"
@@ -115,15 +240,15 @@ export function LeadForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
-          placeholder="Su nombre"
+          className={CAMPO}
+          placeholder={esInstitucion ? "Su nombre y cargo" : "Su nombre"}
         />
       </div>
 
       {/* Email + Phone row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="lf-email" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
+          <label htmlFor="lf-email" className={ROTULO}>
             Correo electrónico *
           </label>
           <input
@@ -136,12 +261,12 @@ export function LeadForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+            className={CAMPO}
             placeholder="correo@ejemplo.com"
           />
         </div>
         <div>
-          <label htmlFor="lf-phone" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
+          <label htmlFor="lf-phone" className={ROTULO}>
             Teléfono
           </label>
           <input
@@ -153,7 +278,7 @@ export function LeadForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             disabled={state === "submitting"}
-            className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none disabled:opacity-50"
+            className={CAMPO}
             placeholder="+506 0000-0000"
           />
         </div>
@@ -161,8 +286,8 @@ export function LeadForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="lf-message" className="text-sm font-medium text-cream/[0.82] mb-1.5 block">
-          Describa brevemente su consulta *
+        <label htmlFor="lf-message" className={ROTULO}>
+          {esInstitucion ? "¿Qué necesita la institución? *" : "Describa brevemente su consulta *"}
         </label>
         <textarea
           id="lf-message"
@@ -172,8 +297,12 @@ export function LeadForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           disabled={state === "submitting"}
-          className="w-full px-4 py-3 rounded-lg bg-surface border border-cream/50 text-base sm:text-[15px] text-cream placeholder:text-cream/65 hover:border-cream/70 focus:border-burgundy focus:ring-2 focus:ring-burgundy/25 dark:focus:border-hilo/70 dark:focus:ring-hilo/25 transition-colors duration-200 outline-none resize-none disabled:opacity-50"
-          placeholder="Tipo de caso, contexto general, urgencia..."
+          className={`${CAMPO} resize-none`}
+          placeholder={
+            esInstitucion
+              ? "Objeto de la contratación, plazo previsto, procedimiento..."
+              : "Tipo de caso, contexto general, urgencia..."
+          }
         />
       </div>
 
@@ -182,7 +311,7 @@ export function LeadForm() {
         <div role="alert" className="flex items-start gap-2 p-3 rounded-lg bg-burgundy/[0.08] border border-burgundy/20">
           <WarningCircle size={16} aria-hidden="true" className="mt-0.5 text-burgundy-light shrink-0" />
           <p className="text-sm text-cream/80">
-            {errorMsg} Intente de nuevo o escríbanos a{" "}
+            {errorMsg} Intente de nuevo o envíe un correo a{" "}
             <a
               href={`mailto:${FIRM_CONTACT.email}`}
               className="text-emphasis underline"
@@ -193,21 +322,22 @@ export function LeadForm() {
         </div>
       )}
 
-      {/* Submit */}
+      {/* Envío: la acción principal de la sección, con el lacre (D-19). El
+          rótulo es el mismo en los dos tipos de consulta (D-12). */}
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm font-medium tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.97] transition-all duration-300 disabled:opacity-60 disabled:pointer-events-none"
+        className="bg-lacre w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-white text-sm font-medium tracking-wide disabled:opacity-60 disabled:pointer-events-none"
       >
         {state === "submitting" ? (
           <>
-            <CircleNotch size={16} weight="bold" className="animate-spin" />
+            <CircleNotch size={16} weight="bold" className="animate-spin" aria-hidden="true" />
             Enviando...
           </>
         ) : (
           <>
-            <PaperPlaneTilt size={16} weight="fill" />
-            Enviar consulta
+            <PaperPlaneTilt size={16} weight="fill" aria-hidden="true" />
+            Enviar una consulta
           </>
         )}
       </button>
@@ -222,13 +352,13 @@ export function LeadForm() {
       </div>
       <TrackedContactLink
         href={whatsappUrl}
-        contactTarget="lead-form-whatsapp"
+        contactTarget={esInstitucion ? "lead-form-whatsapp-institucion" : "lead-form-whatsapp"}
         target="_blank"
         rel="noopener noreferrer"
         className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-cream/20 bg-surface text-cream text-sm font-medium tracking-wide hover:border-cream/40 active:scale-[0.97] transition-colors duration-300"
       >
-        <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
-        Prefiero escribir por WhatsApp
+        <WhatsappLogo size={18} weight="fill" aria-hidden="true" className="text-[#25D366]" />
+        Escribir por WhatsApp
       </TrackedContactLink>
 
       <p className="text-xs text-cream/65 text-center leading-relaxed">

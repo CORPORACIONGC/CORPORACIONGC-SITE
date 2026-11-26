@@ -10,8 +10,9 @@ import {
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
-import { CONTACT, FIRM_CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 import { RunningHead } from "@/components/ui/RunningHead";
+import { WHATSAPP_PERFIL } from "@/components/sections/PerfilHero";
 
 const contactItems = [
   {
@@ -101,7 +102,7 @@ export function Contact() {
           {/* Right — CTA card */}
           <div className="flex items-center">
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
-              <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
+              <div className="p-8 md:p-10 rounded-xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
                   <MapPin size={16} weight="duotone" className="text-emphasis" />
                   <span className="text-xs text-cream/65">
@@ -119,14 +120,15 @@ export function Contact() {
 
                 <MagneticButton
                   /* Al número de la firma: el perfil no publica el teléfono
-                     personal del Lic. Sánchez (retirado el 15-11-2026). */
-                  href={`https://wa.me/${FIRM_CONTACT.phoneRaw}?text=Hola%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica%20con%20el%20Lic.%20Khevin%20S%C3%A1nchez.`}
+                     personal del Lic. Sánchez (retirado el 15-11-2026). El
+                     enlace es el mismo del hero (WHATSAPP_PERFIL). */
+                  href={WHATSAPP_PERFIL.khevin}
                   variant="primary"
                   className="w-full justify-center"
                   contactTarget="khevin"
                 >
-                  <WhatsappLogo size={18} weight="fill" />
-                  Enviar mensaje
+                  <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+                  Escribir por WhatsApp
                 </MagneticButton>
 
                 {/* GC mention */}

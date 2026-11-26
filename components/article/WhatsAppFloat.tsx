@@ -5,12 +5,14 @@ import { WhatsappLogo } from "@phosphor-icons/react";
 import { trackContactFromHref } from "@/lib/analytics";
 
 /* Acceso a WhatsApp en todas las páginas, visible desde el primer cuadro.
-   En el teléfono es una barra inferior de 48 px, «Consultar por WhatsApp»,
-   que se retira al bajar (para no tapar la lectura) y vuelve al subir. En
-   escritorio es una píldora fija abajo a la derecha. Fondo burdeos macizo,
-   sin degradado. La píldora de escritorio también se retira al bajar, para
-   no tapar el final de las líneas (D-05). El clic se registra como
-   whatsapp_click. */
+   En el teléfono es una barra inferior de 48 px que se retira al bajar (para
+   no tapar la lectura) y vuelve al subir. En escritorio es un botón fijo
+   abajo a la derecha, con el radio de 8 px de todos los botones (D-18; antes
+   era una píldora). Fondo burdeos macizo: el degradado lacre queda para la
+   acción principal de cada pantalla (D-19). El botón de escritorio también
+   se retira al bajar, para no tapar el final de las líneas (D-05). Los dos
+   dicen «Escribir por WhatsApp», el único rótulo del sitio para esta acción
+   (D-12). El clic se registra como whatsapp_click. */
 export function WhatsAppFloat({
   href,
   contactTarget = "article-float",
@@ -59,23 +61,22 @@ export function WhatsAppFloat({
       >
         <span className="flex h-12 items-center justify-center gap-2 text-[15px] font-semibold tracking-tight">
           <WhatsappLogo size={22} weight="fill" aria-hidden="true" className="shrink-0" />
-          Consultar por WhatsApp
+          Escribir por WhatsApp
         </span>
       </a>
 
-      {/* Escritorio: píldora */}
+      {/* Escritorio: botón fijo */}
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
         onClick={registrar}
-        aria-label="Escríbanos por WhatsApp"
-        className={`hidden md:inline-flex fixed bottom-5 right-5 z-40 items-center gap-2.5 rounded-full bg-burgundy py-3.5 px-5 text-white shadow-lg shadow-[rgba(107,29,58,0.35)] hover:bg-burgundy-light active:scale-[0.98] transition-[transform,opacity,background-color] duration-300 motion-reduce:transition-none ${
+        className={`hidden md:inline-flex fixed bottom-5 right-5 z-40 items-center gap-2.5 rounded-lg bg-burgundy py-3.5 px-5 text-white shadow-lg shadow-[rgba(107,29,58,0.35)] hover:bg-burgundy-light active:bg-burgundy-dark active:scale-[0.98] transition-[transform,opacity,background-color] duration-300 motion-reduce:transition-none ${
           oculta ? "translate-y-[calc(100%+1.25rem)] opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
         }`}
       >
         <WhatsappLogo size={26} weight="fill" aria-hidden="true" className="shrink-0" />
-        <span className="text-sm font-semibold tracking-tight pr-0.5">Escríbanos</span>
+        <span className="text-sm font-semibold tracking-tight pr-0.5">Escribir por WhatsApp</span>
       </a>
 
       {/* Reserva al final de la página para que la barra no tape el pie */}

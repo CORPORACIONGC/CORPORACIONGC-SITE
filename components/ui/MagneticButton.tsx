@@ -5,7 +5,12 @@ import { trackContactFromHref } from "@/lib/analytics";
 
 /* El nombre es histórico. Hasta el 19-11-2026 el botón se desplazaba hacia el
    cursor; ese movimiento se retiró porque temblaba en los bordes y apartaba
-   el botón del puntero. Quedan el degradado y los estados de color. */
+   el botón del puntero. Quedan los estados de color.
+
+   Degradado (D-19, 25-11-2026): solo `primary` lleva el lacre, el degradado
+   del sistema (`bg-lacre`, definido al final de app/globals.css), porque es
+   la acción principal de cada pantalla. Las demás variantes burdeos van
+   macizas. El lacre ya trae sus estados de cursor, foco, presión y noche. */
 export function MagneticButton({
   children,
   href,
@@ -29,21 +34,26 @@ export function MagneticButton({
     onClick?.();
   };
 
-  const baseStyles =
-    "inline-flex items-center gap-2 font-medium transition-colors duration-300 cursor-pointer";
+  /* La transición de color no se aplica a `primary`: el lacre declara la
+     suya, que anima los dos tonos del degradado. */
+  const baseStyles = `inline-flex items-center gap-2 font-medium cursor-pointer ${
+    variant === "primary" ? "" : "transition-colors duration-300"
+  }`;
 
   const variants = {
     primary:
-      "bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98]",
+      "bg-lacre text-white px-7 py-3.5 rounded-lg text-sm tracking-wide",
     secondary:
       "bg-charcoal text-white px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-dark-bg active:scale-[0.98]",
     /* De día, borde burdeos al 50 % y rótulo burdeos; de noche, una pieza
        vino con rótulo blanco, porque el burdeos no da contraste sobre negro. */
     outline:
       "border-2 border-burgundy/50 text-burgundy px-7 py-3.5 rounded-lg text-sm tracking-wide hover:border-burgundy hover:bg-burgundy/[0.05] dark:border-[#5A1730] dark:bg-[#3A0B1F] dark:text-white dark:hover:border-[#6B1D3A] dark:hover:bg-[#4A0E27] active:scale-[0.98]",
-    /* Para secciones siempre oscuras (borgoña), en cualquier tema. */
+    /* Para secciones siempre oscuras (borgoña), en cualquier tema. Macizo:
+       la acción principal de una sección oscura usa `primary`, que ya se
+       ajusta a lo oscuro. */
     "outline-inverse":
-      "bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white ring-1 ring-white/10 px-7 py-3.5 rounded-lg text-sm tracking-wide hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98]",
+      "bg-burgundy text-white ring-1 ring-white/10 px-7 py-3.5 rounded-lg text-sm tracking-wide hover:bg-burgundy-light active:bg-burgundy-dark active:scale-[0.98]",
     /* La pieza vino del secundario nocturno, fija en los dos temas: para el
        hero de la portada, que es oscuro también de día. */
     "outline-night":

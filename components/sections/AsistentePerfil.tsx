@@ -6,7 +6,7 @@ import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { FIRM_CONTACT } from "@/lib/constants";
 import type { Asistente } from "@/lib/asistentes";
-import { PerfilHero } from "@/components/sections/PerfilHero";
+import { PerfilHero, WHATSAPP_PERFIL } from "@/components/sections/PerfilHero";
 import { RelatoPerfil, type ApartadoRelato } from "@/components/sections/RelatoPerfil";
 
 /* Perfil de un asistente legal con el mismo formato que el de los abogados
@@ -21,6 +21,8 @@ export function AsistenteHero({ a }: { a: Asistente }) {
       cargo={a.role}
       nombre={[l1, `${l2} ${l3}`]}
       secundario={{ href: "/#equipo", rotulo: "El equipo" }}
+      /* Las consultas las atienden los abogados: WhatsApp de la firma. */
+      whatsapp={WHATSAPP_PERFIL.firma}
       /* El retrato del equipo ya viene recortado a busto (4:5): va entero. */
       foto={{ src: a.portrait, alt: a.name, ancho: 4, alto: 5, hasta: 1, x: "50%" }}
     >
@@ -383,24 +385,24 @@ export function AsistenteContact({ a }: { a: Asistente }) {
 
           <div className="flex items-center">
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
-              <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
+              <div className="p-8 md:p-10 rounded-xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
                   <MapPin size={16} weight="duotone" className="text-emphasis" />
                   <span className="text-xs text-cream/65">{FIRM_CONTACT.location}</span>
                 </div>
                 <h3 className="font-display text-xl font-semibold text-cream tracking-tight mb-3">Consultas jurídicas</h3>
                 <p className="text-xs text-cream/65 leading-relaxed mb-8">
-                  Las consultas sobre un caso las atienden los abogados de la firma. Escríbanos por WhatsApp y le
+                  Las consultas sobre un caso las atienden los abogados de la firma. Escriba por WhatsApp y le
                   responderemos a la brevedad.
                 </p>
                 <MagneticButton
-                  href={`https://wa.me/${FIRM_CONTACT.phoneRaw}?text=Hola%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica.`}
+                  href={WHATSAPP_PERFIL.firma}
                   variant="primary"
                   className="w-full justify-center"
                   contactTarget="general"
                 >
-                  <WhatsappLogo size={18} weight="fill" />
-                  Escribir a la firma
+                  <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+                  Escribir por WhatsApp
                 </MagneticButton>
                 <div className="mt-8 pt-6 border-t border-cream/[0.08] flex items-center gap-3">
                   <Image

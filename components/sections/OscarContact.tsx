@@ -11,6 +11,7 @@ import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
 import { OSCAR_CONTACT } from "@/lib/constants";
 import { RunningHead } from "@/components/ui/RunningHead";
+import { WHATSAPP_PERFIL } from "@/components/sections/PerfilHero";
 
 const contactItems = [
   {
@@ -95,7 +96,7 @@ export function OscarContact() {
           {/* Right — CTA card */}
           <div className="flex items-center">
             <AnimatedEntry delay={0.3} direction="right" className="w-full">
-              <div className="p-8 md:p-10 rounded-2xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
+              <div className="p-8 md:p-10 rounded-xl bg-cream/[0.04] border border-cream/[0.10] backdrop-blur-sm">
                 <div className="flex items-center gap-2 mb-6">
                   <MapPin size={16} weight="duotone" className="text-emphasis" />
                   <span className="text-xs text-cream/65">
@@ -112,13 +113,13 @@ export function OscarContact() {
                 </p>
 
                 <MagneticButton
-                  href={`https://wa.me/${OSCAR_CONTACT.phoneRaw}?text=Hola%20Dr.%20Gonz%C3%A1lez%2C%20me%20gustar%C3%ADa%20coordinar%20una%20consulta%20jur%C3%ADdica.`}
+                  href={WHATSAPP_PERFIL.oscar}
                   variant="primary"
                   className="w-full justify-center"
                   contactTarget="oscar"
                 >
-                  <WhatsappLogo size={18} weight="fill" />
-                  Enviar mensaje
+                  <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+                  Escribir por WhatsApp
                 </MagneticButton>
 
                 {/* GC mention */}

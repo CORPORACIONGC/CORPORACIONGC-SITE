@@ -1,6 +1,14 @@
 import Image from "next/image";
+import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { RunningHead } from "@/components/ui/RunningHead";
+import {
+  ESTEBAN_CONTACT,
+  FIRM_CONTACT,
+  KATHERINE_CONTACT,
+  MARIANA_CONTACT,
+  OSCAR_CONTACT,
+} from "@/lib/constants";
 
 /* Hero de los perfiles (19-11-2026), común a abogados y asistentes. El retrato
    va «a sangre»: en escritorio ocupa la derecha, de la barra de navegación al
@@ -34,6 +42,33 @@ export type RetratoPerfil = {
   /** Encuadre propio para el teléfono, si el de escritorio no le sirve: la
       clase de proporción del marco y, si hace falta, otro recorte. */
   movil?: { marco?: string; hasta?: number; x?: string };
+};
+
+/* WhatsApp de cada perfil (D-12, 25-11-2026). El hero y la sección de
+   contacto del perfil comparten el mismo enlace: el número de quien atiende
+   y un saludo con su nombre, que es el «mensaje del contexto». La clave es
+   la segunda línea del nombre, la que cada perfil ya pasa al hero. Un perfil
+   que no esté aquí (los asistentes) usa el número y el mensaje de la firma. */
+const wa = (telefono: string, mensaje: string) =>
+  `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
+export const WHATSAPP_PERFIL = {
+  oscar: wa(OSCAR_CONTACT.phoneRaw, "Hola Dr. González, me gustaría coordinar una consulta jurídica."),
+  esteban: wa(ESTEBAN_CONTACT.phoneRaw, "Hola Lic. Pérez, me gustaría coordinar una consulta jurídica."),
+  katherine: wa(KATHERINE_CONTACT.phoneRaw, "Hola Licda. González, me gustaría coordinar una consulta jurídica."),
+  mariana: wa(MARIANA_CONTACT.phoneRaw, "Hola Licda. Montero, me gustaría coordinar una consulta jurídica."),
+  /* El perfil no publica el teléfono personal del Lic. Sánchez (retirado el
+     15-11-2026): va al número de la firma. */
+  khevin: wa(FIRM_CONTACT.phoneRaw, "Hola, me gustaría coordinar una consulta jurídica con el Lic. Khevin Sánchez."),
+  firma: wa(FIRM_CONTACT.phoneRaw, FIRM_CONTACT.whatsappMessage),
+} as const;
+
+const PERFIL_POR_NOMBRE: Record<string, keyof typeof WHATSAPP_PERFIL> = {
+  "González Camacho": "oscar",
+  "Pérez Herrera": "esteban",
+  "González Coto": "katherine",
+  "Montero Acuña": "mariana",
+  "Sánchez Zamora": "khevin",
 };
 
 /* Alto del hero en escritorio: la pantalla menos la franja «Volver» (32 px)
@@ -107,6 +142,7 @@ export function PerfilHero({
   carne,
   secundario,
   foto,
+  whatsapp,
 }: {
   /** El rótulo sobre el nombre: «Abogado Asociado», «Asistente legal»… */
   cargo: string;
@@ -116,10 +152,16 @@ export function PerfilHero({
   children: React.ReactNode;
   /** «Carnet CAACR 37920»; los asistentes no llevan. */
   carne?: string;
-  /** El segundo botón; el primero es siempre «Contactar». */
+  /** El segundo botón; el primero es siempre «Escribir por WhatsApp». */
   secundario: { href: string; rotulo: string };
   foto: RetratoPerfil;
+  /** Enlace de WhatsApp del primer botón, si no es el del perfil o el de la
+      firma (ver WHATSAPP_PERFIL). */
+  whatsapp?: string;
 }) {
+  const perfil = PERFIL_POR_NOMBRE[nombre[1]] ?? "firma";
+  const hrefWhatsApp = whatsapp ?? WHATSAPP_PERFIL[perfil];
+
   /* El cuerpo del nombre se ajusta a su línea más larga para que nunca se
      parta en tres: 72 px como tope en escritorio y 36 px en el teléfono. */
   const letras = Math.max(nombre[0].length, nombre[1].length);
@@ -171,10 +213,18 @@ export function PerfilHero({
             </h1>
 
             {/* En el teléfono los botones van bajo el nombre, dentro de la
-                primera pantalla; en escritorio cierran el bloque. */}
+                primera pantalla; en escritorio cierran el bloque. El primero
+                abre WhatsApp con el saludo del perfil (D-12): antes decía
+                «Contactar» y solo bajaba a la sección de contacto. */}
             <div className="order-3 mt-6 flex flex-wrap items-stretch gap-4 md:order-5 md:mt-8">
-              <MagneticButton href="#contacto" variant="primary" className="h-full">
-                Contactar
+              <MagneticButton
+                href={hrefWhatsApp}
+                variant="primary"
+                className="h-full"
+                contactTarget={`perfil-hero-${perfil}`}
+              >
+                <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+                Escribir por WhatsApp
               </MagneticButton>
               <MagneticButton href={secundario.href} variant="outline" className="h-full">
                 {secundario.rotulo}

@@ -110,12 +110,17 @@ export function FirmHero() {
                 la primera pantalla, y se reparten el ancho; en tableta miden
                 lo que su rótulo; en escritorio siguen al pie del texto. Los
                 dos miden lo mismo de alto (`h-full`): sin eso, el borde del
-                secundario lo dejaba 4 px más alto que el principal. */}
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-stretch sm:gap-4 lg:hidden">
-              <MagneticButton href="#contacto" variant="outline-inverse" fullWidth className="h-full px-3! sm:px-7!">
-                Agendar consulta
+                secundario lo dejaba 4 px más alto que el principal.
+                El principal lleva el lacre (D-19), que dentro de este bloque
+                oscuro toma su versión nocturna; su rótulo es «Enviar una
+                consulta» porque baja al formulario (D-12). En el teléfono
+                ese rótulo es el más largo y su columna es un poco más ancha
+                (1,15 a 1), para que quepa en una línea desde 375 px. */}
+            <div className="mt-6 grid grid-cols-[1.15fr_1fr] gap-3 sm:flex sm:flex-wrap sm:items-stretch sm:gap-4 lg:hidden">
+              <MagneticButton href="#contacto" variant="primary" fullWidth className="h-full px-2.5! text-center leading-tight sm:px-7!">
+                Enviar una consulta
               </MagneticButton>
-              <MagneticButton href="#la-firma" variant="outline-night" fullWidth className="h-full px-3! sm:px-7!">
+              <MagneticButton href="#la-firma" variant="outline-night" fullWidth className="h-full px-2.5! text-center leading-tight sm:px-7!">
                 Conocer la firma
               </MagneticButton>
             </div>
@@ -145,8 +150,8 @@ export function FirmHero() {
 
             <div className="gc-rise" style={{ animationDelay: "0.44s" }}>
               <div className="mt-8 hidden flex-wrap items-stretch gap-4 lg:flex">
-                <MagneticButton href="#contacto" variant="outline-inverse" className="h-full">
-                  Agendar consulta
+                <MagneticButton href="#contacto" variant="primary" className="h-full">
+                  Enviar una consulta
                 </MagneticButton>
                 <MagneticButton href="#la-firma" variant="outline-night" className="h-full">
                   Conocer la firma
