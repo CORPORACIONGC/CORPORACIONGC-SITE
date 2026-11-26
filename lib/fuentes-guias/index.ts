@@ -31,6 +31,7 @@ import { fuentes as f_ley_10777_docentes_interinos_mep } from "./ley-10777-docen
 import { fuentes as f_ley_10889_fraude_bancario_costa_rica } from "./ley-10889-fraude-bancario-costa-rica";
 import { fuentes as f_ley_10971_responsabilidad_laboral_contratistas_estado } from "./ley-10971-responsabilidad-laboral-contratistas-estado";
 import { fuentes as f_ley_6043_zona_maritimo_terrestre_costa_rica } from "./ley-6043-zona-maritimo-terrestre-costa-rica";
+import { fuentes as f_ley_65_de_1888_zona_inalienable_resolucion_r_732_2026_minae } from "./ley-65-de-1888-zona-inalienable-resolucion-r-732-2026-minae";
 import { fuentes as f_ley_7786_reforma_sanciones_personales_expediente_25129 } from "./ley-7786-reforma-sanciones-personales-expediente-25129";
 import { fuentes as f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito } from "./ley-8422-contra-la-corrupcion-enriquecimiento-ilicito";
 import { fuentes as f_ley_general_administracion_publica_costa_rica } from "./ley-general-administracion-publica-costa-rica";
@@ -94,6 +95,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "ley-10889-fraude-bancario-costa-rica": f_ley_10889_fraude_bancario_costa_rica,
   "ley-10971-responsabilidad-laboral-contratistas-estado": f_ley_10971_responsabilidad_laboral_contratistas_estado,
   "ley-6043-zona-maritimo-terrestre-costa-rica": f_ley_6043_zona_maritimo_terrestre_costa_rica,
+  "ley-65-de-1888-zona-inalienable-resolucion-r-732-2026-minae": f_ley_65_de_1888_zona_inalienable_resolucion_r_732_2026_minae,
   "ley-7786-reforma-sanciones-personales-expediente-25129": f_ley_7786_reforma_sanciones_personales_expediente_25129,
   "ley-8422-contra-la-corrupcion-enriquecimiento-ilicito": f_ley_8422_contra_la_corrupcion_enriquecimiento_ilicito,
   "ley-general-administracion-publica-costa-rica": f_ley_general_administracion_publica_costa_rica,
