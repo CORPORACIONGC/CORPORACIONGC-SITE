@@ -195,7 +195,8 @@ export function CalculadoraUmbral() {
 
   const privados = u.privados[objeto];
   const boton = (activo: boolean) =>
-    `rounded-lg border px-3 py-2 text-[13.5px] font-medium transition-colors ${
+    /* 44 px de alto como mínimo (área táctil) y texto de 14 px. */
+    `inline-flex min-h-11 items-center rounded-lg border px-3 py-2 text-[14px] leading-tight font-medium transition-colors ${
       activo
         ? "border-burgundy bg-burgundy text-white dark:border-[#9B2A5C] dark:bg-[#3A0B1F]"
         : "border-cream/15 text-cream/80 hover:border-cream/35"

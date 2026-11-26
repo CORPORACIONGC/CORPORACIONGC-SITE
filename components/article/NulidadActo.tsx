@@ -4,6 +4,7 @@
    el 29-09-2026. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 export const LGAP = "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=13231&param2=150737&param3=1";
@@ -249,8 +250,7 @@ const ACTAS: Fuente[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.titulo} className="gc-juris-item gc-juris-item--simple">
@@ -269,7 +269,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
@@ -277,8 +277,7 @@ export function FuentesNulidad() {
   return (
     <div className="gc-fig gc-biblio">
       <Grupo titulo="Normativa" items={NORMAS} />
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Jurisprudencia</span>
+      <GrupoFuentes titulo="Jurisprudencia">
         <ol>
           {JURISPRUDENCIA.map((c) => (
             <li key={c.numero} className="gc-juris-item">
@@ -299,7 +298,7 @@ export function FuentesNulidad() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <Grupo titulo="Procuraduría General de la República" items={PROCURADURIA} />
       <Grupo titulo="Antecedentes legislativos" items={ACTAS} />
       <p className="gc-fig-source">

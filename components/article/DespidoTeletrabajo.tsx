@@ -5,6 +5,7 @@
    deja la estrategia para el análisis de cada caso. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
 const SCIJ = (id: number) =>
@@ -384,8 +385,7 @@ const JURISPRUDENCIA: Criterio[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.href} className="gc-juris-item gc-juris-item--simple">
@@ -400,7 +400,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
@@ -409,8 +409,7 @@ export function FuentesDespidoTeletrabajo() {
     <div className="gc-fig gc-biblio">
       <Grupo titulo="Fuentes oficiales y prensa" items={OFICIALES} />
       <Grupo titulo="Normativa" items={NORMAS} />
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Jurisprudencia</span>
+      <GrupoFuentes titulo="Jurisprudencia">
         <ol>
           {JURISPRUDENCIA.map((c) => (
             <li key={c.numero} className="gc-juris-item">
@@ -430,7 +429,7 @@ export function FuentesDespidoTeletrabajo() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <p className="gc-fig-source">
         Textos normativos: SINALEVI, en su versión vigente. Jurisprudencia nacional: Nexus del Poder Judicial.
         Precedentes extranjeros: sitios oficiales de la Fair Work Commission y del Consejo General del Poder Judicial.

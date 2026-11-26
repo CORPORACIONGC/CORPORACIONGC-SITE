@@ -8,6 +8,7 @@
 
 import Link from "next/link";
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 function FigHead({ id, n, kicker, title, lead }: { id: string; n: number; kicker: string; title: string; lead?: string }) {
   return (
@@ -681,8 +682,7 @@ const NORMATIVA: { nombre: string; detalle: string; articulos: string; id: numbe
 
 function ListaCriterios({ titulo, items }: { titulo: string; items: Criterio[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((c) => (
           <li key={c.numero} className="gc-juris-item">
@@ -706,15 +706,14 @@ function ListaCriterios({ titulo, items }: { titulo: string; items: Criterio[] }
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
 export function BibliografiaRecursosLgap() {
   return (
     <div className="gc-fig gc-biblio">
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Normativa</span>
+      <GrupoFuentes titulo="Normativa">
         <ol>
           {NORMATIVA.map((n) => (
             <li key={n.id} className="gc-juris-item">
@@ -733,7 +732,7 @@ export function BibliografiaRecursosLgap() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <ListaCriterios titulo="Jurisprudencia judicial" items={JUDICIALES} />
       <ListaCriterios titulo="Criterios administrativos" items={ADMINISTRATIVOS} />
       <p className="gc-fig-source">

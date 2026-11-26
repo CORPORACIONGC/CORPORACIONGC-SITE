@@ -3,6 +3,7 @@
    CPCA en SINALEVI y en las bases de Corporación GC el 29-09-2026. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 const CPCA_TEXTO = "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1";
@@ -266,8 +267,7 @@ const DOCTRINA: Fuente[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.titulo} className="gc-juris-item gc-juris-item--simple">
@@ -286,7 +286,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
@@ -294,8 +294,7 @@ export function FuentesEjecucion() {
   return (
     <div className="gc-fig gc-biblio">
       <Grupo titulo="Normativa" items={NORMAS} />
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Jurisprudencia</span>
+      <GrupoFuentes titulo="Jurisprudencia">
         <ol>
           {JURISPRUDENCIA.map((c) => (
             <li key={c.numero} className="gc-juris-item">
@@ -320,7 +319,7 @@ export function FuentesEjecucion() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <Grupo titulo="Procuraduría General de la República" items={PROCURADURIA} />
       <Grupo titulo="Antecedentes legislativos" items={ANTECEDENTES} />
       <Grupo titulo="Doctrina" items={DOCTRINA} />

@@ -10,9 +10,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function CapacitacionEleinmsa() {
+/* Radio de 12 px, el mayor del sistema (D-18). `radioAnterior` conserva el
+   de 16 px en la guía del Reglamento, que no cambia su HTML hasta el
+   09-12-2026 (ESTADO_30_OCT en app/articulos/[slug]/page.tsx). */
+export function CapacitacionEleinmsa({ radioAnterior = false }: { radioAnterior?: boolean } = {}) {
   return (
-    <figure className="not-prose my-12 overflow-hidden rounded-2xl border border-burgundy/15 bg-burgundy/[0.03] text-left">
+    <figure className={`not-prose my-12 overflow-hidden ${radioAnterior ? "rounded-2xl" : "rounded-xl"} border border-burgundy/15 bg-burgundy/[0.03] text-left`}>
       <div className="relative aspect-[3/2] overflow-hidden bg-cream/[0.04]">
         <Image
           src="/images/oscar-imsa-ponencia.jpg"

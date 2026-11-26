@@ -4,6 +4,7 @@
    Poder Judicial (Observatorio Judicial, en actualidadjudicial.poder-judicial.go.cr). */
 
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
 const SCIJ = (id: number) =>
@@ -430,8 +431,7 @@ const JURISPRUDENCIA: Criterio[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.href} className="gc-juris-item gc-juris-item--simple">
@@ -446,7 +446,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
@@ -455,8 +455,7 @@ export function FuentesTribunalContencioso() {
     <div className="gc-fig gc-biblio">
       <Grupo titulo="Hemeroteca del Poder Judicial" items={HEMEROTECA} />
       <Grupo titulo="Normativa" items={NORMAS} />
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Jurisprudencia</span>
+      <GrupoFuentes titulo="Jurisprudencia">
         <ol>
           {JURISPRUDENCIA.map((c) => (
             <li key={c.numero} className="gc-juris-item">
@@ -476,7 +475,7 @@ export function FuentesTribunalContencioso() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <p className="gc-fig-source">
         Textos normativos: SINALEVI, en su versión vigente. Jurisprudencia: Nexus del Poder Judicial. Notas de
         prensa: hemeroteca oficial del Poder Judicial.

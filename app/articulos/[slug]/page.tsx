@@ -114,6 +114,7 @@ import { getSentenciasPorTemas } from "@/lib/jurisprudencia";
 import { SentenciasRelacionadas } from "@/components/jurisprudencia/SentenciasRelacionadas";
 import { RunningHead } from "@/components/ui/RunningHead";
 import { IndiceGuia } from "@/components/article/IndiceGuia";
+import { PliegueFuentes } from "@/components/article/PliegueFuentes";
 import { apartadosDe, corteIntermedio } from "@/lib/indice-guia";
 
 /* Credencial mostrada bajo el byline cuando el "autor" es la firma misma
@@ -461,6 +462,12 @@ export default async function ArticlePage({
   /* Las preguntas frecuentes escritas en el cuerpo se muestran desplegables,
      igual que las del pie. Las páginas en medición conservan su HTML. */
   const fuente = enMedicion ? conLlamada : preguntasDesplegables(conLlamada);
+  /* Las páginas en medición conservan la figura de la capacitación con su
+     radio de 16 px; en el resto va con el de 12 px del sistema (D-18). */
+  const componentesMedicion = {
+    ...ARTICLE_COMPONENTS,
+    CapacitacionEleinmsa: () => <CapacitacionEleinmsa radioAnterior />,
+  };
   const componentes = {
     ...ARTICLE_COMPONENTS,
     LlamadaIntermedia: () => (
@@ -862,6 +869,8 @@ export default async function ArticlePage({
                 en el margen izquierdo desde 1280 px. */}
             <div className={conIndice ? "gc-con-indice relative" : undefined}>
             {conIndice && <IndiceGuia items={indice} lang={lang === "en" ? "en" : "es"} esArticulo={article.publicationType === "articulo"} />}
+            {/* «Fuentes» plegada por grupo en el teléfono (D-01). */}
+            {!isPdf && !enMedicion && <PliegueFuentes />}
 
             {/* Content */}
             {isPdf && article.content.trim() && (
@@ -883,7 +892,7 @@ export default async function ArticlePage({
               <div className="prose-article">
                 <MDXRemote
                   source={fuente}
-                  components={corte >= 0 ? componentes : ARTICLE_COMPONENTS}
+                  components={corte >= 0 ? componentes : enMedicion ? componentesMedicion : ARTICLE_COMPONENTS}
                   options={{
                     mdxOptions: {
                       remarkPlugins: [remarkGfm],
@@ -937,7 +946,11 @@ export default async function ArticlePage({
             {/* CTA de WhatsApp — solo en guías/artículos comerciales (ver
                 showCommercialCta). Vía rápida y directa, diferenciada del
                 formulario de contacto (que es la vía formal y detallada). */}
-            {showCommercialCta && (
+            {/* Las páginas en medición conservan la caja con radio y degradado
+                hasta el 09-12-2026. Las demás cierran con la misma fila con
+                filete de la llamada intermedia, sin caja (OD-02, D-18), y con
+                el botón burdeos macizo. */}
+            {showCommercialCta && enMedicion && (
             <div className="mt-14 rounded-2xl border border-burgundy/20 bg-gradient-to-br from-burgundy/[0.08] via-cream/[0.02] to-transparent p-7 md:p-9">
               <div className="flex items-start gap-5">
                 <div className="hidden sm:flex shrink-0 items-center justify-center w-12 h-12 rounded-xl bg-burgundy/[0.14] text-burgundy-light">
@@ -966,6 +979,27 @@ export default async function ArticlePage({
                 </div>
               </div>
             </div>
+            )}
+            {showCommercialCta && !enMedicion && (
+              <div className="mt-14 border-y border-cream/[0.12] py-8 md:py-10">
+                <p className="type-label mb-3 text-cream/65">{t.ctaKicker}</p>
+                <h2 className="font-display text-xl md:text-2xl font-semibold tracking-tight text-cream leading-snug max-w-[40ch]">
+                  {article.cta?.titulo ?? t.ctaTitle}
+                </h2>
+                <p className="mt-3 text-[15px] text-cream/75 leading-relaxed max-w-[60ch]">
+                  {article.cta?.texto ?? t.ctaText}
+                </p>
+                <TrackedContactLink
+                  href={whatsappUrl}
+                  contactTarget="article-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-burgundy text-white text-sm font-medium tracking-wide transition-colors duration-300 hover:bg-burgundy-light active:bg-[#4A0E27] active:scale-[0.98]"
+                >
+                  <WhatsappLogo size={18} weight="fill" aria-hidden="true" />
+                  {t.ctaButton}
+                </TrackedContactLink>
+              </div>
             )}
 
             {/* About the Author(s) */}

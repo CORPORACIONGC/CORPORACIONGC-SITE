@@ -386,6 +386,12 @@ body {
 .prose-article h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
 .prose-article h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2.25rem; margin-bottom: 0.75rem; }
 .prose-article p { margin-bottom: 1.25rem; max-width: 65ch; text-align: justify; }
+/* Columna de lectura (D-16, 25-11-2026): el texto corrido mide como máximo
+   640 px, unos 74 a 78 caracteres por línea a 17 px; a 720 px corría a 88.
+   Solo se acota lo que es lectura (párrafos, listas, citas y subtítulos
+   hijos directos del artículo); las figuras, las tablas, la calculadora y
+   las llamadas conservan el ancho completo de la columna. */
+.prose-article > :is(p, ul, ol, blockquote, h2, h3, h4) { max-width: 640px; }
 .prose-article a { color: #6B1D3A; text-decoration: underline; text-underline-offset: 2px; }
 .prose-article a:hover { color: #8B2252; }
 .prose-article ul,
@@ -406,9 +412,13 @@ body {
   text-wrap: pretty;
 }
 @media (max-width: 639px) {
+  /* Alineado a la izquierda, la división silábica no aporta y entorpece la
+     lectura («justifi-cada», «SINA-LEVI»): en el teléfono no se parte (D-17). */
   .prose-article p,
   .prose-article li {
     text-align: left;
+    hyphens: manual;
+    -webkit-hyphens: manual;
   }
 }
 /* Los bloques propios que viven dentro de un artículo (figuras, recuadros
@@ -862,7 +872,7 @@ html {
 }
 .prose-article .gc-comparativa .gc-acronyms b { color: color-mix(in oklab, var(--color-cream) 80%, transparent); font-weight: 600; letter-spacing: 0.01em; }
 .prose-article .gc-comparativa .gc-closing {
-  display: flex; gap: 16px; padding: 24px; border-radius: 16px;
+  display: flex; gap: 16px; padding: 24px; border-radius: 12px;
   border: 1px solid color-mix(in oklab, var(--color-burgundy) 28%, transparent);
   background: color-mix(in oklab, var(--color-burgundy) 5%, transparent);
 }
@@ -1075,7 +1085,7 @@ html {
   display: flex; gap: 16px;
   margin-top: 2rem;
   padding: 28px 28px 28px 24px;
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1px solid color-mix(in oklab, var(--color-burgundy) 28%, transparent);
   background: color-mix(in oklab, var(--color-burgundy) 5%, transparent);
 }
@@ -1614,6 +1624,25 @@ html {
 .prose-article .gc-juris-grupo + .gc-juris-grupo { margin-top: 28px; }
 .prose-article .gc-fig.gc-biblio { margin-top: 1.25rem; }
 .prose-article .gc-juris-grupo > .gc-fig-label { margin-bottom: 0; padding-bottom: 10px; border-bottom: 1px solid var(--fig-rule); }
+/* «Fuentes» plegable por grupo (D-01, 25-11-2026; componente GrupoFuentes):
+   el rótulo del grupo es el <summary>. Abierto en escritorio; en el teléfono
+   PliegueFuentes lo cierra al cargar y el lector abre el grupo que busca. */
+.prose-article .gc-fig .gc-fuentes-grupo > summary.gc-fig-label {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 44px; padding-top: 12px; margin-bottom: 0;
+  cursor: pointer; list-style: none;
+}
+.prose-article .gc-fuentes-grupo > summary::-webkit-details-marker { display: none; }
+.prose-article .gc-fuentes-grupo > summary::after {
+  content: "+"; flex: none; font-size: 15px; font-weight: 400; letter-spacing: 0;
+  line-height: 1; color: var(--fig-muted); transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.prose-article .gc-fuentes-grupo[open] > summary::after { transform: rotate(45deg); }
+.prose-article .gc-fuentes-grupo > summary:hover { color: var(--color-cream); }
+.prose-article .gc-fuentes-grupo > summary:focus-visible { outline: 2px solid var(--color-hilo); outline-offset: 2px; }
+.prose-article .gc-fuentes-grupo + .gc-fuentes-grupo { margin-top: 0; }
+.prose-article .gc-fuentes-grupo[open] + .gc-fuentes-grupo { margin-top: 20px; }
+.prose-article .gc-fuentes-grupo:not([open]) > summary.gc-fig-label { border-bottom-color: var(--fig-rule-soft); }
 .prose-article .gc-juris-item {
   display: grid; grid-template-columns: minmax(170px, 0.9fr) 2.6fr; column-gap: 28px;
   padding: 18px 0; border-bottom: 1px solid var(--fig-rule-soft);
@@ -1857,3 +1886,81 @@ html:not(.dark) .gc-lectura .prose-article .gc-fig .gc-fig-title { color: #8B225
   box-shadow: 0 1px 0 0 var(--cream-val);
 }
 .gc-campo-filete input:focus-visible { outline: none; }
+
+/* ═══ BOTONES Y LLAMADAS DE CONTACTO · inicio del bloque (25-11-2026) ═══
+   Bloque propio del frente de botones y contacto. No editar fuera de él
+   desde ese frente; lo de arriba pertenece a otros frentes.
+
+   El lacre: el único degradado del sistema (D-19, decisión de Khevin del
+   25-11-2026). Hereda el degradado de tres tonos que tuvo el botón principal
+   (burdeos → #5A1730 → burdeos profundo, vertical) y lo reduce a sus dos
+   extremos, con un ángulo apenas inclinado (168°), para que se lea como la
+   materia de un sello de lacre y no como un efecto. Se reserva para la acción
+   principal de cada pantalla: el botón primario de MagneticButton y el envío
+   del formulario. Todo otro botón burdeos va macizo (bg-burgundy).
+
+   Contraste del texto blanco en todo el recorrido (WCAG 2.x):
+     reposo de día      #6B1D3A 11,28:1 → #4A0E27 15,18:1
+     cursor o foco      #8B2252  8,58:1 → #5A1730 13,13:1
+     presionado         #5A1730 13,13:1 → #4A0E27 15,18:1
+     reposo de noche    #8B2252  8,58:1 → #5A1730 13,13:1
+     cursor de noche    #9B2A5C  7,29:1 → #6B1D3A 11,28:1
+   De noche, y en las secciones oscuras en ambos temas (.gc-on-dark, como el
+   hero de la portada), sube un escalón para separarse del negro borgoña
+   (#0F0A0D) y suma un filete blanco al 10 %.
+
+   Los dos colores son propiedades registradas (@property) para que el paso
+   entre estados se anime; background-image por sí solo no se interpola. */
+@property --lacre-desde {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #6B1D3A;
+}
+@property --lacre-hasta {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #4A0E27;
+}
+:root {
+  /* Referencia del token para otros usos (documentación, prototipos). */
+  --gradiente-burdeos: linear-gradient(168deg, #6B1D3A, #4A0E27);
+}
+.bg-lacre {
+  --lacre-desde: #6B1D3A;
+  --lacre-hasta: #4A0E27;
+  background-color: #5A1730;
+  background-image: linear-gradient(168deg, var(--lacre-desde), var(--lacre-hasta));
+  color: #FFFFFF;
+  transition-property: --lacre-desde, --lacre-hasta, box-shadow, transform, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bg-lacre:hover,
+.bg-lacre:focus-visible {
+  --lacre-desde: #8B2252;
+  --lacre-hasta: #5A1730;
+}
+.bg-lacre:active {
+  --lacre-desde: #5A1730;
+  --lacre-hasta: #4A0E27;
+  transform: scale(0.98);
+}
+:is(.dark, .gc-on-dark) .bg-lacre {
+  --lacre-desde: #8B2252;
+  --lacre-hasta: #5A1730;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.1);
+}
+:is(.dark, .gc-on-dark) .bg-lacre:hover,
+:is(.dark, .gc-on-dark) .bg-lacre:focus-visible {
+  --lacre-desde: #9B2A5C;
+  --lacre-hasta: #6B1D3A;
+}
+:is(.dark, .gc-on-dark) .bg-lacre:active {
+  --lacre-desde: #6B1D3A;
+  --lacre-hasta: #4A0E27;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-lacre { transition-duration: 0ms; }
+  .bg-lacre:active { transform: none; }
+}
+/* ═══ BOTONES Y LLAMADAS DE CONTACTO · fin del bloque ═══ */

@@ -20,7 +20,7 @@ export function IrAlArticulado({
     <nav aria-label="Acceso al articulado" className="border-y border-cream/10 py-5">
       <a
         href="#articulado-vigente"
-        className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] px-5 py-3 text-sm font-medium tracking-wide text-white transition-all duration-300 hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.97]"
+        className="inline-flex items-center gap-2 rounded-lg bg-burgundy px-5 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-300 hover:bg-burgundy-light active:bg-burgundy-dark"
       >
         <ArrowDown size={16} weight="bold" aria-hidden="true" />
         {etiqueta}

@@ -4,6 +4,7 @@
 
 import { FUENTES_GUIAS } from "@/lib/fuentes-guias";
 import type { Criterio, Fuente } from "@/lib/fuentes-guias/tipos";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 /* Lo entrecomillado va en cursiva, como en el texto de las guías. */
 function conCursivas(t: string): React.ReactNode {
@@ -15,8 +16,7 @@ const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 function Grupo({ titulo, items }: { titulo: string; items?: Fuente[] }) {
   if (!items?.length) return null;
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.titulo + f.detalle} className="gc-juris-item gc-juris-item--simple">
@@ -35,15 +35,14 @@ function Grupo({ titulo, items }: { titulo: string; items?: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
 function Resoluciones({ titulo, items }: { titulo: string; items?: Criterio[] }) {
   if (!items?.length) return null;
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((c) => (
           <li key={c.numero + c.organo} className="gc-juris-item">
@@ -64,7 +63,7 @@ function Resoluciones({ titulo, items }: { titulo: string; items?: Criterio[] })
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 

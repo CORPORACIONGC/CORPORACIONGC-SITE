@@ -23,16 +23,27 @@ export function IndiceGuia({
   const listaId = useId();
   const raiz = useRef<HTMLElement>(null);
 
-  /* El apartado en curso es el último subtítulo que ya pasó bajo la barra. */
+  /* El apartado en curso es el último cuyo subtítulo ya cruzó el tercio
+     superior de la pantalla. Con la línea fija en 196 px el rótulo iba un
+     apartado atrasado en el teléfono: el titular siguiente ya estaba a media
+     pantalla y el rótulo seguía en el anterior. La línea nunca queda por
+     encima de la barra y del rótulo pegado (112 px), para que el apartado al
+     que se salta desde el índice quede activo. Al llegar al pie, donde los
+     últimos titulares ya no pueden subir, se activa el último visible. */
   useEffect(() => {
     const titulos = items.map((x) => document.getElementById(x.id));
     let pendiente = 0;
     const medir = () => {
       pendiente = 0;
+      const alto = window.innerHeight;
+      const linea = Math.max(alto / 3, 140);
+      const alPie = window.scrollY + alto >= document.documentElement.scrollHeight - 4;
       let i = -1;
       for (let k = 0; k < titulos.length; k++) {
         const el = titulos[k];
-        if (el && el.getBoundingClientRect().top <= 196) i = k;
+        if (!el) continue;
+        const arriba = el.getBoundingClientRect().top;
+        if (arriba <= linea || (alPie && arriba < alto)) i = k;
       }
       setActivo(i);
     };

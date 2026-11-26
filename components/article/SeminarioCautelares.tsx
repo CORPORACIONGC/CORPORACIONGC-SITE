@@ -16,7 +16,7 @@ const TITULO = "Seminario: Medidas cautelares en el contencioso administrativo";
 
 export function SeminarioCautelares() {
   return (
-    <figure className="not-prose my-12 overflow-hidden rounded-2xl border border-burgundy/15 bg-burgundy/[0.03] text-left">
+    <figure className="not-prose my-12 overflow-hidden rounded-xl border border-burgundy/15 bg-burgundy/[0.03] text-left">
       <LiteYouTube id={VIDEO_ID} title={TITULO} start={INICIO_INTERVENCION} />
 
       <figcaption className="p-6 md:p-8">

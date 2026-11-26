@@ -5,6 +5,8 @@
    Las actas del expediente 15.134 no tienen copia pública en línea y se citan
    por sesión y folio. */
 
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
+
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
 const SINALEVI = (p1: number, p2: number) =>
   `https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=${p1}&param2=${p2}&param3=1`;
@@ -74,8 +76,7 @@ const ACTAS: Fuente[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.titulo} className="gc-juris-item gc-juris-item--simple">
@@ -94,7 +95,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
@@ -102,8 +103,7 @@ export function FuentesResponsabilidadPatrimonial() {
   return (
     <div className="gc-fig gc-biblio">
       <Grupo titulo="Normativa" items={NORMAS} />
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Jurisprudencia</span>
+      <GrupoFuentes titulo="Jurisprudencia">
         <ol>
           {JURISPRUDENCIA.map((c) => (
             <li key={c.numero} className="gc-juris-item">
@@ -128,7 +128,7 @@ export function FuentesResponsabilidadPatrimonial() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <Grupo titulo="Procuraduría General de la República" items={PROCURADURIA} />
       <Grupo titulo="Antecedentes legislativos del CPCA · Expediente n.º 15.134" items={ACTAS} />
       <p className="gc-fig-source">

@@ -7,6 +7,7 @@
    la reseña de un medio. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
 const SCIJ = (id: number) =>
@@ -464,8 +465,7 @@ const PRENSA: Fuente[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.href} className="gc-juris-item gc-juris-item--simple">
@@ -480,14 +480,13 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
 function ListaCriterios({ titulo, items }: { titulo: string; items: Criterio[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((c) => (
           <li key={c.numero} className="gc-juris-item">
@@ -507,7 +506,7 @@ function ListaCriterios({ titulo, items }: { titulo: string; items: Criterio[] }
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 

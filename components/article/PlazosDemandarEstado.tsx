@@ -3,6 +3,7 @@
    cotejados en Nexus el 30-09-2026. */
 
 import { RunningHead } from "@/components/ui/RunningHead";
+import { GrupoFuentes } from "@/components/article/GrupoFuentes";
 
 const EXT = { target: "_blank", rel: "noopener noreferrer" } as const;
 const NEXUS = (id: string) => `https://nexuspj.poder-judicial.go.cr/document/${id}`;
@@ -180,8 +181,7 @@ const ANTECEDENTES: Fuente[] = [
 
 function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
   return (
-    <section className="gc-juris-grupo">
-      <span className="gc-fig-label">{titulo}</span>
+    <GrupoFuentes titulo={titulo}>
       <ol>
         {items.map((f) => (
           <li key={f.titulo} className="gc-juris-item gc-juris-item--simple">
@@ -200,7 +200,7 @@ function Grupo({ titulo, items }: { titulo: string; items: Fuente[] }) {
           </li>
         ))}
       </ol>
-    </section>
+    </GrupoFuentes>
   );
 }
 
@@ -208,8 +208,7 @@ export function FuentesPlazos() {
   return (
     <div className="gc-fig gc-biblio">
       <Grupo titulo="Normativa" items={NORMAS} />
-      <section className="gc-juris-grupo">
-        <span className="gc-fig-label">Jurisprudencia</span>
+      <GrupoFuentes titulo="Jurisprudencia">
         <ol>
           {JURISPRUDENCIA.map((c) => (
             <li key={c.numero} className="gc-juris-item">
@@ -230,7 +229,7 @@ export function FuentesPlazos() {
             </li>
           ))}
         </ol>
-      </section>
+      </GrupoFuentes>
       <Grupo titulo="Antecedentes legislativos" items={ANTECEDENTES} />
       <p className="gc-fig-source">
         Textos normativos: SINALEVI y bases normativas de Corporación GC, en su versión vigente. Jurisprudencia: Nexus del
