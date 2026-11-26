@@ -1,276 +1,110 @@
+import Link from "next/link";
+import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
+import { CONFERENCES } from "@/lib/constants";
 
-import {
-  Scales,
-  Gavel,
-  ShieldCheck,
-  Shield,
-  FileText,
-  Stamp,
-  Brain,
-  Bank,
-  Medal,
-} from "@phosphor-icons/react/dist/ssr";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { PRACTICE_AREAS, CONFERENCES, EDUCATION, EDUCATION_DISTINCTION } from "@/lib/constants";
-import { RunningHead } from "@/components/ui/RunningHead";
-
-const iconMap: Record<string, React.ElementType> = {
-  Scales,
-  Gavel,
-  ShieldCheck,
-  Shield,
-  FileText,
-  Stamp,
-  Brain,
-  Bank,
-};
-
+/* Perfil de Khevin Sánchez en prosa (D-06, 25-11-2026), en tercera persona
+   (indicación del 25-11). Sustituye las tarjetas de áreas con icono, los recuadros de
+   formación, distinción, investigación y conferencias, y absorbe la franja
+   de cifras («8+ / UCR / 3er»): cada dato va en una frase con su fuente.
+   Solo datos que el sitio ya publicaba en lib/constants.ts. */
 export function About() {
+  const [bogota, sanJose] = CONFERENCES;
   return (
-    <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — Bio */}
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Perfil profesional" />
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Derecho público en litigio,
-                <br />
-                <span className="text-burgundy-light">del acto administrativo a la Sala Primera</span>
-              </h2>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Litigo contra el Estado y los entes públicos ante el Tribunal
-                Contencioso Administrativo, la Sala Primera, la Sala
-                Constitucional y la Contraloría General de la República.
-                Atiendo el proceso contencioso en todas sus fases: medidas
-                cautelares provisionalísimas y ante causam, demandas de
-                nulidad y de responsabilidad patrimonial, audiencias
-                preliminares, juicios orales y recursos de casación.
+    <RelatoPerfil
+      id="perfil"
+      alterno
+      rotulo="Perfil profesional"
+      titulo={
+        <>
+          Derecho público en litigio,
+          <br />
+          <span className="text-burgundy-light">del acto administrativo a la Sala Primera</span>
+        </>
+      }
+      entrada={
+        <>
+          <p>
+            El Lic. Khevin Alberto Sánchez Zamora litiga contra el Estado y los entes públicos
+            ante el Tribunal Contencioso Administrativo, la Sala Primera, la Sala Constitucional y
+            la Contraloría General de la República. Atiende el{" "}
+            <Link href="/areas/litigio-contencioso-administrativo" className={enlace}>proceso contencioso</Link>{" "}
+            en todas sus fases:{" "}
+            <Link href="/areas/medidas-cautelares" className={enlace}>medidas cautelares</Link>{" "}
+            provisionalísimas y ante causam, demandas de nulidad y de responsabilidad patrimonial,
+            audiencias preliminares, juicios orales y{" "}
+            <Link href="/areas/casacion-sala-primera" className={enlace}>recursos de casación</Link>.
+          </p>
+          <p>
+            En{" "}
+            <Link href="/areas/contratacion-publica" className={enlace}>contratación pública</Link>{" "}
+            asesora a empresas oferentes y contratistas, con recursos de objeción, apelación y
+            revocatoria ante la Contraloría y la Administración, y lleva al Tribunal la
+            impugnación cuando la vía administrativa se agota. Prepara también{" "}
+            <Link href="/areas/recursos-de-amparo" className={enlace}>recursos de amparo</Link> y{" "}
+            <Link href="/areas/acciones-de-inconstitucionalidad" className={enlace}>acciones de inconstitucionalidad</Link>,
+            y defiende a personas y empresas en{" "}
+            <Link href="/areas/procedimientos-sancionatorios" className={enlace}>procedimientos sancionatorios</Link>{" "}
+            y{" "}
+            <Link href="/areas/expropiaciones" className={enlace}>expropiaciones</Link>. Su práctica
+            atraviesa sectores muy diversos: telecomunicaciones, energía, mercado de valores, banca,
+            salud, turismo y empleo público, entre otros.
+          </p>
+        </>
+      }
+      apartados={[
+        {
+          titulo: "Investigación",
+          contenido: (
+            <>
+              <p>
+                Investiga la aplicación de la inteligencia artificial a la justicia y a la
+                contratación estatal, y la usa a diario como herramienta de trabajo en el
+                despacho. Su trabajo final de graduación,{" "}
+                <Link href="/articulos/tesis-ia-justicia" className={enlace}>
+                  <em>Hacia la implementación de sistemas automatizados de decisión basados en inteligencia artificial en la administración de justicia costarricense</em>
+                </Link>{" "}
+                (UCR, 2025), dirigido por el Dr. Óscar Eduardo González Camacho, analiza su
+                integración en el ámbito judicial desde el marco normativo de la Unión Europea, el
+                Reglamento de Inteligencia Artificial, y propone una hoja de ruta para adoptarla
+                con seguridad en Costa Rica.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.25}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                En contratación pública asesoro a empresas oferentes y
-                contratistas, con recursos de objeción, apelación y
-                revocatoria ante la Contraloría y la Administración, y llevo
-                al Tribunal la impugnación cuando la vía administrativa se
-                agota. Preparo también recursos de amparo y acciones de
-                inconstitucionalidad. Mi práctica atraviesa sectores muy
-                diversos: telecomunicaciones, energía, mercado de valores,
-                salud, empleo público, expropiaciones y régimen disciplinario,
-                entre otros.
+              <p>
+                Ha publicado{" "}
+                <Link href="/articulos/personalidad-juridica-instrumental" className={enlace}>
+                  <em>La personalidad jurídica instrumental como técnica de organización administrativa</em>
+                </Link>{" "}
+                en la <em>Revista El Foro</em> del Colegio de Abogados y Abogadas de Costa Rica
+                (n.° 32, pp. 7-22) y, con la Licda. Mariana Montero Acuña,{" "}
+                <Link href="/articulos/hermeneutica-ia-contratacion-publica" className={enlace}>
+                  <em>Administración Pública aumentada: inteligencia artificial en la contratación estatal costarricense</em>
+                </Link>{" "}
+                en la <em>Revista Estudiantil Hermenéutica</em> de la Facultad de Derecho de la UCR
+                (ed. XXVI, 2025, pp. 75-144).
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Inicié mi carrera en la Sala Constitucional, en el despacho
-                del magistrado Paul Rueda Leal. Desde 2019 trabajo al lado del
-                Dr. Óscar Eduardo González Camacho, coordinador de la comisión
-                redactora del Código Procesal Contencioso Administrativo:
-                primero como asistente legal, a partir de 2020 en el trabajo
-                de fondo de sus litigios y, desde mi incorporación en 2025,
-                como abogado asociado.
+              <p>
+                Ha expuesto estos temas como panelista en el Global Summit de Legal Hackers. En San
+                José, el {sanJose.date}, en el Colegio de Abogados y Abogadas, participó en el panel
+                «{sanJose.panel}». En Bogotá, el {bogota.date}, en la Universidad Javeriana,
+                participó en «{bogota.panel}».
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.35}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Investigo la aplicación de la inteligencia artificial a la
-                justicia y a la contratación estatal. He publicado sobre ese
-                tema y sobre organización administrativa en revistas
-                jurídicas, lo he expuesto en paneles internacionales en Bogotá
-                y San José, y lo aplico a diario como herramienta de trabajo
-                en el despacho.
-              </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.4}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Formación académica
-                </div>
-                <ul className="space-y-3">
-                  {EDUCATION.map((ed) => (
-                    <li key={ed.degree} className="flex items-baseline gap-2">
-                      <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
-                      <div>
-                        <div className="text-sm text-cream/75">{ed.degree}</div>
-                        <div className="mt-0.5 text-[11px] text-cream/65">
-                          {ed.institution}
-                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">{ed.status}</span>
-                        </div>
-                        {"note" in ed && (
-                          <div className="mt-0.5 text-[10px] text-cream/65">{ed.note}</div>
-                        )}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-4 pt-4 border-t border-cream/[0.06]">
-                  <div className="flex items-start gap-3 px-3.5 py-3 rounded-lg border border-emphasis/20 bg-emphasis/[0.05]">
-                    <Medal size={18} weight="duotone" className="text-emphasis shrink-0 mt-0.5" />
-                    <div>
-                      <div className="text-[9px] tracking-[0.2em] uppercase text-emphasis/70 font-medium">
-                        Distinción
-                      </div>
-                      <div className="mt-1 text-sm text-cream/85 font-medium">
-                        {EDUCATION_DISTINCTION.title}
-                      </div>
-                      <div className="mt-0.5 text-[11px] text-cream/65 leading-relaxed">
-                        {EDUCATION_DISTINCTION.detail}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedEntry>
-
-            {/* Investigación & IA */}
-            <AnimatedEntry delay={0.5}>
-              <div className="mt-6 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Investigación en IA y Derecho
-                </div>
-                <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
-                  Hacia la implementación de sistemas automatizados de decisión
-                  basados en inteligencia artificial en la administración de
-                  justicia costarricense
-                </h3>
-                <p className="mt-2 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
-                  Trabajo Final de Graduación que analiza la integración de
-                  inteligencia artificial en el ámbito judicial desde el marco
-                  normativo de la Unión Europea (EU AI Act), proponiendo una
-                  hoja de ruta para su adopción segura en Costa Rica.
-                </p>
-                <div className="mt-2 text-[10px] text-cream/65">
-                  Director: Dr. Óscar Eduardo González Camacho — UCR, 2025
-                </div>
-                <a
-                  href="/articulos/tesis-ia-justicia"
-                  className="mt-3 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
-                >
-                  Leer la investigación completa
-                  <span aria-hidden>&rarr;</span>
-                </a>
-                <div className="mt-4 pt-4 border-t border-cream/[0.06]">
-                  <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-2">
-                    Publicaciones académicas
-                  </div>
-                  <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
-                    La personalidad jurídica instrumental como técnica de
-                    organización administrativa
-                  </h3>
-                  <p className="mt-1.5 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
-                    Revista El Foro, N.° 32 — Colegio de Abogados y Abogadas
-                    de Costa Rica, ISSN 2215-6771, pp. 7–22.
-                  </p>
-                  <a
-                    href="/articulos/personalidad-juridica-instrumental"
-                    className="mt-2 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
-                  >
-                    Leer el artículo
-                    <span aria-hidden>&rarr;</span>
-                  </a>
-                  <div className="mt-4 pt-4 border-t border-cream/[0.06]">
-                    <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
-                      Administración Pública aumentada: inteligencia artificial
-                      en la contratación estatal costarricense
-                    </h3>
-                    <p className="mt-1.5 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
-                      Revista Estudiantil Hermenéutica, Ed. XXVI — Facultad de
-                      Derecho, Universidad de Costa Rica, 2025, pp. 75–144.
-                      Coautoría con la Licda. Mariana Montero Acuña.
-                    </p>
-                    <a
-                      href="/articulos/hermeneutica-ia-contratacion-publica"
-                      className="mt-2 inline-flex items-center gap-1.5 text-xs text-emphasis/80 hover:text-emphasis transition-colors duration-300 font-medium"
-                    >
-                      Leer el artículo
-                      <span aria-hidden>&rarr;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </AnimatedEntry>
-
-            {/* Conferencias */}
-            <AnimatedEntry delay={0.6}>
-              <div className="mt-4 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Conferencias y paneles internacionales
-                </div>
-                <div className="space-y-4">
-                  {CONFERENCES.map((conf, i) => (
-                    <div key={i}>
-                      <div className="flex items-center gap-2 mb-1.5">
-                        <span className="px-2 py-0.5 rounded-md bg-burgundy/[0.2] text-burgundy-light text-[9px] tracking-wide font-medium uppercase">
-                          {conf.role}
-                        </span>
-                        <span className="text-[10px] text-cream/65 tracking-wide">
-                          {conf.date}
-                        </span>
-                      </div>
-                      <h4 className="text-sm font-semibold text-cream/90 tracking-tight">
-                        {conf.title}
-                      </h4>
-                      <p className="mt-1 text-xs text-emphasis/80 font-medium leading-relaxed max-w-[55ch]">
-                        {conf.panel}
-                      </p>
-                      <div className="mt-1 text-[10px] text-cream/65">
-                        {conf.location}
-                      </div>
-                      {i < CONFERENCES.length - 1 && (
-                        <div className="mt-4 h-px bg-cream/[0.06]" />
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedEntry>
-          </div>
-
-          {/* Right — Practice areas */}
-          <div className="lg:pt-16">
-            <AnimatedEntry delay={0.15}>
-              <RunningHead title="Áreas de práctica" />
-            </AnimatedEntry>
-
-            <StaggerContainer className="space-y-3" stagger={0.07}>
-              {PRACTICE_AREAS.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <StaggerItem key={i}>
-                    <div className="group p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-400">
-                      <div className="flex items-start gap-4">
-                        <div className="mt-0.5 p-2.5 rounded-lg bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300">
-                          <Icon size={20} weight="duotone" />
-                        </div>
-                        <div>
-                          <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                            {area.title}
-                          </h3>
-                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
-                            {area.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </StaggerItem>
-                );
-              })}
-            </StaggerContainer>
-          </div>
-        </div>
-      </div>
-    </section>
+            </>
+          ),
+        },
+        {
+          titulo: "Formación",
+          contenido: (
+            <p>
+              Es licenciado en Derecho por la Universidad de Costa Rica, con mención en Derecho
+              Tributario, y en la II convocatoria de 2025 del Examen de Excelencia Académica del
+              Colegio de Abogados y Abogadas de Costa Rica obtuvo el tercer mejor promedio. La
+              Comisión del Programa de Posgrado en Derecho de la UCR lo admitió en la Maestría
+              Profesional en Derecho Público (sesión 144-2026), que empieza en el I semestre de
+              2027. Cursa además el bachillerato en Historia en la misma universidad, como
+              formación complementaria para los casos con componente histórico-registral.
+            </p>
+          ),
+        },
+      ]}
+    />
   );
 }

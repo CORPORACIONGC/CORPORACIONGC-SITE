@@ -1,106 +1,96 @@
+import Link from "next/link";
+import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
-import {
-  Scales,
-  Gavel,
-  ShieldCheck,
-  FileText,
-  Buildings,
-} from "@phosphor-icons/react/dist/ssr";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { ESTEBAN_PRACTICE_AREAS } from "@/lib/constants";
-import { RunningHead } from "@/components/ui/RunningHead";
-
-const iconMap: Record<string, React.ElementType> = {
-  Scales,
-  Gavel,
-  ShieldCheck,
-  FileText,
-  Buildings,
-};
-
+/* Perfil de Esteban Pérez en prosa (D-06, 25-11-2026), solo con datos que
+   el sitio ya publicaba en ESTEBAN_PROFILE y ESTEBAN_PRACTICE_AREAS.
+   Sustituye las tarjetas con icono de las áreas y absorbe la franja de
+   cifras: el inicio en diciembre de 2017 y la maestría con la tesis en
+   desarrollo (la mención del ranking QS de la UCR se omite, como en el
+   perfil de Khevin Sánchez). Las
+   áreas enlazan a su página en /areas. */
 export function EstebanAbout() {
   return (
-    <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — CTA */}
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Nuestro enfoque" />
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Litigio en derecho p&#250;blico.
-                <br />
-                <span className="text-burgundy-light">Estrategia y acompa&#241;amiento real.</span>
-              </h2>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-8 text-base text-cream/65 leading-[1.85] max-w-[58ch]">
-                Enfrentarse al Estado es un asunto serio. Los procedimientos
-                tienen reglas propias y plazos estrictos, donde cada decisi&#243;n
-                procesal requiere preparaci&#243;n. No es un litigio que permita
-                improvisar.
+    <RelatoPerfil
+      id="perfil"
+      alterno
+      rotulo="Perfil profesional"
+      titulo={
+        <>
+          Litigio en derecho público.
+          <br />
+          <span className="text-burgundy-light">Estrategia y acompañamiento real.</span>
+        </>
+      }
+      entrada={
+        <>
+          <p>
+            El Lic. Esteban Pérez Herrera es abogado litigante y notario público, y trabaja en
+            derecho administrativo, contencioso administrativo, contratación pública y derecho
+            constitucional. Se dedica al derecho público desde diciembre de 2017: primero en la
+            Sala Constitucional y, desde 2018, en Corporación GC, donde hoy es abogado asociado.
+          </p>
+          <p>
+            Su práctica gira alrededor del litigio contra el Estado y de los procedimientos ante
+            la Administración. Participa en audiencias orales, redacta demandas y recursos de
+            casación y atiende asuntos de contratación pública y de materia urbanística, en
+            colaboración directa con el Dr. Óscar Eduardo González Camacho, coordinador de la
+            comisión redactora del Código Procesal Contencioso Administrativo.
+          </p>
+        </>
+      }
+      apartados={[
+        {
+          titulo: "Su práctica",
+          contenido: (
+            <>
+              <p>
+                En{" "}
+                <Link href="/areas/derecho-administrativo" className={enlace}>
+                  derecho administrativo
+                </Link>{" "}
+                asesora y defiende a sus clientes en los procedimientos ante la Administración
+                Pública y en los recursos ordinarios y extraordinarios. En lo{" "}
+                <Link href="/areas/litigio-contencioso-administrativo" className={enlace}>
+                  contencioso administrativo
+                </Link>{" "}
+                litiga ante el Tribunal Contencioso Administrativo las demandas contra el Estado,
+                y ante la Sala Constitucional tramita{" "}
+                <Link href="/areas/recursos-de-amparo" className={enlace}>
+                  recursos de amparo
+                </Link>
+                ,{" "}
+                <Link href="/areas/acciones-de-inconstitucionalidad" className={enlace}>
+                  acciones de inconstitucionalidad
+                </Link>{" "}
+                y habeas corpus.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.3}>
-              <p className="mt-5 text-base text-cream/65 leading-[1.85] max-w-[58ch]">
-                Por eso cada asunto se trabaja con una estrategia dise&#241;ada
-                desde cero seg&#250;n cada caso, con investigaci&#243;n jur&#237;dica
-                a fondo, escritos preparados con precisi&#243;n y comunicaci&#243;n
-                clara para que usted entienda qu&#233; est&#225; pasando en cada
-                etapa.
+              <p>
+                En{" "}
+                <Link href="/areas/contratacion-publica" className={enlace}>
+                  contratación pública
+                </Link>{" "}
+                asesora y litiga en licitaciones, concursos públicos y contratos administrativos.
+                En{" "}
+                <Link href="/areas/derecho-urbanistico" className={enlace}>
+                  derecho urbanístico
+                </Link>{" "}
+                atiende asuntos de uso del suelo, permisos de construcción y planificación urbana,
+                la materia a la que dedicó su tesis de licenciatura.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.4}>
-              <div className="mt-10">
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gradient-to-b from-burgundy via-[#5A1730] to-[#4A0E27] text-white text-sm tracking-wide font-medium hover:from-burgundy-light hover:via-burgundy hover:to-[#5A1730] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-burgundy/20"
-                >
-                  Coordinar una consulta
-                </a>
-              </div>
-            </AnimatedEntry>
-          </div>
-
-          {/* Right — Practice areas */}
-          <div className="lg:pt-16">
-            <AnimatedEntry delay={0.15}>
-              <RunningHead title="Áreas de práctica" />
-            </AnimatedEntry>
-
-            <StaggerContainer className="space-y-3" stagger={0.07}>
-              {ESTEBAN_PRACTICE_AREAS.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <StaggerItem key={i}>
-                    <div className="group p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-400">
-                      <div className="flex items-start gap-4">
-                        <div className="mt-0.5 p-2.5 rounded-lg bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300">
-                          <Icon size={20} weight="duotone" />
-                        </div>
-                        <div>
-                          <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                            {area.title}
-                          </h3>
-                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
-                            {area.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </StaggerItem>
-                );
-              })}
-            </StaggerContainer>
-          </div>
-        </div>
-      </div>
-    </section>
+            </>
+          ),
+        },
+        {
+          titulo: "Su formación",
+          contenido: (
+            <p>
+              Es licenciado en Derecho por la Universidad de Costa Rica. Cursó la especialidad en Derecho Notarial y Registral en la Universidad Fidélitas y es
+              egresado de la Maestría en Derecho Público de la UCR, donde tiene la tesis en
+              desarrollo. Habla español e inglés.
+            </p>
+          ),
+        },
+      ]}
+    />
   );
 }

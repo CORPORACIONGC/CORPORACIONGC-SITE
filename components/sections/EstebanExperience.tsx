@@ -1,124 +1,90 @@
+import Link from "next/link";
+import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
-import { ESTEBAN_PROFILE } from "@/lib/constants";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { RunningHead } from "@/components/ui/RunningHead";
-
+/* Trayectoria de Esteban Pérez en prosa (D-06, 25-11-2026). Sustituye la
+   línea de tiempo con tarjetas, la etiqueta «Posición actual» y el
+   recuadro «Investigación destacada». Datos de ESTEBAN_PROFILE.career y
+   .research; el título y el año de la tesis siguen su ficha
+   (/articulos/potestad-discrecional-municipalidades-urbanismo), que
+   también consigna la dirección del Dr. González Camacho. */
 export function EstebanExperience() {
   return (
-    <section id="trayectoria" className="relative bg-surface py-24 md:py-32">
-      {/* Top separator */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
-
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[0.4fr_1fr] gap-12 lg:gap-20">
-          {/* Left — Heading */}
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Trayectoria" />
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Experiencia
-                <br />
-                <span className="text-burgundy-light">comprobada</span>
-              </h2>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[35ch]">
-                Desde la Sala Constitucional hasta el litigio privado de alto
-                nivel, una trayectoria construida con rigor y dedicación.
+    <RelatoPerfil
+      id="trayectoria"
+      rotulo="Trayectoria"
+      titulo={
+        <>
+          Experiencia
+          <br />
+          <span className="text-burgundy-light">comprobada</span>
+        </>
+      }
+      apartados={[
+        {
+          titulo: "En la Sala Constitucional",
+          contenido: (
+            <p>
+              Empezó en la Sala Constitucional de la Corte Suprema de Justicia, donde de 2017 a 2018
+              fue asistente jurídico y apoyó directamente a las letradas en la redacción y la
+              revisión de proyectos de sentencia.
+            </p>
+          ),
+        },
+        {
+          titulo: "En Corporación GC",
+          contenido: (
+            <>
+              <p>
+                En 2018 entró a Corporación GC como asistente jurídico. Hasta 2023 trabajó en
+                derecho público, procedimientos administrativos y litigio
+                contencioso-administrativo: elaboró escritos procesales, hizo investigaciones
+                jurídicas y analizó expedientes.
               </p>
-            </AnimatedEntry>
-          </div>
-
-          {/* Right — Timeline */}
-          <StaggerContainer className="relative" stagger={0.1}>
-            {/* Timeline line */}
-            <div className="absolute left-[11px] top-2 bottom-2 w-px bg-cream/[0.10]" />
-
-            <div className="space-y-1">
-              {ESTEBAN_PROFILE.career.map((exp, i) => (
-                <StaggerItem key={i}>
-                  <div
-                    className={`relative pl-10 pr-5 py-5 rounded-xl transition-colors duration-300 ${
-                      exp.highlight
-                        ? "bg-emphasis/[0.06] border border-emphasis/[0.15]"
-                        : ""
-                    }`}
-                  >
-                    {/* Dot */}
-                    <div
-                      className={`absolute left-[7px] top-7 w-[9px] h-[9px] rounded-full border-2 ${
-                        exp.highlight
-                          ? "border-emphasis bg-emphasis"
-                          : "border-cream/25 bg-surface"
-                      }`}
-                    />
-
-                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-                      <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                        {exp.role}
-                      </h3>
-                      <span className="text-[10px] tracking-wider text-cream/65 uppercase shrink-0">
-                        {exp.period}
-                      </span>
-                    </div>
-
-                    <div className="text-xs text-emphasis font-medium mb-2">
-                      {exp.org}
-                    </div>
-
-                    <p className="text-xs text-cream/65 leading-relaxed max-w-[60ch]">
-                      {exp.description}
-                    </p>
-
-                    {exp.highlight && (
-                      <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emphasis/[0.1] text-emphasis text-[10px] tracking-wide font-medium">
-                        Posición actual
-                      </div>
-                    )}
-                  </div>
-                </StaggerItem>
-              ))}
-            </div>
-
-            {/* Research highlight */}
-            <StaggerItem>
-              <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Investigación destacada
-                </div>
-                <h3 className="text-sm font-semibold text-cream/90 tracking-tight max-w-[55ch]">
-                  {ESTEBAN_PROFILE.research.title}
-                </h3>
-                <p className="mt-2 text-xs text-cream/65 leading-relaxed max-w-[55ch]">
-                  {ESTEBAN_PROFILE.research.description}
-                </p>
+              <p>
+                Desde 2023 es abogado asociado del bufete. Ejerce en el litigio
+                contencioso-administrativo, los procesos constitucionales y los procedimientos
+                administrativos; participa en audiencias orales, redacta demandas y{" "}
+                <Link href="/areas/casacion-sala-primera" className={enlace}>
+                  recursos de casación
+                </Link>{" "}
+                y lleva asuntos de contratación pública y de materia urbanística, en colaboración
+                directa con el Dr. Óscar Eduardo González Camacho.
+              </p>
+            </>
+          ),
+        },
+        {
+          titulo: "Lo que ha publicado",
+          contenido: (
+            <>
+              <p>
+                Su tesis de licenciatura en la Universidad de Costa Rica,{" "}
+                <Link href="/articulos/potestad-discrecional-municipalidades-urbanismo" className={enlace}>
+                  <em>La potestad discrecional de la Administración Municipal en la regulación urbanística</em>
+                </Link>{" "}
+                (2022), dirigida por el Dr. Óscar Eduardo González Camacho, analiza los alcances y
+                los límites de la discrecionalidad de los gobiernos locales en la regulación
+                urbanística costarricense. Su registro está en{" "}
                 <a
-                  href={ESTEBAN_PROFILE.research.href}
+                  href="https://kerwa.ucr.ac.cr/handle/10669/94871"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-block text-xs text-emphasis underline decoration-emphasis/30 underline-offset-4 hover:decoration-emphasis"
+                  className={enlace}
                 >
-                  Ver el registro en el repositorio de la UCR
+                  el repositorio institucional de la UCR
                 </a>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {ESTEBAN_PROFILE.research.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="px-2.5 py-1 rounded-md bg-cream/[0.05] text-cream/65 text-[10px] tracking-wide"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </StaggerItem>
-          </StaggerContainer>
-        </div>
-      </div>
-    </section>
+                .
+              </p>
+              <p>
+                Para este sitio ha escrito sobre expropiaciones, el proceso de lesividad, el
+                silencio positivo en los permisos municipales, la impugnación del avalúo municipal
+                y la reforma de 2026 al Reglamento de Contratación Pública. Esos artículos se
+                reúnen más abajo.
+              </p>
+            </>
+          ),
+        },
+      ]}
+    />
   );
 }

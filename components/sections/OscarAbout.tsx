@@ -1,243 +1,143 @@
-
 import Link from "next/link";
-import {
-  Scales,
-  Gavel,
-  ShieldCheck,
-  FileText,
-  Crosshair,
-  ArrowUpRight,
-} from "@phosphor-icons/react/dist/ssr";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { OSCAR_PROFILE, OSCAR_PRACTICE_AREAS } from "@/lib/constants";
-import { RunningHead } from "@/components/ui/RunningHead";
+import { RelatoPerfil, CitaRelato, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
-const iconMap: Record<string, React.ElementType> = {
-  Scales,
-  Gavel,
-  ShieldCheck,
-  FileText,
-  Strategy: Crosshair,
-};
-
+/* Perfil del Director en prosa (D-06, 25-11-2026), solo con datos que el
+   sitio ya publicaba en OSCAR_PROFILE. Precisiones de la verificación del
+   20-09-2026: la magistratura se dice «de 2002 a 2014» (fueron once años y
+   siete meses) y el tomo I de La justicia administrativa es de 2001. */
 export function OscarAbout() {
   return (
-    <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — Bio */}
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Perfil profesional" />
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Desde la judicatura
-                <br />
-                al{" "}
-                <span className="text-burgundy-light">litigio privado</span>
-              </h2>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Con más de 38 años de trayectoria ininterrumpida en el Derecho
-                Público, el Dr. Óscar Eduardo González Camacho fue Magistrado de la Sala
-                Primera de la Corte Suprema de Justicia durante 12 años y
-                coordinó la comisión redactora del Código Procesal
-                Contencioso Administrativo (Ley N.° 8508), pieza fundamental
-                de la jurisdicción contenciosa moderna.
+    <RelatoPerfil
+      id="perfil"
+      alterno
+      rotulo="Perfil profesional"
+      titulo={
+        <>
+          Desde la judicatura
+          <br />
+          al <span className="text-burgundy-light">litigio privado</span>
+        </>
+      }
+      entrada={
+        <>
+          <p>
+            El Dr. Óscar Eduardo González Camacho lleva más de 38 años en el derecho público.
+            Fue magistrado de la Sala Primera de la Corte Suprema de Justicia de 2002 a 2014 y
+            coordinó la comisión redactora del Código Procesal Contencioso Administrativo, la
+            Ley N.° 8508, que desde 2008 rige la jurisdicción contencioso-administrativa del
+            país.
+          </p>
+          <p>
+            Desde 2015 dirige Corporación GC. Litiga ante el Tribunal Contencioso
+            Administrativo, la Sala Primera y la Sala Constitucional, y forma a un equipo de
+            abogados dedicados al derecho público.
+          </p>
+          {/* La fuente primaria de que coordinó la comisión: lo dice por
+              escrito el propio Poder Judicial. La cita se corta donde la nota
+              sigue con otros nombres, y los puntos suspensivos lo advierten. */}
+          <CitaRelato
+            pie={
+              <>
+                <a
+                  href="https://actualidadjudicial.poder-judicial.go.cr/vol35/noticias_judiciales/notjud01.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={enlace}
+                >
+                  Actualidad Judicial N.º 35
+                </a>
+                , Poder Judicial de Costa Rica. El{" "}
+                <a
+                  href="https://www.asamblea.go.cr/sd/SiteAssets/Lists/Consultas%20Biblioteca/EditForm/Proyecto%2015134%20ley%20Codigo%20Procesal.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={enlace}
+                >
+                  expediente legislativo 15.134
+                </a>{" "}
+                lo consigna en la Comisión Redactora y en la Comisión Revisora del proyecto, y el
+                Código está hoy en el{" "}
+                <a
+                  href="https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={enlace}
+                >
+                  texto vigente de la Ley 8508
+                </a>
+                .
+              </>
+            }
+          >
+            «Para la redacción de dicho código la Corte Suprema de Justicia integró una comisión
+            redactora{" "}
+            <strong className="font-semibold text-cream">coordinada por el magistrado Oscar González Camacho</strong>,
+            integrante de la Sala Primera…».
+          </CitaRelato>
+        </>
+      }
+      apartados={[
+        {
+          titulo: "En las aulas",
+          contenido: (
+            <>
+              <p>
+                Enseña derecho público, constitucional y administrativo en la licenciatura, la
+                maestría y el doctorado de la Universidad de Costa Rica y de la Universidad
+                Escuela Libre de Derecho. La Escuela Libre lo nombró catedrático, la máxima
+                distinción que otorga por trayectoria docente. En la UCR es profesor asociado,
+                enseña en el posgrado desde 2000 y ha coordinado la Maestría en Derecho Público.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Doctor en Derecho por la Universidad de Alcalá de Henares con
-                la calificación Sobresaliente Cum Laude. Desde 2015 dirige
-                Corporación GC como uno de los abogados litigantes de mayor
-                calado en la materia administrativa del país, forjando la
-                jurisdicción contenciosa moderna desde la judicatura y
-                dominándola hoy desde el litigio.
+              <p>
+                Fue instructor de la Escuela Judicial del Poder Judicial, donde formó a jueces y
+                operadores jurídicos, y ha dictado conferencias en Colombia, Bolivia, Ecuador,
+                Argentina, Alemania, Portugal, España y Estados Unidos.
               </p>
-            </AnimatedEntry>
-
-            {/* La fuente primaria de que coordinó la comisión. El sitio lo
-                afirma en todas sus páginas y hasta hoy el visitante tenía que
-                creerlo; lo dice por escrito el propio Poder Judicial. La cita
-                se corta donde la nota sigue con otros nombres, y los puntos
-                suspensivos lo advierten. */}
-            <AnimatedEntry delay={0.35}>
-              <figure className="mt-8 border-l-2 border-emphasis/60 pl-5">
-                <blockquote className="text-sm text-cream/75 leading-relaxed max-w-[58ch]">
-                  «Para la redacción de dicho código la Corte Suprema de Justicia
-                  integró una comisión redactora <strong className="font-semibold text-cream">coordinada
-                  por el magistrado Oscar González Camacho</strong>, integrante de la
-                  Sala Primera…».
-                </blockquote>
-                <figcaption className="mt-3 text-xs text-cream/65 leading-relaxed">
-                  <a
-                    href="https://actualidadjudicial.poder-judicial.go.cr/vol35/noticias_judiciales/notjud01.htm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
-                  >
-                    Actualidad Judicial N.º 35
-                  </a>
-                  , Poder Judicial de Costa Rica. El{" "}
-                  <a
-                    href="https://www.asamblea.go.cr/sd/SiteAssets/Lists/Consultas%20Biblioteca/EditForm/Proyecto%2015134%20ley%20Codigo%20Procesal.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
-                  >
-                    expediente legislativo 15.134
-                  </a>{" "}
-                  lo consigna en la Comisión Redactora y en la Comisión Revisora del
-                  proyecto, y el Código está hoy en el{" "}
-                  <a
-                    href="https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=57436&param2=146091&param3=1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-burgundy underline decoration-burgundy/30 underline-offset-4 transition-colors hover:text-burgundy-light dark:text-hilo-texto dark:decoration-hilo/30 dark:hover:text-hilo-texto"
-                  >
-                    texto vigente de la Ley 8508
-                  </a>
-                  .
-                </figcaption>
-              </figure>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.4}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="type-label text-cream/65 mb-3">
-                  Formación académica
-                </div>
-                <div className="space-y-2">
-                  {OSCAR_PROFILE.education.map((edu, i) => (
-                    <div key={i} className="flex items-baseline gap-2">
-                      <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
-                      <span className="text-sm text-cream/75">
-                        {edu.degree} — {edu.institution}
-                        <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/65">
-                          {edu.period}
-                        </span>
-                        {"distinction" in edu && edu.distinction && (
-                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">
-                            {edu.distinction}
-                          </span>
-                        )}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedEntry>
-          </div>
-
-          {/* Right — Practice areas, Teaching, Publications */}
-          <div className="lg:pt-16">
-            <AnimatedEntry delay={0.15}>
-              <RunningHead title="Áreas de práctica" />
-            </AnimatedEntry>
-
-            <StaggerContainer className="space-y-3" stagger={0.07}>
-              {OSCAR_PRACTICE_AREAS.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <StaggerItem key={i}>
-                    <div className="group p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-400">
-                      <div className="flex items-start gap-4">
-                        <div className="mt-0.5 p-2.5 rounded-lg bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300">
-                          <Icon size={20} weight="duotone" />
-                        </div>
-                        <div>
-                          <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                            {area.title}
-                          </h3>
-                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
-                            {area.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </StaggerItem>
-                );
-              })}
-            </StaggerContainer>
-
-            {/* Teaching */}
-            <AnimatedEntry delay={0.4}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Docencia
-                </div>
-                <div className="space-y-3">
-                  {OSCAR_PROFILE.teaching.map((item, i) => (
-                    <div key={i} className="flex items-baseline gap-2">
-                      <div className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${i === 0 ? "bg-emphasis" : "bg-burgundy-light"}`} />
-                      <div>
-                        <span className="text-sm text-cream/75 font-medium">
-                          {item.role}
-                        </span>
-                        <span className="text-sm text-cream/65"> — {item.institution}</span>
-                        <p className="text-xs text-cream/65 leading-relaxed mt-0.5">
-                          {item.detail}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedEntry>
-
-            {/* Publications */}
-            <AnimatedEntry delay={0.5}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Publicaciones y obras
-                </div>
-                <div className="space-y-3">
-                  {OSCAR_PROFILE.publications.map((pub, i) => {
-                    const hasSlug = "slug" in pub && pub.slug;
-                    const content = (
-                      <>
-                        <span className={`text-sm font-medium ${hasSlug ? "text-cream/75 group-hover/pub:text-hilo-texto transition-colors duration-300" : "text-cream/75"}`}>
-                          {pub.title}
-                          {hasSlug && (
-                            <ArrowUpRight size={12} weight="bold" className="inline ml-1 opacity-0 group-hover/pub:opacity-100 transition-opacity duration-300" />
-                          )}
-                        </span>
-                        <p className="text-xs text-cream/65 leading-relaxed mt-0.5">
-                          {pub.detail}
-                        </p>
-                      </>
-                    );
-                    return (
-                      <div key={i} className="flex items-baseline gap-2">
-                        <div
-                          className={`w-1 h-1 rounded-full mt-1.5 shrink-0 ${
-                            pub.type === "law" ? "bg-emphasis" : "bg-burgundy-light"
-                          }`}
-                        />
-                        <div className="group/pub">
-                          {hasSlug ? (
-                            <Link href={`/articulos/${pub.slug}`}>
-                              {content}
-                            </Link>
-                          ) : (
-                            content
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </AnimatedEntry>
-          </div>
-        </div>
-      </div>
-    </section>
+            </>
+          ),
+        },
+        {
+          titulo: "Su obra",
+          contenido: (
+            <>
+              <p>
+                Su tesis doctoral en la Universidad de Alcalá,{" "}
+                <em>La justicia administrativa frente a la inactividad material de la Administración Pública</em>{" "}
+                (1998), dio origen a{" "}
+                <Link href="/articulos/libro-justicia-administrativa" className={enlace}>
+                  <em>La justicia administrativa</em>
+                </Link>
+                , publicada en tres tomos por la Editorial Investigaciones Jurídicas desde 2001.
+              </p>
+              <p>
+                Tras la aprobación del Código escribió en{" "}
+                <Link href="/articulos/libro-nuevo-proceso-contencioso" className={enlace}>
+                  <em>El nuevo proceso contencioso administrativo</em>
+                </Link>{" "}
+                (Poder Judicial, 2006), la obra colectiva sobre su puesta en marcha. Antes, en 1995,
+                la Escuela Judicial había publicado sus{" "}
+                <Link href="/articulos/libro-proceso-ejecutivo" className={enlace}>
+                  <em>Consideraciones prácticas en torno al proceso ejecutivo</em>
+                </Link>
+                , sobre el proceso ejecutivo en materia civil de hacienda.
+              </p>
+            </>
+          ),
+        },
+        {
+          titulo: "Su formación",
+          contenido: (
+            <p>
+              Es licenciado en Derecho y notario público por la Universidad de Costa Rica
+              (1980-1986), donde se especializó después en derecho público con graduación de honor
+              (1990-1992). En España se doctoró en la Universidad de Alcalá de Henares con la
+              calificación de sobresaliente cum laude y cursó la especialidad en derecho
+              constitucional y ciencia política del Centro de Estudios Políticos y
+              Constitucionales (1995-1998). Habla español y francés.
+            </p>
+          ),
+        },
+      ]}
+    />
   );
 }

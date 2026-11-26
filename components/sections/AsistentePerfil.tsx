@@ -1,14 +1,5 @@
 import Image from "next/image";
-import {
-  Envelope,
-  Phone,
-  WhatsappLogo,
-  MapPin,
-  GraduationCap,
-  Trophy,
-  Translate,
-  BookOpen,
-} from "@phosphor-icons/react/dist/ssr";
+import { Envelope, Phone, WhatsappLogo, MapPin } from "@phosphor-icons/react/dist/ssr";
 import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TrackedContactLink } from "@/components/ui/TrackedContactLink";
@@ -16,6 +7,7 @@ import { RunningHead } from "@/components/ui/RunningHead";
 import { FIRM_CONTACT } from "@/lib/constants";
 import type { Asistente } from "@/lib/asistentes";
 import { PerfilHero } from "@/components/sections/PerfilHero";
+import { RelatoPerfil, type ApartadoRelato } from "@/components/sections/RelatoPerfil";
 
 /* Perfil de un asistente legal con el mismo formato que el de los abogados
    (EstebanHero, EstebanAbout, EstebanExperience y EstebanContact), con menos
@@ -37,174 +29,311 @@ export function AsistenteHero({ a }: { a: Asistente }) {
   );
 }
 
-function Tarjeta({ icon: Icon, title, detail }: { icon: React.ElementType; title: string; detail: string }) {
-  return (
-    <div className="group p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-400">
-      <div className="flex items-start gap-4">
-        <div className="mt-0.5 p-2.5 rounded-lg bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300">
-          <Icon size={20} weight="duotone" />
-        </div>
-        <div>
-          <h3 className="text-sm font-semibold text-cream/90 tracking-tight">{title}</h3>
-          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">{detail}</p>
-        </div>
-      </div>
-    </div>
+/* Perfil y trayectoria en prosa (D-06, 25-11-2026), con RelatoPerfil, como
+   los del Director. Sustituyen las tarjetas de formación, la línea de
+   tiempo con «Posición actual» y las etiquetas de habilidades. La prosa se
+   arma con los campos de cada asistente en lib/asistentes.ts, en tercera
+   persona: el nombre completo la primera vez y después el apellido o el
+   sujeto tácito. No se usa `bio`, que resume esos mismos campos y los
+   repetiría. Los lugares («San José, Costa Rica») se omiten: todos son el
+   mismo y la sección de contacto ya da la ubicación de la firma. */
+
+const MESES: Record<string, string> = {
+  ene: "enero", feb: "febrero", mar: "marzo", abr: "abril", may: "mayo", jun: "junio",
+  jul: "julio", ago: "agosto", set: "setiembre", sep: "setiembre", oct: "octubre", nov: "noviembre", dic: "diciembre",
+};
+
+const minuscula = (t: string) => t.charAt(0).toLowerCase() + t.slice(1);
+const mayuscula = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+const sinPunto = (t: string) => t.trim().replace(/\.$/, "");
+
+/** «a, b y c», con «e» delante de un sonido /i/ («español e inglés»). */
+function enumerar(items: string[]): string {
+  if (items.length <= 1) return items.join("");
+  const ultimo = items[items.length - 1];
+  const y = /^h?i[^aeiouáéíóú]/i.test(ultimo) ? "e" : "y";
+  return `${items.slice(0, -1).join(", ")} ${y} ${ultimo}`;
+}
+
+/** Artículo de una institución por su primera palabra. */
+function articulo(nombre: string): "la " | "el " | "" {
+  const p = nombre.split(" ")[0].toLowerCase();
+  if (/^(universidad|facultad|revista|orquesta|escuela|vicerrectoría|asociación|competencia|corte|sala|procuraduría|contraloría|municipalidad|oficina|clínica|comisión)$/.test(p)) return "la ";
+  if (/^(instituto|colegio|liceo|bufete|programa|grupo|tribunal|centro|despacho|ministerio|juzgado|proyecto|equipo|taller|curso|seminario)$/.test(p)) return "el ";
+  return "";
+}
+
+/** «Facultad de Derecho, Universidad de Costa Rica» → «Facultad de Derecho de la Universidad de Costa Rica». */
+const nombreEnProsa = (nombre: string) =>
+  nombre.split(", ").reduce((acc, parte) => `${acc} ${de(parte)}`);
+
+/** «en la Universidad…», «en el Liceo…», «en Corporación GC». */
+const en = (nombre: string) => `en ${articulo(nombre)}${nombreEnProsa(nombre)}`;
+
+/** «de la Revista…», «del Instituto…», «de Corporación GC». */
+function de(nombre: string): string {
+  const art = articulo(nombre);
+  return `${art === "el " ? "del " : `de ${art}`}${nombre}`;
+}
+
+/** «Mar. 2025 – Mar. 2026» → «de marzo de 2025 a marzo de 2026»; «Jun. 2026 – Presente» → «desde junio de 2026». */
+function periodo(texto: string): { frase: string; vigente: boolean } {
+  const fecha = (t: string, anioPorDefecto?: string) => {
+    const m = t.trim().match(/^(?:([A-Za-zÁÉÍÓÚáéíóú]{3})\.?)?\s*(\d{4})?$/);
+    if (!m) return null;
+    const mes = m[1] ? MESES[m[1].toLowerCase()] : undefined;
+    const anio = m[2] ?? anioPorDefecto;
+    if (!mes && !anio) return null;
+    return { mes, anio };
+  };
+  const [ini, fin] = texto.split(/\s+–\s+/);
+  if (fin && /^(presente|en curso)$/i.test(fin.trim())) {
+    const f = fecha(ini);
+    if (!f) return { frase: "", vigente: true };
+    return { frase: `desde ${f.mes ? `${f.mes} de ` : ""}${f.anio}`, vigente: true };
+  }
+  if (fin) {
+    const b = fecha(fin);
+    const a = fecha(ini, b?.anio);
+    if (!a || !b) return { frase: "", vigente: false };
+    if (a.anio === b.anio && a.mes && b.mes) return { frase: `de ${a.mes} a ${b.mes} de ${b.anio}`, vigente: false };
+    const larga = (f: { mes?: string; anio?: string }) => (f.mes ? `${f.mes} de ${f.anio}` : `${f.anio}`);
+    return { frase: `de ${larga(a)} a ${larga(b)}`, vigente: false };
+  }
+  const f = fecha(ini);
+  if (!f) return { frase: "", vigente: false };
+  return { frase: `en ${f.mes ? `${f.mes} de ` : ""}${f.anio}`, vigente: false };
+}
+
+/** Funciones de un puesto: «del análisis…, de la asesoría… y de la redacción…». */
+function funciones(items: string[]): string {
+  return enumerar(
+    items.map((d) => {
+      const t = minuscula(sinPunto(d));
+      const primera = t.split(" ")[0];
+      return /(a|ión|dad)$/.test(primera) ? `de la ${t}` : `del ${t}`;
+    }),
   );
 }
 
-export function AsistenteAbout({ a }: { a: Asistente }) {
-  return (
-    <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Perfil" />
-            </AnimatedEntry>
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Formación en Derecho.
-                {" "}
-                <br />
-                <span className="text-burgundy-light">Trabajo junto al equipo.</span>
-              </h2>
-            </AnimatedEntry>
-            {a.bio.map((p, i) => (
-              <AnimatedEntry key={i} delay={0.2 + i * 0.1}>
-                <p className={`${i === 0 ? "mt-8" : "mt-5"} text-base text-cream/65 leading-[1.85] max-w-[58ch]`}>{p}</p>
-              </AnimatedEntry>
-            ))}
-          </div>
+/** Grado con su artículo y el verbo que le corresponde. */
+function grado(texto: string): { frase: string; verbo: "cursar" | "estudiar" } {
+  const p = texto.split(" ")[0].toLowerCase();
+  if (/^(licenciatura|maestría|especialidad|especialización|diplomatura)$/.test(p)) return { frase: `la ${texto}`, verbo: "cursar" };
+  if (/^(bachillerato|programa|doctorado|diplomado|técnico|international|diploma|curso)$/.test(p)) return { frase: `el ${texto}`, verbo: "cursar" };
+  if (p === "educación") return { frase: `la ${minuscula(texto)}`, verbo: "cursar" };
+  /* Una disciplina («Derecho») conserva la mayúscula; un nombre descriptivo
+     de varias palabras («Habilidades blandas y comunicación») la pierde. */
+  return { frase: texto.includes(" ") ? minuscula(texto) : texto, verbo: "estudiar" };
+}
 
-          <div className="lg:pt-16">
-            <AnimatedEntry delay={0.15}>
-              <RunningHead title="Formación" />
-            </AnimatedEntry>
-            <StaggerContainer className="space-y-3" stagger={0.07}>
-              {a.education.map((e) => (
-                <StaggerItem key={e.degree + e.institution}>
-                  <Tarjeta
-                    icon={GraduationCap}
-                    title={e.degree}
-                    detail={`${e.institution} · ${e.period}${e.note ? ` · ${e.note}` : ""}`}
-                  />
-                </StaggerItem>
-              ))}
-              {a.awards?.map((w) => (
-                <StaggerItem key={w.title}>
-                  <Tarjeta icon={Trophy} title={w.title} detail={w.detail} />
-                </StaggerItem>
-              ))}
-              {a.activities?.map((w) => (
-                <StaggerItem key={w.title}>
-                  <Tarjeta icon={BookOpen} title={w.title} detail={w.detail} />
-                </StaggerItem>
-              ))}
-              <StaggerItem>
-                <Tarjeta icon={Translate} title="Idiomas" detail={a.languages.join(" · ")} />
-              </StaggerItem>
-            </StaggerContainer>
-          </div>
-        </div>
-      </div>
-    </section>
+/** «Cuarto año de la carrera · promedio ponderado 9,22» → «(cuarto año de la carrera; promedio ponderado 9,22)». */
+const nota = (texto?: string) => (texto ? ` (${texto.split(" · ").map(minuscula).join("; ")})` : "");
+
+function parrafoFormacion(education: Asistente["education"]): string {
+  /* Entradas seguidas de la misma institución y el mismo período se cuentan
+     juntas, con la educación general antes del programa que la acompaña. */
+  const grupos: Asistente["education"][] = [];
+  for (const e of education) {
+    const previo = grupos[grupos.length - 1];
+    if (previo && previo[0].institution === e.institution && previo[0].period === e.period) previo.push(e);
+    else grupos.push([e]);
+  }
+  for (const g of grupos) g.sort((x, y) => Number(/^Educación/.test(y.degree)) - Number(/^Educación/.test(x.degree)));
+
+  let institucionPrevia = "";
+  let yaHuboPasado = false;
+  return grupos
+    .map((g) => {
+      const { frase: cuando, vigente } = periodo(g[0].period);
+      const grados = g.map((e) => grado(e.degree));
+      const verbo = grados[0].verbo === "cursar" ? (vigente ? "cursa" : "cursó") : vigente ? "estudia" : "estudió";
+      const inst = g[0].institution;
+      const misma = inst === institucionPrevia;
+      const donde = misma
+        ? /^Universidad/.test(inst)
+          ? "en la misma universidad"
+          : /^(Colegio|Liceo)/.test(inst)
+            ? "en el mismo colegio"
+            : "en la misma institución"
+        : en(inst);
+      institucionPrevia = inst;
+      const que = enumerar(grados.map((x) => x.frase));
+      const notas = g.map((e) => nota(e.note)).join("");
+      if (vigente) return `${mayuscula(verbo)} ${que} ${donde}${cuando ? ` ${cuando}` : ""}${notas}.`;
+      const inicio = !yaHuboPasado ? `Antes, ${cuando ? `${cuando}, ` : ""}${verbo}` : cuando ? `${mayuscula(cuando)} ${verbo}` : mayuscula(verbo);
+      yaHuboPasado = true;
+      return `${inicio} ${que} ${donde}${notas}.`;
+    })
+    .join(" ");
+}
+
+/** «Habla español (lengua materna), inglés (bilingüe: …) y alemán (C1: …)». */
+function parrafoIdiomas(languages: string[]): string {
+  const items = languages.map((l) => {
+    const [idioma, ...resto] = l.split(": ");
+    const nivel = resto.join(": ").replace(/\s*\((.*)\)$/, (_, d: string) => `: ${d.replace(/;\s*/g, ", ")}`);
+    return nivel ? `${minuscula(idioma)} (${nivel})` : minuscula(idioma);
+  });
+  return `Habla ${enumerar(items)}.`;
+}
+
+/** «En 2026, como investigador y líder del equipo, obtuvo el primer lugar en la Competencia…, en Ciudad de México.» */
+function frasePremio(w: { title: string; detail: string }): string {
+  const [primero, ...resto] = w.detail.split(" · ");
+  const anio = primero.match(/\b(19|20)\d{2}\b/)?.[0];
+  const lugar = primero.replace(/,?\s*\b(19|20)\d{2}\b/, "").trim();
+  const papel = resto.find((r) => /^(investigador|investigadora|líder|miembro|integrante|capitán|capitana|orador|oradora|coordinador|coordinadora)/i.test(r));
+  const otros = resto.filter((r) => r !== papel);
+  const lugarEnTitulo = w.title.match(/^(\S+ lugar), (.+)$/);
+  const que = lugarEnTitulo
+    ? `obtuvo el ${minuscula(lugarEnTitulo[1])} en ${articulo(lugarEnTitulo[2])}${lugarEnTitulo[2]}`
+    : `recibió la distinción «${w.title}»`;
+  const intro = [anio ? `En ${anio}` : "", papel ? `como ${minuscula(papel)}` : ""].filter(Boolean).join(", ");
+  const cola = [lugar ? `en ${lugar}` : "", ...otros.map(minuscula)].filter(Boolean).join(", ");
+  return `${intro ? `${intro}, ${que}` : mayuscula(que)}${cola ? `, ${cola}` : ""}.`;
+}
+
+/** Actividades agrupadas por semestre o año: «En el I semestre de 2026 participó en … y en …». */
+function parrafoActividades(activities: { title: string; detail: string }[]): string {
+  const porPeriodo = new Map<string, string[]>();
+  for (const act of activities) {
+    const partes = act.detail.split(" · ");
+    const cuando = partes.find((p) => /\b(19|20)\d{2}\b/.test(p)) ?? "";
+    const otras = partes.filter((p) => p !== cuando);
+    const art = articulo(act.title);
+    const nombre = art ? `${art}${minuscula(act.title)}` : `«${act.title}»`;
+    const marco =
+      otras.length >= 2
+        ? `, ${minuscula(otras[0])} ${de(otras.slice(1).join(", "))}`
+        : otras.length === 1
+          ? `, ${de(otras[0]).replace(otras[0], minuscula(otras[0]))}`
+          : "";
+    const lista = porPeriodo.get(cuando) ?? [];
+    lista.push(`en ${nombre}${marco}`);
+    porPeriodo.set(cuando, lista);
+  }
+  return [...porPeriodo]
+    .map(([cuando, items]) => {
+      const c = /^(I|II|III|primer|segundo|tercer)\b/i.test(cuando) ? `En el ${cuando}` : cuando ? `En ${cuando}` : "";
+      const cuerpo = items.length > 1 ? `${items.slice(0, -1).join(", ")}, y ${items[items.length - 1]}` : items[0];
+      return `${c ? `${c} participó` : "Participó"} ${cuerpo}.`;
+    })
+    .join(" ");
+}
+
+/** Un puesto fuera de la firma, en una oración. */
+function frasePuesto(exp: Asistente["career"][number], sujeto = ""): string {
+  const { frase: cuando, vigente } = periodo(exp.period);
+  const rol = minuscula(exp.role);
+  const org = nombreEnProsa(exp.org);
+  const nucleo = /^pasantía/.test(rol)
+    ? `${vigente ? "hace" : "hizo"} una ${rol} ${en(exp.org)}`
+    : `${vigente ? "es también" : "fue"} ${rol} ${de(exp.org).replace(exp.org, org)}`;
+  const tareas = exp.description?.length
+    ? `, donde ${vigente ? "se encarga" : "se encargó"} ${funciones(exp.description)}`
+    : "";
+  const conSujeto = sujeto ? `${sujeto} ${nucleo}` : nucleo;
+  return `${cuando ? `${mayuscula(cuando)} ${conSujeto}` : mayuscula(conSujeto)}${tareas}.`;
+}
+
+export function AsistenteAbout({ a }: { a: Asistente }) {
+  const estudio = nombreEnProsa(minuscula(a.study));
+  const apartados: ApartadoRelato[] = [];
+  if (a.education.length) apartados.push({ titulo: "Su formación", contenido: <p>{parrafoFormacion(a.education)}</p> });
+  if (a.awards?.length)
+    apartados.push({
+      titulo: a.awards.length > 1 ? "Distinciones" : "Distinción",
+      contenido: <p>{a.awards.map(frasePremio).join(" ")}</p>,
+    });
+  if (a.activities?.length) apartados.push({ titulo: "Otras actividades", contenido: <p>{parrafoActividades(a.activities)}</p> });
+
+  return (
+    <RelatoPerfil
+      id="perfil"
+      alterno
+      rotulo="Perfil"
+      titulo={
+        <>
+          Formación en Derecho.
+          <br />
+          <span className="text-burgundy-light">Trabajo junto al equipo.</span>
+        </>
+      }
+      entrada={
+        <>
+          <p>
+            {a.name}, {estudio}, es {minuscula(a.role)} de Corporación GC desde {minuscula(a.since)}.
+          </p>
+          {a.languages.length > 0 && <p>{parrafoIdiomas(a.languages)}</p>}
+        </>
+      }
+      apartados={apartados}
+    />
   );
 }
 
 export function AsistenteExperience({ a }: { a: Asistente }) {
+  const apellido = a.nameLines[1];
+  const firma = a.career.filter((c) => c.highlight);
+  const fuera = a.career.filter((c) => !c.highlight).reverse();
+  const apartados: ApartadoRelato[] = [];
+
+  const enFirma = firma.filter((c) => c.description?.length);
+  if (enFirma.length)
+    apartados.push({
+      titulo: "Su trabajo en la firma",
+      contenido: (
+        <>
+          {enFirma.map((c) => (
+            <p key={c.org + c.role}>
+              En {c.org}, {apellido} se encarga {funciones(c.description ?? [])}.
+            </p>
+          ))}
+        </>
+      ),
+    });
+  if (!enFirma.length && firma.length && !fuera.length)
+    apartados.push({
+      titulo: "Su trabajo en la firma",
+      contenido: (
+        <p>
+          {apellido} trabaja en {firma[0].org} como {minuscula(firma[0].role)} {periodo(firma[0].period).frase}.
+        </p>
+      ),
+    });
+  if (fuera.length)
+    apartados.push({
+      titulo: fuera.some((c) => periodo(c.period).vigente) ? "Fuera de la firma" : "Antes de la firma",
+      /* Si no hubo apartado de la firma, el apellido abre el relato. */
+      contenido: <p>{fuera.map((c, i) => frasePuesto(c, i === 0 && !enFirma.length ? apellido : "")).join(" ")}</p>,
+    });
+  if (a.skills?.length || a.extras?.length)
+    apartados.push({
+      titulo: "Otros datos",
+      contenido: (
+        <>
+          {a.skills?.length ? <p>Entre sus habilidades están {enumerar(a.skills.map(minuscula))}.</p> : null}
+          {a.extras?.map((x) => (
+            <p key={x}>{/[.!?]$/.test(x) ? x : `${x}.`}</p>
+          ))}
+        </>
+      ),
+    });
+
   return (
-    <section id="trayectoria" className="relative bg-surface py-24 md:py-32">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cream/[0.08] to-transparent" />
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[0.4fr_1fr] gap-12 lg:gap-20">
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Trayectoria" />
-            </AnimatedEntry>
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Experiencia
-                {" "}
-                <br />
-                <span className="text-burgundy-light">y formación</span>
-              </h2>
-            </AnimatedEntry>
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-5 text-sm text-cream/65 leading-relaxed max-w-[35ch]">
-                {a.study}.
-              </p>
-            </AnimatedEntry>
-          </div>
-
-          <StaggerContainer className="relative" stagger={0.1}>
-            <div className="absolute left-[11px] top-2 bottom-2 w-px bg-cream/[0.10]" />
-            <div className="space-y-1">
-              {a.career.map((exp, i) => (
-                <StaggerItem key={i}>
-                  <div className={`relative pl-10 pr-5 py-5 rounded-xl ${exp.highlight ? "bg-emphasis/[0.06] border border-emphasis/[0.15]" : ""}`}>
-                    <div className={`absolute left-[7px] top-7 w-[9px] h-[9px] rounded-full border-2 ${exp.highlight ? "border-emphasis bg-emphasis" : "border-cream/25 bg-surface"}`} />
-                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
-                      <h3 className="text-sm font-semibold text-cream/90 tracking-tight">{exp.role}</h3>
-                      <span className="text-[10px] tracking-wider text-cream/65 uppercase shrink-0">{exp.period}</span>
-                    </div>
-                    <div className="text-xs text-emphasis font-medium mb-2">
-                      {exp.org}
-                      {exp.place && <span className="font-normal text-cream/65"> · {exp.place}</span>}
-                    </div>
-                    {exp.description && (
-                      <ul className="space-y-1">
-                        {exp.description.map((d) => (
-                          <li key={d} className="text-xs text-cream/65 leading-relaxed max-w-[60ch]">
-                            {d}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                    {exp.highlight && (
-                      <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emphasis/[0.1] text-emphasis text-[10px] tracking-wide font-medium">
-                        Posición actual
-                      </div>
-                    )}
-                  </div>
-                </StaggerItem>
-              ))}
-            </div>
-
-            {(a.skills || a.extras) && (
-              <StaggerItem>
-                <div className="relative pl-10 mt-8 pt-6 border-t border-cream/[0.08]">
-                  {a.skills && (
-                    <>
-                      <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">Habilidades</div>
-                      <div className="flex flex-wrap gap-2">
-                        {a.skills.map((s) => (
-                          <span key={s} className="px-2.5 py-1 rounded-md bg-cream/[0.05] text-cream/65 text-[11px] tracking-wide">
-                            {s}
-                          </span>
-                        ))}
-                      </div>
-                    </>
-                  )}
-                  {a.extras && (
-                    <>
-                      <div className="mt-6 text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">Datos adicionales</div>
-                      <ul className="space-y-1">
-                        {a.extras.map((x) => (
-                          <li key={x} className="text-xs text-cream/65 leading-relaxed">
-                            {x}
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  )}
-                </div>
-              </StaggerItem>
-            )}
-          </StaggerContainer>
-        </div>
-      </div>
-    </section>
+    <RelatoPerfil
+      id="trayectoria"
+      rotulo="Trayectoria"
+      titulo={
+        <>
+          Trabajo
+          <br />
+          <span className="text-burgundy-light">y experiencia</span>
+        </>
+      }
+      apartados={apartados}
+    />
   );
 }
 

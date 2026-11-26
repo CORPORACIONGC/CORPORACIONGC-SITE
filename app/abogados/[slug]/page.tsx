@@ -7,7 +7,6 @@ import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { Credentials } from "@/components/sections/Credentials";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Publications } from "@/components/sections/Publications";
@@ -40,11 +39,8 @@ import {
   TEAM,
   FIRM,
   OSCAR_NAV_LINKS,
-  ESTEBAN_PROFILE,
   ESTEBAN_NAV_LINKS,
-  KATHERINE_PROFILE,
   KATHERINE_NAV_LINKS,
-  MARIANA_PROFILE,
   MARIANA_NAV_LINKS,
 } from "@/lib/constants";
 import { generateAttorneyMetadata } from "@/lib/page-metadata";
@@ -457,7 +453,6 @@ function KhevinProfile() {
         <Navbar navLinks={profileNavLinks} topOffset />
         <main id="contenido">
           <Hero />
-          <Credentials />
           <About />
           <Experience />
           <Publications articles={articles} />
@@ -547,7 +542,6 @@ function EstebanProfile() {
         <Navbar navLinks={ESTEBAN_NAV_LINKS} topOffset />
         <main id="contenido">
           <EstebanHero />
-          <Credentials credentials={ESTEBAN_PROFILE.credentials} />
           <EstebanAbout />
           <EstebanExperience />
           <Publications articles={articles} />
@@ -590,7 +584,6 @@ function KatherineProfile() {
         <Navbar navLinks={KATHERINE_NAV_LINKS} topOffset />
         <main id="contenido">
           <KatherineHero />
-          <Credentials credentials={KATHERINE_PROFILE.credentials} />
           <KatherineAbout />
           <KatherineExperience />
           <KatherineDivulgacion />
@@ -634,7 +627,6 @@ function MarianaProfile() {
         <Navbar navLinks={MARIANA_NAV_LINKS} topOffset />
         <main id="contenido">
           <MarianaHero />
-          <Credentials credentials={MARIANA_PROFILE.credentials} />
           <MarianaAbout />
           <MarianaExperience />
           <Publications articles={articles} />

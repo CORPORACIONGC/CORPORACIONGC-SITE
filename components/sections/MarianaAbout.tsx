@@ -1,142 +1,81 @@
+import Link from "next/link";
+import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
-import {
-  Scales,
-  ShieldCheck,
-  Gavel,
-  FirstAid,
-  Medal,
-} from "@phosphor-icons/react/dist/ssr";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { MARIANA_PRACTICE_AREAS, MARIANA_PROFILE } from "@/lib/constants";
-import { RunningHead } from "@/components/ui/RunningHead";
-
-const iconMap: Record<string, React.ElementType> = {
-  Scales,
-  ShieldCheck,
-  Gavel,
-  FirstAid,
-};
-
+/* Perfil de Mariana en prosa (D-06, 25-11-2026), solo con datos que el
+   sitio ya publicaba en MARIANA_PROFILE y MARIANA_PRACTICE_AREAS. Sustituye
+   las tarjetas de áreas con icono, el recuadro de formación y el de la
+   distinción. Va en tercera persona, como los demás relatos. Las cifras de
+   la franja (mejor promedio del posgrado, años en la firma, idiomas)
+   quedan dentro del relato. */
 export function MarianaAbout() {
   return (
-    <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — Bio */}
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Perfil profesional" />
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Malpraxis médica y
-                <br />
-                <span className="text-burgundy-light">derecho a la salud</span>
-              </h2>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Licenciada en Derecho con mención en Derechos Humanos por la
-                Universidad de Costa Rica. Egresada de la Maestría Profesional
-                en Derecho Público (UCR) con Diploma de Excelencia Académica
-                como mejor promedio del posgrado. Mi práctica se concentra en el
-                litigio contencioso-administrativo por daños derivados de la
-                actividad sanitaria.
+    <RelatoPerfil
+      id="perfil"
+      alterno
+      rotulo="Perfil profesional"
+      titulo={
+        <>
+          Malpraxis médica y
+          <br />
+          <span className="text-burgundy-light">derecho a la salud</span>
+        </>
+      }
+      entrada={
+        <>
+          <p>
+            La Licda. Mariana Montero Acuña es abogada asociada de Corporación GC, donde trabaja
+            desde agosto de 2018. Su práctica se concentra en el litigio contencioso-administrativo
+            por daños derivados de la actividad sanitaria, pública y privada, con énfasis en
+            malpraxis médica, iatrogenia y responsabilidad patrimonial del Estado.
+          </p>
+          <p>
+            Es licenciada en Derecho con mención en Derechos Humanos y egresada de la Maestría
+            Profesional en Derecho Público, ambas de la Universidad de Costa Rica. En la firma
+            trabaja en colaboración directa con el{" "}
+            <Link href="/abogados/oscar-gonzalez" className={enlace}>
+              Dr. Óscar Eduardo González Camacho
+            </Link>
+            .
+          </p>
+        </>
+      }
+      apartados={[
+        {
+          titulo: "En el litigio",
+          contenido: (
+            <>
+              <p>
+                Lleva demandas contra el Estado y los entes públicos ante el Tribunal Contencioso
+                Administrativo, dentro del área de{" "}
+                <Link href="/areas/litigio-contencioso-administrativo" className={enlace}>
+                  litigio contencioso administrativo
+                </Link>{" "}
+                de la firma. En esos procesos trabaja sobre todo la responsabilidad patrimonial
+                derivada de la actividad administrativa, y en particular los daños ocurridos en la
+                atención sanitaria por malpraxis médica o iatrogenia.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Ejerzo como Abogada con énfasis en malpraxis médica, iatrogenia
-                y responsabilidad patrimonial del Estado. He sido panelista en
-                televisión nacional sobre derechos de los pacientes y ponente
-                internacional en México y Colombia.
+              <p>
+                Asesora y litiga también en la protección del derecho fundamental a la salud frente
+                a la Administración Pública y a los prestadores de servicios sanitarios. Atiende,
+                además, procedimientos administrativos y consultas de derecho público.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.4}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Formación académica
-                </div>
-                <ul className="space-y-3">
-                  {MARIANA_PROFILE.education.map((ed) => (
-                    <li key={ed.degree} className="flex items-baseline gap-2">
-                      <div className="w-1 h-1 rounded-full bg-emphasis mt-1.5 shrink-0" />
-                      <div>
-                        <div className="text-sm text-cream/75">{ed.degree}</div>
-                        <div className="mt-0.5 text-[11px] text-cream/65">
-                          {ed.institution}
-                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-emphasis/70 font-medium">{ed.status}</span>
-                        </div>
-                        {"note" in ed && (
-                          <div className="mt-0.5 text-[10px] text-cream/65">{ed.note}</div>
-                        )}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-4 pt-4 border-t border-cream/[0.06]">
-                  <div className="flex items-start gap-3 px-3.5 py-3 rounded-lg border border-emphasis/20 bg-emphasis/[0.05]">
-                    <Medal size={18} weight="duotone" className="text-emphasis shrink-0 mt-0.5" />
-                    <div>
-                      <div className="text-[9px] tracking-[0.2em] uppercase text-emphasis/70 font-medium">
-                        Distinción
-                      </div>
-                      <div className="mt-1 text-sm text-cream/85 font-medium">
-                        {MARIANA_PROFILE.distinction.title}
-                      </div>
-                      <div className="mt-0.5 text-[11px] text-cream/65 leading-relaxed">
-                        {MARIANA_PROFILE.distinction.detail}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.5}>
-              <div className="mt-4 text-xs text-cream/65">
-                Idiomas: Español, Inglés, Francés
-              </div>
-            </AnimatedEntry>
-          </div>
-
-          {/* Right — Practice areas */}
-          <div className="lg:pt-16">
-            <AnimatedEntry delay={0.15}>
-              <RunningHead title="Áreas de práctica" />
-            </AnimatedEntry>
-
-            <StaggerContainer className="space-y-3" stagger={0.07}>
-              {MARIANA_PRACTICE_AREAS.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <StaggerItem key={i}>
-                    <div className="group p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-400">
-                      <div className="flex items-start gap-4">
-                        <div className="mt-0.5 p-2.5 rounded-lg bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300">
-                          <Icon size={20} weight="duotone" />
-                        </div>
-                        <div>
-                          <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                            {area.title}
-                          </h3>
-                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
-                            {area.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </StaggerItem>
-                );
-              })}
-            </StaggerContainer>
-          </div>
-        </div>
-      </div>
-    </section>
+            </>
+          ),
+        },
+        {
+          titulo: "Su formación",
+          contenido: (
+            <p>
+              Mariana Montero estudió Derecho en la Universidad de Costa Rica, donde obtuvo el
+              bachillerato (2015-2019) y la licenciatura con mención en Derechos Humanos
+              (2019-2022), aprobada con distinción. En la misma universidad es egresada de la
+              Maestría Profesional en Derecho Público, y en 2024 la UCR le otorgó el Diploma de
+              Excelencia Académica por el mejor promedio de ese posgrado. Habla español, inglés y
+              francés.
+            </p>
+          ),
+        },
+      ]}
+    />
   );
 }

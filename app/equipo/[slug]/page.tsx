@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Credentials } from "@/components/sections/Credentials";
 import { AsistenteHero, AsistenteAbout, AsistenteExperience, AsistenteContact } from "@/components/sections/AsistentePerfil";
 import { FIRM } from "@/lib/constants";
 import { ASISTENTES } from "@/lib/asistentes";
@@ -100,7 +99,6 @@ export default async function AsistentePage({ params }: { params: Promise<{ slug
         <Navbar navLinks={NAV} topOffset />
         <main id="contenido">
           <AsistenteHero a={a} />
-          <Credentials credentials={a.credentials} />
           <AsistenteAbout a={a} />
           <AsistenteExperience a={a} />
           <AsistenteContact a={a} />

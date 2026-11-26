@@ -1,138 +1,91 @@
-
 import Link from "next/link";
-import {
-  Scales,
-  ShieldCheck,
-  FileText,
-  Buildings,
-} from "@phosphor-icons/react/dist/ssr";
-import { AnimatedEntry, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedEntry";
-import { KATHERINE_PRACTICE_AREAS, KATHERINE_PROFILE } from "@/lib/constants";
-import { RunningHead } from "@/components/ui/RunningHead";
+import { RelatoPerfil, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
 
-const iconMap: Record<string, React.ElementType> = {
-  Scales,
-  ShieldCheck,
-  FileText,
-  Buildings,
-};
-
+/* Perfil de Katherine en prosa (D-06, 25-11-2026), solo con datos que el
+   sitio ya publicaba en KATHERINE_PROFILE y KATHERINE_PRACTICE_AREAS.
+   Sustituye las tarjetas de áreas con icono, el recuadro de formación y la
+   línea de idiomas; los datos de la franja de cifras (credentials) quedan
+   en «Su formación». Va en tercera persona por instrucción del usuario (25-11-2026). «Derecho
+   Público» no tiene página de área propia y se nombra sin enlace. */
 export function KatherineAbout() {
   return (
-    <section id="perfil" className="relative bg-surface-alt py-24 md:py-32">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20">
-          {/* Left — Bio */}
-          <div>
-            <AnimatedEntry>
-              <RunningHead title="Perfil profesional" />
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.1}>
-              <h2 className="font-display text-3xl md:text-5xl tracking-tighter leading-[1.05] text-cream">
-                Derecho Público con
-                <br />
-                <span className="text-burgundy-light">rigor académico</span>
-              </h2>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.2}>
-              <p className="mt-6 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Licenciada en Derecho y Notaria Pública por la Universidad
-                Escuela Libre de Derecho, con Maestría Profesional en Derecho
-                Público por la Universidad de Costa Rica. Mi práctica se
-                concentra en Derecho Administrativo, Derecho Expropiatorio y
-                responsabilidad patrimonial de la Administración.
+    <RelatoPerfil
+      id="perfil"
+      alterno
+      rotulo="Perfil profesional"
+      titulo={
+        <>
+          Derecho Público con
+          <br />
+          <span className="text-burgundy-light">rigor académico</span>
+        </>
+      }
+      entrada={
+        <>
+          <p>
+            La MSc. Katherine González Coto es abogada y notaria pública. Su práctica se
+            concentra en el derecho administrativo, el derecho expropiatorio y la
+            responsabilidad patrimonial de la Administración. Combina el ejercicio profesional
+            con la docencia y la investigación en derecho público.
+          </p>
+          <p>
+            Desde 2019 es abogada asociada de Corporación GC, donde ejerce con énfasis en el
+            litigio contencioso-administrativo, los procedimientos expropiatorios y la
+            responsabilidad patrimonial del Estado, en colaboración directa con el{" "}
+            <Link href="/abogados/oscar-gonzalez" className={enlace}>
+              Dr. Óscar Eduardo González Camacho
+            </Link>
+            . Desde 2024 es también profesora en la Universidad Escuela Libre de Derecho.
+          </p>
+        </>
+      }
+      apartados={[
+        {
+          titulo: "Su práctica",
+          contenido: (
+            <>
+              <p>
+                En{" "}
+                <Link href="/areas/derecho-administrativo" className={enlace}>
+                  derecho administrativo
+                </Link>{" "}
+                asesora y defiende a sus clientes en procedimientos ante la Administración Pública
+                y en los recursos ordinarios y extraordinarios. En{" "}
+                <Link href="/areas/expropiaciones" className={enlace}>
+                  derecho expropiatorio
+                </Link>{" "}
+                asesora y litiga en procedimientos expropiatorios, en la discusión de los avalúos y
+                en la determinación del justo precio.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.3}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Ejerzo como Abogada y Notaria Pública con énfasis en litigio
-                contencioso-administrativo, procedimientos expropiatorios y
-                responsabilidad patrimonial del Estado. Domino cuatro idiomas:
-                español, inglés, francés e italiano.
+              <p>
+                Dentro del derecho público, otra parte de su trabajo es la responsabilidad
+                patrimonial del Estado, que se discute en el{" "}
+                <Link href="/areas/litigio-contencioso-administrativo" className={enlace}>
+                  litigio contencioso-administrativo
+                </Link>
+                . Como notaria pública atiende además asuntos de{" "}
+                <Link href="/areas/otras-materias#notarial" className={enlace}>
+                  derecho notarial
+                </Link>
+                : autenticaciones, protocolizaciones y constitución de sociedades.
               </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.35}>
-              <p className="mt-4 text-base text-cream/65 leading-relaxed max-w-[58ch]">
-                Desde 2024 soy profesora en la Universidad Escuela Libre de
-                Derecho, donde imparto Principios del Derecho Público, Teoría
-                del Estado y Derecho Procesal Administrativo, e integro
-                tribunales examinadores en las pruebas de grado.
-              </p>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.4}>
-              <div className="mt-8 p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03]">
-                <div className="text-[10px] tracking-[0.2em] uppercase text-cream/65 mb-3">
-                  Formación académica
-                </div>
-                <div className="space-y-2">
-                  {KATHERINE_PROFILE.education.map((edu, i) => (
-                    <div key={i} className="flex items-baseline gap-2">
-                      <div className={`w-1 h-1 rounded-full ${i === 0 ? "bg-emphasis" : "bg-burgundy-light"} mt-1.5 shrink-0`} />
-                      <span className="text-sm text-cream/75">
-                        {edu.degree} — {edu.institution}
-                        {edu.period && (
-                          <span className="ml-1.5 text-[9px] tracking-wider uppercase text-cream/65">
-                            {edu.period}
-                          </span>
-                        )}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedEntry>
-
-            <AnimatedEntry delay={0.5}>
-              <div className="mt-4 text-xs text-cream/65">
-                Idiomas: Español, Inglés, Francés, Italiano
-              </div>
-            </AnimatedEntry>
-          </div>
-
-          {/* Right — Practice areas */}
-          <div className="lg:pt-16">
-            <AnimatedEntry delay={0.15}>
-              <RunningHead title="Áreas de práctica" />
-            </AnimatedEntry>
-
-            <StaggerContainer className="space-y-3" stagger={0.07}>
-              {KATHERINE_PRACTICE_AREAS.map((area, i) => {
-                const Icon = iconMap[area.icon];
-                return (
-                  <StaggerItem key={i}>
-                    <div className="group p-5 rounded-xl border border-cream/[0.08] bg-cream/[0.03] hover:border-burgundy/20 transition-colors duration-400">
-                      <div className="flex items-start gap-4">
-                        <div className="mt-0.5 p-2.5 rounded-lg bg-burgundy/[0.15] text-burgundy-light group-hover:bg-burgundy/25 transition-colors duration-300">
-                          <Icon size={20} weight="duotone" />
-                        </div>
-                        <div>
-                          <h3 className="text-sm font-semibold text-cream/90 tracking-tight">
-                            {"href" in area ? (
-                              <Link href={area.href} className="underline decoration-cream/25 underline-offset-4 transition-colors duration-300 hover:text-burgundy hover:decoration-burgundy/40 dark:hover:text-hilo-texto">
-                                {area.title}
-                              </Link>
-                            ) : (
-                              area.title
-                            )}
-                          </h3>
-                          <p className="mt-1.5 text-xs text-cream/65 leading-relaxed">
-                            {area.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </StaggerItem>
-                );
-              })}
-            </StaggerContainer>
-          </div>
-        </div>
-      </div>
-    </section>
+            </>
+          ),
+        },
+        {
+          titulo: "Su formación",
+          contenido: (
+            <p>
+              Katherine González estudió Derecho en la Universidad Escuela Libre de Derecho, donde cursó el
+              bachillerato de 2013 a 2016, la licenciatura de 2015 a 2019 y el notariado público
+              de 2017 a 2020. De 2020 a 2024 hizo la Maestría Profesional en Derecho Público en la
+              Universidad de Costa Rica. Es, así, máster en Derecho Público por la Universidad de
+              Costa Rica desde 2024 y notaria pública formada en la Escuela Libre de Derecho, y
+              habla cuatro idiomas: español, inglés, francés e italiano.
+            </p>
+          ),
+        },
+      ]}
+    />
   );
 }
