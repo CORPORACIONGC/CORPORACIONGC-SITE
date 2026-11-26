@@ -93,6 +93,7 @@ import { CalculadoraUmbral } from "@/components/article/CalculadoraUmbral";
 import { CalendarioPresupuesto2027, AlcanceOpinionSala } from "@/components/article/PresupuestoSala2027";
 import { CircularIA, DeclaracionesIA, ConstanciasPorMes, HerramientasIA, CronologiaIA } from "@/components/article/IASentencias";
 import { EstructuraCiudadGobierno, CambiosCiudadGobierno } from "@/components/article/CiudadGobierno";
+import { PlazosBuzonHacendario, CambiosBuzonHacendario } from "@/components/article/BuzonHacendario";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -310,6 +311,8 @@ const ARTICLE_COMPONENTS = {
   CronologiaIA,
   EstructuraCiudadGobierno,
   CambiosCiudadGobierno,
+  PlazosBuzonHacendario,
+  CambiosBuzonHacendario,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,

@@ -6,6 +6,7 @@ import { fuentes as f_amparo_ccss_lista_de_espera } from "./amparo-ccss-lista-de
 import { fuentes as f_amparo_negativa_medicamentos_ccss } from "./amparo-negativa-medicamentos-ccss";
 import { fuentes as f_anular_adjudicacion_tribunal_contencioso_administrativo } from "./anular-adjudicacion-tribunal-contencioso-administrativo";
 import { fuentes as f_arbitraje_con_el_estado_costa_rica } from "./arbitraje-con-el-estado-costa-rica";
+import { fuentes as f_buzon_hacendario_notificaciones_ley_10982 } from "./buzon-hacendario-notificaciones-ley-10982";
 import { fuentes as f_cierre_colectivo_poder_judicial_2026_2027_plazos } from "./cierre-colectivo-poder-judicial-2026-2027-plazos";
 import { fuentes as f_cierre_ministerio_gobernacion_ministerio_vivienda_leyes_10983_10981 } from "./cierre-ministerio-gobernacion-ministerio-vivienda-leyes-10983-10981";
 import { fuentes as f_ciudad_gobierno_bcie_proyecto_ley_25725 } from "./ciudad-gobierno-bcie-proyecto-ley-25725";
@@ -67,6 +68,7 @@ export const FUENTES_GUIAS: Record<string, FuentesDeGuia> = {
   "amparo-negativa-medicamentos-ccss": f_amparo_negativa_medicamentos_ccss,
   "anular-adjudicacion-tribunal-contencioso-administrativo": f_anular_adjudicacion_tribunal_contencioso_administrativo,
   "arbitraje-con-el-estado-costa-rica": f_arbitraje_con_el_estado_costa_rica,
+  "buzon-hacendario-notificaciones-ley-10982": f_buzon_hacendario_notificaciones_ley_10982,
   "cierre-colectivo-poder-judicial-2026-2027-plazos": f_cierre_colectivo_poder_judicial_2026_2027_plazos,
   "cierre-ministerio-gobernacion-ministerio-vivienda-leyes-10983-10981": f_cierre_ministerio_gobernacion_ministerio_vivienda_leyes_10983_10981,
   "ciudad-gobierno-bcie-proyecto-ley-25725": f_ciudad_gobierno_bcie_proyecto_ley_25725,
