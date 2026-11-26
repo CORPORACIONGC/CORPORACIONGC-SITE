@@ -98,6 +98,7 @@ import { PasosAfectacionLey65 } from "@/components/article/ZonaInalienableLey65"
 import { Art81Comparado, SancionesDirectores, OsflTresTextos } from "@/components/article/Ley7786Reforma25129";
 import { Art184Comparado, Articulo12TresTextos } from "@/components/article/ControlContraloria";
 import { LineaCesantiaConvenciones, ConvencionesMunicipalesSala } from "@/components/article/ConvencionesMunicipales";
+import { ViasSancionAlcalde, LineaSancionAlcalde } from "@/components/article/SancionAlcalde";
 import {
   ProcedimientoDespido10159,
   PlazosDespido10159,
@@ -325,6 +326,8 @@ const ARTICLE_COMPONENTS = {
   Articulo12TresTextos,
   LineaCesantiaConvenciones,
   ConvencionesMunicipalesSala,
+  ViasSancionAlcalde,
+  LineaSancionAlcalde,
   RecorridoReduccion,
   PagoReduccion,
   CalendarioPlazoDiasCierre,
