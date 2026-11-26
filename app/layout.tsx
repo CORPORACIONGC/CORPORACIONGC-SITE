@@ -118,9 +118,12 @@ export default function RootLayout({
             <head>: así no compite con el CSS ni con la imagen principal.
             Lo que se registre antes queda en la cola y se envía al
             llegar el guion. La página vista la envía <Analitica>, con el
-            contexto de cada página (send_page_view: false). */}
+            contexto de cada página (send_page_view: false). Fuera de
+            corporaciongc.com (la vista previa local y las de Vercel) todo
+            sale con traffic_type «internal», que el filtro «Internal
+            Traffic» de la propiedad excluye de los informes. */}
         <Script id="ga-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_ID}',{send_page_view:false});`}
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());var gcConfig={send_page_view:false};if(!/(^|\\.)corporaciongc\\.com$/.test(location.hostname))gcConfig.traffic_type='internal';gtag('config','${GA_ID}',gcConfig);`}
         </Script>
         <Script id="ga" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
       </body>
