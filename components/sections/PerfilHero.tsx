@@ -40,33 +40,52 @@ export type RetratoPerfil = {
    y la barra de navegación (80 px). */
 const ALTO = "calc(100dvh - 7rem)";
 
+/* El retrato es uno solo para todas las pantallas (25-11-2026): antes había
+   uno para el teléfono y otro para escritorio, y el navegador bajaba también
+   el oculto. El marco, el recorte y el encuadre de cada pantalla llegan como
+   variables de CSS y las clases eligen la que corresponde al ancho. */
 function Retrato({
   foto,
-  hasta,
-  x,
+  marco,
+  ancho,
+  hastaMovil,
+  xMovil,
   sizes,
-  className = "",
 }: {
   foto: RetratoPerfil;
-  hasta: number;
-  x: string;
+  /** Clase de proporción del marco en el teléfono. */
+  marco: string;
+  /** Ancho de la columna del retrato en escritorio. */
+  ancho: string;
+  hastaMovil: number;
+  xMovil: string;
   sizes: string;
-  className?: string;
 }) {
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div
+      className={`relative overflow-hidden ${marco} md:absolute md:inset-y-0 md:right-0 md:aspect-auto md:w-[var(--ancho)]`}
+      style={
+        {
+          "--ancho": ancho,
+          "--alto-movil": `${100 / hastaMovil}%`,
+          "--alto": `${100 / foto.hasta}%`,
+          "--x-movil": xMovil,
+          "--x": foto.x,
+        } as React.CSSProperties
+      }
+    >
       {/* La caja interior es más alta que el marco: lo que sobra por abajo
           queda fuera, y así el retrato termina donde dice `hasta`. */}
-      <div className="absolute inset-x-0 top-0" style={{ height: `${100 / hasta}%` }}>
+      <div className="absolute inset-x-0 top-0 h-[var(--alto-movil)] md:h-[var(--alto)]">
         <Image
           src={foto.src}
           alt={foto.alt}
           fill
-          priority
+          preload
+          fetchPriority="high"
           quality={90}
           sizes={sizes}
-          className="object-cover"
-          style={{ objectPosition: `${x} 0%` }}
+          className="object-cover [object-position:var(--x-movil)_0%] md:[object-position:var(--x)_0%]"
         />
       </div>
     </div>
@@ -124,32 +143,16 @@ export function PerfilHero({
       {/* El bloque empieza debajo de la barra de navegación. */}
       <div className="relative mt-16 md:mt-20">
         {/* Teléfono: el retrato abre el hero, de borde a borde y sin
-            desvanecido. No se anima (es la imagen LCP). Las dos fotos se
-            precargan, pero cada `sizes` vale 0px en el rango donde su
-            versión está oculta. */}
-        <div className="md:hidden">
-          <Retrato
-            foto={foto}
-            hasta={hastaMovil}
-            x={xMovil}
-            sizes={`(min-width: 768px) 0px, ${Math.ceil(anchoMovil * 100)}vw`}
-            className={marco}
-          />
-        </div>
-
-        {/* Escritorio: el retrato a sangre. */}
-        <div
-          className="absolute inset-y-0 right-0 hidden md:block"
-          style={{ width: `min(44vw, calc((${ALTO}) * ${proporcion}))` }}
-        >
-          <Retrato
-            foto={foto}
-            hasta={foto.hasta}
-            x={foto.x}
-            sizes={`(max-width: 767px) 0px, max(44vw, calc((100vh - 7rem) * ${proporcion}))`}
-            className="h-full w-full"
-          />
-        </div>
+            desvanecido. Escritorio: el retrato a sangre, a la derecha. Es la
+            imagen LCP: no se anima. */}
+        <Retrato
+          foto={foto}
+          marco={marco}
+          ancho={`min(44vw, calc((${ALTO}) * ${proporcion}))`}
+          hastaMovil={hastaMovil}
+          xMovil={xMovil}
+          sizes={`(min-width: 768px) max(44vw, calc((100vh - 7rem) * ${proporcion})), ${Math.ceil(anchoMovil * 100)}vw`}
+        />
 
         <div className="relative mx-auto max-w-[1400px] px-6 pb-12 pt-8 md:px-10 md:py-12">
           {/* La columna mide el alto del hero menos su relleno (6 rem) y

@@ -35,45 +35,36 @@ export function FirmHero() {
       {/* El bloque oscuro empieza debajo de la barra de navegación: así el
           vidrio de la barra no se agrisa sobre el fondo al abrir la página. */}
       <div className="gc-on-dark relative mt-16 overflow-hidden bg-[#0F0A0D] md:mt-20">
-        {/* Escritorio: la foto, de la barra al pie y hasta el borde derecho.
-            Es el elemento LCP: no se anima, para que nunca quede invisible.
-            Las dos fotos se precargan, pero cada `sizes` vale 0px en el rango
-            donde su versión está oculta: el navegador baja allí la variante
-            más pequeña y la imagen grande solo una vez, la que se ve. */}
+        {/* La foto es una sola para todas las pantallas (25-11-2026): antes
+            había una para escritorio y otra para teléfono, y el navegador
+            bajaba también la oculta. Ahora un solo elemento cambia de forma
+            según el ancho.
+            Teléfono y tableta: abre el hero de borde a borde, recortada a 4:5
+            en el teléfono para que el fundador se vea grande y entera en
+            tableta, y se funde hacia abajo sobre la mesa.
+            Escritorio (desde 1024 px): sale de la derecha, de la barra al pie,
+            y se desvanece hacia el texto.
+            Es la imagen LCP: no se anima, para que nunca quede invisible, y se
+            precarga con prioridad alta. */}
         <div
-          className="absolute inset-y-0 right-0 hidden lg:block"
-          style={{
-            left: FOTO_IZQUIERDA,
-            maskImage: FOTO_MASCARA,
-            WebkitMaskImage: FOTO_MASCARA,
-          }}
+          className="relative aspect-[4/5] [-webkit-mask-image:var(--mascara-movil)] [mask-image:var(--mascara-movil)] sm:aspect-[3/2] lg:absolute lg:inset-y-0 lg:right-0 lg:left-[var(--foto-izquierda)] lg:aspect-auto lg:[-webkit-mask-image:var(--mascara)] lg:[mask-image:var(--mascara)]"
+          style={
+            {
+              "--foto-izquierda": FOTO_IZQUIERDA,
+              "--mascara": FOTO_MASCARA,
+              "--mascara-movil": FOTO_MASCARA_MOVIL,
+            } as React.CSSProperties
+          }
         >
           <Image
             src={OSCAR_PROFILE.photo}
             alt={ALT}
             fill
-            priority
+            preload
+            fetchPriority="high"
             quality={90}
-            sizes="(max-width: 1023px) 0px, 74vw"
-            className="object-cover object-[4%_20%]"
-          />
-        </div>
-
-        {/* Teléfono y tableta: la foto abre el hero, de borde a borde. En el
-            teléfono va recortada a 4:5 para que el fundador se vea grande; en
-            tableta, entera. No se anima (es la imagen LCP en móvil). */}
-        <div
-          className="relative aspect-[4/5] sm:aspect-[3/2] lg:hidden"
-          style={{ maskImage: FOTO_MASCARA_MOVIL, WebkitMaskImage: FOTO_MASCARA_MOVIL }}
-        >
-          <Image
-            src={OSCAR_PROFILE.photo}
-            alt={ALT}
-            fill
-            priority
-            quality={90}
-            sizes="(min-width: 1024px) 0px, (min-width: 640px) 100vw, 190vw"
-            className="object-cover object-[62%_50%]"
+            sizes="(min-width: 1024px) 74vw, (min-width: 640px) 100vw, 190vw"
+            className="object-cover object-[62%_50%] lg:object-[4%_20%]"
           />
         </div>
 
