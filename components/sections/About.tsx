@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { RelatoPerfil, RankingUcr, enlaceRelato as enlace } from "@/components/sections/RelatoPerfil";
-import { CONFERENCES } from "@/lib/constants";
+import { CONFERENCES, TESIS_SIBDI } from "@/lib/constants";
 
 /* Perfil de Khevin Sánchez en prosa (D-06, 25-11-2026), en tercera persona
    (indicación del 25-11). Sustituye las tarjetas de áreas con icono, los recuadros de
@@ -66,7 +66,18 @@ export function About() {
                 (UCR, 2025), dirigido por el Dr. Óscar Eduardo González Camacho, analiza su
                 integración en el ámbito judicial desde el marco normativo de la Unión Europea, el
                 Reglamento de Inteligencia Artificial, y propone una hoja de ruta para adoptarla
-                con seguridad en Costa Rica.
+                con seguridad en Costa Rica. El tribunal examinador lo{" "}
+                <a href={TESIS_SIBDI.textoCompleto} target="_blank" rel="noopener noreferrer" className={enlace}>
+                  aprobó con distinción
+                </a>{" "}
+                el 15 de mayo de 2025, por tratar «un tema muy arriesgado y novedoso», con un
+                manejo de fuentes «notable» y una exposición «muy bien lograda», según el acta de
+                la defensa que abre el texto completo en el repositorio del SIBDI de la UCR, donde
+                también consta su{" "}
+                <a href={TESIS_SIBDI.catalogo} target="_blank" rel="noopener noreferrer" className={enlace}>
+                  ficha de catálogo
+                </a>
+                .
               </p>
               <p>
                 Ha publicado{" "}

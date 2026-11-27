@@ -685,6 +685,16 @@ export const EDUCATION = [
   { degree: "Bachillerato en Historia", institution: "Universidad de Costa Rica", status: "En curso", note: "Formación complementaria aplicada al litigio de casos con componente histórico-registral." },
 ] as const;
 
+/* Registro externo de la tesis de licenciatura en el SIBDI de la UCR. El texto
+   completo abre con el acta de la defensa (15-05-2025), donde el tribunal
+   resuelve «APROBAR con DISTINCIÓN»; la ficha de catálogo lleva la signatura
+   TFG 51247. Se usan como validación externa en el perfil y en la ficha de la
+   tesis (pedido del 27-11-2026). */
+export const TESIS_SIBDI = {
+  textoCompleto: "https://repositorio.sibdi.ucr.ac.cr/server/api/core/bitstreams/77213017-2526-4e36-b955-edb7efcb7478/content",
+  catalogo: "https://primo-tc-na01.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ucr_aleph000772343&context=L&vid=SIBDI&lang=es_ES",
+} as const;
+
 export const EDUCATION_DISTINCTION = {
   title: "3.er mejor promedio",
   detail: "Examen de Excelencia Académica del Colegio de Abogados y Abogadas de Costa Rica · II convocatoria, 2025",

@@ -27,7 +27,13 @@ export const OBRAS_EQUIPO: Record<string, Record<string, unknown>> = {
     datePublished: "2025",
     inLanguage: "es",
     url: pagina("tesis-ia-justicia"),
-    sameAs: "https://primo-tc-na01.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ucr_aleph000772343&context=L&vid=SIBDI&lang=es_ES",
+    /* Ficha de catálogo y texto completo en el SIBDI; el texto abre con el
+       acta de la defensa del 15-05-2025, que la aprueba con distinción. */
+    sameAs: [
+      "https://primo-tc-na01.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=ucr_aleph000772343&context=L&vid=SIBDI&lang=es_ES",
+      "https://repositorio.sibdi.ucr.ac.cr/server/api/core/bitstreams/77213017-2526-4e36-b955-edb7efcb7478/content",
+    ],
+    award: "Aprobada con distinción por el tribunal examinador (Universidad de Costa Rica, 15-05-2025)",
   },
   "tesis-dano-moral-indirecto": {
     "@type": "Thesis",
